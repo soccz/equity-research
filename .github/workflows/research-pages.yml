@@ -26,6 +26,9 @@ jobs:
   build:
     runs-on: ubuntu-24.04
     timeout-minutes: 30
+    env:
+      # Chrome's Unix socket must fit even under the long Actions checkout path.
+      EQUITY_TMPDIR: /tmp/equity-research
     permissions:
       contents: write
     steps:
