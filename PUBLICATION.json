@@ -1,7 +1,7 @@
 {
   "targetRepository": "soccz/equity-research",
   "targetPage": "https://soccz.github.io/equity-research/",
-  "status": "prepared_not_published",
+  "status": "initial_export_published",
   "analysisHash": "bf2643effc2d873ec9d82caffd0de40aa5de637e8c5a79f172a51ececc276796",
   "files": {
     ".github/workflows/research-pages.yml": "4f8050cb556de05ec52dda43e00c254b87876d12820d42bc6bd375397edd42a0",
@@ -55,5 +55,7 @@
     "site/site-manifest.json": "f78c42cfaf13cd0926a2932dddbf5659b174e8aea0d90e70bcfeaa751906b8a2",
     "tests/test_engine.py": "44f8c04408cc6a745cc5c2ab5a1001f469594f864a8ed1c376578303c5a2b173",
     "tests/test_publication.py": "b4fe837ca140d0d64f762f3751d5b14553356edd6affc52042646df53537bcce"
-  }
+  },
+  "initialCommit": "cc04267",
+  "scope": "Hashes below describe the initial export only. Git history and site/site-manifest.json describe later publications."
 }
