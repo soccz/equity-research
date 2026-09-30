@@ -1,0 +1,117 @@
+name: Research and Pages
+
+on:
+  push:
+    branches: [main]
+    paths: ["site/**", ".github/workflows/research-pages.yml"]
+  workflow_dispatch:
+    inputs:
+      refresh:
+        description: Fetch official filings and prices, verify, and publish new research
+        type: boolean
+        default: false
+      as_of:
+        description: Completed UTC date YYYY-MM-DD; blank uses yesterday
+        type: string
+        default: ""
+
+permissions:
+  contents: read
+
+concurrency:
+  group: equity-research-publication
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@v7
+        if: inputs.refresh == true
+        with:
+          node-version: "24"
+          package-manager-cache: false
+      - name: Restore public-source research cache
+        if: inputs.refresh == true
+        uses: actions/cache@v6
+        with:
+          path: |
+            data/sources
+            data/dart-imports.json
+          key: equity-sources-${{ runner.os }}-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: equity-sources-${{ runner.os }}-
+      - name: Prepare research and PDF dependencies
+        if: inputs.refresh == true
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y fonts-noto-cjk
+          python -m pip install -r requirements.txt -r requirements-verification.txt
+      - name: Refresh on the GitHub-hosted runner
+        if: inputs.refresh == true
+        env:
+          DART_API_KEY: ${{ secrets.DART_API_KEY }}
+          SEC_USER_AGENT: ${{ vars.SEC_USER_AGENT }}
+          RESEARCH_AS_OF: ${{ inputs.as_of }}
+        run: python scripts/cloud-refresh.py
+      - name: Verify calculations and independent reconstruction
+        if: inputs.refresh == true
+        run: |
+          python -m unittest discover -s tests -v
+          python scripts/check-replay.py
+          node --check app/app.js
+      - name: Verify static interactions and generate reports
+        if: inputs.refresh == true
+        run: |
+          node scripts/check-live.mjs
+          python scripts/check-artifacts.py
+          python -m equitylab build-site
+      - name: Verify the exact publication artifact
+        run: python scripts/check-site.py
+      - name: Keep execution evidence separate from the public website
+        if: inputs.refresh == true
+        uses: actions/upload-artifact@v7
+        with:
+          name: research-evidence-${{ github.run_id }}
+          retention-days: 90
+          if-no-files-found: error
+          path: |
+            data/sources
+            data/dart-imports.json
+            data/dart-history-import.json
+            data/runs
+            data/latest.json
+            data/ledger
+            artifacts/live/*verification.json
+      - name: Preserve verified publication and judgment history in Git
+        if: inputs.refresh == true
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- site data/ledger/conditions.jsonl
+          if ! git diff --cached --quiet; then
+            git commit -m "Update verified equity research publication"
+            git push origin HEAD:main
+          fi
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: site
+  deploy:
+    needs: build
+    runs-on: ubuntu-24.04
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/configure-pages@v5
+      - id: deployment
+        uses: actions/deploy-pages@v4
