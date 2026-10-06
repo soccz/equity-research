@@ -77,11 +77,10 @@ class NoSessions(ValueError):
 
 
 class UnpublishedClose(ValueError):
-    """An original whose last session in the window has traded volume but no close:
-    the provider has not published that close yet (seen live for KRX symbols around
-    midnight KST, 2026-10-07, flapping by symbol). A rejected original, so the series
-    fails and is fetched again; never read as a halt (a halted session has no volume).
-    """
+    """An original whose only sessions in the window traded (volume) without a close:
+    nothing is published yet, so it is not "no sessions" (NoSessions). D17: a series
+    with rows keeps such sessions in ``unpublishedSessions`` instead (seen live for KRX
+    symbols around midnight KST on 2026-10-07, flapping by symbol)."""
 
 
 def _iso(value) -> str:
@@ -171,9 +170,11 @@ def _parse(blob: bytes, symbol: str, first, end, retrieved_at: str) -> dict:
     Returns ``{rows, currency, timezone, splits, nullSessions, notes}``. A rejected
     original raises one of PARSE_ERRORS; one that names ``symbol`` in the expected
     currency, with only valid rows but no settled session in the window, raises
-    NoSessions (a ValueError). A null-close session with traded volume after the last
-    valid row raises UnpublishedClose (a ValueError): its close is not out yet. Such a
-    session before a valid row is dropped like any null-close session.
+    NoSessions (a ValueError). D17: a null-close session with traded volume (volume
+    > 0) is a close the provider has not published (yet); it is dropped from the rows
+    like any null-close session and listed in ``unpublishedSessions``, so that a caller
+    needing that day's close retries instead of reading a halt. Without rows but with
+    such sessions the original raises UnpublishedClose (a ValueError).
     """
     first, end = _iso(first), _iso(end)
     chart = json.loads(blob)["chart"]
@@ -233,11 +234,10 @@ def _parse(blob: bytes, symbol: str, first, end, retrieved_at: str) -> dict:
                 continue
             raise ValueError(f"duplicate or unordered session {iso}")
         rows.append([iso, float(adj), float(close)])
-    pending = [iso for iso in traded if not rows or iso > rows[-1][0]]
-    if pending:  # never '; ' in the text (series() joins the hosts' failures with it)
+    if traded and not rows:  # never '; ' in the text (series() joins host failures)
         raise UnpublishedClose(
-            f"close of {max(pending)} not published (traded volume, no close, after "
-            f"the last valid row {rows[-1][0] if rows else None})"
+            f"no published close between {first} and {end} (traded without a close: "
+            f"{_brief(traded)})"
         )
     if not rows:  # never '; ' in the text: series() joins the hosts' failures with it
         seen = [
@@ -266,6 +266,8 @@ def _parse(blob: bytes, symbol: str, first, end, retrieved_at: str) -> dict:
     notes = []
     if nulls:
         notes.append(f"dropped {len(nulls)} null-close session(s): {_brief(nulls)}")
+    if traded:
+        notes.append(f"{len(traded)} traded without a close (D17): {_brief(traded)}")
     if duplicates:
         notes.append(f"merged {duplicates} identical duplicate row(s)")
     if unsettled:
@@ -279,6 +281,7 @@ def _parse(blob: bytes, symbol: str, first, end, retrieved_at: str) -> dict:
         timezone=zone,
         splits=sorted(splits, key=itemgetter("date")),
         nullSessions=nulls,
+        unpublishedSessions=traded,
         notes=notes,
     )
 
@@ -336,6 +339,7 @@ def series(
         window=None,
         splits=[],
         nullSessions=[],
+        unpublishedSessions=[],
         notes=[],
         empty=None,
     )
@@ -386,6 +390,31 @@ def series(
         return out
     out["error"] = "; ".join(failures)
     return out
+
+
+def unpublished(series: dict, day) -> bool:
+    """D17: ``day`` traded in the series without a published close (yet)."""
+    return _iso(day) in (series.get("unpublishedSessions") or [])
+
+
+def transient_failure(series: dict) -> bool:
+    """A failed series that a later download may fix (D17): some host's download
+    failed (timeout, connection error, an HTTP status other than 404) or its original
+    had no published close yet (UnpublishedClose). Not a series whose every host
+    answered HTTP 404 or a rejected original (symbol or currency mismatch, undecodable,
+    no sessions), nor an invalid request."""
+    if series.get("status") == "ok":
+        return False
+    for failure in str(series.get("error") or "").split("; "):
+        if failure.startswith("invalid request"):
+            continue
+        text = failure.partition(": ")[2]
+        if "UnpublishedClose" in text:
+            return True
+        if text.startswith("rejected original") or re.search(r"\bHTTP 404\b", text):
+            continue
+        return True
+    return False
 
 
 def momentum_12_1(

@@ -250,7 +250,9 @@ PROTOCOL = {
         "KR": "sum over listed share classes of listedShares x that class's Yahoo close "
         "on T, without split adjustment; listedShares = Naver market value / Naver "
         "price at the universe capture; a class without its own close on T uses the "
-        "common close on T (class_price_proxy)",
+        "common close on T (class_price_proxy), except a class whose download failed "
+        "transiently or that traded on T without a published close: the member is "
+        "collected again (D17)",
         "splits": {
             "standard": "numerator and denominator are positive integers; a split in "
             "the product that is not (a spin-off or rights issue shown as a split, e.g. "
@@ -406,7 +408,11 @@ PROTOCOL = {
         "freezeGraceDays": FREEZE_GRACE_DAYS,
         "series": "kept series (data/ratings/series) are merged, never shrunk, and "
         "written only by official runs; a kept series is re-parsed from its "
-        "hash-verified original (rows and splits), never read from its saved rows",
+        "hash-verified original (rows and splits), never read from its saved rows; "
+        "it stands in for a failed download only when the failure is not transient "
+        "(moduleRules.prices.transientFailure: the source is gone or answers "
+        "otherwise), never for a series whose latest session traded without a "
+        "published close (D17)",
         # D12', L3, N2
         "official": "official output needs the full ledger without dry runs, one "
         "protocolHash across the registrations (mixed hashes are an error), an "
@@ -511,12 +517,23 @@ PROTOCOL = {
                     # D17: Yahoo nulled KRX closes of the latest session around
                     # midnight KST (2026-10-07) while keeping their volume.
                     "unpublishedClose": "a null-close session with traded volume "
-                    "(volume > 0) after the window's last valid row is a close the "
-                    "provider has not published yet: the original is rejected "
-                    "(UnpublishedClose), so the series fails and is fetched again "
-                    "(a collection error, a KR universe market error); it is never "
-                    "a halt (no session on T, or a null close without volume). Such "
-                    "a session before a valid row is dropped as a null-close session",
+                    "(volume > 0) is a close the provider has not published (yet): "
+                    "it is dropped from the rows like any null-close session and "
+                    "listed in unpublishedSessions (an original with such sessions "
+                    "and no row is rejected: UnpublishedClose). A caller needing that "
+                    "day's close retries and never reads a halt: a collection with T "
+                    "unpublished in any of the member's series is an error (collected "
+                    "again), a KR ranking with T unpublished is a market error "
+                    "(close_unpublished, rebuild), and an evaluation series whose "
+                    "latest session is unpublished is left out of that run (an "
+                    "error), never replaced by a kept series. A halt is no session on "
+                    "T, or a null close without volume",
+                    "transientFailure": "a failed series some host failed to "
+                    "download (timeout, connection error, an HTTP status other than "
+                    "404) or rejected as UnpublishedClose; a later download may fix "
+                    "it, so collection retries it for every class (never "
+                    "class_price_proxy), the KR ranking rebuilds and evaluation never "
+                    "replaces it by a kept series",
                 },
             }
         )

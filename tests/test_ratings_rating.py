@@ -6,7 +6,10 @@ import random
 import unittest
 from unittest import mock
 
-import numpy
+try:  # an independent cross-check of the quantiles and spreads (hash-pinned in CI)
+    import numpy
+except ImportError:  # pragma: no cover - only where numpy is not installed
+    numpy = None
 
 from equitylab.data import digest
 from ratings import prices as price_data
@@ -1377,6 +1380,7 @@ class SplitTests(unittest.TestCase):
 
 
 class ScoreTests(unittest.TestCase):
+    @unittest.skipIf(numpy is None, "numpy cross-check not installed")
     def test_winsorizes_at_market_quantiles(self):
         values = [float(v) for v in range(50)] + [1000.0]
         rows = [
@@ -1400,6 +1404,7 @@ class ScoreTests(unittest.TestCase):
         self.assertNotAlmostEqual(sum(sector) / len(sector), center)
         self.assertNotAlmostEqual(out["U26"]["z"]["fcfYield"], 0.0)
 
+    @unittest.skipIf(numpy is None, "numpy cross-check not installed")
     def test_small_sector_falls_back_to_market_mean(self):
         rows = [
             scored_input(f"A{k}", sector="A", fcfYield=float(k), momentum12_1=0.1 * k)

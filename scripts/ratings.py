@@ -358,8 +358,14 @@ def cmd_universe_merge(args) -> tuple[dict, bool]:
     if pinned and args.as_of:
         pinned = {m: pinned.get(m, args.as_of) for m in common.MARKETS}
     try:
+        if args.only and (args.as_of or not pinned):
+            raise ValueError("--only merges exactly --as-of-us/--as-of-kr")
         path = universe.merge(
-            pinned or args.as_of, args.overwrite, args.limit, gate=args.gate
+            pinned or args.as_of,
+            args.overwrite,
+            args.limit,
+            gate=args.gate,
+            only=args.only,
         )
     except (FileExistsError, FileNotFoundError, ValueError) as exc:
         raise CliError(f"cannot merge the universe parts: {exc}") from None
@@ -505,8 +511,12 @@ def collect_member(member: dict, as_of: str, online: bool, code: str) -> dict:
     The record carries the protocol hash and the code digest it was collected under.
     A failed series of the member's own symbol (Korea: the common) makes the record an
     error (collected again); a Korean preferred class whose series is not ok (HTTP
-    404, no sessions, any failure) does not (L5): the rating prices that class at the
-    common close (class_price_proxy), and ``classFailures`` keeps the class's failure.
+    404 on every host, no sessions, a rejected original) does not (L5): the rating
+    prices that class at the common close (class_price_proxy), and ``classFailures``
+    keeps the class's failure. D17: any symbol whose download failed transiently
+    (prices.transient_failure) or whose series traded on T without a published close
+    (prices.unpublished) makes the record an error, collected again: a later download
+    may fix it, so it is never a halt or a proxy.
     """
     started = time.monotonic()
     record = dict(
@@ -542,9 +552,13 @@ def collect_member(member: dict, as_of: str, online: bool, code: str) -> dict:
             )
             record["prices"][symbol] = series
             if series.get("status") == "ok":
+                if prices.unpublished(series, as_of):  # D17: collect again
+                    errors.append(
+                        f"prices {symbol}: {as_of} traded without a published close"
+                    )
                 continue
-            if symbol == member.get("priceSymbol"):  # the common: collect again
-                errors.append(f"prices {symbol}: {series.get('error')}")
+            if symbol == member.get("priceSymbol") or prices.transient_failure(series):
+                errors.append(f"prices {symbol}: {series.get('error')}")  # again
             else:  # L5: a preferred class is priced at the common close
                 record["classFailures"][symbol] = series.get("error")
     except Exception as exc:  # company boundary: the modules should not raise
@@ -1267,12 +1281,26 @@ def fetch_series(symbols_, through: str, online: bool, start: str) -> dict:
     SHA-256 of the original behind each symbol's rows and the fresh downloads.
 
     A failed download falls back to the kept original that serves the evaluation best
-    (stored_series), so a delisted or renamed member keeps the closes it had.
+    (stored_series), so a delisted or renamed member keeps the closes it had; a
+    download that failed transiently (prices.transient_failure) or whose latest session
+    traded without a published close (D17) does not: the symbol has no series in this
+    run (an error, never a stale close frozen as an exit) and a later run fetches it.
     """
     out = dict(series={}, fetched={}, stored=set(), sources={}, downloaded={})
     for symbol in symbols_:
         result = prices.series(symbol, through, online=online, start=start)
         out["fetched"][symbol] = brief(result)
+        rows = result.get("rows") or []
+        pending = [
+            day
+            for day in result.get("unpublishedSessions") or []
+            if not rows or day > rows[-1][0]
+        ]
+        if result["status"] == "ok" and pending:  # D17: not settled yet
+            out["fetched"][symbol]["unpublished"] = max(pending)
+            continue
+        if result["status"] != "ok" and prices.transient_failure(result):
+            continue  # D17: retried by a later run, never served from storage
         if result["status"] == "ok":
             out["series"][symbol] = result["rows"]
             out["sources"][symbol] = (result.get("source") or {}).get("sha256")
@@ -1615,6 +1643,11 @@ def parser() -> argparse.ArgumentParser:
     c.add_argument("--limit", type=count, help="merge the smoke parts of --limit N")
     c.add_argument(
         "--overwrite", action="store_true", help="replace a month file not merged"
+    )
+    c.add_argument(
+        "--only",
+        action="store_true",
+        help="exactly the markets of --as-of-us/--as-of-kr (no other part of the month)",
     )
     gate(c, "merge the computability-check universe (<asOf>-gate.json)")
 

@@ -1414,7 +1414,6 @@ class KrUniverseTests(unittest.TestCase):
                 **{lg: FetchError(f"Yahoo Finance: TimeoutError for {lg}")}
             ),
             "rejected original": Sources(**{lg: refused}),
-            "unpublished close on T": Sources(**{lg: unpublished}),
             "a 404 worded otherwise": Sources(**{lg: FetchError("HTTP 404 (LG)")}),
         }
         for label, sources in cases.items():
@@ -1431,8 +1430,17 @@ class KrUniverseTests(unittest.TestCase):
             self.assertIn("never removes a candidate", info["error"], label)
             self.assertTrue(info["error"].endswith("rebuild"), label)
             self.assertEqual(result["members"], [], label)
-            if label == "unpublished close on T":
-                self.assertIn("UnpublishedClose: close of 2026-10-02", info["error"])
+        # D17: LG's common traded on T without a published close: rebuild, never a
+        # halt; the same for a preferred class (never the common's close).
+        result, _, _ = run(Sources(**{lg: unpublished}), markets=("KR",), top=8)
+        info = result["markets"]["KR"]
+        self.assertEqual((result["status"], info["status"]), ("error", "error"))
+        self.assertIn(
+            "KR candidate 003550 LG (pool rank 8): 003550.KS close_unpublished "
+            "(2026-10-02 traded without a published close",
+            info["error"],
+        )
+        self.assertTrue(info["error"].endswith("rebuild once the close is published"))
         # An offline replay without the stored original is no confirmed 404 either.
         missing = Sources(**{lg: FetchError(f"No stored original for {lg}")})
         result, _, _ = run(missing, markets=("KR",), top=8, online=False, env="")

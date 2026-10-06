@@ -462,7 +462,7 @@ class NoSessionsTests(unittest.TestCase):
         )
         self.assertEqual(len(result["error"].split("; ")), 2)
 
-    def test_an_unpublished_last_close_fails_the_series_never_a_halt(self):
+    def test_a_close_traded_but_not_published_is_listed_never_a_halt(self):
         # D17, seen live 2026-10-07 00:30 KST: 005930.KS 2026-10-06 close null, volume
         # 14,340,821. A halted session has no volume (094800.KS 2026-10-06: null, null).
         days = ["2026-10-01", "2026-10-02", "2026-10-05"]
@@ -475,24 +475,24 @@ class NoSessionsTests(unittest.TestCase):
             )
 
         pending = blob([5000.0, 5100.0, None], [10, 12, 14_340_821])
-        with self.assertRaises(prices.UnpublishedClose) as caught:
-            prices._parse(pending, self.SYMBOL, "2025-08-31", THROUGH, late)
-        self.assertIn("close of 2026-10-05 not published", str(caught.exception))
-        self.assertTrue(issubclass(prices.UnpublishedClose, prices.PARSE_ERRORS))
-        result, calls = run(self.SYMBOL, pending, pending, retrieved=late)
-        self.assertEqual((result["status"], result["rows"]), ("error", []))
-        self.assertIsNone(result["empty"])  # never "no sessions": not a halt
-        self.assertEqual(len(calls), 2)
-        self.assertEqual(len(result["error"].split("; ")), 2)
-        self.assertIn("UnpublishedClose", result["error"])
-        # The other host's published close wins.
-        good = blob([5000.0, 5100.0, 5200.0], [10, 12, 14])
-        result, _ = run(self.SYMBOL, pending, good, retrieved=late)
+        result, calls = run(self.SYMBOL, pending, retrieved=late)
         self.assertEqual(result["status"], "ok")
-        self.assertEqual(result["rows"][-1], ["2026-10-05", 5200.0, 5200.0])
-        self.assertIn("fallback to query1", result["notes"][0])
-        # A null close without volume (none, zero or no volume list) stays a halt:
-        # the session is dropped and the series ends at the last valid row.
+        self.assertEqual(len(calls), 1)
+        self.assertEqual(result["rows"][-1][0], "2026-10-02")
+        self.assertEqual(result["unpublishedSessions"], ["2026-10-05"])
+        self.assertEqual(result["nullSessions"], ["2026-10-05"])
+        self.assertTrue(prices.unpublished(result, "2026-10-05"))
+        self.assertFalse(prices.unpublished(result, "2026-10-02"))
+        self.assertIn("1 traded without a close (D17): 2026-10-05", result["notes"])
+        again = prices._parse(pending, self.SYMBOL, "2025-08-31", THROUGH, late)
+        self.assertEqual(again["unpublishedSessions"], ["2026-10-05"])
+        # Anywhere in the window: a later valid row does not make it a halt either.
+        hole = blob([5000.0, None, 5200.0], [10, 12, 14])
+        result, _ = run(self.SYMBOL, hole, retrieved=late)
+        self.assertEqual([r[0] for r in result["rows"]], ["2026-10-01", "2026-10-05"])
+        self.assertEqual(result["unpublishedSessions"], ["2026-10-02"])
+        # A null close without volume (none, zero or no volume list) is a halt: only
+        # dropped, never listed.
         for volumes in ([10, 12, None], [10, 12, 0], None):
             with self.subTest(volumes=volumes):
                 held = blob([5000.0, 5100.0, None], volumes)
@@ -500,17 +500,51 @@ class NoSessionsTests(unittest.TestCase):
                 self.assertEqual(result["status"], "ok")
                 self.assertEqual(result["rows"][-1][0], "2026-10-02")
                 self.assertEqual(result["nullSessions"], ["2026-10-05"])
-        # An earlier traded null-close session (a historical hole) is dropped.
-        hole = blob([5000.0, None, 5200.0], [10, 12, 14])
-        result, _ = run(self.SYMBOL, hole, retrieved=late)
-        self.assertEqual(result["status"], "ok")
-        self.assertEqual([r[0] for r in result["rows"]], ["2026-10-01", "2026-10-05"])
-        self.assertEqual(result["nullSessions"], ["2026-10-02"])
+                self.assertEqual(result["unpublishedSessions"], [])
+                self.assertFalse(prices.unpublished(result, "2026-10-05"))
         # Before the closes settle the session is unsettled, not unpublished.
         early = "2026-10-05T07:00:00+00:00"  # 16:00 KST
         result, _ = run(self.SYMBOL, pending, retrieved=early)
-        self.assertEqual(result["status"], "ok")
-        self.assertEqual(result["rows"][-1][0], "2026-10-02")
+        self.assertEqual(result["unpublishedSessions"], [])
+        # Nothing published at all: rejected (UnpublishedClose), never NoSessions.
+        nothing = blob([None, None, None], [10, 12, 14])
+        with self.assertRaises(prices.UnpublishedClose) as caught:
+            prices._parse(nothing, self.SYMBOL, "2025-08-31", THROUGH, late)
+        self.assertNotIsInstance(caught.exception, prices.NoSessions)
+        result, _ = run(self.SYMBOL, nothing, nothing, retrieved=late)
+        self.assertEqual(result["status"], "error")
+        self.assertIsNone(result["empty"])  # not "nothing traded": not listed-after-T
+        self.assertTrue(prices.transient_failure(result))
+
+    def test_transient_failures_are_told_from_answers(self):
+        key = prices.source_key(self.SYMBOL, THROUGH)
+        transient = {
+            "timeout": FetchError(f"Yahoo Finance: TimeoutError for {key}"),
+            "HTTP 503": FetchError(f"Yahoo Finance: HTTP 503 for {key}"),
+            "HTTP 429": FetchError(f"Yahoo Finance: HTTP 429 for {key}"),
+        }
+        not_found = FetchError(f"Yahoo Finance: HTTP 404 for {key}")
+        other = chart("777771.KS", self.ZONE, [], [], currency="KRW")
+        for label, error in transient.items():
+            with self.subTest(label):
+                result, _ = run(self.SYMBOL, error, error)
+                self.assertTrue(prices.transient_failure(result))
+                # One host failing transiently is enough: the other's 404 is no proof.
+                result, _ = run(self.SYMBOL, not_found, error)
+                self.assertTrue(prices.transient_failure(result))
+        for label, responses in {
+            "HTTP 404 on every host": (not_found, not_found),
+            "rejected originals": (other, other),
+            "404 and a rejected original": (not_found, other),
+        }.items():
+            with self.subTest(label):
+                result, _ = run(self.SYMBOL, *responses)
+                self.assertEqual(result["status"], "error")
+                self.assertFalse(prices.transient_failure(result))
+        self.assertFalse(prices.transient_failure(dict(status="ok")))
+        self.assertFalse(
+            prices.transient_failure(dict(status="error", error="invalid request: x"))
+        )
 
     def test_other_rejections_and_a_working_host_are_not_empty(self):
         cases = {
@@ -666,7 +700,15 @@ class NoDataTests(unittest.TestCase):
 class ReparseTests(unittest.TestCase):
     """D12': a kept series is rebuilt from its original with prices._parse."""
 
-    PARSED = ("rows", "currency", "timezone", "splits", "nullSessions", "notes")
+    PARSED = (
+        "rows",
+        "currency",
+        "timezone",
+        "splits",
+        "nullSessions",
+        "unpublishedSessions",
+        "notes",
+    )
 
     def test_original_reparses_to_the_series(self):
         for symbol in ("AAPL", "005930.KS", "NFLX", "^SP500TR"):

@@ -6,24 +6,33 @@ name: Ratings operation
 # still refuse whatever the protocol forbids.
 on:
   schedule:
-    # Registration days (UTC 1st-10th), every two hours, off the top of the hour.
-    - cron: "23 */2 1-10 * *"
+    # Registration days (UTC 1st-10th), every two hours 00:23-14:23 UTC = 09:23-23:23
+    # KST: Yahoo blanked the latest KRX closes around 00:30 KST (D17), so KR work stays
+    # in the Korean day; SSGA's T holdings (posted the next US business day) stay up
+    # until the following posting, which these slots cover.
+    - cron: "23 0-14/2 1-10 * *"
     # The computability-check gate: asOf 2026-10-19, recorded from 2026-10-20.
-    - cron: "23 */2 19-23 10 *"
+    - cron: "23 0-14/2 19-23 10 *"
     # Weekly official evaluation: Saturday 02:53 UTC (Friday evening in New York).
     - cron: "53 2 * * 6"
+    # Midweek run: keeps the Actions cache (kept series) from expiring after 7 days.
+    - cron: "53 2 * * 3"
   workflow_dispatch:
     inputs:
       mode:
-        description: "rehearse: past gate universes and a smoke universe, nothing recorded; operate: what is due, recorded and pushed"
+        description: "rehearse: universes of the latest sessions, collected and checked, nothing recorded; operate: what is due, recorded and pushed"
         type: choice
         options: [rehearse, operate]
         default: rehearse
       evaluate:
-        description: "operate only: official evaluation (auto = Saturdays UTC)"
+        description: "operate only: run the official evaluation too"
         type: choice
-        options: [auto, "yes", "no"]
-        default: auto
+        options: ["no", "yes"]
+        default: "no"
+      limit:
+        description: "rehearse only: smoke universes of the first N members (blank: full)"
+        type: string
+        default: ""
 
 permissions:
   contents: write
@@ -41,6 +50,10 @@ jobs:
       OPERATE: ${{ inputs.mode != 'rehearse' }}
     steps:
       - uses: actions/checkout@v7
+        with:
+          # The branch as it is now, not the commit the run was queued at: a run that
+          # waited behind another must see the parts and events it pushed.
+          ref: main
       - uses: actions/setup-python@v7
         with:
           python-version: "3.12"
@@ -54,31 +67,36 @@ jobs:
             data/ratings/work
           key: ratings-ops-${{ github.run_id }}-${{ github.run_attempt }}
           restore-keys: ratings-ops-
-      - name: Check the ratings code offline
-        # ratings/ needs only the standard library; the tests cross-check with numpy
-        # (hash-pinned in the offline lock).
+      - name: Install the tests' numpy cross-check (hash-pinned; skipped if PyPI fails)
+        continue-on-error: true
         run: |
           grep '^numpy==' requirements-offline.lock > "$RUNNER_TEMP/numpy.txt"
           python -m pip install --quiet --no-deps --require-hashes -r "$RUNNER_TEMP/numpy.txt"
-          python -m unittest discover -s tests -p 'test_ratings_*.py'
+      - name: Check the ratings code offline
+        # ratings/ needs only the standard library.
+        run: python -m unittest discover -s tests -p 'test_ratings_*.py'
       - name: Operate
+        id: operate
         if: env.OPERATE == 'true'
         env:
           DART_API_KEY: ${{ secrets.DART_API_KEY }}
           SEC_USER_AGENT: ${{ vars.SEC_USER_AGENT }}
-          EVALUATE: ${{ inputs.evaluate || 'auto' }}
+          EVALUATE: ${{ (github.event.schedule == '53 2 * * 6' || inputs.evaluate == 'yes') && 'yes' || 'no' }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          python scripts/ratings_ops.py operate --push --prune --evaluate "$EVALUATE"
+          flags="--push --prune"
+          if [ "$EVALUATE" = yes ]; then flags="$flags --evaluate"; fi
+          python scripts/ratings_ops.py operate $flags
       - name: Rehearse (nothing recorded or pushed)
         if: env.OPERATE != 'true'
         env:
           DART_API_KEY: ${{ secrets.DART_API_KEY }}
           SEC_USER_AGENT: ${{ vars.SEC_USER_AGENT }}
-        run: python scripts/ratings_ops.py rehearse
+          LIMIT: ${{ inputs.limit }}
+        run: python scripts/ratings_ops.py rehearse ${LIMIT:+--limit "$LIMIT"}
       - name: Save kept evaluation series and unfinished collections
-        if: always() && env.OPERATE == 'true'
+        if: always() && env.OPERATE == 'true' && steps.operate.outputs.worked == 'true'
         uses: actions/cache/save@v6
         with:
           path: |

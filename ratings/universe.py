@@ -118,6 +118,7 @@ GATE_SUFFIX = "-gate"
 # "Data doesn't exist" (or 404). Any other failure to price the common makes the KR
 # market an error.
 HALTED, NOT_FOUND = "no_close_on_as_of", "symbol_not_found"
+UNPUBLISHED = "close_unpublished"  # D17: T traded without a published close
 NOT_LISTED = "not_listed_on_as_of"
 UNRANKED_REASONS = (HALTED, NOT_FOUND, NOT_LISTED)
 NS = "{http://schemas.openxmlformats.org/spreadsheetml/2006/main}"
@@ -177,13 +178,17 @@ RULES = dict(
         "listedShares x that class's close on T (prices.series with its window through "
         "T, requested through the build's Asia/Seoul date: request_through, not T+2; "
         "close_on_or_before); a preferred class without its own close on T (no "
-        "session on T, or a series that failed for any reason but close_unsettled) "
-        "uses the common close (rankingProxy, issue class_price_proxy); members are "
+        "session on T, every host HTTP 404, or a rejected original) uses the common "
+        "close (rankingProxy, issue class_price_proxy), but one whose close is "
+        "unsettled, traded on T without a published close (D17: close_unpublished, "
+        "prices.unpublishedSessions) or whose download failed transiently "
+        "(prices.transient_failure) makes the market an error (rebuild); members are "
         "the top candidates by that cap, ties by code; fewer than top ranked "
         "candidates is a market error",
         unranked="only unrankedReasons leave a candidate unranked (unranked, issue "
         f"candidate_unranked; never a stale close): {HALTED} (its common's series, "
-        "retrieved after T's closes settled, has no session on T: a halt), "
+        "retrieved after T's closes settled, has no session on T: a halt; a session "
+        "traded on T without a published close is not one, D17), "
         f"{NOT_FOUND} (every Yahoo host answers HTTP 404 for its common) and "
         f"{NOT_LISTED} (every Yahoo host answers the request for its common's symbol, "
         "retrieved after T's closes settled, with a chart in KRW without a settled "
@@ -195,8 +200,8 @@ RULES = dict(
         "without sessions as above); any other failure to price the common (a "
         "transient download failure, a rejected original: a symbol or currency "
         f"mismatch, an undecodable response, any other HTTP {prices.NO_DATA_STATUS}, "
-        "a close not published yet (prices.UnpublishedClose: traded volume, no "
-        "close)), "
+        "a close on T not published yet (D17: close_unpublished, or "
+        "prices.UnpublishedClose when nothing in the window is published)), "
         "a class without listed shares or a class priced from a series "
         "retrieved before T's closes settled makes the market an error (rebuild): a "
         "failed download never removes a candidate",
@@ -252,7 +257,8 @@ RULES = dict(
         "silently replaced",
         merged="data/ratings/universe/<asOf>.json = registry.merge_universe of the "
         "month's parts (asOf = the later T; a market without a part at that date uses "
-        "its only part of the month), rewritten only when a part changes; an earlier "
+        "its only part of the month, except in a merge of exactly the named markets: "
+        "universe-merge --only), rewritten only when a part changes; an earlier "
         "merge of the month is removed only when every market it holds has the same T "
         "in the new merge",
         gate=f"the computability-check universe: parts in <T>{GATE_SUFFIX}/, merged "
@@ -509,13 +515,17 @@ def save(universe: dict, overwrite: bool = False, gate: bool = False) -> Path:
         raise MonthNotMerged(targets, exc) from exc
 
 
-def merge(as_of, overwrite: bool = False, limit=None, gate: bool = False) -> Path:
+def merge(
+    as_of, overwrite: bool = False, limit=None, gate: bool = False, only: bool = False
+) -> Path:
     """Merge the month's parts into data/ratings/universe/<asOf>.json; returns its path.
 
     ``as_of`` is YYYY-MM-DD or ``{market: YYYY-MM-DD}``. A market named in a dict uses
     its part of that date (FileNotFoundError if absent). Otherwise a market uses its part
     of the given date, else its only part in that month (several are ambiguous); a market
-    without a part is left out. ``gate`` merges the gate universe's parts into
+    without a part is left out; with ``only`` a market not named in the dict is left
+    out too (an operator merging exactly the parts it built). ``gate`` merges the gate
+    universe's parts into
     <asOf>-gate.json and ``limit`` a smoke build's; each kind only ever sees its own
     parts and files. The content is ``registry.merge_universe`` (the one merge: each
     market keeps its own build and capture times, ``part`` = the part file and its
@@ -527,7 +537,7 @@ def merge(as_of, overwrite: bool = False, limit=None, gate: bool = False) -> Pat
     """
     from ratings import registry  # imports this module; one merge for CLI and save()
 
-    days = _part_days(as_of, limit, gate)
+    days = _part_days(as_of, limit, gate, only)
     if not days:
         raise FileNotFoundError(f"No universe part for {as_of}")
     chosen, files = {}, {}
@@ -596,8 +606,10 @@ def _content(merged: dict) -> bytes:
     return canonical({k: v for k, v in merged.items() if k != "mergedAt"})
 
 
-def _part_days(as_of, limit=None, gate=False) -> dict:
+def _part_days(as_of, limit=None, gate=False, only=False) -> dict:
     """``{market: T}`` of the parts to merge (see ``merge``)."""
+    if only and not isinstance(as_of, dict):
+        raise ValueError("only merges the markets named in a {market: T} dict")
     if isinstance(as_of, dict):
         if set(as_of) - set(MARKETS):
             raise ValueError(f"as_of keys must be markets of {MARKETS}")
@@ -615,6 +627,8 @@ def _part_days(as_of, limit=None, gate=False) -> dict:
     days = {}
     for market in MARKETS:
         day = given.get(market)
+        if only and not day:
+            continue  # exactly the named markets: never another part of the month
         if day and part_path(market, day, limit, gate).exists():
             days[market] = day
             continue
@@ -1201,7 +1215,14 @@ def _close_on(
             failed = (
                 NOT_FOUND if _not_found(series, symbol, day) else "price_unavailable"
             )
-            return dict(close=None, reason=failed, detail=series.get("error"), at=None)
+            transient = prices.transient_failure(series)
+            return dict(
+                close=None,
+                reason=failed,
+                detail=series.get("error"),
+                at=None,
+                transient=transient,
+            )
         empty = series["empty"]
     manifest = (empty or series).get("source") or {}
     sources.append(manifest)
@@ -1209,6 +1230,9 @@ def _close_on(
     hit = None if empty else prices.close_on_or_before(series.get("rows") or [], day)
     if hit is not None and hit[0] == day:
         return dict(close=hit[1], reason=None, detail=None, at=at)
+    if not empty and prices.unpublished(series, day):  # D17: traded, close not out
+        detail = f"{day} traded without a published close (retrieved {at})"
+        return dict(close=None, reason=UNPUBLISHED, detail=detail, at=at)
     retrieved, settles = _moment(at), _settled(day)
     if retrieved is None or retrieved < settles:  # prices dropped the day unsettled
         detail = f"retrieved {at}, before the closes settle at {settles.isoformat()}"
@@ -1227,6 +1251,7 @@ def _unpriced(candidate: str, share_class: dict, result: dict) -> str:
         f"({result['detail']}); a failed price download never removes a candidate "
         f"(only {', '.join(UNRANKED_REASONS)} leave one unranked): rebuild"
         + (" after the closes settle" if late else "")
+        + (" once the close is published" if result["reason"] == UNPUBLISHED else "")
     )
 
 
@@ -1278,7 +1303,11 @@ def _rank_at_close(
                     share_class["priceSymbol"], day, online, sources, through
                 )
                 times += [own["at"]] if own["at"] else []
-                if own["reason"] == "close_unsettled":
+                # D17: a close not out yet or a download a retry may fix is no
+                # reason to price the class at the common close: rebuild.
+                if own["reason"] in ("close_unsettled", UNPUBLISHED) or own.get(
+                    "transient"
+                ):
                     raise FetchError(_unpriced(name, share_class, own))
             proxy = own["close"] is None
             close = common["close"] if proxy else own["close"]

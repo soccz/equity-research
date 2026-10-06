@@ -210,7 +210,10 @@ class Fakes:
     signal); ``start`` maps symbols to the first session they still return (a reset
     history); ``scale`` multiplies a symbol's closes. Series are retrieved at the CLI's
     clock and stored as Yahoo chart originals; ``late`` symbols are retrieved a day
-    after their window ends (a collect that crossed local midnight).
+    after their window ends (a collect that crossed local midnight). ``transient``
+    symbols fail as a timeout and an HTTP 503 would (prices.transient_failure);
+    ``unpublished`` maps symbols to a session that traded without a published close
+    (D17: left out of the rows, listed in unpublishedSessions; None = the last one).
     """
 
     def __init__(
@@ -223,7 +226,10 @@ class Fakes:
         start=None,
         scale=None,
         late=(),
+        transient=(),
+        unpublished=None,
     ):
+        self.transient, self.unpublished = set(transient), dict(unpublished or {})
         self.fail, self.boom, self.price_fail = set(fail), set(boom), set(price_fail)
         self.gap, self.thin, self.late = set(gap), set(thin), set(late)
         self.start, self.scale = dict(start or {}), dict(scale or {})
@@ -283,6 +289,18 @@ class Fakes:
                 splits=[],
                 notes=[],
             )
+        if symbol in self.transient:
+            key = f"yahoo-{symbol}-{through}"
+            return dict(
+                symbol=symbol,
+                status="error",
+                error=f"query2: Yahoo Finance: TimeoutError for {key}; "
+                f"query1: Yahoo Finance: HTTP 503 for {key}",
+                rows=[],
+                source=None,
+                splits=[],
+                notes=[],
+            )
         step = 0.01 * (sum(map(ord, symbol)) % 7 + 1)
         first, end = (d.isoformat() for d in prices._window(through, start))
         factor = self.scale.get(symbol, 1.0)
@@ -293,6 +311,10 @@ class Fakes:
             and not (symbol in self.gap and d == AS_OF)
             and d >= self.start.get(symbol, "")
         ]
+        pending = []
+        if symbol in self.unpublished and rows:
+            pending = [self.unpublished[symbol] or rows[-1][0]]
+            rows = [row for row in rows if row[0] not in pending]
         korean = symbol.endswith((".KS", ".KQ"))
         zone = "Asia/Seoul" if korean else "America/New_York"
         currency = "KRW" if korean else "USD"
@@ -310,6 +332,7 @@ class Fakes:
             timezone=zone,
             window={"from": first, "through": end},
             splits=[],
+            unpublishedSessions=pending,
             notes=[],
         )
 
@@ -646,6 +669,31 @@ class CollectTests(Store):
         self.assertEqual(record["status"], "error")
         self.assertTrue(record["errors"][0].startswith("prices 000010.KS: "))
         self.assertEqual(record["classFailures"], {})
+
+    def test_a_retry_may_fix_is_never_a_proxy_or_a_halt(self):
+        """D17: a series that traded on T without a published close, or whose download
+        failed transiently, makes the checkpoint an error (collected again), for the
+        common and for a preferred class alike; only a class the source answers (HTTP
+        404 on every host, a rejected original) is priced at the common close."""
+        self.save_universe(fake_universe())
+        cases = {
+            "common unpublished on T": Fakes(unpublished={"000010.KS": AS_OF}),
+            "class unpublished on T": Fakes(unpublished={"000015.KS": AS_OF}),
+            "class failing transiently": Fakes(transient={"000015.KS"}),
+        }
+        for label, fakes in cases.items():
+            with self.subTest(label):
+                self.collect(fakes, "--refresh", "--markets", "KR", online=True)
+                record = {r["id"]: r for r in self.lines("KR")}["KR:000010"]
+                self.assertEqual(record["status"], "error")
+                self.assertEqual(record["classFailures"], {})
+                self.assertTrue(record["errors"][0].startswith("prices 0000"))
+        # A session after T traded without a published close is not T's business.
+        later = Fakes(unpublished={"000015.KS": None, "000010.KS": None})
+        self.clock = self.clock + timedelta(days=2)
+        self.collect(later, "--refresh", "--markets", "KR", online=True)
+        record = {r["id"]: r for r in self.lines("KR")}["KR:000010"]
+        self.assertEqual((record["status"], record["classFailures"]), ("ok", {}))
 
     def test_each_market_is_collected_at_its_own_t(self):
         """N8: December's universe holds KR at Dec 30 and the US at Dec 31. collect
@@ -2025,6 +2073,27 @@ class EvaluationTests(Store):
         original.write_text(json.dumps(edited))
         code, summary, _ = self.evaluate(fakes=Fakes(price_fail={"U2", "U3"}))
         self.assertEqual((code, summary["errors"], summary["storedSeries"]), (1, 2, []))
+
+    def test_a_retry_may_fix_never_brings_a_kept_series(self):
+        """D17: a download that failed transiently, or whose latest session traded
+        without a published close, leaves the symbol without a series in that run (a
+        counted error); a kept series stands in only for a source that answered."""
+        self.register_month()
+        self.assertEqual(self.evaluate()[0], 0)
+        for label, fakes in {
+            "transient": Fakes(transient={"U1"}),
+            "latest close unpublished": Fakes(unpublished={"U1": None}),
+        }.items():
+            with self.subTest(label):
+                code, summary, _ = self.evaluate(fakes=fakes)
+                self.assertEqual((code, summary["errors"]), (1, 1))
+                self.assertEqual(summary["storedSeries"], [])
+                self.assertEqual(
+                    summary["periods"][0]["errors"],
+                    [dict(id="US:0000000001", symbol="U1", reason="no_price_series")],
+                )
+        code, summary, _ = self.evaluate(fakes=Fakes(price_fail={"U1"}))
+        self.assertEqual((code, summary["storedSeries"]), (0, ["U1"]))
 
     def test_a_reset_history_is_an_error_for_an_open_period(self):
         """D12': a held member whose fresh series no longer covers its open period is
