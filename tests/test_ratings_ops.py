@@ -344,8 +344,7 @@ class GateRuns(OpsCase):
         report = coverage(False, US=dict(noCloseOnAsOf=3))
         cli = FakeCli(collect=OK_COLLECT, **{"coverage-report": report})
         run = self.run_ops("2026-10-20T14:23:00+00:00", cli)
-        refresh = [c for c in cli.calls if c[0] == "collect" and "--refresh" in c]
-        self.assertEqual([c[-1] for c in refresh], ["US"])
+        self.assertFalse([c for c in cli.calls if "--refresh" in c])
         recording = [
             c for c in cli.calls if c[0] == "coverage" and "--offline" not in c
         ]
@@ -472,7 +471,8 @@ class MonthRuns(OpsCase):
                 "universe --as-of US",
                 "universe --as-of KR",
                 "universe-merge --as-of-us --as-of-kr --only",
-                "collect US KR",
+                "collect US",
+                "collect KR",
                 "score --as-of-us --as-of-kr --dry-run",
                 "score --as-of-us --as-of-kr",
             ],
@@ -567,16 +567,18 @@ class MonthRuns(OpsCase):
         self.assertTrue(any("window closed" in d for d in run.done))
 
     def test_a_pending_kr_gate_holds_the_month_then_leaves_kr_out(self):
-        self.gates["KR"] = None
+        self.gates["KR"] = None  # its part is in: it may still be recorded
+        self.save_part("KR", G, gate=True)
         cli = FakeCli(collect=OK_COLLECT)
         run = self.run_ops(self.NOW, cli, holdings="2026-10-30")
         self.assertEqual(
-            cli.commands(),
+            [c for c in cli.commands() if "--gate" not in c],
             [
                 "universe --as-of US",
                 "universe --as-of KR",
                 "universe-merge --as-of-us --as-of-kr --only",
-                "collect US KR",
+                "collect US",
+                "collect KR",
             ],
         )
         self.assertTrue(any("wait for ['KR']" in w for w in run.waiting))
@@ -592,6 +594,22 @@ class MonthRuns(OpsCase):
         self.assertEqual(cli.calls[-1][:3], ["score", "--as-of-us", "2026-10-30"])
         self.assertNotIn("--as-of-kr", cli.calls[-1])
         self.assertTrue(any("registered without ['KR']" in p for p in run.problems))
+
+    def test_a_kr_gate_that_can_never_be_recorded_holds_nothing(self):
+        # No KR gate part and its window long closed: KR is out of the months, the
+        # US registers at once (no waiting until its last call every month).
+        self.gates["KR"] = None
+        cli = FakeCli(
+            collect=OK_COLLECT,
+            **{
+                "score-dry": collected(markets=("US",)),
+                "score": dict(labels={}, asOf={}),
+            },
+        )
+        run = self.run_ops(self.NOW, cli, holdings="2026-10-30")
+        self.assertEqual(cli.calls[-1][:3], ["score", "--as-of-us", "2026-10-30"])
+        self.assertNotIn("universe --as-of KR", cli.commands())
+        self.assertFalse(run.waiting)
 
     def test_failed_gates(self):
         self.gates["KR"] = dict(verdict="fail", market="KR")
@@ -647,6 +665,34 @@ class MonthRuns(OpsCase):
         run = self.run_ops("2026-11-06T13:00:00+00:00", cli)  # US: 4 sessions after T
         self.assertEqual(plain.calls[-1][:3], ["score", "--as-of-us", "2026-10-30"])
         self.assertNotIn("--as-of-kr", plain.calls[-1])
+        self.assertTrue(any("registered without ['KR']" in p for p in run.problems))
+
+    def test_a_passing_check_is_retried_and_a_market_left_out_only_late(self):
+        # Review 3: a calendar fetch outage in the dry run never drops a market; one
+        # truly not ready is waited for until the ready market's last call (08:00 ET on
+        # its last window day), then left out with a problem.
+        self.save_part("US", "2026-10-30")
+        self.save_part("KR", "2026-10-30")
+        outage = dict(
+            collected(),
+            checks=["US: ^SP500TR series not retrieved for this registration (...)"],
+        )
+        cli = FakeCli(collect=OK_COLLECT, **{"score-dry": outage})
+        run = self.run_ops("2026-11-06T13:00:00+00:00", cli)
+        self.assertNotIn("score --as-of-us --as-of-kr", cli.commands())
+        self.assertTrue(any("retried by the next run" in p for p in run.problems))
+        kr_refused = dict(collected(), checks=["KR: universe captured ..."])
+        answers = {"score-dry": kr_refused, "score": dict(labels={}, asOf={})}
+        cli = FakeCli(collect=OK_COLLECT, **answers)
+        run = self.run_ops("2026-11-06T12:00:00+00:00", cli)  # 07:00 ET: before
+        self.assertEqual(cli.calls[-1][-1], "--dry-run")
+        self.assertTrue(
+            any("held for ['KR'] until a last call" in w for w in run.waiting)
+        )
+        cli = FakeCli(collect=OK_COLLECT, **answers)
+        run = self.run_ops("2026-11-06T13:00:00+00:00", cli)  # 08:00 ET: last call
+        self.assertEqual(cli.calls[-1][:3], ["score", "--as-of-us", "2026-10-30"])
+        self.assertNotIn("--as-of-kr", cli.calls[-1])
         self.assertTrue(any("registered without ['KR']" in p for p in run.problems))
 
     def test_a_market_whose_window_closes_first_never_closes_the_other(self):
@@ -890,15 +936,38 @@ class PublicationAfterNewCode(GitRemote):
         run = self.ops()
         run.code = "before"
         (self.work / "data/ratings/ledger.jsonl").write_text("a\ngate\n")
-        with mock.patch.object(ops, "code_digest", lambda: "after"), mock.patch(
+        same = mock.patch.object(ops, "protocol_now", lambda: ops.rating.PROTOCOL_HASH)
+        with mock.patch.object(ops, "code_digest", lambda: "after"), same, mock.patch(
             "builtins.print"
         ):
-            with self.assertRaises(ops.OpsError):
+            with self.assertRaises(ops.StopRun):
                 run.publish("coverage gate US pass")
         self.git(self.work, "fetch", "-q")
         self.assertEqual(self.remote_log()[:2], ["coverage gate US pass", "code fix"])
         self.assertTrue(any("pushed: coverage gate" in d for d in run.done))
         self.assertFalse(run.push)
+
+    def test_new_code_with_another_protocol_pushes_nothing(self):
+        # A result made under the old protocol would refuse every later registration
+        # under the new one (D11'): it is not pushed, an operator decides.
+        self.git(self.other, "pull", "-q", "origin", "main")
+        (self.other / "README").write_text("x")
+        self.git(self.other, "add", "-A")
+        self.git(self.other, "commit", "-q", "-m", "protocol change")
+        self.git(self.other, "push", "-q", "origin", "HEAD:main")
+        run = self.ops()
+        run.code = "before"
+        (self.work / "data/ratings/ledger.jsonl").write_text("a\ngate\n")
+        other = mock.patch.object(ops, "protocol_now", lambda: "0" * 64)
+        with mock.patch.object(ops, "code_digest", lambda: "after"), other, mock.patch(
+            "builtins.print"
+        ):
+            with self.assertRaises(ops.StopRun):
+                run.publish("coverage gate US pass")
+        self.git(self.work, "fetch", "-q")
+        self.assertEqual(self.remote_log()[0], "protocol change")
+        self.assertTrue(any("another protocol" in p for p in run.problems))
+        self.assertTrue(run.unpushed)
 
     def test_discarding_restores_the_committed_universe_folder(self):
         folder = self.work / "data/ratings/universe"
