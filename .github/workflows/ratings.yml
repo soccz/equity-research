@@ -55,7 +55,12 @@ jobs:
           key: ratings-ops-${{ github.run_id }}-${{ github.run_attempt }}
           restore-keys: ratings-ops-
       - name: Check the ratings code offline
-        run: python -m unittest discover -s tests -p 'test_ratings_*.py'
+        # ratings/ needs only the standard library; the tests cross-check with numpy
+        # (hash-pinned in the offline lock).
+        run: |
+          grep '^numpy==' requirements-offline.lock > "$RUNNER_TEMP/numpy.txt"
+          python -m pip install --quiet --no-deps --require-hashes -r "$RUNNER_TEMP/numpy.txt"
+          python -m unittest discover -s tests -p 'test_ratings_*.py'
       - name: Operate
         if: env.OPERATE == 'true'
         env:
