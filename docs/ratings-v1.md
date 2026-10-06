@@ -27,7 +27,9 @@
 
 ## 3. 신호 (기준일 T)
 
-공시는 T 이전에 제출된 것만(미국 companyfacts `filed`, 한국 접수번호 앞 8자리), 가격은 T 이하 거래일만 쓴다.
+공시는 T 이전에 제출된 것만(미국 `filed`, 한국 접수번호 앞 8자리), 가격은 T 이하 거래일만 쓴다.
+
+- 미국 재무는 SEC companyfacts를 먼저 쓴다. companyfacts에 아직 없는 최신 정기보고서(T 이전 제출, 같은 기간의 정정 보고서 포함)는 EDGAR 보관소의 그 보고서 XBRL 원본에서 직접 읽는다(차원 없는 컨텍스트만, 보고서가 밝히지 않은 기간은 companyfacts). 원본을 읽지 못하면 그 종목은 자료 부족(companyfacts_lag)이다. 일시적 네트워크 실패는 자료 부족이 아니라 오류로 남겨 다시 수집한다. 2026-10-06 리허설에서 companyfacts가 7월 말 제출 10-Q를 반영하지 않은 S&P 500 종목이 50개였다. 알려진 한계: companyfacts가 원 보고서는 갖고 있고 나중 정정 보고서만 빠진 경우는 아직 잡지 못한다. 온라인에서 영구적인 실패(404 등)가 나면 그 종목은 오류로 남아 점검을 막으므로, 그때 사람이 확인해 처리한다.
 
 | 신호 | 정의 | 근거(2010년 이후) |
 |---|---|---|
@@ -98,5 +100,5 @@
 - 원본은 `ratings.common.fetch()`로만 받아 `data/ratings/sources`에 해시로 저장한다. 네트워크 실패는 `FetchError`로 기록하고 과거 자료로 조용히 대체하지 않는다.
 - 월간 실행 순서: `universe --as-of T --markets KR`(T 18:00 KST 이후) → `universe --as-of T --markets US`(SSGA가 T를 게시한 뒤) → `universe-merge` → `collect` → `score`(정식 등록, 기한 T+5거래일) → 공개 저장소 push → `evaluate`(매월). 점검은 `--gate`로 같은 순서를 밟고 `coverage`로 기록한다.
 - 평가(`evaluate --through D`)의 기준일 D는 두 시장 현지 날짜 중 이른 쪽으로 준다. 한국 오전에 한국 날짜를 쓰면 미국 기간은 아직 그 날짜가 오지 않아 동결되지 않는다. 종목군은 온라인으로 만든 것만 정식 등록·점검에 쓴다.
-- 주요 이슈 코드: universe_fetch_error, candidate_unranked, class_price_proxy, shares_proxy, companyfacts_lag, dart_api_lag, lag_check_unavailable, nonstandard_split, splits_unknown, split_after_as_of, no_price_on_as_of, ff12_stored_original, ff12_definition_changed_pinned_used, series_ends_before_entry, missed_next_registration, revised_after_freeze, unresolved.
+- 주요 이슈 코드: universe_fetch_error, candidate_unranked, class_price_proxy, shares_proxy, companyfacts_lag, filing_xbrl_supplement, dart_api_lag, lag_check_unavailable, nonstandard_split, splits_unknown, split_after_as_of, no_price_on_as_of, ff12_stored_original, ff12_definition_changed_pinned_used, series_ends_before_entry, missed_next_registration, revised_after_freeze, unresolved.
 - 검증: `python3 -m unittest discover -s tests -p 'test_ratings_*.py'`(네트워크 없이; `unshare -rn`으로 확인), `black --check ratings tests/test_ratings_*.py scripts/ratings.py`.

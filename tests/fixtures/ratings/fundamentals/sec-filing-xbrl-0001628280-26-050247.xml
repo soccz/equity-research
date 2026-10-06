@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xbrl
+  xml:lang="en-US"
+  xmlns="http://www.xbrl.org/2003/instance"
+  xmlns:be="http://bloomenergy.com/20260630"
+  xmlns:dei="http://xbrl.sec.gov/dei/2026"
+  xmlns:ecd="http://xbrl.sec.gov/ecd/2026"
+  xmlns:iso4217="http://www.xbrl.org/2003/iso4217"
+  xmlns:link="http://www.xbrl.org/2003/linkbase"
+  xmlns:srt="http://fasb.org/srt/2026"
+  xmlns:us-gaap="http://fasb.org/us-gaap/2026"
+  xmlns:xbrldi="http://xbrl.org/2006/xbrldi"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <link:schemaRef xlink:href="be-20260630.xsd" xlink:type="simple"/>
+    <context id="c-1">
+        <entity>
+            <identifier scheme="http://www.sec.gov/CIK">0001664703</identifier>
+        </entity>
+        <period>
+            <startDate>2026-01-01</startDate>
+            <endDate>2026-06-30</endDate>
+        </period>
+    </context>
+    <context id="c-2">
+        <entity>
+            <identifier scheme="http://www.sec.gov/CIK">0001664703</identifier>
+        </entity>
+        <period>
+            <instant>2026-07-22</instant>
+        </period>
+    </context>
+    <context id="c-3">
+        <entity>
+            <identifier scheme="http://www.sec.gov/CIK">0001664703</identifier>
+        </entity>
+        <period>
+            <instant>2026-06-30</instant>
+        </period>
+    </context>
+    <context id="c-4">
+        <entity>
+            <identifier scheme="http://www.sec.gov/CIK">0001664703</identifier>
+        </entity>
+        <period>
+            <instant>2025-12-31</instant>
+        </period>
+    </context>
+    <context id="c-8">
+        <entity>
+            <identifier scheme="http://www.sec.gov/CIK">0001664703</identifier>
+            <segment>
+                <xbrldi:explicitMember dimension="us-gaap:StatementClassOfStockAxis">us-gaap:CommonClassBMember</xbrldi:explicitMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2025-12-31</instant>
+        </period>
+    </context>
+    <context id="c-25">
+        <entity>
+            <identifier scheme="http://www.sec.gov/CIK">0001664703</identifier>
+        </entity>
+        <period>
+            <startDate>2026-04-01</startDate>
+            <endDate>2026-06-30</endDate>
+        </period>
+    </context>
+    <context id="c-26">
+        <entity>
+            <identifier scheme="http://www.sec.gov/CIK">0001664703</identifier>
+        </entity>
+        <period>
+            <startDate>2025-04-01</startDate>
+            <endDate>2025-06-30</endDate>
+        </period>
+    </context>
+    <context id="c-27">
+        <entity>
+            <identifier scheme="http://www.sec.gov/CIK">0001664703</identifier>
+        </entity>
+        <period>
+            <startDate>2025-01-01</startDate>
+            <endDate>2025-06-30</endDate>
+        </period>
+    </context>
+    <context id="c-348">
+        <entity>
+            <identifier scheme="http://www.sec.gov/CIK">0001664703</identifier>
+            <segment>
+                <xbrldi:explicitMember dimension="us-gaap:EquityMethodInvestmentNonconsolidatedInvesteeAxis">be:KoreanJVMember</xbrldi:explicitMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2026-06-30</instant>
+        </period>
+    </context>
+    <context id="c-349">
+        <entity>
+            <identifier scheme="http://www.sec.gov/CIK">0001664703</identifier>
+            <segment>
+                <xbrldi:explicitMember dimension="us-gaap:EquityMethodInvestmentNonconsolidatedInvesteeAxis">be:KoreanJVMember</xbrldi:explicitMember>
+            </segment>
+        </entity>
+        <period>
+            <instant>2025-12-31</instant>
+        </period>
+    </context>
+    <unit id="shares">
+        <measure>shares</measure>
+    </unit>
+    <unit id="usd">
+        <measure>iso4217:USD</measure>
+    </unit>
+    <dei:AmendmentFlag contextRef="c-1" id="f-25">false</dei:AmendmentFlag>
+    <dei:EntityCentralIndexKey contextRef="c-1" id="f-29">0001664703</dei:EntityCentralIndexKey>
+    <dei:DocumentType contextRef="c-1" id="f-1">10-Q</dei:DocumentType>
+    <dei:DocumentPeriodEndDate contextRef="c-1" id="f-3">2026-06-30</dei:DocumentPeriodEndDate>
+    <dei:EntityRegistrantName contextRef="c-1" id="f-6">BLOOM ENERGY CORPORATION</dei:EntityRegistrantName>
+    <dei:EntityCommonStockSharesOutstanding contextRef="c-2" decimals="INF" id="f-24" unitRef="shares">294527346</dei:EntityCommonStockSharesOutstanding>
+    <us-gaap:Assets contextRef="c-3" decimals="-3" id="f-66" unitRef="usd">5628401000</us-gaap:Assets>
+    <us-gaap:Assets contextRef="c-4" decimals="-3" id="f-67" unitRef="usd">4396711000</us-gaap:Assets>
+    <us-gaap:CommonStockSharesOutstanding contextRef="c-3" decimals="INF" id="f-107" unitRef="shares">293354001</us-gaap:CommonStockSharesOutstanding>
+    <us-gaap:CommonStockSharesOutstanding contextRef="c-4" decimals="INF" id="f-109" unitRef="shares">280045459</us-gaap:CommonStockSharesOutstanding>
+    <us-gaap:CommonStockSharesOutstanding contextRef="c-8" decimals="INF" id="f-144" unitRef="shares">0</us-gaap:CommonStockSharesOutstanding>
+    <us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding contextRef="c-25" decimals="-3" id="f-265" unitRef="shares">323331000</us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding>
+    <us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding contextRef="c-26" decimals="-3" id="f-266" unitRef="shares">232542000</us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding>
+    <us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding contextRef="c-1" decimals="-3" id="f-267" unitRef="shares">323649000</us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding>
+    <us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding contextRef="c-27" decimals="-3" id="f-268" unitRef="shares">231383000</us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding>
+    <us-gaap:NetCashProvidedByUsedInOperatingActivities contextRef="c-1" decimals="-3" id="f-528" unitRef="usd">300042000</us-gaap:NetCashProvidedByUsedInOperatingActivities>
+    <us-gaap:NetCashProvidedByUsedInOperatingActivities contextRef="c-27" decimals="-3" id="f-529" unitRef="usd">-323793000</us-gaap:NetCashProvidedByUsedInOperatingActivities>
+    <us-gaap:PaymentsToAcquirePropertyPlantAndEquipment contextRef="c-1" decimals="-3" id="f-530" unitRef="usd">77823000</us-gaap:PaymentsToAcquirePropertyPlantAndEquipment>
+    <us-gaap:PaymentsToAcquirePropertyPlantAndEquipment contextRef="c-27" decimals="-3" id="f-531" unitRef="usd">21504000</us-gaap:PaymentsToAcquirePropertyPlantAndEquipment>
+    <us-gaap:NetCashProvidedByUsedInOperatingActivities contextRef="c-1" decimals="-5" id="f-615" unitRef="usd">300000000.0</us-gaap:NetCashProvidedByUsedInOperatingActivities>
+    <us-gaap:Assets contextRef="c-348" decimals="-3" id="f-1639" unitRef="usd">63445000</us-gaap:Assets>
+    <us-gaap:Assets contextRef="c-349" decimals="-3" id="f-1640" unitRef="usd">67957000</us-gaap:Assets>
+    <us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding
+      contextRef="c-25"
+      decimals="-3"
+      id="f-1728"
+      unitRef="shares">323331000</us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding>
+    <us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding
+      contextRef="c-26"
+      decimals="-3"
+      id="f-1729"
+      unitRef="shares">232542000</us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding>
+    <us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding contextRef="c-1" decimals="-3" id="f-1730" unitRef="shares">323649000</us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding>
+    <us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding
+      contextRef="c-27"
+      decimals="-3"
+      id="f-1731"
+      unitRef="shares">231383000</us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding>
+</xbrl>

@@ -75,5 +75,75 @@
     "sha256": "2421b2d87ca71cd1b35714aa2369b7bf5f795369c93a5bd6c3685cf1d3d9a907",
     "retrievedAt": "2026-09-30T06:10:27.204672+00:00",
     "trimmed": "unchanged; copied from data/sources/dart-list-005930-2421b2d87ca71cd1.json (equitylab store; query bgn_de 20250101, wider than ratings-v1 asOf - 400 days)"
+  },
+  "sec-facts-CIK0000021344.json": {
+    "key": "sec-facts-CIK0000021344",
+    "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000021344.json",
+    "sha256": "53d363a9aa3071406cda9857654358f4dca42e174a1defb8cc1ce9ad2a4c9e40",
+    "retrievedAt": "2026-10-06T13:13:37.974152+00:00",
+    "trimmed": "concepts {'dei': ['EntityCommonStockSharesOutstanding'], 'us-gaap': ['NetCashProvidedByUsedInOperatingActivities', 'NetCashProvidedByUsedInOperatingActivitiesContinuingOperations', 'PaymentsToAcquirePropertyPlantAndEquipment', 'PaymentsToAcquireProductiveAssets', 'PaymentsToAcquireOtherPropertyPlantAndEquipment', 'Assets', 'WeightedAverageNumberOfDilutedSharesOutstanding', 'CommonStockSharesOutstanding']}; facts with end >= 2023-06-01 (else the 3 latest); the original of the 2026-10-05 gate checkpoint (companyfacts lagging: latest period 2026-04-03; refetched 2026-10-06T13:41Z with the same sha256)"
+  },
+  "sec-submissions-0000021344.json": {
+    "key": "sec-submissions-0000021344",
+    "url": "https://data.sec.gov/submissions/CIK0000021344.json",
+    "sha256": "8591f2d5a02913481a2bc76458ab5c905f94e72f0856a18b6fa57e3f46235e39",
+    "retrievedAt": "2026-10-06T13:09:21.355860+00:00",
+    "trimmed": "identity fields ['cik', 'entityType', 'sic', 'sicDescription', 'name', 'tickers', 'exchanges', 'category', 'fiscalYearEnd', 'stateOfIncorporation']; filings.recent rows with form in ['10-K', '10-K/A', '10-Q', '10-Q/A', '8-K'] and filingDate >= 2024-06-01 (all columns kept); filings.files unchanged"
+  },
+  "sec-filing-index-0001628280-26-050503.json": {
+    "key": "sec-filing-index-0001628280-26-050503",
+    "url": "https://www.sec.gov/Archives/edgar/data/21344/000162828026050503/index.json",
+    "sha256": "50155a0d568887e90a554a98c058d9695457ec723a87e58fcddf84877bfec7e6",
+    "retrievedAt": "2026-10-06T13:41:28.352176+00:00",
+    "trimmed": "unchanged"
+  },
+  "sec-filing-xbrl-0001628280-26-050503.xml": {
+    "key": "sec-filing-xbrl-0001628280-26-050503",
+    "url": "https://www.sec.gov/Archives/edgar/data/21344/000162828026050503/ko-20260703_htm.xml",
+    "sha256": "54d9cfedcf46e5e281405db27131b620c57b037c815c415ed06db2930815deec",
+    "retrievedAt": "2026-10-06T13:41:28.810846+00:00",
+    "trimmed": "root element and namespace declarations, schemaRef, every fact of ['dei:AmendmentFlag', 'dei:DocumentPeriodEndDate', 'dei:DocumentType', 'dei:EntityCentralIndexKey', 'dei:EntityCommonStockSharesOutstanding', 'dei:EntityRegistrantName', 'us-gaap:Assets', 'us-gaap:CommonStockSharesOutstanding', 'us-gaap:NetCashProvidedByUsedInOperatingActivities', 'us-gaap:NetCashProvidedByUsedInOperatingActivitiesContinuingOperations', 'us-gaap:PaymentsToAcquireOtherPropertyPlantAndEquipment', 'us-gaap:PaymentsToAcquireProductiveAssets', 'us-gaap:PaymentsToAcquirePropertyPlantAndEquipment', 'us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding'] (any context) and the contexts and units they reference, verbatim; parses to the same ratings facts as the original (28 facts kept, 8 of them in dimensional contexts)"
+  },
+  "sec-facts-CIK0001664703.json": {
+    "key": "sec-facts-CIK0001664703",
+    "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001664703.json",
+    "sha256": "08cac571d6eaabacd43a6d099803ea2b2191f07e18c0c0fa191f6146a99a3d3e",
+    "retrievedAt": "2026-10-06T13:15:58.279564+00:00",
+    "trimmed": "concepts {'dei': ['EntityCommonStockSharesOutstanding'], 'us-gaap': ['NetCashProvidedByUsedInOperatingActivities', 'NetCashProvidedByUsedInOperatingActivitiesContinuingOperations', 'PaymentsToAcquirePropertyPlantAndEquipment', 'PaymentsToAcquireProductiveAssets', 'PaymentsToAcquireOtherPropertyPlantAndEquipment', 'Assets', 'WeightedAverageNumberOfDilutedSharesOutstanding', 'CommonStockSharesOutstanding']}; facts with end >= 2023-06-01 (else the 3 latest); the original of the 2026-10-05 gate checkpoint (companyfacts lagging: latest period 2026-03-31, neither the 10-Q nor the 10-Q/A for 2026-06-30)"
+  },
+  "sec-submissions-0001664703.json": {
+    "key": "sec-submissions-0001664703",
+    "url": "https://data.sec.gov/submissions/CIK0001664703.json",
+    "sha256": "98071090f48ec23d31e844be4b96a121965053b2cafe04c441e691f84726f6d5",
+    "retrievedAt": "2026-10-06T13:10:04.781274+00:00",
+    "trimmed": "identity fields ['cik', 'entityType', 'sic', 'sicDescription', 'name', 'tickers', 'exchanges', 'category', 'fiscalYearEnd', 'stateOfIncorporation']; filings.recent rows with form in ['10-K', '10-K/A', '10-Q', '10-Q/A', '8-K'] and filingDate >= 2024-06-01 (all columns kept); filings.files unchanged"
+  },
+  "sec-filing-index-0001628280-26-050247.json": {
+    "key": "sec-filing-index-0001628280-26-050247",
+    "url": "https://www.sec.gov/Archives/edgar/data/1664703/000162828026050247/index.json",
+    "sha256": "088a4b90cfaa547b65bf2e2e40401b690723ed28a52b4b0a59217b4f1c46aa82",
+    "retrievedAt": "2026-10-06T14:44:10.942325+00:00",
+    "trimmed": "unchanged"
+  },
+  "sec-filing-xbrl-0001628280-26-050247.xml": {
+    "key": "sec-filing-xbrl-0001628280-26-050247",
+    "url": "https://www.sec.gov/Archives/edgar/data/1664703/000162828026050247/be-20260630_htm.xml",
+    "sha256": "0713be837d33226d2213c4a73ce8aeefc2edadc118cfb5177b0c3b1cbdc3d77e",
+    "retrievedAt": "2026-10-06T14:44:11.388096+00:00",
+    "trimmed": "root element and namespace declarations, schemaRef, every fact of ['dei:AmendmentFlag', 'dei:DocumentPeriodEndDate', 'dei:DocumentType', 'dei:EntityCentralIndexKey', 'dei:EntityCommonStockSharesOutstanding', 'dei:EntityRegistrantName', 'us-gaap:Assets', 'us-gaap:CommonStockSharesOutstanding', 'us-gaap:NetCashProvidedByUsedInOperatingActivities', 'us-gaap:NetCashProvidedByUsedInOperatingActivitiesContinuingOperations', 'us-gaap:PaymentsToAcquireOtherPropertyPlantAndEquipment', 'us-gaap:PaymentsToAcquireProductiveAssets', 'us-gaap:PaymentsToAcquirePropertyPlantAndEquipment', 'us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding'] (any context) and the contexts and units they reference, verbatim; parses to the same ratings facts as the original (26 facts kept, 3 of them in dimensional contexts)"
+  },
+  "sec-filing-index-0001628280-26-050325.json": {
+    "key": "sec-filing-index-0001628280-26-050325",
+    "url": "https://www.sec.gov/Archives/edgar/data/1664703/000162828026050325/index.json",
+    "sha256": "e52a7ed512b944781b852cb5df76f624e3fb92e34daabc6b4aecf42cf7e23374",
+    "retrievedAt": "2026-10-06T14:44:11.739307+00:00",
+    "trimmed": "unchanged"
+  },
+  "sec-filing-xbrl-0001628280-26-050325.xml": {
+    "key": "sec-filing-xbrl-0001628280-26-050325",
+    "url": "https://www.sec.gov/Archives/edgar/data/1664703/000162828026050325/be-20260630_htm.xml",
+    "sha256": "0f71c0a584380ae909091238fafa770ffd0725a9578564f74d9526d2651a934e",
+    "retrievedAt": "2026-10-06T14:44:12.232413+00:00",
+    "trimmed": "root element and namespace declarations, schemaRef, every fact of ['dei:AmendmentFlag', 'dei:DocumentPeriodEndDate', 'dei:DocumentType', 'dei:EntityCentralIndexKey', 'dei:EntityCommonStockSharesOutstanding', 'dei:EntityRegistrantName', 'us-gaap:Assets', 'us-gaap:CommonStockSharesOutstanding', 'us-gaap:NetCashProvidedByUsedInOperatingActivities', 'us-gaap:NetCashProvidedByUsedInOperatingActivitiesContinuingOperations', 'us-gaap:PaymentsToAcquireOtherPropertyPlantAndEquipment', 'us-gaap:PaymentsToAcquireProductiveAssets', 'us-gaap:PaymentsToAcquirePropertyPlantAndEquipment', 'us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding'] (any context) and the contexts and units they reference, verbatim; parses to the same ratings facts as the original (26 facts kept, 3 of them in dimensional contexts)"
   }
 }

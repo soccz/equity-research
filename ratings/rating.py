@@ -198,15 +198,25 @@ PROTOCOL = {
         "mustBeEmpty": "Money",
     },
     "pointInTime": {
-        "filings": "filed strictly before asOf (US companyfacts filed date, KR "
-        "receipt-number date); a record without filedAt is not used",
+        "filings": "filed strictly before asOf (US companyfacts filed date, or the "
+        "SEC submissions filingDate of a report or amendment read from its own XBRL "
+        "instance; KR receipt-number date); a record without filedAt is not used",
         "prices": "sessions on or before asOf, the last of them the member's own "
         "session on asOf (marketCap.priceOnAsOf)",
         # D8, D8'
+        "fundamentalsSource": "US: SEC companyfacts first; a newer periodic report "
+        "(10-K/10-Q) filed before asOf that companyfacts lacks, with every 10-K/A or "
+        "10-Q/A for its period filed before asOf, is read from its own XBRL instance "
+        "in the EDGAR archives, the latest filing winning per period "
+        "(moduleRules.fundamentals.us.filingXbrl, issue filing_xbrl_supplement); if "
+        "that read fails the member is insufficient (companyfacts_lag), while an "
+        "online retrieval failure makes the record an error that is collected again. "
+        "KR: OpenDART fnlttSinglAcntAll",
         "freshness": "a record whose statement API lags the latest periodic report "
-        "filed before asOf is insufficient (moduleRules.fundamentals.lag); each row "
-        "carries its record's issues (companyfacts_lag, dart_api_lag, "
-        "lag_check_unavailable, ...) and the record's lagCheck in its inputs",
+        "filed before asOf (US: after the filing XBRL supplement) is insufficient "
+        "(moduleRules.fundamentals.lag); each row carries its record's issues "
+        "(companyfacts_lag, dart_api_lag, lag_check_unavailable, "
+        "filing_xbrl_supplement, ...) and the record's lagCheck in its inputs",
     },
     "signals": {
         "fcfYield": {

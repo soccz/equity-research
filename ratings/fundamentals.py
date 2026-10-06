@@ -6,21 +6,30 @@ AGENTS.md: 신호일 전날까지). A trailing year that cannot be formed for th
 reported period is ``insufficient`` with its reason; it is never filled from an older
 period. The latest periodic report filed before ``as_of`` is also looked up apart from
 the statement API (US: the stored SEC submissions original; KR: OpenDART list.json); when
-it covers a later period than the facts did, the API lags the filings and the record is
+it covers a later period than the facts did, the API lags the filings. In the US that
+report, and every 10-K/A or 10-Q/A for its period filed before ``as_of``, is then read
+from its own XBRL instance in the EDGAR archives (``RULES['us']['filingXbrl']``, issue
+``filing_xbrl_supplement``): the facts join companyfacts under each filing's accession,
+form and filing date, so per period the latest filing wins, and periods the report does
+not state still come from companyfacts. When that read fails, or in Korea, the record is
 ``insufficient`` (issue ``companyfacts_lag`` / ``dart_api_lag``) with the period values
-moved to ``withheld``. ``RULES`` lists every constant used here so the rating protocol
-can hash it.
+moved to ``withheld``; when its online retrieval fails the record is an ``error`` (a
+transient failure is collected again, never rated). ``RULES`` lists every constant used
+here so the rating protocol can hash it.
 """
 
 from __future__ import annotations
 
 import calendar
 from datetime import date, datetime, timedelta
+from decimal import Decimal
+import io
 import json
 import math
 import re
 import time
 from urllib.parse import urlencode
+import xml.etree.ElementTree as ET
 from zoneinfo import ZoneInfo
 
 from equitylab.dart import request as dart_request
@@ -29,10 +38,12 @@ from .common import FetchError, ensure_dart_key, fetch, latest, sec_user_agent, 
 
 SEC_URL = "https://data.sec.gov/api/xbrl/companyfacts/CIK{cik:010d}.json"
 SEC_SUBMISSIONS_URL = "https://data.sec.gov/submissions/CIK{cik:010d}.json"
+SEC_ARCHIVE_URL = "https://www.sec.gov/Archives/edgar/data/{cik}/{folder}/"
 DART_URL = "https://opendart.fss.or.kr/api/fnlttSinglAcntAll.json"
 DART_LIST_URL = "https://opendart.fss.or.kr/api/list.json"
 FORMS = ("10-K", "10-Q", "10-K/A", "10-Q/A")
 LAG_FORMS = ("10-K", "10-Q")  # the original periodic reports in SEC submissions
+AMENDMENT_FORMS = ("10-K/A", "10-Q/A")  # read with the report they amend (filingXbrl)
 LAG_PERIOD_DAYS = 20  # a report period this much later than periodEnd is a newer period
 LAG_WITHHELD = ("cfoTTM", "capexTTM", "assets")
 US_ZONE = "America/New_York"
@@ -52,6 +63,29 @@ US_CAPEX = (
 COVER = ("dei", "EntityCommonStockSharesOutstanding")
 DILUTED = ("us-gaap", "WeightedAverageNumberOfDilutedSharesOutstanding")
 BALANCE_SHARES = ("us-gaap", "CommonStockSharesOutstanding")
+# Filing XBRL supplement (RULES us.filingXbrl): the report that companyfacts lacks is read
+# from its own XBRL instance in the EDGAR archives.
+SUPPLEMENT_ISSUE = "filing_xbrl_supplement"
+SUPPLEMENT_FAILED = "filing_xbrl_unavailable"
+XBRLI = "http://www.xbrl.org/2003/instance"
+XSI_NIL = "{http://www.w3.org/2001/XMLSchema-instance}nil"
+CIK_SCHEME = "http://www.sec.gov/CIK"
+FILING_TAXONOMIES = {
+    "us-gaap": r"http://fasb\.org/us-gaap/\d{4}(?:-\d{2}-\d{2})?",
+    "dei": r"http://xbrl\.sec\.gov/dei/\d{4}(?:-\d{2}-\d{2})?",
+}
+FILING_UNITS = {
+    "USD": ("http://www.xbrl.org/2003/iso4217", "USD"),
+    "shares": (XBRLI, "shares"),
+}
+FILING_CONCEPTS = tuple(
+    [("us-gaap", tag, "USD") for tag in US_CFO + US_CAPEX + ("Assets",)]
+    + [(*COVER, "shares"), (*DILUTED, "shares"), (*BALANCE_SHARES, "shares")]
+)
+FILING_INSTANCE = r"[A-Za-z0-9][A-Za-z0-9._-]*\.xml"
+FILING_LINKBASE = r".*_(?:cal|def|lab|pre)\.xml"
+FILING_SUMMARY = "FilingSummary.xml"
+DECIMALS_LIMIT = 100  # duplicate ranges use at most this many places either way
 ANNUAL_DAYS = (330, 400)
 YTD_MIN_DAYS = 60
 QUARTER_DAYS = (80, 100)
@@ -104,15 +138,20 @@ REQUIRED = {
 }
 
 RULES = dict(
-    version="ratings-v1-fundamentals-1",
+    version="ratings-v1-fundamentals-3",
     status="ok only when every REQUIRED field is present; otherwise insufficient "
     "with the available fields kept and the reasons in error",
     required={k: list(v) for k, v in REQUIRED.items()},
     filedBeforeAsOf=FILED_BEFORE_AS_OF,
     filedRule=f"usable filing date <= asOf{' - 1 day' if FILED_BEFORE_AS_OF else ''} "
-    "(US companyfacts filed; KR first 8 digits of rcept_no)",
+    "(US companyfacts filed, or the SEC submissions filingDate of a report or "
+    "amendment read by the filing XBRL supplement; KR first 8 digits of rcept_no)",
     us=dict(
-        source="SEC companyfacts",
+        source="SEC companyfacts first; a later periodic report filed before asOf "
+        "that companyfacts lacks (lag.us) is read from its own XBRL instance in the "
+        "EDGAR archives, with every amendment of it filed before asOf (filingXbrl); "
+        "if that read fails the record is insufficient (companyfacts_lag), and if its "
+        "online retrieval fails the record is an error (collected again)",
         forms=list(FORMS),
         pointInTime="per (start, end) the latest usable filing",
         periodEnd="latest end among CFO durations and Assets instants; CFO and "
@@ -137,6 +176,67 @@ RULES = dict(
         "if cover is absent or both checks agree against it; otherwise withheld",
         multiValueCover="sum (distinct classes) or largest (reported total) only "
         "when it agrees with a check count; otherwise not used",
+        filingXbrl=dict(
+            when="the lag check (lag.us) finds its latestReport later than the "
+            "companyfacts periodEnd",
+            report="that latestReport: an original 10-K/10-Q with filingDate <= asOf "
+            "- 1 day in the SEC submissions original; a report filed on or after asOf "
+            "is never read, nor one that submissions mark isXBRL 0",
+            amendments="every amendmentForms filing in that submissions original "
+            "with the report's reportDate, filed on or after the report's filingDate "
+            "and on or before asOf - 1 day, is read after the report, oldest first, "
+            "by the same rules (index to duplicates) and listed in "
+            "lagCheck.supplement.amendments with status read, skipped, unreadable or "
+            "unread; one that submissions mark isXBRL 0 is skipped (not read); one "
+            "without these concepts (e.g. a Part III 10-K/A) adds nothing; one that "
+            "cannot be read, or is not stored offline, fails the supplement "
+            "('amended_by <accession> unreadable: <reason>'), and any not reached "
+            "after a failure stays unread",
+            amendmentForms=list(AMENDMENT_FORMS),
+            index="https://www.sec.gov/Archives/edgar/data/<cik>/<accession without "
+            "dashes>/index.json, stored as sec-filing-index-<accession>",
+            instance="the one listed file ending in _htm.xml (inline XBRL), else the "
+            f"one .xml that is not *_cal/_def/_lab/_pre.xml or {FILING_SUMMARY}; its "
+            f"name must match {FILING_INSTANCE}; stored as sec-filing-xbrl-<accession>",
+            retrieval="ratings.common.fetch with the SEC User-Agent; offline the "
+            "latest stored originals",
+            contexts="every context's entity identifier is the member's CIK (scheme "
+            f"{CIK_SCHEME}); facts only from contexts without segment or scenario (no "
+            "dimensions) whose period is startDate/endDate or instant as YYYY-MM-DD; "
+            "nil facts are skipped",
+            concepts=[f"{t}:{c} ({u})" for t, c, u in FILING_CONCEPTS],
+            taxonomies=dict(FILING_TAXONOMIES),
+            units={k: "{%s}%s" % v for k, v in FILING_UNITS.items()},
+            values="an xs:decimal without exponent that a float can hold; any other "
+            "value makes the instance unreadable",
+            duplicates="per concept, unit and period: equal values count once; "
+            "different values keep the most precise when every one states decimals, "
+            "the most precise agree and every range (value +/- half a unit in the "
+            "place decimals names, at most decimalsLimit places either way; INF exact) "
+            "shares a point; otherwise, including different values where one lacks "
+            "decimals, every value stays and the period conflicts (not used)",
+            decimalsLimit=DECIMALS_LIMIT,
+            facts="added to companyfacts with each filing's own accession, form and "
+            "filingDate from SEC submissions, so per (start, end) the latest usable "
+            "filing picks them (pointInTime); periods the report does not state still "
+            "come from companyfacts and the trailing-year, capex-tag and share rules "
+            "are unchanged",
+            required="the report (not an amendment): a CFO duration (cfo tags) and "
+            "us-gaap:Assets at the instance's latest CFO end, which is at most "
+            "lag.periodDays before the report period",
+            issue=f"{SUPPLEMENT_ISSUE}; lagCheck.supplement records the accession, "
+            "instance, each amendment and the companyfacts periodEnd, and the lag "
+            "check passes",
+            failure="no unique instance, an unreadable instance or one naming another "
+            "issuer, missing required facts, an amendment that cannot be read, an "
+            "original not stored (offline), or a periodEnd that still lags leave the "
+            "record insufficient with companyfacts_lag (lag.rule) and "
+            f"'{SUPPLEMENT_FAILED}: <reason>' in the lag detail and lagCheck.supplement",
+            onlineFailure="online, a failed retrieval of a filing index or instance "
+            "(ratings.common.fetch FetchError: an HTTP error such as SEC's 403 rate "
+            "limit or a 5xx after its retries, or a network failure) makes the record "
+            "an error, collected again; never companyfacts_lag",
+        ),
     ),
     kr=dict(
         source="OpenDART fnlttSinglAcntAll",
@@ -167,13 +267,18 @@ RULES = dict(
     ),
     lag=dict(
         rule="a periodic report filed before asOf for a later period than the facts "
-        "makes the record insufficient: cfoTTM, capexTTM and assets move to "
-        "'withheld'; share counts are kept",
+        "(US: companyfacts with the filing XBRL supplement, us.filingXbrl) makes the "
+        "record insufficient: cfoTTM, capexTTM and assets move to 'withheld'; share "
+        "counts are kept",
         withheld=list(LAG_WITHHELD),
         us="latest non-amended report (forms usForms, filingDate <= asOf - 1) in "
         "the stored SEC submissions original sec-submissions-<cik> retrieved on or "
         "after asOf (New York); reportDate later than periodEnd + periodDays -> "
-        "companyfacts_lag. Online, a missing or older original is fetched again",
+        "that report and its amendments are read by the filing XBRL supplement "
+        "(us.filingXbrl) and the periodEnd they give is compared again; "
+        "companyfacts_lag when it fails (us.filingXbrl.onlineFailure: an error when "
+        "its online retrieval fails). Online, a missing or older original is fetched "
+        "again",
         usForms=list(LAG_FORMS),
         periodDays=LAG_PERIOD_DAYS,
         kr="OpenDART list.json pblntf_ty A, last_reprt_at N, bgn_de asOf - listDays, "
@@ -225,7 +330,13 @@ def collect(member: dict, as_of, online: bool = True) -> dict:
             if int(body.get("cik", -1)) != cik:
                 raise ValueError("SEC companyfacts CIK does not match the member")
             result = _us(member, body, as_of, sources)
-            check = _us_lag(cik, as_of, result["periodEnd"], online, headers, sources)
+            check, amendments = _us_lag(
+                cik, as_of, result["periodEnd"], online, headers, sources
+            )
+            if check["status"] == "lag":
+                result, check = _us_supplement(
+                    member, body, as_of, result, check, online, headers, amendments
+                )
             return _apply_lag(result, check, "companyfacts_lag")
         if market == "KR":
             corp = str(member.get("corpCode") or "")
@@ -635,8 +746,9 @@ def _us(member: dict, body: dict, as_of: str, sources: list) -> dict:
     return _finish(out, reasons)
 
 
-def _us_latest_report(profile, cik: int, through: str) -> dict | None:
-    """Latest original 10-K/10-Q filed on or before ``through`` in SEC submissions."""
+def _us_filings(profile, cik: int) -> list:
+    """SEC submissions recent filings as rows (form, accession, filedAt, periodEnd,
+    isXBRL); a body for another CIK or with ragged columns raises ValueError."""
     found = profile.get("cik", "") if isinstance(profile, dict) else None
     if str(found).lstrip("0") != str(cik):
         raise ValueError("SEC submissions CIK does not match the member")
@@ -646,14 +758,27 @@ def _us_latest_report(profile, cik: int, through: str) -> dict | None:
     if len({len(column) for column in columns}) != 1:
         raise ValueError("SEC submissions filing columns differ in length")
     xbrl = recent.get("isXBRL") or [None] * len(columns[0])
-    best = None
-    for accession, filed, period, form, flag in zip(*columns, xbrl):
-        if form not in LAG_FORMS or not filed or not period or filed > through:
-            continue
-        row = dict(
+    return [
+        dict(
             form=form, accession=accession, filedAt=filed, periodEnd=period, isXBRL=flag
         )
-        if best is None or (period, filed, accession) > (
+        for accession, filed, period, form, flag in zip(*columns, xbrl)
+    ]
+
+
+def _us_latest_report(profile, cik: int, through: str) -> dict | None:
+    """Latest original 10-K/10-Q filed on or before ``through`` in SEC submissions."""
+    best = None
+    for row in _us_filings(profile, cik):
+        if (
+            row["form"] not in LAG_FORMS
+            or not row["filedAt"]
+            or not row["periodEnd"]
+            or row["filedAt"] > through
+        ):
+            continue
+        order = (row["periodEnd"], row["filedAt"], row["accession"])
+        if best is None or order > (
             best["periodEnd"],
             best["filedAt"],
             best["accession"],
@@ -662,16 +787,34 @@ def _us_latest_report(profile, cik: int, through: str) -> dict | None:
     return best
 
 
-def _us_lag(cik: int, as_of: str, period_end, online: bool, headers, sources) -> dict:
-    """Compare companyfacts' periodEnd with the stored SEC submissions original.
+def _us_amendments(profile, cik: int, report, through: str) -> list:
+    """10-K/A and 10-Q/A for ``report``'s period filed on or after it and on or
+    before ``through`` in SEC submissions, oldest first (RULES us.filingXbrl)."""
+    if not report:
+        return []
+    rows = [
+        row
+        for row in _us_filings(profile, cik)
+        if row["form"] in AMENDMENT_FORMS
+        and row["periodEnd"] == report["periodEnd"]
+        and row["filedAt"]
+        and report["filedAt"] <= row["filedAt"] <= through
+    ]
+    return sorted(rows, key=lambda row: (row["filedAt"], str(row["accession"])))
+
+
+def _us_lag(cik: int, as_of: str, period_end, online: bool, headers, sources):
+    """(check, amendments): companyfacts' periodEnd against the stored SEC submissions.
 
     The universe build stores ``sec-submissions-<cik>`` after T; an original retrieved
     before T may miss filings, so online it is fetched again, offline the check is
     unavailable. Online retrieval failures raise (the record becomes an error).
+    ``amendments`` are the latest report's amendments filed before T, for the filing
+    XBRL supplement (``_us_amendments``).
     """
     key = f"sec-submissions-{cik:010d}"
     check = dict(status="unavailable", source=key, sha256=None, retrievedAt=None)
-    check.update(periodEnd=period_end, latestReport=None, detail=None)
+    check.update(periodEnd=period_end, latestReport=None, detail=None, supplement=None)
     missing = f"no stored {key}"
     try:
         blob, manifest = latest(key)
@@ -684,14 +827,23 @@ def _us_lag(cik: int, as_of: str, period_end, online: bool, headers, sources) ->
         url = SEC_SUBMISSIONS_URL.format(cik=cik)
         blob, manifest = fetch(url, key, provider="SEC", online=True, headers=headers)
     if manifest is None:
-        return dict(check, detail=missing)
+        return dict(check, detail=missing), []
     sources.append(manifest)
-    report = _us_latest_report(json.loads(blob), cik, _through(as_of))
+    profile, through = json.loads(blob), _through(as_of)
+    report = _us_latest_report(profile, cik, through)
     check.update(
         sha256=manifest.get("sha256"),
         retrievedAt=manifest.get("retrievedAt"),
         latestReport=report,
     )
+    amendments = _us_amendments(profile, cik, report, through)
+    return _us_verdict(check, period_end), amendments
+
+
+def _us_verdict(check: dict, period_end) -> dict:
+    """The lag verdict of a check whose latestReport is known, for ``period_end``."""
+    report = check["latestReport"]
+    check = dict(check, periodEnd=period_end, detail=None)
     if report is None:
         return dict(check, status="ok", detail="no 10-K/10-Q filed before asOf")
     later = period_end is None or report["periodEnd"] > _shift(
@@ -704,6 +856,412 @@ def _us_lag(cik: int, as_of: str, period_end, online: bool, headers, sources) ->
         f"({report['accession']}); companyfacts latest period {period_end}"
     )
     return dict(check, status="lag", detail=detail)
+
+
+def _us_supplement(
+    member: dict,
+    body: dict,
+    as_of: str,
+    result: dict,
+    check: dict,
+    online,
+    headers,
+    amendments=(),
+) -> tuple:
+    """(record, lag check) once the lagging report was read from its own XBRL instance.
+
+    The report's facts, then each amendment's (``_us_amendments``), join companyfacts
+    under that filing's accession, form and filing date, and the record is formed again
+    by the companyfacts rules, so per period the latest filing wins; when a filing
+    cannot be read, or the period still lags, the companyfacts record and its lag stand
+    with the reason (``filing_xbrl_unavailable``) in the check. Online, a retrieval
+    failure raises (``_us_filing``).
+    """
+    cik = int(body["cik"])
+    sources = result["sources"]
+    added, info = _us_filing(
+        cik, as_of, check["latestReport"], online, headers, sources, amendments
+    )
+    info["companyfactsPeriodEnd"] = result["periodEnd"]
+    if added is not None:
+        merged = body.get("facts", {})
+        for facts in added:
+            merged = _merged(merged, facts)
+        fresh = _us(member, dict(body, facts=merged), as_of, sources)
+        verdict = _us_verdict(check, fresh["periodEnd"])
+        if verdict["status"] == "ok":
+            fresh["issues"].append(SUPPLEMENT_ISSUE)
+            amended = "".join(
+                (
+                    f"; amended by {a['form']} {a['accession']} filed {a['filedAt']} "
+                    f"({a['instance']}, {a['facts']} facts)"
+                    if a["status"] == "read"
+                    else f"; {a['form']} {a['accession']} filed {a['filedAt']} not "
+                    f"read ({a['reason']})"
+                )
+                for a in info["amendments"]
+            )
+            fresh["notes"].append(
+                f"{SUPPLEMENT_ISSUE}: {info['form']} {info['accession']} for "
+                f"{info['periodEnd']} filed {info['filedAt']} read from its XBRL "
+                f"instance {info['instance']} ({info['facts']} facts){amended}; "
+                f"companyfacts latest period {result['periodEnd']}"
+            )
+            return fresh, dict(verdict, supplement=info)
+        info = dict(
+            info,
+            status="unavailable",
+            reason=f"periodEnd {fresh['periodEnd']} still lags the report",
+        )
+    detail = f"{check['detail']}; {SUPPLEMENT_FAILED}: {info['reason']}"
+    return result, dict(check, detail=detail, supplement=info)
+
+
+def _merged(facts: dict, added: dict) -> dict:
+    """companyfacts ``facts`` with the ``added`` facts appended; neither is changed."""
+    out = {taxonomy: dict(tags) for taxonomy, tags in facts.items()}
+    for taxonomy, tags in added.items():
+        for tag, entry in tags.items():
+            old = out.setdefault(taxonomy, {}).get(tag) or {}
+            units = dict(old.get("units") or {})
+            for unit, rows in entry["units"].items():
+                units[unit] = list(units.get(unit) or []) + rows
+            out[taxonomy][tag] = dict(old, units=units)
+    return out
+
+
+def _us_filing(
+    cik: int, as_of: str, report, online, headers, sources, amendments=()
+) -> tuple:
+    """([facts, ...] or None, supplement record) of ``report`` and its ``amendments``.
+
+    ``report`` is the lag check's latestReport and ``amendments`` its 10-K/A and 10-Q/A
+    filed before asOf, oldest first (SEC submissions). Each filing's EDGAR index.json
+    and XBRL instance are fetched and stored like any original (offline: the latest
+    stored); its facts come back shaped like companyfacts ``facts`` under its own
+    accession, form and filing date, the report's first. A filing that cannot be read,
+    or that is not stored offline, gives None with the reason in the record (an
+    amendment as ``amended_by <accession> unreadable: <reason>``); online a retrieval
+    failure raises FetchError so the record becomes an error and is collected again.
+    Every amendment is listed with its status: read, skipped (isXBRL 0), unreadable,
+    or unread (not reached after a failure).
+    """
+    report = report or {}
+    info = dict(
+        status="unavailable",
+        accession=report.get("accession"),
+        form=report.get("form"),
+        filedAt=report.get("filedAt"),
+        periodEnd=report.get("periodEnd"),
+        instance=None,
+        instancePeriodEnd=None,
+        facts=0,
+        reason=None,
+        amendments=[
+            dict(
+                accession=row.get("accession"),
+                form=row.get("form"),
+                filedAt=row.get("filedAt"),
+                status="unread",
+                instance=None,
+                facts=0,
+                reason=None,
+            )
+            for row in amendments
+        ],
+    )
+    through = _through(as_of)
+    facts = None
+    if report.get("form") not in LAG_FORMS or not report.get("periodEnd"):
+        reason = f"not an original periodic report: {report.get('form')}"
+    elif report.get("isXBRL") in (0, False):
+        reason = "SEC submissions mark the report isXBRL 0"
+    else:
+        facts, reason = _filing_read(
+            cik, through, report, online, headers, sources, info
+        )
+    if facts is not None:
+        try:
+            info["instancePeriodEnd"] = _supplement_end(facts, report)
+        except ValueError as exc:
+            facts, reason = None, str(exc)
+    if facts is None:
+        return None, dict(info, reason=reason)
+    info["facts"] = _count(facts)
+    read = [facts]
+    for row, entry in zip(amendments, info["amendments"]):
+        if row.get("isXBRL") in (0, False):
+            entry.update(status="skipped", reason="SEC submissions mark it isXBRL 0")
+            continue
+        found, why = _filing_read(cik, through, row, online, headers, sources, entry)
+        if found is None:
+            entry.update(status="unreadable", reason=why)
+            why = f"amended_by {entry['accession']} unreadable: {why}"
+            return None, dict(info, reason=why)
+        entry.update(status="read", facts=_count(found))
+        read.append(found)
+    return read, dict(info, status="used")
+
+
+def _count(facts: dict) -> int:
+    return sum(
+        len(rows)
+        for tags in facts.values()
+        for entry in tags.values()
+        for rows in entry["units"].values()
+    )
+
+
+def _filing_read(cik, through: str, row: dict, online, headers, sources, record):
+    """(facts, None) of one filing (``row`` from SEC submissions) read from its XBRL
+    instance, or (None, reason) when it cannot be read or, offline, is not stored.
+
+    The instance name goes into ``record`` once the index names it. Online a retrieval
+    failure (FetchError) is not a reason: it raises, and the record becomes an error.
+    """
+    accession = str(row.get("accession") or "")
+    try:
+        if not re.fullmatch(r"\d{10}-\d{2}-\d{6}", accession):
+            raise ValueError(f"malformed accession {accession!r}")
+        if not row.get("filedAt") or row["filedAt"] > through:
+            raise ValueError(f"filed {row.get('filedAt')}, not before asOf")
+        base = SEC_ARCHIVE_URL.format(cik=cik, folder=accession.replace("-", ""))
+        blob, manifest = fetch(
+            base + "index.json",
+            f"sec-filing-index-{accession}",
+            provider="SEC",
+            online=online,
+            headers=headers,
+        )
+        sources.append(manifest)
+        try:
+            index = json.loads(blob)
+        except ValueError:
+            raise ValueError("filing index is not JSON") from None
+        name = record["instance"] = _instance_name(index, cik, accession)
+        blob, manifest = fetch(
+            base + name,
+            f"sec-filing-xbrl-{accession}",
+            provider="SEC",
+            online=online,
+            headers=dict(headers, Accept="application/xml") if headers else None,
+            suffix=".xml",
+        )
+        sources.append(manifest)
+        return _instance_facts(blob, cik, row), None
+    except FetchError as exc:
+        if online:
+            raise  # the record becomes an error, collected again (onlineFailure)
+        return None, str(exc) or type(exc).__name__  # offline: not stored
+    except (ValueError, ArithmeticError, ET.ParseError) as exc:
+        return None, str(exc) or type(exc).__name__
+
+
+def _instance_name(index, cik: int, accession: str) -> str:
+    """The one XBRL instance an EDGAR filing index.json lists (ValueError otherwise)."""
+    directory = index.get("directory") if isinstance(index, dict) else None
+    items = directory.get("item") if isinstance(directory, dict) else None
+    if not isinstance(items, list):
+        raise ValueError("filing index lists no directory")
+    folder = f"/Archives/edgar/data/{cik}/{accession.replace('-', '')}"
+    if str(directory.get("name") or folder).rstrip("/") != folder:
+        raise ValueError(f"filing index is for {directory.get('name')}")
+    names = [str(i.get("name") or "") for i in items if isinstance(i, dict)]
+    inline = [n for n in names if n.endswith("_htm.xml")]
+    plain = [
+        n
+        for n in names
+        if n.lower().endswith(".xml")
+        and n != FILING_SUMMARY
+        and not re.fullmatch(FILING_LINKBASE, n, re.IGNORECASE)
+    ]
+    found = inline or plain
+    if len(found) != 1:
+        raise ValueError(
+            f"{len(found)} XBRL instances listed: {', '.join(found)}"
+            if found
+            else "no XBRL instance listed"
+        )
+    if not re.fullmatch(FILING_INSTANCE, found[0]):
+        raise ValueError(f"unexpected instance name {found[0]!r}")
+    return found[0]
+
+
+def _iso_date(text) -> str | None:
+    text = (text or "").strip()
+    if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", text):
+        return None
+    try:
+        return date.fromisoformat(text).isoformat()
+    except ValueError:
+        return None
+
+
+def _xbrl_number(text):
+    """An xs:decimal lexical value as int (integral) or float; None otherwise, also
+    when a float cannot hold it (RULES us.filingXbrl.values)."""
+    text = (text or "").strip()
+    if not re.fullmatch(r"[+-]?(?:\d+(?:\.\d*)?|\.\d+)", text):
+        return None
+    value = Decimal(text)
+    if not math.isfinite(float(value)):
+        return None
+    return int(value) if value == value.to_integral_value() else float(value)
+
+
+def _instance_facts(blob: bytes, cik: int, report: dict) -> dict:
+    """FILING_CONCEPTS facts of one XBRL instance shaped like companyfacts ``facts``.
+
+    Only contexts without segment or scenario (no dimensions) count, every context
+    must name the member's CIK, and a unit's measure is resolved through the namespace
+    bindings in scope at it (root, unit, measure). Duplicates of one concept, unit and
+    period keep one value when they are equal or consistent (``_consistent``);
+    otherwise every value stays (the period then conflicts).
+    """
+    if b"<!DOCTYPE" in blob or b"<!ENTITY" in blob:
+        raise ValueError("XBRL instance declares a DTD")
+    declared, pending = {}, {}  # element -> the namespace bindings it declares
+    parser = ET.iterparse(io.BytesIO(blob), events=("start-ns", "start"))
+    for event, item in parser:
+        if event == "start-ns":
+            pending[item[0]] = item[1]
+        elif pending:
+            declared[item], pending = pending, {}
+    root = parser.root
+    x = "{%s}" % XBRLI
+    if root.tag != x + "xbrl":
+        raise ValueError("not an XBRL instance")
+    units = {}
+    for unit in root.findall(x + "unit"):
+        kids = list(unit)
+        if len(kids) != 1 or kids[0].tag != x + "measure":
+            continue
+        scope = {**declared.get(root, {}), **declared.get(unit, {})}
+        scope.update(declared.get(kids[0], {}))
+        prefix, _, local = (kids[0].text or "").strip().rpartition(":")
+        for name, measure in FILING_UNITS.items():
+            if (scope.get(prefix), local) == measure:
+                units[unit.get("id")] = name
+    contexts = {}
+    for context in root.findall(x + "context"):
+        ident = context.find(f"{x}entity/{x}identifier")
+        if (
+            ident is None
+            or ident.get("scheme") != CIK_SCHEME
+            or (ident.text or "").strip().lstrip("0") != str(cik)
+        ):
+            raise ValueError("XBRL instance names another issuer")
+        if context.find(f".//{x}segment") is not None:
+            continue
+        if context.find(f".//{x}scenario") is not None:
+            continue
+        period = context.find(x + "period")
+        if period is None:
+            continue
+        instant = _iso_date(period.findtext(x + "instant"))
+        start = _iso_date(period.findtext(x + "startDate"))
+        end = _iso_date(period.findtext(x + "endDate"))
+        if instant:
+            contexts[context.get("id")] = (None, instant)
+        elif start and end and start <= end:
+            contexts[context.get("id")] = (start, end)
+    wanted = {(t, c): u for t, c, u in FILING_CONCEPTS}
+    groups: dict = {}
+    for element in root:
+        ref = element.get("contextRef")
+        if ref is None or not element.tag.startswith("{"):
+            continue
+        uri, _, local = element.tag[1:].partition("}")
+        taxonomy = next(
+            (t for t, p in FILING_TAXONOMIES.items() if re.fullmatch(p, uri)), None
+        )
+        unit = wanted.get((taxonomy, local))
+        if unit is None or ref not in contexts:
+            continue
+        if units.get(element.get("unitRef")) != unit:
+            continue
+        if element.get(XSI_NIL) in ("true", "1"):
+            continue
+        value = _xbrl_number(element.text)
+        if value is None:
+            raise ValueError(f"unreadable value for {taxonomy}:{local} in {ref}")
+        decimals = element.get("decimals")
+        if decimals == "INF":
+            precision = math.inf
+        elif decimals and re.fullmatch(r"-?\d+", decimals):
+            precision = int(decimals)
+        else:
+            precision = None
+        key = (taxonomy, local, unit) + contexts[ref]
+        groups.setdefault(key, []).append((value, precision))
+    facts: dict = {}
+    for (taxonomy, tag, unit, start, end), rows in groups.items():
+        for value in _consistent(rows):
+            fact = dict(
+                end=end,
+                val=value,
+                accn=report["accession"],
+                form=report["form"],
+                filed=report["filedAt"],
+            )
+            if start:
+                fact["start"] = start
+            entry = facts.setdefault(taxonomy, {}).setdefault(tag, {"units": {}})
+            entry["units"].setdefault(unit, []).append(fact)
+    return facts
+
+
+def _consistent(rows: list) -> list:
+    """The values of one duplicate group of (value, decimals) (XBRL duplicates).
+
+    Equal values count once. Different values are consistent duplicates, kept as the
+    most precise value, when the most precise facts agree and every range (value plus
+    or minus half a unit in the place ``decimals`` names, at most DECIMALS_LIMIT places
+    either way; INF: the value itself) shares a point; otherwise, or when a precision
+    is unknown, every value stays and the period conflicts.
+    """
+    values = sorted({value for value, _ in rows})
+    precisions = [p for _, p in rows]
+    if len(values) == 1 or None in precisions:
+        return values
+
+    def half(p) -> Decimal:
+        if p == math.inf:
+            return Decimal(0)
+        places = max(-DECIMALS_LIMIT, min(DECIMALS_LIMIT, p))  # no decimal overflow
+        return Decimal(5).scaleb(-places - 1)
+
+    best = max(precisions)
+    top = sorted({v for v, p in rows if p == best})
+    low = max(Decimal(str(v)) - half(p) for v, p in rows)
+    high = min(Decimal(str(v)) + half(p) for v, p in rows)
+    return top if len(top) == 1 and low <= high else values
+
+
+def _supplement_end(facts: dict, report: dict) -> str:
+    """The instance period: its latest CFO end, with total assets reported at it."""
+    ends = [
+        f["end"]
+        for tag in US_CFO
+        for f in facts.get("us-gaap", {}).get(tag, {}).get("units", {}).get("USD", [])
+        if f.get("start")
+    ]
+    if not ends:
+        raise ValueError(
+            "required facts missing: no CFO duration ("
+            + ", ".join(f"us-gaap:{t}" for t in US_CFO)
+            + ")"
+        )
+    end = max(ends)
+    assets = facts.get("us-gaap", {}).get("Assets", {}).get("units", {}).get("USD", [])
+    if not any(f["end"] == end and not f.get("start") for f in assets):
+        raise ValueError(f"required facts missing: no us-gaap:Assets at {end}")
+    if report["periodEnd"] > _shift(end, LAG_PERIOD_DAYS):
+        raise ValueError(
+            f"instance period {end} is earlier than the report period "
+            f"{report['periodEnd']}"
+        )
+    return end
 
 
 # --- Korea: OpenDART fnlttSinglAcntAll ----------------------------------------------
