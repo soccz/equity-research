@@ -1,0 +1,79 @@
+{
+  "sec-facts-CIK0000320193.json": {
+    "key": "sec-facts-CIK0000320193",
+    "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000320193.json",
+    "sha256": "73a86c6aedc31f77cac2ea4df5f80f0b3bd7e6eb58bb4e01444fbedf3afb9c43",
+    "retrievedAt": "2026-10-06T04:25:47.916972+00:00",
+    "trimmed": "concepts {'dei': ['EntityCommonStockSharesOutstanding'], 'us-gaap': ['NetCashProvidedByUsedInOperatingActivities', 'NetCashProvidedByUsedInOperatingActivitiesContinuingOperations', 'PaymentsToAcquirePropertyPlantAndEquipment', 'PaymentsToAcquireProductiveAssets', 'PaymentsToAcquireOtherPropertyPlantAndEquipment', 'Assets', 'WeightedAverageNumberOfDilutedSharesOutstanding', 'CommonStockSharesOutstanding']}; facts with end >= 2023-06-01 (else the 3 latest)"
+  },
+  "sec-facts-CIK0001652044.json": {
+    "key": "sec-facts-CIK0001652044",
+    "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001652044.json",
+    "sha256": "a017f26ee88cb4a639d1c1ddb06d53b4afe22f0ac89cabec7cd67c88919fe1c5",
+    "retrievedAt": "2026-10-06T04:25:48.579868+00:00",
+    "trimmed": "concepts {'dei': ['EntityCommonStockSharesOutstanding'], 'us-gaap': ['NetCashProvidedByUsedInOperatingActivities', 'NetCashProvidedByUsedInOperatingActivitiesContinuingOperations', 'PaymentsToAcquirePropertyPlantAndEquipment', 'PaymentsToAcquireProductiveAssets', 'PaymentsToAcquireOtherPropertyPlantAndEquipment', 'Assets', 'WeightedAverageNumberOfDilutedSharesOutstanding', 'CommonStockSharesOutstanding']}; facts with end >= 2023-06-01 (else the 3 latest)"
+  },
+  "sec-facts-CIK0001045810.json": {
+    "key": "sec-facts-CIK0001045810",
+    "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001045810.json",
+    "sha256": "19ef503a5770f5660964b3c3aea6937579d9b359da344afe6a9adf59c63d26ff",
+    "retrievedAt": "2026-10-06T04:25:49.393341+00:00",
+    "trimmed": "concepts {'dei': ['EntityCommonStockSharesOutstanding'], 'us-gaap': ['NetCashProvidedByUsedInOperatingActivities', 'NetCashProvidedByUsedInOperatingActivitiesContinuingOperations', 'PaymentsToAcquirePropertyPlantAndEquipment', 'PaymentsToAcquireProductiveAssets', 'PaymentsToAcquireOtherPropertyPlantAndEquipment', 'Assets', 'WeightedAverageNumberOfDilutedSharesOutstanding', 'CommonStockSharesOutstanding']}; facts with end >= 2023-06-01 (else the 3 latest)"
+  },
+  "dart-acnt-00126380-2026-11012-CFS.json": {
+    "key": "dart-acnt-00126380-2026-11012-CFS",
+    "url": "https://opendart.fss.or.kr/api/fnlttSinglAcntAll.json?corp_code=00126380&bsns_year=2026&reprt_code=11012&fs_div=CFS",
+    "sha256": "4c8c66f8e47a2021587e083e5b618bc40a357a22e7ec554f891c743d3136eeee",
+    "retrievedAt": "2026-10-06T04:25:49.873048+00:00",
+    "trimmed": "rows whose account_id is in ['dart_AdjustmentsForAssetsLiabilitiesOfOperatingActivities', 'dart_CashAndCashEquivalentsAtBeginningOfPeriodCf', 'dart_CashAndCashEquivalentsAtEndOfPeriodCf', 'ifrs-full_Assets', 'ifrs-full_CashAndCashEquivalents', 'ifrs-full_CashFlowsFromUsedInOperatingActivities', 'ifrs-full_CashFlowsFromUsedInOperations', 'ifrs-full_ProceedsFromSalesOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities', 'ifrs-full_PurchaseOfIntangibleAssetsClassifiedAsInvestingActivities', 'ifrs-full_PurchaseOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities']"
+  },
+  "dart-acnt-00126380-2025-11011-CFS.json": {
+    "key": "dart-acnt-00126380-2025-11011-CFS",
+    "url": "https://opendart.fss.or.kr/api/fnlttSinglAcntAll.json?corp_code=00126380&bsns_year=2025&reprt_code=11011&fs_div=CFS",
+    "sha256": "d2888e542f9159cb087c7679efcd41e3d76cbf2df9e90260fa95549c7fee15e9",
+    "retrievedAt": "2026-10-06T04:25:50.216927+00:00",
+    "trimmed": "rows whose account_id is in ['dart_AdjustmentsForAssetsLiabilitiesOfOperatingActivities', 'dart_CashAndCashEquivalentsAtBeginningOfPeriodCf', 'dart_CashAndCashEquivalentsAtEndOfPeriodCf', 'ifrs-full_Assets', 'ifrs-full_CashAndCashEquivalents', 'ifrs-full_CashFlowsFromUsedInOperatingActivities', 'ifrs-full_CashFlowsFromUsedInOperations', 'ifrs-full_ProceedsFromSalesOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities', 'ifrs-full_PurchaseOfIntangibleAssetsClassifiedAsInvestingActivities', 'ifrs-full_PurchaseOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities']"
+  },
+  "dart-acnt-00126380-2026-11013-CFS.json": {
+    "key": "dart-acnt-00126380-2026-11013-CFS",
+    "url": "https://opendart.fss.or.kr/api/fnlttSinglAcntAll.json?corp_code=00126380&bsns_year=2026&reprt_code=11013&fs_div=CFS",
+    "sha256": "2dd3bca942d78e8e37ff71a27ba66d35d769c6f28f0f718d59413648ef312684",
+    "retrievedAt": "2026-10-06T04:13:31.554669+00:00",
+    "trimmed": "rows whose account_id is in ['dart_AdjustmentsForAssetsLiabilitiesOfOperatingActivities', 'dart_CashAndCashEquivalentsAtBeginningOfPeriodCf', 'dart_CashAndCashEquivalentsAtEndOfPeriodCf', 'ifrs-full_Assets', 'ifrs-full_CashAndCashEquivalents', 'ifrs-full_CashFlowsFromUsedInOperatingActivities', 'ifrs-full_CashFlowsFromUsedInOperations', 'ifrs-full_ProceedsFromSalesOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities', 'ifrs-full_PurchaseOfIntangibleAssetsClassifiedAsInvestingActivities', 'ifrs-full_PurchaseOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities']"
+  },
+  "dart-acnt-00126380-2026-11014-CFS.json": {
+    "key": "dart-acnt-00126380-2026-11014-CFS",
+    "url": "https://opendart.fss.or.kr/api/fnlttSinglAcntAll.json?corp_code=00126380&bsns_year=2026&reprt_code=11014&fs_div=CFS",
+    "sha256": "5b9f448765008cd323ab5b94081c873aa00d39974e7ed5aa1964b00a19e8242b",
+    "retrievedAt": "2026-10-06T04:26:20.976685+00:00",
+    "trimmed": "unchanged"
+  },
+  "sec-submissions-0000320193.json": {
+    "key": "sec-submissions-0000320193",
+    "url": "https://data.sec.gov/submissions/CIK0000320193.json",
+    "sha256": "e89635068cd46772d1d3859ce2bc839fab781630787943a1874f258fa354e7a9",
+    "retrievedAt": "2026-10-06T06:35:17.068907+00:00",
+    "trimmed": "identity fields ['cik', 'entityType', 'sic', 'sicDescription', 'name', 'tickers', 'exchanges', 'category', 'fiscalYearEnd', 'stateOfIncorporation']; filings.recent rows with form in ['10-K', '10-K/A', '10-Q', '10-Q/A', '8-K'] and filingDate >= 2024-06-01 (all columns kept); filings.files unchanged"
+  },
+  "sec-submissions-0001045810.json": {
+    "key": "sec-submissions-0001045810",
+    "url": "https://data.sec.gov/submissions/CIK0001045810.json",
+    "sha256": "0b3ce6a0cd78c43d69b19b7efb9effcd79d0c6bd4c43606aac84d0f872cc9c73",
+    "retrievedAt": "2026-10-06T06:35:16.640301+00:00",
+    "trimmed": "identity fields ['cik', 'entityType', 'sic', 'sicDescription', 'name', 'tickers', 'exchanges', 'category', 'fiscalYearEnd', 'stateOfIncorporation']; filings.recent rows with form in ['10-K', '10-K/A', '10-Q', '10-Q/A', '8-K'] and filingDate >= 2024-06-01 (all columns kept); filings.files unchanged"
+  },
+  "sec-submissions-0001652044.json": {
+    "key": "sec-submissions-0001652044",
+    "url": "https://data.sec.gov/submissions/CIK0001652044.json",
+    "sha256": "9434407b197d6322de4bece8ad3b69459c8d6ddf3a68526b4b22b02e8175d33c",
+    "retrievedAt": "2026-10-06T06:35:17.729187+00:00",
+    "trimmed": "identity fields ['cik', 'entityType', 'sic', 'sicDescription', 'name', 'tickers', 'exchanges', 'category', 'fiscalYearEnd', 'stateOfIncorporation']; filings.recent rows with form in ['10-K', '10-K/A', '10-Q', '10-Q/A', '8-K'] and filingDate >= 2024-06-01 (all columns kept); filings.files unchanged"
+  },
+  "dart-list-00126380-20260929.json": {
+    "key": "dart-list-00126380-20260929",
+    "url": "https://opendart.fss.or.kr/api/list.json?corp_code=00126380&bgn_de=20250101&end_de=20260929&pblntf_ty=A&last_reprt_at=N&page_count=100&page_no=1&sort=date&sort_mth=desc",
+    "sha256": "2421b2d87ca71cd1b35714aa2369b7bf5f795369c93a5bd6c3685cf1d3d9a907",
+    "retrievedAt": "2026-09-30T06:10:27.204672+00:00",
+    "trimmed": "unchanged; copied from data/sources/dart-list-005930-2421b2d87ca71cd1.json (equitylab store; query bgn_de 20250101, wider than ratings-v1 asOf - 400 days)"
+  }
+}

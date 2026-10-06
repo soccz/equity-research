@@ -1,0 +1,82 @@
+{
+ "stockListSortType": "MARKET_VALUE",
+ "stockListCategoryType": "KOSPI",
+ "stocks": [
+  {
+   "stockType": "domestic",
+   "stockEndType": "stock",
+   "itemCode": "005930",
+   "stockName": "삼성전자",
+   "closePrice": "271,250",
+   "closePriceRaw": "271250",
+   "marketValue": "15,858,031",
+   "marketValueRaw": "1585803072420000",
+   "localTradedAt": "2026-10-06T13:11:21+09:00",
+   "marketStatus": "OPEN"
+  },
+  {
+   "stockType": "domestic",
+   "stockEndType": "stock",
+   "itemCode": "000660",
+   "stockName": "SK하이닉스",
+   "closePrice": "1,781,000",
+   "closePriceRaw": "1781000",
+   "marketValue": "13,010,069",
+   "marketValueRaw": "1301006902065000",
+   "localTradedAt": "2026-10-06T13:11:21+09:00",
+   "marketStatus": "OPEN"
+  },
+  {
+   "stockType": "domestic",
+   "stockEndType": "stock",
+   "itemCode": "005935",
+   "stockName": "삼성전자우",
+   "closePrice": "197,950",
+   "closePriceRaw": "197950",
+   "marketValue": "1,588,294",
+   "marketValueRaw": "158829379633850",
+   "localTradedAt": "2026-10-06T13:11:19+09:00",
+   "marketStatus": "OPEN"
+  },
+  {
+   "stockType": "domestic",
+   "stockEndType": "stock",
+   "itemCode": "005380",
+   "stockName": "현대차",
+   "closePrice": "347,250",
+   "closePriceRaw": "347250",
+   "marketValue": "706,537",
+   "marketValueRaw": "70653739347000",
+   "localTradedAt": "2026-10-06T13:11:22+09:00",
+   "marketStatus": "OPEN"
+  },
+  {
+   "stockType": "domestic",
+   "stockEndType": "stock",
+   "itemCode": "105560",
+   "stockName": "KB금융",
+   "closePrice": "167,000",
+   "closePriceRaw": "167000",
+   "marketValue": "592,329",
+   "marketValueRaw": "59232851578000",
+   "localTradedAt": "2026-10-06T13:11:20+09:00",
+   "marketStatus": "OPEN"
+  },
+  {
+   "stockType": "domestic",
+   "stockEndType": "stock",
+   "itemCode": "055550",
+   "stockName": "신한지주",
+   "closePrice": "103,500",
+   "closePriceRaw": "103500",
+   "marketValue": "485,881",
+   "marketValueRaw": "48588099736500",
+   "localTradedAt": "2026-10-06T13:11:20+09:00",
+   "marketStatus": "OPEN"
+  }
+ ],
+ "totalCount": 17,
+ "page": 1,
+ "pageSize": 6,
+ "marketStatus": "OPEN"
+}

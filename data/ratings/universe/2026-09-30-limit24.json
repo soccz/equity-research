@@ -1,0 +1,2061 @@
+{
+  "asOf": "2026-09-30",
+  "builtAt": "2026-10-06T06:35:13+00:00",
+  "limit": 24,
+  "markets": {
+    "KR": {
+      "commons": 809,
+      "counts": {
+        "eligible": 19,
+        "excluded": {
+          "financial_holding": 3,
+          "financial_ksic": 2
+        },
+        "members": 24
+      },
+      "error": null,
+      "filtered": {
+        "etf": 1171,
+        "etn": 367,
+        "other_class": 111,
+        "reit": 24
+      },
+      "issues": [
+        {
+          "detail": "Naver marketStatus OPEN",
+          "issue": "ranking_during_session"
+        },
+        {
+          "detail": "Naver prices at 2026-10-06T15:35:23+09:00",
+          "issue": "ranking_after_as_of"
+        }
+      ],
+      "marketStatus": "OPEN",
+      "pages": 25,
+      "pricedAt": "2026-10-06T15:35:23+09:00",
+      "rows": 2482,
+      "status": "ok",
+      "totalCount": 2482
+    },
+    "US": {
+      "counts": {
+        "eligible": 22,
+        "excluded": {
+          "financial_sic": 2
+        },
+        "members": 24
+      },
+      "equityRows": 504,
+      "equityWeight": 99.959774,
+      "error": null,
+      "ff12Hash": "a605678ad15de28e678f759a9c88fb102e3163b1540ef9f53d64cc25733d920a",
+      "holdingsAsOf": "2026-10-02",
+      "issues": [
+        {
+          "detail": "SPY holdings as of 2026-10-02",
+          "issue": "holdings_date"
+        }
+      ],
+      "skipped": [
+        {
+          "identifier": "999USDZ92",
+          "name": "US DOLLAR",
+          "ticker": "-",
+          "weight": 0.268367
+        },
+        {
+          "identifier": "436CVR021",
+          "name": "TPG INC",
+          "ticker": "2602335D",
+          "weight": 3e-06
+        }
+      ],
+      "status": "ok"
+    }
+  },
+  "members": [
+    {
+      "cik": "0001045810",
+      "error": null,
+      "fiscalYearEnd": "0131",
+      "id": "US:0001045810",
+      "market": "US",
+      "name": "NVIDIA CORP",
+      "priceSymbol": "NVDA",
+      "rank": 1,
+      "reason": null,
+      "sector": "BusEq",
+      "shareClasses": [
+        {
+          "kind": "common",
+          "priceSymbol": "NVDA",
+          "ticker": "NVDA",
+          "weight": 8.504512
+        }
+      ],
+      "sic": "3674",
+      "sicDescription": "Semiconductors & Related Devices",
+      "status": "eligible",
+      "ticker": "NVDA",
+      "weight": 8.504512
+    },
+    {
+      "cik": "0000320193",
+      "error": null,
+      "fiscalYearEnd": "0926",
+      "id": "US:0000320193",
+      "market": "US",
+      "name": "Apple Inc.",
+      "priceSymbol": "AAPL",
+      "rank": 2,
+      "reason": null,
+      "sector": "BusEq",
+      "shareClasses": [
+        {
+          "kind": "common",
+          "priceSymbol": "AAPL",
+          "ticker": "AAPL",
+          "weight": 7.31531
+        }
+      ],
+      "sic": "3571",
+      "sicDescription": "Electronic Computers",
+      "status": "eligible",
+      "ticker": "AAPL",
+      "weight": 7.31531
+    },
+    {
+      "cik": "0000789019",
+      "error": null,
+      "fiscalYearEnd": "0630",
+      "id": "US:0000789019",
+      "market": "US",
+      "name": "MICROSOFT CORP",
+      "priceSymbol": "MSFT",
+      "rank": 3,
+      "reason": null,
+      "sector": "BusEq",
+      "shareClasses": [
+        {
+          "kind": "common",
+          "priceSymbol": "MSFT",
+          "ticker": "MSFT",
+          "weight": 5.772583
+        }
+      ],
+      "sic": "7372",
+      "sicDescription": "Services-Prepackaged Software",
+      "status": "eligible",
+      "ticker": "MSFT",
+      "weight": 5.772583
+    },
+    {
+      "cik": "0001652044",
+      "error": null,
+      "fiscalYearEnd": "1231",
+      "id": "US:0001652044",
+      "market": "US",
+      "name": "Alphabet Inc.",
+      "priceSymbol": "GOOGL",
+      "rank": 4,
+      "reason": null,
+      "sector": "BusEq",
+      "shareClasses": [
+        {
+          "kind": "common",
+          "priceSymbol": "GOOGL",
+          "ticker": "GOOGL",
+          "weight": 3.027691
+        },
+        {
+          "kind": "common",
+          "priceSymbol": "GOOG",
+          "ticker": "GOOG",
+          "weight": 2.430157
+        }
+      ],
+      "sic": "7370",
+      "sicDescription": "Services-Computer Programming, Data Processing, Etc.",
+      "status": "eligible",
+      "ticker": "GOOGL",
+      "weight": 5.457848
+    },
+    {
+      "cik": "0001018724",
+      "error": null,
+      "fiscalYearEnd": "1231",
+      "id": "US:0001018724",
+      "market": "US",
+      "name": "AMAZON COM INC",
+      "priceSymbol": "AMZN",
+      "rank": 5,
+      "reason": null,
+      "sector": "Shops",
+      "shareClasses": [
+        {
+          "kind": "common",
+          "priceSymbol": "AMZN",
+          "ticker": "AMZN",
+          "weight": 3.708586
+        }
+      ],
+      "sic": "5961",
+      "sicDescription": "Retail-Catalog & Mail-Order Houses",
+      "status": "eligible",
+      "ticker": "AMZN",
+      "weight": 3.708586
+    },
+    {
+      "cik": "0001730168",
+      "error": null,
+      "fiscalYearEnd": "1101",
+      "id": "US:0001730168",
+      "market": "US",
+      "name": "Broadcom Inc.",
+      "priceSymbol": "AVGO",
+      "rank": 6,
+      "reason": null,
+      "sector": "BusEq",
+      "shareClasses": [
+        {
+          "kind": "common",
+          "priceSymbol": "AVGO",
+          "ticker": "AVGO",
+          "weight": 2.538098
+        }
+      ],
+      "sic": "3674",
+      "sicDescription": "Semiconductors & Related Devices",
+      "status": "eligible",
+      "ticker": "AVGO",
+      "weight": 2.538098
+    },
+    {
+      "cik": "0001326801",
+      "error": null,
+      "fiscalYearEnd": "1231",
+      "id": "US:0001326801",
+      "market": "US",
+      "name": "Meta Platforms, Inc.",
+      "priceSymbol": "META",
+      "rank": 7,
+      "reason": null,
+      "sector": "BusEq",
+      "shareClasses": [
+        {
+          "kind": "common",
+          "priceSymbol": "META",
+          "ticker": "META",
+          "weight": 2.411735
+        }
+      ],
+      "sic": "7370",
+      "sicDescription": "Services-Computer Programming, Data Processing, Etc.",
+      "status": "eligible",
+      "ticker": "META",
+      "weight": 2.411735
+    },
+    {
+      "cik": "0000723125",
+      "error": null,
+      "fiscalYearEnd": "0903",
+      "id": "US:0000723125",
+      "market": "US",
+      "name": "MICRON TECHNOLOGY INC",
+      "priceSymbol": "MU",
+      "rank": 8,
+      "reason": null,
+      "sector": "BusEq",
+      "shareClasses": [
+        {
+          "kind": "common",
+          "priceSymbol": "MU",
+          "ticker": "MU",
+          "weight": 1.82362
+        }
+      ],
+      "sic": "3674",
+      "sicDescription": "Semiconductors & Related Devices",
+      "status": "eligible",
+      "ticker": "MU",
+      "weight": 1.82362
+    },
+    {
+      "cik": "0001318605",
+      "error": null,
+      "fiscalYearEnd": "1231",
+      "id": "US:0001318605",
+      "market": "US",
+      "name": "Tesla, Inc.",
+      "priceSymbol": "TSLA",
+      "rank": 9,
+      "reason": null,
+      "sector": "Durbl",
+      "shareClasses": [
+        {
+          "kind": "common",
+          "priceSymbol": "TSLA",
+          "ticker": "TSLA",
+          "weight": 1.56871
+        }
+      ],
+      "sic": "3711",
+      "sicDescription": "Motor Vehicles & Passenger Car Bodies",
+      "status": "eligible",
+      "ticker": "TSLA",
+      "weight": 1.56871
+    },
+    {
+      "cik": "0000002488",
+      "error": null,
+      "fiscalYearEnd": "1226",
+      "id": "US:0000002488",
+      "market": "US",
+      "name": "ADVANCED MICRO DEVICES INC",
+      "priceSymbol": "AMD",
+      "rank": 10,
+      "reason": null,
+      "sector": "BusEq",
+      "shareClasses": [
+        {
+          "kind": "common",
+          "priceSymbol": "AMD",
+          "ticker": "AMD",
+          "weight": 1.554299
+        }
+      ],
+      "sic": "3674",
+      "sicDescription": "Semiconductors & Related Devices",
+      "status": "eligible",
+      "ticker": "AMD",
+      "weight": 1.554299
+    },
+    {
+      "cik": "0001067983",
+      "error": null,
+      "fiscalYearEnd": "1231",
+      "id": "US:0001067983",
+      "market": "US",
+      "name": "BERKSHIRE HATHAWAY INC",
+      "priceSymbol": "BRK-B",
+      "rank": 11,
+      "reason": "financial_sic",
+      "sector": "Money",
+      "shareClasses": [
+        {
+          "kind": "common",
+          "priceSymbol": "BRK-B",
+          "ticker": "BRK.B",
+          "weight": 1.406241
+        }
+      ],
+      "sic": "6331",
+      "sicDescription": "Fire, Marine & Casualty Insurance",
+      "status": "excluded",
+      "ticker": "BRK.B",
+      "weight": 1.406241
+    },
+    {
+      "cik": "0000059478",
+      "error": null,
+      "fiscalYearEnd": "1231",
+      "id": "US:0000059478",
+      "market": "US",
+      "name": "ELI LILLY & Co",
+      "priceSymbol": "LLY",
+      "rank": 12,
+      "reason": null,
+      "sector": "Hlth",
+      "shareClasses": [
+        {
+          "kind": "common",
+          "priceSymbol": "LLY",
+          "ticker": "LLY",
+          "weight": 1.373638
+        }
+      ],
+      "sic": "2834",
+      "sicDescription": "Pharmaceutical Preparations",
+      "status": "eligible",
+      "ticker": "LLY",
+      "weight": 1.373638
+    },
+    {
+      "cik": "0000019617",
+      "error": null,
+      "fiscalYearEnd": "1231",
+      "id": "US:0000019617",
+      "market": "US",
+      "name": "JPMORGAN CHASE & CO",
+      "priceSymbol": "JPM",
+      "rank": 13,
+      "reason": "financial_sic",
+      "sector": "Money",
+      "shareClasses": [
+        {
+          "kind": "common",
+          "priceSymbol": "JPM",
+          "ticker": "JPM",
+          "weight": 1.327025
+        }
+      ],
+      "sic": "6021",
+      "sicDescription": "National Commercial Banks",
+      "status": "excluded",
+      "ticker": "JPM",
+      "weight": 1.327025
+    },
+    {
+      "cik": "0002115436",
+      "error": null,
+      "fiscalYearEnd": "1231",
+      "id": "US:0002115436",
+      "market": "US",
+      "name": "ExxonMobil Holdings Corp",
+      "priceSymbol": "XOM",
+      "rank": 14,
+      "reason": null,
+      "sector": "Enrgy",
+      "shareClasses": [
+        {
+          "kind": "common",
+          "priceSymbol": "XOM",
+          "ticker": "XOM",
+          "weight": 1.01287
+        }
+      ],
+      "sic": "2911",
+      "sicDescription": "Petroleum Refining",
+      "status": "eligible",
+      "ticker": "XOM",
+      "weight": 1.01287
+    },
+    {
+      "cik": "0000200406",
+      "error": null,
+      "fiscalYearEnd": "0103",
+      "id": "US:0000200406",
+      "market": "US",
+      "name": "JOHNSON & JOHNSON",
+      "priceSymbol": "JNJ",
+      "rank": 15,
+      "reason": null,
+      "sector": "Hlth",
+      "shareClasses": [
+        {
+          "kind": "common",
+          "priceSymbol": "JNJ",
+          "ticker": "JNJ",
+          "weight": 0.926675
+        }
+      ],
+      "sic": "2834",
+      "sicDescription": "Pharmaceutical Preparations",
+      "status": "eligible",
+      "ticker": "JNJ",
+      "weight": 0.926675
+    },
+    {
+      "cik": "0001403161",
+      "error": null,
+      "fiscalYearEnd": "0930",
+      "id": "US:0001403161",
+      "market": "US",
+      "name": "VISA INC.",
+      "priceSymbol": "V",
+      "rank": 16,
+      "reason": null,
+      "sector": "Other",
+      "shareClasses": [
+        {
+          "kind": "common",
+          "priceSymbol": "V",
+          "ticker": "V",
+          "weight": 0.923249
+        }
+      ],
+      "sic": "7389",
+      "sicDescription": "Services-Business Services, NEC",
+      "status": "eligible",
+      "ticker": "V",
+      "weight": 0.923249
+    },
+    {
+      "cik": "0000050863",
+      "error": null,
+      "fiscalYearEnd": "1227",
+      "id": "US:0000050863",
+      "market": "US",
+      "name": "INTEL CORP",
+      "priceSymbol": "INTC",
+      "rank": 17,
+      "reason": null,
+      "sector": "BusEq",
+      "shareClasses": [
+        {
+          "kind": "common",
+          "priceSymbol": "INTC",
+          "ticker": "INTC",
+          "weight": 0.890708
+        }
+      ],
+      "sic": "3674",
+      "sicDescription": "Semiconductors & Related Devices",
+      "status": "eligible",
+      "ticker": "INTC",
+      "weight": 0.890708
+    },
+    {
+      "cik": "0000104169",
+      "error": null,
+      "fiscalYearEnd": "0131",
+      "id": "US:0000104169",
+      "market": "US",
+      "name": "Walmart Inc.",
+      "priceSymbol": "WMT",
+      "rank": 18,
+      "reason": null,
+      "sector": "Shops",
+      "shareClasses": [
+        {
+          "kind": "common",
+          "priceSymbol": "WMT",
+          "ticker": "WMT",
+          "weight": 0.69797
+        }
+      ],
+      "sic": "5331",
+      "sicDescription": "Retail-Variety Stores",
+      "status": "eligible",
+      "ticker": "WMT",
+      "weight": 0.69797
+    },
+    {
+      "cik": "0001551152",
+      "error": null,
+      "fiscalYearEnd": "1231",
+      "id": "US:0001551152",
+      "market": "US",
+      "name": "AbbVie Inc.",
+      "priceSymbol": "ABBV",
+      "rank": 19,
+      "reason": null,
+      "sector": "Hlth",
+      "shareClasses": [
+        {
+          "kind": "common",
+          "priceSymbol": "ABBV",
+          "ticker": "ABBV",
+          "weight": 0.697464
+        }
+      ],
+      "sic": "2834",
+      "sicDescription": "Pharmaceutical Preparations",
+      "status": "eligible",
+      "ticker": "ABBV",
+      "weight": 0.697464
+    },
+    {
+      "cik": "0001141391",
+      "error": null,
+      "fiscalYearEnd": "1231",
+      "id": "US:0001141391",
+      "market": "US",
+      "name": "Mastercard Inc",
+      "priceSymbol": "MA",
+      "rank": 20,
+      "reason": null,
+      "sector": "Other",
+      "shareClasses": [
+        {
+          "kind": "common",
+          "priceSymbol": "MA",
+          "ticker": "MA",
+          "weight": 0.670797
+        }
+      ],
+      "sic": "7389",
+      "sicDescription": "Services-Business Services, NEC",
+      "status": "eligible",
+      "ticker": "MA",
+      "weight": 0.670797
+    },
+    {
+      "cik": "0000858877",
+      "error": null,
+      "fiscalYearEnd": "0725",
+      "id": "US:0000858877",
+      "market": "US",
+      "name": "CISCO SYSTEMS, INC.",
+      "priceSymbol": "CSCO",
+      "rank": 21,
+      "reason": null,
+      "sector": "BusEq",
+      "shareClasses": [
+        {
+          "kind": "common",
+          "priceSymbol": "CSCO",
+          "ticker": "CSCO",
+          "weight": 0.66411
+        }
+      ],
+      "sic": "3576",
+      "sicDescription": "Computer Communications Equipment",
+      "status": "eligible",
+      "ticker": "CSCO",
+      "weight": 0.66411
+    },
+    {
+      "cik": "0000707549",
+      "error": null,
+      "fiscalYearEnd": "0628",
+      "id": "US:0000707549",
+      "market": "US",
+      "name": "LAM RESEARCH CORP",
+      "priceSymbol": "LRCX",
+      "rank": 22,
+      "reason": null,
+      "sector": "Manuf",
+      "shareClasses": [
+        {
+          "kind": "common",
+          "priceSymbol": "LRCX",
+          "ticker": "LRCX",
+          "weight": 0.653172
+        }
+      ],
+      "sic": "3559",
+      "sicDescription": "Special Industry Machinery, NEC",
+      "status": "eligible",
+      "ticker": "LRCX",
+      "weight": 0.653172
+    },
+    {
+      "cik": "0001321655",
+      "error": null,
+      "fiscalYearEnd": "1231",
+      "id": "US:0001321655",
+      "market": "US",
+      "name": "Palantir Technologies Inc.",
+      "priceSymbol": "PLTR",
+      "rank": 23,
+      "reason": null,
+      "sector": "BusEq",
+      "shareClasses": [
+        {
+          "kind": "common",
+          "priceSymbol": "PLTR",
+          "ticker": "PLTR",
+          "weight": 0.652336
+        }
+      ],
+      "sic": "7372",
+      "sicDescription": "Services-Prepackaged Software",
+      "status": "eligible",
+      "ticker": "PLTR",
+      "weight": 0.652336
+    },
+    {
+      "cik": "0000006951",
+      "error": null,
+      "fiscalYearEnd": "1026",
+      "id": "US:0000006951",
+      "market": "US",
+      "name": "APPLIED MATERIALS INC /DE",
+      "priceSymbol": "AMAT",
+      "rank": 24,
+      "reason": null,
+      "sector": "BusEq",
+      "shareClasses": [
+        {
+          "kind": "common",
+          "priceSymbol": "AMAT",
+          "ticker": "AMAT",
+          "weight": 0.643843
+        }
+      ],
+      "sic": "3674",
+      "sicDescription": "Semiconductors & Related Devices",
+      "status": "eligible",
+      "ticker": "AMAT",
+      "weight": 0.643843
+    },
+    {
+      "corpCode": "00126380",
+      "error": null,
+      "fiscalYearEnd": "1231",
+      "id": "KR:005930",
+      "ksic": "264",
+      "market": "KR",
+      "name": "삼성전자",
+      "priceSymbol": "005930.KS",
+      "rank": 1,
+      "rankMarketValue": 1590187781376000,
+      "reason": null,
+      "sector": "BusEq",
+      "shareClasses": [
+        {
+          "kind": "common",
+          "listedShares": 5846278608,
+          "priceSymbol": "005930.KS",
+          "ticker": "005930"
+        },
+        {
+          "kind": "preferred",
+          "listedShares": 802371203,
+          "priceSymbol": "005935.KS",
+          "ticker": "005935"
+        }
+      ],
+      "status": "eligible",
+      "ticker": "005930"
+    },
+    {
+      "corpCode": "00164779",
+      "error": null,
+      "fiscalYearEnd": "1231",
+      "id": "KR:000660",
+      "ksic": "2612",
+      "market": "KR",
+      "name": "SK하이닉스",
+      "priceSymbol": "000660.KS",
+      "rank": 2,
+      "rankMarketValue": 1295162963145000,
+      "reason": null,
+      "sector": "BusEq",
+      "shareClasses": [
+        {
+          "kind": "common",
+          "listedShares": 730492365,
+          "priceSymbol": "000660.KS",
+          "ticker": "000660"
+        }
+      ],
+      "status": "eligible",
+      "ticker": "000660"
+    },
+    {
+      "corpCode": "01596425",
+      "error": null,
+      "fiscalYearEnd": "1231",
+      "id": "KR:402340",
+      "ksic": "64992",
+      "market": "KR",
+      "name": "SK스퀘어",
+      "priceSymbol": "402340.KS",
+      "rank": 3,
+      "rankMarketValue": 153163761678000,
+      "reason": null,
+      "sector": "Other",
+      "shareClasses": [
+        {
+          "kind": "common",
+          "listedShares": 131923998,
+          "priceSymbol": "402340.KS",
+          "ticker": "402340"
+        }
+      ],
+      "status": "eligible",
+      "ticker": "402340"
+    },
+    {
+      "corpCode": "00126371",
+      "error": null,
+      "fiscalYearEnd": "1231",
+      "id": "KR:009150",
+      "ksic": "2622",
+      "market": "KR",
+      "name": "삼성전기",
+      "priceSymbol": "009150.KS",
+      "rank": 4,
+      "rankMarketValue": 125111940800000,
+      "reason": null,
+      "sector": "BusEq",
+      "shareClasses": [
+        {
+          "kind": "common",
+          "listedShares": 74693696,
+          "priceSymbol": "009150.KS",
+          "ticker": "009150"
+        },
+        {
+          "kind": "preferred",
+          "listedShares": 2906984,
+          "priceSymbol": "009155.KS",
+          "ticker": "009155"
+        }
+      ],
+      "status": "eligible",
+      "ticker": "009150"
+    },
+    {
+      "corpCode": "01515323",
+      "error": null,
+      "fiscalYearEnd": "1231",
+      "id": "KR:373220",
+      "ksic": "28202",
+      "market": "KR",
+      "name": "LG에너지솔루션",
+      "priceSymbol": "373220.KS",
+      "rank": 5,
+      "rankMarketValue": 91260000000000,
+      "reason": null,
+      "sector": "BusEq",
+      "shareClasses": [
+        {
+          "kind": "common",
+          "listedShares": 234000000,
+          "priceSymbol": "373220.KS",
+          "ticker": "373220"
+        }
+      ],
+      "status": "eligible",
+      "ticker": "373220"
+    },
+    {
+      "corpCode": "00164742",
+      "error": null,
+      "fiscalYearEnd": "1231",
+      "id": "KR:005380",
+      "ksic": "30121",
+      "market": "KR",
+      "name": "현대차",
+      "priceSymbol": "005380.KS",
+      "rank": 6,
+      "rankMarketValue": 70806339216000,
+      "reason": null,
+      "sector": "Durbl",
+      "shareClasses": [
+        {
+          "kind": "common",
+          "listedShares": 203466492,
+          "priceSymbol": "005380.KS",
+          "ticker": "005380"
+        },
+        {
+          "kind": "preferred",
+          "listedShares": 22839037,
+          "priceSymbol": "005385.KS",
+          "ticker": "005385"
+        },
+        {
+          "kind": "preferred",
+          "listedShares": 34257047,
+          "priceSymbol": "005387.KS",
+          "ticker": "005387"
+        },
+        {
+          "kind": "preferred",
+          "listedShares": 2321926,
+          "priceSymbol": "005389.KS",
+          "ticker": "005389"
+        }
+      ],
+      "status": "eligible",
+      "ticker": "005380"
+    },
+    {
+      "corpCode": "00877059",
+      "error": null,
+      "fiscalYearEnd": "1231",
+      "id": "KR:207940",
+      "ksic": "211",
+      "market": "KR",
+      "name": "삼성바이오로직스",
+      "priceSymbol": "207940.KS",
+      "rank": 7,
+      "rankMarketValue": 60641145810000,
+      "reason": null,
+      "sector": "Hlth",
+      "shareClasses": [
+        {
+          "kind": "common",
+          "listedShares": 46290951,
+          "priceSymbol": "207940.KS",
+          "ticker": "207940"
+        }
+      ],
+      "status": "eligible",
+      "ticker": "207940"
+    },
+    {
+      "corpCode": "00688996",
+      "error": null,
+      "fiscalYearEnd": "1231",
+      "id": "KR:105560",
+      "ksic": "64992",
+      "market": "KR",
+      "name": "KB금융",
+      "priceSymbol": "105560.KS",
+      "rank": 8,
+      "rankMarketValue": 59197382804600,
+      "reason": "financial_holding",
+      "sector": "Money",
+      "shareClasses": [
+        {
+          "kind": "common",
+          "listedShares": 354687734,
+          "priceSymbol": "105560.KS",
+          "ticker": "105560"
+        }
+      ],
+      "status": "excluded",
+      "ticker": "105560"
+    },
+    {
+      "corpCode": "00126256",
+      "error": null,
+      "fiscalYearEnd": "1231",
+      "id": "KR:032830",
+      "ksic": "65110",
+      "market": "KR",
+      "name": "삼성생명",
+      "priceSymbol": "032830.KS",
+      "rank": 9,
+      "rankMarketValue": 57000000000000,
+      "reason": "financial_ksic",
+      "sector": "Money",
+      "shareClasses": [
+        {
+          "kind": "common",
+          "listedShares": 200000000,
+          "priceSymbol": "032830.KS",
+          "ticker": "032830"
+        }
+      ],
+      "status": "excluded",
+      "ticker": "032830"
+    },
+    {
+      "corpCode": "00149655",
+      "error": null,
+      "fiscalYearEnd": "1231",
+      "id": "KR:028260",
+      "ksic": "467",
+      "market": "KR",
+      "name": "삼성물산",
+      "priceSymbol": "028260.KS",
+      "rank": 10,
+      "rankMarketValue": 55461312702000,
+      "reason": null,
+      "sector": "Shops",
+      "shareClasses": [
+        {
+          "kind": "common",
+          "listedShares": 162167581,
+          "priceSymbol": "028260.KS",
+          "ticker": "028260"
+        },
+        {
+          "kind": "preferred",
+          "listedShares": 1467590,
+          "priceSymbol": "02826K.KS",
+          "ticker": "02826K"
+        }
+      ],
+      "status": "eligible",
+      "ticker": "028260"
+    },
+    {
+      "corpCode": "00126566",
+      "error": null,
+      "fiscalYearEnd": "1231",
+      "id": "KR:012450",
+      "ksic": "31321",
+      "market": "KR",
+      "name": "한화에어로스페이스",
+      "priceSymbol": "012450.KS",
+      "rank": 11,
+      "rankMarketValue": 52749359223000,
+      "reason": null,
+      "sector": "Manuf",
+      "shareClasses": [
+        {
+          "kind": "common",
+          "listedShares": 51563401,
+          "priceSymbol": "012450.KS",
+          "ticker": "012450"
+        }
+      ],
+      "status": "eligible",
+      "ticker": "012450"
+    },
+    {
+      "corpCode": "00159616",
+      "error": null,
+      "fiscalYearEnd": "1231",
+      "id": "KR:034020",
+      "ksic": "29119",
+      "market": "KR",
+      "name": "두산에너빌리티",
+      "priceSymbol": "034020.KS",
+      "rank": 12,
+      "rankMarketValue": 52205733399000,
+      "reason": null,
+      "sector": "Manuf",
+      "shareClasses": [
+        {
+          "kind": "common",
+          "listedShares": 640561146,
+          "priceSymbol": "034020.KS",
+          "ticker": "034020"
+        }
+      ],
+      "status": "eligible",
+      "ticker": "034020"
+    },
+    {
+      "corpCode": "00382199",
+      "error": null,
+      "fiscalYearEnd": "1231",
+      "id": "KR:055550",
+      "ksic": "64992",
+      "market": "KR",
+      "name": "신한지주",
+      "priceSymbol": "055550.KS",
+      "rank": 13,
+      "rankMarketValue": 48635044760400,
+      "reason": "financial_holding",
+      "sector": "Money",
+      "shareClasses": [
+        {
+          "kind": "common",
+          "listedShares": 469450239,
+          "priceSymbol": "055550.KS",
+          "ticker": "055550"
+        }
+      ],
+      "status": "excluded",
+      "ticker": "055550"
+    },
+    {
+      "corpCode": "00126362",
+      "error": null,
+      "fiscalYearEnd": "1231",
+      "id": "KR:006400",
+      "ksic": "28202",
+      "market": "KR",
+      "name": "삼성SDI",
+      "priceSymbol": "006400.KS",
+      "rank": 14,
+      "rankMarketValue": 46336679750000,
+      "reason": null,
+      "sector": "BusEq",
+      "shareClasses": [
+        {
+          "kind": "common",
+          "listedShares": 80585530,
+          "priceSymbol": "006400.KS",
+          "ticker": "006400"
+        },
+        {
+          "kind": "preferred",
+          "listedShares": 1617896,
+          "priceSymbol": "006405.KS",
+          "ticker": "006405"
+        }
+      ],
+      "status": "eligible",
+      "ticker": "006400"
+    },
+    {
+      "corpCode": "01390344",
+      "error": null,
+      "fiscalYearEnd": "1231",
+      "id": "KR:329180",
+      "ksic": "31113",
+      "market": "KR",
+      "name": "HD현대중공업",
+      "priceSymbol": "329180.KS",
+      "rank": 15,
+      "rankMarketValue": 44136195112500,
+      "reason": null,
+      "sector": "Manuf",
+      "shareClasses": [
+        {
+          "kind": "common",
+          "listedShares": 104961225,
+          "priceSymbol": "329180.KS",
+          "ticker": "329180"
+        }
+      ],
+      "status": "eligible",
+      "ticker": "329180"
+    },
+    {
+      "corpCode": "00106641",
+      "error": null,
+      "fiscalYearEnd": "1231",
+      "id": "KR:000270",
+      "ksic": "30121",
+      "market": "KR",
+      "name": "기아",
+      "priceSymbol": "000270.KS",
+      "rank": 16,
+      "rankMarketValue": 43960503574800,
+      "reason": null,
+      "sector": "Durbl",
+      "shareClasses": [
+        {
+          "kind": "common",
+          "listedShares": 390412998,
+          "priceSymbol": "000270.KS",
+          "ticker": "000270"
+        }
+      ],
+      "status": "eligible",
+      "ticker": "000270"
+    },
+    {
+      "corpCode": "00181712",
+      "error": null,
+      "fiscalYearEnd": "1231",
+      "id": "KR:034730",
+      "ksic": "64992",
+      "market": "KR",
+      "name": "SK",
+      "priceSymbol": "034730.KS",
+      "rank": 17,
+      "rankMarketValue": 42486583958000,
+      "reason": null,
+      "sector": "Other",
+      "shareClasses": [
+        {
+          "kind": "common",
+          "listedShares": 72502703,
+          "priceSymbol": "034730.KS",
+          "ticker": "034730"
+        },
+        {
+          "kind": "preferred",
+          "listedShares": 566135,
+          "priceSymbol": "03473K.KS",
+          "ticker": "03473K"
+        }
+      ],
+      "status": "eligible",
+      "ticker": "034730"
+    },
+    {
+      "corpCode": "00413046",
+      "error": null,
+      "fiscalYearEnd": "1231",
+      "id": "KR:068270",
+      "ksic": "21100",
+      "market": "KR",
+      "name": "셀트리온",
+      "priceSymbol": "068270.KS",
+      "rank": 18,
+      "rankMarketValue": 42429372902400,
+      "reason": null,
+      "sector": "Hlth",
+      "shareClasses": [
+        {
+          "kind": "common",
+          "listedShares": 232617176,
+          "priceSymbol": "068270.KS",
+          "ticker": "068270"
+        }
+      ],
+      "status": "eligible",
+      "ticker": "068270"
+    },
+    {
+      "corpCode": "00401731",
+      "error": null,
+      "fiscalYearEnd": "1231",
+      "id": "KR:066570",
+      "ksic": "264",
+      "market": "KR",
+      "name": "LG전자",
+      "priceSymbol": "066570.KS",
+      "rank": 19,
+      "rankMarketValue": 37870678335000,
+      "reason": null,
+      "sector": "BusEq",
+      "shareClasses": [
+        {
+          "kind": "common",
+          "listedShares": 162884638,
+          "priceSymbol": "066570.KS",
+          "ticker": "066570"
+        },
+        {
+          "kind": "preferred",
+          "listedShares": 17181299,
+          "priceSymbol": "066575.KS",
+          "ticker": "066575"
+        }
+      ],
+      "status": "eligible",
+      "ticker": "066570"
+    },
+    {
+      "corpCode": "00547583",
+      "error": null,
+      "fiscalYearEnd": "1231",
+      "id": "KR:086790",
+      "ksic": "64992",
+      "market": "KR",
+      "name": "하나금융지주",
+      "priceSymbol": "086790.KS",
+      "rank": 20,
+      "rankMarketValue": 34873827417000,
+      "reason": "financial_holding",
+      "sector": "Money",
+      "shareClasses": [
+        {
+          "kind": "common",
+          "listedShares": 270969910,
+          "priceSymbol": "086790.KS",
+          "ticker": "086790"
+        }
+      ],
+      "status": "excluded",
+      "ticker": "086790"
+    },
+    {
+      "corpCode": "00164788",
+      "error": null,
+      "fiscalYearEnd": "1231",
+      "id": "KR:012330",
+      "ksic": "303",
+      "market": "KR",
+      "name": "현대모비스",
+      "priceSymbol": "012330.KS",
+      "rank": 21,
+      "rankMarketValue": 34131822300000,
+      "reason": null,
+      "sector": "Durbl",
+      "shareClasses": [
+        {
+          "kind": "common",
+          "listedShares": 89820585,
+          "priceSymbol": "012330.KS",
+          "ticker": "012330"
+        }
+      ],
+      "status": "eligible",
+      "ticker": "012330"
+    },
+    {
+      "corpCode": "00105855",
+      "error": null,
+      "fiscalYearEnd": "1231",
+      "id": "KR:010120",
+      "ksic": "28121",
+      "market": "KR",
+      "name": "LS ELECTRIC",
+      "priceSymbol": "010120.KS",
+      "rank": 22,
+      "rankMarketValue": 32625000000000,
+      "reason": null,
+      "sector": "Manuf",
+      "shareClasses": [
+        {
+          "kind": "common",
+          "listedShares": 150000000,
+          "priceSymbol": "010120.KS",
+          "ticker": "010120"
+        }
+      ],
+      "status": "eligible",
+      "ticker": "010120"
+    },
+    {
+      "corpCode": "00266961",
+      "error": null,
+      "fiscalYearEnd": "1231",
+      "id": "KR:035420",
+      "ksic": "63120",
+      "market": "KR",
+      "name": "NAVER",
+      "priceSymbol": "035420.KS",
+      "rank": 23,
+      "rankMarketValue": 29065233915900,
+      "reason": null,
+      "sector": "BusEq",
+      "shareClasses": [
+        {
+          "kind": "common",
+          "listedShares": 152094369,
+          "priceSymbol": "035420.KS",
+          "ticker": "035420"
+        }
+      ],
+      "status": "eligible",
+      "ticker": "035420"
+    },
+    {
+      "corpCode": "00139214",
+      "error": null,
+      "fiscalYearEnd": "1231",
+      "id": "KR:000810",
+      "ksic": "65121",
+      "market": "KR",
+      "name": "삼성화재",
+      "priceSymbol": "000810.KS",
+      "rank": 24,
+      "rankMarketValue": 28351145355000,
+      "reason": "financial_ksic",
+      "sector": "Money",
+      "shareClasses": [
+        {
+          "kind": "common",
+          "listedShares": 44647473,
+          "priceSymbol": "000810.KS",
+          "ticker": "000810"
+        },
+        {
+          "kind": "preferred",
+          "listedShares": 3007020,
+          "priceSymbol": "000815.KS",
+          "ticker": "000815"
+        }
+      ],
+      "status": "excluded",
+      "ticker": "000810"
+    }
+  ],
+  "rules": {
+    "KR": {
+      "commonCode": "[0-9A-Z]{5}0",
+      "commonType": "stock",
+      "excludeNames": {
+        "리츠": "reit",
+        "스팩": "spac"
+      },
+      "financialHoldingName": "금융지주",
+      "financialKsic": [
+        "64",
+        "65",
+        "66",
+        "68"
+      ],
+      "keptKsic": [
+        "64992"
+      ],
+      "listedShares": "marketValueRaw (KRW) / closePriceRaw at build time",
+      "preferred": "same first five code characters, last character not 0, name starting with the common name",
+      "sectors": "data/ratings/reference/ksic-ff12.json (SHA-256 in sources)",
+      "source": "Naver KOSPI market-value ranking",
+      "top": 200
+    },
+    "US": {
+      "equityTicker": "[A-Z]{1,5}(\\.[A-Z]{1,2})?",
+      "financialSic": [
+        6000,
+        6799
+      ],
+      "issuer": "SEC CIK via company_tickers.json (BRK.B -> BRK-B); one member per CIK, priced by the class with the largest SPY weight",
+      "sectors": "Fama-French 12 from Siccodes12; SIC outside every range = Other",
+      "source": "SSGA SPY daily holdings"
+    }
+  },
+  "rulesHash": "dea95ea2db394208decb57623777f10ef77680b6f5a59419aca6b2219876e39c",
+  "sources": [
+    {
+      "bytes": 54522,
+      "file": "data/ratings/sources/ssga-spy-holdings-a98f3779e7d375bc.xlsx",
+      "key": "ssga-spy-holdings",
+      "provider": "SSGA",
+      "retrievedAt": "2026-10-06T06:35:14.326212+00:00",
+      "sha256": "a98f3779e7d375bcbb1fa04fea802cee5fe82915bf36778aac699452db0dd1c5",
+      "url": "https://www.ssga.com/us/en/intermediary/etfs/library-content/products/fund-data/etfs/us/holdings-daily-us-en-spy.xlsx"
+    },
+    {
+      "bytes": 798727,
+      "file": "data/ratings/sources/sec-company-tickers-eb943bdc3d233f54.json",
+      "key": "sec-company-tickers",
+      "provider": "SEC",
+      "retrievedAt": "2026-10-06T06:35:14.800996+00:00",
+      "sha256": "eb943bdc3d233f54644ba916f261651460a0b94f6fbf29dbf3c1788271b17bf9",
+      "url": "https://www.sec.gov/files/company_tickers.json"
+    },
+    {
+      "bytes": 881,
+      "file": "data/ratings/sources/ken-french-siccodes12-d801141acf039f2e.zip",
+      "key": "ken-french-siccodes12",
+      "provider": "Ken French",
+      "retrievedAt": "2026-10-06T06:35:16.197037+00:00",
+      "sha256": "d801141acf039f2e06e6d4d9ba2b3992e9747a1d82fabd53ef21da4a3af79fff",
+      "url": "https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/ftp/Siccodes12.zip"
+    },
+    {
+      "bytes": 159785,
+      "file": "data/ratings/sources/sec-submissions-0001045810-0b3ce6a0cd78c43d.json",
+      "key": "sec-submissions-0001045810",
+      "provider": "SEC",
+      "retrievedAt": "2026-10-06T06:35:16.640301+00:00",
+      "sha256": "0b3ce6a0cd78c43d69b19b7efb9effcd79d0c6bd4c43606aac84d0f872cc9c73",
+      "url": "https://data.sec.gov/submissions/CIK0001045810.json"
+    },
+    {
+      "bytes": 163743,
+      "file": "data/ratings/sources/sec-submissions-0000320193-e89635068cd46772.json",
+      "key": "sec-submissions-0000320193",
+      "provider": "SEC",
+      "retrievedAt": "2026-10-06T06:35:17.068907+00:00",
+      "sha256": "e89635068cd46772d1d3859ce2bc839fab781630787943a1874f258fa354e7a9",
+      "url": "https://data.sec.gov/submissions/CIK0000320193.json"
+    },
+    {
+      "bytes": 185250,
+      "file": "data/ratings/sources/sec-submissions-0000789019-2484a2a3b5677d89.json",
+      "key": "sec-submissions-0000789019",
+      "provider": "SEC",
+      "retrievedAt": "2026-10-06T06:35:17.397847+00:00",
+      "sha256": "2484a2a3b5677d892a1b25af573ce4eda7b6f449f5eda41bac6b3f106dc3139c",
+      "url": "https://data.sec.gov/submissions/CIK0000789019.json"
+    },
+    {
+      "bytes": 152415,
+      "file": "data/ratings/sources/sec-submissions-0001652044-9434407b197d6322.json",
+      "key": "sec-submissions-0001652044",
+      "provider": "SEC",
+      "retrievedAt": "2026-10-06T06:35:17.729187+00:00",
+      "sha256": "9434407b197d6322de4bece8ad3b69459c8d6ddf3a68526b4b22b02e8175d33c",
+      "url": "https://data.sec.gov/submissions/CIK0001652044.json"
+    },
+    {
+      "bytes": 159744,
+      "file": "data/ratings/sources/sec-submissions-0001018724-aa73908ad46a600a.json",
+      "key": "sec-submissions-0001018724",
+      "provider": "SEC",
+      "retrievedAt": "2026-10-06T06:35:18.051323+00:00",
+      "sha256": "aa73908ad46a600a4a9525ec65b777d0726c27c6de594e2c74e0e0bea832c399",
+      "url": "https://data.sec.gov/submissions/CIK0001018724.json"
+    },
+    {
+      "bytes": 159933,
+      "file": "data/ratings/sources/sec-submissions-0001730168-b3bb8094e6809c7b.json",
+      "key": "sec-submissions-0001730168",
+      "provider": "SEC",
+      "retrievedAt": "2026-10-06T06:35:18.386412+00:00",
+      "sha256": "b3bb8094e6809c7b3c7d2d7f419363b213bfa5071b40adb2bc2534317637f061",
+      "url": "https://data.sec.gov/submissions/CIK0001730168.json"
+    },
+    {
+      "bytes": 157876,
+      "file": "data/ratings/sources/sec-submissions-0001326801-2748907971ba09da.json",
+      "key": "sec-submissions-0001326801",
+      "provider": "SEC",
+      "retrievedAt": "2026-10-06T06:35:18.699436+00:00",
+      "sha256": "2748907971ba09da370187949d1d9694ce036a19b511e723b99dd4c76f8ca4cb",
+      "url": "https://data.sec.gov/submissions/CIK0001326801.json"
+    },
+    {
+      "bytes": 164587,
+      "file": "data/ratings/sources/sec-submissions-0000723125-3164701495da663e.json",
+      "key": "sec-submissions-0000723125",
+      "provider": "SEC",
+      "retrievedAt": "2026-10-06T06:35:19.000448+00:00",
+      "sha256": "3164701495da663e7f87476f9bcf8898d6dd4ca6a7677dc1ddf5c7a59542c40b",
+      "url": "https://data.sec.gov/submissions/CIK0000723125.json"
+    },
+    {
+      "bytes": 161958,
+      "file": "data/ratings/sources/sec-submissions-0001318605-76ef728de78f5a70.json",
+      "key": "sec-submissions-0001318605",
+      "provider": "SEC",
+      "retrievedAt": "2026-10-06T06:35:19.310238+00:00",
+      "sha256": "76ef728de78f5a7048154847052d1be4b76d32be9e790f57d8ce14a026be6c3a",
+      "url": "https://data.sec.gov/submissions/CIK0001318605.json"
+    },
+    {
+      "bytes": 162206,
+      "file": "data/ratings/sources/sec-submissions-0000002488-9789d97cfb1b41fb.json",
+      "key": "sec-submissions-0000002488",
+      "provider": "SEC",
+      "retrievedAt": "2026-10-06T06:35:19.604273+00:00",
+      "sha256": "9789d97cfb1b41fb58cc5fcebd13cfced084409dc3bbcfb6ca1382304f092493",
+      "url": "https://data.sec.gov/submissions/CIK0000002488.json"
+    },
+    {
+      "bytes": 161228,
+      "file": "data/ratings/sources/sec-submissions-0001067983-34b9413cd96afb01.json",
+      "key": "sec-submissions-0001067983",
+      "provider": "SEC",
+      "retrievedAt": "2026-10-06T06:35:19.906338+00:00",
+      "sha256": "34b9413cd96afb0137d445dfdc64e7c780b81b734ac97227e9174b72d2fed1af",
+      "url": "https://data.sec.gov/submissions/CIK0001067983.json"
+    },
+    {
+      "bytes": 158710,
+      "file": "data/ratings/sources/sec-submissions-0000059478-a86ac966f881c749.json",
+      "key": "sec-submissions-0000059478",
+      "provider": "SEC",
+      "retrievedAt": "2026-10-06T06:35:20.198705+00:00",
+      "sha256": "a86ac966f881c749964e351234ababeb6face9a7a449ce9a3459534b4aa261f4",
+      "url": "https://data.sec.gov/submissions/CIK0000059478.json"
+    },
+    {
+      "bytes": 4625471,
+      "file": "data/ratings/sources/sec-submissions-0000019617-314f9554bc341a35.json",
+      "key": "sec-submissions-0000019617",
+      "provider": "SEC",
+      "retrievedAt": "2026-10-06T06:35:20.860364+00:00",
+      "sha256": "314f9554bc341a35ca0374d408bc6bd290bb2474a1fd891c4a16ad70983ea746",
+      "url": "https://data.sec.gov/submissions/CIK0000019617.json"
+    },
+    {
+      "bytes": 6939,
+      "file": "data/ratings/sources/sec-submissions-0002115436-1a6e901c794592b1.json",
+      "key": "sec-submissions-0002115436",
+      "provider": "SEC",
+      "retrievedAt": "2026-10-06T06:35:21.202826+00:00",
+      "sha256": "1a6e901c794592b13da83675297ead1bffa210bbb6a016ee13e9d41a26b1eb56",
+      "url": "https://data.sec.gov/submissions/CIK0002115436.json"
+    },
+    {
+      "bytes": 154758,
+      "file": "data/ratings/sources/sec-submissions-0000200406-269cec583b49d64b.json",
+      "key": "sec-submissions-0000200406",
+      "provider": "SEC",
+      "retrievedAt": "2026-10-06T06:35:21.548395+00:00",
+      "sha256": "269cec583b49d64b87a61196490d6d2a685ce697346269d4d1f8fe9d673fbfb6",
+      "url": "https://data.sec.gov/submissions/CIK0000200406.json"
+    },
+    {
+      "bytes": 159205,
+      "file": "data/ratings/sources/sec-submissions-0001403161-7f985aa8d9b9b717.json",
+      "key": "sec-submissions-0001403161",
+      "provider": "SEC",
+      "retrievedAt": "2026-10-06T06:35:21.851299+00:00",
+      "sha256": "7f985aa8d9b9b7171d7784aa41af99770be5bc86afc2b1d508aa977f5aa0dc18",
+      "url": "https://data.sec.gov/submissions/CIK0001403161.json"
+    },
+    {
+      "bytes": 159311,
+      "file": "data/ratings/sources/sec-submissions-0000050863-f04f1a2215ca448e.json",
+      "key": "sec-submissions-0000050863",
+      "provider": "SEC",
+      "retrievedAt": "2026-10-06T06:35:22.142483+00:00",
+      "sha256": "f04f1a2215ca448e8661d5dd6fea91c878168cf6f8edef08c7cab602659c4111",
+      "url": "https://data.sec.gov/submissions/CIK0000050863.json"
+    },
+    {
+      "bytes": 157326,
+      "file": "data/ratings/sources/sec-submissions-0000104169-5cafa5114f8ee98f.json",
+      "key": "sec-submissions-0000104169",
+      "provider": "SEC",
+      "retrievedAt": "2026-10-06T06:35:22.492838+00:00",
+      "sha256": "5cafa5114f8ee98f494579220a476ab0d84c83ecc761a916761382ef11d8e470",
+      "url": "https://data.sec.gov/submissions/CIK0000104169.json"
+    },
+    {
+      "bytes": 156216,
+      "file": "data/ratings/sources/sec-submissions-0001551152-c7bf7b44e4d69760.json",
+      "key": "sec-submissions-0001551152",
+      "provider": "SEC",
+      "retrievedAt": "2026-10-06T06:35:22.855796+00:00",
+      "sha256": "c7bf7b44e4d69760946c32d21941f427c6e9f68528fba23f2e3c35e0457105c8",
+      "url": "https://data.sec.gov/submissions/CIK0001551152.json"
+    },
+    {
+      "bytes": 160869,
+      "file": "data/ratings/sources/sec-submissions-0001141391-709217ebaaec0302.json",
+      "key": "sec-submissions-0001141391",
+      "provider": "SEC",
+      "retrievedAt": "2026-10-06T06:35:23.157370+00:00",
+      "sha256": "709217ebaaec0302314c96b2e8f42c5438178109f807f0f8490b6ee8bff5745b",
+      "url": "https://data.sec.gov/submissions/CIK0001141391.json"
+    },
+    {
+      "bytes": 158275,
+      "file": "data/ratings/sources/sec-submissions-0000858877-73828b4b6957249d.json",
+      "key": "sec-submissions-0000858877",
+      "provider": "SEC",
+      "retrievedAt": "2026-10-06T06:35:23.478214+00:00",
+      "sha256": "73828b4b6957249d5c79353420215ea042930711bd498e6049109e4201ea715e",
+      "url": "https://data.sec.gov/submissions/CIK0000858877.json"
+    },
+    {
+      "bytes": 165188,
+      "file": "data/ratings/sources/sec-submissions-0000707549-6fceded57bafb04f.json",
+      "key": "sec-submissions-0000707549",
+      "provider": "SEC",
+      "retrievedAt": "2026-10-06T06:35:23.767133+00:00",
+      "sha256": "6fceded57bafb04f3a75bd0f9f49a3820281ed0681744a8163b29b75851ab9a2",
+      "url": "https://data.sec.gov/submissions/CIK0000707549.json"
+    },
+    {
+      "bytes": 159009,
+      "file": "data/ratings/sources/sec-submissions-0001321655-60547bf31fb5fa83.json",
+      "key": "sec-submissions-0001321655",
+      "provider": "SEC",
+      "retrievedAt": "2026-10-06T06:35:24.064139+00:00",
+      "sha256": "60547bf31fb5fa83f6bafe5da93ac1593ed2e113efdca47c8b0282cc1f317c95",
+      "url": "https://data.sec.gov/submissions/CIK0001321655.json"
+    },
+    {
+      "bytes": 159620,
+      "file": "data/ratings/sources/sec-submissions-0000006951-ed5b9d52c5c29ddb.json",
+      "key": "sec-submissions-0000006951",
+      "provider": "SEC",
+      "retrievedAt": "2026-10-06T06:35:24.476973+00:00",
+      "sha256": "ed5b9d52c5c29ddb0129461fa79283054574cfd690a298070e93b40ed077d074",
+      "url": "https://data.sec.gov/submissions/CIK0000006951.json"
+    },
+    {
+      "bytes": 196371,
+      "file": "data/ratings/sources/naver-kospi-marketvalue-p1-33110d1b77486d0e.json",
+      "key": "naver-kospi-marketvalue-p1",
+      "provider": "Naver Finance",
+      "retrievedAt": "2026-10-06T06:35:24.869990+00:00",
+      "sha256": "33110d1b77486d0efa82d3d7251e6c988c4c7d20139b2dc136902d7d5a8bee36",
+      "url": "https://m.stock.naver.com/api/stocks/marketValue/KOSPI?page=1&pageSize=100"
+    },
+    {
+      "bytes": 185225,
+      "file": "data/ratings/sources/naver-kospi-marketvalue-p2-1baf2cbb092a84c2.json",
+      "key": "naver-kospi-marketvalue-p2",
+      "provider": "Naver Finance",
+      "retrievedAt": "2026-10-06T06:35:25.199363+00:00",
+      "sha256": "1baf2cbb092a84c2e474b162c1f686df7ccc14597c0b3f4b828870e04d731adf",
+      "url": "https://m.stock.naver.com/api/stocks/marketValue/KOSPI?page=2&pageSize=100"
+    },
+    {
+      "bytes": 180243,
+      "file": "data/ratings/sources/naver-kospi-marketvalue-p3-0353faa31be0e443.json",
+      "key": "naver-kospi-marketvalue-p3",
+      "provider": "Naver Finance",
+      "retrievedAt": "2026-10-06T06:35:25.609325+00:00",
+      "sha256": "0353faa31be0e443d12d8f4e4ddb7727eb52145b8a41505572496aad43f2e09e",
+      "url": "https://m.stock.naver.com/api/stocks/marketValue/KOSPI?page=3&pageSize=100"
+    },
+    {
+      "bytes": 176039,
+      "file": "data/ratings/sources/naver-kospi-marketvalue-p4-22b51f52c271d271.json",
+      "key": "naver-kospi-marketvalue-p4",
+      "provider": "Naver Finance",
+      "retrievedAt": "2026-10-06T06:35:26.026221+00:00",
+      "sha256": "22b51f52c271d27117b6c9d2b495a5659a8788b63ea0853e83afbc71b43338b5",
+      "url": "https://m.stock.naver.com/api/stocks/marketValue/KOSPI?page=4&pageSize=100"
+    },
+    {
+      "bytes": 176331,
+      "file": "data/ratings/sources/naver-kospi-marketvalue-p5-c9c86cfa5d543c3f.json",
+      "key": "naver-kospi-marketvalue-p5",
+      "provider": "Naver Finance",
+      "retrievedAt": "2026-10-06T06:35:26.358014+00:00",
+      "sha256": "c9c86cfa5d543c3f712544b49f883db965394cb5ff320b4206ed768b85e9504b",
+      "url": "https://m.stock.naver.com/api/stocks/marketValue/KOSPI?page=5&pageSize=100"
+    },
+    {
+      "bytes": 175031,
+      "file": "data/ratings/sources/naver-kospi-marketvalue-p6-38a13223acfc41ed.json",
+      "key": "naver-kospi-marketvalue-p6",
+      "provider": "Naver Finance",
+      "retrievedAt": "2026-10-06T06:35:26.705207+00:00",
+      "sha256": "38a13223acfc41ed4ebd2d737dead9d2c893d8eb4408cd61c59ddb347f0853e5",
+      "url": "https://m.stock.naver.com/api/stocks/marketValue/KOSPI?page=6&pageSize=100"
+    },
+    {
+      "bytes": 171702,
+      "file": "data/ratings/sources/naver-kospi-marketvalue-p7-c86754d926b911ca.json",
+      "key": "naver-kospi-marketvalue-p7",
+      "provider": "Naver Finance",
+      "retrievedAt": "2026-10-06T06:35:27.045195+00:00",
+      "sha256": "c86754d926b911ca3aeedfec1840ac4e1b1d8db2d6c3fefeca32d6f5be503f9f",
+      "url": "https://m.stock.naver.com/api/stocks/marketValue/KOSPI?page=7&pageSize=100"
+    },
+    {
+      "bytes": 166588,
+      "file": "data/ratings/sources/naver-kospi-marketvalue-p8-dc095d5c24f066c6.json",
+      "key": "naver-kospi-marketvalue-p8",
+      "provider": "Naver Finance",
+      "retrievedAt": "2026-10-06T06:35:27.376687+00:00",
+      "sha256": "dc095d5c24f066c6a3bbba600454dccff4dd37897470e8a37e3e4e8243f68bad",
+      "url": "https://m.stock.naver.com/api/stocks/marketValue/KOSPI?page=8&pageSize=100"
+    },
+    {
+      "bytes": 163491,
+      "file": "data/ratings/sources/naver-kospi-marketvalue-p9-8e93d9a0d916536e.json",
+      "key": "naver-kospi-marketvalue-p9",
+      "provider": "Naver Finance",
+      "retrievedAt": "2026-10-06T06:35:27.703185+00:00",
+      "sha256": "8e93d9a0d916536e7b4eb19bcf94ecac63cae53c6f2643420281b599ef659c5b",
+      "url": "https://m.stock.naver.com/api/stocks/marketValue/KOSPI?page=9&pageSize=100"
+    },
+    {
+      "bytes": 161088,
+      "file": "data/ratings/sources/naver-kospi-marketvalue-p10-11e88e306ff51403.json",
+      "key": "naver-kospi-marketvalue-p10",
+      "provider": "Naver Finance",
+      "retrievedAt": "2026-10-06T06:35:28.034650+00:00",
+      "sha256": "11e88e306ff514036a86f4d3a467c716bed872d3253f812bbd6d641cb6b6b06f",
+      "url": "https://m.stock.naver.com/api/stocks/marketValue/KOSPI?page=10&pageSize=100"
+    },
+    {
+      "bytes": 160521,
+      "file": "data/ratings/sources/naver-kospi-marketvalue-p11-1c92a2be105c490a.json",
+      "key": "naver-kospi-marketvalue-p11",
+      "provider": "Naver Finance",
+      "retrievedAt": "2026-10-06T06:35:28.358780+00:00",
+      "sha256": "1c92a2be105c490ab6da46eb477e34d598771e1cc215e9e355939e6260abc82b",
+      "url": "https://m.stock.naver.com/api/stocks/marketValue/KOSPI?page=11&pageSize=100"
+    },
+    {
+      "bytes": 160074,
+      "file": "data/ratings/sources/naver-kospi-marketvalue-p12-92d963b197842711.json",
+      "key": "naver-kospi-marketvalue-p12",
+      "provider": "Naver Finance",
+      "retrievedAt": "2026-10-06T06:35:28.685881+00:00",
+      "sha256": "92d963b197842711f2e5eb48deb9cee43a715807c339afd8dbc64e57faaa21df",
+      "url": "https://m.stock.naver.com/api/stocks/marketValue/KOSPI?page=12&pageSize=100"
+    },
+    {
+      "bytes": 160230,
+      "file": "data/ratings/sources/naver-kospi-marketvalue-p13-f1f2de70e707a79f.json",
+      "key": "naver-kospi-marketvalue-p13",
+      "provider": "Naver Finance",
+      "retrievedAt": "2026-10-06T06:35:29.042905+00:00",
+      "sha256": "f1f2de70e707a79f0fc8e9234a3f1986787b6752d08eae33758633d56b0ec781",
+      "url": "https://m.stock.naver.com/api/stocks/marketValue/KOSPI?page=13&pageSize=100"
+    },
+    {
+      "bytes": 160482,
+      "file": "data/ratings/sources/naver-kospi-marketvalue-p14-0c07000af0352896.json",
+      "key": "naver-kospi-marketvalue-p14",
+      "provider": "Naver Finance",
+      "retrievedAt": "2026-10-06T06:35:29.446722+00:00",
+      "sha256": "0c07000af03528966bc7314ef48465dcf957463ddfd4bdcbb737b715f1734e78",
+      "url": "https://m.stock.naver.com/api/stocks/marketValue/KOSPI?page=14&pageSize=100"
+    },
+    {
+      "bytes": 160602,
+      "file": "data/ratings/sources/naver-kospi-marketvalue-p15-2fdfc54a4c295b95.json",
+      "key": "naver-kospi-marketvalue-p15",
+      "provider": "Naver Finance",
+      "retrievedAt": "2026-10-06T06:35:29.775561+00:00",
+      "sha256": "2fdfc54a4c295b95a3961858c1aa5b67f597eca7582f03e1958c4185c78484a0",
+      "url": "https://m.stock.naver.com/api/stocks/marketValue/KOSPI?page=15&pageSize=100"
+    },
+    {
+      "bytes": 160791,
+      "file": "data/ratings/sources/naver-kospi-marketvalue-p16-e487d527f8e5306b.json",
+      "key": "naver-kospi-marketvalue-p16",
+      "provider": "Naver Finance",
+      "retrievedAt": "2026-10-06T06:35:35.074842+00:00",
+      "sha256": "e487d527f8e5306b75b9aefabbca69e96d62704526e1c5dfab597c8c234791f2",
+      "url": "https://m.stock.naver.com/api/stocks/marketValue/KOSPI?page=16&pageSize=100"
+    },
+    {
+      "bytes": 160821,
+      "file": "data/ratings/sources/naver-kospi-marketvalue-p17-3395869dac354b88.json",
+      "key": "naver-kospi-marketvalue-p17",
+      "provider": "Naver Finance",
+      "retrievedAt": "2026-10-06T06:35:35.396725+00:00",
+      "sha256": "3395869dac354b88bc7ac7a1583e0393f78a446c9fbdf8ad3c020d4ab63b0428",
+      "url": "https://m.stock.naver.com/api/stocks/marketValue/KOSPI?page=17&pageSize=100"
+    },
+    {
+      "bytes": 160998,
+      "file": "data/ratings/sources/naver-kospi-marketvalue-p18-e16e0e2692247bfc.json",
+      "key": "naver-kospi-marketvalue-p18",
+      "provider": "Naver Finance",
+      "retrievedAt": "2026-10-06T06:35:35.685984+00:00",
+      "sha256": "e16e0e2692247bfc377f25fef7183a9ab452dcf12f7e1e0b502706802987c4dd",
+      "url": "https://m.stock.naver.com/api/stocks/marketValue/KOSPI?page=18&pageSize=100"
+    },
+    {
+      "bytes": 160903,
+      "file": "data/ratings/sources/naver-kospi-marketvalue-p19-2b4acc588dc175b0.json",
+      "key": "naver-kospi-marketvalue-p19",
+      "provider": "Naver Finance",
+      "retrievedAt": "2026-10-06T06:35:35.990633+00:00",
+      "sha256": "2b4acc588dc175b0af3363580c9b67157ae871c20e2c9b899adf31877e32569f",
+      "url": "https://m.stock.naver.com/api/stocks/marketValue/KOSPI?page=19&pageSize=100"
+    },
+    {
+      "bytes": 161032,
+      "file": "data/ratings/sources/naver-kospi-marketvalue-p20-b098d4f07738a85c.json",
+      "key": "naver-kospi-marketvalue-p20",
+      "provider": "Naver Finance",
+      "retrievedAt": "2026-10-06T06:35:36.276479+00:00",
+      "sha256": "b098d4f07738a85c3c6bced9ffdc4b86af257b6163b05f2ee052adfc2eb11ea3",
+      "url": "https://m.stock.naver.com/api/stocks/marketValue/KOSPI?page=20&pageSize=100"
+    },
+    {
+      "bytes": 161201,
+      "file": "data/ratings/sources/naver-kospi-marketvalue-p21-01cb6db027bba814.json",
+      "key": "naver-kospi-marketvalue-p21",
+      "provider": "Naver Finance",
+      "retrievedAt": "2026-10-06T06:35:36.569789+00:00",
+      "sha256": "01cb6db027bba8148705aa1020cff2be814eb212bbc29663db99afa78fa71922",
+      "url": "https://m.stock.naver.com/api/stocks/marketValue/KOSPI?page=21&pageSize=100"
+    },
+    {
+      "bytes": 161111,
+      "file": "data/ratings/sources/naver-kospi-marketvalue-p22-fe9cbf9b78a865e4.json",
+      "key": "naver-kospi-marketvalue-p22",
+      "provider": "Naver Finance",
+      "retrievedAt": "2026-10-06T06:35:36.867261+00:00",
+      "sha256": "fe9cbf9b78a865e494ec6c69d2285b05d4deb461b9be3ad3832d3b557a0ae4d6",
+      "url": "https://m.stock.naver.com/api/stocks/marketValue/KOSPI?page=22&pageSize=100"
+    },
+    {
+      "bytes": 160911,
+      "file": "data/ratings/sources/naver-kospi-marketvalue-p23-e3a7248b620bcc25.json",
+      "key": "naver-kospi-marketvalue-p23",
+      "provider": "Naver Finance",
+      "retrievedAt": "2026-10-06T06:35:37.169972+00:00",
+      "sha256": "e3a7248b620bcc256ab6760b949fe6c4768764482a8b7e6ee62ac3024d442a06",
+      "url": "https://m.stock.naver.com/api/stocks/marketValue/KOSPI?page=23&pageSize=100"
+    },
+    {
+      "bytes": 160394,
+      "file": "data/ratings/sources/naver-kospi-marketvalue-p24-3219b571f3f7c953.json",
+      "key": "naver-kospi-marketvalue-p24",
+      "provider": "Naver Finance",
+      "retrievedAt": "2026-10-06T06:35:37.468544+00:00",
+      "sha256": "3219b571f3f7c953d645f35e8c751bd87748533eac6efa9b97a62a4364914258",
+      "url": "https://m.stock.naver.com/api/stocks/marketValue/KOSPI?page=24&pageSize=100"
+    },
+    {
+      "bytes": 131066,
+      "file": "data/ratings/sources/naver-kospi-marketvalue-p25-6be6b7dec9cbfbfa.json",
+      "key": "naver-kospi-marketvalue-p25",
+      "provider": "Naver Finance",
+      "retrievedAt": "2026-10-06T06:35:37.757535+00:00",
+      "sha256": "6be6b7dec9cbfbfad061b6cd48c67b81b2c5cc489a7b2cb5258ec3ce47c95a43",
+      "url": "https://m.stock.naver.com/api/stocks/marketValue/KOSPI?page=25&pageSize=100"
+    },
+    {
+      "bytes": 3622597,
+      "file": "data/ratings/sources/dart-corpcode-7355d129c4baccef.zip",
+      "key": "dart-corpcode",
+      "provider": "OpenDART",
+      "retrievedAt": "2026-10-06T06:35:38.432752+00:00",
+      "sha256": "7355d129c4baccefdb8b4b91af936fc8ddd67e995071d76586d36036d4bea673",
+      "url": "https://opendart.fss.or.kr/api/corpCode.xml"
+    },
+    {
+      "bytes": 10860,
+      "file": "data/ratings/reference/ksic-ff12.json",
+      "key": "ksic-ff12",
+      "provider": "ratings-v1 reference",
+      "sha256": "7c6a73625704263142aecb35d2c27655b98a2da918cfe32b41ac3364fe2d7110",
+      "url": null
+    },
+    {
+      "bytes": 495,
+      "file": "data/ratings/sources/dart-company-00126380-d37caf0b34db38d3.json",
+      "key": "dart-company-00126380",
+      "provider": "OpenDART",
+      "retrievedAt": "2026-10-06T06:35:44.754703+00:00",
+      "sha256": "d37caf0b34db38d362d08a7af09a38db177e79700072ca96309e12bf79f00790",
+      "url": "https://opendart.fss.or.kr/api/company.json?corp_code=00126380"
+    },
+    {
+      "bytes": 473,
+      "file": "data/ratings/sources/dart-company-00164779-8f46069250abe567.json",
+      "key": "dart-company-00164779",
+      "provider": "OpenDART",
+      "retrievedAt": "2026-10-06T06:35:45.090146+00:00",
+      "sha256": "8f46069250abe56790aa1d6d3b3999b7b1f31aeffc7cee987128c8ee8fe395ee",
+      "url": "https://opendart.fss.or.kr/api/company.json?corp_code=00164779"
+    },
+    {
+      "bytes": 469,
+      "file": "data/ratings/sources/dart-company-01596425-6233a0c0a127268d.json",
+      "key": "dart-company-01596425",
+      "provider": "OpenDART",
+      "retrievedAt": "2026-10-06T06:35:45.370172+00:00",
+      "sha256": "6233a0c0a127268d00a994d5c78459eb621ac3b33c66f9495b3691fe9710f306",
+      "url": "https://opendart.fss.or.kr/api/company.json?corp_code=01596425"
+    },
+    {
+      "bytes": 481,
+      "file": "data/ratings/sources/dart-company-00126371-1a87ce7adbc52165.json",
+      "key": "dart-company-00126371",
+      "provider": "OpenDART",
+      "retrievedAt": "2026-10-06T06:35:45.657208+00:00",
+      "sha256": "1a87ce7adbc521653e9d23b8580f97f434fdd8bb8fcef7a955adeb314f008e7f",
+      "url": "https://opendart.fss.or.kr/api/company.json?corp_code=00126371"
+    },
+    {
+      "bytes": 534,
+      "file": "data/ratings/sources/dart-company-01515323-c30b09c3e25bf40e.json",
+      "key": "dart-company-01515323",
+      "provider": "OpenDART",
+      "retrievedAt": "2026-10-06T06:35:45.945864+00:00",
+      "sha256": "c30b09c3e25bf40e0f73ec8656257915238a25ed7364b164e7a9212f69f56c1c",
+      "url": "https://opendart.fss.or.kr/api/company.json?corp_code=01515323"
+    },
+    {
+      "bytes": 536,
+      "file": "data/ratings/sources/dart-company-00164742-0c568bb22eb5596f.json",
+      "key": "dart-company-00164742",
+      "provider": "OpenDART",
+      "retrievedAt": "2026-10-06T06:35:46.410157+00:00",
+      "sha256": "0c568bb22eb5596f2936b8cc94a2ccb23ffe97324729e94c7fd2276f80346997",
+      "url": "https://opendart.fss.or.kr/api/company.json?corp_code=00164742"
+    },
+    {
+      "bytes": 529,
+      "file": "data/ratings/sources/dart-company-00877059-43160f3da635f7f1.json",
+      "key": "dart-company-00877059",
+      "provider": "OpenDART",
+      "retrievedAt": "2026-10-06T06:35:46.717071+00:00",
+      "sha256": "43160f3da635f7f1e82683e940554799f17f882bd83e75333471b6147c5a3c8b",
+      "url": "https://opendart.fss.or.kr/api/company.json?corp_code=00877059"
+    },
+    {
+      "bytes": 501,
+      "file": "data/ratings/sources/dart-company-00688996-797fc2d5381461fe.json",
+      "key": "dart-company-00688996",
+      "provider": "OpenDART",
+      "retrievedAt": "2026-10-06T06:35:47.003184+00:00",
+      "sha256": "797fc2d5381461fe2584b7f013764345e9f8c80ddee5c52d36a332b96c7f5f78",
+      "url": "https://opendart.fss.or.kr/api/company.json?corp_code=00688996"
+    },
+    {
+      "bytes": 528,
+      "file": "data/ratings/sources/dart-company-00126256-1836b9ddef8a265b.json",
+      "key": "dart-company-00126256",
+      "provider": "OpenDART",
+      "retrievedAt": "2026-10-06T06:35:47.384001+00:00",
+      "sha256": "1836b9ddef8a265bf89723a04c15cbcd8a7d0c803fefbf3f99b3985ab5e85e72",
+      "url": "https://opendart.fss.or.kr/api/company.json?corp_code=00126256"
+    },
+    {
+      "bytes": 477,
+      "file": "data/ratings/sources/dart-company-00149655-48d8d8901d917f02.json",
+      "key": "dart-company-00149655",
+      "provider": "OpenDART",
+      "retrievedAt": "2026-10-06T06:35:47.677517+00:00",
+      "sha256": "48d8d8901d917f025b74cd2035dcfa3d4f25c579ad26812203b40b5b357539b5",
+      "url": "https://opendart.fss.or.kr/api/company.json?corp_code=00149655"
+    },
+    {
+      "bytes": 524,
+      "file": "data/ratings/sources/dart-company-00126566-09ef5d3c0bd985c1.json",
+      "key": "dart-company-00126566",
+      "provider": "OpenDART",
+      "retrievedAt": "2026-10-06T06:35:48.023925+00:00",
+      "sha256": "09ef5d3c0bd985c185a538a7409218df2e821044c64ecd9e4f9b0f24fd3e4f56",
+      "url": "https://opendart.fss.or.kr/api/company.json?corp_code=00126566"
+    },
+    {
+      "bytes": 621,
+      "file": "data/ratings/sources/dart-company-00159616-b7d1c1ac1e955f72.json",
+      "key": "dart-company-00159616",
+      "provider": "OpenDART",
+      "retrievedAt": "2026-10-06T06:35:48.310568+00:00",
+      "sha256": "b7d1c1ac1e955f7256e798ccf90cbc8fba93b227b5ac7c5da2912bdf4f3c4257",
+      "url": "https://opendart.fss.or.kr/api/company.json?corp_code=00159616"
+    },
+    {
+      "bytes": 503,
+      "file": "data/ratings/sources/dart-company-00382199-bd13f65e9e7a13fc.json",
+      "key": "dart-company-00382199",
+      "provider": "OpenDART",
+      "retrievedAt": "2026-10-06T06:35:48.598808+00:00",
+      "sha256": "bd13f65e9e7a13fc452061f0fd0cbcc9ec3fa21a9e70c13fa0d5b6da52e68c97",
+      "url": "https://opendart.fss.or.kr/api/company.json?corp_code=00382199"
+    },
+    {
+      "bytes": 473,
+      "file": "data/ratings/sources/dart-company-00126362-44193bc32b519cb8.json",
+      "key": "dart-company-00126362",
+      "provider": "OpenDART",
+      "retrievedAt": "2026-10-06T06:35:48.887372+00:00",
+      "sha256": "44193bc32b519cb870d322ac71a43fd621f72c4e1cdb0101c22c3d160657eae9",
+      "url": "https://opendart.fss.or.kr/api/company.json?corp_code=00126362"
+    },
+    {
+      "bytes": 535,
+      "file": "data/ratings/sources/dart-company-01390344-8beb8e8aad39bdfc.json",
+      "key": "dart-company-01390344",
+      "provider": "OpenDART",
+      "retrievedAt": "2026-10-06T06:35:49.201118+00:00",
+      "sha256": "8beb8e8aad39bdfcf764fd283814eaefd730ecc9bfb3c0f8284c96ce277b7dcf",
+      "url": "https://opendart.fss.or.kr/api/company.json?corp_code=01390344"
+    },
+    {
+      "bytes": 486,
+      "file": "data/ratings/sources/dart-company-00106641-4a956a8094eb5c25.json",
+      "key": "dart-company-00106641",
+      "provider": "OpenDART",
+      "retrievedAt": "2026-10-06T06:35:49.490916+00:00",
+      "sha256": "4a956a8094eb5c2561b092209cf6221fd6c15ebe70f93933a34e384937a021c6",
+      "url": "https://opendart.fss.or.kr/api/company.json?corp_code=00106641"
+    },
+    {
+      "bytes": 447,
+      "file": "data/ratings/sources/dart-company-00181712-b1b8af8925164e08.json",
+      "key": "dart-company-00181712",
+      "provider": "OpenDART",
+      "retrievedAt": "2026-10-06T06:35:49.779756+00:00",
+      "sha256": "b1b8af8925164e08e17b6c25ff7486efe030c0d541e7daaa5b78e9927372d54c",
+      "url": "https://opendart.fss.or.kr/api/company.json?corp_code=00181712"
+    },
+    {
+      "bytes": 517,
+      "file": "data/ratings/sources/dart-company-00413046-21e72303974bb691.json",
+      "key": "dart-company-00413046",
+      "provider": "OpenDART",
+      "retrievedAt": "2026-10-06T06:35:50.147294+00:00",
+      "sha256": "21e72303974bb691729a3463e835806b0a71b0be5c82e9db9199aa00879b1d47",
+      "url": "https://opendart.fss.or.kr/api/company.json?corp_code=00413046"
+    },
+    {
+      "bytes": 518,
+      "file": "data/ratings/sources/dart-company-00401731-bedde87fb72308f5.json",
+      "key": "dart-company-00401731",
+      "provider": "OpenDART",
+      "retrievedAt": "2026-10-06T06:35:50.454359+00:00",
+      "sha256": "bedde87fb72308f5906b4684029072c966a05be0bc1a83ed31518e186778bd6a",
+      "url": "https://opendart.fss.or.kr/api/company.json?corp_code=00401731"
+    },
+    {
+      "bytes": 497,
+      "file": "data/ratings/sources/dart-company-00547583-39ad6c9ceb252844.json",
+      "key": "dart-company-00547583",
+      "provider": "OpenDART",
+      "retrievedAt": "2026-10-06T06:35:50.760544+00:00",
+      "sha256": "39ad6c9ceb2528445c267fdd338b936447c178276f030a13adc6d17fb336ace1",
+      "url": "https://opendart.fss.or.kr/api/company.json?corp_code=00547583"
+    },
+    {
+      "bytes": 495,
+      "file": "data/ratings/sources/dart-company-00164788-e6ad28644d1151d5.json",
+      "key": "dart-company-00164788",
+      "provider": "OpenDART",
+      "retrievedAt": "2026-10-06T06:35:51.050250+00:00",
+      "sha256": "e6ad28644d1151d52efe7667d38f326adc9ab35463249f0584a91a506103baba",
+      "url": "https://opendart.fss.or.kr/api/company.json?corp_code=00164788"
+    },
+    {
+      "bytes": 516,
+      "file": "data/ratings/sources/dart-company-00105855-190f927799d20e04.json",
+      "key": "dart-company-00105855",
+      "provider": "OpenDART",
+      "retrievedAt": "2026-10-06T06:35:51.355467+00:00",
+      "sha256": "190f927799d20e04c7bf34e8981d87994f8acc91976a56be3da1175b7d3973a4",
+      "url": "https://opendart.fss.or.kr/api/company.json?corp_code=00105855"
+    },
+    {
+      "bytes": 501,
+      "file": "data/ratings/sources/dart-company-00266961-68e8215cdf2d2e75.json",
+      "key": "dart-company-00266961",
+      "provider": "OpenDART",
+      "retrievedAt": "2026-10-06T06:35:51.645682+00:00",
+      "sha256": "68e8215cdf2d2e754715efcf168ede61f7ed24e9b08acbea26d10bbfeacb33d8",
+      "url": "https://opendart.fss.or.kr/api/company.json?corp_code=00266961"
+    },
+    {
+      "bytes": 525,
+      "file": "data/ratings/sources/dart-company-00139214-14e8700c390505e8.json",
+      "key": "dart-company-00139214",
+      "provider": "OpenDART",
+      "retrievedAt": "2026-10-06T06:35:51.955679+00:00",
+      "sha256": "14e8700c390505e81109bba6eab3c90feed34ae9e3203c31b57dc27a84ade7d0",
+      "url": "https://opendart.fss.or.kr/api/company.json?corp_code=00139214"
+    }
+  ],
+  "status": "ok",
+  "version": "ratings-v1"
+}

@@ -1,0 +1,50 @@
+{
+  "AAPL": {
+    "key": "yahoo-AAPL-2026-10-05",
+    "url": "https://query2.finance.yahoo.com/v8/finance/chart/AAPL?period1=1756512000&period2=1791331200&interval=1d&events=div,split&includeAdjustedClose=true",
+    "retrievedAt": "2026-10-06T04:11:48.700915+00:00",
+    "originalSha256": "6b3d5b9a7a3cbbd0f4a072d2a4ee2eee60b9804d6a0a1738667dd96e8b6e8195",
+    "originalBytes": 31075,
+    "trimmed": "indicators.quote keeps close only"
+  },
+  "005930.KS": {
+    "key": "yahoo-005930.KS-2026-10-05",
+    "url": "https://query2.finance.yahoo.com/v8/finance/chart/005930.KS?period1=1756512000&period2=1791331200&interval=1d&events=div,split&includeAdjustedClose=true",
+    "retrievedAt": "2026-10-06T04:11:57.126016+00:00",
+    "originalSha256": "ecec0dcd3e47f502672d2f2171732bb6de59edce6d03c9bf128037448c60f0a6",
+    "originalBytes": 19283,
+    "trimmed": "indicators.quote keeps close only"
+  },
+  "^SP500TR": {
+    "key": "yahoo-_5ESP500TR-2026-10-05",
+    "url": "https://query2.finance.yahoo.com/v8/finance/chart/%5ESP500TR?period1=1756512000&period2=1791331200&interval=1d&events=div,split&includeAdjustedClose=true",
+    "retrievedAt": "2026-10-06T04:11:58.664135+00:00",
+    "originalSha256": "989df053ff157df556fde57308d20136d352d8ea102426f23e77ab13a220a338",
+    "originalBytes": 26038,
+    "trimmed": "indicators.quote keeps close only"
+  },
+  "069500.KS": {
+    "key": "yahoo-069500.KS-2026-10-05",
+    "url": "https://query2.finance.yahoo.com/v8/finance/chart/069500.KS?period1=1756512000&period2=1791331200&interval=1d&events=div,split&includeAdjustedClose=true",
+    "retrievedAt": "2026-10-06T04:11:59.421812+00:00",
+    "originalSha256": "6ea7d535c8711a1574831392efe071fc969bc55854838a12e998ded689a1ee75",
+    "originalBytes": 19009,
+    "trimmed": "indicators.quote keeps close only"
+  },
+  "SPY": {
+    "key": "yahoo-SPY-2026-10-05",
+    "url": "https://query2.finance.yahoo.com/v8/finance/chart/SPY?period1=1756512000&period2=1791331200&interval=1d&events=div,split&includeAdjustedClose=true",
+    "retrievedAt": "2026-10-06T04:12:00.110346+00:00",
+    "originalSha256": "7755e736c194944f50d892431cb67201fa038add4cf55278fb55717d0fad0871",
+    "originalBytes": 30804,
+    "trimmed": "indicators.quote keeps close only"
+  },
+  "NFLX": {
+    "key": "yahoo-NFLX-2026-10-05",
+    "url": "https://query2.finance.yahoo.com/v8/finance/chart/NFLX?period1=1756512000&period2=1791331200&interval=1d&events=div,split&includeAdjustedClose=true",
+    "retrievedAt": "2026-10-06T04:12:00.875820+00:00",
+    "originalSha256": "9acc57fb178ac78252a21c97f9c173e61a9838e8e74831cd4c6c70ceba6d0d98",
+    "originalBytes": 30771,
+    "trimmed": "indicators.quote keeps close only"
+  }
+}

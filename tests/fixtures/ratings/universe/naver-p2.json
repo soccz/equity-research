@@ -1,0 +1,82 @@
+{
+ "stockListSortType": "MARKET_VALUE",
+ "stockListCategoryType": "KOSPI",
+ "stocks": [
+  {
+   "stockType": "domestic",
+   "stockEndType": "stock",
+   "itemCode": "034730",
+   "stockName": "SK",
+   "closePrice": "585,000",
+   "closePriceRaw": "585000",
+   "marketValue": "424,141",
+   "marketValueRaw": "42414081255000",
+   "localTradedAt": "2026-10-06T13:11:22+09:00",
+   "marketStatus": "OPEN"
+  },
+  {
+   "stockType": "domestic",
+   "stockEndType": "etf",
+   "itemCode": "069500",
+   "stockName": "KODEX 200",
+   "closePrice": "110,440",
+   "closePriceRaw": "110440",
+   "marketValue": "255,779",
+   "marketValueRaw": "25577904000000",
+   "localTradedAt": "2026-10-06T13:11:18+09:00",
+   "marketStatus": "OPEN"
+  },
+  {
+   "stockType": "domestic",
+   "stockEndType": "stock",
+   "itemCode": "005490",
+   "stockName": "POSCO홀딩스",
+   "closePrice": "316,000",
+   "closePriceRaw": "316000",
+   "marketValue": "250,403",
+   "marketValueRaw": "25040322532000",
+   "localTradedAt": "2026-10-06T13:11:20+09:00",
+   "marketStatus": "OPEN"
+  },
+  {
+   "stockType": "domestic",
+   "stockEndType": "stock",
+   "itemCode": "003550",
+   "stockName": "LG",
+   "closePrice": "114,700",
+   "closePriceRaw": "114700",
+   "marketValue": "173,417",
+   "marketValueRaw": "17341722858800",
+   "localTradedAt": "2026-10-06T13:11:20+09:00",
+   "marketStatus": "OPEN"
+  },
+  {
+   "stockType": "domestic",
+   "stockEndType": "stock",
+   "itemCode": "0126Z0",
+   "stockName": "삼성에피스홀딩스",
+   "closePrice": "366,000",
+   "closePriceRaw": "366000",
+   "marketValue": "91,072",
+   "marketValueRaw": "9107195934000",
+   "localTradedAt": "2026-10-06T13:11:20+09:00",
+   "marketStatus": "OPEN"
+  },
+  {
+   "stockType": "domestic",
+   "stockEndType": "stock",
+   "itemCode": "005387",
+   "stockName": "현대차2우B",
+   "closePrice": "178,800",
+   "closePriceRaw": "178800",
+   "marketValue": "61,252",
+   "marketValueRaw": "6125160003600",
+   "localTradedAt": "2026-10-06T13:11:18+09:00",
+   "marketStatus": "OPEN"
+  }
+ ],
+ "totalCount": 17,
+ "page": 2,
+ "pageSize": 6,
+ "marketStatus": "OPEN"
+}

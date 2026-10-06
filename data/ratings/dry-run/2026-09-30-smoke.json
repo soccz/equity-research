@@ -1,0 +1,4763 @@
+{
+  "asOf": {
+    "KR": "2026-09-30",
+    "US": "2026-09-30"
+  },
+  "inputs": {
+    "fundamentals": [
+      {
+        "bytes": 131115,
+        "file": "data/ratings/sources/dart-acnt-00106641-2025-11011-CFS-893f54fdfeb7c954.json",
+        "key": "dart-acnt-00106641-2025-11011-CFS",
+        "provider": "OpenDART",
+        "retrievedAt": "2026-10-06T06:37:06.548349+00:00",
+        "sha256": "893f54fdfeb7c954a8f8cae74a88d9e05cf3397a19b4e8e922c0a05b4e9b2816",
+        "url": "https://opendart.fss.or.kr/api/fnlttSinglAcntAll.json?corp_code=00106641&bsns_year=2025&reprt_code=11011&fs_div=CFS"
+      },
+      {
+        "bytes": 77980,
+        "file": "data/ratings/sources/dart-acnt-00106641-2026-11012-CFS-8a68897a1ff32eb2.json",
+        "key": "dart-acnt-00106641-2026-11012-CFS",
+        "provider": "OpenDART",
+        "retrievedAt": "2026-10-06T06:37:06.188849+00:00",
+        "sha256": "8a68897a1ff32eb216c9a3cddbc0477f5ed9bc735437c89781a7c6ab93224b5c",
+        "url": "https://opendart.fss.or.kr/api/fnlttSinglAcntAll.json?corp_code=00106641&bsns_year=2026&reprt_code=11012&fs_div=CFS"
+      },
+      {
+        "bytes": 108523,
+        "file": "data/ratings/sources/dart-acnt-00126362-2025-11011-CFS-3fd30e29d57b9805.json",
+        "key": "dart-acnt-00126362-2025-11011-CFS",
+        "provider": "OpenDART",
+        "retrievedAt": "2026-10-06T06:37:02.650415+00:00",
+        "sha256": "3fd30e29d57b980530d855b2da6b66c96c8f65292e188261f2f4a6b2855ffd95",
+        "url": "https://opendart.fss.or.kr/api/fnlttSinglAcntAll.json?corp_code=00126362&bsns_year=2025&reprt_code=11011&fs_div=CFS"
+      },
+      {
+        "bytes": 96236,
+        "file": "data/ratings/sources/dart-acnt-00126362-2026-11012-CFS-38ec386affa9a9b0.json",
+        "key": "dart-acnt-00126362-2026-11012-CFS",
+        "provider": "OpenDART",
+        "retrievedAt": "2026-10-06T06:37:02.291327+00:00",
+        "sha256": "38ec386affa9a9b09aaf146f5cdf124a6b387db2b51aa7da472560cc967dab5c",
+        "url": "https://opendart.fss.or.kr/api/fnlttSinglAcntAll.json?corp_code=00126362&bsns_year=2026&reprt_code=11012&fs_div=CFS"
+      },
+      {
+        "bytes": 112839,
+        "file": "data/ratings/sources/dart-acnt-00126371-2025-11011-CFS-500f5a2618f0a6f5.json",
+        "key": "dart-acnt-00126371-2025-11011-CFS",
+        "provider": "OpenDART",
+        "retrievedAt": "2026-10-06T06:36:45.833749+00:00",
+        "sha256": "500f5a2618f0a6f5a6326108692c73078d3a4e3f2697fbd75f3a55f9fc645268",
+        "url": "https://opendart.fss.or.kr/api/fnlttSinglAcntAll.json?corp_code=00126371&bsns_year=2025&reprt_code=11011&fs_div=CFS"
+      },
+      {
+        "bytes": 99192,
+        "file": "data/ratings/sources/dart-acnt-00126371-2026-11012-CFS-7ac308ca75ef8070.json",
+        "key": "dart-acnt-00126371-2026-11012-CFS",
+        "provider": "OpenDART",
+        "retrievedAt": "2026-10-06T06:36:45.480303+00:00",
+        "sha256": "7ac308ca75ef8070f8b40ec0f72d15ba860af4844343dca1f78ecd75ef5c8a53",
+        "url": "https://opendart.fss.or.kr/api/fnlttSinglAcntAll.json?corp_code=00126371&bsns_year=2026&reprt_code=11012&fs_div=CFS"
+      },
+      {
+        "bytes": 114947,
+        "file": "data/ratings/sources/dart-acnt-00126380-2025-11011-CFS-d2888e542f9159cb.json",
+        "key": "dart-acnt-00126380-2025-11011-CFS",
+        "provider": "OpenDART",
+        "retrievedAt": "2026-10-06T06:36:40.510973+00:00",
+        "sha256": "d2888e542f9159cb087c7679efcd41e3d76cbf2df9e90260fa95549c7fee15e9",
+        "url": "https://opendart.fss.or.kr/api/fnlttSinglAcntAll.json?corp_code=00126380&bsns_year=2025&reprt_code=11011&fs_div=CFS"
+      },
+      {
+        "bytes": 101553,
+        "file": "data/ratings/sources/dart-acnt-00126380-2026-11012-CFS-4c8c66f8e47a2021.json",
+        "key": "dart-acnt-00126380-2026-11012-CFS",
+        "provider": "OpenDART",
+        "retrievedAt": "2026-10-06T06:36:40.122870+00:00",
+        "sha256": "4c8c66f8e47a2021587e083e5b618bc40a357a22e7ec554f891c743d3136eeee",
+        "url": "https://opendart.fss.or.kr/api/fnlttSinglAcntAll.json?corp_code=00126380&bsns_year=2026&reprt_code=11012&fs_div=CFS"
+      },
+      {
+        "bytes": 148999,
+        "file": "data/ratings/sources/dart-acnt-00126566-2025-11011-CFS-c096e99a7076801e.json",
+        "key": "dart-acnt-00126566-2025-11011-CFS",
+        "provider": "OpenDART",
+        "retrievedAt": "2026-10-06T06:36:59.544304+00:00",
+        "sha256": "c096e99a7076801efa84c993eaa6d3e873c6207b8353b1ab3fe6dd3844ac7fa0",
+        "url": "https://opendart.fss.or.kr/api/fnlttSinglAcntAll.json?corp_code=00126566&bsns_year=2025&reprt_code=11011&fs_div=CFS"
+      },
+      {
+        "bytes": 93970,
+        "file": "data/ratings/sources/dart-acnt-00126566-2026-11012-CFS-7ae48f4364aae8eb.json",
+        "key": "dart-acnt-00126566-2026-11012-CFS",
+        "provider": "OpenDART",
+        "retrievedAt": "2026-10-06T06:36:58.156114+00:00",
+        "sha256": "7ae48f4364aae8ebcfbde3c9d23353c0847f73d856cc9a785045d7b853234b3f",
+        "url": "https://opendart.fss.or.kr/api/fnlttSinglAcntAll.json?corp_code=00126566&bsns_year=2026&reprt_code=11012&fs_div=CFS"
+      },
+      {
+        "bytes": 105387,
+        "file": "data/ratings/sources/dart-acnt-00149655-2025-11011-CFS-919441dc3816e276.json",
+        "key": "dart-acnt-00149655-2025-11011-CFS",
+        "provider": "OpenDART",
+        "retrievedAt": "2026-10-06T06:36:55.864079+00:00",
+        "sha256": "919441dc3816e27617a9dba66843846298e2682b6ab1bb264b364f7edf9cb925",
+        "url": "https://opendart.fss.or.kr/api/fnlttSinglAcntAll.json?corp_code=00149655&bsns_year=2025&reprt_code=11011&fs_div=CFS"
+      },
+      {
+        "bytes": 82654,
+        "file": "data/ratings/sources/dart-acnt-00149655-2026-11012-CFS-ebeaff400ae5dfd0.json",
+        "key": "dart-acnt-00149655-2026-11012-CFS",
+        "provider": "OpenDART",
+        "retrievedAt": "2026-10-06T06:36:55.525536+00:00",
+        "sha256": "ebeaff400ae5dfd0b4366c559468546d9a5e98e56e91b7aad13414b6319b59bd",
+        "url": "https://opendart.fss.or.kr/api/fnlttSinglAcntAll.json?corp_code=00149655&bsns_year=2026&reprt_code=11012&fs_div=CFS"
+      },
+      {
+        "bytes": 166108,
+        "file": "data/ratings/sources/dart-acnt-00159616-2025-11011-CFS-de6139d21586f7a8.json",
+        "key": "dart-acnt-00159616-2025-11011-CFS",
+        "provider": "OpenDART",
+        "retrievedAt": "2026-10-06T06:37:01.086835+00:00",
+        "sha256": "de6139d21586f7a84aa53f537abe95edc7f5be769ec8809d02ff0635ed99b7e0",
+        "url": "https://opendart.fss.or.kr/api/fnlttSinglAcntAll.json?corp_code=00159616&bsns_year=2025&reprt_code=11011&fs_div=CFS"
+      },
+      {
+        "bytes": 101202,
+        "file": "data/ratings/sources/dart-acnt-00159616-2026-11012-CFS-6d1231b8f673e14b.json",
+        "key": "dart-acnt-00159616-2026-11012-CFS",
+        "provider": "OpenDART",
+        "retrievedAt": "2026-10-06T06:37:00.720315+00:00",
+        "sha256": "6d1231b8f673e14b6db0d8a8976bd4e7c155cfac73dd4d925fcc3b6701ff0185",
+        "url": "https://opendart.fss.or.kr/api/fnlttSinglAcntAll.json?corp_code=00159616&bsns_year=2026&reprt_code=11012&fs_div=CFS"
+      },
+      {
+        "bytes": 157842,
+        "file": "data/ratings/sources/dart-acnt-00164742-2025-11011-CFS-6eb41320e00c131f.json",
+        "key": "dart-acnt-00164742-2025-11011-CFS",
+        "provider": "OpenDART",
+        "retrievedAt": "2026-10-06T06:36:49.797258+00:00",
+        "sha256": "6eb41320e00c131f1acadf53b5781f74952a17b72dc2f0fa9349d3e89da0ec50",
+        "url": "https://opendart.fss.or.kr/api/fnlttSinglAcntAll.json?corp_code=00164742&bsns_year=2025&reprt_code=11011&fs_div=CFS"
+      },
+      {
+        "bytes": 128518,
+        "file": "data/ratings/sources/dart-acnt-00164742-2026-11012-CFS-73904b7450669812.json",
+        "key": "dart-acnt-00164742-2026-11012-CFS",
+        "provider": "OpenDART",
+        "retrievedAt": "2026-10-06T06:36:49.375597+00:00",
+        "sha256": "73904b74506698122f83bf37a4b1e4e69b453bfbaf0890e78827e120d3390b27",
+        "url": "https://opendart.fss.or.kr/api/fnlttSinglAcntAll.json?corp_code=00164742&bsns_year=2026&reprt_code=11012&fs_div=CFS"
+      },
+      {
+        "bytes": 116436,
+        "file": "data/ratings/sources/dart-acnt-00164779-2025-11011-CFS-6cbab63b4b88d014.json",
+        "key": "dart-acnt-00164779-2025-11011-CFS",
+        "provider": "OpenDART",
+        "retrievedAt": "2026-10-06T06:36:42.697203+00:00",
+        "sha256": "6cbab63b4b88d014a78fee7dcda14ca58f1a2b9a604c5a1f8bb980cc78c00b83",
+        "url": "https://opendart.fss.or.kr/api/fnlttSinglAcntAll.json?corp_code=00164779&bsns_year=2025&reprt_code=11011&fs_div=CFS"
+      },
+      {
+        "bytes": 110997,
+        "file": "data/ratings/sources/dart-acnt-00164779-2026-11012-CFS-2ffb8fe24cf68875.json",
+        "key": "dart-acnt-00164779-2026-11012-CFS",
+        "provider": "OpenDART",
+        "retrievedAt": "2026-10-06T06:36:42.290716+00:00",
+        "sha256": "2ffb8fe24cf68875bdd3eac93b77a49825181e9233c6e9f1325ff0a9274d0003",
+        "url": "https://opendart.fss.or.kr/api/fnlttSinglAcntAll.json?corp_code=00164779&bsns_year=2026&reprt_code=11012&fs_div=CFS"
+      },
+      {
+        "bytes": 119078,
+        "file": "data/ratings/sources/dart-acnt-00181712-2025-11011-CFS-91eb7039977cf338.json",
+        "key": "dart-acnt-00181712-2025-11011-CFS",
+        "provider": "OpenDART",
+        "retrievedAt": "2026-10-06T06:37:08.409086+00:00",
+        "sha256": "91eb7039977cf33827c5a36bd0c01dc8181d0c114b242d7952b91bbd9bc7fd08",
+        "url": "https://opendart.fss.or.kr/api/fnlttSinglAcntAll.json?corp_code=00181712&bsns_year=2025&reprt_code=11011&fs_div=CFS"
+      },
+      {
+        "bytes": 105743,
+        "file": "data/ratings/sources/dart-acnt-00181712-2026-11012-CFS-3e1b2c5a3798e980.json",
+        "key": "dart-acnt-00181712-2026-11012-CFS",
+        "provider": "OpenDART",
+        "retrievedAt": "2026-10-06T06:37:08.063413+00:00",
+        "sha256": "3e1b2c5a3798e9806272e09e1464f6ff7766d11b7e062f0d1a6ee5477479b5f5",
+        "url": "https://opendart.fss.or.kr/api/fnlttSinglAcntAll.json?corp_code=00181712&bsns_year=2026&reprt_code=11012&fs_div=CFS"
+      },
+      {
+        "bytes": 141095,
+        "file": "data/ratings/sources/dart-acnt-00413046-2025-11011-CFS-8ee80e255ea845e6.json",
+        "key": "dart-acnt-00413046-2025-11011-CFS",
+        "provider": "OpenDART",
+        "retrievedAt": "2026-10-06T06:37:10.612857+00:00",
+        "sha256": "8ee80e255ea845e6467577339a4bfca5e232eaf81a7495f5d75eb348ebff4acb",
+        "url": "https://opendart.fss.or.kr/api/fnlttSinglAcntAll.json?corp_code=00413046&bsns_year=2025&reprt_code=11011&fs_div=CFS"
+      },
+      {
+        "bytes": 119555,
+        "file": "data/ratings/sources/dart-acnt-00413046-2026-11012-CFS-f3e8571d4ea62dd7.json",
+        "key": "dart-acnt-00413046-2026-11012-CFS",
+        "provider": "OpenDART",
+        "retrievedAt": "2026-10-06T06:37:10.270908+00:00",
+        "sha256": "f3e8571d4ea62dd7d8b729e1152aa1b10fb280ddc09ccd5585a9c20bd27cb033",
+        "url": "https://opendart.fss.or.kr/api/fnlttSinglAcntAll.json?corp_code=00413046&bsns_year=2026&reprt_code=11012&fs_div=CFS"
+      },
+      {
+        "bytes": 86643,
+        "file": "data/ratings/sources/dart-acnt-00877059-2025-11011-CFS-3c580177a1402094.json",
+        "key": "dart-acnt-00877059-2025-11011-CFS",
+        "provider": "OpenDART",
+        "retrievedAt": "2026-10-06T06:36:53.629735+00:00",
+        "sha256": "3c580177a140209434ba7155be21cfc576af9484733ecacd020a15fb7109c9d0",
+        "url": "https://opendart.fss.or.kr/api/fnlttSinglAcntAll.json?corp_code=00877059&bsns_year=2025&reprt_code=11011&fs_div=CFS"
+      },
+      {
+        "bytes": 68644,
+        "file": "data/ratings/sources/dart-acnt-00877059-2026-11012-CFS-5a662dcce028e2e8.json",
+        "key": "dart-acnt-00877059-2026-11012-CFS",
+        "provider": "OpenDART",
+        "retrievedAt": "2026-10-06T06:36:53.292026+00:00",
+        "sha256": "5a662dcce028e2e8a7d4ac7cd2e9bf2b45d52be8698a8e6eab919dad1c9b18ed",
+        "url": "https://opendart.fss.or.kr/api/fnlttSinglAcntAll.json?corp_code=00877059&bsns_year=2026&reprt_code=11012&fs_div=CFS"
+      },
+      {
+        "bytes": 130727,
+        "file": "data/ratings/sources/dart-acnt-01390344-2025-11011-CFS-1d477aec8fbb8aee.json",
+        "key": "dart-acnt-01390344-2025-11011-CFS",
+        "provider": "OpenDART",
+        "retrievedAt": "2026-10-06T06:37:05.073714+00:00",
+        "sha256": "1d477aec8fbb8aee84947986f528ba20c70807945fd5d722ec08e9696a6caad8",
+        "url": "https://opendart.fss.or.kr/api/fnlttSinglAcntAll.json?corp_code=01390344&bsns_year=2025&reprt_code=11011&fs_div=CFS"
+      },
+      {
+        "bytes": 84806,
+        "file": "data/ratings/sources/dart-acnt-01390344-2026-11012-CFS-67ae1fae8fa9a1a3.json",
+        "key": "dart-acnt-01390344-2026-11012-CFS",
+        "provider": "OpenDART",
+        "retrievedAt": "2026-10-06T06:37:04.710202+00:00",
+        "sha256": "67ae1fae8fa9a1a360b2065e03e6fe97356df1dbc664863c121f81e95c250bc9",
+        "url": "https://opendart.fss.or.kr/api/fnlttSinglAcntAll.json?corp_code=01390344&bsns_year=2026&reprt_code=11012&fs_div=CFS"
+      },
+      {
+        "bytes": 108754,
+        "file": "data/ratings/sources/dart-acnt-01515323-2025-11011-CFS-c705fb31e291bee0.json",
+        "key": "dart-acnt-01515323-2025-11011-CFS",
+        "provider": "OpenDART",
+        "retrievedAt": "2026-10-06T06:36:48.112472+00:00",
+        "sha256": "c705fb31e291bee0c93d9af6d6018cae2d2def09d12fa88a31082abbb4be2457",
+        "url": "https://opendart.fss.or.kr/api/fnlttSinglAcntAll.json?corp_code=01515323&bsns_year=2025&reprt_code=11011&fs_div=CFS"
+      },
+      {
+        "bytes": 99944,
+        "file": "data/ratings/sources/dart-acnt-01515323-2026-11012-CFS-5c7484a27df4c8f5.json",
+        "key": "dart-acnt-01515323-2026-11012-CFS",
+        "provider": "OpenDART",
+        "retrievedAt": "2026-10-06T06:36:47.735362+00:00",
+        "sha256": "5c7484a27df4c8f542038ec4e9c2fe7d17033e20cde7b33b1ad02537ce87b25f",
+        "url": "https://opendart.fss.or.kr/api/fnlttSinglAcntAll.json?corp_code=01515323&bsns_year=2026&reprt_code=11012&fs_div=CFS"
+      },
+      {
+        "bytes": 119351,
+        "file": "data/ratings/sources/dart-acnt-01596425-2025-11011-CFS-d93bf72f88fae334.json",
+        "key": "dart-acnt-01596425-2025-11011-CFS",
+        "provider": "OpenDART",
+        "retrievedAt": "2026-10-06T06:36:44.335722+00:00",
+        "sha256": "d93bf72f88fae3342130f1d424c121f2a3c13c818e055b0de83e4d109d4599f1",
+        "url": "https://opendart.fss.or.kr/api/fnlttSinglAcntAll.json?corp_code=01596425&bsns_year=2025&reprt_code=11011&fs_div=CFS"
+      },
+      {
+        "bytes": 116947,
+        "file": "data/ratings/sources/dart-acnt-01596425-2026-11012-CFS-29a650e370273e57.json",
+        "key": "dart-acnt-01596425-2026-11012-CFS",
+        "provider": "OpenDART",
+        "retrievedAt": "2026-10-06T06:36:43.991994+00:00",
+        "sha256": "29a650e370273e5706abe8d216fc82de607bef17916c08238c45198d26860fdb",
+        "url": "https://opendart.fss.or.kr/api/fnlttSinglAcntAll.json?corp_code=01596425&bsns_year=2026&reprt_code=11012&fs_div=CFS"
+      },
+      {
+        "bytes": 3672449,
+        "file": "data/ratings/sources/sec-facts-CIK0000002488-21a29c75076d90fc.json",
+        "key": "sec-facts-CIK0000002488",
+        "provider": "SEC",
+        "retrievedAt": "2026-10-06T06:36:30.384728+00:00",
+        "sha256": "21a29c75076d90fced568785d855fc427a15c7458bc0bb153a9dedd88ad3349e",
+        "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000002488.json"
+      },
+      {
+        "bytes": 4311809,
+        "file": "data/ratings/sources/sec-facts-CIK0000050863-70056711b8b04d3a.json",
+        "key": "sec-facts-CIK0000050863",
+        "provider": "SEC",
+        "retrievedAt": "2026-10-06T06:36:38.365642+00:00",
+        "sha256": "70056711b8b04d3a27e4a42b6d86e26f85ddaa3d59e480039d66ccfb353eb0b8",
+        "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000050863.json"
+      },
+      {
+        "bytes": 3523596,
+        "file": "data/ratings/sources/sec-facts-CIK0000059478-3fe29099e6efaef9.json",
+        "key": "sec-facts-CIK0000059478",
+        "provider": "SEC",
+        "retrievedAt": "2026-10-06T06:36:32.214586+00:00",
+        "sha256": "3fe29099e6efaef9acac95711c271de1a644602939ea18487e29708310985942",
+        "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000059478.json"
+      },
+      {
+        "bytes": 4168526,
+        "file": "data/ratings/sources/sec-facts-CIK0000200406-7141c0c988fa1d30.json",
+        "key": "sec-facts-CIK0000200406",
+        "provider": "SEC",
+        "retrievedAt": "2026-10-06T06:36:35.260404+00:00",
+        "sha256": "7141c0c988fa1d30f779687b4c78ab561e19aa5990a58ad86a66467d0a783980",
+        "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000200406.json"
+      },
+      {
+        "bytes": 3789099,
+        "file": "data/ratings/sources/sec-facts-CIK0000320193-73a86c6aedc31f77.json",
+        "key": "sec-facts-CIK0000320193",
+        "provider": "SEC",
+        "retrievedAt": "2026-10-06T06:36:16.894784+00:00",
+        "sha256": "73a86c6aedc31f77cac2ea4df5f80f0b3bd7e6eb58bb4e01444fbedf3afb9c43",
+        "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000320193.json"
+      },
+      {
+        "bytes": 4084347,
+        "file": "data/ratings/sources/sec-facts-CIK0000723125-a8b088c2111daef3.json",
+        "key": "sec-facts-CIK0000723125",
+        "provider": "SEC",
+        "retrievedAt": "2026-10-06T06:36:26.689881+00:00",
+        "sha256": "a8b088c2111daef36536e53c81fef4c0f01220c64933e126a665b00a9257f882",
+        "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000723125.json"
+      },
+      {
+        "bytes": 4881196,
+        "file": "data/ratings/sources/sec-facts-CIK0000789019-f8aae2965b20ad0d.json",
+        "key": "sec-facts-CIK0000789019",
+        "provider": "SEC",
+        "retrievedAt": "2026-10-06T06:36:18.521151+00:00",
+        "sha256": "f8aae2965b20ad0df44bdf7ccbedf797d275b6b8dc030154a7a311361bb7246f",
+        "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000789019.json"
+      },
+      {
+        "bytes": 4478611,
+        "file": "data/ratings/sources/sec-facts-CIK0001018724-7549fb68446eee40.json",
+        "key": "sec-facts-CIK0001018724",
+        "provider": "SEC",
+        "retrievedAt": "2026-10-06T06:36:21.933773+00:00",
+        "sha256": "7549fb68446eee40e1f50a166fa06b2d2ee6349e07c8553a4828757e032d3cd4",
+        "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001018724.json"
+      },
+      {
+        "bytes": 4092966,
+        "file": "data/ratings/sources/sec-facts-CIK0001045810-19ef503a5770f566.json",
+        "key": "sec-facts-CIK0001045810",
+        "provider": "SEC",
+        "retrievedAt": "2026-10-06T06:36:14.657294+00:00",
+        "sha256": "19ef503a5770f5660964b3c3aea6937579d9b359da344afe6a9adf59c63d26ff",
+        "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001045810.json"
+      },
+      {
+        "bytes": 3641344,
+        "file": "data/ratings/sources/sec-facts-CIK0001318605-d0c2b9288d027a6d.json",
+        "key": "sec-facts-CIK0001318605",
+        "provider": "SEC",
+        "retrievedAt": "2026-10-06T06:36:28.664759+00:00",
+        "sha256": "d0c2b9288d027a6d735039a6fe874a348b65a7fdbc6c133130666c777c885204",
+        "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001318605.json"
+      },
+      {
+        "bytes": 2746680,
+        "file": "data/ratings/sources/sec-facts-CIK0001326801-7518e76d6dac2d01.json",
+        "key": "sec-facts-CIK0001326801",
+        "provider": "SEC",
+        "retrievedAt": "2026-10-06T06:36:25.122730+00:00",
+        "sha256": "7518e76d6dac2d016e1a3d1dec1cc55ff9ea3bdd58a151b16fcaa067a6c9d94e",
+        "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001326801.json"
+      },
+      {
+        "bytes": 3564517,
+        "file": "data/ratings/sources/sec-facts-CIK0001403161-df3caf7c56672965.json",
+        "key": "sec-facts-CIK0001403161",
+        "provider": "SEC",
+        "retrievedAt": "2026-10-06T06:36:36.960487+00:00",
+        "sha256": "df3caf7c5667296569fc3074ce2ff13629c9a555184a06c5ea9925b43e63971d",
+        "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001403161.json"
+      },
+      {
+        "bytes": 3164517,
+        "file": "data/ratings/sources/sec-facts-CIK0001652044-a017f26ee88cb4a6.json",
+        "key": "sec-facts-CIK0001652044",
+        "provider": "SEC",
+        "retrievedAt": "2026-10-06T06:36:20.044907+00:00",
+        "sha256": "a017f26ee88cb4a639d1c1ddb06d53b4afe22f0ac89cabec7cd67c88919fe1c5",
+        "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001652044.json"
+      },
+      {
+        "bytes": 2351559,
+        "file": "data/ratings/sources/sec-facts-CIK0001730168-3bdb6644c12addf1.json",
+        "key": "sec-facts-CIK0001730168",
+        "provider": "SEC",
+        "retrievedAt": "2026-10-06T06:36:23.596348+00:00",
+        "sha256": "3bdb6644c12addf1e63c4dc861008d7804fbf3d3f5aa6eb9b97f72c0e89a7adf",
+        "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001730168.json"
+      },
+      {
+        "bytes": 78880,
+        "file": "data/ratings/sources/sec-facts-CIK0002115436-98bde704a8084ffb.json",
+        "key": "sec-facts-CIK0002115436",
+        "provider": "SEC",
+        "retrievedAt": "2026-10-06T06:36:33.702073+00:00",
+        "sha256": "98bde704a8084ffb3578951641249b72c0172b88ed37d2e59f6f222027755d2d",
+        "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0002115436.json"
+      }
+    ],
+    "prices": [
+      {
+        "bytes": 19015,
+        "file": "data/ratings/sources/yahoo-000270.KS-2026-09-30-4fa4cc53522763e9.json",
+        "key": "yahoo-000270.KS-2026-09-30",
+        "provider": "Yahoo Finance",
+        "retrievedAt": "2026-10-06T06:37:07.499989+00:00",
+        "sha256": "4fa4cc53522763e9e7ec705ddfe3eb2be6a6a5ce532f04fc5bdd424fa2d37304",
+        "url": "https://query2.finance.yahoo.com/v8/finance/chart/000270.KS?period1=1756080000&period2=1790899200&interval=1d&events=div,split&includeAdjustedClose=true"
+      },
+      {
+        "bytes": 19832,
+        "file": "data/ratings/sources/yahoo-000660.KS-2026-09-30-8fb1e53cebb3b4e3.json",
+        "key": "yahoo-000660.KS-2026-09-30",
+        "provider": "Yahoo Finance",
+        "retrievedAt": "2026-10-06T06:36:43.461680+00:00",
+        "sha256": "8fb1e53cebb3b4e3a9c483edd3771df7b93a1d23e89fb96d6a555509b1b9eacb",
+        "url": "https://query2.finance.yahoo.com/v8/finance/chart/000660.KS?period1=1756080000&period2=1790899200&interval=1d&events=div,split&includeAdjustedClose=true"
+      },
+      {
+        "bytes": 19313,
+        "file": "data/ratings/sources/yahoo-005380.KS-2026-09-30-8d705f10185a3ce5.json",
+        "key": "yahoo-005380.KS-2026-09-30",
+        "provider": "Yahoo Finance",
+        "retrievedAt": "2026-10-06T06:36:50.556196+00:00",
+        "sha256": "8d705f10185a3ce5cc22c4ed52fb80d21c47ae41840d3ca35dfd892d5227beca",
+        "url": "https://query2.finance.yahoo.com/v8/finance/chart/005380.KS?period1=1756080000&period2=1790899200&interval=1d&events=div,split&includeAdjustedClose=true"
+      },
+      {
+        "bytes": 19284,
+        "file": "data/ratings/sources/yahoo-005385.KS-2026-09-30-ad68a6217d5bdb8f.json",
+        "key": "yahoo-005385.KS-2026-09-30",
+        "provider": "Yahoo Finance",
+        "retrievedAt": "2026-10-06T06:36:51.306186+00:00",
+        "sha256": "ad68a6217d5bdb8f299f2ba9a2c76a73c2f36757f7391fb70afe2de7e8bd8aaf",
+        "url": "https://query2.finance.yahoo.com/v8/finance/chart/005385.KS?period1=1756080000&period2=1790899200&interval=1d&events=div,split&includeAdjustedClose=true"
+      },
+      {
+        "bytes": 19337,
+        "file": "data/ratings/sources/yahoo-005387.KS-2026-09-30-c925236da3271363.json",
+        "key": "yahoo-005387.KS-2026-09-30",
+        "provider": "Yahoo Finance",
+        "retrievedAt": "2026-10-06T06:36:51.957692+00:00",
+        "sha256": "c925236da3271363cf84901f0809dc16c3ae9811a09dc13e23f5749383240371",
+        "url": "https://query2.finance.yahoo.com/v8/finance/chart/005387.KS?period1=1756080000&period2=1790899200&interval=1d&events=div,split&includeAdjustedClose=true"
+      },
+      {
+        "bytes": 19029,
+        "file": "data/ratings/sources/yahoo-005389.KS-2026-09-30-188ed8acd006a5c4.json",
+        "key": "yahoo-005389.KS-2026-09-30",
+        "provider": "Yahoo Finance",
+        "retrievedAt": "2026-10-06T06:36:52.656485+00:00",
+        "sha256": "188ed8acd006a5c48e3e1c80fccb71f6996635ecb1ea978c1aed02773652c7a3",
+        "url": "https://query2.finance.yahoo.com/v8/finance/chart/005389.KS?period1=1756080000&period2=1790899200&interval=1d&events=div,split&includeAdjustedClose=true"
+      },
+      {
+        "bytes": 19555,
+        "file": "data/ratings/sources/yahoo-005930.KS-2026-09-30-97fc122efaf12ad5.json",
+        "key": "yahoo-005930.KS-2026-09-30",
+        "provider": "Yahoo Finance",
+        "retrievedAt": "2026-10-06T06:36:41.166281+00:00",
+        "sha256": "97fc122efaf12ad5b8f1c4f2bcc81d572378abf35b1194bc2ff532641ece26b6",
+        "url": "https://query2.finance.yahoo.com/v8/finance/chart/005930.KS?period1=1756080000&period2=1790899200&interval=1d&events=div,split&includeAdjustedClose=true"
+      },
+      {
+        "bytes": 19211,
+        "file": "data/ratings/sources/yahoo-005935.KS-2026-09-30-3d95024f5c038328.json",
+        "key": "yahoo-005935.KS-2026-09-30",
+        "provider": "Yahoo Finance",
+        "retrievedAt": "2026-10-06T06:36:41.811940+00:00",
+        "sha256": "3d95024f5c0383280c3f1b7cc497b281702e99f5542c29f9fcdf8f5a8149c0f6",
+        "url": "https://query2.finance.yahoo.com/v8/finance/chart/005935.KS?period1=1756080000&period2=1790899200&interval=1d&events=div,split&includeAdjustedClose=true"
+      },
+      {
+        "bytes": 18243,
+        "file": "data/ratings/sources/yahoo-006400.KS-2026-09-30-2f727be575acc2ba.json",
+        "key": "yahoo-006400.KS-2026-09-30",
+        "provider": "Yahoo Finance",
+        "retrievedAt": "2026-10-06T06:37:03.310126+00:00",
+        "sha256": "2f727be575acc2baea8924dc35d5d8d37077457a3bceb3b1a0972d12393147a8",
+        "url": "https://query2.finance.yahoo.com/v8/finance/chart/006400.KS?period1=1756080000&period2=1790899200&interval=1d&events=div,split&includeAdjustedClose=true"
+      },
+      {
+        "bytes": 17758,
+        "file": "data/ratings/sources/yahoo-006405.KS-2026-09-30-e7f955f12ec13cf2.json",
+        "key": "yahoo-006405.KS-2026-09-30",
+        "provider": "Yahoo Finance",
+        "retrievedAt": "2026-10-06T06:37:04.162837+00:00",
+        "sha256": "e7f955f12ec13cf22610577ac30cb7b68c26b32986ab3f9fcf9ab6152d2a34c3",
+        "url": "https://query2.finance.yahoo.com/v8/finance/chart/006405.KS?period1=1756080000&period2=1790899200&interval=1d&events=div,split&includeAdjustedClose=true"
+      },
+      {
+        "bytes": 19141,
+        "file": "data/ratings/sources/yahoo-009150.KS-2026-09-30-32987593e42da584.json",
+        "key": "yahoo-009150.KS-2026-09-30",
+        "provider": "Yahoo Finance",
+        "retrievedAt": "2026-10-06T06:36:46.492076+00:00",
+        "sha256": "32987593e42da5849fc211568ce7760aba25c88276d4354b06c8ea9d60012265",
+        "url": "https://query2.finance.yahoo.com/v8/finance/chart/009150.KS?period1=1756080000&period2=1790899200&interval=1d&events=div,split&includeAdjustedClose=true"
+      },
+      {
+        "bytes": 17790,
+        "file": "data/ratings/sources/yahoo-009155.KS-2026-09-30-f2d7a839f2b0fabc.json",
+        "key": "yahoo-009155.KS-2026-09-30",
+        "provider": "Yahoo Finance",
+        "retrievedAt": "2026-10-06T06:36:47.204689+00:00",
+        "sha256": "f2d7a839f2b0fabc3290c7bd1fa7a4710754f5cd86c77d3ef97631ec9517a31c",
+        "url": "https://query2.finance.yahoo.com/v8/finance/chart/009155.KS?period1=1756080000&period2=1790899200&interval=1d&events=div,split&includeAdjustedClose=true"
+      },
+      {
+        "bytes": 19358,
+        "file": "data/ratings/sources/yahoo-012450.KS-2026-09-30-96e2f17843f2e24a.json",
+        "key": "yahoo-012450.KS-2026-09-30",
+        "provider": "Yahoo Finance",
+        "retrievedAt": "2026-10-06T06:37:00.229728+00:00",
+        "sha256": "96e2f17843f2e24addf48ffa82a48ba2d0a6668ce550f1ee71ea3afd355e4336",
+        "url": "https://query2.finance.yahoo.com/v8/finance/chart/012450.KS?period1=1756080000&period2=1790899200&interval=1d&events=div,split&includeAdjustedClose=true"
+      },
+      {
+        "bytes": 18575,
+        "file": "data/ratings/sources/yahoo-028260.KS-2026-09-30-67924ffbef4c123d.json",
+        "key": "yahoo-028260.KS-2026-09-30",
+        "provider": "Yahoo Finance",
+        "retrievedAt": "2026-10-06T06:36:56.571022+00:00",
+        "sha256": "67924ffbef4c123d94b8035e0efe8e035caa1c6e96f7616f1ae7d9ec5f6d1a06",
+        "url": "https://query2.finance.yahoo.com/v8/finance/chart/028260.KS?period1=1756080000&period2=1790899200&interval=1d&events=div,split&includeAdjustedClose=true"
+      },
+      {
+        "bytes": 18167,
+        "file": "data/ratings/sources/yahoo-02826K.KS-2026-09-30-5fad9fd7f4861c1a.json",
+        "key": "yahoo-02826K.KS-2026-09-30",
+        "provider": "Yahoo Finance",
+        "retrievedAt": "2026-10-06T06:36:57.246299+00:00",
+        "sha256": "5fad9fd7f4861c1ab9bc3e7f8166ce79895bc38b3610c271c819ab19601456f2",
+        "url": "https://query2.finance.yahoo.com/v8/finance/chart/02826K.KS?period1=1756080000&period2=1790899200&interval=1d&events=div,split&includeAdjustedClose=true"
+      },
+      {
+        "bytes": 17423,
+        "file": "data/ratings/sources/yahoo-034020.KS-2026-09-30-ccaac94d44741a9d.json",
+        "key": "yahoo-034020.KS-2026-09-30",
+        "provider": "Yahoo Finance",
+        "retrievedAt": "2026-10-06T06:37:01.672398+00:00",
+        "sha256": "ccaac94d44741a9d9342f802d82db52226a3868c6069b0de6a492367f2f60129",
+        "url": "https://query2.finance.yahoo.com/v8/finance/chart/034020.KS?period1=1756080000&period2=1790899200&interval=1d&events=div,split&includeAdjustedClose=true"
+      },
+      {
+        "bytes": 19045,
+        "file": "data/ratings/sources/yahoo-034730.KS-2026-09-30-2dde34834691b32f.json",
+        "key": "yahoo-034730.KS-2026-09-30",
+        "provider": "Yahoo Finance",
+        "retrievedAt": "2026-10-06T06:37:09.113321+00:00",
+        "sha256": "2dde34834691b32f925cffcd72dc07cc59ec8481730b314b351a1df74a5798fa",
+        "url": "https://query2.finance.yahoo.com/v8/finance/chart/034730.KS?period1=1756080000&period2=1790899200&interval=1d&events=div,split&includeAdjustedClose=true"
+      },
+      {
+        "bytes": 18662,
+        "file": "data/ratings/sources/yahoo-03473K.KS-2026-09-30-4e32b2e705c8d448.json",
+        "key": "yahoo-03473K.KS-2026-09-30",
+        "provider": "Yahoo Finance",
+        "retrievedAt": "2026-10-06T06:37:09.771165+00:00",
+        "sha256": "4e32b2e705c8d44820b7f189ca2031135fb38c60508efaaff567d8de80649be0",
+        "url": "https://query2.finance.yahoo.com/v8/finance/chart/03473K.KS?period1=1756080000&period2=1790899200&interval=1d&events=div,split&includeAdjustedClose=true"
+      },
+      {
+        "bytes": 22168,
+        "file": "data/ratings/sources/yahoo-068270.KS-2026-09-30-4809078511d11648.json",
+        "key": "yahoo-068270.KS-2026-09-30",
+        "provider": "Yahoo Finance",
+        "retrievedAt": "2026-10-06T06:37:11.377863+00:00",
+        "sha256": "4809078511d11648ff0bc33fac6c313f523559fb53ff03de9acf3b61f1a06ef4",
+        "url": "https://query2.finance.yahoo.com/v8/finance/chart/068270.KS?period1=1756080000&period2=1790899200&interval=1d&events=div,split&includeAdjustedClose=true"
+      },
+      {
+        "bytes": 19829,
+        "file": "data/ratings/sources/yahoo-207940.KS-2026-09-30-29b852ae5c27cd69.json",
+        "key": "yahoo-207940.KS-2026-09-30",
+        "provider": "Yahoo Finance",
+        "retrievedAt": "2026-10-06T06:36:54.336158+00:00",
+        "sha256": "29b852ae5c27cd698305053ba6fc73ad44cacb6bcb50d16696ca8e5e58a561b7",
+        "url": "https://query2.finance.yahoo.com/v8/finance/chart/207940.KS?period1=1756080000&period2=1790899200&interval=1d&events=div,split&includeAdjustedClose=true"
+      },
+      {
+        "bytes": 18941,
+        "file": "data/ratings/sources/yahoo-329180.KS-2026-09-30-8ff4d590dc50f4f3.json",
+        "key": "yahoo-329180.KS-2026-09-30",
+        "provider": "Yahoo Finance",
+        "retrievedAt": "2026-10-06T06:37:05.708378+00:00",
+        "sha256": "8ff4d590dc50f4f355bd6456431e752aabb806c28b481df75961bab41d172ea7",
+        "url": "https://query2.finance.yahoo.com/v8/finance/chart/329180.KS?period1=1756080000&period2=1790899200&interval=1d&events=div,split&includeAdjustedClose=true"
+      },
+      {
+        "bytes": 18196,
+        "file": "data/ratings/sources/yahoo-373220.KS-2026-09-30-340dc81d1a4ccbc3.json",
+        "key": "yahoo-373220.KS-2026-09-30",
+        "provider": "Yahoo Finance",
+        "retrievedAt": "2026-10-06T06:36:48.741392+00:00",
+        "sha256": "340dc81d1a4ccbc33173b84228e0403927679f0433374e7449810467bc8aab4c",
+        "url": "https://query2.finance.yahoo.com/v8/finance/chart/373220.KS?period1=1756080000&period2=1790899200&interval=1d&events=div,split&includeAdjustedClose=true"
+      },
+      {
+        "bytes": 19263,
+        "file": "data/ratings/sources/yahoo-402340.KS-2026-09-30-d34012c1681d2ecd.json",
+        "key": "yahoo-402340.KS-2026-09-30",
+        "provider": "Yahoo Finance",
+        "retrievedAt": "2026-10-06T06:36:44.974514+00:00",
+        "sha256": "d34012c1681d2ecd0e53abaada2ad885ffedc07e266fe7714751131287cc67ae",
+        "url": "https://query2.finance.yahoo.com/v8/finance/chart/402340.KS?period1=1756080000&period2=1790899200&interval=1d&events=div,split&includeAdjustedClose=true"
+      },
+      {
+        "bytes": 31424,
+        "file": "data/ratings/sources/yahoo-AAPL-2026-09-30-a4e9c125f51e3760.json",
+        "key": "yahoo-AAPL-2026-09-30",
+        "provider": "Yahoo Finance",
+        "retrievedAt": "2026-10-06T06:36:17.725255+00:00",
+        "sha256": "a4e9c125f51e3760d02aff0f289d1d936dcc30c7ba6869ae2c5fa01a4840d5bb",
+        "url": "https://query2.finance.yahoo.com/v8/finance/chart/AAPL?period1=1756080000&period2=1790899200&interval=1d&events=div,split&includeAdjustedClose=true"
+      },
+      {
+        "bytes": 30835,
+        "file": "data/ratings/sources/yahoo-AMD-2026-09-30-d651bf6327df1966.json",
+        "key": "yahoo-AMD-2026-09-30",
+        "provider": "Yahoo Finance",
+        "retrievedAt": "2026-10-06T06:36:31.071398+00:00",
+        "sha256": "d651bf6327df1966a704610665e0400b6c7765b2e562bd0ef333ddd11aa1f92d",
+        "url": "https://query2.finance.yahoo.com/v8/finance/chart/AMD?period1=1756080000&period2=1790899200&interval=1d&events=div,split&includeAdjustedClose=true"
+      },
+      {
+        "bytes": 31487,
+        "file": "data/ratings/sources/yahoo-AMZN-2026-09-30-1cb00725402fd349.json",
+        "key": "yahoo-AMZN-2026-09-30",
+        "provider": "Yahoo Finance",
+        "retrievedAt": "2026-10-06T06:36:22.755148+00:00",
+        "sha256": "1cb00725402fd349a20f9ae8057c77d1ab2f8d1009a816a421856cce5ad1dac2",
+        "url": "https://query2.finance.yahoo.com/v8/finance/chart/AMZN?period1=1756080000&period2=1790899200&interval=1d&events=div,split&includeAdjustedClose=true"
+      },
+      {
+        "bytes": 30997,
+        "file": "data/ratings/sources/yahoo-AVGO-2026-09-30-f8023dea841d2139.json",
+        "key": "yahoo-AVGO-2026-09-30",
+        "provider": "Yahoo Finance",
+        "retrievedAt": "2026-10-06T06:36:24.268069+00:00",
+        "sha256": "f8023dea841d2139f84e641588fa95383a01e57a61b55b1739f24e9b340e9ecc",
+        "url": "https://query2.finance.yahoo.com/v8/finance/chart/AVGO?period1=1756080000&period2=1790899200&interval=1d&events=div,split&includeAdjustedClose=true"
+      },
+      {
+        "bytes": 31407,
+        "file": "data/ratings/sources/yahoo-GOOGL-2026-09-30-a099aec74c450d66.json",
+        "key": "yahoo-GOOGL-2026-09-30",
+        "provider": "Yahoo Finance",
+        "retrievedAt": "2026-10-06T06:36:20.731315+00:00",
+        "sha256": "a099aec74c450d66bbaa84fcc925f17d184e89be08be6c9da9358e9c25713709",
+        "url": "https://query2.finance.yahoo.com/v8/finance/chart/GOOGL?period1=1756080000&period2=1790899200&interval=1d&events=div,split&includeAdjustedClose=true"
+      },
+      {
+        "bytes": 31482,
+        "file": "data/ratings/sources/yahoo-INTC-2026-09-30-a912e85f8847cbfd.json",
+        "key": "yahoo-INTC-2026-09-30",
+        "provider": "Yahoo Finance",
+        "retrievedAt": "2026-10-06T06:36:39.179668+00:00",
+        "sha256": "a912e85f8847cbfdf21543adbc1a2d386153121ebb3340ce41bd2bf7169d4bf9",
+        "url": "https://query2.finance.yahoo.com/v8/finance/chart/INTC?period1=1756080000&period2=1790899200&interval=1d&events=div,split&includeAdjustedClose=true"
+      },
+      {
+        "bytes": 31147,
+        "file": "data/ratings/sources/yahoo-JNJ-2026-09-30-d622f61434b2322d.json",
+        "key": "yahoo-JNJ-2026-09-30",
+        "provider": "Yahoo Finance",
+        "retrievedAt": "2026-10-06T06:36:35.986995+00:00",
+        "sha256": "d622f61434b2322de915d1ceae68d9241b14ebe1de9ad89c0040acaf355cecea",
+        "url": "https://query2.finance.yahoo.com/v8/finance/chart/JNJ?period1=1756080000&period2=1790899200&interval=1d&events=div,split&includeAdjustedClose=true"
+      },
+      {
+        "bytes": 29575,
+        "file": "data/ratings/sources/yahoo-LLY-2026-09-30-69e06e0cd6852003.json",
+        "key": "yahoo-LLY-2026-09-30",
+        "provider": "Yahoo Finance",
+        "retrievedAt": "2026-10-06T06:36:32.956919+00:00",
+        "sha256": "69e06e0cd6852003ab86da32379b82621ae73294f599f7da0be26ee75c144653",
+        "url": "https://query2.finance.yahoo.com/v8/finance/chart/LLY?period1=1756080000&period2=1790899200&interval=1d&events=div,split&includeAdjustedClose=true"
+      },
+      {
+        "bytes": 29775,
+        "file": "data/ratings/sources/yahoo-META-2026-09-30-c2d86f272c6cedc1.json",
+        "key": "yahoo-META-2026-09-30",
+        "provider": "Yahoo Finance",
+        "retrievedAt": "2026-10-06T06:36:25.831283+00:00",
+        "sha256": "c2d86f272c6cedc1769040583a87e6c036ad418279f31945bfa2f9785ba864da",
+        "url": "https://query2.finance.yahoo.com/v8/finance/chart/META?period1=1756080000&period2=1790899200&interval=1d&events=div,split&includeAdjustedClose=true"
+      },
+      {
+        "bytes": 31141,
+        "file": "data/ratings/sources/yahoo-MSFT-2026-09-30-e9e954e79a7c1c27.json",
+        "key": "yahoo-MSFT-2026-09-30",
+        "provider": "Yahoo Finance",
+        "retrievedAt": "2026-10-06T06:36:19.406946+00:00",
+        "sha256": "e9e954e79a7c1c2734412dfc5a276208fdbf0cebb895f04960dc8faba397c971",
+        "url": "https://query2.finance.yahoo.com/v8/finance/chart/MSFT?period1=1756080000&period2=1790899200&interval=1d&events=div,split&includeAdjustedClose=true"
+      },
+      {
+        "bytes": 30434,
+        "file": "data/ratings/sources/yahoo-MU-2026-09-30-cdf8e1f4f8c5ee72.json",
+        "key": "yahoo-MU-2026-09-30",
+        "provider": "Yahoo Finance",
+        "retrievedAt": "2026-10-06T06:36:27.461125+00:00",
+        "sha256": "cdf8e1f4f8c5ee72fc390d7afed98c058dec024204f3e768208b6651f03f434e",
+        "url": "https://query2.finance.yahoo.com/v8/finance/chart/MU?period1=1756080000&period2=1790899200&interval=1d&events=div,split&includeAdjustedClose=true"
+      },
+      {
+        "bytes": 32161,
+        "file": "data/ratings/sources/yahoo-NVDA-2026-09-30-45435fe66a6a38c1.json",
+        "key": "yahoo-NVDA-2026-09-30",
+        "provider": "Yahoo Finance",
+        "retrievedAt": "2026-10-06T06:36:15.437508+00:00",
+        "sha256": "45435fe66a6a38c14d1dd9c90a9d44f685ad96df0ddfb7fdae703f7958fb4116",
+        "url": "https://query2.finance.yahoo.com/v8/finance/chart/NVDA?period1=1756080000&period2=1790899200&interval=1d&events=div,split&includeAdjustedClose=true"
+      },
+      {
+        "bytes": 30754,
+        "file": "data/ratings/sources/yahoo-TSLA-2026-09-30-4908b7a23a295fe4.json",
+        "key": "yahoo-TSLA-2026-09-30",
+        "provider": "Yahoo Finance",
+        "retrievedAt": "2026-10-06T06:36:29.373192+00:00",
+        "sha256": "4908b7a23a295fe4cc22c4379f3491afc8f60b6b11d6098c0e1a90882aeae7c9",
+        "url": "https://query2.finance.yahoo.com/v8/finance/chart/TSLA?period1=1756080000&period2=1790899200&interval=1d&events=div,split&includeAdjustedClose=true"
+      },
+      {
+        "bytes": 30455,
+        "file": "data/ratings/sources/yahoo-V-2026-09-30-ba7d70a35a32ec09.json",
+        "key": "yahoo-V-2026-09-30",
+        "provider": "Yahoo Finance",
+        "retrievedAt": "2026-10-06T06:36:37.671506+00:00",
+        "sha256": "ba7d70a35a32ec09a21dcd924bad90effe1724d96a03d0e68c1522c9a9fcd8e0",
+        "url": "https://query2.finance.yahoo.com/v8/finance/chart/V?period1=1756080000&period2=1790899200&interval=1d&events=div,split&includeAdjustedClose=true"
+      },
+      {
+        "bytes": 32137,
+        "file": "data/ratings/sources/yahoo-XOM-2026-09-30-baddca090d82ce56.json",
+        "key": "yahoo-XOM-2026-09-30",
+        "provider": "Yahoo Finance",
+        "retrievedAt": "2026-10-06T06:36:34.437809+00:00",
+        "sha256": "baddca090d82ce565fa42b2b73229b0760445c5acc6ef25ce92e0c3402cb707a",
+        "url": "https://query2.finance.yahoo.com/v8/finance/chart/XOM?period1=1756080000&period2=1790899200&interval=1d&events=div,split&includeAdjustedClose=true"
+      }
+    ]
+  },
+  "kind": "dry-run",
+  "labels": {
+    "KR": {
+      "computableRate": 0.7894736842105263,
+      "eligible": 19,
+      "excluded": 5,
+      "insufficient": 4,
+      "scored": 15,
+      "관찰": 5,
+      "선호": 5,
+      "회피": 5
+    },
+    "US": {
+      "computableRate": 0.6363636363636364,
+      "eligible": 22,
+      "excluded": 2,
+      "insufficient": 8,
+      "scored": 14,
+      "관찰": 5,
+      "선호": 5,
+      "회피": 4
+    }
+  },
+  "month": "2026-09",
+  "protocol": {
+    "asOf": "each market's last trading day of the month",
+    "benchmarks": {
+      "KR": "069500.KS",
+      "US": "^SP500TR"
+    },
+    "composite": "mean of available z; fewer than minSignals gives no label",
+    "costs": {
+      "KR": {
+        "buy": 0.0005,
+        "sell": 0.0025
+      },
+      "US": {
+        "buy": 0.0005,
+        "sell": 0.0005
+      }
+    },
+    "currencies": {
+      "KR": "KRW",
+      "US": "USD"
+    },
+    "decisions": {
+      "computabilityCheck": {
+        "belowKR": "Korea leaves the v1 ratings; deep reports only",
+        "belowUS": "ratings are not published",
+        "date": "2026-10-20",
+        "rule": "eligible members with at least minSignals signals / eligible members; no company-specific exception codes",
+        "thresholds": {
+          "KR": 0.8,
+          "US": 0.9
+        }
+      },
+      "review": {
+        "date": "2028-11-30",
+        "rule": "a market whose 24-month mean primary metric <= 0 or mean IC <= 0 has its labels downgraded to '관찰 신호'; applied without a review"
+      }
+    },
+    "document": "docs/ratings-v1.md",
+    "evaluation": {
+      "baselineUse": "reported only, never used for decisions",
+      "baselines": [
+        "single-signal top tercile by z",
+        "equal-weight eligible members",
+        "benchmark index"
+      ],
+      "calendar": "dates traded by at least half of the market's price series that had started by then",
+      "costs": "buy rate x weight bought + sell rate x weight sold when rebalancing from the previous portfolio's drifted weights; the first period buys all",
+      "entry": "member's first close on or after the first session after the market-local registration date (a later close is flagged late_entry)",
+      "exit": "close on the next registration's entry session, or on the last session on or before the evaluation date; else the last close before it (last_price)",
+      "missingEntry": "excluded from the period with the reason, kept in the counts",
+      "primary": "선호 equal-weight return - mean same-sector equal-weight return of eligible members, minus costs",
+      "return": "adjusted close ratio",
+      "secondary": [
+        "회피 excess",
+        "선호 - 회피 spread",
+        "Spearman IC of composite and return",
+        "hit rate"
+      ]
+    },
+    "financialExclusions": {
+      "KR": {
+        "keep": [
+          "64992"
+        ],
+        "ksicDivisions": [
+          "64",
+          "65",
+          "66",
+          "68"
+        ]
+      },
+      "US": {
+        "sic": [
+          [
+            6000,
+            6799
+          ]
+        ]
+      },
+      "treatment": "excluded members keep a row with the reason and no label and stay in the denominator"
+    },
+    "hysteresis": 0.5,
+    "hysteresisRule": "a previous 선호 stays 선호 at percentile >= hysteresis; a previous 회피 stays 회피 at percentile <= hysteresis",
+    "labels": {
+      "avoid": "회피",
+      "prefer": "선호",
+      "watch": "관찰"
+    },
+    "marketCap": {
+      "KR": "sum over listed share classes of listedShares x that class's unadjusted close at T; listedShares = Naver market cap / current price at registration; a class without its own price uses the common close (class_price_proxy)",
+      "US": "unadjusted close at T x shares (cover-page shares, else the latest quarterly diluted weighted-average shares as a flagged proxy)",
+      "stalePrice": "the last close on or before T is used and flagged stale_price"
+    },
+    "markets": [
+      "US",
+      "KR"
+    ],
+    "minSectorSize": 5,
+    "minSignals": 2,
+    "moduleRules": {
+      "fundamentals": {
+        "filedBeforeAsOf": true,
+        "filedRule": "usable filing date <= asOf - 1 day (US companyfacts filed; KR first 8 digits of rcept_no)",
+        "kr": {
+          "assets": {
+            "ids": [
+              "ifrs-full_Assets"
+            ],
+            "names": [
+              "자산총계"
+            ]
+          },
+          "capex": {
+            "absolute": true,
+            "ids": [
+              "ifrs-full_PurchaseOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities",
+              "ifrs-full_PurchaseOfPropertyPlantAndEquipment"
+            ],
+            "nameContains": "유형자산의취득",
+            "prefix": "ifrs-full_PurchaseOfPropertyPlantAndEquipment"
+          },
+          "capexCheck": "previous same cumulative period above previous annual withholds capex",
+          "cfo": {
+            "ids": [
+              "ifrs-full_CashFlowsFromUsedInOperatingActivities"
+            ],
+            "names": [
+              "영업활동현금흐름",
+              "영업활동으로인한현금흐름",
+              "영업활동순현금흐름",
+              "영업활동으로인한순현금흐름"
+            ]
+          },
+          "currency": "KRW only",
+          "currentFields": [
+            "thstrm_add_amount",
+            "thstrm_amount"
+          ],
+          "fsDiv": [
+            "CFS",
+            "OFS"
+          ],
+          "fsRule": "per report CFS then OFS; one fs_div for every report of the trailing year, OFS when the CFS previous annual is missing",
+          "previousSameFields": [
+            "frmtrm_add_amount",
+            "frmtrm_q_amount",
+            "frmtrm_amount"
+          ],
+          "reports": {
+            "11011": "FY",
+            "11012": "H1",
+            "11013": "Q1",
+            "11014": "Q3"
+          },
+          "source": "OpenDART fnlttSinglAcntAll",
+          "ttm": "annual thstrm; else cumulative thstrm + previous annual thstrm - previous same cumulative period",
+          "walk": 5,
+          "walkOtherFiscalYearEnd": 9,
+          "walkRule": "newest report first; a period ending on or after asOf is not probed; a report filed on or after asOf is skipped"
+        },
+        "required": {
+          "KR": [
+            "cfoTTM",
+            "capexTTM",
+            "assets"
+          ],
+          "US": [
+            "cfoTTM",
+            "capexTTM",
+            "assets",
+            "shares"
+          ]
+        },
+        "status": "ok only when every REQUIRED field is present; otherwise insufficient with the available fields kept and the reasons in error",
+        "us": {
+          "annualDays": [
+            330,
+            400
+          ],
+          "assets": "us-gaap:Assets",
+          "capex": [
+            "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
+            "us-gaap:PaymentsToAcquireProductiveAssets",
+            "us-gaap:PaymentsToAcquireOtherPropertyPlantAndEquipment"
+          ],
+          "capexCheck": "previous same-length YTD above previous annual withholds capex",
+          "capexTag": "first tag reporting every period of the CFO trailing year",
+          "cfo": [
+            "us-gaap:NetCashProvidedByUsedInOperatingActivities",
+            "us-gaap:NetCashProvidedByUsedInOperatingActivitiesContinuingOperations"
+          ],
+          "forms": [
+            "10-K",
+            "10-Q",
+            "10-K/A",
+            "10-Q/A"
+          ],
+          "multiValueCover": "sum (distinct classes) or largest (reported total) only when it agrees with a check count; otherwise not used",
+          "periodEnd": "latest end among CFO durations and Assets instants; CFO and assets must both be reported at it",
+          "pointInTime": "per (start, end) the latest usable filing",
+          "quarterDays": [
+            80,
+            100
+          ],
+          "sameLengthDays": 10,
+          "shares": "dei:EntityCommonStockSharesOutstanding",
+          "sharesAgreement": [
+            0.5,
+            2.0
+          ],
+          "sharesChecks": [
+            "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding",
+            "us-gaap:CommonStockSharesOutstanding"
+          ],
+          "sharesMaxAgeDays": 400,
+          "sharesProxy": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding latest quarter",
+          "sharesRule": "cover if it agrees with a check count (or none exists); diluted if cover is absent or both checks agree against it; otherwise withheld",
+          "source": "SEC companyfacts",
+          "ttm": "annual at periodEnd; else YTD + previous annual - previous same-length YTD; else four contiguous reported quarters",
+          "ytdMinDays": 60
+        },
+        "version": "ratings-v1-fundamentals-1"
+      },
+      "prices": {
+        "lookbackDays": 400,
+        "provider": "Yahoo Finance",
+        "rows": "[date, adjclose, close], exchange-local dates",
+        "settleHour": 18
+      },
+      "sectorReferences": {
+        "ff12DefinitionSha256": "a605678ad15de28e678f759a9c88fb102e3163b1540ef9f53d64cc25733d920a",
+        "ksicReferenceSha256": "7c6a73625704263142aecb35d2c27655b98a2da918cfe32b41ac3364fe2d7110"
+      },
+      "universe": {
+        "KR": {
+          "commonCode": "[0-9A-Z]{5}0",
+          "commonType": "stock",
+          "excludeNames": {
+            "리츠": "reit",
+            "스팩": "spac"
+          },
+          "financialHoldingName": "금융지주",
+          "financialKsic": [
+            "64",
+            "65",
+            "66",
+            "68"
+          ],
+          "keptKsic": [
+            "64992"
+          ],
+          "listedShares": "marketValueRaw (KRW) / closePriceRaw at build time",
+          "preferred": "same first five code characters, last character not 0, name starting with the common name",
+          "sectors": "data/ratings/reference/ksic-ff12.json (SHA-256 in sources)",
+          "source": "Naver KOSPI market-value ranking",
+          "top": 200
+        },
+        "US": {
+          "equityTicker": "[A-Z]{1,5}(\\.[A-Z]{1,2})?",
+          "financialSic": [
+            6000,
+            6799
+          ],
+          "issuer": "SEC CIK via company_tickers.json (BRK.B -> BRK-B); one member per CIK, priced by the class with the largest SPY weight",
+          "sectors": "Fama-French 12 from Siccodes12; SIC outside every range = Other",
+          "source": "SSGA SPY daily holdings"
+        }
+      }
+    },
+    "percentile": "mean rank / n of the composite within the market, ascending, in (0, 1]",
+    "pointInTime": {
+      "filings": "filed strictly before asOf (US companyfacts filed date, KR receipt-number date); a record without filedAt is not used",
+      "prices": "sessions on or before asOf"
+    },
+    "registration": {
+      "rule": "market-local registration date strictly after asOf; a file is never overwritten; dry runs stay out of the ledger and the evaluation",
+      "timezones": {
+        "KR": "Asia/Seoul",
+        "US": "America/New_York"
+      }
+    },
+    "sectors": {
+      "KR": "KSIC via data/ratings/reference/ksic-ff12.json (hash recorded)",
+      "US": "SIC via Ken French's official definition file",
+      "mustBeEmpty": "Money",
+      "scheme": "Fama-French 12"
+    },
+    "signals": {
+      "cashProfitability": {
+        "assets": "latest total assets, positive",
+        "definition": "cfoTTM / assets"
+      },
+      "direction": "higher is better for every signal",
+      "fcfYield": {
+        "capex": "acquisition of property, plant and equipment as a non-negative payment; negative or missing gives no value",
+        "currency": "filing currency must equal the market currency",
+        "definition": "(cfoTTM - capexTTM) / marketCap",
+        "marketCap": "missing or non-positive gives no value"
+      },
+      "momentum12_1": {
+        "definition": "adjclose[T-21] / adjclose[T-252] - 1 over the member's own sessions on or before T",
+        "lookbackSessions": 252,
+        "skipSessions": 21
+      },
+      "trailingTwelveMonths": "annual value, else current cumulative + prior annual - prior-year same-period cumulative"
+    },
+    "terciles": {
+      "avoidAtOrBelow": "1/3",
+      "preferAbove": "2/3"
+    },
+    "universe": {
+      "KR": {
+        "rule": "KOSPI common stocks (code ending in 0) without SPACs and REITs, top 200 by market capitalisation; a rule, not the official KOSPI 200",
+        "size": 200,
+        "sources": [
+          "Naver Finance KOSPI market-cap API",
+          "OpenDART corpCode and company.json"
+        ]
+      },
+      "US": {
+        "rule": "S&P 500 constituents in the SSGA SPY daily holdings file, one row per issuer (CIK); an issuer with several share classes is priced with the ticker of largest SPY weight",
+        "sources": [
+          "SSGA SPY holdings xlsx",
+          "SEC company_tickers.json",
+          "SEC submissions (SIC)"
+        ]
+      },
+      "fixedAt": "asOf"
+    },
+    "version": "ratings-v1",
+    "winsor": {
+      "lower": 0.01,
+      "quantile": "linear interpolation (Hyndman-Fan type 7)",
+      "scope": "per market and signal over eligible members with a value",
+      "upper": 0.99
+    },
+    "zScore": {
+      "center": "sector mean of winsorized values",
+      "fallback": "market mean when the sector has fewer than minSectorSize values",
+      "scale": "market population standard deviation of winsorized values"
+    }
+  },
+  "protocolHash": "0fb88e6801a92d488ef1eaf630feecd486d825919724b34a9c0ae4f35cebaecf",
+  "registeredAt": "2026-10-06T06:37:50.659801+00:00",
+  "registrationDay": {
+    "KR": "2026-10-06",
+    "US": "2026-10-06"
+  },
+  "rows": [
+    {
+      "asOf": "2026-09-30",
+      "cik": "0001045810",
+      "collection": {
+        "collectedAt": "2026-10-06T06:36:14.184748+00:00",
+        "errors": [],
+        "status": "ok"
+      },
+      "composite": 0.4548637691667414,
+      "error": null,
+      "id": "US:0001045810",
+      "inputs": {
+        "assets": 320272000000.0,
+        "capexTTM": 7354000000.0,
+        "cfoTTM": 134360000000.0,
+        "close": 228.3800048828125,
+        "closeDate": "2026-09-30",
+        "currency": "USD",
+        "filedAt": "2026-08-26",
+        "fundamentalsError": null,
+        "fundamentalsStatus": "ok",
+        "momentumWindow": [
+          "2025-09-29",
+          "2026-08-31"
+        ],
+        "periodEnd": "2026-07-26",
+        "shares": 24100000000.0,
+        "sharesBasis": "cover"
+      },
+      "issues": [],
+      "label": "선호",
+      "labelReason": "tercile",
+      "market": "US",
+      "marketCap": 5503958117675.781,
+      "name": "NVIDIA CORP",
+      "percentile": 0.8571428571428571,
+      "previousLabel": null,
+      "priceSymbol": "NVDA",
+      "reason": null,
+      "sector": "BusEq",
+      "sic": "3674",
+      "signals": {
+        "cashProfitability": 0.41951840935205076,
+        "fcfYield": 0.023075393613938375,
+        "momentum12_1": 0.21562603218356236
+      },
+      "status": "eligible",
+      "ticker": "NVDA",
+      "winsorized": {
+        "cashProfitability": 0.414836062664559,
+        "fcfYield": 0.023075393613938375,
+        "momentum12_1": 0.21562603218356236
+      },
+      "z": {
+        "cashProfitability": 1.5188834372808204,
+        "fcfYield": 0.49886427422182494,
+        "momentum12_1": -0.6531564040024211
+      },
+      "zBasis": {
+        "cashProfitability": "sector",
+        "fcfYield": "sector",
+        "momentum12_1": "sector"
+      }
+    },
+    {
+      "asOf": "2026-09-30",
+      "cik": "0000320193",
+      "collection": {
+        "collectedAt": "2026-10-06T06:36:15.891897+00:00",
+        "errors": [],
+        "status": "ok"
+      },
+      "composite": 0.5253639867256136,
+      "error": null,
+      "id": "US:0000320193",
+      "inputs": {
+        "assets": 383266000000.0,
+        "capexTTM": 10041000000.0,
+        "cfoTTM": 146724000000.0,
+        "close": 333.0199890136719,
+        "closeDate": "2026-09-30",
+        "currency": "USD",
+        "filedAt": "2026-07-31",
+        "fundamentalsError": null,
+        "fundamentalsStatus": "ok",
+        "momentumWindow": [
+          "2025-09-29",
+          "2026-08-31"
+        ],
+        "periodEnd": "2026-06-27",
+        "shares": 14594180000.0,
+        "sharesBasis": "cover"
+      },
+      "issues": [],
+      "label": "선호",
+      "labelReason": "tercile",
+      "market": "US",
+      "marketCap": 4860153663263.55,
+      "name": "Apple Inc.",
+      "percentile": 0.9285714285714286,
+      "previousLabel": null,
+      "priceSymbol": "AAPL",
+      "reason": null,
+      "sector": "BusEq",
+      "sic": "3571",
+      "signals": {
+        "cashProfitability": 0.3828255050017481,
+        "fcfYield": 0.028123184876467176,
+        "momentum12_1": 0.24993300409632102
+      },
+      "status": "eligible",
+      "ticker": "AAPL",
+      "winsorized": {
+        "cashProfitability": 0.3828255050017481,
+        "fcfYield": 0.028123184876467176,
+        "momentum12_1": 0.24993300409632102
+      },
+      "z": {
+        "cashProfitability": 1.207449362845035,
+        "fcfYield": 0.9920896075762897,
+        "momentum12_1": -0.6234470102444839
+      },
+      "zBasis": {
+        "cashProfitability": "sector",
+        "fcfYield": "sector",
+        "momentum12_1": "sector"
+      }
+    },
+    {
+      "asOf": "2026-09-30",
+      "cik": "0000789019",
+      "collection": {
+        "collectedAt": "2026-10-06T06:36:17.810711+00:00",
+        "errors": [],
+        "status": "ok"
+      },
+      "composite": -0.350892776685744,
+      "error": null,
+      "id": "US:0000789019",
+      "inputs": {
+        "assets": 758376000000.0,
+        "capexTTM": 115948000000.0,
+        "cfoTTM": 182935000000.0,
+        "close": 512.9000244140625,
+        "closeDate": "2026-09-30",
+        "currency": "USD",
+        "filedAt": "2026-07-29",
+        "fundamentalsError": null,
+        "fundamentalsStatus": "ok",
+        "momentumWindow": [
+          "2025-09-29",
+          "2026-08-31"
+        ],
+        "periodEnd": "2026-06-30",
+        "shares": 7425545491.0,
+        "sharesBasis": "cover"
+      },
+      "issues": [],
+      "label": "관찰",
+      "labelReason": "tercile",
+      "market": "US",
+      "marketCap": 3808562463621.632,
+      "name": "MICROSOFT CORP",
+      "percentile": 0.42857142857142855,
+      "previousLabel": null,
+      "priceSymbol": "MSFT",
+      "reason": null,
+      "sector": "BusEq",
+      "sic": "7372",
+      "signals": {
+        "cashProfitability": 0.24121939512853782,
+        "fcfYield": 0.017588526022572,
+        "momentum12_1": -0.006094241821907098
+      },
+      "status": "eligible",
+      "ticker": "MSFT",
+      "winsorized": {
+        "cashProfitability": 0.24121939512853782,
+        "fcfYield": 0.017588526022572,
+        "momentum12_1": -0.006094241821907098
+      },
+      "z": {
+        "cashProfitability": -0.17025133913463839,
+        "fcfYield": -0.037263698603210056,
+        "momentum12_1": -0.8451632923193836
+      },
+      "zBasis": {
+        "cashProfitability": "sector",
+        "fcfYield": "sector",
+        "momentum12_1": "sector"
+      }
+    },
+    {
+      "asOf": "2026-09-30",
+      "cik": "0001652044",
+      "collection": {
+        "collectedAt": "2026-10-06T06:36:19.551789+00:00",
+        "errors": [],
+        "status": "ok"
+      },
+      "composite": -0.5279887055088169,
+      "error": null,
+      "id": "US:0001652044",
+      "inputs": {
+        "assets": 921983000000.0,
+        "capexTTM": 132402000000.0,
+        "cfoTTM": 185675000000.0,
+        "close": 344.0799865722656,
+        "closeDate": "2026-09-30",
+        "currency": "USD",
+        "filedAt": "2026-07-23",
+        "fundamentalsError": null,
+        "fundamentalsStatus": "ok",
+        "momentumWindow": [
+          "2025-09-29",
+          "2026-08-31"
+        ],
+        "periodEnd": "2026-06-30",
+        "shares": 12309000000.0,
+        "sharesBasis": "diluted_wavg_proxy"
+      },
+      "issues": [
+        "shares_proxy",
+        "multi_class_single_price"
+      ],
+      "label": "회피",
+      "labelReason": "tercile",
+      "market": "US",
+      "marketCap": 4235280554718.0176,
+      "name": "Alphabet Inc.",
+      "percentile": 0.2857142857142857,
+      "previousLabel": null,
+      "priceSymbol": "GOOGL",
+      "reason": null,
+      "sector": "BusEq",
+      "sic": "7370",
+      "signals": {
+        "cashProfitability": 0.20138657654208375,
+        "fcfYield": 0.012578387502725162,
+        "momentum12_1": 0.39321441166798543
+      },
+      "status": "eligible",
+      "ticker": "GOOGL",
+      "winsorized": {
+        "cashProfitability": 0.20138657654208375,
+        "fcfYield": 0.012578387502725162,
+        "momentum12_1": 0.39321441166798543
+      },
+      "z": {
+        "cashProfitability": -0.557789010902633,
+        "fcfYield": -0.5268099403322186,
+        "momentum12_1": -0.4993671652915993
+      },
+      "zBasis": {
+        "cashProfitability": "sector",
+        "fcfYield": "sector",
+        "momentum12_1": "sector"
+      }
+    },
+    {
+      "asOf": "2026-09-30",
+      "cik": "0001018724",
+      "collection": {
+        "collectedAt": "2026-10-06T06:36:20.936921+00:00",
+        "errors": [],
+        "status": "ok"
+      },
+      "composite": -1.051496512307982,
+      "error": null,
+      "id": "US:0001018724",
+      "inputs": {
+        "assets": 1095689000000.0,
+        "capexTTM": 173028000000.0,
+        "cfoTTM": 161403000000.0,
+        "close": 249.14999389648438,
+        "closeDate": "2026-09-30",
+        "currency": "USD",
+        "filedAt": "2026-07-31",
+        "fundamentalsError": null,
+        "fundamentalsStatus": "ok",
+        "momentumWindow": [
+          "2025-09-29",
+          "2026-08-31"
+        ],
+        "periodEnd": "2026-06-30",
+        "shares": 10786313572.0,
+        "sharesBasis": "cover"
+      },
+      "issues": [
+        "sector_fallback"
+      ],
+      "label": "회피",
+      "labelReason": "tercile",
+      "market": "US",
+      "marketCap": 2687409960629.3667,
+      "name": "AMAZON COM INC",
+      "percentile": 0.07142857142857142,
+      "previousLabel": null,
+      "priceSymbol": "AMZN",
+      "reason": null,
+      "sector": "Shops",
+      "sic": "5961",
+      "signals": {
+        "cashProfitability": 0.14730731074237308,
+        "fcfYield": -0.004325726320251314,
+        "momentum12_1": 0.16923973153267213
+      },
+      "status": "eligible",
+      "ticker": "AMZN",
+      "winsorized": {
+        "cashProfitability": 0.14730731074237308,
+        "fcfYield": -0.0033132253278109055,
+        "momentum12_1": 0.16923973153267213
+      },
+      "z": {
+        "cashProfitability": -0.7737250455596336,
+        "fcfYield": -1.92683157768207,
+        "momentum12_1": -0.4539329136822424
+      },
+      "zBasis": {
+        "cashProfitability": "market",
+        "fcfYield": "market",
+        "momentum12_1": "market"
+      }
+    },
+    {
+      "asOf": "2026-09-30",
+      "cik": "0001730168",
+      "collection": {
+        "collectedAt": "2026-10-06T06:36:22.958786+00:00",
+        "errors": [],
+        "status": "ok"
+      },
+      "composite": -0.19884454455737774,
+      "error": null,
+      "id": "US:0001730168",
+      "inputs": {
+        "assets": 188148000000.0,
+        "capexTTM": 1250000000.0,
+        "cfoTTM": 40653000000.0,
+        "close": 351.19000244140625,
+        "closeDate": "2026-09-30",
+        "currency": "USD",
+        "filedAt": "2026-09-10",
+        "fundamentalsError": null,
+        "fundamentalsStatus": "ok",
+        "momentumWindow": [
+          "2025-09-29",
+          "2026-08-31"
+        ],
+        "periodEnd": "2026-08-02",
+        "shares": 4773629865.0,
+        "sharesBasis": "cover"
+      },
+      "issues": [],
+      "label": "관찰",
+      "labelReason": "tercile",
+      "market": "US",
+      "marketCap": 1676451083943.7197,
+      "name": "Broadcom Inc.",
+      "percentile": 0.5,
+      "previousLabel": null,
+      "priceSymbol": "AVGO",
+      "reason": null,
+      "sector": "BusEq",
+      "sic": "3674",
+      "signals": {
+        "cashProfitability": 0.2160692646214682,
+        "fcfYield": 0.02350381730632279,
+        "momentum12_1": 0.13575917550394845
+      },
+      "status": "eligible",
+      "ticker": "AVGO",
+      "winsorized": {
+        "cashProfitability": 0.2160692646214682,
+        "fcfYield": 0.02350381730632279,
+        "momentum12_1": 0.13575917550394845
+      },
+      "z": {
+        "cashProfitability": -0.41493959789334717,
+        "fcfYield": 0.5407260326629602,
+        "momentum12_1": -0.7223200684417461
+      },
+      "zBasis": {
+        "cashProfitability": "sector",
+        "fcfYield": "sector",
+        "momentum12_1": "sector"
+      }
+    },
+    {
+      "asOf": "2026-09-30",
+      "cik": "0001326801",
+      "collection": {
+        "collectedAt": "2026-10-06T06:36:24.623501+00:00",
+        "errors": [],
+        "status": "ok"
+      },
+      "composite": -0.11141652620140576,
+      "error": null,
+      "id": "US:0001326801",
+      "inputs": {
+        "assets": 449956000000.0,
+        "capexTTM": 89325000000.0,
+        "cfoTTM": 130301000000.0,
+        "close": 725.1799926757812,
+        "closeDate": "2026-09-30",
+        "currency": "USD",
+        "filedAt": "2026-07-30",
+        "fundamentalsError": null,
+        "fundamentalsStatus": "ok",
+        "momentumWindow": [
+          "2025-09-29",
+          "2026-08-31"
+        ],
+        "periodEnd": "2026-06-30",
+        "shares": 2566000000.0,
+        "sharesBasis": "diluted_wavg_proxy"
+      },
+      "issues": [
+        "shares_proxy"
+      ],
+      "label": "선호",
+      "labelReason": "tercile",
+      "market": "US",
+      "marketCap": 1860811861206.0547,
+      "name": "Meta Platforms, Inc.",
+      "percentile": 0.7142857142857143,
+      "previousLabel": null,
+      "priceSymbol": "META",
+      "reason": null,
+      "sector": "BusEq",
+      "sic": "7370",
+      "signals": {
+        "cashProfitability": 0.2895860928624132,
+        "fcfYield": 0.022020495921302907,
+        "momentum12_1": -0.22810260183738096
+      },
+      "status": "eligible",
+      "ticker": "META",
+      "winsorized": {
+        "cashProfitability": 0.2895860928624132,
+        "fcfYield": 0.022020495921302907,
+        "momentum12_1": -0.21994116079457043
+      },
+      "z": {
+        "cashProfitability": 0.30031333833628115,
+        "fcfYield": 0.3957890401155065,
+        "momentum12_1": -1.030351957056005
+      },
+      "zBasis": {
+        "cashProfitability": "sector",
+        "fcfYield": "sector",
+        "momentum12_1": "sector"
+      }
+    },
+    {
+      "asOf": "2026-09-30",
+      "cik": "0000723125",
+      "collection": {
+        "collectedAt": "2026-10-06T06:36:26.188447+00:00",
+        "errors": [],
+        "status": "ok"
+      },
+      "composite": 1.531746541112913,
+      "error": null,
+      "id": "US:0000723125",
+      "inputs": {
+        "assets": 134112000000.0,
+        "capexTTM": 25260000000.0,
+        "cfoTTM": 51432000000.0,
+        "close": 1065.1099853515625,
+        "closeDate": "2026-09-30",
+        "currency": "USD",
+        "filedAt": "2026-06-25",
+        "fundamentalsError": null,
+        "fundamentalsStatus": "ok",
+        "momentumWindow": [
+          "2025-09-29",
+          "2026-08-31"
+        ],
+        "periodEnd": "2026-05-28",
+        "shares": 1129393151.0,
+        "sharesBasis": "cover"
+      },
+      "issues": [],
+      "label": "선호",
+      "labelReason": "tercile",
+      "market": "US",
+      "marketCap": 1202927922517.7651,
+      "name": "MICRON TECHNOLOGY INC",
+      "percentile": 1.0,
+      "previousLabel": null,
+      "priceSymbol": "MU",
+      "reason": null,
+      "sector": "BusEq",
+      "sic": "3674",
+      "signals": {
+        "cashProfitability": 0.38350035790980674,
+        "fcfYield": 0.02175691453335059,
+        "momentum12_1": 4.858869775827204
+      },
+      "status": "eligible",
+      "ticker": "MU",
+      "winsorized": {
+        "cashProfitability": 0.38350035790980674,
+        "fcfYield": 0.02175691453335059,
+        "momentum12_1": 4.4470365342417955
+      },
+      "z": {
+        "cashProfitability": 1.2140150776012546,
+        "fcfYield": 0.3700342077190329,
+        "momentum12_1": 3.0111903380184515
+      },
+      "zBasis": {
+        "cashProfitability": "sector",
+        "fcfYield": "sector",
+        "momentum12_1": "sector"
+      }
+    },
+    {
+      "asOf": "2026-09-30",
+      "cik": "0001318605",
+      "collection": {
+        "collectedAt": "2026-10-06T06:36:27.864143+00:00",
+        "errors": [],
+        "status": "ok"
+      },
+      "composite": -0.9772652614894487,
+      "error": null,
+      "id": "US:0001318605",
+      "inputs": {
+        "assets": 148524000000.0,
+        "capexTTM": 12923000000.0,
+        "cfoTTM": 18685000000.0,
+        "close": 354.80999755859375,
+        "closeDate": "2026-09-30",
+        "currency": "USD",
+        "filedAt": "2026-07-23",
+        "fundamentalsError": null,
+        "fundamentalsStatus": "ok",
+        "momentumWindow": [
+          "2025-09-29",
+          "2026-08-31"
+        ],
+        "periodEnd": "2026-06-30",
+        "shares": 3949547394.0,
+        "sharesBasis": "cover"
+      },
+      "issues": [
+        "sector_fallback"
+      ],
+      "label": "회피",
+      "labelReason": "tercile",
+      "market": "US",
+      "marketCap": 1401338901222.6904,
+      "name": "Tesla, Inc.",
+      "percentile": 0.14285714285714285,
+      "previousLabel": null,
+      "priceSymbol": "TSLA",
+      "reason": null,
+      "sector": "Durbl",
+      "sic": "3711",
+      "signals": {
+        "cashProfitability": 0.12580458377097303,
+        "fcfYield": 0.0041117819500854245,
+        "momentum12_1": -0.16980659438873436
+      },
+      "status": "eligible",
+      "ticker": "TSLA",
+      "winsorized": {
+        "cashProfitability": 0.12580458377097303,
+        "fcfYield": 0.0041117819500854245,
+        "momentum12_1": -0.16980659438873436
+      },
+      "z": {
+        "cashProfitability": -0.9829273325901847,
+        "fcfYield": -1.2013258070719979,
+        "momentum12_1": -0.7475426448061633
+      },
+      "zBasis": {
+        "cashProfitability": "market",
+        "fcfYield": "market",
+        "momentum12_1": "market"
+      }
+    },
+    {
+      "asOf": "2026-09-30",
+      "cik": "0000002488",
+      "collection": {
+        "collectedAt": "2026-10-06T06:36:29.492297+00:00",
+        "errors": [],
+        "status": "ok"
+      },
+      "composite": -0.48978071708294113,
+      "error": null,
+      "id": "US:0000002488",
+      "inputs": {
+        "assets": 84464000000.0,
+        "capexTTM": 1677000000.0,
+        "cfoTTM": 10080000000.0,
+        "close": 611.760009765625,
+        "closeDate": "2026-09-30",
+        "currency": "USD",
+        "filedAt": "2026-08-05",
+        "fundamentalsError": null,
+        "fundamentalsStatus": "ok",
+        "momentumWindow": [
+          "2025-09-29",
+          "2026-08-31"
+        ],
+        "periodEnd": "2026-06-27",
+        "shares": 1632475042.0,
+        "sharesBasis": "cover"
+      },
+      "issues": [],
+      "label": "관찰",
+      "labelReason": "tercile",
+      "market": "US",
+      "marketCap": 998682947636.0591,
+      "name": "ADVANCED MICRO DEVICES INC",
+      "percentile": 0.35714285714285715,
+      "previousLabel": null,
+      "priceSymbol": "AMD",
+      "reason": null,
+      "sector": "BusEq",
+      "sic": "3674",
+      "signals": {
+        "cashProfitability": 0.1193407842394393,
+        "fcfYield": 0.008414081786307048,
+        "momentum12_1": 1.917203764502871
+      },
+      "status": "eligible",
+      "ticker": "AMD",
+      "winsorized": {
+        "cashProfitability": 0.1193407842394393,
+        "fcfYield": 0.008414081786307048,
+        "momentum12_1": 1.917203764502871
+      },
+      "z": {
+        "cashProfitability": -1.3560211334504482,
+        "fcfYield": -0.9337089122483556,
+        "momentum12_1": 0.8203878944499804
+      },
+      "zBasis": {
+        "cashProfitability": "sector",
+        "fcfYield": "sector",
+        "momentum12_1": "sector"
+      }
+    },
+    {
+      "asOf": "2026-09-30",
+      "cik": "0001067983",
+      "composite": null,
+      "error": null,
+      "id": "US:0001067983",
+      "inputs": {},
+      "issues": [],
+      "label": null,
+      "labelReason": "excluded",
+      "market": "US",
+      "marketCap": null,
+      "name": "BERKSHIRE HATHAWAY INC",
+      "percentile": null,
+      "previousLabel": null,
+      "priceSymbol": "BRK-B",
+      "reason": "financial_sic",
+      "sector": "Money",
+      "sic": "6331",
+      "signals": {
+        "cashProfitability": null,
+        "fcfYield": null,
+        "momentum12_1": null
+      },
+      "status": "excluded",
+      "ticker": "BRK.B",
+      "winsorized": {
+        "cashProfitability": null,
+        "fcfYield": null,
+        "momentum12_1": null
+      },
+      "z": {
+        "cashProfitability": null,
+        "fcfYield": null,
+        "momentum12_1": null
+      },
+      "zBasis": {
+        "cashProfitability": null,
+        "fcfYield": null,
+        "momentum12_1": null
+      }
+    },
+    {
+      "asOf": "2026-09-30",
+      "cik": "0000059478",
+      "collection": {
+        "collectedAt": "2026-10-06T06:36:31.319853+00:00",
+        "errors": [],
+        "status": "ok"
+      },
+      "composite": -0.11230769284472315,
+      "error": null,
+      "id": "US:0000059478",
+      "inputs": {
+        "assets": 142283000000.0,
+        "capexTTM": 9893000000.0,
+        "cfoTTM": 28083000000.0,
+        "close": 1157.0799560546875,
+        "closeDate": "2026-09-30",
+        "currency": "USD",
+        "filedAt": "2026-08-05",
+        "fundamentalsError": null,
+        "fundamentalsStatus": "ok",
+        "momentumWindow": [
+          "2025-09-29",
+          "2026-08-31"
+        ],
+        "periodEnd": "2026-06-30",
+        "shares": 941357065.0,
+        "sharesBasis": "cover"
+      },
+      "issues": [
+        "sector_fallback"
+      ],
+      "label": "관찰",
+      "labelReason": "tercile",
+      "market": "US",
+      "marketCap": 1089225391401.9696,
+      "name": "ELI LILLY & Co",
+      "percentile": 0.6428571428571429,
+      "previousLabel": null,
+      "priceSymbol": "LLY",
+      "reason": null,
+      "sector": "Hlth",
+      "sic": "2834",
+      "signals": {
+        "cashProfitability": 0.19737424709909124,
+        "fcfYield": 0.01669994120921767,
+        "momentum12_1": 0.6022151171839565
+      },
+      "status": "eligible",
+      "ticker": "LLY",
+      "winsorized": {
+        "cashProfitability": 0.19737424709909124,
+        "fcfYield": 0.01669994120921767,
+        "momentum12_1": 0.6022151171839565
+      },
+      "z": {
+        "cashProfitability": -0.28661856811750686,
+        "fcfYield": 0.02867732182009536,
+        "momentum12_1": -0.07898183223675799
+      },
+      "zBasis": {
+        "cashProfitability": "market",
+        "fcfYield": "market",
+        "momentum12_1": "market"
+      }
+    },
+    {
+      "asOf": "2026-09-30",
+      "cik": "0000019617",
+      "composite": null,
+      "error": null,
+      "id": "US:0000019617",
+      "inputs": {},
+      "issues": [],
+      "label": null,
+      "labelReason": "excluded",
+      "market": "US",
+      "marketCap": null,
+      "name": "JPMORGAN CHASE & CO",
+      "percentile": null,
+      "previousLabel": null,
+      "priceSymbol": "JPM",
+      "reason": "financial_sic",
+      "sector": "Money",
+      "sic": "6021",
+      "signals": {
+        "cashProfitability": null,
+        "fcfYield": null,
+        "momentum12_1": null
+      },
+      "status": "excluded",
+      "ticker": "JPM",
+      "winsorized": {
+        "cashProfitability": null,
+        "fcfYield": null,
+        "momentum12_1": null
+      },
+      "z": {
+        "cashProfitability": null,
+        "fcfYield": null,
+        "momentum12_1": null
+      },
+      "zBasis": {
+        "cashProfitability": null,
+        "fcfYield": null,
+        "momentum12_1": null
+      }
+    },
+    {
+      "asOf": "2026-09-30",
+      "cik": "0002115436",
+      "collection": {
+        "collectedAt": "2026-10-06T06:36:33.156489+00:00",
+        "errors": [],
+        "status": "ok"
+      },
+      "composite": null,
+      "error": null,
+      "id": "US:0002115436",
+      "inputs": {
+        "assets": 464482000000.0,
+        "capexTTM": null,
+        "cfoTTM": null,
+        "close": 162.75,
+        "closeDate": "2026-09-30",
+        "currency": "USD",
+        "filedAt": "2026-08-03",
+        "fundamentalsError": "cfoTTM: no annual, year-to-date or four-quarter trailing year ends 2026-06-30 (us-gaap:NetCashProvidedByUsedInOperatingActivities); capexTTM: no CFO trailing year to align with",
+        "fundamentalsStatus": "insufficient",
+        "momentumWindow": [
+          "2025-09-29",
+          "2026-08-31"
+        ],
+        "periodEnd": "2026-06-30",
+        "shares": 4111911960.0,
+        "sharesBasis": "cover"
+      },
+      "issues": [
+        "fundamentals_insufficient",
+        "cfo_missing",
+        "capex_missing",
+        "sector_fallback"
+      ],
+      "label": null,
+      "labelReason": "insufficient",
+      "market": "US",
+      "marketCap": 669213671490.0,
+      "name": "ExxonMobil Holdings Corp",
+      "percentile": null,
+      "previousLabel": null,
+      "priceSymbol": "XOM",
+      "reason": null,
+      "sector": "Enrgy",
+      "sic": "2911",
+      "signals": {
+        "cashProfitability": null,
+        "fcfYield": null,
+        "momentum12_1": 0.44996279906373915
+      },
+      "status": "eligible",
+      "ticker": "XOM",
+      "winsorized": {
+        "cashProfitability": null,
+        "fcfYield": null,
+        "momentum12_1": 0.44996279906373915
+      },
+      "z": {
+        "cashProfitability": null,
+        "fcfYield": null,
+        "momentum12_1": -0.2108303696446906
+      },
+      "zBasis": {
+        "cashProfitability": null,
+        "fcfYield": null,
+        "momentum12_1": "market"
+      }
+    },
+    {
+      "asOf": "2026-09-30",
+      "cik": "0000200406",
+      "collection": {
+        "collectedAt": "2026-10-06T06:36:34.711603+00:00",
+        "errors": [],
+        "status": "ok"
+      },
+      "composite": 0.2277693337888831,
+      "error": null,
+      "id": "US:0000200406",
+      "inputs": {
+        "assets": 201061000000.0,
+        "capexTTM": 5364000000.0,
+        "cfoTTM": 27608000000.0,
+        "close": 264.739990234375,
+        "closeDate": "2026-09-30",
+        "currency": "USD",
+        "filedAt": "2026-07-23",
+        "fundamentalsError": null,
+        "fundamentalsStatus": "ok",
+        "momentumWindow": [
+          "2025-09-29",
+          "2026-08-31"
+        ],
+        "periodEnd": "2026-06-28",
+        "shares": 2409898597.0,
+        "sharesBasis": "cover"
+      },
+      "issues": [
+        "sector_fallback"
+      ],
+      "label": "선호",
+      "labelReason": "tercile",
+      "market": "US",
+      "marketCap": 637996531035.614,
+      "name": "JOHNSON & JOHNSON",
+      "percentile": 0.7857142857142857,
+      "previousLabel": null,
+      "priceSymbol": "JNJ",
+      "reason": null,
+      "sector": "Hlth",
+      "sic": "2834",
+      "signals": {
+        "cashProfitability": 0.13731156216272675,
+        "fcfYield": 0.03486539333355451,
+        "momentum12_1": 0.49675769362109734
+      },
+      "status": "eligible",
+      "ticker": "JNJ",
+      "winsorized": {
+        "cashProfitability": 0.13731156216272675,
+        "fcfYield": 0.034056328318704025,
+        "momentum12_1": 0.49675769362109734
+      },
+      "z": {
+        "cashProfitability": -0.8709747323656714,
+        "fcfYield": 1.7245893301975812,
+        "momentum12_1": -0.1703065964652606
+      },
+      "zBasis": {
+        "cashProfitability": "market",
+        "fcfYield": "market",
+        "momentum12_1": "market"
+      }
+    },
+    {
+      "asOf": "2026-09-30",
+      "cik": "0001403161",
+      "collection": {
+        "collectedAt": "2026-10-06T06:36:36.150095+00:00",
+        "errors": [],
+        "status": "ok"
+      },
+      "composite": -0.1852810776636445,
+      "error": null,
+      "id": "US:0001403161",
+      "inputs": {
+        "assets": 95049000000.0,
+        "capexTTM": 1571000000.0,
+        "cfoTTM": 22756000000.0,
+        "close": 359.3299865722656,
+        "closeDate": "2026-09-30",
+        "currency": "USD",
+        "filedAt": "2026-04-29",
+        "fundamentalsError": "shares: no cover or quarterly diluted share count",
+        "fundamentalsStatus": "insufficient",
+        "momentumWindow": [
+          "2025-09-29",
+          "2026-08-31"
+        ],
+        "periodEnd": "2026-03-31",
+        "shares": null,
+        "sharesBasis": null
+      },
+      "issues": [
+        "fundamentals_insufficient",
+        "shares_missing",
+        "market_cap_missing",
+        "sector_fallback"
+      ],
+      "label": "관찰",
+      "labelReason": "tercile",
+      "market": "US",
+      "marketCap": null,
+      "name": "VISA INC.",
+      "percentile": 0.5714285714285714,
+      "previousLabel": null,
+      "priceSymbol": "V",
+      "reason": null,
+      "sector": "Other",
+      "sic": "7389",
+      "signals": {
+        "cashProfitability": 0.23941335521678292,
+        "fcfYield": null,
+        "momentum12_1": 0.1241887493188143
+      },
+      "status": "eligible",
+      "ticker": "V",
+      "winsorized": {
+        "cashProfitability": 0.23941335521678292,
+        "fcfYield": null,
+        "momentum12_1": 0.1241887493188143
+      },
+      "z": {
+        "cashProfitability": 0.12238432601044119,
+        "fcfYield": null,
+        "momentum12_1": -0.49294648133773017
+      },
+      "zBasis": {
+        "cashProfitability": "market",
+        "fcfYield": null,
+        "momentum12_1": "market"
+      }
+    },
+    {
+      "asOf": "2026-09-30",
+      "cik": "0000050863",
+      "collection": {
+        "collectedAt": "2026-10-06T06:36:37.914061+00:00",
+        "errors": [],
+        "status": "ok"
+      },
+      "composite": -0.8330510269689828,
+      "error": null,
+      "id": "US:0000050863",
+      "inputs": {
+        "assets": 202439000000.0,
+        "capexTTM": 12105000000.0,
+        "cfoTTM": 14936000000.0,
+        "close": 120.2300033569336,
+        "closeDate": "2026-09-30",
+        "currency": "USD",
+        "filedAt": "2026-07-24",
+        "fundamentalsError": null,
+        "fundamentalsStatus": "ok",
+        "momentumWindow": [
+          "2025-09-29",
+          "2026-08-31"
+        ],
+        "periodEnd": "2026-06-27",
+        "shares": 5044000000.0,
+        "sharesBasis": "cover"
+      },
+      "issues": [],
+      "label": "회피",
+      "labelReason": "tercile",
+      "market": "US",
+      "marketCap": 606440136932.373,
+      "name": "INTEL CORP",
+      "percentile": 0.21428571428571427,
+      "previousLabel": null,
+      "priceSymbol": "INTC",
+      "reason": null,
+      "sector": "BusEq",
+      "sic": "3674",
+      "signals": {
+        "cashProfitability": 0.07378024985304216,
+        "fcfYield": 0.004668226635394514,
+        "momentum12_1": 1.5959977762350332
+      },
+      "status": "eligible",
+      "ticker": "INTC",
+      "winsorized": {
+        "cashProfitability": 0.07970311932327379,
+        "fcfYield": 0.004668226635394514,
+        "momentum12_1": 1.5959977762350332
+      },
+      "z": {
+        "cashProfitability": -1.741660134682325,
+        "fcfYield": -1.299720611111831,
+        "momentum12_1": 0.5422276648872075
+      },
+      "zBasis": {
+        "cashProfitability": "sector",
+        "fcfYield": "sector",
+        "momentum12_1": "sector"
+      }
+    },
+    {
+      "asOf": "2026-09-30",
+      "cik": "0000104169",
+      "composite": null,
+      "error": null,
+      "id": "US:0000104169",
+      "inputs": {},
+      "issues": [
+        "not_collected"
+      ],
+      "label": null,
+      "labelReason": "insufficient",
+      "market": "US",
+      "marketCap": null,
+      "name": "Walmart Inc.",
+      "percentile": null,
+      "previousLabel": null,
+      "priceSymbol": "WMT",
+      "reason": null,
+      "sector": "Shops",
+      "sic": "5331",
+      "signals": {
+        "cashProfitability": null,
+        "fcfYield": null,
+        "momentum12_1": null
+      },
+      "status": "eligible",
+      "ticker": "WMT",
+      "winsorized": {
+        "cashProfitability": null,
+        "fcfYield": null,
+        "momentum12_1": null
+      },
+      "z": {
+        "cashProfitability": null,
+        "fcfYield": null,
+        "momentum12_1": null
+      },
+      "zBasis": {
+        "cashProfitability": null,
+        "fcfYield": null,
+        "momentum12_1": null
+      }
+    },
+    {
+      "asOf": "2026-09-30",
+      "cik": "0001551152",
+      "composite": null,
+      "error": null,
+      "id": "US:0001551152",
+      "inputs": {},
+      "issues": [
+        "not_collected"
+      ],
+      "label": null,
+      "labelReason": "insufficient",
+      "market": "US",
+      "marketCap": null,
+      "name": "AbbVie Inc.",
+      "percentile": null,
+      "previousLabel": null,
+      "priceSymbol": "ABBV",
+      "reason": null,
+      "sector": "Hlth",
+      "sic": "2834",
+      "signals": {
+        "cashProfitability": null,
+        "fcfYield": null,
+        "momentum12_1": null
+      },
+      "status": "eligible",
+      "ticker": "ABBV",
+      "winsorized": {
+        "cashProfitability": null,
+        "fcfYield": null,
+        "momentum12_1": null
+      },
+      "z": {
+        "cashProfitability": null,
+        "fcfYield": null,
+        "momentum12_1": null
+      },
+      "zBasis": {
+        "cashProfitability": null,
+        "fcfYield": null,
+        "momentum12_1": null
+      }
+    },
+    {
+      "asOf": "2026-09-30",
+      "cik": "0001141391",
+      "composite": null,
+      "error": null,
+      "id": "US:0001141391",
+      "inputs": {},
+      "issues": [
+        "not_collected"
+      ],
+      "label": null,
+      "labelReason": "insufficient",
+      "market": "US",
+      "marketCap": null,
+      "name": "Mastercard Inc",
+      "percentile": null,
+      "previousLabel": null,
+      "priceSymbol": "MA",
+      "reason": null,
+      "sector": "Other",
+      "sic": "7389",
+      "signals": {
+        "cashProfitability": null,
+        "fcfYield": null,
+        "momentum12_1": null
+      },
+      "status": "eligible",
+      "ticker": "MA",
+      "winsorized": {
+        "cashProfitability": null,
+        "fcfYield": null,
+        "momentum12_1": null
+      },
+      "z": {
+        "cashProfitability": null,
+        "fcfYield": null,
+        "momentum12_1": null
+      },
+      "zBasis": {
+        "cashProfitability": null,
+        "fcfYield": null,
+        "momentum12_1": null
+      }
+    },
+    {
+      "asOf": "2026-09-30",
+      "cik": "0000858877",
+      "composite": null,
+      "error": null,
+      "id": "US:0000858877",
+      "inputs": {},
+      "issues": [
+        "not_collected"
+      ],
+      "label": null,
+      "labelReason": "insufficient",
+      "market": "US",
+      "marketCap": null,
+      "name": "CISCO SYSTEMS, INC.",
+      "percentile": null,
+      "previousLabel": null,
+      "priceSymbol": "CSCO",
+      "reason": null,
+      "sector": "BusEq",
+      "sic": "3576",
+      "signals": {
+        "cashProfitability": null,
+        "fcfYield": null,
+        "momentum12_1": null
+      },
+      "status": "eligible",
+      "ticker": "CSCO",
+      "winsorized": {
+        "cashProfitability": null,
+        "fcfYield": null,
+        "momentum12_1": null
+      },
+      "z": {
+        "cashProfitability": null,
+        "fcfYield": null,
+        "momentum12_1": null
+      },
+      "zBasis": {
+        "cashProfitability": null,
+        "fcfYield": null,
+        "momentum12_1": null
+      }
+    },
+    {
+      "asOf": "2026-09-30",
+      "cik": "0000707549",
+      "composite": null,
+      "error": null,
+      "id": "US:0000707549",
+      "inputs": {},
+      "issues": [
+        "not_collected"
+      ],
+      "label": null,
+      "labelReason": "insufficient",
+      "market": "US",
+      "marketCap": null,
+      "name": "LAM RESEARCH CORP",
+      "percentile": null,
+      "previousLabel": null,
+      "priceSymbol": "LRCX",
+      "reason": null,
+      "sector": "Manuf",
+      "sic": "3559",
+      "signals": {
+        "cashProfitability": null,
+        "fcfYield": null,
+        "momentum12_1": null
+      },
+      "status": "eligible",
+      "ticker": "LRCX",
+      "winsorized": {
+        "cashProfitability": null,
+        "fcfYield": null,
+        "momentum12_1": null
+      },
+      "z": {
+        "cashProfitability": null,
+        "fcfYield": null,
+        "momentum12_1": null
+      },
+      "zBasis": {
+        "cashProfitability": null,
+        "fcfYield": null,
+        "momentum12_1": null
+      }
+    },
+    {
+      "asOf": "2026-09-30",
+      "cik": "0001321655",
+      "composite": null,
+      "error": null,
+      "id": "US:0001321655",
+      "inputs": {},
+      "issues": [
+        "not_collected"
+      ],
+      "label": null,
+      "labelReason": "insufficient",
+      "market": "US",
+      "marketCap": null,
+      "name": "Palantir Technologies Inc.",
+      "percentile": null,
+      "previousLabel": null,
+      "priceSymbol": "PLTR",
+      "reason": null,
+      "sector": "BusEq",
+      "sic": "7372",
+      "signals": {
+        "cashProfitability": null,
+        "fcfYield": null,
+        "momentum12_1": null
+      },
+      "status": "eligible",
+      "ticker": "PLTR",
+      "winsorized": {
+        "cashProfitability": null,
+        "fcfYield": null,
+        "momentum12_1": null
+      },
+      "z": {
+        "cashProfitability": null,
+        "fcfYield": null,
+        "momentum12_1": null
+      },
+      "zBasis": {
+        "cashProfitability": null,
+        "fcfYield": null,
+        "momentum12_1": null
+      }
+    },
+    {
+      "asOf": "2026-09-30",
+      "cik": "0000006951",
+      "composite": null,
+      "error": null,
+      "id": "US:0000006951",
+      "inputs": {},
+      "issues": [
+        "not_collected"
+      ],
+      "label": null,
+      "labelReason": "insufficient",
+      "market": "US",
+      "marketCap": null,
+      "name": "APPLIED MATERIALS INC /DE",
+      "percentile": null,
+      "previousLabel": null,
+      "priceSymbol": "AMAT",
+      "reason": null,
+      "sector": "BusEq",
+      "sic": "3674",
+      "signals": {
+        "cashProfitability": null,
+        "fcfYield": null,
+        "momentum12_1": null
+      },
+      "status": "eligible",
+      "ticker": "AMAT",
+      "winsorized": {
+        "cashProfitability": null,
+        "fcfYield": null,
+        "momentum12_1": null
+      },
+      "z": {
+        "cashProfitability": null,
+        "fcfYield": null,
+        "momentum12_1": null
+      },
+      "zBasis": {
+        "cashProfitability": null,
+        "fcfYield": null,
+        "momentum12_1": null
+      }
+    },
+    {
+      "asOf": "2026-09-30",
+      "collection": {
+        "collectedAt": "2026-10-06T06:36:39.349842+00:00",
+        "errors": [],
+        "status": "ok"
+      },
+      "composite": 0.663441880513306,
+      "corpCode": "00126380",
+      "error": null,
+      "id": "KR:005930",
+      "inputs": {
+        "assets": 759480516000000.0,
+        "capexTTM": 51925780000000.0,
+        "cfoTTM": 196729338000000.0,
+        "currency": "KRW",
+        "filedAt": "2026-08-14",
+        "fundamentalsError": null,
+        "fundamentalsStatus": "ok",
+        "momentumWindow": [
+          "2025-09-12",
+          "2026-08-28"
+        ],
+        "periodEnd": "2026-06-30",
+        "shareClasses": [
+          {
+            "close": 268500.0,
+            "closeDate": "2026-09-30",
+            "listedShares": 5846278608.0,
+            "priceProxy": false,
+            "priceSymbol": "005930.KS"
+          },
+          {
+            "close": 195200.0,
+            "closeDate": "2026-09-30",
+            "listedShares": 802371203.0,
+            "priceProxy": false,
+            "priceSymbol": "005935.KS"
+          }
+        ]
+      },
+      "issues": [],
+      "ksic": "264",
+      "label": "선호",
+      "labelReason": "tercile",
+      "market": "KR",
+      "marketCap": 1726348665073600.0,
+      "name": "삼성전자",
+      "percentile": 0.9333333333333333,
+      "previousLabel": null,
+      "priceSymbol": "005930.KS",
+      "reason": null,
+      "sector": "BusEq",
+      "signals": {
+        "cashProfitability": 0.2590314482801031,
+        "fcfYield": 0.08387851245207557,
+        "momentum12_1": 2.451261579000433
+      },
+      "status": "eligible",
+      "ticker": "005930",
+      "winsorized": {
+        "cashProfitability": 0.2590314482801031,
+        "fcfYield": 0.08387851245207557,
+        "momentum12_1": 2.451261579000433
+      },
+      "z": {
+        "cashProfitability": 1.0620091098563726,
+        "fcfYield": 1.176776459179123,
+        "momentum12_1": -0.24845992749557771
+      },
+      "zBasis": {
+        "cashProfitability": "sector",
+        "fcfYield": "sector",
+        "momentum12_1": "sector"
+      }
+    },
+    {
+      "asOf": "2026-09-30",
+      "collection": {
+        "collectedAt": "2026-10-06T06:36:41.941652+00:00",
+        "errors": [],
+        "status": "ok"
+      },
+      "composite": 1.181658180478178,
+      "corpCode": "00164779",
+      "error": null,
+      "id": "KR:000660",
+      "inputs": {
+        "assets": 348862214000000.0,
+        "capexTTM": 35232021000000.0,
+        "cfoTTM": 126925786000000.0,
+        "currency": "KRW",
+        "filedAt": "2026-08-14",
+        "fundamentalsError": null,
+        "fundamentalsStatus": "ok",
+        "momentumWindow": [
+          "2025-09-12",
+          "2026-08-28"
+        ],
+        "periodEnd": "2026-06-30",
+        "shareClasses": [
+          {
+            "close": 1776000.0,
+            "closeDate": "2026-09-30",
+            "listedShares": 730492365.0,
+            "priceProxy": false,
+            "priceSymbol": "000660.KS"
+          }
+        ]
+      },
+      "issues": [],
+      "ksic": "2612",
+      "label": "선호",
+      "labelReason": "tercile",
+      "market": "KR",
+      "marketCap": 1297354440240000.0,
+      "name": "SK하이닉스",
+      "percentile": 1.0,
+      "previousLabel": null,
+      "priceSymbol": "000660.KS",
+      "reason": null,
+      "sector": "BusEq",
+      "signals": {
+        "cashProfitability": 0.3638278406385393,
+        "fcfYield": 0.07067749734069388,
+        "momentum12_1": 4.046796596999705
+      },
+      "status": "eligible",
+      "ticker": "000660",
+      "winsorized": {
+        "cashProfitability": 0.3491563457083582,
+        "fcfYield": 0.07067749734069388,
+        "momentum12_1": 4.046796596999705
+      },
+      "z": {
+        "cashProfitability": 1.9574246322652629,
+        "fcfYield": 0.9701127195188719,
+        "momentum12_1": 0.6174371896503993
+      },
+      "zBasis": {
+        "cashProfitability": "sector",
+        "fcfYield": "sector",
+        "momentum12_1": "sector"
+      }
+    },
+    {
+      "asOf": "2026-09-30",
+      "collection": {
+        "collectedAt": "2026-10-06T06:36:43.655836+00:00",
+        "errors": [],
+        "status": "ok"
+      },
+      "composite": 0.12721627973833557,
+      "corpCode": "01596425",
+      "error": null,
+      "id": "KR:402340",
+      "inputs": {
+        "assets": 58651006000000.0,
+        "capexTTM": 31087000000.0,
+        "cfoTTM": 414020000000.0,
+        "currency": "KRW",
+        "filedAt": "2026-08-14",
+        "fundamentalsError": null,
+        "fundamentalsStatus": "ok",
+        "momentumWindow": [
+          "2025-09-12",
+          "2026-08-28"
+        ],
+        "periodEnd": "2026-06-30",
+        "shareClasses": [
+          {
+            "close": 1139000.0,
+            "closeDate": "2026-09-30",
+            "listedShares": 131923998.0,
+            "priceProxy": false,
+            "priceSymbol": "402340.KS"
+          }
+        ]
+      },
+      "issues": [
+        "sector_fallback"
+      ],
+      "ksic": "64992",
+      "label": "관찰",
+      "labelReason": "tercile",
+      "market": "KR",
+      "marketCap": 150261433722000.0,
+      "name": "SK스퀘어",
+      "percentile": 0.6666666666666666,
+      "previousLabel": null,
+      "priceSymbol": "402340.KS",
+      "reason": null,
+      "sector": "Other",
+      "signals": {
+        "cashProfitability": 0.007059043454429409,
+        "fcfYield": 0.002548445003582674,
+        "momentum12_1": 4.217134932386671
+      },
+      "status": "eligible",
+      "ticker": "402340",
+      "winsorized": {
+        "cashProfitability": 0.007059043454429409,
+        "fcfYield": 0.002548445003582674,
+        "momentum12_1": 4.217134932386671
+      },
+      "z": {
+        "cashProfitability": -0.8310356378555523,
+        "fcfYield": -0.24188375671220505,
+        "momentum12_1": 1.4545682337827641
+      },
+      "zBasis": {
+        "cashProfitability": "market",
+        "fcfYield": "market",
+        "momentum12_1": "market"
+      }
+    },
+    {
+      "asOf": "2026-09-30",
+      "collection": {
+        "collectedAt": "2026-10-06T06:36:45.071155+00:00",
+        "errors": [],
+        "status": "ok"
+      },
+      "composite": 0.4354766285176703,
+      "corpCode": "00126371",
+      "error": null,
+      "id": "KR:009150",
+      "inputs": {
+        "assets": 16565974324511.0,
+        "capexTTM": 1590625662718.0,
+        "cfoTTM": 1876172968598.0,
+        "currency": "KRW",
+        "filedAt": "2026-08-14",
+        "fundamentalsError": null,
+        "fundamentalsStatus": "ok",
+        "momentumWindow": [
+          "2025-09-12",
+          "2026-08-28"
+        ],
+        "periodEnd": "2026-06-30",
+        "shareClasses": [
+          {
+            "close": 1513000.0,
+            "closeDate": "2026-09-30",
+            "listedShares": 74693696.0,
+            "priceProxy": false,
+            "priceSymbol": "009150.KS"
+          },
+          {
+            "close": 526000.0,
+            "closeDate": "2026-09-30",
+            "listedShares": 2906984.0,
+            "priceProxy": false,
+            "priceSymbol": "009155.KS"
+          }
+        ]
+      },
+      "issues": [],
+      "ksic": "2622",
+      "label": "선호",
+      "labelReason": "tercile",
+      "market": "KR",
+      "marketCap": 114540635632000.0,
+      "name": "삼성전기",
+      "percentile": 0.8,
+      "previousLabel": null,
+      "priceSymbol": "009150.KS",
+      "reason": null,
+      "sector": "BusEq",
+      "signals": {
+        "cashProfitability": 0.11325461043495741,
+        "fcfYield": 0.002492978184593073,
+        "momentum12_1": 6.531572372253994
+      },
+      "status": "eligible",
+      "ticker": "009150",
+      "winsorized": {
+        "cashProfitability": 0.11325461043495741,
+        "fcfYield": 0.002492978184593073,
+        "momentum12_1": 6.207551130672567
+      },
+      "z": {
+        "cashProfitability": -0.38632367208257773,
+        "fcfYield": -0.09732547344149886,
+        "momentum12_1": 1.7900790310770873
+      },
+      "zBasis": {
+        "cashProfitability": "sector",
+        "fcfYield": "sector",
+        "momentum12_1": "sector"
+      }
+    },
+    {
+      "asOf": "2026-09-30",
+      "collection": {
+        "collectedAt": "2026-10-06T06:36:47.400881+00:00",
+        "errors": [],
+        "status": "ok"
+      },
+      "composite": -1.2797929829458703,
+      "corpCode": "01515323",
+      "error": null,
+      "id": "KR:373220",
+      "inputs": {
+        "assets": 77877681000000.0,
+        "capexTTM": 7975185000000.0,
+        "cfoTTM": 2729405000000.0,
+        "currency": "KRW",
+        "filedAt": "2026-08-13",
+        "fundamentalsError": null,
+        "fundamentalsStatus": "ok",
+        "momentumWindow": [
+          "2025-09-12",
+          "2026-08-28"
+        ],
+        "periodEnd": "2026-06-30",
+        "shareClasses": [
+          {
+            "close": 357000.0,
+            "closeDate": "2026-09-30",
+            "listedShares": 234000000.0,
+            "priceProxy": false,
+            "priceSymbol": "373220.KS"
+          }
+        ]
+      },
+      "issues": [],
+      "ksic": "28202",
+      "label": "회피",
+      "labelReason": "tercile",
+      "market": "KR",
+      "marketCap": 83538000000000.0,
+      "name": "LG에너지솔루션",
+      "percentile": 0.06666666666666667,
+      "previousLabel": null,
+      "priceSymbol": "373220.KS",
+      "reason": null,
+      "sector": "BusEq",
+      "signals": {
+        "cashProfitability": 0.0350473327524994,
+        "fcfYield": -0.06279513514807633,
+        "momentum12_1": 0.04078762306610417
+      },
+      "status": "eligible",
+      "ticker": "373220",
+      "winsorized": {
+        "cashProfitability": 0.0350473327524994,
+        "fcfYield": -0.06279513514807633,
+        "momentum12_1": 0.04078762306610417
+      },
+      "z": {
+        "cashProfitability": -1.1633343805603529,
+        "fcfYield": -1.1194200277503257,
+        "momentum12_1": -1.5566245405269326
+      },
+      "zBasis": {
+        "cashProfitability": "sector",
+        "fcfYield": "sector",
+        "momentum12_1": "sector"
+      }
+    },
+    {
+      "asOf": "2026-09-30",
+      "collection": {
+        "collectedAt": "2026-10-06T06:36:49.037624+00:00",
+        "errors": [],
+        "status": "ok"
+      },
+      "composite": -1.172447722708333,
+      "corpCode": "00164742",
+      "error": null,
+      "id": "KR:005380",
+      "inputs": {
+        "assets": 394512167000000.0,
+        "capexTTM": 8513618000000.0,
+        "cfoTTM": -2101268000000.0,
+        "currency": "KRW",
+        "filedAt": "2026-08-14",
+        "fundamentalsError": null,
+        "fundamentalsStatus": "ok",
+        "momentumWindow": [
+          "2025-09-12",
+          "2026-08-28"
+        ],
+        "periodEnd": "2026-06-30",
+        "shareClasses": [
+          {
+            "close": 345000.0,
+            "closeDate": "2026-09-30",
+            "listedShares": 203466492.0,
+            "priceProxy": false,
+            "priceSymbol": "005380.KS"
+          },
+          {
+            "close": 173900.0,
+            "closeDate": "2026-09-30",
+            "listedShares": 22839037.0,
+            "priceProxy": false,
+            "priceSymbol": "005385.KS"
+          },
+          {
+            "close": 175000.0,
+            "closeDate": "2026-09-30",
+            "listedShares": 34257047.0,
+            "priceProxy": false,
+            "priceSymbol": "005387.KS"
+          },
+          {
+            "close": 172500.0,
+            "closeDate": "2026-09-30",
+            "listedShares": 2321926.0,
+            "priceProxy": false,
+            "priceSymbol": "005389.KS"
+          }
+        ]
+      },
+      "issues": [
+        "sector_fallback"
+      ],
+      "ksic": "30121",
+      "label": "회피",
+      "labelReason": "tercile",
+      "market": "KR",
+      "marketCap": 80563163734300.0,
+      "name": "현대차",
+      "percentile": 0.13333333333333333,
+      "previousLabel": null,
+      "priceSymbol": "005380.KS",
+      "reason": null,
+      "sector": "Durbl",
+      "signals": {
+        "cashProfitability": -0.0053262438418027296,
+        "fcfYield": -0.13175855450523577,
+        "momentum12_1": 0.8308272119583493
+      },
+      "status": "eligible",
+      "ticker": "005380",
+      "winsorized": {
+        "cashProfitability": -0.003992071091594081,
+        "fcfYield": -0.12210367579523344,
+        "momentum12_1": 0.8308272119583493
+      },
+      "z": {
+        "cashProfitability": -0.9408314854714168,
+        "fcfYield": -2.193330158637307,
+        "momentum12_1": -0.3831815240162753
+      },
+      "zBasis": {
+        "cashProfitability": "market",
+        "fcfYield": "market",
+        "momentum12_1": "market"
+      }
+    },
+    {
+      "asOf": "2026-09-30",
+      "collection": {
+        "collectedAt": "2026-10-06T06:36:52.945420+00:00",
+        "errors": [],
+        "status": "ok"
+      },
+      "composite": 0.08512746070123878,
+      "corpCode": "00877059",
+      "error": null,
+      "id": "KR:207940",
+      "inputs": {
+        "assets": 12652621086337.0,
+        "capexTTM": 805580433774.0,
+        "cfoTTM": 2433935496835.0,
+        "currency": "KRW",
+        "filedAt": "2026-08-14",
+        "fundamentalsError": null,
+        "fundamentalsStatus": "ok",
+        "momentumWindow": [
+          "2025-09-12",
+          "2026-08-28"
+        ],
+        "periodEnd": "2026-06-30",
+        "shareClasses": [
+          {
+            "close": 1381619.875,
+            "closeDate": "2026-09-30",
+            "listedShares": 46290951.0,
+            "priceProxy": false,
+            "priceSymbol": "207940.KS"
+          }
+        ]
+      },
+      "issues": [
+        "sector_fallback"
+      ],
+      "ksic": "211",
+      "label": "관찰",
+      "labelReason": "tercile",
+      "market": "KR",
+      "marketCap": 63956497934251.125,
+      "name": "삼성바이오로직스",
+      "percentile": 0.6,
+      "previousLabel": null,
+      "priceSymbol": "207940.KS",
+      "reason": null,
+      "sector": "Hlth",
+      "signals": {
+        "cashProfitability": 0.19236610977493812,
+        "fcfYield": 0.025460353766320814,
+        "momentum12_1": -0.06890028257247316
+      },
+      "status": "eligible",
+      "ticker": "207940",
+      "winsorized": {
+        "cashProfitability": 0.19236610977493812,
+        "fcfYield": 0.025460353766320814,
+        "momentum12_1": -0.06890028257247316
+      },
+      "z": {
+        "cashProfitability": 1.0100407830915568,
+        "fcfYield": 0.11680538254796072,
+        "momentum12_1": -0.8714637835358011
+      },
+      "zBasis": {
+        "cashProfitability": "market",
+        "fcfYield": "market",
+        "momentum12_1": "market"
+      }
+    },
+    {
+      "asOf": "2026-09-30",
+      "composite": null,
+      "corpCode": "00688996",
+      "error": null,
+      "id": "KR:105560",
+      "inputs": {},
+      "issues": [],
+      "ksic": "64992",
+      "label": null,
+      "labelReason": "excluded",
+      "market": "KR",
+      "marketCap": null,
+      "name": "KB금융",
+      "percentile": null,
+      "previousLabel": null,
+      "priceSymbol": "105560.KS",
+      "reason": "financial_holding",
+      "sector": "Money",
+      "signals": {
+        "cashProfitability": null,
+        "fcfYield": null,
+        "momentum12_1": null
+      },
+      "status": "excluded",
+      "ticker": "105560",
+      "winsorized": {
+        "cashProfitability": null,
+        "fcfYield": null,
+        "momentum12_1": null
+      },
+      "z": {
+        "cashProfitability": null,
+        "fcfYield": null,
+        "momentum12_1": null
+      },
+      "zBasis": {
+        "cashProfitability": null,
+        "fcfYield": null,
+        "momentum12_1": null
+      }
+    },
+    {
+      "asOf": "2026-09-30",
+      "composite": null,
+      "corpCode": "00126256",
+      "error": null,
+      "id": "KR:032830",
+      "inputs": {},
+      "issues": [],
+      "ksic": "65110",
+      "label": null,
+      "labelReason": "excluded",
+      "market": "KR",
+      "marketCap": null,
+      "name": "삼성생명",
+      "percentile": null,
+      "previousLabel": null,
+      "priceSymbol": "032830.KS",
+      "reason": "financial_ksic",
+      "sector": "Money",
+      "signals": {
+        "cashProfitability": null,
+        "fcfYield": null,
+        "momentum12_1": null
+      },
+      "status": "excluded",
+      "ticker": "032830",
+      "winsorized": {
+        "cashProfitability": null,
+        "fcfYield": null,
+        "momentum12_1": null
+      },
+      "z": {
+        "cashProfitability": null,
+        "fcfYield": null,
+        "momentum12_1": null
+      },
+      "zBasis": {
+        "cashProfitability": null,
+        "fcfYield": null,
+        "momentum12_1": null
+      }
+    },
+    {
+      "asOf": "2026-09-30",
+      "collection": {
+        "collectedAt": "2026-10-06T06:36:54.893887+00:00",
+        "errors": [],
+        "status": "ok"
+      },
+      "composite": -0.017349762571301792,
+      "corpCode": "00149655",
+      "error": null,
+      "id": "KR:028260",
+      "inputs": {
+        "assets": 163768451300192.0,
+        "capexTTM": 1177965385983.0,
+        "cfoTTM": 5014906893631.0,
+        "currency": "KRW",
+        "filedAt": "2026-08-14",
+        "fundamentalsError": null,
+        "fundamentalsStatus": "ok",
+        "momentumWindow": [
+          "2025-09-12",
+          "2026-08-28"
+        ],
+        "periodEnd": "2026-06-30",
+        "shareClasses": [
+          {
+            "close": 341500.0,
+            "closeDate": "2026-09-30",
+            "listedShares": 162167581.0,
+            "priceProxy": false,
+            "priceSymbol": "028260.KS"
+          },
+          {
+            "close": 224000.0,
+            "closeDate": "2026-09-30",
+            "listedShares": 1467590.0,
+            "priceProxy": false,
+            "priceSymbol": "02826K.KS"
+          }
+        ]
+      },
+      "issues": [
+        "sector_fallback"
+      ],
+      "ksic": "467",
+      "label": "관찰",
+      "labelReason": "tercile",
+      "market": "KR",
+      "marketCap": 55708969071500.0,
+      "name": "삼성물산",
+      "percentile": 0.5333333333333333,
+      "previousLabel": null,
+      "priceSymbol": "028260.KS",
+      "reason": null,
+      "sector": "Shops",
+      "signals": {
+        "cashProfitability": 0.030621935139623076,
+        "fcfYield": 0.06887475341221007,
+        "momentum12_1": 1.0733187717244932
+      },
+      "status": "eligible",
+      "ticker": "028260",
+      "winsorized": {
+        "cashProfitability": 0.030621935139623076,
+        "fcfYield": 0.06887475341221007,
+        "momentum12_1": 1.0733187717244932
+      },
+      "z": {
+        "cashProfitability": -0.5969318599893135,
+        "fcfYield": 0.7964638868540795,
+        "momentum12_1": -0.2515813145786714
+      },
+      "zBasis": {
+        "cashProfitability": "market",
+        "fcfYield": "market",
+        "momentum12_1": "market"
+      }
+    },
+    {
+      "asOf": "2026-09-30",
+      "collection": {
+        "collectedAt": "2026-10-06T06:36:57.801064+00:00",
+        "errors": [],
+        "status": "ok"
+      },
+      "composite": -0.4184337360217624,
+      "corpCode": "00126566",
+      "error": null,
+      "id": "KR:012450",
+      "inputs": {
+        "assets": 58742027729000.0,
+        "capexTTM": 1928619542000.0,
+        "cfoTTM": 2664842642000.0,
+        "currency": "KRW",
+        "filedAt": "2026-08-14",
+        "fundamentalsError": null,
+        "fundamentalsStatus": "ok",
+        "momentumWindow": [
+          "2025-09-12",
+          "2026-08-28"
+        ],
+        "periodEnd": "2026-06-30",
+        "shareClasses": [
+          {
+            "close": 1007000.0,
+            "closeDate": "2026-09-30",
+            "listedShares": 51563401.0,
+            "priceProxy": false,
+            "priceSymbol": "012450.KS"
+          }
+        ]
+      },
+      "issues": [
+        "sector_fallback"
+      ],
+      "ksic": "31321",
+      "label": "회피",
+      "labelReason": "tercile",
+      "market": "KR",
+      "marketCap": 51924344807000.0,
+      "name": "한화에어로스페이스",
+      "percentile": 0.3333333333333333,
+      "previousLabel": null,
+      "priceSymbol": "012450.KS",
+      "reason": null,
+      "sector": "Manuf",
+      "signals": {
+        "cashProfitability": 0.04536517966819197,
+        "fcfYield": 0.014178765331300794,
+        "momentum12_1": 0.16405658376431576
+      },
+      "status": "eligible",
+      "ticker": "012450",
+      "winsorized": {
+        "cashProfitability": 0.04536517966819197,
+        "fcfYield": 0.014178765331300794,
+        "momentum12_1": 0.16405658376431576
+      },
+      "z": {
+        "cashProfitability": -0.45045369049059547,
+        "fcfYield": -0.05980946378146292,
+        "momentum12_1": -0.7450380537932288
+      },
+      "zBasis": {
+        "cashProfitability": "market",
+        "fcfYield": "market",
+        "momentum12_1": "market"
+      }
+    },
+    {
+      "asOf": "2026-09-30",
+      "collection": {
+        "collectedAt": "2026-10-06T06:37:00.351595+00:00",
+        "errors": [],
+        "status": "ok"
+      },
+      "composite": -0.5390255309287907,
+      "corpCode": "00159616",
+      "error": null,
+      "id": "KR:034020",
+      "inputs": {
+        "assets": 29947742000000.0,
+        "capexTTM": 421053000000.0,
+        "cfoTTM": 449991000000.0,
+        "currency": "KRW",
+        "filedAt": "2026-08-14",
+        "fundamentalsError": null,
+        "fundamentalsStatus": "ok",
+        "momentumWindow": [
+          "2025-09-12",
+          "2026-08-28"
+        ],
+        "periodEnd": "2026-06-30",
+        "shareClasses": [
+          {
+            "close": 81600.0,
+            "closeDate": "2026-09-30",
+            "listedShares": 640561146.0,
+            "priceProxy": false,
+            "priceSymbol": "034020.KS"
+          }
+        ]
+      },
+      "issues": [
+        "sector_fallback"
+      ],
+      "ksic": "29119",
+      "label": "회피",
+      "labelReason": "tercile",
+      "market": "KR",
+      "marketCap": 52269789513600.0,
+      "name": "두산에너빌리티",
+      "percentile": 0.26666666666666666,
+      "previousLabel": null,
+      "priceSymbol": "034020.KS",
+      "reason": null,
+      "sector": "Manuf",
+      "signals": {
+        "cashProfitability": 0.01502587407090658,
+        "fcfYield": 0.0005536276359496467,
+        "momentum12_1": 0.4459016393442623
+      },
+      "status": "eligible",
+      "ticker": "034020",
+      "winsorized": {
+        "cashProfitability": 0.01502587407090658,
+        "fcfYield": 0.0005536276359496467,
+        "momentum12_1": 0.4459016393442623
+      },
+      "z": {
+        "cashProfitability": -0.7518829952234224,
+        "fcfYield": -0.27311290186929366,
+        "momentum12_1": -0.5920806956936558
+      },
+      "zBasis": {
+        "cashProfitability": "market",
+        "fcfYield": "market",
+        "momentum12_1": "market"
+      }
+    },
+    {
+      "asOf": "2026-09-30",
+      "composite": null,
+      "corpCode": "00382199",
+      "error": null,
+      "id": "KR:055550",
+      "inputs": {},
+      "issues": [],
+      "ksic": "64992",
+      "label": null,
+      "labelReason": "excluded",
+      "market": "KR",
+      "marketCap": null,
+      "name": "신한지주",
+      "percentile": null,
+      "previousLabel": null,
+      "priceSymbol": "055550.KS",
+      "reason": "financial_holding",
+      "sector": "Money",
+      "signals": {
+        "cashProfitability": null,
+        "fcfYield": null,
+        "momentum12_1": null
+      },
+      "status": "excluded",
+      "ticker": "055550",
+      "winsorized": {
+        "cashProfitability": null,
+        "fcfYield": null,
+        "momentum12_1": null
+      },
+      "z": {
+        "cashProfitability": null,
+        "fcfYield": null,
+        "momentum12_1": null
+      },
+      "zBasis": {
+        "cashProfitability": null,
+        "fcfYield": null,
+        "momentum12_1": null
+      }
+    },
+    {
+      "asOf": "2026-09-30",
+      "collection": {
+        "collectedAt": "2026-10-06T06:37:01.919140+00:00",
+        "errors": [],
+        "status": "ok"
+      },
+      "composite": -1.0007837065632839,
+      "corpCode": "00126362",
+      "error": null,
+      "id": "KR:006400",
+      "inputs": {
+        "assets": 47621891099845.0,
+        "capexTTM": 2321325199762.0,
+        "cfoTTM": 200181548786.0,
+        "currency": "KRW",
+        "filedAt": "2026-08-14",
+        "fundamentalsError": null,
+        "fundamentalsStatus": "ok",
+        "momentumWindow": [
+          "2025-09-12",
+          "2026-08-28"
+        ],
+        "periodEnd": "2026-06-30",
+        "shareClasses": [
+          {
+            "close": 515000.0,
+            "closeDate": "2026-09-30",
+            "listedShares": 80585530.0,
+            "priceProxy": false,
+            "priceSymbol": "006400.KS"
+          },
+          {
+            "close": 205000.0,
+            "closeDate": "2026-09-30",
+            "listedShares": 1617896.0,
+            "priceProxy": false,
+            "priceSymbol": "006405.KS"
+          }
+        ]
+      },
+      "issues": [],
+      "ksic": "28202",
+      "label": "회피",
+      "labelReason": "tercile",
+      "market": "KR",
+      "marketCap": 41833216630000.0,
+      "name": "삼성SDI",
+      "percentile": 0.2,
+      "previousLabel": null,
+      "priceSymbol": "006400.KS",
+      "reason": null,
+      "sector": "BusEq",
+      "signals": {
+        "cashProfitability": 0.004203561516830472,
+        "fcfYield": -0.050704770559165106,
+        "momentum12_1": 1.799019607843137
+      },
+      "status": "eligible",
+      "ticker": "006400",
+      "winsorized": {
+        "cashProfitability": 0.004203561516830472,
+        "fcfYield": -0.050704770559165106,
+        "momentum12_1": 1.799019607843137
+      },
+      "z": {
+        "cashProfitability": -1.469775689478706,
+        "fcfYield": -0.9301436775061703,
+        "momentum12_1": -0.6024317527049756
+      },
+      "zBasis": {
+        "cashProfitability": "sector",
+        "fcfYield": "sector",
+        "momentum12_1": "sector"
+      }
+    },
+    {
+      "asOf": "2026-09-30",
+      "collection": {
+        "collectedAt": "2026-10-06T06:37:04.386030+00:00",
+        "errors": [],
+        "status": "ok"
+      },
+      "composite": 0.17564204466159883,
+      "corpCode": "01390344",
+      "error": null,
+      "id": "KR:329180",
+      "inputs": {
+        "assets": 29372105525000.0,
+        "capexTTM": 465807516000.0,
+        "cfoTTM": 4030317940000.0,
+        "currency": "KRW",
+        "filedAt": "2026-08-14",
+        "fundamentalsError": null,
+        "fundamentalsStatus": "ok",
+        "momentumWindow": [
+          "2025-09-12",
+          "2026-08-28"
+        ],
+        "periodEnd": "2026-06-30",
+        "shareClasses": [
+          {
+            "close": 433500.0,
+            "closeDate": "2026-09-30",
+            "listedShares": 104961225.0,
+            "priceProxy": false,
+            "priceSymbol": "329180.KS"
+          }
+        ]
+      },
+      "issues": [
+        "sector_fallback"
+      ],
+      "ksic": "31113",
+      "label": "선호",
+      "labelReason": "tercile",
+      "market": "KR",
+      "marketCap": 45500691037500.0,
+      "name": "HD현대중공업",
+      "percentile": 0.7333333333333333,
+      "previousLabel": null,
+      "priceSymbol": "329180.KS",
+      "reason": null,
+      "sector": "Manuf",
+      "signals": {
+        "cashProfitability": 0.1372158334570058,
+        "fcfYield": 0.07833969864462632,
+        "momentum12_1": -0.08680538057966503
+      },
+      "status": "eligible",
+      "ticker": "329180",
+      "winsorized": {
+        "cashProfitability": 0.1372158334570058,
+        "fcfYield": 0.07833969864462632,
+        "momentum12_1": -0.08429866685865817
+      },
+      "z": {
+        "cashProfitability": 0.4621076936860745,
+        "fcfYield": 0.9446389295236486,
+        "momentum12_1": -0.8798204892249266
+      },
+      "zBasis": {
+        "cashProfitability": "market",
+        "fcfYield": "market",
+        "momentum12_1": "market"
+      }
+    },
+    {
+      "asOf": "2026-09-30",
+      "collection": {
+        "collectedAt": "2026-10-06T06:37:05.855889+00:00",
+        "errors": [],
+        "status": "ok"
+      },
+      "composite": 0.4581931007517707,
+      "corpCode": "00106641",
+      "error": null,
+      "id": "KR:000270",
+      "inputs": {
+        "assets": 106829374000000.0,
+        "capexTTM": 4146876000000.0,
+        "cfoTTM": 10868500000000.0,
+        "currency": "KRW",
+        "filedAt": "2026-09-16",
+        "fundamentalsError": null,
+        "fundamentalsStatus": "ok",
+        "momentumWindow": [
+          "2025-09-12",
+          "2026-08-28"
+        ],
+        "periodEnd": "2026-06-30",
+        "shareClasses": [
+          {
+            "close": 112800.0,
+            "closeDate": "2026-09-30",
+            "listedShares": 390412998.0,
+            "priceProxy": false,
+            "priceSymbol": "000270.KS"
+          }
+        ]
+      },
+      "issues": [
+        "sector_fallback"
+      ],
+      "ksic": "30121",
+      "label": "선호",
+      "labelReason": "tercile",
+      "market": "KR",
+      "marketCap": 44038586174400.0,
+      "name": "기아",
+      "percentile": 0.8666666666666667,
+      "previousLabel": null,
+      "priceSymbol": "000270.KS",
+      "reason": null,
+      "sector": "Durbl",
+      "signals": {
+        "cashProfitability": 0.10173699978809199,
+        "fcfYield": 0.15263033135035875,
+        "momentum12_1": 0.26174792903992494
+      },
+      "status": "eligible",
+      "ticker": "000270",
+      "winsorized": {
+        "cashProfitability": 0.10173699978809199,
+        "fcfYield": 0.14300507670459905,
+        "momentum12_1": 0.26174792903992494
+      },
+      "z": {
+        "cashProfitability": 0.10961577091414464,
+        "fcfYield": 1.956984475957855,
+        "momentum12_1": -0.6920209446166875
+      },
+      "zBasis": {
+        "cashProfitability": "market",
+        "fcfYield": "market",
+        "momentum12_1": "market"
+      }
+    },
+    {
+      "asOf": "2026-09-30",
+      "collection": {
+        "collectedAt": "2026-10-06T06:37:07.737844+00:00",
+        "errors": [],
+        "status": "ok"
+      },
+      "composite": -0.3166333990917682,
+      "corpCode": "00181712",
+      "error": null,
+      "id": "KR:034730",
+      "inputs": {
+        "assets": 244883396000000.0,
+        "capexTTM": 8132577000000.0,
+        "cfoTTM": 7947082000000.0,
+        "currency": "KRW",
+        "filedAt": "2026-08-14",
+        "fundamentalsError": null,
+        "fundamentalsStatus": "ok",
+        "momentumWindow": [
+          "2025-09-12",
+          "2026-08-28"
+        ],
+        "periodEnd": "2026-06-30",
+        "shareClasses": [
+          {
+            "close": 588000.0,
+            "closeDate": "2026-09-30",
+            "listedShares": 72502703.0,
+            "priceProxy": false,
+            "priceSymbol": "034730.KS"
+          },
+          {
+            "close": 370500.0,
+            "closeDate": "2026-09-30",
+            "listedShares": 566135.0,
+            "priceProxy": false,
+            "priceSymbol": "03473K.KS"
+          }
+        ]
+      },
+      "issues": [
+        "sector_fallback"
+      ],
+      "ksic": "64992",
+      "label": "관찰",
+      "labelReason": "tercile",
+      "market": "KR",
+      "marketCap": 42841342381500.0,
+      "name": "SK",
+      "percentile": 0.4666666666666667,
+      "previousLabel": null,
+      "priceSymbol": "034730.KS",
+      "reason": null,
+      "sector": "Other",
+      "signals": {
+        "cashProfitability": 0.03245251466538793,
+        "fcfYield": -0.004329812972436213,
+        "momentum12_1": 1.497106218054598
+      },
+      "status": "eligible",
+      "ticker": "034730",
+      "winsorized": {
+        "cashProfitability": 0.03245251466538793,
+        "fcfYield": -0.004329812972436213,
+        "momentum12_1": 1.497106218054598
+      },
+      "z": {
+        "cashProfitability": -0.5787445513859546,
+        "fcfYield": -0.34956384825656145,
+        "momentum12_1": -0.0215917976327885
+      },
+      "zBasis": {
+        "cashProfitability": "market",
+        "fcfYield": "market",
+        "momentum12_1": "market"
+      }
+    },
+    {
+      "asOf": "2026-09-30",
+      "collection": {
+        "collectedAt": "2026-10-06T06:37:09.896052+00:00",
+        "errors": [],
+        "status": "ok"
+      },
+      "composite": -0.39834179189221985,
+      "corpCode": "00413046",
+      "error": null,
+      "id": "KR:068270",
+      "inputs": {
+        "assets": 23703154446039.0,
+        "capexTTM": 172826516175.0,
+        "cfoTTM": 995898364100.0,
+        "currency": "KRW",
+        "filedAt": "2026-08-14",
+        "fundamentalsError": null,
+        "fundamentalsStatus": "ok",
+        "momentumWindow": [
+          "2025-09-12",
+          "2026-08-28"
+        ],
+        "periodEnd": "2026-06-30",
+        "shareClasses": [
+          {
+            "close": 177700.0,
+            "closeDate": "2026-09-30",
+            "listedShares": 232617176.0,
+            "priceProxy": false,
+            "priceSymbol": "068270.KS"
+          }
+        ]
+      },
+      "issues": [
+        "sector_fallback"
+      ],
+      "ksic": "21100",
+      "label": "관찰",
+      "labelReason": "tercile",
+      "market": "KR",
+      "marketCap": 41336072175200.0,
+      "name": "셀트리온",
+      "percentile": 0.4,
+      "previousLabel": null,
+      "priceSymbol": "068270.KS",
+      "reason": null,
+      "sector": "Hlth",
+      "signals": {
+        "cashProfitability": 0.042015435809068996,
+        "fcfYield": 0.01991170918311901,
+        "momentum12_1": 0.1710704306059594
+      },
+      "status": "eligible",
+      "ticker": "068270",
+      "winsorized": {
+        "cashProfitability": 0.042015435809068996,
+        "fcfYield": 0.01991170918311901,
+        "momentum12_1": 0.1710704306059594
+      },
+      "z": {
+        "cashProfitability": -0.4837343125289205,
+        "fcfYield": 0.02994057480893983,
+        "momentum12_1": -0.7412316379566788
+      },
+      "zBasis": {
+        "cashProfitability": "market",
+        "fcfYield": "market",
+        "momentum12_1": "market"
+      }
+    },
+    {
+      "asOf": "2026-09-30",
+      "composite": null,
+      "corpCode": "00401731",
+      "error": null,
+      "id": "KR:066570",
+      "inputs": {},
+      "issues": [
+        "not_collected"
+      ],
+      "ksic": "264",
+      "label": null,
+      "labelReason": "insufficient",
+      "market": "KR",
+      "marketCap": null,
+      "name": "LG전자",
+      "percentile": null,
+      "previousLabel": null,
+      "priceSymbol": "066570.KS",
+      "reason": null,
+      "sector": "BusEq",
+      "signals": {
+        "cashProfitability": null,
+        "fcfYield": null,
+        "momentum12_1": null
+      },
+      "status": "eligible",
+      "ticker": "066570",
+      "winsorized": {
+        "cashProfitability": null,
+        "fcfYield": null,
+        "momentum12_1": null
+      },
+      "z": {
+        "cashProfitability": null,
+        "fcfYield": null,
+        "momentum12_1": null
+      },
+      "zBasis": {
+        "cashProfitability": null,
+        "fcfYield": null,
+        "momentum12_1": null
+      }
+    },
+    {
+      "asOf": "2026-09-30",
+      "composite": null,
+      "corpCode": "00547583",
+      "error": null,
+      "id": "KR:086790",
+      "inputs": {},
+      "issues": [],
+      "ksic": "64992",
+      "label": null,
+      "labelReason": "excluded",
+      "market": "KR",
+      "marketCap": null,
+      "name": "하나금융지주",
+      "percentile": null,
+      "previousLabel": null,
+      "priceSymbol": "086790.KS",
+      "reason": "financial_holding",
+      "sector": "Money",
+      "signals": {
+        "cashProfitability": null,
+        "fcfYield": null,
+        "momentum12_1": null
+      },
+      "status": "excluded",
+      "ticker": "086790",
+      "winsorized": {
+        "cashProfitability": null,
+        "fcfYield": null,
+        "momentum12_1": null
+      },
+      "z": {
+        "cashProfitability": null,
+        "fcfYield": null,
+        "momentum12_1": null
+      },
+      "zBasis": {
+        "cashProfitability": null,
+        "fcfYield": null,
+        "momentum12_1": null
+      }
+    },
+    {
+      "asOf": "2026-09-30",
+      "composite": null,
+      "corpCode": "00164788",
+      "error": null,
+      "id": "KR:012330",
+      "inputs": {},
+      "issues": [
+        "not_collected"
+      ],
+      "ksic": "303",
+      "label": null,
+      "labelReason": "insufficient",
+      "market": "KR",
+      "marketCap": null,
+      "name": "현대모비스",
+      "percentile": null,
+      "previousLabel": null,
+      "priceSymbol": "012330.KS",
+      "reason": null,
+      "sector": "Durbl",
+      "signals": {
+        "cashProfitability": null,
+        "fcfYield": null,
+        "momentum12_1": null
+      },
+      "status": "eligible",
+      "ticker": "012330",
+      "winsorized": {
+        "cashProfitability": null,
+        "fcfYield": null,
+        "momentum12_1": null
+      },
+      "z": {
+        "cashProfitability": null,
+        "fcfYield": null,
+        "momentum12_1": null
+      },
+      "zBasis": {
+        "cashProfitability": null,
+        "fcfYield": null,
+        "momentum12_1": null
+      }
+    },
+    {
+      "asOf": "2026-09-30",
+      "composite": null,
+      "corpCode": "00105855",
+      "error": null,
+      "id": "KR:010120",
+      "inputs": {},
+      "issues": [
+        "not_collected"
+      ],
+      "ksic": "28121",
+      "label": null,
+      "labelReason": "insufficient",
+      "market": "KR",
+      "marketCap": null,
+      "name": "LS ELECTRIC",
+      "percentile": null,
+      "previousLabel": null,
+      "priceSymbol": "010120.KS",
+      "reason": null,
+      "sector": "Manuf",
+      "signals": {
+        "cashProfitability": null,
+        "fcfYield": null,
+        "momentum12_1": null
+      },
+      "status": "eligible",
+      "ticker": "010120",
+      "winsorized": {
+        "cashProfitability": null,
+        "fcfYield": null,
+        "momentum12_1": null
+      },
+      "z": {
+        "cashProfitability": null,
+        "fcfYield": null,
+        "momentum12_1": null
+      },
+      "zBasis": {
+        "cashProfitability": null,
+        "fcfYield": null,
+        "momentum12_1": null
+      }
+    },
+    {
+      "asOf": "2026-09-30",
+      "composite": null,
+      "corpCode": "00266961",
+      "error": null,
+      "id": "KR:035420",
+      "inputs": {},
+      "issues": [
+        "not_collected"
+      ],
+      "ksic": "63120",
+      "label": null,
+      "labelReason": "insufficient",
+      "market": "KR",
+      "marketCap": null,
+      "name": "NAVER",
+      "percentile": null,
+      "previousLabel": null,
+      "priceSymbol": "035420.KS",
+      "reason": null,
+      "sector": "BusEq",
+      "signals": {
+        "cashProfitability": null,
+        "fcfYield": null,
+        "momentum12_1": null
+      },
+      "status": "eligible",
+      "ticker": "035420",
+      "winsorized": {
+        "cashProfitability": null,
+        "fcfYield": null,
+        "momentum12_1": null
+      },
+      "z": {
+        "cashProfitability": null,
+        "fcfYield": null,
+        "momentum12_1": null
+      },
+      "zBasis": {
+        "cashProfitability": null,
+        "fcfYield": null,
+        "momentum12_1": null
+      }
+    },
+    {
+      "asOf": "2026-09-30",
+      "composite": null,
+      "corpCode": "00139214",
+      "error": null,
+      "id": "KR:000810",
+      "inputs": {},
+      "issues": [],
+      "ksic": "65121",
+      "label": null,
+      "labelReason": "excluded",
+      "market": "KR",
+      "marketCap": null,
+      "name": "삼성화재",
+      "percentile": null,
+      "previousLabel": null,
+      "priceSymbol": "000810.KS",
+      "reason": "financial_ksic",
+      "sector": "Money",
+      "signals": {
+        "cashProfitability": null,
+        "fcfYield": null,
+        "momentum12_1": null
+      },
+      "status": "excluded",
+      "ticker": "000810",
+      "winsorized": {
+        "cashProfitability": null,
+        "fcfYield": null,
+        "momentum12_1": null
+      },
+      "z": {
+        "cashProfitability": null,
+        "fcfYield": null,
+        "momentum12_1": null
+      },
+      "zBasis": {
+        "cashProfitability": null,
+        "fcfYield": null,
+        "momentum12_1": null
+      }
+    }
+  ],
+  "run": {
+    "collection": {
+      "KR": {
+        "asOf": "2026-09-30",
+        "closeOnAsOf": 15,
+        "collected": 15,
+        "eligible": 19,
+        "errors": 0,
+        "excluded": 5,
+        "notCollected": 4,
+        "unreadableLines": 0,
+        "withPrices": 15,
+        "workFile": "data/ratings/work/2026-09-30/KR.jsonl",
+        "workFileSha256": "f21c40f8b48136b87b038b18dd06b9ca08d6596d20ab638a55f2a46e6d2a9ea0"
+      },
+      "US": {
+        "asOf": "2026-09-30",
+        "closeOnAsOf": 15,
+        "collected": 15,
+        "eligible": 22,
+        "errors": 0,
+        "excluded": 2,
+        "notCollected": 7,
+        "unreadableLines": 0,
+        "withPrices": 15,
+        "workFile": "data/ratings/work/2026-09-30/US.jsonl",
+        "workFileSha256": "f96251e4829f05d6a5349fca9f281ec22315abdd674b72f50444a07fd943f261"
+      }
+    },
+    "createdBy": "scripts/ratings.py score",
+    "note": "smoke test of the pipeline on a partial universe or collection; not a rating, never evaluated or reported",
+    "smoke": true,
+    "tag": "smoke",
+    "universeFile": "data/ratings/universe/2026-09-30-limit24.json",
+    "universeLimit": 24
+  },
+  "universe": {
+    "asOf": "2026-09-30",
+    "builtAt": "2026-10-06T06:35:13+00:00",
+    "counts": {
+      "KR": {
+        "eligible": 19,
+        "excluded": 5,
+        "members": 24
+      },
+      "US": {
+        "eligible": 22,
+        "excluded": 2,
+        "members": 24
+      }
+    },
+    "sha256": "df2979205b8ef9638ca117400c08d68939975caee2eadead343b045af1864564",
+    "sources": [
+      {
+        "bytes": 10860,
+        "file": "data/ratings/reference/ksic-ff12.json",
+        "key": "ksic-ff12",
+        "provider": "ratings-v1 reference",
+        "sha256": "7c6a73625704263142aecb35d2c27655b98a2da918cfe32b41ac3364fe2d7110",
+        "url": null
+      },
+      {
+        "bytes": 516,
+        "file": "data/ratings/sources/dart-company-00105855-190f927799d20e04.json",
+        "key": "dart-company-00105855",
+        "provider": "OpenDART",
+        "retrievedAt": "2026-10-06T06:35:51.355467+00:00",
+        "sha256": "190f927799d20e04c7bf34e8981d87994f8acc91976a56be3da1175b7d3973a4",
+        "url": "https://opendart.fss.or.kr/api/company.json?corp_code=00105855"
+      },
+      {
+        "bytes": 486,
+        "file": "data/ratings/sources/dart-company-00106641-4a956a8094eb5c25.json",
+        "key": "dart-company-00106641",
+        "provider": "OpenDART",
+        "retrievedAt": "2026-10-06T06:35:49.490916+00:00",
+        "sha256": "4a956a8094eb5c2561b092209cf6221fd6c15ebe70f93933a34e384937a021c6",
+        "url": "https://opendart.fss.or.kr/api/company.json?corp_code=00106641"
+      },
+      {
+        "bytes": 528,
+        "file": "data/ratings/sources/dart-company-00126256-1836b9ddef8a265b.json",
+        "key": "dart-company-00126256",
+        "provider": "OpenDART",
+        "retrievedAt": "2026-10-06T06:35:47.384001+00:00",
+        "sha256": "1836b9ddef8a265bf89723a04c15cbcd8a7d0c803fefbf3f99b3985ab5e85e72",
+        "url": "https://opendart.fss.or.kr/api/company.json?corp_code=00126256"
+      },
+      {
+        "bytes": 473,
+        "file": "data/ratings/sources/dart-company-00126362-44193bc32b519cb8.json",
+        "key": "dart-company-00126362",
+        "provider": "OpenDART",
+        "retrievedAt": "2026-10-06T06:35:48.887372+00:00",
+        "sha256": "44193bc32b519cb870d322ac71a43fd621f72c4e1cdb0101c22c3d160657eae9",
+        "url": "https://opendart.fss.or.kr/api/company.json?corp_code=00126362"
+      },
+      {
+        "bytes": 481,
+        "file": "data/ratings/sources/dart-company-00126371-1a87ce7adbc52165.json",
+        "key": "dart-company-00126371",
+        "provider": "OpenDART",
+        "retrievedAt": "2026-10-06T06:35:45.657208+00:00",
+        "sha256": "1a87ce7adbc521653e9d23b8580f97f434fdd8bb8fcef7a955adeb314f008e7f",
+        "url": "https://opendart.fss.or.kr/api/company.json?corp_code=00126371"
+      },
+      {
+        "bytes": 495,
+        "file": "data/ratings/sources/dart-company-00126380-d37caf0b34db38d3.json",
+        "key": "dart-company-00126380",
+        "provider": "OpenDART",
+        "retrievedAt": "2026-10-06T06:35:44.754703+00:00",
+        "sha256": "d37caf0b34db38d362d08a7af09a38db177e79700072ca96309e12bf79f00790",
+        "url": "https://opendart.fss.or.kr/api/company.json?corp_code=00126380"
+      },
+      {
+        "bytes": 524,
+        "file": "data/ratings/sources/dart-company-00126566-09ef5d3c0bd985c1.json",
+        "key": "dart-company-00126566",
+        "provider": "OpenDART",
+        "retrievedAt": "2026-10-06T06:35:48.023925+00:00",
+        "sha256": "09ef5d3c0bd985c185a538a7409218df2e821044c64ecd9e4f9b0f24fd3e4f56",
+        "url": "https://opendart.fss.or.kr/api/company.json?corp_code=00126566"
+      },
+      {
+        "bytes": 525,
+        "file": "data/ratings/sources/dart-company-00139214-14e8700c390505e8.json",
+        "key": "dart-company-00139214",
+        "provider": "OpenDART",
+        "retrievedAt": "2026-10-06T06:35:51.955679+00:00",
+        "sha256": "14e8700c390505e81109bba6eab3c90feed34ae9e3203c31b57dc27a84ade7d0",
+        "url": "https://opendart.fss.or.kr/api/company.json?corp_code=00139214"
+      },
+      {
+        "bytes": 477,
+        "file": "data/ratings/sources/dart-company-00149655-48d8d8901d917f02.json",
+        "key": "dart-company-00149655",
+        "provider": "OpenDART",
+        "retrievedAt": "2026-10-06T06:35:47.677517+00:00",
+        "sha256": "48d8d8901d917f025b74cd2035dcfa3d4f25c579ad26812203b40b5b357539b5",
+        "url": "https://opendart.fss.or.kr/api/company.json?corp_code=00149655"
+      },
+      {
+        "bytes": 621,
+        "file": "data/ratings/sources/dart-company-00159616-b7d1c1ac1e955f72.json",
+        "key": "dart-company-00159616",
+        "provider": "OpenDART",
+        "retrievedAt": "2026-10-06T06:35:48.310568+00:00",
+        "sha256": "b7d1c1ac1e955f7256e798ccf90cbc8fba93b227b5ac7c5da2912bdf4f3c4257",
+        "url": "https://opendart.fss.or.kr/api/company.json?corp_code=00159616"
+      },
+      {
+        "bytes": 536,
+        "file": "data/ratings/sources/dart-company-00164742-0c568bb22eb5596f.json",
+        "key": "dart-company-00164742",
+        "provider": "OpenDART",
+        "retrievedAt": "2026-10-06T06:35:46.410157+00:00",
+        "sha256": "0c568bb22eb5596f2936b8cc94a2ccb23ffe97324729e94c7fd2276f80346997",
+        "url": "https://opendart.fss.or.kr/api/company.json?corp_code=00164742"
+      },
+      {
+        "bytes": 473,
+        "file": "data/ratings/sources/dart-company-00164779-8f46069250abe567.json",
+        "key": "dart-company-00164779",
+        "provider": "OpenDART",
+        "retrievedAt": "2026-10-06T06:35:45.090146+00:00",
+        "sha256": "8f46069250abe56790aa1d6d3b3999b7b1f31aeffc7cee987128c8ee8fe395ee",
+        "url": "https://opendart.fss.or.kr/api/company.json?corp_code=00164779"
+      },
+      {
+        "bytes": 495,
+        "file": "data/ratings/sources/dart-company-00164788-e6ad28644d1151d5.json",
+        "key": "dart-company-00164788",
+        "provider": "OpenDART",
+        "retrievedAt": "2026-10-06T06:35:51.050250+00:00",
+        "sha256": "e6ad28644d1151d52efe7667d38f326adc9ab35463249f0584a91a506103baba",
+        "url": "https://opendart.fss.or.kr/api/company.json?corp_code=00164788"
+      },
+      {
+        "bytes": 447,
+        "file": "data/ratings/sources/dart-company-00181712-b1b8af8925164e08.json",
+        "key": "dart-company-00181712",
+        "provider": "OpenDART",
+        "retrievedAt": "2026-10-06T06:35:49.779756+00:00",
+        "sha256": "b1b8af8925164e08e17b6c25ff7486efe030c0d541e7daaa5b78e9927372d54c",
+        "url": "https://opendart.fss.or.kr/api/company.json?corp_code=00181712"
+      },
+      {
+        "bytes": 501,
+        "file": "data/ratings/sources/dart-company-00266961-68e8215cdf2d2e75.json",
+        "key": "dart-company-00266961",
+        "provider": "OpenDART",
+        "retrievedAt": "2026-10-06T06:35:51.645682+00:00",
+        "sha256": "68e8215cdf2d2e754715efcf168ede61f7ed24e9b08acbea26d10bbfeacb33d8",
+        "url": "https://opendart.fss.or.kr/api/company.json?corp_code=00266961"
+      },
+      {
+        "bytes": 503,
+        "file": "data/ratings/sources/dart-company-00382199-bd13f65e9e7a13fc.json",
+        "key": "dart-company-00382199",
+        "provider": "OpenDART",
+        "retrievedAt": "2026-10-06T06:35:48.598808+00:00",
+        "sha256": "bd13f65e9e7a13fc452061f0fd0cbcc9ec3fa21a9e70c13fa0d5b6da52e68c97",
+        "url": "https://opendart.fss.or.kr/api/company.json?corp_code=00382199"
+      },
+      {
+        "bytes": 518,
+        "file": "data/ratings/sources/dart-company-00401731-bedde87fb72308f5.json",
+        "key": "dart-company-00401731",
+        "provider": "OpenDART",
+        "retrievedAt": "2026-10-06T06:35:50.454359+00:00",
+        "sha256": "bedde87fb72308f5906b4684029072c966a05be0bc1a83ed31518e186778bd6a",
+        "url": "https://opendart.fss.or.kr/api/company.json?corp_code=00401731"
+      },
+      {
+        "bytes": 517,
+        "file": "data/ratings/sources/dart-company-00413046-21e72303974bb691.json",
+        "key": "dart-company-00413046",
+        "provider": "OpenDART",
+        "retrievedAt": "2026-10-06T06:35:50.147294+00:00",
+        "sha256": "21e72303974bb691729a3463e835806b0a71b0be5c82e9db9199aa00879b1d47",
+        "url": "https://opendart.fss.or.kr/api/company.json?corp_code=00413046"
+      },
+      {
+        "bytes": 497,
+        "file": "data/ratings/sources/dart-company-00547583-39ad6c9ceb252844.json",
+        "key": "dart-company-00547583",
+        "provider": "OpenDART",
+        "retrievedAt": "2026-10-06T06:35:50.760544+00:00",
+        "sha256": "39ad6c9ceb2528445c267fdd338b936447c178276f030a13adc6d17fb336ace1",
+        "url": "https://opendart.fss.or.kr/api/company.json?corp_code=00547583"
+      },
+      {
+        "bytes": 501,
+        "file": "data/ratings/sources/dart-company-00688996-797fc2d5381461fe.json",
+        "key": "dart-company-00688996",
+        "provider": "OpenDART",
+        "retrievedAt": "2026-10-06T06:35:47.003184+00:00",
+        "sha256": "797fc2d5381461fe2584b7f013764345e9f8c80ddee5c52d36a332b96c7f5f78",
+        "url": "https://opendart.fss.or.kr/api/company.json?corp_code=00688996"
+      },
+      {
+        "bytes": 529,
+        "file": "data/ratings/sources/dart-company-00877059-43160f3da635f7f1.json",
+        "key": "dart-company-00877059",
+        "provider": "OpenDART",
+        "retrievedAt": "2026-10-06T06:35:46.717071+00:00",
+        "sha256": "43160f3da635f7f1e82683e940554799f17f882bd83e75333471b6147c5a3c8b",
+        "url": "https://opendart.fss.or.kr/api/company.json?corp_code=00877059"
+      },
+      {
+        "bytes": 535,
+        "file": "data/ratings/sources/dart-company-01390344-8beb8e8aad39bdfc.json",
+        "key": "dart-company-01390344",
+        "provider": "OpenDART",
+        "retrievedAt": "2026-10-06T06:35:49.201118+00:00",
+        "sha256": "8beb8e8aad39bdfcf764fd283814eaefd730ecc9bfb3c0f8284c96ce277b7dcf",
+        "url": "https://opendart.fss.or.kr/api/company.json?corp_code=01390344"
+      },
+      {
+        "bytes": 534,
+        "file": "data/ratings/sources/dart-company-01515323-c30b09c3e25bf40e.json",
+        "key": "dart-company-01515323",
+        "provider": "OpenDART",
+        "retrievedAt": "2026-10-06T06:35:45.945864+00:00",
+        "sha256": "c30b09c3e25bf40e0f73ec8656257915238a25ed7364b164e7a9212f69f56c1c",
+        "url": "https://opendart.fss.or.kr/api/company.json?corp_code=01515323"
+      },
+      {
+        "bytes": 469,
+        "file": "data/ratings/sources/dart-company-01596425-6233a0c0a127268d.json",
+        "key": "dart-company-01596425",
+        "provider": "OpenDART",
+        "retrievedAt": "2026-10-06T06:35:45.370172+00:00",
+        "sha256": "6233a0c0a127268d00a994d5c78459eb621ac3b33c66f9495b3691fe9710f306",
+        "url": "https://opendart.fss.or.kr/api/company.json?corp_code=01596425"
+      },
+      {
+        "bytes": 3622597,
+        "file": "data/ratings/sources/dart-corpcode-7355d129c4baccef.zip",
+        "key": "dart-corpcode",
+        "provider": "OpenDART",
+        "retrievedAt": "2026-10-06T06:35:38.432752+00:00",
+        "sha256": "7355d129c4baccefdb8b4b91af936fc8ddd67e995071d76586d36036d4bea673",
+        "url": "https://opendart.fss.or.kr/api/corpCode.xml"
+      },
+      {
+        "bytes": 881,
+        "file": "data/ratings/sources/ken-french-siccodes12-d801141acf039f2e.zip",
+        "key": "ken-french-siccodes12",
+        "provider": "Ken French",
+        "retrievedAt": "2026-10-06T06:35:16.197037+00:00",
+        "sha256": "d801141acf039f2e06e6d4d9ba2b3992e9747a1d82fabd53ef21da4a3af79fff",
+        "url": "https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/ftp/Siccodes12.zip"
+      },
+      {
+        "bytes": 196371,
+        "file": "data/ratings/sources/naver-kospi-marketvalue-p1-33110d1b77486d0e.json",
+        "key": "naver-kospi-marketvalue-p1",
+        "provider": "Naver Finance",
+        "retrievedAt": "2026-10-06T06:35:24.869990+00:00",
+        "sha256": "33110d1b77486d0efa82d3d7251e6c988c4c7d20139b2dc136902d7d5a8bee36",
+        "url": "https://m.stock.naver.com/api/stocks/marketValue/KOSPI?page=1&pageSize=100"
+      },
+      {
+        "bytes": 161088,
+        "file": "data/ratings/sources/naver-kospi-marketvalue-p10-11e88e306ff51403.json",
+        "key": "naver-kospi-marketvalue-p10",
+        "provider": "Naver Finance",
+        "retrievedAt": "2026-10-06T06:35:28.034650+00:00",
+        "sha256": "11e88e306ff514036a86f4d3a467c716bed872d3253f812bbd6d641cb6b6b06f",
+        "url": "https://m.stock.naver.com/api/stocks/marketValue/KOSPI?page=10&pageSize=100"
+      },
+      {
+        "bytes": 160521,
+        "file": "data/ratings/sources/naver-kospi-marketvalue-p11-1c92a2be105c490a.json",
+        "key": "naver-kospi-marketvalue-p11",
+        "provider": "Naver Finance",
+        "retrievedAt": "2026-10-06T06:35:28.358780+00:00",
+        "sha256": "1c92a2be105c490ab6da46eb477e34d598771e1cc215e9e355939e6260abc82b",
+        "url": "https://m.stock.naver.com/api/stocks/marketValue/KOSPI?page=11&pageSize=100"
+      },
+      {
+        "bytes": 160074,
+        "file": "data/ratings/sources/naver-kospi-marketvalue-p12-92d963b197842711.json",
+        "key": "naver-kospi-marketvalue-p12",
+        "provider": "Naver Finance",
+        "retrievedAt": "2026-10-06T06:35:28.685881+00:00",
+        "sha256": "92d963b197842711f2e5eb48deb9cee43a715807c339afd8dbc64e57faaa21df",
+        "url": "https://m.stock.naver.com/api/stocks/marketValue/KOSPI?page=12&pageSize=100"
+      },
+      {
+        "bytes": 160230,
+        "file": "data/ratings/sources/naver-kospi-marketvalue-p13-f1f2de70e707a79f.json",
+        "key": "naver-kospi-marketvalue-p13",
+        "provider": "Naver Finance",
+        "retrievedAt": "2026-10-06T06:35:29.042905+00:00",
+        "sha256": "f1f2de70e707a79f0fc8e9234a3f1986787b6752d08eae33758633d56b0ec781",
+        "url": "https://m.stock.naver.com/api/stocks/marketValue/KOSPI?page=13&pageSize=100"
+      },
+      {
+        "bytes": 160482,
+        "file": "data/ratings/sources/naver-kospi-marketvalue-p14-0c07000af0352896.json",
+        "key": "naver-kospi-marketvalue-p14",
+        "provider": "Naver Finance",
+        "retrievedAt": "2026-10-06T06:35:29.446722+00:00",
+        "sha256": "0c07000af03528966bc7314ef48465dcf957463ddfd4bdcbb737b715f1734e78",
+        "url": "https://m.stock.naver.com/api/stocks/marketValue/KOSPI?page=14&pageSize=100"
+      },
+      {
+        "bytes": 160602,
+        "file": "data/ratings/sources/naver-kospi-marketvalue-p15-2fdfc54a4c295b95.json",
+        "key": "naver-kospi-marketvalue-p15",
+        "provider": "Naver Finance",
+        "retrievedAt": "2026-10-06T06:35:29.775561+00:00",
+        "sha256": "2fdfc54a4c295b95a3961858c1aa5b67f597eca7582f03e1958c4185c78484a0",
+        "url": "https://m.stock.naver.com/api/stocks/marketValue/KOSPI?page=15&pageSize=100"
+      },
+      {
+        "bytes": 160791,
+        "file": "data/ratings/sources/naver-kospi-marketvalue-p16-e487d527f8e5306b.json",
+        "key": "naver-kospi-marketvalue-p16",
+        "provider": "Naver Finance",
+        "retrievedAt": "2026-10-06T06:35:35.074842+00:00",
+        "sha256": "e487d527f8e5306b75b9aefabbca69e96d62704526e1c5dfab597c8c234791f2",
+        "url": "https://m.stock.naver.com/api/stocks/marketValue/KOSPI?page=16&pageSize=100"
+      },
+      {
+        "bytes": 160821,
+        "file": "data/ratings/sources/naver-kospi-marketvalue-p17-3395869dac354b88.json",
+        "key": "naver-kospi-marketvalue-p17",
+        "provider": "Naver Finance",
+        "retrievedAt": "2026-10-06T06:35:35.396725+00:00",
+        "sha256": "3395869dac354b88bc7ac7a1583e0393f78a446c9fbdf8ad3c020d4ab63b0428",
+        "url": "https://m.stock.naver.com/api/stocks/marketValue/KOSPI?page=17&pageSize=100"
+      },
+      {
+        "bytes": 160998,
+        "file": "data/ratings/sources/naver-kospi-marketvalue-p18-e16e0e2692247bfc.json",
+        "key": "naver-kospi-marketvalue-p18",
+        "provider": "Naver Finance",
+        "retrievedAt": "2026-10-06T06:35:35.685984+00:00",
+        "sha256": "e16e0e2692247bfc377f25fef7183a9ab452dcf12f7e1e0b502706802987c4dd",
+        "url": "https://m.stock.naver.com/api/stocks/marketValue/KOSPI?page=18&pageSize=100"
+      },
+      {
+        "bytes": 160903,
+        "file": "data/ratings/sources/naver-kospi-marketvalue-p19-2b4acc588dc175b0.json",
+        "key": "naver-kospi-marketvalue-p19",
+        "provider": "Naver Finance",
+        "retrievedAt": "2026-10-06T06:35:35.990633+00:00",
+        "sha256": "2b4acc588dc175b0af3363580c9b67157ae871c20e2c9b899adf31877e32569f",
+        "url": "https://m.stock.naver.com/api/stocks/marketValue/KOSPI?page=19&pageSize=100"
+      },
+      {
+        "bytes": 185225,
+        "file": "data/ratings/sources/naver-kospi-marketvalue-p2-1baf2cbb092a84c2.json",
+        "key": "naver-kospi-marketvalue-p2",
+        "provider": "Naver Finance",
+        "retrievedAt": "2026-10-06T06:35:25.199363+00:00",
+        "sha256": "1baf2cbb092a84c2e474b162c1f686df7ccc14597c0b3f4b828870e04d731adf",
+        "url": "https://m.stock.naver.com/api/stocks/marketValue/KOSPI?page=2&pageSize=100"
+      },
+      {
+        "bytes": 161032,
+        "file": "data/ratings/sources/naver-kospi-marketvalue-p20-b098d4f07738a85c.json",
+        "key": "naver-kospi-marketvalue-p20",
+        "provider": "Naver Finance",
+        "retrievedAt": "2026-10-06T06:35:36.276479+00:00",
+        "sha256": "b098d4f07738a85c3c6bced9ffdc4b86af257b6163b05f2ee052adfc2eb11ea3",
+        "url": "https://m.stock.naver.com/api/stocks/marketValue/KOSPI?page=20&pageSize=100"
+      },
+      {
+        "bytes": 161201,
+        "file": "data/ratings/sources/naver-kospi-marketvalue-p21-01cb6db027bba814.json",
+        "key": "naver-kospi-marketvalue-p21",
+        "provider": "Naver Finance",
+        "retrievedAt": "2026-10-06T06:35:36.569789+00:00",
+        "sha256": "01cb6db027bba8148705aa1020cff2be814eb212bbc29663db99afa78fa71922",
+        "url": "https://m.stock.naver.com/api/stocks/marketValue/KOSPI?page=21&pageSize=100"
+      },
+      {
+        "bytes": 161111,
+        "file": "data/ratings/sources/naver-kospi-marketvalue-p22-fe9cbf9b78a865e4.json",
+        "key": "naver-kospi-marketvalue-p22",
+        "provider": "Naver Finance",
+        "retrievedAt": "2026-10-06T06:35:36.867261+00:00",
+        "sha256": "fe9cbf9b78a865e494ec6c69d2285b05d4deb461b9be3ad3832d3b557a0ae4d6",
+        "url": "https://m.stock.naver.com/api/stocks/marketValue/KOSPI?page=22&pageSize=100"
+      },
+      {
+        "bytes": 160911,
+        "file": "data/ratings/sources/naver-kospi-marketvalue-p23-e3a7248b620bcc25.json",
+        "key": "naver-kospi-marketvalue-p23",
+        "provider": "Naver Finance",
+        "retrievedAt": "2026-10-06T06:35:37.169972+00:00",
+        "sha256": "e3a7248b620bcc256ab6760b949fe6c4768764482a8b7e6ee62ac3024d442a06",
+        "url": "https://m.stock.naver.com/api/stocks/marketValue/KOSPI?page=23&pageSize=100"
+      },
+      {
+        "bytes": 160394,
+        "file": "data/ratings/sources/naver-kospi-marketvalue-p24-3219b571f3f7c953.json",
+        "key": "naver-kospi-marketvalue-p24",
+        "provider": "Naver Finance",
+        "retrievedAt": "2026-10-06T06:35:37.468544+00:00",
+        "sha256": "3219b571f3f7c953d645f35e8c751bd87748533eac6efa9b97a62a4364914258",
+        "url": "https://m.stock.naver.com/api/stocks/marketValue/KOSPI?page=24&pageSize=100"
+      },
+      {
+        "bytes": 131066,
+        "file": "data/ratings/sources/naver-kospi-marketvalue-p25-6be6b7dec9cbfbfa.json",
+        "key": "naver-kospi-marketvalue-p25",
+        "provider": "Naver Finance",
+        "retrievedAt": "2026-10-06T06:35:37.757535+00:00",
+        "sha256": "6be6b7dec9cbfbfad061b6cd48c67b81b2c5cc489a7b2cb5258ec3ce47c95a43",
+        "url": "https://m.stock.naver.com/api/stocks/marketValue/KOSPI?page=25&pageSize=100"
+      },
+      {
+        "bytes": 180243,
+        "file": "data/ratings/sources/naver-kospi-marketvalue-p3-0353faa31be0e443.json",
+        "key": "naver-kospi-marketvalue-p3",
+        "provider": "Naver Finance",
+        "retrievedAt": "2026-10-06T06:35:25.609325+00:00",
+        "sha256": "0353faa31be0e443d12d8f4e4ddb7727eb52145b8a41505572496aad43f2e09e",
+        "url": "https://m.stock.naver.com/api/stocks/marketValue/KOSPI?page=3&pageSize=100"
+      },
+      {
+        "bytes": 176039,
+        "file": "data/ratings/sources/naver-kospi-marketvalue-p4-22b51f52c271d271.json",
+        "key": "naver-kospi-marketvalue-p4",
+        "provider": "Naver Finance",
+        "retrievedAt": "2026-10-06T06:35:26.026221+00:00",
+        "sha256": "22b51f52c271d27117b6c9d2b495a5659a8788b63ea0853e83afbc71b43338b5",
+        "url": "https://m.stock.naver.com/api/stocks/marketValue/KOSPI?page=4&pageSize=100"
+      },
+      {
+        "bytes": 176331,
+        "file": "data/ratings/sources/naver-kospi-marketvalue-p5-c9c86cfa5d543c3f.json",
+        "key": "naver-kospi-marketvalue-p5",
+        "provider": "Naver Finance",
+        "retrievedAt": "2026-10-06T06:35:26.358014+00:00",
+        "sha256": "c9c86cfa5d543c3f712544b49f883db965394cb5ff320b4206ed768b85e9504b",
+        "url": "https://m.stock.naver.com/api/stocks/marketValue/KOSPI?page=5&pageSize=100"
+      },
+      {
+        "bytes": 175031,
+        "file": "data/ratings/sources/naver-kospi-marketvalue-p6-38a13223acfc41ed.json",
+        "key": "naver-kospi-marketvalue-p6",
+        "provider": "Naver Finance",
+        "retrievedAt": "2026-10-06T06:35:26.705207+00:00",
+        "sha256": "38a13223acfc41ed4ebd2d737dead9d2c893d8eb4408cd61c59ddb347f0853e5",
+        "url": "https://m.stock.naver.com/api/stocks/marketValue/KOSPI?page=6&pageSize=100"
+      },
+      {
+        "bytes": 171702,
+        "file": "data/ratings/sources/naver-kospi-marketvalue-p7-c86754d926b911ca.json",
+        "key": "naver-kospi-marketvalue-p7",
+        "provider": "Naver Finance",
+        "retrievedAt": "2026-10-06T06:35:27.045195+00:00",
+        "sha256": "c86754d926b911ca3aeedfec1840ac4e1b1d8db2d6c3fefeca32d6f5be503f9f",
+        "url": "https://m.stock.naver.com/api/stocks/marketValue/KOSPI?page=7&pageSize=100"
+      },
+      {
+        "bytes": 166588,
+        "file": "data/ratings/sources/naver-kospi-marketvalue-p8-dc095d5c24f066c6.json",
+        "key": "naver-kospi-marketvalue-p8",
+        "provider": "Naver Finance",
+        "retrievedAt": "2026-10-06T06:35:27.376687+00:00",
+        "sha256": "dc095d5c24f066c6a3bbba600454dccff4dd37897470e8a37e3e4e8243f68bad",
+        "url": "https://m.stock.naver.com/api/stocks/marketValue/KOSPI?page=8&pageSize=100"
+      },
+      {
+        "bytes": 163491,
+        "file": "data/ratings/sources/naver-kospi-marketvalue-p9-8e93d9a0d916536e.json",
+        "key": "naver-kospi-marketvalue-p9",
+        "provider": "Naver Finance",
+        "retrievedAt": "2026-10-06T06:35:27.703185+00:00",
+        "sha256": "8e93d9a0d916536e7b4eb19bcf94ecac63cae53c6f2643420281b599ef659c5b",
+        "url": "https://m.stock.naver.com/api/stocks/marketValue/KOSPI?page=9&pageSize=100"
+      },
+      {
+        "bytes": 798727,
+        "file": "data/ratings/sources/sec-company-tickers-eb943bdc3d233f54.json",
+        "key": "sec-company-tickers",
+        "provider": "SEC",
+        "retrievedAt": "2026-10-06T06:35:14.800996+00:00",
+        "sha256": "eb943bdc3d233f54644ba916f261651460a0b94f6fbf29dbf3c1788271b17bf9",
+        "url": "https://www.sec.gov/files/company_tickers.json"
+      },
+      {
+        "bytes": 162206,
+        "file": "data/ratings/sources/sec-submissions-0000002488-9789d97cfb1b41fb.json",
+        "key": "sec-submissions-0000002488",
+        "provider": "SEC",
+        "retrievedAt": "2026-10-06T06:35:19.604273+00:00",
+        "sha256": "9789d97cfb1b41fb58cc5fcebd13cfced084409dc3bbcfb6ca1382304f092493",
+        "url": "https://data.sec.gov/submissions/CIK0000002488.json"
+      },
+      {
+        "bytes": 159620,
+        "file": "data/ratings/sources/sec-submissions-0000006951-ed5b9d52c5c29ddb.json",
+        "key": "sec-submissions-0000006951",
+        "provider": "SEC",
+        "retrievedAt": "2026-10-06T06:35:24.476973+00:00",
+        "sha256": "ed5b9d52c5c29ddb0129461fa79283054574cfd690a298070e93b40ed077d074",
+        "url": "https://data.sec.gov/submissions/CIK0000006951.json"
+      },
+      {
+        "bytes": 4625471,
+        "file": "data/ratings/sources/sec-submissions-0000019617-314f9554bc341a35.json",
+        "key": "sec-submissions-0000019617",
+        "provider": "SEC",
+        "retrievedAt": "2026-10-06T06:35:20.860364+00:00",
+        "sha256": "314f9554bc341a35ca0374d408bc6bd290bb2474a1fd891c4a16ad70983ea746",
+        "url": "https://data.sec.gov/submissions/CIK0000019617.json"
+      },
+      {
+        "bytes": 159311,
+        "file": "data/ratings/sources/sec-submissions-0000050863-f04f1a2215ca448e.json",
+        "key": "sec-submissions-0000050863",
+        "provider": "SEC",
+        "retrievedAt": "2026-10-06T06:35:22.142483+00:00",
+        "sha256": "f04f1a2215ca448e8661d5dd6fea91c878168cf6f8edef08c7cab602659c4111",
+        "url": "https://data.sec.gov/submissions/CIK0000050863.json"
+      },
+      {
+        "bytes": 158710,
+        "file": "data/ratings/sources/sec-submissions-0000059478-a86ac966f881c749.json",
+        "key": "sec-submissions-0000059478",
+        "provider": "SEC",
+        "retrievedAt": "2026-10-06T06:35:20.198705+00:00",
+        "sha256": "a86ac966f881c749964e351234ababeb6face9a7a449ce9a3459534b4aa261f4",
+        "url": "https://data.sec.gov/submissions/CIK0000059478.json"
+      },
+      {
+        "bytes": 157326,
+        "file": "data/ratings/sources/sec-submissions-0000104169-5cafa5114f8ee98f.json",
+        "key": "sec-submissions-0000104169",
+        "provider": "SEC",
+        "retrievedAt": "2026-10-06T06:35:22.492838+00:00",
+        "sha256": "5cafa5114f8ee98f494579220a476ab0d84c83ecc761a916761382ef11d8e470",
+        "url": "https://data.sec.gov/submissions/CIK0000104169.json"
+      },
+      {
+        "bytes": 154758,
+        "file": "data/ratings/sources/sec-submissions-0000200406-269cec583b49d64b.json",
+        "key": "sec-submissions-0000200406",
+        "provider": "SEC",
+        "retrievedAt": "2026-10-06T06:35:21.548395+00:00",
+        "sha256": "269cec583b49d64b87a61196490d6d2a685ce697346269d4d1f8fe9d673fbfb6",
+        "url": "https://data.sec.gov/submissions/CIK0000200406.json"
+      },
+      {
+        "bytes": 163743,
+        "file": "data/ratings/sources/sec-submissions-0000320193-e89635068cd46772.json",
+        "key": "sec-submissions-0000320193",
+        "provider": "SEC",
+        "retrievedAt": "2026-10-06T06:35:17.068907+00:00",
+        "sha256": "e89635068cd46772d1d3859ce2bc839fab781630787943a1874f258fa354e7a9",
+        "url": "https://data.sec.gov/submissions/CIK0000320193.json"
+      },
+      {
+        "bytes": 165188,
+        "file": "data/ratings/sources/sec-submissions-0000707549-6fceded57bafb04f.json",
+        "key": "sec-submissions-0000707549",
+        "provider": "SEC",
+        "retrievedAt": "2026-10-06T06:35:23.767133+00:00",
+        "sha256": "6fceded57bafb04f3a75bd0f9f49a3820281ed0681744a8163b29b75851ab9a2",
+        "url": "https://data.sec.gov/submissions/CIK0000707549.json"
+      },
+      {
+        "bytes": 164587,
+        "file": "data/ratings/sources/sec-submissions-0000723125-3164701495da663e.json",
+        "key": "sec-submissions-0000723125",
+        "provider": "SEC",
+        "retrievedAt": "2026-10-06T06:35:19.000448+00:00",
+        "sha256": "3164701495da663e7f87476f9bcf8898d6dd4ca6a7677dc1ddf5c7a59542c40b",
+        "url": "https://data.sec.gov/submissions/CIK0000723125.json"
+      },
+      {
+        "bytes": 185250,
+        "file": "data/ratings/sources/sec-submissions-0000789019-2484a2a3b5677d89.json",
+        "key": "sec-submissions-0000789019",
+        "provider": "SEC",
+        "retrievedAt": "2026-10-06T06:35:17.397847+00:00",
+        "sha256": "2484a2a3b5677d892a1b25af573ce4eda7b6f449f5eda41bac6b3f106dc3139c",
+        "url": "https://data.sec.gov/submissions/CIK0000789019.json"
+      },
+      {
+        "bytes": 158275,
+        "file": "data/ratings/sources/sec-submissions-0000858877-73828b4b6957249d.json",
+        "key": "sec-submissions-0000858877",
+        "provider": "SEC",
+        "retrievedAt": "2026-10-06T06:35:23.478214+00:00",
+        "sha256": "73828b4b6957249d5c79353420215ea042930711bd498e6049109e4201ea715e",
+        "url": "https://data.sec.gov/submissions/CIK0000858877.json"
+      },
+      {
+        "bytes": 159744,
+        "file": "data/ratings/sources/sec-submissions-0001018724-aa73908ad46a600a.json",
+        "key": "sec-submissions-0001018724",
+        "provider": "SEC",
+        "retrievedAt": "2026-10-06T06:35:18.051323+00:00",
+        "sha256": "aa73908ad46a600a4a9525ec65b777d0726c27c6de594e2c74e0e0bea832c399",
+        "url": "https://data.sec.gov/submissions/CIK0001018724.json"
+      },
+      {
+        "bytes": 159785,
+        "file": "data/ratings/sources/sec-submissions-0001045810-0b3ce6a0cd78c43d.json",
+        "key": "sec-submissions-0001045810",
+        "provider": "SEC",
+        "retrievedAt": "2026-10-06T06:35:16.640301+00:00",
+        "sha256": "0b3ce6a0cd78c43d69b19b7efb9effcd79d0c6bd4c43606aac84d0f872cc9c73",
+        "url": "https://data.sec.gov/submissions/CIK0001045810.json"
+      },
+      {
+        "bytes": 161228,
+        "file": "data/ratings/sources/sec-submissions-0001067983-34b9413cd96afb01.json",
+        "key": "sec-submissions-0001067983",
+        "provider": "SEC",
+        "retrievedAt": "2026-10-06T06:35:19.906338+00:00",
+        "sha256": "34b9413cd96afb0137d445dfdc64e7c780b81b734ac97227e9174b72d2fed1af",
+        "url": "https://data.sec.gov/submissions/CIK0001067983.json"
+      },
+      {
+        "bytes": 160869,
+        "file": "data/ratings/sources/sec-submissions-0001141391-709217ebaaec0302.json",
+        "key": "sec-submissions-0001141391",
+        "provider": "SEC",
+        "retrievedAt": "2026-10-06T06:35:23.157370+00:00",
+        "sha256": "709217ebaaec0302314c96b2e8f42c5438178109f807f0f8490b6ee8bff5745b",
+        "url": "https://data.sec.gov/submissions/CIK0001141391.json"
+      },
+      {
+        "bytes": 161958,
+        "file": "data/ratings/sources/sec-submissions-0001318605-76ef728de78f5a70.json",
+        "key": "sec-submissions-0001318605",
+        "provider": "SEC",
+        "retrievedAt": "2026-10-06T06:35:19.310238+00:00",
+        "sha256": "76ef728de78f5a7048154847052d1be4b76d32be9e790f57d8ce14a026be6c3a",
+        "url": "https://data.sec.gov/submissions/CIK0001318605.json"
+      },
+      {
+        "bytes": 159009,
+        "file": "data/ratings/sources/sec-submissions-0001321655-60547bf31fb5fa83.json",
+        "key": "sec-submissions-0001321655",
+        "provider": "SEC",
+        "retrievedAt": "2026-10-06T06:35:24.064139+00:00",
+        "sha256": "60547bf31fb5fa83f6bafe5da93ac1593ed2e113efdca47c8b0282cc1f317c95",
+        "url": "https://data.sec.gov/submissions/CIK0001321655.json"
+      },
+      {
+        "bytes": 157876,
+        "file": "data/ratings/sources/sec-submissions-0001326801-2748907971ba09da.json",
+        "key": "sec-submissions-0001326801",
+        "provider": "SEC",
+        "retrievedAt": "2026-10-06T06:35:18.699436+00:00",
+        "sha256": "2748907971ba09da370187949d1d9694ce036a19b511e723b99dd4c76f8ca4cb",
+        "url": "https://data.sec.gov/submissions/CIK0001326801.json"
+      },
+      {
+        "bytes": 159205,
+        "file": "data/ratings/sources/sec-submissions-0001403161-7f985aa8d9b9b717.json",
+        "key": "sec-submissions-0001403161",
+        "provider": "SEC",
+        "retrievedAt": "2026-10-06T06:35:21.851299+00:00",
+        "sha256": "7f985aa8d9b9b7171d7784aa41af99770be5bc86afc2b1d508aa977f5aa0dc18",
+        "url": "https://data.sec.gov/submissions/CIK0001403161.json"
+      },
+      {
+        "bytes": 156216,
+        "file": "data/ratings/sources/sec-submissions-0001551152-c7bf7b44e4d69760.json",
+        "key": "sec-submissions-0001551152",
+        "provider": "SEC",
+        "retrievedAt": "2026-10-06T06:35:22.855796+00:00",
+        "sha256": "c7bf7b44e4d69760946c32d21941f427c6e9f68528fba23f2e3c35e0457105c8",
+        "url": "https://data.sec.gov/submissions/CIK0001551152.json"
+      },
+      {
+        "bytes": 152415,
+        "file": "data/ratings/sources/sec-submissions-0001652044-9434407b197d6322.json",
+        "key": "sec-submissions-0001652044",
+        "provider": "SEC",
+        "retrievedAt": "2026-10-06T06:35:17.729187+00:00",
+        "sha256": "9434407b197d6322de4bece8ad3b69459c8d6ddf3a68526b4b22b02e8175d33c",
+        "url": "https://data.sec.gov/submissions/CIK0001652044.json"
+      },
+      {
+        "bytes": 159933,
+        "file": "data/ratings/sources/sec-submissions-0001730168-b3bb8094e6809c7b.json",
+        "key": "sec-submissions-0001730168",
+        "provider": "SEC",
+        "retrievedAt": "2026-10-06T06:35:18.386412+00:00",
+        "sha256": "b3bb8094e6809c7b3c7d2d7f419363b213bfa5071b40adb2bc2534317637f061",
+        "url": "https://data.sec.gov/submissions/CIK0001730168.json"
+      },
+      {
+        "bytes": 6939,
+        "file": "data/ratings/sources/sec-submissions-0002115436-1a6e901c794592b1.json",
+        "key": "sec-submissions-0002115436",
+        "provider": "SEC",
+        "retrievedAt": "2026-10-06T06:35:21.202826+00:00",
+        "sha256": "1a6e901c794592b13da83675297ead1bffa210bbb6a016ee13e9d41a26b1eb56",
+        "url": "https://data.sec.gov/submissions/CIK0002115436.json"
+      },
+      {
+        "bytes": 54522,
+        "file": "data/ratings/sources/ssga-spy-holdings-a98f3779e7d375bc.xlsx",
+        "key": "ssga-spy-holdings",
+        "provider": "SSGA",
+        "retrievedAt": "2026-10-06T06:35:14.326212+00:00",
+        "sha256": "a98f3779e7d375bcbb1fa04fea802cee5fe82915bf36778aac699452db0dd1c5",
+        "url": "https://www.ssga.com/us/en/intermediary/etfs/library-content/products/fund-data/etfs/us/holdings-daily-us-en-spy.xlsx"
+      }
+    ],
+    "version": "ratings-v1"
+  },
+  "version": "ratings-v1"
+}

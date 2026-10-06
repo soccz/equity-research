@@ -1,0 +1,10 @@
+{
+ "yahoo-005935.KS-2026-10-05.json": {
+  "key": "yahoo-005935.KS-2026-10-05",
+  "url": "https://query2.finance.yahoo.com/v8/finance/chart/005935.KS?period1=1756512000&period2=1791331200&interval=1d&events=div,split&includeAdjustedClose=true",
+  "retrievedAt": "2026-10-06T04:17:46.243875+00:00",
+  "originalSha256": "ed6d808bdd35a3641ebac8b184a60d61b4af6c526d4b6882fb2c2852f552cb21",
+  "originalBytes": 18952,
+  "trimmed": "indicators.quote keeps close only (as tests/fixtures/ratings/prices)"
+ }
+}

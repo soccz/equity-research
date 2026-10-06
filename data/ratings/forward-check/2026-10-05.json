@@ -1,0 +1,850 @@
+{
+  "fileSha256": "f4c8d701b391ac18a0b829425edc6bba84a2133ad5a2673f84061341de10f428",
+  "independentAlphaValidation": false,
+  "path": "/mnt/20t/주식/data/forward-study.json",
+  "protocolHash": "14e3d1c9bb52979ddb7e4cd048a9742c040df5a7727042a402e2e582ca981f30",
+  "registeredAt": "2026-09-30T10:35:39.053918+00:00",
+  "results": [
+    {
+      "horizon": 21,
+      "market": "KR",
+      "observedSessions": 2,
+      "requiredSessions": 22,
+      "status": "pending",
+      "symbols": {
+        "000100": "000100.KS",
+        "000270": "000270.KS",
+        "000660": "000660.KS",
+        "005380": "005380.KS",
+        "005490": "005490.KS",
+        "005930": "005930.KS",
+        "006400": "006400.KS",
+        "012330": "012330.KS",
+        "012450": "012450.KS",
+        "034020": "034020.KS",
+        "035420": "035420.KS",
+        "035720": "035720.KS",
+        "051910": "051910.KS",
+        "066570": "066570.KS",
+        "068270": "068270.KS",
+        "128940": "128940.KS",
+        "207940": "207940.KS",
+        "267260": "267260.KS",
+        "329180": "329180.KS",
+        "373220": "373220.KS"
+      }
+    },
+    {
+      "horizon": 63,
+      "market": "KR",
+      "observedSessions": 2,
+      "requiredSessions": 64,
+      "status": "pending",
+      "symbols": {
+        "000100": "000100.KS",
+        "000270": "000270.KS",
+        "000660": "000660.KS",
+        "005380": "005380.KS",
+        "005490": "005490.KS",
+        "005930": "005930.KS",
+        "006400": "006400.KS",
+        "012330": "012330.KS",
+        "012450": "012450.KS",
+        "034020": "034020.KS",
+        "035420": "035420.KS",
+        "035720": "035720.KS",
+        "051910": "051910.KS",
+        "066570": "066570.KS",
+        "068270": "068270.KS",
+        "128940": "128940.KS",
+        "207940": "207940.KS",
+        "267260": "267260.KS",
+        "329180": "329180.KS",
+        "373220": "373220.KS"
+      }
+    },
+    {
+      "horizon": 21,
+      "market": "US",
+      "observedSessions": 3,
+      "requiredSessions": 22,
+      "status": "pending",
+      "symbols": {
+        "AAPL": "AAPL",
+        "AMAT": "AMAT",
+        "AMD": "AMD",
+        "AMZN": "AMZN",
+        "AVGO": "AVGO",
+        "CAT": "CAT",
+        "F": "F",
+        "GE": "GE",
+        "GM": "GM",
+        "GOOGL": "GOOGL",
+        "INTC": "INTC",
+        "JNJ": "JNJ",
+        "LLY": "LLY",
+        "LRCX": "LRCX",
+        "META": "META",
+        "MSFT": "MSFT",
+        "MU": "MU",
+        "NVDA": "NVDA",
+        "QCOM": "QCOM",
+        "TSLA": "TSLA"
+      }
+    },
+    {
+      "horizon": 63,
+      "market": "US",
+      "observedSessions": 3,
+      "requiredSessions": 64,
+      "status": "pending",
+      "symbols": {
+        "AAPL": "AAPL",
+        "AMAT": "AMAT",
+        "AMD": "AMD",
+        "AMZN": "AMZN",
+        "AVGO": "AVGO",
+        "CAT": "CAT",
+        "F": "F",
+        "GE": "GE",
+        "GM": "GM",
+        "GOOGL": "GOOGL",
+        "INTC": "INTC",
+        "JNJ": "JNJ",
+        "LLY": "LLY",
+        "LRCX": "LRCX",
+        "META": "META",
+        "MSFT": "MSFT",
+        "MU": "MU",
+        "NVDA": "NVDA",
+        "QCOM": "QCOM",
+        "TSLA": "TSLA"
+      }
+    }
+  ],
+  "series": {
+    "000100.KS": {
+      "error": null,
+      "first": "2025-09-01",
+      "last": "2026-10-02",
+      "notes": [
+        "dropped 1 null-close session(s): 2025-09-19"
+      ],
+      "sessions": 264,
+      "source": {
+        "bytes": 17858,
+        "file": "data/ratings/sources/yahoo-000100.KS-2026-10-05-87718480630f1af9.json",
+        "key": "yahoo-000100.KS-2026-10-05",
+        "provider": "Yahoo Finance",
+        "retrievedAt": "2026-10-06T05:04:07.287313+00:00",
+        "sha256": "87718480630f1af91526a7a47997201a091acbe9d516ec1f901585f4b52641e5",
+        "url": "https://query2.finance.yahoo.com/v8/finance/chart/000100.KS?period1=1756512000&period2=1791331200&interval=1d&events=div,split&includeAdjustedClose=true"
+      },
+      "status": "ok"
+    },
+    "000270.KS": {
+      "error": null,
+      "first": "2025-09-01",
+      "last": "2026-10-02",
+      "notes": [
+        "dropped 1 null-close session(s): 2025-09-19"
+      ],
+      "sessions": 264,
+      "source": {
+        "bytes": 18744,
+        "file": "data/ratings/sources/yahoo-000270.KS-2026-10-05-4b10040a95c9bc27.json",
+        "key": "yahoo-000270.KS-2026-10-05",
+        "provider": "Yahoo Finance",
+        "retrievedAt": "2026-10-06T05:04:01.400878+00:00",
+        "sha256": "4b10040a95c9bc274716c98d680de18d6ca464fa74d2bc2d80f860e39698edab",
+        "url": "https://query2.finance.yahoo.com/v8/finance/chart/000270.KS?period1=1756512000&period2=1791331200&interval=1d&events=div,split&includeAdjustedClose=true"
+      },
+      "status": "ok"
+    },
+    "000660.KS": {
+      "error": null,
+      "first": "2025-09-01",
+      "last": "2026-10-02",
+      "notes": [
+        "dropped 1 null-close session(s): 2025-09-19"
+      ],
+      "sessions": 264,
+      "source": {
+        "bytes": 19488,
+        "file": "data/ratings/sources/yahoo-000660.KS-2026-10-05-307ef71ee864b5f2.json",
+        "key": "yahoo-000660.KS-2026-10-05",
+        "provider": "Yahoo Finance",
+        "retrievedAt": "2026-10-06T05:03:58.251120+00:00",
+        "sha256": "307ef71ee864b5f208e4905ff33678add329fa2bc3c31da339f4e3c70d61b5c9",
+        "url": "https://query2.finance.yahoo.com/v8/finance/chart/000660.KS?period1=1756512000&period2=1791331200&interval=1d&events=div,split&includeAdjustedClose=true"
+      },
+      "status": "ok"
+    },
+    "005380.KS": {
+      "error": null,
+      "first": "2025-09-01",
+      "last": "2026-10-02",
+      "notes": [
+        "dropped 1 null-close session(s): 2025-09-19"
+      ],
+      "sessions": 264,
+      "source": {
+        "bytes": 18992,
+        "file": "data/ratings/sources/yahoo-005380.KS-2026-10-05-14d252701e563486.json",
+        "key": "yahoo-005380.KS-2026-10-05",
+        "provider": "Yahoo Finance",
+        "retrievedAt": "2026-10-06T05:04:00.800483+00:00",
+        "sha256": "14d252701e5634866214959b6682e067aaf7052032c442d5c3b7e920676b05be",
+        "url": "https://query2.finance.yahoo.com/v8/finance/chart/005380.KS?period1=1756512000&period2=1791331200&interval=1d&events=div,split&includeAdjustedClose=true"
+      },
+      "status": "ok"
+    },
+    "005490.KS": {
+      "error": null,
+      "first": "2025-09-01",
+      "last": "2026-10-02",
+      "notes": [
+        "dropped 1 null-close session(s): 2025-09-19"
+      ],
+      "sessions": 264,
+      "source": {
+        "bytes": 18848,
+        "file": "data/ratings/sources/yahoo-005490.KS-2026-10-05-7bdc6756fd516e91.json",
+        "key": "yahoo-005490.KS-2026-10-05",
+        "provider": "Yahoo Finance",
+        "retrievedAt": "2026-10-06T05:04:05.208269+00:00",
+        "sha256": "7bdc6756fd516e91261e6a9a5cb3ea2b88d14b62c4ab8b185aece63f0bbd6595",
+        "url": "https://query2.finance.yahoo.com/v8/finance/chart/005490.KS?period1=1756512000&period2=1791331200&interval=1d&events=div,split&includeAdjustedClose=true"
+      },
+      "status": "ok"
+    },
+    "005930.KS": {
+      "error": null,
+      "first": "2025-09-01",
+      "last": "2026-10-02",
+      "notes": [
+        "dropped 1 null-close session(s): 2025-09-19"
+      ],
+      "sessions": 264,
+      "source": {
+        "bytes": 19274,
+        "file": "data/ratings/sources/yahoo-005930.KS-2026-10-05-4bb089fb29d46636.json",
+        "key": "yahoo-005930.KS-2026-10-05",
+        "provider": "Yahoo Finance",
+        "retrievedAt": "2026-10-06T05:03:58.944448+00:00",
+        "sha256": "4bb089fb29d466361b57b4675a45d366419dc5bded78831706cbbd393e11ba43",
+        "url": "https://query2.finance.yahoo.com/v8/finance/chart/005930.KS?period1=1756512000&period2=1791331200&interval=1d&events=div,split&includeAdjustedClose=true"
+      },
+      "status": "ok"
+    },
+    "006400.KS": {
+      "error": null,
+      "first": "2025-09-01",
+      "last": "2026-10-02",
+      "notes": [
+        "dropped 1 null-close session(s): 2025-09-19"
+      ],
+      "sessions": 264,
+      "source": {
+        "bytes": 17991,
+        "file": "data/ratings/sources/yahoo-006400.KS-2026-10-05-e54ef125437407ac.json",
+        "key": "yahoo-006400.KS-2026-10-05",
+        "provider": "Yahoo Finance",
+        "retrievedAt": "2026-10-06T05:04:03.226209+00:00",
+        "sha256": "e54ef125437407ac3a8373259bb7e08af1d093f27578d0663f0f1d6f95ded145",
+        "url": "https://query2.finance.yahoo.com/v8/finance/chart/006400.KS?period1=1756512000&period2=1791331200&interval=1d&events=div,split&includeAdjustedClose=true"
+      },
+      "status": "ok"
+    },
+    "012330.KS": {
+      "error": null,
+      "first": "2025-09-01",
+      "last": "2026-10-02",
+      "notes": [
+        "dropped 1 null-close session(s): 2025-09-19"
+      ],
+      "sessions": 264,
+      "source": {
+        "bytes": 18741,
+        "file": "data/ratings/sources/yahoo-012330.KS-2026-10-05-2a7e6bd0ad5b2ddf.json",
+        "key": "yahoo-012330.KS-2026-10-05",
+        "provider": "Yahoo Finance",
+        "retrievedAt": "2026-10-06T05:04:02.004079+00:00",
+        "sha256": "2a7e6bd0ad5b2ddfc3d32aaa9a613ee2b2e793388eaa0972c2c03f328e01f145",
+        "url": "https://query2.finance.yahoo.com/v8/finance/chart/012330.KS?period1=1756512000&period2=1791331200&interval=1d&events=div,split&includeAdjustedClose=true"
+      },
+      "status": "ok"
+    },
+    "012450.KS": {
+      "error": null,
+      "first": "2025-09-01",
+      "last": "2026-10-02",
+      "notes": [
+        "dropped 1 null-close session(s): 2025-09-19"
+      ],
+      "sessions": 264,
+      "source": {
+        "bytes": 19101,
+        "file": "data/ratings/sources/yahoo-012450.KS-2026-10-05-98547302fbced481.json",
+        "key": "yahoo-012450.KS-2026-10-05",
+        "provider": "Yahoo Finance",
+        "retrievedAt": "2026-10-06T05:04:09.195428+00:00",
+        "sha256": "98547302fbced48145c4e86c4a45566d9d510247937abe5e727da5ff79eadc02",
+        "url": "https://query2.finance.yahoo.com/v8/finance/chart/012450.KS?period1=1756512000&period2=1791331200&interval=1d&events=div,split&includeAdjustedClose=true"
+      },
+      "status": "ok"
+    },
+    "034020.KS": {
+      "error": null,
+      "first": "2025-09-01",
+      "last": "2026-10-02",
+      "notes": [
+        "dropped 1 null-close session(s): 2025-09-19"
+      ],
+      "sessions": 264,
+      "source": {
+        "bytes": 17181,
+        "file": "data/ratings/sources/yahoo-034020.KS-2026-10-05-e0b3b99c32df135f.json",
+        "key": "yahoo-034020.KS-2026-10-05",
+        "provider": "Yahoo Finance",
+        "retrievedAt": "2026-10-06T05:04:10.018908+00:00",
+        "sha256": "e0b3b99c32df135fc9399b180c96410d88b57c2a5b426ae2bb47489c26e854dd",
+        "url": "https://query2.finance.yahoo.com/v8/finance/chart/034020.KS?period1=1756512000&period2=1791331200&interval=1d&events=div,split&includeAdjustedClose=true"
+      },
+      "status": "ok"
+    },
+    "035420.KS": {
+      "error": null,
+      "first": "2025-09-01",
+      "last": "2026-10-02",
+      "notes": [
+        "dropped 1 null-close session(s): 2025-09-19"
+      ],
+      "sessions": 264,
+      "source": {
+        "bytes": 18557,
+        "file": "data/ratings/sources/yahoo-035420.KS-2026-10-05-cc3cb260f56c9f58.json",
+        "key": "yahoo-035420.KS-2026-10-05",
+        "provider": "Yahoo Finance",
+        "retrievedAt": "2026-10-06T05:03:59.528780+00:00",
+        "sha256": "cc3cb260f56c9f58dc214203ea8724c903149faeb6dc9ec72ec6a5d32d644fd5",
+        "url": "https://query2.finance.yahoo.com/v8/finance/chart/035420.KS?period1=1756512000&period2=1791331200&interval=1d&events=div,split&includeAdjustedClose=true"
+      },
+      "status": "ok"
+    },
+    "035720.KS": {
+      "error": null,
+      "first": "2025-09-01",
+      "last": "2026-10-02",
+      "notes": [
+        "dropped 1 null-close session(s): 2025-09-19"
+      ],
+      "sessions": 264,
+      "source": {
+        "bytes": 17638,
+        "file": "data/ratings/sources/yahoo-035720.KS-2026-10-05-a52d49085024cc4c.json",
+        "key": "yahoo-035720.KS-2026-10-05",
+        "provider": "Yahoo Finance",
+        "retrievedAt": "2026-10-06T05:04:02.601556+00:00",
+        "sha256": "a52d49085024cc4ca9ed4f557239a65ede376962cc20318195b5f416818b3c09",
+        "url": "https://query2.finance.yahoo.com/v8/finance/chart/035720.KS?period1=1756512000&period2=1791331200&interval=1d&events=div,split&includeAdjustedClose=true"
+      },
+      "status": "ok"
+    },
+    "051910.KS": {
+      "error": null,
+      "first": "2025-09-01",
+      "last": "2026-10-02",
+      "notes": [
+        "dropped 1 null-close session(s): 2025-09-19"
+      ],
+      "sessions": 264,
+      "source": {
+        "bytes": 18389,
+        "file": "data/ratings/sources/yahoo-051910.KS-2026-10-05-a1127ffa423bba5b.json",
+        "key": "yahoo-051910.KS-2026-10-05",
+        "provider": "Yahoo Finance",
+        "retrievedAt": "2026-10-06T05:04:03.839549+00:00",
+        "sha256": "a1127ffa423bba5bed2841be2fdee25362509808210bbd6cc6666e08d65e2faf",
+        "url": "https://query2.finance.yahoo.com/v8/finance/chart/051910.KS?period1=1756512000&period2=1791331200&interval=1d&events=div,split&includeAdjustedClose=true"
+      },
+      "status": "ok"
+    },
+    "066570.KS": {
+      "error": null,
+      "first": "2025-09-01",
+      "last": "2026-10-02",
+      "notes": [
+        "dropped 1 null-close session(s): 2025-09-19"
+      ],
+      "sessions": 264,
+      "source": {
+        "bytes": 18803,
+        "file": "data/ratings/sources/yahoo-066570.KS-2026-10-05-e541ffd2ca16c8a6.json",
+        "key": "yahoo-066570.KS-2026-10-05",
+        "provider": "Yahoo Finance",
+        "retrievedAt": "2026-10-06T05:04:00.168679+00:00",
+        "sha256": "e541ffd2ca16c8a6a39f45df013f881fcf81ca487f53494a06c56913a2f46217",
+        "url": "https://query2.finance.yahoo.com/v8/finance/chart/066570.KS?period1=1756512000&period2=1791331200&interval=1d&events=div,split&includeAdjustedClose=true"
+      },
+      "status": "ok"
+    },
+    "068270.KS": {
+      "error": null,
+      "first": "2025-09-01",
+      "last": "2026-10-02",
+      "notes": [
+        "dropped 1 null-close session(s): 2025-09-19"
+      ],
+      "sessions": 264,
+      "source": {
+        "bytes": 21823,
+        "file": "data/ratings/sources/yahoo-068270.KS-2026-10-05-ff608aafaa1629de.json",
+        "key": "yahoo-068270.KS-2026-10-05",
+        "provider": "Yahoo Finance",
+        "retrievedAt": "2026-10-06T05:04:06.683815+00:00",
+        "sha256": "ff608aafaa1629de6c15c8d3283fd2df4c73904267ad561b8246a933244a587e",
+        "url": "https://query2.finance.yahoo.com/v8/finance/chart/068270.KS?period1=1756512000&period2=1791331200&interval=1d&events=div,split&includeAdjustedClose=true"
+      },
+      "status": "ok"
+    },
+    "128940.KS": {
+      "error": null,
+      "first": "2025-09-01",
+      "last": "2026-10-02",
+      "notes": [
+        "dropped 1 null-close session(s): 2025-09-19"
+      ],
+      "sessions": 264,
+      "source": {
+        "bytes": 18289,
+        "file": "data/ratings/sources/yahoo-128940.KS-2026-10-05-571f2b939dd0e93f.json",
+        "key": "yahoo-128940.KS-2026-10-05",
+        "provider": "Yahoo Finance",
+        "retrievedAt": "2026-10-06T05:04:07.905803+00:00",
+        "sha256": "571f2b939dd0e93f8cb540b0eb27be962334ff3c2c7599af0de89e76b1233d10",
+        "url": "https://query2.finance.yahoo.com/v8/finance/chart/128940.KS?period1=1756512000&period2=1791331200&interval=1d&events=div,split&includeAdjustedClose=true"
+      },
+      "status": "ok"
+    },
+    "207940.KS": {
+      "error": null,
+      "first": "2025-09-01",
+      "last": "2026-10-02",
+      "notes": [
+        "dropped 1 null-close session(s): 2025-09-19"
+      ],
+      "sessions": 264,
+      "source": {
+        "bytes": 19528,
+        "file": "data/ratings/sources/yahoo-207940.KS-2026-10-05-9bb748361e91fc13.json",
+        "key": "yahoo-207940.KS-2026-10-05",
+        "provider": "Yahoo Finance",
+        "retrievedAt": "2026-10-06T05:04:05.990834+00:00",
+        "sha256": "9bb748361e91fc131fbbe998384fceae8fc9f31492e7de0de4817d9effbec535",
+        "url": "https://query2.finance.yahoo.com/v8/finance/chart/207940.KS?period1=1756512000&period2=1791331200&interval=1d&events=div,split&includeAdjustedClose=true"
+      },
+      "status": "ok"
+    },
+    "267260.KS": {
+      "error": null,
+      "first": "2025-09-01",
+      "last": "2026-10-02",
+      "notes": [
+        "dropped 1 null-close session(s): 2025-09-19"
+      ],
+      "sessions": 264,
+      "source": {
+        "bytes": 18808,
+        "file": "data/ratings/sources/yahoo-267260.KS-2026-10-05-fda183d9b71bd8b5.json",
+        "key": "yahoo-267260.KS-2026-10-05",
+        "provider": "Yahoo Finance",
+        "retrievedAt": "2026-10-06T05:04:10.680300+00:00",
+        "sha256": "fda183d9b71bd8b5fd304220a6e9c512b0721b51a06627c5f41455ce2c5e6640",
+        "url": "https://query2.finance.yahoo.com/v8/finance/chart/267260.KS?period1=1756512000&period2=1791331200&interval=1d&events=div,split&includeAdjustedClose=true"
+      },
+      "status": "ok"
+    },
+    "329180.KS": {
+      "error": null,
+      "first": "2025-09-01",
+      "last": "2026-10-02",
+      "notes": [
+        "dropped 1 null-close session(s): 2025-09-19"
+      ],
+      "sessions": 264,
+      "source": {
+        "bytes": 18654,
+        "file": "data/ratings/sources/yahoo-329180.KS-2026-10-05-037f7d2ba8e21021.json",
+        "key": "yahoo-329180.KS-2026-10-05",
+        "provider": "Yahoo Finance",
+        "retrievedAt": "2026-10-06T05:04:08.567344+00:00",
+        "sha256": "037f7d2ba8e21021758a96301276d4f3ff5e7b3a31e45cc8bd60f72cc73475a3",
+        "url": "https://query2.finance.yahoo.com/v8/finance/chart/329180.KS?period1=1756512000&period2=1791331200&interval=1d&events=div,split&includeAdjustedClose=true"
+      },
+      "status": "ok"
+    },
+    "373220.KS": {
+      "error": null,
+      "first": "2025-09-01",
+      "last": "2026-10-02",
+      "notes": [
+        "dropped 1 null-close session(s): 2025-09-19"
+      ],
+      "sessions": 264,
+      "source": {
+        "bytes": 17944,
+        "file": "data/ratings/sources/yahoo-373220.KS-2026-10-05-554f233d81541c3b.json",
+        "key": "yahoo-373220.KS-2026-10-05",
+        "provider": "Yahoo Finance",
+        "retrievedAt": "2026-10-06T05:04:04.552332+00:00",
+        "sha256": "554f233d81541c3b2fe9f8a0c24c2086d23e6547d15572a3db5207e5910f759f",
+        "url": "https://query2.finance.yahoo.com/v8/finance/chart/373220.KS?period1=1756512000&period2=1791331200&interval=1d&events=div,split&includeAdjustedClose=true"
+      },
+      "status": "ok"
+    },
+    "AAPL": {
+      "error": null,
+      "first": "2025-09-02",
+      "last": "2026-10-05",
+      "notes": [],
+      "sessions": 275,
+      "source": {
+        "bytes": 31091,
+        "file": "data/ratings/sources/yahoo-AAPL-2026-10-05-9fde81feb02323a1.json",
+        "key": "yahoo-AAPL-2026-10-05",
+        "provider": "Yahoo Finance",
+        "retrievedAt": "2026-10-06T05:04:13.681043+00:00",
+        "sha256": "9fde81feb02323a10130d2f673c64e09c3da294c72e74e23e7a9f7708fedabb5",
+        "url": "https://query2.finance.yahoo.com/v8/finance/chart/AAPL?period1=1756512000&period2=1791331200&interval=1d&events=div,split&includeAdjustedClose=true"
+      },
+      "status": "ok"
+    },
+    "AMAT": {
+      "error": null,
+      "first": "2025-09-02",
+      "last": "2026-10-05",
+      "notes": [],
+      "sessions": 275,
+      "source": {
+        "bytes": 29984,
+        "file": "data/ratings/sources/yahoo-AMAT-2026-10-05-b803df1c50a65654.json",
+        "key": "yahoo-AMAT-2026-10-05",
+        "provider": "Yahoo Finance",
+        "retrievedAt": "2026-10-06T05:04:20.175071+00:00",
+        "sha256": "b803df1c50a6565455c92fa3d71dc4bc3aa75344f9d4fb3981067903d6ab36cb",
+        "url": "https://query2.finance.yahoo.com/v8/finance/chart/AMAT?period1=1756512000&period2=1791331200&interval=1d&events=div,split&includeAdjustedClose=true"
+      },
+      "status": "ok"
+    },
+    "AMD": {
+      "error": null,
+      "first": "2025-09-02",
+      "last": "2026-10-05",
+      "notes": [],
+      "sessions": 275,
+      "source": {
+        "bytes": 30467,
+        "file": "data/ratings/sources/yahoo-AMD-2026-10-05-1831ad9e23914806.json",
+        "key": "yahoo-AMD-2026-10-05",
+        "provider": "Yahoo Finance",
+        "retrievedAt": "2026-10-06T05:04:16.344497+00:00",
+        "sha256": "1831ad9e23914806ed0f134954199eb7eee3cd149494cfde065219bb8b2c79bc",
+        "url": "https://query2.finance.yahoo.com/v8/finance/chart/AMD?period1=1756512000&period2=1791331200&interval=1d&events=div,split&includeAdjustedClose=true"
+      },
+      "status": "ok"
+    },
+    "AMZN": {
+      "error": null,
+      "first": "2025-09-02",
+      "last": "2026-10-05",
+      "notes": [],
+      "sessions": 275,
+      "source": {
+        "bytes": 31186,
+        "file": "data/ratings/sources/yahoo-AMZN-2026-10-05-8db4ad8140f162fd.json",
+        "key": "yahoo-AMZN-2026-10-05",
+        "provider": "Yahoo Finance",
+        "retrievedAt": "2026-10-06T05:04:15.003513+00:00",
+        "sha256": "8db4ad8140f162fda766c9f239f35522a446ba942f59c5a910c2115892e800df",
+        "url": "https://query2.finance.yahoo.com/v8/finance/chart/AMZN?period1=1756512000&period2=1791331200&interval=1d&events=div,split&includeAdjustedClose=true"
+      },
+      "status": "ok"
+    },
+    "AVGO": {
+      "error": null,
+      "first": "2025-09-02",
+      "last": "2026-10-05",
+      "notes": [],
+      "sessions": 275,
+      "source": {
+        "bytes": 30697,
+        "file": "data/ratings/sources/yahoo-AVGO-2026-10-05-a7940eeeebbf7f94.json",
+        "key": "yahoo-AVGO-2026-10-05",
+        "provider": "Yahoo Finance",
+        "retrievedAt": "2026-10-06T05:04:16.995086+00:00",
+        "sha256": "a7940eeeebbf7f947fc4040e5020330abc344b3a5f4e0186593aa116a0af7ad1",
+        "url": "https://query2.finance.yahoo.com/v8/finance/chart/AVGO?period1=1756512000&period2=1791331200&interval=1d&events=div,split&includeAdjustedClose=true"
+      },
+      "status": "ok"
+    },
+    "CAT": {
+      "error": null,
+      "first": "2025-09-02",
+      "last": "2026-10-05",
+      "notes": [],
+      "sessions": 275,
+      "source": {
+        "bytes": 28993,
+        "file": "data/ratings/sources/yahoo-CAT-2026-10-05-9d9f34174f4722bb.json",
+        "key": "yahoo-CAT-2026-10-05",
+        "provider": "Yahoo Finance",
+        "retrievedAt": "2026-10-06T05:04:30.574733+00:00",
+        "sha256": "9d9f34174f4722bb9a5f887b16c809fcb66234fc0f4f755c4a2e402125551d50",
+        "url": "https://query2.finance.yahoo.com/v8/finance/chart/CAT?period1=1756512000&period2=1791331200&interval=1d&events=div,split&includeAdjustedClose=true"
+      },
+      "status": "ok"
+    },
+    "F": {
+      "error": null,
+      "first": "2025-09-02",
+      "last": "2026-10-05",
+      "notes": [],
+      "sessions": 275,
+      "source": {
+        "bytes": 31912,
+        "file": "data/ratings/sources/yahoo-F-2026-10-05-b10ac47a1a08b107.json",
+        "key": "yahoo-F-2026-10-05",
+        "provider": "Yahoo Finance",
+        "retrievedAt": "2026-10-06T05:04:27.905766+00:00",
+        "sha256": "b10ac47a1a08b10704dcfac93c4d75da05ea40e34100361a90ce6f9c811adec8",
+        "url": "https://query2.finance.yahoo.com/v8/finance/chart/F?period1=1756512000&period2=1791331200&interval=1d&events=div,split&includeAdjustedClose=true"
+      },
+      "status": "ok"
+    },
+    "GE": {
+      "error": null,
+      "first": "2025-09-02",
+      "last": "2026-10-05",
+      "notes": [],
+      "sessions": 275,
+      "source": {
+        "bytes": 30377,
+        "file": "data/ratings/sources/yahoo-GE-2026-10-05-eb633d67cfdc8b79.json",
+        "key": "yahoo-GE-2026-10-05",
+        "provider": "Yahoo Finance",
+        "retrievedAt": "2026-10-06T05:04:29.881653+00:00",
+        "sha256": "eb633d67cfdc8b798754cd9ae816092072f612f99c26135a10aec366cb4ffa8d",
+        "url": "https://query2.finance.yahoo.com/v8/finance/chart/GE?period1=1756512000&period2=1791331200&interval=1d&events=div,split&includeAdjustedClose=true"
+      },
+      "status": "ok"
+    },
+    "GM": {
+      "error": null,
+      "first": "2025-09-02",
+      "last": "2026-10-05",
+      "notes": [],
+      "sessions": 275,
+      "source": {
+        "bytes": 30396,
+        "file": "data/ratings/sources/yahoo-GM-2026-10-05-80d28d24b0ad192f.json",
+        "key": "yahoo-GM-2026-10-05",
+        "provider": "Yahoo Finance",
+        "retrievedAt": "2026-10-06T05:04:27.173779+00:00",
+        "sha256": "80d28d24b0ad192f54c3e8eea7c05df464a696b6664f48bcc97a1062b3c28d00",
+        "url": "https://query2.finance.yahoo.com/v8/finance/chart/GM?period1=1756512000&period2=1791331200&interval=1d&events=div,split&includeAdjustedClose=true"
+      },
+      "status": "ok"
+    },
+    "GOOGL": {
+      "error": null,
+      "first": "2025-09-02",
+      "last": "2026-10-05",
+      "notes": [],
+      "sessions": 275,
+      "source": {
+        "bytes": 31054,
+        "file": "data/ratings/sources/yahoo-GOOGL-2026-10-05-736e562157e54b61.json",
+        "key": "yahoo-GOOGL-2026-10-05",
+        "provider": "Yahoo Finance",
+        "retrievedAt": "2026-10-06T05:04:12.948995+00:00",
+        "sha256": "736e562157e54b61aa1e5d87ea741b79fbdd27d51487f272d925e975320ff4cb",
+        "url": "https://query2.finance.yahoo.com/v8/finance/chart/GOOGL?period1=1756512000&period2=1791331200&interval=1d&events=div,split&includeAdjustedClose=true"
+      },
+      "status": "ok"
+    },
+    "INTC": {
+      "error": null,
+      "first": "2025-09-02",
+      "last": "2026-10-05",
+      "notes": [],
+      "sessions": 275,
+      "source": {
+        "bytes": 31142,
+        "file": "data/ratings/sources/yahoo-INTC-2026-10-05-7a9071b6ef413c7c.json",
+        "key": "yahoo-INTC-2026-10-05",
+        "provider": "Yahoo Finance",
+        "retrievedAt": "2026-10-06T05:04:18.334095+00:00",
+        "sha256": "7a9071b6ef413c7c2ab120d7d635ae1736dbc0a7c0f206ac971cba53d7f7ae20",
+        "url": "https://query2.finance.yahoo.com/v8/finance/chart/INTC?period1=1756512000&period2=1791331200&interval=1d&events=div,split&includeAdjustedClose=true"
+      },
+      "status": "ok"
+    },
+    "JNJ": {
+      "error": null,
+      "first": "2025-09-02",
+      "last": "2026-10-05",
+      "notes": [],
+      "sessions": 275,
+      "source": {
+        "bytes": 30780,
+        "file": "data/ratings/sources/yahoo-JNJ-2026-10-05-dd0b526319ff4d85.json",
+        "key": "yahoo-JNJ-2026-10-05",
+        "provider": "Yahoo Finance",
+        "retrievedAt": "2026-10-06T05:04:32.023605+00:00",
+        "sha256": "dd0b526319ff4d85e13e6d4c21b1b444ec6df0c32579f756b16185adeb733d2a",
+        "url": "https://query2.finance.yahoo.com/v8/finance/chart/JNJ?period1=1756512000&period2=1791331200&interval=1d&events=div,split&includeAdjustedClose=true"
+      },
+      "status": "ok"
+    },
+    "LLY": {
+      "error": null,
+      "first": "2025-09-02",
+      "last": "2026-10-05",
+      "notes": [],
+      "sessions": 275,
+      "source": {
+        "bytes": 29284,
+        "file": "data/ratings/sources/yahoo-LLY-2026-10-05-e75360db80a5abd6.json",
+        "key": "yahoo-LLY-2026-10-05",
+        "provider": "Yahoo Finance",
+        "retrievedAt": "2026-10-06T05:04:31.301722+00:00",
+        "sha256": "e75360db80a5abd6b487f277047cff3c57207e0b2cb924349f0b17235ce8a355",
+        "url": "https://query2.finance.yahoo.com/v8/finance/chart/LLY?period1=1756512000&period2=1791331200&interval=1d&events=div,split&includeAdjustedClose=true"
+      },
+      "status": "ok"
+    },
+    "LRCX": {
+      "error": null,
+      "first": "2025-09-02",
+      "last": "2026-10-05",
+      "notes": [],
+      "sessions": 275,
+      "source": {
+        "bytes": 30812,
+        "file": "data/ratings/sources/yahoo-LRCX-2026-10-05-497ff6ab82c9de62.json",
+        "key": "yahoo-LRCX-2026-10-05",
+        "provider": "Yahoo Finance",
+        "retrievedAt": "2026-10-06T05:04:20.775974+00:00",
+        "sha256": "497ff6ab82c9de6206363e99c80def6d0f67655bed839e4290f9dc5f73d2a845",
+        "url": "https://query2.finance.yahoo.com/v8/finance/chart/LRCX?period1=1756512000&period2=1791331200&interval=1d&events=div,split&includeAdjustedClose=true"
+      },
+      "status": "ok"
+    },
+    "META": {
+      "error": null,
+      "first": "2025-09-02",
+      "last": "2026-10-05",
+      "notes": [],
+      "sessions": 275,
+      "source": {
+        "bytes": 29457,
+        "file": "data/ratings/sources/yahoo-META-2026-10-05-f78a5459d7a5978b.json",
+        "key": "yahoo-META-2026-10-05",
+        "provider": "Yahoo Finance",
+        "retrievedAt": "2026-10-06T05:04:15.666595+00:00",
+        "sha256": "f78a5459d7a5978b2449458c243abb319e6adc64f5a58b6c5f741a519c2c73cb",
+        "url": "https://query2.finance.yahoo.com/v8/finance/chart/META?period1=1756512000&period2=1791331200&interval=1d&events=div,split&includeAdjustedClose=true"
+      },
+      "status": "ok"
+    },
+    "MSFT": {
+      "error": null,
+      "first": "2025-09-02",
+      "last": "2026-10-05",
+      "notes": [],
+      "sessions": 275,
+      "source": {
+        "bytes": 30814,
+        "file": "data/ratings/sources/yahoo-MSFT-2026-10-05-9be4b1acdf68c770.json",
+        "key": "yahoo-MSFT-2026-10-05",
+        "provider": "Yahoo Finance",
+        "retrievedAt": "2026-10-06T05:04:14.375247+00:00",
+        "sha256": "9be4b1acdf68c770b135c265e31a9e4935613c04dcc3c6645981f735bed3e90a",
+        "url": "https://query2.finance.yahoo.com/v8/finance/chart/MSFT?period1=1756512000&period2=1791331200&interval=1d&events=div,split&includeAdjustedClose=true"
+      },
+      "status": "ok"
+    },
+    "MU": {
+      "error": null,
+      "first": "2025-09-02",
+      "last": "2026-10-05",
+      "notes": [],
+      "sessions": 275,
+      "source": {
+        "bytes": 30081,
+        "file": "data/ratings/sources/yahoo-MU-2026-10-05-e129f8effcd9f859.json",
+        "key": "yahoo-MU-2026-10-05",
+        "provider": "Yahoo Finance",
+        "retrievedAt": "2026-10-06T05:04:11.385108+00:00",
+        "sha256": "e129f8effcd9f859b54c262b036e1eec81f1f38a408f4fb2365b176cd0c90fcd",
+        "url": "https://query2.finance.yahoo.com/v8/finance/chart/MU?period1=1756512000&period2=1791331200&interval=1d&events=div,split&includeAdjustedClose=true"
+      },
+      "status": "ok"
+    },
+    "NVDA": {
+      "error": null,
+      "first": "2025-09-02",
+      "last": "2026-10-05",
+      "notes": [],
+      "sessions": 275,
+      "source": {
+        "bytes": 31816,
+        "file": "data/ratings/sources/yahoo-NVDA-2026-10-05-c95a1a429c590a19.json",
+        "key": "yahoo-NVDA-2026-10-05",
+        "provider": "Yahoo Finance",
+        "retrievedAt": "2026-10-06T05:04:12.211261+00:00",
+        "sha256": "c95a1a429c590a19b523bc15bdd220fda0e51e6f49afe1a6704480e77072c760",
+        "url": "https://query2.finance.yahoo.com/v8/finance/chart/NVDA?period1=1756512000&period2=1791331200&interval=1d&events=div,split&includeAdjustedClose=true"
+      },
+      "status": "ok"
+    },
+    "QCOM": {
+      "error": null,
+      "first": "2025-09-02",
+      "last": "2026-10-05",
+      "notes": [],
+      "sessions": 275,
+      "source": {
+        "bytes": 31416,
+        "file": "data/ratings/sources/yahoo-QCOM-2026-10-05-58d5a8dcdd394f33.json",
+        "key": "yahoo-QCOM-2026-10-05",
+        "provider": "Yahoo Finance",
+        "retrievedAt": "2026-10-06T05:04:17.600918+00:00",
+        "sha256": "58d5a8dcdd394f334712430feb69b081b5a09412dff26e532d12cf0ef90cb7ae",
+        "url": "https://query2.finance.yahoo.com/v8/finance/chart/QCOM?period1=1756512000&period2=1791331200&interval=1d&events=div,split&includeAdjustedClose=true"
+      },
+      "status": "ok"
+    },
+    "TSLA": {
+      "error": null,
+      "first": "2025-09-02",
+      "last": "2026-10-05",
+      "notes": [],
+      "sessions": 275,
+      "source": {
+        "bytes": 30419,
+        "file": "data/ratings/sources/yahoo-TSLA-2026-10-05-d46e425657266c77.json",
+        "key": "yahoo-TSLA-2026-10-05",
+        "provider": "Yahoo Finance",
+        "retrievedAt": "2026-10-06T05:04:26.497035+00:00",
+        "sha256": "d46e425657266c7759a497a08a84b04ec5fcdab3b0ef6243344275cab4103aa0",
+        "url": "https://query2.finance.yahoo.com/v8/finance/chart/TSLA?period1=1756512000&period2=1791331200&interval=1d&events=div,split&includeAdjustedClose=true"
+      },
+      "status": "ok"
+    }
+  },
+  "status": "ok",
+  "through": "2026-10-05",
+  "version": "forward-coverage-v1"
+}
