@@ -1,0 +1,55 @@
+{
+  "checkedAt": "2026-09-30T11:05:08.069737+00:00",
+  "status": "passed",
+  "snapshotHash": "65223aa9116855ce343061405b3aa876dc0bc54a8bb82222d9c1b6534ac1dac9",
+  "method": "Assistant visual inspection of all 56 PDF pages in four rendered contact sheets, plus full-size Microsoft first page and US forward-study page; combined with PyMuPDF text bounds, source links, version and hashes.",
+  "reports": {
+    "artifacts/live/universe.pdf": {
+      "pages": 4,
+      "sha256": "34058eb3ea840e19706eba13eaf70b6a29ab8cd18af19a733a99e267bea892b6"
+    },
+    "artifacts/live/micron.pdf": {
+      "pages": 10,
+      "sha256": "9cfea49d456b0cbd1b0eab803f2f73d1b3a74b073fbeed660a7fd3dc8724d88c"
+    },
+    "artifacts/live/sk-hynix.pdf": {
+      "pages": 10,
+      "sha256": "41df47b6c8e3a643314f9bb2bca09721f22f3c474e79799088a3ad10a6f337a8"
+    },
+    "artifacts/live/microsoft.pdf": {
+      "pages": 8,
+      "sha256": "e5460e34e7c612771c696d82061b4814f1bfb23590b9e2dedb08fab7fc9c0468"
+    },
+    "artifacts/live/hyundai.pdf": {
+      "pages": 8,
+      "sha256": "b7bd13387144414744184caa8448f18924abf894489a41ea8d76122239c798f5"
+    },
+    "artifacts/live/research-us.pdf": {
+      "pages": 4,
+      "sha256": "de47a4f6c3b2bec1aa95bdf208be57f9210f3ebb7eeb261929569ff509adacee"
+    },
+    "artifacts/live/research-kr.pdf": {
+      "pages": 4,
+      "sha256": "bde5f05d97335acaeddbcffaa1abf3e17add02a17180408e08c5381eb26d7421"
+    },
+    "artifacts/live/conditions.pdf": {
+      "pages": 8,
+      "sha256": "5c58c2bf4a0bd372a4c5621b8001e7ef0356313ee3b82cbdc229c6c925c4617c"
+    }
+  },
+  "reviewImages": {
+    "data/cache/tmp/final-pdf-layout-0.png": "837970073fa3a8a71586e544a241655cb6b9092898b4e5910cef7217e39a9904",
+    "data/cache/tmp/final-pdf-layout-1.png": "3cb9aef2a17a815ceae3b4bb509d71fa74cf1c752bd29ae3e3f2885767e4346b",
+    "data/cache/tmp/final-pdf-layout-2.png": "698119e801768b9ea17592db6962e2bf8b26f8b9744dbbdd1781e10648d55c29",
+    "data/cache/tmp/final-pdf-layout-3.png": "a479cb40bff23bcb6994e46a3cee5aed7b015fff85afc8d21dd2f5a7db948084",
+    "data/cache/tmp/final-microsoft-1.png": "f3a36e0bfaa83568f18d02490b55ee2cd9ed07ab428be6264484252b27c35d9e",
+    "data/cache/tmp/final-research-us-4.png": "cd6da39800149424354f52e16b65f211de408c2c57ec8c7fc2e37dd98cd5dc29"
+  },
+  "findings": [
+    "No visible clipped charts or table columns in the reviewed pages.",
+    "Microsoft initial cash requirement uses the same default assumptions as its detailed price panel.",
+    "Forward-study title, frozen selections and pending future observations appear together.",
+    "No financial interpretation or investment performance approval is implied."
+  ],
+  "independentFinancialApproval": false
+}

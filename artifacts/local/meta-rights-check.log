@@ -1,0 +1,10 @@
+test_cash_rights_phrase_must_exist_in_verified_original (__main__.MetaRightsTests.test_cash_rights_phrase_must_exist_in_verified_original) ... ok
+test_equal_cash_rights_reconcile_precise_same_day_counts (__main__.MetaRightsTests.test_equal_cash_rights_reconcile_precise_same_day_counts) ... ok
+test_missing_class_or_changed_date_cannot_use_weighted_average (__main__.MetaRightsTests.test_missing_class_or_changed_date_cannot_use_weighted_average) ... ok
+test_new_filing_or_source_hash_cannot_inherit_review (__main__.MetaRightsTests.test_new_filing_or_source_hash_cannot_inherit_review) ... ok
+test_preferred_and_new_class_require_separate_allocation (__main__.MetaRightsTests.test_preferred_and_new_class_require_separate_allocation) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 1.171s
+
+OK

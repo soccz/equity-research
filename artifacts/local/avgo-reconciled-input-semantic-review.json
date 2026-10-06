@@ -1,0 +1,24 @@
+{
+  "company": "AVGO",
+  "recordHash": "627d83d3412f5a4fe36c52ceea6d3c460c13851c41b00b04ba4d51673c94705f",
+  "status": "revision_required",
+  "reviewer": "Codex 작성자 원문/계산 대조 · 독립 금융 승인 아님",
+  "findings": [
+    {
+      "role": "hypothesis",
+      "text": "영업현금 증가는 유형자산 취득으로 인한 효과일 수 있다.",
+      "reason": "유형자산 취득은 투자활동 현금흐름이며 취득 증가를 영업현금 증가의 직접 원인으로 설명할 근거가 없다."
+    },
+    {
+      "role": "distinguish",
+      "text": "인수 지출 내역과 차입 상환 비율을 분석하면, 인수 지출 증가는 인수 설명을, 차입 상환 증가는 자금 조달 설명을 각각 지지할 수 있다.",
+      "reason": "인수 지출·차입 상환 증가는 투자·재무활동의 관측이며 영업현금 변동 원인을 구별하는 관측으로 충분하지 않다."
+    },
+    {
+      "role": "critique.alternative",
+      "text": "주식보상 비용은 비현금 조정 항목으로, 영업현금과 직접적인 인과 관계가 없으며 입력 자료에서 현금 유출로 간주되지 않았다.",
+      "reason": "주식보상은 간접법 영업현금에서 비현금 조정으로 되돌리는 항목이다. 자체 비판의 직접 관계가 없다는 단정도 지나치며 원인 추정을 검증한 것으로 볼 수 없다."
+    }
+  ],
+  "scope": "New AVGO input retained; fresh local output remains held. No protocol tuning or favorable-output selection."
+}

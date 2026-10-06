@@ -1,0 +1,26 @@
+{
+  "status": "passed",
+  "python": "3.12.9",
+  "platform": "Linux x86_64 / CPython 3.12",
+  "systemSitePackages": false,
+  "wheelFiles": 15,
+  "commands": [
+    "python3 -m venv .local/portable-verify",
+    ".local/portable-verify/bin/python -m pip install --no-index --find-links artifacts/local/offline-wheels -r requirements.txt",
+    ".local/portable-verify/bin/python -m pip check",
+    ".local/portable-verify/bin/python -m unittest discover -s tests -v",
+    ".local/portable-verify/bin/python scripts/local-coverage.py --company META --probe-format --wait-gpu-seconds 600"
+  ],
+  "tests": 227,
+  "probeRecord": "artifacts/local/coverage-run-20261001T122528451549Z.json",
+  "scope": "Fresh Python environment, exact offline wheel hashes and real local GPU schema probe; no financial approval.",
+  "evidence": {
+    "requirements.txt": "b5382226f3d54181b9ff19c0cff23e8dc648bcb6f436347c95ddfe19edfb47d5",
+    "requirements-offline.lock": "4d9adc1114389909b48639ecbc2c5c3b24c091896f0bf6094bd3e4d46618c41f",
+    "artifacts/local/clean-install.log": "f95706d604d87dff79d7232a91d2511f92fcb52367c988ca8d9b17c39e48dbb6",
+    "artifacts/local/clean-install-tests.log": "387da58a93459fd4ffb40c8ffd4110d96197626a86dcdb533f4ddf2bd8e8ed21",
+    "artifacts/local/clean-lock-install.log": "59d9b81cd7895efa360b90b0f1d8145d53cb6ce5ecf6fc337e857aaf821c9613",
+    "artifacts/local/clean-install-gpu.log": "e69a3e480e847702e9ddf168b3f6917295cd02bf58cdbcaa28f9765c774a84a0",
+    "artifacts/local/coverage-run-20261001T122528451549Z.json": "e8c86b9e414788766c7bc66e8af263c289b91393b0aa1f56b5f3b042025a2c7b"
+  }
+}

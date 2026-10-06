@@ -1,0 +1,12 @@
+test_cash_reconciles_each_period_before_adding_trailing_values (test_samsung_candidate.SamsungCandidateTests.test_cash_reconciles_each_period_before_adding_trailing_values) ... ok
+test_changed_annual_cash_or_corpus_requires_a_new_review (test_samsung_candidate.SamsungCandidateTests.test_changed_annual_cash_or_corpus_requires_a_new_review) ... ok
+test_internal_sales_are_not_external_revenue_or_deducted_twice_from_profit (test_samsung_candidate.SamsungCandidateTests.test_internal_sales_are_not_external_revenue_or_deducted_twice_from_profit) ... ok
+test_invalid_elimination_and_other_profit_inputs_are_rejected (test_samsung_candidate.SamsungCandidateTests.test_invalid_elimination_and_other_profit_inputs_are_rejected) ... ok
+test_reported_lease_and_minority_proxy_are_each_deducted_once (test_samsung_candidate.SamsungCandidateTests.test_reported_lease_and_minority_proxy_are_each_deducted_once) ... ok
+test_unallocated_profit_stays_distinct_from_disclosed_segment_profit (test_samsung_candidate.SamsungCandidateTests.test_unallocated_profit_stays_distinct_from_disclosed_segment_profit) ... ok
+test_working_capital_uses_previous_consolidated_revenue_including_terminal (test_samsung_candidate.SamsungCandidateTests.test_working_capital_uses_previous_consolidated_revenue_including_terminal) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 2.163s
+
+OK

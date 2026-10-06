@@ -1,0 +1,786 @@
+{
+  "company": "000270",
+  "accession": "20260916000427",
+  "modelHash": "dd97503d60016668403fc82ab23626942ecd38ab8c4050e1cdf1416c36488227",
+  "period": [
+    "2026-01-01",
+    "2026-06-30"
+  ],
+  "cashChange": {
+    "start": 5352775000000.0,
+    "steps": [
+      -502863000000.0,
+      697158000000.0,
+      790286000000.0,
+      52888000000.0,
+      776891000000.0
+    ],
+    "end": 7167135000000.0
+  },
+  "warranty": {
+    "start": "2026-01-01",
+    "end": "2026-06-30",
+    "opening": {
+      "start": null,
+      "end": "2025-12-31",
+      "dimensions": [
+        [
+          "ClassesOfProvisionsAxis",
+          "WarrantyProvisionMember"
+        ],
+        [
+          "ConsolidatedAndSeparateFinancialStatementsAxis",
+          "ConsolidatedMember"
+        ]
+      ],
+      "tag": "OtherProvisions",
+      "taxonomy": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full",
+      "value": 8551238000000.0,
+      "unit": "KRW",
+      "context": "PFY2025eHY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_ConsolidatedMember_ifrs-full_ClassesOfProvisionsAxis_ifrs-full_WarrantyProvisionMember",
+      "factId": null,
+      "decimals": "-6",
+      "accession": "20260916000427",
+      "filedAt": "2026-09-16",
+      "sourceFile": "data/sources/000270-20260916000427-39e3a3539751d38b.xbrl",
+      "sourceHash": "39e3a3539751d38b85123c98cc565ec00b9c488299101bf949ebc99ccf7b2fcd",
+      "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260916000427"
+    },
+    "closing": {
+      "start": null,
+      "end": "2026-06-30",
+      "dimensions": [
+        [
+          "ClassesOfProvisionsAxis",
+          "WarrantyProvisionMember"
+        ],
+        [
+          "ConsolidatedAndSeparateFinancialStatementsAxis",
+          "ConsolidatedMember"
+        ]
+      ],
+      "tag": "OtherProvisions",
+      "taxonomy": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full",
+      "value": 9289232000000.0,
+      "unit": "KRW",
+      "context": "CFY2026eHYA_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_ConsolidatedMember_ifrs-full_ClassesOfProvisionsAxis_ifrs-full_WarrantyProvisionMember",
+      "factId": null,
+      "decimals": "-6",
+      "accession": "20260916000427",
+      "filedAt": "2026-09-16",
+      "sourceFile": "data/sources/000270-20260916000427-39e3a3539751d38b.xbrl",
+      "sourceHash": "39e3a3539751d38b85123c98cc565ec00b9c488299101bf949ebc99ccf7b2fcd",
+      "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260916000427"
+    },
+    "added": 2662218000000.0,
+    "used": 2179924000000.0,
+    "other": 255700000000.0,
+    "cashAdjustment": 2017760000000.0,
+    "sellingExpense": 2105752000000.0,
+    "residual": 0.0
+  },
+  "sources": {
+    "netIncome": {
+      "value": 7051311000000.0,
+      "components": [
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2025-01-01",
+            "end": "2025-12-31",
+            "dimensions": [
+              [
+                "ConsolidatedAndSeparateFinancialStatementsAxis",
+                "ConsolidatedMember"
+              ]
+            ],
+            "tag": "ProfitLoss",
+            "taxonomy": "http://xbrl.ifrs.org/taxonomy/2021-03-24/ifrs-full",
+            "value": 7554174000000.0,
+            "unit": "KRW",
+            "context": "CFY2025dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_ConsolidatedMember",
+            "factId": null,
+            "decimals": "-6",
+            "accession": "20260312001224",
+            "filedAt": "2026-03-12",
+            "sourceFile": "data/sources/000270-20260312001224-1b8872810068810f.xbrl",
+            "sourceHash": "1b8872810068810fdbaafef41c375df505755bbd479fe9893d4d8889f5ac30c3",
+            "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260312001224"
+          }
+        },
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2026-01-01",
+            "end": "2026-06-30",
+            "dimensions": [
+              [
+                "ConsolidatedAndSeparateFinancialStatementsAxis",
+                "ConsolidatedMember"
+              ]
+            ],
+            "tag": "ProfitLoss",
+            "taxonomy": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full",
+            "value": 4157949000000.0,
+            "unit": "KRW",
+            "context": "CFY2026dHYA_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_ConsolidatedMember",
+            "factId": null,
+            "decimals": "-6",
+            "accession": "20260916000427",
+            "filedAt": "2026-09-16",
+            "sourceFile": "data/sources/000270-20260916000427-39e3a3539751d38b.xbrl",
+            "sourceHash": "39e3a3539751d38b85123c98cc565ec00b9c488299101bf949ebc99ccf7b2fcd",
+            "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260916000427"
+          }
+        },
+        {
+          "coefficient": -1,
+          "fact": {
+            "start": "2025-01-01",
+            "end": "2025-06-30",
+            "dimensions": [
+              [
+                "ConsolidatedAndSeparateFinancialStatementsAxis",
+                "ConsolidatedMember"
+              ]
+            ],
+            "tag": "ProfitLoss",
+            "taxonomy": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full",
+            "value": 4660812000000.0,
+            "unit": "KRW",
+            "context": "PFY2025dHYA_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_ConsolidatedMember",
+            "factId": null,
+            "decimals": "-6",
+            "accession": "20260916000427",
+            "filedAt": "2026-09-16",
+            "sourceFile": "data/sources/000270-20260916000427-39e3a3539751d38b.xbrl",
+            "sourceHash": "39e3a3539751d38b85123c98cc565ec00b9c488299101bf949ebc99ccf7b2fcd",
+            "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260916000427"
+          }
+        }
+      ],
+      "derived": true,
+      "tag": "ProfitLoss",
+      "unit": "KRW",
+      "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260916000427"
+    },
+    "cfo": {
+      "value": 10868500000000.0,
+      "components": [
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2025-01-01",
+            "end": "2025-12-31",
+            "dimensions": [
+              [
+                "ConsolidatedAndSeparateFinancialStatementsAxis",
+                "ConsolidatedMember"
+              ]
+            ],
+            "tag": "CashFlowsFromUsedInOperatingActivities",
+            "taxonomy": "http://xbrl.ifrs.org/taxonomy/2021-03-24/ifrs-full",
+            "value": 9054140000000.0,
+            "unit": "KRW",
+            "context": "CFY2025dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_ConsolidatedMember",
+            "factId": null,
+            "decimals": "-6",
+            "accession": "20260312001224",
+            "filedAt": "2026-03-12",
+            "sourceFile": "data/sources/000270-20260312001224-1b8872810068810f.xbrl",
+            "sourceHash": "1b8872810068810fdbaafef41c375df505755bbd479fe9893d4d8889f5ac30c3",
+            "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260312001224"
+          }
+        },
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2026-01-01",
+            "end": "2026-06-30",
+            "dimensions": [
+              [
+                "ConsolidatedAndSeparateFinancialStatementsAxis",
+                "ConsolidatedMember"
+              ]
+            ],
+            "tag": "CashFlowsFromUsedInOperatingActivities",
+            "taxonomy": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full",
+            "value": 7167135000000.0,
+            "unit": "KRW",
+            "context": "CFY2026dHYA_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_ConsolidatedMember",
+            "factId": null,
+            "decimals": "-6",
+            "accession": "20260916000427",
+            "filedAt": "2026-09-16",
+            "sourceFile": "data/sources/000270-20260916000427-39e3a3539751d38b.xbrl",
+            "sourceHash": "39e3a3539751d38b85123c98cc565ec00b9c488299101bf949ebc99ccf7b2fcd",
+            "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260916000427"
+          }
+        },
+        {
+          "coefficient": -1,
+          "fact": {
+            "start": "2025-01-01",
+            "end": "2025-06-30",
+            "dimensions": [
+              [
+                "ConsolidatedAndSeparateFinancialStatementsAxis",
+                "ConsolidatedMember"
+              ]
+            ],
+            "tag": "CashFlowsFromUsedInOperatingActivities",
+            "taxonomy": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full",
+            "value": 5352775000000.0,
+            "unit": "KRW",
+            "context": "PFY2025dHYA_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_ConsolidatedMember",
+            "factId": null,
+            "decimals": "-6",
+            "accession": "20260916000427",
+            "filedAt": "2026-09-16",
+            "sourceFile": "data/sources/000270-20260916000427-39e3a3539751d38b.xbrl",
+            "sourceHash": "39e3a3539751d38b85123c98cc565ec00b9c488299101bf949ebc99ccf7b2fcd",
+            "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260916000427"
+          }
+        }
+      ],
+      "derived": true,
+      "tag": "CashFlowsFromUsedInOperatingActivities",
+      "unit": "KRW",
+      "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260916000427"
+    },
+    "adjustments": {
+      "value": 9151879000000.0,
+      "components": [
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2025-01-01",
+            "end": "2025-12-31",
+            "dimensions": [
+              [
+                "CarryingAmountAccumulatedDepreciationAmortisationAndImpairmentAndGrossCarryingAmountAxis",
+                "ReportedAmountMember"
+              ],
+              [
+                "ConsolidatedAndSeparateFinancialStatementsAxis",
+                "ConsolidatedMember"
+              ]
+            ],
+            "tag": "AdjustmentsForReconcileProfitLoss",
+            "taxonomy": "http://xbrl.ifrs.org/taxonomy/2021-03-24/ifrs-full",
+            "value": 8454721000000.0,
+            "unit": "KRW",
+            "context": "CFY2025dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_ConsolidatedMember_ifrs-full_CarryingAmountAccumulatedDepreciationAmortisationAndImpairmentAndGrossCarryingAmountAxis_dart_ReportedAmountMember",
+            "factId": null,
+            "decimals": "-6",
+            "accession": "20260312001224",
+            "filedAt": "2026-03-12",
+            "sourceFile": "data/sources/000270-20260312001224-1b8872810068810f.xbrl",
+            "sourceHash": "1b8872810068810fdbaafef41c375df505755bbd479fe9893d4d8889f5ac30c3",
+            "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260312001224"
+          }
+        },
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2026-01-01",
+            "end": "2026-06-30",
+            "dimensions": [
+              [
+                "CarryingAmountAccumulatedDepreciationAmortisationAndImpairmentAndGrossCarryingAmountAxis",
+                "ReportedAmountMember"
+              ],
+              [
+                "ConsolidatedAndSeparateFinancialStatementsAxis",
+                "ConsolidatedMember"
+              ]
+            ],
+            "tag": "AdjustmentsForReconcileProfitLoss",
+            "taxonomy": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full",
+            "value": 4619370000000.0,
+            "unit": "KRW",
+            "context": "CFY2026dHYA_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_ConsolidatedMember_ifrs-full_CarryingAmountAccumulatedDepreciationAmortisationAndImpairmentAndGrossCarryingAmountAxis_dart_ReportedAmountMember",
+            "factId": null,
+            "decimals": "-6",
+            "accession": "20260916000427",
+            "filedAt": "2026-09-16",
+            "sourceFile": "data/sources/000270-20260916000427-39e3a3539751d38b.xbrl",
+            "sourceHash": "39e3a3539751d38b85123c98cc565ec00b9c488299101bf949ebc99ccf7b2fcd",
+            "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260916000427"
+          }
+        },
+        {
+          "coefficient": -1,
+          "fact": {
+            "start": "2025-01-01",
+            "end": "2025-06-30",
+            "dimensions": [
+              [
+                "CarryingAmountAccumulatedDepreciationAmortisationAndImpairmentAndGrossCarryingAmountAxis",
+                "ReportedAmountMember"
+              ],
+              [
+                "ConsolidatedAndSeparateFinancialStatementsAxis",
+                "ConsolidatedMember"
+              ]
+            ],
+            "tag": "AdjustmentsForReconcileProfitLoss",
+            "taxonomy": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full",
+            "value": 3922212000000.0,
+            "unit": "KRW",
+            "context": "PFY2025dHYA_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_ConsolidatedMember_ifrs-full_CarryingAmountAccumulatedDepreciationAmortisationAndImpairmentAndGrossCarryingAmountAxis_dart_ReportedAmountMember",
+            "factId": null,
+            "decimals": "-6",
+            "accession": "20260916000427",
+            "filedAt": "2026-09-16",
+            "sourceFile": "data/sources/000270-20260916000427-39e3a3539751d38b.xbrl",
+            "sourceHash": "39e3a3539751d38b85123c98cc565ec00b9c488299101bf949ebc99ccf7b2fcd",
+            "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260916000427"
+          }
+        }
+      ],
+      "derived": true,
+      "tag": "AdjustmentsForReconcileProfitLoss",
+      "unit": "KRW",
+      "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260916000427"
+    },
+    "workingCash": {
+      "value": -3537428000000.0,
+      "components": [
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2025-01-01",
+            "end": "2025-12-31",
+            "dimensions": [
+              [
+                "CarryingAmountAccumulatedDepreciationAmortisationAndImpairmentAndGrossCarryingAmountAxis",
+                "ReportedAmountMember"
+              ],
+              [
+                "ConsolidatedAndSeparateFinancialStatementsAxis",
+                "ConsolidatedMember"
+              ]
+            ],
+            "tag": "AdjustmentsForAssetsLiabilitiesOfOperatingActivities",
+            "taxonomy": "http://dart.fss.or.kr/taxonomy/2024-06-30/ifrs/dart",
+            "value": -4327714000000.0,
+            "unit": "KRW",
+            "context": "CFY2025dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_ConsolidatedMember_ifrs-full_CarryingAmountAccumulatedDepreciationAmortisationAndImpairmentAndGrossCarryingAmountAxis_dart_ReportedAmountMember",
+            "factId": null,
+            "decimals": "-6",
+            "accession": "20260312001224",
+            "filedAt": "2026-03-12",
+            "sourceFile": "data/sources/000270-20260312001224-1b8872810068810f.xbrl",
+            "sourceHash": "1b8872810068810fdbaafef41c375df505755bbd479fe9893d4d8889f5ac30c3",
+            "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260312001224"
+          }
+        },
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2026-01-01",
+            "end": "2026-06-30",
+            "dimensions": [
+              [
+                "CarryingAmountAccumulatedDepreciationAmortisationAndImpairmentAndGrossCarryingAmountAxis",
+                "ReportedAmountMember"
+              ],
+              [
+                "ConsolidatedAndSeparateFinancialStatementsAxis",
+                "ConsolidatedMember"
+              ]
+            ],
+            "tag": "AdjustmentsForAssetsLiabilitiesOfOperatingActivities",
+            "taxonomy": "http://dart.fss.or.kr/taxonomy/2026-01-31/ifrs/dart",
+            "value": -808048000000.0,
+            "unit": "KRW",
+            "context": "CFY2026dHYA_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_ConsolidatedMember_ifrs-full_CarryingAmountAccumulatedDepreciationAmortisationAndImpairmentAndGrossCarryingAmountAxis_dart_ReportedAmountMember",
+            "factId": null,
+            "decimals": "-6",
+            "accession": "20260916000427",
+            "filedAt": "2026-09-16",
+            "sourceFile": "data/sources/000270-20260916000427-39e3a3539751d38b.xbrl",
+            "sourceHash": "39e3a3539751d38b85123c98cc565ec00b9c488299101bf949ebc99ccf7b2fcd",
+            "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260916000427"
+          }
+        },
+        {
+          "coefficient": -1,
+          "fact": {
+            "start": "2025-01-01",
+            "end": "2025-06-30",
+            "dimensions": [
+              [
+                "CarryingAmountAccumulatedDepreciationAmortisationAndImpairmentAndGrossCarryingAmountAxis",
+                "ReportedAmountMember"
+              ],
+              [
+                "ConsolidatedAndSeparateFinancialStatementsAxis",
+                "ConsolidatedMember"
+              ]
+            ],
+            "tag": "AdjustmentsForAssetsLiabilitiesOfOperatingActivities",
+            "taxonomy": "http://dart.fss.or.kr/taxonomy/2026-01-31/ifrs/dart",
+            "value": -1598334000000.0,
+            "unit": "KRW",
+            "context": "PFY2025dHYA_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_ConsolidatedMember_ifrs-full_CarryingAmountAccumulatedDepreciationAmortisationAndImpairmentAndGrossCarryingAmountAxis_dart_ReportedAmountMember",
+            "factId": null,
+            "decimals": "-6",
+            "accession": "20260916000427",
+            "filedAt": "2026-09-16",
+            "sourceFile": "data/sources/000270-20260916000427-39e3a3539751d38b.xbrl",
+            "sourceHash": "39e3a3539751d38b85123c98cc565ec00b9c488299101bf949ebc99ccf7b2fcd",
+            "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260916000427"
+          }
+        }
+      ],
+      "derived": true,
+      "tag": "AdjustmentsForAssetsLiabilitiesOfOperatingActivities",
+      "unit": "KRW",
+      "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260916000427"
+    },
+    "interestIncome": {
+      "value": 916122000000.0,
+      "components": [
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2025-01-01",
+            "end": "2025-12-31",
+            "dimensions": [
+              [
+                "ConsolidatedAndSeparateFinancialStatementsAxis",
+                "ConsolidatedMember"
+              ]
+            ],
+            "tag": "InterestReceivedClassifiedAsOperatingActivities",
+            "taxonomy": "http://xbrl.ifrs.org/taxonomy/2021-03-24/ifrs-full",
+            "value": 852013000000.0,
+            "unit": "KRW",
+            "context": "CFY2025dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_ConsolidatedMember",
+            "factId": null,
+            "decimals": "-6",
+            "accession": "20260312001224",
+            "filedAt": "2026-03-12",
+            "sourceFile": "data/sources/000270-20260312001224-1b8872810068810f.xbrl",
+            "sourceHash": "1b8872810068810fdbaafef41c375df505755bbd479fe9893d4d8889f5ac30c3",
+            "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260312001224"
+          }
+        },
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2026-01-01",
+            "end": "2026-06-30",
+            "dimensions": [
+              [
+                "ConsolidatedAndSeparateFinancialStatementsAxis",
+                "ConsolidatedMember"
+              ]
+            ],
+            "tag": "InterestReceivedClassifiedAsOperatingActivities",
+            "taxonomy": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full",
+            "value": 497513000000.0,
+            "unit": "KRW",
+            "context": "CFY2026dHYA_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_ConsolidatedMember",
+            "factId": null,
+            "decimals": "-6",
+            "accession": "20260916000427",
+            "filedAt": "2026-09-16",
+            "sourceFile": "data/sources/000270-20260916000427-39e3a3539751d38b.xbrl",
+            "sourceHash": "39e3a3539751d38b85123c98cc565ec00b9c488299101bf949ebc99ccf7b2fcd",
+            "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260916000427"
+          }
+        },
+        {
+          "coefficient": -1,
+          "fact": {
+            "start": "2025-01-01",
+            "end": "2025-06-30",
+            "dimensions": [
+              [
+                "ConsolidatedAndSeparateFinancialStatementsAxis",
+                "ConsolidatedMember"
+              ]
+            ],
+            "tag": "InterestReceivedClassifiedAsOperatingActivities",
+            "taxonomy": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full",
+            "value": 433404000000.0,
+            "unit": "KRW",
+            "context": "PFY2025dHYA_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_ConsolidatedMember",
+            "factId": null,
+            "decimals": "-6",
+            "accession": "20260916000427",
+            "filedAt": "2026-09-16",
+            "sourceFile": "data/sources/000270-20260916000427-39e3a3539751d38b.xbrl",
+            "sourceHash": "39e3a3539751d38b85123c98cc565ec00b9c488299101bf949ebc99ccf7b2fcd",
+            "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260916000427"
+          }
+        }
+      ],
+      "derived": true,
+      "tag": "InterestReceivedClassifiedAsOperatingActivities",
+      "unit": "KRW",
+      "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260916000427"
+    },
+    "interestExpense": {
+      "value": 142284000000.0,
+      "components": [
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2025-01-01",
+            "end": "2025-12-31",
+            "dimensions": [
+              [
+                "ConsolidatedAndSeparateFinancialStatementsAxis",
+                "ConsolidatedMember"
+              ]
+            ],
+            "tag": "InterestPaidClassifiedAsOperatingActivities",
+            "taxonomy": "http://xbrl.ifrs.org/taxonomy/2021-03-24/ifrs-full",
+            "value": 138132000000.0,
+            "unit": "KRW",
+            "context": "CFY2025dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_ConsolidatedMember",
+            "factId": null,
+            "decimals": "-6",
+            "accession": "20260312001224",
+            "filedAt": "2026-03-12",
+            "sourceFile": "data/sources/000270-20260312001224-1b8872810068810f.xbrl",
+            "sourceHash": "1b8872810068810fdbaafef41c375df505755bbd479fe9893d4d8889f5ac30c3",
+            "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260312001224"
+          }
+        },
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2026-01-01",
+            "end": "2026-06-30",
+            "dimensions": [
+              [
+                "ConsolidatedAndSeparateFinancialStatementsAxis",
+                "ConsolidatedMember"
+              ]
+            ],
+            "tag": "InterestPaidClassifiedAsOperatingActivities",
+            "taxonomy": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full",
+            "value": 76859000000.0,
+            "unit": "KRW",
+            "context": "CFY2026dHYA_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_ConsolidatedMember",
+            "factId": null,
+            "decimals": "-6",
+            "accession": "20260916000427",
+            "filedAt": "2026-09-16",
+            "sourceFile": "data/sources/000270-20260916000427-39e3a3539751d38b.xbrl",
+            "sourceHash": "39e3a3539751d38b85123c98cc565ec00b9c488299101bf949ebc99ccf7b2fcd",
+            "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260916000427"
+          }
+        },
+        {
+          "coefficient": -1,
+          "fact": {
+            "start": "2025-01-01",
+            "end": "2025-06-30",
+            "dimensions": [
+              [
+                "ConsolidatedAndSeparateFinancialStatementsAxis",
+                "ConsolidatedMember"
+              ]
+            ],
+            "tag": "InterestPaidClassifiedAsOperatingActivities",
+            "taxonomy": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full",
+            "value": 72707000000.0,
+            "unit": "KRW",
+            "context": "PFY2025dHYA_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_ConsolidatedMember",
+            "factId": null,
+            "decimals": "-6",
+            "accession": "20260916000427",
+            "filedAt": "2026-09-16",
+            "sourceFile": "data/sources/000270-20260916000427-39e3a3539751d38b.xbrl",
+            "sourceHash": "39e3a3539751d38b85123c98cc565ec00b9c488299101bf949ebc99ccf7b2fcd",
+            "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260916000427"
+          }
+        }
+      ],
+      "derived": true,
+      "tag": "InterestPaidClassifiedAsOperatingActivities",
+      "unit": "KRW",
+      "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260916000427"
+    },
+    "dividends": {
+      "value": 190733000000.0,
+      "components": [
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2025-01-01",
+            "end": "2025-12-31",
+            "dimensions": [
+              [
+                "ConsolidatedAndSeparateFinancialStatementsAxis",
+                "ConsolidatedMember"
+              ]
+            ],
+            "tag": "DividendsReceivedClassifiedAsOperatingActivities",
+            "taxonomy": "http://xbrl.ifrs.org/taxonomy/2021-03-24/ifrs-full",
+            "value": 197802000000.0,
+            "unit": "KRW",
+            "context": "CFY2025dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_ConsolidatedMember",
+            "factId": null,
+            "decimals": "-6",
+            "accession": "20260312001224",
+            "filedAt": "2026-03-12",
+            "sourceFile": "data/sources/000270-20260312001224-1b8872810068810f.xbrl",
+            "sourceHash": "1b8872810068810fdbaafef41c375df505755bbd479fe9893d4d8889f5ac30c3",
+            "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260312001224"
+          }
+        },
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2026-01-01",
+            "end": "2026-06-30",
+            "dimensions": [
+              [
+                "ConsolidatedAndSeparateFinancialStatementsAxis",
+                "ConsolidatedMember"
+              ]
+            ],
+            "tag": "DividendsReceivedClassifiedAsOperatingActivities",
+            "taxonomy": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full",
+            "value": 143929000000.0,
+            "unit": "KRW",
+            "context": "CFY2026dHYA_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_ConsolidatedMember",
+            "factId": null,
+            "decimals": "-6",
+            "accession": "20260916000427",
+            "filedAt": "2026-09-16",
+            "sourceFile": "data/sources/000270-20260916000427-39e3a3539751d38b.xbrl",
+            "sourceHash": "39e3a3539751d38b85123c98cc565ec00b9c488299101bf949ebc99ccf7b2fcd",
+            "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260916000427"
+          }
+        },
+        {
+          "coefficient": -1,
+          "fact": {
+            "start": "2025-01-01",
+            "end": "2025-06-30",
+            "dimensions": [
+              [
+                "ConsolidatedAndSeparateFinancialStatementsAxis",
+                "ConsolidatedMember"
+              ]
+            ],
+            "tag": "DividendsReceivedClassifiedAsOperatingActivities",
+            "taxonomy": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full",
+            "value": 150998000000.0,
+            "unit": "KRW",
+            "context": "PFY2025dHYA_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_ConsolidatedMember",
+            "factId": null,
+            "decimals": "-6",
+            "accession": "20260916000427",
+            "filedAt": "2026-09-16",
+            "sourceFile": "data/sources/000270-20260916000427-39e3a3539751d38b.xbrl",
+            "sourceHash": "39e3a3539751d38b85123c98cc565ec00b9c488299101bf949ebc99ccf7b2fcd",
+            "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260916000427"
+          }
+        }
+      ],
+      "derived": true,
+      "tag": "DividendsReceivedClassifiedAsOperatingActivities",
+      "unit": "KRW",
+      "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260916000427"
+    },
+    "cashTaxes": {
+      "value": 2761833000000.0,
+      "components": [
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2025-01-01",
+            "end": "2025-12-31",
+            "dimensions": [
+              [
+                "ConsolidatedAndSeparateFinancialStatementsAxis",
+                "ConsolidatedMember"
+              ]
+            ],
+            "tag": "IncomeTaxesPaidRefundClassifiedAsOperatingActivities",
+            "taxonomy": "http://xbrl.ifrs.org/taxonomy/2021-03-24/ifrs-full",
+            "value": 3538724000000.0,
+            "unit": "KRW",
+            "context": "CFY2025dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_ConsolidatedMember",
+            "factId": null,
+            "decimals": "-6",
+            "accession": "20260312001224",
+            "filedAt": "2026-03-12",
+            "sourceFile": "data/sources/000270-20260312001224-1b8872810068810f.xbrl",
+            "sourceHash": "1b8872810068810fdbaafef41c375df505755bbd479fe9893d4d8889f5ac30c3",
+            "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260312001224"
+          }
+        },
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2026-01-01",
+            "end": "2026-06-30",
+            "dimensions": [
+              [
+                "ConsolidatedAndSeparateFinancialStatementsAxis",
+                "ConsolidatedMember"
+              ]
+            ],
+            "tag": "IncomeTaxesPaidRefundClassifiedAsOperatingActivities",
+            "taxonomy": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full",
+            "value": 1366719000000.0,
+            "unit": "KRW",
+            "context": "CFY2026dHYA_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_ConsolidatedMember",
+            "factId": null,
+            "decimals": "-6",
+            "accession": "20260916000427",
+            "filedAt": "2026-09-16",
+            "sourceFile": "data/sources/000270-20260916000427-39e3a3539751d38b.xbrl",
+            "sourceHash": "39e3a3539751d38b85123c98cc565ec00b9c488299101bf949ebc99ccf7b2fcd",
+            "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260916000427"
+          }
+        },
+        {
+          "coefficient": -1,
+          "fact": {
+            "start": "2025-01-01",
+            "end": "2025-06-30",
+            "dimensions": [
+              [
+                "ConsolidatedAndSeparateFinancialStatementsAxis",
+                "ConsolidatedMember"
+              ]
+            ],
+            "tag": "IncomeTaxesPaidRefundClassifiedAsOperatingActivities",
+            "taxonomy": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full",
+            "value": 2143610000000.0,
+            "unit": "KRW",
+            "context": "PFY2025dHYA_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_ConsolidatedMember",
+            "factId": null,
+            "decimals": "-6",
+            "accession": "20260916000427",
+            "filedAt": "2026-09-16",
+            "sourceFile": "data/sources/000270-20260916000427-39e3a3539751d38b.xbrl",
+            "sourceHash": "39e3a3539751d38b85123c98cc565ec00b9c488299101bf949ebc99ccf7b2fcd",
+            "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260916000427"
+          }
+        }
+      ],
+      "derived": true,
+      "tag": "IncomeTaxesPaidRefundClassifiedAsOperatingActivities",
+      "unit": "KRW",
+      "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260916000427"
+    }
+  },
+  "outputs": {
+    "png": "77ad91766ca737a5ccab713f1d7a7d6f274b6ac1152ea64cbb66d1ceda952a2e",
+    "svg": "1e7a7696f805cc24168479a28968dc357a42b9756f56bf3b7a48d8bb06768adb",
+    "pdf": "8d83e6725d8ccbfbf81e8b43a495e06ed82fa8f8a799308523c5b217fad073b1"
+  },
+  "scope": "Author arithmetic reconciliation. No causal or investment preference approval."
+}

@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/mnt/20t/주식/scripts/local-questions.py", line 120, in <module>
+    main()
+  File "/mnt/20t/주식/scripts/local-questions.py", line 71, in main
+    with runtime.runtime(
+         ^^^^^^^^^^^^^^^^
+  File "/home/soccz/.pyenv/versions/3.12.9/lib/python3.12/contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "/mnt/20t/주식/scripts/local-research.py", line 38, in runtime
+    raise RuntimeError(
+RuntimeError: GPU already in use; this job will not unload another project model

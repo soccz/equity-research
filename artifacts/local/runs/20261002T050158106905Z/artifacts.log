@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/mnt/20t/주식/scripts/check-artifacts.py", line 351, in <module>
+    raise ValueError("Infrastructure comparison evidence missing: " + term)
+ValueError: Infrastructure comparison evidence missing: 선택한정확한사업가정

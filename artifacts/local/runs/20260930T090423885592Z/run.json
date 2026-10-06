@@ -1,0 +1,74 @@
+{
+  "runId": "20260930T090423885592Z",
+  "startedAt": "2026-09-30T09:04:23.885725+00:00",
+  "status": "failed",
+  "mode": "archived_sources_local_only",
+  "modelRequested": false,
+  "stages": [
+    {
+      "name": "unit",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-09-30T09:04:23.885857+00:00",
+      "finishedAt": "2026-09-30T09:04:28.570106+00:00",
+      "log": "artifacts/local/runs/20260930T090423885592Z/unit.log",
+      "logHash": "153afa86c0933ed74405be265693ec4655e296aa289519f40eb4480e9ef16246"
+    },
+    {
+      "name": "analysis",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-09-30T09:04:28.570664+00:00",
+      "finishedAt": "2026-09-30T09:04:36.045299+00:00",
+      "log": "artifacts/local/runs/20260930T090423885592Z/analysis.log",
+      "logHash": "c806fbad135d726a532c551b53e92da32cfc0bdc014a7b11a0871946a0c0f8d4"
+    },
+    {
+      "name": "register-conditions",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-09-30T09:04:36.045863+00:00",
+      "finishedAt": "2026-09-30T09:04:36.465667+00:00",
+      "log": "artifacts/local/runs/20260930T090423885592Z/register-conditions.log",
+      "logHash": "e5e00a769f7462e5db4ba214f5c12337356593e2e9a6bb4fa0dcfe7e77c025eb"
+    },
+    {
+      "name": "observe",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-09-30T09:04:36.466148+00:00",
+      "finishedAt": "2026-09-30T09:04:36.801433+00:00",
+      "log": "artifacts/local/runs/20260930T090423885592Z/observe.log",
+      "logHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "price-crosscheck",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-09-30T09:04:36.802161+00:00",
+      "finishedAt": "2026-09-30T09:04:36.850473+00:00",
+      "log": "artifacts/local/runs/20260930T090423885592Z/price-crosscheck.log",
+      "logHash": "9615d0dad5595a983cd92742b6f9051cb946c0dccbdc5d5dc4a1c37d7c359c37"
+    },
+    {
+      "name": "offline-replay",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-09-30T09:04:36.850966+00:00",
+      "finishedAt": "2026-09-30T09:04:46.098642+00:00",
+      "log": "artifacts/local/runs/20260930T090423885592Z/offline-replay.log",
+      "logHash": "5e6774238faa6a93f30faa355d4b3f60469d033fd0449be28a8c2bc5b418c0f2"
+    },
+    {
+      "name": "browser-pdf",
+      "status": "failed",
+      "exitCode": 1,
+      "startedAt": "2026-09-30T09:04:46.099134+00:00",
+      "finishedAt": "2026-09-30T09:04:47.668835+00:00",
+      "log": "artifacts/local/runs/20260930T090423885592Z/browser-pdf.log",
+      "logHash": "f715606b4aa869bdf79b8687b4b07b6c66a1dbfcf4214dfcd58dc0495867c0f3"
+    }
+  ],
+  "error": "RuntimeError: browser-pdf failed; see artifacts/local/runs/20260930T090423885592Z/browser-pdf.log",
+  "finishedAt": "2026-09-30T09:04:47.669435+00:00"
+}

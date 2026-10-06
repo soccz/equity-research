@@ -1,0 +1,20 @@
+{
+  "runId": "20261001T172318286497Z",
+  "startedAt": "2026-10-01T17:23:18.286608+00:00",
+  "status": "failed",
+  "mode": "archived_sources_local_only",
+  "modelRequested": true,
+  "stages": [
+    {
+      "name": "unit",
+      "status": "failed",
+      "exitCode": 1,
+      "startedAt": "2026-10-01T17:23:18.286739+00:00",
+      "finishedAt": "2026-10-01T17:25:49.244982+00:00",
+      "log": "artifacts/local/runs/20261001T172318286497Z/unit.log",
+      "logHash": "e87e40e55e229e02372c826ffa64db422d94b8df317c789a7ea867f544901a3e"
+    }
+  ],
+  "error": "RuntimeError: unit failed; see artifacts/local/runs/20261001T172318286497Z/unit.log",
+  "finishedAt": "2026-10-01T17:25:49.245684+00:00"
+}

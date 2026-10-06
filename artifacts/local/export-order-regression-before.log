@@ -1,0 +1,26 @@
+Evaluation cfo_growth: failed None
+Evaluation capacity_hypothesis: failed None
+Evaluation replacement_alternative: failed None
+Evaluation future_discriminator: failed None
+Evaluation reconciliation_missing: failed None
+Evaluation principal_cash: failed None
+Evaluation noncash_spending: failed None
+Evaluation double_interest: failed None
+Evaluation segment_scope: failed None
+Evaluation invented_elimination: failed None
+Evaluation provided_segment_missing: failed None
+Evaluation normalized_cash: failed None
+.....F....
+======================================================================
+FAIL: test_dictionary_insertion_order_does_not_change_the_model_packet (test_coverage_reasoning.CoverageReasoningTests.test_dictionary_insertion_order_does_not_change_the_model_packet)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/20t/주식/tests/test_coverage_reasoning.py", line 57, in test_dictionary_insertion_order_does_not_change_the_model_packet
+    self.assertEqual(protocol.input_packet(original), protocol.input_packet(reordered))
+AssertionError: {'com[5752 chars]l': '현금·현금성자산', 'value': 20935000000.0, 'unit'[1541 chars]니다.'} != {'com[5752 chars]l': '영업리스 부채', 'value': 21925000000.0, 'unit':[1541 chars]니다.'}
+Diff is 16823 characters long. Set self.maxDiff to None to see it.
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.452s
+
+FAILED (failures=1)

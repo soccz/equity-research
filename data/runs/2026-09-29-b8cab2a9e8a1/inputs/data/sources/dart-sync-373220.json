@@ -1,0 +1,38 @@
+{
+  "ticker": "373220",
+  "asOf": "2026-09-29",
+  "checkedAt": "2026-09-30T09:16:39.756346+00:00",
+  "filing": {
+    "corp_code": "01515323",
+    "corp_name": "LG에너지솔루션",
+    "stock_code": "373220",
+    "corp_cls": "Y",
+    "report_nm": "반기보고서 (2026.06)",
+    "rcept_no": "20260813000255",
+    "flr_nm": "LG에너지솔루션",
+    "rcept_dt": "20260813",
+    "rm": ""
+  },
+  "queries": [
+    {
+      "file": "data/sources/dart-list-373220-bbbccdba38c0f564.json",
+      "sha256": "bbbccdba38c0f5642f334210e5ae2151b2bfb67e1d766c4ea59c9e8d6aa16681",
+      "parameters": {
+        "corp_code": "01515323",
+        "bgn_de": "20250101",
+        "end_de": "20260929",
+        "pblntf_ty": "A",
+        "last_reprt_at": "N",
+        "page_count": 100,
+        "page_no": 1,
+        "sort": "date",
+        "sort_mth": "desc"
+      }
+    }
+  ],
+  "package": {
+    "file": "data/sources/dart-package-20260813000255-345ed1b7e3b04edc.zip",
+    "sha256": "345ed1b7e3b04edc5ad9984a59c6de0561aee230b2ce70ad987e590a631ef23d"
+  },
+  "instanceHash": "b5e297acc5cc65f44c208aa78a1ec4aa1836eae3fb694efdb276466703e4f593"
+}

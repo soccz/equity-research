@@ -1,0 +1,139 @@
+{
+  "version": "focused-assumption-development-v2",
+  "scope": "Same-author development and separately worded examples, not independent or out-of-sample investment accuracy. Prompt changes require a new run.",
+  "gates": {
+    "falseAccepts": 0,
+    "falseRejects": 1,
+    "invalid": 0
+  },
+  "cases": [
+    {
+      "company": "TXN",
+      "id": "TXN_plan_not_normal",
+      "role": "missing",
+      "accept": true,
+      "text": "회사의 연간 설비투자 계획만으로 장기 정상 재투자 수준을 확인할 수 없다.",
+      "split": "development"
+    },
+    {
+      "company": "TXN",
+      "id": "TXN_credit_duplicate",
+      "role": "missing",
+      "accept": false,
+      "text": "영업현금에 이미 포함된 투자세액공제를 다시 더해야 지원 혜택의 중복이 제거된다.",
+      "split": "development"
+    },
+    {
+      "company": "ADI",
+      "id": "ADI_fixed_cash",
+      "role": "hypothesis",
+      "accept": true,
+      "text": "다른 사업 가정이 동일하다면 재투자 비율을 낮춘 계산에서 현금이 늘어날 수 있다.",
+      "split": "development"
+    },
+    {
+      "company": "ADI",
+      "id": "ADI_cost_is_margin",
+      "role": "hypothesis",
+      "accept": false,
+      "text": "인수 현금 지급을 줄이면 같은 제품과 성장을 유지하면서 매출총이익률이 자동으로 높아질 수 있다.",
+      "split": "development"
+    },
+    {
+      "company": "ADBE",
+      "id": "ADBE_broad_scope",
+      "role": "missing",
+      "accept": true,
+      "text": "원문의 취득 항목에는 무형·기타 자산이 포함되므로 순수 금융투자 지출만으로 확인할 수 없다.",
+      "split": "development"
+    },
+    {
+      "company": "ADBE",
+      "id": "ADBE_release_price",
+      "role": "hypothesis",
+      "accept": false,
+      "text": "취득 부담을 낮추면 기간 범위 대사 없이도 전체 주당 가치를 승인할 수 있다.",
+      "split": "development"
+    },
+    {
+      "company": "CRM",
+      "id": "CRM_hold_remains",
+      "role": "hypothesis",
+      "accept": true,
+      "text": "다른 가정을 고정해 부담을 낮추면 현금은 늘 수 있지만 금융의무 범위 미대사에 따른 주당 보류는 남을 수 있다.",
+      "split": "development"
+    },
+    {
+      "company": "CRM",
+      "id": "CRM_all_finance_lease",
+      "role": "missing",
+      "accept": false,
+      "text": "금융의무 원금 전체는 금융리스 원금과 같은 범위로 공시되어 있다.",
+      "split": "development"
+    },
+    {
+      "company": "TXN",
+      "id": "TXN_capex_not_expense",
+      "role": "hypothesis",
+      "accept": false,
+      "text": "설비 현금 지출이 줄면 같은 기간 영업비용도 그만큼 자동 감소할 수 있다.",
+      "split": "separate_examples"
+    },
+    {
+      "company": "TXN",
+      "id": "TXN_capacity_record",
+      "role": "distinguish",
+      "accept": true,
+      "text": "향후 공장별 유지·증설 지급과 가동 계획을 대조하면 반복 지출 감소와 신규 생산능력 확보의 차이를 검토할 수 있다.",
+      "split": "separate_examples"
+    },
+    {
+      "company": "ADI",
+      "id": "ADI_no_growth_guarantee",
+      "role": "missing",
+      "accept": true,
+      "text": "인수 지급을 줄인 민감도만으로 같은 기술 경쟁력과 성장을 유지할 수 있는지는 확인할 수 없다.",
+      "split": "separate_examples"
+    },
+    {
+      "company": "ADI",
+      "id": "ADI_operating_class",
+      "role": "missing",
+      "accept": false,
+      "text": "Empower 인수대금은 원문에서 판매관리비로 전액 인식되었다.",
+      "split": "separate_examples"
+    },
+    {
+      "company": "ADBE",
+      "id": "ADBE_negative_release",
+      "role": "missing",
+      "accept": false,
+      "text": "연간 취득에서 전년 누적 취득을 뺀 음수는 공시로 확인된 자산 처분 현금이다.",
+      "split": "separate_examples"
+    },
+    {
+      "company": "ADBE",
+      "id": "ADBE_definition_record",
+      "role": "distinguish",
+      "accept": true,
+      "text": "연간과 반기의 자산 종류별 취득·재분류 내역을 대조하면 임시 부담에 포함된 항목과 기간 차이를 확인할 수 있다.",
+      "split": "separate_examples"
+    },
+    {
+      "company": "CRM",
+      "id": "CRM_shared_financing",
+      "role": "missing",
+      "accept": false,
+      "text": "계약자산과 금융리스 원금의 차이는 모두 같은 시점의 고객 수금으로 대사되었다.",
+      "split": "separate_examples"
+    },
+    {
+      "company": "CRM",
+      "id": "CRM_financing_record",
+      "role": "distinguish",
+      "accept": true,
+      "text": "금융의무 계약별 원금·이자 지급표와 금융리스 주석 범위를 대조하면 추가 금융의무와 분류 차이를 구분할 수 있다.",
+      "split": "separate_examples"
+    }
+  ]
+}

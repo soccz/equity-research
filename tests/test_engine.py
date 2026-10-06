@@ -1,5 +1,6 @@
 import copy
 import json
+import os
 from pathlib import Path
 import tempfile
 import unittest
@@ -290,7 +291,9 @@ class ResearchContractTests(unittest.TestCase):
 
     def test_all_snapshot_facts_available_and_reconcilable(self):
         s = pipeline.load_latest()
-        self.assertEqual(len(s["companies"]), 8)
+        self.assertEqual(
+            {c["id"] for c in s["companies"]}, {c["id"] for c in data.UNIVERSE}
+        )
         self.assertEqual(s["failures"], [])
         for c in s["companies"]:
             f = c["financials"]
@@ -321,6 +324,17 @@ class ResearchContractTests(unittest.TestCase):
             self.assertEqual((root / "data/latest.json").read_text(), "last complete")
             self.assertEqual(len(result["failures"]), 1)
             self.assertEqual(len(list((root / "data/runs").glob("*/snapshot.json"))), 1)
+
+    def test_online_refresh_cannot_silently_reuse_korean_filings_without_key(self):
+        with patch.dict(os.environ, {}, clear=True), patch.object(
+            pipeline, "UNIVERSE", [dict(id="TEST", market="KR")]
+        ), patch.object(pipeline, "ensure_storage") as storage, patch.object(
+            pipeline, "sec_facts"
+        ) as network:
+            with self.assertRaisesRegex(ValueError, "requires DART_API_KEY"):
+                pipeline.run("2026-09-29", online=True)
+        storage.assert_not_called()
+        network.assert_not_called()
 
     def test_render_failure_does_not_publish_a_new_latest_snapshot(self):
         with tempfile.TemporaryDirectory(dir=data.work_temp()) as folder:

@@ -1,0 +1,95 @@
+PASS Registered real companies with a source cutoff
+PASS US filter affects table and scatter
+PASS Korean filter contains real Korean securities
+PASS Ticker search selects Microsoft in the table and chart
+PASS Empty search is explained without invented companies
+PASS Sector filter uses the coverage classifications
+PASS Candidate filter uses declared current financial conditions
+PASS Micron report contains actual dates and currency
+PASS Evidence is readable with source period and raw definitions
+PASS Escape restores evidence trigger focus
+PASS Cash bridge reconciles to the reported operating cash flow
+PASS Receivable proxies expose both averaging choices and limits
+PASS Management attribution is distinct from independent evidence
+PASS Opening balance and comparative period retain their filing identities
+PASS Three filing observations remain separate from generated causes
+PASS Price assumptions expose a nine-cell sensitivity grid
+PASS Selecting a sensitivity cell updates both assumptions
+PASS Cross-border comparison exposes unequal reporting periods
+PASS Private model commentary has traceable facts and explicit review limits
+PASS Every model sentence has its own exact-text review
+PASS Synthetic evaluation is labelled separately from real company accuracy
+PASS Uncleared notes are collapsed while computed facts stay visible
+PASS Individual real report NVDA
+PASS Individual real report GOOGL
+PASS Individual real report AAPL
+PASS Individual real report MSFT
+PASS Individual real report AMZN
+PASS Individual real report META
+PASS Individual real report AMD
+PASS Individual real report AVGO
+PASS Individual real report QCOM
+PASS Individual real report INTC
+PASS Individual real report AMAT
+PASS Individual real report LRCX
+PASS Individual real report TSLA
+PASS Individual real report GM
+PASS Individual real report F
+PASS Individual real report GE
+PASS Individual real report CAT
+PASS Individual real report LLY
+PASS Individual real report JNJ
+PASS Individual real report 000660
+PASS Individual real report 005930
+PASS Individual real report 035420
+PASS Individual real report 066570
+PASS Individual real report 005380
+PASS Individual real report 000270
+PASS Individual real report 012330
+PASS Individual real report 035720
+PASS Individual real report 006400
+PASS Individual real report 051910
+PASS Individual real report 373220
+PASS Individual real report 005490
+PASS Individual real report 207940
+PASS Individual real report 068270
+PASS Individual real report 000100
+PASS Individual real report 128940
+PASS Individual real report 329180
+PASS Individual real report 012450
+PASS Individual real report 034020
+PASS Individual real report 267260
+PASS Cross-border comparison changes both facts and comparability cautions
+PASS Unavailable historical XBRL stays visible despite a ready current filing
+PASS Older available filing is not presented as a newer quarter
+PASS Partial investment classification remains a research gap
+PASS Negative cash bars extend left of their zero baseline
+PASS NVIDIA broader investment scope remains visible
+PASS Opposing average and closing-balance directions remain visible
+PASS Small allowances are not rounded to zero and balance cash gaps are explicit
+PASS Risk and return tests disclose oracle and exploratory limits
+PASS Financial experiment matches its recorded historical window count
+PASS Historical inputs link to the preserved filings
+PASS Growth-gate ablation contribution matches the recorded experiment
+PASS Korean research uses its own figure and fixed cohort
+PASS Korean financial study preserves all recorded missing windows
+PASS Actual frozen conditions without fabricated accuracy
+PASS Published history needs no local mutation service
+PASS All companies expose primary sources and preserved copies
+PASS No document overflow 360px universe
+PASS No document overflow 360px company/000660
+PASS No document overflow 360px lab
+PASS No document overflow 360px tracking
+PASS No document overflow 360px sources
+PASS No document overflow 390px universe
+PASS No document overflow 390px company/000660
+PASS No document overflow 390px lab
+PASS No document overflow 390px tracking
+PASS No document overflow 390px sources
+PASS No document overflow 768px universe
+PASS No document overflow 768px company/000660
+PASS No document overflow 768px lab
+PASS No document overflow 768px tracking
+PASS No document overflow 768px sources
+PASS No visible undefined values
+PASS 101 live-system browser checks; 8 real-data PDFs saved.

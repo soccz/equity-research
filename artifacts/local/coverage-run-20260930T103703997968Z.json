@@ -1,0 +1,120 @@
+{
+  "evaluation": {
+    "counts": {
+      "exactClassifications": 5,
+      "falseAccepts": 5,
+      "falseRejects": 1,
+      "invalidResponses": 0,
+      "modelFalseAccepts": 5,
+      "modelFalseRejects": 1,
+      "plannedTotal": 12,
+      "shouldAccept": 6,
+      "shouldReject": 6,
+      "styleBlocks": 0,
+      "total": 12
+    },
+    "gatePassed": false,
+    "recordHash": "f1fc71b169a57f43193b4ffa355c7b92dff59f2b9408d5a28bfd1b130a39db27",
+    "status": "completed"
+  },
+  "externalAIUsed": false,
+  "finishedAt": "2026-09-30T10:39:56.989218+00:00",
+  "model": "qwen3:8b",
+  "records": [
+    {
+      "company": "MU",
+      "error": "ValueError: Local response incomplete; preserve it as a failed attempt",
+      "recordHash": "ceb1f53c24e9de3d7bce2dd126c69be0620915a197841df068bcf9b55c5e96da",
+      "reused": false,
+      "status": "failed"
+    },
+    {
+      "company": "NVDA",
+      "error": "ValueError: Local response incomplete; preserve it as a failed attempt",
+      "recordHash": "76affa926f623d652cebc35ecbbd9a5d3582320d1c27553d4ae1d2a0b30b5995",
+      "reused": false,
+      "status": "failed"
+    },
+    {
+      "company": "GOOGL",
+      "error": "ValueError: Local response incomplete; preserve it as a failed attempt",
+      "recordHash": "7e5b31b7eb192e7c3ddd0c2e8a3f060d563a34a10f8302424d7e23f04f29d3b9",
+      "reused": false,
+      "status": "failed"
+    },
+    {
+      "company": "AAPL",
+      "error": "JSONDecodeError: Extra data: line 1 column 213 (char 212)",
+      "recordHash": "f2b596e811a9d1473bc81e3d8d01d388b37d75f04ee1b69b429ebe766115c5f4",
+      "reused": false,
+      "status": "failed"
+    },
+    {
+      "company": "MSFT",
+      "error": "ValueError: Local response incomplete; preserve it as a failed attempt",
+      "recordHash": "d01951bf2ccae940b6d73ce5aee84c1af77356d062778807b959b522079cd49e",
+      "reused": false,
+      "status": "failed"
+    },
+    {
+      "company": "AMZN",
+      "error": "ValueError: Local response incomplete; preserve it as a failed attempt",
+      "recordHash": "b4d6bdd4abc913b4391d9be1d9e8b3e94e82452f4188188cb17326fc03327362",
+      "reused": false,
+      "status": "failed"
+    },
+    {
+      "company": "META",
+      "error": "ValueError: Local response incomplete; preserve it as a failed attempt",
+      "recordHash": "b422371e009d8c67ceec58911bcf5a0a66f140d8a3407486fbc64c07e5c73951",
+      "reused": false,
+      "status": "failed"
+    }
+  ],
+  "selected": [
+    "MU",
+    "NVDA",
+    "GOOGL",
+    "AAPL",
+    "MSFT",
+    "AMZN",
+    "META",
+    "AMD",
+    "AVGO",
+    "QCOM",
+    "INTC",
+    "AMAT",
+    "LRCX",
+    "TSLA",
+    "GM",
+    "F",
+    "GE",
+    "CAT",
+    "LLY",
+    "JNJ",
+    "000660",
+    "005930",
+    "035420",
+    "066570",
+    "005380",
+    "000270",
+    "012330",
+    "035720",
+    "006400",
+    "051910",
+    "373220",
+    "005490",
+    "207940",
+    "068270",
+    "000100",
+    "128940",
+    "329180",
+    "012450",
+    "034020",
+    "267260"
+  ],
+  "snapshotHash": "2e0ad72e51a7f6b2788cf748a0db1688192e04b9270744672f52f91227967613",
+  "startedAt": "2026-09-30T10:37:03.997998+00:00",
+  "status": "interrupted_for_runtime_diagnosis",
+  "interruption": "Stopped this project batch after repeated unconstrained JSON output; partial requests and results retained."
+}

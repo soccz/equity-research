@@ -1,0 +1,15 @@
+{
+  "file": "data/sources/filing-0000320193-25-000079-e1076735f1c81bc9.xbrl",
+  "sha256": "e1076735f1c81bc96d5c1ff6e1a9d23515d6eacf52b405cb1f7da3e379ac533b",
+  "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927_htm.xml",
+  "primaryUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm",
+  "provider": "SEC",
+  "accession": "0000320193-25-000079",
+  "cik": 320193,
+  "retrievedAt": "2026-10-01T05:02:30.472593+00:00",
+  "indexSource": {
+    "file": "data/sources/filing-0000320193-25-000079-index-04fec1e0446b3186.html",
+    "sha256": "04fec1e0446b3186e6d2029bdcfc8a1d0ce82cd598d3183b917e825f889cf7ae",
+    "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/0000320193-25-000079-index.html"
+  }
+}

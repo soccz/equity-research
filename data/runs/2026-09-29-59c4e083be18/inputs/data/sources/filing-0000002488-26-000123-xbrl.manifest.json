@@ -1,0 +1,15 @@
+{
+  "file": "data/sources/filing-0000002488-26-000123-39e82b6aaec2de30.xbrl",
+  "sha256": "39e82b6aaec2de306ebbe9368ec7d71375d45cb7f36e0e0f2cbcc34ad50c8a09",
+  "url": "https://www.sec.gov/Archives/edgar/data/2488/000000248826000123/amd-20260627_htm.xml",
+  "primaryUrl": "https://www.sec.gov/Archives/edgar/data/2488/000000248826000123/amd-20260627.htm",
+  "provider": "SEC",
+  "accession": "0000002488-26-000123",
+  "cik": 2488,
+  "retrievedAt": "2026-09-30T11:15:57.313730+00:00",
+  "indexSource": {
+    "file": "data/sources/filing-0000002488-26-000123-index-c940289ffe2e2583.html",
+    "sha256": "c940289ffe2e2583575c9c6b75b7d31faa9e2b138a78924aa0202d07b6df6b0e",
+    "url": "https://www.sec.gov/Archives/edgar/data/2488/000000248826000123/0000002488-26-000123-index.html"
+  }
+}

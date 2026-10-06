@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/mnt/20t/주식/scripts/check-artifacts.py", line 304, in <module>
+    raise ValueError(
+ValueError: Biosimilar comparison lost its source-specific cash scope

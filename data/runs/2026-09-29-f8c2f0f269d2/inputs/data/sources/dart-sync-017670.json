@@ -1,0 +1,38 @@
+{
+  "ticker": "017670",
+  "asOf": "2026-09-29",
+  "checkedAt": "2026-10-01T10:22:45.542725+00:00",
+  "filing": {
+    "corp_code": "00159023",
+    "corp_name": "SK텔레콤",
+    "stock_code": "017670",
+    "corp_cls": "Y",
+    "report_nm": "반기보고서 (2026.06)",
+    "rcept_no": "20260813001728",
+    "flr_nm": "SK텔레콤",
+    "rcept_dt": "20260813",
+    "rm": ""
+  },
+  "queries": [
+    {
+      "file": "data/sources/dart-list-017670-a907727727891dc3.json",
+      "sha256": "a907727727891dc324e098b4db8482a2b8e89fef18491e91725ebb9c4af7c698",
+      "parameters": {
+        "corp_code": "00159023",
+        "bgn_de": "20250101",
+        "end_de": "20260929",
+        "pblntf_ty": "A",
+        "last_reprt_at": "N",
+        "page_count": 100,
+        "page_no": 1,
+        "sort": "date",
+        "sort_mth": "desc"
+      }
+    }
+  ],
+  "package": {
+    "file": "data/sources/dart-package-20260813001728-12bd32e263198b23.zip",
+    "sha256": "12bd32e263198b23a662c71a0dd1632ddf8638509b0f38e9a89e1ba2b4ff87e0"
+  },
+  "instanceHash": "3c7ede10092178f8266042cb55fd91f492140c86540b6c2b707db8c462a31461"
+}

@@ -1,0 +1,1393 @@
+{
+  "status": "ready",
+  "start": "2025-05-30",
+  "end": "2026-05-28",
+  "method": "annual_plus_current_less_prior",
+  "segments": [
+    {
+      "id": "CMBUMember",
+      "label": "클라우드 메모리 CMBU",
+      "revenue": {
+        "value": 31345000000.0,
+        "components": [
+          {
+            "coefficient": 1,
+            "label": "직전 연간",
+            "fact": {
+              "start": "2024-08-30",
+              "end": "2025-08-28",
+              "dimensions": [
+                [
+                  "ConsolidationItemsAxis",
+                  "OperatingSegmentsMember"
+                ],
+                [
+                  "StatementBusinessSegmentsAxis",
+                  "CMBUMember"
+                ]
+              ],
+              "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "taxonomy": "http://fasb.org/us-gaap/2025",
+              "value": 13524000000.0,
+              "unit": "USD",
+              "context": "c-318",
+              "factId": "f-1512",
+              "decimals": "-6",
+              "accession": "0000723125-25-000028",
+              "filedAt": "2025-10-03",
+              "sourceFile": "data/sources/filing-0000723125-25-000028-d4eede66eac20393.xbrl",
+              "sourceHash": "d4eede66eac20393a3c93849bdd72477dd977d59e36d8e742381d1da6e393ed8",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/723125/000072312525000028/mu-20250828.htm"
+            }
+          },
+          {
+            "coefficient": 1,
+            "label": "당기 누적",
+            "fact": {
+              "start": "2025-08-29",
+              "end": "2026-05-28",
+              "dimensions": [
+                [
+                  "ConsolidationItemsAxis",
+                  "OperatingSegmentsMember"
+                ],
+                [
+                  "StatementBusinessSegmentsAxis",
+                  "CMBUMember"
+                ]
+              ],
+              "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "taxonomy": "http://fasb.org/us-gaap/2025",
+              "value": 26802000000.0,
+              "unit": "USD",
+              "context": "c-231",
+              "factId": "f-999",
+              "decimals": "-6",
+              "accession": "0000723125-26-000015",
+              "filedAt": "2026-06-25",
+              "sourceFile": "data/sources/filing-0000723125-26-000015-de68a2e57df77b0b.xbrl",
+              "sourceHash": "de68a2e57df77b0b26d9af3a0f5494aa821ffc927685dd535ccae5b8193203e2",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/mu-20260528.htm"
+            }
+          },
+          {
+            "coefficient": -1,
+            "label": "전년 누적",
+            "fact": {
+              "start": "2024-08-30",
+              "end": "2025-05-29",
+              "dimensions": [
+                [
+                  "ConsolidationItemsAxis",
+                  "OperatingSegmentsMember"
+                ],
+                [
+                  "StatementBusinessSegmentsAxis",
+                  "CMBUMember"
+                ]
+              ],
+              "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "taxonomy": "http://fasb.org/us-gaap/2025",
+              "value": 8981000000.0,
+              "unit": "USD",
+              "context": "c-237",
+              "factId": "f-1048",
+              "decimals": "-6",
+              "accession": "0000723125-26-000015",
+              "filedAt": "2026-06-25",
+              "sourceFile": "data/sources/filing-0000723125-26-000015-de68a2e57df77b0b.xbrl",
+              "sourceHash": "de68a2e57df77b0b26d9af3a0f5494aa821ffc927685dd535ccae5b8193203e2",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/mu-20260528.htm"
+            }
+          }
+        ]
+      },
+      "operatingIncome": {
+        "value": 20974000000.0,
+        "components": [
+          {
+            "coefficient": 1,
+            "label": "직전 연간",
+            "fact": {
+              "start": "2024-08-30",
+              "end": "2025-08-28",
+              "dimensions": [
+                [
+                  "ConsolidationItemsAxis",
+                  "OperatingSegmentsMember"
+                ],
+                [
+                  "StatementBusinessSegmentsAxis",
+                  "CMBUMember"
+                ]
+              ],
+              "tag": "OperatingIncomeLoss",
+              "taxonomy": "http://fasb.org/us-gaap/2025",
+              "value": 6129000000.0,
+              "unit": "USD",
+              "context": "c-318",
+              "factId": "f-1561",
+              "decimals": "-6",
+              "accession": "0000723125-25-000028",
+              "filedAt": "2025-10-03",
+              "sourceFile": "data/sources/filing-0000723125-25-000028-d4eede66eac20393.xbrl",
+              "sourceHash": "d4eede66eac20393a3c93849bdd72477dd977d59e36d8e742381d1da6e393ed8",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/723125/000072312525000028/mu-20250828.htm"
+            }
+          },
+          {
+            "coefficient": 1,
+            "label": "당기 누적",
+            "fact": {
+              "start": "2025-08-29",
+              "end": "2026-05-28",
+              "dimensions": [
+                [
+                  "ConsolidationItemsAxis",
+                  "OperatingSegmentsMember"
+                ],
+                [
+                  "StatementBusinessSegmentsAxis",
+                  "CMBUMember"
+                ]
+              ],
+              "tag": "OperatingIncomeLoss",
+              "taxonomy": "http://fasb.org/us-gaap/2025",
+              "value": 18804000000.0,
+              "unit": "USD",
+              "context": "c-231",
+              "factId": "f-1041",
+              "decimals": "-6",
+              "accession": "0000723125-26-000015",
+              "filedAt": "2026-06-25",
+              "sourceFile": "data/sources/filing-0000723125-26-000015-de68a2e57df77b0b.xbrl",
+              "sourceHash": "de68a2e57df77b0b26d9af3a0f5494aa821ffc927685dd535ccae5b8193203e2",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/mu-20260528.htm"
+            }
+          },
+          {
+            "coefficient": -1,
+            "label": "전년 누적",
+            "fact": {
+              "start": "2024-08-30",
+              "end": "2025-05-29",
+              "dimensions": [
+                [
+                  "ConsolidationItemsAxis",
+                  "OperatingSegmentsMember"
+                ],
+                [
+                  "StatementBusinessSegmentsAxis",
+                  "CMBUMember"
+                ]
+              ],
+              "tag": "OperatingIncomeLoss",
+              "taxonomy": "http://fasb.org/us-gaap/2025",
+              "value": 3959000000.0,
+              "unit": "USD",
+              "context": "c-237",
+              "factId": "f-1090",
+              "decimals": "-6",
+              "accession": "0000723125-26-000015",
+              "filedAt": "2026-06-25",
+              "sourceFile": "data/sources/filing-0000723125-26-000015-de68a2e57df77b0b.xbrl",
+              "sourceHash": "de68a2e57df77b0b26d9af3a0f5494aa821ffc927685dd535ccae5b8193203e2",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/mu-20260528.htm"
+            }
+          }
+        ]
+      },
+      "margin": 0.6691338331472324
+    },
+    {
+      "id": "CDBUMember",
+      "label": "코어 데이터센터 CDBU",
+      "revenue": {
+        "value": 21167000000.0,
+        "components": [
+          {
+            "coefficient": 1,
+            "label": "직전 연간",
+            "fact": {
+              "start": "2024-08-30",
+              "end": "2025-08-28",
+              "dimensions": [
+                [
+                  "ConsolidationItemsAxis",
+                  "OperatingSegmentsMember"
+                ],
+                [
+                  "StatementBusinessSegmentsAxis",
+                  "CDBUMember"
+                ]
+              ],
+              "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "taxonomy": "http://fasb.org/us-gaap/2025",
+              "value": 7229000000.0,
+              "unit": "USD",
+              "context": "c-319",
+              "factId": "f-1513",
+              "decimals": "-6",
+              "accession": "0000723125-25-000028",
+              "filedAt": "2025-10-03",
+              "sourceFile": "data/sources/filing-0000723125-25-000028-d4eede66eac20393.xbrl",
+              "sourceHash": "d4eede66eac20393a3c93849bdd72477dd977d59e36d8e742381d1da6e393ed8",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/723125/000072312525000028/mu-20250828.htm"
+            }
+          },
+          {
+            "coefficient": 1,
+            "label": "당기 누적",
+            "fact": {
+              "start": "2025-08-29",
+              "end": "2026-05-28",
+              "dimensions": [
+                [
+                  "ConsolidationItemsAxis",
+                  "OperatingSegmentsMember"
+                ],
+                [
+                  "StatementBusinessSegmentsAxis",
+                  "CDBUMember"
+                ]
+              ],
+              "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "taxonomy": "http://fasb.org/us-gaap/2025",
+              "value": 19590000000.0,
+              "unit": "USD",
+              "context": "c-232",
+              "factId": "f-1000",
+              "decimals": "-6",
+              "accession": "0000723125-26-000015",
+              "filedAt": "2026-06-25",
+              "sourceFile": "data/sources/filing-0000723125-26-000015-de68a2e57df77b0b.xbrl",
+              "sourceHash": "de68a2e57df77b0b26d9af3a0f5494aa821ffc927685dd535ccae5b8193203e2",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/mu-20260528.htm"
+            }
+          },
+          {
+            "coefficient": -1,
+            "label": "전년 누적",
+            "fact": {
+              "start": "2024-08-30",
+              "end": "2025-05-29",
+              "dimensions": [
+                [
+                  "ConsolidationItemsAxis",
+                  "OperatingSegmentsMember"
+                ],
+                [
+                  "StatementBusinessSegmentsAxis",
+                  "CDBUMember"
+                ]
+              ],
+              "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "taxonomy": "http://fasb.org/us-gaap/2025",
+              "value": 5652000000.0,
+              "unit": "USD",
+              "context": "c-238",
+              "factId": "f-1049",
+              "decimals": "-6",
+              "accession": "0000723125-26-000015",
+              "filedAt": "2026-06-25",
+              "sourceFile": "data/sources/filing-0000723125-26-000015-de68a2e57df77b0b.xbrl",
+              "sourceHash": "de68a2e57df77b0b26d9af3a0f5494aa821ffc927685dd535ccae5b8193203e2",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/mu-20260528.htm"
+            }
+          }
+        ]
+      },
+      "operatingIncome": {
+        "value": 14609000000.0,
+        "components": [
+          {
+            "coefficient": 1,
+            "label": "직전 연간",
+            "fact": {
+              "start": "2024-08-30",
+              "end": "2025-08-28",
+              "dimensions": [
+                [
+                  "ConsolidationItemsAxis",
+                  "OperatingSegmentsMember"
+                ],
+                [
+                  "StatementBusinessSegmentsAxis",
+                  "CDBUMember"
+                ]
+              ],
+              "tag": "OperatingIncomeLoss",
+              "taxonomy": "http://fasb.org/us-gaap/2025",
+              "value": 2180000000.0,
+              "unit": "USD",
+              "context": "c-319",
+              "factId": "f-1562",
+              "decimals": "-6",
+              "accession": "0000723125-25-000028",
+              "filedAt": "2025-10-03",
+              "sourceFile": "data/sources/filing-0000723125-25-000028-d4eede66eac20393.xbrl",
+              "sourceHash": "d4eede66eac20393a3c93849bdd72477dd977d59e36d8e742381d1da6e393ed8",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/723125/000072312525000028/mu-20250828.htm"
+            }
+          },
+          {
+            "coefficient": 1,
+            "label": "당기 누적",
+            "fact": {
+              "start": "2025-08-29",
+              "end": "2026-05-28",
+              "dimensions": [
+                [
+                  "ConsolidationItemsAxis",
+                  "OperatingSegmentsMember"
+                ],
+                [
+                  "StatementBusinessSegmentsAxis",
+                  "CDBUMember"
+                ]
+              ],
+              "tag": "OperatingIncomeLoss",
+              "taxonomy": "http://fasb.org/us-gaap/2025",
+              "value": 14218000000.0,
+              "unit": "USD",
+              "context": "c-232",
+              "factId": "f-1042",
+              "decimals": "-6",
+              "accession": "0000723125-26-000015",
+              "filedAt": "2026-06-25",
+              "sourceFile": "data/sources/filing-0000723125-26-000015-de68a2e57df77b0b.xbrl",
+              "sourceHash": "de68a2e57df77b0b26d9af3a0f5494aa821ffc927685dd535ccae5b8193203e2",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/mu-20260528.htm"
+            }
+          },
+          {
+            "coefficient": -1,
+            "label": "전년 누적",
+            "fact": {
+              "start": "2024-08-30",
+              "end": "2025-05-29",
+              "dimensions": [
+                [
+                  "ConsolidationItemsAxis",
+                  "OperatingSegmentsMember"
+                ],
+                [
+                  "StatementBusinessSegmentsAxis",
+                  "CDBUMember"
+                ]
+              ],
+              "tag": "OperatingIncomeLoss",
+              "taxonomy": "http://fasb.org/us-gaap/2025",
+              "value": 1789000000.0,
+              "unit": "USD",
+              "context": "c-238",
+              "factId": "f-1091",
+              "decimals": "-6",
+              "accession": "0000723125-26-000015",
+              "filedAt": "2026-06-25",
+              "sourceFile": "data/sources/filing-0000723125-26-000015-de68a2e57df77b0b.xbrl",
+              "sourceHash": "de68a2e57df77b0b26d9af3a0f5494aa821ffc927685dd535ccae5b8193203e2",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/mu-20260528.htm"
+            }
+          }
+        ]
+      },
+      "margin": 0.6901781074313791
+    },
+    {
+      "id": "MCBUMember",
+      "label": "모바일·클라이언트 MCBU",
+      "revenue": {
+        "value": 27247000000.0,
+        "components": [
+          {
+            "coefficient": 1,
+            "label": "직전 연간",
+            "fact": {
+              "start": "2024-08-30",
+              "end": "2025-08-28",
+              "dimensions": [
+                [
+                  "ConsolidationItemsAxis",
+                  "OperatingSegmentsMember"
+                ],
+                [
+                  "StatementBusinessSegmentsAxis",
+                  "MCBUMember"
+                ]
+              ],
+              "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "taxonomy": "http://fasb.org/us-gaap/2025",
+              "value": 11859000000.0,
+              "unit": "USD",
+              "context": "c-320",
+              "factId": "f-1514",
+              "decimals": "-6",
+              "accession": "0000723125-25-000028",
+              "filedAt": "2025-10-03",
+              "sourceFile": "data/sources/filing-0000723125-25-000028-d4eede66eac20393.xbrl",
+              "sourceHash": "d4eede66eac20393a3c93849bdd72477dd977d59e36d8e742381d1da6e393ed8",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/723125/000072312525000028/mu-20250828.htm"
+            }
+          },
+          {
+            "coefficient": 1,
+            "label": "당기 누적",
+            "fact": {
+              "start": "2025-08-29",
+              "end": "2026-05-28",
+              "dimensions": [
+                [
+                  "ConsolidationItemsAxis",
+                  "OperatingSegmentsMember"
+                ],
+                [
+                  "StatementBusinessSegmentsAxis",
+                  "MCBUMember"
+                ]
+              ],
+              "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "taxonomy": "http://fasb.org/us-gaap/2025",
+              "value": 23487000000.0,
+              "unit": "USD",
+              "context": "c-233",
+              "factId": "f-1001",
+              "decimals": "-6",
+              "accession": "0000723125-26-000015",
+              "filedAt": "2026-06-25",
+              "sourceFile": "data/sources/filing-0000723125-26-000015-de68a2e57df77b0b.xbrl",
+              "sourceHash": "de68a2e57df77b0b26d9af3a0f5494aa821ffc927685dd535ccae5b8193203e2",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/mu-20260528.htm"
+            }
+          },
+          {
+            "coefficient": -1,
+            "label": "전년 누적",
+            "fact": {
+              "start": "2024-08-30",
+              "end": "2025-05-29",
+              "dimensions": [
+                [
+                  "ConsolidationItemsAxis",
+                  "OperatingSegmentsMember"
+                ],
+                [
+                  "StatementBusinessSegmentsAxis",
+                  "MCBUMember"
+                ]
+              ],
+              "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "taxonomy": "http://fasb.org/us-gaap/2025",
+              "value": 8099000000.0,
+              "unit": "USD",
+              "context": "c-239",
+              "factId": "f-1050",
+              "decimals": "-6",
+              "accession": "0000723125-26-000015",
+              "filedAt": "2026-06-25",
+              "sourceFile": "data/sources/filing-0000723125-26-000015-de68a2e57df77b0b.xbrl",
+              "sourceHash": "de68a2e57df77b0b26d9af3a0f5494aa821ffc927685dd535ccae5b8193203e2",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/mu-20260528.htm"
+            }
+          }
+        ]
+      },
+      "operatingIncome": {
+        "value": 18830000000.0,
+        "components": [
+          {
+            "coefficient": 1,
+            "label": "직전 연간",
+            "fact": {
+              "start": "2024-08-30",
+              "end": "2025-08-28",
+              "dimensions": [
+                [
+                  "ConsolidationItemsAxis",
+                  "OperatingSegmentsMember"
+                ],
+                [
+                  "StatementBusinessSegmentsAxis",
+                  "MCBUMember"
+                ]
+              ],
+              "tag": "OperatingIncomeLoss",
+              "taxonomy": "http://fasb.org/us-gaap/2025",
+              "value": 1981000000.0,
+              "unit": "USD",
+              "context": "c-320",
+              "factId": "f-1563",
+              "decimals": "-6",
+              "accession": "0000723125-25-000028",
+              "filedAt": "2025-10-03",
+              "sourceFile": "data/sources/filing-0000723125-25-000028-d4eede66eac20393.xbrl",
+              "sourceHash": "d4eede66eac20393a3c93849bdd72477dd977d59e36d8e742381d1da6e393ed8",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/723125/000072312525000028/mu-20250828.htm"
+            }
+          },
+          {
+            "coefficient": 1,
+            "label": "당기 누적",
+            "fact": {
+              "start": "2025-08-29",
+              "end": "2026-05-28",
+              "dimensions": [
+                [
+                  "ConsolidationItemsAxis",
+                  "OperatingSegmentsMember"
+                ],
+                [
+                  "StatementBusinessSegmentsAxis",
+                  "MCBUMember"
+                ]
+              ],
+              "tag": "OperatingIncomeLoss",
+              "taxonomy": "http://fasb.org/us-gaap/2025",
+              "value": 17726000000.0,
+              "unit": "USD",
+              "context": "c-233",
+              "factId": "f-1043",
+              "decimals": "-6",
+              "accession": "0000723125-26-000015",
+              "filedAt": "2026-06-25",
+              "sourceFile": "data/sources/filing-0000723125-26-000015-de68a2e57df77b0b.xbrl",
+              "sourceHash": "de68a2e57df77b0b26d9af3a0f5494aa821ffc927685dd535ccae5b8193203e2",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/mu-20260528.htm"
+            }
+          },
+          {
+            "coefficient": -1,
+            "label": "전년 누적",
+            "fact": {
+              "start": "2024-08-30",
+              "end": "2025-05-29",
+              "dimensions": [
+                [
+                  "ConsolidationItemsAxis",
+                  "OperatingSegmentsMember"
+                ],
+                [
+                  "StatementBusinessSegmentsAxis",
+                  "MCBUMember"
+                ]
+              ],
+              "tag": "OperatingIncomeLoss",
+              "taxonomy": "http://fasb.org/us-gaap/2025",
+              "value": 877000000.0,
+              "unit": "USD",
+              "context": "c-239",
+              "factId": "f-1092",
+              "decimals": "-6",
+              "accession": "0000723125-26-000015",
+              "filedAt": "2026-06-25",
+              "sourceFile": "data/sources/filing-0000723125-26-000015-de68a2e57df77b0b.xbrl",
+              "sourceHash": "de68a2e57df77b0b26d9af3a0f5494aa821ffc927685dd535ccae5b8193203e2",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/mu-20260528.htm"
+            }
+          }
+        ]
+      },
+      "margin": 0.691085257092524
+    },
+    {
+      "id": "AEBUMember",
+      "label": "차량·임베디드 AEBU",
+      "revenue": {
+        "value": 10496000000.0,
+        "components": [
+          {
+            "coefficient": 1,
+            "label": "직전 연간",
+            "fact": {
+              "start": "2024-08-30",
+              "end": "2025-08-28",
+              "dimensions": [
+                [
+                  "ConsolidationItemsAxis",
+                  "OperatingSegmentsMember"
+                ],
+                [
+                  "StatementBusinessSegmentsAxis",
+                  "AEBUMember"
+                ]
+              ],
+              "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "taxonomy": "http://fasb.org/us-gaap/2025",
+              "value": 4753000000.0,
+              "unit": "USD",
+              "context": "c-321",
+              "factId": "f-1515",
+              "decimals": "-6",
+              "accession": "0000723125-25-000028",
+              "filedAt": "2025-10-03",
+              "sourceFile": "data/sources/filing-0000723125-25-000028-d4eede66eac20393.xbrl",
+              "sourceHash": "d4eede66eac20393a3c93849bdd72477dd977d59e36d8e742381d1da6e393ed8",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/723125/000072312525000028/mu-20250828.htm"
+            }
+          },
+          {
+            "coefficient": 1,
+            "label": "당기 누적",
+            "fact": {
+              "start": "2025-08-29",
+              "end": "2026-05-28",
+              "dimensions": [
+                [
+                  "ConsolidationItemsAxis",
+                  "OperatingSegmentsMember"
+                ],
+                [
+                  "StatementBusinessSegmentsAxis",
+                  "AEBUMember"
+                ]
+              ],
+              "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "taxonomy": "http://fasb.org/us-gaap/2025",
+              "value": 9062000000.0,
+              "unit": "USD",
+              "context": "c-234",
+              "factId": "f-1002",
+              "decimals": "-6",
+              "accession": "0000723125-26-000015",
+              "filedAt": "2026-06-25",
+              "sourceFile": "data/sources/filing-0000723125-26-000015-de68a2e57df77b0b.xbrl",
+              "sourceHash": "de68a2e57df77b0b26d9af3a0f5494aa821ffc927685dd535ccae5b8193203e2",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/mu-20260528.htm"
+            }
+          },
+          {
+            "coefficient": -1,
+            "label": "전년 누적",
+            "fact": {
+              "start": "2024-08-30",
+              "end": "2025-05-29",
+              "dimensions": [
+                [
+                  "ConsolidationItemsAxis",
+                  "OperatingSegmentsMember"
+                ],
+                [
+                  "StatementBusinessSegmentsAxis",
+                  "AEBUMember"
+                ]
+              ],
+              "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "taxonomy": "http://fasb.org/us-gaap/2025",
+              "value": 3319000000.0,
+              "unit": "USD",
+              "context": "c-240",
+              "factId": "f-1051",
+              "decimals": "-6",
+              "accession": "0000723125-26-000015",
+              "filedAt": "2026-06-25",
+              "sourceFile": "data/sources/filing-0000723125-26-000015-de68a2e57df77b0b.xbrl",
+              "sourceHash": "de68a2e57df77b0b26d9af3a0f5494aa821ffc927685dd535ccae5b8193203e2",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/mu-20260528.htm"
+            }
+          }
+        ]
+      },
+      "operatingIncome": {
+        "value": 6094000000.0,
+        "components": [
+          {
+            "coefficient": 1,
+            "label": "직전 연간",
+            "fact": {
+              "start": "2024-08-30",
+              "end": "2025-08-28",
+              "dimensions": [
+                [
+                  "ConsolidationItemsAxis",
+                  "OperatingSegmentsMember"
+                ],
+                [
+                  "StatementBusinessSegmentsAxis",
+                  "AEBUMember"
+                ]
+              ],
+              "tag": "OperatingIncomeLoss",
+              "taxonomy": "http://fasb.org/us-gaap/2025",
+              "value": 557000000.0,
+              "unit": "USD",
+              "context": "c-321",
+              "factId": "f-1564",
+              "decimals": "-6",
+              "accession": "0000723125-25-000028",
+              "filedAt": "2025-10-03",
+              "sourceFile": "data/sources/filing-0000723125-25-000028-d4eede66eac20393.xbrl",
+              "sourceHash": "d4eede66eac20393a3c93849bdd72477dd977d59e36d8e742381d1da6e393ed8",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/723125/000072312525000028/mu-20250828.htm"
+            }
+          },
+          {
+            "coefficient": 1,
+            "label": "당기 누적",
+            "fact": {
+              "start": "2025-08-29",
+              "end": "2026-05-28",
+              "dimensions": [
+                [
+                  "ConsolidationItemsAxis",
+                  "OperatingSegmentsMember"
+                ],
+                [
+                  "StatementBusinessSegmentsAxis",
+                  "AEBUMember"
+                ]
+              ],
+              "tag": "OperatingIncomeLoss",
+              "taxonomy": "http://fasb.org/us-gaap/2025",
+              "value": 5802000000.0,
+              "unit": "USD",
+              "context": "c-234",
+              "factId": "f-1044",
+              "decimals": "-6",
+              "accession": "0000723125-26-000015",
+              "filedAt": "2026-06-25",
+              "sourceFile": "data/sources/filing-0000723125-26-000015-de68a2e57df77b0b.xbrl",
+              "sourceHash": "de68a2e57df77b0b26d9af3a0f5494aa821ffc927685dd535ccae5b8193203e2",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/mu-20260528.htm"
+            }
+          },
+          {
+            "coefficient": -1,
+            "label": "전년 누적",
+            "fact": {
+              "start": "2024-08-30",
+              "end": "2025-05-29",
+              "dimensions": [
+                [
+                  "ConsolidationItemsAxis",
+                  "OperatingSegmentsMember"
+                ],
+                [
+                  "StatementBusinessSegmentsAxis",
+                  "AEBUMember"
+                ]
+              ],
+              "tag": "OperatingIncomeLoss",
+              "taxonomy": "http://fasb.org/us-gaap/2025",
+              "value": 265000000.0,
+              "unit": "USD",
+              "context": "c-240",
+              "factId": "f-1093",
+              "decimals": "-6",
+              "accession": "0000723125-26-000015",
+              "filedAt": "2026-06-25",
+              "sourceFile": "data/sources/filing-0000723125-26-000015-de68a2e57df77b0b.xbrl",
+              "sourceHash": "de68a2e57df77b0b26d9af3a0f5494aa821ffc927685dd535ccae5b8193203e2",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/mu-20260528.htm"
+            }
+          }
+        ]
+      },
+      "margin": 0.5806021341463414
+    },
+    {
+      "id": "AllOtherSegmentsMember",
+      "label": "기타",
+      "revenue": {
+        "value": 19000000.0,
+        "components": [
+          {
+            "coefficient": 1,
+            "label": "직전 연간",
+            "fact": {
+              "start": "2024-08-30",
+              "end": "2025-08-28",
+              "dimensions": [
+                [
+                  "ConsolidationItemsAxis",
+                  "OperatingSegmentsMember"
+                ],
+                [
+                  "StatementBusinessSegmentsAxis",
+                  "AllOtherSegmentsMember"
+                ]
+              ],
+              "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "taxonomy": "http://fasb.org/us-gaap/2025",
+              "value": 13000000.0,
+              "unit": "USD",
+              "context": "c-322",
+              "factId": "f-1516",
+              "decimals": "-6",
+              "accession": "0000723125-25-000028",
+              "filedAt": "2025-10-03",
+              "sourceFile": "data/sources/filing-0000723125-25-000028-d4eede66eac20393.xbrl",
+              "sourceHash": "d4eede66eac20393a3c93849bdd72477dd977d59e36d8e742381d1da6e393ed8",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/723125/000072312525000028/mu-20250828.htm"
+            }
+          },
+          {
+            "coefficient": 1,
+            "label": "당기 누적",
+            "fact": {
+              "start": "2025-08-29",
+              "end": "2026-05-28",
+              "dimensions": [
+                [
+                  "ConsolidationItemsAxis",
+                  "OperatingSegmentsMember"
+                ],
+                [
+                  "StatementBusinessSegmentsAxis",
+                  "AllOtherSegmentsMember"
+                ]
+              ],
+              "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "taxonomy": "http://fasb.org/us-gaap/2025",
+              "value": 18000000.0,
+              "unit": "USD",
+              "context": "c-235",
+              "factId": "f-1003",
+              "decimals": "-6",
+              "accession": "0000723125-26-000015",
+              "filedAt": "2026-06-25",
+              "sourceFile": "data/sources/filing-0000723125-26-000015-de68a2e57df77b0b.xbrl",
+              "sourceHash": "de68a2e57df77b0b26d9af3a0f5494aa821ffc927685dd535ccae5b8193203e2",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/mu-20260528.htm"
+            }
+          },
+          {
+            "coefficient": -1,
+            "label": "전년 누적",
+            "fact": {
+              "start": "2024-08-30",
+              "end": "2025-05-29",
+              "dimensions": [
+                [
+                  "ConsolidationItemsAxis",
+                  "OperatingSegmentsMember"
+                ],
+                [
+                  "StatementBusinessSegmentsAxis",
+                  "AllOtherSegmentsMember"
+                ]
+              ],
+              "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "taxonomy": "http://fasb.org/us-gaap/2025",
+              "value": 12000000.0,
+              "unit": "USD",
+              "context": "c-241",
+              "factId": "f-1052",
+              "decimals": "-6",
+              "accession": "0000723125-26-000015",
+              "filedAt": "2026-06-25",
+              "sourceFile": "data/sources/filing-0000723125-26-000015-de68a2e57df77b0b.xbrl",
+              "sourceHash": "de68a2e57df77b0b26d9af3a0f5494aa821ffc927685dd535ccae5b8193203e2",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/mu-20260528.htm"
+            }
+          }
+        ]
+      },
+      "operatingIncome": {
+        "value": 3000000.0,
+        "components": [
+          {
+            "coefficient": 1,
+            "label": "직전 연간",
+            "fact": {
+              "start": "2024-08-30",
+              "end": "2025-08-28",
+              "dimensions": [
+                [
+                  "ConsolidationItemsAxis",
+                  "OperatingSegmentsMember"
+                ],
+                [
+                  "StatementBusinessSegmentsAxis",
+                  "AllOtherSegmentsMember"
+                ]
+              ],
+              "tag": "OperatingIncomeLoss",
+              "taxonomy": "http://fasb.org/us-gaap/2025",
+              "value": -1000000.0,
+              "unit": "USD",
+              "context": "c-322",
+              "factId": "f-1565",
+              "decimals": "-6",
+              "accession": "0000723125-25-000028",
+              "filedAt": "2025-10-03",
+              "sourceFile": "data/sources/filing-0000723125-25-000028-d4eede66eac20393.xbrl",
+              "sourceHash": "d4eede66eac20393a3c93849bdd72477dd977d59e36d8e742381d1da6e393ed8",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/723125/000072312525000028/mu-20250828.htm"
+            }
+          },
+          {
+            "coefficient": 1,
+            "label": "당기 누적",
+            "fact": {
+              "start": "2025-08-29",
+              "end": "2026-05-28",
+              "dimensions": [
+                [
+                  "ConsolidationItemsAxis",
+                  "OperatingSegmentsMember"
+                ],
+                [
+                  "StatementBusinessSegmentsAxis",
+                  "AllOtherSegmentsMember"
+                ]
+              ],
+              "tag": "OperatingIncomeLoss",
+              "taxonomy": "http://fasb.org/us-gaap/2025",
+              "value": 5000000.0,
+              "unit": "USD",
+              "context": "c-235",
+              "factId": "f-1045",
+              "decimals": "-6",
+              "accession": "0000723125-26-000015",
+              "filedAt": "2026-06-25",
+              "sourceFile": "data/sources/filing-0000723125-26-000015-de68a2e57df77b0b.xbrl",
+              "sourceHash": "de68a2e57df77b0b26d9af3a0f5494aa821ffc927685dd535ccae5b8193203e2",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/mu-20260528.htm"
+            }
+          },
+          {
+            "coefficient": -1,
+            "label": "전년 누적",
+            "fact": {
+              "start": "2024-08-30",
+              "end": "2025-05-29",
+              "dimensions": [
+                [
+                  "ConsolidationItemsAxis",
+                  "OperatingSegmentsMember"
+                ],
+                [
+                  "StatementBusinessSegmentsAxis",
+                  "AllOtherSegmentsMember"
+                ]
+              ],
+              "tag": "OperatingIncomeLoss",
+              "taxonomy": "http://fasb.org/us-gaap/2025",
+              "value": 1000000.0,
+              "unit": "USD",
+              "context": "c-241",
+              "factId": "f-1094",
+              "decimals": "-6",
+              "accession": "0000723125-26-000015",
+              "filedAt": "2026-06-25",
+              "sourceFile": "data/sources/filing-0000723125-26-000015-de68a2e57df77b0b.xbrl",
+              "sourceHash": "de68a2e57df77b0b26d9af3a0f5494aa821ffc927685dd535ccae5b8193203e2",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/mu-20260528.htm"
+            }
+          }
+        ]
+      },
+      "margin": 0.15789473684210525
+    }
+  ],
+  "reconciliations": {
+    "revenue": {
+      "status": "reconciled",
+      "subtotal": 90274000000.0,
+      "adjustments": [],
+      "adjustment": 0,
+      "total": {
+        "components": [
+          {
+            "coefficient": 1,
+            "fact": {
+              "accession": "0000723125-25-000028",
+              "basis": "consolidated",
+              "end": "2025-08-28",
+              "filedAt": "2025-10-03",
+              "metric": "revenue",
+              "priority": 0,
+              "sourceFile": "data/sources/sec-MU-a8b088c2111daef3.json",
+              "sourceHash": "a8b088c2111daef36536e53c81fef4c0f01220c64933e126a665b00a9257f882",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/723125/000072312525000028/0000723125-25-000028-index.html",
+              "standard": "US-GAAP",
+              "start": "2024-08-30",
+              "tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+              "unit": "USD",
+              "value": 37378000000
+            },
+            "label": "직전 회계연도"
+          },
+          {
+            "coefficient": 1,
+            "fact": {
+              "accession": "0000723125-26-000015",
+              "basis": "consolidated",
+              "end": "2026-05-28",
+              "filedAt": "2026-06-25",
+              "metric": "revenue",
+              "priority": 0,
+              "sourceFile": "data/sources/sec-MU-a8b088c2111daef3.json",
+              "sourceHash": "a8b088c2111daef36536e53c81fef4c0f01220c64933e126a665b00a9257f882",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/0000723125-26-000015-index.html",
+              "standard": "US-GAAP",
+              "start": "2025-08-29",
+              "tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+              "unit": "USD",
+              "value": 78959000000
+            },
+            "label": "당기 누적"
+          },
+          {
+            "coefficient": -1,
+            "fact": {
+              "accession": "0000723125-26-000015",
+              "basis": "consolidated",
+              "end": "2025-05-29",
+              "filedAt": "2026-06-25",
+              "metric": "revenue",
+              "priority": 0,
+              "sourceFile": "data/sources/sec-MU-a8b088c2111daef3.json",
+              "sourceHash": "a8b088c2111daef36536e53c81fef4c0f01220c64933e126a665b00a9257f882",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/0000723125-26-000015-index.html",
+              "standard": "US-GAAP",
+              "start": "2024-08-30",
+              "tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+              "unit": "USD",
+              "value": 26063000000
+            },
+            "label": "전년 누적"
+          }
+        ],
+        "value": 90274000000
+      },
+      "residual": 0.0,
+      "periods": [
+        {
+          "label": "직전 연간",
+          "start": "2024-08-30",
+          "end": "2025-08-28",
+          "subtotal": 37378000000.0,
+          "adjustment": 0,
+          "total": 37378000000,
+          "residual": 0.0,
+          "status": "reconciled"
+        },
+        {
+          "label": "당기 누적",
+          "start": "2025-08-29",
+          "end": "2026-05-28",
+          "subtotal": 78959000000.0,
+          "adjustment": 0,
+          "total": 78959000000,
+          "residual": 0.0,
+          "status": "reconciled"
+        },
+        {
+          "label": "전년 누적",
+          "start": "2024-08-30",
+          "end": "2025-05-29",
+          "subtotal": 26063000000.0,
+          "adjustment": 0,
+          "total": 26063000000,
+          "residual": 0.0,
+          "status": "reconciled"
+        }
+      ]
+    },
+    "operatingIncome": {
+      "status": "reconciled",
+      "subtotal": 60510000000.0,
+      "adjustments": [
+        {
+          "coefficient": 1,
+          "series": {
+            "value": -1267000000.0,
+            "components": [
+              {
+                "coefficient": 1,
+                "label": "직전 연간",
+                "fact": {
+                  "start": "2024-08-30",
+                  "end": "2025-08-28",
+                  "dimensions": [
+                    [
+                      "ConsolidationItemsAxis",
+                      "CorporateNonSegmentMember"
+                    ]
+                  ],
+                  "tag": "OperatingIncomeLoss",
+                  "taxonomy": "http://fasb.org/us-gaap/2025",
+                  "value": -1076000000.0,
+                  "unit": "USD",
+                  "context": "c-323",
+                  "factId": "f-1566",
+                  "decimals": "-6",
+                  "accession": "0000723125-25-000028",
+                  "filedAt": "2025-10-03",
+                  "sourceFile": "data/sources/filing-0000723125-25-000028-d4eede66eac20393.xbrl",
+                  "sourceHash": "d4eede66eac20393a3c93849bdd72477dd977d59e36d8e742381d1da6e393ed8",
+                  "sourceUrl": "https://www.sec.gov/Archives/edgar/data/723125/000072312525000028/mu-20250828.htm"
+                }
+              },
+              {
+                "coefficient": 1,
+                "label": "당기 누적",
+                "fact": {
+                  "start": "2025-08-29",
+                  "end": "2026-05-28",
+                  "dimensions": [
+                    [
+                      "ConsolidationItemsAxis",
+                      "CorporateNonSegmentMember"
+                    ]
+                  ],
+                  "tag": "OperatingIncomeLoss",
+                  "taxonomy": "http://fasb.org/us-gaap/2025",
+                  "value": -966000000.0,
+                  "unit": "USD",
+                  "context": "c-236",
+                  "factId": "f-1046",
+                  "decimals": "-6",
+                  "accession": "0000723125-26-000015",
+                  "filedAt": "2026-06-25",
+                  "sourceFile": "data/sources/filing-0000723125-26-000015-de68a2e57df77b0b.xbrl",
+                  "sourceHash": "de68a2e57df77b0b26d9af3a0f5494aa821ffc927685dd535ccae5b8193203e2",
+                  "sourceUrl": "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/mu-20260528.htm"
+                }
+              },
+              {
+                "coefficient": -1,
+                "label": "전년 누적",
+                "fact": {
+                  "start": "2024-08-30",
+                  "end": "2025-05-29",
+                  "dimensions": [
+                    [
+                      "ConsolidationItemsAxis",
+                      "CorporateNonSegmentMember"
+                    ]
+                  ],
+                  "tag": "OperatingIncomeLoss",
+                  "taxonomy": "http://fasb.org/us-gaap/2025",
+                  "value": -775000000.0,
+                  "unit": "USD",
+                  "context": "c-242",
+                  "factId": "f-1095",
+                  "decimals": "-6",
+                  "accession": "0000723125-26-000015",
+                  "filedAt": "2026-06-25",
+                  "sourceFile": "data/sources/filing-0000723125-26-000015-de68a2e57df77b0b.xbrl",
+                  "sourceHash": "de68a2e57df77b0b26d9af3a0f5494aa821ffc927685dd535ccae5b8193203e2",
+                  "sourceUrl": "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/mu-20260528.htm"
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "adjustment": -1267000000.0,
+      "total": {
+        "components": [
+          {
+            "coefficient": 1,
+            "fact": {
+              "accession": "0000723125-25-000028",
+              "basis": "consolidated",
+              "end": "2025-08-28",
+              "filedAt": "2025-10-03",
+              "metric": "operating_income",
+              "priority": 0,
+              "sourceFile": "data/sources/sec-MU-a8b088c2111daef3.json",
+              "sourceHash": "a8b088c2111daef36536e53c81fef4c0f01220c64933e126a665b00a9257f882",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/723125/000072312525000028/0000723125-25-000028-index.html",
+              "standard": "US-GAAP",
+              "start": "2024-08-30",
+              "tag": "us-gaap:OperatingIncomeLoss",
+              "unit": "USD",
+              "value": 9770000000
+            },
+            "label": "직전 회계연도"
+          },
+          {
+            "coefficient": 1,
+            "fact": {
+              "accession": "0000723125-26-000015",
+              "basis": "consolidated",
+              "end": "2026-05-28",
+              "filedAt": "2026-06-25",
+              "metric": "operating_income",
+              "priority": 0,
+              "sourceFile": "data/sources/sec-MU-a8b088c2111daef3.json",
+              "sourceHash": "a8b088c2111daef36536e53c81fef4c0f01220c64933e126a665b00a9257f882",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/0000723125-26-000015-index.html",
+              "standard": "US-GAAP",
+              "start": "2025-08-29",
+              "tag": "us-gaap:OperatingIncomeLoss",
+              "unit": "USD",
+              "value": 55589000000
+            },
+            "label": "당기 누적"
+          },
+          {
+            "coefficient": -1,
+            "fact": {
+              "accession": "0000723125-26-000015",
+              "basis": "consolidated",
+              "end": "2025-05-29",
+              "filedAt": "2026-06-25",
+              "metric": "operating_income",
+              "priority": 0,
+              "sourceFile": "data/sources/sec-MU-a8b088c2111daef3.json",
+              "sourceHash": "a8b088c2111daef36536e53c81fef4c0f01220c64933e126a665b00a9257f882",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/0000723125-26-000015-index.html",
+              "standard": "US-GAAP",
+              "start": "2024-08-30",
+              "tag": "us-gaap:OperatingIncomeLoss",
+              "unit": "USD",
+              "value": 6116000000
+            },
+            "label": "전년 누적"
+          }
+        ],
+        "value": 59243000000
+      },
+      "residual": 0.0,
+      "periods": [
+        {
+          "label": "직전 연간",
+          "start": "2024-08-30",
+          "end": "2025-08-28",
+          "subtotal": 10846000000.0,
+          "adjustment": -1076000000.0,
+          "total": 9770000000,
+          "residual": 0.0,
+          "status": "reconciled"
+        },
+        {
+          "label": "당기 누적",
+          "start": "2025-08-29",
+          "end": "2026-05-28",
+          "subtotal": 56555000000.0,
+          "adjustment": -966000000.0,
+          "total": 55589000000,
+          "residual": 0.0,
+          "status": "reconciled"
+        },
+        {
+          "label": "전년 누적",
+          "start": "2024-08-30",
+          "end": "2025-05-29",
+          "subtotal": 6891000000.0,
+          "adjustment": -775000000.0,
+          "total": 6116000000,
+          "residual": 0.0,
+          "status": "reconciled"
+        }
+      ]
+    }
+  },
+  "review": {
+    "note": "2025년 4분기 새 시장 중심 부문으로 재편한 연간 공시와 비교 재작성된 현재9개월 공시를 연결한다. CMBU·CDBU·MCBU·AEBU·기타 및 본사 미배분 손익을 각각 보존한다. 배분 방식·제품 구성 불변이나 유기 성장으로 승인하지 않는다.",
+    "reviewer": "Codex 작성자 양쪽 공시 대조 · 독립 금융 승인 아님",
+    "scope": "공시된 부문 정의와 해당 기간의 합산 연결. 동일 제품 믹스·유기 성장·미래 수익성의 보증 아님.",
+    "annualSource": {
+      "file": "data/sources/filing-0000723125-25-000028-d4eede66eac20393.xbrl",
+      "sha256": "d4eede66eac20393a3c93849bdd72477dd977d59e36d8e742381d1da6e393ed8",
+      "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312525000028/mu-20250828_htm.xml",
+      "primaryUrl": "https://www.sec.gov/Archives/edgar/data/723125/000072312525000028/mu-20250828.htm",
+      "provider": "SEC",
+      "accession": "0000723125-25-000028",
+      "cik": 723125,
+      "retrievedAt": "2026-10-01T13:40:25.218624+00:00",
+      "indexSource": {
+        "file": "data/sources/filing-0000723125-25-000028-index-44fbed6b5157fb32.html",
+        "sha256": "44fbed6b5157fb326e1910d3550e7365766f539a5b66e774d9a078cec2e37d33",
+        "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312525000028/0000723125-25-000028-index.html"
+      }
+    },
+    "annualText": "We have the following four business units, which are our reportable segments: • Cloud Memory Business Unit (“CMBU”): Focused on memory solutions for large hyperscale cloud customers, and HBM for all data center customers. • Core Data Center Business Unit (“CDBU”): Focused on memory solutions for mid-tier cloud, enterprise, and OEM data center customers and storage solutions for all data center customers. • Mobile and Client Business Unit (“MCBU”): Focused on memory and storage solutions for the mobile and client segments. • Automotive and Embedded Business Unit (“AEBU”): Focused on memory and storage solutions for the automotive, industrial, and consumer segments. Our other operations do not meet the thresholds of a reportable segment and are reported under All Other. Certain operating expenses directly associated with the activities of a specific segment are charged to that segment. Other indirect operating income and expenses are generally allocated to segments based on their respective percentage of cost of goods sold or forecasted wafer production. Certain income and expenses are not allocated to segments because our CODM does not consider these amounts in the assessment of the performance of our segments. The unallocated amounts primarily include stock-based compensation, the impact of inventory NRV write-downs, gains and losses from settlements, restructure and asset impairment, and goodwill impairment.",
+    "annualTextHash": "a70fa8c855e2d71d561ae61a5ec61d7cb3c302a70890bd25aacc2eb09512f0bf",
+    "annualNotes": [
+      {
+        "tag": "SegmentReportingPolicyPolicyTextBlock",
+        "sha256": "a70fa8c855e2d71d561ae61a5ec61d7cb3c302a70890bd25aacc2eb09512f0bf",
+        "text": "We have the following four business units, which are our reportable segments: • Cloud Memory Business Unit (“CMBU”): Focused on memory solutions for large hyperscale cloud customers, and HBM for all data center customers. • Core Data Center Business Unit (“CDBU”): Focused on memory solutions for mid-tier cloud, enterprise, and OEM data center customers and storage solutions for all data center customers. • Mobile and Client Business Unit (“MCBU”): Focused on memory and storage solutions for the mobile and client segments. • Automotive and Embedded Business Unit (“AEBU”): Focused on memory and storage solutions for the automotive, industrial, and consumer segments. Our other operations do not meet the thresholds of a reportable segment and are reported under All Other. Certain operating expenses directly associated with the activities of a specific segment are charged to that segment. Other indirect operating income and expenses are generally allocated to segments based on their respective percentage of cost of goods sold or forecasted wafer production. Certain income and expenses are not allocated to segments because our CODM does not consider these amounts in the assessment of the performance of our segments. The unallocated amounts primarily include stock-based compensation, the impact of inventory NRV write-downs, gains and losses from settlements, restructure and asset impairment, and goodwill impairment."
+      }
+    ],
+    "currentPassages": [
+      {
+        "heading": "",
+        "id": "53fdf4d2f1b308d3c1c5",
+        "kind": "paragraph",
+        "ordinal": 350,
+        "sourceFile": "data/sources/filing-0000723125-26-000015-6ecde1540e260d43.html",
+        "sourceHash": "6ecde1540e260d438ba8b5198b52fe9ce3bff0a890b6d349499b9ad369827f8b",
+        "sourceUrl": "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/mu-20260528.htm",
+        "text": "Note 17. Segment and Other Information"
+      },
+      {
+        "heading": "",
+        "id": "a37578bb9cf17fc36ad1",
+        "kind": "paragraph",
+        "ordinal": 351,
+        "sourceFile": "data/sources/filing-0000723125-26-000015-6ecde1540e260d43.html",
+        "sourceHash": "6ecde1540e260d438ba8b5198b52fe9ce3bff0a890b6d349499b9ad369827f8b",
+        "sourceUrl": "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/mu-20260528.htm",
+        "text": "Segment information reported herein is consistent with the way our Chief Executive Officer, who is our Chief Operating Decision Maker (“CODM”), assesses the performance of our segments based on segment revenue, cost of goods sold, operating expenses, and operating income. The segment information reported herein is regularly provided to and reviewed and evaluated by our CODM to budget, forecast, and decide how to allocate resources for capital investments, human capital, and other strategic investments across our segments."
+      },
+      {
+        "heading": "",
+        "id": "0e111fe6746eab4a5177",
+        "kind": "paragraph",
+        "ordinal": 352,
+        "sourceFile": "data/sources/filing-0000723125-26-000015-6ecde1540e260d43.html",
+        "sourceHash": "6ecde1540e260d438ba8b5198b52fe9ce3bff0a890b6d349499b9ad369827f8b",
+        "sourceUrl": "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/mu-20260528.htm",
+        "text": "We have the following four business units, which are based on market segments and our reportable segments:"
+      },
+      {
+        "heading": "",
+        "id": "c97cfb2726bf446aab88",
+        "kind": "paragraph",
+        "ordinal": 353,
+        "sourceFile": "data/sources/filing-0000723125-26-000015-6ecde1540e260d43.html",
+        "sourceHash": "6ecde1540e260d438ba8b5198b52fe9ce3bff0a890b6d349499b9ad369827f8b",
+        "sourceUrl": "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/mu-20260528.htm",
+        "text": "•Cloud Memory Business Unit (“CMBU”): Focused on memory solutions for large hyperscale cloud customers, and HBM for all data center customers."
+      },
+      {
+        "heading": "",
+        "id": "1bc6e4eadfa811a70f9b",
+        "kind": "paragraph",
+        "ordinal": 354,
+        "sourceFile": "data/sources/filing-0000723125-26-000015-6ecde1540e260d43.html",
+        "sourceHash": "6ecde1540e260d438ba8b5198b52fe9ce3bff0a890b6d349499b9ad369827f8b",
+        "sourceUrl": "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/mu-20260528.htm",
+        "text": "•Core Data Center Business Unit (“CDBU”): Focused on memory solutions for mid-tier cloud, enterprise, and OEM data center customers and storage solutions for all data center customers."
+      },
+      {
+        "heading": "",
+        "id": "fa799ec94488c8f8c096",
+        "kind": "paragraph",
+        "ordinal": 355,
+        "sourceFile": "data/sources/filing-0000723125-26-000015-6ecde1540e260d43.html",
+        "sourceHash": "6ecde1540e260d438ba8b5198b52fe9ce3bff0a890b6d349499b9ad369827f8b",
+        "sourceUrl": "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/mu-20260528.htm",
+        "text": "•Mobile and Client Business Unit (“MCBU”): Focused on memory and storage solutions for the mobile and client segments."
+      },
+      {
+        "heading": "",
+        "id": "11f3a669f30534f415f2",
+        "kind": "paragraph",
+        "ordinal": 356,
+        "sourceFile": "data/sources/filing-0000723125-26-000015-6ecde1540e260d43.html",
+        "sourceHash": "6ecde1540e260d438ba8b5198b52fe9ce3bff0a890b6d349499b9ad369827f8b",
+        "sourceUrl": "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/mu-20260528.htm",
+        "text": "•Automotive and Embedded Business Unit (“AEBU”): Focused on memory and storage solutions for the automotive, industrial, and consumer segments."
+      },
+      {
+        "heading": "",
+        "id": "662f5a793f0d66100f56",
+        "kind": "paragraph",
+        "ordinal": 357,
+        "sourceFile": "data/sources/filing-0000723125-26-000015-6ecde1540e260d43.html",
+        "sourceHash": "6ecde1540e260d438ba8b5198b52fe9ce3bff0a890b6d349499b9ad369827f8b",
+        "sourceUrl": "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/mu-20260528.htm",
+        "text": "Our other operations do not meet the thresholds of a reportable segment and are reported under All Other. Certain operating expenses directly associated with the activities of a specific segment are charged to that segment. Other indirect operating income and expenses are generally allocated to segments based on their respective percentage of cost of goods sold or forecasted wafer production. Certain income and expenses are not allocated to segments because our CODM does not consider these amounts in the assessment of the performance of our segments. Substantially all of the unallocated amounts are related to stock-based compensation. We do not identify or report internally our assets (other than goodwill) or capital expenditures by segment, nor do we allocate gains and losses from equity method investments, interest, other non-operating income or expense items, or taxes to segments."
+      }
+    ]
+  },
+  "scope": "보고 부문의 최근 1년 합성값이다. 합병·신제품·환율을 제거한 유기 성장이나 정상 이익이 아니며 현금 배분을 뜻하지 않는다.",
+  "evidenceHash": "72717035e4aa704b516a98bf11448b6813348d4628b90f9f4bf9aa443dc5f0a7"
+}

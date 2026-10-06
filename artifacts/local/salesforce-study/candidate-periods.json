@@ -1,0 +1,1349 @@
+[
+  {
+    "coefficient": 1,
+    "start": "2025-02-01",
+    "end": "2026-01-31",
+    "parts": [
+      {
+        "tag": "NetIncomeLoss",
+        "coefficient": 1,
+        "fact": {
+          "start": "2025-02-01",
+          "end": "2026-01-31",
+          "dimensions": [],
+          "tag": "NetIncomeLoss",
+          "taxonomy": "http://fasb.org/us-gaap/2025",
+          "value": 7457000000.0,
+          "unit": "USD",
+          "context": "c-1",
+          "factId": "f-186",
+          "decimals": "-6",
+          "accession": "0001108524-26-000060",
+          "filedAt": "2026-03-02",
+          "sourceFile": "data/sources/filing-0001108524-26-000060-ad3ca1752bb082f9.xbrl",
+          "sourceHash": "ad3ca1752bb082f9d6f8f4bad260a0c377b66bf1c13edafc08070933524e3d24",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000060/crm-20260131.htm"
+        }
+      },
+      {
+        "tag": "DepreciationAndAmortization",
+        "coefficient": 1,
+        "fact": {
+          "start": "2025-02-01",
+          "end": "2026-01-31",
+          "dimensions": [],
+          "tag": "DepreciationAndAmortization",
+          "taxonomy": "http://fasb.org/us-gaap/2025",
+          "value": 3631000000.0,
+          "unit": "USD",
+          "context": "c-1",
+          "factId": "f-320",
+          "decimals": "-6",
+          "accession": "0001108524-26-000060",
+          "filedAt": "2026-03-02",
+          "sourceFile": "data/sources/filing-0001108524-26-000060-ad3ca1752bb082f9.xbrl",
+          "sourceHash": "ad3ca1752bb082f9d6f8f4bad260a0c377b66bf1c13edafc08070933524e3d24",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000060/crm-20260131.htm"
+        }
+      },
+      {
+        "tag": "CapitalizedContractCostAmortization",
+        "coefficient": 1,
+        "fact": {
+          "start": "2025-02-01",
+          "end": "2026-01-31",
+          "dimensions": [],
+          "tag": "CapitalizedContractCostAmortization",
+          "taxonomy": "http://fasb.org/us-gaap/2025",
+          "value": 2197000000.0,
+          "unit": "USD",
+          "context": "c-1",
+          "factId": "f-323",
+          "decimals": "-6",
+          "accession": "0001108524-26-000060",
+          "filedAt": "2026-03-02",
+          "sourceFile": "data/sources/filing-0001108524-26-000060-ad3ca1752bb082f9.xbrl",
+          "sourceHash": "ad3ca1752bb082f9d6f8f4bad260a0c377b66bf1c13edafc08070933524e3d24",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000060/crm-20260131.htm"
+        }
+      },
+      {
+        "tag": "ShareBasedCompensation",
+        "coefficient": 1,
+        "fact": {
+          "start": "2025-02-01",
+          "end": "2026-01-31",
+          "dimensions": [],
+          "tag": "ShareBasedCompensation",
+          "taxonomy": "http://fasb.org/us-gaap/2025",
+          "value": 3509000000.0,
+          "unit": "USD",
+          "context": "c-1",
+          "factId": "f-326",
+          "decimals": "-6",
+          "accession": "0001108524-26-000060",
+          "filedAt": "2026-03-02",
+          "sourceFile": "data/sources/filing-0001108524-26-000060-ad3ca1752bb082f9.xbrl",
+          "sourceHash": "ad3ca1752bb082f9d6f8f4bad260a0c377b66bf1c13edafc08070933524e3d24",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000060/crm-20260131.htm"
+        }
+      },
+      {
+        "tag": "GainLossOnInvestments",
+        "coefficient": -1,
+        "fact": {
+          "start": "2025-02-01",
+          "end": "2026-01-31",
+          "dimensions": [],
+          "tag": "GainLossOnInvestments",
+          "taxonomy": "http://fasb.org/us-gaap/2025",
+          "value": 1017000000.0,
+          "unit": "USD",
+          "context": "c-1",
+          "factId": "f-174",
+          "decimals": "-6",
+          "accession": "0001108524-26-000060",
+          "filedAt": "2026-03-02",
+          "sourceFile": "data/sources/filing-0001108524-26-000060-ad3ca1752bb082f9.xbrl",
+          "sourceHash": "ad3ca1752bb082f9d6f8f4bad260a0c377b66bf1c13edafc08070933524e3d24",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000060/crm-20260131.htm"
+        }
+      },
+      {
+        "tag": "IncreaseDecreaseInAccountsReceivable",
+        "coefficient": -1,
+        "fact": {
+          "start": "2025-02-01",
+          "end": "2026-01-31",
+          "dimensions": [],
+          "tag": "IncreaseDecreaseInAccountsReceivable",
+          "taxonomy": "http://fasb.org/us-gaap/2025",
+          "value": 2160000000.0,
+          "unit": "USD",
+          "context": "c-1",
+          "factId": "f-332",
+          "decimals": "-6",
+          "accession": "0001108524-26-000060",
+          "filedAt": "2026-03-02",
+          "sourceFile": "data/sources/filing-0001108524-26-000060-ad3ca1752bb082f9.xbrl",
+          "sourceHash": "ad3ca1752bb082f9d6f8f4bad260a0c377b66bf1c13edafc08070933524e3d24",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000060/crm-20260131.htm"
+        }
+      },
+      {
+        "tag": "IncreaseDecreaseInCapitalizedContractCosts",
+        "coefficient": -1,
+        "fact": {
+          "start": "2025-02-01",
+          "end": "2026-01-31",
+          "dimensions": [],
+          "tag": "IncreaseDecreaseInCapitalizedContractCosts",
+          "taxonomy": "http://salesforce.com/20260131",
+          "value": 2811000000.0,
+          "unit": "USD",
+          "context": "c-1",
+          "factId": "f-335",
+          "decimals": "-6",
+          "accession": "0001108524-26-000060",
+          "filedAt": "2026-03-02",
+          "sourceFile": "data/sources/filing-0001108524-26-000060-ad3ca1752bb082f9.xbrl",
+          "sourceHash": "ad3ca1752bb082f9d6f8f4bad260a0c377b66bf1c13edafc08070933524e3d24",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000060/crm-20260131.htm"
+        }
+      },
+      {
+        "tag": "IncreaseDecreaseInPrepaidDeferredExpenseAndOtherAssets",
+        "coefficient": -1,
+        "fact": {
+          "start": "2025-02-01",
+          "end": "2026-01-31",
+          "dimensions": [],
+          "tag": "IncreaseDecreaseInPrepaidDeferredExpenseAndOtherAssets",
+          "taxonomy": "http://fasb.org/us-gaap/2025",
+          "value": -819000000.0,
+          "unit": "USD",
+          "context": "c-1",
+          "factId": "f-338",
+          "decimals": "-6",
+          "accession": "0001108524-26-000060",
+          "filedAt": "2026-03-02",
+          "sourceFile": "data/sources/filing-0001108524-26-000060-ad3ca1752bb082f9.xbrl",
+          "sourceHash": "ad3ca1752bb082f9d6f8f4bad260a0c377b66bf1c13edafc08070933524e3d24",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000060/crm-20260131.htm"
+        }
+      },
+      {
+        "tag": "IncreaseDecreaseInAccountsPayableAndAccruedLiabilities",
+        "coefficient": 1,
+        "fact": {
+          "start": "2025-02-01",
+          "end": "2026-01-31",
+          "dimensions": [],
+          "tag": "IncreaseDecreaseInAccountsPayableAndAccruedLiabilities",
+          "taxonomy": "http://fasb.org/us-gaap/2025",
+          "value": 1014000000.0,
+          "unit": "USD",
+          "context": "c-1",
+          "factId": "f-341",
+          "decimals": "-6",
+          "accession": "0001108524-26-000060",
+          "filedAt": "2026-03-02",
+          "sourceFile": "data/sources/filing-0001108524-26-000060-ad3ca1752bb082f9.xbrl",
+          "sourceHash": "ad3ca1752bb082f9d6f8f4bad260a0c377b66bf1c13edafc08070933524e3d24",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000060/crm-20260131.htm"
+        }
+      },
+      {
+        "tag": "IncreaseDecreaseInOperatingLeaseLiability",
+        "coefficient": 1,
+        "fact": {
+          "start": "2025-02-01",
+          "end": "2026-01-31",
+          "dimensions": [],
+          "tag": "IncreaseDecreaseInOperatingLeaseLiability",
+          "taxonomy": "http://fasb.org/us-gaap/2025",
+          "value": -567000000.0,
+          "unit": "USD",
+          "context": "c-1",
+          "factId": "f-344",
+          "decimals": "-6",
+          "accession": "0001108524-26-000060",
+          "filedAt": "2026-03-02",
+          "sourceFile": "data/sources/filing-0001108524-26-000060-ad3ca1752bb082f9.xbrl",
+          "sourceHash": "ad3ca1752bb082f9d6f8f4bad260a0c377b66bf1c13edafc08070933524e3d24",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000060/crm-20260131.htm"
+        }
+      },
+      {
+        "tag": "IncreaseDecreaseInContractWithCustomerLiability",
+        "coefficient": 1,
+        "fact": {
+          "start": "2025-02-01",
+          "end": "2026-01-31",
+          "dimensions": [],
+          "tag": "IncreaseDecreaseInContractWithCustomerLiability",
+          "taxonomy": "http://fasb.org/us-gaap/2025",
+          "value": 2924000000.0,
+          "unit": "USD",
+          "context": "c-1",
+          "factId": "f-347",
+          "decimals": "-6",
+          "accession": "0001108524-26-000060",
+          "filedAt": "2026-03-02",
+          "sourceFile": "data/sources/filing-0001108524-26-000060-ad3ca1752bb082f9.xbrl",
+          "sourceHash": "ad3ca1752bb082f9d6f8f4bad260a0c377b66bf1c13edafc08070933524e3d24",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000060/crm-20260131.htm"
+        }
+      }
+    ],
+    "reportedCfo": 14996000000.0,
+    "revenue": 41525000000.0,
+    "income": 8331000000.0,
+    "segments": [
+      {
+        "member": "SubscriptionandSupportMember",
+        "sales": {
+          "start": "2025-02-01",
+          "end": "2026-01-31",
+          "dimensions": [
+            [
+              "ProductOrServiceAxis",
+              "SubscriptionandSupportMember"
+            ]
+          ],
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "taxonomy": "http://fasb.org/us-gaap/2025",
+          "value": 39388000000.0,
+          "unit": "USD",
+          "context": "c-6",
+          "factId": "f-135",
+          "decimals": "-6",
+          "accession": "0001108524-26-000060",
+          "filedAt": "2026-03-02",
+          "sourceFile": "data/sources/filing-0001108524-26-000060-ad3ca1752bb082f9.xbrl",
+          "sourceHash": "ad3ca1752bb082f9d6f8f4bad260a0c377b66bf1c13edafc08070933524e3d24",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000060/crm-20260131.htm"
+        },
+        "cost": {
+          "start": "2025-02-01",
+          "end": "2026-01-31",
+          "dimensions": [
+            [
+              "ProductOrServiceAxis",
+              "SubscriptionandSupportMember"
+            ]
+          ],
+          "tag": "CostOfGoodsAndServicesSold",
+          "taxonomy": "http://fasb.org/us-gaap/2025",
+          "value": 6796000000.0,
+          "unit": "USD",
+          "context": "c-6",
+          "factId": "f-144",
+          "decimals": "-6",
+          "accession": "0001108524-26-000060",
+          "filedAt": "2026-03-02",
+          "sourceFile": "data/sources/filing-0001108524-26-000060-ad3ca1752bb082f9.xbrl",
+          "sourceHash": "ad3ca1752bb082f9d6f8f4bad260a0c377b66bf1c13edafc08070933524e3d24",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000060/crm-20260131.htm"
+        },
+        "gross": 32592000000.0
+      },
+      {
+        "member": "ProfessionalServicesandOtherMember",
+        "sales": {
+          "start": "2025-02-01",
+          "end": "2026-01-31",
+          "dimensions": [
+            [
+              "ProductOrServiceAxis",
+              "ProfessionalServicesandOtherMember"
+            ]
+          ],
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "taxonomy": "http://fasb.org/us-gaap/2025",
+          "value": 2137000000.0,
+          "unit": "USD",
+          "context": "c-9",
+          "factId": "f-138",
+          "decimals": "-6",
+          "accession": "0001108524-26-000060",
+          "filedAt": "2026-03-02",
+          "sourceFile": "data/sources/filing-0001108524-26-000060-ad3ca1752bb082f9.xbrl",
+          "sourceHash": "ad3ca1752bb082f9d6f8f4bad260a0c377b66bf1c13edafc08070933524e3d24",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000060/crm-20260131.htm"
+        },
+        "cost": {
+          "start": "2025-02-01",
+          "end": "2026-01-31",
+          "dimensions": [
+            [
+              "ProductOrServiceAxis",
+              "ProfessionalServicesandOtherMember"
+            ]
+          ],
+          "tag": "CostOfGoodsAndServicesSold",
+          "taxonomy": "http://fasb.org/us-gaap/2025",
+          "value": 2474000000.0,
+          "unit": "USD",
+          "context": "c-9",
+          "factId": "f-147",
+          "decimals": "-6",
+          "accession": "0001108524-26-000060",
+          "filedAt": "2026-03-02",
+          "sourceFile": "data/sources/filing-0001108524-26-000060-ad3ca1752bb082f9.xbrl",
+          "sourceHash": "ad3ca1752bb082f9d6f8f4bad260a0c377b66bf1c13edafc08070933524e3d24",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000060/crm-20260131.htm"
+        },
+        "gross": -337000000.0
+      }
+    ],
+    "expenses": [
+      {
+        "start": "2025-02-01",
+        "end": "2026-01-31",
+        "dimensions": [],
+        "tag": "ResearchAndDevelopmentExpense",
+        "taxonomy": "http://fasb.org/us-gaap/2025",
+        "value": 5993000000.0,
+        "unit": "USD",
+        "context": "c-1",
+        "factId": "f-156",
+        "decimals": "-6",
+        "accession": "0001108524-26-000060",
+        "filedAt": "2026-03-02",
+        "sourceFile": "data/sources/filing-0001108524-26-000060-ad3ca1752bb082f9.xbrl",
+        "sourceHash": "ad3ca1752bb082f9d6f8f4bad260a0c377b66bf1c13edafc08070933524e3d24",
+        "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000060/crm-20260131.htm"
+      },
+      {
+        "start": "2025-02-01",
+        "end": "2026-01-31",
+        "dimensions": [],
+        "tag": "SellingAndMarketingExpense",
+        "taxonomy": "http://fasb.org/us-gaap/2025",
+        "value": 14345000000.0,
+        "unit": "USD",
+        "context": "c-1",
+        "factId": "f-159",
+        "decimals": "-6",
+        "accession": "0001108524-26-000060",
+        "filedAt": "2026-03-02",
+        "sourceFile": "data/sources/filing-0001108524-26-000060-ad3ca1752bb082f9.xbrl",
+        "sourceHash": "ad3ca1752bb082f9d6f8f4bad260a0c377b66bf1c13edafc08070933524e3d24",
+        "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000060/crm-20260131.htm"
+      },
+      {
+        "start": "2025-02-01",
+        "end": "2026-01-31",
+        "dimensions": [],
+        "tag": "GeneralAndAdministrativeExpense",
+        "taxonomy": "http://fasb.org/us-gaap/2025",
+        "value": 3000000000.0,
+        "unit": "USD",
+        "context": "c-1",
+        "factId": "f-162",
+        "decimals": "-6",
+        "accession": "0001108524-26-000060",
+        "filedAt": "2026-03-02",
+        "sourceFile": "data/sources/filing-0001108524-26-000060-ad3ca1752bb082f9.xbrl",
+        "sourceHash": "ad3ca1752bb082f9d6f8f4bad260a0c377b66bf1c13edafc08070933524e3d24",
+        "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000060/crm-20260131.htm"
+      },
+      {
+        "start": "2025-02-01",
+        "end": "2026-01-31",
+        "dimensions": [],
+        "tag": "RestructuringCharges",
+        "taxonomy": "http://fasb.org/us-gaap/2025",
+        "value": 586000000.0,
+        "unit": "USD",
+        "context": "c-1",
+        "factId": "f-165",
+        "decimals": "-6",
+        "accession": "0001108524-26-000060",
+        "filedAt": "2026-03-02",
+        "sourceFile": "data/sources/filing-0001108524-26-000060-ad3ca1752bb082f9.xbrl",
+        "sourceHash": "ad3ca1752bb082f9d6f8f4bad260a0c377b66bf1c13edafc08070933524e3d24",
+        "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000060/crm-20260131.htm"
+      }
+    ],
+    "financeLease": {
+      "start": "2025-02-01",
+      "end": "2026-01-31",
+      "dimensions": [],
+      "tag": "PrincipalPaymentsFinanceLeasesAndFinanceObligations",
+      "taxonomy": "http://salesforce.com/20260131",
+      "value": 367000000.0,
+      "unit": "USD",
+      "context": "c-1",
+      "factId": "f-821",
+      "decimals": "-6",
+      "accession": "0001108524-26-000060",
+      "filedAt": "2026-03-02",
+      "sourceFile": "data/sources/filing-0001108524-26-000060-ad3ca1752bb082f9.xbrl",
+      "sourceHash": "ad3ca1752bb082f9d6f8f4bad260a0c377b66bf1c13edafc08070933524e3d24",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000060/crm-20260131.htm"
+    },
+    "operatingLeaseCashAdjustment": {
+      "start": "2025-02-01",
+      "end": "2026-01-31",
+      "dimensions": [],
+      "tag": "IncreaseDecreaseInOperatingLeaseLiability",
+      "taxonomy": "http://fasb.org/us-gaap/2025",
+      "value": -567000000.0,
+      "unit": "USD",
+      "context": "c-1",
+      "factId": "f-344",
+      "decimals": "-6",
+      "accession": "0001108524-26-000060",
+      "filedAt": "2026-03-02",
+      "sourceFile": "data/sources/filing-0001108524-26-000060-ad3ca1752bb082f9.xbrl",
+      "sourceHash": "ad3ca1752bb082f9d6f8f4bad260a0c377b66bf1c13edafc08070933524e3d24",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000060/crm-20260131.htm"
+    },
+    "checks": {
+      "cash": 0.0,
+      "revenue": 0.0,
+      "cost": 0.0,
+      "income": 0.0
+    }
+  },
+  {
+    "coefficient": 1,
+    "start": "2026-02-01",
+    "end": "2026-07-31",
+    "parts": [
+      {
+        "tag": "NetIncomeLoss",
+        "coefficient": 1,
+        "fact": {
+          "start": "2026-02-01",
+          "end": "2026-07-31",
+          "dimensions": [],
+          "tag": "NetIncomeLoss",
+          "taxonomy": "http://fasb.org/us-gaap/2026",
+          "value": 5633000000.0,
+          "unit": "USD",
+          "context": "c-1",
+          "factId": "f-213",
+          "decimals": "-6",
+          "accession": "0001108524-26-000190",
+          "filedAt": "2026-08-27",
+          "sourceFile": "data/sources/filing-0001108524-26-000190-c9a819d93fa9ffe1.xbrl",
+          "sourceHash": "c9a819d93fa9ffe1d05c4d6dcff1372a8cf2995da8bd61ac161b1ba1d98147b2",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000190/crm-20260731.htm"
+        }
+      },
+      {
+        "tag": "DepreciationAndAmortization",
+        "coefficient": 1,
+        "fact": {
+          "start": "2026-02-01",
+          "end": "2026-07-31",
+          "dimensions": [],
+          "tag": "DepreciationAndAmortization",
+          "taxonomy": "http://fasb.org/us-gaap/2026",
+          "value": 1951000000.0,
+          "unit": "USD",
+          "context": "c-1",
+          "factId": "f-363",
+          "decimals": "-6",
+          "accession": "0001108524-26-000190",
+          "filedAt": "2026-08-27",
+          "sourceFile": "data/sources/filing-0001108524-26-000190-c9a819d93fa9ffe1.xbrl",
+          "sourceHash": "c9a819d93fa9ffe1d05c4d6dcff1372a8cf2995da8bd61ac161b1ba1d98147b2",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000190/crm-20260731.htm"
+        }
+      },
+      {
+        "tag": "CapitalizedContractCostAmortization",
+        "coefficient": 1,
+        "fact": {
+          "start": "2026-02-01",
+          "end": "2026-07-31",
+          "dimensions": [],
+          "tag": "CapitalizedContractCostAmortization",
+          "taxonomy": "http://fasb.org/us-gaap/2026",
+          "value": 1173000000.0,
+          "unit": "USD",
+          "context": "c-1",
+          "factId": "f-367",
+          "decimals": "-6",
+          "accession": "0001108524-26-000190",
+          "filedAt": "2026-08-27",
+          "sourceFile": "data/sources/filing-0001108524-26-000190-c9a819d93fa9ffe1.xbrl",
+          "sourceHash": "c9a819d93fa9ffe1d05c4d6dcff1372a8cf2995da8bd61ac161b1ba1d98147b2",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000190/crm-20260731.htm"
+        }
+      },
+      {
+        "tag": "ShareBasedCompensation",
+        "coefficient": 1,
+        "fact": {
+          "start": "2026-02-01",
+          "end": "2026-07-31",
+          "dimensions": [],
+          "tag": "ShareBasedCompensation",
+          "taxonomy": "http://fasb.org/us-gaap/2026",
+          "value": 1763000000.0,
+          "unit": "USD",
+          "context": "c-1",
+          "factId": "f-371",
+          "decimals": "-6",
+          "accession": "0001108524-26-000190",
+          "filedAt": "2026-08-27",
+          "sourceFile": "data/sources/filing-0001108524-26-000190-c9a819d93fa9ffe1.xbrl",
+          "sourceHash": "c9a819d93fa9ffe1d05c4d6dcff1372a8cf2995da8bd61ac161b1ba1d98147b2",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000190/crm-20260731.htm"
+        }
+      },
+      {
+        "tag": "GainLossOnInvestments",
+        "coefficient": -1,
+        "fact": {
+          "start": "2026-02-01",
+          "end": "2026-07-31",
+          "dimensions": [],
+          "tag": "GainLossOnInvestments",
+          "taxonomy": "http://fasb.org/us-gaap/2026",
+          "value": 3171000000.0,
+          "unit": "USD",
+          "context": "c-1",
+          "factId": "f-149",
+          "decimals": "-6",
+          "accession": "0001108524-26-000190",
+          "filedAt": "2026-08-27",
+          "sourceFile": "data/sources/filing-0001108524-26-000190-c9a819d93fa9ffe1.xbrl",
+          "sourceHash": "c9a819d93fa9ffe1d05c4d6dcff1372a8cf2995da8bd61ac161b1ba1d98147b2",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000190/crm-20260731.htm"
+        }
+      },
+      {
+        "tag": "IncreaseDecreaseInAccountsReceivable",
+        "coefficient": -1,
+        "fact": {
+          "start": "2026-02-01",
+          "end": "2026-07-31",
+          "dimensions": [],
+          "tag": "IncreaseDecreaseInAccountsReceivable",
+          "taxonomy": "http://fasb.org/us-gaap/2026",
+          "value": -8035000000.0,
+          "unit": "USD",
+          "context": "c-1",
+          "factId": "f-379",
+          "decimals": "-6",
+          "accession": "0001108524-26-000190",
+          "filedAt": "2026-08-27",
+          "sourceFile": "data/sources/filing-0001108524-26-000190-c9a819d93fa9ffe1.xbrl",
+          "sourceHash": "c9a819d93fa9ffe1d05c4d6dcff1372a8cf2995da8bd61ac161b1ba1d98147b2",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000190/crm-20260731.htm"
+        }
+      },
+      {
+        "tag": "IncreaseDecreaseInCapitalizedContractCosts",
+        "coefficient": -1,
+        "fact": {
+          "start": "2026-02-01",
+          "end": "2026-07-31",
+          "dimensions": [],
+          "tag": "IncreaseDecreaseInCapitalizedContractCosts",
+          "taxonomy": "http://salesforce.com/20260731",
+          "value": 1057000000.0,
+          "unit": "USD",
+          "context": "c-1",
+          "factId": "f-383",
+          "decimals": "-6",
+          "accession": "0001108524-26-000190",
+          "filedAt": "2026-08-27",
+          "sourceFile": "data/sources/filing-0001108524-26-000190-c9a819d93fa9ffe1.xbrl",
+          "sourceHash": "c9a819d93fa9ffe1d05c4d6dcff1372a8cf2995da8bd61ac161b1ba1d98147b2",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000190/crm-20260731.htm"
+        }
+      },
+      {
+        "tag": "IncreaseDecreaseInPrepaidDeferredExpenseAndOtherAssets",
+        "coefficient": -1,
+        "fact": {
+          "start": "2026-02-01",
+          "end": "2026-07-31",
+          "dimensions": [],
+          "tag": "IncreaseDecreaseInPrepaidDeferredExpenseAndOtherAssets",
+          "taxonomy": "http://fasb.org/us-gaap/2026",
+          "value": -510000000.0,
+          "unit": "USD",
+          "context": "c-1",
+          "factId": "f-387",
+          "decimals": "-6",
+          "accession": "0001108524-26-000190",
+          "filedAt": "2026-08-27",
+          "sourceFile": "data/sources/filing-0001108524-26-000190-c9a819d93fa9ffe1.xbrl",
+          "sourceHash": "c9a819d93fa9ffe1d05c4d6dcff1372a8cf2995da8bd61ac161b1ba1d98147b2",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000190/crm-20260731.htm"
+        }
+      },
+      {
+        "tag": "IncreaseDecreaseInAccountsPayableAndAccruedLiabilities",
+        "coefficient": 1,
+        "fact": {
+          "start": "2026-02-01",
+          "end": "2026-07-31",
+          "dimensions": [],
+          "tag": "IncreaseDecreaseInAccountsPayableAndAccruedLiabilities",
+          "taxonomy": "http://fasb.org/us-gaap/2026",
+          "value": -1006000000.0,
+          "unit": "USD",
+          "context": "c-1",
+          "factId": "f-391",
+          "decimals": "-6",
+          "accession": "0001108524-26-000190",
+          "filedAt": "2026-08-27",
+          "sourceFile": "data/sources/filing-0001108524-26-000190-c9a819d93fa9ffe1.xbrl",
+          "sourceHash": "c9a819d93fa9ffe1d05c4d6dcff1372a8cf2995da8bd61ac161b1ba1d98147b2",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000190/crm-20260731.htm"
+        }
+      },
+      {
+        "tag": "IncreaseDecreaseInOperatingLeaseLiability",
+        "coefficient": 1,
+        "fact": {
+          "start": "2026-02-01",
+          "end": "2026-07-31",
+          "dimensions": [],
+          "tag": "IncreaseDecreaseInOperatingLeaseLiability",
+          "taxonomy": "http://fasb.org/us-gaap/2026",
+          "value": -285000000.0,
+          "unit": "USD",
+          "context": "c-1",
+          "factId": "f-395",
+          "decimals": "-6",
+          "accession": "0001108524-26-000190",
+          "filedAt": "2026-08-27",
+          "sourceFile": "data/sources/filing-0001108524-26-000190-c9a819d93fa9ffe1.xbrl",
+          "sourceHash": "c9a819d93fa9ffe1d05c4d6dcff1372a8cf2995da8bd61ac161b1ba1d98147b2",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000190/crm-20260731.htm"
+        }
+      },
+      {
+        "tag": "IncreaseDecreaseInContractWithCustomerLiability",
+        "coefficient": 1,
+        "fact": {
+          "start": "2026-02-01",
+          "end": "2026-07-31",
+          "dimensions": [],
+          "tag": "IncreaseDecreaseInContractWithCustomerLiability",
+          "taxonomy": "http://fasb.org/us-gaap/2026",
+          "value": -5576000000.0,
+          "unit": "USD",
+          "context": "c-1",
+          "factId": "f-399",
+          "decimals": "-6",
+          "accession": "0001108524-26-000190",
+          "filedAt": "2026-08-27",
+          "sourceFile": "data/sources/filing-0001108524-26-000190-c9a819d93fa9ffe1.xbrl",
+          "sourceHash": "c9a819d93fa9ffe1d05c4d6dcff1372a8cf2995da8bd61ac161b1ba1d98147b2",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000190/crm-20260731.htm"
+        }
+      }
+    ],
+    "reportedCfo": 7970000000.0,
+    "revenue": 22478000000.0,
+    "income": 4678000000.0,
+    "segments": [
+      {
+        "member": "SubscriptionandSupportMember",
+        "sales": {
+          "start": "2026-02-01",
+          "end": "2026-07-31",
+          "dimensions": [
+            [
+              "ProductOrServiceAxis",
+              "SubscriptionandSupportMember"
+            ]
+          ],
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "taxonomy": "http://fasb.org/us-gaap/2026",
+          "value": 21413000000.0,
+          "unit": "USD",
+          "context": "c-7",
+          "factId": "f-93",
+          "decimals": "-6",
+          "accession": "0001108524-26-000190",
+          "filedAt": "2026-08-27",
+          "sourceFile": "data/sources/filing-0001108524-26-000190-c9a819d93fa9ffe1.xbrl",
+          "sourceHash": "c9a819d93fa9ffe1d05c4d6dcff1372a8cf2995da8bd61ac161b1ba1d98147b2",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000190/crm-20260731.htm"
+        },
+        "cost": {
+          "start": "2026-02-01",
+          "end": "2026-07-31",
+          "dimensions": [
+            [
+              "ProductOrServiceAxis",
+              "SubscriptionandSupportMember"
+            ]
+          ],
+          "tag": "CostOfGoodsAndServicesSold",
+          "taxonomy": "http://fasb.org/us-gaap/2026",
+          "value": 3974000000.0,
+          "unit": "USD",
+          "context": "c-7",
+          "factId": "f-105",
+          "decimals": "-6",
+          "accession": "0001108524-26-000190",
+          "filedAt": "2026-08-27",
+          "sourceFile": "data/sources/filing-0001108524-26-000190-c9a819d93fa9ffe1.xbrl",
+          "sourceHash": "c9a819d93fa9ffe1d05c4d6dcff1372a8cf2995da8bd61ac161b1ba1d98147b2",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000190/crm-20260731.htm"
+        },
+        "gross": 17439000000.0
+      },
+      {
+        "member": "ProfessionalServicesandOtherMember",
+        "sales": {
+          "start": "2026-02-01",
+          "end": "2026-07-31",
+          "dimensions": [
+            [
+              "ProductOrServiceAxis",
+              "ProfessionalServicesandOtherMember"
+            ]
+          ],
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "taxonomy": "http://fasb.org/us-gaap/2026",
+          "value": 1065000000.0,
+          "unit": "USD",
+          "context": "c-11",
+          "factId": "f-97",
+          "decimals": "-6",
+          "accession": "0001108524-26-000190",
+          "filedAt": "2026-08-27",
+          "sourceFile": "data/sources/filing-0001108524-26-000190-c9a819d93fa9ffe1.xbrl",
+          "sourceHash": "c9a819d93fa9ffe1d05c4d6dcff1372a8cf2995da8bd61ac161b1ba1d98147b2",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000190/crm-20260731.htm"
+        },
+        "cost": {
+          "start": "2026-02-01",
+          "end": "2026-07-31",
+          "dimensions": [
+            [
+              "ProductOrServiceAxis",
+              "ProfessionalServicesandOtherMember"
+            ]
+          ],
+          "tag": "CostOfGoodsAndServicesSold",
+          "taxonomy": "http://fasb.org/us-gaap/2026",
+          "value": 1245000000.0,
+          "unit": "USD",
+          "context": "c-11",
+          "factId": "f-109",
+          "decimals": "-6",
+          "accession": "0001108524-26-000190",
+          "filedAt": "2026-08-27",
+          "sourceFile": "data/sources/filing-0001108524-26-000190-c9a819d93fa9ffe1.xbrl",
+          "sourceHash": "c9a819d93fa9ffe1d05c4d6dcff1372a8cf2995da8bd61ac161b1ba1d98147b2",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000190/crm-20260731.htm"
+        },
+        "gross": -180000000.0
+      }
+    ],
+    "expenses": [
+      {
+        "start": "2026-02-01",
+        "end": "2026-07-31",
+        "dimensions": [],
+        "tag": "ResearchAndDevelopmentExpense",
+        "taxonomy": "http://fasb.org/us-gaap/2026",
+        "value": 3314000000.0,
+        "unit": "USD",
+        "context": "c-1",
+        "factId": "f-121",
+        "decimals": "-6",
+        "accession": "0001108524-26-000190",
+        "filedAt": "2026-08-27",
+        "sourceFile": "data/sources/filing-0001108524-26-000190-c9a819d93fa9ffe1.xbrl",
+        "sourceHash": "c9a819d93fa9ffe1d05c4d6dcff1372a8cf2995da8bd61ac161b1ba1d98147b2",
+        "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000190/crm-20260731.htm"
+      },
+      {
+        "start": "2026-02-01",
+        "end": "2026-07-31",
+        "dimensions": [],
+        "tag": "SellingAndMarketingExpense",
+        "taxonomy": "http://fasb.org/us-gaap/2026",
+        "value": 7628000000.0,
+        "unit": "USD",
+        "context": "c-1",
+        "factId": "f-125",
+        "decimals": "-6",
+        "accession": "0001108524-26-000190",
+        "filedAt": "2026-08-27",
+        "sourceFile": "data/sources/filing-0001108524-26-000190-c9a819d93fa9ffe1.xbrl",
+        "sourceHash": "c9a819d93fa9ffe1d05c4d6dcff1372a8cf2995da8bd61ac161b1ba1d98147b2",
+        "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000190/crm-20260731.htm"
+      },
+      {
+        "start": "2026-02-01",
+        "end": "2026-07-31",
+        "dimensions": [],
+        "tag": "GeneralAndAdministrativeExpense",
+        "taxonomy": "http://fasb.org/us-gaap/2026",
+        "value": 1465000000.0,
+        "unit": "USD",
+        "context": "c-1",
+        "factId": "f-129",
+        "decimals": "-6",
+        "accession": "0001108524-26-000190",
+        "filedAt": "2026-08-27",
+        "sourceFile": "data/sources/filing-0001108524-26-000190-c9a819d93fa9ffe1.xbrl",
+        "sourceHash": "c9a819d93fa9ffe1d05c4d6dcff1372a8cf2995da8bd61ac161b1ba1d98147b2",
+        "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000190/crm-20260731.htm"
+      },
+      {
+        "start": "2026-02-01",
+        "end": "2026-07-31",
+        "dimensions": [],
+        "tag": "RestructuringCharges",
+        "taxonomy": "http://fasb.org/us-gaap/2026",
+        "value": 174000000.0,
+        "unit": "USD",
+        "context": "c-1",
+        "factId": "f-133",
+        "decimals": "-6",
+        "accession": "0001108524-26-000190",
+        "filedAt": "2026-08-27",
+        "sourceFile": "data/sources/filing-0001108524-26-000190-c9a819d93fa9ffe1.xbrl",
+        "sourceHash": "c9a819d93fa9ffe1d05c4d6dcff1372a8cf2995da8bd61ac161b1ba1d98147b2",
+        "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000190/crm-20260731.htm"
+      }
+    ],
+    "financeLease": {
+      "start": "2026-02-01",
+      "end": "2026-07-31",
+      "dimensions": [],
+      "tag": "FinanceLeasePrincipalPayments",
+      "taxonomy": "http://fasb.org/us-gaap/2026",
+      "value": 306000000.0,
+      "unit": "USD",
+      "context": "c-1",
+      "factId": "f-455",
+      "decimals": "-6",
+      "accession": "0001108524-26-000190",
+      "filedAt": "2026-08-27",
+      "sourceFile": "data/sources/filing-0001108524-26-000190-c9a819d93fa9ffe1.xbrl",
+      "sourceHash": "c9a819d93fa9ffe1d05c4d6dcff1372a8cf2995da8bd61ac161b1ba1d98147b2",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000190/crm-20260731.htm"
+    },
+    "operatingLeaseCashAdjustment": {
+      "start": "2026-02-01",
+      "end": "2026-07-31",
+      "dimensions": [],
+      "tag": "IncreaseDecreaseInOperatingLeaseLiability",
+      "taxonomy": "http://fasb.org/us-gaap/2026",
+      "value": -285000000.0,
+      "unit": "USD",
+      "context": "c-1",
+      "factId": "f-395",
+      "decimals": "-6",
+      "accession": "0001108524-26-000190",
+      "filedAt": "2026-08-27",
+      "sourceFile": "data/sources/filing-0001108524-26-000190-c9a819d93fa9ffe1.xbrl",
+      "sourceHash": "c9a819d93fa9ffe1d05c4d6dcff1372a8cf2995da8bd61ac161b1ba1d98147b2",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000190/crm-20260731.htm"
+    },
+    "checks": {
+      "cash": 0.0,
+      "revenue": 0.0,
+      "cost": 0.0,
+      "income": 0.0
+    }
+  },
+  {
+    "coefficient": -1,
+    "start": "2025-02-01",
+    "end": "2025-07-31",
+    "parts": [
+      {
+        "tag": "NetIncomeLoss",
+        "coefficient": 1,
+        "fact": {
+          "start": "2025-02-01",
+          "end": "2025-07-31",
+          "dimensions": [],
+          "tag": "NetIncomeLoss",
+          "taxonomy": "http://fasb.org/us-gaap/2026",
+          "value": 3428000000.0,
+          "unit": "USD",
+          "context": "c-15",
+          "factId": "f-166",
+          "decimals": "-6",
+          "accession": "0001108524-26-000190",
+          "filedAt": "2026-08-27",
+          "sourceFile": "data/sources/filing-0001108524-26-000190-c9a819d93fa9ffe1.xbrl",
+          "sourceHash": "c9a819d93fa9ffe1d05c4d6dcff1372a8cf2995da8bd61ac161b1ba1d98147b2",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000190/crm-20260731.htm"
+        }
+      },
+      {
+        "tag": "DepreciationAndAmortization",
+        "coefficient": 1,
+        "fact": {
+          "start": "2025-02-01",
+          "end": "2025-07-31",
+          "dimensions": [],
+          "tag": "DepreciationAndAmortization",
+          "taxonomy": "http://fasb.org/us-gaap/2026",
+          "value": 1660000000.0,
+          "unit": "USD",
+          "context": "c-15",
+          "factId": "f-364",
+          "decimals": "-6",
+          "accession": "0001108524-26-000190",
+          "filedAt": "2026-08-27",
+          "sourceFile": "data/sources/filing-0001108524-26-000190-c9a819d93fa9ffe1.xbrl",
+          "sourceHash": "c9a819d93fa9ffe1d05c4d6dcff1372a8cf2995da8bd61ac161b1ba1d98147b2",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000190/crm-20260731.htm"
+        }
+      },
+      {
+        "tag": "CapitalizedContractCostAmortization",
+        "coefficient": 1,
+        "fact": {
+          "start": "2025-02-01",
+          "end": "2025-07-31",
+          "dimensions": [],
+          "tag": "CapitalizedContractCostAmortization",
+          "taxonomy": "http://fasb.org/us-gaap/2026",
+          "value": 1089000000.0,
+          "unit": "USD",
+          "context": "c-15",
+          "factId": "f-368",
+          "decimals": "-6",
+          "accession": "0001108524-26-000190",
+          "filedAt": "2026-08-27",
+          "sourceFile": "data/sources/filing-0001108524-26-000190-c9a819d93fa9ffe1.xbrl",
+          "sourceHash": "c9a819d93fa9ffe1d05c4d6dcff1372a8cf2995da8bd61ac161b1ba1d98147b2",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000190/crm-20260731.htm"
+        }
+      },
+      {
+        "tag": "ShareBasedCompensation",
+        "coefficient": 1,
+        "fact": {
+          "start": "2025-02-01",
+          "end": "2025-07-31",
+          "dimensions": [],
+          "tag": "ShareBasedCompensation",
+          "taxonomy": "http://fasb.org/us-gaap/2026",
+          "value": 1607000000.0,
+          "unit": "USD",
+          "context": "c-15",
+          "factId": "f-372",
+          "decimals": "-6",
+          "accession": "0001108524-26-000190",
+          "filedAt": "2026-08-27",
+          "sourceFile": "data/sources/filing-0001108524-26-000190-c9a819d93fa9ffe1.xbrl",
+          "sourceHash": "c9a819d93fa9ffe1d05c4d6dcff1372a8cf2995da8bd61ac161b1ba1d98147b2",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000190/crm-20260731.htm"
+        }
+      },
+      {
+        "tag": "GainLossOnInvestments",
+        "coefficient": -1,
+        "fact": {
+          "start": "2025-02-01",
+          "end": "2025-07-31",
+          "dimensions": [],
+          "tag": "GainLossOnInvestments",
+          "taxonomy": "http://fasb.org/us-gaap/2026",
+          "value": -57000000.0,
+          "unit": "USD",
+          "context": "c-15",
+          "factId": "f-150",
+          "decimals": "-6",
+          "accession": "0001108524-26-000190",
+          "filedAt": "2026-08-27",
+          "sourceFile": "data/sources/filing-0001108524-26-000190-c9a819d93fa9ffe1.xbrl",
+          "sourceHash": "c9a819d93fa9ffe1d05c4d6dcff1372a8cf2995da8bd61ac161b1ba1d98147b2",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000190/crm-20260731.htm"
+        }
+      },
+      {
+        "tag": "IncreaseDecreaseInAccountsReceivable",
+        "coefficient": -1,
+        "fact": {
+          "start": "2025-02-01",
+          "end": "2025-07-31",
+          "dimensions": [],
+          "tag": "IncreaseDecreaseInAccountsReceivable",
+          "taxonomy": "http://fasb.org/us-gaap/2026",
+          "value": -6349000000.0,
+          "unit": "USD",
+          "context": "c-15",
+          "factId": "f-380",
+          "decimals": "-6",
+          "accession": "0001108524-26-000190",
+          "filedAt": "2026-08-27",
+          "sourceFile": "data/sources/filing-0001108524-26-000190-c9a819d93fa9ffe1.xbrl",
+          "sourceHash": "c9a819d93fa9ffe1d05c4d6dcff1372a8cf2995da8bd61ac161b1ba1d98147b2",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000190/crm-20260731.htm"
+        }
+      },
+      {
+        "tag": "IncreaseDecreaseInCapitalizedContractCosts",
+        "coefficient": -1,
+        "fact": {
+          "start": "2025-02-01",
+          "end": "2025-07-31",
+          "dimensions": [],
+          "tag": "IncreaseDecreaseInCapitalizedContractCosts",
+          "taxonomy": "http://salesforce.com/20260731",
+          "value": 771000000.0,
+          "unit": "USD",
+          "context": "c-15",
+          "factId": "f-384",
+          "decimals": "-6",
+          "accession": "0001108524-26-000190",
+          "filedAt": "2026-08-27",
+          "sourceFile": "data/sources/filing-0001108524-26-000190-c9a819d93fa9ffe1.xbrl",
+          "sourceHash": "c9a819d93fa9ffe1d05c4d6dcff1372a8cf2995da8bd61ac161b1ba1d98147b2",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000190/crm-20260731.htm"
+        }
+      },
+      {
+        "tag": "IncreaseDecreaseInPrepaidDeferredExpenseAndOtherAssets",
+        "coefficient": -1,
+        "fact": {
+          "start": "2025-02-01",
+          "end": "2025-07-31",
+          "dimensions": [],
+          "tag": "IncreaseDecreaseInPrepaidDeferredExpenseAndOtherAssets",
+          "taxonomy": "http://fasb.org/us-gaap/2026",
+          "value": 513000000.0,
+          "unit": "USD",
+          "context": "c-15",
+          "factId": "f-388",
+          "decimals": "-6",
+          "accession": "0001108524-26-000190",
+          "filedAt": "2026-08-27",
+          "sourceFile": "data/sources/filing-0001108524-26-000190-c9a819d93fa9ffe1.xbrl",
+          "sourceHash": "c9a819d93fa9ffe1d05c4d6dcff1372a8cf2995da8bd61ac161b1ba1d98147b2",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000190/crm-20260731.htm"
+        }
+      },
+      {
+        "tag": "IncreaseDecreaseInAccountsPayableAndAccruedLiabilities",
+        "coefficient": 1,
+        "fact": {
+          "start": "2025-02-01",
+          "end": "2025-07-31",
+          "dimensions": [],
+          "tag": "IncreaseDecreaseInAccountsPayableAndAccruedLiabilities",
+          "taxonomy": "http://fasb.org/us-gaap/2026",
+          "value": -1224000000.0,
+          "unit": "USD",
+          "context": "c-15",
+          "factId": "f-392",
+          "decimals": "-6",
+          "accession": "0001108524-26-000190",
+          "filedAt": "2026-08-27",
+          "sourceFile": "data/sources/filing-0001108524-26-000190-c9a819d93fa9ffe1.xbrl",
+          "sourceHash": "c9a819d93fa9ffe1d05c4d6dcff1372a8cf2995da8bd61ac161b1ba1d98147b2",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000190/crm-20260731.htm"
+        }
+      },
+      {
+        "tag": "IncreaseDecreaseInOperatingLeaseLiability",
+        "coefficient": 1,
+        "fact": {
+          "start": "2025-02-01",
+          "end": "2025-07-31",
+          "dimensions": [],
+          "tag": "IncreaseDecreaseInOperatingLeaseLiability",
+          "taxonomy": "http://fasb.org/us-gaap/2026",
+          "value": -278000000.0,
+          "unit": "USD",
+          "context": "c-15",
+          "factId": "f-396",
+          "decimals": "-6",
+          "accession": "0001108524-26-000190",
+          "filedAt": "2026-08-27",
+          "sourceFile": "data/sources/filing-0001108524-26-000190-c9a819d93fa9ffe1.xbrl",
+          "sourceHash": "c9a819d93fa9ffe1d05c4d6dcff1372a8cf2995da8bd61ac161b1ba1d98147b2",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000190/crm-20260731.htm"
+        }
+      },
+      {
+        "tag": "IncreaseDecreaseInContractWithCustomerLiability",
+        "coefficient": 1,
+        "fact": {
+          "start": "2025-02-01",
+          "end": "2025-07-31",
+          "dimensions": [],
+          "tag": "IncreaseDecreaseInContractWithCustomerLiability",
+          "taxonomy": "http://fasb.org/us-gaap/2026",
+          "value": -4188000000.0,
+          "unit": "USD",
+          "context": "c-15",
+          "factId": "f-400",
+          "decimals": "-6",
+          "accession": "0001108524-26-000190",
+          "filedAt": "2026-08-27",
+          "sourceFile": "data/sources/filing-0001108524-26-000190-c9a819d93fa9ffe1.xbrl",
+          "sourceHash": "c9a819d93fa9ffe1d05c4d6dcff1372a8cf2995da8bd61ac161b1ba1d98147b2",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000190/crm-20260731.htm"
+        }
+      }
+    ],
+    "reportedCfo": 7216000000.0,
+    "revenue": 20065000000.0,
+    "income": 4274000000.0,
+    "segments": [
+      {
+        "member": "SubscriptionandSupportMember",
+        "sales": {
+          "start": "2025-02-01",
+          "end": "2025-07-31",
+          "dimensions": [
+            [
+              "ProductOrServiceAxis",
+              "SubscriptionandSupportMember"
+            ]
+          ],
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "taxonomy": "http://fasb.org/us-gaap/2026",
+          "value": 18987000000.0,
+          "unit": "USD",
+          "context": "c-8",
+          "factId": "f-94",
+          "decimals": "-6",
+          "accession": "0001108524-26-000190",
+          "filedAt": "2026-08-27",
+          "sourceFile": "data/sources/filing-0001108524-26-000190-c9a819d93fa9ffe1.xbrl",
+          "sourceHash": "c9a819d93fa9ffe1d05c4d6dcff1372a8cf2995da8bd61ac161b1ba1d98147b2",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000190/crm-20260731.htm"
+        },
+        "cost": {
+          "start": "2025-02-01",
+          "end": "2025-07-31",
+          "dimensions": [
+            [
+              "ProductOrServiceAxis",
+              "SubscriptionandSupportMember"
+            ]
+          ],
+          "tag": "CostOfGoodsAndServicesSold",
+          "taxonomy": "http://fasb.org/us-gaap/2026",
+          "value": 3256000000.0,
+          "unit": "USD",
+          "context": "c-8",
+          "factId": "f-106",
+          "decimals": "-6",
+          "accession": "0001108524-26-000190",
+          "filedAt": "2026-08-27",
+          "sourceFile": "data/sources/filing-0001108524-26-000190-c9a819d93fa9ffe1.xbrl",
+          "sourceHash": "c9a819d93fa9ffe1d05c4d6dcff1372a8cf2995da8bd61ac161b1ba1d98147b2",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000190/crm-20260731.htm"
+        },
+        "gross": 15731000000.0
+      },
+      {
+        "member": "ProfessionalServicesandOtherMember",
+        "sales": {
+          "start": "2025-02-01",
+          "end": "2025-07-31",
+          "dimensions": [
+            [
+              "ProductOrServiceAxis",
+              "ProfessionalServicesandOtherMember"
+            ]
+          ],
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "taxonomy": "http://fasb.org/us-gaap/2026",
+          "value": 1078000000.0,
+          "unit": "USD",
+          "context": "c-12",
+          "factId": "f-98",
+          "decimals": "-6",
+          "accession": "0001108524-26-000190",
+          "filedAt": "2026-08-27",
+          "sourceFile": "data/sources/filing-0001108524-26-000190-c9a819d93fa9ffe1.xbrl",
+          "sourceHash": "c9a819d93fa9ffe1d05c4d6dcff1372a8cf2995da8bd61ac161b1ba1d98147b2",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000190/crm-20260731.htm"
+        },
+        "cost": {
+          "start": "2025-02-01",
+          "end": "2025-07-31",
+          "dimensions": [
+            [
+              "ProductOrServiceAxis",
+              "ProfessionalServicesandOtherMember"
+            ]
+          ],
+          "tag": "CostOfGoodsAndServicesSold",
+          "taxonomy": "http://fasb.org/us-gaap/2026",
+          "value": 1251000000.0,
+          "unit": "USD",
+          "context": "c-12",
+          "factId": "f-110",
+          "decimals": "-6",
+          "accession": "0001108524-26-000190",
+          "filedAt": "2026-08-27",
+          "sourceFile": "data/sources/filing-0001108524-26-000190-c9a819d93fa9ffe1.xbrl",
+          "sourceHash": "c9a819d93fa9ffe1d05c4d6dcff1372a8cf2995da8bd61ac161b1ba1d98147b2",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000190/crm-20260731.htm"
+        },
+        "gross": -173000000.0
+      }
+    ],
+    "expenses": [
+      {
+        "start": "2025-02-01",
+        "end": "2025-07-31",
+        "dimensions": [],
+        "tag": "ResearchAndDevelopmentExpense",
+        "taxonomy": "http://fasb.org/us-gaap/2026",
+        "value": 2941000000.0,
+        "unit": "USD",
+        "context": "c-15",
+        "factId": "f-122",
+        "decimals": "-6",
+        "accession": "0001108524-26-000190",
+        "filedAt": "2026-08-27",
+        "sourceFile": "data/sources/filing-0001108524-26-000190-c9a819d93fa9ffe1.xbrl",
+        "sourceHash": "c9a819d93fa9ffe1d05c4d6dcff1372a8cf2995da8bd61ac161b1ba1d98147b2",
+        "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000190/crm-20260731.htm"
+      },
+      {
+        "start": "2025-02-01",
+        "end": "2025-07-31",
+        "dimensions": [],
+        "tag": "SellingAndMarketingExpense",
+        "taxonomy": "http://fasb.org/us-gaap/2026",
+        "value": 6872000000.0,
+        "unit": "USD",
+        "context": "c-15",
+        "factId": "f-126",
+        "decimals": "-6",
+        "accession": "0001108524-26-000190",
+        "filedAt": "2026-08-27",
+        "sourceFile": "data/sources/filing-0001108524-26-000190-c9a819d93fa9ffe1.xbrl",
+        "sourceHash": "c9a819d93fa9ffe1d05c4d6dcff1372a8cf2995da8bd61ac161b1ba1d98147b2",
+        "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000190/crm-20260731.htm"
+      },
+      {
+        "start": "2025-02-01",
+        "end": "2025-07-31",
+        "dimensions": [],
+        "tag": "GeneralAndAdministrativeExpense",
+        "taxonomy": "http://fasb.org/us-gaap/2026",
+        "value": 1431000000.0,
+        "unit": "USD",
+        "context": "c-15",
+        "factId": "f-130",
+        "decimals": "-6",
+        "accession": "0001108524-26-000190",
+        "filedAt": "2026-08-27",
+        "sourceFile": "data/sources/filing-0001108524-26-000190-c9a819d93fa9ffe1.xbrl",
+        "sourceHash": "c9a819d93fa9ffe1d05c4d6dcff1372a8cf2995da8bd61ac161b1ba1d98147b2",
+        "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000190/crm-20260731.htm"
+      },
+      {
+        "start": "2025-02-01",
+        "end": "2025-07-31",
+        "dimensions": [],
+        "tag": "RestructuringCharges",
+        "taxonomy": "http://fasb.org/us-gaap/2026",
+        "value": 40000000.0,
+        "unit": "USD",
+        "context": "c-15",
+        "factId": "f-134",
+        "decimals": "-6",
+        "accession": "0001108524-26-000190",
+        "filedAt": "2026-08-27",
+        "sourceFile": "data/sources/filing-0001108524-26-000190-c9a819d93fa9ffe1.xbrl",
+        "sourceHash": "c9a819d93fa9ffe1d05c4d6dcff1372a8cf2995da8bd61ac161b1ba1d98147b2",
+        "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000190/crm-20260731.htm"
+      }
+    ],
+    "financeLease": {
+      "start": "2025-02-01",
+      "end": "2025-07-31",
+      "dimensions": [],
+      "tag": "FinanceLeasePrincipalPayments",
+      "taxonomy": "http://fasb.org/us-gaap/2026",
+      "value": 278000000.0,
+      "unit": "USD",
+      "context": "c-15",
+      "factId": "f-456",
+      "decimals": "-6",
+      "accession": "0001108524-26-000190",
+      "filedAt": "2026-08-27",
+      "sourceFile": "data/sources/filing-0001108524-26-000190-c9a819d93fa9ffe1.xbrl",
+      "sourceHash": "c9a819d93fa9ffe1d05c4d6dcff1372a8cf2995da8bd61ac161b1ba1d98147b2",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000190/crm-20260731.htm"
+    },
+    "operatingLeaseCashAdjustment": {
+      "start": "2025-02-01",
+      "end": "2025-07-31",
+      "dimensions": [],
+      "tag": "IncreaseDecreaseInOperatingLeaseLiability",
+      "taxonomy": "http://fasb.org/us-gaap/2026",
+      "value": -278000000.0,
+      "unit": "USD",
+      "context": "c-15",
+      "factId": "f-396",
+      "decimals": "-6",
+      "accession": "0001108524-26-000190",
+      "filedAt": "2026-08-27",
+      "sourceFile": "data/sources/filing-0001108524-26-000190-c9a819d93fa9ffe1.xbrl",
+      "sourceHash": "c9a819d93fa9ffe1d05c4d6dcff1372a8cf2995da8bd61ac161b1ba1d98147b2",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000190/crm-20260731.htm"
+    },
+    "checks": {
+      "cash": 0.0,
+      "revenue": 0.0,
+      "cost": 0.0,
+      "income": 0.0
+    }
+  }
+]

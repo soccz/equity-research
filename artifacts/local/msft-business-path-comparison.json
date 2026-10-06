@@ -1,0 +1,887 @@
+{
+  "snapshotHash": "df5ed564c91b2974d3d166f7e070acc43e3a7349a2122a3dee37bf423acae8e8",
+  "modelEvidenceHash": "fabe6f1bb52a5c37b6fa53081687eb98202f1408e8a9b5c6c7c8afb0d7a67031",
+  "scope": "명시기간 5년 뒤 전 부문 성장률 2%로 전환하는 연구 가정 비교. 발생 확률·전망·목표가 아님. 설비 취득 비율의 전년 회귀는 과거 관측을 재사용한 시나리오이며 유지보수/성장 투자 구분 근거가 아니다. 초과 현금·비영업 투자자산의 일회성 배분가치를 제외했다. 이 결과를 적정가치 범위나 과대평가 판정으로 사용하지 않는다.",
+  "cases": [
+    {
+      "id": "flat",
+      "label": "사업부 매출 고정·현행 투입 비율",
+      "assumptions": {
+        "capexEnd": 0.34941040685392616,
+        "capexStart": 0.34941040685392616,
+        "depreciation": 0.11752687297153137,
+        "discount": 0.11,
+        "leaseEnd": 0.00934489315601843,
+        "leaseStart": 0.00934489315601843,
+        "netInterest": 0.0007533773908431498,
+        "segments": [
+          {
+            "growthEnd": 0,
+            "growthStart": 0,
+            "marginEnd": 0.599152832938084
+          },
+          {
+            "growthEnd": 0,
+            "growthStart": 0,
+            "marginEnd": 0.41346677214041555
+          },
+          {
+            "growthEnd": 0,
+            "growthStart": 0,
+            "marginEnd": 0.2661511137423222
+          }
+        ],
+        "tax": 0.19396265985271252,
+        "terminal": 0.02,
+        "workingCapital": 0.06026139878279956
+      },
+      "result": {
+        "years": [
+          {
+            "year": 1,
+            "segments": [
+              {
+                "label": "생산성·비즈니스 프로세스",
+                "revenue": 139996000000.0,
+                "operatingIncome": 83879000000.0
+              },
+              {
+                "label": "인텔리전트 클라우드",
+                "revenue": 137791000000.0,
+                "operatingIncome": 56972000000.0
+              },
+              {
+                "label": "개인용 컴퓨팅",
+                "revenue": 54052000000.0,
+                "operatingIncome": 14386000000.0
+              }
+            ],
+            "revenue": 331839000000.0,
+            "operatingIncome": 155237000000.0,
+            "netInterest": 249999999.99999997,
+            "tax": 30158672092.51871,
+            "depreciation": 39000000000.0,
+            "workingCapital": 0.0,
+            "capex": 115948000000.0,
+            "leasePrincipal": 3101000000.0,
+            "cash": 45279327907.48129
+          },
+          {
+            "year": 2,
+            "segments": [
+              {
+                "label": "생산성·비즈니스 프로세스",
+                "revenue": 139996000000.0,
+                "operatingIncome": 83879000000.0
+              },
+              {
+                "label": "인텔리전트 클라우드",
+                "revenue": 137791000000.0,
+                "operatingIncome": 56972000000.0
+              },
+              {
+                "label": "개인용 컴퓨팅",
+                "revenue": 54052000000.0,
+                "operatingIncome": 14386000000.0
+              }
+            ],
+            "revenue": 331839000000.0,
+            "operatingIncome": 155237000000.0,
+            "netInterest": 249999999.99999997,
+            "tax": 30158672092.51871,
+            "depreciation": 39000000000.0,
+            "workingCapital": 0.0,
+            "capex": 115948000000.0,
+            "leasePrincipal": 3101000000.0,
+            "cash": 45279327907.48129
+          },
+          {
+            "year": 3,
+            "segments": [
+              {
+                "label": "생산성·비즈니스 프로세스",
+                "revenue": 139996000000.0,
+                "operatingIncome": 83879000000.0
+              },
+              {
+                "label": "인텔리전트 클라우드",
+                "revenue": 137791000000.0,
+                "operatingIncome": 56972000000.0
+              },
+              {
+                "label": "개인용 컴퓨팅",
+                "revenue": 54052000000.0,
+                "operatingIncome": 14386000000.0
+              }
+            ],
+            "revenue": 331839000000.0,
+            "operatingIncome": 155237000000.0,
+            "netInterest": 249999999.99999997,
+            "tax": 30158672092.51871,
+            "depreciation": 39000000000.0,
+            "workingCapital": 0.0,
+            "capex": 115948000000.0,
+            "leasePrincipal": 3101000000.0,
+            "cash": 45279327907.48129
+          },
+          {
+            "year": 4,
+            "segments": [
+              {
+                "label": "생산성·비즈니스 프로세스",
+                "revenue": 139996000000.0,
+                "operatingIncome": 83879000000.0
+              },
+              {
+                "label": "인텔리전트 클라우드",
+                "revenue": 137791000000.0,
+                "operatingIncome": 56972000000.0
+              },
+              {
+                "label": "개인용 컴퓨팅",
+                "revenue": 54052000000.0,
+                "operatingIncome": 14386000000.0
+              }
+            ],
+            "revenue": 331839000000.0,
+            "operatingIncome": 155237000000.0,
+            "netInterest": 249999999.99999997,
+            "tax": 30158672092.51871,
+            "depreciation": 39000000000.0,
+            "workingCapital": 0.0,
+            "capex": 115948000000.0,
+            "leasePrincipal": 3101000000.0,
+            "cash": 45279327907.48129
+          },
+          {
+            "year": 5,
+            "segments": [
+              {
+                "label": "생산성·비즈니스 프로세스",
+                "revenue": 139996000000.0,
+                "operatingIncome": 83879000000.0
+              },
+              {
+                "label": "인텔리전트 클라우드",
+                "revenue": 137791000000.0,
+                "operatingIncome": 56972000000.0
+              },
+              {
+                "label": "개인용 컴퓨팅",
+                "revenue": 54052000000.0,
+                "operatingIncome": 14386000000.0
+              }
+            ],
+            "revenue": 331839000000.0,
+            "operatingIncome": 155237000000.0,
+            "netInterest": 249999999.99999997,
+            "tax": 30158672092.51871,
+            "depreciation": 39000000000.0,
+            "workingCapital": 0.0,
+            "capex": 115948000000.0,
+            "leasePrincipal": 3101000000.0,
+            "cash": 45279327907.48129
+          }
+        ],
+        "terminal": {
+          "year": 6,
+          "segments": [
+            {
+              "label": "생산성·비즈니스 프로세스",
+              "revenue": 142795920000.0,
+              "operatingIncome": 85556580000.0
+            },
+            {
+              "label": "인텔리전트 클라우드",
+              "revenue": 140546820000.0,
+              "operatingIncome": 58111440000.0
+            },
+            {
+              "label": "개인용 컴퓨팅",
+              "revenue": 55133040000.0,
+              "operatingIncome": 14673720000.0
+            }
+          ],
+          "revenue": 338475780000.0,
+          "operatingIncome": 158341740000.0,
+          "netInterest": 254999999.99999997,
+          "tax": 30761845534.369087,
+          "depreciation": 39780000000.0,
+          "workingCapital": 399941646.21370846,
+          "capex": 118266960000.0,
+          "leasePrincipal": 3163020000.0,
+          "cash": 45784972819.417206
+        },
+        "explicitPv": 167347732974.43228,
+        "terminalPv": 301901699164.535,
+        "equityValue": 469249432138.9673,
+        "price": 63.19393406285271,
+        "terminalShare": 0.6433714747152371,
+        "requiredTerminalCash": 547772310770.8728,
+        "terminalCashGap": 501987337951.45557,
+        "reinvestmentCaution": false,
+        "status": "calculated"
+      }
+    },
+    {
+      "id": "repeat",
+      "label": "관측 사업부 성장률 5년 반복",
+      "assumptions": {
+        "capexEnd": 0.34941040685392616,
+        "capexStart": 0.34941040685392616,
+        "depreciation": 0.11752687297153137,
+        "discount": 0.11,
+        "leaseEnd": 0.00934489315601843,
+        "leaseStart": 0.00934489315601843,
+        "netInterest": 0.0007533773908431498,
+        "segments": [
+          {
+            "growthEnd": 0.15881135667577184,
+            "growthStart": 0.15881135667577184,
+            "marginEnd": 0.599152832938084
+          },
+          {
+            "growthEnd": 0.29667341081259124,
+            "growthStart": 0.29667341081259124,
+            "marginEnd": 0.41346677214041555
+          },
+          {
+            "growthEnd": -0.01092426210909625,
+            "growthStart": -0.01092426210909625,
+            "marginEnd": 0.2661511137423222
+          }
+        ],
+        "tax": 0.19396265985271252,
+        "terminal": 0.02,
+        "workingCapital": 0.06026139878279956
+      },
+      "result": {
+        "years": [
+          {
+            "year": 1,
+            "segments": [
+              {
+                "label": "생산성·비즈니스 프로세스",
+                "revenue": 162228954689.18137,
+                "operatingIncome": 97199937786.60707
+              },
+              {
+                "label": "인텔리전트 클라우드",
+                "revenue": 178669925949.27777,
+                "operatingIncome": 73874077560.81496
+              },
+              {
+                "label": "개인용 컴퓨팅",
+                "revenue": 53461521784.479126,
+                "operatingIncome": 14228843565.29854
+              }
+            ],
+            "revenue": 394360402422.93823,
+            "operatingIncome": 185302858912.72058,
+            "netInterest": 297102211.02924776,
+            "tax": 35999462128.12255,
+            "depreciation": 46347944920.56265,
+            "workingCapital": 3767627163.8685718,
+            "capex": 137793628657.67688,
+            "leasePrincipal": 3685255825.6067896,
+            "cash": 50701932269.03768
+          },
+          {
+            "year": 2,
+            "segments": [
+              {
+                "label": "생산성·비즈니스 프로세스",
+                "revenue": 187992755075.4626,
+                "operatingIncome": 112636391775.29877
+              },
+              {
+                "label": "인텔리전트 클라우드",
+                "revenue": 231676542290.2831,
+                "operatingIncome": 95790552121.41583
+              },
+              {
+                "label": "개인용 컴퓨팅",
+                "revenue": 52877494107.75432,
+                "operatingIncome": 14073403948.68189
+              }
+            ],
+            "revenue": 472546791473.5,
+            "operatingIncome": 222500347845.39648,
+            "netInterest": 356006068.8116074,
+            "tax": 43225811170.27727,
+            "depreciation": 55536946734.610756,
+            "workingCapital": 4711621169.963016,
+            "capex": 165112766666.27304,
+            "leasePrincipal": 4415899277.539179,
+            "cash": 60927202364.766365
+          },
+          {
+            "year": 3,
+            "segments": [
+              {
+                "label": "생산성·비즈니스 프로세스",
+                "revenue": 217848139554.2129,
+                "operatingIncome": 130524329964.19772
+              },
+              {
+                "label": "인텔리전트 클라우드",
+                "revenue": 300408812296.80896,
+                "operatingIncome": 124209061942.89757
+              },
+              {
+                "label": "개인용 컴퓨팅",
+                "revenue": 52299846502.44902,
+                "operatingIncome": 13919662395.1793
+              }
+            ],
+            "revenue": 570556798353.4708,
+            "operatingIncome": 268653054302.2746,
+            "netInterest": 429844592.071359,
+            "tax": 52192034790.42586,
+            "depreciation": 67055756363.132,
+            "workingCapital": 5906220109.298851,
+            "capex": 199358483045.95975,
+            "leasePrincipal": 5331792320.053138,
+            "cash": 73350124991.74042
+          },
+          {
+            "year": 4,
+            "segments": [
+              {
+                "label": "생산성·비즈니스 프로세스",
+                "revenue": 252444898146.11032,
+                "operatingIncome": 151253075885.00806
+              },
+              {
+                "label": "인텔리전트 클라우드",
+                "revenue": 389532119279.0628,
+                "operatingIncome": 161058588003.32944
+              },
+              {
+                "label": "개인용 컴퓨팅",
+                "revenue": 51728509270.99077,
+                "operatingIncome": 13767600354.704233
+              }
+            ],
+            "revenue": 693705526696.164,
+            "operatingIncome": 326079264243.04175,
+            "netInterest": 522622059.71582896,
+            "tax": 63348570580.19605,
+            "depreciation": 81529041315.66933,
+            "workingCapital": 7421114628.253681,
+            "capex": 242387930319.7238,
+            "leasePrincipal": 6482604028.715143,
+            "cash": 88490708061.53824
+          },
+          {
+            "year": 5,
+            "segments": [
+              {
+                "label": "생산성·비즈니스 프로세스",
+                "revenue": 292536014906.57117,
+                "operatingIncome": 175273782067.68967
+              },
+              {
+                "label": "인텔리전트 클라우드",
+                "revenue": 505095941726.6395,
+                "operatingIncome": 208840388646.93707
+              },
+              {
+                "label": "개인용 컴퓨팅",
+                "revenue": 51163413477.20165,
+                "operatingIncome": 13617199479.816158
+              }
+            ],
+            "revenue": 848795370110.4124,
+            "operatingIncome": 397731370194.4429,
+            "netInterest": 639463241.2935281,
+            "tax": 77269066460.93733,
+            "depreciation": 99756265641.79039,
+            "workingCapital": 9345930901.147964,
+            "capex": 296577935606.008,
+            "leasePrincipal": 7931902045.004923,
+            "cash": 107002264064.4286
+          }
+        ],
+        "terminal": {
+          "year": 6,
+          "segments": [
+            {
+              "label": "생산성·비즈니스 프로세스",
+              "revenue": 298386735204.7026,
+              "operatingIncome": 178779257709.04346
+            },
+            {
+              "label": "인텔리전트 클라우드",
+              "revenue": 515197860561.1723,
+              "operatingIncome": 213017196419.87582
+            },
+            {
+              "label": "개인용 컴퓨팅",
+              "revenue": 52186681746.74569,
+              "operatingIncome": 13889543469.412481
+            }
+          ],
+          "revenue": 865771277512.6206,
+          "operatingIncome": 405685997598.3318,
+          "netInterest": 652252506.1193987,
+          "tax": 78814447790.1561,
+          "depreciation": 101751390954.6262,
+          "workingCapital": 1022991925.6643504,
+          "capex": 302509494318.1282,
+          "leasePrincipal": 8090540085.905022,
+          "cash": 117652166939.2237
+        },
+        "explicitPv": 270552485942.41077,
+        "terminalPv": 775787052433.8838,
+        "equityValue": 1046339538376.2946,
+        "price": 140.91079768408824,
+        "terminalShare": 0.7414295493772003,
+        "requiredTerminalCash": 532120769813.83325,
+        "terminalCashGap": 414468602874.60956,
+        "reinvestmentCaution": false,
+        "status": "calculated"
+      }
+    },
+    {
+      "id": "fade",
+      "label": "관측 성장률에서 5년차 절반으로 둔화",
+      "assumptions": {
+        "capexEnd": 0.34941040685392616,
+        "capexStart": 0.34941040685392616,
+        "depreciation": 0.11752687297153137,
+        "discount": 0.11,
+        "leaseEnd": 0.00934489315601843,
+        "leaseStart": 0.00934489315601843,
+        "netInterest": 0.0007533773908431498,
+        "segments": [
+          {
+            "growthEnd": 0.07940567833788592,
+            "growthStart": 0.15881135667577184,
+            "marginEnd": 0.599152832938084
+          },
+          {
+            "growthEnd": 0.14833670540629562,
+            "growthStart": 0.29667341081259124,
+            "marginEnd": 0.41346677214041555
+          },
+          {
+            "growthEnd": -0.005462131054548125,
+            "growthStart": -0.01092426210909625,
+            "marginEnd": 0.2661511137423222
+          }
+        ],
+        "tax": 0.19396265985271252,
+        "terminal": 0.02,
+        "workingCapital": 0.06026139878279956
+      },
+      "result": {
+        "years": [
+          {
+            "year": 1,
+            "segments": [
+              {
+                "label": "생산성·비즈니스 프로세스",
+                "revenue": 162228954689.18137,
+                "operatingIncome": 97199937786.60707
+              },
+              {
+                "label": "인텔리전트 클라우드",
+                "revenue": 178669925949.27777,
+                "operatingIncome": 73874077560.81496
+              },
+              {
+                "label": "개인용 컴퓨팅",
+                "revenue": 53461521784.479126,
+                "operatingIncome": 14228843565.29854
+              }
+            ],
+            "revenue": 394360402422.93823,
+            "operatingIncome": 185302858912.72058,
+            "netInterest": 297102211.02924776,
+            "tax": 35999462128.12255,
+            "depreciation": 46347944920.56265,
+            "workingCapital": 3767627163.8685718,
+            "capex": 137793628657.67688,
+            "leasePrincipal": 3685255825.6067896,
+            "cash": 50701932269.03768
+          },
+          {
+            "year": 2,
+            "segments": [
+              {
+                "label": "생산성·비즈니스 프로세스",
+                "revenue": 184772280027.17743,
+                "operatingIncome": 110706835026.71231
+              },
+              {
+                "label": "인텔리전트 클라우드",
+                "revenue": 225050715247.65744,
+                "operatingIncome": 93050992801.34073
+              },
+              {
+                "label": "개인용 컴퓨팅",
+                "revenue": 52950497567.34492,
+                "operatingIncome": 14092833900.758972
+              }
+            ],
+            "revenue": 462773492842.1798,
+            "operatingIncome": 217850661728.812,
+            "netInterest": 348643086.5888125,
+            "tax": 42322517540.00793,
+            "depreciation": 54388321507.85475,
+            "workingCapital": 4122668523.717641,
+            "capex": 161697874415.19855,
+            "leasePrincipal": 4324568846.04763,
+            "cash": 60119996998.28379
+          },
+          {
+            "year": 3,
+            "segments": [
+              {
+                "label": "생산성·비즈니스 프로세스",
+                "revenue": 206780232377.5712,
+                "operatingIncome": 123892962024.6171
+              },
+              {
+                "label": "인텔리전트 클라우드",
+                "revenue": 275125637721.40924,
+                "operatingIncome": 113755309361.74443
+              },
+              {
+                "label": "개인용 컴퓨팅",
+                "revenue": 52516663731.670364,
+                "operatingIncome": 13977368542.215086
+              }
+            ],
+            "revenue": 534422533830.6508,
+            "operatingIncome": 251625639928.5766,
+            "netInterest": 402621854.1451207,
+            "tax": 48884072013.432434,
+            "depreciation": 62809009246.638824,
+            "workingCapital": 4317671431.411403,
+            "capex": 186732794977.67383,
+            "leasePrincipal": 4994121478.816077,
+            "cash": 69908611128.0268
+          },
+          {
+            "year": 4,
+            "segments": [
+              {
+                "label": "생산성·비즈니스 프로세스",
+                "revenue": 227304638151.07962,
+                "operatingIncome": 136190217888.18544
+              },
+              {
+                "label": "인텔리전트 클라우드",
+                "revenue": 326139676061.9091,
+                "operatingIncome": 134847919128.23831
+              },
+              {
+                "label": "개인용 컴퓨팅",
+                "revenue": 52158097606.85784,
+                "operatingIncome": 13881935768.745964
+              }
+            ],
+            "revenue": 605602411819.8466,
+            "operatingIncome": 284920072785.16974,
+            "netInterest": 456247164.9051547,
+            "tax": 55352350076.49523,
+            "depreciation": 71174557725.20413,
+            "workingCapital": 4289399012.8179417,
+            "capex": 211603785105.69153,
+            "leasePrincipal": 5659289833.48354,
+            "cash": 79646053646.79082
+          },
+          {
+            "year": 5,
+            "segments": [
+              {
+                "label": "생산성·비즈니스 프로세스",
+                "revenue": 245353917132.81378,
+                "operatingIncome": 147004494522.58127
+              },
+              {
+                "label": "인텔리전트 클라우드",
+                "revenue": 374518161111.2092,
+                "operatingIncome": 154850815182.61578
+              },
+              {
+                "label": "개인용 컴퓨팅",
+                "revenue": 51873203242.17327,
+                "operatingIncome": 13806110816.286255
+              }
+            ],
+            "revenue": 671745281486.1963,
+            "operatingIncome": 315661420521.4833,
+            "netInterest": 506077707.4772678,
+            "tax": 61324688915.466965,
+            "depreciation": 78948122366.45378,
+            "workingCapital": 3985861845.602638,
+            "capex": 234714792106.297,
+            "leasePrincipal": 6277387883.54803,
+            "cash": 88812889844.4997
+          }
+        ],
+        "terminal": {
+          "year": 6,
+          "segments": [
+            {
+              "label": "생산성·비즈니스 프로세스",
+              "revenue": 250260995475.47006,
+              "operatingIncome": 149944584413.0329
+            },
+            {
+              "label": "인텔리전트 클라우드",
+              "revenue": 382008524333.4334,
+              "operatingIncome": 157947831486.2681
+            },
+            {
+              "label": "개인용 컴퓨팅",
+              "revenue": 52910667307.01674,
+              "operatingIncome": 14082233032.61198
+            }
+          ],
+          "revenue": 685180187115.9202,
+          "operatingIncome": 321974648931.91296,
+          "netInterest": 516199261.6268131,
+          "tax": 62551182693.776306,
+          "depreciation": 80527084813.78285,
+          "workingCapital": 809606205.7620695,
+          "capex": 239409087948.4229,
+          "leasePrincipal": 6402935641.21899,
+          "cash": 93845120518.14233
+        },
+        "explicitPv": 250760178576.99002,
+        "terminalPv": 618805682258.9673,
+        "equityValue": 869565860835.9573,
+        "price": 117.10464394702034,
+        "terminalShare": 0.7116260080220702,
+        "requiredTerminalCash": 535122376817.9245,
+        "terminalCashGap": 441277256299.78217,
+        "reinvestmentCaution": false,
+        "status": "calculated"
+      }
+    },
+    {
+      "id": "investment",
+      "label": "관측 성장률 반복·5년차 설비 취득 비율을 전년 수준으로 이동",
+      "assumptions": {
+        "capexEnd": 0.22912850875324786,
+        "capexStart": 0.34941040685392616,
+        "depreciation": 0.11752687297153137,
+        "discount": 0.11,
+        "leaseEnd": 0.00934489315601843,
+        "leaseStart": 0.00934489315601843,
+        "netInterest": 0.0007533773908431498,
+        "segments": [
+          {
+            "growthEnd": 0.15881135667577184,
+            "growthStart": 0.15881135667577184,
+            "marginEnd": 0.599152832938084
+          },
+          {
+            "growthEnd": 0.29667341081259124,
+            "growthStart": 0.29667341081259124,
+            "marginEnd": 0.41346677214041555
+          },
+          {
+            "growthEnd": -0.01092426210909625,
+            "growthStart": -0.01092426210909625,
+            "marginEnd": 0.2661511137423222
+          }
+        ],
+        "tax": 0.19396265985271252,
+        "terminal": 0.02,
+        "workingCapital": 0.06026139878279956
+      },
+      "result": {
+        "years": [
+          {
+            "year": 1,
+            "segments": [
+              {
+                "label": "생산성·비즈니스 프로세스",
+                "revenue": 162228954689.18137,
+                "operatingIncome": 97199937786.60707
+              },
+              {
+                "label": "인텔리전트 클라우드",
+                "revenue": 178669925949.27777,
+                "operatingIncome": 73874077560.81496
+              },
+              {
+                "label": "개인용 컴퓨팅",
+                "revenue": 53461521784.479126,
+                "operatingIncome": 14228843565.29854
+              }
+            ],
+            "revenue": 394360402422.93823,
+            "operatingIncome": 185302858912.72058,
+            "netInterest": 297102211.02924776,
+            "tax": 35999462128.12255,
+            "depreciation": 46347944920.56265,
+            "workingCapital": 3767627163.8685718,
+            "capex": 137793628657.67688,
+            "leasePrincipal": 3685255825.6067896,
+            "cash": 50701932269.03768
+          },
+          {
+            "year": 2,
+            "segments": [
+              {
+                "label": "생산성·비즈니스 프로세스",
+                "revenue": 187992755075.4626,
+                "operatingIncome": 112636391775.29877
+              },
+              {
+                "label": "인텔리전트 클라우드",
+                "revenue": 231676542290.2831,
+                "operatingIncome": 95790552121.41583
+              },
+              {
+                "label": "개인용 컴퓨팅",
+                "revenue": 52877494107.75432,
+                "operatingIncome": 14073403948.68189
+              }
+            ],
+            "revenue": 472546791473.5,
+            "operatingIncome": 222500347845.39648,
+            "netInterest": 356006068.8116074,
+            "tax": 43225811170.27727,
+            "depreciation": 55536946734.610756,
+            "workingCapital": 4711621169.963016,
+            "capex": 150903060411.31854,
+            "leasePrincipal": 4415899277.539179,
+            "cash": 75136908619.72086
+          },
+          {
+            "year": 3,
+            "segments": [
+              {
+                "label": "생산성·비즈니스 프로세스",
+                "revenue": 217848139554.2129,
+                "operatingIncome": 130524329964.19772
+              },
+              {
+                "label": "인텔리전트 클라우드",
+                "revenue": 300408812296.80896,
+                "operatingIncome": 124209061942.89757
+              },
+              {
+                "label": "개인용 컴퓨팅",
+                "revenue": 52299846502.44902,
+                "operatingIncome": 13919662395.1793
+              }
+            ],
+            "revenue": 570556798353.4708,
+            "operatingIncome": 268653054302.2746,
+            "netInterest": 429844592.071359,
+            "tax": 52192034790.42586,
+            "depreciation": 67055756363.132,
+            "workingCapital": 5906220109.298851,
+            "capex": 165044655705.85904,
+            "leasePrincipal": 5331792320.053138,
+            "cash": 107663952331.84113
+          },
+          {
+            "year": 4,
+            "segments": [
+              {
+                "label": "생산성·비즈니스 프로세스",
+                "revenue": 252444898146.11032,
+                "operatingIncome": 151253075885.00806
+              },
+              {
+                "label": "인텔리전트 클라우드",
+                "revenue": 389532119279.0628,
+                "operatingIncome": 161058588003.32944
+              },
+              {
+                "label": "개인용 컴퓨팅",
+                "revenue": 51728509270.99077,
+                "operatingIncome": 13767600354.704233
+              }
+            ],
+            "revenue": 693705526696.164,
+            "operatingIncome": 326079264243.04175,
+            "netInterest": 522622059.71582896,
+            "tax": 63348570580.19605,
+            "depreciation": 81529041315.66933,
+            "workingCapital": 7421114628.253681,
+            "capex": 179807767214.26477,
+            "leasePrincipal": 6482604028.715143,
+            "cash": 151070871166.99725
+          },
+          {
+            "year": 5,
+            "segments": [
+              {
+                "label": "생산성·비즈니스 프로세스",
+                "revenue": 292536014906.57117,
+                "operatingIncome": 175273782067.68967
+              },
+              {
+                "label": "인텔리전트 클라우드",
+                "revenue": 505095941726.6395,
+                "operatingIncome": 208840388646.93707
+              },
+              {
+                "label": "개인용 컴퓨팅",
+                "revenue": 51163413477.20165,
+                "operatingIncome": 13617199479.816158
+              }
+            ],
+            "revenue": 848795370110.4124,
+            "operatingIncome": 397731370194.4429,
+            "netInterest": 639463241.2935281,
+            "tax": 77269066460.93733,
+            "depreciation": 99756265641.79039,
+            "workingCapital": 9345930901.147964,
+            "capex": 194483217390.05988,
+            "leasePrincipal": 7931902045.004923,
+            "cash": 209096982280.37674
+          }
+        ],
+        "terminal": {
+          "year": 6,
+          "segments": [
+            {
+              "label": "생산성·비즈니스 프로세스",
+              "revenue": 298386735204.7026,
+              "operatingIncome": 178779257709.04346
+            },
+            {
+              "label": "인텔리전트 클라우드",
+              "revenue": 515197860561.1723,
+              "operatingIncome": 213017196419.87582
+            },
+            {
+              "label": "개인용 컴퓨팅",
+              "revenue": 52186681746.74569,
+              "operatingIncome": 13889543469.412481
+            }
+          ],
+          "revenue": 865771277512.6206,
+          "operatingIncome": 405685997598.3318,
+          "netInterest": 652252506.1193987,
+          "tax": 78814447790.1561,
+          "depreciation": 101751390954.6262,
+          "workingCapital": 1022991925.6643504,
+          "capex": 198372881737.86108,
+          "leasePrincipal": 8090540085.905022,
+          "cash": 221788779519.49078
+        },
+        "explicitPv": 408987115036.9015,
+        "terminalPv": 1462453841714.7627,
+        "equityValue": 1871440956751.664,
+        "price": 252.02740445397725,
+        "terminalShare": 0.7814587131047955,
+        "requiredTerminalCash": 511126433750.4809,
+        "terminalCashGap": 289337654230.9901,
+        "reinvestmentCaution": false,
+        "status": "calculated"
+      }
+    }
+  ]
+}

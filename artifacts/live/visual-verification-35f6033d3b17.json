@@ -1,0 +1,40 @@
+{
+  "snapshotHash": "35f6033d3b175e49fdc01287e22f7d239ad83a21c996f5fc58b47db191e0bdd1",
+  "reviewedAt": "2026-10-01T09:55:17.421082+00:00",
+  "pdfHashes": {
+    "artifacts/live/samsung-biologics.pdf": "b75c0d6997aca37f1399efca7823eb610d9cd34eb5ed70adbc88aa55ef97fa39",
+    "artifacts/live/microsoft.pdf": "b6878302438ab011c87eee2cacbd6286195b36472ec5dde4e511a5bb721c3c40",
+    "artifacts/live/micron.pdf": "4ecc7d16acec1b7f4dab4ee48743470ada0f2b6622620cea0dde4189dcf86b99",
+    "artifacts/live/comparison-auto.pdf": "e0b00355591ae287c7d2d7bce1a3ecd8138eee9b09954fa719559e876e138706",
+    "artifacts/live/conditions.pdf": "233e922cc4f9e6386cf5698ed4c2dfe77cd2f8e570b0e6a8aad0558d5bfbe691",
+    "artifacts/live/kia.pdf": "84791e57454665ac41cec727e9ab24e38480e460fa117aefadc13ab4b6c9ff66",
+    "artifacts/live/sk-hynix.pdf": "b11fb8c44423279ba0f040c0a1175f0d06392433328b7835fdfddae34e57c93a",
+    "artifacts/live/tesla.pdf": "237276b0e5bceee37737961113537dc7fe529c590dd28058a05b08a84e8307f5",
+    "artifacts/live/comparison-cloud.pdf": "a7e70295b09bb8564a41956b26b7fb174fa266ac0ef5188bb7c18d0511a069ad",
+    "artifacts/live/amazon.pdf": "2c202f81475736b91a175a573c4deadead100778e6018a41636d3622c6390572",
+    "artifacts/live/universe.pdf": "7bb37a2a04a5a1d0534ebebb11d24ea7234986e29f84817a8e0fdf8100566c76",
+    "artifacts/live/research-kr.pdf": "55682e933e92c37aeb5f07a14305d1649d5736126fa285f9f95a329a04539e72",
+    "artifacts/live/research-us.pdf": "73b0b04f4b3f994db79acbd987f71f653c720cca5eda3f332a2c370c396b9fa0",
+    "artifacts/live/hyundai.pdf": "73308edf5d9e57007ad1ae79730c2e4e69a44bf883b98cc1d34dd5777c4d8530"
+  },
+  "pdfPages": 171,
+  "contactSheets": [
+    "artifacts/live/35f6033d3b17-contact-1.png",
+    "artifacts/live/35f6033d3b17-contact-2.png",
+    "artifacts/live/35f6033d3b17-contact-3.png",
+    "artifacts/live/35f6033d3b17-contact-4.png",
+    "artifacts/live/35f6033d3b17-contact-5.png",
+    "artifacts/live/35f6033d3b17-contact-6.png",
+    "artifacts/live/35f6033d3b17-contact-7.png",
+    "artifacts/live/35f6033d3b17-contact-8.png",
+    "artifacts/live/35f6033d3b17-contact-9.png",
+    "artifacts/live/35f6033d3b17-contact-10.png",
+    "artifacts/live/35f6033d3b17-contact-11.png"
+  ],
+  "expanded": [
+    "amazon-detail-10",
+    "amazon-detail-13"
+  ],
+  "finding": "All 171 PDF pages visually reviewed on 11 contact sheets, Amazon partial normalization enlarged: no observed clipping. Original-source and financial approval remain separate.",
+  "screenshotFinding": "Mobile table columns now visible; region screenshot still clipped heading at right because capture reflows after scrollbar removal. Subsequent code adds capture context; not yet visually verified."
+}

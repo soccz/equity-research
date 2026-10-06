@@ -1,0 +1,8 @@
+{
+  "checkedAt": "2026-09-30T09:04:46.162Z",
+  "status": "failed",
+  "checks": [],
+  "error": "Error: read ECONNRESET",
+  "runtimeErrors": [],
+  "stderr": "[165:165:0930/180446.158443:ERROR:third_party/crashpad/crashpad/util/linux/socket.cc:45] setsockopt: Operation not permitted (1)\n"
+}

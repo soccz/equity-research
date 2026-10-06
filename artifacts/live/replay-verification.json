@@ -1,0 +1,22 @@
+{
+  "checkedAt": "2026-10-06T02:37:12.220885+00:00",
+  "status": "passed",
+  "snapshotHash": "210f084d8cf206b49cce8d7b2dcf7c6100782efc9be234fa15db9db3f43f61da",
+  "verifiedRawSources": 400,
+  "identicalFields": [
+    "companies",
+    "peerStudies",
+    "failures",
+    "experiments",
+    "fundamentalExperiments",
+    "universeHash",
+    "registrySources",
+    "researchCohort",
+    "researchProtocol",
+    "engineFiles",
+    "renderFiles",
+    "inputFiles"
+  ],
+  "method": "isolated offline rebuild from archived code, input manifests and hash-verified originals",
+  "exclusions": "generation time, online retrieval mode, condition/model-note ledgers and local inference records are separate events"
+}

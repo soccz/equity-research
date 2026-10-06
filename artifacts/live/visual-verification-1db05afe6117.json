@@ -1,0 +1,48 @@
+{
+  "checkedAt": "2026-10-01T07:49:01.093779+00:00",
+  "snapshotHash": "1db05afe61173e359399c0dce9e98409b60539c1ff4507e0492ed2521f84b61c",
+  "status": "layout_reviewed",
+  "method": "Viewed all eleven contact sheets covering 171 PDF pages; expanded auto comparison pages 2/3 and cloud comparison page 1. Automated text/version/primary-link checks recorded separately.",
+  "pages": 171,
+  "pdfHashes": {
+    "universe": "e52640187cf2ee0bd13353906701b6f732a3f6b9c96b19801e6c3451eccbdc24",
+    "micron": "eccbda26d59a18f00f5ffea5cf8cb2ec55a874515b797f380e4e2ae715d0875f",
+    "sk-hynix": "267617a2f3876f68ba7b59196885401214f63859e5940ca21be546dd5db76ed7",
+    "microsoft": "6ccc08198c606890fc0fc22c4f843843590be61189d9a307a6fc285863654ff8",
+    "amazon": "97fa730074aa416557e4d3c95f6fed29ffe85b39e2c883707102c6617b89c2bb",
+    "kia": "a76465d8dbc16f285e0c298a0d10d593f751836bd33f43f85db96ae41ae8cf18",
+    "tesla": "c74728b6f9d3f82909b6517243ea996caba53565af8d63bceddd77ca8c1a67d2",
+    "comparison-auto": "ad4126486bf5d7ab4064b87262158fb75856b83b3b353aec545a95d5c0e3fec7",
+    "comparison-cloud": "3f190f517d179b391f35df12c4684475aef1062338b15d3e08d9f471015337c1",
+    "hyundai": "546d48387d7a98371560701db6e190707102c649fc7801071be7e319fa9ecda4",
+    "samsung-biologics": "ce75dceb53be40d8c95623cbbc0ff0956a02ad1534ab0c7d0cf629adf68261bd",
+    "research-us": "31b659ab0abb5eef8a44230f49dd0d52a05a1da38f6f12b2fa18bef26c0feaf8",
+    "research-kr": "0ccd13e6b1a25ad3cdd4f2e96c6009b8a4a9ae7a92b5a78d57bdee24dd231571",
+    "conditions": "fa5007b4b579444d977f6456be3ea4af1b5c76fea6132a10bd603234d521f6be"
+  },
+  "contactSheets": [
+    "artifacts/live/1db05afe6117-contact-1.png",
+    "artifacts/live/1db05afe6117-contact-10.png",
+    "artifacts/live/1db05afe6117-contact-11.png",
+    "artifacts/live/1db05afe6117-contact-2.png",
+    "artifacts/live/1db05afe6117-contact-3.png",
+    "artifacts/live/1db05afe6117-contact-4.png",
+    "artifacts/live/1db05afe6117-contact-5.png",
+    "artifacts/live/1db05afe6117-contact-6.png",
+    "artifacts/live/1db05afe6117-contact-7.png",
+    "artifacts/live/1db05afe6117-contact-8.png",
+    "artifacts/live/1db05afe6117-contact-9.png"
+  ],
+  "expandedPages": [
+    "artifacts/live/1db05afe6117-comparison-auto-detail-2.png",
+    "artifacts/live/1db05afe6117-comparison-auto-detail-3.png",
+    "artifacts/live/1db05afe6117-comparison-cloud-detail-1.png"
+  ],
+  "findings": [
+    "No clipped PDF labels or overlapping table contents observed.",
+    "Both comparison PDFs preserve selected business assumptions and personal-note status.",
+    "Paired tables crossing pages repeat headers."
+  ],
+  "captureLimitation": "Desktop/mobile region PNG captures still contain an offscreen skip-link artifact; narrow region capture is cropped. PDF layout and browser document-overflow checks passed. Review capture framing on resume.",
+  "scope": "Layout inspection is not independent financial interpretation approval."
+}

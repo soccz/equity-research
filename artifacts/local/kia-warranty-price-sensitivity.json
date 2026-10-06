@@ -1,0 +1,308 @@
+{
+  "snapshotHash": "01a47dd47e0757ee3cc60aa57d9b74705d36c92b409edd393d1de4e05f2ea02b",
+  "modelHash": "dd97503d60016668403fc82ab23626942ecd38ab8c4050e1cdf1416c36488227",
+  "status": "conditional research assumptions; not an adopted investment opinion",
+  "observedClose": 116000.0,
+  "default": {
+    "equityValue": 43967984502241.516,
+    "explicitPv": 15395402849452.33,
+    "price": 113128.26673903412,
+    "reinvestmentCaution": false,
+    "requiredTerminalCash": 5232163024950.483,
+    "status": "calculated",
+    "terminal": {
+      "capex": 5306153220000.0,
+      "cash": 5035465164334.594,
+      "depreciation": 3092653260000.0,
+      "leasePrincipal": 75597300000.0,
+      "netInterest": 789314760000.0,
+      "operatingIncome": 8301212880000.0,
+      "revenue": 121698964200000.0,
+      "segments": [
+        {
+          "label": "완성차·부품 및 관련 용역",
+          "operatingIncome": 8301212880000.0,
+          "revenue": 121698964200000.0
+        }
+      ],
+      "tax": 2483007850857.148,
+      "warrantyAccrual": 4135197300000.0005,
+      "warrantyUse": 4097368560000.0,
+      "workingCapital": -679213895191.743,
+      "year": 6
+    },
+    "terminalCashGap": 196697860615.88965,
+    "terminalPv": 28572581652789.184,
+    "terminalShare": 0.6498497026019588,
+    "years": [
+      {
+        "capex": 5202111000000.0,
+        "cash": 4270834577591.0317,
+        "depreciation": 3032013000000.0,
+        "leasePrincipal": 74115000000.0,
+        "netInterest": 773838000000.0,
+        "operatingIncome": 8138444000000.0,
+        "revenue": 119312710000000.0,
+        "segments": [
+          {
+            "label": "완성차·부품 및 관련 용역",
+            "operatingIncome": 8138444000000.0,
+            "revenue": 119312710000000.0
+          }
+        ],
+        "tax": 2434321422408.9683,
+        "warrantyAccrual": 4054115000000.0005,
+        "warrantyUse": 4017028000000.0,
+        "workingCapital": -0.0,
+        "year": 1
+      },
+      {
+        "capex": 5202111000000.0,
+        "cash": 4270834577591.0317,
+        "depreciation": 3032013000000.0,
+        "leasePrincipal": 74115000000.0,
+        "netInterest": 773838000000.0,
+        "operatingIncome": 8138444000000.0,
+        "revenue": 119312710000000.0,
+        "segments": [
+          {
+            "label": "완성차·부품 및 관련 용역",
+            "operatingIncome": 8138444000000.0,
+            "revenue": 119312710000000.0
+          }
+        ],
+        "tax": 2434321422408.9683,
+        "warrantyAccrual": 4054115000000.0005,
+        "warrantyUse": 4017028000000.0,
+        "workingCapital": -0.0,
+        "year": 2
+      },
+      {
+        "capex": 5202111000000.0,
+        "cash": 4270834577591.0317,
+        "depreciation": 3032013000000.0,
+        "leasePrincipal": 74115000000.0,
+        "netInterest": 773838000000.0,
+        "operatingIncome": 8138444000000.0,
+        "revenue": 119312710000000.0,
+        "segments": [
+          {
+            "label": "완성차·부품 및 관련 용역",
+            "operatingIncome": 8138444000000.0,
+            "revenue": 119312710000000.0
+          }
+        ],
+        "tax": 2434321422408.9683,
+        "warrantyAccrual": 4054115000000.0005,
+        "warrantyUse": 4017028000000.0,
+        "workingCapital": -0.0,
+        "year": 3
+      },
+      {
+        "capex": 5202111000000.0,
+        "cash": 4270834577591.0317,
+        "depreciation": 3032013000000.0,
+        "leasePrincipal": 74115000000.0,
+        "netInterest": 773838000000.0,
+        "operatingIncome": 8138444000000.0,
+        "revenue": 119312710000000.0,
+        "segments": [
+          {
+            "label": "완성차·부품 및 관련 용역",
+            "operatingIncome": 8138444000000.0,
+            "revenue": 119312710000000.0
+          }
+        ],
+        "tax": 2434321422408.9683,
+        "warrantyAccrual": 4054115000000.0005,
+        "warrantyUse": 4017028000000.0,
+        "workingCapital": -0.0,
+        "year": 4
+      },
+      {
+        "capex": 5202111000000.0,
+        "cash": 4270834577591.0317,
+        "depreciation": 3032013000000.0,
+        "leasePrincipal": 74115000000.0,
+        "netInterest": 773838000000.0,
+        "operatingIncome": 8138444000000.0,
+        "revenue": 119312710000000.0,
+        "segments": [
+          {
+            "label": "완성차·부품 및 관련 용역",
+            "operatingIncome": 8138444000000.0,
+            "revenue": 119312710000000.0
+          }
+        ],
+        "tax": 2434321422408.9683,
+        "warrantyAccrual": 4054115000000.0005,
+        "warrantyUse": 4017028000000.0,
+        "workingCapital": -0.0,
+        "year": 5
+      }
+    ]
+  },
+  "combinedStress": {
+    "assumptions": {
+      "capexEnd": 0.04360064405544053,
+      "capexStart": 0.04360064405544053,
+      "depreciation": 0.025412321956311275,
+      "discount": 0.12,
+      "leaseEnd": 0.0006211827725646329,
+      "leaseStart": 0.0006211827725646329,
+      "netInterest": 0.006485796861038526,
+      "segments": [
+        {
+          "growthEnd": 0,
+          "growthStart": 0,
+          "marginEnd": 0.06821103971236593
+        }
+      ],
+      "tax": 0.2731423245369669,
+      "terminal": 0.02,
+      "warrantyAccrual": 0.03397890300203558,
+      "warrantyUseEnd": 0.0436680643663194,
+      "warrantyUseStart": 0.0436680643663194,
+      "workingCapital": 0
+    },
+    "result": {
+      "years": [
+        {
+          "year": 1,
+          "segments": [
+            {
+              "label": "완성차·부품 및 관련 용역",
+              "revenue": 119312710000000.0,
+              "operatingIncome": 8138444000000.0
+            }
+          ],
+          "revenue": 119312710000000.0,
+          "operatingIncome": 8138444000000.0,
+          "netInterest": 773838000000.0,
+          "tax": 2434321422408.9683,
+          "depreciation": 3032013000000.0,
+          "workingCapital": 0.0,
+          "capex": 5202111000000.0,
+          "leasePrincipal": 74115000000.0,
+          "cash": 3077707477591.0317,
+          "warrantyAccrual": 4054115000000.0005,
+          "warrantyUse": 5210155100000.0
+        },
+        {
+          "year": 2,
+          "segments": [
+            {
+              "label": "완성차·부품 및 관련 용역",
+              "revenue": 119312710000000.0,
+              "operatingIncome": 8138444000000.0
+            }
+          ],
+          "revenue": 119312710000000.0,
+          "operatingIncome": 8138444000000.0,
+          "netInterest": 773838000000.0,
+          "tax": 2434321422408.9683,
+          "depreciation": 3032013000000.0,
+          "workingCapital": 0.0,
+          "capex": 5202111000000.0,
+          "leasePrincipal": 74115000000.0,
+          "cash": 3077707477591.0317,
+          "warrantyAccrual": 4054115000000.0005,
+          "warrantyUse": 5210155100000.0
+        },
+        {
+          "year": 3,
+          "segments": [
+            {
+              "label": "완성차·부품 및 관련 용역",
+              "revenue": 119312710000000.0,
+              "operatingIncome": 8138444000000.0
+            }
+          ],
+          "revenue": 119312710000000.0,
+          "operatingIncome": 8138444000000.0,
+          "netInterest": 773838000000.0,
+          "tax": 2434321422408.9683,
+          "depreciation": 3032013000000.0,
+          "workingCapital": 0.0,
+          "capex": 5202111000000.0,
+          "leasePrincipal": 74115000000.0,
+          "cash": 3077707477591.0317,
+          "warrantyAccrual": 4054115000000.0005,
+          "warrantyUse": 5210155100000.0
+        },
+        {
+          "year": 4,
+          "segments": [
+            {
+              "label": "완성차·부품 및 관련 용역",
+              "revenue": 119312710000000.0,
+              "operatingIncome": 8138444000000.0
+            }
+          ],
+          "revenue": 119312710000000.0,
+          "operatingIncome": 8138444000000.0,
+          "netInterest": 773838000000.0,
+          "tax": 2434321422408.9683,
+          "depreciation": 3032013000000.0,
+          "workingCapital": 0.0,
+          "capex": 5202111000000.0,
+          "leasePrincipal": 74115000000.0,
+          "cash": 3077707477591.0317,
+          "warrantyAccrual": 4054115000000.0005,
+          "warrantyUse": 5210155100000.0
+        },
+        {
+          "year": 5,
+          "segments": [
+            {
+              "label": "완성차·부품 및 관련 용역",
+              "revenue": 119312710000000.0,
+              "operatingIncome": 8138444000000.0
+            }
+          ],
+          "revenue": 119312710000000.0,
+          "operatingIncome": 8138444000000.0,
+          "netInterest": 773838000000.0,
+          "tax": 2434321422408.9683,
+          "depreciation": 3032013000000.0,
+          "workingCapital": 0.0,
+          "capex": 5202111000000.0,
+          "leasePrincipal": 74115000000.0,
+          "cash": 3077707477591.0317,
+          "warrantyAccrual": 4054115000000.0005,
+          "warrantyUse": 5210155100000.0
+        }
+      ],
+      "terminal": {
+        "year": 6,
+        "segments": [
+          {
+            "label": "완성차·부품 및 관련 용역",
+            "revenue": 121698964200000.0,
+            "operatingIncome": 8301212880000.0
+          }
+        ],
+        "revenue": 121698964200000.0,
+        "operatingIncome": 8301212880000.0,
+        "netInterest": 789314760000.0,
+        "tax": 2483007850857.148,
+        "depreciation": 3092653260000.0,
+        "workingCapital": 0.0,
+        "capex": 5306153220000.0,
+        "leasePrincipal": 75597300000.0,
+        "cash": 3139261627142.852,
+        "warrantyAccrual": 4135197300000.0005,
+        "warrantyUse": 5314358202000.0
+      },
+      "explicitPv": 11094446672999.422,
+      "terminalPv": 17813013543677.223,
+      "equityValue": 28907460216676.645,
+      "price": 74378.00270270504,
+      "terminalShare": 0.616208183291071,
+      "requiredTerminalCash": 5990138459688.429,
+      "terminalCashGap": 2850876832545.5767,
+      "reinvestmentCaution": false,
+      "status": "calculated"
+    }
+  }
+}

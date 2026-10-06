@@ -1,0 +1,8 @@
+test_expanded_coverage_never_reselects_the_original_forty (test_forward_study.ForwardStudyTests.test_expanded_coverage_never_reselects_the_original_forty) ... ok
+test_frozen_selection_is_idempotent_and_future_only (test_forward_study.ForwardStudyTests.test_frozen_selection_is_idempotent_and_future_only) ... ok
+test_known_future_window_cost_ablation_and_missing_member (test_forward_study.ForwardStudyTests.test_known_future_window_cost_ablation_and_missing_member) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 1.012s
+
+OK

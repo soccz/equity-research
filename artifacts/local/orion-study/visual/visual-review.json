@@ -1,0 +1,16 @@
+{
+  "snapshotHash": "602523021cf6aa15b2d3e9648203959672610aae9ad521e6e94e4c53b9a25ec1",
+  "pdfSha256": "6fc2829f158a4dafcf66c99de097ca9740ac2b9f162d0f89302ecd1a55045917",
+  "reviewedPages": 16,
+  "detailPages": [
+    10,
+    11
+  ],
+  "status": "corrections_required",
+  "issues": [
+    "Cash anchor -174000 KRW rounded to -0 at trillion scale",
+    "82.5+42.5 billion capital rounded to .083+.043 trillion, obscuring .125 total",
+    "Three period acquisition table split across pages"
+  ],
+  "financialApproval": false
+}

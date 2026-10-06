@@ -1,0 +1,146 @@
+{
+  "runId": "20261001T135825780027Z",
+  "startedAt": "2026-10-01T13:58:25.780133+00:00",
+  "status": "failed",
+  "mode": "archived_sources_local_only",
+  "modelRequested": true,
+  "stages": [
+    {
+      "name": "unit",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-01T13:58:25.780269+00:00",
+      "finishedAt": "2026-10-01T14:00:13.999202+00:00",
+      "log": "artifacts/local/runs/20261001T135825780027Z/unit.log",
+      "logHash": "84ac2ed4724692729c37e5d804ab043d5842eaff3f0fbc48e0f6159718ecd903"
+    },
+    {
+      "name": "analysis",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-01T14:00:13.999889+00:00",
+      "finishedAt": "2026-10-01T14:02:15.406342+00:00",
+      "log": "artifacts/local/runs/20261001T135825780027Z/analysis.log",
+      "logHash": "0b561e6c74a97c8ff73460332d5d18af51eca98d650d4666d6e0c4483940aafe"
+    },
+    {
+      "name": "local-model",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-01T14:02:15.406783+00:00",
+      "finishedAt": "2026-10-01T14:02:25.892518+00:00",
+      "log": "artifacts/local/runs/20261001T135825780027Z/local-model.log",
+      "logHash": "e97477e66784eaf0b0bb38661e227bcfb2eaae1c4cf81803aace5864a04cd605"
+    },
+    {
+      "name": "coverage-model",
+      "status": "quality_gate_failed",
+      "exitCode": 2,
+      "startedAt": "2026-10-01T14:02:25.893399+00:00",
+      "finishedAt": "2026-10-01T14:02:37.085620+00:00",
+      "log": "artifacts/local/runs/20261001T135825780027Z/coverage-model.log",
+      "logHash": "392f0d2ebbfa60c3ba92226f044f39a4edefd0f880e50a59810028cb9f877390"
+    },
+    {
+      "name": "question-model",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-01T14:02:37.086101+00:00",
+      "finishedAt": "2026-10-01T14:04:54.914913+00:00",
+      "log": "artifacts/local/runs/20261001T135825780027Z/question-model.log",
+      "logHash": "dd831f26b01db0ee0e1abad37f52d39be454a6012e82dcd6e2f3675dc4767ab7"
+    },
+    {
+      "name": "filing-model",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-01T14:04:54.915411+00:00",
+      "finishedAt": "2026-10-01T14:05:09.359836+00:00",
+      "log": "artifacts/local/runs/20261001T135825780027Z/filing-model.log",
+      "logHash": "a24986af4c98e387658b49470849374dd8ed12815d85d5ea30510241bcc9eb50"
+    },
+    {
+      "name": "register-cash-conditions",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-01T14:05:09.360326+00:00",
+      "finishedAt": "2026-10-01T14:05:15.962785+00:00",
+      "log": "artifacts/local/runs/20261001T135825780027Z/register-cash-conditions.log",
+      "logHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "register-receivable-conditions",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-01T14:05:15.963261+00:00",
+      "finishedAt": "2026-10-01T14:05:23.300538+00:00",
+      "log": "artifacts/local/runs/20261001T135825780027Z/register-receivable-conditions.log",
+      "logHash": "5a91db2e38dac97e3b4d989866353e23b69d5e5996baf0ad874d5a08510f5dba"
+    },
+    {
+      "name": "observe",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-01T14:05:23.301032+00:00",
+      "finishedAt": "2026-10-01T14:05:32.316434+00:00",
+      "log": "artifacts/local/runs/20261001T135825780027Z/observe.log",
+      "logHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "research-journal",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-01T14:05:32.320063+00:00",
+      "finishedAt": "2026-10-01T14:05:46.356617+00:00",
+      "log": "artifacts/local/runs/20261001T135825780027Z/research-journal.log",
+      "logHash": "220b1c6875c6fc13c44d2241fb15484f85fd0eb3ddd3e809ae556cc41738bd68"
+    },
+    {
+      "name": "forward-study",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-01T14:05:46.357310+00:00",
+      "finishedAt": "2026-10-01T14:05:53.929534+00:00",
+      "log": "artifacts/local/runs/20261001T135825780027Z/forward-study.log",
+      "logHash": "df0906a227c1ce2e4da2d51553935aaef8ed2faed18dd8f141a347d78ae7e330"
+    },
+    {
+      "name": "price-crosscheck",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-01T14:05:53.930027+00:00",
+      "finishedAt": "2026-10-01T14:05:54.352391+00:00",
+      "log": "artifacts/local/runs/20261001T135825780027Z/price-crosscheck.log",
+      "logHash": "973d3379ed6ef5a00f7c1f00915a5004d0d3f1488ca17188df5cc283372e4feb"
+    },
+    {
+      "name": "local-records",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-01T14:05:54.352883+00:00",
+      "finishedAt": "2026-10-01T14:06:02.128353+00:00",
+      "log": "artifacts/local/runs/20261001T135825780027Z/local-records.log",
+      "logHash": "27f09ba843817529294d3013e40ccf7609dbb936962c2e50bf733ae09d98dda5"
+    },
+    {
+      "name": "offline-replay",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-01T14:06:02.128848+00:00",
+      "finishedAt": "2026-10-01T14:08:03.610583+00:00",
+      "log": "artifacts/local/runs/20261001T135825780027Z/offline-replay.log",
+      "logHash": "1275df5ed80117ec2bb5ecca386f457e483e174dba97b423f08e6e53cbf98d64"
+    },
+    {
+      "name": "browser-pdf",
+      "status": "failed",
+      "exitCode": 1,
+      "startedAt": "2026-10-01T14:08:03.611090+00:00",
+      "finishedAt": "2026-10-01T14:08:07.691062+00:00",
+      "log": "artifacts/local/runs/20261001T135825780027Z/browser-pdf.log",
+      "logHash": "b1eefea04489adbc9e1f82645bd9682cfdfa1aacdc5ef6674ed01e9ac9dce853"
+    }
+  ],
+  "error": "RuntimeError: browser-pdf failed; see artifacts/local/runs/20261001T135825780027Z/browser-pdf.log",
+  "finishedAt": "2026-10-01T14:08:07.693717+00:00"
+}

@@ -1,0 +1,38 @@
+{
+  "ticker": "018260",
+  "asOf": "2026-09-29",
+  "checkedAt": "2026-10-01T10:22:52.856093+00:00",
+  "filing": {
+    "corp_code": "00126186",
+    "corp_name": "삼성에스디에스",
+    "stock_code": "018260",
+    "corp_cls": "Y",
+    "report_nm": "반기보고서 (2026.06)",
+    "rcept_no": "20260814003604",
+    "flr_nm": "삼성에스디에스",
+    "rcept_dt": "20260814",
+    "rm": ""
+  },
+  "queries": [
+    {
+      "file": "data/sources/dart-list-018260-4ccb4823e7207cc5.json",
+      "sha256": "4ccb4823e7207cc5fb26318419b0ec0ec11829933be52798129c05f3fcc19741",
+      "parameters": {
+        "corp_code": "00126186",
+        "bgn_de": "20250101",
+        "end_de": "20260929",
+        "pblntf_ty": "A",
+        "last_reprt_at": "N",
+        "page_count": 100,
+        "page_no": 1,
+        "sort": "date",
+        "sort_mth": "desc"
+      }
+    }
+  ],
+  "package": {
+    "file": "data/sources/dart-package-20260814003604-441dbd0da6b0ce02.zip",
+    "sha256": "441dbd0da6b0ce020e548f935cbb9686753c18fd5615b30dc152429f4e384d65"
+  },
+  "instanceHash": "6f1283bfa55a5abdde211405b2d25eca94a2b9fba415a3ddded4c9e589acc5e6"
+}

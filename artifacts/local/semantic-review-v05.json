@@ -1,0 +1,17 @@
+{
+  "scope": "two development examples only; no accuracy estimate",
+  "records": {
+    "MU": {
+      "recordHash": "5f53e26dcf7af7c7af1ca959ad72acbd89736bd4ea20a4a08465805959dc033b",
+      "automaticStatus": "revision_required",
+      "reviewedBy": "development assistant; not independent approval",
+      "finding": "좁힌 최종 초안은 채권 현금 효과 감소와 원인 미확인을 적절히 구분하나, 같은 모델의 비판은 조건부 서술도 거부하는 과잉 판정이 있다."
+    },
+    "000660": {
+      "recordHash": "9bc0d5f6d068096b738ca7317a0052393c78fbffb333ec322d1de71ebeb204a4",
+      "automaticStatus": "revision_required",
+      "reviewedBy": "development assistant; not independent approval",
+      "finding": "회수 원인을 미확인으로 남겼지만 요약의 악화 표현은 현금 사용 증가를 신용 악화로 읽힐 수 있게 한다. 자동 채택 보류."
+    }
+  }
+}

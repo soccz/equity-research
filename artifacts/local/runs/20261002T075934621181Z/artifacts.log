@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/mnt/20t/주식/scripts/check-artifacts.py", line 251, in <module>
+    raise ValueError(f"{name} PDF lacks its primary SEC filing link")
+ValueError: orion PDF lacks its primary SEC filing link

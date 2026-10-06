@@ -1,0 +1,12 @@
+test_corrupted_segment_fact_cannot_hide_behind_a_cached_total (__main__.CelltrionCandidateTests.test_corrupted_segment_fact_cannot_hide_behind_a_cached_total) ... ok
+test_development_stage_gross_and_impairment_are_not_cash_purchases (__main__.CelltrionCandidateTests.test_development_stage_gross_and_impairment_are_not_cash_purchases) ... ok
+test_financing_interest_is_not_already_in_cfo (__main__.CelltrionCandidateTests.test_financing_interest_is_not_already_in_cfo) ... ok
+test_segment_gross_sales_and_internal_profit_have_separate_assumptions (__main__.CelltrionCandidateTests.test_segment_gross_sales_and_internal_profit_have_separate_assumptions) ... ok
+test_source_revision_requires_new_review (__main__.CelltrionCandidateTests.test_source_revision_requires_new_review) ... ok
+test_supplier_financing_net_flow_is_not_gross_repayment_or_other_transfer (__main__.CelltrionCandidateTests.test_supplier_financing_net_flow_is_not_gross_repayment_or_other_transfer) ... ok
+test_three_cash_periods_preserve_the_change_of_working_capital_sign (__main__.CelltrionCandidateTests.test_three_cash_periods_preserve_the_change_of_working_capital_sign) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 1.933s
+
+OK

@@ -1,0 +1,9 @@
+{
+  "status": "interrupted",
+  "observedExitCode": 143,
+  "originalRunHash": "1fb04337201e60e6c0af12c6894643a223ca40130f8db0850dc2de0334b23d51",
+  "originalRun": "artifacts/local/runs/20261001T122813761096Z/run.json",
+  "cause": "Project workflow deliberately stopped after candidate PDF inspection found remaining sparse pages. Only project workflow processes were targeted; print CSS was corrected before the next run.",
+  "lastCompletedStage": "unit",
+  "pendingStage": "analysis"
+}

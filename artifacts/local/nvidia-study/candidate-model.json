@@ -1,0 +1,3261 @@
+{
+  "status": "research_workspace",
+  "version": "nvidia-operating-cash-path-v1",
+  "unallocatedPath": true,
+  "sourcePeriod": [
+    "2025-07-28",
+    "2026-07-26"
+  ],
+  "accession": "0001045810-26-000075",
+  "corpusHash": "c6079c3c96a23d82426b958715d0455824faa0be9d3a58ea18004d093c7b25fe",
+  "basisLabel": "최근 1년 부문·본사·연결 현금 대사",
+  "growthLabel": "최근 반기 전년 대비",
+  "currency": "USD",
+  "displayScale": 1000000000.0,
+  "displayUnit": "십억 달러",
+  "segments": [
+    {
+      "id": "ComputeAndNetworkingSegmentMember",
+      "label": "컴퓨트·네트워킹",
+      "revenue": 275409000000.0,
+      "margin": 0.7107792410560294,
+      "observedGrowth": 1.0124814631735046,
+      "evidence": [
+        {
+          "accession": "0001045810-26-000021",
+          "context": "c-193",
+          "decimals": "-6",
+          "dimensions": [
+            [
+              "ConsolidationItemsAxis",
+              "OperatingSegmentsMember"
+            ],
+            [
+              "StatementBusinessSegmentsAxis",
+              "ComputeAndNetworkingSegmentMember"
+            ]
+          ],
+          "end": "2026-01-25",
+          "factId": "f-1119",
+          "filedAt": "2026-02-25",
+          "sourceFile": "data/sources/filing-0001045810-26-000021-af8398105d629d98.xbrl",
+          "sourceHash": "af8398105d629d98defacca572c8e85fe0d8a5f551266b01df2d8be4fa03558f",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm",
+          "start": "2025-01-27",
+          "tag": "Revenues",
+          "taxonomy": "http://fasb.org/us-gaap/2025",
+          "unit": "USD",
+          "value": 193479000000.0
+        },
+        {
+          "accession": "0001045810-26-000075",
+          "context": "c-245",
+          "decimals": "-6",
+          "dimensions": [
+            [
+              "ConsolidationItemsAxis",
+              "OperatingSegmentsMember"
+            ],
+            [
+              "StatementBusinessSegmentsAxis",
+              "ComputeAndNetworkingSegmentMember"
+            ]
+          ],
+          "end": "2026-07-26",
+          "factId": "f-968",
+          "filedAt": "2026-08-26",
+          "sourceFile": "data/sources/filing-0001045810-26-000075-fd37c5c3b08be610.xbrl",
+          "sourceHash": "fd37c5c3b08be610fa48f8e3e394ab8d2108a23bbc2dfa26ee0bf0d91493bdfd",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
+          "start": "2026-01-26",
+          "tag": "Revenues",
+          "taxonomy": "http://fasb.org/us-gaap/2026",
+          "unit": "USD",
+          "value": 162850000000.0
+        },
+        {
+          "accession": "0001045810-26-000075",
+          "context": "c-248",
+          "decimals": "-6",
+          "dimensions": [
+            [
+              "ConsolidationItemsAxis",
+              "OperatingSegmentsMember"
+            ],
+            [
+              "StatementBusinessSegmentsAxis",
+              "ComputeAndNetworkingSegmentMember"
+            ]
+          ],
+          "end": "2025-07-27",
+          "factId": "f-977",
+          "filedAt": "2026-08-26",
+          "sourceFile": "data/sources/filing-0001045810-26-000075-fd37c5c3b08be610.xbrl",
+          "sourceHash": "fd37c5c3b08be610fa48f8e3e394ab8d2108a23bbc2dfa26ee0bf0d91493bdfd",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
+          "start": "2025-01-27",
+          "tag": "Revenues",
+          "taxonomy": "http://fasb.org/us-gaap/2026",
+          "unit": "USD",
+          "value": 80920000000.0
+        }
+      ]
+    },
+    {
+      "id": "GraphicsSegmentMember",
+      "label": "그래픽스",
+      "revenue": 27561000000.0,
+      "margin": 0.4395341243060847,
+      "observedGrowth": 0.5161355589276682,
+      "evidence": [
+        {
+          "accession": "0001045810-26-000021",
+          "context": "c-194",
+          "decimals": "-6",
+          "dimensions": [
+            [
+              "ConsolidationItemsAxis",
+              "OperatingSegmentsMember"
+            ],
+            [
+              "StatementBusinessSegmentsAxis",
+              "GraphicsSegmentMember"
+            ]
+          ],
+          "end": "2026-01-25",
+          "factId": "f-1120",
+          "filedAt": "2026-02-25",
+          "sourceFile": "data/sources/filing-0001045810-26-000021-af8398105d629d98.xbrl",
+          "sourceHash": "af8398105d629d98defacca572c8e85fe0d8a5f551266b01df2d8be4fa03558f",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm",
+          "start": "2025-01-27",
+          "tag": "Revenues",
+          "taxonomy": "http://fasb.org/us-gaap/2025",
+          "unit": "USD",
+          "value": 22459000000.0
+        },
+        {
+          "accession": "0001045810-26-000075",
+          "context": "c-246",
+          "decimals": "-6",
+          "dimensions": [
+            [
+              "ConsolidationItemsAxis",
+              "OperatingSegmentsMember"
+            ],
+            [
+              "StatementBusinessSegmentsAxis",
+              "GraphicsSegmentMember"
+            ]
+          ],
+          "end": "2026-07-26",
+          "factId": "f-969",
+          "filedAt": "2026-08-26",
+          "sourceFile": "data/sources/filing-0001045810-26-000075-fd37c5c3b08be610.xbrl",
+          "sourceHash": "fd37c5c3b08be610fa48f8e3e394ab8d2108a23bbc2dfa26ee0bf0d91493bdfd",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
+          "start": "2026-01-26",
+          "tag": "Revenues",
+          "taxonomy": "http://fasb.org/us-gaap/2026",
+          "unit": "USD",
+          "value": 14987000000.0
+        },
+        {
+          "accession": "0001045810-26-000075",
+          "context": "c-249",
+          "decimals": "-6",
+          "dimensions": [
+            [
+              "ConsolidationItemsAxis",
+              "OperatingSegmentsMember"
+            ],
+            [
+              "StatementBusinessSegmentsAxis",
+              "GraphicsSegmentMember"
+            ]
+          ],
+          "end": "2025-07-27",
+          "factId": "f-978",
+          "filedAt": "2026-08-26",
+          "sourceFile": "data/sources/filing-0001045810-26-000075-fd37c5c3b08be610.xbrl",
+          "sourceHash": "fd37c5c3b08be610fa48f8e3e394ab8d2108a23bbc2dfa26ee0bf0d91493bdfd",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
+          "start": "2025-01-27",
+          "tag": "Revenues",
+          "taxonomy": "http://fasb.org/us-gaap/2026",
+          "unit": "USD",
+          "value": 9885000000.0
+        }
+      ]
+    }
+  ],
+  "facts": {
+    "revenue": {
+      "value": 302970000000.0,
+      "components": [
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2025-01-27",
+            "end": "2026-01-25",
+            "dimensions": [],
+            "tag": "Revenues",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": 215938000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-72",
+            "decimals": "-6",
+            "accession": "0001045810-26-000021",
+            "filedAt": "2026-02-25",
+            "sourceFile": "data/sources/filing-0001045810-26-000021-af8398105d629d98.xbrl",
+            "sourceHash": "af8398105d629d98defacca572c8e85fe0d8a5f551266b01df2d8be4fa03558f",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm"
+          }
+        },
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2026-01-26",
+            "end": "2026-07-26",
+            "dimensions": [],
+            "tag": "Revenues",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": 177837000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-32",
+            "decimals": "-6",
+            "accession": "0001045810-26-000075",
+            "filedAt": "2026-08-26",
+            "sourceFile": "data/sources/filing-0001045810-26-000075-fd37c5c3b08be610.xbrl",
+            "sourceHash": "fd37c5c3b08be610fa48f8e3e394ab8d2108a23bbc2dfa26ee0bf0d91493bdfd",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+          }
+        },
+        {
+          "coefficient": -1,
+          "fact": {
+            "start": "2025-01-27",
+            "end": "2025-07-27",
+            "dimensions": [],
+            "tag": "Revenues",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": 90805000000.0,
+            "unit": "USD",
+            "context": "c-5",
+            "factId": "f-33",
+            "decimals": "-6",
+            "accession": "0001045810-26-000075",
+            "filedAt": "2026-08-26",
+            "sourceFile": "data/sources/filing-0001045810-26-000075-fd37c5c3b08be610.xbrl",
+            "sourceHash": "fd37c5c3b08be610fa48f8e3e394ab8d2108a23bbc2dfa26ee0bf0d91493bdfd",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+          }
+        }
+      ],
+      "unit": "USD",
+      "derived": true,
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+    },
+    "operatingIncome": {
+      "value": 197579000000.0,
+      "components": [
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2025-01-27",
+            "end": "2026-01-25",
+            "dimensions": [],
+            "tag": "OperatingIncomeLoss",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": 130387000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-90",
+            "decimals": "-6",
+            "accession": "0001045810-26-000021",
+            "filedAt": "2026-02-25",
+            "sourceFile": "data/sources/filing-0001045810-26-000021-af8398105d629d98.xbrl",
+            "sourceHash": "af8398105d629d98defacca572c8e85fe0d8a5f551266b01df2d8be4fa03558f",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm"
+          }
+        },
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2026-01-26",
+            "end": "2026-07-26",
+            "dimensions": [],
+            "tag": "OperatingIncomeLoss",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": 117270000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-56",
+            "decimals": "-6",
+            "accession": "0001045810-26-000075",
+            "filedAt": "2026-08-26",
+            "sourceFile": "data/sources/filing-0001045810-26-000075-fd37c5c3b08be610.xbrl",
+            "sourceHash": "fd37c5c3b08be610fa48f8e3e394ab8d2108a23bbc2dfa26ee0bf0d91493bdfd",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+          }
+        },
+        {
+          "coefficient": -1,
+          "fact": {
+            "start": "2025-01-27",
+            "end": "2025-07-27",
+            "dimensions": [],
+            "tag": "OperatingIncomeLoss",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": 50078000000.0,
+            "unit": "USD",
+            "context": "c-5",
+            "factId": "f-57",
+            "decimals": "-6",
+            "accession": "0001045810-26-000075",
+            "filedAt": "2026-08-26",
+            "sourceFile": "data/sources/filing-0001045810-26-000075-fd37c5c3b08be610.xbrl",
+            "sourceHash": "fd37c5c3b08be610fa48f8e3e394ab8d2108a23bbc2dfa26ee0bf0d91493bdfd",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+          }
+        }
+      ],
+      "unit": "USD",
+      "derived": true,
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+    },
+    "netIncome": {
+      "value": 192880000000.0,
+      "components": [
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2025-01-27",
+            "end": "2026-01-25",
+            "dimensions": [],
+            "tag": "NetIncomeLoss",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": 120067000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-111",
+            "decimals": "-6",
+            "accession": "0001045810-26-000021",
+            "filedAt": "2026-02-25",
+            "sourceFile": "data/sources/filing-0001045810-26-000021-af8398105d629d98.xbrl",
+            "sourceHash": "af8398105d629d98defacca572c8e85fe0d8a5f551266b01df2d8be4fa03558f",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm"
+          }
+        },
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2026-01-26",
+            "end": "2026-07-26",
+            "dimensions": [],
+            "tag": "NetIncomeLoss",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": 118010000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-72",
+            "decimals": "-6",
+            "accession": "0001045810-26-000075",
+            "filedAt": "2026-08-26",
+            "sourceFile": "data/sources/filing-0001045810-26-000075-fd37c5c3b08be610.xbrl",
+            "sourceHash": "fd37c5c3b08be610fa48f8e3e394ab8d2108a23bbc2dfa26ee0bf0d91493bdfd",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+          }
+        },
+        {
+          "coefficient": -1,
+          "fact": {
+            "start": "2025-01-27",
+            "end": "2025-07-27",
+            "dimensions": [],
+            "tag": "NetIncomeLoss",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": 45197000000.0,
+            "unit": "USD",
+            "context": "c-5",
+            "factId": "f-73",
+            "decimals": "-6",
+            "accession": "0001045810-26-000075",
+            "filedAt": "2026-08-26",
+            "sourceFile": "data/sources/filing-0001045810-26-000075-fd37c5c3b08be610.xbrl",
+            "sourceHash": "fd37c5c3b08be610fa48f8e3e394ab8d2108a23bbc2dfa26ee0bf0d91493bdfd",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+          }
+        }
+      ],
+      "unit": "USD",
+      "derived": true,
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+    },
+    "tax": {
+      "value": 36863000000.0,
+      "components": [
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2025-01-27",
+            "end": "2026-01-25",
+            "dimensions": [],
+            "tag": "IncomeTaxExpenseBenefit",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": 21383000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-108",
+            "decimals": "-6",
+            "accession": "0001045810-26-000021",
+            "filedAt": "2026-02-25",
+            "sourceFile": "data/sources/filing-0001045810-26-000021-af8398105d629d98.xbrl",
+            "sourceHash": "af8398105d629d98defacca572c8e85fe0d8a5f551266b01df2d8be4fa03558f",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm"
+          }
+        },
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2026-01-26",
+            "end": "2026-07-26",
+            "dimensions": [],
+            "tag": "IncomeTaxExpenseBenefit",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": 23400000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-68",
+            "decimals": "-6",
+            "accession": "0001045810-26-000075",
+            "filedAt": "2026-08-26",
+            "sourceFile": "data/sources/filing-0001045810-26-000075-fd37c5c3b08be610.xbrl",
+            "sourceHash": "fd37c5c3b08be610fa48f8e3e394ab8d2108a23bbc2dfa26ee0bf0d91493bdfd",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+          }
+        },
+        {
+          "coefficient": -1,
+          "fact": {
+            "start": "2025-01-27",
+            "end": "2025-07-27",
+            "dimensions": [],
+            "tag": "IncomeTaxExpenseBenefit",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": 7920000000.0,
+            "unit": "USD",
+            "context": "c-5",
+            "factId": "f-69",
+            "decimals": "-6",
+            "accession": "0001045810-26-000075",
+            "filedAt": "2026-08-26",
+            "sourceFile": "data/sources/filing-0001045810-26-000075-fd37c5c3b08be610.xbrl",
+            "sourceHash": "fd37c5c3b08be610fa48f8e3e394ab8d2108a23bbc2dfa26ee0bf0d91493bdfd",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+          }
+        }
+      ],
+      "unit": "USD",
+      "derived": true,
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+    },
+    "pretax": {
+      "value": 229743000000.0,
+      "components": [
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2025-01-27",
+            "end": "2026-01-25",
+            "dimensions": [],
+            "tag": "IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": 141450000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-105",
+            "decimals": "-6",
+            "accession": "0001045810-26-000021",
+            "filedAt": "2026-02-25",
+            "sourceFile": "data/sources/filing-0001045810-26-000021-af8398105d629d98.xbrl",
+            "sourceHash": "af8398105d629d98defacca572c8e85fe0d8a5f551266b01df2d8be4fa03558f",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm"
+          }
+        },
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2026-01-26",
+            "end": "2026-07-26",
+            "dimensions": [],
+            "tag": "IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": 141410000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-64",
+            "decimals": "-6",
+            "accession": "0001045810-26-000075",
+            "filedAt": "2026-08-26",
+            "sourceFile": "data/sources/filing-0001045810-26-000075-fd37c5c3b08be610.xbrl",
+            "sourceHash": "fd37c5c3b08be610fa48f8e3e394ab8d2108a23bbc2dfa26ee0bf0d91493bdfd",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+          }
+        },
+        {
+          "coefficient": -1,
+          "fact": {
+            "start": "2025-01-27",
+            "end": "2025-07-27",
+            "dimensions": [],
+            "tag": "IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": 53117000000.0,
+            "unit": "USD",
+            "context": "c-5",
+            "factId": "f-65",
+            "decimals": "-6",
+            "accession": "0001045810-26-000075",
+            "filedAt": "2026-08-26",
+            "sourceFile": "data/sources/filing-0001045810-26-000075-fd37c5c3b08be610.xbrl",
+            "sourceHash": "fd37c5c3b08be610fa48f8e3e394ab8d2108a23bbc2dfa26ee0bf0d91493bdfd",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+          }
+        }
+      ],
+      "unit": "USD",
+      "derived": true,
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+    },
+    "cfo": {
+      "value": 134360000000.0,
+      "components": [
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2025-01-27",
+            "end": "2026-01-25",
+            "dimensions": [],
+            "tag": "NetCashProvidedByUsedInOperatingActivities",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": 102718000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-335",
+            "decimals": "-6",
+            "accession": "0001045810-26-000021",
+            "filedAt": "2026-02-25",
+            "sourceFile": "data/sources/filing-0001045810-26-000021-af8398105d629d98.xbrl",
+            "sourceHash": "af8398105d629d98defacca572c8e85fe0d8a5f551266b01df2d8be4fa03558f",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm"
+          }
+        },
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2026-01-26",
+            "end": "2026-07-26",
+            "dimensions": [],
+            "tag": "NetCashProvidedByUsedInOperatingActivities",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": 74421000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-324",
+            "decimals": "-6",
+            "accession": "0001045810-26-000075",
+            "filedAt": "2026-08-26",
+            "sourceFile": "data/sources/filing-0001045810-26-000075-fd37c5c3b08be610.xbrl",
+            "sourceHash": "fd37c5c3b08be610fa48f8e3e394ab8d2108a23bbc2dfa26ee0bf0d91493bdfd",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+          }
+        },
+        {
+          "coefficient": -1,
+          "fact": {
+            "start": "2025-01-27",
+            "end": "2025-07-27",
+            "dimensions": [],
+            "tag": "NetCashProvidedByUsedInOperatingActivities",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": 42779000000.0,
+            "unit": "USD",
+            "context": "c-5",
+            "factId": "f-325",
+            "decimals": "-6",
+            "accession": "0001045810-26-000075",
+            "filedAt": "2026-08-26",
+            "sourceFile": "data/sources/filing-0001045810-26-000075-fd37c5c3b08be610.xbrl",
+            "sourceHash": "fd37c5c3b08be610fa48f8e3e394ab8d2108a23bbc2dfa26ee0bf0d91493bdfd",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+          }
+        }
+      ],
+      "unit": "USD",
+      "derived": true,
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+    },
+    "sbc": {
+      "value": 7241000000.0,
+      "components": [
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2025-01-27",
+            "end": "2026-01-25",
+            "dimensions": [],
+            "tag": "ShareBasedCompensation",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": 6386000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-302",
+            "decimals": "-6",
+            "accession": "0001045810-26-000021",
+            "filedAt": "2026-02-25",
+            "sourceFile": "data/sources/filing-0001045810-26-000021-af8398105d629d98.xbrl",
+            "sourceHash": "af8398105d629d98defacca572c8e85fe0d8a5f551266b01df2d8be4fa03558f",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm"
+          }
+        },
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2026-01-26",
+            "end": "2026-07-26",
+            "dimensions": [],
+            "tag": "ShareBasedCompensation",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": 3954000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-302",
+            "decimals": "-6",
+            "accession": "0001045810-26-000075",
+            "filedAt": "2026-08-26",
+            "sourceFile": "data/sources/filing-0001045810-26-000075-fd37c5c3b08be610.xbrl",
+            "sourceHash": "fd37c5c3b08be610fa48f8e3e394ab8d2108a23bbc2dfa26ee0bf0d91493bdfd",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+          }
+        },
+        {
+          "coefficient": -1,
+          "fact": {
+            "start": "2025-01-27",
+            "end": "2025-07-27",
+            "dimensions": [],
+            "tag": "ShareBasedCompensation",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": 3099000000.0,
+            "unit": "USD",
+            "context": "c-5",
+            "factId": "f-303",
+            "decimals": "-6",
+            "accession": "0001045810-26-000075",
+            "filedAt": "2026-08-26",
+            "sourceFile": "data/sources/filing-0001045810-26-000075-fd37c5c3b08be610.xbrl",
+            "sourceHash": "fd37c5c3b08be610fa48f8e3e394ab8d2108a23bbc2dfa26ee0bf0d91493bdfd",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+          }
+        }
+      ],
+      "unit": "USD",
+      "derived": true,
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+    },
+    "depreciation": {
+      "value": 3687000000.0,
+      "components": [
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2025-01-27",
+            "end": "2026-01-25",
+            "dimensions": [],
+            "tag": "DepreciationDepletionAndAmortization",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": 2843000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-305",
+            "decimals": "-6",
+            "accession": "0001045810-26-000021",
+            "filedAt": "2026-02-25",
+            "sourceFile": "data/sources/filing-0001045810-26-000021-af8398105d629d98.xbrl",
+            "sourceHash": "af8398105d629d98defacca572c8e85fe0d8a5f551266b01df2d8be4fa03558f",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm"
+          }
+        },
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2026-01-26",
+            "end": "2026-07-26",
+            "dimensions": [],
+            "tag": "DepreciationDepletionAndAmortization",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": 2124000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-304",
+            "decimals": "-6",
+            "accession": "0001045810-26-000075",
+            "filedAt": "2026-08-26",
+            "sourceFile": "data/sources/filing-0001045810-26-000075-fd37c5c3b08be610.xbrl",
+            "sourceHash": "fd37c5c3b08be610fa48f8e3e394ab8d2108a23bbc2dfa26ee0bf0d91493bdfd",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+          }
+        },
+        {
+          "coefficient": -1,
+          "fact": {
+            "start": "2025-01-27",
+            "end": "2025-07-27",
+            "dimensions": [],
+            "tag": "DepreciationDepletionAndAmortization",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": 1280000000.0,
+            "unit": "USD",
+            "context": "c-5",
+            "factId": "f-305",
+            "decimals": "-6",
+            "accession": "0001045810-26-000075",
+            "filedAt": "2026-08-26",
+            "sourceFile": "data/sources/filing-0001045810-26-000075-fd37c5c3b08be610.xbrl",
+            "sourceHash": "fd37c5c3b08be610fa48f8e3e394ab8d2108a23bbc2dfa26ee0bf0d91493bdfd",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+          }
+        }
+      ],
+      "unit": "USD",
+      "derived": true,
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+    },
+    "deferredTax": {
+      "value": 1718000000.0,
+      "components": [
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2025-01-27",
+            "end": "2026-01-25",
+            "dimensions": [],
+            "tag": "DeferredIncomeTaxExpenseBenefit",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": -1424000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-311",
+            "decimals": "-6",
+            "accession": "0001045810-26-000021",
+            "filedAt": "2026-02-25",
+            "sourceFile": "data/sources/filing-0001045810-26-000021-af8398105d629d98.xbrl",
+            "sourceHash": "af8398105d629d98defacca572c8e85fe0d8a5f551266b01df2d8be4fa03558f",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm"
+          }
+        },
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2026-01-26",
+            "end": "2026-07-26",
+            "dimensions": [],
+            "tag": "DeferredIncomeTaxExpenseBenefit",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": 982000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-306",
+            "decimals": "-6",
+            "accession": "0001045810-26-000075",
+            "filedAt": "2026-08-26",
+            "sourceFile": "data/sources/filing-0001045810-26-000075-fd37c5c3b08be610.xbrl",
+            "sourceHash": "fd37c5c3b08be610fa48f8e3e394ab8d2108a23bbc2dfa26ee0bf0d91493bdfd",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+          }
+        },
+        {
+          "coefficient": -1,
+          "fact": {
+            "start": "2025-01-27",
+            "end": "2025-07-27",
+            "dimensions": [],
+            "tag": "DeferredIncomeTaxExpenseBenefit",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": -2160000000.0,
+            "unit": "USD",
+            "context": "c-5",
+            "factId": "f-307",
+            "decimals": "-6",
+            "accession": "0001045810-26-000075",
+            "filedAt": "2026-08-26",
+            "sourceFile": "data/sources/filing-0001045810-26-000075-fd37c5c3b08be610.xbrl",
+            "sourceHash": "fd37c5c3b08be610fa48f8e3e394ab8d2108a23bbc2dfa26ee0bf0d91493bdfd",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+          }
+        }
+      ],
+      "unit": "USD",
+      "derived": true,
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+    },
+    "equityGains": {
+      "value": 30552000000.0,
+      "components": [
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2025-01-27",
+            "end": "2026-01-25",
+            "dimensions": [],
+            "tag": "GainLossOnInvestments",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": 8918000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-308",
+            "decimals": "-6",
+            "accession": "0001045810-26-000021",
+            "filedAt": "2026-02-25",
+            "sourceFile": "data/sources/filing-0001045810-26-000021-af8398105d629d98.xbrl",
+            "sourceHash": "af8398105d629d98defacca572c8e85fe0d8a5f551266b01df2d8be4fa03558f",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm"
+          }
+        },
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2026-01-26",
+            "end": "2026-07-26",
+            "dimensions": [],
+            "tag": "GainLossOnInvestments",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": 23707000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-308",
+            "decimals": "-6",
+            "accession": "0001045810-26-000075",
+            "filedAt": "2026-08-26",
+            "sourceFile": "data/sources/filing-0001045810-26-000075-fd37c5c3b08be610.xbrl",
+            "sourceHash": "fd37c5c3b08be610fa48f8e3e394ab8d2108a23bbc2dfa26ee0bf0d91493bdfd",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+          }
+        },
+        {
+          "coefficient": -1,
+          "fact": {
+            "start": "2025-01-27",
+            "end": "2025-07-27",
+            "dimensions": [],
+            "tag": "GainLossOnInvestments",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": 2073000000.0,
+            "unit": "USD",
+            "context": "c-5",
+            "factId": "f-309",
+            "decimals": "-6",
+            "accession": "0001045810-26-000075",
+            "filedAt": "2026-08-26",
+            "sourceFile": "data/sources/filing-0001045810-26-000075-fd37c5c3b08be610.xbrl",
+            "sourceHash": "fd37c5c3b08be610fa48f8e3e394ab8d2108a23bbc2dfa26ee0bf0d91493bdfd",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+          }
+        }
+      ],
+      "unit": "USD",
+      "derived": true,
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+    },
+    "otherNoncash": {
+      "value": -131000000.0,
+      "components": [
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2025-01-27",
+            "end": "2026-01-25",
+            "dimensions": [],
+            "tag": "OtherNoncashIncomeExpense",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": 287000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-314",
+            "decimals": "-6",
+            "accession": "0001045810-26-000021",
+            "filedAt": "2026-02-25",
+            "sourceFile": "data/sources/filing-0001045810-26-000021-af8398105d629d98.xbrl",
+            "sourceHash": "af8398105d629d98defacca572c8e85fe0d8a5f551266b01df2d8be4fa03558f",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm"
+          }
+        },
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2026-01-26",
+            "end": "2026-07-26",
+            "dimensions": [],
+            "tag": "OtherNoncashIncomeExpense",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": -222000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-310",
+            "decimals": "-6",
+            "accession": "0001045810-26-000075",
+            "filedAt": "2026-08-26",
+            "sourceFile": "data/sources/filing-0001045810-26-000075-fd37c5c3b08be610.xbrl",
+            "sourceHash": "fd37c5c3b08be610fa48f8e3e394ab8d2108a23bbc2dfa26ee0bf0d91493bdfd",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+          }
+        },
+        {
+          "coefficient": -1,
+          "fact": {
+            "start": "2025-01-27",
+            "end": "2025-07-27",
+            "dimensions": [],
+            "tag": "OtherNoncashIncomeExpense",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": 196000000.0,
+            "unit": "USD",
+            "context": "c-5",
+            "factId": "f-311",
+            "decimals": "-6",
+            "accession": "0001045810-26-000075",
+            "filedAt": "2026-08-26",
+            "sourceFile": "data/sources/filing-0001045810-26-000075-fd37c5c3b08be610.xbrl",
+            "sourceHash": "fd37c5c3b08be610fa48f8e3e394ab8d2108a23bbc2dfa26ee0bf0d91493bdfd",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+          }
+        }
+      ],
+      "unit": "USD",
+      "derived": true,
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+    },
+    "receivables": {
+      "value": 35246000000.0,
+      "components": [
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2025-01-27",
+            "end": "2026-01-25",
+            "dimensions": [],
+            "tag": "IncreaseDecreaseInAccountsReceivable",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": 15399000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-317",
+            "decimals": "-6",
+            "accession": "0001045810-26-000021",
+            "filedAt": "2026-02-25",
+            "sourceFile": "data/sources/filing-0001045810-26-000021-af8398105d629d98.xbrl",
+            "sourceHash": "af8398105d629d98defacca572c8e85fe0d8a5f551266b01df2d8be4fa03558f",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm"
+          }
+        },
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2026-01-26",
+            "end": "2026-07-26",
+            "dimensions": [],
+            "tag": "IncreaseDecreaseInAccountsReceivable",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": 24590000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-312",
+            "decimals": "-6",
+            "accession": "0001045810-26-000075",
+            "filedAt": "2026-08-26",
+            "sourceFile": "data/sources/filing-0001045810-26-000075-fd37c5c3b08be610.xbrl",
+            "sourceHash": "fd37c5c3b08be610fa48f8e3e394ab8d2108a23bbc2dfa26ee0bf0d91493bdfd",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+          }
+        },
+        {
+          "coefficient": -1,
+          "fact": {
+            "start": "2025-01-27",
+            "end": "2025-07-27",
+            "dimensions": [],
+            "tag": "IncreaseDecreaseInAccountsReceivable",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": 4743000000.0,
+            "unit": "USD",
+            "context": "c-5",
+            "factId": "f-313",
+            "decimals": "-6",
+            "accession": "0001045810-26-000075",
+            "filedAt": "2026-08-26",
+            "sourceFile": "data/sources/filing-0001045810-26-000075-fd37c5c3b08be610.xbrl",
+            "sourceHash": "fd37c5c3b08be610fa48f8e3e394ab8d2108a23bbc2dfa26ee0bf0d91493bdfd",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+          }
+        }
+      ],
+      "unit": "USD",
+      "derived": true,
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+    },
+    "inventory": {
+      "value": 16648000000.0,
+      "components": [
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2025-01-27",
+            "end": "2026-01-25",
+            "dimensions": [],
+            "tag": "IncreaseDecreaseInInventories",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": 11324000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-320",
+            "decimals": "-6",
+            "accession": "0001045810-26-000021",
+            "filedAt": "2026-02-25",
+            "sourceFile": "data/sources/filing-0001045810-26-000021-af8398105d629d98.xbrl",
+            "sourceHash": "af8398105d629d98defacca572c8e85fe0d8a5f551266b01df2d8be4fa03558f",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm"
+          }
+        },
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2026-01-26",
+            "end": "2026-07-26",
+            "dimensions": [],
+            "tag": "IncreaseDecreaseInInventories",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": 10204000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-314",
+            "decimals": "-6",
+            "accession": "0001045810-26-000075",
+            "filedAt": "2026-08-26",
+            "sourceFile": "data/sources/filing-0001045810-26-000075-fd37c5c3b08be610.xbrl",
+            "sourceHash": "fd37c5c3b08be610fa48f8e3e394ab8d2108a23bbc2dfa26ee0bf0d91493bdfd",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+          }
+        },
+        {
+          "coefficient": -1,
+          "fact": {
+            "start": "2025-01-27",
+            "end": "2025-07-27",
+            "dimensions": [],
+            "tag": "IncreaseDecreaseInInventories",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": 4880000000.0,
+            "unit": "USD",
+            "context": "c-5",
+            "factId": "f-315",
+            "decimals": "-6",
+            "accession": "0001045810-26-000075",
+            "filedAt": "2026-08-26",
+            "sourceFile": "data/sources/filing-0001045810-26-000075-fd37c5c3b08be610.xbrl",
+            "sourceHash": "fd37c5c3b08be610fa48f8e3e394ab8d2108a23bbc2dfa26ee0bf0d91493bdfd",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+          }
+        }
+      ],
+      "unit": "USD",
+      "derived": true,
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+    },
+    "prepaids": {
+      "value": 6849000000.0,
+      "components": [
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2025-01-27",
+            "end": "2026-01-25",
+            "dimensions": [],
+            "tag": "IncreaseDecreaseInPrepaidDeferredExpenseAndOtherAssets",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": -577000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-323",
+            "decimals": "-6",
+            "accession": "0001045810-26-000021",
+            "filedAt": "2026-02-25",
+            "sourceFile": "data/sources/filing-0001045810-26-000021-af8398105d629d98.xbrl",
+            "sourceHash": "af8398105d629d98defacca572c8e85fe0d8a5f551266b01df2d8be4fa03558f",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm"
+          }
+        },
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2026-01-26",
+            "end": "2026-07-26",
+            "dimensions": [],
+            "tag": "IncreaseDecreaseInPrepaidDeferredExpenseAndOtherAssets",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": 6480000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-316",
+            "decimals": "-6",
+            "accession": "0001045810-26-000075",
+            "filedAt": "2026-08-26",
+            "sourceFile": "data/sources/filing-0001045810-26-000075-fd37c5c3b08be610.xbrl",
+            "sourceHash": "fd37c5c3b08be610fa48f8e3e394ab8d2108a23bbc2dfa26ee0bf0d91493bdfd",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+          }
+        },
+        {
+          "coefficient": -1,
+          "fact": {
+            "start": "2025-01-27",
+            "end": "2025-07-27",
+            "dimensions": [],
+            "tag": "IncreaseDecreaseInPrepaidDeferredExpenseAndOtherAssets",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": -946000000.0,
+            "unit": "USD",
+            "context": "c-5",
+            "factId": "f-317",
+            "decimals": "-6",
+            "accession": "0001045810-26-000075",
+            "filedAt": "2026-08-26",
+            "sourceFile": "data/sources/filing-0001045810-26-000075-fd37c5c3b08be610.xbrl",
+            "sourceHash": "fd37c5c3b08be610fa48f8e3e394ab8d2108a23bbc2dfa26ee0bf0d91493bdfd",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+          }
+        }
+      ],
+      "unit": "USD",
+      "derived": true,
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+    },
+    "payables": {
+      "value": 4966000000.0,
+      "components": [
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2025-01-27",
+            "end": "2026-01-25",
+            "dimensions": [],
+            "tag": "IncreaseDecreaseInAccountsPayable",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": 3096000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-326",
+            "decimals": "-6",
+            "accession": "0001045810-26-000021",
+            "filedAt": "2026-02-25",
+            "sourceFile": "data/sources/filing-0001045810-26-000021-af8398105d629d98.xbrl",
+            "sourceHash": "af8398105d629d98defacca572c8e85fe0d8a5f551266b01df2d8be4fa03558f",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm"
+          }
+        },
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2026-01-26",
+            "end": "2026-07-26",
+            "dimensions": [],
+            "tag": "IncreaseDecreaseInAccountsPayable",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": 4125000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-318",
+            "decimals": "-6",
+            "accession": "0001045810-26-000075",
+            "filedAt": "2026-08-26",
+            "sourceFile": "data/sources/filing-0001045810-26-000075-fd37c5c3b08be610.xbrl",
+            "sourceHash": "fd37c5c3b08be610fa48f8e3e394ab8d2108a23bbc2dfa26ee0bf0d91493bdfd",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+          }
+        },
+        {
+          "coefficient": -1,
+          "fact": {
+            "start": "2025-01-27",
+            "end": "2025-07-27",
+            "dimensions": [],
+            "tag": "IncreaseDecreaseInAccountsPayable",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": 2255000000.0,
+            "unit": "USD",
+            "context": "c-5",
+            "factId": "f-319",
+            "decimals": "-6",
+            "accession": "0001045810-26-000075",
+            "filedAt": "2026-08-26",
+            "sourceFile": "data/sources/filing-0001045810-26-000075-fd37c5c3b08be610.xbrl",
+            "sourceHash": "fd37c5c3b08be610fa48f8e3e394ab8d2108a23bbc2dfa26ee0bf0d91493bdfd",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+          }
+        }
+      ],
+      "unit": "USD",
+      "derived": true,
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+    },
+    "accrued": {
+      "value": 10197000000.0,
+      "components": [
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2025-01-27",
+            "end": "2026-01-25",
+            "dimensions": [],
+            "tag": "IncreaseDecreaseInAccruedLiabilitiesAndOtherOperatingLiabilities",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": 5257000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-329",
+            "decimals": "-6",
+            "accession": "0001045810-26-000021",
+            "filedAt": "2026-02-25",
+            "sourceFile": "data/sources/filing-0001045810-26-000021-af8398105d629d98.xbrl",
+            "sourceHash": "af8398105d629d98defacca572c8e85fe0d8a5f551266b01df2d8be4fa03558f",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm"
+          }
+        },
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2026-01-26",
+            "end": "2026-07-26",
+            "dimensions": [],
+            "tag": "IncreaseDecreaseInAccruedLiabilitiesAndOtherOperatingLiabilities",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": 8015000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-320",
+            "decimals": "-6",
+            "accession": "0001045810-26-000075",
+            "filedAt": "2026-08-26",
+            "sourceFile": "data/sources/filing-0001045810-26-000075-fd37c5c3b08be610.xbrl",
+            "sourceHash": "fd37c5c3b08be610fa48f8e3e394ab8d2108a23bbc2dfa26ee0bf0d91493bdfd",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+          }
+        },
+        {
+          "coefficient": -1,
+          "fact": {
+            "start": "2025-01-27",
+            "end": "2025-07-27",
+            "dimensions": [],
+            "tag": "IncreaseDecreaseInAccruedLiabilitiesAndOtherOperatingLiabilities",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": 3075000000.0,
+            "unit": "USD",
+            "context": "c-5",
+            "factId": "f-321",
+            "decimals": "-6",
+            "accession": "0001045810-26-000075",
+            "filedAt": "2026-08-26",
+            "sourceFile": "data/sources/filing-0001045810-26-000075-fd37c5c3b08be610.xbrl",
+            "sourceHash": "fd37c5c3b08be610fa48f8e3e394ab8d2108a23bbc2dfa26ee0bf0d91493bdfd",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+          }
+        }
+      ],
+      "unit": "USD",
+      "derived": true,
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+    },
+    "longLiabilities": {
+      "value": 2835000000.0,
+      "components": [
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2025-01-27",
+            "end": "2026-01-25",
+            "dimensions": [],
+            "tag": "IncreaseDecreaseInOtherNoncurrentLiabilities",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": 1844000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-332",
+            "decimals": "-6",
+            "accession": "0001045810-26-000021",
+            "filedAt": "2026-02-25",
+            "sourceFile": "data/sources/filing-0001045810-26-000021-af8398105d629d98.xbrl",
+            "sourceHash": "af8398105d629d98defacca572c8e85fe0d8a5f551266b01df2d8be4fa03558f",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm"
+          }
+        },
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2026-01-26",
+            "end": "2026-07-26",
+            "dimensions": [],
+            "tag": "IncreaseDecreaseInOtherNoncurrentLiabilities",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": 1970000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-322",
+            "decimals": "-6",
+            "accession": "0001045810-26-000075",
+            "filedAt": "2026-08-26",
+            "sourceFile": "data/sources/filing-0001045810-26-000075-fd37c5c3b08be610.xbrl",
+            "sourceHash": "fd37c5c3b08be610fa48f8e3e394ab8d2108a23bbc2dfa26ee0bf0d91493bdfd",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+          }
+        },
+        {
+          "coefficient": -1,
+          "fact": {
+            "start": "2025-01-27",
+            "end": "2025-07-27",
+            "dimensions": [],
+            "tag": "IncreaseDecreaseInOtherNoncurrentLiabilities",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": 979000000.0,
+            "unit": "USD",
+            "context": "c-5",
+            "factId": "f-323",
+            "decimals": "-6",
+            "accession": "0001045810-26-000075",
+            "filedAt": "2026-08-26",
+            "sourceFile": "data/sources/filing-0001045810-26-000075-fd37c5c3b08be610.xbrl",
+            "sourceHash": "fd37c5c3b08be610fa48f8e3e394ab8d2108a23bbc2dfa26ee0bf0d91493bdfd",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+          }
+        }
+      ],
+      "unit": "USD",
+      "derived": true,
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+    },
+    "capex": {
+      "value": 7354000000.0,
+      "components": [
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2025-01-27",
+            "end": "2026-01-25",
+            "dimensions": [],
+            "tag": "PaymentsToAcquireProductiveAssets",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": 6042000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-356",
+            "decimals": "-6",
+            "accession": "0001045810-26-000021",
+            "filedAt": "2026-02-25",
+            "sourceFile": "data/sources/filing-0001045810-26-000021-af8398105d629d98.xbrl",
+            "sourceHash": "af8398105d629d98defacca572c8e85fe0d8a5f551266b01df2d8be4fa03558f",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm"
+          }
+        },
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2026-01-26",
+            "end": "2026-07-26",
+            "dimensions": [],
+            "tag": "PaymentsToAcquireProductiveAssets",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": 4434000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-334",
+            "decimals": "-6",
+            "accession": "0001045810-26-000075",
+            "filedAt": "2026-08-26",
+            "sourceFile": "data/sources/filing-0001045810-26-000075-fd37c5c3b08be610.xbrl",
+            "sourceHash": "fd37c5c3b08be610fa48f8e3e394ab8d2108a23bbc2dfa26ee0bf0d91493bdfd",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+          }
+        },
+        {
+          "coefficient": -1,
+          "fact": {
+            "start": "2025-01-27",
+            "end": "2025-07-27",
+            "dimensions": [],
+            "tag": "PaymentsToAcquireProductiveAssets",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": 3122000000.0,
+            "unit": "USD",
+            "context": "c-5",
+            "factId": "f-335",
+            "decimals": "-6",
+            "accession": "0001045810-26-000075",
+            "filedAt": "2026-08-26",
+            "sourceFile": "data/sources/filing-0001045810-26-000075-fd37c5c3b08be610.xbrl",
+            "sourceHash": "fd37c5c3b08be610fa48f8e3e394ab8d2108a23bbc2dfa26ee0bf0d91493bdfd",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+          }
+        }
+      ],
+      "unit": "USD",
+      "derived": true,
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+    },
+    "financedAssets": {
+      "value": 120000000.0,
+      "components": [
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2025-01-27",
+            "end": "2026-01-25",
+            "dimensions": [],
+            "tag": "PaymentsForFinancedPropertyPlantAndEquipmentAndIntangibleAssetsFinancingActivities",
+            "taxonomy": "http://www.nvidia.com/20260125",
+            "value": 101000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-380",
+            "decimals": "-6",
+            "accession": "0001045810-26-000021",
+            "filedAt": "2026-02-25",
+            "sourceFile": "data/sources/filing-0001045810-26-000021-af8398105d629d98.xbrl",
+            "sourceHash": "af8398105d629d98defacca572c8e85fe0d8a5f551266b01df2d8be4fa03558f",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm"
+          }
+        },
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2026-01-26",
+            "end": "2026-07-26",
+            "dimensions": [],
+            "tag": "PaymentsForFinancedPropertyPlantAndEquipmentAndIntangibleAssetsFinancingActivities",
+            "taxonomy": "http://www.nvidia.com/20260726",
+            "value": 92000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-354",
+            "decimals": "-6",
+            "accession": "0001045810-26-000075",
+            "filedAt": "2026-08-26",
+            "sourceFile": "data/sources/filing-0001045810-26-000075-fd37c5c3b08be610.xbrl",
+            "sourceHash": "fd37c5c3b08be610fa48f8e3e394ab8d2108a23bbc2dfa26ee0bf0d91493bdfd",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+          }
+        },
+        {
+          "coefficient": -1,
+          "fact": {
+            "start": "2025-01-27",
+            "end": "2025-07-27",
+            "dimensions": [],
+            "tag": "PaymentsForFinancedPropertyPlantAndEquipmentAndIntangibleAssetsFinancingActivities",
+            "taxonomy": "http://www.nvidia.com/20260726",
+            "value": 73000000.0,
+            "unit": "USD",
+            "context": "c-5",
+            "factId": "f-355",
+            "decimals": "-6",
+            "accession": "0001045810-26-000075",
+            "filedAt": "2026-08-26",
+            "sourceFile": "data/sources/filing-0001045810-26-000075-fd37c5c3b08be610.xbrl",
+            "sourceHash": "fd37c5c3b08be610fa48f8e3e394ab8d2108a23bbc2dfa26ee0bf0d91493bdfd",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+          }
+        }
+      ],
+      "unit": "USD",
+      "derived": true,
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+    },
+    "interestIncome": {
+      "value": 2229000000.0,
+      "components": [
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2025-01-27",
+            "end": "2026-01-25",
+            "dimensions": [],
+            "tag": "InvestmentIncomeInterest",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": 2300000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-93",
+            "decimals": "-6",
+            "accession": "0001045810-26-000021",
+            "filedAt": "2026-02-25",
+            "sourceFile": "data/sources/filing-0001045810-26-000021-af8398105d629d98.xbrl",
+            "sourceHash": "af8398105d629d98defacca572c8e85fe0d8a5f551266b01df2d8be4fa03558f",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm"
+          }
+        },
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2026-01-26",
+            "end": "2026-07-26",
+            "dimensions": [],
+            "tag": "InvestmentIncomeInterest",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": 1037000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-702",
+            "decimals": "-6",
+            "accession": "0001045810-26-000075",
+            "filedAt": "2026-08-26",
+            "sourceFile": "data/sources/filing-0001045810-26-000075-fd37c5c3b08be610.xbrl",
+            "sourceHash": "fd37c5c3b08be610fa48f8e3e394ab8d2108a23bbc2dfa26ee0bf0d91493bdfd",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+          }
+        },
+        {
+          "coefficient": -1,
+          "fact": {
+            "start": "2025-01-27",
+            "end": "2025-07-27",
+            "dimensions": [],
+            "tag": "InvestmentIncomeInterest",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": 1108000000.0,
+            "unit": "USD",
+            "context": "c-5",
+            "factId": "f-703",
+            "decimals": "-6",
+            "accession": "0001045810-26-000075",
+            "filedAt": "2026-08-26",
+            "sourceFile": "data/sources/filing-0001045810-26-000075-fd37c5c3b08be610.xbrl",
+            "sourceHash": "fd37c5c3b08be610fa48f8e3e394ab8d2108a23bbc2dfa26ee0bf0d91493bdfd",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+          }
+        }
+      ],
+      "unit": "USD",
+      "derived": true,
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+    },
+    "interestExpense": {
+      "value": 464000000.0,
+      "components": [
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2025-01-27",
+            "end": "2026-01-25",
+            "dimensions": [],
+            "tag": "InterestExpenseNonoperating",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": 259000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-96",
+            "decimals": "-6",
+            "accession": "0001045810-26-000021",
+            "filedAt": "2026-02-25",
+            "sourceFile": "data/sources/filing-0001045810-26-000021-af8398105d629d98.xbrl",
+            "sourceHash": "af8398105d629d98defacca572c8e85fe0d8a5f551266b01df2d8be4fa03558f",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm"
+          }
+        },
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2026-01-26",
+            "end": "2026-07-26",
+            "dimensions": [],
+            "tag": "InterestExpenseNonoperating",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": 329000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-706",
+            "decimals": "-6",
+            "accession": "0001045810-26-000075",
+            "filedAt": "2026-08-26",
+            "sourceFile": "data/sources/filing-0001045810-26-000075-fd37c5c3b08be610.xbrl",
+            "sourceHash": "fd37c5c3b08be610fa48f8e3e394ab8d2108a23bbc2dfa26ee0bf0d91493bdfd",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+          }
+        },
+        {
+          "coefficient": -1,
+          "fact": {
+            "start": "2025-01-27",
+            "end": "2025-07-27",
+            "dimensions": [],
+            "tag": "InterestExpenseNonoperating",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": 124000000.0,
+            "unit": "USD",
+            "context": "c-5",
+            "factId": "f-707",
+            "decimals": "-6",
+            "accession": "0001045810-26-000075",
+            "filedAt": "2026-08-26",
+            "sourceFile": "data/sources/filing-0001045810-26-000075-fd37c5c3b08be610.xbrl",
+            "sourceHash": "fd37c5c3b08be610fa48f8e3e394ab8d2108a23bbc2dfa26ee0bf0d91493bdfd",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+          }
+        }
+      ],
+      "unit": "USD",
+      "derived": true,
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+    },
+    "intangibleAmortization": {
+      "value": 715000000.0,
+      "components": [
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2025-01-27",
+            "end": "2026-01-25",
+            "dimensions": [],
+            "tag": "AmortizationOfIntangibleAssets",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": 488000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-584",
+            "decimals": "-6",
+            "accession": "0001045810-26-000021",
+            "filedAt": "2026-02-25",
+            "sourceFile": "data/sources/filing-0001045810-26-000021-af8398105d629d98.xbrl",
+            "sourceHash": "af8398105d629d98defacca572c8e85fe0d8a5f551266b01df2d8be4fa03558f",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm"
+          }
+        },
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2026-01-26",
+            "end": "2026-07-26",
+            "dimensions": [],
+            "tag": "AmortizationOfIntangibleAssets",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": 470000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-457",
+            "decimals": "-6",
+            "accession": "0001045810-26-000075",
+            "filedAt": "2026-08-26",
+            "sourceFile": "data/sources/filing-0001045810-26-000075-fd37c5c3b08be610.xbrl",
+            "sourceHash": "fd37c5c3b08be610fa48f8e3e394ab8d2108a23bbc2dfa26ee0bf0d91493bdfd",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+          }
+        },
+        {
+          "coefficient": -1,
+          "fact": {
+            "start": "2025-01-27",
+            "end": "2025-07-27",
+            "dimensions": [],
+            "tag": "AmortizationOfIntangibleAssets",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": 243000000.0,
+            "unit": "USD",
+            "context": "c-5",
+            "factId": "f-458",
+            "decimals": "-6",
+            "accession": "0001045810-26-000075",
+            "filedAt": "2026-08-26",
+            "sourceFile": "data/sources/filing-0001045810-26-000075-fd37c5c3b08be610.xbrl",
+            "sourceHash": "fd37c5c3b08be610fa48f8e3e394ab8d2108a23bbc2dfa26ee0bf0d91493bdfd",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+          }
+        }
+      ],
+      "unit": "USD",
+      "derived": true,
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+    }
+  },
+  "defaults": {
+    "segments": [
+      {
+        "growthStart": 0,
+        "growthEnd": 0,
+        "marginEnd": 0.7107792410560294
+      },
+      {
+        "growthStart": 0,
+        "growthEnd": 0,
+        "marginEnd": 0.4395341243060847
+      }
+    ],
+    "tax": 0.21,
+    "netInterest": 0.005825659306201934,
+    "depreciation": 0.012169521734825231,
+    "workingCapital": 0.33475043662101295,
+    "capexStart": 0.024273030333036273,
+    "capexEnd": 0.024273030333036273,
+    "leaseStart": 0.0003960788196851173,
+    "leaseEnd": 0.0003960788196851173,
+    "corporateStart": 0.03396375878799881,
+    "corporateEnd": 0.03396375878799881,
+    "discount": 0.12,
+    "terminal": 0.02
+  },
+  "security": {
+    "additionalShareEvidence": [],
+    "classes": [],
+    "issues": [],
+    "marketCapProxy": 5475761161804.199,
+    "preferredEvidence": [],
+    "priceDate": "2026-09-29",
+    "scope": "공시에 기재된 유통주식수의 자체 기준일과 관측 종가의 시점 차이를 보존한다. 이후 발행·소각을 반영한 실시간 시가총액은 아니다.",
+    "shareAgeDays": 39,
+    "shareTable": null,
+    "shares": {
+      "accession": "0001045810-26-000075",
+      "context": "c-2",
+      "decimals": "-8",
+      "dimensions": [],
+      "end": "2026-08-21",
+      "factId": "f-24",
+      "filedAt": "2026-08-26",
+      "sourceFile": "data/sources/filing-0001045810-26-000075-fd37c5c3b08be610.xbrl",
+      "sourceHash": "fd37c5c3b08be610fa48f8e3e394ab8d2108a23bbc2dfa26ee0bf0d91493bdfd",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
+      "start": null,
+      "tag": "EntityCommonStockSharesOutstanding",
+      "taxonomy": "http://xbrl.sec.gov/dei/2026",
+      "unit": "shares",
+      "value": 24100000000.0
+    },
+    "status": "available"
+  },
+  "corporateLabel": "본사 비용·주식보상·인수 관련 비용",
+  "netInterestLabel": "이자수익−이자비용",
+  "capexLabel": "설비·무형 현금 취득",
+  "leaseLabel": "설비·무형 분할취득 원금",
+  "bridgeLabel": "공시 연결 순이익 → 영업현금 대사",
+  "intro": "컴퓨트·네트워킹과 그래픽스의 이익에서 미배분 주식보상·본사·인수 관련 비용을 뺍니다. 증권 평가이익을 반복 현금에서 분리하고 재고·수금·공급 약정과 AI 클라우드 구매 계약을 함께 검토합니다.",
+  "businessCaption": "데이터센터·엣지 제품 매출과 두 영업부문은 다른 구분입니다. 데이터센터 매출 전체에 컴퓨트·네트워킹 이익률을 붙이거나 자동차 손익을 임의 배분하지 않습니다.",
+  "anchorSummary": "최근 반기의 채권·재고·선급 및 기타자산·유동채무 현금 효과와 같은 반기 매출 증가를 연결합니다. 장기부채는 반복 영업자금에서 제외하며 그 증가 전액을 고객 선급금이라고 부르지 않습니다. 초기 21%는 공시에 언급된 미국 연방 법정세율을 비교 가정으로 쓴 것이며 실제 글로벌 현금세율이 아닙니다.",
+  "passages": [
+    {
+      "heading": "",
+      "id": "e5f922166ccd902a1991",
+      "kind": "paragraph",
+      "ordinal": 408,
+      "sourceFile": "data/sources/filing-0001045810-26-000075-f2357c2ff6144d97.html",
+      "sourceHash": "f2357c2ff6144d977f944f944bd3523e673da57cfb29e801efb4ac3766277fed",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
+      "text": "The Compute & Networking segment includes our Data Center accelerated computing and networking platforms and AI solutions and software, and automotive platforms and autonomous and electric vehicle solutions including software."
+    },
+    {
+      "heading": "",
+      "id": "42a733779d01bbc0c54d",
+      "kind": "paragraph",
+      "ordinal": 409,
+      "sourceFile": "data/sources/filing-0001045810-26-000075-f2357c2ff6144d97.html",
+      "sourceHash": "f2357c2ff6144d977f944f944bd3523e673da57cfb29e801efb4ac3766277fed",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
+      "text": "The Graphics segment includes GeForce GPUs for gaming and PCs, and Quadro/NVIDIA RTX GPUs for enterprise workstation graphics."
+    },
+    {
+      "heading": "",
+      "id": "db16a6d8d5ec712f3a56",
+      "kind": "paragraph",
+      "ordinal": 410,
+      "sourceFile": "data/sources/filing-0001045810-26-000075-f2357c2ff6144d97.html",
+      "sourceHash": "f2357c2ff6144d977f944f944bd3523e673da57cfb29e801efb4ac3766277fed",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
+      "text": "Certain expenses are not allocated to either Compute & Networking or Graphics for purposes of making operating decisions or assessing financial performance. The expenses include stock-based compensation expense, corporate infrastructure and support costs, acquisition-related and other costs, and other non-recurring charges and benefits that our CODM deems to be enterprise in nature."
+    },
+    {
+      "heading": "",
+      "id": "34b5cdec43bccbdb353e",
+      "kind": "paragraph",
+      "ordinal": 399,
+      "sourceFile": "data/sources/filing-0001045810-26-000075-f2357c2ff6144d97.html",
+      "sourceHash": "f2357c2ff6144d977f944f944bd3523e673da57cfb29e801efb4ac3766277fed",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
+      "text": "Our effective tax rates for the first half of fiscal years 2027 and 2026 were lower than the U.S. federal statutory rate of 21% primarily due to tax benefits from foreign-derived deduction eligible income, income earned in jurisdictions that were subject to taxes at rates lower than the U.S. federal statutory tax rate, stock-based compensation, and the U.S. federal research tax credit."
+    },
+    {
+      "heading": "",
+      "id": "1e9948d5db92d73d0560",
+      "kind": "paragraph",
+      "ordinal": 296,
+      "sourceFile": "data/sources/filing-0001045810-26-000075-f2357c2ff6144d97.html",
+      "sourceHash": "f2357c2ff6144d977f944f944bd3523e673da57cfb29e801efb4ac3766277fed",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
+      "text": "(1) Primarily comprised of unrecognized tax benefits and related interest and penalties."
+    },
+    {
+      "heading": "",
+      "id": "0db0ccce0cb9594f8a88",
+      "kind": "paragraph",
+      "ordinal": 303,
+      "sourceFile": "data/sources/filing-0001045810-26-000075-f2357c2ff6144d97.html",
+      "sourceHash": "f2357c2ff6144d977f944f944bd3523e673da57cfb29e801efb4ac3766277fed",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
+      "text": "(1) Included $15.6 billion and $7.5 billion of customer advances for the first half of fiscal years 2027 and 2026, respectively."
+    },
+    {
+      "heading": "",
+      "id": "f446203b61875276f116",
+      "kind": "paragraph",
+      "ordinal": 304,
+      "sourceFile": "data/sources/filing-0001045810-26-000075-f2357c2ff6144d97.html",
+      "sourceHash": "f2357c2ff6144d977f944f944bd3523e673da57cfb29e801efb4ac3766277fed",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
+      "text": "(2) Included $13.0 billion and $7.5 billion related to customer advances for the first half of fiscal years 2027 and 2026, respectively."
+    },
+    {
+      "heading": "",
+      "id": "3119758f5814a9f20992",
+      "kind": "paragraph",
+      "ordinal": 364,
+      "sourceFile": "data/sources/filing-0001045810-26-000075-f2357c2ff6144d97.html",
+      "sourceHash": "f2357c2ff6144d977f944f944bd3523e673da57cfb29e801efb4ac3766277fed",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
+      "text": "Supply and capacity – We have partnered with our extensive network to secure the necessary supply and critical components needed to meet demand for the next several years, increasing supply commitments from $119 billion last quarter to $279 billion as of July 26, 2026. These supply commitments are for our data center infrastructure systems, primarily memory and manufacturing facilities, to produce our products for long-term demand across current and future product architectures. We enter into agreements with our suppliers that allow them to procure inventory based upon our defined criteria, and in certain instances, these agreements may be cancelable, rescheduled, or adjustable for our business needs prior to placing firm orders. Changes to these agreements may result in additional costs."
+    },
+    {
+      "heading": "",
+      "id": "96a3b1d2e55fa6c5ecfd",
+      "kind": "paragraph",
+      "ordinal": 365,
+      "sourceFile": "data/sources/filing-0001045810-26-000075-f2357c2ff6144d97.html",
+      "sourceHash": "f2357c2ff6144d977f944f944bd3523e673da57cfb29e801efb4ac3766277fed",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
+      "text": "Cloud service agreements – These commitments provide the cloud infrastructure to support our research and development of our open models, such as NVIDIA Nemotron, Cosmos, and GR00T, and our autonomous vehicle software."
+    },
+    {
+      "heading": "",
+      "id": "884ebdb57d42e10e85df",
+      "kind": "paragraph",
+      "ordinal": 480,
+      "sourceFile": "data/sources/filing-0001045810-26-000075-f2357c2ff6144d97.html",
+      "sourceHash": "f2357c2ff6144d977f944f944bd3523e673da57cfb29e801efb4ac3766277fed",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
+      "text": "In the second quarter of fiscal year 2027, we introduced a new business model with certain select AI cloud partners, to enable broader access to our data center infrastructure products to serve AI startups, model builders, enterprises, research organizations, and sovereign customers. We believe these AI cloud partners have strong customer demand and robust sales pipelines but are constrained by the large-scale infrastructure that is required to meet that demand. Through this model, we expect our AI cloud partners will be able to deploy incremental NVIDIA AI infrastructure, enabling them to serve a broader set of customers and address expanding demand for AI compute. Under these agreements, AI clouds procure our data center infrastructure products and we commit to cloud service agreements, which the AI clouds can unilaterally stop providing to us and sell to third-party customers at more advantageous rates. Our commitments, which are typically six years in duration, totaled $36 billion as of July 26, 2026, and decrease as capacity is used by third-party customers or by us for our research and development efforts. If certain criteria are met, we will participate in revenue share generated by the AI clouds from third-party customers, which may contribute to revenue in the future. If market conditions change, it may negatively impact our financial results. Refer to Note 10 of the Notes to Condensed Consolidated Financial Statements in Part 1, Item 1 of this Quarterly Report on Form 10-Q."
+    },
+    {
+      "heading": "",
+      "id": "43cf740775b4e544d151",
+      "kind": "paragraph",
+      "ordinal": 458,
+      "sourceFile": "data/sources/filing-0001045810-26-000075-f2357c2ff6144d97.html",
+      "sourceHash": "f2357c2ff6144d977f944f944bd3523e673da57cfb29e801efb4ac3766277fed",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
+      "text": "Operating lease costs were $208 million and $109 million for the second quarter, and $379 million and $210 million for the first half, of fiscal years 2027 and 2026, respectively. Short-term, variable, and finance lease costs for the second quarter and first half of fiscal years 2027 and 2026 were not significant."
+    },
+    {
+      "heading": "",
+      "id": "8bea9fd6492738183cb7",
+      "kind": "paragraph",
+      "ordinal": 547,
+      "sourceFile": "data/sources/filing-0001045810-26-000075-f2357c2ff6144d97.html",
+      "sourceHash": "f2357c2ff6144d977f944f944bd3523e673da57cfb29e801efb4ac3766277fed",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
+      "text": "Provisions for inventory and excess inventory purchase obligations totaled $985 million and $2.1 billion for the second quarter and first half of fiscal year 2027, respectively. Sales of previously reserved inventory and settlements of excess inventory purchase obligations resulted in a provision release of $177 million and $280 million for the second quarter and first half of fiscal year 2027, respectively. The net effect on our gross margin was an unfavorable impact of 0.8% and 1.0% in the second quarter and first half of fiscal year 2027, respectively."
+    },
+    {
+      "heading": "",
+      "id": "cac6584c8a1c637637b5",
+      "kind": "paragraph",
+      "ordinal": 548,
+      "sourceFile": "data/sources/filing-0001045810-26-000075-f2357c2ff6144d97.html",
+      "sourceHash": "f2357c2ff6144d977f944f944bd3523e673da57cfb29e801efb4ac3766277fed",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
+      "text": "Provisions for inventory and excess inventory purchase obligations totaled $1.0 billion and $6.3 billion for the second quarter and first half of fiscal year 2026, respectively, including $4.5 billion associated with H20 excess inventory and purchase obligations for the first quarter of fiscal year 2026. Sales of previously reserved inventory and settlements of excess inventory purchase obligations resulted in a provision release of $501 million and $937 million for the second quarter and first half of fiscal year 2026, respectively. The net effect on our gross margin was an unfavorable impact of 1.1% and 5.9% in the second quarter and first half of fiscal year 2026, respectively."
+    }
+  ],
+  "historicalPassages": [
+    {
+      "text": "Property and equipment are stated at cost less accumulated depreciation. Depreciation of property and equipment is computed using the straight-line method based on the estimated useful lives of the assets of two to seven years. Once an asset is identified for retirement or disposition, the related cost and accumulated depreciation or amortization are removed, and a gain or loss is recorded. The estimated useful lives of our buildings are up to thirty years. Depreciation expense includes the amortization of assets recorded under finance leases. Leasehold improvements and assets recorded under finance leases are amortized over the shorter of the expected lease term or the estimated useful life of the asset.",
+      "heading": "",
+      "kind": "paragraph",
+      "ordinal": 813,
+      "id": "5613785b8ff4897b0343",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm",
+      "sourceHash": "cf20715eecb0a532b75763ea48056d560e76777156c9ec6fb706a9762b55f644"
+    },
+    {
+      "text": "Accumulated amortization of leasehold improvements and finance leases was $519 million and $410 million as of January 25, 2026 and January 26, 2025, respectively.",
+      "heading": "",
+      "kind": "paragraph",
+      "ordinal": 959,
+      "id": "7347a46c7beb801f98a7",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm",
+      "sourceHash": "cf20715eecb0a532b75763ea48056d560e76777156c9ec6fb706a9762b55f644"
+    },
+    {
+      "text": "Operating lease costs for fiscal years 2026, 2025, and 2024 were $462 million, $356 million, and $269 million, respectively. Short-term and variable lease costs for fiscal years 2026, 2025, and 2024 were not significant.",
+      "heading": "",
+      "kind": "paragraph",
+      "ordinal": 1167,
+      "id": "946f50ca0cdd6951b0b1",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm",
+      "sourceHash": "cf20715eecb0a532b75763ea48056d560e76777156c9ec6fb706a9762b55f644"
+    }
+  ],
+  "observedResidualLabel": "영업현금 − 설비·무형 현금 취득 − 분할취득 원금 − 주식보상 비용 조정",
+  "bridge": {
+    "parts": [
+      {
+        "label": "연결 순이익",
+        "value": 192880000000.0,
+        "fact": {
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
+          "components": [
+            {
+              "coefficient": 1,
+              "fact": {
+                "start": "2025-01-27",
+                "end": "2026-01-25",
+                "dimensions": [],
+                "tag": "NetIncomeLoss",
+                "taxonomy": "http://fasb.org/us-gaap/2025",
+                "value": 120067000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-111",
+                "decimals": "-6",
+                "accession": "0001045810-26-000021",
+                "filedAt": "2026-02-25",
+                "sourceFile": "data/sources/filing-0001045810-26-000021-af8398105d629d98.xbrl",
+                "sourceHash": "af8398105d629d98defacca572c8e85fe0d8a5f551266b01df2d8be4fa03558f",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm"
+              }
+            },
+            {
+              "coefficient": 1,
+              "fact": {
+                "start": "2026-01-26",
+                "end": "2026-07-26",
+                "dimensions": [],
+                "tag": "NetIncomeLoss",
+                "taxonomy": "http://fasb.org/us-gaap/2026",
+                "value": 118010000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-72",
+                "decimals": "-6",
+                "accession": "0001045810-26-000075",
+                "filedAt": "2026-08-26",
+                "sourceFile": "data/sources/filing-0001045810-26-000075-fd37c5c3b08be610.xbrl",
+                "sourceHash": "fd37c5c3b08be610fa48f8e3e394ab8d2108a23bbc2dfa26ee0bf0d91493bdfd",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+              }
+            },
+            {
+              "coefficient": -1,
+              "fact": {
+                "start": "2025-01-27",
+                "end": "2025-07-27",
+                "dimensions": [],
+                "tag": "NetIncomeLoss",
+                "taxonomy": "http://fasb.org/us-gaap/2026",
+                "value": 45197000000.0,
+                "unit": "USD",
+                "context": "c-5",
+                "factId": "f-73",
+                "decimals": "-6",
+                "accession": "0001045810-26-000075",
+                "filedAt": "2026-08-26",
+                "sourceFile": "data/sources/filing-0001045810-26-000075-fd37c5c3b08be610.xbrl",
+                "sourceHash": "fd37c5c3b08be610fa48f8e3e394ab8d2108a23bbc2dfa26ee0bf0d91493bdfd",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "label": "주식보상 비용 조정",
+        "value": 7241000000.0,
+        "fact": {
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
+          "components": [
+            {
+              "coefficient": 1,
+              "fact": {
+                "start": "2025-01-27",
+                "end": "2026-01-25",
+                "dimensions": [],
+                "tag": "ShareBasedCompensation",
+                "taxonomy": "http://fasb.org/us-gaap/2025",
+                "value": 6386000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-302",
+                "decimals": "-6",
+                "accession": "0001045810-26-000021",
+                "filedAt": "2026-02-25",
+                "sourceFile": "data/sources/filing-0001045810-26-000021-af8398105d629d98.xbrl",
+                "sourceHash": "af8398105d629d98defacca572c8e85fe0d8a5f551266b01df2d8be4fa03558f",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm"
+              }
+            },
+            {
+              "coefficient": 1,
+              "fact": {
+                "start": "2026-01-26",
+                "end": "2026-07-26",
+                "dimensions": [],
+                "tag": "ShareBasedCompensation",
+                "taxonomy": "http://fasb.org/us-gaap/2026",
+                "value": 3954000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-302",
+                "decimals": "-6",
+                "accession": "0001045810-26-000075",
+                "filedAt": "2026-08-26",
+                "sourceFile": "data/sources/filing-0001045810-26-000075-fd37c5c3b08be610.xbrl",
+                "sourceHash": "fd37c5c3b08be610fa48f8e3e394ab8d2108a23bbc2dfa26ee0bf0d91493bdfd",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+              }
+            },
+            {
+              "coefficient": -1,
+              "fact": {
+                "start": "2025-01-27",
+                "end": "2025-07-27",
+                "dimensions": [],
+                "tag": "ShareBasedCompensation",
+                "taxonomy": "http://fasb.org/us-gaap/2026",
+                "value": 3099000000.0,
+                "unit": "USD",
+                "context": "c-5",
+                "factId": "f-303",
+                "decimals": "-6",
+                "accession": "0001045810-26-000075",
+                "filedAt": "2026-08-26",
+                "sourceFile": "data/sources/filing-0001045810-26-000075-fd37c5c3b08be610.xbrl",
+                "sourceHash": "fd37c5c3b08be610fa48f8e3e394ab8d2108a23bbc2dfa26ee0bf0d91493bdfd",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "label": "감가상각·상각",
+        "value": 3687000000.0,
+        "fact": {
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
+          "components": [
+            {
+              "coefficient": 1,
+              "fact": {
+                "start": "2025-01-27",
+                "end": "2026-01-25",
+                "dimensions": [],
+                "tag": "DepreciationDepletionAndAmortization",
+                "taxonomy": "http://fasb.org/us-gaap/2025",
+                "value": 2843000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-305",
+                "decimals": "-6",
+                "accession": "0001045810-26-000021",
+                "filedAt": "2026-02-25",
+                "sourceFile": "data/sources/filing-0001045810-26-000021-af8398105d629d98.xbrl",
+                "sourceHash": "af8398105d629d98defacca572c8e85fe0d8a5f551266b01df2d8be4fa03558f",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm"
+              }
+            },
+            {
+              "coefficient": 1,
+              "fact": {
+                "start": "2026-01-26",
+                "end": "2026-07-26",
+                "dimensions": [],
+                "tag": "DepreciationDepletionAndAmortization",
+                "taxonomy": "http://fasb.org/us-gaap/2026",
+                "value": 2124000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-304",
+                "decimals": "-6",
+                "accession": "0001045810-26-000075",
+                "filedAt": "2026-08-26",
+                "sourceFile": "data/sources/filing-0001045810-26-000075-fd37c5c3b08be610.xbrl",
+                "sourceHash": "fd37c5c3b08be610fa48f8e3e394ab8d2108a23bbc2dfa26ee0bf0d91493bdfd",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+              }
+            },
+            {
+              "coefficient": -1,
+              "fact": {
+                "start": "2025-01-27",
+                "end": "2025-07-27",
+                "dimensions": [],
+                "tag": "DepreciationDepletionAndAmortization",
+                "taxonomy": "http://fasb.org/us-gaap/2026",
+                "value": 1280000000.0,
+                "unit": "USD",
+                "context": "c-5",
+                "factId": "f-305",
+                "decimals": "-6",
+                "accession": "0001045810-26-000075",
+                "filedAt": "2026-08-26",
+                "sourceFile": "data/sources/filing-0001045810-26-000075-fd37c5c3b08be610.xbrl",
+                "sourceHash": "fd37c5c3b08be610fa48f8e3e394ab8d2108a23bbc2dfa26ee0bf0d91493bdfd",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "label": "이연 법인세",
+        "value": 1718000000.0,
+        "fact": {
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
+          "components": [
+            {
+              "coefficient": 1,
+              "fact": {
+                "start": "2025-01-27",
+                "end": "2026-01-25",
+                "dimensions": [],
+                "tag": "DeferredIncomeTaxExpenseBenefit",
+                "taxonomy": "http://fasb.org/us-gaap/2025",
+                "value": -1424000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-311",
+                "decimals": "-6",
+                "accession": "0001045810-26-000021",
+                "filedAt": "2026-02-25",
+                "sourceFile": "data/sources/filing-0001045810-26-000021-af8398105d629d98.xbrl",
+                "sourceHash": "af8398105d629d98defacca572c8e85fe0d8a5f551266b01df2d8be4fa03558f",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm"
+              }
+            },
+            {
+              "coefficient": 1,
+              "fact": {
+                "start": "2026-01-26",
+                "end": "2026-07-26",
+                "dimensions": [],
+                "tag": "DeferredIncomeTaxExpenseBenefit",
+                "taxonomy": "http://fasb.org/us-gaap/2026",
+                "value": 982000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-306",
+                "decimals": "-6",
+                "accession": "0001045810-26-000075",
+                "filedAt": "2026-08-26",
+                "sourceFile": "data/sources/filing-0001045810-26-000075-fd37c5c3b08be610.xbrl",
+                "sourceHash": "fd37c5c3b08be610fa48f8e3e394ab8d2108a23bbc2dfa26ee0bf0d91493bdfd",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+              }
+            },
+            {
+              "coefficient": -1,
+              "fact": {
+                "start": "2025-01-27",
+                "end": "2025-07-27",
+                "dimensions": [],
+                "tag": "DeferredIncomeTaxExpenseBenefit",
+                "taxonomy": "http://fasb.org/us-gaap/2026",
+                "value": -2160000000.0,
+                "unit": "USD",
+                "context": "c-5",
+                "factId": "f-307",
+                "decimals": "-6",
+                "accession": "0001045810-26-000075",
+                "filedAt": "2026-08-26",
+                "sourceFile": "data/sources/filing-0001045810-26-000075-fd37c5c3b08be610.xbrl",
+                "sourceHash": "fd37c5c3b08be610fa48f8e3e394ab8d2108a23bbc2dfa26ee0bf0d91493bdfd",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "label": "투자 증권 이익 차감",
+        "value": -30552000000.0,
+        "fact": {
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
+          "components": [
+            {
+              "coefficient": -1,
+              "fact": {
+                "start": "2025-01-27",
+                "end": "2026-01-25",
+                "dimensions": [],
+                "tag": "GainLossOnInvestments",
+                "taxonomy": "http://fasb.org/us-gaap/2025",
+                "value": 8918000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-308",
+                "decimals": "-6",
+                "accession": "0001045810-26-000021",
+                "filedAt": "2026-02-25",
+                "sourceFile": "data/sources/filing-0001045810-26-000021-af8398105d629d98.xbrl",
+                "sourceHash": "af8398105d629d98defacca572c8e85fe0d8a5f551266b01df2d8be4fa03558f",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm"
+              }
+            },
+            {
+              "coefficient": -1,
+              "fact": {
+                "start": "2026-01-26",
+                "end": "2026-07-26",
+                "dimensions": [],
+                "tag": "GainLossOnInvestments",
+                "taxonomy": "http://fasb.org/us-gaap/2026",
+                "value": 23707000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-308",
+                "decimals": "-6",
+                "accession": "0001045810-26-000075",
+                "filedAt": "2026-08-26",
+                "sourceFile": "data/sources/filing-0001045810-26-000075-fd37c5c3b08be610.xbrl",
+                "sourceHash": "fd37c5c3b08be610fa48f8e3e394ab8d2108a23bbc2dfa26ee0bf0d91493bdfd",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+              }
+            },
+            {
+              "coefficient": 1,
+              "fact": {
+                "start": "2025-01-27",
+                "end": "2025-07-27",
+                "dimensions": [],
+                "tag": "GainLossOnInvestments",
+                "taxonomy": "http://fasb.org/us-gaap/2026",
+                "value": 2073000000.0,
+                "unit": "USD",
+                "context": "c-5",
+                "factId": "f-309",
+                "decimals": "-6",
+                "accession": "0001045810-26-000075",
+                "filedAt": "2026-08-26",
+                "sourceFile": "data/sources/filing-0001045810-26-000075-fd37c5c3b08be610.xbrl",
+                "sourceHash": "fd37c5c3b08be610fa48f8e3e394ab8d2108a23bbc2dfa26ee0bf0d91493bdfd",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "label": "기타 비현금 조정",
+        "value": 131000000.0,
+        "fact": {
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
+          "components": [
+            {
+              "coefficient": -1,
+              "fact": {
+                "start": "2025-01-27",
+                "end": "2026-01-25",
+                "dimensions": [],
+                "tag": "OtherNoncashIncomeExpense",
+                "taxonomy": "http://fasb.org/us-gaap/2025",
+                "value": 287000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-314",
+                "decimals": "-6",
+                "accession": "0001045810-26-000021",
+                "filedAt": "2026-02-25",
+                "sourceFile": "data/sources/filing-0001045810-26-000021-af8398105d629d98.xbrl",
+                "sourceHash": "af8398105d629d98defacca572c8e85fe0d8a5f551266b01df2d8be4fa03558f",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm"
+              }
+            },
+            {
+              "coefficient": -1,
+              "fact": {
+                "start": "2026-01-26",
+                "end": "2026-07-26",
+                "dimensions": [],
+                "tag": "OtherNoncashIncomeExpense",
+                "taxonomy": "http://fasb.org/us-gaap/2026",
+                "value": -222000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-310",
+                "decimals": "-6",
+                "accession": "0001045810-26-000075",
+                "filedAt": "2026-08-26",
+                "sourceFile": "data/sources/filing-0001045810-26-000075-fd37c5c3b08be610.xbrl",
+                "sourceHash": "fd37c5c3b08be610fa48f8e3e394ab8d2108a23bbc2dfa26ee0bf0d91493bdfd",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+              }
+            },
+            {
+              "coefficient": 1,
+              "fact": {
+                "start": "2025-01-27",
+                "end": "2025-07-27",
+                "dimensions": [],
+                "tag": "OtherNoncashIncomeExpense",
+                "taxonomy": "http://fasb.org/us-gaap/2026",
+                "value": 196000000.0,
+                "unit": "USD",
+                "context": "c-5",
+                "factId": "f-311",
+                "decimals": "-6",
+                "accession": "0001045810-26-000075",
+                "filedAt": "2026-08-26",
+                "sourceFile": "data/sources/filing-0001045810-26-000075-fd37c5c3b08be610.xbrl",
+                "sourceHash": "fd37c5c3b08be610fa48f8e3e394ab8d2108a23bbc2dfa26ee0bf0d91493bdfd",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "label": "매출채권 변동",
+        "value": -35246000000.0,
+        "fact": {
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
+          "components": [
+            {
+              "coefficient": -1,
+              "fact": {
+                "start": "2025-01-27",
+                "end": "2026-01-25",
+                "dimensions": [],
+                "tag": "IncreaseDecreaseInAccountsReceivable",
+                "taxonomy": "http://fasb.org/us-gaap/2025",
+                "value": 15399000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-317",
+                "decimals": "-6",
+                "accession": "0001045810-26-000021",
+                "filedAt": "2026-02-25",
+                "sourceFile": "data/sources/filing-0001045810-26-000021-af8398105d629d98.xbrl",
+                "sourceHash": "af8398105d629d98defacca572c8e85fe0d8a5f551266b01df2d8be4fa03558f",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm"
+              }
+            },
+            {
+              "coefficient": -1,
+              "fact": {
+                "start": "2026-01-26",
+                "end": "2026-07-26",
+                "dimensions": [],
+                "tag": "IncreaseDecreaseInAccountsReceivable",
+                "taxonomy": "http://fasb.org/us-gaap/2026",
+                "value": 24590000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-312",
+                "decimals": "-6",
+                "accession": "0001045810-26-000075",
+                "filedAt": "2026-08-26",
+                "sourceFile": "data/sources/filing-0001045810-26-000075-fd37c5c3b08be610.xbrl",
+                "sourceHash": "fd37c5c3b08be610fa48f8e3e394ab8d2108a23bbc2dfa26ee0bf0d91493bdfd",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+              }
+            },
+            {
+              "coefficient": 1,
+              "fact": {
+                "start": "2025-01-27",
+                "end": "2025-07-27",
+                "dimensions": [],
+                "tag": "IncreaseDecreaseInAccountsReceivable",
+                "taxonomy": "http://fasb.org/us-gaap/2026",
+                "value": 4743000000.0,
+                "unit": "USD",
+                "context": "c-5",
+                "factId": "f-313",
+                "decimals": "-6",
+                "accession": "0001045810-26-000075",
+                "filedAt": "2026-08-26",
+                "sourceFile": "data/sources/filing-0001045810-26-000075-fd37c5c3b08be610.xbrl",
+                "sourceHash": "fd37c5c3b08be610fa48f8e3e394ab8d2108a23bbc2dfa26ee0bf0d91493bdfd",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "label": "재고 변동",
+        "value": -16648000000.0,
+        "fact": {
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
+          "components": [
+            {
+              "coefficient": -1,
+              "fact": {
+                "start": "2025-01-27",
+                "end": "2026-01-25",
+                "dimensions": [],
+                "tag": "IncreaseDecreaseInInventories",
+                "taxonomy": "http://fasb.org/us-gaap/2025",
+                "value": 11324000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-320",
+                "decimals": "-6",
+                "accession": "0001045810-26-000021",
+                "filedAt": "2026-02-25",
+                "sourceFile": "data/sources/filing-0001045810-26-000021-af8398105d629d98.xbrl",
+                "sourceHash": "af8398105d629d98defacca572c8e85fe0d8a5f551266b01df2d8be4fa03558f",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm"
+              }
+            },
+            {
+              "coefficient": -1,
+              "fact": {
+                "start": "2026-01-26",
+                "end": "2026-07-26",
+                "dimensions": [],
+                "tag": "IncreaseDecreaseInInventories",
+                "taxonomy": "http://fasb.org/us-gaap/2026",
+                "value": 10204000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-314",
+                "decimals": "-6",
+                "accession": "0001045810-26-000075",
+                "filedAt": "2026-08-26",
+                "sourceFile": "data/sources/filing-0001045810-26-000075-fd37c5c3b08be610.xbrl",
+                "sourceHash": "fd37c5c3b08be610fa48f8e3e394ab8d2108a23bbc2dfa26ee0bf0d91493bdfd",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+              }
+            },
+            {
+              "coefficient": 1,
+              "fact": {
+                "start": "2025-01-27",
+                "end": "2025-07-27",
+                "dimensions": [],
+                "tag": "IncreaseDecreaseInInventories",
+                "taxonomy": "http://fasb.org/us-gaap/2026",
+                "value": 4880000000.0,
+                "unit": "USD",
+                "context": "c-5",
+                "factId": "f-315",
+                "decimals": "-6",
+                "accession": "0001045810-26-000075",
+                "filedAt": "2026-08-26",
+                "sourceFile": "data/sources/filing-0001045810-26-000075-fd37c5c3b08be610.xbrl",
+                "sourceHash": "fd37c5c3b08be610fa48f8e3e394ab8d2108a23bbc2dfa26ee0bf0d91493bdfd",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "label": "선급 및 기타 자산 변동",
+        "value": -6849000000.0,
+        "fact": {
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
+          "components": [
+            {
+              "coefficient": -1,
+              "fact": {
+                "start": "2025-01-27",
+                "end": "2026-01-25",
+                "dimensions": [],
+                "tag": "IncreaseDecreaseInPrepaidDeferredExpenseAndOtherAssets",
+                "taxonomy": "http://fasb.org/us-gaap/2025",
+                "value": -577000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-323",
+                "decimals": "-6",
+                "accession": "0001045810-26-000021",
+                "filedAt": "2026-02-25",
+                "sourceFile": "data/sources/filing-0001045810-26-000021-af8398105d629d98.xbrl",
+                "sourceHash": "af8398105d629d98defacca572c8e85fe0d8a5f551266b01df2d8be4fa03558f",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm"
+              }
+            },
+            {
+              "coefficient": -1,
+              "fact": {
+                "start": "2026-01-26",
+                "end": "2026-07-26",
+                "dimensions": [],
+                "tag": "IncreaseDecreaseInPrepaidDeferredExpenseAndOtherAssets",
+                "taxonomy": "http://fasb.org/us-gaap/2026",
+                "value": 6480000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-316",
+                "decimals": "-6",
+                "accession": "0001045810-26-000075",
+                "filedAt": "2026-08-26",
+                "sourceFile": "data/sources/filing-0001045810-26-000075-fd37c5c3b08be610.xbrl",
+                "sourceHash": "fd37c5c3b08be610fa48f8e3e394ab8d2108a23bbc2dfa26ee0bf0d91493bdfd",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+              }
+            },
+            {
+              "coefficient": 1,
+              "fact": {
+                "start": "2025-01-27",
+                "end": "2025-07-27",
+                "dimensions": [],
+                "tag": "IncreaseDecreaseInPrepaidDeferredExpenseAndOtherAssets",
+                "taxonomy": "http://fasb.org/us-gaap/2026",
+                "value": -946000000.0,
+                "unit": "USD",
+                "context": "c-5",
+                "factId": "f-317",
+                "decimals": "-6",
+                "accession": "0001045810-26-000075",
+                "filedAt": "2026-08-26",
+                "sourceFile": "data/sources/filing-0001045810-26-000075-fd37c5c3b08be610.xbrl",
+                "sourceHash": "fd37c5c3b08be610fa48f8e3e394ab8d2108a23bbc2dfa26ee0bf0d91493bdfd",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "label": "매입채무 변동",
+        "value": 4966000000.0,
+        "fact": {
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
+          "components": [
+            {
+              "coefficient": 1,
+              "fact": {
+                "start": "2025-01-27",
+                "end": "2026-01-25",
+                "dimensions": [],
+                "tag": "IncreaseDecreaseInAccountsPayable",
+                "taxonomy": "http://fasb.org/us-gaap/2025",
+                "value": 3096000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-326",
+                "decimals": "-6",
+                "accession": "0001045810-26-000021",
+                "filedAt": "2026-02-25",
+                "sourceFile": "data/sources/filing-0001045810-26-000021-af8398105d629d98.xbrl",
+                "sourceHash": "af8398105d629d98defacca572c8e85fe0d8a5f551266b01df2d8be4fa03558f",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm"
+              }
+            },
+            {
+              "coefficient": 1,
+              "fact": {
+                "start": "2026-01-26",
+                "end": "2026-07-26",
+                "dimensions": [],
+                "tag": "IncreaseDecreaseInAccountsPayable",
+                "taxonomy": "http://fasb.org/us-gaap/2026",
+                "value": 4125000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-318",
+                "decimals": "-6",
+                "accession": "0001045810-26-000075",
+                "filedAt": "2026-08-26",
+                "sourceFile": "data/sources/filing-0001045810-26-000075-fd37c5c3b08be610.xbrl",
+                "sourceHash": "fd37c5c3b08be610fa48f8e3e394ab8d2108a23bbc2dfa26ee0bf0d91493bdfd",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+              }
+            },
+            {
+              "coefficient": -1,
+              "fact": {
+                "start": "2025-01-27",
+                "end": "2025-07-27",
+                "dimensions": [],
+                "tag": "IncreaseDecreaseInAccountsPayable",
+                "taxonomy": "http://fasb.org/us-gaap/2026",
+                "value": 2255000000.0,
+                "unit": "USD",
+                "context": "c-5",
+                "factId": "f-319",
+                "decimals": "-6",
+                "accession": "0001045810-26-000075",
+                "filedAt": "2026-08-26",
+                "sourceFile": "data/sources/filing-0001045810-26-000075-fd37c5c3b08be610.xbrl",
+                "sourceHash": "fd37c5c3b08be610fa48f8e3e394ab8d2108a23bbc2dfa26ee0bf0d91493bdfd",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "label": "미지급 및 기타 유동부채 변동",
+        "value": 10197000000.0,
+        "fact": {
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
+          "components": [
+            {
+              "coefficient": 1,
+              "fact": {
+                "start": "2025-01-27",
+                "end": "2026-01-25",
+                "dimensions": [],
+                "tag": "IncreaseDecreaseInAccruedLiabilitiesAndOtherOperatingLiabilities",
+                "taxonomy": "http://fasb.org/us-gaap/2025",
+                "value": 5257000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-329",
+                "decimals": "-6",
+                "accession": "0001045810-26-000021",
+                "filedAt": "2026-02-25",
+                "sourceFile": "data/sources/filing-0001045810-26-000021-af8398105d629d98.xbrl",
+                "sourceHash": "af8398105d629d98defacca572c8e85fe0d8a5f551266b01df2d8be4fa03558f",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm"
+              }
+            },
+            {
+              "coefficient": 1,
+              "fact": {
+                "start": "2026-01-26",
+                "end": "2026-07-26",
+                "dimensions": [],
+                "tag": "IncreaseDecreaseInAccruedLiabilitiesAndOtherOperatingLiabilities",
+                "taxonomy": "http://fasb.org/us-gaap/2026",
+                "value": 8015000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-320",
+                "decimals": "-6",
+                "accession": "0001045810-26-000075",
+                "filedAt": "2026-08-26",
+                "sourceFile": "data/sources/filing-0001045810-26-000075-fd37c5c3b08be610.xbrl",
+                "sourceHash": "fd37c5c3b08be610fa48f8e3e394ab8d2108a23bbc2dfa26ee0bf0d91493bdfd",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+              }
+            },
+            {
+              "coefficient": -1,
+              "fact": {
+                "start": "2025-01-27",
+                "end": "2025-07-27",
+                "dimensions": [],
+                "tag": "IncreaseDecreaseInAccruedLiabilitiesAndOtherOperatingLiabilities",
+                "taxonomy": "http://fasb.org/us-gaap/2026",
+                "value": 3075000000.0,
+                "unit": "USD",
+                "context": "c-5",
+                "factId": "f-321",
+                "decimals": "-6",
+                "accession": "0001045810-26-000075",
+                "filedAt": "2026-08-26",
+                "sourceFile": "data/sources/filing-0001045810-26-000075-fd37c5c3b08be610.xbrl",
+                "sourceHash": "fd37c5c3b08be610fa48f8e3e394ab8d2108a23bbc2dfa26ee0bf0d91493bdfd",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "label": "기타 장기부채 변동",
+        "value": 2835000000.0,
+        "fact": {
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
+          "components": [
+            {
+              "coefficient": 1,
+              "fact": {
+                "start": "2025-01-27",
+                "end": "2026-01-25",
+                "dimensions": [],
+                "tag": "IncreaseDecreaseInOtherNoncurrentLiabilities",
+                "taxonomy": "http://fasb.org/us-gaap/2025",
+                "value": 1844000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-332",
+                "decimals": "-6",
+                "accession": "0001045810-26-000021",
+                "filedAt": "2026-02-25",
+                "sourceFile": "data/sources/filing-0001045810-26-000021-af8398105d629d98.xbrl",
+                "sourceHash": "af8398105d629d98defacca572c8e85fe0d8a5f551266b01df2d8be4fa03558f",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm"
+              }
+            },
+            {
+              "coefficient": 1,
+              "fact": {
+                "start": "2026-01-26",
+                "end": "2026-07-26",
+                "dimensions": [],
+                "tag": "IncreaseDecreaseInOtherNoncurrentLiabilities",
+                "taxonomy": "http://fasb.org/us-gaap/2026",
+                "value": 1970000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-322",
+                "decimals": "-6",
+                "accession": "0001045810-26-000075",
+                "filedAt": "2026-08-26",
+                "sourceFile": "data/sources/filing-0001045810-26-000075-fd37c5c3b08be610.xbrl",
+                "sourceHash": "fd37c5c3b08be610fa48f8e3e394ab8d2108a23bbc2dfa26ee0bf0d91493bdfd",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+              }
+            },
+            {
+              "coefficient": -1,
+              "fact": {
+                "start": "2025-01-27",
+                "end": "2025-07-27",
+                "dimensions": [],
+                "tag": "IncreaseDecreaseInOtherNoncurrentLiabilities",
+                "taxonomy": "http://fasb.org/us-gaap/2026",
+                "value": 979000000.0,
+                "unit": "USD",
+                "context": "c-5",
+                "factId": "f-323",
+                "decimals": "-6",
+                "accession": "0001045810-26-000075",
+                "filedAt": "2026-08-26",
+                "sourceFile": "data/sources/filing-0001045810-26-000075-fd37c5c3b08be610.xbrl",
+                "sourceHash": "fd37c5c3b08be610fa48f8e3e394ab8d2108a23bbc2dfa26ee0bf0d91493bdfd",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "reportedCfo": 134360000000.0,
+    "residual": 0,
+    "periods": [
+      {
+        "start": "2025-01-27",
+        "end": "2026-01-25",
+        "reportedCfo": 102718000000.0,
+        "residual": 0,
+        "incomeResidual": 0,
+        "revenueResidual": 0,
+        "corporateCosts": 8910000000.0
+      },
+      {
+        "start": "2026-01-26",
+        "end": "2026-07-26",
+        "reportedCfo": 74421000000.0,
+        "residual": 0,
+        "incomeResidual": 0,
+        "revenueResidual": 0,
+        "corporateCosts": 5601000000.0
+      },
+      {
+        "start": "2025-01-27",
+        "end": "2025-07-27",
+        "reportedCfo": 42779000000.0,
+        "residual": 0,
+        "incomeResidual": 0,
+        "revenueResidual": 0,
+        "corporateCosts": 4221000000.0
+      }
+    ],
+    "cashAfterInvestmentLeaseSbc": 119645000000.0
+  },
+  "anchors": {
+    "workingCashEffect": -29134000000.0,
+    "revenueIncrease": 87032000000.0,
+    "corporateFacts": [
+      {
+        "value": 7241000000.0,
+        "components": [
+          {
+            "coefficient": 1,
+            "fact": {
+              "start": "2025-01-27",
+              "end": "2026-01-25",
+              "dimensions": [
+                [
+                  "ConsolidationItemsAxis",
+                  "CorporateNonSegmentMember"
+                ]
+              ],
+              "tag": "AllocatedShareBasedCompensationExpense",
+              "taxonomy": "http://fasb.org/us-gaap/2025",
+              "value": 6386000000.0,
+              "unit": "USD",
+              "context": "c-208",
+              "factId": "f-1155",
+              "decimals": "-6",
+              "accession": "0001045810-26-000021",
+              "filedAt": "2026-02-25",
+              "sourceFile": "data/sources/filing-0001045810-26-000021-af8398105d629d98.xbrl",
+              "sourceHash": "af8398105d629d98defacca572c8e85fe0d8a5f551266b01df2d8be4fa03558f",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm"
+            }
+          },
+          {
+            "coefficient": 1,
+            "fact": {
+              "start": "2026-01-26",
+              "end": "2026-07-26",
+              "dimensions": [
+                [
+                  "ConsolidationItemsAxis",
+                  "CorporateNonSegmentMember"
+                ]
+              ],
+              "tag": "AllocatedShareBasedCompensationExpense",
+              "taxonomy": "http://fasb.org/us-gaap/2026",
+              "value": 3954000000.0,
+              "unit": "USD",
+              "context": "c-261",
+              "factId": "f-1000",
+              "decimals": "-6",
+              "accession": "0001045810-26-000075",
+              "filedAt": "2026-08-26",
+              "sourceFile": "data/sources/filing-0001045810-26-000075-fd37c5c3b08be610.xbrl",
+              "sourceHash": "fd37c5c3b08be610fa48f8e3e394ab8d2108a23bbc2dfa26ee0bf0d91493bdfd",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+            }
+          },
+          {
+            "coefficient": -1,
+            "fact": {
+              "start": "2025-01-27",
+              "end": "2025-07-27",
+              "dimensions": [
+                [
+                  "ConsolidationItemsAxis",
+                  "CorporateNonSegmentMember"
+                ]
+              ],
+              "tag": "AllocatedShareBasedCompensationExpense",
+              "taxonomy": "http://fasb.org/us-gaap/2026",
+              "value": 3099000000.0,
+              "unit": "USD",
+              "context": "c-262",
+              "factId": "f-1001",
+              "decimals": "-6",
+              "accession": "0001045810-26-000075",
+              "filedAt": "2026-08-26",
+              "sourceFile": "data/sources/filing-0001045810-26-000075-fd37c5c3b08be610.xbrl",
+              "sourceHash": "fd37c5c3b08be610fa48f8e3e394ab8d2108a23bbc2dfa26ee0bf0d91493bdfd",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+            }
+          }
+        ],
+        "unit": "USD",
+        "derived": true,
+        "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+      },
+      {
+        "value": 2316000000.0,
+        "components": [
+          {
+            "coefficient": 1,
+            "fact": {
+              "start": "2025-01-27",
+              "end": "2026-01-25",
+              "dimensions": [
+                [
+                  "ConsolidationItemsAxis",
+                  "CorporateNonSegmentMember"
+                ]
+              ],
+              "tag": "UnallocatedCorporateOperatingExpendituresAndOtherExpenses",
+              "taxonomy": "http://www.nvidia.com/20260125",
+              "value": 1997000000.0,
+              "unit": "USD",
+              "context": "c-208",
+              "factId": "f-1158",
+              "decimals": "-6",
+              "accession": "0001045810-26-000021",
+              "filedAt": "2026-02-25",
+              "sourceFile": "data/sources/filing-0001045810-26-000021-af8398105d629d98.xbrl",
+              "sourceHash": "af8398105d629d98defacca572c8e85fe0d8a5f551266b01df2d8be4fa03558f",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm"
+            }
+          },
+          {
+            "coefficient": 1,
+            "fact": {
+              "start": "2026-01-26",
+              "end": "2026-07-26",
+              "dimensions": [
+                [
+                  "ConsolidationItemsAxis",
+                  "CorporateNonSegmentMember"
+                ]
+              ],
+              "tag": "UnallocatedCorporateOperatingExpendituresAndOtherExpenses",
+              "taxonomy": "http://www.nvidia.com/20260726",
+              "value": 1178000000.0,
+              "unit": "USD",
+              "context": "c-261",
+              "factId": "f-1004",
+              "decimals": "-6",
+              "accession": "0001045810-26-000075",
+              "filedAt": "2026-08-26",
+              "sourceFile": "data/sources/filing-0001045810-26-000075-fd37c5c3b08be610.xbrl",
+              "sourceHash": "fd37c5c3b08be610fa48f8e3e394ab8d2108a23bbc2dfa26ee0bf0d91493bdfd",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+            }
+          },
+          {
+            "coefficient": -1,
+            "fact": {
+              "start": "2025-01-27",
+              "end": "2025-07-27",
+              "dimensions": [
+                [
+                  "ConsolidationItemsAxis",
+                  "CorporateNonSegmentMember"
+                ]
+              ],
+              "tag": "UnallocatedCorporateOperatingExpendituresAndOtherExpenses",
+              "taxonomy": "http://www.nvidia.com/20260726",
+              "value": 859000000.0,
+              "unit": "USD",
+              "context": "c-262",
+              "factId": "f-1005",
+              "decimals": "-6",
+              "accession": "0001045810-26-000075",
+              "filedAt": "2026-08-26",
+              "sourceFile": "data/sources/filing-0001045810-26-000075-fd37c5c3b08be610.xbrl",
+              "sourceHash": "fd37c5c3b08be610fa48f8e3e394ab8d2108a23bbc2dfa26ee0bf0d91493bdfd",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+            }
+          }
+        ],
+        "unit": "USD",
+        "derived": true,
+        "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+      },
+      {
+        "value": 733000000.0,
+        "components": [
+          {
+            "coefficient": 1,
+            "fact": {
+              "start": "2025-01-27",
+              "end": "2026-01-25",
+              "dimensions": [
+                [
+                  "ConsolidationItemsAxis",
+                  "CorporateNonSegmentMember"
+                ]
+              ],
+              "tag": "AcquisitionRelatedAndOtherCosts",
+              "taxonomy": "http://www.nvidia.com/20260125",
+              "value": 527000000.0,
+              "unit": "USD",
+              "context": "c-208",
+              "factId": "f-1161",
+              "decimals": "-6",
+              "accession": "0001045810-26-000021",
+              "filedAt": "2026-02-25",
+              "sourceFile": "data/sources/filing-0001045810-26-000021-af8398105d629d98.xbrl",
+              "sourceHash": "af8398105d629d98defacca572c8e85fe0d8a5f551266b01df2d8be4fa03558f",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm"
+            }
+          },
+          {
+            "coefficient": 1,
+            "fact": {
+              "start": "2026-01-26",
+              "end": "2026-07-26",
+              "dimensions": [
+                [
+                  "ConsolidationItemsAxis",
+                  "CorporateNonSegmentMember"
+                ]
+              ],
+              "tag": "AcquisitionRelatedAndOtherCosts",
+              "taxonomy": "http://www.nvidia.com/20260726",
+              "value": 469000000.0,
+              "unit": "USD",
+              "context": "c-261",
+              "factId": "f-1008",
+              "decimals": "-6",
+              "accession": "0001045810-26-000075",
+              "filedAt": "2026-08-26",
+              "sourceFile": "data/sources/filing-0001045810-26-000075-fd37c5c3b08be610.xbrl",
+              "sourceHash": "fd37c5c3b08be610fa48f8e3e394ab8d2108a23bbc2dfa26ee0bf0d91493bdfd",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+            }
+          },
+          {
+            "coefficient": -1,
+            "fact": {
+              "start": "2025-01-27",
+              "end": "2025-07-27",
+              "dimensions": [
+                [
+                  "ConsolidationItemsAxis",
+                  "CorporateNonSegmentMember"
+                ]
+              ],
+              "tag": "AcquisitionRelatedAndOtherCosts",
+              "taxonomy": "http://www.nvidia.com/20260726",
+              "value": 263000000.0,
+              "unit": "USD",
+              "context": "c-262",
+              "factId": "f-1009",
+              "decimals": "-6",
+              "accession": "0001045810-26-000075",
+              "filedAt": "2026-08-26",
+              "sourceFile": "data/sources/filing-0001045810-26-000075-fd37c5c3b08be610.xbrl",
+              "sourceHash": "fd37c5c3b08be610fa48f8e3e394ab8d2108a23bbc2dfa26ee0bf0d91493bdfd",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+            }
+          }
+        ],
+        "unit": "USD",
+        "derived": true,
+        "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+      }
+    ],
+    "reportedCorporateCost": 10290000000.0,
+    "actualFinanceLeasePrincipal": null
+  },
+  "cashAnchors": [
+    {
+      "label": "공급·생산능력 확보 약정",
+      "period": "2026-07-26",
+      "value": 279000000000.0,
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
+      "scope": "기억장치·생산시설 중심의 미래 약정. 변경 가능 조건과 비용 별도; 현재 설비 현금 지출 아님"
+    },
+    {
+      "label": "연구개발 클라우드 서비스 약정",
+      "period": "2026-07-26",
+      "value": 29000000000.0,
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
+      "scope": "연구개발 인프라 계약. 아래 AI 클라우드 파트너 계약과 구분"
+    },
+    {
+      "label": "AI 클라우드 파트너 서비스 약정",
+      "period": "2026-07-26",
+      "value": 36000000000.0,
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
+      "scope": "통상 6년; 제3자 또는 자사 이용 시 감소. 전체 금액을 당기 비용·확정 현금 손실로 보지 않음"
+    },
+    {
+      "label": "확인된 분할취득 원금 지급",
+      "period": "2026-01-26–2026-07-26",
+      "value": 92000000.0,
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
+      "scope": "현금흐름표 재무활동 항목. 금융리스 전액이라고 바꾸지 않음"
+    },
+    {
+      "label": "금융리스 원금 전액",
+      "period": "최근 1년",
+      "value": null,
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
+      "scope": "별도 전액 미확인. 비용이 중요하지 않다는 공시는 실제 지급 영의 증거가 아님"
+    }
+  ],
+  "rules": [
+    "직전 연간+현재 반기−전년 반기로 두 부문과 연결 실적을 대사합니다. 각 기간의 본사 비용·주식보상·인수 관련 비용을 부문 이익에서 차감하며 현금표 주식보상 되돌림을 미래 현금에 다시 더하지 않습니다.",
+    "투자 증권 이익은 보고 순이익과 영업현금 대사에서 차감됩니다. 미래 영업이익에 증권 평가·처분 이익을 더하지 않으며 투자자산 별도 가치는 미배분입니다.",
+    "미래 상각은 현금표 감가·상각 비율, 투자는 설비·무형 현금 취득 비율에서 출발합니다. 취득자산 대금의 재무활동 원금 지급을 별도 차감하며 금융리스 원금 전액으로 표시하지 않습니다.",
+    "운영리스 비용은 보고 영업손익에 포함됩니다. 운영리스 지급을 그 비용 외에 전액 추가 차감하지 않습니다. 새 미개시 데이터센터 계약은 개시 시점과 재배정 가능성을 별도 검토해야 합니다.",
+    "공급·생산능력 약정은 향후 매출원가·재고·지급 시점과 연결될 금액입니다. 현재 자본적 지출과 같은 금액으로 빼거나 미래 한 해 지출로 연환산하지 않습니다.",
+    "AI 클라우드 파트너는 NVIDIA 인프라를 구매하고 NVIDIA는 서비스 이용을 약정합니다. 제3자 사용과 계약 조건에 따라 부담이 감소하므로 총 약정을 당기 환급액이나 부실 매출로 단정하지 않습니다. 실제 현금 지급·서비스 이용·제3자 판매를 후속 공시에서 대사해야 합니다.",
+    "초기 21%는 연구 비교 세율이며 보고 글로벌 실효세율이나 현금 납세 예측이 아닙니다. 반기 세금 주석의 억 단위 반올림 대신 손익계산서 백만 달러 단위 원금액으로 대사합니다.",
+    "H20·H200 재고·구매 의무 비용과 충당금 환입은 보고 사업 마진 안에 있습니다. 공급 제약·수출 제한·제품 전환이 계속될 수 있으므로 자동 일회성 제거하지 않습니다.",
+    "추가 인수대금·비리스 순차입·금융자산 배분은 미래 기본값에 별도로 넣지 않았습니다. 정상 사업 현금의 검증이나 모든 주주 배분 가능 현금의 확정이 아닙니다.",
+    "성장 0%·현재 마진과 본사 비율 유지, 요구수익률 12%·영구성장 2%는 비교 시작점입니다. 고객·공급·제품 전환과 계약 부담이 변하는 별도 시나리오를 함께 검토해야 합니다."
+  ],
+  "remaining": [
+    "고객별 수금·직접/간접 고객 중복·선급금 소진",
+    "공급·클라우드 계약의 실제 이행과 비용 반영",
+    "제품 전환·수출 제약의 재고 및 구매 의무 비용",
+    "금융리스 전액·미개시 계약·인수대금과 투자자산 가치 배분"
+  ],
+  "initial": {
+    "years": [
+      {
+        "year": 1,
+        "segments": [
+          {
+            "label": "컴퓨트·네트워킹",
+            "revenue": 275409000000.0,
+            "operatingIncome": 195755000000.0
+          },
+          {
+            "label": "그래픽스",
+            "revenue": 27561000000.0,
+            "operatingIncome": 12114000000.0
+          }
+        ],
+        "revenue": 302970000000.0,
+        "operatingIncome": 197579000000.0,
+        "netInterest": 1765000000.0,
+        "tax": 41862240000.0,
+        "depreciation": 3687000000.0000005,
+        "workingCapital": 0.0,
+        "capex": 7354000000.0,
+        "leasePrincipal": 120000000.0,
+        "cash": 153694760000.0,
+        "segmentOperatingIncome": 207869000000.0,
+        "corporateCost": 10290000000.0
+      },
+      {
+        "year": 2,
+        "segments": [
+          {
+            "label": "컴퓨트·네트워킹",
+            "revenue": 275409000000.0,
+            "operatingIncome": 195755000000.0
+          },
+          {
+            "label": "그래픽스",
+            "revenue": 27561000000.0,
+            "operatingIncome": 12114000000.0
+          }
+        ],
+        "revenue": 302970000000.0,
+        "operatingIncome": 197579000000.0,
+        "netInterest": 1765000000.0,
+        "tax": 41862240000.0,
+        "depreciation": 3687000000.0000005,
+        "workingCapital": 0.0,
+        "capex": 7354000000.0,
+        "leasePrincipal": 120000000.0,
+        "cash": 153694760000.0,
+        "segmentOperatingIncome": 207869000000.0,
+        "corporateCost": 10290000000.0
+      },
+      {
+        "year": 3,
+        "segments": [
+          {
+            "label": "컴퓨트·네트워킹",
+            "revenue": 275409000000.0,
+            "operatingIncome": 195755000000.0
+          },
+          {
+            "label": "그래픽스",
+            "revenue": 27561000000.0,
+            "operatingIncome": 12114000000.0
+          }
+        ],
+        "revenue": 302970000000.0,
+        "operatingIncome": 197579000000.0,
+        "netInterest": 1765000000.0,
+        "tax": 41862240000.0,
+        "depreciation": 3687000000.0000005,
+        "workingCapital": 0.0,
+        "capex": 7354000000.0,
+        "leasePrincipal": 120000000.0,
+        "cash": 153694760000.0,
+        "segmentOperatingIncome": 207869000000.0,
+        "corporateCost": 10290000000.0
+      },
+      {
+        "year": 4,
+        "segments": [
+          {
+            "label": "컴퓨트·네트워킹",
+            "revenue": 275409000000.0,
+            "operatingIncome": 195755000000.0
+          },
+          {
+            "label": "그래픽스",
+            "revenue": 27561000000.0,
+            "operatingIncome": 12114000000.0
+          }
+        ],
+        "revenue": 302970000000.0,
+        "operatingIncome": 197579000000.0,
+        "netInterest": 1765000000.0,
+        "tax": 41862240000.0,
+        "depreciation": 3687000000.0000005,
+        "workingCapital": 0.0,
+        "capex": 7354000000.0,
+        "leasePrincipal": 120000000.0,
+        "cash": 153694760000.0,
+        "segmentOperatingIncome": 207869000000.0,
+        "corporateCost": 10290000000.0
+      },
+      {
+        "year": 5,
+        "segments": [
+          {
+            "label": "컴퓨트·네트워킹",
+            "revenue": 275409000000.0,
+            "operatingIncome": 195755000000.0
+          },
+          {
+            "label": "그래픽스",
+            "revenue": 27561000000.0,
+            "operatingIncome": 12114000000.0
+          }
+        ],
+        "revenue": 302970000000.0,
+        "operatingIncome": 197579000000.0,
+        "netInterest": 1765000000.0,
+        "tax": 41862240000.0,
+        "depreciation": 3687000000.0000005,
+        "workingCapital": 0.0,
+        "capex": 7354000000.0,
+        "leasePrincipal": 120000000.0,
+        "cash": 153694760000.0,
+        "segmentOperatingIncome": 207869000000.0,
+        "corporateCost": 10290000000.0
+      }
+    ],
+    "terminal": {
+      "year": 6,
+      "segments": [
+        {
+          "label": "컴퓨트·네트워킹",
+          "revenue": 280917180000.0,
+          "operatingIncome": 199670100000.0
+        },
+        {
+          "label": "그래픽스",
+          "revenue": 28112220000.0,
+          "operatingIncome": 12356280000.0
+        }
+      ],
+      "revenue": 309029400000.0,
+      "operatingIncome": 201530580000.0,
+      "netInterest": 1800300000.0,
+      "tax": 42699484800.0,
+      "depreciation": 3760740000.0000005,
+      "workingCapital": 2028386795.6613657,
+      "capex": 7501080000.0,
+      "leasePrincipal": 122400000.0,
+      "cash": 154740268404.33862,
+      "segmentOperatingIncome": 212026380000.0,
+      "corporateCost": 10495800000.0
+    },
+    "explicitPv": 554035213273.1268,
+    "terminalPv": 878037839537.2598,
+    "equityValue": 1432073052810.3867,
+    "price": 59.422118373874966,
+    "terminalShare": 0.6131236376623003,
+    "requiredTerminalCash": 867376279238.3369,
+    "terminalCashGap": 712636010833.9983,
+    "reinvestmentCaution": false,
+    "status": "calculated"
+  },
+  "evidenceHash": "1bce585f740a2757be4b8af4d233bd4433c44aa5f4b721a361560226896c2962"
+}

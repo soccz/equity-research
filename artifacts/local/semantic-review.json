@@ -1,0 +1,19 @@
+{
+  "checkedAt": "2026-09-30T09:08:28.416050+00:00",
+  "snapshotHash": "1cf5c0c2e217e09162e5cf2092f0c7ad647f57da875e6802a2b36ac2835f158d",
+  "scope": "two seen development companies; assistant review, not independent financial approval",
+  "evaluationHash": "c3b21c93b06fa5badad0c665ee5f39cb75964c8f4a533b4b3f80acb337aa5bb2",
+  "evaluationInterpretation": "기존 합성 개발 문장으로 확장된 입력 지침을 회귀 검사했다. 결합 오허용1/8·과잉거부1/8, 모델 단독 오허용2/8·과잉거부1/8. 새 근거 확보를 모델 정확도 향상으로 주장하지 않는다.",
+  "records": {
+    "MU": {
+      "recordHash": "a909e829b502abcac2ed349a047fa9921e27648e75f17be67e2bc5a7f668619c",
+      "automaticStatus": "revision_required",
+      "finding": "가설과 대안을 나누지만 alternative 문법이 어색하고 회수 지연을 현금 유출로 표현한다. 구별 관측의 방향 조건이 약하다. 비판은 명시된 근거 공백을 unsupported로 판정해 이유와 분류가 모순된다. 채택 보류."
+    },
+    "000660": {
+      "recordHash": "52b45557ff176b4111dff378f37b38bce001e0c9e3f9d4cae037d95e424197f6",
+      "automaticStatus": "revision_required",
+      "finding": "가설과 대안에 매출 성장·회수 지연이 함께 섞여 경쟁 설명 구분이 약하다. 조건부 질문과 입력에 명시된 근거 공백을 비판 모델이 부당하게 거부한다. 정책 변경 가능성도 구체적 증거 없이 넓게 추가했다. 채택 보류."
+    }
+  }
+}

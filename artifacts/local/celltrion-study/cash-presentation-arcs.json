@@ -1,0 +1,52 @@
+{
+  "status": "presentation_sign_verified_not_model_approved",
+  "sources": [
+    {
+      "receipt": "20260316001415",
+      "file": "data/sources/dart-package-20260316001415-26872ba9560cc320.zip",
+      "sha256": "26872ba9560cc32093cd5030931226e0752f14fa5da1702a6ecb8212a3cbc1fd",
+      "member": "entity00413046_2025-12-31_pre.xml",
+      "memberHash": "67bf2d38e1f89213db2d5d47ca8a76a46565506d96c591ea685ee399d786ae29",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260316001415"
+    },
+    {
+      "receipt": "20260814003751",
+      "file": "data/sources/dart-package-20260814003751-f125dbba7abe50e4.zip",
+      "sha256": "f125dbba7abe50e4278cf165113abf822fa4a6c6a67f0e9f601a2910276eab39",
+      "member": "entity00413046_2026-06-30_pre.xml",
+      "memberHash": "1f9535d6c74a0d047f18a7c267bfb508afe01be292e5ad2169431f4b48b1c93f",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003751"
+    }
+  ],
+  "arcs": [
+    {
+      "receipt": "20260316001415",
+      "role": "http://dart.fss.or.kr/role/ifrs/ias_7_role-D851100",
+      "parent": "dart_CashFlowsFromUsedInOperatingActivitiesLineItems",
+      "child": "ifrs-full_IncreaseDecreaseInWorkingCapital",
+      "preferredLabel": "http://www.xbrl.org/2003/role/totalLabel"
+    },
+    {
+      "receipt": "20260316001415",
+      "role": "http://dart.fss.or.kr/role/ifrs/ias_7_role-D851105",
+      "parent": "dart_CashFlowsFromUsedInOperatingActivitiesLineItems",
+      "child": "ifrs-full_IncreaseDecreaseInWorkingCapital",
+      "preferredLabel": "http://www.xbrl.org/2003/role/totalLabel"
+    },
+    {
+      "receipt": "20260814003751",
+      "role": "http://dart.fss.or.kr/role/ifrs/ias_7_role-D851100",
+      "parent": "dart_CashFlowsFromUsedInOperatingActivitiesLineItems",
+      "child": "ifrs-full_IncreaseDecreaseInWorkingCapital",
+      "preferredLabel": "http://www.xbrl.org/2009/role/negatedTotalLabel"
+    },
+    {
+      "receipt": "20260814003751",
+      "role": "http://dart.fss.or.kr/role/ifrs/ias_7_role-D851105",
+      "parent": "dart_CashFlowsFromUsedInOperatingActivitiesLineItems",
+      "child": "ifrs-full_IncreaseDecreaseInWorkingCapital",
+      "preferredLabel": "http://www.xbrl.org/2009/role/negatedTotalLabel"
+    }
+  ],
+  "scope": "Use only consolidated role D851100. Annual totalLabel preserves the negative raw working-capital amount; current negatedTotalLabel presents raw positive as negative cash effect. Neither role alone establishes a full CF model."
+}

@@ -1,0 +1,23 @@
+PASS Printed version and page counts use a reserved page-margin box
+PASS Registered real companies with a source cutoff
+PASS US filter affects table and scatter
+PASS Korean filter contains real Korean securities
+PASS Ticker search selects Microsoft in the table and chart
+PASS Empty search is explained without invented companies
+PASS Sector filter uses the coverage classifications
+PASS Candidate filter uses declared current financial conditions
+PASS Micron report contains actual dates and currency
+AssertionError [ERR_ASSERTION]: Local filing corpus opens and verifies without network access
+
+false !== true
+
+    at expect (file:///mnt/20t/%EC%A3%BC%EC%8B%9D/scripts/check-live.mjs:93:10)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async file:///mnt/20t/%EC%A3%BC%EC%8B%9D/scripts/check-live.mjs:164:5 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: 'strictEqual',
+  diff: 'simple'
+}

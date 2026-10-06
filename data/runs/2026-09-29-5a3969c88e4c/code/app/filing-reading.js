@@ -1,0 +1,22 @@
+(() => {
+  const esc=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  function render(c,payload){
+    if(payload.publication)return '';
+    const r=payload.filingReadings?.[c.id];if(!r)return '';
+    if(r.status!=='unreviewed_draft')return `<section class="panel filing-reading"><h2>공시 본문 로컬 판독</h2><p>${r.status==='stale'?'공시·조사 문단 변경으로 새 판독 필요':'이번 판독 실패 · 이전 출력으로 대체하지 않음'}</p><p>${esc(r.reason||r.error)}</p></section>`;
+    const source=id=>r.input.passages.find(p=>p.id===id);
+    const link=id=>{const p=source(id);return `<a href="${esc(p.sourceUrl)}" target="_blank" rel="noopener noreferrer">본문 #${p.ordinal} ↗</a>`;};
+    const d=r.draft;
+    const context=r.input.sourceContext;
+    const captions=context?`<details open class="reading-source-context"><summary>원문 표제·단위·기간</summary><p>${esc(context.scope)}</p>${context.excerpts.map(e=>`<blockquote>${esc(e.caption)}<br>${esc(e.columnHeaders)}</blockquote>`).join('')}<a href="${esc(context.sourceUrl)}" target="_blank" rel="noopener noreferrer">선택 표와 단위 원문 ↗</a></details>`:'';
+
+    return `<section class="panel filing-reading"><span class="eyebrow">LOCAL MODEL / FILING READING</span><h2>사업 설명을 읽은 로컬 초안</h2><p>${esc(r.input.focus)}</p><p class="reading-state">원문 직접 연결 · ${r.editorialReview?.status==='revision_required'?'작성자 원문 대조: 수정 필요':r.editorialReview?'작성자 대조에서 큰 사실 충돌 미발견 · 금융 승인 아님':'해석 의미 미검토'}</p><p class="chart-caption">${esc(r.input.selectionScope)} ${esc(r.scope)}</p><details class="reading-draft"><summary>원문과 모델의 해석 대조하기</summary>${r.editorialReview?.findings?.length?`<div class="reading-findings"><h3>원문 대조에서 발견한 수정 사항</h3>${r.editorialReview.findings.map(f=>`<p><strong>${esc(f.role)}</strong> ${esc(f.reason)}</p><blockquote>${esc(f.text)}</blockquote>`).join('')}<p class="chart-caption">${esc(r.editorialReview.reviewer)} · 원 응답은 아래에 보존합니다.</p></div>`:''}${r.numericFindings?.length?`<p class="reading-state">모델의 숫자 서술 ${r.numericFindings.length}개 문장: 원문의 단위·기간·수준과 변화 폭을 직접 대조하세요. ${r.numericFindings.some(f=>f.unmatched.length)?'원문과 같은 숫자 문자열을 찾지 못한 문장도 있습니다.':'숫자가 일치해도 의미가 맞는지는 별도 검토입니다.'}</p>`:''}${captions}${d.observations.map(o=>`<article class="reading-observation"><div><h3>회사가 공시한 원문</h3><blockquote>${esc(source(o.passageId).text)}</blockquote>${link(o.passageId)}<details><summary>기준 기간 확인</summary><small>공시 ${esc(r.input.filedAt)} · 보고 기간 ${esc(r.input.reportPeriod.join('–'))}</small></details></div><div><h3>모델이 읽은 의미 · 미검토</h3><p>${esc(o.reading)}</p></div></article>`).join('')}<h3>사업·가격 가정에 대한 잠정 해석</h3><p>${esc(d.implication.text)}</p><p>${d.implication.evidenceIds.map(link).join(' · ')}</p><h3>판단을 약화시킬 수 있는 다음 관측 질문</h3><p>${esc(d.question.text)}</p><p>${d.question.evidenceIds.map(link).join(' · ')}</p><button type="button" id="reading-to-notebook">이 초안과 원문을 내 연구로 가져오기</button><p class="chart-caption">반론·비교·실제 가격 가정은 직접 보완하고 새 연구 버전으로 저장합니다. 원 모델 출력은 별도로 남습니다.</p><small>${esc(r.model)} · ${esc(r.createdAt)} · 기록 ${esc(r.recordHash.slice(0,12))}</small></details></section>`;
+  }
+  function bind(c,payload){const b=document.querySelector('#reading-to-notebook');if(b)b.onclick=async()=>{
+    const r=payload.filingReadings[c.id],d=r.draft;
+    const ids=[...new Set([...d.observations.map(o=>o.passageId),...d.implication.evidenceIds,...d.question.evidenceIds])];
+    await window.EquityNotebook.startFromSource(c,payload,ids,{thesis:'로컬 모델 미검토 초안 · 기록 '+r.recordHash+'\n'+d.observations.map(o=>o.reading).join('\n'),assumptions:d.implication.text,changes:d.question.text});
+    document.querySelector('.notebook')?.scrollIntoView({behavior:'smooth',block:'start'});
+  };}
+  window.EquityFilingReading={render,bind};
+})();

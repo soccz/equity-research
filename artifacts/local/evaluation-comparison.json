@@ -1,0 +1,235 @@
+{
+  "runs": [
+    {
+      "counts": {
+        "exactClassifications": 10,
+        "falseAccepts": 1,
+        "falseRejects": 2,
+        "invalidResponses": 0,
+        "shouldAccept": 8,
+        "shouldReject": 8,
+        "total": 16
+      },
+      "directory": "data/local-evaluations/20260930T080951815561Z",
+      "gatePassed": false,
+      "inferenceConfig": null,
+      "interruption": null,
+      "model": "qwen3.5:9b",
+      "protocolHash": "8c398145530ddc57199137615c5a8758a3146c562f73b8e0601b1ec428380ece",
+      "recordHash": "bbb4c5090c92cd47eb0d4da208a9509e89d9e7d59364458462e48cc78fa4e706",
+      "status": "completed",
+      "suiteHash": "4acf73314f10667fdb9ebd734f63ed3a8d3f1e2a5e17bd9b30fb26493717280b"
+    },
+    {
+      "counts": null,
+      "directory": "data/local-evaluations/20260930T081305288637Z",
+      "gatePassed": null,
+      "inferenceConfig": {
+        "options": {
+          "num_batch": 128,
+          "num_ctx": 8192,
+          "num_predict": 4096,
+          "seed": 42,
+          "temperature": 0
+        },
+        "think": true
+      },
+      "interruption": {
+        "at": "2026-09-30T08:17:21.466730+00:00",
+        "comparison": "다음 실행은 모델 제작사 권장 샘플링 설정 사용. 숙고만의 효과를 분리한 인과 비교가 아니다.",
+        "completedResponseFiles": [
+          "cfo_observed-raw.json",
+          "cash_use_observed-raw.json",
+          "revenue_observed-raw.json"
+        ],
+        "reason": "숙고+temperature=0 설정에서 반복 숙고가 길어지고 cfo_observed 호출이 실패하여 운영 설정 재검토. 완료 평가로 취급하지 않는다.",
+        "status": "interrupted"
+      },
+      "model": "qwen3.5:9b",
+      "protocolHash": "8c398145530ddc57199137615c5a8758a3146c562f73b8e0601b1ec428380ece",
+      "recordHash": null,
+      "status": "interrupted",
+      "suiteHash": "4acf73314f10667fdb9ebd734f63ed3a8d3f1e2a5e17bd9b30fb26493717280b"
+    },
+    {
+      "counts": null,
+      "directory": "data/local-evaluations/20260930T081746999791Z",
+      "gatePassed": null,
+      "inferenceConfig": {
+        "options": {
+          "min_p": 0.0,
+          "num_batch": 128,
+          "num_ctx": 8192,
+          "num_predict": 4096,
+          "presence_penalty": 1.5,
+          "repeat_penalty": 1.0,
+          "seed": 42,
+          "temperature": 1.0,
+          "top_k": 20,
+          "top_p": 0.95
+        },
+        "think": true
+      },
+      "interruption": {
+        "at": "2026-09-30T08:20:20.820689+00:00",
+        "comparison": "이후 비숙고 일반 작업 권장값으로 별도 평가. 숙고 모드는 기본에서 제외.",
+        "reason": "제작사 권장 샘플링+숙고 실행에서 첫 문장이 출력 예산을 소진했다. 사전 기준 invalidResponses=0 불충족으로 해당 운영 설정을 중단. 전체 평가 완료가 아니다.",
+        "status": "interrupted"
+      },
+      "model": "qwen3.5:9b",
+      "protocolHash": "8c398145530ddc57199137615c5a8758a3146c562f73b8e0601b1ec428380ece",
+      "recordHash": null,
+      "status": "interrupted",
+      "suiteHash": "4acf73314f10667fdb9ebd734f63ed3a8d3f1e2a5e17bd9b30fb26493717280b"
+    },
+    {
+      "counts": {
+        "exactClassifications": 0,
+        "falseAccepts": 0,
+        "falseRejects": 0,
+        "invalidResponses": 1,
+        "plannedTotal": 16,
+        "shouldAccept": 1,
+        "shouldReject": 0,
+        "total": 1
+      },
+      "directory": "data/local-evaluations/20260930T082033742008Z",
+      "gatePassed": false,
+      "inferenceConfig": {
+        "options": {
+          "min_p": 0.0,
+          "num_batch": 128,
+          "num_ctx": 4096,
+          "num_predict": 1400,
+          "presence_penalty": 1.5,
+          "repeat_penalty": 1.0,
+          "seed": 42,
+          "temperature": 0.7,
+          "top_k": 20,
+          "top_p": 0.8
+        },
+        "think": false
+      },
+      "interruption": null,
+      "model": "qwen3.5:9b",
+      "protocolHash": "8c398145530ddc57199137615c5a8758a3146c562f73b8e0601b1ec428380ece",
+      "recordHash": "c29a6019107aeecc6e19fdfcef743529727ed002733ec6c969ec9b244f39fb96",
+      "status": "incomplete",
+      "suiteHash": "4acf73314f10667fdb9ebd734f63ed3a8d3f1e2a5e17bd9b30fb26493717280b"
+    },
+    {
+      "counts": {
+        "exactClassifications": 14,
+        "falseAccepts": 1,
+        "falseRejects": 0,
+        "invalidResponses": 0,
+        "plannedTotal": 16,
+        "shouldAccept": 8,
+        "shouldReject": 8,
+        "total": 16
+      },
+      "directory": "data/local-evaluations/20260930T082153729708Z",
+      "gatePassed": false,
+      "inferenceConfig": {
+        "options": {
+          "min_p": 0.0,
+          "num_batch": 128,
+          "num_ctx": 8192,
+          "num_predict": 4096,
+          "presence_penalty": 0.0,
+          "repeat_penalty": 1.0,
+          "seed": 42,
+          "temperature": 0.6,
+          "top_k": 20,
+          "top_p": 0.95
+        },
+        "think": true
+      },
+      "interruption": null,
+      "model": "qwen3:8b",
+      "protocolHash": "8c398145530ddc57199137615c5a8758a3146c562f73b8e0601b1ec428380ece",
+      "recordHash": "af2e57be97baec2f604fc8b5bc522c96397991342f3fa2be5615016aacd6a050",
+      "status": "completed",
+      "suiteHash": "4acf73314f10667fdb9ebd734f63ed3a8d3f1e2a5e17bd9b30fb26493717280b"
+    },
+    {
+      "counts": {
+        "exactClassifications": 14,
+        "falseAccepts": 0,
+        "falseRejects": 0,
+        "invalidResponses": 0,
+        "modelFalseAccepts": 1,
+        "modelFalseRejects": 0,
+        "plannedTotal": 16,
+        "shouldAccept": 8,
+        "shouldReject": 8,
+        "styleBlocks": 2,
+        "total": 16
+      },
+      "directory": "data/local-evaluations/20260930T082736249211Z",
+      "gatePassed": true,
+      "inferenceConfig": {
+        "options": {
+          "min_p": 0.0,
+          "num_batch": 128,
+          "num_ctx": 8192,
+          "num_predict": 4096,
+          "presence_penalty": 0.0,
+          "repeat_penalty": 1.0,
+          "seed": 42,
+          "temperature": 0.6,
+          "top_k": 20,
+          "top_p": 0.95
+        },
+        "think": true
+      },
+      "interruption": null,
+      "model": "qwen3:8b",
+      "protocolHash": "333a3653d110867d7ad81934752a245b5e5daa3170b0a458c0c3dcbc482ef576",
+      "recordHash": "280fd91baa4ba626372a2d0a7ba0155db2b42109e97d226233d6da6109995325",
+      "status": "completed",
+      "suiteHash": "4acf73314f10667fdb9ebd734f63ed3a8d3f1e2a5e17bd9b30fb26493717280b"
+    },
+    {
+      "directory": "data/local-evaluations/20260930T085622870638Z",
+      "model": "qwen3:8b",
+      "status": "completed",
+      "counts": {
+        "exactClassifications": 12,
+        "falseAccepts": 1,
+        "falseRejects": 1,
+        "invalidResponses": 0,
+        "modelFalseAccepts": 2,
+        "modelFalseRejects": 1,
+        "plannedTotal": 16,
+        "shouldAccept": 8,
+        "shouldReject": 8,
+        "styleBlocks": 2,
+        "total": 16
+      },
+      "gatePassed": false,
+      "inferenceConfig": {
+        "options": {
+          "min_p": 0.0,
+          "num_batch": 128,
+          "num_ctx": 8192,
+          "num_predict": 4096,
+          "presence_penalty": 0.0,
+          "repeat_penalty": 1.0,
+          "seed": 42,
+          "temperature": 0.6,
+          "top_k": 20,
+          "top_p": 0.95
+        },
+        "think": true
+      },
+      "protocolHash": "a5612172568d597862f1274866f528103b493708220fe9c7f05e54ca9f6191ef",
+      "suiteHash": "4acf73314f10667fdb9ebd734f63ed3a8d3f1e2a5e17bd9b30fb26493717280b",
+      "recordHash": "c3b21c93b06fa5badad0c665ee5f39cb75964c8f4a533b4b3f80acb337aa5bb2",
+      "interruption": null
+    }
+  ],
+  "scope": "development comparisons on the same authored cases; multiple settings and a wording rule changed; not out-of-sample accuracy or an isolated causal effect of thinking",
+  "selectedEvaluation": "c3b21c93b06fa5badad0c665ee5f39cb75964c8f4a533b4b3f80acb337aa5bb2",
+  "selectionNote": "Current protocol evidence-roles-v6. Gate failed; both company notes withheld. Not selected for superior performance."
+}

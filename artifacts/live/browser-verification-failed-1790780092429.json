@@ -1,0 +1,21 @@
+{
+  "checkedAt": "2026-09-30T14:54:13.631Z",
+  "status": "failed",
+  "checks": [
+    "Private file workflow tested with HTTP and HTTPS requests blocked",
+    "Registered real companies with a source cutoff",
+    "US filter affects table and scatter",
+    "Korean filter contains real Korean securities",
+    "Ticker search selects Microsoft in the table and chart",
+    "Empty search is explained without invented companies",
+    "Sector filter uses the coverage classifications",
+    "Candidate filter uses declared current financial conditions",
+    "Micron report contains actual dates and currency",
+    "Local filing corpus opens and verifies without network access",
+    "Source search finds the exact price and shipment explanation",
+    "A research revision preserves its selected filing passage"
+  ],
+  "error": "Error: {\"exceptionId\":1,\"text\":\"Uncaught\",\"lineNumber\":0,\"columnNumber\":26,\"scriptId\":\"53\",\"exception\":{\"type\":\"object\",\"subtype\":\"error\",\"className\":\"SyntaxError\",\"description\":\"SyntaxError: await is only valid in async functions and the top level bodies of modules\",\"objectId\":\"-2478628421584337176.2.2\"}}",
+  "runtimeErrors": [],
+  "stderr": ""
+}

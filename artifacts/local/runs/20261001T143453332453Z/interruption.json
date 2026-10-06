@@ -1,0 +1,7 @@
+{
+  "at": "2026-10-01T14:44:34.422896+00:00",
+  "reason": "Stopped only project local-research GPU waiter before inference to correct new DART-document manifest provenance for isolated replay and unnecessary GPU waits during reuse-only stages.",
+  "childPid": 3827513,
+  "snapshotHash": "30754645de7702a8c9fb773bd7b284168a37faca1c24510c758512e6d462e751",
+  "otherWorkloadsChanged": false
+}

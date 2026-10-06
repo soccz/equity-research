@@ -1,0 +1,64 @@
+{
+  "method": "PyMuPDF A4 page bounds and text presence; rendered page images for visual review",
+  "reports": [
+    {
+      "file": "company-preview.pdf",
+      "pages": 2,
+      "pageChecks": [
+        {
+          "page": 1,
+          "textCharacters": 730,
+          "textInsidePage": true
+        },
+        {
+          "page": 2,
+          "textCharacters": 523,
+          "textInsidePage": true
+        }
+      ]
+    },
+    {
+      "file": "comparison-preview.pdf",
+      "pages": 1,
+      "pageChecks": [
+        {
+          "page": 1,
+          "textCharacters": 1075,
+          "textInsidePage": true
+        }
+      ]
+    },
+    {
+      "file": "followup-preview.pdf",
+      "pages": 2,
+      "pageChecks": [
+        {
+          "page": 1,
+          "textCharacters": 613,
+          "textInsidePage": true
+        },
+        {
+          "page": 2,
+          "textCharacters": 417,
+          "textInsidePage": true
+        }
+      ]
+    },
+    {
+      "file": "research-note.pdf",
+      "pages": 2,
+      "pageChecks": [
+        {
+          "page": 1,
+          "textCharacters": 860,
+          "textInsidePage": true
+        },
+        {
+          "page": 2,
+          "textCharacters": 768,
+          "textInsidePage": true
+        }
+      ]
+    }
+  ]
+}

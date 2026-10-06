@@ -1,0 +1,38 @@
+{
+  "ticker": "207940",
+  "asOf": "2026-09-29",
+  "checkedAt": "2026-09-30T09:16:44.461282+00:00",
+  "filing": {
+    "corp_code": "00877059",
+    "corp_name": "삼성바이오로직스",
+    "stock_code": "207940",
+    "corp_cls": "Y",
+    "report_nm": "반기보고서 (2026.06)",
+    "rcept_no": "20260814003375",
+    "flr_nm": "삼성바이오로직스",
+    "rcept_dt": "20260814",
+    "rm": ""
+  },
+  "queries": [
+    {
+      "file": "data/sources/dart-list-207940-3a059149fbd8fc80.json",
+      "sha256": "3a059149fbd8fc8077442f0c484529cdfa85a7c967427a89252c9636727e1d5e",
+      "parameters": {
+        "corp_code": "00877059",
+        "bgn_de": "20250101",
+        "end_de": "20260929",
+        "pblntf_ty": "A",
+        "last_reprt_at": "N",
+        "page_count": 100,
+        "page_no": 1,
+        "sort": "date",
+        "sort_mth": "desc"
+      }
+    }
+  ],
+  "package": {
+    "file": "data/sources/dart-package-20260814003375-6e96df60c1b7b973.zip",
+    "sha256": "6e96df60c1b7b9735424cb7154a9c6357f533f0fe5403ed3d8f642e40a0eb107"
+  },
+  "instanceHash": "9c3c1515e996eff97e229734d286bff424c734c7158903d0ba5957b333c7e25e"
+}

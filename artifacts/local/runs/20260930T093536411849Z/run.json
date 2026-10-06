@@ -1,0 +1,105 @@
+{
+  "runId": "20260930T093536411849Z",
+  "startedAt": "2026-09-30T09:35:36.411945+00:00",
+  "status": "artifacts_verified",
+  "mode": "archived_sources_local_only",
+  "modelRequested": false,
+  "stages": [
+    {
+      "name": "unit",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-09-30T09:35:36.412072+00:00",
+      "finishedAt": "2026-09-30T09:35:43.995480+00:00",
+      "log": "artifacts/local/runs/20260930T093536411849Z/unit.log",
+      "logHash": "435b41e40c92a52447b358b227ea0a6909d3cdee21da23ce7dc0e31e13662cf0"
+    },
+    {
+      "name": "analysis",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-09-30T09:35:43.996138+00:00",
+      "finishedAt": "2026-09-30T09:35:55.575110+00:00",
+      "log": "artifacts/local/runs/20260930T093536411849Z/analysis.log",
+      "logHash": "a057ad1e4f7b517ab2e88d62e8191a148c842f07b4d03eb74b03ae1def7f4b60"
+    },
+    {
+      "name": "register-cash-conditions",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-09-30T09:35:55.575730+00:00",
+      "finishedAt": "2026-09-30T09:35:56.310585+00:00",
+      "log": "artifacts/local/runs/20260930T093536411849Z/register-cash-conditions.log",
+      "logHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "register-receivable-conditions",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-09-30T09:35:56.311010+00:00",
+      "finishedAt": "2026-09-30T09:35:56.999969+00:00",
+      "log": "artifacts/local/runs/20260930T093536411849Z/register-receivable-conditions.log",
+      "logHash": "5a91db2e38dac97e3b4d989866353e23b69d5e5996baf0ad874d5a08510f5dba"
+    },
+    {
+      "name": "observe",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-09-30T09:35:57.000435+00:00",
+      "finishedAt": "2026-09-30T09:35:57.697216+00:00",
+      "log": "artifacts/local/runs/20260930T093536411849Z/observe.log",
+      "logHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "price-crosscheck",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-09-30T09:35:57.697778+00:00",
+      "finishedAt": "2026-09-30T09:35:57.798234+00:00",
+      "log": "artifacts/local/runs/20260930T093536411849Z/price-crosscheck.log",
+      "logHash": "9615d0dad5595a983cd92742b6f9051cb946c0dccbdc5d5dc4a1c37d7c359c37"
+    },
+    {
+      "name": "offline-replay",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-09-30T09:35:57.798776+00:00",
+      "finishedAt": "2026-09-30T09:36:11.929638+00:00",
+      "log": "artifacts/local/runs/20260930T093536411849Z/offline-replay.log",
+      "logHash": "c92faea09f87c110a6a1481ee83a52f451fa2ea6dc0a91d034b520e0827aa00a"
+    },
+    {
+      "name": "browser-pdf",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-09-30T09:36:11.930102+00:00",
+      "finishedAt": "2026-09-30T09:36:30.954618+00:00",
+      "log": "artifacts/local/runs/20260930T093536411849Z/browser-pdf.log",
+      "logHash": "3d580fc3cf899113ead26ab0d1f764dc3aea46269fbd5dfb631ab9b4d04bc4e6"
+    },
+    {
+      "name": "artifacts",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-09-30T09:36:30.955771+00:00",
+      "finishedAt": "2026-09-30T09:36:37.136562+00:00",
+      "log": "artifacts/local/runs/20260930T093536411849Z/artifacts.log",
+      "logHash": "a6a99c57b03b14da79fb09d3283aef4e3dc80a61e13329eb7dffea0ee2bfc991"
+    }
+  ],
+  "snapshotHash": "a006664ef536ff28b9d30734bf06d7777fcecf15f740411676017f5e621d0df1",
+  "modelReviewStates": {
+    "MU": {
+      "status": "revision_required",
+      "displayEligible": false,
+      "recordHash": "a909e829b502abcac2ed349a047fa9921e27648e75f17be67e2bc5a7f668619c"
+    },
+    "000660": {
+      "status": "revision_required",
+      "displayEligible": false,
+      "recordHash": "52b45557ff176b4111dff378f37b38bce001e0c9e3f9d4cae037d95e424197f6"
+    }
+  },
+  "independentFinancialApproval": false,
+  "finishedAt": "2026-09-30T09:36:37.311022+00:00"
+}

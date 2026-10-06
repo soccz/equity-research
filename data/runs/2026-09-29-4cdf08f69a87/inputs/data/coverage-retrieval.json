@@ -1,0 +1,486 @@
+{
+  "asOf": "2026-09-29",
+  "checkedAt": "2026-10-01T10:28:20.349553+00:00",
+  "results": [
+    {
+      "ticker": "MU",
+      "status": "ready",
+      "periodEnd": "2026-05-28",
+      "filedAt": "2026-06-25",
+      "priceObservations": 1254,
+      "historyIssues": []
+    },
+    {
+      "ticker": "NVDA",
+      "status": "ready",
+      "periodEnd": "2026-07-26",
+      "filedAt": "2026-08-26",
+      "priceObservations": 1254,
+      "historyIssues": []
+    },
+    {
+      "ticker": "GOOGL",
+      "status": "ready",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-23",
+      "priceObservations": 1254,
+      "historyIssues": []
+    },
+    {
+      "ticker": "AAPL",
+      "status": "ready",
+      "periodEnd": "2026-06-27",
+      "filedAt": "2026-07-31",
+      "priceObservations": 1254,
+      "historyIssues": []
+    },
+    {
+      "ticker": "MSFT",
+      "status": "ready",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-29",
+      "priceObservations": 1254,
+      "historyIssues": []
+    },
+    {
+      "ticker": "AMZN",
+      "status": "ready",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-31",
+      "priceObservations": 1254,
+      "historyIssues": []
+    },
+    {
+      "ticker": "META",
+      "status": "ready",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-30",
+      "priceObservations": 1254,
+      "historyIssues": []
+    },
+    {
+      "ticker": "AMD",
+      "status": "ready",
+      "periodEnd": "2026-06-27",
+      "filedAt": "2026-08-05",
+      "priceObservations": 1254,
+      "historyIssues": []
+    },
+    {
+      "ticker": "AVGO",
+      "status": "ready",
+      "periodEnd": "2026-08-02",
+      "filedAt": "2026-09-10",
+      "priceObservations": 1254,
+      "historyIssues": []
+    },
+    {
+      "ticker": "QCOM",
+      "status": "ready",
+      "periodEnd": "2026-06-28",
+      "filedAt": "2026-07-29",
+      "priceObservations": 1254,
+      "historyIssues": []
+    },
+    {
+      "ticker": "INTC",
+      "status": "ready",
+      "periodEnd": "2026-06-27",
+      "filedAt": "2026-07-24",
+      "priceObservations": 1254,
+      "historyIssues": []
+    },
+    {
+      "ticker": "AMAT",
+      "status": "ready",
+      "periodEnd": "2026-07-26",
+      "filedAt": "2026-08-20",
+      "priceObservations": 1254,
+      "historyIssues": []
+    },
+    {
+      "ticker": "LRCX",
+      "status": "ready",
+      "periodEnd": "2026-06-28",
+      "filedAt": "2026-08-07",
+      "priceObservations": 1254,
+      "historyIssues": []
+    },
+    {
+      "ticker": "TSLA",
+      "status": "ready",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-23",
+      "priceObservations": 1254,
+      "historyIssues": []
+    },
+    {
+      "ticker": "GM",
+      "status": "ready",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-21",
+      "priceObservations": 1254,
+      "historyIssues": []
+    },
+    {
+      "ticker": "F",
+      "status": "ready",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-29",
+      "priceObservations": 1254,
+      "historyIssues": []
+    },
+    {
+      "ticker": "GE",
+      "status": "ready",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-16",
+      "priceObservations": 1254,
+      "historyIssues": []
+    },
+    {
+      "ticker": "CAT",
+      "status": "ready",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-05",
+      "priceObservations": 1254,
+      "historyIssues": []
+    },
+    {
+      "ticker": "LLY",
+      "status": "ready",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-05",
+      "priceObservations": 1254,
+      "historyIssues": []
+    },
+    {
+      "ticker": "JNJ",
+      "status": "ready",
+      "periodEnd": "2026-06-28",
+      "filedAt": "2026-07-23",
+      "priceObservations": 1254,
+      "historyIssues": []
+    },
+    {
+      "ticker": "000660",
+      "status": "ready",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-14",
+      "priceObservations": 1219,
+      "historyIssues": []
+    },
+    {
+      "ticker": "005930",
+      "status": "ready",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-14",
+      "priceObservations": 1219,
+      "historyIssues": []
+    },
+    {
+      "ticker": "035420",
+      "status": "ready",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-14",
+      "priceObservations": 1219,
+      "historyIssues": []
+    },
+    {
+      "ticker": "066570",
+      "status": "ready",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-14",
+      "priceObservations": 1219,
+      "historyIssues": []
+    },
+    {
+      "ticker": "005380",
+      "status": "ready",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-14",
+      "priceObservations": 1219,
+      "historyIssues": []
+    },
+    {
+      "ticker": "000270",
+      "status": "ready",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-09-16",
+      "priceObservations": 1219,
+      "historyIssues": []
+    },
+    {
+      "ticker": "012330",
+      "status": "ready",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-14",
+      "priceObservations": 1219,
+      "historyIssues": []
+    },
+    {
+      "ticker": "035720",
+      "status": "ready",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-19",
+      "priceObservations": 1219,
+      "historyIssues": []
+    },
+    {
+      "ticker": "006400",
+      "status": "ready",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-14",
+      "priceObservations": 1219,
+      "historyIssues": []
+    },
+    {
+      "ticker": "051910",
+      "status": "ready",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-14",
+      "priceObservations": 1219,
+      "historyIssues": []
+    },
+    {
+      "ticker": "373220",
+      "status": "ready",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-13",
+      "priceObservations": 1138,
+      "historyIssues": []
+    },
+    {
+      "ticker": "005490",
+      "status": "ready",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-14",
+      "priceObservations": 1219,
+      "historyIssues": []
+    },
+    {
+      "ticker": "207940",
+      "status": "ready",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-14",
+      "priceObservations": 1219,
+      "historyIssues": []
+    },
+    {
+      "ticker": "068270",
+      "status": "ready",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-14",
+      "priceObservations": 1219,
+      "historyIssues": []
+    },
+    {
+      "ticker": "000100",
+      "status": "ready",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-14",
+      "priceObservations": 1219,
+      "historyIssues": []
+    },
+    {
+      "ticker": "128940",
+      "status": "ready",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-14",
+      "priceObservations": 1219,
+      "historyIssues": []
+    },
+    {
+      "ticker": "329180",
+      "status": "ready",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-14",
+      "priceObservations": 1219,
+      "historyIssues": []
+    },
+    {
+      "ticker": "012450",
+      "status": "ready",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-14",
+      "priceObservations": 1219,
+      "historyIssues": []
+    },
+    {
+      "ticker": "034020",
+      "status": "ready",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-14",
+      "priceObservations": 1219,
+      "historyIssues": []
+    },
+    {
+      "ticker": "267260",
+      "status": "ready",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-14",
+      "priceObservations": 1219,
+      "historyIssues": []
+    },
+    {
+      "ticker": "NFLX",
+      "status": "ready",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-17",
+      "priceObservations": 1253,
+      "historyIssues": []
+    },
+    {
+      "ticker": "CRM",
+      "status": "ready",
+      "periodEnd": "2026-07-31",
+      "filedAt": "2026-08-27",
+      "priceObservations": 1253,
+      "historyIssues": []
+    },
+    {
+      "ticker": "ORCL",
+      "status": "ready",
+      "periodEnd": "2026-08-31",
+      "filedAt": "2026-09-11",
+      "priceObservations": 1253,
+      "historyIssues": []
+    },
+    {
+      "ticker": "ADBE",
+      "status": "ready",
+      "periodEnd": "2026-08-28",
+      "filedAt": "2026-09-22",
+      "priceObservations": 1253,
+      "historyIssues": []
+    },
+    {
+      "ticker": "NOW",
+      "status": "ready",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-23",
+      "priceObservations": 1253,
+      "historyIssues": []
+    },
+    {
+      "ticker": "COST",
+      "status": "ready",
+      "periodEnd": "2026-05-10",
+      "filedAt": "2026-06-03",
+      "priceObservations": 1253,
+      "historyIssues": []
+    },
+    {
+      "ticker": "WMT",
+      "status": "ready",
+      "periodEnd": "2026-07-31",
+      "filedAt": "2026-08-28",
+      "priceObservations": 1253,
+      "historyIssues": []
+    },
+    {
+      "ticker": "HD",
+      "status": "ready",
+      "periodEnd": "2026-08-02",
+      "filedAt": "2026-08-25",
+      "priceObservations": 1253,
+      "historyIssues": []
+    },
+    {
+      "ticker": "TXN",
+      "status": "ready",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-24",
+      "priceObservations": 1253,
+      "historyIssues": []
+    },
+    {
+      "ticker": "ADI",
+      "status": "ready",
+      "periodEnd": "2026-08-01",
+      "filedAt": "2026-08-19",
+      "priceObservations": 1253,
+      "historyIssues": []
+    },
+    {
+      "ticker": "028260",
+      "status": "ready",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-14",
+      "priceObservations": 1218,
+      "historyIssues": []
+    },
+    {
+      "ticker": "017670",
+      "status": "ready",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-13",
+      "priceObservations": 1218,
+      "historyIssues": []
+    },
+    {
+      "ticker": "030200",
+      "status": "ready",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-14",
+      "priceObservations": 1218,
+      "historyIssues": []
+    },
+    {
+      "ticker": "009150",
+      "status": "ready",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-14",
+      "priceObservations": 1218,
+      "historyIssues": []
+    },
+    {
+      "ticker": "011070",
+      "status": "ready",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-14",
+      "priceObservations": 1218,
+      "historyIssues": []
+    },
+    {
+      "ticker": "018260",
+      "status": "ready",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-14",
+      "priceObservations": 1218,
+      "historyIssues": []
+    },
+    {
+      "ticker": "259960",
+      "status": "ready",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-14",
+      "priceObservations": 1218,
+      "historyIssues": []
+    },
+    {
+      "ticker": "251270",
+      "status": "ready",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-14",
+      "priceObservations": 1218,
+      "historyIssues": []
+    },
+    {
+      "ticker": "090430",
+      "status": "ready",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-14",
+      "priceObservations": 1218,
+      "historyIssues": []
+    },
+    {
+      "ticker": "271560",
+      "status": "ready",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-18",
+      "priceObservations": 1218,
+      "historyIssues": []
+    }
+  ]
+}

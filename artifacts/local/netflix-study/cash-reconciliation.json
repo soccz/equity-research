@@ -1,0 +1,236 @@
+[
+  {
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "parts": [
+      {
+        "tag": "NetIncomeLoss",
+        "sign": 1,
+        "value": 10981201000.0
+      },
+      {
+        "tag": "AdditionstoStreamingContentAssets",
+        "sign": -1,
+        "value": -17096617000.0
+      },
+      {
+        "tag": "ChangeInStreamingContentLiabilities",
+        "sign": 1,
+        "value": -610838000.0
+      },
+      {
+        "tag": "CostofServicesAmortizationofStreamingContentAssets",
+        "sign": 1,
+        "value": 16422166000.0
+      },
+      {
+        "tag": "DepreciationDepletionAndAmortization",
+        "sign": 1,
+        "value": 333389000.0
+      },
+      {
+        "tag": "ShareBasedCompensation",
+        "sign": 1,
+        "value": 368449000.0
+      },
+      {
+        "tag": "ForeignCurrencyTransactionGainLossBeforeTax",
+        "sign": -1,
+        "value": 72348000.0
+      },
+      {
+        "tag": "OtherNoncashIncomeExpense",
+        "sign": -1,
+        "value": 577451000.0
+      },
+      {
+        "tag": "DeferredIncomeTaxExpenseBenefitIncludingReclassifications",
+        "sign": 1,
+        "value": -442056000.0
+      },
+      {
+        "tag": "IncreaseDecreaseInOtherCurrentAssets",
+        "sign": -1,
+        "value": -790661000.0
+      },
+      {
+        "tag": "IncreaseDecreaseInAccountsPayable",
+        "sign": 1,
+        "value": -8039000.0
+      },
+      {
+        "tag": "IncreaseDecreaseInAccruedLiabilities",
+        "sign": 1,
+        "value": 881218000.0
+      },
+      {
+        "tag": "IncreaseDecreaseInContractWithCustomerLiability",
+        "sign": 1,
+        "value": 254917000.0
+      },
+      {
+        "tag": "IncreaseDecreaseInOtherNoncurrentAssetsAndLiabilitiesNet",
+        "sign": -1,
+        "value": -793655000.0
+      }
+    ],
+    "cfo": 10149273000.0,
+    "contentCash": 17707455000.0
+  },
+  {
+    "start": "2026-01-01",
+    "end": "2026-06-30",
+    "parts": [
+      {
+        "tag": "NetIncomeLoss",
+        "sign": 1,
+        "value": 8684205000.0
+      },
+      {
+        "tag": "AdditionstoStreamingContentAssets",
+        "sign": -1,
+        "value": -9774440000.0
+      },
+      {
+        "tag": "ChangeInStreamingContentLiabilities",
+        "sign": 1,
+        "value": -136578000.0
+      },
+      {
+        "tag": "CostofServicesAmortizationofStreamingContentAssets",
+        "sign": 1,
+        "value": 8529209000.0
+      },
+      {
+        "tag": "DepreciationDepletionAndAmortization",
+        "sign": 1,
+        "value": 199105000.0
+      },
+      {
+        "tag": "ShareBasedCompensation",
+        "sign": 1,
+        "value": 271717000.0
+      },
+      {
+        "tag": "ForeignCurrencyTransactionGainLossBeforeTax",
+        "sign": -1,
+        "value": -18923000.0
+      },
+      {
+        "tag": "OtherNoncashIncomeExpense",
+        "sign": -1,
+        "value": 339583000.0
+      },
+      {
+        "tag": "DeferredIncomeTaxExpenseBenefitIncludingReclassifications",
+        "sign": 1,
+        "value": 140079000.0
+      },
+      {
+        "tag": "IncreaseDecreaseInOtherCurrentAssets",
+        "sign": -1,
+        "value": -592927000.0
+      },
+      {
+        "tag": "IncreaseDecreaseInAccountsPayable",
+        "sign": 1,
+        "value": -157243000.0
+      },
+      {
+        "tag": "IncreaseDecreaseInAccruedLiabilities",
+        "sign": 1,
+        "value": 46111000.0
+      },
+      {
+        "tag": "IncreaseDecreaseInContractWithCustomerLiability",
+        "sign": 1,
+        "value": 21726000.0
+      },
+      {
+        "tag": "IncreaseDecreaseInOtherNoncurrentAssetsAndLiabilitiesNet",
+        "sign": -1,
+        "value": -517607000.0
+      }
+    ],
+    "cfo": 7034017000.0,
+    "contentCash": 9911018000.0
+  },
+  {
+    "start": "2025-01-01",
+    "end": "2025-06-30",
+    "parts": [
+      {
+        "tag": "NetIncomeLoss",
+        "sign": 1,
+        "value": 6015764000.0
+      },
+      {
+        "tag": "AdditionstoStreamingContentAssets",
+        "sign": -1,
+        "value": -7385470000.0
+      },
+      {
+        "tag": "ChangeInStreamingContentLiabilities",
+        "sign": 1,
+        "value": -625305000.0
+      },
+      {
+        "tag": "CostofServicesAmortizationofStreamingContentAssets",
+        "sign": 1,
+        "value": 7655186000.0
+      },
+      {
+        "tag": "DepreciationDepletionAndAmortization",
+        "sign": 1,
+        "value": 160080000.0
+      },
+      {
+        "tag": "ShareBasedCompensation",
+        "sign": 1,
+        "value": 152839000.0
+      },
+      {
+        "tag": "ForeignCurrencyTransactionGainLossBeforeTax",
+        "sign": -1,
+        "value": 83785000.0
+      },
+      {
+        "tag": "OtherNoncashIncomeExpense",
+        "sign": -1,
+        "value": 234869000.0
+      },
+      {
+        "tag": "DeferredIncomeTaxExpenseBenefitIncludingReclassifications",
+        "sign": 1,
+        "value": -299683000.0
+      },
+      {
+        "tag": "IncreaseDecreaseInOtherCurrentAssets",
+        "sign": -1,
+        "value": -308050000.0
+      },
+      {
+        "tag": "IncreaseDecreaseInAccountsPayable",
+        "sign": 1,
+        "value": -265380000.0
+      },
+      {
+        "tag": "IncreaseDecreaseInAccruedLiabilities",
+        "sign": 1,
+        "value": 39178000.0
+      },
+      {
+        "tag": "IncreaseDecreaseInContractWithCustomerLiability",
+        "sign": 1,
+        "value": 207548000.0
+      },
+      {
+        "tag": "IncreaseDecreaseInOtherNoncurrentAssetsAndLiabilitiesNet",
+        "sign": -1,
+        "value": -452904000.0
+      }
+    ],
+    "cfo": 5212457000.0,
+    "contentCash": 8010775000.0
+  }
+]

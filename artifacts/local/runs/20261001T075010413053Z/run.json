@@ -1,0 +1,135 @@
+{
+  "runId": "20261001T075010413053Z",
+  "startedAt": "2026-10-01T07:41:55.789327+00:00",
+  "finishedAt": "2026-10-01T07:50:10.413053+00:00",
+  "status": "artifacts_verified",
+  "mode": "same_snapshot_verification_recovery",
+  "snapshotHash": "1db05afe61173e359399c0dce9e98409b60539c1ff4507e0492ed2521f84b61c",
+  "modelRequested": false,
+  "independentFinancialApproval": false,
+  "stages": [
+    {
+      "name": "unit",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-01T07:41:55.789452+00:00",
+      "finishedAt": "2026-10-01T07:42:45.403650+00:00",
+      "log": "artifacts/local/runs/20261001T074155789240Z/unit.log",
+      "logHash": "6fbc3a38dfef29e3dd12e221055394bd99559adff5dbcae0798cc7225bc66afb",
+      "reusedFrom": "artifacts/local/runs/20261001T074155789240Z/run.json"
+    },
+    {
+      "name": "analysis",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-01T07:42:45.404219+00:00",
+      "finishedAt": "2026-10-01T07:43:58.566377+00:00",
+      "log": "artifacts/local/runs/20261001T074155789240Z/analysis.log",
+      "logHash": "d567e792f3e682cd47b40356637083d8956840544709c946623023a3b3d31ef2",
+      "reusedFrom": "artifacts/local/runs/20261001T074155789240Z/run.json"
+    },
+    {
+      "name": "register-cash-conditions",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-01T07:43:58.566836+00:00",
+      "finishedAt": "2026-10-01T07:44:00.582518+00:00",
+      "log": "artifacts/local/runs/20261001T074155789240Z/register-cash-conditions.log",
+      "logHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reusedFrom": "artifacts/local/runs/20261001T074155789240Z/run.json"
+    },
+    {
+      "name": "register-receivable-conditions",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-01T07:44:00.582969+00:00",
+      "finishedAt": "2026-10-01T07:44:02.593146+00:00",
+      "log": "artifacts/local/runs/20261001T074155789240Z/register-receivable-conditions.log",
+      "logHash": "5a91db2e38dac97e3b4d989866353e23b69d5e5996baf0ad874d5a08510f5dba",
+      "reusedFrom": "artifacts/local/runs/20261001T074155789240Z/run.json"
+    },
+    {
+      "name": "observe",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-01T07:44:02.593644+00:00",
+      "finishedAt": "2026-10-01T07:44:04.564470+00:00",
+      "log": "artifacts/local/runs/20261001T074155789240Z/observe.log",
+      "logHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reusedFrom": "artifacts/local/runs/20261001T074155789240Z/run.json"
+    },
+    {
+      "name": "research-journal",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-01T07:44:04.564928+00:00",
+      "finishedAt": "2026-10-01T07:44:06.574458+00:00",
+      "log": "artifacts/local/runs/20261001T074155789240Z/research-journal.log",
+      "logHash": "91635ff2386958b6ac1804a042d4cc9f576c19814b018f5d23267e651c00d0be",
+      "reusedFrom": "artifacts/local/runs/20261001T074155789240Z/run.json"
+    },
+    {
+      "name": "forward-study",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-01T07:44:06.575034+00:00",
+      "finishedAt": "2026-10-01T07:44:08.642552+00:00",
+      "log": "artifacts/local/runs/20261001T074155789240Z/forward-study.log",
+      "logHash": "df0906a227c1ce2e4da2d51553935aaef8ed2faed18dd8f141a347d78ae7e330",
+      "reusedFrom": "artifacts/local/runs/20261001T074155789240Z/run.json"
+    },
+    {
+      "name": "price-crosscheck",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-01T07:44:08.643022+00:00",
+      "finishedAt": "2026-10-01T07:44:08.774563+00:00",
+      "log": "artifacts/local/runs/20261001T074155789240Z/price-crosscheck.log",
+      "logHash": "06d1149a5850c40b1d521db73730a380d1865795607959f61c09c8dd992cf81a",
+      "reusedFrom": "artifacts/local/runs/20261001T074155789240Z/run.json"
+    },
+    {
+      "name": "local-records",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-01T07:44:08.775171+00:00",
+      "finishedAt": "2026-10-01T07:44:10.642673+00:00",
+      "log": "artifacts/local/runs/20261001T074155789240Z/local-records.log",
+      "logHash": "fddcb5b07e4f46e3251f51197f3d80d9bc15881a32ea9e1c64556c94c0cdbb2f",
+      "reusedFrom": "artifacts/local/runs/20261001T074155789240Z/run.json"
+    },
+    {
+      "name": "offline-replay",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-01T07:44:10.643358+00:00",
+      "finishedAt": "2026-10-01T07:45:29.950717+00:00",
+      "log": "artifacts/local/runs/20261001T074155789240Z/offline-replay.log",
+      "logHash": "ff038ab2980934590ff2632ca2e9bd0edf1b7e95939db8868bcc3bdfa47d552e",
+      "reusedFrom": "artifacts/local/runs/20261001T074155789240Z/run.json"
+    },
+    {
+      "name": "browser-pdf",
+      "status": "passed",
+      "exitCode": 0,
+      "log": "artifacts/local/runs/20261001T075010413053Z/browser-verification.json",
+      "logHash": "a90b51d6b88256676255804d7223de11097413a0cbcaa0739f46972182446b95",
+      "evidenceType": "actual_rerun_verification_report"
+    },
+    {
+      "name": "artifacts",
+      "status": "passed",
+      "exitCode": 0,
+      "log": "artifacts/local/runs/20261001T075010413053Z/artifact-verification.json",
+      "logHash": "21f9c0db5ac05fe51b17c00c8c7efe24344798ceaf81cf78a01e9957cb480702",
+      "evidenceType": "actual_rerun_verification_report"
+    }
+  ],
+  "failedAttempt": "artifacts/local/runs/20261001T074155789240Z/run.json",
+  "failedAttemptHash": "66211867425622df1a3f2195cd5dd7160c3d53a6c25e1a1cc8de7c1fdef2bea8",
+  "recovery": "Only the browser-test DOM selector changed. Reused the ten passed stages after checking their log hashes and all current engine/render/input hashes. Browser and artifact stages were actually rerun; the original failed attempt remains unchanged.",
+  "rerunCommands": [
+    "node scripts/check-live.mjs",
+    "python3 scripts/check-artifacts.py"
+  ]
+}

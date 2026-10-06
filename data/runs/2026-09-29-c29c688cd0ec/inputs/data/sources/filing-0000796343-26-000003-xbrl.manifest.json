@@ -1,0 +1,15 @@
+{
+  "file": "data/sources/filing-0000796343-26-000003-880c19c219201e31.xbrl",
+  "sha256": "880c19c219201e31741d7750d4f5e31665b8c9b69d46688796f429989810501f",
+  "url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000003/adbe-20251128_htm.xml",
+  "primaryUrl": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000003/adbe-20251128.htm",
+  "provider": "SEC",
+  "accession": "0000796343-26-000003",
+  "cik": 796343,
+  "retrievedAt": "2026-10-02T05:21:35.459057+00:00",
+  "indexSource": {
+    "file": "data/sources/filing-0000796343-26-000003-index-cc3bf9276af889b7.html",
+    "sha256": "cc3bf9276af889b76ab7606e4f251f8db36949b6e9eb20c46993d433aa0dd109",
+    "url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000003/0000796343-26-000003-index.html"
+  }
+}

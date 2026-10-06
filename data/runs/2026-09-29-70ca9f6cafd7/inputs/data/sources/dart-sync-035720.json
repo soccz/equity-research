@@ -1,0 +1,38 @@
+{
+  "ticker": "035720",
+  "asOf": "2026-09-29",
+  "checkedAt": "2026-09-30T09:16:30.970038+00:00",
+  "filing": {
+    "corp_code": "00258801",
+    "corp_name": "카카오",
+    "stock_code": "035720",
+    "corp_cls": "Y",
+    "report_nm": "[기재정정]반기보고서 (2026.06)",
+    "rcept_no": "20260819000055",
+    "flr_nm": "카카오",
+    "rcept_dt": "20260819",
+    "rm": ""
+  },
+  "queries": [
+    {
+      "file": "data/sources/dart-list-035720-697d583f6908aaae.json",
+      "sha256": "697d583f6908aaae1fde3d7b91a6ce750fef7c92c212c10de2bb050059045363",
+      "parameters": {
+        "corp_code": "00258801",
+        "bgn_de": "20250101",
+        "end_de": "20260929",
+        "pblntf_ty": "A",
+        "last_reprt_at": "N",
+        "page_count": 100,
+        "page_no": 1,
+        "sort": "date",
+        "sort_mth": "desc"
+      }
+    }
+  ],
+  "package": {
+    "file": "data/sources/dart-package-20260819000055-0d5cb056f5a34d8b.zip",
+    "sha256": "0d5cb056f5a34d8becb0687adafb18ed9507a415319d566943deacf3941644c1"
+  },
+  "instanceHash": "d66a3329e4cbb53ba283217ed5c37e7fc42a96f72c0b978a5eb51a98a7fe7134"
+}

@@ -1,0 +1,38 @@
+{
+  "ticker": "028260",
+  "asOf": "2026-09-29",
+  "checkedAt": "2026-10-01T10:22:43.295650+00:00",
+  "filing": {
+    "corp_code": "00149655",
+    "corp_name": "삼성물산",
+    "stock_code": "028260",
+    "corp_cls": "Y",
+    "report_nm": "반기보고서 (2026.06)",
+    "rcept_no": "20260814002969",
+    "flr_nm": "삼성물산",
+    "rcept_dt": "20260814",
+    "rm": ""
+  },
+  "queries": [
+    {
+      "file": "data/sources/dart-list-028260-9f0c75facca05ddd.json",
+      "sha256": "9f0c75facca05ddd296510aa673a0f0bd2b20b32d6d26c81ab9eec2599b4beac",
+      "parameters": {
+        "corp_code": "00149655",
+        "bgn_de": "20250101",
+        "end_de": "20260929",
+        "pblntf_ty": "A",
+        "last_reprt_at": "N",
+        "page_count": 100,
+        "page_no": 1,
+        "sort": "date",
+        "sort_mth": "desc"
+      }
+    }
+  ],
+  "package": {
+    "file": "data/sources/dart-package-20260814002969-3ab2bb8095df3ec5.zip",
+    "sha256": "3ab2bb8095df3ec591333f29dbe6026b324bb78e041bd54d906a2529d21503f3"
+  },
+  "instanceHash": "701a77bf8e676c5fd7ad5c01499d391aa5286b2a721782f8098d46f82624487d"
+}

@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/mnt/20t/주식/scripts/check-artifacts.py", line 399, in <module>
+    raise ValueError(f"Business source/driver content missing: {name}")
+ValueError: Business source/driver content missing: comparison-equipment

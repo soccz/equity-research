@@ -1,0 +1,94 @@
+{
+  "status": "candidate_not_integrated",
+  "company": "MU",
+  "snapshotInspected": "01211bf6b991711243717d3d8e4421a447b080c85ae8586b84cccc6d6ffe7e64",
+  "annualAccession": "0000723125-25-000028",
+  "annualSource": {
+    "file": "data/sources/filing-0000723125-25-000028-d4eede66eac20393.xbrl",
+    "sha256": "d4eede66eac20393a3c93849bdd72477dd977d59e36d8e742381d1da6e393ed8",
+    "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312525000028/mu-20250828_htm.xml",
+    "primaryUrl": "https://www.sec.gov/Archives/edgar/data/723125/000072312525000028/mu-20250828.htm",
+    "provider": "SEC",
+    "accession": "0000723125-25-000028",
+    "cik": 723125,
+    "retrievedAt": "2026-10-01T13:40:25.218624+00:00",
+    "indexSource": {
+      "file": "data/sources/filing-0000723125-25-000028-index-44fbed6b5157fb32.html",
+      "sha256": "44fbed6b5157fb326e1910d3550e7365766f539a5b66e774d9a078cec2e37d33",
+      "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312525000028/0000723125-25-000028-index.html"
+    }
+  },
+  "currentCorpusHash": "f786d3bea1848df0beeb3e46a866aaadf7fbcd5a3614a4f3651b66f664f2112a",
+  "priorAnnualSegmentsRestated": true,
+  "capitalCaution": "Other noncurrent liabilities include income tax payable 5.79bn vs .648bn; contract liability .422bn, not all cash increase customer deposits.",
+  "taxNote": {
+    "heading": "",
+    "id": "33668ce554abbd68b93e",
+    "kind": "paragraph",
+    "ordinal": 344,
+    "sourceFile": "data/sources/filing-0000723125-26-000015-6ecde1540e260d43.html",
+    "sourceHash": "6ecde1540e260d438ba8b5198b52fe9ce3bff0a890b6d349499b9ad369827f8b",
+    "sourceUrl": "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/mu-20260528.htm",
+    "text": "Other noncurrent liabilities included $5.79 billion and $648 million related to income taxes payable as of May 28, 2026 and August 28, 2025, respectively."
+  },
+  "contractNote": {
+    "heading": "",
+    "id": "2aa973d714c243267689",
+    "kind": "paragraph",
+    "ordinal": 337,
+    "sourceFile": "data/sources/filing-0000723125-26-000015-6ecde1540e260d43.html",
+    "sourceHash": "6ecde1540e260d438ba8b5198b52fe9ce3bff0a890b6d349499b9ad369827f8b",
+    "sourceUrl": "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/mu-20260528.htm",
+    "text": "As of May 28, 2026, the transaction price allocated to our remaining performance obligations was approximately $5 billion, of which $422 million has been recognized as contract liabilities. Contract liabilities primarily consisted of customer deposits associated with strategic customer agreements for which revenue has not yet been recognized and are primarily included in other noncurrent liabilities. As of August 28, 2025, our remaining performance obligations were not material. Approximately one-third of the remaining performance obligations as of May 28, 2026 are expected to be recognized as revenue over the next twelve months."
+  },
+  "investmentNote": {
+    "heading": "",
+    "id": "045ce833750149a0319a",
+    "kind": "paragraph",
+    "ordinal": 488,
+    "sourceFile": "data/sources/filing-0000723125-26-000015-6ecde1540e260d43.html",
+    "sourceHash": "6ecde1540e260d438ba8b5198b52fe9ce3bff0a890b6d349499b9ad369827f8b",
+    "sourceUrl": "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/mu-20260528.htm",
+    "text": "To develop new product and process technology, support future growth, achieve operating efficiencies, and maintain product quality, we must continue to invest in manufacturing technologies, facilities and equipment, and R&D. We estimate capital expenditures for property, plant, and equipment, net of proceeds from government incentives, to be approximately $27 billion in 2026. Actual amounts for 2026 will vary depending on market conditions and may vary from quarter to quarter due to the timing of expenditures and proceeds from government incentives. As of May 28, 2026, we had purchase obligations of approximately $2.93 billion for the acquisition of property, plant, and equipment, substantially all of which is expected to be paid within one year. For a description of other contractual obligations, such as finance leases and debt, see Item 1. Financial Statements, Notes to Consolidated Financial Statements, Note 9. Debt."
+  },
+  "next": [
+    "Copy staged sources only after current model/report batch finishes",
+    "Confirm annual/current segment definitions and reconcile all 3 periods",
+    "Separate government incentives and lease repayments from PPE spending; unresolved current lease paid cannot become zero",
+    "Keep tax timing out of assumed recurring customer funding"
+  ],
+  "annualSegmentPolicyTag": "SegmentReportingPolicyPolicyTextBlock",
+  "annualSegmentPolicyHash": "a70fa8c855e2d71d561ae61a5ec61d7cb3c302a70890bd25aacc2eb09512f0bf",
+  "currentDefinitionPassages": [
+    "53fdf4d2f1b308d3c1c5",
+    "a37578bb9cf17fc36ad1",
+    "0e111fe6746eab4a5177",
+    "c97cfb2726bf446aab88",
+    "1bc6e4eadfa811a70f9b",
+    "fa799ec94488c8f8c096",
+    "11f3a669f30534f415f2",
+    "662f5a793f0d66100f56"
+  ],
+  "cashBridgeChecks": [
+    {
+      "period": "2024-08-30/2025-08-28",
+      "cfo": 17525000000,
+      "residual": 0,
+      "note": "Annual does not separately present noncurrent-liability change; OtherOperatingActivities line remains aggregate."
+    },
+    {
+      "period": "2025-08-29/2026-05-28",
+      "cfo": 45702000000,
+      "residual": 0
+    },
+    {
+      "period": "2024-08-30/2025-05-29",
+      "cfo": 11795000000,
+      "residual": 0
+    }
+  ],
+  "trailingCfo": 51432000000,
+  "leasePaidCurrent": null,
+  "annualLeasePaid": 323000000,
+  "annualPpeDepreciation": 8280000000
+}

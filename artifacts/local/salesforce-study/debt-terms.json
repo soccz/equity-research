@@ -1,0 +1,296 @@
+{
+  "status": "source_table_parsed",
+  "principal": 39500000000.0,
+  "annualContractualInterest": 1824275000.0,
+  "terms": [
+    {
+      "label": "March 2028 Senior Notes",
+      "maturity": "March 2028",
+      "principal": 3500000000.0,
+      "rate": 0.045,
+      "type": "Fixed",
+      "annualInterest": 157500000.0,
+      "source": {
+        "heading": "",
+        "id": "f6ae129d05575f76bbae",
+        "kind": "table",
+        "ordinal": 730,
+        "sourceFile": "data/sources/filing-0001108524-26-000190-c6efa7cef38dca7c.html",
+        "sourceHash": "c6efa7cef38dca7c4672f3854b36c1a571f2733bedc4e6aed9899ef7ae0a65b3",
+        "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000190/crm-20260731.htm",
+        "text": "March 2028 Senior Notes | | March 2028 | | $ | 3,500 | | | Fixed | | 4.50%"
+      }
+    },
+    {
+      "label": "April 2028 Senior Notes",
+      "maturity": "April 2028",
+      "principal": 1500000000.0,
+      "rate": 0.037000000000000005,
+      "type": "Fixed",
+      "annualInterest": 55500000.00000001,
+      "source": {
+        "heading": "",
+        "id": "43316f6154a89554ec40",
+        "kind": "table",
+        "ordinal": 731,
+        "sourceFile": "data/sources/filing-0001108524-26-000190-c6efa7cef38dca7c.html",
+        "sourceHash": "c6efa7cef38dca7c4672f3854b36c1a571f2733bedc4e6aed9899ef7ae0a65b3",
+        "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000190/crm-20260731.htm",
+        "text": "April 2028 Senior Notes | | April 2028 | | 1,500 | | | Fixed | | 3.70"
+      }
+    },
+    {
+      "label": "July 2028 Senior Sustainability Notes",
+      "maturity": "July 2028",
+      "principal": 1000000000.0,
+      "rate": 0.015,
+      "type": "Fixed",
+      "annualInterest": 15000000.0,
+      "source": {
+        "heading": "",
+        "id": "f3f7266655dfdece126e",
+        "kind": "table",
+        "ordinal": 732,
+        "sourceFile": "data/sources/filing-0001108524-26-000190-c6efa7cef38dca7c.html",
+        "sourceHash": "c6efa7cef38dca7c4672f3854b36c1a571f2733bedc4e6aed9899ef7ae0a65b3",
+        "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000190/crm-20260731.htm",
+        "text": "July 2028 Senior Sustainability Notes | | July 2028 | | 1,000 | | | Fixed | | 1.50"
+      }
+    },
+    {
+      "label": "March 2029 Senior Notes",
+      "maturity": "March 2029",
+      "principal": 4250000000.0,
+      "rate": 0.04650000000000001,
+      "type": "Fixed",
+      "annualInterest": 197625000.00000003,
+      "source": {
+        "heading": "",
+        "id": "d0126fb1d4077c4765c7",
+        "kind": "table",
+        "ordinal": 733,
+        "sourceFile": "data/sources/filing-0001108524-26-000190-c6efa7cef38dca7c.html",
+        "sourceHash": "c6efa7cef38dca7c4672f3854b36c1a571f2733bedc4e6aed9899ef7ae0a65b3",
+        "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000190/crm-20260731.htm",
+        "text": "March 2029 Senior Notes | | March 2029 | | 4,250 | | | Fixed | | 4.65"
+      }
+    },
+    {
+      "label": "Revolving Loan Credit Agreement",
+      "maturity": "October 2029",
+      "principal": 0.0,
+      "rate": null,
+      "type": "Floating",
+      "annualInterest": null,
+      "source": {
+        "heading": "",
+        "id": "1eed378a5de906863bf1",
+        "kind": "table",
+        "ordinal": 734,
+        "sourceFile": "data/sources/filing-0001108524-26-000190-c6efa7cef38dca7c.html",
+        "sourceHash": "c6efa7cef38dca7c4672f3854b36c1a571f2733bedc4e6aed9899ef7ae0a65b3",
+        "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000190/crm-20260731.htm",
+        "text": "Revolving Loan Credit Agreement | | October 2029 | | 0 | | | Floating | | N/A"
+      }
+    },
+    {
+      "label": "2026 Term Loan Credit Agreement (1)",
+      "maturity": "March 2031",
+      "principal": 6000000000.0,
+      "rate": 0.0424,
+      "type": "Floating",
+      "annualInterest": 254400000.0,
+      "source": {
+        "heading": "",
+        "id": "536b73d17a74b4ec0b73",
+        "kind": "table",
+        "ordinal": 735,
+        "sourceFile": "data/sources/filing-0001108524-26-000190-c6efa7cef38dca7c.html",
+        "sourceHash": "c6efa7cef38dca7c4672f3854b36c1a571f2733bedc4e6aed9899ef7ae0a65b3",
+        "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000190/crm-20260731.htm",
+        "text": "2026 Term Loan Credit Agreement (1) | | March 2031 | | 6,000 | | | Floating | | 4.24"
+      }
+    },
+    {
+      "label": "July 2031 Senior Notes",
+      "maturity": "July 2031",
+      "principal": 1500000000.0,
+      "rate": 0.0195,
+      "type": "Fixed",
+      "annualInterest": 29250000.0,
+      "source": {
+        "heading": "",
+        "id": "fe1e47eaec7b25caae3a",
+        "kind": "table",
+        "ordinal": 736,
+        "sourceFile": "data/sources/filing-0001108524-26-000190-c6efa7cef38dca7c.html",
+        "sourceHash": "c6efa7cef38dca7c4672f3854b36c1a571f2733bedc4e6aed9899ef7ae0a65b3",
+        "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000190/crm-20260731.htm",
+        "text": "July 2031 Senior Notes | | July 2031 | | 1,500 | | | Fixed | | 1.95"
+      }
+    },
+    {
+      "label": "September 2031 Senior Notes",
+      "maturity": "September 2031",
+      "principal": 3750000000.0,
+      "rate": 0.049,
+      "type": "Fixed",
+      "annualInterest": 183750000.0,
+      "source": {
+        "heading": "",
+        "id": "74971aa4520cacfb4373",
+        "kind": "table",
+        "ordinal": 737,
+        "sourceFile": "data/sources/filing-0001108524-26-000190-c6efa7cef38dca7c.html",
+        "sourceHash": "c6efa7cef38dca7c4672f3854b36c1a571f2733bedc4e6aed9899ef7ae0a65b3",
+        "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000190/crm-20260731.htm",
+        "text": "September 2031 Senior Notes | | September 2031 | | 3,750 | | | Fixed | | 4.90"
+      }
+    },
+    {
+      "label": "March 2033 Senior Notes",
+      "maturity": "March 2033",
+      "principal": 2750000000.0,
+      "rate": 0.052000000000000005,
+      "type": "Fixed",
+      "annualInterest": 143000000.0,
+      "source": {
+        "heading": "",
+        "id": "416444368117685dbec2",
+        "kind": "table",
+        "ordinal": 738,
+        "sourceFile": "data/sources/filing-0001108524-26-000190-c6efa7cef38dca7c.html",
+        "sourceHash": "c6efa7cef38dca7c4672f3854b36c1a571f2733bedc4e6aed9899ef7ae0a65b3",
+        "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000190/crm-20260731.htm",
+        "text": "March 2033 Senior Notes | | March 2033 | | 2,750 | | | Fixed | | 5.20"
+      }
+    },
+    {
+      "label": "March 2036 Senior Notes",
+      "maturity": "March 2036",
+      "principal": 4500000000.0,
+      "rate": 0.0555,
+      "type": "Fixed",
+      "annualInterest": 249750000.0,
+      "source": {
+        "heading": "",
+        "id": "adac3b5f6a9e94cbcf6c",
+        "kind": "table",
+        "ordinal": 739,
+        "sourceFile": "data/sources/filing-0001108524-26-000190-c6efa7cef38dca7c.html",
+        "sourceHash": "c6efa7cef38dca7c4672f3854b36c1a571f2733bedc4e6aed9899ef7ae0a65b3",
+        "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000190/crm-20260731.htm",
+        "text": "March 2036 Senior Notes | | March 2036 | | 4,500 | | | Fixed | | 5.55"
+      }
+    },
+    {
+      "label": "July 2041 Senior Notes",
+      "maturity": "July 2041",
+      "principal": 1250000000.0,
+      "rate": 0.027000000000000003,
+      "type": "Fixed",
+      "annualInterest": 33750000.00000001,
+      "source": {
+        "heading": "",
+        "id": "c570b4f8b7648b361511",
+        "kind": "table",
+        "ordinal": 740,
+        "sourceFile": "data/sources/filing-0001108524-26-000190-c6efa7cef38dca7c.html",
+        "sourceHash": "c6efa7cef38dca7c4672f3854b36c1a571f2733bedc4e6aed9899ef7ae0a65b3",
+        "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000190/crm-20260731.htm",
+        "text": "July 2041 Senior Notes | | July 2041 | | 1,250 | | | Fixed | | 2.70"
+      }
+    },
+    {
+      "label": "March 2046 Senior Notes",
+      "maturity": "March 2046",
+      "principal": 1500000000.0,
+      "rate": 0.064,
+      "type": "Fixed",
+      "annualInterest": 96000000.0,
+      "source": {
+        "heading": "",
+        "id": "e795d41cf51386069f20",
+        "kind": "table",
+        "ordinal": 741,
+        "sourceFile": "data/sources/filing-0001108524-26-000190-c6efa7cef38dca7c.html",
+        "sourceHash": "c6efa7cef38dca7c4672f3854b36c1a571f2733bedc4e6aed9899ef7ae0a65b3",
+        "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000190/crm-20260731.htm",
+        "text": "March 2046 Senior Notes | | March 2046 | | 1,500 | | | Fixed | | 6.40"
+      }
+    },
+    {
+      "label": "July 2051 Senior Notes",
+      "maturity": "July 2051",
+      "principal": 2000000000.0,
+      "rate": 0.028999999999999998,
+      "type": "Fixed",
+      "annualInterest": 57999999.99999999,
+      "source": {
+        "heading": "",
+        "id": "aa8d3619a6a81da2017e",
+        "kind": "table",
+        "ordinal": 742,
+        "sourceFile": "data/sources/filing-0001108524-26-000190-c6efa7cef38dca7c.html",
+        "sourceHash": "c6efa7cef38dca7c4672f3854b36c1a571f2733bedc4e6aed9899ef7ae0a65b3",
+        "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000190/crm-20260731.htm",
+        "text": "July 2051 Senior Notes | | July 2051 | | 2,000 | | | Fixed | | 2.90"
+      }
+    },
+    {
+      "label": "March 2056 Senior Notes",
+      "maturity": "March 2056",
+      "principal": 3750000000.0,
+      "rate": 0.0655,
+      "type": "Fixed",
+      "annualInterest": 245625000.0,
+      "source": {
+        "heading": "",
+        "id": "81118f6da217f307f693",
+        "kind": "table",
+        "ordinal": 743,
+        "sourceFile": "data/sources/filing-0001108524-26-000190-c6efa7cef38dca7c.html",
+        "sourceHash": "c6efa7cef38dca7c4672f3854b36c1a571f2733bedc4e6aed9899ef7ae0a65b3",
+        "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000190/crm-20260731.htm",
+        "text": "March 2056 Senior Notes | | March 2056 | | 3,750 | | | Fixed | | 6.55"
+      }
+    },
+    {
+      "label": "July 2061 Senior Notes",
+      "maturity": "July 2061",
+      "principal": 1250000000.0,
+      "rate": 0.0305,
+      "type": "Fixed",
+      "annualInterest": 38125000.0,
+      "source": {
+        "heading": "",
+        "id": "2549da39f33852f2cd1e",
+        "kind": "table",
+        "ordinal": 744,
+        "sourceFile": "data/sources/filing-0001108524-26-000190-c6efa7cef38dca7c.html",
+        "sourceHash": "c6efa7cef38dca7c4672f3854b36c1a571f2733bedc4e6aed9899ef7ae0a65b3",
+        "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000190/crm-20260731.htm",
+        "text": "July 2061 Senior Notes | | July 2061 | | 1,250 | | | Fixed | | 3.05"
+      }
+    },
+    {
+      "label": "March 2066 Senior Notes",
+      "maturity": "March 2066",
+      "principal": 1000000000.0,
+      "rate": 0.067,
+      "type": "Fixed",
+      "annualInterest": 67000000.00000001,
+      "source": {
+        "heading": "",
+        "id": "d787907f92b76c8fb6d4",
+        "kind": "table",
+        "ordinal": 745,
+        "sourceFile": "data/sources/filing-0001108524-26-000190-c6efa7cef38dca7c.html",
+        "sourceHash": "c6efa7cef38dca7c4672f3854b36c1a571f2733bedc4e6aed9899ef7ae0a65b3",
+        "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000190/crm-20260731.htm",
+        "text": "March 2066 Senior Notes | | March 2066 | | 1,000 | | | Fixed | | 6.70"
+      }
+    }
+  ],
+  "scope": "Current principal and current rates; excludes lease interest, fees, future changes in floating rates and maturity refinancing."
+}

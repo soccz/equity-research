@@ -1,0 +1,18 @@
+{
+  "sourceFile": "artifacts/local/cloud-pair-cash-burden-review.json",
+  "sourceHash": "9d824de7b00d843433f8bf8dd12278f927003538109fb9f072b450e9c3314a73",
+  "modelHashes": {
+    "MSFT": "fabe6f1bb52a5c37b6fa53081687eb98202f1408e8a9b5c6c7c8afb0d7a67031",
+    "AMZN": "22338ea633efac877ee477d302e5109aec7116e5422e09ade799c6eb93d2ac81"
+  },
+  "period": [
+    "2025-07-01",
+    "2026-06-30"
+  ],
+  "outputs": {
+    "png": "205b1cb9ffcfbe61f624cff1b7903ea7a13c25d5ae6cc4b726ff6d879fd141f4",
+    "svg": "5b3eb270ce824c003479e1fec0debd8e35705ff1bcff70c7735a730dab28763d",
+    "pdf": "876f2abec49056fcadbf978fa3f20f7bc0f32a74f0751ca53ff8eae556dfd40e"
+  },
+  "scope": "연구자 정의의 관측 비교. 시각 점검 대상, 투자 의견 승인 아님."
+}

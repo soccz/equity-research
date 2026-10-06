@@ -1,0 +1,19 @@
+{
+  "checkedAt": "2026-10-01T15:27:03.665113+00:00",
+  "status": "candidate_checks_passed",
+  "unitTests": 7,
+  "pythonJsPaths": 8,
+  "existingModelPathsUnchanged": 11,
+  "renderMissingValueCheck": true,
+  "financialApproval": false,
+  "integrated": false,
+  "files": {
+    "samsung_operating.py": "843574f53553296062689a1952c37f4aae0a30ae6934b8427b29522c9c066eb2",
+    "operating_model_candidate.py": "a2656f0f2c846c2992218cedb4233676084359db0aa0502cf7b6333ad9cedc59",
+    "operating-model-candidate.js": "6c47e8a567b24da8c64d48d8784ec02442063455f75b0ef255967dbcbed36121",
+    "comparison-workspace-candidate.js": "1e636fb1f7ec839bb0bfbcec7c6897eeca1836783eb690be39bea9276cce4f56",
+    "candidate-model.json": "e06b84ffab4554d938aee4fc8d21755cdb053e4dff0eedb9e67bae2060741d89",
+    "parity-cases.json": "e37bdce4753dbbb876cf139ada3cf3552bd5a8339564c208b428a820b0808308",
+    "candidate-tests.log": "1498b1c544b0d0063dfac382bd62169bf087acaefc2647fa00e68ba70548ac05"
+  }
+}

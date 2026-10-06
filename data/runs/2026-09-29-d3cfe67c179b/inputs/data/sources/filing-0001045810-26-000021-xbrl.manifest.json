@@ -1,0 +1,15 @@
+{
+  "file": "data/sources/filing-0001045810-26-000021-af8398105d629d98.xbrl",
+  "sha256": "af8398105d629d98defacca572c8e85fe0d8a5f551266b01df2d8be4fa03558f",
+  "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125_htm.xml",
+  "primaryUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm",
+  "provider": "SEC",
+  "accession": "0001045810-26-000021",
+  "cik": 1045810,
+  "retrievedAt": "2026-10-01T05:02:21.824838+00:00",
+  "indexSource": {
+    "file": "data/sources/filing-0001045810-26-000021-index-2c3b974e0a8d0490.html",
+    "sha256": "2c3b974e0a8d0490105fb9cf330824ba9b33dc99899b3a60c6c61658c5f4db8f",
+    "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/0001045810-26-000021-index.html"
+  }
+}

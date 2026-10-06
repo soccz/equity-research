@@ -1,0 +1,21 @@
+Evaluation TXN_credit_in_cfo completed True
+Evaluation TXN_double_count completed True
+Evaluation ADI_market_profit completed False
+Evaluation ADI_market_gap completed True
+Evaluation ADBE_positive_release completed False
+Evaluation ADBE_contract_gap completed False
+Evaluation CRM_lease_label completed False
+Evaluation CRM_scope_gap completed False
+Evaluation TXN_forecast_fact completed False
+Evaluation TXN_capacity_test completed True
+Evaluation ADI_purchase_free completed False
+Evaluation ADI_wc_aggregate completed True
+Evaluation ADBE_arithmetic_return completed False
+Evaluation ADBE_source_test completed False
+Evaluation CRM_assumed_cause completed True
+Evaluation CRM_cash_held completed True
+Company TXN failed
+Company ADI revision_required
+Company ADBE revision_required
+Company CRM failed
+Pilot archive artifacts/local/operating-ai-study/20261002T074430101402Z

@@ -1,0 +1,559 @@
+{
+  "version": "segment-period-contract-v2",
+  "reviewer": "Codex 작성자 양쪽 공시 대조 · 독립 금융 승인 아님",
+  "scope": "공시된 부문 정의와 해당 기간의 합산 연결. 동일 제품 믹스·유기 성장·미래 수익성의 보증 아님.",
+  "cases": [
+    {
+      "company": "NVDA",
+      "currentAccession": "0001045810-26-000075",
+      "corpusHash": "c6079c3c96a23d82426b958715d0455824faa0be9d3a58ea18004d093c7b25fe",
+      "annualAccession": "0001045810-26-000021",
+      "annualSource": {
+        "file": "data/sources/filing-0001045810-26-000021-af8398105d629d98.xbrl",
+        "sha256": "af8398105d629d98defacca572c8e85fe0d8a5f551266b01df2d8be4fa03558f",
+        "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125_htm.xml",
+        "primaryUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm",
+        "provider": "SEC",
+        "accession": "0001045810-26-000021",
+        "cik": 1045810,
+        "retrievedAt": "2026-10-01T05:02:21.824838+00:00",
+        "indexSource": {
+          "file": "data/sources/filing-0001045810-26-000021-index-2c3b974e0a8d0490.html",
+          "sha256": "2c3b974e0a8d0490105fb9cf330824ba9b33dc99899b3a60c6c61658c5f4db8f",
+          "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/0001045810-26-000021-index.html"
+        }
+      },
+      "annualTextTag": "SegmentReportingDisclosureTextBlock",
+      "annualTextHash": "0495001c2b394d400ba23af40028536bef7ec3461724136b1ab43086902c48a9",
+      "currentPassageIds": [
+        "e5f922166ccd902a1991",
+        "42a733779d01bbc0c54d",
+        "db16a6d8d5ec712f3a56"
+      ],
+      "note": "양쪽 공시의 컴퓨트·네트워킹/그래픽스 정의를 대조했다. 주식보상·본사·인수 관련 조정은 부문 이익 밖에서 차감한다.",
+      "dimensionAliases": {}
+    },
+    {
+      "company": "GOOGL",
+      "currentAccession": "0001652044-26-000071",
+      "corpusHash": "e2a10e7bad8176d88c02d7cefc16085de2441bca39326d74084e0f2db254a625",
+      "annualAccession": "0001652044-26-000018",
+      "annualSource": {
+        "file": "data/sources/filing-0001652044-26-000018-03df38b77f4e4045.xbrl",
+        "sha256": "03df38b77f4e4045efb3a100ddbadcc752494d916beb523897439c1484f87df2",
+        "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000018/goog-20251231_htm.xml",
+        "primaryUrl": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000018/goog-20251231.htm",
+        "provider": "SEC",
+        "accession": "0001652044-26-000018",
+        "cik": 1652044,
+        "retrievedAt": "2026-10-01T05:02:30.583113+00:00",
+        "indexSource": {
+          "file": "data/sources/filing-0001652044-26-000018-index-91511cbdbe7a736a.html",
+          "sha256": "91511cbdbe7a736ab8dc343993f01170cc37bea589975a9500847fc82e2dd7e6",
+          "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000018/0001652044-26-000018-index.html"
+        }
+      },
+      "annualTextTag": "SegmentReportingDisclosureTextBlock",
+      "annualTextHash": "1be53a8ed5c44b3934cdb1e7a999b52e2dbf2eb35d3a680ba81cd2bd886b3872",
+      "currentPassageIds": [
+        "a2039ccfecfb9817e03d",
+        "581b02e789d5a1f318e2",
+        "00f00e0bdda63832af24"
+      ],
+      "note": "서비스/클라우드/Other Bets 분류를 대조했다. 현재 Cloud에는 TPU 시스템 제품 매출이 추가되므로 TTM을 동일 제품 믹스의 유기적 성장으로 해석하지 않는다.",
+      "dimensionAliases": {}
+    },
+    {
+      "company": "AAPL",
+      "currentAccession": "0000320193-26-000020",
+      "corpusHash": "68b4ce050be11471fffcb7ea0db86254024e6ecec9d42573f1205d29a3f36d52",
+      "annualAccession": "0000320193-25-000079",
+      "annualSource": {
+        "file": "data/sources/filing-0000320193-25-000079-e1076735f1c81bc9.xbrl",
+        "sha256": "e1076735f1c81bc96d5c1ff6e1a9d23515d6eacf52b405cb1f7da3e379ac533b",
+        "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927_htm.xml",
+        "primaryUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm",
+        "provider": "SEC",
+        "accession": "0000320193-25-000079",
+        "cik": 320193,
+        "retrievedAt": "2026-10-01T05:02:30.472593+00:00",
+        "indexSource": {
+          "file": "data/sources/filing-0000320193-25-000079-index-04fec1e0446b3186.html",
+          "sha256": "04fec1e0446b3186e6d2029bdcfc8a1d0ce82cd598d3183b917e825f889cf7ae",
+          "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/0000320193-25-000079-index.html"
+        }
+      },
+      "annualTextTag": "SegmentReportingDisclosureTextBlock",
+      "annualTextHash": "cecc409b23f403a9f7ac7028ff65332e99fa32e54fcb2c0d5443944952754552",
+      "currentPassageIds": [
+        "7355feacb9be3d44c493",
+        "7c20b9dbf70bbb7cfab2"
+      ],
+      "note": "연간 지역 부문 정의와 현재 3·9개월 표의 미주/유럽/중화권/일본/기타아시아를 대조했다. 본사 비용을 함께 대사한다. 제품별 이익률로 해석하지 않는다.",
+      "dimensionAliases": {}
+    },
+    {
+      "company": "AMZN",
+      "currentAccession": "0001018724-26-000026",
+      "corpusHash": "59fabb51c8361dd5403ba0bebdd99cee8d38efa85e29c0ec0bee63e86bf95f42",
+      "annualAccession": "0001018724-26-000004",
+      "annualSource": {
+        "file": "data/sources/filing-0001018724-26-000004-ac1eb8406f629570.xbrl",
+        "sha256": "ac1eb8406f629570bcec12889950eb646dba42bb5f325fdc18415df13f85138b",
+        "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231_htm.xml",
+        "primaryUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm",
+        "provider": "SEC",
+        "accession": "0001018724-26-000004",
+        "cik": 1018724,
+        "retrievedAt": "2026-10-01T05:02:30.367283+00:00",
+        "indexSource": {
+          "file": "data/sources/filing-0001018724-26-000004-index-000f92cc1a082176.html",
+          "sha256": "000f92cc1a082176d8eb91f2f0f312ec0084f92be0e7a2ace9c2acf31377c6ed",
+          "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/0001018724-26-000004-index.html"
+        }
+      },
+      "annualTextTag": "SegmentReportingDisclosureTextBlock",
+      "annualTextHash": "240c5f7d8a6aa955848412339e83d44a139a43f84e6dc8a093bfba84a6e640ef",
+      "currentPassageIds": [
+        "dd8626f08b189da405f3"
+      ],
+      "note": "양쪽 공시 북미/해외/AWS 정의 및 공유 비용의 사용량 배분 문구를 대조했다. AWS 신규 자산 취득과 현금 투자지출을 구분한다.",
+      "dimensionAliases": {}
+    },
+    {
+      "company": "AMD",
+      "currentAccession": "0000002488-26-000123",
+      "corpusHash": "727a7e15fe6960a693ad9c2c0e435ad56f253bbd41e474bc9bc58df7c8a52d91",
+      "annualAccession": "0000002488-26-000018",
+      "annualSource": {
+        "file": "data/sources/filing-0000002488-26-000018-7a073e96fa640527.xbrl",
+        "sha256": "7a073e96fa640527505f4b53c4cda1f5b0af4d6e6a3b54b4cb056e78c36d328e",
+        "url": "https://www.sec.gov/Archives/edgar/data/2488/000000248826000018/amd-20251227_htm.xml",
+        "primaryUrl": "https://www.sec.gov/Archives/edgar/data/2488/000000248826000018/amd-20251227.htm",
+        "provider": "SEC",
+        "accession": "0000002488-26-000018",
+        "cik": 2488,
+        "retrievedAt": "2026-10-01T05:02:54.468514+00:00",
+        "indexSource": {
+          "file": "data/sources/filing-0000002488-26-000018-index-b3743cfe9f1cb5a9.html",
+          "sha256": "b3743cfe9f1cb5a9ff0d49a94511cd262e488fefef5dbb78d94d617593aa0cb0",
+          "url": "https://www.sec.gov/Archives/edgar/data/2488/000000248826000018/0000002488-26-000018-index.html"
+        }
+      },
+      "annualTextTag": "SegmentReportingDisclosureTextBlock",
+      "annualTextHash": "a91dc4344a94e84bbbb178bb30771c1d66fff16d3d2b6c4cb7294adc4203e46f",
+      "currentPassageIds": [
+        "d4ee5421e43f2ed2a2c8",
+        "eb23b64670d2079ad5ba",
+        "1927452b295162762dba",
+        "e0f6e7b1a4f6625c418e"
+      ],
+      "note": "2025년 연간부터 Client/Gaming이 결합된 세 부문을 사용하며 전기 부문도 재작성했다. DataCenterMember와 DatacenterMember는 이 두 특정 접수의 같은 데이터센터 정의로 대사했다. 전역 태그 치환은 하지 않는다.",
+      "dimensionAliases": {
+        "DataCenterMember": "DatacenterMember"
+      },
+      "annualFactOverrides": [
+        {
+          "tag": "OperatingIncomeLoss",
+          "dimensions": [
+            [
+              "ConsolidationItemsAxis",
+              "CorporateNonSegmentMember"
+            ],
+            [
+              "StatementBusinessSegmentsAxis",
+              "AllOtherMember"
+            ]
+          ],
+          "sourceTag": "SegmentReportingOtherItemAmount",
+          "sourceDimensions": [
+            [
+              "ConsolidationItemsAxis",
+              "OperatingSegmentsMember"
+            ],
+            [
+              "StatementBusinessSegmentsAxis",
+              "AllOtherMember"
+            ]
+          ],
+          "coefficient": -1,
+          "reason": "연간 부문 주석 All Other 비용 4,007은 부문 영업손실 −4,007과 같다. 비용 태그의 부호를 보존해 차감한다."
+        }
+      ]
+    },
+    {
+      "company": "AVGO",
+      "currentAccession": "0001730168-26-000080",
+      "corpusHash": "965d893de9b66ba32400a567a25fe931201430ddcbca16b78ff975148719254e",
+      "annualAccession": "0001730168-25-000121",
+      "annualSource": {
+        "file": "data/sources/filing-0001730168-25-000121-e1635fbb72a4cf49.xbrl",
+        "sha256": "e1635fbb72a4cf49c8e3cfd5574e46e8e1b435b710912d5724bcebed5b8d601e",
+        "url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016825000121/avgo-20251102_htm.xml",
+        "primaryUrl": "https://www.sec.gov/Archives/edgar/data/1730168/000173016825000121/avgo-20251102.htm",
+        "provider": "SEC",
+        "accession": "0001730168-25-000121",
+        "cik": 1730168,
+        "retrievedAt": "2026-10-01T05:02:54.464144+00:00",
+        "indexSource": {
+          "file": "data/sources/filing-0001730168-25-000121-index-bdf0e3fcdb68b02e.html",
+          "sha256": "bdf0e3fcdb68b02e1ccb7d2e23d6d78a10121b4472adbea05c56d95080d731fc",
+          "url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016825000121/0001730168-25-000121-index.html"
+        }
+      },
+      "annualTextTag": "SegmentReportingDisclosureTextBlock",
+      "annualTextHash": "9efd81c5d32ed7051ee00a101e71a94f40e496aef381342f69aadbf3479be276",
+      "currentPassageIds": [
+        "0f7f385e09a04b2b0791"
+      ],
+      "note": "양쪽 공시 반도체 솔루션/인프라 소프트웨어 정의를 대조했다. 연결 조정의 무형자산 상각·주식보상·구조조정·인수 비용 네 항목을 각각 차감해 완전 대사했다.",
+      "dimensionAliases": {}
+    },
+    {
+      "company": "005930",
+      "currentAccession": "20260814003699",
+      "corpusHash": "a440da29601475dc70793fc6189e5ab7f8905a603367885313c0fd1805ec9bfb",
+      "annualAccession": "20260310002820",
+      "annualSource": {
+        "file": "data/sources/005930-20260310002820-28c27272eacc7bc9.xbrl",
+        "mode": "OPENDART 접수 확인 2026-09-30 · 원문 보존",
+        "provider": "DART",
+        "retrievedAt": "2026-09-30T06:14:54.732198+00:00",
+        "sha256": "28c27272eacc7bc9364ece8951da38039e915adff27e81924c1444b354223c07",
+        "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260310002820",
+        "accession": "20260310002820",
+        "dartCorpCode": "00126380"
+      },
+      "annualNotes": [
+        {
+          "tag": "FactorsUsedToIdentifyEntitysReportableSegments",
+          "context": "CFY2025dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_ConsolidatedMember",
+          "sha256": "0e072e34d9c3f0d69e10d4b3055e05d8e89dca735c8f4693e250ec2e76d84a38"
+        },
+        {
+          "tag": "DescriptionOfBasisOfAccountingForTransactionsBetweenReportableSegments",
+          "context": "CFY2025dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_ConsolidatedMember",
+          "sha256": "481593aee106a8867814a6215d914bb85fe7f1d2e81ea53668ff67873580db43"
+        }
+      ],
+      "currentPassageIds": [
+        "906782332c4ce12f0681",
+        "27e1f08f982c0266ecb5",
+        "c83c4d63eb5fad4da8a9"
+      ],
+      "note": "연간과 반기 연결 주석의 DX·DS·SDC·Harman 정의 및 내부거래 처리 문구를 대조했다. DS/DX와 Harman의 태그 이름 차이는 이 두 접수에 한정해 매핑했다. 보고부문에서 생략한 기타와 원문 정밀도에 따른 잔차를 보존한다. DS를 메모리·HBM 이익으로 읽지 않는다.",
+      "dimensionAliases": {
+        "DsSegmentsMemberOfReportableSegmentsMemberOfDisclosureOfOperatingSegmentsTableOfMember": "DsDivisionMemberOfReportableSegmentsMemberOfDisclosureOfOperatingSegmentsTableOfMember",
+        "DxSegmentsMemberOfReportableSegmentsMemberOfDisclosureOfOperatingSegmentsTableOfMember": "DxDivisionMemberOfReportableSegmentsMemberOfDisclosureOfOperatingSegmentsTableOfMember",
+        "HamanMemberOfReportableSegmentsMemberOfDisclosureOfOperatingSegmentsTableOfMember": "HarmanMemberOfReportableSegmentsMemberOfDisclosureOfOperatingSegmentsTableOfMember"
+      }
+    },
+    {
+      "company": "066570",
+      "currentAccession": "20260814001997",
+      "corpusHash": "775d0ef56cd90c620f71d165a3f148d0b6261d29b384cbb6525a1eec556634c4",
+      "annualAccession": "20260706000276",
+      "annualSource": {
+        "file": "data/sources/066570-20260706000276-cc613348ed5c3480.xbrl",
+        "mode": "OPENDART 접수 확인 2026-09-30 · 원문 보존",
+        "provider": "DART",
+        "retrievedAt": "2026-09-30T06:15:05.229460+00:00",
+        "sha256": "cc613348ed5c34806c851d0464969c85e4bf0eedac3aec1a0016f73c164c48d0",
+        "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260706000276",
+        "accession": "20260706000276",
+        "dartCorpCode": "00401731"
+      },
+      "annualNotes": [
+        {
+          "tag": "DescriptionOfOperatingSegmentsOfDisclosureOfOperatingSegmentsLineItemsOfDisclosureOfOperatingSegmentsTableOfItems",
+          "context": "CFY2025dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_ConsolidatedMember",
+          "sha256": "af32193bc8c7e3c1c1fa0871fd9faf746766d391503160d6458ffee657b9b630"
+        },
+        {
+          "tag": "DescriptionOfOperatingSegmentsOfDisclosureOfOperatingSegmentsLineItemsOfDisclosureOfOperatingSegmentsTableOfItems",
+          "context": "CFY2025dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_ConsolidatedMember_ifrs-full_SegmentsAxis_ifrs-full_AllOtherSegmentsMember",
+          "sha256": "4c6d3d8884227b2b194867c987b41eb85166e81522fc9538f97c730b5859ab52"
+        },
+        {
+          "tag": "DescriptionOfTypesOfProductsAndServicesFromWhichEachReportableSegmentDerivesItsRevenues",
+          "context": "CFY2025dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_ConsolidatedMember_ifrs-full_SegmentsAxis_entity00401731_EcoSolutionOfReportableSegmentsMemberOfDisclosureOfOperatingSegmentsTableOfMember",
+          "sha256": "3d2439ab629b618ac3fefa75608145271dc507334028e02f58e59d88aa5e9c39"
+        },
+        {
+          "tag": "DescriptionOfTypesOfProductsAndServicesFromWhichEachReportableSegmentDerivesItsRevenues",
+          "context": "CFY2025dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_ConsolidatedMember_ifrs-full_SegmentsAxis_entity00401731_MediaEntertainmentSolutionOfReportableSegmentsMemberOfDisclosureOfOperatingSegmentsTableOfMember",
+          "sha256": "51c729a78b99e70e7d3ad808bff947ea6bfa0a0b6a969cce007a70ba5224b3c6"
+        },
+        {
+          "tag": "DescriptionOfTypesOfProductsAndServicesFromWhichEachReportableSegmentDerivesItsRevenues",
+          "context": "CFY2025dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_ConsolidatedMember_ifrs-full_SegmentsAxis_entity00401731_HomeApplianceSolutionOfReportableSegmentsMemberOfDisclosureOfOperatingSegmentsTableOfMember",
+          "sha256": "1030e2b7e28a8cd3d1ea025b377bb4fa50fe272b4e91718a18213530d5981689"
+        },
+        {
+          "tag": "DescriptionOfNatureOfDifferencesBetweenMeasurementsOfReportableSegmentsAssetsAndEntitysAssets",
+          "context": "CFY2025dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_ConsolidatedMember",
+          "sha256": "1aae56f9c3ab0f4339e32fe19ac3c415132752a484e87d3f8c22fb93e89f7f56"
+        },
+        {
+          "tag": "DescriptionOfTypesOfProductsAndServicesFromWhichEachReportableSegmentDerivesItsRevenues",
+          "context": "CFY2025dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_ConsolidatedMember_ifrs-full_SegmentsAxis_entity00401731_VehicleSolutionOfReportableSegmentsMemberOfDisclosureOfOperatingSegmentsTableOfMember",
+          "sha256": "2d18ec3e6ebb6d5f5fe60b91a6ec0f79d0558520f9e75f2b3cb9c5ed1c23efc7"
+        },
+        {
+          "tag": "AbbreviationOfSegmentsOfDisclosureOfOperatingSegmentsLineItemsOfDisclosureOfOperatingSegmentsTableOfItems",
+          "context": "CFY2025dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_ConsolidatedMember_ifrs-full_SegmentsAxis_entity00401731_VehicleSolutionOfReportableSegmentsMemberOfDisclosureOfOperatingSegmentsTableOfMember",
+          "sha256": "8db1a2e199a2464612e8cca8094efd9375149b55674e03e7763f957bde5ea3ac"
+        },
+        {
+          "tag": "AbbreviationOfSegmentsOfDisclosureOfOperatingSegmentsLineItemsOfDisclosureOfOperatingSegmentsTableOfItems",
+          "context": "CFY2025dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_ConsolidatedMember_ifrs-full_SegmentsAxis_entity00401731_EcoSolutionOfReportableSegmentsMemberOfDisclosureOfOperatingSegmentsTableOfMember",
+          "sha256": "ce344a418127968f2bd07ada86c8cf3808eea524c399a02c0c2c0ebbe0f5467c"
+        },
+        {
+          "tag": "AbbreviationOfSegmentsOfDisclosureOfOperatingSegmentsLineItemsOfDisclosureOfOperatingSegmentsTableOfItems",
+          "context": "CFY2025dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_ConsolidatedMember_ifrs-full_SegmentsAxis_entity00401731_MediaEntertainmentSolutionOfReportableSegmentsMemberOfDisclosureOfOperatingSegmentsTableOfMember",
+          "sha256": "4d95e550b47c0122b96cf2a846ab3ae30759457fdd3a719a7e47ad5e7d269379"
+        },
+        {
+          "tag": "AbbreviationOfSegmentsOfDisclosureOfOperatingSegmentsLineItemsOfDisclosureOfOperatingSegmentsTableOfItems",
+          "context": "CFY2025dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_ConsolidatedMember_ifrs-full_SegmentsAxis_entity00401731_HomeApplianceSolutionOfReportableSegmentsMemberOfDisclosureOfOperatingSegmentsTableOfMember",
+          "sha256": "6e314c4d6b87797d60858511e299d6a5931286a23b0b396620cca42cc19305d9"
+        },
+        {
+          "tag": "DescriptionOfNatureOfDifferencesBetweenMeasurementsOfReportableSegmentsLiabilitiesAndEntitysLiabilities",
+          "context": "CFY2025dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_ConsolidatedMember",
+          "sha256": "91fabec99a076bd5fed71113e6f59b56dcd15ecd25e00a056c045961371abf7e"
+        },
+        {
+          "tag": "DescriptionOfTypesOfProductsAndServicesFromWhichEachReportableSegmentDerivesItsRevenues",
+          "context": "CFY2025dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_ConsolidatedMember_ifrs-full_SegmentsAxis_ifrs-full_AllOtherSegmentsMember",
+          "sha256": "e6320c904706e0f8adbcd5f88006002ece2a664feee3eeb9c9887a010f1f0c99"
+        },
+        {
+          "tag": "DescriptionOfTypesOfProductsAndServicesFromWhichEachReportableSegmentDerivesItsRevenues",
+          "context": "CFY2025dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_ConsolidatedMember_ifrs-full_SegmentsAxis_entity00401731_LgInnotekAndItsSubsidiariesOfReportableSegmentsMemberOfDisclosureOfOperatingSegmentsTableOfMember",
+          "sha256": "a143ec578bd51f7d7be59834c9bc90fd7e250e134b20a80e57e184fdb7a44793"
+        },
+        {
+          "tag": "AbbreviationOfSegmentsOfDisclosureOfOperatingSegmentsLineItemsOfDisclosureOfOperatingSegmentsTableOfItems",
+          "context": "CFY2025dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_ConsolidatedMember_ifrs-full_SegmentsAxis_ifrs-full_AllOtherSegmentsMember",
+          "sha256": "2991f61ced07a61e82f4b66ec330b106efa81d6bd622bcfd0650e8a819554f9a"
+        },
+        {
+          "tag": "AbbreviationOfSegmentsOfDisclosureOfOperatingSegmentsLineItemsOfDisclosureOfOperatingSegmentsTableOfItems",
+          "context": "CFY2025dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_ConsolidatedMember_ifrs-full_SegmentsAxis_entity00401731_LgInnotekAndItsSubsidiariesOfReportableSegmentsMemberOfDisclosureOfOperatingSegmentsTableOfMember",
+          "sha256": "b189d5c5cc661deec7a84a69227778699dff9f586c5a70184d7ccfe95a6d46a6"
+        },
+        {
+          "tag": "FactorsUsedToIdentifyEntitysReportableSegments",
+          "context": "CFY2025dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_ConsolidatedMember",
+          "sha256": "7cc12c245da5217aa4a1cec038119904a5fd2163d5178b418663464db9e82e62"
+        }
+      ],
+      "currentPassageIds": [
+        "410f512c99b172e1ac7e",
+        "31c8f8b94bc8db879636",
+        "dc8df2cb19beb69cba9c",
+        "38b685d9ab3dcd3064ef",
+        "dcd35f09f4c46083e43c",
+        "1295b4b4d8fef255786e"
+      ],
+      "note": "연간과 반기의 HS·MS·VS·ES·이노텍·기타 제품 정의를 대조했다. 두 공시 모두 비교기간을 당기와 같은 기준으로 표시한다고 명시한다. 기타에는 지원·연구개발 및 내부거래가 포함된다. 이는 보고 부문 손익 연결이며, 중단영업 현금 범위와 비지배 주주의 몫은 별도 미해결이다.",
+      "dimensionAliases": {}
+    },
+    {
+      "company": "005380",
+      "currentAccession": "20260814003521",
+      "corpusHash": "df10a0d24fb3cfc4967d36f9c12b3578a83bbab2eca9a460ea98e920357621d5",
+      "annualAccession": "20260318001394",
+      "annualSource": {
+        "file": "data/sources/005380-20260318001394-2b006fe50b3e6f9c.xbrl",
+        "mode": "OPENDART 접수 확인 2026-09-30 · 원문 보존",
+        "provider": "DART",
+        "retrievedAt": "2026-09-30T09:16:24.839135+00:00",
+        "sha256": "2b006fe50b3e6f9c940fbb889f597816d98e18dc7961f64ba5a5e0f55349a804",
+        "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001394",
+        "accession": "20260318001394",
+        "dartCorpCode": "00164742"
+      },
+      "annualNotes": [
+        {
+          "tag": "DescriptionOfTypesOfProductsAndServicesFromWhichEachReportableSegmentDerivesItsRevenues",
+          "context": "CFY2025dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_ConsolidatedMember_ifrs-full_SegmentConsolidationItemsAxis_ifrs-full_OperatingSegmentsMember",
+          "sha256": "6f9d2165d19c3da81d5d2730b0d324576b8adfae8e04a9961311e7e218199d87"
+        }
+      ],
+      "currentPassageIds": [
+        "6b61f52986bc79a96a44",
+        "26ccc30db514e6d24e81"
+      ],
+      "note": "양쪽 연결 주석의 차량·금융·기타 정의를 대조했다. 매출은 내부거래 차감 후 부문별 순매출을 사용하고 영업이익에는 공시 연결 제거를 한 번만 더한다. 금융부문 매출·이익을 제조업 현금이나 보통주 배분 가능 현금으로 바꾸지 않는다.",
+      "dimensionAliases": {},
+      "adjustments": {
+        "incomeAdjustments": [
+          [
+            "ProfitLossFromOperatingActivities",
+            [
+              [
+                "ConsolidatedAndSeparateFinancialStatementsAxis",
+                "ConsolidatedMember"
+              ],
+              [
+                "SegmentConsolidationItemsAxis",
+                "EliminationOfIntersegmentAmountsMember"
+              ]
+            ],
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "company": "207940",
+      "currentAccession": "20260814003375",
+      "corpusHash": "f515cff26345743c28af55400450cd6bb9fa15e9d671499296392da12f2e19be",
+      "annualAccession": "20260515001658",
+      "annualSource": {
+        "file": "data/sources/207940-20260515001658-d576dc0904eb0a1c.xbrl",
+        "mode": "OPENDART 접수 확인 2026-09-30 · 원문 보존",
+        "provider": "DART",
+        "retrievedAt": "2026-09-30T09:16:44.983202+00:00",
+        "sha256": "d576dc0904eb0a1c46daa69d5daf9ed24fec81ed80cd2684fd8877024257ccb9",
+        "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515001658",
+        "accession": "20260515001658",
+        "dartCorpCode": "00877059"
+      },
+      "annualNotes": [
+        {
+          "tag": "DisclosureOfKeyDetailsOfTheSpinOffTextBlock",
+          "context": "CFY2025dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_ConsolidatedMember",
+          "sha256": "4f7999af52ed4acc246be1fdb262f33968515b4a664abf8f114f496a52e9ddef"
+        },
+        {
+          "tag": "DisclosureOfOperatingSegmentsExplanatory",
+          "context": "CFY2025dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_ConsolidatedMember",
+          "sha256": "35bf3cf1949c8f48af817764e75e43c6275d4e86b4eec0524955edf4d6bf7661"
+        }
+      ],
+      "currentPassageIds": [
+        "6aad1d69aac55f9f2a00",
+        "779a6da63a778088203d"
+      ],
+      "note": "연간과 반기 모두 CDMO 단일부문이며 분할한 삼성바이오에피스의 중단영업을 분리한 손익 범위를 확인했다. 연간은 2025년 11월 1일 분할 및 비교 손익 재작성을 명시한다. 매출·이익의 최근 1년 연결만 수행하며, 총 영업현금과 계속영업 투자 취득의 범위 대사 보류는 유지한다.",
+      "dimensionAliases": {}
+    },
+    {
+      "company": "068270",
+      "currentAccession": "20260814003751",
+      "corpusHash": "0f031aab19f9782895da03f3bd628b3a0f580775aaa9d1534c56e46e7391fe9e",
+      "annualAccession": "20260316001415",
+      "annualSource": {
+        "file": "data/sources/068270-20260316001415-918103648a799e62.xbrl",
+        "mode": "OPENDART 접수 확인 2026-09-30 · 원문 보존",
+        "provider": "DART",
+        "retrievedAt": "2026-09-30T09:16:47.443970+00:00",
+        "sha256": "918103648a799e622c30391295aefaec3e2c6ed6301f26de8e117535834fb3af",
+        "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260316001415",
+        "accession": "20260316001415",
+        "dartCorpCode": "00413046"
+      },
+      "annualNotes": [
+        {
+          "tag": "FootnoteOfOperatingSegments",
+          "context": "CFY2025dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_ConsolidatedMember",
+          "sha256": "63226f185cbf645230ad720aa7f025d52d118004eb4bcb871c0efafb796180e7"
+        },
+        {
+          "tag": "DisclosureOfOperatingSegmentsExplanatory",
+          "context": "CFY2025dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_ConsolidatedMember",
+          "sha256": "1da6bb82f9034f193576eff12c0131073cf089b155b80d57a02ee79de4b4363b"
+        }
+      ],
+      "currentPassageIds": [
+        "46bae7b73fe5c23ad6cb",
+        "591a830741c4b85a3bbb",
+        "e5435f2147aa268ba5b4"
+      ],
+      "note": "양쪽 연결 주석의 바이오·케미컬 의약품 개발·생산·판매 및 기타 정의를 대조했다. Products/Medicines 태그 차이를 이 두 접수에 한정해 연결한다. 부문 법인의 단순합산에서 내부거래를 제거하며, 원 단위 연결값과 천 원 단위 주석의 차이를 숨기지 않는다.",
+      "dimensionAliases": {
+        "BiopharmaceuticalProductsMemberOfSegmentsDomainOfDisclosureOfOperatingSegmentsTableOfMember": "BiopharmaceuticalMedicinesOfReportableSegmentsMemberOfDisclosureOfOperatingSegmentsTableOfMember",
+        "ChemicalPharmaceuticalProductsMemberOfSegmentsDomainOfDisclosureOfOperatingSegmentsTableOfMember": "ChemicalMedicinesOfReportableSegmentsMemberOfDisclosureOfOperatingSegmentsTableOfMember"
+      }
+    },
+    {
+      "company": "329180",
+      "currentAccession": "20260814002879",
+      "corpusHash": "49625a9a4e42f2860959b0b3bb1f17ca7d87e2a850cd2221e60c13503bed128e",
+      "annualAccession": "20260320000859",
+      "annualSource": {
+        "file": "data/sources/329180-20260320000859-0519a579468dd3c3.xbrl",
+        "mode": "OPENDART 접수 확인 2026-09-30 · 원문 보존",
+        "provider": "DART",
+        "retrievedAt": "2026-09-30T09:16:54.637176+00:00",
+        "sha256": "0519a579468dd3c3edea666687ae5af096cc6e798a15adbc63408665bbf45a34",
+        "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260320000859",
+        "accession": "20260320000859",
+        "dartCorpCode": "01390344"
+      },
+      "annualNotes": [
+        {
+          "tag": "DescriptionOfConsolidationAdjustmentsMadeBetweenOperatingSegments",
+          "context": "CFY2025dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_ConsolidatedMember",
+          "sha256": "ecb9d1465976813cd3e5744967e4c1c5673bc6a9cc06fee09292984c7654aca6"
+        },
+        {
+          "tag": "DescriptionOfTypesOfProductsAndServicesFromWhichEachReportableSegmentDerivesItsRevenues",
+          "context": "CFY2025dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_ConsolidatedMember",
+          "sha256": "71e84a18e6d98eae41795cfa89722670c112115137d11799a4b5d6ae9ed9878c"
+        },
+        {
+          "tag": "ExplanationOfFinancialEffectOfAdjustmentsRelatedToBusinessCombinations",
+          "context": "CFY2025dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_ConsolidatedMember_ifrs-full_BusinessCombinationsAxis_entity01390344_HdHyundaiMipoCoLtdMemberOfBusinessCombinationsMemberOfDisclosureOfBusinessCombinationsTableOfMember",
+          "sha256": "46bb9122a1726db86258872c6ad5bbe4933bcc13136712d3b3e9447e30256aa8"
+        }
+      ],
+      "currentPassageIds": [
+        "4ed45ff17aba67327e92",
+        "59758a4bfa8eb2bbaf10",
+        "f5ef778f043fc1d62255"
+      ],
+      "note": "양쪽 연결 주석의 조선·해양플랜트·엔진·기타 정의와 HD현대미포의 조선 편입을 확인했다. 합병일은 2025년 12월 1일이며 취득일 장부금액을 적용한 동일지배 사업결합이다. 최근 1년은 합병 전후 보고 범위가 섞인 실제 보고 실적이다. 미포가 12개월 내내 포함된 가정 실적이나 같은 사업 범위의 유기 성장으로 읽지 않는다.",
+      "dimensionAliases": {}
+    },
+    {
+      "company": "MU",
+      "dimensionAliases": {},
+      "currentAccession": "0000723125-26-000015",
+      "corpusHash": "f786d3bea1848df0beeb3e46a866aaadf7fbcd5a3614a4f3651b66f664f2112a",
+      "annualAccession": "0000723125-25-000028",
+      "annualSource": {
+        "file": "data/sources/filing-0000723125-25-000028-d4eede66eac20393.xbrl",
+        "sha256": "d4eede66eac20393a3c93849bdd72477dd977d59e36d8e742381d1da6e393ed8",
+        "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312525000028/mu-20250828_htm.xml",
+        "primaryUrl": "https://www.sec.gov/Archives/edgar/data/723125/000072312525000028/mu-20250828.htm",
+        "provider": "SEC",
+        "accession": "0000723125-25-000028",
+        "cik": 723125,
+        "retrievedAt": "2026-10-01T05:02:17.736611+00:00",
+        "indexSource": {
+          "file": "data/sources/filing-0000723125-25-000028-index-7cba03eeed1410cb.html",
+          "sha256": "7cba03eeed1410cb4405c1a6d5a59d89955a1ac4ece658c6f13940de5f628d7f",
+          "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312525000028/0000723125-25-000028-index.html"
+        }
+      },
+      "annualTextTag": "SegmentReportingPolicyPolicyTextBlock",
+      "annualTextHash": "a70fa8c855e2d71d561ae61a5ec61d7cb3c302a70890bd25aacc2eb09512f0bf",
+      "currentPassageIds": [
+        "53fdf4d2f1b308d3c1c5",
+        "a37578bb9cf17fc36ad1",
+        "0e111fe6746eab4a5177",
+        "c97cfb2726bf446aab88",
+        "1bc6e4eadfa811a70f9b",
+        "fa799ec94488c8f8c096",
+        "11f3a669f30534f415f2",
+        "662f5a793f0d66100f56"
+      ],
+      "note": "2025년 4분기 새 시장 중심 부문으로 재편한 연간 공시와 비교 재작성된 현재9개월 공시를 연결한다. CMBU·CDBU·MCBU·AEBU·기타 및 본사 미배분 손익을 각각 보존한다. 배분 방식·제품 구성 불변이나 유기 성장으로 승인하지 않는다."
+    }
+  ]
+}

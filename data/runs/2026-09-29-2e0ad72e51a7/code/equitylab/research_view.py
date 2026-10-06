@@ -1,0 +1,76 @@
+"""Conditional research views, with price and causal claims kept evidence-bound."""
+
+from .data import canonical, digest
+
+
+def build(c):
+    m = c["metrics"]
+    g = m["revenueGrowth"]
+    change = m["cashMarginChange"]
+    if c["assessment"]["issues"]:
+        state = "자료 확인"
+        question = "기간·투자 범위를 보완한 뒤 현금 변화 재검토"
+    elif m["cashAfterInvestment"] <= 0:
+        state = "관찰"
+        question = "재투자 이후 현금이 회복되는 조건"
+    elif g is not None and g > 0 and change is not None and change > 0:
+        state = "관찰"
+        question = "성장과 현금 마진 개선의 지속성"
+    else:
+        state = "관찰"
+        question = "이익·현금·재투자의 엇갈림"
+    b = c.get("business")
+    d = c.get("dossier")
+    price = (b or {}).get("pricing") or (d or {}).get("pricing")
+    remaining = list(c["analysis"]["questions"])
+    if b and b.get("status") == "ready":
+        remaining = list(b["remaining"])
+    elif d:
+        remaining = list(d.get("receivables", {}).get("limitations", [])) or remaining
+    result = dict(
+        version="conditional-research-view-v1",
+        state=state,
+        question=question,
+        derivation="공시 계산에 따른 조사 의견. 아래 세 관측의 결합은 원인·저평가·초과수익의 증거가 아니다.",
+        horizon="다음 정기공시에서 재검토 · 수익률 예측 기간 미설정",
+        observations=[
+            dict(
+                label="매출 전년 동기 변화",
+                value=g,
+                unit="ratio",
+                source=c["financials"]["current"]["revenue"]["sourceUrl"],
+            ),
+            dict(
+                label="투자 이후 현금 / 매출",
+                value=m["cashMargin"],
+                unit="ratio",
+                source=c["financials"]["current"]["cfo"]["sourceUrl"],
+            ),
+            dict(
+                label="동 현금 마진 전년 동기 차이",
+                value=change,
+                unit="pp",
+                source=c["financials"]["current"]["capex"]["sourceUrl"],
+            ),
+        ],
+        confirmation=dict(
+            metric="cashMarginChange",
+            operator=">",
+            threshold=0,
+            definition=f"다음 정기공시의 동일 길이 전년 동기 대비 (영업현금−{c['investmentScope']})/매출 개선",
+            baseline="같은 길이 전년 동기 마진 유지",
+            expected=None,
+        ),
+        countercondition="같은 정의의 현금 마진이 개선되지 않으면 현금 확장 지속성 가설을 약화하는 관측으로 남긴다. 투자 확대·수금 시점 등 원인은 별도로 조사한다.",
+        priceStatus="assumption_workspace" if price else "unresolved",
+        priceQuestion=(
+            "가정한 성장·요구수익률에서 필요한 보통주 배분 가능 현금을 정상 재투자·순차입·희석과 대조해야 한다."
+            if price
+            else "보통주·우선주·비지배 지분과 정상 배분 가능 현금을 연결하기 전에는 가격의 유불리를 판정하지 않는다."
+        ),
+        remaining=remaining,
+        financialApproval=False,
+        sources=[c["financials"]["current"][k] for k in ["revenue", "cfo", "capex"]],
+    )
+    result["evidenceHash"] = digest(canonical(result))
+    return result

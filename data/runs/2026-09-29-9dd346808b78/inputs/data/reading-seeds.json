@@ -1,0 +1,409 @@
+{
+  "version": "business-reading-seeds-v1",
+  "scope": "작성자가 현재 본문에서 고른 조사 시작점. 전체 공시나 사업의 빠짐없는 요약이 아님.",
+  "cases": [
+    {
+      "company": "MU",
+      "accession": "0000723125-26-000015",
+      "corpusHash": "f786d3bea1848df0beeb3e46a866aaadf7fbcd5a3614a4f3651b66f664f2112a",
+      "focus": "DRAM·NAND의 가격과 비트 출하, MCBU 출하 감소를 구별한다.",
+      "passageIds": [
+        "f0745f430a8227c2719a",
+        "b62009a58c2f7324ce6b",
+        "628bfdf0d7a941aba9a4"
+      ]
+    },
+    {
+      "company": "NVDA",
+      "accession": "0001045810-26-000075",
+      "corpusHash": "c6079c3c96a23d82426b958715d0455824faa0be9d3a58ea18004d093c7b25fe",
+      "focus": "데이터센터 성장과 매출총이익률의 제품 구성 효과·고객 집중을 구별한다.",
+      "passageIds": [
+        "cfcfe23ea967bd6615c4",
+        "8b2a8d3227b2b320fb90",
+        "62f2fee3eaf4daa28f60"
+      ]
+    },
+    {
+      "company": "GOOGL",
+      "accession": "0001652044-26-000071",
+      "corpusHash": "e2a10e7bad8176d88c02d7cefc16085de2441bca39326d74084e0f2db254a625",
+      "focus": "매출 잔고 정의 변경과 TAC 구성 효과를 실제 수금이나 단가 개선과 구별한다.",
+      "passageIds": [
+        "187d7738f080dd823837",
+        "e135cbdb446942d34b52"
+      ]
+    },
+    {
+      "company": "AAPL",
+      "accession": "0000320193-26-000020",
+      "corpusHash": "68b4ce050be11471fffcb7ea0db86254024e6ecec9d42573f1205d29a3f36d52",
+      "focus": "지역별 제품 수요와 환율 효과를 구별한다.",
+      "passageIds": [
+        "d443e1221ffde083b2c1",
+        "25fd584382c30366263d",
+        "98249deef33ffc3efaec"
+      ]
+    },
+    {
+      "company": "MSFT",
+      "accession": "0001193125-26-323660",
+      "corpusHash": "937e01c7ae4ef3b34955a7d3f799113d5bdcc3ce23bde47c4b9d006d489f17b7",
+      "focus": "OpenAI와의 거래·채권 및 AI 설비투자 회수의 관계를 검토한다.",
+      "passageIds": [
+        "9ae8d6492b78b4a08baf",
+        "840204f0e1846d56c738"
+      ]
+    },
+    {
+      "company": "AMZN",
+      "accession": "0001018724-26-000026",
+      "corpusHash": "59fabb51c8361dd5403ba0bebdd99cee8d38efa85e29c0ec0bee63e86bf95f42",
+      "focus": "AWS 이용량과 계약 가격 변화, 해외 환율의 영향을 구별한다.",
+      "passageIds": [
+        "58efa91d8ce432a6fc2c",
+        "6866e592f4fa95065d23"
+      ]
+    },
+    {
+      "company": "META",
+      "accession": "0001628280-26-050705",
+      "corpusHash": "ea74ad806e812f9704af046f523961f340bfcba599d53be414771930f44ed610",
+      "focus": "광고 노출·평균 가격과 리스 원금이 포함된 투자 지출을 구별한다.",
+      "passageIds": [
+        "5618053ebb1140f15b70",
+        "0266438078e069f32282"
+      ]
+    },
+    {
+      "company": "AMD",
+      "accession": "0000002488-26-000123",
+      "corpusHash": "727a7e15fe6960a693ad9c2c0e435ad56f253bbd41e474bc9bc58df7c8a52d91",
+      "focus": "수요·제품 구성과 전년 수출통제 비용 기저 효과를 구별한다.",
+      "passageIds": [
+        "3e03b049e8cd7ea8dc14",
+        "80aafad4612249a2768e"
+      ]
+    },
+    {
+      "company": "AVGO",
+      "accession": "0001730168-26-000080",
+      "corpusHash": "965d893de9b66ba32400a567a25fe931201430ddcbca16b78ff975148719254e",
+      "focus": "반도체 수요와 소프트웨어 계약 변경에 따른 수익 인식을 구별한다.",
+      "passageIds": [
+        "8af10929c539d4fd8227",
+        "9b9df3bed29f0c8ffdcb",
+        "00956b41535c15cdcb5b"
+      ]
+    },
+    {
+      "company": "QCOM",
+      "accession": "0000804328-26-000086",
+      "corpusHash": "b47511d1be90d2f4c7cb57d1659c9f36070dbb63f3b84fc8ef4eaaa23abf9ea8",
+      "focus": "핸드셋·자동차·IoT 영업 변화와 투자 평가손익을 구별한다.",
+      "passageIds": [
+        "f7665635e88efa4162ac",
+        "7f0ce17e3e79a96f3819",
+        "ba3d42006048e3b7833b"
+      ]
+    },
+    {
+      "company": "INTC",
+      "accession": "0000050863-26-000157",
+      "corpusHash": "23d3be3e7b9d7068dd67ef0b83424b8e0f5e998aceabdee988c9a171730366da",
+      "focus": "Altera 연결 제외와 가격·제품 구성·물량을 구별한다.",
+      "passageIds": [
+        "51ac690fec1686ffcdb2",
+        "4a7f8c21cdd0369dc3c3",
+        "65d79be93c247917b6be"
+      ]
+    },
+    {
+      "company": "AMAT",
+      "accession": "0001628280-26-058235",
+      "corpusHash": "2786cc7cda304365a90d6325336711dcc418759e804c0771c62334bdfe114bc8",
+      "focus": "선단·성숙공정 수요와 가격·제조원가의 영향을 구별한다.",
+      "passageIds": [
+        "4ef88b53042e37be8063",
+        "aaffe7fc9d8c86b0fe31"
+      ]
+    },
+    {
+      "company": "LRCX",
+      "accession": "0000707549-26-000037",
+      "corpusHash": "b909d8b8b109e5bfe1203219b815089fefa55082de07224a9ed22714c43d2f7c",
+      "focus": "파운드리 장비와 고객지원 매출, 투자 시점을 구별한다.",
+      "passageIds": [
+        "ddf6ea27d1d8d32cf4f5",
+        "6e320349f0d2d9d49b54"
+      ]
+    },
+    {
+      "company": "TSLA",
+      "accession": "0001628280-26-049270",
+      "corpusHash": "62910896d45e4802db0177c78f33b6971a3063b8ff57993d712f253d99dd6f91",
+      "focus": "인도량·ASP 구성과 전년 Model Y 교체 기저를 구별한다.",
+      "passageIds": [
+        "7bcf671b7cb5d013a51c",
+        "b5aa814992a3ec26daa8"
+      ]
+    },
+    {
+      "company": "GM",
+      "accession": "0001467858-26-000051",
+      "corpusHash": "722b4102ad3ce9df61fde2f7b7a1fbfa704c33cb7c4c678844a5c32c35338ca2",
+      "focus": "GMNA 가격·차종 구성과 반기·분기 차이를 구별한다.",
+      "passageIds": [
+        "18c58f69c207be5b8fa5",
+        "6fb958e68935c3b1e134"
+      ]
+    },
+    {
+      "company": "F",
+      "accession": "0000037996-26-000156",
+      "corpusHash": "05b1cc35cff6078c3d5a46213c4b885b1ead522c6b02b162ce5d214261311025",
+      "focus": "Ford Blue와 Model e의 물량·구성 변화를 나누어 읽는다.",
+      "passageIds": [
+        "4936a8007254f8c6a80a",
+        "204488102990a8531a34"
+      ]
+    },
+    {
+      "company": "GE",
+      "accession": "0000040545-26-000049",
+      "corpusHash": "75a3947701e39f4779ee5d270136f95cc344ee82694741effeac190e6a530b0a",
+      "focus": "엔진 인도·정비 수요와 이익·이익률 변화의 차이를 읽는다.",
+      "passageIds": [
+        "b586fb52f9a55742e873",
+        "66315cc77e20905bf32c",
+        "1c58dcb95b9fb16ef0eb"
+      ]
+    },
+    {
+      "company": "CAT",
+      "accession": "0000018230-26-000046",
+      "corpusHash": "537eb3432dca39e4844f9ac59244c1747a89a7f71511e7b134dca6e59301eb4c",
+      "focus": "판매량·가격 설명과 장기 계약 잔고를 구별한다.",
+      "passageIds": [
+        "c5cb7eae416e05a8dd77",
+        "6109148f513c6079a2bc"
+      ]
+    },
+    {
+      "company": "LLY",
+      "accession": "0000059478-26-000081",
+      "corpusHash": "bcfaa03a194cb6eae201c9718416f3329eb5ecf501321b8963da6fd2cc1616dd",
+      "focus": "Mounjaro·Zepbound 물량과 실제 가격·리베이트 추정을 구별한다.",
+      "passageIds": [
+        "7da725fc4df5b7b31dc3",
+        "7b53106e7e040ef5a383"
+      ]
+    },
+    {
+      "company": "JNJ",
+      "accession": "0000200406-26-000153",
+      "corpusHash": "57cd21cfb2c13891c8b2e7d49a6012eb89a7aba8a2d2d12f06bb0383ba701a6a",
+      "focus": "환율·인수·기존 제품 변화와 실질 성장을 구별한다.",
+      "passageIds": [
+        "fcac921abb3356e03efb",
+        "69c1b0bd107e5f7c4064"
+      ]
+    },
+    {
+      "company": "000660",
+      "accession": "20260814003509",
+      "corpusHash": "cc42332c9798267a3a1d67deb0af37fb3e34357ff2354ce780cc98d94332b34e",
+      "focus": "가격·출하 변화의 비교 기간을 확인한다.",
+      "passageIds": [
+        "0cdff9c30229ac81bbd1",
+        "2699ca110ea55d03c030"
+      ]
+    },
+    {
+      "company": "005930",
+      "accession": "20260814003699",
+      "corpusHash": "a440da29601475dc70793fc6189e5ab7f8905a603367885313c0fd1805ec9bfb",
+      "focus": "연결 성장과 DS·DX 등 사업부 성장의 차이를 확인한다.",
+      "passageIds": [
+        "6526ba21a969d6d49856",
+        "ac0219a0c0e97fe08518"
+      ]
+    },
+    {
+      "company": "035420",
+      "accession": "20260814002266",
+      "corpusHash": "829b89239fbd97611fd092f12dc7d74a98a2bb6c47da84be7f0aff28e8d0ed36",
+      "focus": "플랫폼 구성을 확인하고 AI 수익화 전망을 실적과 구별한다.",
+      "passageIds": [
+        "f24bb0b28e55319f0170",
+        "ebd0e1c4076f49e88ea0"
+      ]
+    },
+    {
+      "company": "066570",
+      "accession": "20260814001997",
+      "corpusHash": "775d0ef56cd90c620f71d165a3f148d0b6261d29b384cbb6525a1eec556634c4",
+      "focus": "가전·TV·차량·공조 사업 구성과 수요 전망을 구별한다.",
+      "passageIds": [
+        "1b52627e50b85eb2104c",
+        "53ee6d32444c97dfab08"
+      ]
+    },
+    {
+      "company": "005380",
+      "accession": "20260814003521",
+      "corpusHash": "df10a0d24fb3cfc4967d36f9c12b3578a83bbab2eca9a460ea98e920357621d5",
+      "focus": "차량·금융·기타의 사업 구성과 제시된 비중의 기준 연도를 확인한다.",
+      "passageIds": [
+        "9f1871ad51711b0c1453"
+      ]
+    },
+    {
+      "company": "000270",
+      "accession": "20260916000427",
+      "corpusHash": "3024eea2a4e4db17b0a25408fe8261074b2764bbba52450633174aa85b2f518a",
+      "focus": "차량 판매·가격 효과와 관세·인센티브·보증 충당금의 영향을 구별한다.",
+      "passageIds": [
+        "4e114e264abff90f2888"
+      ]
+    },
+    {
+      "company": "012330",
+      "accession": "20260814004065",
+      "corpusHash": "49a752e3ba45479100d3f11b36ce582872f702776b8f4d8232d36726132dd07d",
+      "focus": "모듈·부품과 A/S 사업 성장의 근거를 구별한다.",
+      "passageIds": [
+        "4e6f7c114826ecfd1a9d",
+        "fcf66cd36cd5940b4d63"
+      ]
+    },
+    {
+      "company": "035720",
+      "accession": "20260819000055",
+      "corpusHash": "5551e8df87ab3e46b1e9312b53f5a76a176b247d7529ac467a61a7abafa220f5",
+      "focus": "톡비즈 성장 설명과 매각·중단영업의 비교 범위를 확인한다.",
+      "passageIds": [
+        "6a60d516544404312442",
+        "b2fe01750cce6488507d"
+      ]
+    },
+    {
+      "company": "006400",
+      "accession": "20260814003578",
+      "corpusHash": "afcfff62a87e67df7f26987f2d9e4e359250c991161f9b94823435e41e6e4513",
+      "focus": "에너지솔루션·전자재료 실적과 미국 세액공제·중단영업을 구별한다.",
+      "passageIds": [
+        "3373da45f893f5ee78ae",
+        "fcb450fe72e9235e3fd3"
+      ]
+    },
+    {
+      "company": "051910",
+      "accession": "20260814002655",
+      "corpusHash": "355f2d03f4a509f85442bb5f34d3f447efd9e35904f0a1bf293640cbe59fe42c",
+      "focus": "석유화학 재고 래깅 효과와 배터리 보조금 표시 변경을 확인한다.",
+      "passageIds": [
+        "1c4cef2c94520a8706e8",
+        "9dba6b7368bd5917a71e",
+        "fcad29b4daf63532217e"
+      ]
+    },
+    {
+      "company": "373220",
+      "accession": "20260813000255",
+      "corpusHash": "cdeafcd09087c72f473802878108d99fa9a9fdf5dccd47fcf22e7aabf56be2f9",
+      "focus": "매출액 및 기타수익의 범위와 EV·ESS 수요 전망을 구별한다.",
+      "passageIds": [
+        "352a84277866ccdfef83",
+        "af6e2a65d1c83afa215e"
+      ]
+    },
+    {
+      "company": "005490",
+      "accession": "20260814000957",
+      "corpusHash": "78e2625293dddc7e78b503d67991b2abadc3adfacbef1a78dcd7de861141e22b",
+      "focus": "철강·인프라·이차전지 소재의 연결 구성을 확인한다.",
+      "passageIds": [
+        "90e200fd535100d49ca9"
+      ]
+    },
+    {
+      "company": "207940",
+      "accession": "20260814003375",
+      "corpusHash": "f515cff26345743c28af55400450cd6bb9fa15e9d671499296392da12f2e19be",
+      "focus": "현재 CDMO 제품·서비스와 분할 후 실적 범위를 확인한다.",
+      "passageIds": [
+        "71dba12c450717270d29",
+        "aa747c5d317f4a8c9254"
+      ]
+    },
+    {
+      "company": "068270",
+      "accession": "20260814003751",
+      "corpusHash": "0f031aab19f9782895da03f3bd628b3a0f580775aaa9d1534c56e46e7391fe9e",
+      "focus": "바이오시밀러 제품과 회사가 설명하는 지역 성장 근거를 확인한다.",
+      "passageIds": [
+        "eb8c521209bdb3c5ab41"
+      ]
+    },
+    {
+      "company": "000100",
+      "accession": "20260814002038",
+      "corpusHash": "2aa14f6cd3953ede27ff462ec5247094146f29eb0b03f8291b9167a83dfbe0ea",
+      "focus": "제품·해외·라이선스 성장과 지분법·외환 이익을 구별한다.",
+      "passageIds": [
+        "6e65e7aed0dd8cf962f9"
+      ]
+    },
+    {
+      "company": "128940",
+      "accession": "20260814004181",
+      "corpusHash": "d065297f2f7ebc33c62643a1be043d18b38f278b62ea2982b4b459f770533634",
+      "focus": "기존 제품과 후보물질 기술수출·해외 사업을 구별한다.",
+      "passageIds": [
+        "c7e8bc1fe6756210aa8e",
+        "8eb8dae4abfd84119f67",
+        "6c4fc68eba8e96ce3551"
+      ]
+    },
+    {
+      "company": "329180",
+      "accession": "20260814002879",
+      "corpusHash": "49625a9a4e42f2860959b0b3bb1f17ca7d87e2a850cd2221e60c13503bed128e",
+      "focus": "신조 발주 환경과 회사 수주·매출 인식의 차이를 확인한다.",
+      "passageIds": [
+        "c9ef628dc907f7bc19d7",
+        "5cc15d0167e5b81fb4bf"
+      ]
+    },
+    {
+      "company": "012450",
+      "accession": "20260814003198",
+      "corpusHash": "7962920f75528ede620ff2d822edf953f93ceb3ab7b6f830f65ea2ba3430a613",
+      "focus": "항공·방산·해양 등 연결 사업의 구성과 내수·수출을 나눈다.",
+      "passageIds": [
+        "e1095583b9e656ca98b7"
+      ]
+    },
+    {
+      "company": "034020",
+      "accession": "20260814003782",
+      "corpusHash": "c5699a489296c68b7ebf87cc9b1f05331ae050b3471a8994d6449714de2403a0",
+      "focus": "발전설비·주단조와 밥캣의 서로 다른 가격 기준을 확인한다.",
+      "passageIds": [
+        "0480fc894d6fa9f0a429",
+        "9a1a984ec1fb8d185900"
+      ]
+    },
+    {
+      "company": "267260",
+      "accession": "20260814003228",
+      "corpusHash": "0d81a147666c8fc8741633dd2a08384b6512c9428e88d53a21f85cbb98389c99",
+      "focus": "기존 전력기기 매출과 CEMS 구독 사업 계획을 구별한다.",
+      "passageIds": [
+        "23b3387f245763ed59a9",
+        "0ab6d2d92b341342255c"
+      ]
+    }
+  ]
+}

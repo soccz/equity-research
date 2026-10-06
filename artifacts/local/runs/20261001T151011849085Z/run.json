@@ -1,0 +1,56 @@
+{
+  "runId": "20261001T151011849085Z",
+  "startedAt": "2026-10-01T15:10:11.849172+00:00",
+  "status": "failed",
+  "mode": "archived_sources_local_only",
+  "modelRequested": true,
+  "stages": [
+    {
+      "name": "unit",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-01T15:10:11.849301+00:00",
+      "finishedAt": "2026-10-01T15:12:30.424946+00:00",
+      "log": "artifacts/local/runs/20261001T151011849085Z/unit.log",
+      "logHash": "d9887a4064eee452e25a45e0239205d743f606cd770efe86d4d263b5fcbd1802"
+    },
+    {
+      "name": "analysis",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-01T15:12:30.425785+00:00",
+      "finishedAt": "2026-10-01T15:14:33.847668+00:00",
+      "log": "artifacts/local/runs/20261001T151011849085Z/analysis.log",
+      "logHash": "fe4cd56b12590743e334af08f2029235d5b1dc952541d5d598794a5fc841b5a3"
+    },
+    {
+      "name": "local-model",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-01T15:14:33.848110+00:00",
+      "finishedAt": "2026-10-01T15:14:42.898625+00:00",
+      "log": "artifacts/local/runs/20261001T151011849085Z/local-model.log",
+      "logHash": "e97477e66784eaf0b0bb38661e227bcfb2eaae1c4cf81803aace5864a04cd605"
+    },
+    {
+      "name": "coverage-model",
+      "status": "quality_gate_failed",
+      "exitCode": 2,
+      "startedAt": "2026-10-01T15:14:42.899078+00:00",
+      "finishedAt": "2026-10-01T15:30:40.411522+00:00",
+      "log": "artifacts/local/runs/20261001T151011849085Z/coverage-model.log",
+      "logHash": "7cec10577eb9ed172550311cff0879fa28c510869299382b8b70658909a19a3f"
+    },
+    {
+      "name": "question-model",
+      "status": "failed",
+      "exitCode": -2,
+      "startedAt": "2026-10-01T15:30:40.412834+00:00",
+      "finishedAt": "2026-10-01T15:40:02.257834+00:00",
+      "log": "artifacts/local/runs/20261001T151011849085Z/question-model.log",
+      "logHash": "f6f8763aab906d8f53c5fcd09904f8463b7e91ef113be9bb102ea677f6433e43"
+    }
+  ],
+  "error": "RuntimeError: question-model failed; see artifacts/local/runs/20261001T151011849085Z/question-model.log",
+  "finishedAt": "2026-10-01T15:40:02.258349+00:00"
+}

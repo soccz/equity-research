@@ -1,0 +1,19 @@
+{
+  "snapshotHash": "ae67e576eba6cf7ac3976cc25ac62e82bc65c377c56a9678987083954042e9c2",
+  "method": "Actual PDF all-page contact sheets plus Adobe12 and Salesforce11/12 enlargement",
+  "reports": {
+    "adobe": "da8ab808cab868a85b086fbed89811f0f08982e7925ab9659b3a4001e84156d7",
+    "salesforce": "cb8cabb73b6a977e08db20135b4b90021d9fba4b2929a1d1aa0424e2c3bf7edf",
+    "oracle": "ad437ae5c759311f6dd82bf02a984e5c7a156ac12572c757b3a1a084c963d531",
+    "comparison-software": "a0730d53c5efd061db385f4ccb478d6f58cda5533b2db4b25f6f251eb79d00fa"
+  },
+  "status": "visual_review_completed",
+  "findings": [
+    "Adobe six-row amortization group is together on page11; broad-purchase134/80/216 mismatch and model price hold visible on page12.",
+    "Salesforce annual financing584, lease367 and unexplained217 retained.16 debt rows repeat the table header across pages11/12.",
+    "Oracle compact revision history stays together on page14; previous single-entry page removed.",
+    "CRM revision block prints as a complete separate three-entry history. White space retained rather than shrinking report text.",
+    "No observed clipping or footer overlap in these reviewed reports. This review is not financial interpretation approval."
+  ],
+  "financialApproval": false
+}

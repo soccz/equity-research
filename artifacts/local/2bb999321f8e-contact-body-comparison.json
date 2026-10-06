@@ -1,0 +1,821 @@
+{
+  "snapshotHash": "2bb999321f8e327f9f5aac3635e8d84366946e3312e02eecd3c8bbd704403aeb",
+  "baseline": "db49ddf6cf27",
+  "scope": "Exact pixel comparison at the contact-sheet resolution previously viewed. Body area excludes last ~27 pixels containing the version footer. Full PDFs separately pass text-bound/version/source checks.",
+  "samePages": [],
+  "changedPages": [
+    {
+      "name": "universe",
+      "page": 1
+    },
+    {
+      "name": "universe",
+      "page": 2
+    },
+    {
+      "name": "universe",
+      "page": 3
+    },
+    {
+      "name": "universe",
+      "page": 4
+    },
+    {
+      "name": "micron",
+      "page": 1
+    },
+    {
+      "name": "micron",
+      "page": 2
+    },
+    {
+      "name": "micron",
+      "page": 3
+    },
+    {
+      "name": "micron",
+      "page": 4
+    },
+    {
+      "name": "micron",
+      "page": 5
+    },
+    {
+      "name": "micron",
+      "page": 6
+    },
+    {
+      "name": "micron",
+      "page": 7
+    },
+    {
+      "name": "micron",
+      "page": 8
+    },
+    {
+      "name": "micron",
+      "page": 9
+    },
+    {
+      "name": "micron",
+      "page": 10
+    },
+    {
+      "name": "micron",
+      "page": 11
+    },
+    {
+      "name": "micron",
+      "page": 12
+    },
+    {
+      "name": "micron",
+      "page": 13
+    },
+    {
+      "name": "micron",
+      "page": 14
+    },
+    {
+      "name": "micron",
+      "page": 15
+    },
+    {
+      "name": "micron",
+      "page": 16
+    },
+    {
+      "name": "micron",
+      "page": 17
+    },
+    {
+      "name": "micron",
+      "page": 18
+    },
+    {
+      "name": "micron",
+      "page": 19
+    },
+    {
+      "name": "micron",
+      "page": 20
+    },
+    {
+      "name": "micron",
+      "page": 21
+    },
+    {
+      "name": "sk-hynix",
+      "page": 1
+    },
+    {
+      "name": "sk-hynix",
+      "page": 2
+    },
+    {
+      "name": "sk-hynix",
+      "page": 3
+    },
+    {
+      "name": "sk-hynix",
+      "page": 4
+    },
+    {
+      "name": "sk-hynix",
+      "page": 5
+    },
+    {
+      "name": "sk-hynix",
+      "page": 6
+    },
+    {
+      "name": "sk-hynix",
+      "page": 7
+    },
+    {
+      "name": "sk-hynix",
+      "page": 8
+    },
+    {
+      "name": "sk-hynix",
+      "page": 9
+    },
+    {
+      "name": "sk-hynix",
+      "page": 10
+    },
+    {
+      "name": "sk-hynix",
+      "page": 11
+    },
+    {
+      "name": "sk-hynix",
+      "page": 12
+    },
+    {
+      "name": "sk-hynix",
+      "page": 13
+    },
+    {
+      "name": "sk-hynix",
+      "page": 14
+    },
+    {
+      "name": "sk-hynix",
+      "page": 15
+    },
+    {
+      "name": "sk-hynix",
+      "page": 16
+    },
+    {
+      "name": "sk-hynix",
+      "page": 17
+    },
+    {
+      "name": "sk-hynix",
+      "page": 18
+    },
+    {
+      "name": "microsoft",
+      "page": 1
+    },
+    {
+      "name": "microsoft",
+      "page": 2
+    },
+    {
+      "name": "microsoft",
+      "page": 3
+    },
+    {
+      "name": "microsoft",
+      "page": 4
+    },
+    {
+      "name": "microsoft",
+      "page": 5
+    },
+    {
+      "name": "microsoft",
+      "page": 6
+    },
+    {
+      "name": "microsoft",
+      "page": 7
+    },
+    {
+      "name": "microsoft",
+      "page": 8
+    },
+    {
+      "name": "microsoft",
+      "page": 9
+    },
+    {
+      "name": "microsoft",
+      "page": 10
+    },
+    {
+      "name": "microsoft",
+      "page": 11
+    },
+    {
+      "name": "microsoft",
+      "page": 12
+    },
+    {
+      "name": "microsoft",
+      "page": 13
+    },
+    {
+      "name": "microsoft",
+      "page": 14
+    },
+    {
+      "name": "microsoft",
+      "page": 15
+    },
+    {
+      "name": "microsoft",
+      "page": 16
+    },
+    {
+      "name": "microsoft",
+      "page": 17
+    },
+    {
+      "name": "microsoft",
+      "page": 18
+    },
+    {
+      "name": "microsoft",
+      "page": 19
+    },
+    {
+      "name": "amazon",
+      "page": 1
+    },
+    {
+      "name": "amazon",
+      "page": 2
+    },
+    {
+      "name": "amazon",
+      "page": 3
+    },
+    {
+      "name": "amazon",
+      "page": 4
+    },
+    {
+      "name": "amazon",
+      "page": 5
+    },
+    {
+      "name": "amazon",
+      "page": 6
+    },
+    {
+      "name": "amazon",
+      "page": 7
+    },
+    {
+      "name": "amazon",
+      "page": 8
+    },
+    {
+      "name": "amazon",
+      "page": 9
+    },
+    {
+      "name": "amazon",
+      "page": 10
+    },
+    {
+      "name": "amazon",
+      "page": 11
+    },
+    {
+      "name": "amazon",
+      "page": 12
+    },
+    {
+      "name": "amazon",
+      "page": 13
+    },
+    {
+      "name": "amazon",
+      "page": 14
+    },
+    {
+      "name": "amazon",
+      "page": 15
+    },
+    {
+      "name": "amazon",
+      "page": 16
+    },
+    {
+      "name": "amazon",
+      "page": 17
+    },
+    {
+      "name": "amazon",
+      "page": 18
+    },
+    {
+      "name": "amazon",
+      "page": 19
+    },
+    {
+      "name": "amazon",
+      "page": 20
+    },
+    {
+      "name": "kia",
+      "page": 1
+    },
+    {
+      "name": "kia",
+      "page": 2
+    },
+    {
+      "name": "kia",
+      "page": 3
+    },
+    {
+      "name": "kia",
+      "page": 4
+    },
+    {
+      "name": "kia",
+      "page": 5
+    },
+    {
+      "name": "kia",
+      "page": 6
+    },
+    {
+      "name": "kia",
+      "page": 7
+    },
+    {
+      "name": "kia",
+      "page": 8
+    },
+    {
+      "name": "kia",
+      "page": 9
+    },
+    {
+      "name": "kia",
+      "page": 10
+    },
+    {
+      "name": "kia",
+      "page": 11
+    },
+    {
+      "name": "kia",
+      "page": 12
+    },
+    {
+      "name": "kia",
+      "page": 13
+    },
+    {
+      "name": "kia",
+      "page": 14
+    },
+    {
+      "name": "kia",
+      "page": 15
+    },
+    {
+      "name": "kia",
+      "page": 16
+    },
+    {
+      "name": "kia",
+      "page": 17
+    },
+    {
+      "name": "tesla",
+      "page": 1
+    },
+    {
+      "name": "tesla",
+      "page": 2
+    },
+    {
+      "name": "tesla",
+      "page": 3
+    },
+    {
+      "name": "tesla",
+      "page": 4
+    },
+    {
+      "name": "tesla",
+      "page": 5
+    },
+    {
+      "name": "tesla",
+      "page": 6
+    },
+    {
+      "name": "tesla",
+      "page": 7
+    },
+    {
+      "name": "tesla",
+      "page": 8
+    },
+    {
+      "name": "tesla",
+      "page": 9
+    },
+    {
+      "name": "tesla",
+      "page": 10
+    },
+    {
+      "name": "tesla",
+      "page": 11
+    },
+    {
+      "name": "tesla",
+      "page": 12
+    },
+    {
+      "name": "tesla",
+      "page": 13
+    },
+    {
+      "name": "tesla",
+      "page": 14
+    },
+    {
+      "name": "tesla",
+      "page": 15
+    },
+    {
+      "name": "tesla",
+      "page": 16
+    },
+    {
+      "name": "tesla",
+      "page": 17
+    },
+    {
+      "name": "comparison-auto",
+      "page": 1
+    },
+    {
+      "name": "comparison-auto",
+      "page": 2
+    },
+    {
+      "name": "comparison-auto",
+      "page": 3
+    },
+    {
+      "name": "comparison-auto",
+      "page": 4
+    },
+    {
+      "name": "comparison-cloud",
+      "page": 1
+    },
+    {
+      "name": "comparison-cloud",
+      "page": 2
+    },
+    {
+      "name": "comparison-cloud",
+      "page": 3
+    },
+    {
+      "name": "comparison-cloud",
+      "page": 4
+    },
+    {
+      "name": "comparison-equipment",
+      "page": 1
+    },
+    {
+      "name": "comparison-equipment",
+      "page": 2
+    },
+    {
+      "name": "intel",
+      "page": 1
+    },
+    {
+      "name": "intel",
+      "page": 2
+    },
+    {
+      "name": "intel",
+      "page": 3
+    },
+    {
+      "name": "intel",
+      "page": 4
+    },
+    {
+      "name": "intel",
+      "page": 5
+    },
+    {
+      "name": "intel",
+      "page": 6
+    },
+    {
+      "name": "intel",
+      "page": 7
+    },
+    {
+      "name": "intel",
+      "page": 8
+    },
+    {
+      "name": "intel",
+      "page": 9
+    },
+    {
+      "name": "intel",
+      "page": 10
+    },
+    {
+      "name": "intel",
+      "page": 11
+    },
+    {
+      "name": "intel",
+      "page": 12
+    },
+    {
+      "name": "intel",
+      "page": 13
+    },
+    {
+      "name": "intel",
+      "page": 14
+    },
+    {
+      "name": "qualcomm",
+      "page": 1
+    },
+    {
+      "name": "qualcomm",
+      "page": 2
+    },
+    {
+      "name": "qualcomm",
+      "page": 3
+    },
+    {
+      "name": "qualcomm",
+      "page": 4
+    },
+    {
+      "name": "qualcomm",
+      "page": 5
+    },
+    {
+      "name": "qualcomm",
+      "page": 6
+    },
+    {
+      "name": "qualcomm",
+      "page": 7
+    },
+    {
+      "name": "qualcomm",
+      "page": 8
+    },
+    {
+      "name": "qualcomm",
+      "page": 9
+    },
+    {
+      "name": "qualcomm",
+      "page": 10
+    },
+    {
+      "name": "qualcomm",
+      "page": 11
+    },
+    {
+      "name": "qualcomm",
+      "page": 12
+    },
+    {
+      "name": "qualcomm",
+      "page": 13
+    },
+    {
+      "name": "qualcomm",
+      "page": 14
+    },
+    {
+      "name": "qualcomm",
+      "page": 15
+    },
+    {
+      "name": "qualcomm",
+      "page": 16
+    },
+    {
+      "name": "hyundai",
+      "page": 1
+    },
+    {
+      "name": "hyundai",
+      "page": 2
+    },
+    {
+      "name": "hyundai",
+      "page": 3
+    },
+    {
+      "name": "hyundai",
+      "page": 4
+    },
+    {
+      "name": "hyundai",
+      "page": 5
+    },
+    {
+      "name": "hyundai",
+      "page": 6
+    },
+    {
+      "name": "hyundai",
+      "page": 7
+    },
+    {
+      "name": "hyundai",
+      "page": 8
+    },
+    {
+      "name": "hyundai",
+      "page": 9
+    },
+    {
+      "name": "hyundai",
+      "page": 10
+    },
+    {
+      "name": "hyundai",
+      "page": 11
+    },
+    {
+      "name": "hyundai",
+      "page": 12
+    },
+    {
+      "name": "hyundai",
+      "page": 13
+    },
+    {
+      "name": "hyundai",
+      "page": 14
+    },
+    {
+      "name": "hyundai",
+      "page": 15
+    },
+    {
+      "name": "samsung-biologics",
+      "page": 1
+    },
+    {
+      "name": "samsung-biologics",
+      "page": 2
+    },
+    {
+      "name": "samsung-biologics",
+      "page": 3
+    },
+    {
+      "name": "samsung-biologics",
+      "page": 4
+    },
+    {
+      "name": "samsung-biologics",
+      "page": 5
+    },
+    {
+      "name": "samsung-biologics",
+      "page": 6
+    },
+    {
+      "name": "samsung-biologics",
+      "page": 7
+    },
+    {
+      "name": "samsung-biologics",
+      "page": 8
+    },
+    {
+      "name": "samsung-biologics",
+      "page": 9
+    },
+    {
+      "name": "samsung-biologics",
+      "page": 10
+    },
+    {
+      "name": "samsung-biologics",
+      "page": 11
+    },
+    {
+      "name": "samsung-biologics",
+      "page": 12
+    },
+    {
+      "name": "samsung-biologics",
+      "page": 13
+    },
+    {
+      "name": "samsung-biologics",
+      "page": 14
+    },
+    {
+      "name": "samsung-biologics",
+      "page": 15
+    },
+    {
+      "name": "samsung-biologics",
+      "page": 16
+    },
+    {
+      "name": "research-us",
+      "page": 1
+    },
+    {
+      "name": "research-us",
+      "page": 2
+    },
+    {
+      "name": "research-us",
+      "page": 3
+    },
+    {
+      "name": "research-us",
+      "page": 4
+    },
+    {
+      "name": "research-kr",
+      "page": 1
+    },
+    {
+      "name": "research-kr",
+      "page": 2
+    },
+    {
+      "name": "research-kr",
+      "page": 3
+    },
+    {
+      "name": "research-kr",
+      "page": 4
+    },
+    {
+      "name": "conditions",
+      "page": 1
+    },
+    {
+      "name": "conditions",
+      "page": 2
+    },
+    {
+      "name": "conditions",
+      "page": 3
+    },
+    {
+      "name": "conditions",
+      "page": 4
+    },
+    {
+      "name": "conditions",
+      "page": 5
+    },
+    {
+      "name": "conditions",
+      "page": 6
+    },
+    {
+      "name": "conditions",
+      "page": 7
+    },
+    {
+      "name": "conditions",
+      "page": 8
+    }
+  ],
+  "comparisonUse": "NOT USED to classify body changes: crop retained version-footer pixels. All final 203 pages were directly reviewed on contact sheets; use visual-verification-2bb999321f8e.json."
+}

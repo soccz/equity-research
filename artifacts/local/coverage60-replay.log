@@ -1,0 +1,15 @@
+Traceback (most recent call last):
+  File "/mnt/20t/주식/scripts/check-replay.py", line 45, in <module>
+    completed = subprocess.run(
+                ^^^^^^^^^^^^^^^
+  File "/home/soccz/.pyenv/versions/3.12.9/lib/python3.12/subprocess.py", line 552, in run
+    stdout, stderr = process.communicate(input, timeout=timeout)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/soccz/.pyenv/versions/3.12.9/lib/python3.12/subprocess.py", line 1211, in communicate
+    stdout, stderr = self._communicate(input, endtime, timeout)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/soccz/.pyenv/versions/3.12.9/lib/python3.12/subprocess.py", line 2124, in _communicate
+    self._check_timeout(endtime, orig_timeout, stdout, stderr)
+  File "/home/soccz/.pyenv/versions/3.12.9/lib/python3.12/subprocess.py", line 1255, in _check_timeout
+    raise TimeoutExpired(
+subprocess.TimeoutExpired: Command '['/home/soccz/.pyenv/versions/3.12.9/bin/python3', '-m', 'equitylab', 'refresh', '--as-of', '2026-09-29']' timed out after 120 seconds

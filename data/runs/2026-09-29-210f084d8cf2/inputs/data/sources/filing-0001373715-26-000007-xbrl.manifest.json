@@ -1,0 +1,15 @@
+{
+  "file": "data/sources/filing-0001373715-26-000007-b67e8c17103e380f.xbrl",
+  "sha256": "b67e8c17103e380fd12c4de581597b952c5dd186d03e22d6333b154a8d21e923",
+  "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000007/now-20251231_htm.xml",
+  "primaryUrl": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000007/now-20251231.htm",
+  "provider": "SEC",
+  "accession": "0001373715-26-000007",
+  "cik": 1373715,
+  "retrievedAt": "2026-10-01T19:25:59.249392+00:00",
+  "indexSource": {
+    "file": "data/sources/filing-0001373715-26-000007-index-074048f9bef41f6f.html",
+    "sha256": "074048f9bef41f6f2a39fd8cdac952eec06ee38c12f7c2c46dec8199607a303c",
+    "url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000007/0001373715-26-000007-index.html"
+  }
+}

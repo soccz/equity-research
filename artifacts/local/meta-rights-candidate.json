@@ -1,0 +1,166 @@
+{
+  "shares": {
+    "value": 2547506225.0,
+    "end": "2026-07-24",
+    "start": null,
+    "unit": "shares",
+    "derived": true,
+    "tag": "EqualDividendLiquidationShares",
+    "accession": "0001628280-26-050705",
+    "filedAt": "2026-07-30",
+    "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026050705/meta-20260630.htm",
+    "sourceFile": "data/sources/filing-0001628280-26-050705-e5666644af7c69de.html",
+    "sourceHash": "e5666644af7c69de3081f0747dd19ef52e7abf0593fbf6fc7fa2a94c907af330",
+    "components": [
+      {
+        "coefficient": 1,
+        "fact": {
+          "start": null,
+          "end": "2026-07-24",
+          "dimensions": [
+            [
+              "StatementClassOfStockAxis",
+              "CommonClassAMember"
+            ]
+          ],
+          "tag": "EntityCommonStockSharesOutstanding",
+          "taxonomy": "http://xbrl.sec.gov/dei/2026",
+          "value": 2205128509.0,
+          "unit": "shares",
+          "context": "c-2",
+          "factId": "f-24",
+          "decimals": "INF",
+          "accession": "0001628280-26-050705",
+          "filedAt": "2026-07-30",
+          "sourceFile": "data/sources/filing-0001628280-26-050705-6716e6b0f4978717.xbrl",
+          "sourceHash": "6716e6b0f4978717e019177bc8275ac8ea17fea03b9db7c08a0c4818e7866ba8",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026050705/meta-20260630.htm"
+        }
+      },
+      {
+        "coefficient": 1,
+        "fact": {
+          "start": null,
+          "end": "2026-07-24",
+          "dimensions": [
+            [
+              "StatementClassOfStockAxis",
+              "CommonClassBMember"
+            ]
+          ],
+          "tag": "EntityCommonStockSharesOutstanding",
+          "taxonomy": "http://xbrl.sec.gov/dei/2026",
+          "value": 342377716.0,
+          "unit": "shares",
+          "context": "c-3",
+          "factId": "f-25",
+          "decimals": "INF",
+          "accession": "0001628280-26-050705",
+          "filedAt": "2026-07-30",
+          "sourceFile": "data/sources/filing-0001628280-26-050705-6716e6b0f4978717.xbrl",
+          "sourceHash": "6716e6b0f4978717e019177bc8275ac8ea17fea03b9db7c08a0c4818e7866ba8",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026050705/meta-20260630.htm"
+        }
+      }
+    ],
+    "scope": "A·B주 배당·청산권이 동일하다는 공시 범위에서 합산 주식수당 현금을 A주 종가와 비교합니다. B주의 시장가격이나 의결권 가치를 같다고 평가한 것이 아니며, A주 가격×합산 수량은 비교용 대용치입니다."
+  },
+  "evidence": {
+    "accession": "0001628280-26-050705",
+    "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026050705/meta-20260630.htm",
+    "sourceHash": "e5666644af7c69de3081f0747dd19ef52e7abf0593fbf6fc7fa2a94c907af330",
+    "passages": [
+      {
+        "text": "Class A Common Stock | $0.000006 par value | 2,205,128,509 | | shares outstanding as of July 24, 2026",
+        "heading": "",
+        "kind": "table",
+        "ordinal": 24,
+        "id": "e44fc174cbd82ef498f0"
+      },
+      {
+        "text": "Class B Common Stock | $0.000006 par value | 342,377,716 | | shares outstanding as of July 24, 2026",
+        "heading": "",
+        "kind": "table",
+        "ordinal": 25,
+        "id": "6e127dc058b2f3e3a137"
+      },
+      {
+        "text": "The holders of our Class A and Class B common stock (together, \"common stock\") have identical liquidation and dividend rights but different voting rights. Accordingly, we present the earnings per share (EPS) for Class A and Class B common stock together.",
+        "heading": "",
+        "kind": "paragraph",
+        "ordinal": 210,
+        "id": "3022fd9eb0ff812a2bc2"
+      },
+      {
+        "text": "Basic EPS is computed by dividing net income by the weighted-average number of shares of our common stock outstanding. Diluted EPS is computed by dividing net income by the weighted-average number of fully diluted common stock outstanding and assumes the conversion of our Class B common stock to Class A common stock.",
+        "heading": "",
+        "kind": "paragraph",
+        "ordinal": 211,
+        "id": "aa9d41d664812c529ad2"
+      },
+      {
+        "text": "EPS for Class B common stock is not presented separately as under the two-class method Class A and Class B EPS is not meaningfully different.",
+        "heading": "",
+        "kind": "paragraph",
+        "ordinal": 223,
+        "id": "c3b61db11ff9b41f22fa"
+      }
+    ],
+    "quote": "The holders of our Class A and Class B common stock (together, \"common stock\") have identical liquidation and dividend rights but different voting rights. Accordingly, we present the earnings per share (EPS) for Class A and Class B common stock together.",
+    "assumption": "A·B주 배당·청산권이 동일하다는 공시 범위에서 합산 주식수당 현금을 A주 종가와 비교합니다. B주의 시장가격이나 의결권 가치를 같다고 평가한 것이 아니며, A주 가격×합산 수량은 비교용 대용치입니다.",
+    "classes": [
+      {
+        "label": "Class A",
+        "fact": {
+          "start": null,
+          "end": "2026-07-24",
+          "dimensions": [
+            [
+              "StatementClassOfStockAxis",
+              "CommonClassAMember"
+            ]
+          ],
+          "tag": "EntityCommonStockSharesOutstanding",
+          "taxonomy": "http://xbrl.sec.gov/dei/2026",
+          "value": 2205128509.0,
+          "unit": "shares",
+          "context": "c-2",
+          "factId": "f-24",
+          "decimals": "INF",
+          "accession": "0001628280-26-050705",
+          "filedAt": "2026-07-30",
+          "sourceFile": "data/sources/filing-0001628280-26-050705-6716e6b0f4978717.xbrl",
+          "sourceHash": "6716e6b0f4978717e019177bc8275ac8ea17fea03b9db7c08a0c4818e7866ba8",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026050705/meta-20260630.htm"
+        }
+      },
+      {
+        "label": "Class B",
+        "fact": {
+          "start": null,
+          "end": "2026-07-24",
+          "dimensions": [
+            [
+              "StatementClassOfStockAxis",
+              "CommonClassBMember"
+            ]
+          ],
+          "tag": "EntityCommonStockSharesOutstanding",
+          "taxonomy": "http://xbrl.sec.gov/dei/2026",
+          "value": 342377716.0,
+          "unit": "shares",
+          "context": "c-3",
+          "factId": "f-25",
+          "decimals": "INF",
+          "accession": "0001628280-26-050705",
+          "filedAt": "2026-07-30",
+          "sourceFile": "data/sources/filing-0001628280-26-050705-6716e6b0f4978717.xbrl",
+          "sourceHash": "6716e6b0f4978717e019177bc8275ac8ea17fea03b9db7c08a0c4818e7866ba8",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026050705/meta-20260630.htm"
+        }
+      }
+    ],
+    "evidenceHash": "554586b91fca06def793d57bdfe62505bcd3ed5819ea5a9e0a2170670c3ef37e"
+  },
+  "assumption": "A·B주 배당·청산권이 동일하다는 공시 범위에서 합산 주식수당 현금을 A주 종가와 비교합니다. B주의 시장가격이나 의결권 가치를 같다고 평가한 것이 아니며, A주 가격×합산 수량은 비교용 대용치입니다."
+}

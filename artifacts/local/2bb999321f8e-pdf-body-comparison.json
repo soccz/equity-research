@@ -1,0 +1,3258 @@
+{
+  "snapshotHash": "2bb999321f8e327f9f5aac3635e8d84366946e3312e02eecd3c8bbd704403aeb",
+  "baseline": "artifacts/local/pdf-body-before-driver-unit.json",
+  "method": "Actual PDF pixels excluding the bottom 38pt version footer compared with all 203 previously viewed pages; changed pages rendered for fresh visual review.",
+  "pages": [
+    {
+      "file": "qualcomm.pdf",
+      "page": 1,
+      "pdfHash": "f992b8160fef8afb3d26d45b267c6874229a42c01cf0df532c02eb6d656b2e26",
+      "bodyPixelHash": "86bdd7779a5311074f792bf327484111c24d7fcf9f964965d069381440ff3cf4",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-qualcomm-review-1.png"
+    },
+    {
+      "file": "qualcomm.pdf",
+      "page": 2,
+      "pdfHash": "f992b8160fef8afb3d26d45b267c6874229a42c01cf0df532c02eb6d656b2e26",
+      "bodyPixelHash": "7c9621f760f987b0881fe121cb263fc76531d40ee962cf3aef239bd80e31da5c",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-qualcomm-review-2.png"
+    },
+    {
+      "file": "qualcomm.pdf",
+      "page": 3,
+      "pdfHash": "f992b8160fef8afb3d26d45b267c6874229a42c01cf0df532c02eb6d656b2e26",
+      "bodyPixelHash": "11715be0774e177ab5f6fb1f53792cbf8d48a971d610063f83ab391fc4e70817",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-qualcomm-review-3.png"
+    },
+    {
+      "file": "qualcomm.pdf",
+      "page": 4,
+      "pdfHash": "f992b8160fef8afb3d26d45b267c6874229a42c01cf0df532c02eb6d656b2e26",
+      "bodyPixelHash": "f6821419d8c107540d5ea28870f413caed619189b374e07e210eebdb86a95d70",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-qualcomm-review-4.png"
+    },
+    {
+      "file": "qualcomm.pdf",
+      "page": 5,
+      "pdfHash": "f992b8160fef8afb3d26d45b267c6874229a42c01cf0df532c02eb6d656b2e26",
+      "bodyPixelHash": "84499084db820536320da5e7a652592ffb3d846c527432e918198fd2452b22ea",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-qualcomm-review-5.png"
+    },
+    {
+      "file": "qualcomm.pdf",
+      "page": 6,
+      "pdfHash": "f992b8160fef8afb3d26d45b267c6874229a42c01cf0df532c02eb6d656b2e26",
+      "bodyPixelHash": "ab3a7305c1efe599bcd650a176bd60f42e0bc587a5b7ab5ca111b5d51bd136b7",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-qualcomm-review-6.png"
+    },
+    {
+      "file": "qualcomm.pdf",
+      "page": 7,
+      "pdfHash": "f992b8160fef8afb3d26d45b267c6874229a42c01cf0df532c02eb6d656b2e26",
+      "bodyPixelHash": "e4c81f2944949dae9c9445b6117506884f67a944a54a3d073da530ef00982301",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-qualcomm-review-7.png"
+    },
+    {
+      "file": "qualcomm.pdf",
+      "page": 8,
+      "pdfHash": "f992b8160fef8afb3d26d45b267c6874229a42c01cf0df532c02eb6d656b2e26",
+      "bodyPixelHash": "142d8f7bcfad480fb085f45d76924c8307a7040e6320fbad220da4786a45e1e1",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-qualcomm-review-8.png"
+    },
+    {
+      "file": "qualcomm.pdf",
+      "page": 9,
+      "pdfHash": "f992b8160fef8afb3d26d45b267c6874229a42c01cf0df532c02eb6d656b2e26",
+      "bodyPixelHash": "6ed2d8dbc343de34c3867fcb051b1fe727f1fae15f262bb9458375ac815bc0ba",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-qualcomm-review-9.png"
+    },
+    {
+      "file": "qualcomm.pdf",
+      "page": 10,
+      "pdfHash": "f992b8160fef8afb3d26d45b267c6874229a42c01cf0df532c02eb6d656b2e26",
+      "bodyPixelHash": "8b205cd43f5937d7512b9494c6d44b5db5fa58ee17dedb6b10d64431c75bb3ff",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-qualcomm-review-10.png"
+    },
+    {
+      "file": "qualcomm.pdf",
+      "page": 11,
+      "pdfHash": "f992b8160fef8afb3d26d45b267c6874229a42c01cf0df532c02eb6d656b2e26",
+      "bodyPixelHash": "b07e3991f422d54a8304d5639c0197420d7fa576e25a07eca82be45a35f1a89c",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-qualcomm-review-11.png"
+    },
+    {
+      "file": "qualcomm.pdf",
+      "page": 12,
+      "pdfHash": "f992b8160fef8afb3d26d45b267c6874229a42c01cf0df532c02eb6d656b2e26",
+      "bodyPixelHash": "342884da405b74d548d87de20ab79d6f7c359099e63011de69bd5d886b0088ea",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-qualcomm-review-12.png"
+    },
+    {
+      "file": "qualcomm.pdf",
+      "page": 13,
+      "pdfHash": "f992b8160fef8afb3d26d45b267c6874229a42c01cf0df532c02eb6d656b2e26",
+      "bodyPixelHash": "7f85340dafc43d28bf726b7cb0d01eee8f8aafbb599f03f475d2eecd6acd6da3",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-qualcomm-review-13.png"
+    },
+    {
+      "file": "qualcomm.pdf",
+      "page": 14,
+      "pdfHash": "f992b8160fef8afb3d26d45b267c6874229a42c01cf0df532c02eb6d656b2e26",
+      "bodyPixelHash": "c63d8862bb1b1f35fbc2aab319a2dadaa0665a79b8e28c9159f5d48c423d2abf",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-qualcomm-review-14.png"
+    },
+    {
+      "file": "qualcomm.pdf",
+      "page": 15,
+      "pdfHash": "f992b8160fef8afb3d26d45b267c6874229a42c01cf0df532c02eb6d656b2e26",
+      "bodyPixelHash": "1a9462a27ade96d68775509ca9b6d17b02eecc0907034f14fe844189cedfd096",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-qualcomm-review-15.png"
+    },
+    {
+      "file": "qualcomm.pdf",
+      "page": 16,
+      "pdfHash": "f992b8160fef8afb3d26d45b267c6874229a42c01cf0df532c02eb6d656b2e26",
+      "bodyPixelHash": "78aba70e125348b4c323fc37a1631bb1f27a2711e788e7d43db6671472e2cd00",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-qualcomm-review-16.png"
+    },
+    {
+      "file": "samsung-biologics.pdf",
+      "page": 1,
+      "pdfHash": "28f195893d65710dbb07e729a5372bbd1b0a5073819c1666a5d072cdbae54041",
+      "bodyPixelHash": "cba4e49f60fe580ed172db690fb43542fb1c2f8039b21957387a371c85672eec",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-samsung-biologics-review-1.png"
+    },
+    {
+      "file": "samsung-biologics.pdf",
+      "page": 2,
+      "pdfHash": "28f195893d65710dbb07e729a5372bbd1b0a5073819c1666a5d072cdbae54041",
+      "bodyPixelHash": "57b333291128b76b4ed7b99f949723f94312c972fd1062409eb027e2c4ff200b",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-samsung-biologics-review-2.png"
+    },
+    {
+      "file": "samsung-biologics.pdf",
+      "page": 3,
+      "pdfHash": "28f195893d65710dbb07e729a5372bbd1b0a5073819c1666a5d072cdbae54041",
+      "bodyPixelHash": "d703ddb78a37f7df9781f546697c547895d248c6c74dd5de05254c64fac43218",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-samsung-biologics-review-3.png"
+    },
+    {
+      "file": "samsung-biologics.pdf",
+      "page": 4,
+      "pdfHash": "28f195893d65710dbb07e729a5372bbd1b0a5073819c1666a5d072cdbae54041",
+      "bodyPixelHash": "02e2b0628d5ca6277054c2f319edeca8def8c73c1ddf99d8d79291368baffe01",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-samsung-biologics-review-4.png"
+    },
+    {
+      "file": "samsung-biologics.pdf",
+      "page": 5,
+      "pdfHash": "28f195893d65710dbb07e729a5372bbd1b0a5073819c1666a5d072cdbae54041",
+      "bodyPixelHash": "f8ec66a9f316b02481c3738a64e730455948483037b889cf2ef1bd5dcac384d2",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-samsung-biologics-review-5.png"
+    },
+    {
+      "file": "samsung-biologics.pdf",
+      "page": 6,
+      "pdfHash": "28f195893d65710dbb07e729a5372bbd1b0a5073819c1666a5d072cdbae54041",
+      "bodyPixelHash": "13c2687e97d928990ce010d91576d846ed16622cb43e1daa6087fe7a8fbfea90",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-samsung-biologics-review-6.png"
+    },
+    {
+      "file": "samsung-biologics.pdf",
+      "page": 7,
+      "pdfHash": "28f195893d65710dbb07e729a5372bbd1b0a5073819c1666a5d072cdbae54041",
+      "bodyPixelHash": "87e8586742e9aad1a2b28fb625484e8009873000a26eb94c874d48f098f1f67d",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-samsung-biologics-review-7.png"
+    },
+    {
+      "file": "samsung-biologics.pdf",
+      "page": 8,
+      "pdfHash": "28f195893d65710dbb07e729a5372bbd1b0a5073819c1666a5d072cdbae54041",
+      "bodyPixelHash": "62d926427646f9a261cc98fca3da7cd7359fdd2be19aa7d6e4db81c30b8c4f88",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-samsung-biologics-review-8.png"
+    },
+    {
+      "file": "samsung-biologics.pdf",
+      "page": 9,
+      "pdfHash": "28f195893d65710dbb07e729a5372bbd1b0a5073819c1666a5d072cdbae54041",
+      "bodyPixelHash": "8e150ad7ab5dafc7f30500b9e7ef719ef5fdb761fb180de4801c711e3ca49e34",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-samsung-biologics-review-9.png"
+    },
+    {
+      "file": "samsung-biologics.pdf",
+      "page": 10,
+      "pdfHash": "28f195893d65710dbb07e729a5372bbd1b0a5073819c1666a5d072cdbae54041",
+      "bodyPixelHash": "511247c204d7894e05fc8f3d4e48b5b0d1ad161430c852a63d22d1542f8d83c2",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-samsung-biologics-review-10.png"
+    },
+    {
+      "file": "samsung-biologics.pdf",
+      "page": 11,
+      "pdfHash": "28f195893d65710dbb07e729a5372bbd1b0a5073819c1666a5d072cdbae54041",
+      "bodyPixelHash": "fc3bd5ca38a505e6c0ccd46e292790a4bfe6471f37f79a617d23b3ec90e5b5c3",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-samsung-biologics-review-11.png"
+    },
+    {
+      "file": "samsung-biologics.pdf",
+      "page": 12,
+      "pdfHash": "28f195893d65710dbb07e729a5372bbd1b0a5073819c1666a5d072cdbae54041",
+      "bodyPixelHash": "4e9d4e88c16e9d42e96f4def47844c80ce7415c9acac8d5545b8f48da1ca82d7",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-samsung-biologics-review-12.png"
+    },
+    {
+      "file": "samsung-biologics.pdf",
+      "page": 13,
+      "pdfHash": "28f195893d65710dbb07e729a5372bbd1b0a5073819c1666a5d072cdbae54041",
+      "bodyPixelHash": "aa7187a2b354c968f38504ebcad9097c341ff6c928122467720998f3a3498ab6",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-samsung-biologics-review-13.png"
+    },
+    {
+      "file": "samsung-biologics.pdf",
+      "page": 14,
+      "pdfHash": "28f195893d65710dbb07e729a5372bbd1b0a5073819c1666a5d072cdbae54041",
+      "bodyPixelHash": "3d06bfa3898167fcae20f28a34b11ce1e3c56d5904481bb733baa6dd96ab8eb3",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-samsung-biologics-review-14.png"
+    },
+    {
+      "file": "samsung-biologics.pdf",
+      "page": 15,
+      "pdfHash": "28f195893d65710dbb07e729a5372bbd1b0a5073819c1666a5d072cdbae54041",
+      "bodyPixelHash": "472ccb8aba6d56cdfd63da29a09d4457bc43902a2ae97976e1bbf51b8ecc44cb",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-samsung-biologics-review-15.png"
+    },
+    {
+      "file": "samsung-biologics.pdf",
+      "page": 16,
+      "pdfHash": "28f195893d65710dbb07e729a5372bbd1b0a5073819c1666a5d072cdbae54041",
+      "bodyPixelHash": "6c7ca837a8bd72c21d786edfdefa6798d1388efcf5586a167863b1be153c515b",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-samsung-biologics-review-16.png"
+    },
+    {
+      "file": "microsoft.pdf",
+      "page": 1,
+      "pdfHash": "81c840135a0ba539c28ddd96240c4048c39dc3eb1f7139379632099f6f139e10",
+      "bodyPixelHash": "9581dd778608134b756d29d9773a4cab49950d2995259bc63d1e5fe011fff885",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-microsoft-review-1.png"
+    },
+    {
+      "file": "microsoft.pdf",
+      "page": 2,
+      "pdfHash": "81c840135a0ba539c28ddd96240c4048c39dc3eb1f7139379632099f6f139e10",
+      "bodyPixelHash": "8630be1542ca51101d2809e6c513d8270d9617de89443e41c60ae604c42c2ed9",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-microsoft-review-2.png"
+    },
+    {
+      "file": "microsoft.pdf",
+      "page": 3,
+      "pdfHash": "81c840135a0ba539c28ddd96240c4048c39dc3eb1f7139379632099f6f139e10",
+      "bodyPixelHash": "96e675d1dda8f12409bcc2c2d7a02dda6a835949f8a4dfc26395619a1102ebef",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-microsoft-review-3.png"
+    },
+    {
+      "file": "microsoft.pdf",
+      "page": 4,
+      "pdfHash": "81c840135a0ba539c28ddd96240c4048c39dc3eb1f7139379632099f6f139e10",
+      "bodyPixelHash": "71cf7b127742805ac31d4f5d361dff1dcd9c98f9f653e933edfde3b607f92c78",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-microsoft-review-4.png"
+    },
+    {
+      "file": "microsoft.pdf",
+      "page": 5,
+      "pdfHash": "81c840135a0ba539c28ddd96240c4048c39dc3eb1f7139379632099f6f139e10",
+      "bodyPixelHash": "e1bd948b69d409341acb300cb6d42b1af1cf1835e8d6cc0416c6f7b169034c49",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-microsoft-review-5.png"
+    },
+    {
+      "file": "microsoft.pdf",
+      "page": 6,
+      "pdfHash": "81c840135a0ba539c28ddd96240c4048c39dc3eb1f7139379632099f6f139e10",
+      "bodyPixelHash": "7e52d1f063ad7339aaf3bc60cdf680f9b51fea3bca99ae0fb719c71a32fc59d0",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-microsoft-review-6.png"
+    },
+    {
+      "file": "microsoft.pdf",
+      "page": 7,
+      "pdfHash": "81c840135a0ba539c28ddd96240c4048c39dc3eb1f7139379632099f6f139e10",
+      "bodyPixelHash": "5f8e0be20e987f645247a192972b8425a4aebc5969afafc10b9c528fb78c919f",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-microsoft-review-7.png"
+    },
+    {
+      "file": "microsoft.pdf",
+      "page": 8,
+      "pdfHash": "81c840135a0ba539c28ddd96240c4048c39dc3eb1f7139379632099f6f139e10",
+      "bodyPixelHash": "519b1e2e6fb1be4deae1a2fdd0a16b7b6b9de62d8ba526c529a0efc05f6af9a7",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-microsoft-review-8.png"
+    },
+    {
+      "file": "microsoft.pdf",
+      "page": 9,
+      "pdfHash": "81c840135a0ba539c28ddd96240c4048c39dc3eb1f7139379632099f6f139e10",
+      "bodyPixelHash": "70e5ec6513cb29041e421a42043bb2d79b6948a36c83fa27aad69b7af7eb1166",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-microsoft-review-9.png"
+    },
+    {
+      "file": "microsoft.pdf",
+      "page": 10,
+      "pdfHash": "81c840135a0ba539c28ddd96240c4048c39dc3eb1f7139379632099f6f139e10",
+      "bodyPixelHash": "ac033569d4fcb5e6b8da3adcaae347a78857a4296f5b8d3d1a0a58725e452a41",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-microsoft-review-10.png"
+    },
+    {
+      "file": "microsoft.pdf",
+      "page": 11,
+      "pdfHash": "81c840135a0ba539c28ddd96240c4048c39dc3eb1f7139379632099f6f139e10",
+      "bodyPixelHash": "aeba05d2ad781dd6c593bf0eaff652273a8675856f8c8224ef301b766c169a45",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-microsoft-review-11.png"
+    },
+    {
+      "file": "microsoft.pdf",
+      "page": 12,
+      "pdfHash": "81c840135a0ba539c28ddd96240c4048c39dc3eb1f7139379632099f6f139e10",
+      "bodyPixelHash": "f7f382688976bd14227e9f5edfa430a7d813e1bf71c829f298b150cf3b00e192",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-microsoft-review-12.png"
+    },
+    {
+      "file": "microsoft.pdf",
+      "page": 13,
+      "pdfHash": "81c840135a0ba539c28ddd96240c4048c39dc3eb1f7139379632099f6f139e10",
+      "bodyPixelHash": "ab888365e41b17dc130fbd27e20d0e5d9fffcce341f862954edf7e3ebe2aa617",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-microsoft-review-13.png"
+    },
+    {
+      "file": "microsoft.pdf",
+      "page": 14,
+      "pdfHash": "81c840135a0ba539c28ddd96240c4048c39dc3eb1f7139379632099f6f139e10",
+      "bodyPixelHash": "ce742dc54c14907e8eb5a6b05470a81bda2e754e18ea5c8787f6a44eb1231241",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-microsoft-review-14.png"
+    },
+    {
+      "file": "microsoft.pdf",
+      "page": 15,
+      "pdfHash": "81c840135a0ba539c28ddd96240c4048c39dc3eb1f7139379632099f6f139e10",
+      "bodyPixelHash": "4849a0629842222a6b73a3576ea55f33bc1cb41761ae9083f1818f33fae4e03f",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-microsoft-review-15.png"
+    },
+    {
+      "file": "microsoft.pdf",
+      "page": 16,
+      "pdfHash": "81c840135a0ba539c28ddd96240c4048c39dc3eb1f7139379632099f6f139e10",
+      "bodyPixelHash": "db24fc0ca65f145aed3c630a0a8c650e3ce4a514248697e8fa290abe37e48bdd",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-microsoft-review-16.png"
+    },
+    {
+      "file": "microsoft.pdf",
+      "page": 17,
+      "pdfHash": "81c840135a0ba539c28ddd96240c4048c39dc3eb1f7139379632099f6f139e10",
+      "bodyPixelHash": "1a9462a27ade96d68775509ca9b6d17b02eecc0907034f14fe844189cedfd096",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-microsoft-review-17.png"
+    },
+    {
+      "file": "microsoft.pdf",
+      "page": 18,
+      "pdfHash": "81c840135a0ba539c28ddd96240c4048c39dc3eb1f7139379632099f6f139e10",
+      "bodyPixelHash": "ed5f3c8f8fc638e94811fe82ed9095a33ad84fd2f4f001bb4ba7dd13cc91450b",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-microsoft-review-18.png"
+    },
+    {
+      "file": "microsoft.pdf",
+      "page": 19,
+      "pdfHash": "81c840135a0ba539c28ddd96240c4048c39dc3eb1f7139379632099f6f139e10",
+      "bodyPixelHash": "42088c2f207eb347d2351c089c566527db2799db77e9e85a95f1a70f0f4221b6",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-microsoft-review-19.png"
+    },
+    {
+      "file": "micron.pdf",
+      "page": 1,
+      "pdfHash": "f3c835f06a356c3ad1badf3923def7a2dec29cb375fc0d227358f584d424ab79",
+      "bodyPixelHash": "21cde394fd4d5ae279b56dbf68cdf4d87b98b78ed4096c236ca46345592ba679",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-micron-review-1.png"
+    },
+    {
+      "file": "micron.pdf",
+      "page": 2,
+      "pdfHash": "f3c835f06a356c3ad1badf3923def7a2dec29cb375fc0d227358f584d424ab79",
+      "bodyPixelHash": "0667163ec1d487d9331c844371e48a892ae07e5bf1b57e619cb1d5a2e54b076e",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-micron-review-2.png"
+    },
+    {
+      "file": "micron.pdf",
+      "page": 3,
+      "pdfHash": "f3c835f06a356c3ad1badf3923def7a2dec29cb375fc0d227358f584d424ab79",
+      "bodyPixelHash": "4c453df9cb7fb3cf98389606711354fedc13083b1f490135c7ccb2c376c83f3e",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-micron-review-3.png"
+    },
+    {
+      "file": "micron.pdf",
+      "page": 4,
+      "pdfHash": "f3c835f06a356c3ad1badf3923def7a2dec29cb375fc0d227358f584d424ab79",
+      "bodyPixelHash": "91c3fe2f8bf8676d75b78678f354059ede3cc44eb798ec73d3f7d5eff8381e65",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-micron-review-4.png"
+    },
+    {
+      "file": "micron.pdf",
+      "page": 5,
+      "pdfHash": "f3c835f06a356c3ad1badf3923def7a2dec29cb375fc0d227358f584d424ab79",
+      "bodyPixelHash": "5bf063fee5ed0b8f67f56332e057d38c180ea44732c77ad18248d7e3642d368e",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-micron-review-5.png"
+    },
+    {
+      "file": "micron.pdf",
+      "page": 6,
+      "pdfHash": "f3c835f06a356c3ad1badf3923def7a2dec29cb375fc0d227358f584d424ab79",
+      "bodyPixelHash": "f9f3e4dd153df02bad746c33c7d035cf79f700f4d93f9a0f95f85507e2ac0c29",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-micron-review-6.png"
+    },
+    {
+      "file": "micron.pdf",
+      "page": 7,
+      "pdfHash": "f3c835f06a356c3ad1badf3923def7a2dec29cb375fc0d227358f584d424ab79",
+      "bodyPixelHash": "d0618c2d919a53126b3397e73782f6f3177bd4905c5c7edb215709f97946a5de",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-micron-review-7.png"
+    },
+    {
+      "file": "micron.pdf",
+      "page": 8,
+      "pdfHash": "f3c835f06a356c3ad1badf3923def7a2dec29cb375fc0d227358f584d424ab79",
+      "bodyPixelHash": "40ef6fbeab33572cc88a1caad9a796656eef743aa4d9d2d6e823048b34057c92",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-micron-review-8.png"
+    },
+    {
+      "file": "micron.pdf",
+      "page": 9,
+      "pdfHash": "f3c835f06a356c3ad1badf3923def7a2dec29cb375fc0d227358f584d424ab79",
+      "bodyPixelHash": "1e7c120c6fa70316ddc4ffda18117144411779a830f8ca8e9fbfc01cdcab07f8",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-micron-review-9.png"
+    },
+    {
+      "file": "micron.pdf",
+      "page": 10,
+      "pdfHash": "f3c835f06a356c3ad1badf3923def7a2dec29cb375fc0d227358f584d424ab79",
+      "bodyPixelHash": "98966cf13feaab38b8295b3674133028d0a9a5bcadaa59cb9db65565567db269",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-micron-review-10.png"
+    },
+    {
+      "file": "micron.pdf",
+      "page": 11,
+      "pdfHash": "f3c835f06a356c3ad1badf3923def7a2dec29cb375fc0d227358f584d424ab79",
+      "bodyPixelHash": "87fe324ada707b680d450ef4067095e680a0c33ae8dc3505d97c1999644d6deb",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-micron-review-11.png"
+    },
+    {
+      "file": "micron.pdf",
+      "page": 12,
+      "pdfHash": "f3c835f06a356c3ad1badf3923def7a2dec29cb375fc0d227358f584d424ab79",
+      "bodyPixelHash": "fe82878040d6c659b56eaee70c7b67979ddd0a0a6e65ddcaa9239380ac496ed7",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-micron-review-12.png"
+    },
+    {
+      "file": "micron.pdf",
+      "page": 13,
+      "pdfHash": "f3c835f06a356c3ad1badf3923def7a2dec29cb375fc0d227358f584d424ab79",
+      "bodyPixelHash": "b6321adc226263545b9b3589f54cd7b9cd445f679a347d8e79f8507962827dd6",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-micron-review-13.png"
+    },
+    {
+      "file": "micron.pdf",
+      "page": 14,
+      "pdfHash": "f3c835f06a356c3ad1badf3923def7a2dec29cb375fc0d227358f584d424ab79",
+      "bodyPixelHash": "ca7c93bc2407aa690072ff3203af16889c37b52a8f9b32b41708c791db7e69e6",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-micron-review-14.png"
+    },
+    {
+      "file": "micron.pdf",
+      "page": 15,
+      "pdfHash": "f3c835f06a356c3ad1badf3923def7a2dec29cb375fc0d227358f584d424ab79",
+      "bodyPixelHash": "84a7bdc2cebbf7a7d42722af102fe722b127406eebecf0053af2c51edd521980",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-micron-review-15.png"
+    },
+    {
+      "file": "micron.pdf",
+      "page": 16,
+      "pdfHash": "f3c835f06a356c3ad1badf3923def7a2dec29cb375fc0d227358f584d424ab79",
+      "bodyPixelHash": "d10a8694ea884afc75d8524c1b20b9af0eec4793af4dc2e0b161a7fcb25f5613",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-micron-review-16.png"
+    },
+    {
+      "file": "micron.pdf",
+      "page": 17,
+      "pdfHash": "f3c835f06a356c3ad1badf3923def7a2dec29cb375fc0d227358f584d424ab79",
+      "bodyPixelHash": "0b3063eb5e065d07c71d653635cf84ee178b954a7413660657113271c76999d9",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-micron-review-17.png"
+    },
+    {
+      "file": "micron.pdf",
+      "page": 18,
+      "pdfHash": "f3c835f06a356c3ad1badf3923def7a2dec29cb375fc0d227358f584d424ab79",
+      "bodyPixelHash": "ed736dc89f05e255cb3c7146d8f15a454a2f692649df20e771101eb94ddac7be",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-micron-review-18.png"
+    },
+    {
+      "file": "micron.pdf",
+      "page": 19,
+      "pdfHash": "f3c835f06a356c3ad1badf3923def7a2dec29cb375fc0d227358f584d424ab79",
+      "bodyPixelHash": "739037a6cf561b9c66c401aced082cecc659524568aa3017ecdc644f15b8ce15",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-micron-review-19.png"
+    },
+    {
+      "file": "micron.pdf",
+      "page": 20,
+      "pdfHash": "f3c835f06a356c3ad1badf3923def7a2dec29cb375fc0d227358f584d424ab79",
+      "bodyPixelHash": "8bb22e0e065c5d80310b0f53d127ad23ec546d30771312fe5b3af17c0f535646",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-micron-review-20.png"
+    },
+    {
+      "file": "micron.pdf",
+      "page": 21,
+      "pdfHash": "f3c835f06a356c3ad1badf3923def7a2dec29cb375fc0d227358f584d424ab79",
+      "bodyPixelHash": "cfa59d99ba0b7a23e5af08c8d0282fdf6c22bf8c4391b5609f177188ed0d5e0d",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-micron-review-21.png"
+    },
+    {
+      "file": "comparison-auto.pdf",
+      "page": 1,
+      "pdfHash": "8ba956dc67aaf2e72c43642d44d218dba9a5650d83e7bb971b8df062d570a6fb",
+      "bodyPixelHash": "9b48cf112117ba5632e31ffcf9f137e19eb57f2fb59caf245eaf292266a5efc9",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-comparison-auto-review-1.png"
+    },
+    {
+      "file": "comparison-auto.pdf",
+      "page": 2,
+      "pdfHash": "8ba956dc67aaf2e72c43642d44d218dba9a5650d83e7bb971b8df062d570a6fb",
+      "bodyPixelHash": "0a09980df0768fc8934ca06617bc41cd5b224b6d8a4df14cb184c4480912b0b3",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-comparison-auto-review-2.png"
+    },
+    {
+      "file": "comparison-auto.pdf",
+      "page": 3,
+      "pdfHash": "8ba956dc67aaf2e72c43642d44d218dba9a5650d83e7bb971b8df062d570a6fb",
+      "bodyPixelHash": "1c05825939e69129e7a8e7488e1e8bb0441a7292dc361ff8f2612390dceaa72b",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-comparison-auto-review-3.png"
+    },
+    {
+      "file": "comparison-auto.pdf",
+      "page": 4,
+      "pdfHash": "8ba956dc67aaf2e72c43642d44d218dba9a5650d83e7bb971b8df062d570a6fb",
+      "bodyPixelHash": "26f98f20a3b7131595f65bddd266f815bf227313300196d435c0972d0f0d5f82",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-comparison-auto-review-4.png"
+    },
+    {
+      "file": "conditions.pdf",
+      "page": 1,
+      "pdfHash": "02946293f6772d3415cffedbb9ef371cbcd8354e527d3ad2ced77c221194128a",
+      "bodyPixelHash": "c1ac2d8397188090afd9fe87952463e0b8af6f22aa61df7c6fd410c6d27d5b9c",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-conditions-review-1.png"
+    },
+    {
+      "file": "conditions.pdf",
+      "page": 2,
+      "pdfHash": "02946293f6772d3415cffedbb9ef371cbcd8354e527d3ad2ced77c221194128a",
+      "bodyPixelHash": "f8e09e48c90e72904382521baa23aff4230417b86e8062cdfa72a8c081473363",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-conditions-review-2.png"
+    },
+    {
+      "file": "conditions.pdf",
+      "page": 3,
+      "pdfHash": "02946293f6772d3415cffedbb9ef371cbcd8354e527d3ad2ced77c221194128a",
+      "bodyPixelHash": "789fe2b9f7daa262a9129633e66483bb453a328efaf3465ee28305229b2fde90",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-conditions-review-3.png"
+    },
+    {
+      "file": "conditions.pdf",
+      "page": 4,
+      "pdfHash": "02946293f6772d3415cffedbb9ef371cbcd8354e527d3ad2ced77c221194128a",
+      "bodyPixelHash": "c160770a0d4c6f7b527c6fd45890d482c2239445aae9f11771c6a2458c38310a",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-conditions-review-4.png"
+    },
+    {
+      "file": "conditions.pdf",
+      "page": 5,
+      "pdfHash": "02946293f6772d3415cffedbb9ef371cbcd8354e527d3ad2ced77c221194128a",
+      "bodyPixelHash": "f5280e16ef819a9c6c439b88de493437fc7be6d46ca66a273bd12ab3a576fd77",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-conditions-review-5.png"
+    },
+    {
+      "file": "conditions.pdf",
+      "page": 6,
+      "pdfHash": "02946293f6772d3415cffedbb9ef371cbcd8354e527d3ad2ced77c221194128a",
+      "bodyPixelHash": "eeb350ace1bc2983067a6dd1a5d0fe09cdddc5799b55c928be90a7604f79d036",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-conditions-review-6.png"
+    },
+    {
+      "file": "conditions.pdf",
+      "page": 7,
+      "pdfHash": "02946293f6772d3415cffedbb9ef371cbcd8354e527d3ad2ced77c221194128a",
+      "bodyPixelHash": "3eb4626f25eccd3e865e61ef1167dd1f33996652e12e83fad028b77b3b391fa9",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-conditions-review-7.png"
+    },
+    {
+      "file": "conditions.pdf",
+      "page": 8,
+      "pdfHash": "02946293f6772d3415cffedbb9ef371cbcd8354e527d3ad2ced77c221194128a",
+      "bodyPixelHash": "d7bb8a92a09377614921edc09ac06b51a9060f7028f7de0ef332bf6a503a9d26",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-conditions-review-8.png"
+    },
+    {
+      "file": "intel.pdf",
+      "page": 1,
+      "pdfHash": "17b74bdd35868c286b08abb46410500bc8b1e244bea77bcf7f9737ed5663413f",
+      "bodyPixelHash": "6e4a45d6a0fe9440ce81a64998a1e1159871d55468bb98a47f6c1d0123797468",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-intel-review-1.png"
+    },
+    {
+      "file": "intel.pdf",
+      "page": 2,
+      "pdfHash": "17b74bdd35868c286b08abb46410500bc8b1e244bea77bcf7f9737ed5663413f",
+      "bodyPixelHash": "465876c91e9c4fd08649d6aa311188cb989fd5873bf9bac2ea5b20d9da9f2785",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-intel-review-2.png"
+    },
+    {
+      "file": "intel.pdf",
+      "page": 3,
+      "pdfHash": "17b74bdd35868c286b08abb46410500bc8b1e244bea77bcf7f9737ed5663413f",
+      "bodyPixelHash": "04715df53b023559fbaf5a8c4edd7a83fe4e4c304f3151a0adb06f3b3ffe2c06",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-intel-review-3.png"
+    },
+    {
+      "file": "intel.pdf",
+      "page": 4,
+      "pdfHash": "17b74bdd35868c286b08abb46410500bc8b1e244bea77bcf7f9737ed5663413f",
+      "bodyPixelHash": "a8ba1e100b3f3581f6999896dc0a7763645b2fa674aa16fae9c15480e6d43915",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-intel-review-4.png"
+    },
+    {
+      "file": "intel.pdf",
+      "page": 5,
+      "pdfHash": "17b74bdd35868c286b08abb46410500bc8b1e244bea77bcf7f9737ed5663413f",
+      "bodyPixelHash": "e7558319e11b56b606fdfcd2e554a136a4ac23ffd5e15f58c54911cf1b9f78be",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-intel-review-5.png"
+    },
+    {
+      "file": "intel.pdf",
+      "page": 6,
+      "pdfHash": "17b74bdd35868c286b08abb46410500bc8b1e244bea77bcf7f9737ed5663413f",
+      "bodyPixelHash": "afb5560e58ee18aed35dc3e9df3eeb10a6183e8487e09525af60e37fc5e943a1",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-intel-review-6.png"
+    },
+    {
+      "file": "intel.pdf",
+      "page": 7,
+      "pdfHash": "17b74bdd35868c286b08abb46410500bc8b1e244bea77bcf7f9737ed5663413f",
+      "bodyPixelHash": "88251ae2608b96274806d3fdf8e1be2b4158e57267faca5e357793ef7a28978f",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-intel-review-7.png"
+    },
+    {
+      "file": "intel.pdf",
+      "page": 8,
+      "pdfHash": "17b74bdd35868c286b08abb46410500bc8b1e244bea77bcf7f9737ed5663413f",
+      "bodyPixelHash": "5b32f6e74aa7d2ca478326465e4a331ef7092f9f4ef43136e8b8518d5475ca94",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-intel-review-8.png"
+    },
+    {
+      "file": "intel.pdf",
+      "page": 9,
+      "pdfHash": "17b74bdd35868c286b08abb46410500bc8b1e244bea77bcf7f9737ed5663413f",
+      "bodyPixelHash": "110be2caed3967d70a15b0edfb645b87c1191250853e6d3e985cb3329cad3e73",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-intel-review-9.png"
+    },
+    {
+      "file": "intel.pdf",
+      "page": 10,
+      "pdfHash": "17b74bdd35868c286b08abb46410500bc8b1e244bea77bcf7f9737ed5663413f",
+      "bodyPixelHash": "90773925ed92d9f54eb0c1d1e25861ec444d0998cf3a6a28ca7658cec05d1e9d",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-intel-review-10.png"
+    },
+    {
+      "file": "intel.pdf",
+      "page": 11,
+      "pdfHash": "17b74bdd35868c286b08abb46410500bc8b1e244bea77bcf7f9737ed5663413f",
+      "bodyPixelHash": "13277529894552d60be2a79be11a40a0a6cffabd37643ce5aeaa2143c5ae3a39",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-intel-review-11.png"
+    },
+    {
+      "file": "intel.pdf",
+      "page": 12,
+      "pdfHash": "17b74bdd35868c286b08abb46410500bc8b1e244bea77bcf7f9737ed5663413f",
+      "bodyPixelHash": "96674be458a3fdf975f95b7c1852afbb243eef081dae1f4f8e40815df6b0bb2e",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-intel-review-12.png"
+    },
+    {
+      "file": "intel.pdf",
+      "page": 13,
+      "pdfHash": "17b74bdd35868c286b08abb46410500bc8b1e244bea77bcf7f9737ed5663413f",
+      "bodyPixelHash": "4adcc6786094bd87b59c9f78a843857afc88ec00a662c7af9c430388d8c65a3e",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-intel-review-13.png"
+    },
+    {
+      "file": "intel.pdf",
+      "page": 14,
+      "pdfHash": "17b74bdd35868c286b08abb46410500bc8b1e244bea77bcf7f9737ed5663413f",
+      "bodyPixelHash": "376afbb14767074b376d50d8c119265ca1b69915c3b508666b3f7e752d208cda",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-intel-review-14.png"
+    },
+    {
+      "file": "kia.pdf",
+      "page": 1,
+      "pdfHash": "fe31fa6ff24fb965f49d6c3c2239b7cadac7a868b00d3e4e44b92c2b67cbf017",
+      "bodyPixelHash": "09d97c122955361a16af18d5cbd8c27a9dc2fcb9760ef3543382440f452f62e5",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-kia-review-1.png"
+    },
+    {
+      "file": "kia.pdf",
+      "page": 2,
+      "pdfHash": "fe31fa6ff24fb965f49d6c3c2239b7cadac7a868b00d3e4e44b92c2b67cbf017",
+      "bodyPixelHash": "ec8c720b445f06888aa19f234f4e401fc5731ea1267dd3ae027c5646aa259535",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-kia-review-2.png"
+    },
+    {
+      "file": "kia.pdf",
+      "page": 3,
+      "pdfHash": "fe31fa6ff24fb965f49d6c3c2239b7cadac7a868b00d3e4e44b92c2b67cbf017",
+      "bodyPixelHash": "1094cc3c5d5e9bc9860d4f40caeabb13426cbb72e9de7715f6fcac7a6d9054d7",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-kia-review-3.png"
+    },
+    {
+      "file": "kia.pdf",
+      "page": 4,
+      "pdfHash": "fe31fa6ff24fb965f49d6c3c2239b7cadac7a868b00d3e4e44b92c2b67cbf017",
+      "bodyPixelHash": "163e8d3f24c1b2e911396b8d278b184ee830085b7083fd795bfa8ee64d157ee3",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-kia-review-4.png"
+    },
+    {
+      "file": "kia.pdf",
+      "page": 5,
+      "pdfHash": "fe31fa6ff24fb965f49d6c3c2239b7cadac7a868b00d3e4e44b92c2b67cbf017",
+      "bodyPixelHash": "2758435a60a3730d1999e937683bb76b4af8626b75b7ce6e3eb7c5a0826afeb5",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-kia-review-5.png"
+    },
+    {
+      "file": "kia.pdf",
+      "page": 6,
+      "pdfHash": "fe31fa6ff24fb965f49d6c3c2239b7cadac7a868b00d3e4e44b92c2b67cbf017",
+      "bodyPixelHash": "ad0dd2f09ac697d1d1ee2d5ad43c41fc1c5a0f3236e5edbf9baeef3f01d87953",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-kia-review-6.png"
+    },
+    {
+      "file": "kia.pdf",
+      "page": 7,
+      "pdfHash": "fe31fa6ff24fb965f49d6c3c2239b7cadac7a868b00d3e4e44b92c2b67cbf017",
+      "bodyPixelHash": "bc021c06b40e5d39766a2d7c6c4b519238be6af0448667ea505d4a588f82b113",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-kia-review-7.png"
+    },
+    {
+      "file": "kia.pdf",
+      "page": 8,
+      "pdfHash": "fe31fa6ff24fb965f49d6c3c2239b7cadac7a868b00d3e4e44b92c2b67cbf017",
+      "bodyPixelHash": "7e52516081d478d5e0cf0381b7c0bacbb500b4dc9301c9b4a9d5e8dace4f5656",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-kia-review-8.png"
+    },
+    {
+      "file": "kia.pdf",
+      "page": 9,
+      "pdfHash": "fe31fa6ff24fb965f49d6c3c2239b7cadac7a868b00d3e4e44b92c2b67cbf017",
+      "bodyPixelHash": "faa144f1b72524cd9434224cb115338c4f78df8bf81eb2854adb5b6ad606041d",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-kia-review-9.png"
+    },
+    {
+      "file": "kia.pdf",
+      "page": 10,
+      "pdfHash": "fe31fa6ff24fb965f49d6c3c2239b7cadac7a868b00d3e4e44b92c2b67cbf017",
+      "bodyPixelHash": "7d390ef705324f394d44f3ba630577e5d2a6cf0ff42aacaa2d54ea3f9451829f",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-kia-review-10.png"
+    },
+    {
+      "file": "kia.pdf",
+      "page": 11,
+      "pdfHash": "fe31fa6ff24fb965f49d6c3c2239b7cadac7a868b00d3e4e44b92c2b67cbf017",
+      "bodyPixelHash": "64fe274d6383cb63b7ab87cd252179029f2abdce26ae506cf08f0223d60de746",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-kia-review-11.png"
+    },
+    {
+      "file": "kia.pdf",
+      "page": 12,
+      "pdfHash": "fe31fa6ff24fb965f49d6c3c2239b7cadac7a868b00d3e4e44b92c2b67cbf017",
+      "bodyPixelHash": "c1b95bea199209931da5f67b901d7315b7973b04f055136e909e5cd2110f7bdf",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-kia-review-12.png"
+    },
+    {
+      "file": "kia.pdf",
+      "page": 13,
+      "pdfHash": "fe31fa6ff24fb965f49d6c3c2239b7cadac7a868b00d3e4e44b92c2b67cbf017",
+      "bodyPixelHash": "c9b94a810da01cc30228033108e447dbe4324ac13eb47231cebfe34734356f20",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-kia-review-13.png"
+    },
+    {
+      "file": "kia.pdf",
+      "page": 14,
+      "pdfHash": "fe31fa6ff24fb965f49d6c3c2239b7cadac7a868b00d3e4e44b92c2b67cbf017",
+      "bodyPixelHash": "c87a9e15e6d4d3dd4187c3e33786805ce4ff1fb653f7e1efa0c2cb4f6b808d93",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-kia-review-14.png"
+    },
+    {
+      "file": "kia.pdf",
+      "page": 15,
+      "pdfHash": "fe31fa6ff24fb965f49d6c3c2239b7cadac7a868b00d3e4e44b92c2b67cbf017",
+      "bodyPixelHash": "51e47c480f995da2920faec095d8933f98935b4e0b9c246b9a1324119e02152a",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-kia-review-15.png"
+    },
+    {
+      "file": "kia.pdf",
+      "page": 16,
+      "pdfHash": "fe31fa6ff24fb965f49d6c3c2239b7cadac7a868b00d3e4e44b92c2b67cbf017",
+      "bodyPixelHash": "ddf6c21e87b0a617e5ed1a82a19b62ac41eede73f635f3b3ceff329be242195a",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-kia-review-16.png"
+    },
+    {
+      "file": "kia.pdf",
+      "page": 17,
+      "pdfHash": "fe31fa6ff24fb965f49d6c3c2239b7cadac7a868b00d3e4e44b92c2b67cbf017",
+      "bodyPixelHash": "aa626faaf5031de169663f714af3adf42d47388f960082a22afff03bca68c46c",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-kia-review-17.png"
+    },
+    {
+      "file": "sk-hynix.pdf",
+      "page": 1,
+      "pdfHash": "2d9a5b0c0d328a80ddca637a2b8e2c4156a36525c3a9034450ccebefef7b4d8c",
+      "bodyPixelHash": "6106b40123f18da4605dd55a9403276bbac58a86fcb8e056c3573e3af55d874b",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-sk-hynix-review-1.png"
+    },
+    {
+      "file": "sk-hynix.pdf",
+      "page": 2,
+      "pdfHash": "2d9a5b0c0d328a80ddca637a2b8e2c4156a36525c3a9034450ccebefef7b4d8c",
+      "bodyPixelHash": "722cdc3e759cc2292764f797187c5327716ccb1194774878e0af63ca49bd0905",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-sk-hynix-review-2.png"
+    },
+    {
+      "file": "sk-hynix.pdf",
+      "page": 3,
+      "pdfHash": "2d9a5b0c0d328a80ddca637a2b8e2c4156a36525c3a9034450ccebefef7b4d8c",
+      "bodyPixelHash": "ccde37fc1e1035738e2d8627a4bcd1fee52a3d36825491238fed96b075c28e7a",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-sk-hynix-review-3.png"
+    },
+    {
+      "file": "sk-hynix.pdf",
+      "page": 4,
+      "pdfHash": "2d9a5b0c0d328a80ddca637a2b8e2c4156a36525c3a9034450ccebefef7b4d8c",
+      "bodyPixelHash": "2117b772500f52b1da89b43399a74134daa814670cde3ac40814bd9513f1d2bc",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-sk-hynix-review-4.png"
+    },
+    {
+      "file": "sk-hynix.pdf",
+      "page": 5,
+      "pdfHash": "2d9a5b0c0d328a80ddca637a2b8e2c4156a36525c3a9034450ccebefef7b4d8c",
+      "bodyPixelHash": "fb56cb1ccb7d0bfbbef58c9ffe73a596557a3121d83402d6854ca4ba676e1b41",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-sk-hynix-review-5.png"
+    },
+    {
+      "file": "sk-hynix.pdf",
+      "page": 6,
+      "pdfHash": "2d9a5b0c0d328a80ddca637a2b8e2c4156a36525c3a9034450ccebefef7b4d8c",
+      "bodyPixelHash": "e198072814a9f9427b31fcabb5e812f865ab8d3047920613c9009ce80a0d89c8",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-sk-hynix-review-6.png"
+    },
+    {
+      "file": "sk-hynix.pdf",
+      "page": 7,
+      "pdfHash": "2d9a5b0c0d328a80ddca637a2b8e2c4156a36525c3a9034450ccebefef7b4d8c",
+      "bodyPixelHash": "cd5c4d96966e44c01bfa3de25ac1ce0488dfbf3f4d1f37895eaca5bdd06ee5a8",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-sk-hynix-review-7.png"
+    },
+    {
+      "file": "sk-hynix.pdf",
+      "page": 8,
+      "pdfHash": "2d9a5b0c0d328a80ddca637a2b8e2c4156a36525c3a9034450ccebefef7b4d8c",
+      "bodyPixelHash": "c6cec4cc87f57573c10af0b31152b5be1c4654fb2f86812821f733f563f6df51",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-sk-hynix-review-8.png"
+    },
+    {
+      "file": "sk-hynix.pdf",
+      "page": 9,
+      "pdfHash": "2d9a5b0c0d328a80ddca637a2b8e2c4156a36525c3a9034450ccebefef7b4d8c",
+      "bodyPixelHash": "d43a6dc9547d9c32e86e021881ea340937c13f3e42134afe0b1d850a75170d83",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-sk-hynix-review-9.png"
+    },
+    {
+      "file": "sk-hynix.pdf",
+      "page": 10,
+      "pdfHash": "2d9a5b0c0d328a80ddca637a2b8e2c4156a36525c3a9034450ccebefef7b4d8c",
+      "bodyPixelHash": "14f2cc0b4cfc24139403f2ef42506e77fef4af78c594b9f4a77a4c450a864d0b",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-sk-hynix-review-10.png"
+    },
+    {
+      "file": "sk-hynix.pdf",
+      "page": 11,
+      "pdfHash": "2d9a5b0c0d328a80ddca637a2b8e2c4156a36525c3a9034450ccebefef7b4d8c",
+      "bodyPixelHash": "69417563bf537f64824f3ed4d418aabf01860b98ab19a60dc34a5cd95967c0ca",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-sk-hynix-review-11.png"
+    },
+    {
+      "file": "sk-hynix.pdf",
+      "page": 12,
+      "pdfHash": "2d9a5b0c0d328a80ddca637a2b8e2c4156a36525c3a9034450ccebefef7b4d8c",
+      "bodyPixelHash": "337dfe514ffbacd31b65e2bf1bd65634b1302975bca4ef468b0e91ccec4dfa77",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-sk-hynix-review-12.png"
+    },
+    {
+      "file": "sk-hynix.pdf",
+      "page": 13,
+      "pdfHash": "2d9a5b0c0d328a80ddca637a2b8e2c4156a36525c3a9034450ccebefef7b4d8c",
+      "bodyPixelHash": "4adcc6786094bd87b59c9f78a843857afc88ec00a662c7af9c430388d8c65a3e",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-sk-hynix-review-13.png"
+    },
+    {
+      "file": "sk-hynix.pdf",
+      "page": 14,
+      "pdfHash": "2d9a5b0c0d328a80ddca637a2b8e2c4156a36525c3a9034450ccebefef7b4d8c",
+      "bodyPixelHash": "7d35d176596f493f5cc585bcc45a8e9e3498e777bcfc6a531dc3840123aa3daa",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-sk-hynix-review-14.png"
+    },
+    {
+      "file": "sk-hynix.pdf",
+      "page": 15,
+      "pdfHash": "2d9a5b0c0d328a80ddca637a2b8e2c4156a36525c3a9034450ccebefef7b4d8c",
+      "bodyPixelHash": "ac8ab4c486c2d9beac887629196f5cb20941f306fd0bc432a71860194756af7f",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-sk-hynix-review-15.png"
+    },
+    {
+      "file": "sk-hynix.pdf",
+      "page": 16,
+      "pdfHash": "2d9a5b0c0d328a80ddca637a2b8e2c4156a36525c3a9034450ccebefef7b4d8c",
+      "bodyPixelHash": "4737084ed8b183aa2a7805a26500d7c05124403745583f9ab741eb3de5864af5",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-sk-hynix-review-16.png"
+    },
+    {
+      "file": "sk-hynix.pdf",
+      "page": 17,
+      "pdfHash": "2d9a5b0c0d328a80ddca637a2b8e2c4156a36525c3a9034450ccebefef7b4d8c",
+      "bodyPixelHash": "771467442cfb75ad417807ceaff3fffbffa84736a08418d795357558ffd13b43",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-sk-hynix-review-17.png"
+    },
+    {
+      "file": "sk-hynix.pdf",
+      "page": 18,
+      "pdfHash": "2d9a5b0c0d328a80ddca637a2b8e2c4156a36525c3a9034450ccebefef7b4d8c",
+      "bodyPixelHash": "20e207df2628e65df5f39003562db49975bc5873245b3e0a109b060b5ff69064",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-sk-hynix-review-18.png"
+    },
+    {
+      "file": "tesla.pdf",
+      "page": 1,
+      "pdfHash": "7d26353792f703fc095c36dc4ed8102fa6e1a4e6e8de21b25a3e4d9e49697d27",
+      "bodyPixelHash": "0d3a6969f64b12332fbb80019fd218a5e43ec08ce793ecf860b65b3f384aa144",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-tesla-review-1.png"
+    },
+    {
+      "file": "tesla.pdf",
+      "page": 2,
+      "pdfHash": "7d26353792f703fc095c36dc4ed8102fa6e1a4e6e8de21b25a3e4d9e49697d27",
+      "bodyPixelHash": "b75f0a719f9fafb821504c0d6a08dd30387018507047451358cb82599f67492f",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-tesla-review-2.png"
+    },
+    {
+      "file": "tesla.pdf",
+      "page": 3,
+      "pdfHash": "7d26353792f703fc095c36dc4ed8102fa6e1a4e6e8de21b25a3e4d9e49697d27",
+      "bodyPixelHash": "c7f502a751fa7aa1a16defe062a2062f3fb4c769f304fbc4ce70b755dbef50cc",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-tesla-review-3.png"
+    },
+    {
+      "file": "tesla.pdf",
+      "page": 4,
+      "pdfHash": "7d26353792f703fc095c36dc4ed8102fa6e1a4e6e8de21b25a3e4d9e49697d27",
+      "bodyPixelHash": "d1f296b29da91dd017aa077b4a31f82668407fafc23d5e67708fb7d22672ba4d",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-tesla-review-4.png"
+    },
+    {
+      "file": "tesla.pdf",
+      "page": 5,
+      "pdfHash": "7d26353792f703fc095c36dc4ed8102fa6e1a4e6e8de21b25a3e4d9e49697d27",
+      "bodyPixelHash": "f920096fe929abb7cfbe45205f342cf91d17923fd446f2f2796c1f56271e46fe",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-tesla-review-5.png"
+    },
+    {
+      "file": "tesla.pdf",
+      "page": 6,
+      "pdfHash": "7d26353792f703fc095c36dc4ed8102fa6e1a4e6e8de21b25a3e4d9e49697d27",
+      "bodyPixelHash": "b9637bdcac3f194df71fe233337ea4702633164e7d2d96467f7e0b573123cf49",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-tesla-review-6.png"
+    },
+    {
+      "file": "tesla.pdf",
+      "page": 7,
+      "pdfHash": "7d26353792f703fc095c36dc4ed8102fa6e1a4e6e8de21b25a3e4d9e49697d27",
+      "bodyPixelHash": "b7995b34f2038f188583c86fde3d3026a682443f528c6a7031c140ad0f93e904",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-tesla-review-7.png"
+    },
+    {
+      "file": "tesla.pdf",
+      "page": 8,
+      "pdfHash": "7d26353792f703fc095c36dc4ed8102fa6e1a4e6e8de21b25a3e4d9e49697d27",
+      "bodyPixelHash": "9b1ad9cb3159c700eb11a7e29e5f24e688a9731a53fe8b40a566755af344016f",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-tesla-review-8.png"
+    },
+    {
+      "file": "tesla.pdf",
+      "page": 9,
+      "pdfHash": "7d26353792f703fc095c36dc4ed8102fa6e1a4e6e8de21b25a3e4d9e49697d27",
+      "bodyPixelHash": "041f4255998e1ff5182ac7039c0e1ee49fe3631948f48c9bc8f608ada25025a3",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-tesla-review-9.png"
+    },
+    {
+      "file": "tesla.pdf",
+      "page": 10,
+      "pdfHash": "7d26353792f703fc095c36dc4ed8102fa6e1a4e6e8de21b25a3e4d9e49697d27",
+      "bodyPixelHash": "5d91e0608f367fcb29ed5880f00687a33456a0b5dc6b1a85951b096e0009d8dd",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-tesla-review-10.png"
+    },
+    {
+      "file": "tesla.pdf",
+      "page": 11,
+      "pdfHash": "7d26353792f703fc095c36dc4ed8102fa6e1a4e6e8de21b25a3e4d9e49697d27",
+      "bodyPixelHash": "f2bee01555014b13f07748ae583759d30335f1b1a1d16e4612bd95f3bb4ab4d4",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-tesla-review-11.png"
+    },
+    {
+      "file": "tesla.pdf",
+      "page": 12,
+      "pdfHash": "7d26353792f703fc095c36dc4ed8102fa6e1a4e6e8de21b25a3e4d9e49697d27",
+      "bodyPixelHash": "a789f6e635e6a091401ca5dc3a92dd6ec87d10a43353a8e813c8334959708b42",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-tesla-review-12.png"
+    },
+    {
+      "file": "tesla.pdf",
+      "page": 13,
+      "pdfHash": "7d26353792f703fc095c36dc4ed8102fa6e1a4e6e8de21b25a3e4d9e49697d27",
+      "bodyPixelHash": "f1c397f7b260709f484c3a4b75b5f4b394f955de787cfcecc7590369fbc0675f",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-tesla-review-13.png"
+    },
+    {
+      "file": "tesla.pdf",
+      "page": 14,
+      "pdfHash": "7d26353792f703fc095c36dc4ed8102fa6e1a4e6e8de21b25a3e4d9e49697d27",
+      "bodyPixelHash": "e7748af9706eb55bb5b75210ab4d0ea53af1e4174b25828b0101c6f2dcf97e99",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-tesla-review-14.png"
+    },
+    {
+      "file": "tesla.pdf",
+      "page": 15,
+      "pdfHash": "7d26353792f703fc095c36dc4ed8102fa6e1a4e6e8de21b25a3e4d9e49697d27",
+      "bodyPixelHash": "014b9912c0030a7ef66d9130c91ebca2f4c708d875172f0e75efe0c5bc7ca9e0",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-tesla-review-15.png"
+    },
+    {
+      "file": "tesla.pdf",
+      "page": 16,
+      "pdfHash": "7d26353792f703fc095c36dc4ed8102fa6e1a4e6e8de21b25a3e4d9e49697d27",
+      "bodyPixelHash": "ddf6c21e87b0a617e5ed1a82a19b62ac41eede73f635f3b3ceff329be242195a",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-tesla-review-16.png"
+    },
+    {
+      "file": "tesla.pdf",
+      "page": 17,
+      "pdfHash": "7d26353792f703fc095c36dc4ed8102fa6e1a4e6e8de21b25a3e4d9e49697d27",
+      "bodyPixelHash": "111ecd1156ed3055f97da9043cc5d01aaabec75c91e05d3093c24b6755d38d0b",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-tesla-review-17.png"
+    },
+    {
+      "file": "comparison-cloud.pdf",
+      "page": 1,
+      "pdfHash": "e9a2929a627961ffbf9566393fc27ed8c801e73c2cfd596f5f08524eab40f24f",
+      "bodyPixelHash": "e006b180cb39eec038c27500f448c438048526204faceb60ffda6381c9c62ba6",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-comparison-cloud-review-1.png"
+    },
+    {
+      "file": "comparison-cloud.pdf",
+      "page": 2,
+      "pdfHash": "e9a2929a627961ffbf9566393fc27ed8c801e73c2cfd596f5f08524eab40f24f",
+      "bodyPixelHash": "a5f3716da2322f63f07c2657146c3ab8a87e731925eeb8cc3a62e340abb8b3f2",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-comparison-cloud-review-2.png"
+    },
+    {
+      "file": "comparison-cloud.pdf",
+      "page": 3,
+      "pdfHash": "e9a2929a627961ffbf9566393fc27ed8c801e73c2cfd596f5f08524eab40f24f",
+      "bodyPixelHash": "29d8778f19becd7fbc22fa1a0b6147762efbcf3cfcca855159d2089b33146c99",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-comparison-cloud-review-3.png"
+    },
+    {
+      "file": "comparison-cloud.pdf",
+      "page": 4,
+      "pdfHash": "e9a2929a627961ffbf9566393fc27ed8c801e73c2cfd596f5f08524eab40f24f",
+      "bodyPixelHash": "9a56b090c6a3a5aa8254b5f7d3eabb4c91e4042e0bf95e5456f7527543c9c8f5",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-comparison-cloud-review-4.png"
+    },
+    {
+      "file": "amazon.pdf",
+      "page": 1,
+      "pdfHash": "93729a15ab649cd25851c273c6da28227c5c8838eefc038a5d40a095b8dd12ee",
+      "bodyPixelHash": "417086061033fdaac23bb1695edb81d160defaac90515fa00fe7c442149cb821",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-amazon-review-1.png"
+    },
+    {
+      "file": "amazon.pdf",
+      "page": 2,
+      "pdfHash": "93729a15ab649cd25851c273c6da28227c5c8838eefc038a5d40a095b8dd12ee",
+      "bodyPixelHash": "de58b0faf0b7766d181a143922b0bad9b5bef81f571f13c2bd246d1b7d0ee88c",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-amazon-review-2.png"
+    },
+    {
+      "file": "amazon.pdf",
+      "page": 3,
+      "pdfHash": "93729a15ab649cd25851c273c6da28227c5c8838eefc038a5d40a095b8dd12ee",
+      "bodyPixelHash": "e932bd3ccf9d160a03fcab146d816aefc63a71fe76a79c0b2a5e45c3d11ead28",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-amazon-review-3.png"
+    },
+    {
+      "file": "amazon.pdf",
+      "page": 4,
+      "pdfHash": "93729a15ab649cd25851c273c6da28227c5c8838eefc038a5d40a095b8dd12ee",
+      "bodyPixelHash": "af2a20865777367c471b2687b4cb25a490b47b073260c67a4f9bb94e34da9eb5",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-amazon-review-4.png"
+    },
+    {
+      "file": "amazon.pdf",
+      "page": 5,
+      "pdfHash": "93729a15ab649cd25851c273c6da28227c5c8838eefc038a5d40a095b8dd12ee",
+      "bodyPixelHash": "73d16e4b218562a1a7f7d356b2e117371c9f5d1292f37bd8e42d8116019a220e",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-amazon-review-5.png"
+    },
+    {
+      "file": "amazon.pdf",
+      "page": 6,
+      "pdfHash": "93729a15ab649cd25851c273c6da28227c5c8838eefc038a5d40a095b8dd12ee",
+      "bodyPixelHash": "c51f2afdc78a353a8beab65788ccb0b312d1ce94fd05d1f56c6d39fd418b4c88",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-amazon-review-6.png"
+    },
+    {
+      "file": "amazon.pdf",
+      "page": 7,
+      "pdfHash": "93729a15ab649cd25851c273c6da28227c5c8838eefc038a5d40a095b8dd12ee",
+      "bodyPixelHash": "46f3d0c98ad535f560b34c1216a80f860475f592bdaa3e8139bac53faabe39fa",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-amazon-review-7.png"
+    },
+    {
+      "file": "amazon.pdf",
+      "page": 8,
+      "pdfHash": "93729a15ab649cd25851c273c6da28227c5c8838eefc038a5d40a095b8dd12ee",
+      "bodyPixelHash": "34226cd7cac1d43177305458922f5f02b6fd5cc98eda33e7ecfbc95e66ee8a52",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-amazon-review-8.png"
+    },
+    {
+      "file": "amazon.pdf",
+      "page": 9,
+      "pdfHash": "93729a15ab649cd25851c273c6da28227c5c8838eefc038a5d40a095b8dd12ee",
+      "bodyPixelHash": "2bca359051e4b6fe24b922af97d0c511c42f0ad36224f6b69c9c6287bc9e5b7f",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-amazon-review-9.png"
+    },
+    {
+      "file": "amazon.pdf",
+      "page": 10,
+      "pdfHash": "93729a15ab649cd25851c273c6da28227c5c8838eefc038a5d40a095b8dd12ee",
+      "bodyPixelHash": "8042c142b8dc61e396846c6b54d48662f834b78d7d5e7502f64a06c7b0ae440d",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-amazon-review-10.png"
+    },
+    {
+      "file": "amazon.pdf",
+      "page": 11,
+      "pdfHash": "93729a15ab649cd25851c273c6da28227c5c8838eefc038a5d40a095b8dd12ee",
+      "bodyPixelHash": "05e8ff1dc57552d6e369cf9ae44f5d1af37340e3125a6875dae40d5f2a103887",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-amazon-review-11.png"
+    },
+    {
+      "file": "amazon.pdf",
+      "page": 12,
+      "pdfHash": "93729a15ab649cd25851c273c6da28227c5c8838eefc038a5d40a095b8dd12ee",
+      "bodyPixelHash": "14cfb3acc8d9f894f6244c49dec9a6711e3b79ea5ef6abb1cee2d070169e0803",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-amazon-review-12.png"
+    },
+    {
+      "file": "amazon.pdf",
+      "page": 13,
+      "pdfHash": "93729a15ab649cd25851c273c6da28227c5c8838eefc038a5d40a095b8dd12ee",
+      "bodyPixelHash": "5eebd2e4c7ba32a7e2c3f5e0768716fb269241f000c93a22ec3a24a243814c72",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-amazon-review-13.png"
+    },
+    {
+      "file": "amazon.pdf",
+      "page": 14,
+      "pdfHash": "93729a15ab649cd25851c273c6da28227c5c8838eefc038a5d40a095b8dd12ee",
+      "bodyPixelHash": "c86326da650e72b45907d59b5e8769821b90a3a551a87ff03b3408fd5db6baed",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-amazon-review-14.png"
+    },
+    {
+      "file": "amazon.pdf",
+      "page": 15,
+      "pdfHash": "93729a15ab649cd25851c273c6da28227c5c8838eefc038a5d40a095b8dd12ee",
+      "bodyPixelHash": "91ce30a95d369a062d09c7a030ea1a7e5d8af9fcdc1a8fb7a140f71b4fdd7f27",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-amazon-review-15.png"
+    },
+    {
+      "file": "amazon.pdf",
+      "page": 16,
+      "pdfHash": "93729a15ab649cd25851c273c6da28227c5c8838eefc038a5d40a095b8dd12ee",
+      "bodyPixelHash": "c45d0cbe62b098370d1341f1b3ebad5b511dc196ef390d39c487e6b8bc268dd6",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-amazon-review-16.png"
+    },
+    {
+      "file": "amazon.pdf",
+      "page": 17,
+      "pdfHash": "93729a15ab649cd25851c273c6da28227c5c8838eefc038a5d40a095b8dd12ee",
+      "bodyPixelHash": "f19ece13205e96b49c37c003a28d060601113b931bf007c35045492ec5e7e8b2",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-amazon-review-17.png"
+    },
+    {
+      "file": "amazon.pdf",
+      "page": 18,
+      "pdfHash": "93729a15ab649cd25851c273c6da28227c5c8838eefc038a5d40a095b8dd12ee",
+      "bodyPixelHash": "4adcc6786094bd87b59c9f78a843857afc88ec00a662c7af9c430388d8c65a3e",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-amazon-review-18.png"
+    },
+    {
+      "file": "amazon.pdf",
+      "page": 19,
+      "pdfHash": "93729a15ab649cd25851c273c6da28227c5c8838eefc038a5d40a095b8dd12ee",
+      "bodyPixelHash": "ed5f3c8f8fc638e94811fe82ed9095a33ad84fd2f4f001bb4ba7dd13cc91450b",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-amazon-review-19.png"
+    },
+    {
+      "file": "amazon.pdf",
+      "page": 20,
+      "pdfHash": "93729a15ab649cd25851c273c6da28227c5c8838eefc038a5d40a095b8dd12ee",
+      "bodyPixelHash": "1d739b7df686920de2eaf7f459ada2a822846625e93dcb40f789a24e73b27a7b",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-amazon-review-20.png"
+    },
+    {
+      "file": "universe.pdf",
+      "page": 1,
+      "pdfHash": "fc046a5ad08db62670df8eab535eb60fcdbe7d0ea1d4502b27456de860e51014",
+      "bodyPixelHash": "064944bb14108cb49c542dfefcac52f6f08402c3c368de51e0cb4d10731085cb",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-universe-review-1.png"
+    },
+    {
+      "file": "universe.pdf",
+      "page": 2,
+      "pdfHash": "fc046a5ad08db62670df8eab535eb60fcdbe7d0ea1d4502b27456de860e51014",
+      "bodyPixelHash": "f5ffcb70fda2b01bf111c73724782e7ade47e079ff5621ef1bcddcbceff61fee",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-universe-review-2.png"
+    },
+    {
+      "file": "universe.pdf",
+      "page": 3,
+      "pdfHash": "fc046a5ad08db62670df8eab535eb60fcdbe7d0ea1d4502b27456de860e51014",
+      "bodyPixelHash": "c7204086b8754eca6da1a2d8fea63dd1faa3472ffe95f1a0ea2213dd51317a78",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-universe-review-3.png"
+    },
+    {
+      "file": "universe.pdf",
+      "page": 4,
+      "pdfHash": "fc046a5ad08db62670df8eab535eb60fcdbe7d0ea1d4502b27456de860e51014",
+      "bodyPixelHash": "3b9ce285477caa9c0af7ad006739ce956f46b6801ae81027107f56e2680b9023",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-universe-review-4.png"
+    },
+    {
+      "file": "research-kr.pdf",
+      "page": 1,
+      "pdfHash": "ba368353587fb024ca786816fafb110932a0faecbfabb126912e89d5d9b5a507",
+      "bodyPixelHash": "c8ab848dd594f02389a728cc1231c1d0a70b680b6e32a26636974bd35c03b4c0",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-research-kr-review-1.png"
+    },
+    {
+      "file": "research-kr.pdf",
+      "page": 2,
+      "pdfHash": "ba368353587fb024ca786816fafb110932a0faecbfabb126912e89d5d9b5a507",
+      "bodyPixelHash": "9ab6cef3d4d0df89f9239ccaadf90e82f7728b3c15c7061b6fd47fc3d7661771",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-research-kr-review-2.png"
+    },
+    {
+      "file": "research-kr.pdf",
+      "page": 3,
+      "pdfHash": "ba368353587fb024ca786816fafb110932a0faecbfabb126912e89d5d9b5a507",
+      "bodyPixelHash": "7060ad9e8d3c4df4d7f12bfee430a2a167e2045a49823c19a4948bc8f803f3e5",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-research-kr-review-3.png"
+    },
+    {
+      "file": "research-kr.pdf",
+      "page": 4,
+      "pdfHash": "ba368353587fb024ca786816fafb110932a0faecbfabb126912e89d5d9b5a507",
+      "bodyPixelHash": "4627d28e84494046c76f6c4b3bbddc0606eb6967b8743f4f8ab2c68e35a808ea",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-research-kr-review-4.png"
+    },
+    {
+      "file": "research-us.pdf",
+      "page": 1,
+      "pdfHash": "7b12d854fadc241fc332de50cdd43c1df854609edd2713e61faf72e8b4ef23fd",
+      "bodyPixelHash": "56eef687450e7a703fcb8b5498f9e62e2765ce21cb9e29281d8319b608bfef05",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-research-us-review-1.png"
+    },
+    {
+      "file": "research-us.pdf",
+      "page": 2,
+      "pdfHash": "7b12d854fadc241fc332de50cdd43c1df854609edd2713e61faf72e8b4ef23fd",
+      "bodyPixelHash": "ecb8283c782437ce563c47c4220d9f14e61dfb085b809a7bdcb126fea7436132",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-research-us-review-2.png"
+    },
+    {
+      "file": "research-us.pdf",
+      "page": 3,
+      "pdfHash": "7b12d854fadc241fc332de50cdd43c1df854609edd2713e61faf72e8b4ef23fd",
+      "bodyPixelHash": "1d86d377277d8a9cea0a96086f2cd4b8b2244fe4d83c7a9ff17efc043ed14ba4",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-research-us-review-3.png"
+    },
+    {
+      "file": "research-us.pdf",
+      "page": 4,
+      "pdfHash": "7b12d854fadc241fc332de50cdd43c1df854609edd2713e61faf72e8b4ef23fd",
+      "bodyPixelHash": "8c4508e04ae8945bc8ea21c8e5947bc433c11daae3498743f9cf1e0ae5942d89",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-research-us-review-4.png"
+    },
+    {
+      "file": "hyundai.pdf",
+      "page": 1,
+      "pdfHash": "ac92c540d00df19aa5251bde1350783dea3c7a0cfc61b00bd04ea2bb62c55906",
+      "bodyPixelHash": "a1ed83e8299fefdd57d99313efae6d5b0362bd684f9e3dd5a7ca08aae135b6ee",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-hyundai-review-1.png"
+    },
+    {
+      "file": "hyundai.pdf",
+      "page": 2,
+      "pdfHash": "ac92c540d00df19aa5251bde1350783dea3c7a0cfc61b00bd04ea2bb62c55906",
+      "bodyPixelHash": "d13a14ae45033c52f3b4274e551f2913ab8308c7b24cf0f851d20e2da4abc630",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-hyundai-review-2.png"
+    },
+    {
+      "file": "hyundai.pdf",
+      "page": 3,
+      "pdfHash": "ac92c540d00df19aa5251bde1350783dea3c7a0cfc61b00bd04ea2bb62c55906",
+      "bodyPixelHash": "a3c35ec1e09bd10260a8feb76246224b6d8ce4583b90209c2f55cb328fa8290a",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-hyundai-review-3.png"
+    },
+    {
+      "file": "hyundai.pdf",
+      "page": 4,
+      "pdfHash": "ac92c540d00df19aa5251bde1350783dea3c7a0cfc61b00bd04ea2bb62c55906",
+      "bodyPixelHash": "f52c2644c8387a440959a31c248b2e7266c65729f8138bc7d34f81b458ded26e",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-hyundai-review-4.png"
+    },
+    {
+      "file": "hyundai.pdf",
+      "page": 5,
+      "pdfHash": "ac92c540d00df19aa5251bde1350783dea3c7a0cfc61b00bd04ea2bb62c55906",
+      "bodyPixelHash": "2504e8dbcb553da84827c554f60b550d2146122287a0794c9c99d72e6c25d6a8",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-hyundai-review-5.png"
+    },
+    {
+      "file": "hyundai.pdf",
+      "page": 6,
+      "pdfHash": "ac92c540d00df19aa5251bde1350783dea3c7a0cfc61b00bd04ea2bb62c55906",
+      "bodyPixelHash": "5cfb1b1819c91987b55a9e09c4e4cb783c68c92c19b18c76052b1af9e2b541af",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-hyundai-review-6.png"
+    },
+    {
+      "file": "hyundai.pdf",
+      "page": 7,
+      "pdfHash": "ac92c540d00df19aa5251bde1350783dea3c7a0cfc61b00bd04ea2bb62c55906",
+      "bodyPixelHash": "12e63c4e8c28ffe8ea3a4fcffd946047ce4303ed35285567258a2be96cb44c05",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-hyundai-review-7.png"
+    },
+    {
+      "file": "hyundai.pdf",
+      "page": 8,
+      "pdfHash": "ac92c540d00df19aa5251bde1350783dea3c7a0cfc61b00bd04ea2bb62c55906",
+      "bodyPixelHash": "71c77803a3b303e71e7a8c164f1e8dc14dde8e70f715054856a2db33c6e096d7",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-hyundai-review-8.png"
+    },
+    {
+      "file": "hyundai.pdf",
+      "page": 9,
+      "pdfHash": "ac92c540d00df19aa5251bde1350783dea3c7a0cfc61b00bd04ea2bb62c55906",
+      "bodyPixelHash": "34127d3e3a40809ba2c9cb59848c4d467429191bd37d8b1a0c7fe2bdaf7f2678",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-hyundai-review-9.png"
+    },
+    {
+      "file": "hyundai.pdf",
+      "page": 10,
+      "pdfHash": "ac92c540d00df19aa5251bde1350783dea3c7a0cfc61b00bd04ea2bb62c55906",
+      "bodyPixelHash": "018a158e50086014d3b64c9a5426ec1906831d0b64666b344c9ec00838f68870",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-hyundai-review-10.png"
+    },
+    {
+      "file": "hyundai.pdf",
+      "page": 11,
+      "pdfHash": "ac92c540d00df19aa5251bde1350783dea3c7a0cfc61b00bd04ea2bb62c55906",
+      "bodyPixelHash": "15ac9bed258f1d9a5e9c08a59748843437107dbd5e2e24f4edc4b20239f23943",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-hyundai-review-11.png"
+    },
+    {
+      "file": "hyundai.pdf",
+      "page": 12,
+      "pdfHash": "ac92c540d00df19aa5251bde1350783dea3c7a0cfc61b00bd04ea2bb62c55906",
+      "bodyPixelHash": "7a68c654122cab6dc791ce19d645dfa273027ad5f426eaf9d686e1e02b06f7ee",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-hyundai-review-12.png"
+    },
+    {
+      "file": "hyundai.pdf",
+      "page": 13,
+      "pdfHash": "ac92c540d00df19aa5251bde1350783dea3c7a0cfc61b00bd04ea2bb62c55906",
+      "bodyPixelHash": "24e92d7cee66d482ae79120fb9396810ab848f8f1bc5ef661cf66dcc63f5d95a",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-hyundai-review-13.png"
+    },
+    {
+      "file": "hyundai.pdf",
+      "page": 14,
+      "pdfHash": "ac92c540d00df19aa5251bde1350783dea3c7a0cfc61b00bd04ea2bb62c55906",
+      "bodyPixelHash": "7ab0c49a27d99c23e45530b5f4574c74731953006f224651075d10c32eb94318",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-hyundai-review-14.png"
+    },
+    {
+      "file": "hyundai.pdf",
+      "page": 15,
+      "pdfHash": "ac92c540d00df19aa5251bde1350783dea3c7a0cfc61b00bd04ea2bb62c55906",
+      "bodyPixelHash": "b036e04a025fa23a9f0ee41bc6ef55f01d7758f0433941a67017084686a28364",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-hyundai-review-15.png"
+    },
+    {
+      "file": "comparison-equipment.pdf",
+      "page": 1,
+      "pdfHash": "0c938803a69f8729ea3cc1d73df455500112f0b31d20a59dfdc69e8e7ded0b5c",
+      "bodyPixelHash": "c211eb858398d8cdf6a6c61a519738a1d119f3a354bee929e0de27f433305c84",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-comparison-equipment-review-1.png"
+    },
+    {
+      "file": "comparison-equipment.pdf",
+      "page": 2,
+      "pdfHash": "0c938803a69f8729ea3cc1d73df455500112f0b31d20a59dfdc69e8e7ded0b5c",
+      "bodyPixelHash": "86811cc49d7eb8ee4f279163258dc8e76ba581dc6e827b75a2f83d91215782bf",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-comparison-equipment-review-2.png"
+    }
+  ],
+  "changedPages": [
+    {
+      "file": "qualcomm.pdf",
+      "page": 1,
+      "pdfHash": "f992b8160fef8afb3d26d45b267c6874229a42c01cf0df532c02eb6d656b2e26",
+      "bodyPixelHash": "86bdd7779a5311074f792bf327484111c24d7fcf9f964965d069381440ff3cf4",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-qualcomm-review-1.png"
+    },
+    {
+      "file": "qualcomm.pdf",
+      "page": 2,
+      "pdfHash": "f992b8160fef8afb3d26d45b267c6874229a42c01cf0df532c02eb6d656b2e26",
+      "bodyPixelHash": "7c9621f760f987b0881fe121cb263fc76531d40ee962cf3aef239bd80e31da5c",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-qualcomm-review-2.png"
+    },
+    {
+      "file": "qualcomm.pdf",
+      "page": 3,
+      "pdfHash": "f992b8160fef8afb3d26d45b267c6874229a42c01cf0df532c02eb6d656b2e26",
+      "bodyPixelHash": "11715be0774e177ab5f6fb1f53792cbf8d48a971d610063f83ab391fc4e70817",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-qualcomm-review-3.png"
+    },
+    {
+      "file": "qualcomm.pdf",
+      "page": 4,
+      "pdfHash": "f992b8160fef8afb3d26d45b267c6874229a42c01cf0df532c02eb6d656b2e26",
+      "bodyPixelHash": "f6821419d8c107540d5ea28870f413caed619189b374e07e210eebdb86a95d70",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-qualcomm-review-4.png"
+    },
+    {
+      "file": "qualcomm.pdf",
+      "page": 5,
+      "pdfHash": "f992b8160fef8afb3d26d45b267c6874229a42c01cf0df532c02eb6d656b2e26",
+      "bodyPixelHash": "84499084db820536320da5e7a652592ffb3d846c527432e918198fd2452b22ea",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-qualcomm-review-5.png"
+    },
+    {
+      "file": "qualcomm.pdf",
+      "page": 6,
+      "pdfHash": "f992b8160fef8afb3d26d45b267c6874229a42c01cf0df532c02eb6d656b2e26",
+      "bodyPixelHash": "ab3a7305c1efe599bcd650a176bd60f42e0bc587a5b7ab5ca111b5d51bd136b7",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-qualcomm-review-6.png"
+    },
+    {
+      "file": "qualcomm.pdf",
+      "page": 7,
+      "pdfHash": "f992b8160fef8afb3d26d45b267c6874229a42c01cf0df532c02eb6d656b2e26",
+      "bodyPixelHash": "e4c81f2944949dae9c9445b6117506884f67a944a54a3d073da530ef00982301",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-qualcomm-review-7.png"
+    },
+    {
+      "file": "qualcomm.pdf",
+      "page": 8,
+      "pdfHash": "f992b8160fef8afb3d26d45b267c6874229a42c01cf0df532c02eb6d656b2e26",
+      "bodyPixelHash": "142d8f7bcfad480fb085f45d76924c8307a7040e6320fbad220da4786a45e1e1",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-qualcomm-review-8.png"
+    },
+    {
+      "file": "qualcomm.pdf",
+      "page": 9,
+      "pdfHash": "f992b8160fef8afb3d26d45b267c6874229a42c01cf0df532c02eb6d656b2e26",
+      "bodyPixelHash": "6ed2d8dbc343de34c3867fcb051b1fe727f1fae15f262bb9458375ac815bc0ba",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-qualcomm-review-9.png"
+    },
+    {
+      "file": "qualcomm.pdf",
+      "page": 10,
+      "pdfHash": "f992b8160fef8afb3d26d45b267c6874229a42c01cf0df532c02eb6d656b2e26",
+      "bodyPixelHash": "8b205cd43f5937d7512b9494c6d44b5db5fa58ee17dedb6b10d64431c75bb3ff",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-qualcomm-review-10.png"
+    },
+    {
+      "file": "qualcomm.pdf",
+      "page": 11,
+      "pdfHash": "f992b8160fef8afb3d26d45b267c6874229a42c01cf0df532c02eb6d656b2e26",
+      "bodyPixelHash": "b07e3991f422d54a8304d5639c0197420d7fa576e25a07eca82be45a35f1a89c",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-qualcomm-review-11.png"
+    },
+    {
+      "file": "qualcomm.pdf",
+      "page": 12,
+      "pdfHash": "f992b8160fef8afb3d26d45b267c6874229a42c01cf0df532c02eb6d656b2e26",
+      "bodyPixelHash": "342884da405b74d548d87de20ab79d6f7c359099e63011de69bd5d886b0088ea",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-qualcomm-review-12.png"
+    },
+    {
+      "file": "qualcomm.pdf",
+      "page": 13,
+      "pdfHash": "f992b8160fef8afb3d26d45b267c6874229a42c01cf0df532c02eb6d656b2e26",
+      "bodyPixelHash": "7f85340dafc43d28bf726b7cb0d01eee8f8aafbb599f03f475d2eecd6acd6da3",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-qualcomm-review-13.png"
+    },
+    {
+      "file": "qualcomm.pdf",
+      "page": 14,
+      "pdfHash": "f992b8160fef8afb3d26d45b267c6874229a42c01cf0df532c02eb6d656b2e26",
+      "bodyPixelHash": "c63d8862bb1b1f35fbc2aab319a2dadaa0665a79b8e28c9159f5d48c423d2abf",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-qualcomm-review-14.png"
+    },
+    {
+      "file": "qualcomm.pdf",
+      "page": 15,
+      "pdfHash": "f992b8160fef8afb3d26d45b267c6874229a42c01cf0df532c02eb6d656b2e26",
+      "bodyPixelHash": "1a9462a27ade96d68775509ca9b6d17b02eecc0907034f14fe844189cedfd096",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-qualcomm-review-15.png"
+    },
+    {
+      "file": "qualcomm.pdf",
+      "page": 16,
+      "pdfHash": "f992b8160fef8afb3d26d45b267c6874229a42c01cf0df532c02eb6d656b2e26",
+      "bodyPixelHash": "78aba70e125348b4c323fc37a1631bb1f27a2711e788e7d43db6671472e2cd00",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-qualcomm-review-16.png"
+    },
+    {
+      "file": "samsung-biologics.pdf",
+      "page": 1,
+      "pdfHash": "28f195893d65710dbb07e729a5372bbd1b0a5073819c1666a5d072cdbae54041",
+      "bodyPixelHash": "cba4e49f60fe580ed172db690fb43542fb1c2f8039b21957387a371c85672eec",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-samsung-biologics-review-1.png"
+    },
+    {
+      "file": "samsung-biologics.pdf",
+      "page": 2,
+      "pdfHash": "28f195893d65710dbb07e729a5372bbd1b0a5073819c1666a5d072cdbae54041",
+      "bodyPixelHash": "57b333291128b76b4ed7b99f949723f94312c972fd1062409eb027e2c4ff200b",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-samsung-biologics-review-2.png"
+    },
+    {
+      "file": "samsung-biologics.pdf",
+      "page": 3,
+      "pdfHash": "28f195893d65710dbb07e729a5372bbd1b0a5073819c1666a5d072cdbae54041",
+      "bodyPixelHash": "d703ddb78a37f7df9781f546697c547895d248c6c74dd5de05254c64fac43218",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-samsung-biologics-review-3.png"
+    },
+    {
+      "file": "samsung-biologics.pdf",
+      "page": 4,
+      "pdfHash": "28f195893d65710dbb07e729a5372bbd1b0a5073819c1666a5d072cdbae54041",
+      "bodyPixelHash": "02e2b0628d5ca6277054c2f319edeca8def8c73c1ddf99d8d79291368baffe01",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-samsung-biologics-review-4.png"
+    },
+    {
+      "file": "samsung-biologics.pdf",
+      "page": 5,
+      "pdfHash": "28f195893d65710dbb07e729a5372bbd1b0a5073819c1666a5d072cdbae54041",
+      "bodyPixelHash": "f8ec66a9f316b02481c3738a64e730455948483037b889cf2ef1bd5dcac384d2",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-samsung-biologics-review-5.png"
+    },
+    {
+      "file": "samsung-biologics.pdf",
+      "page": 6,
+      "pdfHash": "28f195893d65710dbb07e729a5372bbd1b0a5073819c1666a5d072cdbae54041",
+      "bodyPixelHash": "13c2687e97d928990ce010d91576d846ed16622cb43e1daa6087fe7a8fbfea90",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-samsung-biologics-review-6.png"
+    },
+    {
+      "file": "samsung-biologics.pdf",
+      "page": 7,
+      "pdfHash": "28f195893d65710dbb07e729a5372bbd1b0a5073819c1666a5d072cdbae54041",
+      "bodyPixelHash": "87e8586742e9aad1a2b28fb625484e8009873000a26eb94c874d48f098f1f67d",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-samsung-biologics-review-7.png"
+    },
+    {
+      "file": "samsung-biologics.pdf",
+      "page": 8,
+      "pdfHash": "28f195893d65710dbb07e729a5372bbd1b0a5073819c1666a5d072cdbae54041",
+      "bodyPixelHash": "62d926427646f9a261cc98fca3da7cd7359fdd2be19aa7d6e4db81c30b8c4f88",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-samsung-biologics-review-8.png"
+    },
+    {
+      "file": "samsung-biologics.pdf",
+      "page": 9,
+      "pdfHash": "28f195893d65710dbb07e729a5372bbd1b0a5073819c1666a5d072cdbae54041",
+      "bodyPixelHash": "8e150ad7ab5dafc7f30500b9e7ef719ef5fdb761fb180de4801c711e3ca49e34",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-samsung-biologics-review-9.png"
+    },
+    {
+      "file": "samsung-biologics.pdf",
+      "page": 10,
+      "pdfHash": "28f195893d65710dbb07e729a5372bbd1b0a5073819c1666a5d072cdbae54041",
+      "bodyPixelHash": "511247c204d7894e05fc8f3d4e48b5b0d1ad161430c852a63d22d1542f8d83c2",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-samsung-biologics-review-10.png"
+    },
+    {
+      "file": "samsung-biologics.pdf",
+      "page": 11,
+      "pdfHash": "28f195893d65710dbb07e729a5372bbd1b0a5073819c1666a5d072cdbae54041",
+      "bodyPixelHash": "fc3bd5ca38a505e6c0ccd46e292790a4bfe6471f37f79a617d23b3ec90e5b5c3",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-samsung-biologics-review-11.png"
+    },
+    {
+      "file": "samsung-biologics.pdf",
+      "page": 12,
+      "pdfHash": "28f195893d65710dbb07e729a5372bbd1b0a5073819c1666a5d072cdbae54041",
+      "bodyPixelHash": "4e9d4e88c16e9d42e96f4def47844c80ce7415c9acac8d5545b8f48da1ca82d7",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-samsung-biologics-review-12.png"
+    },
+    {
+      "file": "samsung-biologics.pdf",
+      "page": 13,
+      "pdfHash": "28f195893d65710dbb07e729a5372bbd1b0a5073819c1666a5d072cdbae54041",
+      "bodyPixelHash": "aa7187a2b354c968f38504ebcad9097c341ff6c928122467720998f3a3498ab6",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-samsung-biologics-review-13.png"
+    },
+    {
+      "file": "samsung-biologics.pdf",
+      "page": 14,
+      "pdfHash": "28f195893d65710dbb07e729a5372bbd1b0a5073819c1666a5d072cdbae54041",
+      "bodyPixelHash": "3d06bfa3898167fcae20f28a34b11ce1e3c56d5904481bb733baa6dd96ab8eb3",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-samsung-biologics-review-14.png"
+    },
+    {
+      "file": "samsung-biologics.pdf",
+      "page": 15,
+      "pdfHash": "28f195893d65710dbb07e729a5372bbd1b0a5073819c1666a5d072cdbae54041",
+      "bodyPixelHash": "472ccb8aba6d56cdfd63da29a09d4457bc43902a2ae97976e1bbf51b8ecc44cb",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-samsung-biologics-review-15.png"
+    },
+    {
+      "file": "samsung-biologics.pdf",
+      "page": 16,
+      "pdfHash": "28f195893d65710dbb07e729a5372bbd1b0a5073819c1666a5d072cdbae54041",
+      "bodyPixelHash": "6c7ca837a8bd72c21d786edfdefa6798d1388efcf5586a167863b1be153c515b",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-samsung-biologics-review-16.png"
+    },
+    {
+      "file": "microsoft.pdf",
+      "page": 1,
+      "pdfHash": "81c840135a0ba539c28ddd96240c4048c39dc3eb1f7139379632099f6f139e10",
+      "bodyPixelHash": "9581dd778608134b756d29d9773a4cab49950d2995259bc63d1e5fe011fff885",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-microsoft-review-1.png"
+    },
+    {
+      "file": "microsoft.pdf",
+      "page": 2,
+      "pdfHash": "81c840135a0ba539c28ddd96240c4048c39dc3eb1f7139379632099f6f139e10",
+      "bodyPixelHash": "8630be1542ca51101d2809e6c513d8270d9617de89443e41c60ae604c42c2ed9",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-microsoft-review-2.png"
+    },
+    {
+      "file": "microsoft.pdf",
+      "page": 3,
+      "pdfHash": "81c840135a0ba539c28ddd96240c4048c39dc3eb1f7139379632099f6f139e10",
+      "bodyPixelHash": "96e675d1dda8f12409bcc2c2d7a02dda6a835949f8a4dfc26395619a1102ebef",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-microsoft-review-3.png"
+    },
+    {
+      "file": "microsoft.pdf",
+      "page": 4,
+      "pdfHash": "81c840135a0ba539c28ddd96240c4048c39dc3eb1f7139379632099f6f139e10",
+      "bodyPixelHash": "71cf7b127742805ac31d4f5d361dff1dcd9c98f9f653e933edfde3b607f92c78",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-microsoft-review-4.png"
+    },
+    {
+      "file": "microsoft.pdf",
+      "page": 5,
+      "pdfHash": "81c840135a0ba539c28ddd96240c4048c39dc3eb1f7139379632099f6f139e10",
+      "bodyPixelHash": "e1bd948b69d409341acb300cb6d42b1af1cf1835e8d6cc0416c6f7b169034c49",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-microsoft-review-5.png"
+    },
+    {
+      "file": "microsoft.pdf",
+      "page": 6,
+      "pdfHash": "81c840135a0ba539c28ddd96240c4048c39dc3eb1f7139379632099f6f139e10",
+      "bodyPixelHash": "7e52d1f063ad7339aaf3bc60cdf680f9b51fea3bca99ae0fb719c71a32fc59d0",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-microsoft-review-6.png"
+    },
+    {
+      "file": "microsoft.pdf",
+      "page": 7,
+      "pdfHash": "81c840135a0ba539c28ddd96240c4048c39dc3eb1f7139379632099f6f139e10",
+      "bodyPixelHash": "5f8e0be20e987f645247a192972b8425a4aebc5969afafc10b9c528fb78c919f",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-microsoft-review-7.png"
+    },
+    {
+      "file": "microsoft.pdf",
+      "page": 8,
+      "pdfHash": "81c840135a0ba539c28ddd96240c4048c39dc3eb1f7139379632099f6f139e10",
+      "bodyPixelHash": "519b1e2e6fb1be4deae1a2fdd0a16b7b6b9de62d8ba526c529a0efc05f6af9a7",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-microsoft-review-8.png"
+    },
+    {
+      "file": "microsoft.pdf",
+      "page": 9,
+      "pdfHash": "81c840135a0ba539c28ddd96240c4048c39dc3eb1f7139379632099f6f139e10",
+      "bodyPixelHash": "70e5ec6513cb29041e421a42043bb2d79b6948a36c83fa27aad69b7af7eb1166",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-microsoft-review-9.png"
+    },
+    {
+      "file": "microsoft.pdf",
+      "page": 10,
+      "pdfHash": "81c840135a0ba539c28ddd96240c4048c39dc3eb1f7139379632099f6f139e10",
+      "bodyPixelHash": "ac033569d4fcb5e6b8da3adcaae347a78857a4296f5b8d3d1a0a58725e452a41",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-microsoft-review-10.png"
+    },
+    {
+      "file": "microsoft.pdf",
+      "page": 11,
+      "pdfHash": "81c840135a0ba539c28ddd96240c4048c39dc3eb1f7139379632099f6f139e10",
+      "bodyPixelHash": "aeba05d2ad781dd6c593bf0eaff652273a8675856f8c8224ef301b766c169a45",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-microsoft-review-11.png"
+    },
+    {
+      "file": "microsoft.pdf",
+      "page": 12,
+      "pdfHash": "81c840135a0ba539c28ddd96240c4048c39dc3eb1f7139379632099f6f139e10",
+      "bodyPixelHash": "f7f382688976bd14227e9f5edfa430a7d813e1bf71c829f298b150cf3b00e192",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-microsoft-review-12.png"
+    },
+    {
+      "file": "microsoft.pdf",
+      "page": 13,
+      "pdfHash": "81c840135a0ba539c28ddd96240c4048c39dc3eb1f7139379632099f6f139e10",
+      "bodyPixelHash": "ab888365e41b17dc130fbd27e20d0e5d9fffcce341f862954edf7e3ebe2aa617",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-microsoft-review-13.png"
+    },
+    {
+      "file": "microsoft.pdf",
+      "page": 14,
+      "pdfHash": "81c840135a0ba539c28ddd96240c4048c39dc3eb1f7139379632099f6f139e10",
+      "bodyPixelHash": "ce742dc54c14907e8eb5a6b05470a81bda2e754e18ea5c8787f6a44eb1231241",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-microsoft-review-14.png"
+    },
+    {
+      "file": "microsoft.pdf",
+      "page": 15,
+      "pdfHash": "81c840135a0ba539c28ddd96240c4048c39dc3eb1f7139379632099f6f139e10",
+      "bodyPixelHash": "4849a0629842222a6b73a3576ea55f33bc1cb41761ae9083f1818f33fae4e03f",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-microsoft-review-15.png"
+    },
+    {
+      "file": "microsoft.pdf",
+      "page": 16,
+      "pdfHash": "81c840135a0ba539c28ddd96240c4048c39dc3eb1f7139379632099f6f139e10",
+      "bodyPixelHash": "db24fc0ca65f145aed3c630a0a8c650e3ce4a514248697e8fa290abe37e48bdd",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-microsoft-review-16.png"
+    },
+    {
+      "file": "microsoft.pdf",
+      "page": 17,
+      "pdfHash": "81c840135a0ba539c28ddd96240c4048c39dc3eb1f7139379632099f6f139e10",
+      "bodyPixelHash": "1a9462a27ade96d68775509ca9b6d17b02eecc0907034f14fe844189cedfd096",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-microsoft-review-17.png"
+    },
+    {
+      "file": "microsoft.pdf",
+      "page": 18,
+      "pdfHash": "81c840135a0ba539c28ddd96240c4048c39dc3eb1f7139379632099f6f139e10",
+      "bodyPixelHash": "ed5f3c8f8fc638e94811fe82ed9095a33ad84fd2f4f001bb4ba7dd13cc91450b",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-microsoft-review-18.png"
+    },
+    {
+      "file": "microsoft.pdf",
+      "page": 19,
+      "pdfHash": "81c840135a0ba539c28ddd96240c4048c39dc3eb1f7139379632099f6f139e10",
+      "bodyPixelHash": "42088c2f207eb347d2351c089c566527db2799db77e9e85a95f1a70f0f4221b6",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-microsoft-review-19.png"
+    },
+    {
+      "file": "micron.pdf",
+      "page": 1,
+      "pdfHash": "f3c835f06a356c3ad1badf3923def7a2dec29cb375fc0d227358f584d424ab79",
+      "bodyPixelHash": "21cde394fd4d5ae279b56dbf68cdf4d87b98b78ed4096c236ca46345592ba679",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-micron-review-1.png"
+    },
+    {
+      "file": "micron.pdf",
+      "page": 2,
+      "pdfHash": "f3c835f06a356c3ad1badf3923def7a2dec29cb375fc0d227358f584d424ab79",
+      "bodyPixelHash": "0667163ec1d487d9331c844371e48a892ae07e5bf1b57e619cb1d5a2e54b076e",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-micron-review-2.png"
+    },
+    {
+      "file": "micron.pdf",
+      "page": 3,
+      "pdfHash": "f3c835f06a356c3ad1badf3923def7a2dec29cb375fc0d227358f584d424ab79",
+      "bodyPixelHash": "4c453df9cb7fb3cf98389606711354fedc13083b1f490135c7ccb2c376c83f3e",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-micron-review-3.png"
+    },
+    {
+      "file": "micron.pdf",
+      "page": 4,
+      "pdfHash": "f3c835f06a356c3ad1badf3923def7a2dec29cb375fc0d227358f584d424ab79",
+      "bodyPixelHash": "91c3fe2f8bf8676d75b78678f354059ede3cc44eb798ec73d3f7d5eff8381e65",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-micron-review-4.png"
+    },
+    {
+      "file": "micron.pdf",
+      "page": 5,
+      "pdfHash": "f3c835f06a356c3ad1badf3923def7a2dec29cb375fc0d227358f584d424ab79",
+      "bodyPixelHash": "5bf063fee5ed0b8f67f56332e057d38c180ea44732c77ad18248d7e3642d368e",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-micron-review-5.png"
+    },
+    {
+      "file": "micron.pdf",
+      "page": 6,
+      "pdfHash": "f3c835f06a356c3ad1badf3923def7a2dec29cb375fc0d227358f584d424ab79",
+      "bodyPixelHash": "f9f3e4dd153df02bad746c33c7d035cf79f700f4d93f9a0f95f85507e2ac0c29",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-micron-review-6.png"
+    },
+    {
+      "file": "micron.pdf",
+      "page": 7,
+      "pdfHash": "f3c835f06a356c3ad1badf3923def7a2dec29cb375fc0d227358f584d424ab79",
+      "bodyPixelHash": "d0618c2d919a53126b3397e73782f6f3177bd4905c5c7edb215709f97946a5de",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-micron-review-7.png"
+    },
+    {
+      "file": "micron.pdf",
+      "page": 8,
+      "pdfHash": "f3c835f06a356c3ad1badf3923def7a2dec29cb375fc0d227358f584d424ab79",
+      "bodyPixelHash": "40ef6fbeab33572cc88a1caad9a796656eef743aa4d9d2d6e823048b34057c92",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-micron-review-8.png"
+    },
+    {
+      "file": "micron.pdf",
+      "page": 9,
+      "pdfHash": "f3c835f06a356c3ad1badf3923def7a2dec29cb375fc0d227358f584d424ab79",
+      "bodyPixelHash": "1e7c120c6fa70316ddc4ffda18117144411779a830f8ca8e9fbfc01cdcab07f8",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-micron-review-9.png"
+    },
+    {
+      "file": "micron.pdf",
+      "page": 10,
+      "pdfHash": "f3c835f06a356c3ad1badf3923def7a2dec29cb375fc0d227358f584d424ab79",
+      "bodyPixelHash": "98966cf13feaab38b8295b3674133028d0a9a5bcadaa59cb9db65565567db269",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-micron-review-10.png"
+    },
+    {
+      "file": "micron.pdf",
+      "page": 11,
+      "pdfHash": "f3c835f06a356c3ad1badf3923def7a2dec29cb375fc0d227358f584d424ab79",
+      "bodyPixelHash": "87fe324ada707b680d450ef4067095e680a0c33ae8dc3505d97c1999644d6deb",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-micron-review-11.png"
+    },
+    {
+      "file": "micron.pdf",
+      "page": 12,
+      "pdfHash": "f3c835f06a356c3ad1badf3923def7a2dec29cb375fc0d227358f584d424ab79",
+      "bodyPixelHash": "fe82878040d6c659b56eaee70c7b67979ddd0a0a6e65ddcaa9239380ac496ed7",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-micron-review-12.png"
+    },
+    {
+      "file": "micron.pdf",
+      "page": 13,
+      "pdfHash": "f3c835f06a356c3ad1badf3923def7a2dec29cb375fc0d227358f584d424ab79",
+      "bodyPixelHash": "b6321adc226263545b9b3589f54cd7b9cd445f679a347d8e79f8507962827dd6",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-micron-review-13.png"
+    },
+    {
+      "file": "micron.pdf",
+      "page": 14,
+      "pdfHash": "f3c835f06a356c3ad1badf3923def7a2dec29cb375fc0d227358f584d424ab79",
+      "bodyPixelHash": "ca7c93bc2407aa690072ff3203af16889c37b52a8f9b32b41708c791db7e69e6",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-micron-review-14.png"
+    },
+    {
+      "file": "micron.pdf",
+      "page": 15,
+      "pdfHash": "f3c835f06a356c3ad1badf3923def7a2dec29cb375fc0d227358f584d424ab79",
+      "bodyPixelHash": "84a7bdc2cebbf7a7d42722af102fe722b127406eebecf0053af2c51edd521980",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-micron-review-15.png"
+    },
+    {
+      "file": "micron.pdf",
+      "page": 16,
+      "pdfHash": "f3c835f06a356c3ad1badf3923def7a2dec29cb375fc0d227358f584d424ab79",
+      "bodyPixelHash": "d10a8694ea884afc75d8524c1b20b9af0eec4793af4dc2e0b161a7fcb25f5613",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-micron-review-16.png"
+    },
+    {
+      "file": "micron.pdf",
+      "page": 17,
+      "pdfHash": "f3c835f06a356c3ad1badf3923def7a2dec29cb375fc0d227358f584d424ab79",
+      "bodyPixelHash": "0b3063eb5e065d07c71d653635cf84ee178b954a7413660657113271c76999d9",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-micron-review-17.png"
+    },
+    {
+      "file": "micron.pdf",
+      "page": 18,
+      "pdfHash": "f3c835f06a356c3ad1badf3923def7a2dec29cb375fc0d227358f584d424ab79",
+      "bodyPixelHash": "ed736dc89f05e255cb3c7146d8f15a454a2f692649df20e771101eb94ddac7be",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-micron-review-18.png"
+    },
+    {
+      "file": "micron.pdf",
+      "page": 19,
+      "pdfHash": "f3c835f06a356c3ad1badf3923def7a2dec29cb375fc0d227358f584d424ab79",
+      "bodyPixelHash": "739037a6cf561b9c66c401aced082cecc659524568aa3017ecdc644f15b8ce15",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-micron-review-19.png"
+    },
+    {
+      "file": "micron.pdf",
+      "page": 20,
+      "pdfHash": "f3c835f06a356c3ad1badf3923def7a2dec29cb375fc0d227358f584d424ab79",
+      "bodyPixelHash": "8bb22e0e065c5d80310b0f53d127ad23ec546d30771312fe5b3af17c0f535646",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-micron-review-20.png"
+    },
+    {
+      "file": "micron.pdf",
+      "page": 21,
+      "pdfHash": "f3c835f06a356c3ad1badf3923def7a2dec29cb375fc0d227358f584d424ab79",
+      "bodyPixelHash": "cfa59d99ba0b7a23e5af08c8d0282fdf6c22bf8c4391b5609f177188ed0d5e0d",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-micron-review-21.png"
+    },
+    {
+      "file": "comparison-auto.pdf",
+      "page": 1,
+      "pdfHash": "8ba956dc67aaf2e72c43642d44d218dba9a5650d83e7bb971b8df062d570a6fb",
+      "bodyPixelHash": "9b48cf112117ba5632e31ffcf9f137e19eb57f2fb59caf245eaf292266a5efc9",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-comparison-auto-review-1.png"
+    },
+    {
+      "file": "comparison-auto.pdf",
+      "page": 2,
+      "pdfHash": "8ba956dc67aaf2e72c43642d44d218dba9a5650d83e7bb971b8df062d570a6fb",
+      "bodyPixelHash": "0a09980df0768fc8934ca06617bc41cd5b224b6d8a4df14cb184c4480912b0b3",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-comparison-auto-review-2.png"
+    },
+    {
+      "file": "comparison-auto.pdf",
+      "page": 3,
+      "pdfHash": "8ba956dc67aaf2e72c43642d44d218dba9a5650d83e7bb971b8df062d570a6fb",
+      "bodyPixelHash": "1c05825939e69129e7a8e7488e1e8bb0441a7292dc361ff8f2612390dceaa72b",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-comparison-auto-review-3.png"
+    },
+    {
+      "file": "comparison-auto.pdf",
+      "page": 4,
+      "pdfHash": "8ba956dc67aaf2e72c43642d44d218dba9a5650d83e7bb971b8df062d570a6fb",
+      "bodyPixelHash": "26f98f20a3b7131595f65bddd266f815bf227313300196d435c0972d0f0d5f82",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-comparison-auto-review-4.png"
+    },
+    {
+      "file": "conditions.pdf",
+      "page": 1,
+      "pdfHash": "02946293f6772d3415cffedbb9ef371cbcd8354e527d3ad2ced77c221194128a",
+      "bodyPixelHash": "c1ac2d8397188090afd9fe87952463e0b8af6f22aa61df7c6fd410c6d27d5b9c",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-conditions-review-1.png"
+    },
+    {
+      "file": "conditions.pdf",
+      "page": 2,
+      "pdfHash": "02946293f6772d3415cffedbb9ef371cbcd8354e527d3ad2ced77c221194128a",
+      "bodyPixelHash": "f8e09e48c90e72904382521baa23aff4230417b86e8062cdfa72a8c081473363",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-conditions-review-2.png"
+    },
+    {
+      "file": "conditions.pdf",
+      "page": 3,
+      "pdfHash": "02946293f6772d3415cffedbb9ef371cbcd8354e527d3ad2ced77c221194128a",
+      "bodyPixelHash": "789fe2b9f7daa262a9129633e66483bb453a328efaf3465ee28305229b2fde90",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-conditions-review-3.png"
+    },
+    {
+      "file": "conditions.pdf",
+      "page": 4,
+      "pdfHash": "02946293f6772d3415cffedbb9ef371cbcd8354e527d3ad2ced77c221194128a",
+      "bodyPixelHash": "c160770a0d4c6f7b527c6fd45890d482c2239445aae9f11771c6a2458c38310a",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-conditions-review-4.png"
+    },
+    {
+      "file": "conditions.pdf",
+      "page": 5,
+      "pdfHash": "02946293f6772d3415cffedbb9ef371cbcd8354e527d3ad2ced77c221194128a",
+      "bodyPixelHash": "f5280e16ef819a9c6c439b88de493437fc7be6d46ca66a273bd12ab3a576fd77",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-conditions-review-5.png"
+    },
+    {
+      "file": "conditions.pdf",
+      "page": 6,
+      "pdfHash": "02946293f6772d3415cffedbb9ef371cbcd8354e527d3ad2ced77c221194128a",
+      "bodyPixelHash": "eeb350ace1bc2983067a6dd1a5d0fe09cdddc5799b55c928be90a7604f79d036",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-conditions-review-6.png"
+    },
+    {
+      "file": "conditions.pdf",
+      "page": 7,
+      "pdfHash": "02946293f6772d3415cffedbb9ef371cbcd8354e527d3ad2ced77c221194128a",
+      "bodyPixelHash": "3eb4626f25eccd3e865e61ef1167dd1f33996652e12e83fad028b77b3b391fa9",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-conditions-review-7.png"
+    },
+    {
+      "file": "conditions.pdf",
+      "page": 8,
+      "pdfHash": "02946293f6772d3415cffedbb9ef371cbcd8354e527d3ad2ced77c221194128a",
+      "bodyPixelHash": "d7bb8a92a09377614921edc09ac06b51a9060f7028f7de0ef332bf6a503a9d26",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-conditions-review-8.png"
+    },
+    {
+      "file": "intel.pdf",
+      "page": 1,
+      "pdfHash": "17b74bdd35868c286b08abb46410500bc8b1e244bea77bcf7f9737ed5663413f",
+      "bodyPixelHash": "6e4a45d6a0fe9440ce81a64998a1e1159871d55468bb98a47f6c1d0123797468",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-intel-review-1.png"
+    },
+    {
+      "file": "intel.pdf",
+      "page": 2,
+      "pdfHash": "17b74bdd35868c286b08abb46410500bc8b1e244bea77bcf7f9737ed5663413f",
+      "bodyPixelHash": "465876c91e9c4fd08649d6aa311188cb989fd5873bf9bac2ea5b20d9da9f2785",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-intel-review-2.png"
+    },
+    {
+      "file": "intel.pdf",
+      "page": 3,
+      "pdfHash": "17b74bdd35868c286b08abb46410500bc8b1e244bea77bcf7f9737ed5663413f",
+      "bodyPixelHash": "04715df53b023559fbaf5a8c4edd7a83fe4e4c304f3151a0adb06f3b3ffe2c06",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-intel-review-3.png"
+    },
+    {
+      "file": "intel.pdf",
+      "page": 4,
+      "pdfHash": "17b74bdd35868c286b08abb46410500bc8b1e244bea77bcf7f9737ed5663413f",
+      "bodyPixelHash": "a8ba1e100b3f3581f6999896dc0a7763645b2fa674aa16fae9c15480e6d43915",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-intel-review-4.png"
+    },
+    {
+      "file": "intel.pdf",
+      "page": 5,
+      "pdfHash": "17b74bdd35868c286b08abb46410500bc8b1e244bea77bcf7f9737ed5663413f",
+      "bodyPixelHash": "e7558319e11b56b606fdfcd2e554a136a4ac23ffd5e15f58c54911cf1b9f78be",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-intel-review-5.png"
+    },
+    {
+      "file": "intel.pdf",
+      "page": 6,
+      "pdfHash": "17b74bdd35868c286b08abb46410500bc8b1e244bea77bcf7f9737ed5663413f",
+      "bodyPixelHash": "afb5560e58ee18aed35dc3e9df3eeb10a6183e8487e09525af60e37fc5e943a1",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-intel-review-6.png"
+    },
+    {
+      "file": "intel.pdf",
+      "page": 7,
+      "pdfHash": "17b74bdd35868c286b08abb46410500bc8b1e244bea77bcf7f9737ed5663413f",
+      "bodyPixelHash": "88251ae2608b96274806d3fdf8e1be2b4158e57267faca5e357793ef7a28978f",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-intel-review-7.png"
+    },
+    {
+      "file": "intel.pdf",
+      "page": 8,
+      "pdfHash": "17b74bdd35868c286b08abb46410500bc8b1e244bea77bcf7f9737ed5663413f",
+      "bodyPixelHash": "5b32f6e74aa7d2ca478326465e4a331ef7092f9f4ef43136e8b8518d5475ca94",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-intel-review-8.png"
+    },
+    {
+      "file": "intel.pdf",
+      "page": 9,
+      "pdfHash": "17b74bdd35868c286b08abb46410500bc8b1e244bea77bcf7f9737ed5663413f",
+      "bodyPixelHash": "110be2caed3967d70a15b0edfb645b87c1191250853e6d3e985cb3329cad3e73",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-intel-review-9.png"
+    },
+    {
+      "file": "intel.pdf",
+      "page": 10,
+      "pdfHash": "17b74bdd35868c286b08abb46410500bc8b1e244bea77bcf7f9737ed5663413f",
+      "bodyPixelHash": "90773925ed92d9f54eb0c1d1e25861ec444d0998cf3a6a28ca7658cec05d1e9d",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-intel-review-10.png"
+    },
+    {
+      "file": "intel.pdf",
+      "page": 11,
+      "pdfHash": "17b74bdd35868c286b08abb46410500bc8b1e244bea77bcf7f9737ed5663413f",
+      "bodyPixelHash": "13277529894552d60be2a79be11a40a0a6cffabd37643ce5aeaa2143c5ae3a39",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-intel-review-11.png"
+    },
+    {
+      "file": "intel.pdf",
+      "page": 12,
+      "pdfHash": "17b74bdd35868c286b08abb46410500bc8b1e244bea77bcf7f9737ed5663413f",
+      "bodyPixelHash": "96674be458a3fdf975f95b7c1852afbb243eef081dae1f4f8e40815df6b0bb2e",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-intel-review-12.png"
+    },
+    {
+      "file": "intel.pdf",
+      "page": 13,
+      "pdfHash": "17b74bdd35868c286b08abb46410500bc8b1e244bea77bcf7f9737ed5663413f",
+      "bodyPixelHash": "4adcc6786094bd87b59c9f78a843857afc88ec00a662c7af9c430388d8c65a3e",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-intel-review-13.png"
+    },
+    {
+      "file": "intel.pdf",
+      "page": 14,
+      "pdfHash": "17b74bdd35868c286b08abb46410500bc8b1e244bea77bcf7f9737ed5663413f",
+      "bodyPixelHash": "376afbb14767074b376d50d8c119265ca1b69915c3b508666b3f7e752d208cda",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-intel-review-14.png"
+    },
+    {
+      "file": "kia.pdf",
+      "page": 1,
+      "pdfHash": "fe31fa6ff24fb965f49d6c3c2239b7cadac7a868b00d3e4e44b92c2b67cbf017",
+      "bodyPixelHash": "09d97c122955361a16af18d5cbd8c27a9dc2fcb9760ef3543382440f452f62e5",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-kia-review-1.png"
+    },
+    {
+      "file": "kia.pdf",
+      "page": 2,
+      "pdfHash": "fe31fa6ff24fb965f49d6c3c2239b7cadac7a868b00d3e4e44b92c2b67cbf017",
+      "bodyPixelHash": "ec8c720b445f06888aa19f234f4e401fc5731ea1267dd3ae027c5646aa259535",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-kia-review-2.png"
+    },
+    {
+      "file": "kia.pdf",
+      "page": 3,
+      "pdfHash": "fe31fa6ff24fb965f49d6c3c2239b7cadac7a868b00d3e4e44b92c2b67cbf017",
+      "bodyPixelHash": "1094cc3c5d5e9bc9860d4f40caeabb13426cbb72e9de7715f6fcac7a6d9054d7",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-kia-review-3.png"
+    },
+    {
+      "file": "kia.pdf",
+      "page": 4,
+      "pdfHash": "fe31fa6ff24fb965f49d6c3c2239b7cadac7a868b00d3e4e44b92c2b67cbf017",
+      "bodyPixelHash": "163e8d3f24c1b2e911396b8d278b184ee830085b7083fd795bfa8ee64d157ee3",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-kia-review-4.png"
+    },
+    {
+      "file": "kia.pdf",
+      "page": 5,
+      "pdfHash": "fe31fa6ff24fb965f49d6c3c2239b7cadac7a868b00d3e4e44b92c2b67cbf017",
+      "bodyPixelHash": "2758435a60a3730d1999e937683bb76b4af8626b75b7ce6e3eb7c5a0826afeb5",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-kia-review-5.png"
+    },
+    {
+      "file": "kia.pdf",
+      "page": 6,
+      "pdfHash": "fe31fa6ff24fb965f49d6c3c2239b7cadac7a868b00d3e4e44b92c2b67cbf017",
+      "bodyPixelHash": "ad0dd2f09ac697d1d1ee2d5ad43c41fc1c5a0f3236e5edbf9baeef3f01d87953",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-kia-review-6.png"
+    },
+    {
+      "file": "kia.pdf",
+      "page": 7,
+      "pdfHash": "fe31fa6ff24fb965f49d6c3c2239b7cadac7a868b00d3e4e44b92c2b67cbf017",
+      "bodyPixelHash": "bc021c06b40e5d39766a2d7c6c4b519238be6af0448667ea505d4a588f82b113",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-kia-review-7.png"
+    },
+    {
+      "file": "kia.pdf",
+      "page": 8,
+      "pdfHash": "fe31fa6ff24fb965f49d6c3c2239b7cadac7a868b00d3e4e44b92c2b67cbf017",
+      "bodyPixelHash": "7e52516081d478d5e0cf0381b7c0bacbb500b4dc9301c9b4a9d5e8dace4f5656",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-kia-review-8.png"
+    },
+    {
+      "file": "kia.pdf",
+      "page": 9,
+      "pdfHash": "fe31fa6ff24fb965f49d6c3c2239b7cadac7a868b00d3e4e44b92c2b67cbf017",
+      "bodyPixelHash": "faa144f1b72524cd9434224cb115338c4f78df8bf81eb2854adb5b6ad606041d",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-kia-review-9.png"
+    },
+    {
+      "file": "kia.pdf",
+      "page": 10,
+      "pdfHash": "fe31fa6ff24fb965f49d6c3c2239b7cadac7a868b00d3e4e44b92c2b67cbf017",
+      "bodyPixelHash": "7d390ef705324f394d44f3ba630577e5d2a6cf0ff42aacaa2d54ea3f9451829f",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-kia-review-10.png"
+    },
+    {
+      "file": "kia.pdf",
+      "page": 11,
+      "pdfHash": "fe31fa6ff24fb965f49d6c3c2239b7cadac7a868b00d3e4e44b92c2b67cbf017",
+      "bodyPixelHash": "64fe274d6383cb63b7ab87cd252179029f2abdce26ae506cf08f0223d60de746",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-kia-review-11.png"
+    },
+    {
+      "file": "kia.pdf",
+      "page": 12,
+      "pdfHash": "fe31fa6ff24fb965f49d6c3c2239b7cadac7a868b00d3e4e44b92c2b67cbf017",
+      "bodyPixelHash": "c1b95bea199209931da5f67b901d7315b7973b04f055136e909e5cd2110f7bdf",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-kia-review-12.png"
+    },
+    {
+      "file": "kia.pdf",
+      "page": 13,
+      "pdfHash": "fe31fa6ff24fb965f49d6c3c2239b7cadac7a868b00d3e4e44b92c2b67cbf017",
+      "bodyPixelHash": "c9b94a810da01cc30228033108e447dbe4324ac13eb47231cebfe34734356f20",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-kia-review-13.png"
+    },
+    {
+      "file": "kia.pdf",
+      "page": 14,
+      "pdfHash": "fe31fa6ff24fb965f49d6c3c2239b7cadac7a868b00d3e4e44b92c2b67cbf017",
+      "bodyPixelHash": "c87a9e15e6d4d3dd4187c3e33786805ce4ff1fb653f7e1efa0c2cb4f6b808d93",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-kia-review-14.png"
+    },
+    {
+      "file": "kia.pdf",
+      "page": 15,
+      "pdfHash": "fe31fa6ff24fb965f49d6c3c2239b7cadac7a868b00d3e4e44b92c2b67cbf017",
+      "bodyPixelHash": "51e47c480f995da2920faec095d8933f98935b4e0b9c246b9a1324119e02152a",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-kia-review-15.png"
+    },
+    {
+      "file": "kia.pdf",
+      "page": 16,
+      "pdfHash": "fe31fa6ff24fb965f49d6c3c2239b7cadac7a868b00d3e4e44b92c2b67cbf017",
+      "bodyPixelHash": "ddf6c21e87b0a617e5ed1a82a19b62ac41eede73f635f3b3ceff329be242195a",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-kia-review-16.png"
+    },
+    {
+      "file": "kia.pdf",
+      "page": 17,
+      "pdfHash": "fe31fa6ff24fb965f49d6c3c2239b7cadac7a868b00d3e4e44b92c2b67cbf017",
+      "bodyPixelHash": "aa626faaf5031de169663f714af3adf42d47388f960082a22afff03bca68c46c",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-kia-review-17.png"
+    },
+    {
+      "file": "sk-hynix.pdf",
+      "page": 1,
+      "pdfHash": "2d9a5b0c0d328a80ddca637a2b8e2c4156a36525c3a9034450ccebefef7b4d8c",
+      "bodyPixelHash": "6106b40123f18da4605dd55a9403276bbac58a86fcb8e056c3573e3af55d874b",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-sk-hynix-review-1.png"
+    },
+    {
+      "file": "sk-hynix.pdf",
+      "page": 2,
+      "pdfHash": "2d9a5b0c0d328a80ddca637a2b8e2c4156a36525c3a9034450ccebefef7b4d8c",
+      "bodyPixelHash": "722cdc3e759cc2292764f797187c5327716ccb1194774878e0af63ca49bd0905",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-sk-hynix-review-2.png"
+    },
+    {
+      "file": "sk-hynix.pdf",
+      "page": 3,
+      "pdfHash": "2d9a5b0c0d328a80ddca637a2b8e2c4156a36525c3a9034450ccebefef7b4d8c",
+      "bodyPixelHash": "ccde37fc1e1035738e2d8627a4bcd1fee52a3d36825491238fed96b075c28e7a",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-sk-hynix-review-3.png"
+    },
+    {
+      "file": "sk-hynix.pdf",
+      "page": 4,
+      "pdfHash": "2d9a5b0c0d328a80ddca637a2b8e2c4156a36525c3a9034450ccebefef7b4d8c",
+      "bodyPixelHash": "2117b772500f52b1da89b43399a74134daa814670cde3ac40814bd9513f1d2bc",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-sk-hynix-review-4.png"
+    },
+    {
+      "file": "sk-hynix.pdf",
+      "page": 5,
+      "pdfHash": "2d9a5b0c0d328a80ddca637a2b8e2c4156a36525c3a9034450ccebefef7b4d8c",
+      "bodyPixelHash": "fb56cb1ccb7d0bfbbef58c9ffe73a596557a3121d83402d6854ca4ba676e1b41",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-sk-hynix-review-5.png"
+    },
+    {
+      "file": "sk-hynix.pdf",
+      "page": 6,
+      "pdfHash": "2d9a5b0c0d328a80ddca637a2b8e2c4156a36525c3a9034450ccebefef7b4d8c",
+      "bodyPixelHash": "e198072814a9f9427b31fcabb5e812f865ab8d3047920613c9009ce80a0d89c8",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-sk-hynix-review-6.png"
+    },
+    {
+      "file": "sk-hynix.pdf",
+      "page": 7,
+      "pdfHash": "2d9a5b0c0d328a80ddca637a2b8e2c4156a36525c3a9034450ccebefef7b4d8c",
+      "bodyPixelHash": "cd5c4d96966e44c01bfa3de25ac1ce0488dfbf3f4d1f37895eaca5bdd06ee5a8",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-sk-hynix-review-7.png"
+    },
+    {
+      "file": "sk-hynix.pdf",
+      "page": 8,
+      "pdfHash": "2d9a5b0c0d328a80ddca637a2b8e2c4156a36525c3a9034450ccebefef7b4d8c",
+      "bodyPixelHash": "c6cec4cc87f57573c10af0b31152b5be1c4654fb2f86812821f733f563f6df51",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-sk-hynix-review-8.png"
+    },
+    {
+      "file": "sk-hynix.pdf",
+      "page": 9,
+      "pdfHash": "2d9a5b0c0d328a80ddca637a2b8e2c4156a36525c3a9034450ccebefef7b4d8c",
+      "bodyPixelHash": "d43a6dc9547d9c32e86e021881ea340937c13f3e42134afe0b1d850a75170d83",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-sk-hynix-review-9.png"
+    },
+    {
+      "file": "sk-hynix.pdf",
+      "page": 10,
+      "pdfHash": "2d9a5b0c0d328a80ddca637a2b8e2c4156a36525c3a9034450ccebefef7b4d8c",
+      "bodyPixelHash": "14f2cc0b4cfc24139403f2ef42506e77fef4af78c594b9f4a77a4c450a864d0b",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-sk-hynix-review-10.png"
+    },
+    {
+      "file": "sk-hynix.pdf",
+      "page": 11,
+      "pdfHash": "2d9a5b0c0d328a80ddca637a2b8e2c4156a36525c3a9034450ccebefef7b4d8c",
+      "bodyPixelHash": "69417563bf537f64824f3ed4d418aabf01860b98ab19a60dc34a5cd95967c0ca",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-sk-hynix-review-11.png"
+    },
+    {
+      "file": "sk-hynix.pdf",
+      "page": 12,
+      "pdfHash": "2d9a5b0c0d328a80ddca637a2b8e2c4156a36525c3a9034450ccebefef7b4d8c",
+      "bodyPixelHash": "337dfe514ffbacd31b65e2bf1bd65634b1302975bca4ef468b0e91ccec4dfa77",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-sk-hynix-review-12.png"
+    },
+    {
+      "file": "sk-hynix.pdf",
+      "page": 13,
+      "pdfHash": "2d9a5b0c0d328a80ddca637a2b8e2c4156a36525c3a9034450ccebefef7b4d8c",
+      "bodyPixelHash": "4adcc6786094bd87b59c9f78a843857afc88ec00a662c7af9c430388d8c65a3e",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-sk-hynix-review-13.png"
+    },
+    {
+      "file": "sk-hynix.pdf",
+      "page": 14,
+      "pdfHash": "2d9a5b0c0d328a80ddca637a2b8e2c4156a36525c3a9034450ccebefef7b4d8c",
+      "bodyPixelHash": "7d35d176596f493f5cc585bcc45a8e9e3498e777bcfc6a531dc3840123aa3daa",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-sk-hynix-review-14.png"
+    },
+    {
+      "file": "sk-hynix.pdf",
+      "page": 15,
+      "pdfHash": "2d9a5b0c0d328a80ddca637a2b8e2c4156a36525c3a9034450ccebefef7b4d8c",
+      "bodyPixelHash": "ac8ab4c486c2d9beac887629196f5cb20941f306fd0bc432a71860194756af7f",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-sk-hynix-review-15.png"
+    },
+    {
+      "file": "sk-hynix.pdf",
+      "page": 16,
+      "pdfHash": "2d9a5b0c0d328a80ddca637a2b8e2c4156a36525c3a9034450ccebefef7b4d8c",
+      "bodyPixelHash": "4737084ed8b183aa2a7805a26500d7c05124403745583f9ab741eb3de5864af5",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-sk-hynix-review-16.png"
+    },
+    {
+      "file": "sk-hynix.pdf",
+      "page": 17,
+      "pdfHash": "2d9a5b0c0d328a80ddca637a2b8e2c4156a36525c3a9034450ccebefef7b4d8c",
+      "bodyPixelHash": "771467442cfb75ad417807ceaff3fffbffa84736a08418d795357558ffd13b43",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-sk-hynix-review-17.png"
+    },
+    {
+      "file": "sk-hynix.pdf",
+      "page": 18,
+      "pdfHash": "2d9a5b0c0d328a80ddca637a2b8e2c4156a36525c3a9034450ccebefef7b4d8c",
+      "bodyPixelHash": "20e207df2628e65df5f39003562db49975bc5873245b3e0a109b060b5ff69064",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-sk-hynix-review-18.png"
+    },
+    {
+      "file": "tesla.pdf",
+      "page": 1,
+      "pdfHash": "7d26353792f703fc095c36dc4ed8102fa6e1a4e6e8de21b25a3e4d9e49697d27",
+      "bodyPixelHash": "0d3a6969f64b12332fbb80019fd218a5e43ec08ce793ecf860b65b3f384aa144",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-tesla-review-1.png"
+    },
+    {
+      "file": "tesla.pdf",
+      "page": 2,
+      "pdfHash": "7d26353792f703fc095c36dc4ed8102fa6e1a4e6e8de21b25a3e4d9e49697d27",
+      "bodyPixelHash": "b75f0a719f9fafb821504c0d6a08dd30387018507047451358cb82599f67492f",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-tesla-review-2.png"
+    },
+    {
+      "file": "tesla.pdf",
+      "page": 3,
+      "pdfHash": "7d26353792f703fc095c36dc4ed8102fa6e1a4e6e8de21b25a3e4d9e49697d27",
+      "bodyPixelHash": "c7f502a751fa7aa1a16defe062a2062f3fb4c769f304fbc4ce70b755dbef50cc",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-tesla-review-3.png"
+    },
+    {
+      "file": "tesla.pdf",
+      "page": 4,
+      "pdfHash": "7d26353792f703fc095c36dc4ed8102fa6e1a4e6e8de21b25a3e4d9e49697d27",
+      "bodyPixelHash": "d1f296b29da91dd017aa077b4a31f82668407fafc23d5e67708fb7d22672ba4d",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-tesla-review-4.png"
+    },
+    {
+      "file": "tesla.pdf",
+      "page": 5,
+      "pdfHash": "7d26353792f703fc095c36dc4ed8102fa6e1a4e6e8de21b25a3e4d9e49697d27",
+      "bodyPixelHash": "f920096fe929abb7cfbe45205f342cf91d17923fd446f2f2796c1f56271e46fe",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-tesla-review-5.png"
+    },
+    {
+      "file": "tesla.pdf",
+      "page": 6,
+      "pdfHash": "7d26353792f703fc095c36dc4ed8102fa6e1a4e6e8de21b25a3e4d9e49697d27",
+      "bodyPixelHash": "b9637bdcac3f194df71fe233337ea4702633164e7d2d96467f7e0b573123cf49",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-tesla-review-6.png"
+    },
+    {
+      "file": "tesla.pdf",
+      "page": 7,
+      "pdfHash": "7d26353792f703fc095c36dc4ed8102fa6e1a4e6e8de21b25a3e4d9e49697d27",
+      "bodyPixelHash": "b7995b34f2038f188583c86fde3d3026a682443f528c6a7031c140ad0f93e904",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-tesla-review-7.png"
+    },
+    {
+      "file": "tesla.pdf",
+      "page": 8,
+      "pdfHash": "7d26353792f703fc095c36dc4ed8102fa6e1a4e6e8de21b25a3e4d9e49697d27",
+      "bodyPixelHash": "9b1ad9cb3159c700eb11a7e29e5f24e688a9731a53fe8b40a566755af344016f",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-tesla-review-8.png"
+    },
+    {
+      "file": "tesla.pdf",
+      "page": 9,
+      "pdfHash": "7d26353792f703fc095c36dc4ed8102fa6e1a4e6e8de21b25a3e4d9e49697d27",
+      "bodyPixelHash": "041f4255998e1ff5182ac7039c0e1ee49fe3631948f48c9bc8f608ada25025a3",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-tesla-review-9.png"
+    },
+    {
+      "file": "tesla.pdf",
+      "page": 10,
+      "pdfHash": "7d26353792f703fc095c36dc4ed8102fa6e1a4e6e8de21b25a3e4d9e49697d27",
+      "bodyPixelHash": "5d91e0608f367fcb29ed5880f00687a33456a0b5dc6b1a85951b096e0009d8dd",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-tesla-review-10.png"
+    },
+    {
+      "file": "tesla.pdf",
+      "page": 11,
+      "pdfHash": "7d26353792f703fc095c36dc4ed8102fa6e1a4e6e8de21b25a3e4d9e49697d27",
+      "bodyPixelHash": "f2bee01555014b13f07748ae583759d30335f1b1a1d16e4612bd95f3bb4ab4d4",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-tesla-review-11.png"
+    },
+    {
+      "file": "tesla.pdf",
+      "page": 12,
+      "pdfHash": "7d26353792f703fc095c36dc4ed8102fa6e1a4e6e8de21b25a3e4d9e49697d27",
+      "bodyPixelHash": "a789f6e635e6a091401ca5dc3a92dd6ec87d10a43353a8e813c8334959708b42",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-tesla-review-12.png"
+    },
+    {
+      "file": "tesla.pdf",
+      "page": 13,
+      "pdfHash": "7d26353792f703fc095c36dc4ed8102fa6e1a4e6e8de21b25a3e4d9e49697d27",
+      "bodyPixelHash": "f1c397f7b260709f484c3a4b75b5f4b394f955de787cfcecc7590369fbc0675f",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-tesla-review-13.png"
+    },
+    {
+      "file": "tesla.pdf",
+      "page": 14,
+      "pdfHash": "7d26353792f703fc095c36dc4ed8102fa6e1a4e6e8de21b25a3e4d9e49697d27",
+      "bodyPixelHash": "e7748af9706eb55bb5b75210ab4d0ea53af1e4174b25828b0101c6f2dcf97e99",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-tesla-review-14.png"
+    },
+    {
+      "file": "tesla.pdf",
+      "page": 15,
+      "pdfHash": "7d26353792f703fc095c36dc4ed8102fa6e1a4e6e8de21b25a3e4d9e49697d27",
+      "bodyPixelHash": "014b9912c0030a7ef66d9130c91ebca2f4c708d875172f0e75efe0c5bc7ca9e0",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-tesla-review-15.png"
+    },
+    {
+      "file": "tesla.pdf",
+      "page": 16,
+      "pdfHash": "7d26353792f703fc095c36dc4ed8102fa6e1a4e6e8de21b25a3e4d9e49697d27",
+      "bodyPixelHash": "ddf6c21e87b0a617e5ed1a82a19b62ac41eede73f635f3b3ceff329be242195a",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-tesla-review-16.png"
+    },
+    {
+      "file": "tesla.pdf",
+      "page": 17,
+      "pdfHash": "7d26353792f703fc095c36dc4ed8102fa6e1a4e6e8de21b25a3e4d9e49697d27",
+      "bodyPixelHash": "111ecd1156ed3055f97da9043cc5d01aaabec75c91e05d3093c24b6755d38d0b",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-tesla-review-17.png"
+    },
+    {
+      "file": "comparison-cloud.pdf",
+      "page": 1,
+      "pdfHash": "e9a2929a627961ffbf9566393fc27ed8c801e73c2cfd596f5f08524eab40f24f",
+      "bodyPixelHash": "e006b180cb39eec038c27500f448c438048526204faceb60ffda6381c9c62ba6",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-comparison-cloud-review-1.png"
+    },
+    {
+      "file": "comparison-cloud.pdf",
+      "page": 2,
+      "pdfHash": "e9a2929a627961ffbf9566393fc27ed8c801e73c2cfd596f5f08524eab40f24f",
+      "bodyPixelHash": "a5f3716da2322f63f07c2657146c3ab8a87e731925eeb8cc3a62e340abb8b3f2",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-comparison-cloud-review-2.png"
+    },
+    {
+      "file": "comparison-cloud.pdf",
+      "page": 3,
+      "pdfHash": "e9a2929a627961ffbf9566393fc27ed8c801e73c2cfd596f5f08524eab40f24f",
+      "bodyPixelHash": "29d8778f19becd7fbc22fa1a0b6147762efbcf3cfcca855159d2089b33146c99",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-comparison-cloud-review-3.png"
+    },
+    {
+      "file": "comparison-cloud.pdf",
+      "page": 4,
+      "pdfHash": "e9a2929a627961ffbf9566393fc27ed8c801e73c2cfd596f5f08524eab40f24f",
+      "bodyPixelHash": "9a56b090c6a3a5aa8254b5f7d3eabb4c91e4042e0bf95e5456f7527543c9c8f5",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-comparison-cloud-review-4.png"
+    },
+    {
+      "file": "amazon.pdf",
+      "page": 1,
+      "pdfHash": "93729a15ab649cd25851c273c6da28227c5c8838eefc038a5d40a095b8dd12ee",
+      "bodyPixelHash": "417086061033fdaac23bb1695edb81d160defaac90515fa00fe7c442149cb821",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-amazon-review-1.png"
+    },
+    {
+      "file": "amazon.pdf",
+      "page": 2,
+      "pdfHash": "93729a15ab649cd25851c273c6da28227c5c8838eefc038a5d40a095b8dd12ee",
+      "bodyPixelHash": "de58b0faf0b7766d181a143922b0bad9b5bef81f571f13c2bd246d1b7d0ee88c",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-amazon-review-2.png"
+    },
+    {
+      "file": "amazon.pdf",
+      "page": 3,
+      "pdfHash": "93729a15ab649cd25851c273c6da28227c5c8838eefc038a5d40a095b8dd12ee",
+      "bodyPixelHash": "e932bd3ccf9d160a03fcab146d816aefc63a71fe76a79c0b2a5e45c3d11ead28",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-amazon-review-3.png"
+    },
+    {
+      "file": "amazon.pdf",
+      "page": 4,
+      "pdfHash": "93729a15ab649cd25851c273c6da28227c5c8838eefc038a5d40a095b8dd12ee",
+      "bodyPixelHash": "af2a20865777367c471b2687b4cb25a490b47b073260c67a4f9bb94e34da9eb5",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-amazon-review-4.png"
+    },
+    {
+      "file": "amazon.pdf",
+      "page": 5,
+      "pdfHash": "93729a15ab649cd25851c273c6da28227c5c8838eefc038a5d40a095b8dd12ee",
+      "bodyPixelHash": "73d16e4b218562a1a7f7d356b2e117371c9f5d1292f37bd8e42d8116019a220e",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-amazon-review-5.png"
+    },
+    {
+      "file": "amazon.pdf",
+      "page": 6,
+      "pdfHash": "93729a15ab649cd25851c273c6da28227c5c8838eefc038a5d40a095b8dd12ee",
+      "bodyPixelHash": "c51f2afdc78a353a8beab65788ccb0b312d1ce94fd05d1f56c6d39fd418b4c88",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-amazon-review-6.png"
+    },
+    {
+      "file": "amazon.pdf",
+      "page": 7,
+      "pdfHash": "93729a15ab649cd25851c273c6da28227c5c8838eefc038a5d40a095b8dd12ee",
+      "bodyPixelHash": "46f3d0c98ad535f560b34c1216a80f860475f592bdaa3e8139bac53faabe39fa",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-amazon-review-7.png"
+    },
+    {
+      "file": "amazon.pdf",
+      "page": 8,
+      "pdfHash": "93729a15ab649cd25851c273c6da28227c5c8838eefc038a5d40a095b8dd12ee",
+      "bodyPixelHash": "34226cd7cac1d43177305458922f5f02b6fd5cc98eda33e7ecfbc95e66ee8a52",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-amazon-review-8.png"
+    },
+    {
+      "file": "amazon.pdf",
+      "page": 9,
+      "pdfHash": "93729a15ab649cd25851c273c6da28227c5c8838eefc038a5d40a095b8dd12ee",
+      "bodyPixelHash": "2bca359051e4b6fe24b922af97d0c511c42f0ad36224f6b69c9c6287bc9e5b7f",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-amazon-review-9.png"
+    },
+    {
+      "file": "amazon.pdf",
+      "page": 10,
+      "pdfHash": "93729a15ab649cd25851c273c6da28227c5c8838eefc038a5d40a095b8dd12ee",
+      "bodyPixelHash": "8042c142b8dc61e396846c6b54d48662f834b78d7d5e7502f64a06c7b0ae440d",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-amazon-review-10.png"
+    },
+    {
+      "file": "amazon.pdf",
+      "page": 11,
+      "pdfHash": "93729a15ab649cd25851c273c6da28227c5c8838eefc038a5d40a095b8dd12ee",
+      "bodyPixelHash": "05e8ff1dc57552d6e369cf9ae44f5d1af37340e3125a6875dae40d5f2a103887",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-amazon-review-11.png"
+    },
+    {
+      "file": "amazon.pdf",
+      "page": 12,
+      "pdfHash": "93729a15ab649cd25851c273c6da28227c5c8838eefc038a5d40a095b8dd12ee",
+      "bodyPixelHash": "14cfb3acc8d9f894f6244c49dec9a6711e3b79ea5ef6abb1cee2d070169e0803",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-amazon-review-12.png"
+    },
+    {
+      "file": "amazon.pdf",
+      "page": 13,
+      "pdfHash": "93729a15ab649cd25851c273c6da28227c5c8838eefc038a5d40a095b8dd12ee",
+      "bodyPixelHash": "5eebd2e4c7ba32a7e2c3f5e0768716fb269241f000c93a22ec3a24a243814c72",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-amazon-review-13.png"
+    },
+    {
+      "file": "amazon.pdf",
+      "page": 14,
+      "pdfHash": "93729a15ab649cd25851c273c6da28227c5c8838eefc038a5d40a095b8dd12ee",
+      "bodyPixelHash": "c86326da650e72b45907d59b5e8769821b90a3a551a87ff03b3408fd5db6baed",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-amazon-review-14.png"
+    },
+    {
+      "file": "amazon.pdf",
+      "page": 15,
+      "pdfHash": "93729a15ab649cd25851c273c6da28227c5c8838eefc038a5d40a095b8dd12ee",
+      "bodyPixelHash": "91ce30a95d369a062d09c7a030ea1a7e5d8af9fcdc1a8fb7a140f71b4fdd7f27",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-amazon-review-15.png"
+    },
+    {
+      "file": "amazon.pdf",
+      "page": 16,
+      "pdfHash": "93729a15ab649cd25851c273c6da28227c5c8838eefc038a5d40a095b8dd12ee",
+      "bodyPixelHash": "c45d0cbe62b098370d1341f1b3ebad5b511dc196ef390d39c487e6b8bc268dd6",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-amazon-review-16.png"
+    },
+    {
+      "file": "amazon.pdf",
+      "page": 17,
+      "pdfHash": "93729a15ab649cd25851c273c6da28227c5c8838eefc038a5d40a095b8dd12ee",
+      "bodyPixelHash": "f19ece13205e96b49c37c003a28d060601113b931bf007c35045492ec5e7e8b2",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-amazon-review-17.png"
+    },
+    {
+      "file": "amazon.pdf",
+      "page": 18,
+      "pdfHash": "93729a15ab649cd25851c273c6da28227c5c8838eefc038a5d40a095b8dd12ee",
+      "bodyPixelHash": "4adcc6786094bd87b59c9f78a843857afc88ec00a662c7af9c430388d8c65a3e",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-amazon-review-18.png"
+    },
+    {
+      "file": "amazon.pdf",
+      "page": 19,
+      "pdfHash": "93729a15ab649cd25851c273c6da28227c5c8838eefc038a5d40a095b8dd12ee",
+      "bodyPixelHash": "ed5f3c8f8fc638e94811fe82ed9095a33ad84fd2f4f001bb4ba7dd13cc91450b",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-amazon-review-19.png"
+    },
+    {
+      "file": "amazon.pdf",
+      "page": 20,
+      "pdfHash": "93729a15ab649cd25851c273c6da28227c5c8838eefc038a5d40a095b8dd12ee",
+      "bodyPixelHash": "1d739b7df686920de2eaf7f459ada2a822846625e93dcb40f789a24e73b27a7b",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-amazon-review-20.png"
+    },
+    {
+      "file": "universe.pdf",
+      "page": 1,
+      "pdfHash": "fc046a5ad08db62670df8eab535eb60fcdbe7d0ea1d4502b27456de860e51014",
+      "bodyPixelHash": "064944bb14108cb49c542dfefcac52f6f08402c3c368de51e0cb4d10731085cb",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-universe-review-1.png"
+    },
+    {
+      "file": "universe.pdf",
+      "page": 2,
+      "pdfHash": "fc046a5ad08db62670df8eab535eb60fcdbe7d0ea1d4502b27456de860e51014",
+      "bodyPixelHash": "f5ffcb70fda2b01bf111c73724782e7ade47e079ff5621ef1bcddcbceff61fee",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-universe-review-2.png"
+    },
+    {
+      "file": "universe.pdf",
+      "page": 3,
+      "pdfHash": "fc046a5ad08db62670df8eab535eb60fcdbe7d0ea1d4502b27456de860e51014",
+      "bodyPixelHash": "c7204086b8754eca6da1a2d8fea63dd1faa3472ffe95f1a0ea2213dd51317a78",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-universe-review-3.png"
+    },
+    {
+      "file": "universe.pdf",
+      "page": 4,
+      "pdfHash": "fc046a5ad08db62670df8eab535eb60fcdbe7d0ea1d4502b27456de860e51014",
+      "bodyPixelHash": "3b9ce285477caa9c0af7ad006739ce956f46b6801ae81027107f56e2680b9023",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-universe-review-4.png"
+    },
+    {
+      "file": "research-kr.pdf",
+      "page": 1,
+      "pdfHash": "ba368353587fb024ca786816fafb110932a0faecbfabb126912e89d5d9b5a507",
+      "bodyPixelHash": "c8ab848dd594f02389a728cc1231c1d0a70b680b6e32a26636974bd35c03b4c0",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-research-kr-review-1.png"
+    },
+    {
+      "file": "research-kr.pdf",
+      "page": 2,
+      "pdfHash": "ba368353587fb024ca786816fafb110932a0faecbfabb126912e89d5d9b5a507",
+      "bodyPixelHash": "9ab6cef3d4d0df89f9239ccaadf90e82f7728b3c15c7061b6fd47fc3d7661771",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-research-kr-review-2.png"
+    },
+    {
+      "file": "research-kr.pdf",
+      "page": 3,
+      "pdfHash": "ba368353587fb024ca786816fafb110932a0faecbfabb126912e89d5d9b5a507",
+      "bodyPixelHash": "7060ad9e8d3c4df4d7f12bfee430a2a167e2045a49823c19a4948bc8f803f3e5",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-research-kr-review-3.png"
+    },
+    {
+      "file": "research-kr.pdf",
+      "page": 4,
+      "pdfHash": "ba368353587fb024ca786816fafb110932a0faecbfabb126912e89d5d9b5a507",
+      "bodyPixelHash": "4627d28e84494046c76f6c4b3bbddc0606eb6967b8743f4f8ab2c68e35a808ea",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-research-kr-review-4.png"
+    },
+    {
+      "file": "research-us.pdf",
+      "page": 1,
+      "pdfHash": "7b12d854fadc241fc332de50cdd43c1df854609edd2713e61faf72e8b4ef23fd",
+      "bodyPixelHash": "56eef687450e7a703fcb8b5498f9e62e2765ce21cb9e29281d8319b608bfef05",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-research-us-review-1.png"
+    },
+    {
+      "file": "research-us.pdf",
+      "page": 2,
+      "pdfHash": "7b12d854fadc241fc332de50cdd43c1df854609edd2713e61faf72e8b4ef23fd",
+      "bodyPixelHash": "ecb8283c782437ce563c47c4220d9f14e61dfb085b809a7bdcb126fea7436132",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-research-us-review-2.png"
+    },
+    {
+      "file": "research-us.pdf",
+      "page": 3,
+      "pdfHash": "7b12d854fadc241fc332de50cdd43c1df854609edd2713e61faf72e8b4ef23fd",
+      "bodyPixelHash": "1d86d377277d8a9cea0a96086f2cd4b8b2244fe4d83c7a9ff17efc043ed14ba4",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-research-us-review-3.png"
+    },
+    {
+      "file": "research-us.pdf",
+      "page": 4,
+      "pdfHash": "7b12d854fadc241fc332de50cdd43c1df854609edd2713e61faf72e8b4ef23fd",
+      "bodyPixelHash": "8c4508e04ae8945bc8ea21c8e5947bc433c11daae3498743f9cf1e0ae5942d89",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-research-us-review-4.png"
+    },
+    {
+      "file": "hyundai.pdf",
+      "page": 1,
+      "pdfHash": "ac92c540d00df19aa5251bde1350783dea3c7a0cfc61b00bd04ea2bb62c55906",
+      "bodyPixelHash": "a1ed83e8299fefdd57d99313efae6d5b0362bd684f9e3dd5a7ca08aae135b6ee",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-hyundai-review-1.png"
+    },
+    {
+      "file": "hyundai.pdf",
+      "page": 2,
+      "pdfHash": "ac92c540d00df19aa5251bde1350783dea3c7a0cfc61b00bd04ea2bb62c55906",
+      "bodyPixelHash": "d13a14ae45033c52f3b4274e551f2913ab8308c7b24cf0f851d20e2da4abc630",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-hyundai-review-2.png"
+    },
+    {
+      "file": "hyundai.pdf",
+      "page": 3,
+      "pdfHash": "ac92c540d00df19aa5251bde1350783dea3c7a0cfc61b00bd04ea2bb62c55906",
+      "bodyPixelHash": "a3c35ec1e09bd10260a8feb76246224b6d8ce4583b90209c2f55cb328fa8290a",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-hyundai-review-3.png"
+    },
+    {
+      "file": "hyundai.pdf",
+      "page": 4,
+      "pdfHash": "ac92c540d00df19aa5251bde1350783dea3c7a0cfc61b00bd04ea2bb62c55906",
+      "bodyPixelHash": "f52c2644c8387a440959a31c248b2e7266c65729f8138bc7d34f81b458ded26e",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-hyundai-review-4.png"
+    },
+    {
+      "file": "hyundai.pdf",
+      "page": 5,
+      "pdfHash": "ac92c540d00df19aa5251bde1350783dea3c7a0cfc61b00bd04ea2bb62c55906",
+      "bodyPixelHash": "2504e8dbcb553da84827c554f60b550d2146122287a0794c9c99d72e6c25d6a8",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-hyundai-review-5.png"
+    },
+    {
+      "file": "hyundai.pdf",
+      "page": 6,
+      "pdfHash": "ac92c540d00df19aa5251bde1350783dea3c7a0cfc61b00bd04ea2bb62c55906",
+      "bodyPixelHash": "5cfb1b1819c91987b55a9e09c4e4cb783c68c92c19b18c76052b1af9e2b541af",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-hyundai-review-6.png"
+    },
+    {
+      "file": "hyundai.pdf",
+      "page": 7,
+      "pdfHash": "ac92c540d00df19aa5251bde1350783dea3c7a0cfc61b00bd04ea2bb62c55906",
+      "bodyPixelHash": "12e63c4e8c28ffe8ea3a4fcffd946047ce4303ed35285567258a2be96cb44c05",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-hyundai-review-7.png"
+    },
+    {
+      "file": "hyundai.pdf",
+      "page": 8,
+      "pdfHash": "ac92c540d00df19aa5251bde1350783dea3c7a0cfc61b00bd04ea2bb62c55906",
+      "bodyPixelHash": "71c77803a3b303e71e7a8c164f1e8dc14dde8e70f715054856a2db33c6e096d7",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-hyundai-review-8.png"
+    },
+    {
+      "file": "hyundai.pdf",
+      "page": 9,
+      "pdfHash": "ac92c540d00df19aa5251bde1350783dea3c7a0cfc61b00bd04ea2bb62c55906",
+      "bodyPixelHash": "34127d3e3a40809ba2c9cb59848c4d467429191bd37d8b1a0c7fe2bdaf7f2678",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-hyundai-review-9.png"
+    },
+    {
+      "file": "hyundai.pdf",
+      "page": 10,
+      "pdfHash": "ac92c540d00df19aa5251bde1350783dea3c7a0cfc61b00bd04ea2bb62c55906",
+      "bodyPixelHash": "018a158e50086014d3b64c9a5426ec1906831d0b64666b344c9ec00838f68870",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-hyundai-review-10.png"
+    },
+    {
+      "file": "hyundai.pdf",
+      "page": 11,
+      "pdfHash": "ac92c540d00df19aa5251bde1350783dea3c7a0cfc61b00bd04ea2bb62c55906",
+      "bodyPixelHash": "15ac9bed258f1d9a5e9c08a59748843437107dbd5e2e24f4edc4b20239f23943",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-hyundai-review-11.png"
+    },
+    {
+      "file": "hyundai.pdf",
+      "page": 12,
+      "pdfHash": "ac92c540d00df19aa5251bde1350783dea3c7a0cfc61b00bd04ea2bb62c55906",
+      "bodyPixelHash": "7a68c654122cab6dc791ce19d645dfa273027ad5f426eaf9d686e1e02b06f7ee",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-hyundai-review-12.png"
+    },
+    {
+      "file": "hyundai.pdf",
+      "page": 13,
+      "pdfHash": "ac92c540d00df19aa5251bde1350783dea3c7a0cfc61b00bd04ea2bb62c55906",
+      "bodyPixelHash": "24e92d7cee66d482ae79120fb9396810ab848f8f1bc5ef661cf66dcc63f5d95a",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-hyundai-review-13.png"
+    },
+    {
+      "file": "hyundai.pdf",
+      "page": 14,
+      "pdfHash": "ac92c540d00df19aa5251bde1350783dea3c7a0cfc61b00bd04ea2bb62c55906",
+      "bodyPixelHash": "7ab0c49a27d99c23e45530b5f4574c74731953006f224651075d10c32eb94318",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-hyundai-review-14.png"
+    },
+    {
+      "file": "hyundai.pdf",
+      "page": 15,
+      "pdfHash": "ac92c540d00df19aa5251bde1350783dea3c7a0cfc61b00bd04ea2bb62c55906",
+      "bodyPixelHash": "b036e04a025fa23a9f0ee41bc6ef55f01d7758f0433941a67017084686a28364",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-hyundai-review-15.png"
+    },
+    {
+      "file": "comparison-equipment.pdf",
+      "page": 1,
+      "pdfHash": "0c938803a69f8729ea3cc1d73df455500112f0b31d20a59dfdc69e8e7ded0b5c",
+      "bodyPixelHash": "c211eb858398d8cdf6a6c61a519738a1d119f3a354bee929e0de27f433305c84",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-comparison-equipment-review-1.png"
+    },
+    {
+      "file": "comparison-equipment.pdf",
+      "page": 2,
+      "pdfHash": "0c938803a69f8729ea3cc1d73df455500112f0b31d20a59dfdc69e8e7ded0b5c",
+      "bodyPixelHash": "86811cc49d7eb8ee4f279163258dc8e76ba581dc6e827b75a2f83d91215782bf",
+      "bodyMatchesPreviouslyViewedPage": false,
+      "preview": "artifacts/local/2bb999321f8e-comparison-equipment-review-2.png"
+    }
+  ],
+  "comparisonUse": "Not used to classify body changes: 38pt exclusion still includes version-footer pixels, so all pages differ. Use contact-body comparison plus current PDF text checks and fresh visual review instead."
+}

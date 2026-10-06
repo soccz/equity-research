@@ -1,0 +1,38 @@
+{
+  "ticker": "035420",
+  "asOf": "2026-09-29",
+  "checkedAt": "2026-09-30T06:10:29.044965+00:00",
+  "filing": {
+    "corp_code": "00266961",
+    "corp_name": "NAVER",
+    "stock_code": "035420",
+    "corp_cls": "Y",
+    "report_nm": "반기보고서 (2026.06)",
+    "rcept_no": "20260814002266",
+    "flr_nm": "NAVER",
+    "rcept_dt": "20260814",
+    "rm": ""
+  },
+  "queries": [
+    {
+      "file": "data/sources/dart-list-035420-8e3bd28b94f87729.json",
+      "sha256": "8e3bd28b94f877295951f63161689f6531b2b41ebf2a7152e3b38b0c5cb4a464",
+      "parameters": {
+        "corp_code": "00266961",
+        "bgn_de": "20250101",
+        "end_de": "20260929",
+        "pblntf_ty": "A",
+        "last_reprt_at": "N",
+        "page_count": 100,
+        "page_no": 1,
+        "sort": "date",
+        "sort_mth": "desc"
+      }
+    }
+  ],
+  "package": {
+    "file": "data/sources/dart-package-20260814002266-09647e5369c0a856.zip",
+    "sha256": "09647e5369c0a856853d9c72c3cf4298708717eb5e41bc3210848719208f1fb4"
+  },
+  "instanceHash": "d2c1112408796ecddf462b96b0891c1e98d72b237b945b62051015b50d3e5a3c"
+}

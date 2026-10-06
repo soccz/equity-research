@@ -1,0 +1,1 @@
+{"error":"CalledProcessError: Command '['nvidia-smi', '--query-gpu=memory.used', '--format=csv,noheader,nounits']' returned non-zero exit status 9.","finishedAt":"2026-09-30T15:40:51.953880+00:00","records":[],"snapshotHash":"9067a82a6700565b1b32287b5076a4996768b4df849c974a7b133887cce44062","startedAt":"2026-09-30T15:40:51.927014+00:00","status":"failed"}

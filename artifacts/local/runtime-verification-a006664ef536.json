@@ -1,0 +1,134 @@
+{
+  "checkedAt": "2026-09-30T09:39:44.076852+00:00",
+  "status": "execution_verified_interpretation_pending",
+  "snapshotHash": "a006664ef536ff28b9d30734bf06d7777fcecf15f740411676017f5e621d0df1",
+  "externalAIUsed": false,
+  "gpuInferenceThisRun": false,
+  "executionMode": "CPU expansion; reuse only archived model notes with identical evidence and protocol",
+  "previousModelExecution": {
+    "file": "artifacts/local/runtime-verification-1cf5c0c2e217.json",
+    "sha256": "204c23744636ecbb10de39397436c9211473e154519ed4f4dc37c5a6a895fd16"
+  },
+  "model": "qwen3:8b",
+  "modelDigest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "inferenceConfig": {
+    "options": {
+      "min_p": 0.0,
+      "num_batch": 128,
+      "num_ctx": 8192,
+      "num_predict": 4096,
+      "presence_penalty": 0.0,
+      "repeat_penalty": 1.0,
+      "seed": 42,
+      "temperature": 0.6,
+      "top_k": 20,
+      "top_p": 0.95
+    },
+    "think": true
+  },
+  "evaluation": {
+    "recordHash": "c3b21c93b06fa5badad0c665ee5f39cb75964c8f4a533b4b3f80acb337aa5bb2",
+    "gatePassed": false,
+    "counts": {
+      "exactClassifications": 12,
+      "falseAccepts": 1,
+      "falseRejects": 1,
+      "invalidResponses": 0,
+      "modelFalseAccepts": 2,
+      "modelFalseRejects": 1,
+      "plannedTotal": 16,
+      "shouldAccept": 8,
+      "shouldReject": 8,
+      "styleBlocks": 2,
+      "total": 16
+    },
+    "scope": "작성자가 정답을 정의한 합성 회계 문장 개발 평가. 실제 기업 정확도·투자 성과·미사용 표본 평가가 아니다."
+  },
+  "coverage": {
+    "total": 40,
+    "US": 20,
+    "KR": 20,
+    "sectors": 8,
+    "profitBridges": 37,
+    "annualHistories": 39,
+    "detailedDossiers": 2,
+    "researchCohort": [
+      "MU",
+      "NVDA",
+      "GOOGL",
+      "AAPL",
+      "000660",
+      "005930",
+      "035420",
+      "066570"
+    ],
+    "conditions": 42,
+    "pendingConditions": 42
+  },
+  "reviews": {
+    "MU": {
+      "recordHash": "a909e829b502abcac2ed349a047fa9921e27648e75f17be67e2bc5a7f668619c",
+      "status": "revision_required",
+      "displayEligible": false,
+      "reused": true
+    },
+    "000660": {
+      "recordHash": "52b45557ff176b4111dff378f37b38bce001e0c9e3f9d4cae037d95e424197f6",
+      "status": "revision_required",
+      "displayEligible": false,
+      "reused": true
+    }
+  },
+  "checks": {
+    "unitTests": 65,
+    "browserChecks": 101,
+    "pdfReports": 8,
+    "pdfPages": 44,
+    "sourceReplay": 123,
+    "identicalReplayFields": 11,
+    "priceFormulaCrosschecks": 18
+  },
+  "verifiedWorkflow": {
+    "file": "artifacts/local/runs/20260930T093536411849Z/run.json",
+    "sha256": "ebb58031ecae5643bdf041f90018e6c42c5ccc0d7007d7ee8cbc27b8eef43213"
+  },
+  "verificationFiles": {
+    "browser": {
+      "file": "artifacts/live/browser-verification.json",
+      "sha256": "48b24f99ad4469770ed402f6c4e426b0d71dd3b9c0c7a99e08cb1ed61911c939"
+    },
+    "replay": {
+      "file": "artifacts/live/replay-verification.json",
+      "sha256": "d35d910712738a6839dfa36b9251188ecf6dc54be256e5344065aaf918b48376"
+    },
+    "artifact": {
+      "file": "artifacts/live/artifact-verification.json",
+      "sha256": "212fb48d70bc3416bdb9f551f47df2d81dc63d34f62da82a9e42fc9405d47c4b"
+    }
+  },
+  "limitations": [
+    "공통 공시 계산 40개, 상세 주석과 모델 판독 2개. 두 판독은 revision_required로 보류.",
+    "수동 선택 40종목은 시가총액 순위나 대표 표본이 아니며 기존 탐색 성과는 초기 8종목만 해당.",
+    "Ford 최신 확보 공통 재무기간 Q1, Lilly 기타 분류 투자 범위 미확인, 한화에어로스페이스 정정 사업보고서 XBRL 연결 실패.",
+    "전망 정확도·독립 금융 해석·정상 현금·적정 가격은 검증되지 않음."
+  ],
+  "independentFinancialApproval": false,
+  "commands": [
+    "python3 scripts/run-local.py --skip-model",
+    "black --check equitylab tests scripts/check-replay.py scripts/check-artifacts.py scripts/run-local.py scripts/expand-coverage.py",
+    "python3 scripts/check-artifacts.py"
+  ],
+  "visualReview": {
+    "snapshotHash": "a006664ef536ff28b9d30734bf06d7777fcecf15f740411676017f5e621d0df1",
+    "pages": 44,
+    "files": {
+      "artifacts/live/pdf-contact-1.png": "67482ecbcb347f1a5e233ff4896f3144b5d729e0bbeb11dd6d8c21328947926a",
+      "artifacts/live/pdf-contact-2.png": "415fe9829e95c0b621704c3f30196fe46637deba8a45fe97025817c7e8449182",
+      "artifacts/live/pdf-contact-3.png": "69610ed7f7639bb0a7b41eb125d3cc910f13ab4835d67c2099d67da7c1e65b89",
+      "artifacts/live/pdf-contact-4.png": "700d61acf133c36742279771bb70c436fd76fa72227c629bca76c4dc1dcd9fc0",
+      "artifacts/live/microsoft-analysis-page.png": "1d2d12b287c0b7f05f5681fbeb4ccad7d85ba8aa1017191a440b76c79613763e",
+      "artifacts/live/hyundai-analysis-page.png": "58f7bfa9e65e5b36516b9704255b5119e23d7e5a45ae0ebc8c32ce9010f9d408"
+    },
+    "method": "Rendered every page in four contact sheets; inspected Microsoft and Hyundai analysis pages at larger size"
+  }
+}

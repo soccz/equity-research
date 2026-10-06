@@ -1,0 +1,51 @@
+{
+  "status": "research_only_not_integrated",
+  "currentReceipt": "20260814001879",
+  "currentXbrl": "14baaa75381f0d838b315c5ad2533e4dd72f54ff674ecab9e8bba93e32993c1d",
+  "annualReceipt": "20260312001270",
+  "annualXbrl": "ac5cf58f77fbd287af8e91693d378ee42949c3be731f87c5e1e35524e9b9d86c",
+  "annualDocument": "bb2d666bd835dd2f7b943fdb2b3c5a96a3c74047b3fd9110bf1f14a9ef7c97c6",
+  "currentRevenue": 11062077000000,
+  "currentCfo": 398042000000,
+  "priorRevenue": 8917415000000,
+  "priorCfo": 878810000000,
+  "concentratedCustomerNote": [
+    {
+      "start": "2026-01-01",
+      "end": "2026-06-30",
+      "dimensions": [
+        [
+          "ConsolidatedAndSeparateFinancialStatementsAxis",
+          "ConsolidatedMember"
+        ],
+        [
+          "MajorCustomersAxis",
+          "SingleCustomerMemberOfMajorCustomersDomainOfDisclosureOfMajorCustomersTableOfMember"
+        ]
+      ],
+      "tag": "Revenue",
+      "taxonomy": "https://xbrl.ifrs.org/taxonomy/2024-03-27/ifrs-full",
+      "value": 8888208000000.0,
+      "unit": "KRW",
+      "context": "CFY2026dHYA_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_ConsolidatedMember_ifrs-full_MajorCustomersAxis_entity00105961_SingleCustomerMemberOfMajorCustomersDomainOfDisclosureOfMajorCustomersTableOfMember",
+      "factId": null,
+      "decimals": "-6",
+      "accession": "20260814001879",
+      "filedAt": "2026-08-14",
+      "sourceFile": "data/sources/011070-20260814001879-14baaa75381f0d83.xbrl",
+      "sourceHash": "14baaa75381f0d838b315c5ad2533e4dd72f54ff674ecab9e8bba93e32993c1d",
+      "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814001879"
+    }
+  ],
+  "concentratedCustomerBusinessText": 8841475000000,
+  "concentratedCustomerUnexplainedDifference": 46733000000,
+  "balanceTableReview": {
+    "tableIndex": 81,
+    "tradeReceivables": 2768984000000,
+    "otherCurrentReceivables": 25565000000,
+    "inventories": 2486047000000,
+    "tradePayables": 2262557000000,
+    "otherCurrentPayables": 607998000000
+  },
+  "next": "Reconcile three segment periods and generated cash plus interest/tax; preserve customer disclosure discrepancy, no customer identity inferred. Trade payable extension tag denotes separate trade payable row in table81; do not add other payable. Stage 25th candidate after Oracle integration."
+}

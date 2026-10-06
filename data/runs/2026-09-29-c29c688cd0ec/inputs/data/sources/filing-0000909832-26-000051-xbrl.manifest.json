@@ -1,0 +1,15 @@
+{
+  "file": "data/sources/filing-0000909832-26-000051-bb9bffef746e7e82.xbrl",
+  "sha256": "bb9bffef746e7e82ade8d9331861424934273c55c6ef7d2fbaedefd25c907582",
+  "url": "https://www.sec.gov/Archives/edgar/data/909832/000090983226000051/cost-20260510_htm.xml",
+  "primaryUrl": "https://www.sec.gov/Archives/edgar/data/909832/000090983226000051/cost-20260510.htm",
+  "provider": "SEC",
+  "accession": "0000909832-26-000051",
+  "cik": 909832,
+  "retrievedAt": "2026-10-01T10:26:36.031808+00:00",
+  "indexSource": {
+    "file": "data/sources/filing-0000909832-26-000051-index-28c8a52f75b5eb52.html",
+    "sha256": "28c8a52f75b5eb52d6723c5e368e54f131fc54322211cee07ad0d06309e4f0b2",
+    "url": "https://www.sec.gov/Archives/edgar/data/909832/000090983226000051/0000909832-26-000051-index.html"
+  }
+}

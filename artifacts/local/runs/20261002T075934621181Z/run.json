@@ -1,0 +1,155 @@
+{
+  "runId": "20261002T075934621181Z",
+  "startedAt": "2026-10-02T07:59:34.621320+00:00",
+  "status": "failed",
+  "mode": "archived_sources_local_only",
+  "modelRequested": true,
+  "stages": [
+    {
+      "name": "unit",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-02T07:59:34.621529+00:00",
+      "finishedAt": "2026-10-02T08:04:37.747455+00:00",
+      "log": "artifacts/local/runs/20261002T075934621181Z/unit.log",
+      "logHash": "52c90db064915d0c3f10c8c0fc0335037710dfa4f4d3d3e92cd9711279ee6d6c"
+    },
+    {
+      "name": "analysis",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-02T08:04:37.748109+00:00",
+      "finishedAt": "2026-10-02T08:07:50.839857+00:00",
+      "log": "artifacts/local/runs/20261002T075934621181Z/analysis.log",
+      "logHash": "493e04ec2c66b2f7e826a0d018c410d40b804a489df4b24de7611a56237182aa"
+    },
+    {
+      "name": "local-model",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-02T08:07:50.840298+00:00",
+      "finishedAt": "2026-10-02T08:08:02.087007+00:00",
+      "log": "artifacts/local/runs/20261002T075934621181Z/local-model.log",
+      "logHash": "e97477e66784eaf0b0bb38661e227bcfb2eaae1c4cf81803aace5864a04cd605"
+    },
+    {
+      "name": "coverage-model",
+      "status": "quality_gate_failed",
+      "exitCode": 2,
+      "startedAt": "2026-10-02T08:08:02.087812+00:00",
+      "finishedAt": "2026-10-02T08:08:14.031277+00:00",
+      "log": "artifacts/local/runs/20261002T075934621181Z/coverage-model.log",
+      "logHash": "58eaabe86f630e5bf174c72275392c1cb334eb7123bf14c5f133f0d22b2b1d1f"
+    },
+    {
+      "name": "question-model",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-02T08:08:14.031745+00:00",
+      "finishedAt": "2026-10-02T08:08:54.472545+00:00",
+      "log": "artifacts/local/runs/20261002T075934621181Z/question-model.log",
+      "logHash": "7ea17030a0f498c5a592a54b7d6aac81b2fdaedad6be3e17af792039be55cec1"
+    },
+    {
+      "name": "filing-model",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-02T08:08:54.473552+00:00",
+      "finishedAt": "2026-10-02T08:09:15.687471+00:00",
+      "log": "artifacts/local/runs/20261002T075934621181Z/filing-model.log",
+      "logHash": "e7b541441ce474ffe93a4ddb6ab2156b000f67e033b7593430da6f0535e6c15c"
+    },
+    {
+      "name": "register-cash-conditions",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-02T08:09:15.688306+00:00",
+      "finishedAt": "2026-10-02T08:09:24.381033+00:00",
+      "log": "artifacts/local/runs/20261002T075934621181Z/register-cash-conditions.log",
+      "logHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "register-receivable-conditions",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-02T08:09:24.381701+00:00",
+      "finishedAt": "2026-10-02T08:09:32.728981+00:00",
+      "log": "artifacts/local/runs/20261002T075934621181Z/register-receivable-conditions.log",
+      "logHash": "5a91db2e38dac97e3b4d989866353e23b69d5e5996baf0ad874d5a08510f5dba"
+    },
+    {
+      "name": "observe",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-02T08:09:32.729587+00:00",
+      "finishedAt": "2026-10-02T08:09:41.310164+00:00",
+      "log": "artifacts/local/runs/20261002T075934621181Z/observe.log",
+      "logHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "research-journal",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-02T08:09:41.310873+00:00",
+      "finishedAt": "2026-10-02T08:09:49.992515+00:00",
+      "log": "artifacts/local/runs/20261002T075934621181Z/research-journal.log",
+      "logHash": "0b7434cf41f456da944461e4e57d0fd5719d86726355aed8c5b62cc32599b50e"
+    },
+    {
+      "name": "forward-study",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-02T08:09:49.993463+00:00",
+      "finishedAt": "2026-10-02T08:09:59.558199+00:00",
+      "log": "artifacts/local/runs/20261002T075934621181Z/forward-study.log",
+      "logHash": "df0906a227c1ce2e4da2d51553935aaef8ed2faed18dd8f141a347d78ae7e330"
+    },
+    {
+      "name": "price-crosscheck",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-02T08:09:59.558717+00:00",
+      "finishedAt": "2026-10-02T08:10:01.127699+00:00",
+      "log": "artifacts/local/runs/20261002T075934621181Z/price-crosscheck.log",
+      "logHash": "275490d3c77bebedaf43b7ad655ff691a1e292dad43588131f399d2ebe251ebe"
+    },
+    {
+      "name": "local-records",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-02T08:10:01.128627+00:00",
+      "finishedAt": "2026-10-02T08:10:09.718639+00:00",
+      "log": "artifacts/local/runs/20261002T075934621181Z/local-records.log",
+      "logHash": "1daf0c99542c96b02b5e617e66d1a63022c539a791f527a992b20aa09e60767a"
+    },
+    {
+      "name": "offline-replay",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-02T08:10:09.719590+00:00",
+      "finishedAt": "2026-10-02T08:13:45.155628+00:00",
+      "log": "artifacts/local/runs/20261002T075934621181Z/offline-replay.log",
+      "logHash": "d8bf7d2303b922cb7ace4f6edf4910238c72608356f35ecd5ba5392bfdd2df27"
+    },
+    {
+      "name": "browser-pdf",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-02T08:13:45.156140+00:00",
+      "finishedAt": "2026-10-02T08:18:47.578861+00:00",
+      "log": "artifacts/local/runs/20261002T075934621181Z/browser-pdf.log",
+      "logHash": "08e9c94a54adeaf416be151bb497c32f172a7eb14644cc2dc57a1190934db773"
+    },
+    {
+      "name": "artifacts",
+      "status": "failed",
+      "exitCode": 1,
+      "startedAt": "2026-10-02T08:18:47.792166+00:00",
+      "finishedAt": "2026-10-02T08:19:55.675248+00:00",
+      "log": "artifacts/local/runs/20261002T075934621181Z/artifacts.log",
+      "logHash": "7b9a98ae47205eec84f1d0276015d204a99a09deed1e29bdd1475ca8832c0bbc"
+    }
+  ],
+  "error": "RuntimeError: artifacts failed; see artifacts/local/runs/20261002T075934621181Z/artifacts.log",
+  "finishedAt": "2026-10-02T08:19:55.812940+00:00"
+}

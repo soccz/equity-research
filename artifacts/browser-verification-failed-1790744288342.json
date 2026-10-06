@@ -1,0 +1,8 @@
+{
+  "checkedAt": "2026-09-30T04:57:27.645Z",
+  "status": "failed",
+  "checks": [],
+  "error": "Error: Chrome exited: [14:14:0930/135727.639681:ERROR:third_party/crashpad/crashpad/util/linux/socket.cc:45] setsockopt: Operation not permitted (1)\n",
+  "runtimeErrors": [],
+  "stderr": "[14:14:0930/135727.639681:ERROR:third_party/crashpad/crashpad/util/linux/socket.cc:45] setsockopt: Operation not permitted (1)\n"
+}

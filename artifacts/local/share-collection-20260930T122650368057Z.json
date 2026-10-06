@@ -1,0 +1,22 @@
+{
+  "snapshotHash": "c907911a8c2948e321be8cafc879f74bc4926807547e50f88c8160056706c123",
+  "startedAt": "2026-09-30T12:26:50.367996+00:00",
+  "records": [
+    {
+      "company": "035420",
+      "status": "failed",
+      "error": "DART stockTotqySttus.json: URLError; request details withheld"
+    },
+    {
+      "company": "034020",
+      "status": "failed",
+      "error": "DART stockTotqySttus.json: URLError; request details withheld"
+    },
+    {
+      "company": "267260",
+      "status": "failed",
+      "error": "DART stockTotqySttus.json: URLError; request details withheld"
+    }
+  ],
+  "finishedAt": "2026-09-30T12:26:50.378800+00:00"
+}

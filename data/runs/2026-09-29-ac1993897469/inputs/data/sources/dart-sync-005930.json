@@ -1,0 +1,38 @@
+{
+  "ticker": "005930",
+  "asOf": "2026-09-29",
+  "checkedAt": "2026-09-30T06:10:27.204672+00:00",
+  "filing": {
+    "corp_code": "00126380",
+    "corp_name": "삼성전자",
+    "stock_code": "005930",
+    "corp_cls": "Y",
+    "report_nm": "반기보고서 (2026.06)",
+    "rcept_no": "20260814003699",
+    "flr_nm": "삼성전자",
+    "rcept_dt": "20260814",
+    "rm": ""
+  },
+  "queries": [
+    {
+      "file": "data/sources/dart-list-005930-2421b2d87ca71cd1.json",
+      "sha256": "2421b2d87ca71cd1b35714aa2369b7bf5f795369c93a5bd6c3685cf1d3d9a907",
+      "parameters": {
+        "corp_code": "00126380",
+        "bgn_de": "20250101",
+        "end_de": "20260929",
+        "pblntf_ty": "A",
+        "last_reprt_at": "N",
+        "page_count": 100,
+        "page_no": 1,
+        "sort": "date",
+        "sort_mth": "desc"
+      }
+    }
+  ],
+  "package": {
+    "file": "data/sources/dart-package-20260814003699-95504ab7d7b3bb21.zip",
+    "sha256": "95504ab7d7b3bb213428329a2b455ae2d2d7c36190b8308bebffb322c3dce427"
+  },
+  "instanceHash": "03888e356c499e3643712810c7ba66e11a65ba490d209463e19000b4fb36074e"
+}

@@ -1,0 +1,14 @@
+[unit] /home/soccz/.pyenv/versions/3.12.9/bin/python3 -m unittest discover -s tests -v
+[unit] passed — artifacts/local/runs/20261001T143453332453Z/unit.log
+[analysis] /home/soccz/.pyenv/versions/3.12.9/bin/python3 -m equitylab refresh --as-of 2026-09-29
+[analysis] passed — artifacts/local/runs/20261001T143453332453Z/analysis.log
+[local-model] /home/soccz/.pyenv/versions/3.12.9/bin/python3 scripts/local-research.py --resume --wait-gpu-seconds 600
+[local-model] failed — artifacts/local/runs/20261001T143453332453Z/local-model.log
+Traceback (most recent call last):
+  File "/mnt/20t/주식/scripts/run-local.py", line 224, in <module>
+    main()
+  File "/mnt/20t/주식/scripts/run-local.py", line 105, in main
+    stage(
+  File "/mnt/20t/주식/scripts/run-local.py", line 91, in stage
+    raise RuntimeError(f"{name} failed; see {log.relative_to(ROOT)}")
+RuntimeError: local-model failed; see artifacts/local/runs/20261001T143453332453Z/local-model.log

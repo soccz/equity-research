@@ -1,0 +1,2719 @@
+{
+  "snapshotHash": "b819ae976fd3fc3580a93882ed89a58e770204b1635febef98878bf88ab1415d",
+  "warning": "Context matching alone does not establish unchanged business definitions.",
+  "companies": [
+    {
+      "company": "MU",
+      "source": {
+        "file": "data/sources/filing-0000723125-25-000028-d4eede66eac20393.xbrl",
+        "sha256": "d4eede66eac20393a3c93849bdd72477dd977d59e36d8e742381d1da6e393ed8",
+        "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312525000028/mu-20250828_htm.xml",
+        "primaryUrl": "https://www.sec.gov/Archives/edgar/data/723125/000072312525000028/mu-20250828.htm",
+        "provider": "SEC",
+        "accession": "0000723125-25-000028",
+        "cik": 723125,
+        "retrievedAt": "2026-10-01T05:02:17.736611+00:00",
+        "indexSource": {
+          "file": "data/sources/filing-0000723125-25-000028-index-7cba03eeed1410cb.html",
+          "sha256": "7cba03eeed1410cb4405c1a6d5a59d89955a1ac4ece658c6f13940de5f628d7f",
+          "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312525000028/0000723125-25-000028-index.html"
+        }
+      },
+      "annualCore": {
+        "accession": "0000723125-25-000028",
+        "basis": "consolidated",
+        "end": "2025-08-28",
+        "filedAt": "2025-10-03",
+        "metric": "revenue",
+        "priority": 0,
+        "sourceFile": "data/sources/sec-MU-a8b088c2111daef3.json",
+        "sourceHash": "a8b088c2111daef36536e53c81fef4c0f01220c64933e126a665b00a9257f882",
+        "sourceUrl": "https://www.sec.gov/Archives/edgar/data/723125/000072312525000028/0000723125-25-000028-index.html",
+        "standard": "US-GAAP",
+        "start": "2024-08-30",
+        "tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD",
+        "value": 37378000000
+      },
+      "segments": [
+        {
+          "id": "CMBUMember",
+          "label": "클라우드 메모리 CMBU",
+          "annual": {
+            "revenue": {
+              "start": "2024-08-30",
+              "end": "2025-08-28",
+              "dimensions": [
+                [
+                  "ConsolidationItemsAxis",
+                  "OperatingSegmentsMember"
+                ],
+                [
+                  "StatementBusinessSegmentsAxis",
+                  "CMBUMember"
+                ]
+              ],
+              "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "taxonomy": "http://fasb.org/us-gaap/2025",
+              "value": 13524000000.0,
+              "unit": "USD",
+              "context": "c-318",
+              "factId": "f-1512",
+              "decimals": "-6",
+              "accession": "0000723125-25-000028",
+              "filedAt": "2025-10-03",
+              "sourceFile": "data/sources/filing-0000723125-25-000028-d4eede66eac20393.xbrl",
+              "sourceHash": "d4eede66eac20393a3c93849bdd72477dd977d59e36d8e742381d1da6e393ed8",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/723125/000072312525000028/mu-20250828.htm"
+            },
+            "operatingIncome": {
+              "start": "2024-08-30",
+              "end": "2025-08-28",
+              "dimensions": [
+                [
+                  "ConsolidationItemsAxis",
+                  "OperatingSegmentsMember"
+                ],
+                [
+                  "StatementBusinessSegmentsAxis",
+                  "CMBUMember"
+                ]
+              ],
+              "tag": "OperatingIncomeLoss",
+              "taxonomy": "http://fasb.org/us-gaap/2025",
+              "value": 6129000000.0,
+              "unit": "USD",
+              "context": "c-318",
+              "factId": "f-1561",
+              "decimals": "-6",
+              "accession": "0000723125-25-000028",
+              "filedAt": "2025-10-03",
+              "sourceFile": "data/sources/filing-0000723125-25-000028-d4eede66eac20393.xbrl",
+              "sourceHash": "d4eede66eac20393a3c93849bdd72477dd977d59e36d8e742381d1da6e393ed8",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/723125/000072312525000028/mu-20250828.htm"
+            }
+          }
+        },
+        {
+          "id": "CDBUMember",
+          "label": "코어 데이터센터 CDBU",
+          "annual": {
+            "revenue": {
+              "start": "2024-08-30",
+              "end": "2025-08-28",
+              "dimensions": [
+                [
+                  "ConsolidationItemsAxis",
+                  "OperatingSegmentsMember"
+                ],
+                [
+                  "StatementBusinessSegmentsAxis",
+                  "CDBUMember"
+                ]
+              ],
+              "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "taxonomy": "http://fasb.org/us-gaap/2025",
+              "value": 7229000000.0,
+              "unit": "USD",
+              "context": "c-319",
+              "factId": "f-1513",
+              "decimals": "-6",
+              "accession": "0000723125-25-000028",
+              "filedAt": "2025-10-03",
+              "sourceFile": "data/sources/filing-0000723125-25-000028-d4eede66eac20393.xbrl",
+              "sourceHash": "d4eede66eac20393a3c93849bdd72477dd977d59e36d8e742381d1da6e393ed8",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/723125/000072312525000028/mu-20250828.htm"
+            },
+            "operatingIncome": {
+              "start": "2024-08-30",
+              "end": "2025-08-28",
+              "dimensions": [
+                [
+                  "ConsolidationItemsAxis",
+                  "OperatingSegmentsMember"
+                ],
+                [
+                  "StatementBusinessSegmentsAxis",
+                  "CDBUMember"
+                ]
+              ],
+              "tag": "OperatingIncomeLoss",
+              "taxonomy": "http://fasb.org/us-gaap/2025",
+              "value": 2180000000.0,
+              "unit": "USD",
+              "context": "c-319",
+              "factId": "f-1562",
+              "decimals": "-6",
+              "accession": "0000723125-25-000028",
+              "filedAt": "2025-10-03",
+              "sourceFile": "data/sources/filing-0000723125-25-000028-d4eede66eac20393.xbrl",
+              "sourceHash": "d4eede66eac20393a3c93849bdd72477dd977d59e36d8e742381d1da6e393ed8",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/723125/000072312525000028/mu-20250828.htm"
+            }
+          }
+        },
+        {
+          "id": "MCBUMember",
+          "label": "모바일·클라이언트 MCBU",
+          "annual": {
+            "revenue": {
+              "start": "2024-08-30",
+              "end": "2025-08-28",
+              "dimensions": [
+                [
+                  "ConsolidationItemsAxis",
+                  "OperatingSegmentsMember"
+                ],
+                [
+                  "StatementBusinessSegmentsAxis",
+                  "MCBUMember"
+                ]
+              ],
+              "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "taxonomy": "http://fasb.org/us-gaap/2025",
+              "value": 11859000000.0,
+              "unit": "USD",
+              "context": "c-320",
+              "factId": "f-1514",
+              "decimals": "-6",
+              "accession": "0000723125-25-000028",
+              "filedAt": "2025-10-03",
+              "sourceFile": "data/sources/filing-0000723125-25-000028-d4eede66eac20393.xbrl",
+              "sourceHash": "d4eede66eac20393a3c93849bdd72477dd977d59e36d8e742381d1da6e393ed8",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/723125/000072312525000028/mu-20250828.htm"
+            },
+            "operatingIncome": {
+              "start": "2024-08-30",
+              "end": "2025-08-28",
+              "dimensions": [
+                [
+                  "ConsolidationItemsAxis",
+                  "OperatingSegmentsMember"
+                ],
+                [
+                  "StatementBusinessSegmentsAxis",
+                  "MCBUMember"
+                ]
+              ],
+              "tag": "OperatingIncomeLoss",
+              "taxonomy": "http://fasb.org/us-gaap/2025",
+              "value": 1981000000.0,
+              "unit": "USD",
+              "context": "c-320",
+              "factId": "f-1563",
+              "decimals": "-6",
+              "accession": "0000723125-25-000028",
+              "filedAt": "2025-10-03",
+              "sourceFile": "data/sources/filing-0000723125-25-000028-d4eede66eac20393.xbrl",
+              "sourceHash": "d4eede66eac20393a3c93849bdd72477dd977d59e36d8e742381d1da6e393ed8",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/723125/000072312525000028/mu-20250828.htm"
+            }
+          }
+        },
+        {
+          "id": "AEBUMember",
+          "label": "차량·임베디드 AEBU",
+          "annual": {
+            "revenue": {
+              "start": "2024-08-30",
+              "end": "2025-08-28",
+              "dimensions": [
+                [
+                  "ConsolidationItemsAxis",
+                  "OperatingSegmentsMember"
+                ],
+                [
+                  "StatementBusinessSegmentsAxis",
+                  "AEBUMember"
+                ]
+              ],
+              "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "taxonomy": "http://fasb.org/us-gaap/2025",
+              "value": 4753000000.0,
+              "unit": "USD",
+              "context": "c-321",
+              "factId": "f-1515",
+              "decimals": "-6",
+              "accession": "0000723125-25-000028",
+              "filedAt": "2025-10-03",
+              "sourceFile": "data/sources/filing-0000723125-25-000028-d4eede66eac20393.xbrl",
+              "sourceHash": "d4eede66eac20393a3c93849bdd72477dd977d59e36d8e742381d1da6e393ed8",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/723125/000072312525000028/mu-20250828.htm"
+            },
+            "operatingIncome": {
+              "start": "2024-08-30",
+              "end": "2025-08-28",
+              "dimensions": [
+                [
+                  "ConsolidationItemsAxis",
+                  "OperatingSegmentsMember"
+                ],
+                [
+                  "StatementBusinessSegmentsAxis",
+                  "AEBUMember"
+                ]
+              ],
+              "tag": "OperatingIncomeLoss",
+              "taxonomy": "http://fasb.org/us-gaap/2025",
+              "value": 557000000.0,
+              "unit": "USD",
+              "context": "c-321",
+              "factId": "f-1564",
+              "decimals": "-6",
+              "accession": "0000723125-25-000028",
+              "filedAt": "2025-10-03",
+              "sourceFile": "data/sources/filing-0000723125-25-000028-d4eede66eac20393.xbrl",
+              "sourceHash": "d4eede66eac20393a3c93849bdd72477dd977d59e36d8e742381d1da6e393ed8",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/723125/000072312525000028/mu-20250828.htm"
+            }
+          }
+        },
+        {
+          "id": "AllOtherSegmentsMember",
+          "label": "기타",
+          "annual": {
+            "revenue": {
+              "start": "2024-08-30",
+              "end": "2025-08-28",
+              "dimensions": [
+                [
+                  "ConsolidationItemsAxis",
+                  "OperatingSegmentsMember"
+                ],
+                [
+                  "StatementBusinessSegmentsAxis",
+                  "AllOtherSegmentsMember"
+                ]
+              ],
+              "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "taxonomy": "http://fasb.org/us-gaap/2025",
+              "value": 13000000.0,
+              "unit": "USD",
+              "context": "c-322",
+              "factId": "f-1516",
+              "decimals": "-6",
+              "accession": "0000723125-25-000028",
+              "filedAt": "2025-10-03",
+              "sourceFile": "data/sources/filing-0000723125-25-000028-d4eede66eac20393.xbrl",
+              "sourceHash": "d4eede66eac20393a3c93849bdd72477dd977d59e36d8e742381d1da6e393ed8",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/723125/000072312525000028/mu-20250828.htm"
+            },
+            "operatingIncome": {
+              "start": "2024-08-30",
+              "end": "2025-08-28",
+              "dimensions": [
+                [
+                  "ConsolidationItemsAxis",
+                  "OperatingSegmentsMember"
+                ],
+                [
+                  "StatementBusinessSegmentsAxis",
+                  "AllOtherSegmentsMember"
+                ]
+              ],
+              "tag": "OperatingIncomeLoss",
+              "taxonomy": "http://fasb.org/us-gaap/2025",
+              "value": -1000000.0,
+              "unit": "USD",
+              "context": "c-322",
+              "factId": "f-1565",
+              "decimals": "-6",
+              "accession": "0000723125-25-000028",
+              "filedAt": "2025-10-03",
+              "sourceFile": "data/sources/filing-0000723125-25-000028-d4eede66eac20393.xbrl",
+              "sourceHash": "d4eede66eac20393a3c93849bdd72477dd977d59e36d8e742381d1da6e393ed8",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/723125/000072312525000028/mu-20250828.htm"
+            }
+          }
+        }
+      ],
+      "status": "contexts_matched"
+    },
+    {
+      "company": "NVDA",
+      "source": {
+        "file": "data/sources/filing-0001045810-26-000021-af8398105d629d98.xbrl",
+        "sha256": "af8398105d629d98defacca572c8e85fe0d8a5f551266b01df2d8be4fa03558f",
+        "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125_htm.xml",
+        "primaryUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm",
+        "provider": "SEC",
+        "accession": "0001045810-26-000021",
+        "cik": 1045810,
+        "retrievedAt": "2026-10-01T05:02:21.824838+00:00",
+        "indexSource": {
+          "file": "data/sources/filing-0001045810-26-000021-index-2c3b974e0a8d0490.html",
+          "sha256": "2c3b974e0a8d0490105fb9cf330824ba9b33dc99899b3a60c6c61658c5f4db8f",
+          "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/0001045810-26-000021-index.html"
+        }
+      },
+      "annualCore": {
+        "accession": "0001045810-26-000021",
+        "basis": "consolidated",
+        "end": "2026-01-25",
+        "filedAt": "2026-02-25",
+        "metric": "revenue",
+        "priority": 1,
+        "sourceFile": "data/sources/sec-NVDA-19ef503a5770f566.json",
+        "sourceHash": "19ef503a5770f5660964b3c3aea6937579d9b359da344afe6a9adf59c63d26ff",
+        "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/0001045810-26-000021-index.html",
+        "standard": "US-GAAP",
+        "start": "2025-01-27",
+        "tag": "us-gaap:Revenues",
+        "unit": "USD",
+        "value": 215938000000
+      },
+      "segments": [
+        {
+          "id": "ComputeAndNetworkingSegmentMember",
+          "label": "컴퓨트·네트워킹",
+          "annual": {
+            "revenue": {
+              "start": "2025-01-27",
+              "end": "2026-01-25",
+              "dimensions": [
+                [
+                  "ConsolidationItemsAxis",
+                  "OperatingSegmentsMember"
+                ],
+                [
+                  "StatementBusinessSegmentsAxis",
+                  "ComputeAndNetworkingSegmentMember"
+                ]
+              ],
+              "tag": "Revenues",
+              "taxonomy": "http://fasb.org/us-gaap/2025",
+              "value": 193479000000.0,
+              "unit": "USD",
+              "context": "c-193",
+              "factId": "f-1119",
+              "decimals": "-6",
+              "accession": "0001045810-26-000021",
+              "filedAt": "2026-02-25",
+              "sourceFile": "data/sources/filing-0001045810-26-000021-af8398105d629d98.xbrl",
+              "sourceHash": "af8398105d629d98defacca572c8e85fe0d8a5f551266b01df2d8be4fa03558f",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm"
+            },
+            "operatingIncome": {
+              "start": "2025-01-27",
+              "end": "2026-01-25",
+              "dimensions": [
+                [
+                  "ConsolidationItemsAxis",
+                  "OperatingSegmentsMember"
+                ],
+                [
+                  "StatementBusinessSegmentsAxis",
+                  "ComputeAndNetworkingSegmentMember"
+                ]
+              ],
+              "tag": "OperatingIncomeLoss",
+              "taxonomy": "http://fasb.org/us-gaap/2025",
+              "value": 130141000000.0,
+              "unit": "USD",
+              "context": "c-193",
+              "factId": "f-1125",
+              "decimals": "-6",
+              "accession": "0001045810-26-000021",
+              "filedAt": "2026-02-25",
+              "sourceFile": "data/sources/filing-0001045810-26-000021-af8398105d629d98.xbrl",
+              "sourceHash": "af8398105d629d98defacca572c8e85fe0d8a5f551266b01df2d8be4fa03558f",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm"
+            }
+          }
+        },
+        {
+          "id": "GraphicsSegmentMember",
+          "label": "그래픽스",
+          "annual": {
+            "revenue": {
+              "start": "2025-01-27",
+              "end": "2026-01-25",
+              "dimensions": [
+                [
+                  "ConsolidationItemsAxis",
+                  "OperatingSegmentsMember"
+                ],
+                [
+                  "StatementBusinessSegmentsAxis",
+                  "GraphicsSegmentMember"
+                ]
+              ],
+              "tag": "Revenues",
+              "taxonomy": "http://fasb.org/us-gaap/2025",
+              "value": 22459000000.0,
+              "unit": "USD",
+              "context": "c-194",
+              "factId": "f-1120",
+              "decimals": "-6",
+              "accession": "0001045810-26-000021",
+              "filedAt": "2026-02-25",
+              "sourceFile": "data/sources/filing-0001045810-26-000021-af8398105d629d98.xbrl",
+              "sourceHash": "af8398105d629d98defacca572c8e85fe0d8a5f551266b01df2d8be4fa03558f",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm"
+            },
+            "operatingIncome": {
+              "start": "2025-01-27",
+              "end": "2026-01-25",
+              "dimensions": [
+                [
+                  "ConsolidationItemsAxis",
+                  "OperatingSegmentsMember"
+                ],
+                [
+                  "StatementBusinessSegmentsAxis",
+                  "GraphicsSegmentMember"
+                ]
+              ],
+              "tag": "OperatingIncomeLoss",
+              "taxonomy": "http://fasb.org/us-gaap/2025",
+              "value": 9156000000.0,
+              "unit": "USD",
+              "context": "c-194",
+              "factId": "f-1126",
+              "decimals": "-6",
+              "accession": "0001045810-26-000021",
+              "filedAt": "2026-02-25",
+              "sourceFile": "data/sources/filing-0001045810-26-000021-af8398105d629d98.xbrl",
+              "sourceHash": "af8398105d629d98defacca572c8e85fe0d8a5f551266b01df2d8be4fa03558f",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm"
+            }
+          }
+        }
+      ],
+      "status": "contexts_matched"
+    },
+    {
+      "company": "GOOGL",
+      "source": {
+        "file": "data/sources/filing-0001652044-26-000018-03df38b77f4e4045.xbrl",
+        "sha256": "03df38b77f4e4045efb3a100ddbadcc752494d916beb523897439c1484f87df2",
+        "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000018/goog-20251231_htm.xml",
+        "primaryUrl": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000018/goog-20251231.htm",
+        "provider": "SEC",
+        "accession": "0001652044-26-000018",
+        "cik": 1652044,
+        "retrievedAt": "2026-10-01T05:02:30.583113+00:00",
+        "indexSource": {
+          "file": "data/sources/filing-0001652044-26-000018-index-91511cbdbe7a736a.html",
+          "sha256": "91511cbdbe7a736ab8dc343993f01170cc37bea589975a9500847fc82e2dd7e6",
+          "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000018/0001652044-26-000018-index.html"
+        }
+      },
+      "annualCore": {
+        "accession": "0001652044-26-000018",
+        "basis": "consolidated",
+        "end": "2025-12-31",
+        "filedAt": "2026-02-05",
+        "metric": "revenue",
+        "priority": 1,
+        "sourceFile": "data/sources/sec-GOOGL-a017f26ee88cb4a6.json",
+        "sourceHash": "a017f26ee88cb4a639d1c1ddb06d53b4afe22f0ac89cabec7cd67c88919fe1c5",
+        "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000018/0001652044-26-000018-index.html",
+        "standard": "US-GAAP",
+        "start": "2025-01-01",
+        "tag": "us-gaap:Revenues",
+        "unit": "USD",
+        "value": 402836000000
+      },
+      "segments": [
+        {
+          "id": "GoogleServicesMember",
+          "label": "Google Services",
+          "annual": {
+            "revenue": {
+              "start": "2025-01-01",
+              "end": "2025-12-31",
+              "dimensions": [
+                [
+                  "StatementBusinessSegmentsAxis",
+                  "GoogleServicesMember"
+                ]
+              ],
+              "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "taxonomy": "http://fasb.org/us-gaap/2025",
+              "value": 342721000000.0,
+              "unit": "USD",
+              "context": "c-74",
+              "factId": "f-499",
+              "decimals": "-6",
+              "accession": "0001652044-26-000018",
+              "filedAt": "2026-02-05",
+              "sourceFile": "data/sources/filing-0001652044-26-000018-03df38b77f4e4045.xbrl",
+              "sourceHash": "03df38b77f4e4045efb3a100ddbadcc752494d916beb523897439c1484f87df2",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000018/goog-20251231.htm"
+            },
+            "operatingIncome": {
+              "start": "2025-01-01",
+              "end": "2025-12-31",
+              "dimensions": [
+                [
+                  "ConsolidationItemsAxis",
+                  "OperatingSegmentsMember"
+                ],
+                [
+                  "StatementBusinessSegmentsAxis",
+                  "GoogleServicesMember"
+                ]
+              ],
+              "tag": "OperatingIncomeLoss",
+              "taxonomy": "http://fasb.org/us-gaap/2025",
+              "value": 139404000000.0,
+              "unit": "USD",
+              "context": "c-417",
+              "factId": "f-1787",
+              "decimals": "-6",
+              "accession": "0001652044-26-000018",
+              "filedAt": "2026-02-05",
+              "sourceFile": "data/sources/filing-0001652044-26-000018-03df38b77f4e4045.xbrl",
+              "sourceHash": "03df38b77f4e4045efb3a100ddbadcc752494d916beb523897439c1484f87df2",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000018/goog-20251231.htm"
+            }
+          }
+        },
+        {
+          "id": "GoogleCloudMember",
+          "label": "Google Cloud",
+          "annual": {
+            "revenue": {
+              "start": "2025-01-01",
+              "end": "2025-12-31",
+              "dimensions": [
+                [
+                  "StatementBusinessSegmentsAxis",
+                  "GoogleCloudMember"
+                ]
+              ],
+              "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "taxonomy": "http://fasb.org/us-gaap/2025",
+              "value": 58705000000.0,
+              "unit": "USD",
+              "context": "c-77",
+              "factId": "f-502",
+              "decimals": "-6",
+              "accession": "0001652044-26-000018",
+              "filedAt": "2026-02-05",
+              "sourceFile": "data/sources/filing-0001652044-26-000018-03df38b77f4e4045.xbrl",
+              "sourceHash": "03df38b77f4e4045efb3a100ddbadcc752494d916beb523897439c1484f87df2",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000018/goog-20251231.htm"
+            },
+            "operatingIncome": {
+              "start": "2025-01-01",
+              "end": "2025-12-31",
+              "dimensions": [
+                [
+                  "ConsolidationItemsAxis",
+                  "OperatingSegmentsMember"
+                ],
+                [
+                  "StatementBusinessSegmentsAxis",
+                  "GoogleCloudMember"
+                ]
+              ],
+              "tag": "OperatingIncomeLoss",
+              "taxonomy": "http://fasb.org/us-gaap/2025",
+              "value": 13910000000.0,
+              "unit": "USD",
+              "context": "c-420",
+              "factId": "f-1790",
+              "decimals": "-6",
+              "accession": "0001652044-26-000018",
+              "filedAt": "2026-02-05",
+              "sourceFile": "data/sources/filing-0001652044-26-000018-03df38b77f4e4045.xbrl",
+              "sourceHash": "03df38b77f4e4045efb3a100ddbadcc752494d916beb523897439c1484f87df2",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000018/goog-20251231.htm"
+            }
+          }
+        },
+        {
+          "id": "AllOtherSegmentsMember",
+          "label": "Other Bets",
+          "annual": {
+            "revenue": {
+              "start": "2025-01-01",
+              "end": "2025-12-31",
+              "dimensions": [
+                [
+                  "StatementBusinessSegmentsAxis",
+                  "AllOtherSegmentsMember"
+                ]
+              ],
+              "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "taxonomy": "http://fasb.org/us-gaap/2025",
+              "value": 1537000000.0,
+              "unit": "USD",
+              "context": "c-80",
+              "factId": "f-505",
+              "decimals": "-6",
+              "accession": "0001652044-26-000018",
+              "filedAt": "2026-02-05",
+              "sourceFile": "data/sources/filing-0001652044-26-000018-03df38b77f4e4045.xbrl",
+              "sourceHash": "03df38b77f4e4045efb3a100ddbadcc752494d916beb523897439c1484f87df2",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000018/goog-20251231.htm"
+            },
+            "operatingIncome": {
+              "start": "2025-01-01",
+              "end": "2025-12-31",
+              "dimensions": [
+                [
+                  "ConsolidationItemsAxis",
+                  "OperatingSegmentsMember"
+                ],
+                [
+                  "StatementBusinessSegmentsAxis",
+                  "AllOtherSegmentsMember"
+                ]
+              ],
+              "tag": "OperatingIncomeLoss",
+              "taxonomy": "http://fasb.org/us-gaap/2025",
+              "value": -7515000000.0,
+              "unit": "USD",
+              "context": "c-423",
+              "factId": "f-1793",
+              "decimals": "-6",
+              "accession": "0001652044-26-000018",
+              "filedAt": "2026-02-05",
+              "sourceFile": "data/sources/filing-0001652044-26-000018-03df38b77f4e4045.xbrl",
+              "sourceHash": "03df38b77f4e4045efb3a100ddbadcc752494d916beb523897439c1484f87df2",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000018/goog-20251231.htm"
+            }
+          }
+        }
+      ],
+      "status": "contexts_matched"
+    },
+    {
+      "company": "AAPL",
+      "source": {
+        "file": "data/sources/filing-0000320193-25-000079-e1076735f1c81bc9.xbrl",
+        "sha256": "e1076735f1c81bc96d5c1ff6e1a9d23515d6eacf52b405cb1f7da3e379ac533b",
+        "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927_htm.xml",
+        "primaryUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm",
+        "provider": "SEC",
+        "accession": "0000320193-25-000079",
+        "cik": 320193,
+        "retrievedAt": "2026-10-01T05:02:30.472593+00:00",
+        "indexSource": {
+          "file": "data/sources/filing-0000320193-25-000079-index-04fec1e0446b3186.html",
+          "sha256": "04fec1e0446b3186e6d2029bdcfc8a1d0ce82cd598d3183b917e825f889cf7ae",
+          "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/0000320193-25-000079-index.html"
+        }
+      },
+      "annualCore": {
+        "accession": "0000320193-25-000079",
+        "basis": "consolidated",
+        "end": "2025-09-27",
+        "filedAt": "2025-10-31",
+        "metric": "revenue",
+        "priority": 0,
+        "sourceFile": "data/sources/sec-AAPL-73a86c6aedc31f77.json",
+        "sourceHash": "73a86c6aedc31f77cac2ea4df5f80f0b3bd7e6eb58bb4e01444fbedf3afb9c43",
+        "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/0000320193-25-000079-index.html",
+        "standard": "US-GAAP",
+        "start": "2024-09-29",
+        "tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD",
+        "value": 416161000000
+      },
+      "segments": [
+        {
+          "id": "AmericasSegmentMember",
+          "label": "미주",
+          "annual": {
+            "revenue": {
+              "start": "2024-09-29",
+              "end": "2025-09-27",
+              "dimensions": [
+                [
+                  "ConsolidationItemsAxis",
+                  "OperatingSegmentsMember"
+                ],
+                [
+                  "StatementBusinessSegmentsAxis",
+                  "AmericasSegmentMember"
+                ]
+              ],
+              "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "taxonomy": "http://fasb.org/us-gaap/2025",
+              "value": 178353000000.0,
+              "unit": "USD",
+              "context": "c-149",
+              "factId": "f-1016",
+              "decimals": "-6",
+              "accession": "0000320193-25-000079",
+              "filedAt": "2025-10-31",
+              "sourceFile": "data/sources/filing-0000320193-25-000079-e1076735f1c81bc9.xbrl",
+              "sourceHash": "e1076735f1c81bc96d5c1ff6e1a9d23515d6eacf52b405cb1f7da3e379ac533b",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm"
+            },
+            "operatingIncome": {
+              "start": "2024-09-29",
+              "end": "2025-09-27",
+              "dimensions": [
+                [
+                  "ConsolidationItemsAxis",
+                  "OperatingSegmentsMember"
+                ],
+                [
+                  "StatementBusinessSegmentsAxis",
+                  "AmericasSegmentMember"
+                ]
+              ],
+              "tag": "OperatingIncomeLoss",
+              "taxonomy": "http://fasb.org/us-gaap/2025",
+              "value": 72480000000.0,
+              "unit": "USD",
+              "context": "c-149",
+              "factId": "f-1038",
+              "decimals": "-6",
+              "accession": "0000320193-25-000079",
+              "filedAt": "2025-10-31",
+              "sourceFile": "data/sources/filing-0000320193-25-000079-e1076735f1c81bc9.xbrl",
+              "sourceHash": "e1076735f1c81bc96d5c1ff6e1a9d23515d6eacf52b405cb1f7da3e379ac533b",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm"
+            }
+          }
+        },
+        {
+          "id": "EuropeSegmentMember",
+          "label": "유럽",
+          "annual": {
+            "revenue": {
+              "start": "2024-09-29",
+              "end": "2025-09-27",
+              "dimensions": [
+                [
+                  "ConsolidationItemsAxis",
+                  "OperatingSegmentsMember"
+                ],
+                [
+                  "StatementBusinessSegmentsAxis",
+                  "EuropeSegmentMember"
+                ]
+              ],
+              "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "taxonomy": "http://fasb.org/us-gaap/2025",
+              "value": 111032000000.0,
+              "unit": "USD",
+              "context": "c-150",
+              "factId": "f-1017",
+              "decimals": "-6",
+              "accession": "0000320193-25-000079",
+              "filedAt": "2025-10-31",
+              "sourceFile": "data/sources/filing-0000320193-25-000079-e1076735f1c81bc9.xbrl",
+              "sourceHash": "e1076735f1c81bc96d5c1ff6e1a9d23515d6eacf52b405cb1f7da3e379ac533b",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm"
+            },
+            "operatingIncome": {
+              "start": "2024-09-29",
+              "end": "2025-09-27",
+              "dimensions": [
+                [
+                  "ConsolidationItemsAxis",
+                  "OperatingSegmentsMember"
+                ],
+                [
+                  "StatementBusinessSegmentsAxis",
+                  "EuropeSegmentMember"
+                ]
+              ],
+              "tag": "OperatingIncomeLoss",
+              "taxonomy": "http://fasb.org/us-gaap/2025",
+              "value": 47739000000.0,
+              "unit": "USD",
+              "context": "c-150",
+              "factId": "f-1039",
+              "decimals": "-6",
+              "accession": "0000320193-25-000079",
+              "filedAt": "2025-10-31",
+              "sourceFile": "data/sources/filing-0000320193-25-000079-e1076735f1c81bc9.xbrl",
+              "sourceHash": "e1076735f1c81bc96d5c1ff6e1a9d23515d6eacf52b405cb1f7da3e379ac533b",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm"
+            }
+          }
+        },
+        {
+          "id": "GreaterChinaSegmentMember",
+          "label": "중화권",
+          "annual": {
+            "revenue": {
+              "start": "2024-09-29",
+              "end": "2025-09-27",
+              "dimensions": [
+                [
+                  "ConsolidationItemsAxis",
+                  "OperatingSegmentsMember"
+                ],
+                [
+                  "StatementBusinessSegmentsAxis",
+                  "GreaterChinaSegmentMember"
+                ]
+              ],
+              "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "taxonomy": "http://fasb.org/us-gaap/2025",
+              "value": 64377000000.0,
+              "unit": "USD",
+              "context": "c-151",
+              "factId": "f-1018",
+              "decimals": "-6",
+              "accession": "0000320193-25-000079",
+              "filedAt": "2025-10-31",
+              "sourceFile": "data/sources/filing-0000320193-25-000079-e1076735f1c81bc9.xbrl",
+              "sourceHash": "e1076735f1c81bc96d5c1ff6e1a9d23515d6eacf52b405cb1f7da3e379ac533b",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm"
+            },
+            "operatingIncome": {
+              "start": "2024-09-29",
+              "end": "2025-09-27",
+              "dimensions": [
+                [
+                  "ConsolidationItemsAxis",
+                  "OperatingSegmentsMember"
+                ],
+                [
+                  "StatementBusinessSegmentsAxis",
+                  "GreaterChinaSegmentMember"
+                ]
+              ],
+              "tag": "OperatingIncomeLoss",
+              "taxonomy": "http://fasb.org/us-gaap/2025",
+              "value": 26917000000.0,
+              "unit": "USD",
+              "context": "c-151",
+              "factId": "f-1040",
+              "decimals": "-6",
+              "accession": "0000320193-25-000079",
+              "filedAt": "2025-10-31",
+              "sourceFile": "data/sources/filing-0000320193-25-000079-e1076735f1c81bc9.xbrl",
+              "sourceHash": "e1076735f1c81bc96d5c1ff6e1a9d23515d6eacf52b405cb1f7da3e379ac533b",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm"
+            }
+          }
+        },
+        {
+          "id": "JapanSegmentMember",
+          "label": "일본",
+          "annual": {
+            "revenue": {
+              "start": "2024-09-29",
+              "end": "2025-09-27",
+              "dimensions": [
+                [
+                  "ConsolidationItemsAxis",
+                  "OperatingSegmentsMember"
+                ],
+                [
+                  "StatementBusinessSegmentsAxis",
+                  "JapanSegmentMember"
+                ]
+              ],
+              "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "taxonomy": "http://fasb.org/us-gaap/2025",
+              "value": 28703000000.0,
+              "unit": "USD",
+              "context": "c-152",
+              "factId": "f-1019",
+              "decimals": "-6",
+              "accession": "0000320193-25-000079",
+              "filedAt": "2025-10-31",
+              "sourceFile": "data/sources/filing-0000320193-25-000079-e1076735f1c81bc9.xbrl",
+              "sourceHash": "e1076735f1c81bc96d5c1ff6e1a9d23515d6eacf52b405cb1f7da3e379ac533b",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm"
+            },
+            "operatingIncome": {
+              "start": "2024-09-29",
+              "end": "2025-09-27",
+              "dimensions": [
+                [
+                  "ConsolidationItemsAxis",
+                  "OperatingSegmentsMember"
+                ],
+                [
+                  "StatementBusinessSegmentsAxis",
+                  "JapanSegmentMember"
+                ]
+              ],
+              "tag": "OperatingIncomeLoss",
+              "taxonomy": "http://fasb.org/us-gaap/2025",
+              "value": 13955000000.0,
+              "unit": "USD",
+              "context": "c-152",
+              "factId": "f-1041",
+              "decimals": "-6",
+              "accession": "0000320193-25-000079",
+              "filedAt": "2025-10-31",
+              "sourceFile": "data/sources/filing-0000320193-25-000079-e1076735f1c81bc9.xbrl",
+              "sourceHash": "e1076735f1c81bc96d5c1ff6e1a9d23515d6eacf52b405cb1f7da3e379ac533b",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm"
+            }
+          }
+        },
+        {
+          "id": "RestOfAsiaPacificSegmentMember",
+          "label": "아시아태평양 기타",
+          "annual": {
+            "revenue": {
+              "start": "2024-09-29",
+              "end": "2025-09-27",
+              "dimensions": [
+                [
+                  "ConsolidationItemsAxis",
+                  "OperatingSegmentsMember"
+                ],
+                [
+                  "StatementBusinessSegmentsAxis",
+                  "RestOfAsiaPacificSegmentMember"
+                ]
+              ],
+              "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "taxonomy": "http://fasb.org/us-gaap/2025",
+              "value": 33696000000.0,
+              "unit": "USD",
+              "context": "c-153",
+              "factId": "f-1020",
+              "decimals": "-6",
+              "accession": "0000320193-25-000079",
+              "filedAt": "2025-10-31",
+              "sourceFile": "data/sources/filing-0000320193-25-000079-e1076735f1c81bc9.xbrl",
+              "sourceHash": "e1076735f1c81bc96d5c1ff6e1a9d23515d6eacf52b405cb1f7da3e379ac533b",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm"
+            },
+            "operatingIncome": {
+              "start": "2024-09-29",
+              "end": "2025-09-27",
+              "dimensions": [
+                [
+                  "ConsolidationItemsAxis",
+                  "OperatingSegmentsMember"
+                ],
+                [
+                  "StatementBusinessSegmentsAxis",
+                  "RestOfAsiaPacificSegmentMember"
+                ]
+              ],
+              "tag": "OperatingIncomeLoss",
+              "taxonomy": "http://fasb.org/us-gaap/2025",
+              "value": 14586000000.0,
+              "unit": "USD",
+              "context": "c-153",
+              "factId": "f-1042",
+              "decimals": "-6",
+              "accession": "0000320193-25-000079",
+              "filedAt": "2025-10-31",
+              "sourceFile": "data/sources/filing-0000320193-25-000079-e1076735f1c81bc9.xbrl",
+              "sourceHash": "e1076735f1c81bc96d5c1ff6e1a9d23515d6eacf52b405cb1f7da3e379ac533b",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm"
+            }
+          }
+        }
+      ],
+      "status": "contexts_matched"
+    },
+    {
+      "company": "AMZN",
+      "source": {
+        "file": "data/sources/filing-0001018724-26-000004-ac1eb8406f629570.xbrl",
+        "sha256": "ac1eb8406f629570bcec12889950eb646dba42bb5f325fdc18415df13f85138b",
+        "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231_htm.xml",
+        "primaryUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm",
+        "provider": "SEC",
+        "accession": "0001018724-26-000004",
+        "cik": 1018724,
+        "retrievedAt": "2026-10-01T05:02:30.367283+00:00",
+        "indexSource": {
+          "file": "data/sources/filing-0001018724-26-000004-index-000f92cc1a082176.html",
+          "sha256": "000f92cc1a082176d8eb91f2f0f312ec0084f92be0e7a2ace9c2acf31377c6ed",
+          "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/0001018724-26-000004-index.html"
+        }
+      },
+      "annualCore": {
+        "accession": "0001018724-26-000004",
+        "basis": "consolidated",
+        "end": "2025-12-31",
+        "filedAt": "2026-02-06",
+        "metric": "revenue",
+        "priority": 0,
+        "sourceFile": "data/sources/sec-AMZN-7549fb68446eee40.json",
+        "sourceHash": "7549fb68446eee40e1f50a166fa06b2d2ee6349e07c8553a4828757e032d3cd4",
+        "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/0001018724-26-000004-index.html",
+        "standard": "US-GAAP",
+        "start": "2025-01-01",
+        "tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD",
+        "value": 716924000000
+      },
+      "segments": [
+        {
+          "id": "NorthAmericaSegmentMember",
+          "label": "북미",
+          "annual": {
+            "revenue": {
+              "start": "2025-01-01",
+              "end": "2025-12-31",
+              "dimensions": [
+                [
+                  "StatementBusinessSegmentsAxis",
+                  "NorthAmericaSegmentMember"
+                ]
+              ],
+              "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "taxonomy": "http://fasb.org/us-gaap/2025",
+              "value": 426305000000.0,
+              "unit": "USD",
+              "context": "c-139",
+              "factId": "f-1413",
+              "decimals": "-6",
+              "accession": "0001018724-26-000004",
+              "filedAt": "2026-02-06",
+              "sourceFile": "data/sources/filing-0001018724-26-000004-ac1eb8406f629570.xbrl",
+              "sourceHash": "ac1eb8406f629570bcec12889950eb646dba42bb5f325fdc18415df13f85138b",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm"
+            },
+            "operatingIncome": {
+              "start": "2025-01-01",
+              "end": "2025-12-31",
+              "dimensions": [
+                [
+                  "StatementBusinessSegmentsAxis",
+                  "NorthAmericaSegmentMember"
+                ]
+              ],
+              "tag": "OperatingIncomeLoss",
+              "taxonomy": "http://fasb.org/us-gaap/2025",
+              "value": 29619000000.0,
+              "unit": "USD",
+              "context": "c-139",
+              "factId": "f-1419",
+              "decimals": "-6",
+              "accession": "0001018724-26-000004",
+              "filedAt": "2026-02-06",
+              "sourceFile": "data/sources/filing-0001018724-26-000004-ac1eb8406f629570.xbrl",
+              "sourceHash": "ac1eb8406f629570bcec12889950eb646dba42bb5f325fdc18415df13f85138b",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm"
+            }
+          }
+        },
+        {
+          "id": "InternationalSegmentMember",
+          "label": "국제",
+          "annual": {
+            "revenue": {
+              "start": "2025-01-01",
+              "end": "2025-12-31",
+              "dimensions": [
+                [
+                  "StatementBusinessSegmentsAxis",
+                  "InternationalSegmentMember"
+                ]
+              ],
+              "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "taxonomy": "http://fasb.org/us-gaap/2025",
+              "value": 161894000000.0,
+              "unit": "USD",
+              "context": "c-140",
+              "factId": "f-1422",
+              "decimals": "-6",
+              "accession": "0001018724-26-000004",
+              "filedAt": "2026-02-06",
+              "sourceFile": "data/sources/filing-0001018724-26-000004-ac1eb8406f629570.xbrl",
+              "sourceHash": "ac1eb8406f629570bcec12889950eb646dba42bb5f325fdc18415df13f85138b",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm"
+            },
+            "operatingIncome": {
+              "start": "2025-01-01",
+              "end": "2025-12-31",
+              "dimensions": [
+                [
+                  "StatementBusinessSegmentsAxis",
+                  "InternationalSegmentMember"
+                ]
+              ],
+              "tag": "OperatingIncomeLoss",
+              "taxonomy": "http://fasb.org/us-gaap/2025",
+              "value": 4750000000.0,
+              "unit": "USD",
+              "context": "c-140",
+              "factId": "f-1428",
+              "decimals": "-6",
+              "accession": "0001018724-26-000004",
+              "filedAt": "2026-02-06",
+              "sourceFile": "data/sources/filing-0001018724-26-000004-ac1eb8406f629570.xbrl",
+              "sourceHash": "ac1eb8406f629570bcec12889950eb646dba42bb5f325fdc18415df13f85138b",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm"
+            }
+          }
+        },
+        {
+          "id": "AmazonWebServicesSegmentMember",
+          "label": "AWS",
+          "annual": {
+            "revenue": {
+              "start": "2025-01-01",
+              "end": "2025-12-31",
+              "dimensions": [
+                [
+                  "StatementBusinessSegmentsAxis",
+                  "AmazonWebServicesSegmentMember"
+                ]
+              ],
+              "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "taxonomy": "http://fasb.org/us-gaap/2025",
+              "value": 128725000000.0,
+              "unit": "USD",
+              "context": "c-141",
+              "factId": "f-1431",
+              "decimals": "-6",
+              "accession": "0001018724-26-000004",
+              "filedAt": "2026-02-06",
+              "sourceFile": "data/sources/filing-0001018724-26-000004-ac1eb8406f629570.xbrl",
+              "sourceHash": "ac1eb8406f629570bcec12889950eb646dba42bb5f325fdc18415df13f85138b",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm"
+            },
+            "operatingIncome": {
+              "start": "2025-01-01",
+              "end": "2025-12-31",
+              "dimensions": [
+                [
+                  "StatementBusinessSegmentsAxis",
+                  "AmazonWebServicesSegmentMember"
+                ]
+              ],
+              "tag": "OperatingIncomeLoss",
+              "taxonomy": "http://fasb.org/us-gaap/2025",
+              "value": 45606000000.0,
+              "unit": "USD",
+              "context": "c-141",
+              "factId": "f-1437",
+              "decimals": "-6",
+              "accession": "0001018724-26-000004",
+              "filedAt": "2026-02-06",
+              "sourceFile": "data/sources/filing-0001018724-26-000004-ac1eb8406f629570.xbrl",
+              "sourceHash": "ac1eb8406f629570bcec12889950eb646dba42bb5f325fdc18415df13f85138b",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm"
+            }
+          }
+        }
+      ],
+      "status": "contexts_matched"
+    },
+    {
+      "company": "AMD",
+      "source": {
+        "file": "data/sources/filing-0000002488-26-000018-7a073e96fa640527.xbrl",
+        "sha256": "7a073e96fa640527505f4b53c4cda1f5b0af4d6e6a3b54b4cb056e78c36d328e",
+        "url": "https://www.sec.gov/Archives/edgar/data/2488/000000248826000018/amd-20251227_htm.xml",
+        "primaryUrl": "https://www.sec.gov/Archives/edgar/data/2488/000000248826000018/amd-20251227.htm",
+        "provider": "SEC",
+        "accession": "0000002488-26-000018",
+        "cik": 2488,
+        "retrievedAt": "2026-10-01T05:02:54.468514+00:00",
+        "indexSource": {
+          "file": "data/sources/filing-0000002488-26-000018-index-b3743cfe9f1cb5a9.html",
+          "sha256": "b3743cfe9f1cb5a9ff0d49a94511cd262e488fefef5dbb78d94d617593aa0cb0",
+          "url": "https://www.sec.gov/Archives/edgar/data/2488/000000248826000018/0000002488-26-000018-index.html"
+        }
+      },
+      "annualCore": {
+        "accession": "0000002488-26-000018",
+        "basis": "consolidated",
+        "end": "2025-12-27",
+        "filedAt": "2026-02-04",
+        "metric": "revenue",
+        "priority": 0,
+        "sourceFile": "data/sources/sec-AMD-21a29c75076d90fc.json",
+        "sourceHash": "21a29c75076d90fced568785d855fc427a15c7458bc0bb153a9dedd88ad3349e",
+        "sourceUrl": "https://www.sec.gov/Archives/edgar/data/2488/000000248826000018/0000002488-26-000018-index.html",
+        "standard": "US-GAAP",
+        "start": "2024-12-29",
+        "tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD",
+        "value": 34639000000
+      },
+      "segments": [
+        {
+          "id": "DataCenterMember",
+          "label": "데이터센터",
+          "annual": {
+            "revenue": null,
+            "operatingIncome": null
+          }
+        },
+        {
+          "id": "ClientAndGamingMember",
+          "label": "클라이언트·게이밍",
+          "annual": {
+            "revenue": {
+              "start": "2024-12-29",
+              "end": "2025-12-27",
+              "dimensions": [
+                [
+                  "ConsolidationItemsAxis",
+                  "OperatingSegmentsMember"
+                ],
+                [
+                  "StatementBusinessSegmentsAxis",
+                  "ClientAndGamingMember"
+                ]
+              ],
+              "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "taxonomy": "http://fasb.org/us-gaap/2025",
+              "value": 14550000000.0,
+              "unit": "USD",
+              "context": "c-63",
+              "factId": "f-506",
+              "decimals": "-6",
+              "accession": "0000002488-26-000018",
+              "filedAt": "2026-02-04",
+              "sourceFile": "data/sources/filing-0000002488-26-000018-7a073e96fa640527.xbrl",
+              "sourceHash": "7a073e96fa640527505f4b53c4cda1f5b0af4d6e6a3b54b4cb056e78c36d328e",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/2488/000000248826000018/amd-20251227.htm"
+            },
+            "operatingIncome": {
+              "start": "2024-12-29",
+              "end": "2025-12-27",
+              "dimensions": [
+                [
+                  "ConsolidationItemsAxis",
+                  "OperatingSegmentsMember"
+                ],
+                [
+                  "StatementBusinessSegmentsAxis",
+                  "ClientAndGamingMember"
+                ]
+              ],
+              "tag": "OperatingIncomeLoss",
+              "taxonomy": "http://fasb.org/us-gaap/2025",
+              "value": 2855000000.0,
+              "unit": "USD",
+              "context": "c-63",
+              "factId": "f-533",
+              "decimals": "-6",
+              "accession": "0000002488-26-000018",
+              "filedAt": "2026-02-04",
+              "sourceFile": "data/sources/filing-0000002488-26-000018-7a073e96fa640527.xbrl",
+              "sourceHash": "7a073e96fa640527505f4b53c4cda1f5b0af4d6e6a3b54b4cb056e78c36d328e",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/2488/000000248826000018/amd-20251227.htm"
+            }
+          }
+        },
+        {
+          "id": "EmbeddedMember",
+          "label": "임베디드",
+          "annual": {
+            "revenue": {
+              "start": "2024-12-29",
+              "end": "2025-12-27",
+              "dimensions": [
+                [
+                  "ConsolidationItemsAxis",
+                  "OperatingSegmentsMember"
+                ],
+                [
+                  "StatementBusinessSegmentsAxis",
+                  "EmbeddedMember"
+                ]
+              ],
+              "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "taxonomy": "http://fasb.org/us-gaap/2025",
+              "value": 3454000000.0,
+              "unit": "USD",
+              "context": "c-66",
+              "factId": "f-509",
+              "decimals": "-6",
+              "accession": "0000002488-26-000018",
+              "filedAt": "2026-02-04",
+              "sourceFile": "data/sources/filing-0000002488-26-000018-7a073e96fa640527.xbrl",
+              "sourceHash": "7a073e96fa640527505f4b53c4cda1f5b0af4d6e6a3b54b4cb056e78c36d328e",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/2488/000000248826000018/amd-20251227.htm"
+            },
+            "operatingIncome": {
+              "start": "2024-12-29",
+              "end": "2025-12-27",
+              "dimensions": [
+                [
+                  "ConsolidationItemsAxis",
+                  "OperatingSegmentsMember"
+                ],
+                [
+                  "StatementBusinessSegmentsAxis",
+                  "EmbeddedMember"
+                ]
+              ],
+              "tag": "OperatingIncomeLoss",
+              "taxonomy": "http://fasb.org/us-gaap/2025",
+              "value": 1243000000.0,
+              "unit": "USD",
+              "context": "c-66",
+              "factId": "f-536",
+              "decimals": "-6",
+              "accession": "0000002488-26-000018",
+              "filedAt": "2026-02-04",
+              "sourceFile": "data/sources/filing-0000002488-26-000018-7a073e96fa640527.xbrl",
+              "sourceHash": "7a073e96fa640527505f4b53c4cda1f5b0af4d6e6a3b54b4cb056e78c36d328e",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/2488/000000248826000018/amd-20251227.htm"
+            }
+          }
+        }
+      ],
+      "status": "context_gap"
+    },
+    {
+      "company": "AVGO",
+      "source": {
+        "file": "data/sources/filing-0001730168-25-000121-e1635fbb72a4cf49.xbrl",
+        "sha256": "e1635fbb72a4cf49c8e3cfd5574e46e8e1b435b710912d5724bcebed5b8d601e",
+        "url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016825000121/avgo-20251102_htm.xml",
+        "primaryUrl": "https://www.sec.gov/Archives/edgar/data/1730168/000173016825000121/avgo-20251102.htm",
+        "provider": "SEC",
+        "accession": "0001730168-25-000121",
+        "cik": 1730168,
+        "retrievedAt": "2026-10-01T05:02:54.464144+00:00",
+        "indexSource": {
+          "file": "data/sources/filing-0001730168-25-000121-index-bdf0e3fcdb68b02e.html",
+          "sha256": "bdf0e3fcdb68b02e1ccb7d2e23d6d78a10121b4472adbea05c56d95080d731fc",
+          "url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016825000121/0001730168-25-000121-index.html"
+        }
+      },
+      "annualCore": {
+        "accession": "0001730168-25-000121",
+        "basis": "consolidated",
+        "end": "2025-11-02",
+        "filedAt": "2025-12-18",
+        "metric": "revenue",
+        "priority": 0,
+        "sourceFile": "data/sources/sec-AVGO-3bdb6644c12addf1.json",
+        "sourceHash": "3bdb6644c12addf1e63c4dc861008d7804fbf3d3f5aa6eb9b97f72c0e89a7adf",
+        "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1730168/000173016825000121/0001730168-25-000121-index.html",
+        "standard": "US-GAAP",
+        "start": "2024-11-04",
+        "tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD",
+        "value": 63887000000
+      },
+      "segments": [
+        {
+          "id": "SemiconductorSolutionsMember",
+          "label": "반도체 솔루션",
+          "annual": {
+            "revenue": {
+              "start": "2024-11-04",
+              "end": "2025-11-02",
+              "dimensions": [
+                [
+                  "StatementBusinessSegmentsAxis",
+                  "SemiconductorSolutionsMember"
+                ]
+              ],
+              "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "taxonomy": "http://fasb.org/us-gaap/2024",
+              "value": 36858000000.0,
+              "unit": "USD",
+              "context": "c-113",
+              "factId": "f-1655",
+              "decimals": "-6",
+              "accession": "0001730168-25-000121",
+              "filedAt": "2025-12-18",
+              "sourceFile": "data/sources/filing-0001730168-25-000121-e1635fbb72a4cf49.xbrl",
+              "sourceHash": "e1635fbb72a4cf49c8e3cfd5574e46e8e1b435b710912d5724bcebed5b8d601e",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1730168/000173016825000121/avgo-20251102.htm"
+            },
+            "operatingIncome": {
+              "start": "2024-11-04",
+              "end": "2025-11-02",
+              "dimensions": [
+                [
+                  "StatementBusinessSegmentsAxis",
+                  "SemiconductorSolutionsMember"
+                ]
+              ],
+              "tag": "OperatingIncomeLoss",
+              "taxonomy": "http://fasb.org/us-gaap/2024",
+              "value": 21232000000.0,
+              "unit": "USD",
+              "context": "c-113",
+              "factId": "f-1667",
+              "decimals": "-6",
+              "accession": "0001730168-25-000121",
+              "filedAt": "2025-12-18",
+              "sourceFile": "data/sources/filing-0001730168-25-000121-e1635fbb72a4cf49.xbrl",
+              "sourceHash": "e1635fbb72a4cf49c8e3cfd5574e46e8e1b435b710912d5724bcebed5b8d601e",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1730168/000173016825000121/avgo-20251102.htm"
+            }
+          }
+        },
+        {
+          "id": "InfrastructureSoftwareMember",
+          "label": "인프라 소프트웨어",
+          "annual": {
+            "revenue": {
+              "start": "2024-11-04",
+              "end": "2025-11-02",
+              "dimensions": [
+                [
+                  "StatementBusinessSegmentsAxis",
+                  "InfrastructureSoftwareMember"
+                ]
+              ],
+              "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "taxonomy": "http://fasb.org/us-gaap/2024",
+              "value": 27029000000.0,
+              "unit": "USD",
+              "context": "c-114",
+              "factId": "f-1670",
+              "decimals": "-6",
+              "accession": "0001730168-25-000121",
+              "filedAt": "2025-12-18",
+              "sourceFile": "data/sources/filing-0001730168-25-000121-e1635fbb72a4cf49.xbrl",
+              "sourceHash": "e1635fbb72a4cf49c8e3cfd5574e46e8e1b435b710912d5724bcebed5b8d601e",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1730168/000173016825000121/avgo-20251102.htm"
+            },
+            "operatingIncome": {
+              "start": "2024-11-04",
+              "end": "2025-11-02",
+              "dimensions": [
+                [
+                  "StatementBusinessSegmentsAxis",
+                  "InfrastructureSoftwareMember"
+                ]
+              ],
+              "tag": "OperatingIncomeLoss",
+              "taxonomy": "http://fasb.org/us-gaap/2024",
+              "value": 20765000000.0,
+              "unit": "USD",
+              "context": "c-114",
+              "factId": "f-1682",
+              "decimals": "-6",
+              "accession": "0001730168-25-000121",
+              "filedAt": "2025-12-18",
+              "sourceFile": "data/sources/filing-0001730168-25-000121-e1635fbb72a4cf49.xbrl",
+              "sourceHash": "e1635fbb72a4cf49c8e3cfd5574e46e8e1b435b710912d5724bcebed5b8d601e",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1730168/000173016825000121/avgo-20251102.htm"
+            }
+          }
+        }
+      ],
+      "status": "contexts_matched"
+    },
+    {
+      "company": "005930",
+      "source": {
+        "file": "data/sources/005930-20260310002820-28c27272eacc7bc9.xbrl",
+        "mode": "OPENDART 접수 확인 2026-09-30 · 원문 보존",
+        "provider": "DART",
+        "retrievedAt": "2026-09-30T06:14:54.732198+00:00",
+        "sha256": "28c27272eacc7bc9364ece8951da38039e915adff27e81924c1444b354223c07",
+        "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260310002820"
+      },
+      "annualCore": {
+        "accession": "20260310002820",
+        "basis": "consolidated",
+        "context": "CFY2025dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_ConsolidatedMember",
+        "end": "2025-12-31",
+        "filedAt": "2026-03-10",
+        "metric": "revenue",
+        "priority": 0,
+        "sourceFile": "data/sources/005930-20260310002820-28c27272eacc7bc9.xbrl",
+        "sourceHash": "28c27272eacc7bc9364ece8951da38039e915adff27e81924c1444b354223c07",
+        "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260310002820",
+        "standard": "K-IFRS",
+        "start": "2025-01-01",
+        "tag": "Revenue",
+        "unit": "KRW",
+        "value": 333605938000000.0
+      },
+      "segments": [
+        {
+          "id": "DsSegmentsMemberOfReportableSegmentsMemberOfDisclosureOfOperatingSegmentsTableOfMember",
+          "label": "DS",
+          "annual": {
+            "revenue": null,
+            "operatingIncome": null
+          }
+        },
+        {
+          "id": "DxSegmentsMemberOfReportableSegmentsMemberOfDisclosureOfOperatingSegmentsTableOfMember",
+          "label": "DX",
+          "annual": {
+            "revenue": null,
+            "operatingIncome": null
+          }
+        },
+        {
+          "id": "SdcMemberOfReportableSegmentsMemberOfDisclosureOfOperatingSegmentsTableOfMember",
+          "label": "SDC",
+          "annual": {
+            "revenue": {
+              "start": "2025-01-01",
+              "end": "2025-12-31",
+              "dimensions": [
+                [
+                  "ConsolidatedAndSeparateFinancialStatementsAxis",
+                  "ConsolidatedMember"
+                ],
+                [
+                  "SegmentConsolidationItemsAxis",
+                  "OperatingSegmentsMember"
+                ],
+                [
+                  "SegmentsAxis",
+                  "SdcMemberOfReportableSegmentsMemberOfDisclosureOfOperatingSegmentsTableOfMember"
+                ]
+              ],
+              "tag": "Revenue",
+              "taxonomy": "http://xbrl.ifrs.org/taxonomy/2021-03-24/ifrs-full",
+              "value": 29841661000000.0,
+              "unit": "KRW",
+              "context": "CFY2025dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_ConsolidatedMember_ifrs-full_SegmentConsolidationItemsAxis_ifrs-full_OperatingSegmentsMember_ifrs-full_SegmentsAxis_entity00126380_SdcMemberOfReportableSegmentsMemberOfDisclosureOfOperatingSegmentsTableOfMember",
+              "factId": null,
+              "decimals": "-6",
+              "accession": "20260310002820",
+              "filedAt": "2026-03-10",
+              "sourceFile": "data/sources/005930-20260310002820-28c27272eacc7bc9.xbrl",
+              "sourceHash": "28c27272eacc7bc9364ece8951da38039e915adff27e81924c1444b354223c07",
+              "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260310002820"
+            },
+            "operatingIncome": {
+              "start": "2025-01-01",
+              "end": "2025-12-31",
+              "dimensions": [
+                [
+                  "ConsolidatedAndSeparateFinancialStatementsAxis",
+                  "ConsolidatedMember"
+                ],
+                [
+                  "SegmentConsolidationItemsAxis",
+                  "OperatingSegmentsMember"
+                ],
+                [
+                  "SegmentsAxis",
+                  "SdcMemberOfReportableSegmentsMemberOfDisclosureOfOperatingSegmentsTableOfMember"
+                ]
+              ],
+              "tag": "OperatingIncomeLoss",
+              "taxonomy": "http://dart.fss.or.kr/taxonomy/2024-06-30/ifrs/dart",
+              "value": 4116308000000.0,
+              "unit": "KRW",
+              "context": "CFY2025dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_ConsolidatedMember_ifrs-full_SegmentConsolidationItemsAxis_ifrs-full_OperatingSegmentsMember_ifrs-full_SegmentsAxis_entity00126380_SdcMemberOfReportableSegmentsMemberOfDisclosureOfOperatingSegmentsTableOfMember",
+              "factId": null,
+              "decimals": "-6",
+              "accession": "20260310002820",
+              "filedAt": "2026-03-10",
+              "sourceFile": "data/sources/005930-20260310002820-28c27272eacc7bc9.xbrl",
+              "sourceHash": "28c27272eacc7bc9364ece8951da38039e915adff27e81924c1444b354223c07",
+              "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260310002820"
+            }
+          }
+        },
+        {
+          "id": "HamanMemberOfReportableSegmentsMemberOfDisclosureOfOperatingSegmentsTableOfMember",
+          "label": "Harman",
+          "annual": {
+            "revenue": null,
+            "operatingIncome": null
+          }
+        }
+      ],
+      "status": "context_gap"
+    },
+    {
+      "company": "066570",
+      "source": {
+        "file": "data/sources/066570-20260706000276-cc613348ed5c3480.xbrl",
+        "mode": "OPENDART 접수 확인 2026-09-30 · 원문 보존",
+        "provider": "DART",
+        "retrievedAt": "2026-09-30T06:15:05.229460+00:00",
+        "sha256": "cc613348ed5c34806c851d0464969c85e4bf0eedac3aec1a0016f73c164c48d0",
+        "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260706000276"
+      },
+      "annualCore": {
+        "accession": "20260706000276",
+        "basis": "consolidated",
+        "context": "CFY2025dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_ConsolidatedMember",
+        "end": "2025-12-31",
+        "filedAt": "2026-07-06",
+        "metric": "revenue",
+        "priority": 0,
+        "sourceFile": "data/sources/066570-20260706000276-cc613348ed5c3480.xbrl",
+        "sourceHash": "cc613348ed5c34806c851d0464969c85e4bf0eedac3aec1a0016f73c164c48d0",
+        "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260706000276",
+        "standard": "K-IFRS",
+        "start": "2025-01-01",
+        "tag": "Revenue",
+        "unit": "KRW",
+        "value": 89200882000000.0
+      },
+      "segments": [
+        {
+          "id": "HomeApplianceSolutionOfReportableSegmentsMemberOfDisclosureOfOperatingSegmentsTableOfMember",
+          "label": "가전",
+          "annual": {
+            "revenue": {
+              "start": "2025-01-01",
+              "end": "2025-12-31",
+              "dimensions": [
+                [
+                  "ConsolidatedAndSeparateFinancialStatementsAxis",
+                  "ConsolidatedMember"
+                ],
+                [
+                  "SegmentsAxis",
+                  "HomeApplianceSolutionOfReportableSegmentsMemberOfDisclosureOfOperatingSegmentsTableOfMember"
+                ]
+              ],
+              "tag": "Revenue",
+              "taxonomy": "http://xbrl.ifrs.org/taxonomy/2021-03-24/ifrs-full",
+              "value": 25737491000000.0,
+              "unit": "KRW",
+              "context": "CFY2025dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_ConsolidatedMember_ifrs-full_SegmentsAxis_entity00401731_HomeApplianceSolutionOfReportableSegmentsMemberOfDisclosureOfOperatingSegmentsTableOfMember",
+              "factId": null,
+              "decimals": "-6",
+              "accession": "20260706000276",
+              "filedAt": "2026-07-06",
+              "sourceFile": "data/sources/066570-20260706000276-cc613348ed5c3480.xbrl",
+              "sourceHash": "cc613348ed5c34806c851d0464969c85e4bf0eedac3aec1a0016f73c164c48d0",
+              "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260706000276"
+            },
+            "operatingIncome": {
+              "start": "2025-01-01",
+              "end": "2025-12-31",
+              "dimensions": [
+                [
+                  "ConsolidatedAndSeparateFinancialStatementsAxis",
+                  "ConsolidatedMember"
+                ],
+                [
+                  "SegmentsAxis",
+                  "HomeApplianceSolutionOfReportableSegmentsMemberOfDisclosureOfOperatingSegmentsTableOfMember"
+                ]
+              ],
+              "tag": "OperatingIncomeLoss",
+              "taxonomy": "http://dart.fss.or.kr/taxonomy/2024-06-30/ifrs/dart",
+              "value": 1279283000000.0,
+              "unit": "KRW",
+              "context": "CFY2025dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_ConsolidatedMember_ifrs-full_SegmentsAxis_entity00401731_HomeApplianceSolutionOfReportableSegmentsMemberOfDisclosureOfOperatingSegmentsTableOfMember",
+              "factId": null,
+              "decimals": "-6",
+              "accession": "20260706000276",
+              "filedAt": "2026-07-06",
+              "sourceFile": "data/sources/066570-20260706000276-cc613348ed5c3480.xbrl",
+              "sourceHash": "cc613348ed5c34806c851d0464969c85e4bf0eedac3aec1a0016f73c164c48d0",
+              "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260706000276"
+            }
+          }
+        },
+        {
+          "id": "MediaEntertainmentSolutionOfReportableSegmentsMemberOfDisclosureOfOperatingSegmentsTableOfMember",
+          "label": "미디어·엔터테인먼트",
+          "annual": {
+            "revenue": {
+              "start": "2025-01-01",
+              "end": "2025-12-31",
+              "dimensions": [
+                [
+                  "ConsolidatedAndSeparateFinancialStatementsAxis",
+                  "ConsolidatedMember"
+                ],
+                [
+                  "SegmentsAxis",
+                  "MediaEntertainmentSolutionOfReportableSegmentsMemberOfDisclosureOfOperatingSegmentsTableOfMember"
+                ]
+              ],
+              "tag": "Revenue",
+              "taxonomy": "http://xbrl.ifrs.org/taxonomy/2021-03-24/ifrs-full",
+              "value": 19410512000000.0,
+              "unit": "KRW",
+              "context": "CFY2025dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_ConsolidatedMember_ifrs-full_SegmentsAxis_entity00401731_MediaEntertainmentSolutionOfReportableSegmentsMemberOfDisclosureOfOperatingSegmentsTableOfMember",
+              "factId": null,
+              "decimals": "-6",
+              "accession": "20260706000276",
+              "filedAt": "2026-07-06",
+              "sourceFile": "data/sources/066570-20260706000276-cc613348ed5c3480.xbrl",
+              "sourceHash": "cc613348ed5c34806c851d0464969c85e4bf0eedac3aec1a0016f73c164c48d0",
+              "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260706000276"
+            },
+            "operatingIncome": {
+              "start": "2025-01-01",
+              "end": "2025-12-31",
+              "dimensions": [
+                [
+                  "ConsolidatedAndSeparateFinancialStatementsAxis",
+                  "ConsolidatedMember"
+                ],
+                [
+                  "SegmentsAxis",
+                  "MediaEntertainmentSolutionOfReportableSegmentsMemberOfDisclosureOfOperatingSegmentsTableOfMember"
+                ]
+              ],
+              "tag": "OperatingIncomeLoss",
+              "taxonomy": "http://dart.fss.or.kr/taxonomy/2024-06-30/ifrs/dart",
+              "value": -750856000000.0,
+              "unit": "KRW",
+              "context": "CFY2025dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_ConsolidatedMember_ifrs-full_SegmentsAxis_entity00401731_MediaEntertainmentSolutionOfReportableSegmentsMemberOfDisclosureOfOperatingSegmentsTableOfMember",
+              "factId": null,
+              "decimals": "-6",
+              "accession": "20260706000276",
+              "filedAt": "2026-07-06",
+              "sourceFile": "data/sources/066570-20260706000276-cc613348ed5c3480.xbrl",
+              "sourceHash": "cc613348ed5c34806c851d0464969c85e4bf0eedac3aec1a0016f73c164c48d0",
+              "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260706000276"
+            }
+          }
+        },
+        {
+          "id": "VehicleSolutionOfReportableSegmentsMemberOfDisclosureOfOperatingSegmentsTableOfMember",
+          "label": "전장",
+          "annual": {
+            "revenue": {
+              "start": "2025-01-01",
+              "end": "2025-12-31",
+              "dimensions": [
+                [
+                  "ConsolidatedAndSeparateFinancialStatementsAxis",
+                  "ConsolidatedMember"
+                ],
+                [
+                  "SegmentsAxis",
+                  "VehicleSolutionOfReportableSegmentsMemberOfDisclosureOfOperatingSegmentsTableOfMember"
+                ]
+              ],
+              "tag": "Revenue",
+              "taxonomy": "http://xbrl.ifrs.org/taxonomy/2021-03-24/ifrs-full",
+              "value": 11135747000000.0,
+              "unit": "KRW",
+              "context": "CFY2025dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_ConsolidatedMember_ifrs-full_SegmentsAxis_entity00401731_VehicleSolutionOfReportableSegmentsMemberOfDisclosureOfOperatingSegmentsTableOfMember",
+              "factId": null,
+              "decimals": "-6",
+              "accession": "20260706000276",
+              "filedAt": "2026-07-06",
+              "sourceFile": "data/sources/066570-20260706000276-cc613348ed5c3480.xbrl",
+              "sourceHash": "cc613348ed5c34806c851d0464969c85e4bf0eedac3aec1a0016f73c164c48d0",
+              "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260706000276"
+            },
+            "operatingIncome": {
+              "start": "2025-01-01",
+              "end": "2025-12-31",
+              "dimensions": [
+                [
+                  "ConsolidatedAndSeparateFinancialStatementsAxis",
+                  "ConsolidatedMember"
+                ],
+                [
+                  "SegmentsAxis",
+                  "VehicleSolutionOfReportableSegmentsMemberOfDisclosureOfOperatingSegmentsTableOfMember"
+                ]
+              ],
+              "tag": "OperatingIncomeLoss",
+              "taxonomy": "http://dart.fss.or.kr/taxonomy/2024-06-30/ifrs/dart",
+              "value": 558987000000.0,
+              "unit": "KRW",
+              "context": "CFY2025dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_ConsolidatedMember_ifrs-full_SegmentsAxis_entity00401731_VehicleSolutionOfReportableSegmentsMemberOfDisclosureOfOperatingSegmentsTableOfMember",
+              "factId": null,
+              "decimals": "-6",
+              "accession": "20260706000276",
+              "filedAt": "2026-07-06",
+              "sourceFile": "data/sources/066570-20260706000276-cc613348ed5c3480.xbrl",
+              "sourceHash": "cc613348ed5c34806c851d0464969c85e4bf0eedac3aec1a0016f73c164c48d0",
+              "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260706000276"
+            }
+          }
+        },
+        {
+          "id": "EcoSolutionOfReportableSegmentsMemberOfDisclosureOfOperatingSegmentsTableOfMember",
+          "label": "공조",
+          "annual": {
+            "revenue": {
+              "start": "2025-01-01",
+              "end": "2025-12-31",
+              "dimensions": [
+                [
+                  "ConsolidatedAndSeparateFinancialStatementsAxis",
+                  "ConsolidatedMember"
+                ],
+                [
+                  "SegmentsAxis",
+                  "EcoSolutionOfReportableSegmentsMemberOfDisclosureOfOperatingSegmentsTableOfMember"
+                ]
+              ],
+              "tag": "Revenue",
+              "taxonomy": "http://xbrl.ifrs.org/taxonomy/2021-03-24/ifrs-full",
+              "value": 9303319000000.0,
+              "unit": "KRW",
+              "context": "CFY2025dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_ConsolidatedMember_ifrs-full_SegmentsAxis_entity00401731_EcoSolutionOfReportableSegmentsMemberOfDisclosureOfOperatingSegmentsTableOfMember",
+              "factId": null,
+              "decimals": "-6",
+              "accession": "20260706000276",
+              "filedAt": "2026-07-06",
+              "sourceFile": "data/sources/066570-20260706000276-cc613348ed5c3480.xbrl",
+              "sourceHash": "cc613348ed5c34806c851d0464969c85e4bf0eedac3aec1a0016f73c164c48d0",
+              "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260706000276"
+            },
+            "operatingIncome": {
+              "start": "2025-01-01",
+              "end": "2025-12-31",
+              "dimensions": [
+                [
+                  "ConsolidatedAndSeparateFinancialStatementsAxis",
+                  "ConsolidatedMember"
+                ],
+                [
+                  "SegmentsAxis",
+                  "EcoSolutionOfReportableSegmentsMemberOfDisclosureOfOperatingSegmentsTableOfMember"
+                ]
+              ],
+              "tag": "OperatingIncomeLoss",
+              "taxonomy": "http://dart.fss.or.kr/taxonomy/2024-06-30/ifrs/dart",
+              "value": 647291000000.0,
+              "unit": "KRW",
+              "context": "CFY2025dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_ConsolidatedMember_ifrs-full_SegmentsAxis_entity00401731_EcoSolutionOfReportableSegmentsMemberOfDisclosureOfOperatingSegmentsTableOfMember",
+              "factId": null,
+              "decimals": "-6",
+              "accession": "20260706000276",
+              "filedAt": "2026-07-06",
+              "sourceFile": "data/sources/066570-20260706000276-cc613348ed5c3480.xbrl",
+              "sourceHash": "cc613348ed5c34806c851d0464969c85e4bf0eedac3aec1a0016f73c164c48d0",
+              "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260706000276"
+            }
+          }
+        },
+        {
+          "id": "LgInnotekAndItsSubsidiariesOfReportableSegmentsMemberOfDisclosureOfOperatingSegmentsTableOfMember",
+          "label": "이노텍",
+          "annual": {
+            "revenue": {
+              "start": "2025-01-01",
+              "end": "2025-12-31",
+              "dimensions": [
+                [
+                  "ConsolidatedAndSeparateFinancialStatementsAxis",
+                  "ConsolidatedMember"
+                ],
+                [
+                  "SegmentsAxis",
+                  "LgInnotekAndItsSubsidiariesOfReportableSegmentsMemberOfDisclosureOfOperatingSegmentsTableOfMember"
+                ]
+              ],
+              "tag": "Revenue",
+              "taxonomy": "http://xbrl.ifrs.org/taxonomy/2021-03-24/ifrs-full",
+              "value": 21463540000000.0,
+              "unit": "KRW",
+              "context": "CFY2025dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_ConsolidatedMember_ifrs-full_SegmentsAxis_entity00401731_LgInnotekAndItsSubsidiariesOfReportableSegmentsMemberOfDisclosureOfOperatingSegmentsTableOfMember",
+              "factId": null,
+              "decimals": "-6",
+              "accession": "20260706000276",
+              "filedAt": "2026-07-06",
+              "sourceFile": "data/sources/066570-20260706000276-cc613348ed5c3480.xbrl",
+              "sourceHash": "cc613348ed5c34806c851d0464969c85e4bf0eedac3aec1a0016f73c164c48d0",
+              "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260706000276"
+            },
+            "operatingIncome": {
+              "start": "2025-01-01",
+              "end": "2025-12-31",
+              "dimensions": [
+                [
+                  "ConsolidatedAndSeparateFinancialStatementsAxis",
+                  "ConsolidatedMember"
+                ],
+                [
+                  "SegmentsAxis",
+                  "LgInnotekAndItsSubsidiariesOfReportableSegmentsMemberOfDisclosureOfOperatingSegmentsTableOfMember"
+                ]
+              ],
+              "tag": "OperatingIncomeLoss",
+              "taxonomy": "http://dart.fss.or.kr/taxonomy/2024-06-30/ifrs/dart",
+              "value": 665007000000.0,
+              "unit": "KRW",
+              "context": "CFY2025dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_ConsolidatedMember_ifrs-full_SegmentsAxis_entity00401731_LgInnotekAndItsSubsidiariesOfReportableSegmentsMemberOfDisclosureOfOperatingSegmentsTableOfMember",
+              "factId": null,
+              "decimals": "-6",
+              "accession": "20260706000276",
+              "filedAt": "2026-07-06",
+              "sourceFile": "data/sources/066570-20260706000276-cc613348ed5c3480.xbrl",
+              "sourceHash": "cc613348ed5c34806c851d0464969c85e4bf0eedac3aec1a0016f73c164c48d0",
+              "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260706000276"
+            }
+          }
+        },
+        {
+          "id": "AllOtherSegmentsMember",
+          "label": "기타",
+          "annual": {
+            "revenue": {
+              "start": "2025-01-01",
+              "end": "2025-12-31",
+              "dimensions": [
+                [
+                  "ConsolidatedAndSeparateFinancialStatementsAxis",
+                  "ConsolidatedMember"
+                ],
+                [
+                  "SegmentsAxis",
+                  "AllOtherSegmentsMember"
+                ]
+              ],
+              "tag": "Revenue",
+              "taxonomy": "http://xbrl.ifrs.org/taxonomy/2021-03-24/ifrs-full",
+              "value": 2150273000000.0,
+              "unit": "KRW",
+              "context": "CFY2025dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_ConsolidatedMember_ifrs-full_SegmentsAxis_ifrs-full_AllOtherSegmentsMember",
+              "factId": null,
+              "decimals": "-6",
+              "accession": "20260706000276",
+              "filedAt": "2026-07-06",
+              "sourceFile": "data/sources/066570-20260706000276-cc613348ed5c3480.xbrl",
+              "sourceHash": "cc613348ed5c34806c851d0464969c85e4bf0eedac3aec1a0016f73c164c48d0",
+              "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260706000276"
+            },
+            "operatingIncome": {
+              "start": "2025-01-01",
+              "end": "2025-12-31",
+              "dimensions": [
+                [
+                  "ConsolidatedAndSeparateFinancialStatementsAxis",
+                  "ConsolidatedMember"
+                ],
+                [
+                  "SegmentsAxis",
+                  "AllOtherSegmentsMember"
+                ]
+              ],
+              "tag": "OperatingIncomeLoss",
+              "taxonomy": "http://dart.fss.or.kr/taxonomy/2024-06-30/ifrs/dart",
+              "value": 78680000000.0,
+              "unit": "KRW",
+              "context": "CFY2025dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_ConsolidatedMember_ifrs-full_SegmentsAxis_ifrs-full_AllOtherSegmentsMember",
+              "factId": null,
+              "decimals": "-6",
+              "accession": "20260706000276",
+              "filedAt": "2026-07-06",
+              "sourceFile": "data/sources/066570-20260706000276-cc613348ed5c3480.xbrl",
+              "sourceHash": "cc613348ed5c34806c851d0464969c85e4bf0eedac3aec1a0016f73c164c48d0",
+              "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260706000276"
+            }
+          }
+        }
+      ],
+      "status": "contexts_matched"
+    },
+    {
+      "company": "005380",
+      "source": {
+        "file": "data/sources/005380-20260318001394-2b006fe50b3e6f9c.xbrl",
+        "mode": "OPENDART 접수 확인 2026-09-30 · 원문 보존",
+        "provider": "DART",
+        "retrievedAt": "2026-09-30T09:16:24.839135+00:00",
+        "sha256": "2b006fe50b3e6f9c940fbb889f597816d98e18dc7961f64ba5a5e0f55349a804",
+        "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001394"
+      },
+      "annualCore": {
+        "accession": "20260318001394",
+        "basis": "consolidated",
+        "context": "CFY2025dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_ConsolidatedMember",
+        "end": "2025-12-31",
+        "filedAt": "2026-03-18",
+        "metric": "revenue",
+        "priority": 0,
+        "sourceFile": "data/sources/005380-20260318001394-2b006fe50b3e6f9c.xbrl",
+        "sourceHash": "2b006fe50b3e6f9c940fbb889f597816d98e18dc7961f64ba5a5e0f55349a804",
+        "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001394",
+        "standard": "K-IFRS",
+        "start": "2025-01-01",
+        "tag": "Revenue",
+        "unit": "KRW",
+        "value": 186254472000000.0
+      },
+      "segments": [
+        {
+          "id": "Vehicle",
+          "label": "자동차",
+          "annual": {
+            "revenue": {
+              "start": "2025-01-01",
+              "end": "2025-12-31",
+              "dimensions": [
+                [
+                  "ConsolidatedAndSeparateFinancialStatementsAxis",
+                  "ConsolidatedMember"
+                ],
+                [
+                  "SegmentsAxis",
+                  "VehicleMemberOfReportableSegmentsMemberOfDisclosureOfOperatingSegmentsNetRevenueTableOfMember"
+                ]
+              ],
+              "tag": "Revenue",
+              "taxonomy": "http://xbrl.ifrs.org/taxonomy/2021-03-24/ifrs-full",
+              "value": 145631818000000.0,
+              "unit": "KRW",
+              "context": "CFY2025dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_ConsolidatedMember_ifrs-full_SegmentsAxis_entity00164742_VehicleMemberOfReportableSegmentsMemberOfDisclosureOfOperatingSegmentsNetRevenueTableOfMember",
+              "factId": null,
+              "decimals": "-6",
+              "accession": "20260318001394",
+              "filedAt": "2026-03-18",
+              "sourceFile": "data/sources/005380-20260318001394-2b006fe50b3e6f9c.xbrl",
+              "sourceHash": "2b006fe50b3e6f9c940fbb889f597816d98e18dc7961f64ba5a5e0f55349a804",
+              "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001394"
+            },
+            "operatingIncome": {
+              "start": "2025-01-01",
+              "end": "2025-12-31",
+              "dimensions": [
+                [
+                  "ConsolidatedAndSeparateFinancialStatementsAxis",
+                  "ConsolidatedMember"
+                ],
+                [
+                  "SegmentConsolidationItemsAxis",
+                  "OperatingSegmentsMember"
+                ],
+                [
+                  "SegmentsAxis",
+                  "VehicleMemberOfReportableSegmentsMemberOfDetailedInformationOfOperatingSegmentsTableOfMember"
+                ]
+              ],
+              "tag": "OperatingIncomeLoss",
+              "taxonomy": "http://dart.fss.or.kr/taxonomy/2024-06-30/ifrs/dart",
+              "value": 7358550000000.0,
+              "unit": "KRW",
+              "context": "CFY2025dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_ConsolidatedMember_ifrs-full_SegmentConsolidationItemsAxis_ifrs-full_OperatingSegmentsMember_ifrs-full_SegmentsAxis_entity00164742_VehicleMemberOfReportableSegmentsMemberOfDetailedInformationOfOperatingSegmentsTableOfMember",
+              "factId": null,
+              "decimals": "-6",
+              "accession": "20260318001394",
+              "filedAt": "2026-03-18",
+              "sourceFile": "data/sources/005380-20260318001394-2b006fe50b3e6f9c.xbrl",
+              "sourceHash": "2b006fe50b3e6f9c940fbb889f597816d98e18dc7961f64ba5a5e0f55349a804",
+              "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001394"
+            }
+          }
+        },
+        {
+          "id": "Finance",
+          "label": "금융",
+          "annual": {
+            "revenue": {
+              "start": "2025-01-01",
+              "end": "2025-12-31",
+              "dimensions": [
+                [
+                  "ConsolidatedAndSeparateFinancialStatementsAxis",
+                  "ConsolidatedMember"
+                ],
+                [
+                  "SegmentsAxis",
+                  "FinanceMemberOfReportableSegmentsMemberOfDisclosureOfOperatingSegmentsNetRevenueTableOfMember"
+                ]
+              ],
+              "tag": "Revenue",
+              "taxonomy": "http://xbrl.ifrs.org/taxonomy/2021-03-24/ifrs-full",
+              "value": 30232775000000.0,
+              "unit": "KRW",
+              "context": "CFY2025dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_ConsolidatedMember_ifrs-full_SegmentsAxis_entity00164742_FinanceMemberOfReportableSegmentsMemberOfDisclosureOfOperatingSegmentsNetRevenueTableOfMember",
+              "factId": null,
+              "decimals": "-6",
+              "accession": "20260318001394",
+              "filedAt": "2026-03-18",
+              "sourceFile": "data/sources/005380-20260318001394-2b006fe50b3e6f9c.xbrl",
+              "sourceHash": "2b006fe50b3e6f9c940fbb889f597816d98e18dc7961f64ba5a5e0f55349a804",
+              "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001394"
+            },
+            "operatingIncome": {
+              "start": "2025-01-01",
+              "end": "2025-12-31",
+              "dimensions": [
+                [
+                  "ConsolidatedAndSeparateFinancialStatementsAxis",
+                  "ConsolidatedMember"
+                ],
+                [
+                  "SegmentConsolidationItemsAxis",
+                  "OperatingSegmentsMember"
+                ],
+                [
+                  "SegmentsAxis",
+                  "FinanceMemberOfReportableSegmentsMemberOfDetailedInformationOfOperatingSegmentsTableOfMember"
+                ]
+              ],
+              "tag": "OperatingIncomeLoss",
+              "taxonomy": "http://dart.fss.or.kr/taxonomy/2024-06-30/ifrs/dart",
+              "value": 2164043000000.0,
+              "unit": "KRW",
+              "context": "CFY2025dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_ConsolidatedMember_ifrs-full_SegmentConsolidationItemsAxis_ifrs-full_OperatingSegmentsMember_ifrs-full_SegmentsAxis_entity00164742_FinanceMemberOfReportableSegmentsMemberOfDetailedInformationOfOperatingSegmentsTableOfMember",
+              "factId": null,
+              "decimals": "-6",
+              "accession": "20260318001394",
+              "filedAt": "2026-03-18",
+              "sourceFile": "data/sources/005380-20260318001394-2b006fe50b3e6f9c.xbrl",
+              "sourceHash": "2b006fe50b3e6f9c940fbb889f597816d98e18dc7961f64ba5a5e0f55349a804",
+              "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001394"
+            }
+          }
+        },
+        {
+          "id": "OthersOperatingSegments",
+          "label": "기타",
+          "annual": {
+            "revenue": {
+              "start": "2025-01-01",
+              "end": "2025-12-31",
+              "dimensions": [
+                [
+                  "ConsolidatedAndSeparateFinancialStatementsAxis",
+                  "ConsolidatedMember"
+                ],
+                [
+                  "SegmentsAxis",
+                  "OthersOperatingSegmentsMemberOfReportableSegmentsMemberOfDisclosureOfOperatingSegmentsNetRevenueTableOfMember"
+                ]
+              ],
+              "tag": "Revenue",
+              "taxonomy": "http://xbrl.ifrs.org/taxonomy/2021-03-24/ifrs-full",
+              "value": 10389879000000.0,
+              "unit": "KRW",
+              "context": "CFY2025dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_ConsolidatedMember_ifrs-full_SegmentsAxis_entity00164742_OthersOperatingSegmentsMemberOfReportableSegmentsMemberOfDisclosureOfOperatingSegmentsNetRevenueTableOfMember",
+              "factId": null,
+              "decimals": "-6",
+              "accession": "20260318001394",
+              "filedAt": "2026-03-18",
+              "sourceFile": "data/sources/005380-20260318001394-2b006fe50b3e6f9c.xbrl",
+              "sourceHash": "2b006fe50b3e6f9c940fbb889f597816d98e18dc7961f64ba5a5e0f55349a804",
+              "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001394"
+            },
+            "operatingIncome": {
+              "start": "2025-01-01",
+              "end": "2025-12-31",
+              "dimensions": [
+                [
+                  "ConsolidatedAndSeparateFinancialStatementsAxis",
+                  "ConsolidatedMember"
+                ],
+                [
+                  "SegmentConsolidationItemsAxis",
+                  "OperatingSegmentsMember"
+                ],
+                [
+                  "SegmentsAxis",
+                  "OtherOperatingSegmentsMemberOfReportableSegmentsMemberOfDetailedInformationOfOperatingSegmentsTableOfMember"
+                ]
+              ],
+              "tag": "OperatingIncomeLoss",
+              "taxonomy": "http://dart.fss.or.kr/taxonomy/2024-06-30/ifrs/dart",
+              "value": 832869000000.0,
+              "unit": "KRW",
+              "context": "CFY2025dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_ConsolidatedMember_ifrs-full_SegmentConsolidationItemsAxis_ifrs-full_OperatingSegmentsMember_ifrs-full_SegmentsAxis_entity00164742_OtherOperatingSegmentsMemberOfReportableSegmentsMemberOfDetailedInformationOfOperatingSegmentsTableOfMember",
+              "factId": null,
+              "decimals": "-6",
+              "accession": "20260318001394",
+              "filedAt": "2026-03-18",
+              "sourceFile": "data/sources/005380-20260318001394-2b006fe50b3e6f9c.xbrl",
+              "sourceHash": "2b006fe50b3e6f9c940fbb889f597816d98e18dc7961f64ba5a5e0f55349a804",
+              "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001394"
+            }
+          }
+        }
+      ],
+      "status": "contexts_matched"
+    },
+    {
+      "company": "207940",
+      "source": {
+        "file": "data/sources/207940-20260515001658-d576dc0904eb0a1c.xbrl",
+        "mode": "OPENDART 접수 확인 2026-09-30 · 원문 보존",
+        "provider": "DART",
+        "retrievedAt": "2026-09-30T09:16:44.983202+00:00",
+        "sha256": "d576dc0904eb0a1c46daa69d5daf9ed24fec81ed80cd2684fd8877024257ccb9",
+        "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515001658"
+      },
+      "annualCore": {
+        "accession": "20260515001658",
+        "basis": "consolidated",
+        "context": "CFY2025dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_ConsolidatedMember",
+        "end": "2025-12-31",
+        "filedAt": "2026-05-15",
+        "metric": "revenue",
+        "priority": 0,
+        "sourceFile": "data/sources/207940-20260515001658-d576dc0904eb0a1c.xbrl",
+        "sourceHash": "d576dc0904eb0a1c46daa69d5daf9ed24fec81ed80cd2684fd8877024257ccb9",
+        "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515001658",
+        "standard": "K-IFRS",
+        "start": "2025-01-01",
+        "tag": "Revenue",
+        "unit": "KRW",
+        "value": 4556971695180.0
+      },
+      "segments": [
+        {
+          "id": "CdmoMemberOfReportableSegmentsMemberOfDisclosureOfOperatingSegmentsTableOfMember",
+          "label": "CDMO",
+          "annual": {
+            "revenue": {
+              "start": "2025-01-01",
+              "end": "2025-12-31",
+              "dimensions": [
+                [
+                  "ConsolidatedAndSeparateFinancialStatementsAxis",
+                  "ConsolidatedMember"
+                ],
+                [
+                  "SegmentConsolidationItemsAxis",
+                  "OperatingSegmentsMember"
+                ],
+                [
+                  "SegmentsAxis",
+                  "CdmoMemberOfReportableSegmentsMemberOfDisclosureOfOperatingSegmentsTableOfMember"
+                ]
+              ],
+              "tag": "Revenue",
+              "taxonomy": "http://xbrl.ifrs.org/taxonomy/2021-03-24/ifrs-full",
+              "value": 4570639279811.0,
+              "unit": "KRW",
+              "context": "CFY2025dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_ConsolidatedMember_ifrs-full_SegmentConsolidationItemsAxis_ifrs-full_OperatingSegmentsMember_ifrs-full_SegmentsAxis_entity00877059_CdmoMemberOfReportableSegmentsMemberOfDisclosureOfOperatingSegmentsTableOfMember",
+              "factId": null,
+              "decimals": "0",
+              "accession": "20260515001658",
+              "filedAt": "2026-05-15",
+              "sourceFile": "data/sources/207940-20260515001658-d576dc0904eb0a1c.xbrl",
+              "sourceHash": "d576dc0904eb0a1c46daa69d5daf9ed24fec81ed80cd2684fd8877024257ccb9",
+              "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515001658"
+            },
+            "operatingIncome": {
+              "start": "2025-01-01",
+              "end": "2025-12-31",
+              "dimensions": [
+                [
+                  "ConsolidatedAndSeparateFinancialStatementsAxis",
+                  "ConsolidatedMember"
+                ],
+                [
+                  "SegmentConsolidationItemsAxis",
+                  "OperatingSegmentsMember"
+                ],
+                [
+                  "SegmentsAxis",
+                  "CdmoMemberOfReportableSegmentsMemberOfDisclosureOfOperatingSegmentsTableOfMember"
+                ]
+              ],
+              "tag": "OperatingIncomeLoss",
+              "taxonomy": "http://dart.fss.or.kr/taxonomy/2024-06-30/ifrs/dart",
+              "value": 2069221266630.0,
+              "unit": "KRW",
+              "context": "CFY2025dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_ConsolidatedMember_ifrs-full_SegmentConsolidationItemsAxis_ifrs-full_OperatingSegmentsMember_ifrs-full_SegmentsAxis_entity00877059_CdmoMemberOfReportableSegmentsMemberOfDisclosureOfOperatingSegmentsTableOfMember",
+              "factId": null,
+              "decimals": "0",
+              "accession": "20260515001658",
+              "filedAt": "2026-05-15",
+              "sourceFile": "data/sources/207940-20260515001658-d576dc0904eb0a1c.xbrl",
+              "sourceHash": "d576dc0904eb0a1c46daa69d5daf9ed24fec81ed80cd2684fd8877024257ccb9",
+              "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515001658"
+            }
+          }
+        }
+      ],
+      "status": "contexts_matched"
+    },
+    {
+      "company": "068270",
+      "source": {
+        "file": "data/sources/068270-20260316001415-918103648a799e62.xbrl",
+        "mode": "OPENDART 접수 확인 2026-09-30 · 원문 보존",
+        "provider": "DART",
+        "retrievedAt": "2026-09-30T09:16:47.443970+00:00",
+        "sha256": "918103648a799e622c30391295aefaec3e2c6ed6301f26de8e117535834fb3af",
+        "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260316001415"
+      },
+      "annualCore": {
+        "accession": "20260316001415",
+        "basis": "consolidated",
+        "context": "CFY2025dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_ConsolidatedMember",
+        "end": "2025-12-31",
+        "filedAt": "2026-03-16",
+        "metric": "revenue",
+        "priority": 0,
+        "sourceFile": "data/sources/068270-20260316001415-918103648a799e62.xbrl",
+        "sourceHash": "918103648a799e622c30391295aefaec3e2c6ed6301f26de8e117535834fb3af",
+        "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260316001415",
+        "standard": "K-IFRS",
+        "start": "2025-01-01",
+        "tag": "Revenue",
+        "unit": "KRW",
+        "value": 4162495108881.0
+      },
+      "segments": [
+        {
+          "id": "BiopharmaceuticalProductsMemberOfSegmentsDomainOfDisclosureOfOperatingSegmentsTableOfMember",
+          "label": "바이오 의약품",
+          "annual": {
+            "revenue": null,
+            "operatingIncome": null
+          }
+        },
+        {
+          "id": "ChemicalPharmaceuticalProductsMemberOfSegmentsDomainOfDisclosureOfOperatingSegmentsTableOfMember",
+          "label": "케미컬 의약품",
+          "annual": {
+            "revenue": null,
+            "operatingIncome": null
+          }
+        },
+        {
+          "id": "AllOtherSegmentsMember",
+          "label": "기타",
+          "annual": {
+            "revenue": {
+              "start": "2025-01-01",
+              "end": "2025-12-31",
+              "dimensions": [
+                [
+                  "ConsolidatedAndSeparateFinancialStatementsAxis",
+                  "ConsolidatedMember"
+                ],
+                [
+                  "SegmentConsolidationItemsAxis",
+                  "OperatingSegmentsMember"
+                ],
+                [
+                  "SegmentsAxis",
+                  "AllOtherSegmentsMember"
+                ]
+              ],
+              "tag": "Revenue",
+              "taxonomy": "http://xbrl.ifrs.org/taxonomy/2021-03-24/ifrs-full",
+              "value": 6737402000.0,
+              "unit": "KRW",
+              "context": "CFY2025dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_ConsolidatedMember_ifrs-full_SegmentConsolidationItemsAxis_ifrs-full_OperatingSegmentsMember_ifrs-full_SegmentsAxis_ifrs-full_AllOtherSegmentsMember",
+              "factId": null,
+              "decimals": "-3",
+              "accession": "20260316001415",
+              "filedAt": "2026-03-16",
+              "sourceFile": "data/sources/068270-20260316001415-918103648a799e62.xbrl",
+              "sourceHash": "918103648a799e622c30391295aefaec3e2c6ed6301f26de8e117535834fb3af",
+              "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260316001415"
+            },
+            "operatingIncome": {
+              "start": "2025-01-01",
+              "end": "2025-12-31",
+              "dimensions": [
+                [
+                  "ConsolidatedAndSeparateFinancialStatementsAxis",
+                  "ConsolidatedMember"
+                ],
+                [
+                  "SegmentConsolidationItemsAxis",
+                  "OperatingSegmentsMember"
+                ],
+                [
+                  "SegmentsAxis",
+                  "AllOtherSegmentsMember"
+                ]
+              ],
+              "tag": "OperatingIncomeLoss",
+              "taxonomy": "http://dart.fss.or.kr/taxonomy/2024-06-30/ifrs/dart",
+              "value": 86190000.0,
+              "unit": "KRW",
+              "context": "CFY2025dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_ConsolidatedMember_ifrs-full_SegmentConsolidationItemsAxis_ifrs-full_OperatingSegmentsMember_ifrs-full_SegmentsAxis_ifrs-full_AllOtherSegmentsMember",
+              "factId": null,
+              "decimals": "-3",
+              "accession": "20260316001415",
+              "filedAt": "2026-03-16",
+              "sourceFile": "data/sources/068270-20260316001415-918103648a799e62.xbrl",
+              "sourceHash": "918103648a799e622c30391295aefaec3e2c6ed6301f26de8e117535834fb3af",
+              "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260316001415"
+            }
+          }
+        }
+      ],
+      "status": "context_gap"
+    },
+    {
+      "company": "329180",
+      "source": {
+        "file": "data/sources/329180-20260320000859-0519a579468dd3c3.xbrl",
+        "mode": "OPENDART 접수 확인 2026-09-30 · 원문 보존",
+        "provider": "DART",
+        "retrievedAt": "2026-09-30T09:16:54.637176+00:00",
+        "sha256": "0519a579468dd3c3edea666687ae5af096cc6e798a15adbc63408665bbf45a34",
+        "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260320000859"
+      },
+      "annualCore": {
+        "accession": "20260320000859",
+        "basis": "consolidated",
+        "context": "CFY2025dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_ConsolidatedMember",
+        "end": "2025-12-31",
+        "filedAt": "2026-03-20",
+        "metric": "revenue",
+        "priority": 0,
+        "sourceFile": "data/sources/329180-20260320000859-0519a579468dd3c3.xbrl",
+        "sourceHash": "0519a579468dd3c3edea666687ae5af096cc6e798a15adbc63408665bbf45a34",
+        "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260320000859",
+        "standard": "K-IFRS",
+        "start": "2025-01-01",
+        "tag": "Revenue",
+        "unit": "KRW",
+        "value": 17580633257000.0
+      },
+      "segments": [
+        {
+          "id": "ShipbuildingMemberOfReportableSegmentsMemberOfDisclosureOfOperatingSegmentsTableOfMember",
+          "label": "조선",
+          "annual": {
+            "revenue": {
+              "start": "2025-01-01",
+              "end": "2025-12-31",
+              "dimensions": [
+                [
+                  "ConsolidatedAndSeparateFinancialStatementsAxis",
+                  "ConsolidatedMember"
+                ],
+                [
+                  "SegmentConsolidationItemsAxis",
+                  "OperatingSegmentsMember"
+                ],
+                [
+                  "SegmentsAxis",
+                  "ShipbuildingMemberOfReportableSegmentsMemberOfDisclosureOfOperatingSegmentsTableOfMember"
+                ]
+              ],
+              "tag": "Revenue",
+              "taxonomy": "http://xbrl.ifrs.org/taxonomy/2021-03-24/ifrs-full",
+              "value": 12517530000000.0,
+              "unit": "KRW",
+              "context": "CFY2025dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_ConsolidatedMember_ifrs-full_SegmentConsolidationItemsAxis_ifrs-full_OperatingSegmentsMember_ifrs-full_SegmentsAxis_entity01390344_ShipbuildingMemberOfReportableSegmentsMemberOfDisclosureOfOperatingSegmentsTableOfMember",
+              "factId": null,
+              "decimals": "-6",
+              "accession": "20260320000859",
+              "filedAt": "2026-03-20",
+              "sourceFile": "data/sources/329180-20260320000859-0519a579468dd3c3.xbrl",
+              "sourceHash": "0519a579468dd3c3edea666687ae5af096cc6e798a15adbc63408665bbf45a34",
+              "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260320000859"
+            },
+            "operatingIncome": {
+              "start": "2025-01-01",
+              "end": "2025-12-31",
+              "dimensions": [
+                [
+                  "ConsolidatedAndSeparateFinancialStatementsAxis",
+                  "ConsolidatedMember"
+                ],
+                [
+                  "SegmentConsolidationItemsAxis",
+                  "OperatingSegmentsMember"
+                ],
+                [
+                  "SegmentsAxis",
+                  "ShipbuildingMemberOfReportableSegmentsMemberOfDisclosureOfOperatingSegmentsTableOfMember"
+                ]
+              ],
+              "tag": "OperatingIncomeLoss",
+              "taxonomy": "http://dart.fss.or.kr/taxonomy/2024-06-30/ifrs/dart",
+              "value": 1526348000000.0,
+              "unit": "KRW",
+              "context": "CFY2025dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_ConsolidatedMember_ifrs-full_SegmentConsolidationItemsAxis_ifrs-full_OperatingSegmentsMember_ifrs-full_SegmentsAxis_entity01390344_ShipbuildingMemberOfReportableSegmentsMemberOfDisclosureOfOperatingSegmentsTableOfMember",
+              "factId": null,
+              "decimals": "-6",
+              "accession": "20260320000859",
+              "filedAt": "2026-03-20",
+              "sourceFile": "data/sources/329180-20260320000859-0519a579468dd3c3.xbrl",
+              "sourceHash": "0519a579468dd3c3edea666687ae5af096cc6e798a15adbc63408665bbf45a34",
+              "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260320000859"
+            }
+          }
+        },
+        {
+          "id": "OffshoreIndustrialPlantAndEngineeringMemberOfReportableSegmentsMemberOfDisclosureOfOperatingSegmentsTableOfMember",
+          "label": "해양·플랜트",
+          "annual": {
+            "revenue": {
+              "start": "2025-01-01",
+              "end": "2025-12-31",
+              "dimensions": [
+                [
+                  "ConsolidatedAndSeparateFinancialStatementsAxis",
+                  "ConsolidatedMember"
+                ],
+                [
+                  "SegmentConsolidationItemsAxis",
+                  "OperatingSegmentsMember"
+                ],
+                [
+                  "SegmentsAxis",
+                  "OffshoreIndustrialPlantAndEngineeringMemberOfReportableSegmentsMemberOfDisclosureOfOperatingSegmentsTableOfMember"
+                ]
+              ],
+              "tag": "Revenue",
+              "taxonomy": "http://xbrl.ifrs.org/taxonomy/2021-03-24/ifrs-full",
+              "value": 1239028000000.0,
+              "unit": "KRW",
+              "context": "CFY2025dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_ConsolidatedMember_ifrs-full_SegmentConsolidationItemsAxis_ifrs-full_OperatingSegmentsMember_ifrs-full_SegmentsAxis_entity01390344_OffshoreIndustrialPlantAndEngineeringMemberOfReportableSegmentsMemberOfDisclosureOfOperatingSegmentsTableOfMember",
+              "factId": null,
+              "decimals": "-6",
+              "accession": "20260320000859",
+              "filedAt": "2026-03-20",
+              "sourceFile": "data/sources/329180-20260320000859-0519a579468dd3c3.xbrl",
+              "sourceHash": "0519a579468dd3c3edea666687ae5af096cc6e798a15adbc63408665bbf45a34",
+              "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260320000859"
+            },
+            "operatingIncome": {
+              "start": "2025-01-01",
+              "end": "2025-12-31",
+              "dimensions": [
+                [
+                  "ConsolidatedAndSeparateFinancialStatementsAxis",
+                  "ConsolidatedMember"
+                ],
+                [
+                  "SegmentConsolidationItemsAxis",
+                  "OperatingSegmentsMember"
+                ],
+                [
+                  "SegmentsAxis",
+                  "OffshoreIndustrialPlantAndEngineeringMemberOfReportableSegmentsMemberOfDisclosureOfOperatingSegmentsTableOfMember"
+                ]
+              ],
+              "tag": "OperatingIncomeLoss",
+              "taxonomy": "http://dart.fss.or.kr/taxonomy/2024-06-30/ifrs/dart",
+              "value": 142648000000.0,
+              "unit": "KRW",
+              "context": "CFY2025dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_ConsolidatedMember_ifrs-full_SegmentConsolidationItemsAxis_ifrs-full_OperatingSegmentsMember_ifrs-full_SegmentsAxis_entity01390344_OffshoreIndustrialPlantAndEngineeringMemberOfReportableSegmentsMemberOfDisclosureOfOperatingSegmentsTableOfMember",
+              "factId": null,
+              "decimals": "-6",
+              "accession": "20260320000859",
+              "filedAt": "2026-03-20",
+              "sourceFile": "data/sources/329180-20260320000859-0519a579468dd3c3.xbrl",
+              "sourceHash": "0519a579468dd3c3edea666687ae5af096cc6e798a15adbc63408665bbf45a34",
+              "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260320000859"
+            }
+          }
+        },
+        {
+          "id": "EngineMemberOfReportableSegmentsMemberOfDisclosureOfOperatingSegmentsTableOfMember",
+          "label": "엔진",
+          "annual": {
+            "revenue": {
+              "start": "2025-01-01",
+              "end": "2025-12-31",
+              "dimensions": [
+                [
+                  "ConsolidatedAndSeparateFinancialStatementsAxis",
+                  "ConsolidatedMember"
+                ],
+                [
+                  "SegmentConsolidationItemsAxis",
+                  "OperatingSegmentsMember"
+                ],
+                [
+                  "SegmentsAxis",
+                  "EngineMemberOfReportableSegmentsMemberOfDisclosureOfOperatingSegmentsTableOfMember"
+                ]
+              ],
+              "tag": "Revenue",
+              "taxonomy": "http://xbrl.ifrs.org/taxonomy/2021-03-24/ifrs-full",
+              "value": 3864217000000.0,
+              "unit": "KRW",
+              "context": "CFY2025dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_ConsolidatedMember_ifrs-full_SegmentConsolidationItemsAxis_ifrs-full_OperatingSegmentsMember_ifrs-full_SegmentsAxis_entity01390344_EngineMemberOfReportableSegmentsMemberOfDisclosureOfOperatingSegmentsTableOfMember",
+              "factId": null,
+              "decimals": "-6",
+              "accession": "20260320000859",
+              "filedAt": "2026-03-20",
+              "sourceFile": "data/sources/329180-20260320000859-0519a579468dd3c3.xbrl",
+              "sourceHash": "0519a579468dd3c3edea666687ae5af096cc6e798a15adbc63408665bbf45a34",
+              "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260320000859"
+            },
+            "operatingIncome": {
+              "start": "2025-01-01",
+              "end": "2025-12-31",
+              "dimensions": [
+                [
+                  "ConsolidatedAndSeparateFinancialStatementsAxis",
+                  "ConsolidatedMember"
+                ],
+                [
+                  "SegmentConsolidationItemsAxis",
+                  "OperatingSegmentsMember"
+                ],
+                [
+                  "SegmentsAxis",
+                  "EngineMemberOfReportableSegmentsMemberOfDisclosureOfOperatingSegmentsTableOfMember"
+                ]
+              ],
+              "tag": "OperatingIncomeLoss",
+              "taxonomy": "http://dart.fss.or.kr/taxonomy/2024-06-30/ifrs/dart",
+              "value": 693589000000.0,
+              "unit": "KRW",
+              "context": "CFY2025dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_ConsolidatedMember_ifrs-full_SegmentConsolidationItemsAxis_ifrs-full_OperatingSegmentsMember_ifrs-full_SegmentsAxis_entity01390344_EngineMemberOfReportableSegmentsMemberOfDisclosureOfOperatingSegmentsTableOfMember",
+              "factId": null,
+              "decimals": "-6",
+              "accession": "20260320000859",
+              "filedAt": "2026-03-20",
+              "sourceFile": "data/sources/329180-20260320000859-0519a579468dd3c3.xbrl",
+              "sourceHash": "0519a579468dd3c3edea666687ae5af096cc6e798a15adbc63408665bbf45a34",
+              "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260320000859"
+            }
+          }
+        },
+        {
+          "id": "OtherReportableSegmentsMemberOfReportableSegmentsMemberOfDisclosureOfOperatingSegmentsTableOfMember",
+          "label": "기타",
+          "annual": {
+            "revenue": {
+              "start": "2025-01-01",
+              "end": "2025-12-31",
+              "dimensions": [
+                [
+                  "ConsolidatedAndSeparateFinancialStatementsAxis",
+                  "ConsolidatedMember"
+                ],
+                [
+                  "SegmentConsolidationItemsAxis",
+                  "OperatingSegmentsMember"
+                ],
+                [
+                  "SegmentsAxis",
+                  "OtherReportableSegmentsMemberOfReportableSegmentsMemberOfDisclosureOfOperatingSegmentsTableOfMember"
+                ]
+              ],
+              "tag": "Revenue",
+              "taxonomy": "http://xbrl.ifrs.org/taxonomy/2021-03-24/ifrs-full",
+              "value": 87717000000.0,
+              "unit": "KRW",
+              "context": "CFY2025dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_ConsolidatedMember_ifrs-full_SegmentConsolidationItemsAxis_ifrs-full_OperatingSegmentsMember_ifrs-full_SegmentsAxis_entity01390344_OtherReportableSegmentsMemberOfReportableSegmentsMemberOfDisclosureOfOperatingSegmentsTableOfMember",
+              "factId": null,
+              "decimals": "-6",
+              "accession": "20260320000859",
+              "filedAt": "2026-03-20",
+              "sourceFile": "data/sources/329180-20260320000859-0519a579468dd3c3.xbrl",
+              "sourceHash": "0519a579468dd3c3edea666687ae5af096cc6e798a15adbc63408665bbf45a34",
+              "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260320000859"
+            },
+            "operatingIncome": {
+              "start": "2025-01-01",
+              "end": "2025-12-31",
+              "dimensions": [
+                [
+                  "ConsolidatedAndSeparateFinancialStatementsAxis",
+                  "ConsolidatedMember"
+                ],
+                [
+                  "SegmentConsolidationItemsAxis",
+                  "OperatingSegmentsMember"
+                ],
+                [
+                  "SegmentsAxis",
+                  "OtherReportableSegmentsMemberOfReportableSegmentsMemberOfDisclosureOfOperatingSegmentsTableOfMember"
+                ]
+              ],
+              "tag": "OperatingIncomeLoss",
+              "taxonomy": "http://dart.fss.or.kr/taxonomy/2024-06-30/ifrs/dart",
+              "value": -324790000000.0,
+              "unit": "KRW",
+              "context": "CFY2025dFY_ifrs-full_ConsolidatedAndSeparateFinancialStatementsAxis_ifrs-full_ConsolidatedMember_ifrs-full_SegmentConsolidationItemsAxis_ifrs-full_OperatingSegmentsMember_ifrs-full_SegmentsAxis_entity01390344_OtherReportableSegmentsMemberOfReportableSegmentsMemberOfDisclosureOfOperatingSegmentsTableOfMember",
+              "factId": null,
+              "decimals": "-6",
+              "accession": "20260320000859",
+              "filedAt": "2026-03-20",
+              "sourceFile": "data/sources/329180-20260320000859-0519a579468dd3c3.xbrl",
+              "sourceHash": "0519a579468dd3c3edea666687ae5af096cc6e798a15adbc63408665bbf45a34",
+              "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260320000859"
+            }
+          }
+        }
+      ],
+      "status": "contexts_matched"
+    }
+  ]
+}

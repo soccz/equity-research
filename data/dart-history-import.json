@@ -1,0 +1,256 @@
+{
+  "asOf": "2026-09-29",
+  "checkedAt": "2026-09-30T06:15:05.336282+00:00",
+  "results": [
+    {
+      "ticker": "000660",
+      "receipt": "20250319000665",
+      "status": "imported",
+      "package": {
+        "file": "data/sources/dart-package-20250319000665-3e4eb5e1624cd921.zip",
+        "sha256": "3e4eb5e1624cd9211975b49082774f8b82cd58b52cdfba9e7aa209e28fe6272a"
+      },
+      "instanceHash": "21c99ac995991a81a63ff3c22d9f5b1b4814ba6faa1daad4605f433681004bfd"
+    },
+    {
+      "ticker": "000660",
+      "receipt": "20250515002103",
+      "status": "imported",
+      "package": {
+        "file": "data/sources/dart-package-20250515002103-05c78f07344e040a.zip",
+        "sha256": "05c78f07344e040ac5c57e29bdff6f82f724cd48d7ca6ba49b6235bd8ed9fdbf"
+      },
+      "instanceHash": "b68a584ac3c96fedf5dc460e9a41fed22c670a4fa5b943422f517f0a52ad1736"
+    },
+    {
+      "ticker": "000660",
+      "receipt": "20250814003049",
+      "status": "imported",
+      "package": {
+        "file": "data/sources/dart-package-20250814003049-a887b0e057029d52.zip",
+        "sha256": "a887b0e057029d522b13b6dac3ea15de0f75726594220a461822fdcabc58b3b6"
+      },
+      "instanceHash": "2ca268a9d68bb910e23034dec699a5719b65ef941dd9ed123a5556e61a516110"
+    },
+    {
+      "ticker": "000660",
+      "receipt": "20251114001805",
+      "status": "imported",
+      "package": {
+        "file": "data/sources/dart-package-20251114001805-0616e1adbb86c13d.zip",
+        "sha256": "0616e1adbb86c13da5616ae564bc7cc1d03dab90d882d4b8d71100db7cefb70d"
+      },
+      "instanceHash": "50d3f0123d9e2fc2d65eb35ccaac2a388ac5cb1d5224a3aa5407f9a020778a72"
+    },
+    {
+      "ticker": "000660",
+      "receipt": "20260317000635",
+      "status": "imported",
+      "package": {
+        "file": "data/sources/dart-package-20260317000635-e0cb4cb07edac6cd.zip",
+        "sha256": "e0cb4cb07edac6cdf2da80db40df415bea63dcce93eecba2c18d12f38a2367fd"
+      },
+      "instanceHash": "d4d4c54b6d29401fe81d4e1d07258a01d606a649a481f86108d6c0b404891a07"
+    },
+    {
+      "ticker": "000660",
+      "receipt": "20260515002287",
+      "status": "imported",
+      "package": {
+        "file": "data/sources/dart-package-20260515002287-1d895be9be7845bd.zip",
+        "sha256": "1d895be9be7845bd12f66d746f78e32db8ba11d3689b055f597ae74da91aa7bd"
+      },
+      "instanceHash": "2bb630f442f8911dfcc9cf97b1e54129b173e6c6c217594f0b7706e8a212580c"
+    },
+    {
+      "ticker": "005930",
+      "receipt": "20250311001085",
+      "status": "imported",
+      "package": {
+        "file": "data/sources/dart-package-20250311001085-695395dea16bf90a.zip",
+        "sha256": "695395dea16bf90a5eb660f3265278f8ecd7e41416b0daf8691d3399898aee99"
+      },
+      "instanceHash": "7906639a78c6cd5eb38283f6ff479634cff9a2e476baa9569dfa11959b7f75a6"
+    },
+    {
+      "ticker": "005930",
+      "receipt": "20250515001922",
+      "status": "imported",
+      "package": {
+        "file": "data/sources/dart-package-20250515001922-3eeec9c2b63fc168.zip",
+        "sha256": "3eeec9c2b63fc168d5bce2c757df8869f17fb230d505cb6fadc434d40677a960"
+      },
+      "instanceHash": "ad1a156c0ad81994386b788dc8e7adf564f08fb971c2f247953bfc95f3e7f3ca"
+    },
+    {
+      "ticker": "005930",
+      "receipt": "20250814003156",
+      "status": "imported",
+      "package": {
+        "file": "data/sources/dart-package-20250814003156-e1953af83730a45d.zip",
+        "sha256": "e1953af83730a45da434277a9ca9bcd9a41ccee652e69c631a1b8f78a9195927"
+      },
+      "instanceHash": "57d46ebdaf8c93a4d0e9d54e3b54549a7888bab32b1e0fa839199290c385c68d"
+    },
+    {
+      "ticker": "005930",
+      "receipt": "20251114002447",
+      "status": "imported",
+      "package": {
+        "file": "data/sources/dart-package-20251114002447-a4b68a90e1b8a649.zip",
+        "sha256": "a4b68a90e1b8a649cbb5d29d3fc7b62467cd6fb66a2496a03c6318a6a9a909e8"
+      },
+      "instanceHash": "95cc39db6f9dc0413ed19c33fc468963d0f37e0f23aa484adcf02973ec6a2218"
+    },
+    {
+      "ticker": "005930",
+      "receipt": "20260310002820",
+      "status": "imported",
+      "package": {
+        "file": "data/sources/dart-package-20260310002820-946ed3c81628c5cb.zip",
+        "sha256": "946ed3c81628c5cb69e460217a1e3f656d857b64c9dde15fdac981c2d68323d1"
+      },
+      "instanceHash": "28c27272eacc7bc9364ece8951da38039e915adff27e81924c1444b354223c07"
+    },
+    {
+      "ticker": "005930",
+      "receipt": "20260515002181",
+      "status": "imported",
+      "package": {
+        "file": "data/sources/dart-package-20260515002181-dfda4656e6a2fd90.zip",
+        "sha256": "dfda4656e6a2fd90b739cbbcd5e829d19244bd5589b40a57a9f3f756f288bb2e"
+      },
+      "instanceHash": "442102b38de74c9e3f2ce8583fea56f88623fc21cda0c5680f0d64011ad03e44"
+    },
+    {
+      "ticker": "035420",
+      "receipt": "20250318000645",
+      "status": "imported",
+      "package": {
+        "file": "data/sources/dart-package-20250318000645-e6e16d0634967c48.zip",
+        "sha256": "e6e16d0634967c48ca4406a57fb344eb1b3dcf2a950de904e13eb2bf91ca6fd6"
+      },
+      "instanceHash": "ac35812652583e24a10d7f20e8bb3d26740867800dd85a1cd6d2fe63e195a0c6"
+    },
+    {
+      "ticker": "035420",
+      "receipt": "20250515001302",
+      "status": "imported",
+      "package": {
+        "file": "data/sources/dart-package-20250515001302-e75f034b9797e7ab.zip",
+        "sha256": "e75f034b9797e7abb1275d957f2f7b8f400767ccd5191edd55efb8edca299bae"
+      },
+      "instanceHash": "a6678766c1aeab323e6438fae70f23a04d14270b025dcd8d4084e369e7c21d91"
+    },
+    {
+      "ticker": "035420",
+      "receipt": "20250814002281",
+      "status": "imported",
+      "package": {
+        "file": "data/sources/dart-package-20250814002281-8017d610b98dcad3.zip",
+        "sha256": "8017d610b98dcad365156fe787764809c6567df52a8e3d858634bd8bc66774a8"
+      },
+      "instanceHash": "7aff718bc16e4667c85dc8234765ca1e0b93bb26e0fc1391c1758d10bb3ccf63"
+    },
+    {
+      "ticker": "035420",
+      "receipt": "20251114001436",
+      "status": "imported",
+      "package": {
+        "file": "data/sources/dart-package-20251114001436-a214b52e8acdb854.zip",
+        "sha256": "a214b52e8acdb854e375326362998090336e077de5175380f485c3d7615a7f3a"
+      },
+      "instanceHash": "963c1e7021df44a5360739d750bfb8ce0a208bb12f7015cf761ffe43aa0eeef7"
+    },
+    {
+      "ticker": "035420",
+      "receipt": "20260313001021",
+      "status": "imported",
+      "package": {
+        "file": "data/sources/dart-package-20260313001021-f530d3e009554544.zip",
+        "sha256": "f530d3e00955454420c79af8e7e0ddc5e0ecd4cf8b3fa89e798e0cfe87eb811c"
+      },
+      "instanceHash": "05cc24c7784ba0c7d8ae1314d59481f098619e9d3f77d51a7101712b3abb4446"
+    },
+    {
+      "ticker": "035420",
+      "receipt": "20260515001511",
+      "status": "imported",
+      "package": {
+        "file": "data/sources/dart-package-20260515001511-7e72e93f9b4b12d1.zip",
+        "sha256": "7e72e93f9b4b12d18d89686dba8fcf2913e9073958641b45d8ee842c1f7da891"
+      },
+      "instanceHash": "5e309735b999b35b664215478c8390bb2b4cbb7775d0dba81751653ff83d936c"
+    },
+    {
+      "ticker": "066570",
+      "receipt": "20250317001029",
+      "status": "imported",
+      "package": {
+        "file": "data/sources/dart-package-20250317001029-492ab13370fd0e06.zip",
+        "sha256": "492ab13370fd0e066723450c79e96b25cd02abc60a3aeb17c35caf1a9bc6b48b"
+      },
+      "instanceHash": "5e52fc873e4393f4a9a93983b61fcdba9a673dae86a851316ad97ec761277879"
+    },
+    {
+      "ticker": "066570",
+      "receipt": "20250515001401",
+      "status": "imported",
+      "package": {
+        "file": "data/sources/dart-package-20250515001401-3751afb6b2f52f00.zip",
+        "sha256": "3751afb6b2f52f00ec10af342a827e3b72ab7d7657e03c525f57aa2fe06da9ae"
+      },
+      "instanceHash": "587a64a1548ffcf522709b3c4cd19ba61cfc6e3b8ed656e1f25dc4b236dbf16d"
+    },
+    {
+      "ticker": "066570",
+      "receipt": "20250814002000",
+      "status": "imported",
+      "package": {
+        "file": "data/sources/dart-package-20250814002000-339974b6e831f62e.zip",
+        "sha256": "339974b6e831f62e1e1aaa3f85c5557c6bb7d670a522166873c123157fed7657"
+      },
+      "instanceHash": "5bc5a72f178607c7bcf76f540fe8c8d7dd491c4a5c5c7cf4bd37b908fed2a1b0"
+    },
+    {
+      "ticker": "066570",
+      "receipt": "20251114001332",
+      "status": "imported",
+      "package": {
+        "file": "data/sources/dart-package-20251114001332-0cf4d1ae2fd2575c.zip",
+        "sha256": "0cf4d1ae2fd2575c0cdf85eb2c686146c5c7a924d60295aa851746bb58398889"
+      },
+      "instanceHash": "50fc07f66c4b6f9c7867a43d8465e701e1702672d29dc72fd0735f9ffd56f7e2"
+    },
+    {
+      "ticker": "066570",
+      "receipt": "20260313000662",
+      "status": "imported",
+      "package": {
+        "file": "data/sources/dart-package-20260313000662-457175a4e9c0af56.zip",
+        "sha256": "457175a4e9c0af56fd3cdb16457eb80fbae352498f4917e90a96e2a9d22cbb25"
+      },
+      "instanceHash": "cc613348ed5c34806c851d0464969c85e4bf0eedac3aec1a0016f73c164c48d0"
+    },
+    {
+      "ticker": "066570",
+      "receipt": "20260515000856",
+      "status": "imported",
+      "package": {
+        "file": "data/sources/dart-package-20260515000856-1f23b10f131e8b80.zip",
+        "sha256": "1f23b10f131e8b80e1cfa7781b2d9e7392d915f3fe688354cc8c055f1c49524c"
+      },
+      "instanceHash": "b8d62fb8f9495ec14243d46b588a1c99a1fc9d76b3c5a276804db9e0b9019b6c"
+    },
+    {
+      "ticker": "066570",
+      "receipt": "20260706000276",
+      "status": "imported",
+      "package": {
+        "file": "data/sources/dart-package-20260706000276-91eeacfabc2b7ec7.zip",
+        "sha256": "91eeacfabc2b7ec7296f2d438cc0ca5f6b829bd8263ea7618676fdde839b1340"
+      },
+      "instanceHash": "cc613348ed5c34806c851d0464969c85e4bf0eedac3aec1a0016f73c164c48d0"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "company": "AMZN",
+  "corpusHash": "59fabb51c8361dd5403ba0bebdd99cee8d38efa85e29c0ec0bee63e86bf95f42",
+  "passages": [
+    {
+      "heading": "",
+      "id": "894c6b99e256a7643d94",
+      "kind": "paragraph",
+      "ordinal": 177,
+      "sourceFile": "data/sources/filing-0001018724-26-000026-1fa56233c10eb0e0.html",
+      "sourceHash": "1fa56233c10eb0e0be4aac93fc0deaf6edbaf2026587b5bbc0c2484263a2abc7",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+      "text": "Energy Contracts — We enter into energy contracts to secure electricity supply for our existing and future operations, some of which extend 20 years. We may make or receive net cash payments, rather than take delivery of electricity, when our consumption is less than committed quantities due to operational variability. Because we may make or receive net cash payments, these contracts are derivative instruments. These contracts are not traded on exchanges or transacted in secondary markets and are not used for trading or speculative purposes."
+    },
+    {
+      "heading": "",
+      "id": "b2720e12c06b48caa54e",
+      "kind": "paragraph",
+      "ordinal": 180,
+      "sourceFile": "data/sources/filing-0001018724-26-000026-1fa56233c10eb0e0.html",
+      "sourceHash": "1fa56233c10eb0e0be4aac93fc0deaf6edbaf2026587b5bbc0c2484263a2abc7",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+      "text": "As of June 30, 2026, the energy contract quantities subject to derivative accounting fair value measurements were approximately 270 million megawatt-hours and the weighted-average remaining duration of these contracts is approximately 15 years, with the majority of these megawatt-hours to be delivered beyond the next nine years. The impact of these fair value measurements on our consolidated statements of operations was not significant in Q2 2025 and for the six months ended June 30, 2025, and resulted in net unrealized gains of $551 million in Q2 2026 and $599 million for the six months ended June 30, 2026, recorded within “Technology and infrastructure” and primarily impacting our AWS segment."
+    },
+    {
+      "heading": "",
+      "id": "de5ab8b94b6a2a5d4a55",
+      "kind": "paragraph",
+      "ordinal": 181,
+      "sourceFile": "data/sources/filing-0001018724-26-000026-1fa56233c10eb0e0.html",
+      "sourceHash": "1fa56233c10eb0e0be4aac93fc0deaf6edbaf2026587b5bbc0c2484263a2abc7",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+      "text": "Changes in fair value measurements will create unrealized gains and losses recorded within operating expenses on our statements of operations with corresponding assets (unrealized gains) and liabilities (unrealized losses) recorded on our balance sheet within “Other assets” and “Other long-term liabilities.” As of December 31, 2025 and June 30, 2026, we had recorded assets of $112 million and $705 million, and liabilities of $139 million and $133 million."
+    },
+    {
+      "heading": "",
+      "id": "bd8c671de3a8142fd7c7",
+      "kind": "paragraph",
+      "ordinal": 524,
+      "sourceFile": "data/sources/filing-0001018724-26-000026-1fa56233c10eb0e0.html",
+      "sourceHash": "1fa56233c10eb0e0be4aac93fc0deaf6edbaf2026587b5bbc0c2484263a2abc7",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+      "text": "We seek to invest efficiently in numerous areas of technology and infrastructure so we may continue to enhance the customer experience and improve our process efficiency through rapid technology developments, while operating at an ever increasing scale. Our technology and infrastructure investment and capital spending projects often support a variety of product and service offerings due to geographic expansion and the cross-functionality of our systems and operations. We expect spending in technology and infrastructure to increase over time as we continue to add infrastructure and employees, including to support our artificial intelligence and machine learning initiatives. These costs are allocated to segments based on usage. The increase in technology and infrastructure costs in Q2 2026 and for the six months ended June 30, 2026, compared to the comparable prior year periods, is primarily due to an increase in spending on infrastructure, including depreciation and amortization. Changes in foreign exchange rates did not significantly impact technology and infrastructure costs for Q2 2026, but increased technology and infrastructure costs by $427 million for the six months ended June 30, 2026. Technology and infrastructure costs in Q2 2026 include net unrealized gains for energy contracts that are subject to derivative accounting, primarily related to AWS. Fair value measurements for these contracts do not impact cash flows but may be material to technology and infrastructure costs in future periods due to the duration of these contracts and volatility inherent in valuation methods. We currently expense the majority of the costs associated with the development of our satellite network for global broadband service (including production, launch, and payroll costs, and launch services deposits upon launch). We will capitalize certain of these costs once the service achieves commercial viability, including sales to customers. See Item 7 of Part II, “Management’s Discussion and Analysis of Financial Condition and Results of Operations — Overview” of our 2025 Annual Report on Form 10-K for a discussion of how management views advances in technology and the importance of innovation."
+    }
+  ],
+  "facts": [
+    {
+      "start": "2026-04-01",
+      "end": "2026-06-30",
+      "dimensions": [],
+      "tag": "UnrealizedGainLossOnDerivatives",
+      "taxonomy": "http://fasb.org/us-gaap/2026",
+      "value": 551000000.0,
+      "unit": "USD",
+      "context": "c-19",
+      "factId": "f-554",
+      "decimals": "-6",
+      "accession": "0001018724-26-000026",
+      "filedAt": "2026-07-31",
+      "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+      "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+    },
+    {
+      "start": "2026-01-01",
+      "end": "2026-06-30",
+      "dimensions": [],
+      "tag": "UnrealizedGainLossOnDerivatives",
+      "taxonomy": "http://fasb.org/us-gaap/2026",
+      "value": 599000000.0,
+      "unit": "USD",
+      "context": "c-1",
+      "factId": "f-555",
+      "decimals": "-6",
+      "accession": "0001018724-26-000026",
+      "filedAt": "2026-07-31",
+      "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+      "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+    }
+  ],
+  "review": "H1 2026 영업비용에 반영된 비현금 에너지계약 평가이익599m 확인. 주로AWS이나 부문별 정확한 배분은 없다. H1 2025 비유의미는0이 아니며, TTM조정은 동일정의 세기간을 추가대사해야 한다. 전체599m를AWS에 임의배분하거나 현재 모델이 모든 파생평가익을 제거했다고 주장하지 않는다.",
+  "next": "연간 주석의 에너지계약 평가손익 정의·해당 기간을 확인하고 별도 총액조정 가정을 지원한다."
+}

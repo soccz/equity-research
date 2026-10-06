@@ -1,0 +1,23 @@
+PASS Registered real companies with a source cutoff
+PASS US filter affects table and scatter
+PASS Korean filter contains real Korean securities
+PASS Ticker search selects Microsoft in the table and chart
+PASS Empty search is explained without invented companies
+PASS Sector filter uses the coverage classifications
+PASS Candidate filter uses declared current financial conditions
+PASS Micron report contains actual dates and currency
+PASS Evidence is readable with source period and raw definitions
+PASS Escape restores evidence trigger focus
+PASS Cash bridge reconciles to the reported operating cash flow
+AssertionError [ERR_ASSERTION]: Expected "actual" to be strictly unequal to:
+
+'2025-08-29–2026-05-28 · 십억 달러 · 부호는 영업현금 연결 효과순이익47.27감가상각·무형자산 상각6.86주식보상 비현금 조정0.95채권 변동의 현금 효과-19.95재고 변동의 현금 효과-0.21매입채무·미지급비용 효과3.33기타 유동부채 효과2.14기타 비유동부채 효과5.20기타 영업현금 조정0.11미분해 조정 잔액원인 미확인 · 합계를 맞춘 잔액0.00공시 영업현금45.70분해 잔액 / 영업현금 절댓값: 0.0%. 비현금 조정의 더하기는 현금 유입을 뜻하지 않습니다. 채권·재고의 현금 효과는 원문 부호를 검토해 통일했습니다.'
+    at file:///mnt/20t/%EC%A3%BC%EC%8B%9D/scripts/check-live.mjs:157:12
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: '2025-08-29–2026-05-28 · 십억 달러 · 부호는 영업현금 연결 효과순이익47.27감가상각·무형자산 상각6.86주식보상 비현금 조정0.95채권 변동의 현금 효과-19.95재고 변동의 현금 효과-0.21매입채무·미지급비용 효과3.33기타 유동부채 효과2.14기타 비유동부채 효과5.20기타 영업현금 조정0.11미분해 조정 잔액원인 미확인 · 합계를 맞춘 잔액0.00공시 영업현금45.70분해 잔액 / 영업현금 절댓값: 0.0%. 비현금 조정의 더하기는 현금 유입을 뜻하지 않습니다. 채권·재고의 현금 효과는 원문 부호를 검토해 통일했습니다.',
+  expected: '2025-08-29–2026-05-28 · 십억 달러 · 부호는 영업현금 연결 효과순이익47.27감가상각·무형자산 상각6.86주식보상 비현금 조정0.95채권 변동의 현금 효과-19.95재고 변동의 현금 효과-0.21매입채무·미지급비용 효과3.33기타 유동부채 효과2.14기타 비유동부채 효과5.20기타 영업현금 조정0.11미분해 조정 잔액원인 미확인 · 합계를 맞춘 잔액0.00공시 영업현금45.70분해 잔액 / 영업현금 절댓값: 0.0%. 비현금 조정의 더하기는 현금 유입을 뜻하지 않습니다. 채권·재고의 현금 효과는 원문 부호를 검토해 통일했습니다.',
+  operator: 'notStrictEqual',
+  diff: 'simple'
+}

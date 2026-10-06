@@ -1,0 +1,3968 @@
+{
+  "status": "research_workspace",
+  "version": "amazon-operating-cash-path-v1",
+  "sourcePeriod": [
+    "2025-07-01",
+    "2026-06-30"
+  ],
+  "accession": "0001018724-26-000026",
+  "corpusHash": "59fabb51c8361dd5403ba0bebdd99cee8d38efa85e29c0ec0bee63e86bf95f42",
+  "basisLabel": "최근 1년 공시 연결에서 출발",
+  "growthLabel": "최근 반기 전년 대비",
+  "businessCaption": "기초 매출·마진은 최근 1년 합성값이고 관측 성장률은 최근 반기 전년 대비입니다. AWS와 북미·해외 소매를 별도로 가정하며 공동 설비의 사용량 배분을 완전한 사업별 현금으로 해석하지 않습니다.",
+  "capexLabel": "설비 순현금 취득",
+  "leaseLabel": "리스·시설금융 원금",
+  "anchorSummary": "운전자본 대용 계수는 2026-01-01–2026-06-30 반기 현금 효과와 같은 반기 전년 대비 매출 증가로 산출합니다. 기타 장기자산 변동은 이 계수에서 제외합니다. 현금흐름표의 설비·콘텐츠·영업리스 상각 등과 설비 상각만의 차이는 25.459십억 달러입니다.",
+  "passages": [
+    {
+      "heading": "",
+      "id": "b1f8c6e34efe853dc96a",
+      "kind": "table",
+      "ordinal": 50,
+      "sourceFile": "data/sources/filing-0001018724-26-000026-1fa56233c10eb0e0.html",
+      "sourceHash": "1fa56233c10eb0e0be4aac93fc0deaf6edbaf2026587b5bbc0c2484263a2abc7",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+      "text": "Depreciation and amortization of property and equipment and capitalized content costs, operating lease assets, and other | 15,227 | | | 19,988 | | | 29,489 | | | 38,933 | | | 58,562 | | | 75,200"
+    },
+    {
+      "heading": "",
+      "id": "2db5f4c0f405a8557583",
+      "kind": "paragraph",
+      "ordinal": 466,
+      "sourceFile": "data/sources/filing-0001018724-26-000026-1fa56233c10eb0e0.html",
+      "sourceHash": "1fa56233c10eb0e0be4aac93fc0deaf6edbaf2026587b5bbc0c2484263a2abc7",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+      "text": "Cash provided by (used in) operating activities was $32.5 billion and $45.4 billion for Q2 2025 and Q2 2026, and $49.5 billion and $71.4 billion for the six months ended June 30, 2025 and 2026. Our operating cash flows result primarily from cash received from our consumer, seller, developer, enterprise, and content creator customers, and advertisers, offset by cash payments we make for products and services, employee compensation, payment processing and related transaction costs, operating leases, and interest payments. Cash received from our customers and other activities generally corresponds to our net sales. The increase in operating cash flow for the trailing twelve months ended June 30, 2026, compared to the comparable prior year period, was due to an increase in net income, excluding non-cash income and expenses, and changes in working capital. Working capital at any specific point in time is subject to many variables, including variability in demand, inventory management and category expansion, the timing of cash receipts and payments, customer and vendor payment terms, and fluctuations in foreign exchange rates."
+    },
+    {
+      "heading": "",
+      "id": "6b6396a4faee669301c2",
+      "kind": "paragraph",
+      "ordinal": 467,
+      "sourceFile": "data/sources/filing-0001018724-26-000026-1fa56233c10eb0e0.html",
+      "sourceHash": "1fa56233c10eb0e0be4aac93fc0deaf6edbaf2026587b5bbc0c2484263a2abc7",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+      "text": "Cash provided by (used in) investing activities corresponds with cash capital expenditures, including leasehold improvements, incentives received from property and equipment vendors, proceeds from asset sales, cash outlays for acquisitions, investments in other companies and intellectual property rights, and purchases, sales, and maturities of marketable securities. Cash provided by (used in) investing activities was $(39.4) billion and $(79.2) billion for Q2 2025 and Q2 2026, and $(69.2) billion and $(143.5) billion for the six months ended June 30, 2025 and 2026, with the variability caused primarily by purchases, sales, and maturities of marketable securities and cash capital expenditures. Cash capital expenditures were $31.4 billion and $53.1 billion during Q2 2025 and Q2 2026, and $55.6 billion and $96.3 billion for the six months ended June 30, 2025 and 2026, which primarily reflect investments in technology infrastructure (the majority of which is to support AWS business growth) and in additional capacity to support our fulfillment network, both of which we expect to increase in 2026. We made cash payments, net of acquired cash, related to acquisition and other investment activity of $1.7 billion and $24.4 billion during Q2 2025 and Q2 2026, and $1.7 billion and $39.8 billion for the six months ended June 30, 2025 and 2026. In Q2 2025, we invested $1.3 billion in convertible notes from Anthropic. We invested $28.7 billion in OpenAI’s Series C Preferred Stock for the six months ended June 30, 2026, including $13.7 billion invested in Q2 2026. Subsequent to June 30, 2026, we funded"
+    },
+    {
+      "heading": "",
+      "id": "0561cf17a420b9a98d9a",
+      "kind": "paragraph",
+      "ordinal": 469,
+      "sourceFile": "data/sources/filing-0001018724-26-000026-1fa56233c10eb0e0.html",
+      "sourceHash": "1fa56233c10eb0e0be4aac93fc0deaf6edbaf2026587b5bbc0c2484263a2abc7",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+      "text": "Cash provided by (used in) financing activities was $(2.5) billion and $10.1 billion for Q2 2025 and Q2 2026, and $(2.6) billion and $62.9 billion for the six months ended June 30, 2025 and 2026. Cash inflows from financing activities resulted from proceeds from short-term debt, and other and long-term debt of $2.1 billion and $22.9 billion for Q2 2025 and Q2 2026, and $4.7 billion and $82.4 billion for the six months ended June 30, 2025 and 2026. We expect to undertake additional financing activities in 2026. Cash outflows from financing activities resulted from payments of short-term debt, and other, long-term debt, finance leases, and financing obligations of $4.6 billion and $12.8 billion for Q2 2025 and Q2 2026, and $7.2 billion and $19.5 billion for the six months ended June 30, 2025 and 2026. Property and equipment acquired under finance leases was $937 million and $563 million during Q2 2025 and Q2 2026, and $991 million and $2.1 billion for the six months ended June 30, 2025 and 2026."
+    },
+    {
+      "heading": "",
+      "id": "c40ca596d1f71285a65c",
+      "kind": "paragraph",
+      "ordinal": 421,
+      "sourceFile": "data/sources/filing-0001018724-26-000026-1fa56233c10eb0e0.html",
+      "sourceHash": "1fa56233c10eb0e0be4aac93fc0deaf6edbaf2026587b5bbc0c2484263a2abc7",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+      "text": "Total segment assets exclude corporate assets, such as cash and cash equivalents, marketable securities, other long-term investments, corporate facilities, goodwill and other acquired intangible assets, and tax assets. Technology infrastructure assets, which are included in property and equipment, net, net additions, and the depreciation and amortization expense on these assets, are allocated among the segments based on usage, with the majority allocated to the AWS segment. Usage of technology infrastructure assets by the North America and International segments, and the related allocation of total net additions, can fluctuate on a quarter-to-quarter basis, and is affected by seasonality, peak periods, new product or service offerings, and other factors."
+    },
+    {
+      "heading": "",
+      "id": "c62a08c629338b5d4db5",
+      "kind": "paragraph",
+      "ordinal": 444,
+      "sourceFile": "data/sources/filing-0001018724-26-000026-1fa56233c10eb0e0.html",
+      "sourceHash": "1fa56233c10eb0e0be4aac93fc0deaf6edbaf2026587b5bbc0c2484263a2abc7",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+      "text": "Depreciation and amortization expense on property and equipment, including corporate property and equipment, are allocated to all segments based on usage."
+    },
+    {
+      "heading": "",
+      "id": "6b46d46d1379b9ff694a",
+      "kind": "paragraph",
+      "ordinal": 545,
+      "sourceFile": "data/sources/filing-0001018724-26-000026-1fa56233c10eb0e0.html",
+      "sourceHash": "1fa56233c10eb0e0be4aac93fc0deaf6edbaf2026587b5bbc0c2484263a2abc7",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+      "text": "Our financial focus is on long-term, sustainable growth in free cash flow. We provide a free cash flow measure because we believe it provides additional perspective on the impact of acquiring property and equipment with cash. Free cash flow is cash flow from operations reduced by “Purchases of property and equipment, net of proceeds from sales and incentives.” The following is a reconciliation of free cash flow to the most comparable GAAP cash flow measure, “Net cash provided by (used in) operating activities,” for the trailing twelve months ended June 30, 2025 and 2026 (in millions):"
+    },
+    {
+      "heading": "",
+      "id": "0a7750f742615903d7dd",
+      "kind": "paragraph",
+      "ordinal": 551,
+      "sourceFile": "data/sources/filing-0001018724-26-000026-1fa56233c10eb0e0.html",
+      "sourceHash": "1fa56233c10eb0e0be4aac93fc0deaf6edbaf2026587b5bbc0c2484263a2abc7",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+      "text": "Free cash flow has limitations as it omits certain components of the overall cash flow statement and does not represent the residual cash flow available for discretionary expenditures. For example, free cash flow does not incorporate the portion of payments representing principal reductions of debt or cash payments for business acquisitions. Additionally, our mix of property"
+    },
+    {
+      "heading": "",
+      "id": "ef35bacbb8bd4f0df0d8",
+      "kind": "paragraph",
+      "ordinal": 552,
+      "sourceFile": "data/sources/filing-0001018724-26-000026-1fa56233c10eb0e0.html",
+      "sourceHash": "1fa56233c10eb0e0be4aac93fc0deaf6edbaf2026587b5bbc0c2484263a2abc7",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+      "text": "and equipment acquisitions with cash or other financing options may change over time. Therefore, we believe it is important to view free cash flow only as a complement to our entire consolidated statements of cash flows."
+    }
+  ],
+  "segments": [
+    {
+      "id": "NorthAmericaSegmentMember",
+      "label": "북미",
+      "revenue": 453670000000.0,
+      "margin": 0.0741750611678092,
+      "observedGrowth": 0.14182063175351756,
+      "evidence": [
+        {
+          "accession": "0001018724-26-000004",
+          "context": "c-139",
+          "decimals": "-6",
+          "dimensions": [
+            [
+              "StatementBusinessSegmentsAxis",
+              "NorthAmericaSegmentMember"
+            ]
+          ],
+          "end": "2025-12-31",
+          "factId": "f-1413",
+          "filedAt": "2026-02-06",
+          "sourceFile": "data/sources/filing-0001018724-26-000004-ac1eb8406f629570.xbrl",
+          "sourceHash": "ac1eb8406f629570bcec12889950eb646dba42bb5f325fdc18415df13f85138b",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm",
+          "start": "2025-01-01",
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "taxonomy": "http://fasb.org/us-gaap/2025",
+          "unit": "USD",
+          "value": 426305000000.0
+        },
+        {
+          "accession": "0001018724-26-000026",
+          "context": "c-284",
+          "decimals": "-6",
+          "dimensions": [
+            [
+              "StatementBusinessSegmentsAxis",
+              "NorthAmericaSegmentMember"
+            ]
+          ],
+          "end": "2026-06-30",
+          "factId": "f-1255",
+          "filedAt": "2026-07-31",
+          "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+          "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+          "start": "2026-01-01",
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "taxonomy": "http://fasb.org/us-gaap/2026",
+          "unit": "USD",
+          "value": 220320000000.0
+        },
+        {
+          "accession": "0001018724-26-000026",
+          "context": "c-283",
+          "decimals": "-6",
+          "dimensions": [
+            [
+              "StatementBusinessSegmentsAxis",
+              "NorthAmericaSegmentMember"
+            ]
+          ],
+          "end": "2025-06-30",
+          "factId": "f-1254",
+          "filedAt": "2026-07-31",
+          "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+          "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+          "start": "2025-01-01",
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "taxonomy": "http://fasb.org/us-gaap/2026",
+          "unit": "USD",
+          "value": 192955000000.0
+        },
+        {
+          "accession": "0001018724-26-000004",
+          "context": "c-139",
+          "decimals": "-6",
+          "dimensions": [
+            [
+              "StatementBusinessSegmentsAxis",
+              "NorthAmericaSegmentMember"
+            ]
+          ],
+          "end": "2025-12-31",
+          "factId": "f-1419",
+          "filedAt": "2026-02-06",
+          "sourceFile": "data/sources/filing-0001018724-26-000004-ac1eb8406f629570.xbrl",
+          "sourceHash": "ac1eb8406f629570bcec12889950eb646dba42bb5f325fdc18415df13f85138b",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm",
+          "start": "2025-01-01",
+          "tag": "OperatingIncomeLoss",
+          "taxonomy": "http://fasb.org/us-gaap/2025",
+          "unit": "USD",
+          "value": 29619000000.0
+        },
+        {
+          "accession": "0001018724-26-000026",
+          "context": "c-284",
+          "decimals": "-6",
+          "dimensions": [
+            [
+              "StatementBusinessSegmentsAxis",
+              "NorthAmericaSegmentMember"
+            ]
+          ],
+          "end": "2026-06-30",
+          "factId": "f-1263",
+          "filedAt": "2026-07-31",
+          "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+          "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+          "start": "2026-01-01",
+          "tag": "OperatingIncomeLoss",
+          "taxonomy": "http://fasb.org/us-gaap/2026",
+          "unit": "USD",
+          "value": 17390000000.0
+        },
+        {
+          "accession": "0001018724-26-000026",
+          "context": "c-283",
+          "decimals": "-6",
+          "dimensions": [
+            [
+              "StatementBusinessSegmentsAxis",
+              "NorthAmericaSegmentMember"
+            ]
+          ],
+          "end": "2025-06-30",
+          "factId": "f-1262",
+          "filedAt": "2026-07-31",
+          "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+          "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+          "start": "2025-01-01",
+          "tag": "OperatingIncomeLoss",
+          "taxonomy": "http://fasb.org/us-gaap/2026",
+          "unit": "USD",
+          "value": 13358000000.0
+        }
+      ]
+    },
+    {
+      "id": "InternationalSegmentMember",
+      "label": "국제",
+      "revenue": 173606000000.0,
+      "margin": 0.030989712337131204,
+      "observedGrowth": 0.1666619233286848,
+      "evidence": [
+        {
+          "accession": "0001018724-26-000004",
+          "context": "c-140",
+          "decimals": "-6",
+          "dimensions": [
+            [
+              "StatementBusinessSegmentsAxis",
+              "InternationalSegmentMember"
+            ]
+          ],
+          "end": "2025-12-31",
+          "factId": "f-1422",
+          "filedAt": "2026-02-06",
+          "sourceFile": "data/sources/filing-0001018724-26-000004-ac1eb8406f629570.xbrl",
+          "sourceHash": "ac1eb8406f629570bcec12889950eb646dba42bb5f325fdc18415df13f85138b",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm",
+          "start": "2025-01-01",
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "taxonomy": "http://fasb.org/us-gaap/2025",
+          "unit": "USD",
+          "value": 161894000000.0
+        },
+        {
+          "accession": "0001018724-26-000026",
+          "context": "c-288",
+          "decimals": "-6",
+          "dimensions": [
+            [
+              "StatementBusinessSegmentsAxis",
+              "InternationalSegmentMember"
+            ]
+          ],
+          "end": "2026-06-30",
+          "factId": "f-1267",
+          "filedAt": "2026-07-31",
+          "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+          "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+          "start": "2026-01-01",
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "taxonomy": "http://fasb.org/us-gaap/2026",
+          "unit": "USD",
+          "value": 81986000000.0
+        },
+        {
+          "accession": "0001018724-26-000026",
+          "context": "c-287",
+          "decimals": "-6",
+          "dimensions": [
+            [
+              "StatementBusinessSegmentsAxis",
+              "InternationalSegmentMember"
+            ]
+          ],
+          "end": "2025-06-30",
+          "factId": "f-1266",
+          "filedAt": "2026-07-31",
+          "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+          "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+          "start": "2025-01-01",
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "taxonomy": "http://fasb.org/us-gaap/2026",
+          "unit": "USD",
+          "value": 70274000000.0
+        },
+        {
+          "accession": "0001018724-26-000004",
+          "context": "c-140",
+          "decimals": "-6",
+          "dimensions": [
+            [
+              "StatementBusinessSegmentsAxis",
+              "InternationalSegmentMember"
+            ]
+          ],
+          "end": "2025-12-31",
+          "factId": "f-1428",
+          "filedAt": "2026-02-06",
+          "sourceFile": "data/sources/filing-0001018724-26-000004-ac1eb8406f629570.xbrl",
+          "sourceHash": "ac1eb8406f629570bcec12889950eb646dba42bb5f325fdc18415df13f85138b",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm",
+          "start": "2025-01-01",
+          "tag": "OperatingIncomeLoss",
+          "taxonomy": "http://fasb.org/us-gaap/2025",
+          "unit": "USD",
+          "value": 4750000000.0
+        },
+        {
+          "accession": "0001018724-26-000026",
+          "context": "c-288",
+          "decimals": "-6",
+          "dimensions": [
+            [
+              "StatementBusinessSegmentsAxis",
+              "InternationalSegmentMember"
+            ]
+          ],
+          "end": "2026-06-30",
+          "factId": "f-1275",
+          "filedAt": "2026-07-31",
+          "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+          "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+          "start": "2026-01-01",
+          "tag": "OperatingIncomeLoss",
+          "taxonomy": "http://fasb.org/us-gaap/2026",
+          "unit": "USD",
+          "value": 3141000000.0
+        },
+        {
+          "accession": "0001018724-26-000026",
+          "context": "c-287",
+          "decimals": "-6",
+          "dimensions": [
+            [
+              "StatementBusinessSegmentsAxis",
+              "InternationalSegmentMember"
+            ]
+          ],
+          "end": "2025-06-30",
+          "factId": "f-1274",
+          "filedAt": "2026-07-31",
+          "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+          "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+          "start": "2025-01-01",
+          "tag": "OperatingIncomeLoss",
+          "taxonomy": "http://fasb.org/us-gaap/2026",
+          "unit": "USD",
+          "value": 2511000000.0
+        }
+      ]
+    },
+    {
+      "id": "AmazonWebServicesSegmentMember",
+      "label": "AWS",
+      "revenue": 148404000000.0,
+      "margin": 0.3684604188566346,
+      "observedGrowth": 0.3272198204190222,
+      "evidence": [
+        {
+          "accession": "0001018724-26-000004",
+          "context": "c-141",
+          "decimals": "-6",
+          "dimensions": [
+            [
+              "StatementBusinessSegmentsAxis",
+              "AmazonWebServicesSegmentMember"
+            ]
+          ],
+          "end": "2025-12-31",
+          "factId": "f-1431",
+          "filedAt": "2026-02-06",
+          "sourceFile": "data/sources/filing-0001018724-26-000004-ac1eb8406f629570.xbrl",
+          "sourceHash": "ac1eb8406f629570bcec12889950eb646dba42bb5f325fdc18415df13f85138b",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm",
+          "start": "2025-01-01",
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "taxonomy": "http://fasb.org/us-gaap/2025",
+          "unit": "USD",
+          "value": 128725000000.0
+        },
+        {
+          "accession": "0001018724-26-000026",
+          "context": "c-292",
+          "decimals": "-6",
+          "dimensions": [
+            [
+              "StatementBusinessSegmentsAxis",
+              "AmazonWebServicesSegmentMember"
+            ]
+          ],
+          "end": "2026-06-30",
+          "factId": "f-1279",
+          "filedAt": "2026-07-31",
+          "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+          "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+          "start": "2026-01-01",
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "taxonomy": "http://fasb.org/us-gaap/2026",
+          "unit": "USD",
+          "value": 79819000000.0
+        },
+        {
+          "accession": "0001018724-26-000026",
+          "context": "c-291",
+          "decimals": "-6",
+          "dimensions": [
+            [
+              "StatementBusinessSegmentsAxis",
+              "AmazonWebServicesSegmentMember"
+            ]
+          ],
+          "end": "2025-06-30",
+          "factId": "f-1278",
+          "filedAt": "2026-07-31",
+          "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+          "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+          "start": "2025-01-01",
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "taxonomy": "http://fasb.org/us-gaap/2026",
+          "unit": "USD",
+          "value": 60140000000.0
+        },
+        {
+          "accession": "0001018724-26-000004",
+          "context": "c-141",
+          "decimals": "-6",
+          "dimensions": [
+            [
+              "StatementBusinessSegmentsAxis",
+              "AmazonWebServicesSegmentMember"
+            ]
+          ],
+          "end": "2025-12-31",
+          "factId": "f-1437",
+          "filedAt": "2026-02-06",
+          "sourceFile": "data/sources/filing-0001018724-26-000004-ac1eb8406f629570.xbrl",
+          "sourceHash": "ac1eb8406f629570bcec12889950eb646dba42bb5f325fdc18415df13f85138b",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm",
+          "start": "2025-01-01",
+          "tag": "OperatingIncomeLoss",
+          "taxonomy": "http://fasb.org/us-gaap/2025",
+          "unit": "USD",
+          "value": 45606000000.0
+        },
+        {
+          "accession": "0001018724-26-000026",
+          "context": "c-292",
+          "decimals": "-6",
+          "dimensions": [
+            [
+              "StatementBusinessSegmentsAxis",
+              "AmazonWebServicesSegmentMember"
+            ]
+          ],
+          "end": "2026-06-30",
+          "factId": "f-1287",
+          "filedAt": "2026-07-31",
+          "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+          "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+          "start": "2026-01-01",
+          "tag": "OperatingIncomeLoss",
+          "taxonomy": "http://fasb.org/us-gaap/2026",
+          "unit": "USD",
+          "value": 30782000000.0
+        },
+        {
+          "accession": "0001018724-26-000026",
+          "context": "c-291",
+          "decimals": "-6",
+          "dimensions": [
+            [
+              "StatementBusinessSegmentsAxis",
+              "AmazonWebServicesSegmentMember"
+            ]
+          ],
+          "end": "2025-06-30",
+          "factId": "f-1286",
+          "filedAt": "2026-07-31",
+          "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+          "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+          "start": "2025-01-01",
+          "tag": "OperatingIncomeLoss",
+          "taxonomy": "http://fasb.org/us-gaap/2026",
+          "unit": "USD",
+          "value": 21707000000.0
+        }
+      ]
+    }
+  ],
+  "facts": {
+    "operatingIncome": {
+      "value": 93712000000.0,
+      "components": [
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2025-01-01",
+            "end": "2025-12-31",
+            "dimensions": [],
+            "tag": "OperatingIncomeLoss",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": 79975000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-176",
+            "decimals": "-6",
+            "accession": "0001018724-26-000004",
+            "filedAt": "2026-02-06",
+            "sourceFile": "data/sources/filing-0001018724-26-000004-ac1eb8406f629570.xbrl",
+            "sourceHash": "ac1eb8406f629570bcec12889950eb646dba42bb5f325fdc18415df13f85138b",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm"
+          }
+        },
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2026-01-01",
+            "end": "2026-06-30",
+            "dimensions": [],
+            "tag": "OperatingIncomeLoss",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": 51313000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-271",
+            "decimals": "-6",
+            "accession": "0001018724-26-000026",
+            "filedAt": "2026-07-31",
+            "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+            "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+          }
+        },
+        {
+          "coefficient": -1,
+          "fact": {
+            "start": "2025-01-01",
+            "end": "2025-06-30",
+            "dimensions": [],
+            "tag": "OperatingIncomeLoss",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": 37576000000.0,
+            "unit": "USD",
+            "context": "c-20",
+            "factId": "f-270",
+            "decimals": "-6",
+            "accession": "0001018724-26-000026",
+            "filedAt": "2026-07-31",
+            "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+            "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+          }
+        }
+      ],
+      "directTrailingFact": null,
+      "derived": true,
+      "tag": "OperatingIncomeLoss",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+      "start": "2025-07-01",
+      "end": "2026-06-30",
+      "unit": "USD"
+    },
+    "nonoperating": {
+      "value": 81754000000.0,
+      "components": [
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2025-01-01",
+            "end": "2025-12-31",
+            "dimensions": [],
+            "tag": "NonoperatingIncomeExpense",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": 17336000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-188",
+            "decimals": "-6",
+            "accession": "0001018724-26-000004",
+            "filedAt": "2026-02-06",
+            "sourceFile": "data/sources/filing-0001018724-26-000004-ac1eb8406f629570.xbrl",
+            "sourceHash": "ac1eb8406f629570bcec12889950eb646dba42bb5f325fdc18415df13f85138b",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm"
+          }
+        },
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2026-01-01",
+            "end": "2026-06-30",
+            "dimensions": [],
+            "tag": "NonoperatingIncomeExpense",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": 69378000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-287",
+            "decimals": "-6",
+            "accession": "0001018724-26-000026",
+            "filedAt": "2026-07-31",
+            "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+            "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+          }
+        },
+        {
+          "coefficient": -1,
+          "fact": {
+            "start": "2025-01-01",
+            "end": "2025-06-30",
+            "dimensions": [],
+            "tag": "NonoperatingIncomeExpense",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": 4960000000.0,
+            "unit": "USD",
+            "context": "c-20",
+            "factId": "f-286",
+            "decimals": "-6",
+            "accession": "0001018724-26-000026",
+            "filedAt": "2026-07-31",
+            "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+            "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+          }
+        }
+      ],
+      "directTrailingFact": null,
+      "derived": true,
+      "tag": "NonoperatingIncomeExpense",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+      "start": "2025-07-01",
+      "end": "2026-06-30",
+      "unit": "USD"
+    },
+    "tax": {
+      "value": 39615000000.0,
+      "components": [
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2025-01-01",
+            "end": "2025-12-31",
+            "dimensions": [],
+            "tag": "IncomeTaxExpenseBenefit",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": 19087000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-194",
+            "decimals": "-6",
+            "accession": "0001018724-26-000004",
+            "filedAt": "2026-02-06",
+            "sourceFile": "data/sources/filing-0001018724-26-000004-ac1eb8406f629570.xbrl",
+            "sourceHash": "ac1eb8406f629570bcec12889950eb646dba42bb5f325fdc18415df13f85138b",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm"
+          }
+        },
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2026-01-01",
+            "end": "2026-06-30",
+            "dimensions": [],
+            "tag": "IncomeTaxExpenseBenefit",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": 27759000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-295",
+            "decimals": "-6",
+            "accession": "0001018724-26-000026",
+            "filedAt": "2026-07-31",
+            "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+            "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+          }
+        },
+        {
+          "coefficient": -1,
+          "fact": {
+            "start": "2025-01-01",
+            "end": "2025-06-30",
+            "dimensions": [],
+            "tag": "IncomeTaxExpenseBenefit",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": 7231000000.0,
+            "unit": "USD",
+            "context": "c-20",
+            "factId": "f-294",
+            "decimals": "-6",
+            "accession": "0001018724-26-000026",
+            "filedAt": "2026-07-31",
+            "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+            "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+          }
+        }
+      ],
+      "directTrailingFact": null,
+      "derived": true,
+      "tag": "IncomeTaxExpenseBenefit",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+      "start": "2025-07-01",
+      "end": "2026-06-30",
+      "unit": "USD"
+    },
+    "equityMethod": {
+      "value": -570000000.0,
+      "components": [
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2025-01-01",
+            "end": "2025-12-31",
+            "dimensions": [],
+            "tag": "IncomeLossFromEquityMethodInvestments",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": -554000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-52",
+            "decimals": "-6",
+            "accession": "0001018724-26-000004",
+            "filedAt": "2026-02-06",
+            "sourceFile": "data/sources/filing-0001018724-26-000004-ac1eb8406f629570.xbrl",
+            "sourceHash": "ac1eb8406f629570bcec12889950eb646dba42bb5f325fdc18415df13f85138b",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm"
+          }
+        },
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2026-01-01",
+            "end": "2026-06-30",
+            "dimensions": [],
+            "tag": "IncomeLossFromEquityMethodInvestments",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": -30000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-299",
+            "decimals": "-6",
+            "accession": "0001018724-26-000026",
+            "filedAt": "2026-07-31",
+            "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+            "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+          }
+        },
+        {
+          "coefficient": -1,
+          "fact": {
+            "start": "2025-01-01",
+            "end": "2025-06-30",
+            "dimensions": [],
+            "tag": "IncomeLossFromEquityMethodInvestments",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": -14000000.0,
+            "unit": "USD",
+            "context": "c-20",
+            "factId": "f-298",
+            "decimals": "-6",
+            "accession": "0001018724-26-000026",
+            "filedAt": "2026-07-31",
+            "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+            "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+          }
+        }
+      ],
+      "directTrailingFact": null,
+      "derived": true,
+      "tag": "IncomeLossFromEquityMethodInvestments",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+      "start": "2025-07-01",
+      "end": "2026-06-30",
+      "unit": "USD"
+    },
+    "netIncome": {
+      "value": 135281000000.0,
+      "components": [
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2025-01-01",
+            "end": "2025-12-31",
+            "dimensions": [],
+            "tag": "NetIncomeLoss",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": 77670000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-62",
+            "decimals": "-6",
+            "accession": "0001018724-26-000004",
+            "filedAt": "2026-02-06",
+            "sourceFile": "data/sources/filing-0001018724-26-000004-ac1eb8406f629570.xbrl",
+            "sourceHash": "ac1eb8406f629570bcec12889950eb646dba42bb5f325fdc18415df13f85138b",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm"
+          }
+        },
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2026-01-01",
+            "end": "2026-06-30",
+            "dimensions": [],
+            "tag": "NetIncomeLoss",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": 92902000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-63",
+            "decimals": "-6",
+            "accession": "0001018724-26-000026",
+            "filedAt": "2026-07-31",
+            "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+            "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+          }
+        },
+        {
+          "coefficient": -1,
+          "fact": {
+            "start": "2025-01-01",
+            "end": "2025-06-30",
+            "dimensions": [],
+            "tag": "NetIncomeLoss",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": 35291000000.0,
+            "unit": "USD",
+            "context": "c-20",
+            "factId": "f-62",
+            "decimals": "-6",
+            "accession": "0001018724-26-000026",
+            "filedAt": "2026-07-31",
+            "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+            "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+          }
+        }
+      ],
+      "directTrailingFact": {
+        "start": "2025-07-01",
+        "end": "2026-06-30",
+        "dimensions": [],
+        "tag": "NetIncomeLoss",
+        "taxonomy": "http://fasb.org/us-gaap/2026",
+        "value": 135281000000.0,
+        "unit": "USD",
+        "context": "c-22",
+        "factId": "f-65",
+        "decimals": "-6",
+        "accession": "0001018724-26-000026",
+        "filedAt": "2026-07-31",
+        "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+        "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+        "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+      },
+      "derived": true,
+      "tag": "NetIncomeLoss",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+      "start": "2025-07-01",
+      "end": "2026-06-30",
+      "unit": "USD"
+    },
+    "daOther": {
+      "value": 75200000000.0,
+      "components": [
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2025-01-01",
+            "end": "2025-12-31",
+            "dimensions": [],
+            "tag": "DepreciationDepletionAndAmortization",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": 65756000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-65",
+            "decimals": "-6",
+            "accession": "0001018724-26-000004",
+            "filedAt": "2026-02-06",
+            "sourceFile": "data/sources/filing-0001018724-26-000004-ac1eb8406f629570.xbrl",
+            "sourceHash": "ac1eb8406f629570bcec12889950eb646dba42bb5f325fdc18415df13f85138b",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm"
+          }
+        },
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2026-01-01",
+            "end": "2026-06-30",
+            "dimensions": [],
+            "tag": "DepreciationDepletionAndAmortization",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": 38933000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-69",
+            "decimals": "-6",
+            "accession": "0001018724-26-000026",
+            "filedAt": "2026-07-31",
+            "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+            "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+          }
+        },
+        {
+          "coefficient": -1,
+          "fact": {
+            "start": "2025-01-01",
+            "end": "2025-06-30",
+            "dimensions": [],
+            "tag": "DepreciationDepletionAndAmortization",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": 29489000000.0,
+            "unit": "USD",
+            "context": "c-20",
+            "factId": "f-68",
+            "decimals": "-6",
+            "accession": "0001018724-26-000026",
+            "filedAt": "2026-07-31",
+            "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+            "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+          }
+        }
+      ],
+      "directTrailingFact": {
+        "start": "2025-07-01",
+        "end": "2026-06-30",
+        "dimensions": [],
+        "tag": "DepreciationDepletionAndAmortization",
+        "taxonomy": "http://fasb.org/us-gaap/2026",
+        "value": 75200000000.0,
+        "unit": "USD",
+        "context": "c-22",
+        "factId": "f-71",
+        "decimals": "-6",
+        "accession": "0001018724-26-000026",
+        "filedAt": "2026-07-31",
+        "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+        "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+        "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+      },
+      "derived": true,
+      "tag": "DepreciationDepletionAndAmortization",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+      "start": "2025-07-01",
+      "end": "2026-06-30",
+      "unit": "USD"
+    },
+    "depreciation": {
+      "value": 49741000000.0,
+      "components": [
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2025-01-01",
+            "end": "2025-12-31",
+            "dimensions": [],
+            "tag": "Depreciation",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": 41860000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-1580",
+            "decimals": "-6",
+            "accession": "0001018724-26-000004",
+            "filedAt": "2026-02-06",
+            "sourceFile": "data/sources/filing-0001018724-26-000004-ac1eb8406f629570.xbrl",
+            "sourceHash": "ac1eb8406f629570bcec12889950eb646dba42bb5f325fdc18415df13f85138b",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm"
+          }
+        },
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2026-01-01",
+            "end": "2026-06-30",
+            "dimensions": [],
+            "tag": "Depreciation",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": 26703000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-1415",
+            "decimals": "-6",
+            "accession": "0001018724-26-000026",
+            "filedAt": "2026-07-31",
+            "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+            "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+          }
+        },
+        {
+          "coefficient": -1,
+          "fact": {
+            "start": "2025-01-01",
+            "end": "2025-06-30",
+            "dimensions": [],
+            "tag": "Depreciation",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": 18822000000.0,
+            "unit": "USD",
+            "context": "c-20",
+            "factId": "f-1414",
+            "decimals": "-6",
+            "accession": "0001018724-26-000026",
+            "filedAt": "2026-07-31",
+            "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+            "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+          }
+        }
+      ],
+      "directTrailingFact": null,
+      "derived": true,
+      "tag": "Depreciation",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+      "start": "2025-07-01",
+      "end": "2026-06-30",
+      "unit": "USD"
+    },
+    "noncashIncome": {
+      "value": 79818000000.0,
+      "components": [
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2025-01-01",
+            "end": "2025-12-31",
+            "dimensions": [],
+            "tag": "OtherNoncashIncomeExpense",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": 14880000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-71",
+            "decimals": "-6",
+            "accession": "0001018724-26-000004",
+            "filedAt": "2026-02-06",
+            "sourceFile": "data/sources/filing-0001018724-26-000004-ac1eb8406f629570.xbrl",
+            "sourceHash": "ac1eb8406f629570bcec12889950eb646dba42bb5f325fdc18415df13f85138b",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm"
+          }
+        },
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2026-01-01",
+            "end": "2026-06-30",
+            "dimensions": [],
+            "tag": "OtherNoncashIncomeExpense",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": 69013000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-81",
+            "decimals": "-6",
+            "accession": "0001018724-26-000026",
+            "filedAt": "2026-07-31",
+            "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+            "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+          }
+        },
+        {
+          "coefficient": -1,
+          "fact": {
+            "start": "2025-01-01",
+            "end": "2025-06-30",
+            "dimensions": [],
+            "tag": "OtherNoncashIncomeExpense",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": 4075000000.0,
+            "unit": "USD",
+            "context": "c-20",
+            "factId": "f-80",
+            "decimals": "-6",
+            "accession": "0001018724-26-000026",
+            "filedAt": "2026-07-31",
+            "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+            "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+          }
+        }
+      ],
+      "directTrailingFact": {
+        "start": "2025-07-01",
+        "end": "2026-06-30",
+        "dimensions": [],
+        "tag": "OtherNoncashIncomeExpense",
+        "taxonomy": "http://fasb.org/us-gaap/2026",
+        "value": 79818000000.0,
+        "unit": "USD",
+        "context": "c-22",
+        "factId": "f-83",
+        "decimals": "-6",
+        "accession": "0001018724-26-000026",
+        "filedAt": "2026-07-31",
+        "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+        "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+        "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+      },
+      "derived": true,
+      "tag": "OtherNoncashIncomeExpense",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+      "start": "2025-07-01",
+      "end": "2026-06-30",
+      "unit": "USD"
+    },
+    "deferredTax": {
+      "value": 41441000000.0,
+      "components": [
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2025-01-01",
+            "end": "2025-12-31",
+            "dimensions": [],
+            "tag": "DeferredIncomeTaxExpenseBenefit",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": 11470000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-74",
+            "decimals": "-6",
+            "accession": "0001018724-26-000004",
+            "filedAt": "2026-02-06",
+            "sourceFile": "data/sources/filing-0001018724-26-000004-ac1eb8406f629570.xbrl",
+            "sourceHash": "ac1eb8406f629570bcec12889950eb646dba42bb5f325fdc18415df13f85138b",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm"
+          }
+        },
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2026-01-01",
+            "end": "2026-06-30",
+            "dimensions": [],
+            "tag": "DeferredIncomeTaxExpenseBenefit",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": 30489000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-87",
+            "decimals": "-6",
+            "accession": "0001018724-26-000026",
+            "filedAt": "2026-07-31",
+            "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+            "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+          }
+        },
+        {
+          "coefficient": -1,
+          "fact": {
+            "start": "2025-01-01",
+            "end": "2025-06-30",
+            "dimensions": [],
+            "tag": "DeferredIncomeTaxExpenseBenefit",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": 518000000.0,
+            "unit": "USD",
+            "context": "c-20",
+            "factId": "f-86",
+            "decimals": "-6",
+            "accession": "0001018724-26-000026",
+            "filedAt": "2026-07-31",
+            "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+            "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+          }
+        }
+      ],
+      "directTrailingFact": {
+        "start": "2025-07-01",
+        "end": "2026-06-30",
+        "dimensions": [],
+        "tag": "DeferredIncomeTaxExpenseBenefit",
+        "taxonomy": "http://fasb.org/us-gaap/2026",
+        "value": 41441000000.0,
+        "unit": "USD",
+        "context": "c-22",
+        "factId": "f-89",
+        "decimals": "-6",
+        "accession": "0001018724-26-000026",
+        "filedAt": "2026-07-31",
+        "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+        "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+        "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+      },
+      "derived": true,
+      "tag": "DeferredIncomeTaxExpenseBenefit",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+      "start": "2025-07-01",
+      "end": "2026-06-30",
+      "unit": "USD"
+    },
+    "sbc": {
+      "value": 19314000000.0,
+      "components": [
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2025-01-01",
+            "end": "2025-12-31",
+            "dimensions": [],
+            "tag": "ShareBasedCompensation",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": 19467000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-68",
+            "decimals": "-6",
+            "accession": "0001018724-26-000004",
+            "filedAt": "2026-02-06",
+            "sourceFile": "data/sources/filing-0001018724-26-000004-ac1eb8406f629570.xbrl",
+            "sourceHash": "ac1eb8406f629570bcec12889950eb646dba42bb5f325fdc18415df13f85138b",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm"
+          }
+        },
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2026-01-01",
+            "end": "2026-06-30",
+            "dimensions": [],
+            "tag": "ShareBasedCompensation",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": 10070000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-75",
+            "decimals": "-6",
+            "accession": "0001018724-26-000026",
+            "filedAt": "2026-07-31",
+            "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+            "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+          }
+        },
+        {
+          "coefficient": -1,
+          "fact": {
+            "start": "2025-01-01",
+            "end": "2025-06-30",
+            "dimensions": [],
+            "tag": "ShareBasedCompensation",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": 10223000000.0,
+            "unit": "USD",
+            "context": "c-20",
+            "factId": "f-74",
+            "decimals": "-6",
+            "accession": "0001018724-26-000026",
+            "filedAt": "2026-07-31",
+            "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+            "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+          }
+        }
+      ],
+      "directTrailingFact": {
+        "start": "2025-07-01",
+        "end": "2026-06-30",
+        "dimensions": [],
+        "tag": "ShareBasedCompensation",
+        "taxonomy": "http://fasb.org/us-gaap/2026",
+        "value": 19314000000.0,
+        "unit": "USD",
+        "context": "c-22",
+        "factId": "f-77",
+        "decimals": "-6",
+        "accession": "0001018724-26-000026",
+        "filedAt": "2026-07-31",
+        "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+        "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+        "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+      },
+      "derived": true,
+      "tag": "ShareBasedCompensation",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+      "start": "2025-07-01",
+      "end": "2026-06-30",
+      "unit": "USD"
+    },
+    "inventory": {
+      "value": -2078000000.0,
+      "components": [
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2025-01-01",
+            "end": "2025-12-31",
+            "dimensions": [],
+            "tag": "IncreaseDecreaseInInventories",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": 3002000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-77",
+            "decimals": "-6",
+            "accession": "0001018724-26-000004",
+            "filedAt": "2026-02-06",
+            "sourceFile": "data/sources/filing-0001018724-26-000004-ac1eb8406f629570.xbrl",
+            "sourceHash": "ac1eb8406f629570bcec12889950eb646dba42bb5f325fdc18415df13f85138b",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm"
+          }
+        },
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2026-01-01",
+            "end": "2026-06-30",
+            "dimensions": [],
+            "tag": "IncreaseDecreaseInInventories",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": 196000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-93",
+            "decimals": "-6",
+            "accession": "0001018724-26-000026",
+            "filedAt": "2026-07-31",
+            "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+            "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+          }
+        },
+        {
+          "coefficient": -1,
+          "fact": {
+            "start": "2025-01-01",
+            "end": "2025-06-30",
+            "dimensions": [],
+            "tag": "IncreaseDecreaseInInventories",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": 5276000000.0,
+            "unit": "USD",
+            "context": "c-20",
+            "factId": "f-92",
+            "decimals": "-6",
+            "accession": "0001018724-26-000026",
+            "filedAt": "2026-07-31",
+            "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+            "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+          }
+        }
+      ],
+      "directTrailingFact": {
+        "start": "2025-07-01",
+        "end": "2026-06-30",
+        "dimensions": [],
+        "tag": "IncreaseDecreaseInInventories",
+        "taxonomy": "http://fasb.org/us-gaap/2026",
+        "value": -2078000000.0,
+        "unit": "USD",
+        "context": "c-22",
+        "factId": "f-95",
+        "decimals": "-6",
+        "accession": "0001018724-26-000026",
+        "filedAt": "2026-07-31",
+        "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+        "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+        "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+      },
+      "derived": true,
+      "tag": "IncreaseDecreaseInInventories",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+      "start": "2025-07-01",
+      "end": "2026-06-30",
+      "unit": "USD"
+    },
+    "receivables": {
+      "value": 21409000000.0,
+      "components": [
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2025-01-01",
+            "end": "2025-12-31",
+            "dimensions": [],
+            "tag": "IncreaseDecreaseInAccountsReceivableAndOtherOperatingAssets",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": 7333000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-80",
+            "decimals": "-6",
+            "accession": "0001018724-26-000004",
+            "filedAt": "2026-02-06",
+            "sourceFile": "data/sources/filing-0001018724-26-000004-ac1eb8406f629570.xbrl",
+            "sourceHash": "ac1eb8406f629570bcec12889950eb646dba42bb5f325fdc18415df13f85138b",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm"
+          }
+        },
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2026-01-01",
+            "end": "2026-06-30",
+            "dimensions": [],
+            "tag": "IncreaseDecreaseInAccountsReceivableAndOtherOperatingAssets",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": 13954000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-99",
+            "decimals": "-6",
+            "accession": "0001018724-26-000026",
+            "filedAt": "2026-07-31",
+            "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+            "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+          }
+        },
+        {
+          "coefficient": -1,
+          "fact": {
+            "start": "2025-01-01",
+            "end": "2025-06-30",
+            "dimensions": [],
+            "tag": "IncreaseDecreaseInAccountsReceivableAndOtherOperatingAssets",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": -122000000.0,
+            "unit": "USD",
+            "context": "c-20",
+            "factId": "f-98",
+            "decimals": "-6",
+            "accession": "0001018724-26-000026",
+            "filedAt": "2026-07-31",
+            "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+            "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+          }
+        }
+      ],
+      "directTrailingFact": {
+        "start": "2025-07-01",
+        "end": "2026-06-30",
+        "dimensions": [],
+        "tag": "IncreaseDecreaseInAccountsReceivableAndOtherOperatingAssets",
+        "taxonomy": "http://fasb.org/us-gaap/2026",
+        "value": 21409000000.0,
+        "unit": "USD",
+        "context": "c-22",
+        "factId": "f-101",
+        "decimals": "-6",
+        "accession": "0001018724-26-000026",
+        "filedAt": "2026-07-31",
+        "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+        "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+        "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+      },
+      "derived": true,
+      "tag": "IncreaseDecreaseInAccountsReceivableAndOtherOperatingAssets",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+      "start": "2025-07-01",
+      "end": "2026-06-30",
+      "unit": "USD"
+    },
+    "otherAssets": {
+      "value": 17787000000.0,
+      "components": [
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2025-01-01",
+            "end": "2025-12-31",
+            "dimensions": [],
+            "tag": "IncreaseDecreaseInOtherNoncurrentAssets",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": 15632000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-83",
+            "decimals": "-6",
+            "accession": "0001018724-26-000004",
+            "filedAt": "2026-02-06",
+            "sourceFile": "data/sources/filing-0001018724-26-000004-ac1eb8406f629570.xbrl",
+            "sourceHash": "ac1eb8406f629570bcec12889950eb646dba42bb5f325fdc18415df13f85138b",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm"
+          }
+        },
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2026-01-01",
+            "end": "2026-06-30",
+            "dimensions": [],
+            "tag": "IncreaseDecreaseInOtherNoncurrentAssets",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": 8528000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-105",
+            "decimals": "-6",
+            "accession": "0001018724-26-000026",
+            "filedAt": "2026-07-31",
+            "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+            "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+          }
+        },
+        {
+          "coefficient": -1,
+          "fact": {
+            "start": "2025-01-01",
+            "end": "2025-06-30",
+            "dimensions": [],
+            "tag": "IncreaseDecreaseInOtherNoncurrentAssets",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": 6373000000.0,
+            "unit": "USD",
+            "context": "c-20",
+            "factId": "f-104",
+            "decimals": "-6",
+            "accession": "0001018724-26-000026",
+            "filedAt": "2026-07-31",
+            "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+            "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+          }
+        }
+      ],
+      "directTrailingFact": {
+        "start": "2025-07-01",
+        "end": "2026-06-30",
+        "dimensions": [],
+        "tag": "IncreaseDecreaseInOtherNoncurrentAssets",
+        "taxonomy": "http://fasb.org/us-gaap/2026",
+        "value": 17787000000.0,
+        "unit": "USD",
+        "context": "c-22",
+        "factId": "f-107",
+        "decimals": "-6",
+        "accession": "0001018724-26-000026",
+        "filedAt": "2026-07-31",
+        "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+        "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+        "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+      },
+      "derived": true,
+      "tag": "IncreaseDecreaseInOtherNoncurrentAssets",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+      "start": "2025-07-01",
+      "end": "2026-06-30",
+      "unit": "USD"
+    },
+    "payables": {
+      "value": 13921000000.0,
+      "components": [
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2025-01-01",
+            "end": "2025-12-31",
+            "dimensions": [],
+            "tag": "IncreaseDecreaseInAccountsPayable",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": 11231000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-86",
+            "decimals": "-6",
+            "accession": "0001018724-26-000004",
+            "filedAt": "2026-02-06",
+            "sourceFile": "data/sources/filing-0001018724-26-000004-ac1eb8406f629570.xbrl",
+            "sourceHash": "ac1eb8406f629570bcec12889950eb646dba42bb5f325fdc18415df13f85138b",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm"
+          }
+        },
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2026-01-01",
+            "end": "2026-06-30",
+            "dimensions": [],
+            "tag": "IncreaseDecreaseInAccountsPayable",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": 705000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-111",
+            "decimals": "-6",
+            "accession": "0001018724-26-000026",
+            "filedAt": "2026-07-31",
+            "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+            "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+          }
+        },
+        {
+          "coefficient": -1,
+          "fact": {
+            "start": "2025-01-01",
+            "end": "2025-06-30",
+            "dimensions": [],
+            "tag": "IncreaseDecreaseInAccountsPayable",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": -1985000000.0,
+            "unit": "USD",
+            "context": "c-20",
+            "factId": "f-110",
+            "decimals": "-6",
+            "accession": "0001018724-26-000026",
+            "filedAt": "2026-07-31",
+            "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+            "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+          }
+        }
+      ],
+      "directTrailingFact": {
+        "start": "2025-07-01",
+        "end": "2026-06-30",
+        "dimensions": [],
+        "tag": "IncreaseDecreaseInAccountsPayable",
+        "taxonomy": "http://fasb.org/us-gaap/2026",
+        "value": 13921000000.0,
+        "unit": "USD",
+        "context": "c-22",
+        "factId": "f-113",
+        "decimals": "-6",
+        "accession": "0001018724-26-000026",
+        "filedAt": "2026-07-31",
+        "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+        "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+        "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+      },
+      "derived": true,
+      "tag": "IncreaseDecreaseInAccountsPayable",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+      "start": "2025-07-01",
+      "end": "2026-06-30",
+      "unit": "USD"
+    },
+    "accruals": {
+      "value": -6069000000.0,
+      "components": [
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2025-01-01",
+            "end": "2025-12-31",
+            "dimensions": [],
+            "tag": "IncreaseDecreaseInAccruedLiabilitiesAndOtherOperatingLiabilities",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": -5019000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-89",
+            "decimals": "-6",
+            "accession": "0001018724-26-000004",
+            "filedAt": "2026-02-06",
+            "sourceFile": "data/sources/filing-0001018724-26-000004-ac1eb8406f629570.xbrl",
+            "sourceHash": "ac1eb8406f629570bcec12889950eb646dba42bb5f325fdc18415df13f85138b",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm"
+          }
+        },
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2026-01-01",
+            "end": "2026-06-30",
+            "dimensions": [],
+            "tag": "IncreaseDecreaseInAccruedLiabilitiesAndOtherOperatingLiabilities",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": -10063000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-117",
+            "decimals": "-6",
+            "accession": "0001018724-26-000026",
+            "filedAt": "2026-07-31",
+            "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+            "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+          }
+        },
+        {
+          "coefficient": -1,
+          "fact": {
+            "start": "2025-01-01",
+            "end": "2025-06-30",
+            "dimensions": [],
+            "tag": "IncreaseDecreaseInAccruedLiabilitiesAndOtherOperatingLiabilities",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": -9013000000.0,
+            "unit": "USD",
+            "context": "c-20",
+            "factId": "f-116",
+            "decimals": "-6",
+            "accession": "0001018724-26-000026",
+            "filedAt": "2026-07-31",
+            "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+            "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+          }
+        }
+      ],
+      "directTrailingFact": {
+        "start": "2025-07-01",
+        "end": "2026-06-30",
+        "dimensions": [],
+        "tag": "IncreaseDecreaseInAccruedLiabilitiesAndOtherOperatingLiabilities",
+        "taxonomy": "http://fasb.org/us-gaap/2026",
+        "value": -6069000000.0,
+        "unit": "USD",
+        "context": "c-22",
+        "factId": "f-119",
+        "decimals": "-6",
+        "accession": "0001018724-26-000026",
+        "filedAt": "2026-07-31",
+        "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+        "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+        "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+      },
+      "derived": true,
+      "tag": "IncreaseDecreaseInAccruedLiabilitiesAndOtherOperatingLiabilities",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+      "start": "2025-07-01",
+      "end": "2026-06-30",
+      "unit": "USD"
+    },
+    "unearned": {
+      "value": -749000000.0,
+      "components": [
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2025-01-01",
+            "end": "2025-12-31",
+            "dimensions": [],
+            "tag": "IncreaseDecreaseInContractWithCustomerLiability",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": -214000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-92",
+            "decimals": "-6",
+            "accession": "0001018724-26-000004",
+            "filedAt": "2026-02-06",
+            "sourceFile": "data/sources/filing-0001018724-26-000004-ac1eb8406f629570.xbrl",
+            "sourceHash": "ac1eb8406f629570bcec12889950eb646dba42bb5f325fdc18415df13f85138b",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm"
+          }
+        },
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2026-01-01",
+            "end": "2026-06-30",
+            "dimensions": [],
+            "tag": "IncreaseDecreaseInContractWithCustomerLiability",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": 74000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-123",
+            "decimals": "-6",
+            "accession": "0001018724-26-000026",
+            "filedAt": "2026-07-31",
+            "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+            "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+          }
+        },
+        {
+          "coefficient": -1,
+          "fact": {
+            "start": "2025-01-01",
+            "end": "2025-06-30",
+            "dimensions": [],
+            "tag": "IncreaseDecreaseInContractWithCustomerLiability",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": 609000000.0,
+            "unit": "USD",
+            "context": "c-20",
+            "factId": "f-122",
+            "decimals": "-6",
+            "accession": "0001018724-26-000026",
+            "filedAt": "2026-07-31",
+            "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+            "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+          }
+        }
+      ],
+      "directTrailingFact": {
+        "start": "2025-07-01",
+        "end": "2026-06-30",
+        "dimensions": [],
+        "tag": "IncreaseDecreaseInContractWithCustomerLiability",
+        "taxonomy": "http://fasb.org/us-gaap/2026",
+        "value": -749000000.0,
+        "unit": "USD",
+        "context": "c-22",
+        "factId": "f-125",
+        "decimals": "-6",
+        "accession": "0001018724-26-000026",
+        "filedAt": "2026-07-31",
+        "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+        "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+        "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+      },
+      "derived": true,
+      "tag": "IncreaseDecreaseInContractWithCustomerLiability",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+      "start": "2025-07-01",
+      "end": "2026-06-30",
+      "unit": "USD"
+    },
+    "cfo": {
+      "value": 161403000000.0,
+      "components": [
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2025-01-01",
+            "end": "2025-12-31",
+            "dimensions": [],
+            "tag": "NetCashProvidedByUsedInOperatingActivities",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": 139514000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-95",
+            "decimals": "-6",
+            "accession": "0001018724-26-000004",
+            "filedAt": "2026-02-06",
+            "sourceFile": "data/sources/filing-0001018724-26-000004-ac1eb8406f629570.xbrl",
+            "sourceHash": "ac1eb8406f629570bcec12889950eb646dba42bb5f325fdc18415df13f85138b",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm"
+          }
+        },
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2026-01-01",
+            "end": "2026-06-30",
+            "dimensions": [],
+            "tag": "NetCashProvidedByUsedInOperatingActivities",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": 71419000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-129",
+            "decimals": "-6",
+            "accession": "0001018724-26-000026",
+            "filedAt": "2026-07-31",
+            "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+            "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+          }
+        },
+        {
+          "coefficient": -1,
+          "fact": {
+            "start": "2025-01-01",
+            "end": "2025-06-30",
+            "dimensions": [],
+            "tag": "NetCashProvidedByUsedInOperatingActivities",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": 49530000000.0,
+            "unit": "USD",
+            "context": "c-20",
+            "factId": "f-128",
+            "decimals": "-6",
+            "accession": "0001018724-26-000026",
+            "filedAt": "2026-07-31",
+            "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+            "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+          }
+        }
+      ],
+      "directTrailingFact": {
+        "start": "2025-07-01",
+        "end": "2026-06-30",
+        "dimensions": [],
+        "tag": "NetCashProvidedByUsedInOperatingActivities",
+        "taxonomy": "http://fasb.org/us-gaap/2026",
+        "value": 161403000000.0,
+        "unit": "USD",
+        "context": "c-22",
+        "factId": "f-131",
+        "decimals": "-6",
+        "accession": "0001018724-26-000026",
+        "filedAt": "2026-07-31",
+        "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+        "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+        "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+      },
+      "derived": true,
+      "tag": "NetCashProvidedByUsedInOperatingActivities",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+      "start": "2025-07-01",
+      "end": "2026-06-30",
+      "unit": "USD"
+    },
+    "capex": {
+      "value": 173028000000.0,
+      "components": [
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2025-01-01",
+            "end": "2025-12-31",
+            "dimensions": [],
+            "tag": "PaymentsToAcquireProductiveAssets",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": 131819000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-98",
+            "decimals": "-6",
+            "accession": "0001018724-26-000004",
+            "filedAt": "2026-02-06",
+            "sourceFile": "data/sources/filing-0001018724-26-000004-ac1eb8406f629570.xbrl",
+            "sourceHash": "ac1eb8406f629570bcec12889950eb646dba42bb5f325fdc18415df13f85138b",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm"
+          }
+        },
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2026-01-01",
+            "end": "2026-06-30",
+            "dimensions": [],
+            "tag": "PaymentsToAcquireProductiveAssets",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": 98411000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-135",
+            "decimals": "-6",
+            "accession": "0001018724-26-000026",
+            "filedAt": "2026-07-31",
+            "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+            "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+          }
+        },
+        {
+          "coefficient": -1,
+          "fact": {
+            "start": "2025-01-01",
+            "end": "2025-06-30",
+            "dimensions": [],
+            "tag": "PaymentsToAcquireProductiveAssets",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": 57202000000.0,
+            "unit": "USD",
+            "context": "c-20",
+            "factId": "f-134",
+            "decimals": "-6",
+            "accession": "0001018724-26-000026",
+            "filedAt": "2026-07-31",
+            "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+            "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+          }
+        }
+      ],
+      "directTrailingFact": {
+        "start": "2025-07-01",
+        "end": "2026-06-30",
+        "dimensions": [],
+        "tag": "PaymentsToAcquireProductiveAssets",
+        "taxonomy": "http://fasb.org/us-gaap/2026",
+        "value": 173028000000.0,
+        "unit": "USD",
+        "context": "c-22",
+        "factId": "f-137",
+        "decimals": "-6",
+        "accession": "0001018724-26-000026",
+        "filedAt": "2026-07-31",
+        "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+        "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+        "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+      },
+      "derived": true,
+      "tag": "PaymentsToAcquireProductiveAssets",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+      "start": "2025-07-01",
+      "end": "2026-06-30",
+      "unit": "USD"
+    },
+    "assetProceeds": {
+      "value": 4021000000.0,
+      "components": [
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2025-01-01",
+            "end": "2025-12-31",
+            "dimensions": [],
+            "tag": "ProceedsFromPropertyPlantAndEquipmentSalesAndIncentives",
+            "taxonomy": "http://www.amazon.com/20251231",
+            "value": 3499000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-101",
+            "decimals": "-6",
+            "accession": "0001018724-26-000004",
+            "filedAt": "2026-02-06",
+            "sourceFile": "data/sources/filing-0001018724-26-000004-ac1eb8406f629570.xbrl",
+            "sourceHash": "ac1eb8406f629570bcec12889950eb646dba42bb5f325fdc18415df13f85138b",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm"
+          }
+        },
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2026-01-01",
+            "end": "2026-06-30",
+            "dimensions": [],
+            "tag": "ProceedsFromPropertyPlantAndEquipmentSalesAndIncentives",
+            "taxonomy": "http://www.amazon.com/20260630",
+            "value": 2101000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-141",
+            "decimals": "-6",
+            "accession": "0001018724-26-000026",
+            "filedAt": "2026-07-31",
+            "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+            "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+          }
+        },
+        {
+          "coefficient": -1,
+          "fact": {
+            "start": "2025-01-01",
+            "end": "2025-06-30",
+            "dimensions": [],
+            "tag": "ProceedsFromPropertyPlantAndEquipmentSalesAndIncentives",
+            "taxonomy": "http://www.amazon.com/20260630",
+            "value": 1579000000.0,
+            "unit": "USD",
+            "context": "c-20",
+            "factId": "f-140",
+            "decimals": "-6",
+            "accession": "0001018724-26-000026",
+            "filedAt": "2026-07-31",
+            "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+            "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+          }
+        }
+      ],
+      "directTrailingFact": {
+        "start": "2025-07-01",
+        "end": "2026-06-30",
+        "dimensions": [],
+        "tag": "ProceedsFromPropertyPlantAndEquipmentSalesAndIncentives",
+        "taxonomy": "http://www.amazon.com/20260630",
+        "value": 4021000000.0,
+        "unit": "USD",
+        "context": "c-22",
+        "factId": "f-143",
+        "decimals": "-6",
+        "accession": "0001018724-26-000026",
+        "filedAt": "2026-07-31",
+        "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+        "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+        "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+      },
+      "derived": true,
+      "tag": "ProceedsFromPropertyPlantAndEquipmentSalesAndIncentives",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+      "start": "2025-07-01",
+      "end": "2026-06-30",
+      "unit": "USD"
+    },
+    "lease": {
+      "value": 1599000000.0,
+      "components": [
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2025-01-01",
+            "end": "2025-12-31",
+            "dimensions": [],
+            "tag": "FinanceLeasePrincipalPayments",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": 1557000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-128",
+            "decimals": "-6",
+            "accession": "0001018724-26-000004",
+            "filedAt": "2026-02-06",
+            "sourceFile": "data/sources/filing-0001018724-26-000004-ac1eb8406f629570.xbrl",
+            "sourceHash": "ac1eb8406f629570bcec12889950eb646dba42bb5f325fdc18415df13f85138b",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm"
+          }
+        },
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2026-01-01",
+            "end": "2026-06-30",
+            "dimensions": [],
+            "tag": "FinanceLeasePrincipalPayments",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": 863000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-195",
+            "decimals": "-6",
+            "accession": "0001018724-26-000026",
+            "filedAt": "2026-07-31",
+            "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+            "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+          }
+        },
+        {
+          "coefficient": -1,
+          "fact": {
+            "start": "2025-01-01",
+            "end": "2025-06-30",
+            "dimensions": [],
+            "tag": "FinanceLeasePrincipalPayments",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": 821000000.0,
+            "unit": "USD",
+            "context": "c-20",
+            "factId": "f-194",
+            "decimals": "-6",
+            "accession": "0001018724-26-000026",
+            "filedAt": "2026-07-31",
+            "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+            "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+          }
+        }
+      ],
+      "directTrailingFact": {
+        "start": "2025-07-01",
+        "end": "2026-06-30",
+        "dimensions": [],
+        "tag": "FinanceLeasePrincipalPayments",
+        "taxonomy": "http://fasb.org/us-gaap/2026",
+        "value": 1599000000.0,
+        "unit": "USD",
+        "context": "c-22",
+        "factId": "f-197",
+        "decimals": "-6",
+        "accession": "0001018724-26-000026",
+        "filedAt": "2026-07-31",
+        "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+        "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+        "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+      },
+      "derived": true,
+      "tag": "FinanceLeasePrincipalPayments",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+      "start": "2025-07-01",
+      "end": "2026-06-30",
+      "unit": "USD"
+    },
+    "financingPrincipal": {
+      "value": 308000000.0,
+      "components": [
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2025-01-01",
+            "end": "2025-12-31",
+            "dimensions": [],
+            "tag": "RepaymentsOfLongTermFinancingObligations",
+            "taxonomy": "http://www.amazon.com/20251231",
+            "value": 328000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-131",
+            "decimals": "-6",
+            "accession": "0001018724-26-000004",
+            "filedAt": "2026-02-06",
+            "sourceFile": "data/sources/filing-0001018724-26-000004-ac1eb8406f629570.xbrl",
+            "sourceHash": "ac1eb8406f629570bcec12889950eb646dba42bb5f325fdc18415df13f85138b",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm"
+          }
+        },
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2026-01-01",
+            "end": "2026-06-30",
+            "dimensions": [],
+            "tag": "RepaymentsOfLongTermFinancingObligations",
+            "taxonomy": "http://www.amazon.com/20260630",
+            "value": 174000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-201",
+            "decimals": "-6",
+            "accession": "0001018724-26-000026",
+            "filedAt": "2026-07-31",
+            "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+            "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+          }
+        },
+        {
+          "coefficient": -1,
+          "fact": {
+            "start": "2025-01-01",
+            "end": "2025-06-30",
+            "dimensions": [],
+            "tag": "RepaymentsOfLongTermFinancingObligations",
+            "taxonomy": "http://www.amazon.com/20260630",
+            "value": 194000000.0,
+            "unit": "USD",
+            "context": "c-20",
+            "factId": "f-200",
+            "decimals": "-6",
+            "accession": "0001018724-26-000026",
+            "filedAt": "2026-07-31",
+            "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+            "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+          }
+        }
+      ],
+      "directTrailingFact": {
+        "start": "2025-07-01",
+        "end": "2026-06-30",
+        "dimensions": [],
+        "tag": "RepaymentsOfLongTermFinancingObligations",
+        "taxonomy": "http://www.amazon.com/20260630",
+        "value": 308000000.0,
+        "unit": "USD",
+        "context": "c-22",
+        "factId": "f-203",
+        "decimals": "-6",
+        "accession": "0001018724-26-000026",
+        "filedAt": "2026-07-31",
+        "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+        "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+        "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+      },
+      "derived": true,
+      "tag": "RepaymentsOfLongTermFinancingObligations",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+      "start": "2025-07-01",
+      "end": "2026-06-30",
+      "unit": "USD"
+    },
+    "interestIncome": {
+      "value": 4660000000.0,
+      "components": [
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2025-01-01",
+            "end": "2025-12-31",
+            "dimensions": [],
+            "tag": "InvestmentIncomeInterest",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": 4381000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-179",
+            "decimals": "-6",
+            "accession": "0001018724-26-000004",
+            "filedAt": "2026-02-06",
+            "sourceFile": "data/sources/filing-0001018724-26-000004-ac1eb8406f629570.xbrl",
+            "sourceHash": "ac1eb8406f629570bcec12889950eb646dba42bb5f325fdc18415df13f85138b",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm"
+          }
+        },
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2026-01-01",
+            "end": "2026-06-30",
+            "dimensions": [],
+            "tag": "InvestmentIncomeInterest",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": 2430000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-275",
+            "decimals": "-6",
+            "accession": "0001018724-26-000026",
+            "filedAt": "2026-07-31",
+            "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+            "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+          }
+        },
+        {
+          "coefficient": -1,
+          "fact": {
+            "start": "2025-01-01",
+            "end": "2025-06-30",
+            "dimensions": [],
+            "tag": "InvestmentIncomeInterest",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": 2151000000.0,
+            "unit": "USD",
+            "context": "c-20",
+            "factId": "f-274",
+            "decimals": "-6",
+            "accession": "0001018724-26-000026",
+            "filedAt": "2026-07-31",
+            "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+            "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+          }
+        }
+      ],
+      "directTrailingFact": null,
+      "derived": true,
+      "tag": "InvestmentIncomeInterest",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+      "start": "2025-07-01",
+      "end": "2026-06-30",
+      "unit": "USD"
+    },
+    "interestExpense": {
+      "value": 3331000000.0,
+      "components": [
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2025-01-01",
+            "end": "2025-12-31",
+            "dimensions": [],
+            "tag": "InterestExpenseNonoperating",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": 2274000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-182",
+            "decimals": "-6",
+            "accession": "0001018724-26-000004",
+            "filedAt": "2026-02-06",
+            "sourceFile": "data/sources/filing-0001018724-26-000004-ac1eb8406f629570.xbrl",
+            "sourceHash": "ac1eb8406f629570bcec12889950eb646dba42bb5f325fdc18415df13f85138b",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm"
+          }
+        },
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2026-01-01",
+            "end": "2026-06-30",
+            "dimensions": [],
+            "tag": "InterestExpenseNonoperating",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": 2114000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-279",
+            "decimals": "-6",
+            "accession": "0001018724-26-000026",
+            "filedAt": "2026-07-31",
+            "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+            "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+          }
+        },
+        {
+          "coefficient": -1,
+          "fact": {
+            "start": "2025-01-01",
+            "end": "2025-06-30",
+            "dimensions": [],
+            "tag": "InterestExpenseNonoperating",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": 1057000000.0,
+            "unit": "USD",
+            "context": "c-20",
+            "factId": "f-278",
+            "decimals": "-6",
+            "accession": "0001018724-26-000026",
+            "filedAt": "2026-07-31",
+            "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+            "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+          }
+        }
+      ],
+      "directTrailingFact": null,
+      "derived": true,
+      "tag": "InterestExpenseNonoperating",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+      "start": "2025-07-01",
+      "end": "2026-06-30",
+      "unit": "USD"
+    }
+  },
+  "defaults": {
+    "segments": [
+      {
+        "growthStart": 0,
+        "growthEnd": 0,
+        "marginEnd": 0.0741750611678092
+      },
+      {
+        "growthStart": 0,
+        "growthEnd": 0,
+        "marginEnd": 0.030989712337131204
+      },
+      {
+        "growthStart": 0,
+        "growthEnd": 0,
+        "marginEnd": 0.3684604188566346
+      }
+    ],
+    "tax": 0.22577023468934151,
+    "netInterest": 0.001713335396039604,
+    "depreciation": 0.06412567037953795,
+    "workingCapital": 0.39883586357137996,
+    "capexStart": 0.2178823741749175,
+    "capexEnd": 0.2178823741749175,
+    "leaseStart": 0.0024584880363036302,
+    "leaseEnd": 0.0024584880363036302,
+    "discount": 0.11,
+    "terminal": 0.02
+  },
+  "security": {
+    "additionalShareEvidence": [],
+    "classes": [],
+    "issues": [],
+    "marketCapProxy": 2660659949054.91,
+    "preferredEvidence": [],
+    "priceDate": "2026-09-29",
+    "scope": "공시에 기재된 유통주식수의 자체 기준일과 관측 종가의 시점 차이를 보존한다. 이후 발행·소각을 반영한 실시간 시가총액은 아니다.",
+    "shareAgeDays": 69,
+    "shareTable": null,
+    "shares": {
+      "accession": "0001018724-26-000026",
+      "context": "c-11",
+      "decimals": "INF",
+      "dimensions": [],
+      "end": "2026-07-22",
+      "factId": "f-48",
+      "filedAt": "2026-07-31",
+      "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+      "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+      "start": null,
+      "tag": "EntityCommonStockSharesOutstanding",
+      "taxonomy": "http://xbrl.sec.gov/dei/2026",
+      "unit": "shares",
+      "value": 10786313572.0
+    },
+    "status": "available"
+  },
+  "bridge": {
+    "parts": [
+      {
+        "label": "연결 영업이익",
+        "value": 93712000000.0,
+        "fact": {
+          "value": 93712000000.0,
+          "components": [
+            {
+              "coefficient": 1,
+              "fact": {
+                "start": "2025-01-01",
+                "end": "2025-12-31",
+                "dimensions": [],
+                "tag": "OperatingIncomeLoss",
+                "taxonomy": "http://fasb.org/us-gaap/2025",
+                "value": 79975000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-176",
+                "decimals": "-6",
+                "accession": "0001018724-26-000004",
+                "filedAt": "2026-02-06",
+                "sourceFile": "data/sources/filing-0001018724-26-000004-ac1eb8406f629570.xbrl",
+                "sourceHash": "ac1eb8406f629570bcec12889950eb646dba42bb5f325fdc18415df13f85138b",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm"
+              }
+            },
+            {
+              "coefficient": 1,
+              "fact": {
+                "start": "2026-01-01",
+                "end": "2026-06-30",
+                "dimensions": [],
+                "tag": "OperatingIncomeLoss",
+                "taxonomy": "http://fasb.org/us-gaap/2026",
+                "value": 51313000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-271",
+                "decimals": "-6",
+                "accession": "0001018724-26-000026",
+                "filedAt": "2026-07-31",
+                "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+                "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+              }
+            },
+            {
+              "coefficient": -1,
+              "fact": {
+                "start": "2025-01-01",
+                "end": "2025-06-30",
+                "dimensions": [],
+                "tag": "OperatingIncomeLoss",
+                "taxonomy": "http://fasb.org/us-gaap/2026",
+                "value": 37576000000.0,
+                "unit": "USD",
+                "context": "c-20",
+                "factId": "f-270",
+                "decimals": "-6",
+                "accession": "0001018724-26-000026",
+                "filedAt": "2026-07-31",
+                "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+                "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+              }
+            }
+          ],
+          "directTrailingFact": null,
+          "derived": true,
+          "tag": "OperatingIncomeLoss",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+          "start": "2025-07-01",
+          "end": "2026-06-30",
+          "unit": "USD"
+        }
+      },
+      {
+        "label": "영업외 손익",
+        "value": 81754000000.0,
+        "fact": {
+          "value": 81754000000.0,
+          "components": [
+            {
+              "coefficient": 1,
+              "fact": {
+                "start": "2025-01-01",
+                "end": "2025-12-31",
+                "dimensions": [],
+                "tag": "NonoperatingIncomeExpense",
+                "taxonomy": "http://fasb.org/us-gaap/2025",
+                "value": 17336000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-188",
+                "decimals": "-6",
+                "accession": "0001018724-26-000004",
+                "filedAt": "2026-02-06",
+                "sourceFile": "data/sources/filing-0001018724-26-000004-ac1eb8406f629570.xbrl",
+                "sourceHash": "ac1eb8406f629570bcec12889950eb646dba42bb5f325fdc18415df13f85138b",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm"
+              }
+            },
+            {
+              "coefficient": 1,
+              "fact": {
+                "start": "2026-01-01",
+                "end": "2026-06-30",
+                "dimensions": [],
+                "tag": "NonoperatingIncomeExpense",
+                "taxonomy": "http://fasb.org/us-gaap/2026",
+                "value": 69378000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-287",
+                "decimals": "-6",
+                "accession": "0001018724-26-000026",
+                "filedAt": "2026-07-31",
+                "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+                "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+              }
+            },
+            {
+              "coefficient": -1,
+              "fact": {
+                "start": "2025-01-01",
+                "end": "2025-06-30",
+                "dimensions": [],
+                "tag": "NonoperatingIncomeExpense",
+                "taxonomy": "http://fasb.org/us-gaap/2026",
+                "value": 4960000000.0,
+                "unit": "USD",
+                "context": "c-20",
+                "factId": "f-286",
+                "decimals": "-6",
+                "accession": "0001018724-26-000026",
+                "filedAt": "2026-07-31",
+                "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+                "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+              }
+            }
+          ],
+          "directTrailingFact": null,
+          "derived": true,
+          "tag": "NonoperatingIncomeExpense",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+          "start": "2025-07-01",
+          "end": "2026-06-30",
+          "unit": "USD"
+        }
+      },
+      {
+        "label": "법인세 비용",
+        "value": -39615000000.0,
+        "fact": {
+          "value": 39615000000.0,
+          "components": [
+            {
+              "coefficient": 1,
+              "fact": {
+                "start": "2025-01-01",
+                "end": "2025-12-31",
+                "dimensions": [],
+                "tag": "IncomeTaxExpenseBenefit",
+                "taxonomy": "http://fasb.org/us-gaap/2025",
+                "value": 19087000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-194",
+                "decimals": "-6",
+                "accession": "0001018724-26-000004",
+                "filedAt": "2026-02-06",
+                "sourceFile": "data/sources/filing-0001018724-26-000004-ac1eb8406f629570.xbrl",
+                "sourceHash": "ac1eb8406f629570bcec12889950eb646dba42bb5f325fdc18415df13f85138b",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm"
+              }
+            },
+            {
+              "coefficient": 1,
+              "fact": {
+                "start": "2026-01-01",
+                "end": "2026-06-30",
+                "dimensions": [],
+                "tag": "IncomeTaxExpenseBenefit",
+                "taxonomy": "http://fasb.org/us-gaap/2026",
+                "value": 27759000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-295",
+                "decimals": "-6",
+                "accession": "0001018724-26-000026",
+                "filedAt": "2026-07-31",
+                "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+                "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+              }
+            },
+            {
+              "coefficient": -1,
+              "fact": {
+                "start": "2025-01-01",
+                "end": "2025-06-30",
+                "dimensions": [],
+                "tag": "IncomeTaxExpenseBenefit",
+                "taxonomy": "http://fasb.org/us-gaap/2026",
+                "value": 7231000000.0,
+                "unit": "USD",
+                "context": "c-20",
+                "factId": "f-294",
+                "decimals": "-6",
+                "accession": "0001018724-26-000026",
+                "filedAt": "2026-07-31",
+                "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+                "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+              }
+            }
+          ],
+          "directTrailingFact": null,
+          "derived": true,
+          "tag": "IncomeTaxExpenseBenefit",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+          "start": "2025-07-01",
+          "end": "2026-06-30",
+          "unit": "USD"
+        }
+      },
+      {
+        "label": "세후 지분법 손익",
+        "value": -570000000.0,
+        "fact": {
+          "value": -570000000.0,
+          "components": [
+            {
+              "coefficient": 1,
+              "fact": {
+                "start": "2025-01-01",
+                "end": "2025-12-31",
+                "dimensions": [],
+                "tag": "IncomeLossFromEquityMethodInvestments",
+                "taxonomy": "http://fasb.org/us-gaap/2025",
+                "value": -554000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-52",
+                "decimals": "-6",
+                "accession": "0001018724-26-000004",
+                "filedAt": "2026-02-06",
+                "sourceFile": "data/sources/filing-0001018724-26-000004-ac1eb8406f629570.xbrl",
+                "sourceHash": "ac1eb8406f629570bcec12889950eb646dba42bb5f325fdc18415df13f85138b",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm"
+              }
+            },
+            {
+              "coefficient": 1,
+              "fact": {
+                "start": "2026-01-01",
+                "end": "2026-06-30",
+                "dimensions": [],
+                "tag": "IncomeLossFromEquityMethodInvestments",
+                "taxonomy": "http://fasb.org/us-gaap/2026",
+                "value": -30000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-299",
+                "decimals": "-6",
+                "accession": "0001018724-26-000026",
+                "filedAt": "2026-07-31",
+                "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+                "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+              }
+            },
+            {
+              "coefficient": -1,
+              "fact": {
+                "start": "2025-01-01",
+                "end": "2025-06-30",
+                "dimensions": [],
+                "tag": "IncomeLossFromEquityMethodInvestments",
+                "taxonomy": "http://fasb.org/us-gaap/2026",
+                "value": -14000000.0,
+                "unit": "USD",
+                "context": "c-20",
+                "factId": "f-298",
+                "decimals": "-6",
+                "accession": "0001018724-26-000026",
+                "filedAt": "2026-07-31",
+                "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+                "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+              }
+            }
+          ],
+          "directTrailingFact": null,
+          "derived": true,
+          "tag": "IncomeLossFromEquityMethodInvestments",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+          "start": "2025-07-01",
+          "end": "2026-06-30",
+          "unit": "USD"
+        }
+      },
+      {
+        "label": "설비·콘텐츠·영업리스 상각 등",
+        "value": 75200000000.0,
+        "fact": {
+          "value": 75200000000.0,
+          "components": [
+            {
+              "coefficient": 1,
+              "fact": {
+                "start": "2025-01-01",
+                "end": "2025-12-31",
+                "dimensions": [],
+                "tag": "DepreciationDepletionAndAmortization",
+                "taxonomy": "http://fasb.org/us-gaap/2025",
+                "value": 65756000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-65",
+                "decimals": "-6",
+                "accession": "0001018724-26-000004",
+                "filedAt": "2026-02-06",
+                "sourceFile": "data/sources/filing-0001018724-26-000004-ac1eb8406f629570.xbrl",
+                "sourceHash": "ac1eb8406f629570bcec12889950eb646dba42bb5f325fdc18415df13f85138b",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm"
+              }
+            },
+            {
+              "coefficient": 1,
+              "fact": {
+                "start": "2026-01-01",
+                "end": "2026-06-30",
+                "dimensions": [],
+                "tag": "DepreciationDepletionAndAmortization",
+                "taxonomy": "http://fasb.org/us-gaap/2026",
+                "value": 38933000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-69",
+                "decimals": "-6",
+                "accession": "0001018724-26-000026",
+                "filedAt": "2026-07-31",
+                "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+                "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+              }
+            },
+            {
+              "coefficient": -1,
+              "fact": {
+                "start": "2025-01-01",
+                "end": "2025-06-30",
+                "dimensions": [],
+                "tag": "DepreciationDepletionAndAmortization",
+                "taxonomy": "http://fasb.org/us-gaap/2026",
+                "value": 29489000000.0,
+                "unit": "USD",
+                "context": "c-20",
+                "factId": "f-68",
+                "decimals": "-6",
+                "accession": "0001018724-26-000026",
+                "filedAt": "2026-07-31",
+                "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+                "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+              }
+            }
+          ],
+          "directTrailingFact": {
+            "start": "2025-07-01",
+            "end": "2026-06-30",
+            "dimensions": [],
+            "tag": "DepreciationDepletionAndAmortization",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": 75200000000.0,
+            "unit": "USD",
+            "context": "c-22",
+            "factId": "f-71",
+            "decimals": "-6",
+            "accession": "0001018724-26-000026",
+            "filedAt": "2026-07-31",
+            "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+            "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+          },
+          "derived": true,
+          "tag": "DepreciationDepletionAndAmortization",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+          "start": "2025-07-01",
+          "end": "2026-06-30",
+          "unit": "USD"
+        }
+      },
+      {
+        "label": "비현금 영업외 손익 되돌림",
+        "value": -79818000000.0,
+        "fact": {
+          "value": 79818000000.0,
+          "components": [
+            {
+              "coefficient": 1,
+              "fact": {
+                "start": "2025-01-01",
+                "end": "2025-12-31",
+                "dimensions": [],
+                "tag": "OtherNoncashIncomeExpense",
+                "taxonomy": "http://fasb.org/us-gaap/2025",
+                "value": 14880000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-71",
+                "decimals": "-6",
+                "accession": "0001018724-26-000004",
+                "filedAt": "2026-02-06",
+                "sourceFile": "data/sources/filing-0001018724-26-000004-ac1eb8406f629570.xbrl",
+                "sourceHash": "ac1eb8406f629570bcec12889950eb646dba42bb5f325fdc18415df13f85138b",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm"
+              }
+            },
+            {
+              "coefficient": 1,
+              "fact": {
+                "start": "2026-01-01",
+                "end": "2026-06-30",
+                "dimensions": [],
+                "tag": "OtherNoncashIncomeExpense",
+                "taxonomy": "http://fasb.org/us-gaap/2026",
+                "value": 69013000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-81",
+                "decimals": "-6",
+                "accession": "0001018724-26-000026",
+                "filedAt": "2026-07-31",
+                "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+                "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+              }
+            },
+            {
+              "coefficient": -1,
+              "fact": {
+                "start": "2025-01-01",
+                "end": "2025-06-30",
+                "dimensions": [],
+                "tag": "OtherNoncashIncomeExpense",
+                "taxonomy": "http://fasb.org/us-gaap/2026",
+                "value": 4075000000.0,
+                "unit": "USD",
+                "context": "c-20",
+                "factId": "f-80",
+                "decimals": "-6",
+                "accession": "0001018724-26-000026",
+                "filedAt": "2026-07-31",
+                "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+                "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+              }
+            }
+          ],
+          "directTrailingFact": {
+            "start": "2025-07-01",
+            "end": "2026-06-30",
+            "dimensions": [],
+            "tag": "OtherNoncashIncomeExpense",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": 79818000000.0,
+            "unit": "USD",
+            "context": "c-22",
+            "factId": "f-83",
+            "decimals": "-6",
+            "accession": "0001018724-26-000026",
+            "filedAt": "2026-07-31",
+            "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+            "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+          },
+          "derived": true,
+          "tag": "OtherNoncashIncomeExpense",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+          "start": "2025-07-01",
+          "end": "2026-06-30",
+          "unit": "USD"
+        }
+      },
+      {
+        "label": "이연법인세 조정",
+        "value": 41441000000.0,
+        "fact": {
+          "value": 41441000000.0,
+          "components": [
+            {
+              "coefficient": 1,
+              "fact": {
+                "start": "2025-01-01",
+                "end": "2025-12-31",
+                "dimensions": [],
+                "tag": "DeferredIncomeTaxExpenseBenefit",
+                "taxonomy": "http://fasb.org/us-gaap/2025",
+                "value": 11470000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-74",
+                "decimals": "-6",
+                "accession": "0001018724-26-000004",
+                "filedAt": "2026-02-06",
+                "sourceFile": "data/sources/filing-0001018724-26-000004-ac1eb8406f629570.xbrl",
+                "sourceHash": "ac1eb8406f629570bcec12889950eb646dba42bb5f325fdc18415df13f85138b",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm"
+              }
+            },
+            {
+              "coefficient": 1,
+              "fact": {
+                "start": "2026-01-01",
+                "end": "2026-06-30",
+                "dimensions": [],
+                "tag": "DeferredIncomeTaxExpenseBenefit",
+                "taxonomy": "http://fasb.org/us-gaap/2026",
+                "value": 30489000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-87",
+                "decimals": "-6",
+                "accession": "0001018724-26-000026",
+                "filedAt": "2026-07-31",
+                "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+                "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+              }
+            },
+            {
+              "coefficient": -1,
+              "fact": {
+                "start": "2025-01-01",
+                "end": "2025-06-30",
+                "dimensions": [],
+                "tag": "DeferredIncomeTaxExpenseBenefit",
+                "taxonomy": "http://fasb.org/us-gaap/2026",
+                "value": 518000000.0,
+                "unit": "USD",
+                "context": "c-20",
+                "factId": "f-86",
+                "decimals": "-6",
+                "accession": "0001018724-26-000026",
+                "filedAt": "2026-07-31",
+                "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+                "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+              }
+            }
+          ],
+          "directTrailingFact": {
+            "start": "2025-07-01",
+            "end": "2026-06-30",
+            "dimensions": [],
+            "tag": "DeferredIncomeTaxExpenseBenefit",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": 41441000000.0,
+            "unit": "USD",
+            "context": "c-22",
+            "factId": "f-89",
+            "decimals": "-6",
+            "accession": "0001018724-26-000026",
+            "filedAt": "2026-07-31",
+            "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+            "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+          },
+          "derived": true,
+          "tag": "DeferredIncomeTaxExpenseBenefit",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+          "start": "2025-07-01",
+          "end": "2026-06-30",
+          "unit": "USD"
+        }
+      },
+      {
+        "label": "주식보상 되돌림",
+        "value": 19314000000.0,
+        "fact": {
+          "value": 19314000000.0,
+          "components": [
+            {
+              "coefficient": 1,
+              "fact": {
+                "start": "2025-01-01",
+                "end": "2025-12-31",
+                "dimensions": [],
+                "tag": "ShareBasedCompensation",
+                "taxonomy": "http://fasb.org/us-gaap/2025",
+                "value": 19467000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-68",
+                "decimals": "-6",
+                "accession": "0001018724-26-000004",
+                "filedAt": "2026-02-06",
+                "sourceFile": "data/sources/filing-0001018724-26-000004-ac1eb8406f629570.xbrl",
+                "sourceHash": "ac1eb8406f629570bcec12889950eb646dba42bb5f325fdc18415df13f85138b",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm"
+              }
+            },
+            {
+              "coefficient": 1,
+              "fact": {
+                "start": "2026-01-01",
+                "end": "2026-06-30",
+                "dimensions": [],
+                "tag": "ShareBasedCompensation",
+                "taxonomy": "http://fasb.org/us-gaap/2026",
+                "value": 10070000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-75",
+                "decimals": "-6",
+                "accession": "0001018724-26-000026",
+                "filedAt": "2026-07-31",
+                "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+                "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+              }
+            },
+            {
+              "coefficient": -1,
+              "fact": {
+                "start": "2025-01-01",
+                "end": "2025-06-30",
+                "dimensions": [],
+                "tag": "ShareBasedCompensation",
+                "taxonomy": "http://fasb.org/us-gaap/2026",
+                "value": 10223000000.0,
+                "unit": "USD",
+                "context": "c-20",
+                "factId": "f-74",
+                "decimals": "-6",
+                "accession": "0001018724-26-000026",
+                "filedAt": "2026-07-31",
+                "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+                "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+              }
+            }
+          ],
+          "directTrailingFact": {
+            "start": "2025-07-01",
+            "end": "2026-06-30",
+            "dimensions": [],
+            "tag": "ShareBasedCompensation",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": 19314000000.0,
+            "unit": "USD",
+            "context": "c-22",
+            "factId": "f-77",
+            "decimals": "-6",
+            "accession": "0001018724-26-000026",
+            "filedAt": "2026-07-31",
+            "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+            "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+          },
+          "derived": true,
+          "tag": "ShareBasedCompensation",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+          "start": "2025-07-01",
+          "end": "2026-06-30",
+          "unit": "USD"
+        }
+      },
+      {
+        "label": "재고",
+        "value": 2078000000.0,
+        "fact": {
+          "value": -2078000000.0,
+          "components": [
+            {
+              "coefficient": 1,
+              "fact": {
+                "start": "2025-01-01",
+                "end": "2025-12-31",
+                "dimensions": [],
+                "tag": "IncreaseDecreaseInInventories",
+                "taxonomy": "http://fasb.org/us-gaap/2025",
+                "value": 3002000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-77",
+                "decimals": "-6",
+                "accession": "0001018724-26-000004",
+                "filedAt": "2026-02-06",
+                "sourceFile": "data/sources/filing-0001018724-26-000004-ac1eb8406f629570.xbrl",
+                "sourceHash": "ac1eb8406f629570bcec12889950eb646dba42bb5f325fdc18415df13f85138b",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm"
+              }
+            },
+            {
+              "coefficient": 1,
+              "fact": {
+                "start": "2026-01-01",
+                "end": "2026-06-30",
+                "dimensions": [],
+                "tag": "IncreaseDecreaseInInventories",
+                "taxonomy": "http://fasb.org/us-gaap/2026",
+                "value": 196000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-93",
+                "decimals": "-6",
+                "accession": "0001018724-26-000026",
+                "filedAt": "2026-07-31",
+                "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+                "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+              }
+            },
+            {
+              "coefficient": -1,
+              "fact": {
+                "start": "2025-01-01",
+                "end": "2025-06-30",
+                "dimensions": [],
+                "tag": "IncreaseDecreaseInInventories",
+                "taxonomy": "http://fasb.org/us-gaap/2026",
+                "value": 5276000000.0,
+                "unit": "USD",
+                "context": "c-20",
+                "factId": "f-92",
+                "decimals": "-6",
+                "accession": "0001018724-26-000026",
+                "filedAt": "2026-07-31",
+                "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+                "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+              }
+            }
+          ],
+          "directTrailingFact": {
+            "start": "2025-07-01",
+            "end": "2026-06-30",
+            "dimensions": [],
+            "tag": "IncreaseDecreaseInInventories",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": -2078000000.0,
+            "unit": "USD",
+            "context": "c-22",
+            "factId": "f-95",
+            "decimals": "-6",
+            "accession": "0001018724-26-000026",
+            "filedAt": "2026-07-31",
+            "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+            "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+          },
+          "derived": true,
+          "tag": "IncreaseDecreaseInInventories",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+          "start": "2025-07-01",
+          "end": "2026-06-30",
+          "unit": "USD"
+        }
+      },
+      {
+        "label": "채권·기타 영업자산",
+        "value": -21409000000.0,
+        "fact": {
+          "value": 21409000000.0,
+          "components": [
+            {
+              "coefficient": 1,
+              "fact": {
+                "start": "2025-01-01",
+                "end": "2025-12-31",
+                "dimensions": [],
+                "tag": "IncreaseDecreaseInAccountsReceivableAndOtherOperatingAssets",
+                "taxonomy": "http://fasb.org/us-gaap/2025",
+                "value": 7333000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-80",
+                "decimals": "-6",
+                "accession": "0001018724-26-000004",
+                "filedAt": "2026-02-06",
+                "sourceFile": "data/sources/filing-0001018724-26-000004-ac1eb8406f629570.xbrl",
+                "sourceHash": "ac1eb8406f629570bcec12889950eb646dba42bb5f325fdc18415df13f85138b",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm"
+              }
+            },
+            {
+              "coefficient": 1,
+              "fact": {
+                "start": "2026-01-01",
+                "end": "2026-06-30",
+                "dimensions": [],
+                "tag": "IncreaseDecreaseInAccountsReceivableAndOtherOperatingAssets",
+                "taxonomy": "http://fasb.org/us-gaap/2026",
+                "value": 13954000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-99",
+                "decimals": "-6",
+                "accession": "0001018724-26-000026",
+                "filedAt": "2026-07-31",
+                "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+                "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+              }
+            },
+            {
+              "coefficient": -1,
+              "fact": {
+                "start": "2025-01-01",
+                "end": "2025-06-30",
+                "dimensions": [],
+                "tag": "IncreaseDecreaseInAccountsReceivableAndOtherOperatingAssets",
+                "taxonomy": "http://fasb.org/us-gaap/2026",
+                "value": -122000000.0,
+                "unit": "USD",
+                "context": "c-20",
+                "factId": "f-98",
+                "decimals": "-6",
+                "accession": "0001018724-26-000026",
+                "filedAt": "2026-07-31",
+                "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+                "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+              }
+            }
+          ],
+          "directTrailingFact": {
+            "start": "2025-07-01",
+            "end": "2026-06-30",
+            "dimensions": [],
+            "tag": "IncreaseDecreaseInAccountsReceivableAndOtherOperatingAssets",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": 21409000000.0,
+            "unit": "USD",
+            "context": "c-22",
+            "factId": "f-101",
+            "decimals": "-6",
+            "accession": "0001018724-26-000026",
+            "filedAt": "2026-07-31",
+            "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+            "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+          },
+          "derived": true,
+          "tag": "IncreaseDecreaseInAccountsReceivableAndOtherOperatingAssets",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+          "start": "2025-07-01",
+          "end": "2026-06-30",
+          "unit": "USD"
+        }
+      },
+      {
+        "label": "매입채무",
+        "value": 13921000000.0,
+        "fact": {
+          "value": 13921000000.0,
+          "components": [
+            {
+              "coefficient": 1,
+              "fact": {
+                "start": "2025-01-01",
+                "end": "2025-12-31",
+                "dimensions": [],
+                "tag": "IncreaseDecreaseInAccountsPayable",
+                "taxonomy": "http://fasb.org/us-gaap/2025",
+                "value": 11231000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-86",
+                "decimals": "-6",
+                "accession": "0001018724-26-000004",
+                "filedAt": "2026-02-06",
+                "sourceFile": "data/sources/filing-0001018724-26-000004-ac1eb8406f629570.xbrl",
+                "sourceHash": "ac1eb8406f629570bcec12889950eb646dba42bb5f325fdc18415df13f85138b",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm"
+              }
+            },
+            {
+              "coefficient": 1,
+              "fact": {
+                "start": "2026-01-01",
+                "end": "2026-06-30",
+                "dimensions": [],
+                "tag": "IncreaseDecreaseInAccountsPayable",
+                "taxonomy": "http://fasb.org/us-gaap/2026",
+                "value": 705000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-111",
+                "decimals": "-6",
+                "accession": "0001018724-26-000026",
+                "filedAt": "2026-07-31",
+                "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+                "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+              }
+            },
+            {
+              "coefficient": -1,
+              "fact": {
+                "start": "2025-01-01",
+                "end": "2025-06-30",
+                "dimensions": [],
+                "tag": "IncreaseDecreaseInAccountsPayable",
+                "taxonomy": "http://fasb.org/us-gaap/2026",
+                "value": -1985000000.0,
+                "unit": "USD",
+                "context": "c-20",
+                "factId": "f-110",
+                "decimals": "-6",
+                "accession": "0001018724-26-000026",
+                "filedAt": "2026-07-31",
+                "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+                "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+              }
+            }
+          ],
+          "directTrailingFact": {
+            "start": "2025-07-01",
+            "end": "2026-06-30",
+            "dimensions": [],
+            "tag": "IncreaseDecreaseInAccountsPayable",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": 13921000000.0,
+            "unit": "USD",
+            "context": "c-22",
+            "factId": "f-113",
+            "decimals": "-6",
+            "accession": "0001018724-26-000026",
+            "filedAt": "2026-07-31",
+            "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+            "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+          },
+          "derived": true,
+          "tag": "IncreaseDecreaseInAccountsPayable",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+          "start": "2025-07-01",
+          "end": "2026-06-30",
+          "unit": "USD"
+        }
+      },
+      {
+        "label": "미지급·기타 영업부채",
+        "value": -6069000000.0,
+        "fact": {
+          "value": -6069000000.0,
+          "components": [
+            {
+              "coefficient": 1,
+              "fact": {
+                "start": "2025-01-01",
+                "end": "2025-12-31",
+                "dimensions": [],
+                "tag": "IncreaseDecreaseInAccruedLiabilitiesAndOtherOperatingLiabilities",
+                "taxonomy": "http://fasb.org/us-gaap/2025",
+                "value": -5019000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-89",
+                "decimals": "-6",
+                "accession": "0001018724-26-000004",
+                "filedAt": "2026-02-06",
+                "sourceFile": "data/sources/filing-0001018724-26-000004-ac1eb8406f629570.xbrl",
+                "sourceHash": "ac1eb8406f629570bcec12889950eb646dba42bb5f325fdc18415df13f85138b",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm"
+              }
+            },
+            {
+              "coefficient": 1,
+              "fact": {
+                "start": "2026-01-01",
+                "end": "2026-06-30",
+                "dimensions": [],
+                "tag": "IncreaseDecreaseInAccruedLiabilitiesAndOtherOperatingLiabilities",
+                "taxonomy": "http://fasb.org/us-gaap/2026",
+                "value": -10063000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-117",
+                "decimals": "-6",
+                "accession": "0001018724-26-000026",
+                "filedAt": "2026-07-31",
+                "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+                "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+              }
+            },
+            {
+              "coefficient": -1,
+              "fact": {
+                "start": "2025-01-01",
+                "end": "2025-06-30",
+                "dimensions": [],
+                "tag": "IncreaseDecreaseInAccruedLiabilitiesAndOtherOperatingLiabilities",
+                "taxonomy": "http://fasb.org/us-gaap/2026",
+                "value": -9013000000.0,
+                "unit": "USD",
+                "context": "c-20",
+                "factId": "f-116",
+                "decimals": "-6",
+                "accession": "0001018724-26-000026",
+                "filedAt": "2026-07-31",
+                "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+                "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+              }
+            }
+          ],
+          "directTrailingFact": {
+            "start": "2025-07-01",
+            "end": "2026-06-30",
+            "dimensions": [],
+            "tag": "IncreaseDecreaseInAccruedLiabilitiesAndOtherOperatingLiabilities",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": -6069000000.0,
+            "unit": "USD",
+            "context": "c-22",
+            "factId": "f-119",
+            "decimals": "-6",
+            "accession": "0001018724-26-000026",
+            "filedAt": "2026-07-31",
+            "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+            "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+          },
+          "derived": true,
+          "tag": "IncreaseDecreaseInAccruedLiabilitiesAndOtherOperatingLiabilities",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+          "start": "2025-07-01",
+          "end": "2026-06-30",
+          "unit": "USD"
+        }
+      },
+      {
+        "label": "선수 수익",
+        "value": -749000000.0,
+        "fact": {
+          "value": -749000000.0,
+          "components": [
+            {
+              "coefficient": 1,
+              "fact": {
+                "start": "2025-01-01",
+                "end": "2025-12-31",
+                "dimensions": [],
+                "tag": "IncreaseDecreaseInContractWithCustomerLiability",
+                "taxonomy": "http://fasb.org/us-gaap/2025",
+                "value": -214000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-92",
+                "decimals": "-6",
+                "accession": "0001018724-26-000004",
+                "filedAt": "2026-02-06",
+                "sourceFile": "data/sources/filing-0001018724-26-000004-ac1eb8406f629570.xbrl",
+                "sourceHash": "ac1eb8406f629570bcec12889950eb646dba42bb5f325fdc18415df13f85138b",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm"
+              }
+            },
+            {
+              "coefficient": 1,
+              "fact": {
+                "start": "2026-01-01",
+                "end": "2026-06-30",
+                "dimensions": [],
+                "tag": "IncreaseDecreaseInContractWithCustomerLiability",
+                "taxonomy": "http://fasb.org/us-gaap/2026",
+                "value": 74000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-123",
+                "decimals": "-6",
+                "accession": "0001018724-26-000026",
+                "filedAt": "2026-07-31",
+                "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+                "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+              }
+            },
+            {
+              "coefficient": -1,
+              "fact": {
+                "start": "2025-01-01",
+                "end": "2025-06-30",
+                "dimensions": [],
+                "tag": "IncreaseDecreaseInContractWithCustomerLiability",
+                "taxonomy": "http://fasb.org/us-gaap/2026",
+                "value": 609000000.0,
+                "unit": "USD",
+                "context": "c-20",
+                "factId": "f-122",
+                "decimals": "-6",
+                "accession": "0001018724-26-000026",
+                "filedAt": "2026-07-31",
+                "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+                "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+              }
+            }
+          ],
+          "directTrailingFact": {
+            "start": "2025-07-01",
+            "end": "2026-06-30",
+            "dimensions": [],
+            "tag": "IncreaseDecreaseInContractWithCustomerLiability",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": -749000000.0,
+            "unit": "USD",
+            "context": "c-22",
+            "factId": "f-125",
+            "decimals": "-6",
+            "accession": "0001018724-26-000026",
+            "filedAt": "2026-07-31",
+            "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+            "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+          },
+          "derived": true,
+          "tag": "IncreaseDecreaseInContractWithCustomerLiability",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+          "start": "2025-07-01",
+          "end": "2026-06-30",
+          "unit": "USD"
+        }
+      },
+      {
+        "label": "기타 장기자산 변동",
+        "value": -17787000000.0,
+        "fact": {
+          "value": 17787000000.0,
+          "components": [
+            {
+              "coefficient": 1,
+              "fact": {
+                "start": "2025-01-01",
+                "end": "2025-12-31",
+                "dimensions": [],
+                "tag": "IncreaseDecreaseInOtherNoncurrentAssets",
+                "taxonomy": "http://fasb.org/us-gaap/2025",
+                "value": 15632000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-83",
+                "decimals": "-6",
+                "accession": "0001018724-26-000004",
+                "filedAt": "2026-02-06",
+                "sourceFile": "data/sources/filing-0001018724-26-000004-ac1eb8406f629570.xbrl",
+                "sourceHash": "ac1eb8406f629570bcec12889950eb646dba42bb5f325fdc18415df13f85138b",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm"
+              }
+            },
+            {
+              "coefficient": 1,
+              "fact": {
+                "start": "2026-01-01",
+                "end": "2026-06-30",
+                "dimensions": [],
+                "tag": "IncreaseDecreaseInOtherNoncurrentAssets",
+                "taxonomy": "http://fasb.org/us-gaap/2026",
+                "value": 8528000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-105",
+                "decimals": "-6",
+                "accession": "0001018724-26-000026",
+                "filedAt": "2026-07-31",
+                "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+                "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+              }
+            },
+            {
+              "coefficient": -1,
+              "fact": {
+                "start": "2025-01-01",
+                "end": "2025-06-30",
+                "dimensions": [],
+                "tag": "IncreaseDecreaseInOtherNoncurrentAssets",
+                "taxonomy": "http://fasb.org/us-gaap/2026",
+                "value": 6373000000.0,
+                "unit": "USD",
+                "context": "c-20",
+                "factId": "f-104",
+                "decimals": "-6",
+                "accession": "0001018724-26-000026",
+                "filedAt": "2026-07-31",
+                "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+                "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+              }
+            }
+          ],
+          "directTrailingFact": {
+            "start": "2025-07-01",
+            "end": "2026-06-30",
+            "dimensions": [],
+            "tag": "IncreaseDecreaseInOtherNoncurrentAssets",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": 17787000000.0,
+            "unit": "USD",
+            "context": "c-22",
+            "factId": "f-107",
+            "decimals": "-6",
+            "accession": "0001018724-26-000026",
+            "filedAt": "2026-07-31",
+            "sourceFile": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+            "sourceHash": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+          },
+          "derived": true,
+          "tag": "IncreaseDecreaseInOtherNoncurrentAssets",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+          "start": "2025-07-01",
+          "end": "2026-06-30",
+          "unit": "USD"
+        }
+      }
+    ],
+    "reportedCfo": 161403000000.0,
+    "residual": 0,
+    "periods": [
+      {
+        "start": "2025-01-01",
+        "end": "2025-12-31",
+        "reportedCfo": 139514000000.0,
+        "residual": 0.0
+      },
+      {
+        "start": "2026-01-01",
+        "end": "2026-06-30",
+        "reportedCfo": 71419000000.0,
+        "residual": 0.0
+      },
+      {
+        "start": "2025-01-01",
+        "end": "2025-06-30",
+        "reportedCfo": 49530000000.0,
+        "residual": 0.0
+      }
+    ],
+    "cashAfterInvestmentLeaseSbc": -28825000000.0
+  },
+  "anchors": {
+    "workingCashEffect": -23434000000.0,
+    "revenueIncrease": 58756000000,
+    "daOtherDifference": 25459000000.0,
+    "priorCapexRatio": 0.178986894008291
+  },
+  "rules": [
+    "初期 가정은 사업부 성장 0%, 최근 1년 이익률·투입 비율 유지다. AWS 투자 회수나 정상 가치를 입증한 전망이 아니다.",
+    "최근 1년은 직전 연간+당기 반기−전년 반기다. 현금흐름표가 직접 제시한 12개월 수치와도 맞췄으며, 각 구성 기간의 영업이익→영업현금도 따로 대사한다.",
+    "미래 되돌림은 설비의 감가상각·상각만 사용한다. 콘텐츠 원가·영업리스 등은 영업이익의 비용으로 남겨 반복 현금 부담의 대용으로 삼는다. 실제 콘텐츠 지급·임차료·자본화 시차 예측은 아니다.",
+    "운전자본 대용치는 반기 재고·채권 및 기타 영업자산·매입채무·미지급 부채·선수 수익의 현금 효과다. 콘텐츠·리스와 섞일 수 있는 기타 장기자산 변동을 자동 반복하지 않는다. 제외 금액은 원문 영업현금 대사에서 확인할 수 있다.",
+    "설비 취득에서 자산 매각·인센티브를 차감한 순현금 비율을 가정한다. 매각·인센티브의 지속성을 가정하므로 총 취득 비율로 높인 대안도 확인해야 한다. 기업 인수·금융 투자를 설비로 포함하지 않는다.",
+    "금융리스와 시설금융 의무의 원금 상환을 합산해 별도 차감한다. 비현금 신규 리스 취득을 다시 차감하지 않는다. 차입 원금은 차환/순차입 0 가정이다.",
+    "주식보상은 영업이익에 이미 비용 처리돼 미래에 되돌리지 않는다. 자사주 매입을 추가로 차감하지 않는다.",
+    "세율은 보고 세금비용/세전손익 비율에서 출발하지만 투자 평가손익과 이연세금의 영향을 받았다. 영업의 정상 현금세율로 승인하지 않으며 연구자가 별도 가정한다.",
+    "영업외 이익 전체 대신 순이자 수익 비율만 미래에 유지한다. 투자·파생·지분법 손익과 초과 현금·투자자산 매각가치는 포함하지 않는다.",
+    "연차 할인은 관측 종가 기준 1년 간격이다. 6년차 말기 현금은 새 매출·세금·운전자본·설비·상환을 다시 산출한다. 말기 현금이 음수이면 주당 가치는 계산 보류한다."
+  ],
+  "remaining": [
+    "AWS/소매별 투자·가동·자산 수명과 공유 설비 배분",
+    "콘텐츠 자본화·실제 지급 및 임차료와 비용 시차",
+    "설비 공급자 인센티브·매각의 반복 가능성",
+    "대규모 금융 투자와 현금 세율·부채 차환·투자자산 배분"
+  ],
+  "initial": {
+    "years": [
+      {
+        "year": 1,
+        "segments": [
+          {
+            "label": "북미",
+            "revenue": 453670000000.0,
+            "operatingIncome": 33651000000.0
+          },
+          {
+            "label": "국제",
+            "revenue": 173606000000.0,
+            "operatingIncome": 5380000000.0
+          },
+          {
+            "label": "AWS",
+            "revenue": 148404000000.0,
+            "operatingIncome": 54681000000.0
+          }
+        ],
+        "revenue": 775680000000.0,
+        "operatingIncome": 93712000000.0,
+        "netInterest": 1329000000.0,
+        "tax": 21457428875.109707,
+        "depreciation": 49741000000.0,
+        "workingCapital": 0.0,
+        "capex": 169007000000.0,
+        "leasePrincipal": 1907000000.0,
+        "cash": -47589428875.10971
+      },
+      {
+        "year": 2,
+        "segments": [
+          {
+            "label": "북미",
+            "revenue": 453670000000.0,
+            "operatingIncome": 33651000000.0
+          },
+          {
+            "label": "국제",
+            "revenue": 173606000000.0,
+            "operatingIncome": 5380000000.0
+          },
+          {
+            "label": "AWS",
+            "revenue": 148404000000.0,
+            "operatingIncome": 54681000000.0
+          }
+        ],
+        "revenue": 775680000000.0,
+        "operatingIncome": 93712000000.0,
+        "netInterest": 1329000000.0,
+        "tax": 21457428875.109707,
+        "depreciation": 49741000000.0,
+        "workingCapital": 0.0,
+        "capex": 169007000000.0,
+        "leasePrincipal": 1907000000.0,
+        "cash": -47589428875.10971
+      },
+      {
+        "year": 3,
+        "segments": [
+          {
+            "label": "북미",
+            "revenue": 453670000000.0,
+            "operatingIncome": 33651000000.0
+          },
+          {
+            "label": "국제",
+            "revenue": 173606000000.0,
+            "operatingIncome": 5380000000.0
+          },
+          {
+            "label": "AWS",
+            "revenue": 148404000000.0,
+            "operatingIncome": 54681000000.0
+          }
+        ],
+        "revenue": 775680000000.0,
+        "operatingIncome": 93712000000.0,
+        "netInterest": 1329000000.0,
+        "tax": 21457428875.109707,
+        "depreciation": 49741000000.0,
+        "workingCapital": 0.0,
+        "capex": 169007000000.0,
+        "leasePrincipal": 1907000000.0,
+        "cash": -47589428875.10971
+      },
+      {
+        "year": 4,
+        "segments": [
+          {
+            "label": "북미",
+            "revenue": 453670000000.0,
+            "operatingIncome": 33651000000.0
+          },
+          {
+            "label": "국제",
+            "revenue": 173606000000.0,
+            "operatingIncome": 5380000000.0
+          },
+          {
+            "label": "AWS",
+            "revenue": 148404000000.0,
+            "operatingIncome": 54681000000.0
+          }
+        ],
+        "revenue": 775680000000.0,
+        "operatingIncome": 93712000000.0,
+        "netInterest": 1329000000.0,
+        "tax": 21457428875.109707,
+        "depreciation": 49741000000.0,
+        "workingCapital": 0.0,
+        "capex": 169007000000.0,
+        "leasePrincipal": 1907000000.0,
+        "cash": -47589428875.10971
+      },
+      {
+        "year": 5,
+        "segments": [
+          {
+            "label": "북미",
+            "revenue": 453670000000.0,
+            "operatingIncome": 33651000000.0
+          },
+          {
+            "label": "국제",
+            "revenue": 173606000000.0,
+            "operatingIncome": 5380000000.0
+          },
+          {
+            "label": "AWS",
+            "revenue": 148404000000.0,
+            "operatingIncome": 54681000000.0
+          }
+        ],
+        "revenue": 775680000000.0,
+        "operatingIncome": 93712000000.0,
+        "netInterest": 1329000000.0,
+        "tax": 21457428875.109707,
+        "depreciation": 49741000000.0,
+        "workingCapital": 0.0,
+        "capex": 169007000000.0,
+        "leasePrincipal": 1907000000.0,
+        "cash": -47589428875.10971
+      }
+    ],
+    "terminal": {
+      "year": 6,
+      "segments": [
+        {
+          "label": "북미",
+          "revenue": 462743400000.0,
+          "operatingIncome": 34324020000.0
+        },
+        {
+          "label": "국제",
+          "revenue": 177078120000.0,
+          "operatingIncome": 5487600000.0
+        },
+        {
+          "label": "AWS",
+          "revenue": 151372080000.0,
+          "operatingIncome": 55774620000.0
+        }
+      ],
+      "revenue": 791193600000.0,
+      "operatingIncome": 95586240000.0,
+      "netInterest": 1355580000.0,
+      "tax": 21886577452.6119,
+      "depreciation": 50735820000.0,
+      "workingCapital": 6187380053.10096,
+      "capex": 172387140000.0,
+      "leasePrincipal": 1945140000.0,
+      "cash": -54728597505.71286
+    },
+    "explicitPv": -175885628251.15927,
+    "terminalPv": null,
+    "equityValue": null,
+    "price": null,
+    "terminalShare": null,
+    "requiredTerminalCash": 430176983161.7188,
+    "terminalCashGap": 484905580667.43164,
+    "reinvestmentCaution": false,
+    "status": "nonpositive_terminal_or_value"
+  },
+  "evidenceHash": "3e5a879aee9991ea8a2dafa41927e711e330875c116594585ad18925997e47c4"
+}

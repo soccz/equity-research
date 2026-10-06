@@ -1,0 +1,128 @@
+{
+  "runId": "20261001T185346643123Z",
+  "startedAt": "2026-10-01T18:53:46.643212+00:00",
+  "status": "interrupted",
+  "mode": "archived_sources_local_only",
+  "modelRequested": true,
+  "stages": [
+    {
+      "name": "unit",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-01T18:53:46.643337+00:00",
+      "finishedAt": "2026-10-01T18:56:31.272617+00:00",
+      "log": "artifacts/local/runs/20261001T185346643123Z/unit.log",
+      "logHash": "30840002ad95679e33ed5231665bdb4670f91212a7f16dd776395d03def885d6"
+    },
+    {
+      "name": "analysis",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-01T18:56:31.273287+00:00",
+      "finishedAt": "2026-10-01T18:58:40.299258+00:00",
+      "log": "artifacts/local/runs/20261001T185346643123Z/analysis.log",
+      "logHash": "9475d3709abb87a492db6a59c45f2b0a6d512ee6a1e594f84fc2023843e47104"
+    },
+    {
+      "name": "local-model",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-01T18:58:40.299717+00:00",
+      "finishedAt": "2026-10-01T18:58:49.312973+00:00",
+      "log": "artifacts/local/runs/20261001T185346643123Z/local-model.log",
+      "logHash": "e97477e66784eaf0b0bb38661e227bcfb2eaae1c4cf81803aace5864a04cd605"
+    },
+    {
+      "name": "coverage-model",
+      "status": "quality_gate_failed",
+      "exitCode": 2,
+      "startedAt": "2026-10-01T18:58:49.313424+00:00",
+      "finishedAt": "2026-10-01T18:58:59.234987+00:00",
+      "log": "artifacts/local/runs/20261001T185346643123Z/coverage-model.log",
+      "logHash": "25cad8095eba253e48381e2b9e88f5006f7e2a9a64986167e256bf20c11cb438"
+    },
+    {
+      "name": "question-model",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-01T18:58:59.235798+00:00",
+      "finishedAt": "2026-10-01T18:59:23.007423+00:00",
+      "log": "artifacts/local/runs/20261001T185346643123Z/question-model.log",
+      "logHash": "ebc5b6123207183620b3367f284232f9116f0b0bb20149883cd8d090f7f68618"
+    },
+    {
+      "name": "filing-model",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-01T18:59:23.008183+00:00",
+      "finishedAt": "2026-10-01T18:59:37.514955+00:00",
+      "log": "artifacts/local/runs/20261001T185346643123Z/filing-model.log",
+      "logHash": "05a7aa597bcc16a57b65806f42ffc28f665303b42539780c806b28347f7f4d22"
+    },
+    {
+      "name": "register-cash-conditions",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-01T18:59:37.515438+00:00",
+      "finishedAt": "2026-10-01T18:59:44.316405+00:00",
+      "log": "artifacts/local/runs/20261001T185346643123Z/register-cash-conditions.log",
+      "logHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "register-receivable-conditions",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-01T18:59:44.316877+00:00",
+      "finishedAt": "2026-10-01T18:59:51.018872+00:00",
+      "log": "artifacts/local/runs/20261001T185346643123Z/register-receivable-conditions.log",
+      "logHash": "5a91db2e38dac97e3b4d989866353e23b69d5e5996baf0ad874d5a08510f5dba"
+    },
+    {
+      "name": "observe",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-01T18:59:51.019356+00:00",
+      "finishedAt": "2026-10-01T18:59:57.693073+00:00",
+      "log": "artifacts/local/runs/20261001T185346643123Z/observe.log",
+      "logHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "research-journal",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-01T18:59:57.693638+00:00",
+      "finishedAt": "2026-10-01T19:00:04.607742+00:00",
+      "log": "artifacts/local/runs/20261001T185346643123Z/research-journal.log",
+      "logHash": "0b7434cf41f456da944461e4e57d0fd5719d86726355aed8c5b62cc32599b50e"
+    },
+    {
+      "name": "forward-study",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-01T19:00:04.608324+00:00",
+      "finishedAt": "2026-10-01T19:00:11.471860+00:00",
+      "log": "artifacts/local/runs/20261001T185346643123Z/forward-study.log",
+      "logHash": "df0906a227c1ce2e4da2d51553935aaef8ed2faed18dd8f141a347d78ae7e330"
+    },
+    {
+      "name": "price-crosscheck",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-01T19:00:11.472585+00:00",
+      "finishedAt": "2026-10-01T19:00:12.348448+00:00",
+      "log": "artifacts/local/runs/20261001T185346643123Z/price-crosscheck.log",
+      "logHash": "77fd655664539583f73f6efb5fa79eb7a5bfb70184aeb0d98ebc8278b60534f5"
+    },
+    {
+      "name": "local-records",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-01T19:00:12.349223+00:00",
+      "finishedAt": "2026-10-01T19:00:18.845974+00:00",
+      "log": "artifacts/local/runs/20261001T185346643123Z/local-records.log",
+      "logHash": "1daf0c99542c96b02b5e617e66d1a63022c539a791f527a992b20aa09e60767a"
+    }
+  ],
+  "finishedAt": "2026-10-01T19:01:36.465665+00:00",
+  "interruptionReason": "New source audit found issued parent convertible debt at Samsung SDS absent from price/share scope. Preserve partial checks; rebuild inputs before resuming."
+}

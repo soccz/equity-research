@@ -1,0 +1,38 @@
+{
+  "ticker": "090430",
+  "asOf": "2026-09-29",
+  "checkedAt": "2026-10-01T10:22:59.644930+00:00",
+  "filing": {
+    "corp_code": "00583424",
+    "corp_name": "아모레퍼시픽",
+    "stock_code": "090430",
+    "corp_cls": "Y",
+    "report_nm": "반기보고서 (2026.06)",
+    "rcept_no": "20260814002449",
+    "flr_nm": "아모레퍼시픽",
+    "rcept_dt": "20260814",
+    "rm": ""
+  },
+  "queries": [
+    {
+      "file": "data/sources/dart-list-090430-1306bca8dea807b3.json",
+      "sha256": "1306bca8dea807b3a7319b6c2cc1d288fac171432a52e4cb115efc504b05bcdb",
+      "parameters": {
+        "corp_code": "00583424",
+        "bgn_de": "20250101",
+        "end_de": "20260929",
+        "pblntf_ty": "A",
+        "last_reprt_at": "N",
+        "page_count": 100,
+        "page_no": 1,
+        "sort": "date",
+        "sort_mth": "desc"
+      }
+    }
+  ],
+  "package": {
+    "file": "data/sources/dart-package-20260814002449-cddef0289338a366.zip",
+    "sha256": "cddef0289338a366d482c9a2635c7d3c3a1e78c9d05576129b6c549fd16b23c1"
+  },
+  "instanceHash": "e22f1800e641c611280221092a4e868386df69c222d40722f3b727ac26b46fce"
+}

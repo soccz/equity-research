@@ -1,0 +1,10 @@
+{
+  "status": "interrupted",
+  "observedExitCode": 143,
+  "originalRunHash": "42c6cf6468d00b15d0e64e0369a36f0e3fea7831adc5f9725ba403ddcb282e15",
+  "originalRun": "artifacts/local/runs/20261001T121344494890Z/run.json",
+  "lastCompletedStage": "register-receivable-conditions",
+  "pendingStage": "observe",
+  "cause": "Process termination observed from tool session 10141; no Python exception or completed run record. Specific sender/cause not established.",
+  "replacementRun": "artifacts/local/runs/20261001T121823805634Z/run.json"
+}

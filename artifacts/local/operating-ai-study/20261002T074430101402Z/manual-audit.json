@@ -1,0 +1,54 @@
+{
+  "checkedAt": "2026-10-02T07:50:42.955313+00:00",
+  "protocolHash": "dc681b639599372a8080e4cc1b7725313c2da2583ec78b8be68e9c67573c8b4c",
+  "resultHash": "f2e1cf4124476baf51767904adba7b56bd1e53834ecb520947697ec75af734e4",
+  "productionAdoption": false,
+  "financialApproval": false,
+  "independentReview": false,
+  "evaluationCounts": {
+    "falseAccepts": 2,
+    "falseRejects": 3,
+    "invalid": 0,
+    "total": 16
+  },
+  "verdict": "quality_gate_failed",
+  "observations": [
+    {
+      "company": "TXN",
+      "roles": [
+        "hypothesis",
+        "alternative",
+        "distinguish"
+      ],
+      "finding": "Output confuses an income-tax cash benefit with operating margin; its proposed intersegment comparison does not identify that mechanism. Added future date violates the no-new-numerals constraint."
+    },
+    {
+      "company": "ADI",
+      "roles": [
+        "alternative",
+        "distinguish"
+      ],
+      "finding": "Output treats reinvestment cash as financing activity and asserts an unsupported margin mechanism. Own reviewer accepts the incorrect classification."
+    },
+    {
+      "company": "ADBE",
+      "roles": [
+        "hypothesis",
+        "alternative",
+        "distinguish"
+      ],
+      "finding": "Output proposes operating cash turning into investing cash and asserts an XBRL-versus-prose sign conflict absent from the packet. Own reviewer accepts the fabricated sign explanation."
+    },
+    {
+      "company": "CRM",
+      "roles": [
+        "hypothesis",
+        "alternative",
+        "distinguish",
+        "missing"
+      ],
+      "finding": "Output invents a relation between segment margin and financing-versus-lease reconciliation, compares amounts from different scopes, and changes the monetary scale. Draft rejected before self-review."
+    }
+  ],
+  "nextExperiment": "Break the task into one source-bound assumption challenge per call, require explicit evidence and assumption IDs, then evaluate from scratch. Existing pilot remains failed; do not reuse this evaluation as approval."
+}

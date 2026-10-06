@@ -1,0 +1,38 @@
+{
+  "ticker": "006400",
+  "asOf": "2026-09-29",
+  "checkedAt": "2026-09-30T09:16:33.419119+00:00",
+  "filing": {
+    "corp_code": "00126362",
+    "corp_name": "삼성SDI",
+    "stock_code": "006400",
+    "corp_cls": "Y",
+    "report_nm": "반기보고서 (2026.06)",
+    "rcept_no": "20260814003578",
+    "flr_nm": "삼성SDI",
+    "rcept_dt": "20260814",
+    "rm": ""
+  },
+  "queries": [
+    {
+      "file": "data/sources/dart-list-006400-2b838fd64d5bfe17.json",
+      "sha256": "2b838fd64d5bfe178dd8425856d3c45e0016a3dfa3feff676e974924345444e8",
+      "parameters": {
+        "corp_code": "00126362",
+        "bgn_de": "20250101",
+        "end_de": "20260929",
+        "pblntf_ty": "A",
+        "last_reprt_at": "N",
+        "page_count": 100,
+        "page_no": 1,
+        "sort": "date",
+        "sort_mth": "desc"
+      }
+    }
+  ],
+  "package": {
+    "file": "data/sources/dart-package-20260814003578-791f3e065fb22761.zip",
+    "sha256": "791f3e065fb22761dadcd0ca1e4c44e13f3124325992bbaf73d62fa824c136d8"
+  },
+  "instanceHash": "b3b4169922d6120053cbced69cd22044d246d11f8fef4902306cc46201078b70"
+}

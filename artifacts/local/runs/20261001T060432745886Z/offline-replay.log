@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/mnt/20t/주식/scripts/check-replay.py", line 72, in <module>
+    raise AssertionError(f"Reproduction differs: {field}")
+AssertionError: Reproduction differs: companies

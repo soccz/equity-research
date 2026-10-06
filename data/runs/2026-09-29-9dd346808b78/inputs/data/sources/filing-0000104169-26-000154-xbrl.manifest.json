@@ -1,0 +1,15 @@
+{
+  "file": "data/sources/filing-0000104169-26-000154-2e39345b995eb8cd.xbrl",
+  "sha256": "2e39345b995eb8cdc9675225f308bdf3c49dc0ae05787c7d1c61a3291eab2ba5",
+  "url": "https://www.sec.gov/Archives/edgar/data/104169/000010416926000154/wmt-20260731_htm.xml",
+  "primaryUrl": "https://www.sec.gov/Archives/edgar/data/104169/000010416926000154/wmt-20260731.htm",
+  "provider": "SEC",
+  "accession": "0000104169-26-000154",
+  "cik": 104169,
+  "retrievedAt": "2026-10-01T10:26:36.575425+00:00",
+  "indexSource": {
+    "file": "data/sources/filing-0000104169-26-000154-index-f7c0ea584c9ed580.html",
+    "sha256": "f7c0ea584c9ed58073aff2bedd7240e589c0cc0b3f7e1048820295b0327a62b0",
+    "url": "https://www.sec.gov/Archives/edgar/data/104169/000010416926000154/0000104169-26-000154-index.html"
+  }
+}

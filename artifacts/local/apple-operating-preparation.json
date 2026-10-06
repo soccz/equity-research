@@ -1,0 +1,156 @@
+{
+  "company": "AAPL",
+  "currentFiling": {
+    "file": "data/sources/filing-0000320193-26-000020-28f986bb243c8fdd.xbrl",
+    "sha256": "28f986bb243c8fdd445560d381df4b57912ca290b03b8451ecd518e63cdb5d2b",
+    "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627_htm.xml",
+    "primaryUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm",
+    "provider": "SEC",
+    "accession": "0000320193-26-000020",
+    "cik": 320193,
+    "retrievedAt": "2026-09-30T11:11:02.954092+00:00"
+  },
+  "annualFiling": {
+    "accession": "0000320193-25-000079",
+    "cik": 320193,
+    "file": "data/sources/filing-0000320193-25-000079-e1076735f1c81bc9.xbrl",
+    "indexSource": {
+      "file": "data/sources/filing-0000320193-25-000079-index-04fec1e0446b3186.html",
+      "sha256": "04fec1e0446b3186e6d2029bdcfc8a1d0ce82cd598d3183b917e825f889cf7ae",
+      "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/0000320193-25-000079-index.html"
+    },
+    "primaryUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm",
+    "provider": "SEC",
+    "retrievedAt": "2026-10-01T05:02:30.472593+00:00",
+    "sha256": "e1076735f1c81bc96d5c1ff6e1a9d23515d6eacf52b405cb1f7da3e379ac533b",
+    "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927_htm.xml"
+  },
+  "currentCorpusHash": "68b4ce050be11471fffcb7ea0db86254024e6ecec9d42573f1205d29a3f36d52",
+  "sourceReadings": [
+    {
+      "heading": "",
+      "id": "230293b4c1010fe9827d",
+      "kind": "paragraph",
+      "ordinal": 361,
+      "sourceFile": "data/sources/filing-0000320193-26-000020-f930cba4544bda2b.html",
+      "sourceHash": "f930cba4544bda2b9b998437f66ba6d801dbe635b352a84dd4c1fa67f53e85e2",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm",
+      "text": "Products gross margin and gross margin percentage increased during the third quarter and first nine months of 2026 compared to the same periods in 2025 primarily due to a different mix of products and tariff refunds, partially offset by higher costs, including memory."
+    },
+    {
+      "heading": "",
+      "id": "5601f858904c4dc5557c",
+      "kind": "paragraph",
+      "ordinal": 380,
+      "sourceFile": "data/sources/filing-0000320193-26-000020-f930cba4544bda2b.html",
+      "sourceHash": "f930cba4544bda2b9b998437f66ba6d801dbe635b352a84dd4c1fa67f53e85e2",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm",
+      "text": "The Company’s effective tax rate for the third quarter and first nine months of 2026 was lower than the statutory federal income tax rate primarily due to a lower effective tax rate on foreign earnings, including the impact of changes in unrecognized tax benefits, the impact of the U.S. federal R&D credit, and tax benefits from share-based compensation, partially offset by state income taxes."
+    },
+    {
+      "heading": "",
+      "id": "6a06372d71aa7be655c4",
+      "kind": "paragraph",
+      "ordinal": 381,
+      "sourceFile": "data/sources/filing-0000320193-26-000020-f930cba4544bda2b.html",
+      "sourceHash": "f930cba4544bda2b9b998437f66ba6d801dbe635b352a84dd4c1fa67f53e85e2",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm",
+      "text": "The Company’s effective tax rate for the third quarter of 2026 was higher compared to the third quarter of 2025 primarily due to a higher effective tax rate on foreign earnings, partially offset by the impact of changes in unrecognized tax benefits and tax benefits from share-based compensation. The Company’s effective tax rate for the first nine months of 2026 was higher compared to the same period in 2025 primarily due to a higher effective tax rate on foreign earnings, including the impact of changes in unrecognized tax benefits, the impact of foreign currency loss regulations issued by the U.S. Department of the Treasury in December 2024, and the tax impact from foreign currency revaluations in the first quarter of 2025 related to the State Aid Decision."
+    }
+  ],
+  "annualLeaseInterestFacts": [
+    {
+      "start": "2024-09-29",
+      "end": "2025-09-27",
+      "dimensions": [],
+      "tag": "IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest",
+      "taxonomy": "http://fasb.org/us-gaap/2025",
+      "value": 132729000000.0,
+      "unit": "USD",
+      "context": "c-1",
+      "factId": "f-108",
+      "decimals": "-6",
+      "accession": "0000320193-25-000079",
+      "filedAt": "2025-10-31",
+      "sourceFile": "data/sources/filing-0000320193-25-000079-e1076735f1c81bc9.xbrl",
+      "sourceHash": "e1076735f1c81bc96d5c1ff6e1a9d23515d6eacf52b405cb1f7da3e379ac533b",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm"
+    },
+    {
+      "start": "2024-09-29",
+      "end": "2025-09-27",
+      "dimensions": [],
+      "tag": "OperatingLeaseCost",
+      "taxonomy": "http://fasb.org/us-gaap/2025",
+      "value": 2100000000.0,
+      "unit": "USD",
+      "context": "c-1",
+      "factId": "f-816",
+      "decimals": "-8",
+      "accession": "0000320193-25-000079",
+      "filedAt": "2025-10-31",
+      "sourceFile": "data/sources/filing-0000320193-25-000079-e1076735f1c81bc9.xbrl",
+      "sourceHash": "e1076735f1c81bc96d5c1ff6e1a9d23515d6eacf52b405cb1f7da3e379ac533b",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm"
+    },
+    {
+      "start": "2024-09-29",
+      "end": "2025-09-27",
+      "dimensions": [],
+      "tag": "VariableLeaseCost",
+      "taxonomy": "http://fasb.org/us-gaap/2025",
+      "value": 16100000000.0,
+      "unit": "USD",
+      "context": "c-1",
+      "factId": "f-819",
+      "decimals": "-8",
+      "accession": "0000320193-25-000079",
+      "filedAt": "2025-10-31",
+      "sourceFile": "data/sources/filing-0000320193-25-000079-e1076735f1c81bc9.xbrl",
+      "sourceHash": "e1076735f1c81bc96d5c1ff6e1a9d23515d6eacf52b405cb1f7da3e379ac533b",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm"
+    },
+    {
+      "start": "2024-09-29",
+      "end": "2025-09-27",
+      "dimensions": [],
+      "tag": "OperatingLeasePayments",
+      "taxonomy": "http://fasb.org/us-gaap/2025",
+      "value": 2100000000.0,
+      "unit": "USD",
+      "context": "c-1",
+      "factId": "f-822",
+      "decimals": "-8",
+      "accession": "0000320193-25-000079",
+      "filedAt": "2025-10-31",
+      "sourceFile": "data/sources/filing-0000320193-25-000079-e1076735f1c81bc9.xbrl",
+      "sourceHash": "e1076735f1c81bc96d5c1ff6e1a9d23515d6eacf52b405cb1f7da3e379ac533b",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm"
+    },
+    {
+      "start": "2024-09-29",
+      "end": "2025-09-27",
+      "dimensions": [],
+      "tag": "RightofUseAssetsObtainedinExchangeforOperatingandFinanceLeaseLiabilities",
+      "taxonomy": "http://www.apple.com/20250927",
+      "value": 2800000000.0,
+      "unit": "USD",
+      "context": "c-1",
+      "factId": "f-825",
+      "decimals": "-8",
+      "accession": "0000320193-25-000079",
+      "filedAt": "2025-10-31",
+      "sourceFile": "data/sources/filing-0000320193-25-000079-e1076735f1c81bc9.xbrl",
+      "sourceHash": "e1076735f1c81bc96d5c1ff6e1a9d23515d6eacf52b405cb1f7da3e379ac533b",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm"
+    }
+  ],
+  "status": "preparation_only",
+  "openIssues": [
+    "Current interim source has no selected finance lease principal fact; never silently set it to zero.",
+    "Product/services gross profit and shared R&D/SG&A should replace geographic profit duplication in a proposed operating model.",
+    "Tariff refunds and tax revaluation effects need period-specific normalization.",
+    "Do not label net other income as pure interest or automatically recurring."
+  ],
+  "implementedOperatingModel": false
+}

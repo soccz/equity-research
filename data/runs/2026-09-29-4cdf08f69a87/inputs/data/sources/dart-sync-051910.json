@@ -1,0 +1,38 @@
+{
+  "ticker": "051910",
+  "asOf": "2026-09-29",
+  "checkedAt": "2026-09-30T09:16:35.916852+00:00",
+  "filing": {
+    "corp_code": "00356361",
+    "corp_name": "LG화학",
+    "stock_code": "051910",
+    "corp_cls": "Y",
+    "report_nm": "반기보고서 (2026.06)",
+    "rcept_no": "20260814002655",
+    "flr_nm": "LG화학",
+    "rcept_dt": "20260814",
+    "rm": ""
+  },
+  "queries": [
+    {
+      "file": "data/sources/dart-list-051910-175e14b4f2fbb042.json",
+      "sha256": "175e14b4f2fbb0424524e74f353f807c6b6957d17e6ddbd307904b047e146f79",
+      "parameters": {
+        "corp_code": "00356361",
+        "bgn_de": "20250101",
+        "end_de": "20260929",
+        "pblntf_ty": "A",
+        "last_reprt_at": "N",
+        "page_count": 100,
+        "page_no": 1,
+        "sort": "date",
+        "sort_mth": "desc"
+      }
+    }
+  ],
+  "package": {
+    "file": "data/sources/dart-package-20260814002655-ce041f655c2e6b37.zip",
+    "sha256": "ce041f655c2e6b370a98aa9f6f2ff0438cfc095d549464fd984b8a7131f5b75a"
+  },
+  "instanceHash": "6cc2d0f83786437579113c4060edd22d27f8b95e30e7bb6bae8632e4008c9c85"
+}

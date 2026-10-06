@@ -1,0 +1,5 @@
+
+.operating-implied-margins { margin:24px 0; padding:18px; border:1px solid var(--line); }
+.operating-implied-margins p { font-size:13px; line-height:1.8; }
+.operating-implied-margins button { display:block; margin-top:7px; padding:7px 10px; border:1px solid var(--line); background:#eff3eb; color:var(--green); }
+@media print { .operating-implied-margins { break-inside:avoid; } .operating-implied-margins p { font-size:10px; } .operating-implied-margins button { display:none; } }

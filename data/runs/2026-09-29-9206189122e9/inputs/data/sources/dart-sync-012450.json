@@ -1,0 +1,38 @@
+{
+  "ticker": "012450",
+  "asOf": "2026-09-29",
+  "checkedAt": "2026-09-30T09:16:56.470699+00:00",
+  "filing": {
+    "corp_code": "00126566",
+    "corp_name": "한화에어로스페이스",
+    "stock_code": "012450",
+    "corp_cls": "Y",
+    "report_nm": "반기보고서 (2026.06)",
+    "rcept_no": "20260814003198",
+    "flr_nm": "한화에어로스페이스",
+    "rcept_dt": "20260814",
+    "rm": ""
+  },
+  "queries": [
+    {
+      "file": "data/sources/dart-list-012450-42b62487918875db.json",
+      "sha256": "42b62487918875db0f80b620bd27604f7527080b17a0206ccb7e5b75dd40bd47",
+      "parameters": {
+        "corp_code": "00126566",
+        "bgn_de": "20250101",
+        "end_de": "20260929",
+        "pblntf_ty": "A",
+        "last_reprt_at": "N",
+        "page_count": 100,
+        "page_no": 1,
+        "sort": "date",
+        "sort_mth": "desc"
+      }
+    }
+  ],
+  "package": {
+    "file": "data/sources/dart-package-20260814003198-b7d9528b2f1e2696.zip",
+    "sha256": "b7d9528b2f1e26960a2f93d3859259d3483bad194a510f9d9e0b36ed7baf560a"
+  },
+  "instanceHash": "96f3eda4bd9693c1c06611ce5905c8aa6361f020ab765c40f70a13cfe5440423"
+}

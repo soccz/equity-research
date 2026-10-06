@@ -1,0 +1,25 @@
+[unit] /home/soccz/.pyenv/versions/3.12.9/bin/python3 -m unittest discover -s tests -v
+[unit] passed — artifacts/local/runs/20261001T071242608911Z/unit.log
+[analysis] /home/soccz/.pyenv/versions/3.12.9/bin/python3 -m equitylab refresh --as-of 2026-09-29
+[analysis] passed — artifacts/local/runs/20261001T071242608911Z/analysis.log
+[register-cash-conditions] /home/soccz/.pyenv/versions/3.12.9/bin/python3 -m equitylab register
+[register-cash-conditions] passed — artifacts/local/runs/20261001T071242608911Z/register-cash-conditions.log
+[register-receivable-conditions] /home/soccz/.pyenv/versions/3.12.9/bin/python3 -m equitylab register-receivables
+[register-receivable-conditions] passed — artifacts/local/runs/20261001T071242608911Z/register-receivable-conditions.log
+[observe] /home/soccz/.pyenv/versions/3.12.9/bin/python3 -m equitylab observe
+[observe] passed — artifacts/local/runs/20261001T071242608911Z/observe.log
+[research-journal] /home/soccz/.pyenv/versions/3.12.9/bin/python3 -m equitylab register-cases
+[research-journal] passed — artifacts/local/runs/20261001T071242608911Z/research-journal.log
+[forward-study] /home/soccz/.pyenv/versions/3.12.9/bin/python3 -m equitylab register-study
+[forward-study] passed — artifacts/local/runs/20261001T071242608911Z/forward-study.log
+[price-crosscheck] node scripts/check-dossier.mjs
+[price-crosscheck] passed — artifacts/local/runs/20261001T071242608911Z/price-crosscheck.log
+[local-records] /home/soccz/.pyenv/versions/3.12.9/bin/python3 scripts/check-local-records.py
+[local-records] passed — artifacts/local/runs/20261001T071242608911Z/local-records.log
+[offline-replay] /home/soccz/.pyenv/versions/3.12.9/bin/python3 scripts/check-replay.py
+[offline-replay] passed — artifacts/local/runs/20261001T071242608911Z/offline-replay.log
+[browser-pdf] node scripts/check-live.mjs
+[browser-pdf] passed — artifacts/local/runs/20261001T071242608911Z/browser-pdf.log
+[artifacts] /home/soccz/.pyenv/versions/3.12.9/bin/python3 scripts/check-artifacts.py
+[artifacts] passed — artifacts/local/runs/20261001T071242608911Z/artifacts.log
+Verified private outputs: app/index.html and artifacts/live/*.pdf

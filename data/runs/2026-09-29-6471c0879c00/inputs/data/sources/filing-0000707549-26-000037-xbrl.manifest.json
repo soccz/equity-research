@@ -1,0 +1,15 @@
+{
+  "file": "data/sources/filing-0000707549-26-000037-245115118bda565a.xbrl",
+  "sha256": "245115118bda565a752cad0dd16ca255e524dc67da5624f9b8417f3f54519b6a",
+  "url": "https://www.sec.gov/Archives/edgar/data/707549/000070754926000037/lrcx-20260628_htm.xml",
+  "primaryUrl": "https://www.sec.gov/Archives/edgar/data/707549/000070754926000037/lrcx-20260628.htm",
+  "provider": "SEC",
+  "accession": "0000707549-26-000037",
+  "cik": 707549,
+  "retrievedAt": "2026-09-30T11:16:00.932632+00:00",
+  "indexSource": {
+    "file": "data/sources/filing-0000707549-26-000037-index-2a5322e22ff46db4.html",
+    "sha256": "2a5322e22ff46db420e339bcb45ba6551fe7b0dded277761ed421bc63e410665",
+    "url": "https://www.sec.gov/Archives/edgar/data/707549/000070754926000037/0000707549-26-000037-index.html"
+  }
+}

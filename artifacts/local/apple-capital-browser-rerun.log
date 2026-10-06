@@ -1,0 +1,225 @@
+PASS Printed version and page counts use a reserved page-margin box
+PASS Registered real companies with a source cutoff
+PASS US filter affects table and scatter
+PASS Korean filter contains real Korean securities
+PASS Ticker search selects Microsoft in the table and chart
+PASS Empty search is explained without invented companies
+PASS Sector filter uses the coverage classifications
+PASS Candidate filter uses declared current financial conditions
+PASS Micron report contains actual dates and currency
+PASS Local filing corpus opens and verifies without network access
+PASS Source search finds the exact price and shipment explanation
+PASS A research revision preserves its selected filing passage
+PASS Reimporting an identical notebook does not duplicate records
+PASS Damaged imported notebook is rejected without overwriting history
+PASS In-progress research survives reload without rewriting saved history
+PASS Ephemeral browser test notes do not enter delivered reports
+PASS Memory analysis separates reporting periods and dividend sensitivity
+PASS Evidence is readable with source period and raw definitions
+PASS Escape restores evidence trigger focus
+PASS Cash bridge reconciles to the reported operating cash flow
+PASS Receivable proxies expose both averaging choices and limits
+PASS Management attribution is distinct from independent evidence
+PASS Opening balance and comparative period retain their filing identities
+PASS Historical cash scenarios show source anchors and non-probabilistic cases
+PASS Additional compensation and lease burden is an explicit assumption
+PASS Initial assumptions restore without silently rounding filing ratios
+PASS Three filing observations remain separate from generated causes
+PASS Cross-border comparison exposes unequal reporting periods
+PASS Private model commentary has traceable facts and explicit review limits
+PASS Every model sentence has its own exact-text review
+PASS Synthetic evaluation is labelled separately from real company accuracy
+PASS Uncleared notes are collapsed while computed facts stay visible
+PASS Micron recast segment path reconciles tax-aware funding and government support
+PASS Micron headline uses the same source-bound business cash assumptions
+PASS Micron funding assumptions reopen under the exact filing context
+PASS Micron five-segment cash path fits mobile viewport
+PASS Individual real report NVDA
+PASS Archived filing corpus identity and hash NVDA
+PASS Individual real report GOOGL
+PASS Archived filing corpus identity and hash GOOGL
+PASS Individual real report AAPL
+PASS Archived filing corpus identity and hash AAPL
+PASS Individual real report MSFT
+PASS Archived filing corpus identity and hash MSFT
+PASS Individual real report AMZN
+PASS Archived filing corpus identity and hash AMZN
+PASS Individual real report META
+PASS Archived filing corpus identity and hash META
+PASS Individual real report AMD
+PASS Archived filing corpus identity and hash AMD
+PASS Individual real report AVGO
+PASS Archived filing corpus identity and hash AVGO
+PASS Individual real report QCOM
+PASS Archived filing corpus identity and hash QCOM
+PASS Individual real report INTC
+PASS Archived filing corpus identity and hash INTC
+PASS Individual real report AMAT
+PASS Archived filing corpus identity and hash AMAT
+PASS Individual real report LRCX
+PASS Archived filing corpus identity and hash LRCX
+PASS Individual real report TSLA
+PASS Archived filing corpus identity and hash TSLA
+PASS Individual real report GM
+PASS Archived filing corpus identity and hash GM
+PASS Individual real report F
+PASS Archived filing corpus identity and hash F
+PASS Individual real report GE
+PASS Archived filing corpus identity and hash GE
+PASS Individual real report CAT
+PASS Archived filing corpus identity and hash CAT
+PASS Individual real report LLY
+PASS Archived filing corpus identity and hash LLY
+PASS Individual real report JNJ
+PASS Archived filing corpus identity and hash JNJ
+PASS Individual real report 000660
+PASS Archived filing corpus identity and hash 000660
+PASS Individual real report 005930
+PASS Archived filing corpus identity and hash 005930
+PASS Individual real report 035420
+PASS Archived filing corpus identity and hash 035420
+PASS Individual real report 066570
+PASS Archived filing corpus identity and hash 066570
+PASS Individual real report 005380
+PASS Archived filing corpus identity and hash 005380
+PASS Individual real report 000270
+PASS Archived filing corpus identity and hash 000270
+PASS Individual real report 012330
+PASS Archived filing corpus identity and hash 012330
+PASS Individual real report 035720
+PASS Archived filing corpus identity and hash 035720
+PASS Individual real report 006400
+PASS Archived filing corpus identity and hash 006400
+PASS Individual real report 051910
+PASS Archived filing corpus identity and hash 051910
+PASS Individual real report 373220
+PASS Archived filing corpus identity and hash 373220
+PASS Individual real report 005490
+PASS Archived filing corpus identity and hash 005490
+PASS Individual real report 207940
+PASS Archived filing corpus identity and hash 207940
+PASS Individual real report 068270
+PASS Archived filing corpus identity and hash 068270
+PASS Individual real report 000100
+PASS Archived filing corpus identity and hash 000100
+PASS Individual real report 128940
+PASS Archived filing corpus identity and hash 128940
+PASS Individual real report 329180
+PASS Archived filing corpus identity and hash 329180
+PASS Individual real report 012450
+PASS Archived filing corpus identity and hash 012450
+PASS Individual real report 034020
+PASS Archived filing corpus identity and hash 034020
+PASS Individual real report 267260
+PASS Archived filing corpus identity and hash 267260
+PASS Individual real report NFLX
+PASS Archived filing corpus identity and hash NFLX
+PASS Individual real report CRM
+PASS Archived filing corpus identity and hash CRM
+PASS Individual real report ORCL
+PASS Archived filing corpus identity and hash ORCL
+PASS Individual real report ADBE
+PASS Archived filing corpus identity and hash ADBE
+PASS Individual real report NOW
+PASS Archived filing corpus identity and hash NOW
+PASS Individual real report COST
+PASS Archived filing corpus identity and hash COST
+PASS Individual real report WMT
+PASS Archived filing corpus identity and hash WMT
+PASS Individual real report HD
+PASS Archived filing corpus identity and hash HD
+PASS Individual real report TXN
+PASS Archived filing corpus identity and hash TXN
+PASS Individual real report ADI
+PASS Archived filing corpus identity and hash ADI
+PASS Individual real report 028260
+PASS Archived filing corpus identity and hash 028260
+PASS Individual real report 017670
+PASS Archived filing corpus identity and hash 017670
+PASS Individual real report 030200
+PASS Archived filing corpus identity and hash 030200
+PASS Individual real report 009150
+PASS Archived filing corpus identity and hash 009150
+PASS Individual real report 011070
+PASS Archived filing corpus identity and hash 011070
+PASS Individual real report 018260
+PASS Archived filing corpus identity and hash 018260
+PASS Individual real report 259960
+PASS Archived filing corpus identity and hash 259960
+PASS Individual real report 251270
+PASS Archived filing corpus identity and hash 251270
+PASS Individual real report 090430
+PASS Archived filing corpus identity and hash 090430
+PASS Individual real report 271560
+PASS Archived filing corpus identity and hash 271560
+PASS Discontinued cash is shown by period and blocks price inference
+PASS Mixed business scope cannot create an automatic relative cash advantage
+PASS Broadcom allocates disclosed costs before comparing segment and consolidated profits
+PASS Thirteen reviewed period bridges retain ten exact reconciliations and three source gaps
+PASS Apple distinguishes product revenue from geographic operating profits
+PASS Trailing-year numbers preserve the annual plus current less prior calculation
+PASS Samsung segment residual and intercompany basis remain visible
+PASS Samsung trailing profit gap is displayed in won instead of rounding to zero
+PASS Small source precision gaps remain visible for all three Korean reporting periods
+PASS Shipbuilder merger perimeter is explicit beside the trailing-year segment table
+PASS Conflicting dividends are shown as a data gap
+PASS Authored business reasoning retains filing sources and interpretation limits
+PASS Source-backed case becomes an editable local draft without automatic approval
+PASS Starting from a source case preserves an existing authored draft
+PASS Filing readings keep original quotes separate from unreviewed meanings
+PASS Actual source audit remains tied to the exact model record
+PASS A local source reading imports as an unapproved editable draft
+PASS Both sides of a business comparison retain their own current filing sources
+PASS Fresh calculation exports keep all current company model inputs current
+PASS All companies have current source-bound local research selections
+PASS Two selected designs distinguish authored research plans from factual causes
+PASS Research view links observations to a frozen follow-up condition
+PASS Company condition history opens without unrelated companies
+PASS Company-wide local notes have four individually reviewed roles
+PASS Coverage development gate is visible even when it fails
+PASS Microsoft business segments reconcile to reported consolidated revenue
+PASS Microsoft separates finance lease principal from noncash additions
+PASS Original and revised model sentences remain available separately
+PASS Company print filename carries its own identity and date
+PASS Research judgment includes named segment changes and peer trade-offs
+PASS Research journal keeps future conditions separate from prediction scoring
+PASS Business cash source bridge reconciles and retains independent segment controls
+PASS Browser business cash calculation matches the independently executed Python output
+PASS Saved business assumptions reopen under the same source hash
+PASS Operating scenario moves exact assumptions and sources into the research notebook
+PASS Exported research notes restore the exact business scenario on a cleared browser
+PASS Changed source hashes cannot silently restore an old operating scenario
+PASS Cross-border comparison changes both facts and comparability cautions
+PASS Hyundai keeps financial services separate and cash residual unexplained
+PASS Hyundai equity requirements wait for preferred and minority interests
+PASS Amazon cash path separates six-month growth from trailing-year business amounts
+PASS Amazon retains negative cash instead of inventing a positive price
+PASS Amazon browser and Python agree on every cash year and inverse price requirement
+PASS Amazon exposes the three original cash periods and facility repayments
+PASS Amazon keeps unquantified energy periods separate from the known half-year gain
+PASS Known-gain exclusion changes future profit and cash while preserving the reported CFO bridge
+PASS Amazon normalization assumptions restore at full precision under the current model hash
+PASS A low-investment Amazon assumption exposes replacement-investment caution
+PASS Kia single-business model uses Korean currency and preserves all warranty periods
+PASS Kia separates accrual, cash reversal, and provision use
+PASS Kia browser and Python agree on every warranty cash amount and price
+PASS Korean business scenario restores its warranty parameters under the source hash
+PASS Print hides the focused main outline without removing keyboard focus
+PASS A mathematically zero working-capital amount is not displayed as negative zero
+PASS Tesla product gross margins remain distinct from unallocated operating costs
+PASS Tesla browser matches all Python cash and common-cost years including terminal
+PASS Credit shutdown preserves common operating costs instead of assuming cost relief
+PASS Disclosed investment floor stress includes intangible cash without double counting SpaceX
+PASS Tesla restores product and common-cost assumptions under the filing hash
+PASS Tesla common costs and product chart fit the mobile viewport
+PASS Apple product margins preserve nine-month growth, annual cash anchors and unquantified lease payments
+PASS Apple gross-profit path does not inherit Tesla credit controls or half-year labels
+PASS Apple headline uses the issuer terminal cash path instead of historical generic cash ratios
+PASS Apple exact product assumptions survive reload with source-bound tariff and lease context
+PASS Apple cash-anchor table and common-cost controls fit mobile viewport
+PASS Alphabet distinguishes designated shares, rounded outstanding shares and stock-payable dividends
+PASS Preferred conversion assumptions affect only the relevant stock class and preserve the equity hold
+Error: {"exceptionId":1,"text":"Uncaught","lineNumber":0,"columnNumber":0,"scriptId":"730","exception":{"type":"object","subtype":"error","className":"SyntaxError","description":"SyntaxError: Identifier 'e' has already been declared","objectId":"5254250662374635469.15.2"}}
+    at js (file:///mnt/20t/%EC%A3%BC%EC%8B%9D/scripts/check-live.mjs:63:38)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async file:///mnt/20t/%EC%A3%BC%EC%8B%9D/scripts/check-live.mjs:403:5

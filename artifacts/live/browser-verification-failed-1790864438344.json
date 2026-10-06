@@ -1,0 +1,61 @@
+{
+  "checkedAt": "2026-10-01T14:08:06.172Z",
+  "status": "failed",
+  "checks": [
+    "Private file workflow tested with HTTP and HTTPS requests blocked",
+    "Printed version and page counts use a reserved page-margin box",
+    "Registered real companies with a source cutoff",
+    "US filter affects table and scatter",
+    "Korean filter contains real Korean securities",
+    "Ticker search selects Microsoft in the table and chart",
+    "Empty search is explained without invented companies",
+    "Sector filter uses the coverage classifications",
+    "Candidate filter uses declared current financial conditions",
+    "Micron report contains actual dates and currency"
+  ],
+  "error": "AssertionError [ERR_ASSERTION]: Local filing corpus opens and verifies without network access\n\nfalse !== true\n",
+  "runtimeErrors": [
+    {
+      "exceptionId": 1,
+      "text": "Uncaught TypeError: Cannot read properties of undefined (reading 'sourceUrl')",
+      "lineNumber": 45,
+      "columnNumber": 4574,
+      "scriptId": "13",
+      "url": "file:///mnt/20t/%EC%A3%BC%EC%8B%9D/app/operating-model.js",
+      "stackTrace": {
+        "callFrames": [
+          {
+            "functionName": "",
+            "scriptId": "13",
+            "url": "file:///mnt/20t/%EC%A3%BC%EC%8B%9D/app/operating-model.js",
+            "lineNumber": 45,
+            "columnNumber": 4574
+          },
+          {
+            "functionName": "render",
+            "scriptId": "13",
+            "url": "file:///mnt/20t/%EC%A3%BC%EC%8B%9D/app/operating-model.js",
+            "lineNumber": 45,
+            "columnNumber": 4536
+          },
+          {
+            "functionName": "renderCompany",
+            "scriptId": "26",
+            "url": "file:///mnt/20t/%EC%A3%BC%EC%8B%9D/app/app.js",
+            "lineNumber": 99,
+            "columnNumber": 68
+          },
+          {
+            "functionName": "route",
+            "scriptId": "26",
+            "url": "file:///mnt/20t/%EC%A3%BC%EC%8B%9D/app/app.js",
+            "lineNumber": 181,
+            "columnNumber": 863
+          }
+        ]
+      },
+      "executionContextId": 2
+    }
+  ],
+  "stderr": ""
+}

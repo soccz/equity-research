@@ -1,0 +1,8 @@
+TypeError: Invalid URL
+    at new URL (node:internal/url:819:25)
+    at ready (file:///mnt/20t/%EC%A3%BC%EC%8B%9D/scripts/check-live.mjs:73:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async file:///mnt/20t/%EC%A3%BC%EC%8B%9D/scripts/check-live.mjs:120:3 {
+  code: 'ERR_INVALID_URL',
+  input: '[object Object]'
+}

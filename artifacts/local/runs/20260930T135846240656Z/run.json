@@ -1,0 +1,29 @@
+{
+  "runId": "20260930T135846240656Z",
+  "startedAt": "2026-09-30T13:58:46.240745+00:00",
+  "status": "failed",
+  "mode": "archived_sources_local_only",
+  "modelRequested": false,
+  "stages": [
+    {
+      "name": "unit",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-09-30T13:58:46.240869+00:00",
+      "finishedAt": "2026-09-30T13:59:14.294384+00:00",
+      "log": "artifacts/local/runs/20260930T135846240656Z/unit.log",
+      "logHash": "04708d4dea4272e65e2b6a2133c141b2f46f3d205f4db232fa848036224f2d4f"
+    },
+    {
+      "name": "analysis",
+      "status": "failed",
+      "exitCode": 1,
+      "startedAt": "2026-09-30T13:59:14.294905+00:00",
+      "finishedAt": "2026-09-30T13:59:34.890625+00:00",
+      "log": "artifacts/local/runs/20260930T135846240656Z/analysis.log",
+      "logHash": "870b2bb8ea7f637eaa9acab3229179864abcb566f6acd3fe96a80bd2680300f8"
+    }
+  ],
+  "error": "RuntimeError: analysis failed; see artifacts/local/runs/20260930T135846240656Z/analysis.log",
+  "finishedAt": "2026-09-30T13:59:34.891079+00:00"
+}

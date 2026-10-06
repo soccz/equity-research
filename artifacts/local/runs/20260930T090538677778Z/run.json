@@ -1,0 +1,96 @@
+{
+  "runId": "20260930T090538677778Z",
+  "startedAt": "2026-09-30T09:05:38.677867+00:00",
+  "status": "artifacts_verified",
+  "mode": "archived_sources_local_only",
+  "modelRequested": false,
+  "stages": [
+    {
+      "name": "unit",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-09-30T09:05:38.677993+00:00",
+      "finishedAt": "2026-09-30T09:05:42.278288+00:00",
+      "log": "artifacts/local/runs/20260930T090538677778Z/unit.log",
+      "logHash": "24d37f8082c073f9ad682802caf6d23ae2f2d629b6b56fa13e98e73894b232e1"
+    },
+    {
+      "name": "analysis",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-09-30T09:05:42.278768+00:00",
+      "finishedAt": "2026-09-30T09:05:48.465769+00:00",
+      "log": "artifacts/local/runs/20260930T090538677778Z/analysis.log",
+      "logHash": "a5b6e1f827ab155cc976c02371197adb08223e9942aa650a9a764dace8b9114a"
+    },
+    {
+      "name": "register-conditions",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-09-30T09:05:48.466261+00:00",
+      "finishedAt": "2026-09-30T09:05:48.776009+00:00",
+      "log": "artifacts/local/runs/20260930T090538677778Z/register-conditions.log",
+      "logHash": "5a91db2e38dac97e3b4d989866353e23b69d5e5996baf0ad874d5a08510f5dba"
+    },
+    {
+      "name": "observe",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-09-30T09:05:48.776449+00:00",
+      "finishedAt": "2026-09-30T09:05:49.068804+00:00",
+      "log": "artifacts/local/runs/20260930T090538677778Z/observe.log",
+      "logHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "price-crosscheck",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-09-30T09:05:49.069252+00:00",
+      "finishedAt": "2026-09-30T09:05:49.110242+00:00",
+      "log": "artifacts/local/runs/20260930T090538677778Z/price-crosscheck.log",
+      "logHash": "9615d0dad5595a983cd92742b6f9051cb946c0dccbdc5d5dc4a1c37d7c359c37"
+    },
+    {
+      "name": "offline-replay",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-09-30T09:05:49.110673+00:00",
+      "finishedAt": "2026-09-30T09:05:56.683722+00:00",
+      "log": "artifacts/local/runs/20260930T090538677778Z/offline-replay.log",
+      "logHash": "5e6774238faa6a93f30faa355d4b3f60469d033fd0449be28a8c2bc5b418c0f2"
+    },
+    {
+      "name": "browser-pdf",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-09-30T09:05:56.684175+00:00",
+      "finishedAt": "2026-09-30T09:06:07.912921+00:00",
+      "log": "artifacts/local/runs/20260930T090538677778Z/browser-pdf.log",
+      "logHash": "feac72925517d3aa385dfe2e5e98589cf42fd6c3af40e03ef22d7948ad0541e1"
+    },
+    {
+      "name": "artifacts",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-09-30T09:06:07.913381+00:00",
+      "finishedAt": "2026-09-30T09:06:10.368953+00:00",
+      "log": "artifacts/local/runs/20260930T090538677778Z/artifacts.log",
+      "logHash": "b1b33406b265f620c148973e4a9d5783c1e2f93fc4cfe6ca143ef746262b84c8"
+    }
+  ],
+  "snapshotHash": "1cf5c0c2e217e09162e5cf2092f0c7ad647f57da875e6802a2b36ac2835f158d",
+  "modelReviewStates": {
+    "MU": {
+      "status": "revision_required",
+      "displayEligible": false,
+      "recordHash": "a909e829b502abcac2ed349a047fa9921e27648e75f17be67e2bc5a7f668619c"
+    },
+    "000660": {
+      "status": "revision_required",
+      "displayEligible": false,
+      "recordHash": "52b45557ff176b4111dff378f37b38bce001e0c9e3f9d4cae037d95e424197f6"
+    }
+  },
+  "independentFinancialApproval": false,
+  "finishedAt": "2026-09-30T09:06:10.393694+00:00"
+}

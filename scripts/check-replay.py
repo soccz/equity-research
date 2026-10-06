@@ -37,6 +37,9 @@ with tempfile.TemporaryDirectory(prefix="equity-replay-", dir=temp_root) as fold
         for company in snapshot["companies"]
         for s in company.get("sources", [])
     }
+    sources.update(
+        {s["file"]: s["sha256"] for s in snapshot.get("registrySources", [])}
+    )
     for relative, expected in sources.items():
         verified_copy(ROOT / relative, replay / relative, expected)
     completed = subprocess.run(
@@ -44,7 +47,10 @@ with tempfile.TemporaryDirectory(prefix="equity-replay-", dir=temp_root) as fold
         cwd=replay,
         capture_output=True,
         text=True,
-        timeout=120,
+        # Sixty issuer-specific filings include large Korean XBRL documents.
+        # Keep a finite ceiling without treating the old 40-company time budget
+        # as an assertion about financial reproducibility.
+        timeout=600,
     )
     if completed.returncode:
         raise RuntimeError(completed.stdout + completed.stderr)
@@ -52,10 +58,13 @@ with tempfile.TemporaryDirectory(prefix="equity-replay-", dir=temp_root) as fold
     rebuilt = json.loads((replay / rebuilt_pointer["snapshot"]).read_text())
     fields = [
         "companies",
+        "peerStudies",
         "failures",
         "experiments",
         "fundamentalExperiments",
         "universeHash",
+        "registrySources",
+        "researchCohort",
         "researchProtocol",
         "engineFiles",
         "renderFiles",
@@ -72,7 +81,7 @@ report = dict(
     verifiedRawSources=len(sources),
     identicalFields=fields,
     method="isolated offline rebuild from archived code, input manifests and hash-verified originals",
-    exclusions="generation time, online retrieval mode and condition ledger are separate events",
+    exclusions="generation time, online retrieval mode, condition/model-note ledgers and local inference records are separate events",
 )
 (ROOT / "artifacts/live/replay-verification.json").write_text(
     json.dumps(report, ensure_ascii=False, indent=2) + "\n"

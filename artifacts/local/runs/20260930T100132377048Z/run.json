@@ -1,0 +1,83 @@
+{
+  "runId": "20260930T100132377048Z",
+  "startedAt": "2026-09-30T10:01:32.377147+00:00",
+  "status": "failed",
+  "mode": "archived_sources_local_only",
+  "modelRequested": false,
+  "stages": [
+    {
+      "name": "unit",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-09-30T10:01:32.377278+00:00",
+      "finishedAt": "2026-09-30T10:01:41.021023+00:00",
+      "log": "artifacts/local/runs/20260930T100132377048Z/unit.log",
+      "logHash": "777d079bdb7969f6c053f31b0dba97cafd9091961ee7f6faf736bb8a88349e72"
+    },
+    {
+      "name": "analysis",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-09-30T10:01:41.021565+00:00",
+      "finishedAt": "2026-09-30T10:01:53.184891+00:00",
+      "log": "artifacts/local/runs/20260930T100132377048Z/analysis.log",
+      "logHash": "af908053469cee3aba0b295698e81dd238aa0f0b2d5df898f16a96e6988d492b"
+    },
+    {
+      "name": "register-cash-conditions",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-09-30T10:01:53.185587+00:00",
+      "finishedAt": "2026-09-30T10:01:53.957470+00:00",
+      "log": "artifacts/local/runs/20260930T100132377048Z/register-cash-conditions.log",
+      "logHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "register-receivable-conditions",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-09-30T10:01:53.958158+00:00",
+      "finishedAt": "2026-09-30T10:01:54.669508+00:00",
+      "log": "artifacts/local/runs/20260930T100132377048Z/register-receivable-conditions.log",
+      "logHash": "5a91db2e38dac97e3b4d989866353e23b69d5e5996baf0ad874d5a08510f5dba"
+    },
+    {
+      "name": "observe",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-09-30T10:01:54.670179+00:00",
+      "finishedAt": "2026-09-30T10:01:55.386074+00:00",
+      "log": "artifacts/local/runs/20260930T100132377048Z/observe.log",
+      "logHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "price-crosscheck",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-09-30T10:01:55.386697+00:00",
+      "finishedAt": "2026-09-30T10:01:55.473825+00:00",
+      "log": "artifacts/local/runs/20260930T100132377048Z/price-crosscheck.log",
+      "logHash": "3e2e8b3c15dedfb1defaa33481623d0d1349123cf30f9c933eb4c921162ce244"
+    },
+    {
+      "name": "offline-replay",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-09-30T10:01:55.474511+00:00",
+      "finishedAt": "2026-09-30T10:02:09.650759+00:00",
+      "log": "artifacts/local/runs/20260930T100132377048Z/offline-replay.log",
+      "logHash": "a4092e5a6119d89f8fb4ee88fca8b237c92311db5ca46937bf1f8fd2f049e97b"
+    },
+    {
+      "name": "browser-pdf",
+      "status": "failed",
+      "exitCode": 1,
+      "startedAt": "2026-09-30T10:02:09.651223+00:00",
+      "finishedAt": "2026-09-30T10:02:13.173425+00:00",
+      "log": "artifacts/local/runs/20260930T100132377048Z/browser-pdf.log",
+      "logHash": "edcda15ba4e48b17e089c91695f8208f5169b256ee90dca90efb838e6c6c02e4"
+    }
+  ],
+  "error": "RuntimeError: browser-pdf failed; see artifacts/local/runs/20260930T100132377048Z/browser-pdf.log",
+  "finishedAt": "2026-09-30T10:02:13.174018+00:00"
+}

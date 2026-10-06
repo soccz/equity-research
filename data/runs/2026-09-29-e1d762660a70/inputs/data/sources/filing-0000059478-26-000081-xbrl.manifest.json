@@ -1,0 +1,15 @@
+{
+  "file": "data/sources/filing-0000059478-26-000081-75f0aed7408555a9.xbrl",
+  "sha256": "75f0aed7408555a9fd7746bbaad0f713dd0e6f9bcd438ab354157b4138b9e8f4",
+  "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947826000081/lly-20260630_htm.xml",
+  "primaryUrl": "https://www.sec.gov/Archives/edgar/data/59478/000005947826000081/lly-20260630.htm",
+  "provider": "SEC",
+  "accession": "0000059478-26-000081",
+  "cik": 59478,
+  "retrievedAt": "2026-09-30T11:16:05.834133+00:00",
+  "indexSource": {
+    "file": "data/sources/filing-0000059478-26-000081-index-461443c0075d6494.html",
+    "sha256": "461443c0075d64943078131c6079d790a7ee567318a2f62a75c824eba800039f",
+    "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947826000081/0000059478-26-000081-index.html"
+  }
+}

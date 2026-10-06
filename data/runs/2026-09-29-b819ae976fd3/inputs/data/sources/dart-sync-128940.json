@@ -1,0 +1,38 @@
+{
+  "ticker": "128940",
+  "asOf": "2026-09-29",
+  "checkedAt": "2026-09-30T09:16:51.790490+00:00",
+  "filing": {
+    "corp_code": "00828497",
+    "corp_name": "한미약품",
+    "stock_code": "128940",
+    "corp_cls": "Y",
+    "report_nm": "반기보고서 (2026.06)",
+    "rcept_no": "20260814004181",
+    "flr_nm": "한미약품",
+    "rcept_dt": "20260814",
+    "rm": ""
+  },
+  "queries": [
+    {
+      "file": "data/sources/dart-list-128940-45de94ad0d3942f7.json",
+      "sha256": "45de94ad0d3942f7a680c495bea53e7839251c535c2ebc4db814e7356f8d7e16",
+      "parameters": {
+        "corp_code": "00828497",
+        "bgn_de": "20250101",
+        "end_de": "20260929",
+        "pblntf_ty": "A",
+        "last_reprt_at": "N",
+        "page_count": 100,
+        "page_no": 1,
+        "sort": "date",
+        "sort_mth": "desc"
+      }
+    }
+  ],
+  "package": {
+    "file": "data/sources/dart-package-20260814004181-fbca93467465502b.zip",
+    "sha256": "fbca93467465502bb386e855f265b9a3a3bcd69776e83db09c2aecd02ce71c77"
+  },
+  "instanceHash": "880f1fa9f40d2a5c3901ea05a1cc0224b3b528d054579cc43b5aa0e3b980835e"
+}

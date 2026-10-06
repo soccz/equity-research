@@ -1,0 +1,17 @@
+test_changed_opening_share_scope_is_not_silently_accepted (test_hynix_capital.HynixCapitalTests.test_changed_opening_share_scope_is_not_silently_accepted) ... ok
+test_completed_issue_does_not_add_both_adr_and_underlying (test_hynix_capital.HynixCapitalTests.test_completed_issue_does_not_add_both_adr_and_underlying) ... ok
+test_known_later_changes_hold_price_but_preserve_opening_count (test_hynix_capital.HynixCapitalTests.test_known_later_changes_hold_price_but_preserve_opening_count) ... ok
+test_later_filing_is_not_used_before_its_disclosure (test_hynix_capital.HynixCapitalTests.test_later_filing_is_not_used_before_its_disclosure) ... ok
+test_altered_cash_sign_fails_against_original_table (test_hynix_operating.HynixOperatingTests.test_altered_cash_sign_fails_against_original_table) ... ok
+test_annual_and_half_year_raw_pension_signs_differ (test_hynix_operating.HynixOperatingTests.test_annual_and_half_year_raw_pension_signs_differ) ... ok
+test_future_starts_from_operating_profit_and_keeps_sbc_cost (test_hynix_operating.HynixOperatingTests.test_future_starts_from_operating_profit_and_keeps_sbc_cost) ... ok
+test_margin_decline_and_higher_investment_have_separate_cash_effects (test_hynix_operating.HynixOperatingTests.test_margin_decline_and_higher_investment_have_separate_cash_effects) ... ok
+test_missing_adjustment_cannot_be_filled_with_zero (test_hynix_operating.HynixOperatingTests.test_missing_adjustment_cannot_be_filled_with_zero) ... ok
+test_new_corpus_cannot_inherit_review (test_hynix_operating.HynixOperatingTests.test_new_corpus_cannot_inherit_review) ... ok
+test_purchase_commitment_is_not_current_cash_investment (test_hynix_operating.HynixOperatingTests.test_purchase_commitment_is_not_current_cash_investment) ... ok
+test_three_original_cash_tables_reconcile_independently (test_hynix_operating.HynixOperatingTests.test_three_original_cash_tables_reconcile_independently) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 18.864s
+
+OK

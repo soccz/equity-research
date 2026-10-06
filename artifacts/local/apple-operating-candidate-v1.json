@@ -1,0 +1,3470 @@
+{
+  "status": "research_workspace",
+  "version": "apple-product-cash-path-v1",
+  "grossProfitPath": true,
+  "sourcePeriod": [
+    "2025-06-29",
+    "2026-06-27"
+  ],
+  "accession": "0000320193-26-000020",
+  "corpusHash": "68b4ce050be11471fffcb7ea0db86254024e6ecec9d42573f1205d29a3f36d52",
+  "basisLabel": "최근 1년 제품·서비스 손익·현금 연결",
+  "growthLabel": "최근 9개월 전년 대비",
+  "currency": "USD",
+  "displayScale": 1000000000.0,
+  "displayUnit": "십억 달러",
+  "groupLabel": "제품·서비스",
+  "marginLabel": "매출총이익률",
+  "netInterestLabel": "영업외 순손익",
+  "capexLabel": "설비 현금 취득",
+  "leaseLabel": "금융리스 부담 가정",
+  "intro": "제품과 서비스의 매출총이익에서 공통 연구개발·판매관리비를 차감합니다. 보고 현금 대사와 연간 감가상각·리스 부채에서 출발한 미래 가정을 구분합니다.",
+  "businessCaption": "제품군별 원가가 공개되지 않아 iPhone·Mac에 전체 제품 마진을 배분하지 않습니다. 제품 마진에는 금액 미공시 관세 환급이 포함됩니다. 지역별 영업이익률과 제품·서비스 매출총이익률도 구분합니다.",
+  "segments": [
+    {
+      "id": "ProductMember",
+      "label": "제품",
+      "revenue": 346345000000.0,
+      "grossProfit": 135516000000.0,
+      "margin": 0.3912745961396873,
+      "observedGrowth": 0.168642058923129,
+      "evidence": [
+        {
+          "start": "2024-09-29",
+          "end": "2025-09-27",
+          "dimensions": [
+            [
+              "ProductOrServiceAxis",
+              "ProductMember"
+            ]
+          ],
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "taxonomy": "http://fasb.org/us-gaap/2025",
+          "value": 307003000000.0,
+          "unit": "USD",
+          "context": "c-12",
+          "factId": "f-72",
+          "decimals": "-6",
+          "accession": "0000320193-25-000079",
+          "filedAt": "2025-10-31",
+          "sourceFile": "data/sources/filing-0000320193-25-000079-e1076735f1c81bc9.xbrl",
+          "sourceHash": "e1076735f1c81bc96d5c1ff6e1a9d23515d6eacf52b405cb1f7da3e379ac533b",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm"
+        },
+        {
+          "start": "2025-09-28",
+          "end": "2026-06-27",
+          "dimensions": [
+            [
+              "ProductOrServiceAxis",
+              "ProductMember"
+            ]
+          ],
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "taxonomy": "http://fasb.org/us-gaap/2025",
+          "value": 272629000000.0,
+          "unit": "USD",
+          "context": "c-12",
+          "factId": "f-50",
+          "decimals": "-6",
+          "accession": "0000320193-26-000020",
+          "filedAt": "2026-07-31",
+          "sourceFile": "data/sources/filing-0000320193-26-000020-28f986bb243c8fdd.xbrl",
+          "sourceHash": "28f986bb243c8fdd445560d381df4b57912ca290b03b8451ecd518e63cdb5d2b",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+        },
+        {
+          "start": "2024-09-29",
+          "end": "2025-06-28",
+          "dimensions": [
+            [
+              "ProductOrServiceAxis",
+              "ProductMember"
+            ]
+          ],
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "taxonomy": "http://fasb.org/us-gaap/2025",
+          "value": 233287000000.0,
+          "unit": "USD",
+          "context": "c-13",
+          "factId": "f-51",
+          "decimals": "-6",
+          "accession": "0000320193-26-000020",
+          "filedAt": "2026-07-31",
+          "sourceFile": "data/sources/filing-0000320193-26-000020-28f986bb243c8fdd.xbrl",
+          "sourceHash": "28f986bb243c8fdd445560d381df4b57912ca290b03b8451ecd518e63cdb5d2b",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+        }
+      ],
+      "revenueFact": {
+        "value": 346345000000.0,
+        "components": [
+          {
+            "coefficient": 1,
+            "fact": {
+              "start": "2024-09-29",
+              "end": "2025-09-27",
+              "dimensions": [
+                [
+                  "ProductOrServiceAxis",
+                  "ProductMember"
+                ]
+              ],
+              "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "taxonomy": "http://fasb.org/us-gaap/2025",
+              "value": 307003000000.0,
+              "unit": "USD",
+              "context": "c-12",
+              "factId": "f-72",
+              "decimals": "-6",
+              "accession": "0000320193-25-000079",
+              "filedAt": "2025-10-31",
+              "sourceFile": "data/sources/filing-0000320193-25-000079-e1076735f1c81bc9.xbrl",
+              "sourceHash": "e1076735f1c81bc96d5c1ff6e1a9d23515d6eacf52b405cb1f7da3e379ac533b",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm"
+            }
+          },
+          {
+            "coefficient": 1,
+            "fact": {
+              "start": "2025-09-28",
+              "end": "2026-06-27",
+              "dimensions": [
+                [
+                  "ProductOrServiceAxis",
+                  "ProductMember"
+                ]
+              ],
+              "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "taxonomy": "http://fasb.org/us-gaap/2025",
+              "value": 272629000000.0,
+              "unit": "USD",
+              "context": "c-12",
+              "factId": "f-50",
+              "decimals": "-6",
+              "accession": "0000320193-26-000020",
+              "filedAt": "2026-07-31",
+              "sourceFile": "data/sources/filing-0000320193-26-000020-28f986bb243c8fdd.xbrl",
+              "sourceHash": "28f986bb243c8fdd445560d381df4b57912ca290b03b8451ecd518e63cdb5d2b",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+            }
+          },
+          {
+            "coefficient": -1,
+            "fact": {
+              "start": "2024-09-29",
+              "end": "2025-06-28",
+              "dimensions": [
+                [
+                  "ProductOrServiceAxis",
+                  "ProductMember"
+                ]
+              ],
+              "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "taxonomy": "http://fasb.org/us-gaap/2025",
+              "value": 233287000000.0,
+              "unit": "USD",
+              "context": "c-13",
+              "factId": "f-51",
+              "decimals": "-6",
+              "accession": "0000320193-26-000020",
+              "filedAt": "2026-07-31",
+              "sourceFile": "data/sources/filing-0000320193-26-000020-28f986bb243c8fdd.xbrl",
+              "sourceHash": "28f986bb243c8fdd445560d381df4b57912ca290b03b8451ecd518e63cdb5d2b",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+            }
+          }
+        ],
+        "derived": true,
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD",
+        "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+      },
+      "costFact": {
+        "value": 210829000000.0,
+        "components": [
+          {
+            "coefficient": 1,
+            "fact": {
+              "start": "2024-09-29",
+              "end": "2025-09-27",
+              "dimensions": [
+                [
+                  "ProductOrServiceAxis",
+                  "ProductMember"
+                ]
+              ],
+              "tag": "CostOfGoodsAndServicesSold",
+              "taxonomy": "http://fasb.org/us-gaap/2025",
+              "value": 194116000000.0,
+              "unit": "USD",
+              "context": "c-12",
+              "factId": "f-81",
+              "decimals": "-6",
+              "accession": "0000320193-25-000079",
+              "filedAt": "2025-10-31",
+              "sourceFile": "data/sources/filing-0000320193-25-000079-e1076735f1c81bc9.xbrl",
+              "sourceHash": "e1076735f1c81bc96d5c1ff6e1a9d23515d6eacf52b405cb1f7da3e379ac533b",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm"
+            }
+          },
+          {
+            "coefficient": 1,
+            "fact": {
+              "start": "2025-09-28",
+              "end": "2026-06-27",
+              "dimensions": [
+                [
+                  "ProductOrServiceAxis",
+                  "ProductMember"
+                ]
+              ],
+              "tag": "CostOfGoodsAndServicesSold",
+              "taxonomy": "http://fasb.org/us-gaap/2025",
+              "value": 163810000000.0,
+              "unit": "USD",
+              "context": "c-12",
+              "factId": "f-62",
+              "decimals": "-6",
+              "accession": "0000320193-26-000020",
+              "filedAt": "2026-07-31",
+              "sourceFile": "data/sources/filing-0000320193-26-000020-28f986bb243c8fdd.xbrl",
+              "sourceHash": "28f986bb243c8fdd445560d381df4b57912ca290b03b8451ecd518e63cdb5d2b",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+            }
+          },
+          {
+            "coefficient": -1,
+            "fact": {
+              "start": "2024-09-29",
+              "end": "2025-06-28",
+              "dimensions": [
+                [
+                  "ProductOrServiceAxis",
+                  "ProductMember"
+                ]
+              ],
+              "tag": "CostOfGoodsAndServicesSold",
+              "taxonomy": "http://fasb.org/us-gaap/2025",
+              "value": 147097000000.0,
+              "unit": "USD",
+              "context": "c-13",
+              "factId": "f-63",
+              "decimals": "-6",
+              "accession": "0000320193-26-000020",
+              "filedAt": "2026-07-31",
+              "sourceFile": "data/sources/filing-0000320193-26-000020-28f986bb243c8fdd.xbrl",
+              "sourceHash": "28f986bb243c8fdd445560d381df4b57912ca290b03b8451ecd518e63cdb5d2b",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+            }
+          }
+        ],
+        "derived": true,
+        "tag": "CostOfGoodsAndServicesSold",
+        "unit": "USD",
+        "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+      }
+    },
+    {
+      "id": "ServiceMember",
+      "label": "서비스",
+      "revenue": 120478000000.0,
+      "grossProfit": 91607000000.0,
+      "margin": 0.7603628878301433,
+      "observedGrowth": 0.14078201174012528,
+      "evidence": [
+        {
+          "start": "2024-09-29",
+          "end": "2025-09-27",
+          "dimensions": [
+            [
+              "ProductOrServiceAxis",
+              "ServiceMember"
+            ]
+          ],
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "taxonomy": "http://fasb.org/us-gaap/2025",
+          "value": 109158000000.0,
+          "unit": "USD",
+          "context": "c-15",
+          "factId": "f-75",
+          "decimals": "-6",
+          "accession": "0000320193-25-000079",
+          "filedAt": "2025-10-31",
+          "sourceFile": "data/sources/filing-0000320193-25-000079-e1076735f1c81bc9.xbrl",
+          "sourceHash": "e1076735f1c81bc96d5c1ff6e1a9d23515d6eacf52b405cb1f7da3e379ac533b",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm"
+        },
+        {
+          "start": "2025-09-28",
+          "end": "2026-06-27",
+          "dimensions": [
+            [
+              "ProductOrServiceAxis",
+              "ServiceMember"
+            ]
+          ],
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "taxonomy": "http://fasb.org/us-gaap/2025",
+          "value": 91728000000.0,
+          "unit": "USD",
+          "context": "c-16",
+          "factId": "f-54",
+          "decimals": "-6",
+          "accession": "0000320193-26-000020",
+          "filedAt": "2026-07-31",
+          "sourceFile": "data/sources/filing-0000320193-26-000020-28f986bb243c8fdd.xbrl",
+          "sourceHash": "28f986bb243c8fdd445560d381df4b57912ca290b03b8451ecd518e63cdb5d2b",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+        },
+        {
+          "start": "2024-09-29",
+          "end": "2025-06-28",
+          "dimensions": [
+            [
+              "ProductOrServiceAxis",
+              "ServiceMember"
+            ]
+          ],
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "taxonomy": "http://fasb.org/us-gaap/2025",
+          "value": 80408000000.0,
+          "unit": "USD",
+          "context": "c-17",
+          "factId": "f-55",
+          "decimals": "-6",
+          "accession": "0000320193-26-000020",
+          "filedAt": "2026-07-31",
+          "sourceFile": "data/sources/filing-0000320193-26-000020-28f986bb243c8fdd.xbrl",
+          "sourceHash": "28f986bb243c8fdd445560d381df4b57912ca290b03b8451ecd518e63cdb5d2b",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+        }
+      ],
+      "revenueFact": {
+        "value": 120478000000.0,
+        "components": [
+          {
+            "coefficient": 1,
+            "fact": {
+              "start": "2024-09-29",
+              "end": "2025-09-27",
+              "dimensions": [
+                [
+                  "ProductOrServiceAxis",
+                  "ServiceMember"
+                ]
+              ],
+              "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "taxonomy": "http://fasb.org/us-gaap/2025",
+              "value": 109158000000.0,
+              "unit": "USD",
+              "context": "c-15",
+              "factId": "f-75",
+              "decimals": "-6",
+              "accession": "0000320193-25-000079",
+              "filedAt": "2025-10-31",
+              "sourceFile": "data/sources/filing-0000320193-25-000079-e1076735f1c81bc9.xbrl",
+              "sourceHash": "e1076735f1c81bc96d5c1ff6e1a9d23515d6eacf52b405cb1f7da3e379ac533b",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm"
+            }
+          },
+          {
+            "coefficient": 1,
+            "fact": {
+              "start": "2025-09-28",
+              "end": "2026-06-27",
+              "dimensions": [
+                [
+                  "ProductOrServiceAxis",
+                  "ServiceMember"
+                ]
+              ],
+              "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "taxonomy": "http://fasb.org/us-gaap/2025",
+              "value": 91728000000.0,
+              "unit": "USD",
+              "context": "c-16",
+              "factId": "f-54",
+              "decimals": "-6",
+              "accession": "0000320193-26-000020",
+              "filedAt": "2026-07-31",
+              "sourceFile": "data/sources/filing-0000320193-26-000020-28f986bb243c8fdd.xbrl",
+              "sourceHash": "28f986bb243c8fdd445560d381df4b57912ca290b03b8451ecd518e63cdb5d2b",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+            }
+          },
+          {
+            "coefficient": -1,
+            "fact": {
+              "start": "2024-09-29",
+              "end": "2025-06-28",
+              "dimensions": [
+                [
+                  "ProductOrServiceAxis",
+                  "ServiceMember"
+                ]
+              ],
+              "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "taxonomy": "http://fasb.org/us-gaap/2025",
+              "value": 80408000000.0,
+              "unit": "USD",
+              "context": "c-17",
+              "factId": "f-55",
+              "decimals": "-6",
+              "accession": "0000320193-26-000020",
+              "filedAt": "2026-07-31",
+              "sourceFile": "data/sources/filing-0000320193-26-000020-28f986bb243c8fdd.xbrl",
+              "sourceHash": "28f986bb243c8fdd445560d381df4b57912ca290b03b8451ecd518e63cdb5d2b",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+            }
+          }
+        ],
+        "derived": true,
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD",
+        "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+      },
+      "costFact": {
+        "value": 28871000000.0,
+        "components": [
+          {
+            "coefficient": 1,
+            "fact": {
+              "start": "2024-09-29",
+              "end": "2025-09-27",
+              "dimensions": [
+                [
+                  "ProductOrServiceAxis",
+                  "ServiceMember"
+                ]
+              ],
+              "tag": "CostOfGoodsAndServicesSold",
+              "taxonomy": "http://fasb.org/us-gaap/2025",
+              "value": 26844000000.0,
+              "unit": "USD",
+              "context": "c-15",
+              "factId": "f-84",
+              "decimals": "-6",
+              "accession": "0000320193-25-000079",
+              "filedAt": "2025-10-31",
+              "sourceFile": "data/sources/filing-0000320193-25-000079-e1076735f1c81bc9.xbrl",
+              "sourceHash": "e1076735f1c81bc96d5c1ff6e1a9d23515d6eacf52b405cb1f7da3e379ac533b",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm"
+            }
+          },
+          {
+            "coefficient": 1,
+            "fact": {
+              "start": "2025-09-28",
+              "end": "2026-06-27",
+              "dimensions": [
+                [
+                  "ProductOrServiceAxis",
+                  "ServiceMember"
+                ]
+              ],
+              "tag": "CostOfGoodsAndServicesSold",
+              "taxonomy": "http://fasb.org/us-gaap/2025",
+              "value": 21765000000.0,
+              "unit": "USD",
+              "context": "c-16",
+              "factId": "f-66",
+              "decimals": "-6",
+              "accession": "0000320193-26-000020",
+              "filedAt": "2026-07-31",
+              "sourceFile": "data/sources/filing-0000320193-26-000020-28f986bb243c8fdd.xbrl",
+              "sourceHash": "28f986bb243c8fdd445560d381df4b57912ca290b03b8451ecd518e63cdb5d2b",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+            }
+          },
+          {
+            "coefficient": -1,
+            "fact": {
+              "start": "2024-09-29",
+              "end": "2025-06-28",
+              "dimensions": [
+                [
+                  "ProductOrServiceAxis",
+                  "ServiceMember"
+                ]
+              ],
+              "tag": "CostOfGoodsAndServicesSold",
+              "taxonomy": "http://fasb.org/us-gaap/2025",
+              "value": 19738000000.0,
+              "unit": "USD",
+              "context": "c-17",
+              "factId": "f-67",
+              "decimals": "-6",
+              "accession": "0000320193-26-000020",
+              "filedAt": "2026-07-31",
+              "sourceFile": "data/sources/filing-0000320193-26-000020-28f986bb243c8fdd.xbrl",
+              "sourceHash": "28f986bb243c8fdd445560d381df4b57912ca290b03b8451ecd518e63cdb5d2b",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+            }
+          }
+        ],
+        "derived": true,
+        "tag": "CostOfGoodsAndServicesSold",
+        "unit": "USD",
+        "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+      }
+    }
+  ],
+  "facts": {
+    "revenue": {
+      "value": 466823000000.0,
+      "components": [
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2024-09-29",
+            "end": "2025-09-27",
+            "dimensions": [],
+            "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": 416161000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-78",
+            "decimals": "-6",
+            "accession": "0000320193-25-000079",
+            "filedAt": "2025-10-31",
+            "sourceFile": "data/sources/filing-0000320193-25-000079-e1076735f1c81bc9.xbrl",
+            "sourceHash": "e1076735f1c81bc96d5c1ff6e1a9d23515d6eacf52b405cb1f7da3e379ac533b",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm"
+          }
+        },
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2025-09-28",
+            "end": "2026-06-27",
+            "dimensions": [],
+            "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": 364357000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-58",
+            "decimals": "-6",
+            "accession": "0000320193-26-000020",
+            "filedAt": "2026-07-31",
+            "sourceFile": "data/sources/filing-0000320193-26-000020-28f986bb243c8fdd.xbrl",
+            "sourceHash": "28f986bb243c8fdd445560d381df4b57912ca290b03b8451ecd518e63cdb5d2b",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+          }
+        },
+        {
+          "coefficient": -1,
+          "fact": {
+            "start": "2024-09-29",
+            "end": "2025-06-28",
+            "dimensions": [],
+            "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": 313695000000.0,
+            "unit": "USD",
+            "context": "c-20",
+            "factId": "f-59",
+            "decimals": "-6",
+            "accession": "0000320193-26-000020",
+            "filedAt": "2026-07-31",
+            "sourceFile": "data/sources/filing-0000320193-26-000020-28f986bb243c8fdd.xbrl",
+            "sourceHash": "28f986bb243c8fdd445560d381df4b57912ca290b03b8451ecd518e63cdb5d2b",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+          }
+        }
+      ],
+      "derived": true,
+      "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+      "unit": "USD",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+    },
+    "grossProfit": {
+      "value": 227123000000.0,
+      "components": [
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2024-09-29",
+            "end": "2025-09-27",
+            "dimensions": [],
+            "tag": "GrossProfit",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": 195201000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-90",
+            "decimals": "-6",
+            "accession": "0000320193-25-000079",
+            "filedAt": "2025-10-31",
+            "sourceFile": "data/sources/filing-0000320193-25-000079-e1076735f1c81bc9.xbrl",
+            "sourceHash": "e1076735f1c81bc96d5c1ff6e1a9d23515d6eacf52b405cb1f7da3e379ac533b",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm"
+          }
+        },
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2025-09-28",
+            "end": "2026-06-27",
+            "dimensions": [],
+            "tag": "GrossProfit",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": 178782000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-74",
+            "decimals": "-6",
+            "accession": "0000320193-26-000020",
+            "filedAt": "2026-07-31",
+            "sourceFile": "data/sources/filing-0000320193-26-000020-28f986bb243c8fdd.xbrl",
+            "sourceHash": "28f986bb243c8fdd445560d381df4b57912ca290b03b8451ecd518e63cdb5d2b",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+          }
+        },
+        {
+          "coefficient": -1,
+          "fact": {
+            "start": "2024-09-29",
+            "end": "2025-06-28",
+            "dimensions": [],
+            "tag": "GrossProfit",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": 146860000000.0,
+            "unit": "USD",
+            "context": "c-20",
+            "factId": "f-75",
+            "decimals": "-6",
+            "accession": "0000320193-26-000020",
+            "filedAt": "2026-07-31",
+            "sourceFile": "data/sources/filing-0000320193-26-000020-28f986bb243c8fdd.xbrl",
+            "sourceHash": "28f986bb243c8fdd445560d381df4b57912ca290b03b8451ecd518e63cdb5d2b",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+          }
+        }
+      ],
+      "derived": true,
+      "tag": "GrossProfit",
+      "unit": "USD",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+    },
+    "research": {
+      "value": 42901000000.0,
+      "components": [
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2024-09-29",
+            "end": "2025-09-27",
+            "dimensions": [],
+            "tag": "ResearchAndDevelopmentExpense",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": 34550000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-93",
+            "decimals": "-6",
+            "accession": "0000320193-25-000079",
+            "filedAt": "2025-10-31",
+            "sourceFile": "data/sources/filing-0000320193-25-000079-e1076735f1c81bc9.xbrl",
+            "sourceHash": "e1076735f1c81bc96d5c1ff6e1a9d23515d6eacf52b405cb1f7da3e379ac533b",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm"
+          }
+        },
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2025-09-28",
+            "end": "2026-06-27",
+            "dimensions": [],
+            "tag": "ResearchAndDevelopmentExpense",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": 34035000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-78",
+            "decimals": "-6",
+            "accession": "0000320193-26-000020",
+            "filedAt": "2026-07-31",
+            "sourceFile": "data/sources/filing-0000320193-26-000020-28f986bb243c8fdd.xbrl",
+            "sourceHash": "28f986bb243c8fdd445560d381df4b57912ca290b03b8451ecd518e63cdb5d2b",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+          }
+        },
+        {
+          "coefficient": -1,
+          "fact": {
+            "start": "2024-09-29",
+            "end": "2025-06-28",
+            "dimensions": [],
+            "tag": "ResearchAndDevelopmentExpense",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": 25684000000.0,
+            "unit": "USD",
+            "context": "c-20",
+            "factId": "f-79",
+            "decimals": "-6",
+            "accession": "0000320193-26-000020",
+            "filedAt": "2026-07-31",
+            "sourceFile": "data/sources/filing-0000320193-26-000020-28f986bb243c8fdd.xbrl",
+            "sourceHash": "28f986bb243c8fdd445560d381df4b57912ca290b03b8451ecd518e63cdb5d2b",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+          }
+        }
+      ],
+      "derived": true,
+      "tag": "ResearchAndDevelopmentExpense",
+      "unit": "USD",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+    },
+    "selling": {
+      "value": 29363000000.0,
+      "components": [
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2024-09-29",
+            "end": "2025-09-27",
+            "dimensions": [],
+            "tag": "SellingGeneralAndAdministrativeExpense",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": 27601000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-96",
+            "decimals": "-6",
+            "accession": "0000320193-25-000079",
+            "filedAt": "2025-10-31",
+            "sourceFile": "data/sources/filing-0000320193-25-000079-e1076735f1c81bc9.xbrl",
+            "sourceHash": "e1076735f1c81bc96d5c1ff6e1a9d23515d6eacf52b405cb1f7da3e379ac533b",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm"
+          }
+        },
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2025-09-28",
+            "end": "2026-06-27",
+            "dimensions": [],
+            "tag": "SellingGeneralAndAdministrativeExpense",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": 22315000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-82",
+            "decimals": "-6",
+            "accession": "0000320193-26-000020",
+            "filedAt": "2026-07-31",
+            "sourceFile": "data/sources/filing-0000320193-26-000020-28f986bb243c8fdd.xbrl",
+            "sourceHash": "28f986bb243c8fdd445560d381df4b57912ca290b03b8451ecd518e63cdb5d2b",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+          }
+        },
+        {
+          "coefficient": -1,
+          "fact": {
+            "start": "2024-09-29",
+            "end": "2025-06-28",
+            "dimensions": [],
+            "tag": "SellingGeneralAndAdministrativeExpense",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": 20553000000.0,
+            "unit": "USD",
+            "context": "c-20",
+            "factId": "f-83",
+            "decimals": "-6",
+            "accession": "0000320193-26-000020",
+            "filedAt": "2026-07-31",
+            "sourceFile": "data/sources/filing-0000320193-26-000020-28f986bb243c8fdd.xbrl",
+            "sourceHash": "28f986bb243c8fdd445560d381df4b57912ca290b03b8451ecd518e63cdb5d2b",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+          }
+        }
+      ],
+      "derived": true,
+      "tag": "SellingGeneralAndAdministrativeExpense",
+      "unit": "USD",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+    },
+    "operatingIncome": {
+      "value": 154859000000.0,
+      "components": [
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2024-09-29",
+            "end": "2025-09-27",
+            "dimensions": [],
+            "tag": "OperatingIncomeLoss",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": 133050000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-102",
+            "decimals": "-6",
+            "accession": "0000320193-25-000079",
+            "filedAt": "2025-10-31",
+            "sourceFile": "data/sources/filing-0000320193-25-000079-e1076735f1c81bc9.xbrl",
+            "sourceHash": "e1076735f1c81bc96d5c1ff6e1a9d23515d6eacf52b405cb1f7da3e379ac533b",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm"
+          }
+        },
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2025-09-28",
+            "end": "2026-06-27",
+            "dimensions": [],
+            "tag": "OperatingIncomeLoss",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": 122432000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-90",
+            "decimals": "-6",
+            "accession": "0000320193-26-000020",
+            "filedAt": "2026-07-31",
+            "sourceFile": "data/sources/filing-0000320193-26-000020-28f986bb243c8fdd.xbrl",
+            "sourceHash": "28f986bb243c8fdd445560d381df4b57912ca290b03b8451ecd518e63cdb5d2b",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+          }
+        },
+        {
+          "coefficient": -1,
+          "fact": {
+            "start": "2024-09-29",
+            "end": "2025-06-28",
+            "dimensions": [],
+            "tag": "OperatingIncomeLoss",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": 100623000000.0,
+            "unit": "USD",
+            "context": "c-20",
+            "factId": "f-91",
+            "decimals": "-6",
+            "accession": "0000320193-26-000020",
+            "filedAt": "2026-07-31",
+            "sourceFile": "data/sources/filing-0000320193-26-000020-28f986bb243c8fdd.xbrl",
+            "sourceHash": "28f986bb243c8fdd445560d381df4b57912ca290b03b8451ecd518e63cdb5d2b",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+          }
+        }
+      ],
+      "derived": true,
+      "tag": "OperatingIncomeLoss",
+      "unit": "USD",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+    },
+    "nonoperating": {
+      "value": 1047000000.0,
+      "components": [
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2024-09-29",
+            "end": "2025-09-27",
+            "dimensions": [],
+            "tag": "NonoperatingIncomeExpense",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": -321000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-105",
+            "decimals": "-6",
+            "accession": "0000320193-25-000079",
+            "filedAt": "2025-10-31",
+            "sourceFile": "data/sources/filing-0000320193-25-000079-e1076735f1c81bc9.xbrl",
+            "sourceHash": "e1076735f1c81bc96d5c1ff6e1a9d23515d6eacf52b405cb1f7da3e379ac533b",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm"
+          }
+        },
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2025-09-28",
+            "end": "2026-06-27",
+            "dimensions": [],
+            "tag": "NonoperatingIncomeExpense",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": 670000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-94",
+            "decimals": "-6",
+            "accession": "0000320193-26-000020",
+            "filedAt": "2026-07-31",
+            "sourceFile": "data/sources/filing-0000320193-26-000020-28f986bb243c8fdd.xbrl",
+            "sourceHash": "28f986bb243c8fdd445560d381df4b57912ca290b03b8451ecd518e63cdb5d2b",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+          }
+        },
+        {
+          "coefficient": -1,
+          "fact": {
+            "start": "2024-09-29",
+            "end": "2025-06-28",
+            "dimensions": [],
+            "tag": "NonoperatingIncomeExpense",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": -698000000.0,
+            "unit": "USD",
+            "context": "c-20",
+            "factId": "f-95",
+            "decimals": "-6",
+            "accession": "0000320193-26-000020",
+            "filedAt": "2026-07-31",
+            "sourceFile": "data/sources/filing-0000320193-26-000020-28f986bb243c8fdd.xbrl",
+            "sourceHash": "28f986bb243c8fdd445560d381df4b57912ca290b03b8451ecd518e63cdb5d2b",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+          }
+        }
+      ],
+      "derived": true,
+      "tag": "NonoperatingIncomeExpense",
+      "unit": "USD",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+    },
+    "pretax": {
+      "value": 155906000000.0,
+      "components": [
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2024-09-29",
+            "end": "2025-09-27",
+            "dimensions": [],
+            "tag": "IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": 132729000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-108",
+            "decimals": "-6",
+            "accession": "0000320193-25-000079",
+            "filedAt": "2025-10-31",
+            "sourceFile": "data/sources/filing-0000320193-25-000079-e1076735f1c81bc9.xbrl",
+            "sourceHash": "e1076735f1c81bc96d5c1ff6e1a9d23515d6eacf52b405cb1f7da3e379ac533b",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm"
+          }
+        },
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2025-09-28",
+            "end": "2026-06-27",
+            "dimensions": [],
+            "tag": "IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": 123102000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-98",
+            "decimals": "-6",
+            "accession": "0000320193-26-000020",
+            "filedAt": "2026-07-31",
+            "sourceFile": "data/sources/filing-0000320193-26-000020-28f986bb243c8fdd.xbrl",
+            "sourceHash": "28f986bb243c8fdd445560d381df4b57912ca290b03b8451ecd518e63cdb5d2b",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+          }
+        },
+        {
+          "coefficient": -1,
+          "fact": {
+            "start": "2024-09-29",
+            "end": "2025-06-28",
+            "dimensions": [],
+            "tag": "IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": 99925000000.0,
+            "unit": "USD",
+            "context": "c-20",
+            "factId": "f-99",
+            "decimals": "-6",
+            "accession": "0000320193-26-000020",
+            "filedAt": "2026-07-31",
+            "sourceFile": "data/sources/filing-0000320193-26-000020-28f986bb243c8fdd.xbrl",
+            "sourceHash": "28f986bb243c8fdd445560d381df4b57912ca290b03b8451ecd518e63cdb5d2b",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+          }
+        }
+      ],
+      "derived": true,
+      "tag": "IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest",
+      "unit": "USD",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+    },
+    "tax": {
+      "value": 26976000000.0,
+      "components": [
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2024-09-29",
+            "end": "2025-09-27",
+            "dimensions": [],
+            "tag": "IncomeTaxExpenseBenefit",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": 20719000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-111",
+            "decimals": "-6",
+            "accession": "0000320193-25-000079",
+            "filedAt": "2025-10-31",
+            "sourceFile": "data/sources/filing-0000320193-25-000079-e1076735f1c81bc9.xbrl",
+            "sourceHash": "e1076735f1c81bc96d5c1ff6e1a9d23515d6eacf52b405cb1f7da3e379ac533b",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm"
+          }
+        },
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2025-09-28",
+            "end": "2026-06-27",
+            "dimensions": [],
+            "tag": "IncomeTaxExpenseBenefit",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": 21638000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-102",
+            "decimals": "-6",
+            "accession": "0000320193-26-000020",
+            "filedAt": "2026-07-31",
+            "sourceFile": "data/sources/filing-0000320193-26-000020-28f986bb243c8fdd.xbrl",
+            "sourceHash": "28f986bb243c8fdd445560d381df4b57912ca290b03b8451ecd518e63cdb5d2b",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+          }
+        },
+        {
+          "coefficient": -1,
+          "fact": {
+            "start": "2024-09-29",
+            "end": "2025-06-28",
+            "dimensions": [],
+            "tag": "IncomeTaxExpenseBenefit",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": 15381000000.0,
+            "unit": "USD",
+            "context": "c-20",
+            "factId": "f-103",
+            "decimals": "-6",
+            "accession": "0000320193-26-000020",
+            "filedAt": "2026-07-31",
+            "sourceFile": "data/sources/filing-0000320193-26-000020-28f986bb243c8fdd.xbrl",
+            "sourceHash": "28f986bb243c8fdd445560d381df4b57912ca290b03b8451ecd518e63cdb5d2b",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+          }
+        }
+      ],
+      "derived": true,
+      "tag": "IncomeTaxExpenseBenefit",
+      "unit": "USD",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+    },
+    "cfo": {
+      "value": 146724000000.0,
+      "components": [
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2024-09-29",
+            "end": "2025-09-27",
+            "dimensions": [],
+            "tag": "NetCashProvidedByUsedInOperatingActivities",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": 111482000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-307",
+            "decimals": "-6",
+            "accession": "0000320193-25-000079",
+            "filedAt": "2025-10-31",
+            "sourceFile": "data/sources/filing-0000320193-25-000079-e1076735f1c81bc9.xbrl",
+            "sourceHash": "e1076735f1c81bc96d5c1ff6e1a9d23515d6eacf52b405cb1f7da3e379ac533b",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm"
+          }
+        },
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2025-09-28",
+            "end": "2026-06-27",
+            "dimensions": [],
+            "tag": "NetCashProvidedByUsedInOperatingActivities",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": 116996000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-320",
+            "decimals": "-6",
+            "accession": "0000320193-26-000020",
+            "filedAt": "2026-07-31",
+            "sourceFile": "data/sources/filing-0000320193-26-000020-28f986bb243c8fdd.xbrl",
+            "sourceHash": "28f986bb243c8fdd445560d381df4b57912ca290b03b8451ecd518e63cdb5d2b",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+          }
+        },
+        {
+          "coefficient": -1,
+          "fact": {
+            "start": "2024-09-29",
+            "end": "2025-06-28",
+            "dimensions": [],
+            "tag": "NetCashProvidedByUsedInOperatingActivities",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": 81754000000.0,
+            "unit": "USD",
+            "context": "c-20",
+            "factId": "f-321",
+            "decimals": "-6",
+            "accession": "0000320193-26-000020",
+            "filedAt": "2026-07-31",
+            "sourceFile": "data/sources/filing-0000320193-26-000020-28f986bb243c8fdd.xbrl",
+            "sourceHash": "28f986bb243c8fdd445560d381df4b57912ca290b03b8451ecd518e63cdb5d2b",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+          }
+        }
+      ],
+      "derived": true,
+      "tag": "NetCashProvidedByUsedInOperatingActivities",
+      "unit": "USD",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+    },
+    "capex": {
+      "value": 10041000000.0,
+      "components": [
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2024-09-29",
+            "end": "2025-09-27",
+            "dimensions": [],
+            "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": 12715000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-319",
+            "decimals": "-6",
+            "accession": "0000320193-25-000079",
+            "filedAt": "2025-10-31",
+            "sourceFile": "data/sources/filing-0000320193-25-000079-e1076735f1c81bc9.xbrl",
+            "sourceHash": "e1076735f1c81bc96d5c1ff6e1a9d23515d6eacf52b405cb1f7da3e379ac533b",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm"
+          }
+        },
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2025-09-28",
+            "end": "2026-06-27",
+            "dimensions": [],
+            "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": 6799000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-328",
+            "decimals": "-6",
+            "accession": "0000320193-26-000020",
+            "filedAt": "2026-07-31",
+            "sourceFile": "data/sources/filing-0000320193-26-000020-28f986bb243c8fdd.xbrl",
+            "sourceHash": "28f986bb243c8fdd445560d381df4b57912ca290b03b8451ecd518e63cdb5d2b",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+          }
+        },
+        {
+          "coefficient": -1,
+          "fact": {
+            "start": "2024-09-29",
+            "end": "2025-06-28",
+            "dimensions": [],
+            "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": 9473000000.0,
+            "unit": "USD",
+            "context": "c-20",
+            "factId": "f-329",
+            "decimals": "-6",
+            "accession": "0000320193-26-000020",
+            "filedAt": "2026-07-31",
+            "sourceFile": "data/sources/filing-0000320193-26-000020-28f986bb243c8fdd.xbrl",
+            "sourceHash": "28f986bb243c8fdd445560d381df4b57912ca290b03b8451ecd518e63cdb5d2b",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+          }
+        }
+      ],
+      "derived": true,
+      "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+      "unit": "USD",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+    },
+    "NetIncomeLoss": {
+      "value": 128930000000.0,
+      "components": [
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2024-09-29",
+            "end": "2025-09-27",
+            "dimensions": [],
+            "tag": "NetIncomeLoss",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": 112010000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-114",
+            "decimals": "-6",
+            "accession": "0000320193-25-000079",
+            "filedAt": "2025-10-31",
+            "sourceFile": "data/sources/filing-0000320193-25-000079-e1076735f1c81bc9.xbrl",
+            "sourceHash": "e1076735f1c81bc96d5c1ff6e1a9d23515d6eacf52b405cb1f7da3e379ac533b",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm"
+          }
+        },
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2025-09-28",
+            "end": "2026-06-27",
+            "dimensions": [],
+            "tag": "NetIncomeLoss",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": 101464000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-106",
+            "decimals": "-6",
+            "accession": "0000320193-26-000020",
+            "filedAt": "2026-07-31",
+            "sourceFile": "data/sources/filing-0000320193-26-000020-28f986bb243c8fdd.xbrl",
+            "sourceHash": "28f986bb243c8fdd445560d381df4b57912ca290b03b8451ecd518e63cdb5d2b",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+          }
+        },
+        {
+          "coefficient": -1,
+          "fact": {
+            "start": "2024-09-29",
+            "end": "2025-06-28",
+            "dimensions": [],
+            "tag": "NetIncomeLoss",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": 84544000000.0,
+            "unit": "USD",
+            "context": "c-20",
+            "factId": "f-107",
+            "decimals": "-6",
+            "accession": "0000320193-26-000020",
+            "filedAt": "2026-07-31",
+            "sourceFile": "data/sources/filing-0000320193-26-000020-28f986bb243c8fdd.xbrl",
+            "sourceHash": "28f986bb243c8fdd445560d381df4b57912ca290b03b8451ecd518e63cdb5d2b",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+          }
+        }
+      ],
+      "derived": true,
+      "tag": "NetIncomeLoss",
+      "unit": "USD",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+    },
+    "DepreciationDepletionAndAmortization": {
+      "value": 13100000000.0,
+      "components": [
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2024-09-29",
+            "end": "2025-09-27",
+            "dimensions": [],
+            "tag": "DepreciationDepletionAndAmortization",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": 11698000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-280",
+            "decimals": "-6",
+            "accession": "0000320193-25-000079",
+            "filedAt": "2025-10-31",
+            "sourceFile": "data/sources/filing-0000320193-25-000079-e1076735f1c81bc9.xbrl",
+            "sourceHash": "e1076735f1c81bc96d5c1ff6e1a9d23515d6eacf52b405cb1f7da3e379ac533b",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm"
+          }
+        },
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2025-09-28",
+            "end": "2026-06-27",
+            "dimensions": [],
+            "tag": "DepreciationDepletionAndAmortization",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": 9973000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-302",
+            "decimals": "-6",
+            "accession": "0000320193-26-000020",
+            "filedAt": "2026-07-31",
+            "sourceFile": "data/sources/filing-0000320193-26-000020-28f986bb243c8fdd.xbrl",
+            "sourceHash": "28f986bb243c8fdd445560d381df4b57912ca290b03b8451ecd518e63cdb5d2b",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+          }
+        },
+        {
+          "coefficient": -1,
+          "fact": {
+            "start": "2024-09-29",
+            "end": "2025-06-28",
+            "dimensions": [],
+            "tag": "DepreciationDepletionAndAmortization",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": 8571000000.0,
+            "unit": "USD",
+            "context": "c-20",
+            "factId": "f-303",
+            "decimals": "-6",
+            "accession": "0000320193-26-000020",
+            "filedAt": "2026-07-31",
+            "sourceFile": "data/sources/filing-0000320193-26-000020-28f986bb243c8fdd.xbrl",
+            "sourceHash": "28f986bb243c8fdd445560d381df4b57912ca290b03b8451ecd518e63cdb5d2b",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+          }
+        }
+      ],
+      "derived": true,
+      "tag": "DepreciationDepletionAndAmortization",
+      "unit": "USD",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+    },
+    "ShareBasedCompensation": {
+      "value": 13706000000.0,
+      "components": [
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2024-09-29",
+            "end": "2025-09-27",
+            "dimensions": [],
+            "tag": "ShareBasedCompensation",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": 12863000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-283",
+            "decimals": "-6",
+            "accession": "0000320193-25-000079",
+            "filedAt": "2025-10-31",
+            "sourceFile": "data/sources/filing-0000320193-25-000079-e1076735f1c81bc9.xbrl",
+            "sourceHash": "e1076735f1c81bc96d5c1ff6e1a9d23515d6eacf52b405cb1f7da3e379ac533b",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm"
+          }
+        },
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2025-09-28",
+            "end": "2026-06-27",
+            "dimensions": [],
+            "tag": "ShareBasedCompensation",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": 10523000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-304",
+            "decimals": "-6",
+            "accession": "0000320193-26-000020",
+            "filedAt": "2026-07-31",
+            "sourceFile": "data/sources/filing-0000320193-26-000020-28f986bb243c8fdd.xbrl",
+            "sourceHash": "28f986bb243c8fdd445560d381df4b57912ca290b03b8451ecd518e63cdb5d2b",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+          }
+        },
+        {
+          "coefficient": -1,
+          "fact": {
+            "start": "2024-09-29",
+            "end": "2025-06-28",
+            "dimensions": [],
+            "tag": "ShareBasedCompensation",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": 9680000000.0,
+            "unit": "USD",
+            "context": "c-20",
+            "factId": "f-305",
+            "decimals": "-6",
+            "accession": "0000320193-26-000020",
+            "filedAt": "2026-07-31",
+            "sourceFile": "data/sources/filing-0000320193-26-000020-28f986bb243c8fdd.xbrl",
+            "sourceHash": "28f986bb243c8fdd445560d381df4b57912ca290b03b8451ecd518e63cdb5d2b",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+          }
+        }
+      ],
+      "derived": true,
+      "tag": "ShareBasedCompensation",
+      "unit": "USD",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+    },
+    "OtherNoncashIncomeExpense": {
+      "value": 378000000.0,
+      "components": [
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2024-09-29",
+            "end": "2025-09-27",
+            "dimensions": [],
+            "tag": "OtherNoncashIncomeExpense",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": 89000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-286",
+            "decimals": "-6",
+            "accession": "0000320193-25-000079",
+            "filedAt": "2025-10-31",
+            "sourceFile": "data/sources/filing-0000320193-25-000079-e1076735f1c81bc9.xbrl",
+            "sourceHash": "e1076735f1c81bc96d5c1ff6e1a9d23515d6eacf52b405cb1f7da3e379ac533b",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm"
+          }
+        },
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2025-09-28",
+            "end": "2026-06-27",
+            "dimensions": [],
+            "tag": "OtherNoncashIncomeExpense",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": 2037000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-306",
+            "decimals": "-6",
+            "accession": "0000320193-26-000020",
+            "filedAt": "2026-07-31",
+            "sourceFile": "data/sources/filing-0000320193-26-000020-28f986bb243c8fdd.xbrl",
+            "sourceHash": "28f986bb243c8fdd445560d381df4b57912ca290b03b8451ecd518e63cdb5d2b",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+          }
+        },
+        {
+          "coefficient": -1,
+          "fact": {
+            "start": "2024-09-29",
+            "end": "2025-06-28",
+            "dimensions": [],
+            "tag": "OtherNoncashIncomeExpense",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": 1748000000.0,
+            "unit": "USD",
+            "context": "c-20",
+            "factId": "f-307",
+            "decimals": "-6",
+            "accession": "0000320193-26-000020",
+            "filedAt": "2026-07-31",
+            "sourceFile": "data/sources/filing-0000320193-26-000020-28f986bb243c8fdd.xbrl",
+            "sourceHash": "28f986bb243c8fdd445560d381df4b57912ca290b03b8451ecd518e63cdb5d2b",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+          }
+        }
+      ],
+      "derived": true,
+      "tag": "OtherNoncashIncomeExpense",
+      "unit": "USD",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+    },
+    "IncreaseDecreaseInAccountsReceivable": {
+      "value": 4051000000.0,
+      "components": [
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2024-09-29",
+            "end": "2025-09-27",
+            "dimensions": [],
+            "tag": "IncreaseDecreaseInAccountsReceivable",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": 6682000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-289",
+            "decimals": "-6",
+            "accession": "0000320193-25-000079",
+            "filedAt": "2025-10-31",
+            "sourceFile": "data/sources/filing-0000320193-25-000079-e1076735f1c81bc9.xbrl",
+            "sourceHash": "e1076735f1c81bc96d5c1ff6e1a9d23515d6eacf52b405cb1f7da3e379ac533b",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm"
+          }
+        },
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2025-09-28",
+            "end": "2026-06-27",
+            "dimensions": [],
+            "tag": "IncreaseDecreaseInAccountsReceivable",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": -8316000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-308",
+            "decimals": "-6",
+            "accession": "0000320193-26-000020",
+            "filedAt": "2026-07-31",
+            "sourceFile": "data/sources/filing-0000320193-26-000020-28f986bb243c8fdd.xbrl",
+            "sourceHash": "28f986bb243c8fdd445560d381df4b57912ca290b03b8451ecd518e63cdb5d2b",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+          }
+        },
+        {
+          "coefficient": -1,
+          "fact": {
+            "start": "2024-09-29",
+            "end": "2025-06-28",
+            "dimensions": [],
+            "tag": "IncreaseDecreaseInAccountsReceivable",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": -5685000000.0,
+            "unit": "USD",
+            "context": "c-20",
+            "factId": "f-309",
+            "decimals": "-6",
+            "accession": "0000320193-26-000020",
+            "filedAt": "2026-07-31",
+            "sourceFile": "data/sources/filing-0000320193-26-000020-28f986bb243c8fdd.xbrl",
+            "sourceHash": "28f986bb243c8fdd445560d381df4b57912ca290b03b8451ecd518e63cdb5d2b",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+          }
+        }
+      ],
+      "derived": true,
+      "tag": "IncreaseDecreaseInAccountsReceivable",
+      "unit": "USD",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+    },
+    "IncreaseDecreaseInOtherReceivables": {
+      "value": 8231000000.0,
+      "components": [
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2024-09-29",
+            "end": "2025-09-27",
+            "dimensions": [],
+            "tag": "IncreaseDecreaseInOtherReceivables",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": 347000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-292",
+            "decimals": "-6",
+            "accession": "0000320193-25-000079",
+            "filedAt": "2025-10-31",
+            "sourceFile": "data/sources/filing-0000320193-25-000079-e1076735f1c81bc9.xbrl",
+            "sourceHash": "e1076735f1c81bc96d5c1ff6e1a9d23515d6eacf52b405cb1f7da3e379ac533b",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm"
+          }
+        },
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2025-09-28",
+            "end": "2026-06-27",
+            "dimensions": [],
+            "tag": "IncreaseDecreaseInOtherReceivables",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": -5671000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-310",
+            "decimals": "-6",
+            "accession": "0000320193-26-000020",
+            "filedAt": "2026-07-31",
+            "sourceFile": "data/sources/filing-0000320193-26-000020-28f986bb243c8fdd.xbrl",
+            "sourceHash": "28f986bb243c8fdd445560d381df4b57912ca290b03b8451ecd518e63cdb5d2b",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+          }
+        },
+        {
+          "coefficient": -1,
+          "fact": {
+            "start": "2024-09-29",
+            "end": "2025-06-28",
+            "dimensions": [],
+            "tag": "IncreaseDecreaseInOtherReceivables",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": -13555000000.0,
+            "unit": "USD",
+            "context": "c-20",
+            "factId": "f-311",
+            "decimals": "-6",
+            "accession": "0000320193-26-000020",
+            "filedAt": "2026-07-31",
+            "sourceFile": "data/sources/filing-0000320193-26-000020-28f986bb243c8fdd.xbrl",
+            "sourceHash": "28f986bb243c8fdd445560d381df4b57912ca290b03b8451ecd518e63cdb5d2b",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+          }
+        }
+      ],
+      "derived": true,
+      "tag": "IncreaseDecreaseInOtherReceivables",
+      "unit": "USD",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+    },
+    "IncreaseDecreaseInInventories": {
+      "value": 5284000000.0,
+      "components": [
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2024-09-29",
+            "end": "2025-09-27",
+            "dimensions": [],
+            "tag": "IncreaseDecreaseInInventories",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": -1400000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-295",
+            "decimals": "-6",
+            "accession": "0000320193-25-000079",
+            "filedAt": "2025-10-31",
+            "sourceFile": "data/sources/filing-0000320193-25-000079-e1076735f1c81bc9.xbrl",
+            "sourceHash": "e1076735f1c81bc96d5c1ff6e1a9d23515d6eacf52b405cb1f7da3e379ac533b",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm"
+          }
+        },
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2025-09-28",
+            "end": "2026-06-27",
+            "dimensions": [],
+            "tag": "IncreaseDecreaseInInventories",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": 5461000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-312",
+            "decimals": "-6",
+            "accession": "0000320193-26-000020",
+            "filedAt": "2026-07-31",
+            "sourceFile": "data/sources/filing-0000320193-26-000020-28f986bb243c8fdd.xbrl",
+            "sourceHash": "28f986bb243c8fdd445560d381df4b57912ca290b03b8451ecd518e63cdb5d2b",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+          }
+        },
+        {
+          "coefficient": -1,
+          "fact": {
+            "start": "2024-09-29",
+            "end": "2025-06-28",
+            "dimensions": [],
+            "tag": "IncreaseDecreaseInInventories",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": -1223000000.0,
+            "unit": "USD",
+            "context": "c-20",
+            "factId": "f-313",
+            "decimals": "-6",
+            "accession": "0000320193-26-000020",
+            "filedAt": "2026-07-31",
+            "sourceFile": "data/sources/filing-0000320193-26-000020-28f986bb243c8fdd.xbrl",
+            "sourceHash": "28f986bb243c8fdd445560d381df4b57912ca290b03b8451ecd518e63cdb5d2b",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+          }
+        }
+      ],
+      "derived": true,
+      "tag": "IncreaseDecreaseInInventories",
+      "unit": "USD",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+    },
+    "IncreaseDecreaseInOtherOperatingAssets": {
+      "value": 19347000000.0,
+      "components": [
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2024-09-29",
+            "end": "2025-09-27",
+            "dimensions": [],
+            "tag": "IncreaseDecreaseInOtherOperatingAssets",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": 9197000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-298",
+            "decimals": "-6",
+            "accession": "0000320193-25-000079",
+            "filedAt": "2025-10-31",
+            "sourceFile": "data/sources/filing-0000320193-25-000079-e1076735f1c81bc9.xbrl",
+            "sourceHash": "e1076735f1c81bc96d5c1ff6e1a9d23515d6eacf52b405cb1f7da3e379ac533b",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm"
+          }
+        },
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2025-09-28",
+            "end": "2026-06-27",
+            "dimensions": [],
+            "tag": "IncreaseDecreaseInOtherOperatingAssets",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": 16266000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-314",
+            "decimals": "-6",
+            "accession": "0000320193-26-000020",
+            "filedAt": "2026-07-31",
+            "sourceFile": "data/sources/filing-0000320193-26-000020-28f986bb243c8fdd.xbrl",
+            "sourceHash": "28f986bb243c8fdd445560d381df4b57912ca290b03b8451ecd518e63cdb5d2b",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+          }
+        },
+        {
+          "coefficient": -1,
+          "fact": {
+            "start": "2024-09-29",
+            "end": "2025-06-28",
+            "dimensions": [],
+            "tag": "IncreaseDecreaseInOtherOperatingAssets",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": 6116000000.0,
+            "unit": "USD",
+            "context": "c-20",
+            "factId": "f-315",
+            "decimals": "-6",
+            "accession": "0000320193-26-000020",
+            "filedAt": "2026-07-31",
+            "sourceFile": "data/sources/filing-0000320193-26-000020-28f986bb243c8fdd.xbrl",
+            "sourceHash": "28f986bb243c8fdd445560d381df4b57912ca290b03b8451ecd518e63cdb5d2b",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+          }
+        }
+      ],
+      "derived": true,
+      "tag": "IncreaseDecreaseInOtherOperatingAssets",
+      "unit": "USD",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+    },
+    "IncreaseDecreaseInAccountsPayable": {
+      "value": 14178000000.0,
+      "components": [
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2024-09-29",
+            "end": "2025-09-27",
+            "dimensions": [],
+            "tag": "IncreaseDecreaseInAccountsPayable",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": 902000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-301",
+            "decimals": "-6",
+            "accession": "0000320193-25-000079",
+            "filedAt": "2025-10-31",
+            "sourceFile": "data/sources/filing-0000320193-25-000079-e1076735f1c81bc9.xbrl",
+            "sourceHash": "e1076735f1c81bc96d5c1ff6e1a9d23515d6eacf52b405cb1f7da3e379ac533b",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm"
+          }
+        },
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2025-09-28",
+            "end": "2026-06-27",
+            "dimensions": [],
+            "tag": "IncreaseDecreaseInAccountsPayable",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": -5203000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-316",
+            "decimals": "-6",
+            "accession": "0000320193-26-000020",
+            "filedAt": "2026-07-31",
+            "sourceFile": "data/sources/filing-0000320193-26-000020-28f986bb243c8fdd.xbrl",
+            "sourceHash": "28f986bb243c8fdd445560d381df4b57912ca290b03b8451ecd518e63cdb5d2b",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+          }
+        },
+        {
+          "coefficient": -1,
+          "fact": {
+            "start": "2024-09-29",
+            "end": "2025-06-28",
+            "dimensions": [],
+            "tag": "IncreaseDecreaseInAccountsPayable",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": -18479000000.0,
+            "unit": "USD",
+            "context": "c-20",
+            "factId": "f-317",
+            "decimals": "-6",
+            "accession": "0000320193-26-000020",
+            "filedAt": "2026-07-31",
+            "sourceFile": "data/sources/filing-0000320193-26-000020-28f986bb243c8fdd.xbrl",
+            "sourceHash": "28f986bb243c8fdd445560d381df4b57912ca290b03b8451ecd518e63cdb5d2b",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+          }
+        }
+      ],
+      "derived": true,
+      "tag": "IncreaseDecreaseInAccountsPayable",
+      "unit": "USD",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+    },
+    "IncreaseDecreaseInOtherOperatingLiabilities": {
+      "value": 14101000000.0,
+      "components": [
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2024-09-29",
+            "end": "2025-09-27",
+            "dimensions": [],
+            "tag": "IncreaseDecreaseInOtherOperatingLiabilities",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": -11076000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-304",
+            "decimals": "-6",
+            "accession": "0000320193-25-000079",
+            "filedAt": "2025-10-31",
+            "sourceFile": "data/sources/filing-0000320193-25-000079-e1076735f1c81bc9.xbrl",
+            "sourceHash": "e1076735f1c81bc96d5c1ff6e1a9d23515d6eacf52b405cb1f7da3e379ac533b",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm"
+          }
+        },
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2025-09-28",
+            "end": "2026-06-27",
+            "dimensions": [],
+            "tag": "IncreaseDecreaseInOtherOperatingLiabilities",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": 10016000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-318",
+            "decimals": "-6",
+            "accession": "0000320193-26-000020",
+            "filedAt": "2026-07-31",
+            "sourceFile": "data/sources/filing-0000320193-26-000020-28f986bb243c8fdd.xbrl",
+            "sourceHash": "28f986bb243c8fdd445560d381df4b57912ca290b03b8451ecd518e63cdb5d2b",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+          }
+        },
+        {
+          "coefficient": -1,
+          "fact": {
+            "start": "2024-09-29",
+            "end": "2025-06-28",
+            "dimensions": [],
+            "tag": "IncreaseDecreaseInOtherOperatingLiabilities",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": -15161000000.0,
+            "unit": "USD",
+            "context": "c-20",
+            "factId": "f-319",
+            "decimals": "-6",
+            "accession": "0000320193-26-000020",
+            "filedAt": "2026-07-31",
+            "sourceFile": "data/sources/filing-0000320193-26-000020-28f986bb243c8fdd.xbrl",
+            "sourceHash": "28f986bb243c8fdd445560d381df4b57912ca290b03b8451ecd518e63cdb5d2b",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+          }
+        }
+      ],
+      "derived": true,
+      "tag": "IncreaseDecreaseInOtherOperatingLiabilities",
+      "unit": "USD",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+    }
+  },
+  "defaults": {
+    "segments": [
+      {
+        "growthStart": 0,
+        "growthEnd": 0,
+        "marginEnd": 0.3912745961396873
+      },
+      {
+        "growthStart": 0,
+        "growthEnd": 0,
+        "marginEnd": 0.7603628878301433
+      }
+    ],
+    "tax": 0.21,
+    "netInterest": 0.002242820083843341,
+    "depreciation": 0.0192233294325994,
+    "workingCapital": 0.05777505822904741,
+    "capexStart": 0.021509222981729692,
+    "capexEnd": 0.021509222981729692,
+    "leaseStart": 0.00129276890434231,
+    "leaseEnd": 0.00129276890434231,
+    "discount": 0.11,
+    "terminal": 0.02,
+    "researchStart": 0.09189992780989797,
+    "researchEnd": 0.09189992780989797,
+    "sellingStart": 0.062899642905341,
+    "sellingEnd": 0.062899642905341,
+    "otherOperatingStart": 0,
+    "otherOperatingEnd": 0,
+    "minority": 0
+  },
+  "security": {
+    "additionalShareEvidence": [],
+    "classes": [],
+    "issues": [],
+    "marketCapProxy": 4807322802924.194,
+    "preferredEvidence": [],
+    "priceDate": "2026-09-29",
+    "scope": "공시에 기재된 유통주식수의 자체 기준일과 관측 종가의 시점 차이를 보존한다. 이후 발행·소각을 반영한 실시간 시가총액은 아니다.",
+    "shareAgeDays": 74,
+    "shareTable": null,
+    "shares": {
+      "accession": "0000320193-26-000020",
+      "context": "c-9",
+      "decimals": "-3",
+      "dimensions": [],
+      "end": "2026-07-17",
+      "factId": "f-42",
+      "filedAt": "2026-07-31",
+      "sourceFile": "data/sources/filing-0000320193-26-000020-28f986bb243c8fdd.xbrl",
+      "sourceHash": "28f986bb243c8fdd445560d381df4b57912ca290b03b8451ecd518e63cdb5d2b",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm",
+      "start": null,
+      "tag": "EntityCommonStockSharesOutstanding",
+      "taxonomy": "http://xbrl.sec.gov/dei/2025",
+      "unit": "shares",
+      "value": 14594180000.0
+    },
+    "status": "available"
+  },
+  "passages": [
+    {
+      "heading": "",
+      "id": "1c9b4424dbc49041de79",
+      "kind": "paragraph",
+      "ordinal": 170,
+      "sourceFile": "data/sources/filing-0000320193-26-000020-f930cba4544bda2b.html",
+      "sourceHash": "f930cba4544bda2b9b998437f66ba6d801dbe635b352a84dd4c1fa67f53e85e2",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm",
+      "text": "The condensed consolidated financial statements include the accounts of Apple Inc. and its wholly owned subsidiaries (collectively “Apple” or the “Company”). In the opinion of the Company’s management, the condensed consolidated financial statements reflect all adjustments, which are normal and recurring in nature, necessary for fair financial statement presentation. The preparation of these condensed consolidated financial statements and accompanying notes in conformity with U.S. generally accepted accounting principles (“GAAP”) requires the use of management estimates. Certain prior period amounts in the condensed consolidated financial statements and accompanying notes have been reclassified to conform to the current period’s presentation. These condensed consolidated financial statements and accompanying notes should be read in conjunction with the Company’s annual consolidated financial statements and accompanying notes included in its Annual Report on Form 10-K for the fiscal year ended September 27, 2025 (the “2025 Form 10-K”)."
+    },
+    {
+      "heading": "",
+      "id": "ce46d4a6daa4e3e14936",
+      "kind": "paragraph",
+      "ordinal": 347,
+      "sourceFile": "data/sources/filing-0000320193-26-000020-f930cba4544bda2b.html",
+      "sourceHash": "f930cba4544bda2b9b998437f66ba6d801dbe635b352a84dd4c1fa67f53e85e2",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm",
+      "text": "iPhone net sales increased during the third quarter and first nine months of 2026 compared to the same periods in 2025 primarily due to higher net sales of Pro models."
+    },
+    {
+      "heading": "",
+      "id": "d98c39ef4db00f906794",
+      "kind": "paragraph",
+      "ordinal": 352,
+      "sourceFile": "data/sources/filing-0000320193-26-000020-f930cba4544bda2b.html",
+      "sourceHash": "f930cba4544bda2b9b998437f66ba6d801dbe635b352a84dd4c1fa67f53e85e2",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm",
+      "text": "Services net sales increased during the third quarter and first nine months of 2026 compared to the same periods in 2025 primarily due to higher net sales from advertising and cloud services."
+    },
+    {
+      "heading": "",
+      "id": "1c101e5f8e2be6491123",
+      "kind": "paragraph",
+      "ordinal": 354,
+      "sourceFile": "data/sources/filing-0000320193-26-000020-f930cba4544bda2b.html",
+      "sourceHash": "f930cba4544bda2b9b998437f66ba6d801dbe635b352a84dd4c1fa67f53e85e2",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm",
+      "text": "Products and Services gross margin and gross margin percentage for the three- and nine-month periods ended June 27, 2026 and June 28, 2025, were as follows (dollars in millions):"
+    },
+    {
+      "heading": "",
+      "id": "de0ae31c58f2d6cc5dd3",
+      "kind": "table",
+      "ordinal": 355,
+      "sourceFile": "data/sources/filing-0000320193-26-000020-f930cba4544bda2b.html",
+      "sourceHash": "f930cba4544bda2b9b998437f66ba6d801dbe635b352a84dd4c1fa67f53e85e2",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm",
+      "text": "Products | $ | 31,525 | | | $ | 22,993 | | | $ | 108,819 | | | $ | 86,190"
+    },
+    {
+      "heading": "",
+      "id": "21e4b647f11309e1f8fa",
+      "kind": "table",
+      "ordinal": 356,
+      "sourceFile": "data/sources/filing-0000320193-26-000020-f930cba4544bda2b.html",
+      "sourceHash": "f930cba4544bda2b9b998437f66ba6d801dbe635b352a84dd4c1fa67f53e85e2",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm",
+      "text": "Services | 23,245 | | | 20,725 | | | 69,963 | | | 60,670"
+    },
+    {
+      "heading": "",
+      "id": "230293b4c1010fe9827d",
+      "kind": "paragraph",
+      "ordinal": 361,
+      "sourceFile": "data/sources/filing-0000320193-26-000020-f930cba4544bda2b.html",
+      "sourceHash": "f930cba4544bda2b9b998437f66ba6d801dbe635b352a84dd4c1fa67f53e85e2",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm",
+      "text": "Products gross margin and gross margin percentage increased during the third quarter and first nine months of 2026 compared to the same periods in 2025 primarily due to a different mix of products and tariff refunds, partially offset by higher costs, including memory."
+    },
+    {
+      "heading": "",
+      "id": "a8a9dfc8000e99ea3038",
+      "kind": "paragraph",
+      "ordinal": 362,
+      "sourceFile": "data/sources/filing-0000320193-26-000020-f930cba4544bda2b.html",
+      "sourceHash": "f930cba4544bda2b9b998437f66ba6d801dbe635b352a84dd4c1fa67f53e85e2",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm",
+      "text": "Services gross margin increased during the third quarter and first nine months of 2026 compared to the same periods in 2025 primarily due to higher Services net sales and a different mix of services, partially offset by higher costs."
+    },
+    {
+      "heading": "",
+      "id": "81f2508fb320d5fe1fa0",
+      "kind": "paragraph",
+      "ordinal": 363,
+      "sourceFile": "data/sources/filing-0000320193-26-000020-f930cba4544bda2b.html",
+      "sourceHash": "f930cba4544bda2b9b998437f66ba6d801dbe635b352a84dd4c1fa67f53e85e2",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm",
+      "text": "Services gross margin percentage was flat during the third quarter of 2026 compared to the third quarter of 2025. Year-over-year Services gross margin percentage increased during the first nine months of 2026 primarily due to a different mix of services, partially offset by higher costs."
+    },
+    {
+      "heading": "",
+      "id": "5601f858904c4dc5557c",
+      "kind": "paragraph",
+      "ordinal": 380,
+      "sourceFile": "data/sources/filing-0000320193-26-000020-f930cba4544bda2b.html",
+      "sourceHash": "f930cba4544bda2b9b998437f66ba6d801dbe635b352a84dd4c1fa67f53e85e2",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm",
+      "text": "The Company’s effective tax rate for the third quarter and first nine months of 2026 was lower than the statutory federal income tax rate primarily due to a lower effective tax rate on foreign earnings, including the impact of changes in unrecognized tax benefits, the impact of the U.S. federal R&D credit, and tax benefits from share-based compensation, partially offset by state income taxes."
+    },
+    {
+      "heading": "",
+      "id": "6a06372d71aa7be655c4",
+      "kind": "paragraph",
+      "ordinal": 381,
+      "sourceFile": "data/sources/filing-0000320193-26-000020-f930cba4544bda2b.html",
+      "sourceHash": "f930cba4544bda2b9b998437f66ba6d801dbe635b352a84dd4c1fa67f53e85e2",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm",
+      "text": "The Company’s effective tax rate for the third quarter of 2026 was higher compared to the third quarter of 2025 primarily due to a higher effective tax rate on foreign earnings, partially offset by the impact of changes in unrecognized tax benefits and tax benefits from share-based compensation. The Company’s effective tax rate for the first nine months of 2026 was higher compared to the same period in 2025 primarily due to a higher effective tax rate on foreign earnings, including the impact of changes in unrecognized tax benefits, the impact of foreign currency loss regulations issued by the U.S. Department of the Treasury in December 2024, and the tax impact from foreign currency revaluations in the first quarter of 2025 related to the State Aid Decision."
+    }
+  ],
+  "historicalPassages": [
+    {
+      "text": "Statutory federal income tax rate | 21 | % | | 21 | % | | 21 | %",
+      "heading": "",
+      "kind": "table",
+      "ordinal": 311,
+      "id": "439de0db4756c8d78d07",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm",
+      "sourceFile": "data/sources/filing-0000320193-25-000079-aec600ecc03ebe37.html",
+      "sourceHash": "aec600ecc03ebe37c1d40b1d941f17ea8a94e35f65a5995941130e437328ad1e"
+    },
+    {
+      "text": "Depreciation expense on property, plant and equipment was $8.0 billion, $8.2 billion and $8.5 billion during 2025, 2024 and 2023, respectively.",
+      "heading": "",
+      "kind": "paragraph",
+      "ordinal": 593,
+      "id": "9ab6ed71d2013618224b",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm",
+      "sourceFile": "data/sources/filing-0000320193-25-000079-aec600ecc03ebe37.html",
+      "sourceHash": "aec600ecc03ebe37c1d40b1d941f17ea8a94e35f65a5995941130e437328ad1e"
+    },
+    {
+      "text": "The Company has lease arrangements for certain equipment and facilities, including corporate, data center, manufacturing and retail space. These leases typically have original terms not exceeding 10 years and generally contain multiyear renewal options, some of which are reasonably certain of exercise.",
+      "heading": "",
+      "kind": "paragraph",
+      "ordinal": 654,
+      "id": "711367923b610d9f996c",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm",
+      "sourceFile": "data/sources/filing-0000320193-25-000079-aec600ecc03ebe37.html",
+      "sourceHash": "aec600ecc03ebe37c1d40b1d941f17ea8a94e35f65a5995941130e437328ad1e"
+    },
+    {
+      "text": "Payments under the Company’s lease arrangements may be fixed or variable, and variable lease payments are primarily based on purchases of output of the underlying leased assets. Lease costs associated with fixed payments on the Company’s operating leases were $2.1 billion for 2025 and $2.0 billion for both 2024 and 2023. Lease costs associated with variable payments on the Company’s leases were $16.1 billion, $13.8 billion and $13.9 billion for 2025, 2024 and 2023, respectively.",
+      "heading": "",
+      "kind": "paragraph",
+      "ordinal": 655,
+      "id": "82ec288f0513488a39ca",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm",
+      "sourceFile": "data/sources/filing-0000320193-25-000079-aec600ecc03ebe37.html",
+      "sourceHash": "aec600ecc03ebe37c1d40b1d941f17ea8a94e35f65a5995941130e437328ad1e"
+    },
+    {
+      "text": "The Company made fixed cash payments related to operating leases of $2.1 billion in 2025 and $1.9 billion in both 2024 and 2023. Noncash activities involving right-of-use (“ROU”) assets obtained in exchange for lease liabilities were $2.8 billion, $1.0 billion and $2.1 billion for 2025, 2024 and 2023, respectively.",
+      "heading": "",
+      "kind": "paragraph",
+      "ordinal": 656,
+      "id": "1c55b856550b8ff09e09",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm",
+      "sourceFile": "data/sources/filing-0000320193-25-000079-aec600ecc03ebe37.html",
+      "sourceHash": "aec600ecc03ebe37c1d40b1d941f17ea8a94e35f65a5995941130e437328ad1e"
+    },
+    {
+      "text": "The following table shows ROU assets and lease liabilities, and the associated financial statement line items, as of September 27, 2025 and September 28, 2024 (in millions):",
+      "heading": "",
+      "kind": "paragraph",
+      "ordinal": 657,
+      "id": "47b026e0c0f18934271a",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm",
+      "sourceFile": "data/sources/filing-0000320193-25-000079-aec600ecc03ebe37.html",
+      "sourceHash": "aec600ecc03ebe37c1d40b1d941f17ea8a94e35f65a5995941130e437328ad1e"
+    },
+    {
+      "text": "Lease-Related Assets and Liabilities | | Financial Statement Line Items | | 2025 | | 2024",
+      "heading": "",
+      "kind": "table",
+      "ordinal": 658,
+      "id": "4f3c2ed295c91aac21fe",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm",
+      "sourceFile": "data/sources/filing-0000320193-25-000079-aec600ecc03ebe37.html",
+      "sourceHash": "aec600ecc03ebe37c1d40b1d941f17ea8a94e35f65a5995941130e437328ad1e"
+    },
+    {
+      "text": "Finance leases | | Other current liabilities | | 538 | | | 144",
+      "heading": "",
+      "kind": "table",
+      "ordinal": 664,
+      "id": "ba29f514f80cc4f2d6a8",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm",
+      "sourceFile": "data/sources/filing-0000320193-25-000079-aec600ecc03ebe37.html",
+      "sourceHash": "aec600ecc03ebe37c1d40b1d941f17ea8a94e35f65a5995941130e437328ad1e"
+    },
+    {
+      "text": "Lease liability maturities as of September 27, 2025, are as follows (in millions):",
+      "heading": "",
+      "kind": "paragraph",
+      "ordinal": 668,
+      "id": "d3e977ff4399681b546b",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm",
+      "sourceFile": "data/sources/filing-0000320193-25-000079-aec600ecc03ebe37.html",
+      "sourceHash": "aec600ecc03ebe37c1d40b1d941f17ea8a94e35f65a5995941130e437328ad1e"
+    }
+  ],
+  "profitChange": {
+    "start": 100623000000.0,
+    "end": 122432000000.0,
+    "parts": [
+      {
+        "label": "매출총이익 증가",
+        "value": 31922000000.0,
+        "evidence": [
+          {
+            "coefficient": 1,
+            "fact": {
+              "start": "2025-09-28",
+              "end": "2026-06-27",
+              "dimensions": [],
+              "tag": "GrossProfit",
+              "taxonomy": "http://fasb.org/us-gaap/2025",
+              "value": 178782000000.0,
+              "unit": "USD",
+              "context": "c-1",
+              "factId": "f-74",
+              "decimals": "-6",
+              "accession": "0000320193-26-000020",
+              "filedAt": "2026-07-31",
+              "sourceFile": "data/sources/filing-0000320193-26-000020-28f986bb243c8fdd.xbrl",
+              "sourceHash": "28f986bb243c8fdd445560d381df4b57912ca290b03b8451ecd518e63cdb5d2b",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+            }
+          },
+          {
+            "coefficient": -1,
+            "fact": {
+              "start": "2024-09-29",
+              "end": "2025-06-28",
+              "dimensions": [],
+              "tag": "GrossProfit",
+              "taxonomy": "http://fasb.org/us-gaap/2025",
+              "value": 146860000000.0,
+              "unit": "USD",
+              "context": "c-20",
+              "factId": "f-75",
+              "decimals": "-6",
+              "accession": "0000320193-26-000020",
+              "filedAt": "2026-07-31",
+              "sourceFile": "data/sources/filing-0000320193-26-000020-28f986bb243c8fdd.xbrl",
+              "sourceHash": "28f986bb243c8fdd445560d381df4b57912ca290b03b8451ecd518e63cdb5d2b",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+            }
+          }
+        ]
+      },
+      {
+        "label": "연구개발비 증가",
+        "value": -8351000000.0,
+        "evidence": [
+          {
+            "coefficient": 1,
+            "fact": {
+              "start": "2025-09-28",
+              "end": "2026-06-27",
+              "dimensions": [],
+              "tag": "ResearchAndDevelopmentExpense",
+              "taxonomy": "http://fasb.org/us-gaap/2025",
+              "value": 34035000000.0,
+              "unit": "USD",
+              "context": "c-1",
+              "factId": "f-78",
+              "decimals": "-6",
+              "accession": "0000320193-26-000020",
+              "filedAt": "2026-07-31",
+              "sourceFile": "data/sources/filing-0000320193-26-000020-28f986bb243c8fdd.xbrl",
+              "sourceHash": "28f986bb243c8fdd445560d381df4b57912ca290b03b8451ecd518e63cdb5d2b",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+            }
+          },
+          {
+            "coefficient": -1,
+            "fact": {
+              "start": "2024-09-29",
+              "end": "2025-06-28",
+              "dimensions": [],
+              "tag": "ResearchAndDevelopmentExpense",
+              "taxonomy": "http://fasb.org/us-gaap/2025",
+              "value": 25684000000.0,
+              "unit": "USD",
+              "context": "c-20",
+              "factId": "f-79",
+              "decimals": "-6",
+              "accession": "0000320193-26-000020",
+              "filedAt": "2026-07-31",
+              "sourceFile": "data/sources/filing-0000320193-26-000020-28f986bb243c8fdd.xbrl",
+              "sourceHash": "28f986bb243c8fdd445560d381df4b57912ca290b03b8451ecd518e63cdb5d2b",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+            }
+          }
+        ]
+      },
+      {
+        "label": "판매관리비 증가",
+        "value": -1762000000.0,
+        "evidence": [
+          {
+            "coefficient": 1,
+            "fact": {
+              "start": "2025-09-28",
+              "end": "2026-06-27",
+              "dimensions": [],
+              "tag": "SellingGeneralAndAdministrativeExpense",
+              "taxonomy": "http://fasb.org/us-gaap/2025",
+              "value": 22315000000.0,
+              "unit": "USD",
+              "context": "c-1",
+              "factId": "f-82",
+              "decimals": "-6",
+              "accession": "0000320193-26-000020",
+              "filedAt": "2026-07-31",
+              "sourceFile": "data/sources/filing-0000320193-26-000020-28f986bb243c8fdd.xbrl",
+              "sourceHash": "28f986bb243c8fdd445560d381df4b57912ca290b03b8451ecd518e63cdb5d2b",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+            }
+          },
+          {
+            "coefficient": -1,
+            "fact": {
+              "start": "2024-09-29",
+              "end": "2025-06-28",
+              "dimensions": [],
+              "tag": "SellingGeneralAndAdministrativeExpense",
+              "taxonomy": "http://fasb.org/us-gaap/2025",
+              "value": 20553000000.0,
+              "unit": "USD",
+              "context": "c-20",
+              "factId": "f-83",
+              "decimals": "-6",
+              "accession": "0000320193-26-000020",
+              "filedAt": "2026-07-31",
+              "sourceFile": "data/sources/filing-0000320193-26-000020-28f986bb243c8fdd.xbrl",
+              "sourceHash": "28f986bb243c8fdd445560d381df4b57912ca290b03b8451ecd518e63cdb5d2b",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+            }
+          }
+        ]
+      }
+    ],
+    "startLabel": "전년 9개월",
+    "endLabel": "당기 9개월",
+    "period": "2026 회계연도 9개월 / 전년 9개월",
+    "caption": "매출총이익 증가에서 연구개발·판매관리비 증가를 차감한 산술 대사입니다. 제품 구성·관세 환급·메모리 비용의 개별 기여액은 분리 공시되지 않아 인과 금액으로 나누지 않습니다.",
+    "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+  },
+  "bridge": {
+    "parts": [
+      {
+        "label": "연결 영업이익",
+        "value": 154859000000.0,
+        "fact": {
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm",
+          "components": [
+            {
+              "coefficient": 1,
+              "fact": {
+                "start": "2024-09-29",
+                "end": "2025-09-27",
+                "dimensions": [],
+                "tag": "OperatingIncomeLoss",
+                "taxonomy": "http://fasb.org/us-gaap/2025",
+                "value": 133050000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-102",
+                "decimals": "-6",
+                "accession": "0000320193-25-000079",
+                "filedAt": "2025-10-31",
+                "sourceFile": "data/sources/filing-0000320193-25-000079-e1076735f1c81bc9.xbrl",
+                "sourceHash": "e1076735f1c81bc96d5c1ff6e1a9d23515d6eacf52b405cb1f7da3e379ac533b",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm"
+              }
+            },
+            {
+              "coefficient": 1,
+              "fact": {
+                "start": "2025-09-28",
+                "end": "2026-06-27",
+                "dimensions": [],
+                "tag": "OperatingIncomeLoss",
+                "taxonomy": "http://fasb.org/us-gaap/2025",
+                "value": 122432000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-90",
+                "decimals": "-6",
+                "accession": "0000320193-26-000020",
+                "filedAt": "2026-07-31",
+                "sourceFile": "data/sources/filing-0000320193-26-000020-28f986bb243c8fdd.xbrl",
+                "sourceHash": "28f986bb243c8fdd445560d381df4b57912ca290b03b8451ecd518e63cdb5d2b",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+              }
+            },
+            {
+              "coefficient": -1,
+              "fact": {
+                "start": "2024-09-29",
+                "end": "2025-06-28",
+                "dimensions": [],
+                "tag": "OperatingIncomeLoss",
+                "taxonomy": "http://fasb.org/us-gaap/2025",
+                "value": 100623000000.0,
+                "unit": "USD",
+                "context": "c-20",
+                "factId": "f-91",
+                "decimals": "-6",
+                "accession": "0000320193-26-000020",
+                "filedAt": "2026-07-31",
+                "sourceFile": "data/sources/filing-0000320193-26-000020-28f986bb243c8fdd.xbrl",
+                "sourceHash": "28f986bb243c8fdd445560d381df4b57912ca290b03b8451ecd518e63cdb5d2b",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "label": "영업외 순손익",
+        "value": 1047000000.0,
+        "fact": {
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm",
+          "components": [
+            {
+              "coefficient": 1,
+              "fact": {
+                "start": "2024-09-29",
+                "end": "2025-09-27",
+                "dimensions": [],
+                "tag": "NonoperatingIncomeExpense",
+                "taxonomy": "http://fasb.org/us-gaap/2025",
+                "value": -321000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-105",
+                "decimals": "-6",
+                "accession": "0000320193-25-000079",
+                "filedAt": "2025-10-31",
+                "sourceFile": "data/sources/filing-0000320193-25-000079-e1076735f1c81bc9.xbrl",
+                "sourceHash": "e1076735f1c81bc96d5c1ff6e1a9d23515d6eacf52b405cb1f7da3e379ac533b",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm"
+              }
+            },
+            {
+              "coefficient": 1,
+              "fact": {
+                "start": "2025-09-28",
+                "end": "2026-06-27",
+                "dimensions": [],
+                "tag": "NonoperatingIncomeExpense",
+                "taxonomy": "http://fasb.org/us-gaap/2025",
+                "value": 670000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-94",
+                "decimals": "-6",
+                "accession": "0000320193-26-000020",
+                "filedAt": "2026-07-31",
+                "sourceFile": "data/sources/filing-0000320193-26-000020-28f986bb243c8fdd.xbrl",
+                "sourceHash": "28f986bb243c8fdd445560d381df4b57912ca290b03b8451ecd518e63cdb5d2b",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+              }
+            },
+            {
+              "coefficient": -1,
+              "fact": {
+                "start": "2024-09-29",
+                "end": "2025-06-28",
+                "dimensions": [],
+                "tag": "NonoperatingIncomeExpense",
+                "taxonomy": "http://fasb.org/us-gaap/2025",
+                "value": -698000000.0,
+                "unit": "USD",
+                "context": "c-20",
+                "factId": "f-95",
+                "decimals": "-6",
+                "accession": "0000320193-26-000020",
+                "filedAt": "2026-07-31",
+                "sourceFile": "data/sources/filing-0000320193-26-000020-28f986bb243c8fdd.xbrl",
+                "sourceHash": "28f986bb243c8fdd445560d381df4b57912ca290b03b8451ecd518e63cdb5d2b",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "label": "법인세 비용",
+        "value": -26976000000.0,
+        "fact": {
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm",
+          "components": [
+            {
+              "coefficient": -1,
+              "fact": {
+                "start": "2024-09-29",
+                "end": "2025-09-27",
+                "dimensions": [],
+                "tag": "IncomeTaxExpenseBenefit",
+                "taxonomy": "http://fasb.org/us-gaap/2025",
+                "value": 20719000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-111",
+                "decimals": "-6",
+                "accession": "0000320193-25-000079",
+                "filedAt": "2025-10-31",
+                "sourceFile": "data/sources/filing-0000320193-25-000079-e1076735f1c81bc9.xbrl",
+                "sourceHash": "e1076735f1c81bc96d5c1ff6e1a9d23515d6eacf52b405cb1f7da3e379ac533b",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm"
+              }
+            },
+            {
+              "coefficient": -1,
+              "fact": {
+                "start": "2025-09-28",
+                "end": "2026-06-27",
+                "dimensions": [],
+                "tag": "IncomeTaxExpenseBenefit",
+                "taxonomy": "http://fasb.org/us-gaap/2025",
+                "value": 21638000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-102",
+                "decimals": "-6",
+                "accession": "0000320193-26-000020",
+                "filedAt": "2026-07-31",
+                "sourceFile": "data/sources/filing-0000320193-26-000020-28f986bb243c8fdd.xbrl",
+                "sourceHash": "28f986bb243c8fdd445560d381df4b57912ca290b03b8451ecd518e63cdb5d2b",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+              }
+            },
+            {
+              "coefficient": 1,
+              "fact": {
+                "start": "2024-09-29",
+                "end": "2025-06-28",
+                "dimensions": [],
+                "tag": "IncomeTaxExpenseBenefit",
+                "taxonomy": "http://fasb.org/us-gaap/2025",
+                "value": 15381000000.0,
+                "unit": "USD",
+                "context": "c-20",
+                "factId": "f-103",
+                "decimals": "-6",
+                "accession": "0000320193-26-000020",
+                "filedAt": "2026-07-31",
+                "sourceFile": "data/sources/filing-0000320193-26-000020-28f986bb243c8fdd.xbrl",
+                "sourceHash": "28f986bb243c8fdd445560d381df4b57912ca290b03b8451ecd518e63cdb5d2b",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "label": "감가상각·상각 조정",
+        "value": 13100000000.0,
+        "fact": {
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm",
+          "components": [
+            {
+              "coefficient": 1,
+              "fact": {
+                "start": "2024-09-29",
+                "end": "2025-09-27",
+                "dimensions": [],
+                "tag": "DepreciationDepletionAndAmortization",
+                "taxonomy": "http://fasb.org/us-gaap/2025",
+                "value": 11698000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-280",
+                "decimals": "-6",
+                "accession": "0000320193-25-000079",
+                "filedAt": "2025-10-31",
+                "sourceFile": "data/sources/filing-0000320193-25-000079-e1076735f1c81bc9.xbrl",
+                "sourceHash": "e1076735f1c81bc96d5c1ff6e1a9d23515d6eacf52b405cb1f7da3e379ac533b",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm"
+              }
+            },
+            {
+              "coefficient": 1,
+              "fact": {
+                "start": "2025-09-28",
+                "end": "2026-06-27",
+                "dimensions": [],
+                "tag": "DepreciationDepletionAndAmortization",
+                "taxonomy": "http://fasb.org/us-gaap/2025",
+                "value": 9973000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-302",
+                "decimals": "-6",
+                "accession": "0000320193-26-000020",
+                "filedAt": "2026-07-31",
+                "sourceFile": "data/sources/filing-0000320193-26-000020-28f986bb243c8fdd.xbrl",
+                "sourceHash": "28f986bb243c8fdd445560d381df4b57912ca290b03b8451ecd518e63cdb5d2b",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+              }
+            },
+            {
+              "coefficient": -1,
+              "fact": {
+                "start": "2024-09-29",
+                "end": "2025-06-28",
+                "dimensions": [],
+                "tag": "DepreciationDepletionAndAmortization",
+                "taxonomy": "http://fasb.org/us-gaap/2025",
+                "value": 8571000000.0,
+                "unit": "USD",
+                "context": "c-20",
+                "factId": "f-303",
+                "decimals": "-6",
+                "accession": "0000320193-26-000020",
+                "filedAt": "2026-07-31",
+                "sourceFile": "data/sources/filing-0000320193-26-000020-28f986bb243c8fdd.xbrl",
+                "sourceHash": "28f986bb243c8fdd445560d381df4b57912ca290b03b8451ecd518e63cdb5d2b",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "label": "주식보상 조정",
+        "value": 13706000000.0,
+        "fact": {
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm",
+          "components": [
+            {
+              "coefficient": 1,
+              "fact": {
+                "start": "2024-09-29",
+                "end": "2025-09-27",
+                "dimensions": [],
+                "tag": "ShareBasedCompensation",
+                "taxonomy": "http://fasb.org/us-gaap/2025",
+                "value": 12863000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-283",
+                "decimals": "-6",
+                "accession": "0000320193-25-000079",
+                "filedAt": "2025-10-31",
+                "sourceFile": "data/sources/filing-0000320193-25-000079-e1076735f1c81bc9.xbrl",
+                "sourceHash": "e1076735f1c81bc96d5c1ff6e1a9d23515d6eacf52b405cb1f7da3e379ac533b",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm"
+              }
+            },
+            {
+              "coefficient": 1,
+              "fact": {
+                "start": "2025-09-28",
+                "end": "2026-06-27",
+                "dimensions": [],
+                "tag": "ShareBasedCompensation",
+                "taxonomy": "http://fasb.org/us-gaap/2025",
+                "value": 10523000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-304",
+                "decimals": "-6",
+                "accession": "0000320193-26-000020",
+                "filedAt": "2026-07-31",
+                "sourceFile": "data/sources/filing-0000320193-26-000020-28f986bb243c8fdd.xbrl",
+                "sourceHash": "28f986bb243c8fdd445560d381df4b57912ca290b03b8451ecd518e63cdb5d2b",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+              }
+            },
+            {
+              "coefficient": -1,
+              "fact": {
+                "start": "2024-09-29",
+                "end": "2025-06-28",
+                "dimensions": [],
+                "tag": "ShareBasedCompensation",
+                "taxonomy": "http://fasb.org/us-gaap/2025",
+                "value": 9680000000.0,
+                "unit": "USD",
+                "context": "c-20",
+                "factId": "f-305",
+                "decimals": "-6",
+                "accession": "0000320193-26-000020",
+                "filedAt": "2026-07-31",
+                "sourceFile": "data/sources/filing-0000320193-26-000020-28f986bb243c8fdd.xbrl",
+                "sourceHash": "28f986bb243c8fdd445560d381df4b57912ca290b03b8451ecd518e63cdb5d2b",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "label": "기타 비현금 조정",
+        "value": -378000000.0,
+        "fact": {
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm",
+          "components": [
+            {
+              "coefficient": -1,
+              "fact": {
+                "start": "2024-09-29",
+                "end": "2025-09-27",
+                "dimensions": [],
+                "tag": "OtherNoncashIncomeExpense",
+                "taxonomy": "http://fasb.org/us-gaap/2025",
+                "value": 89000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-286",
+                "decimals": "-6",
+                "accession": "0000320193-25-000079",
+                "filedAt": "2025-10-31",
+                "sourceFile": "data/sources/filing-0000320193-25-000079-e1076735f1c81bc9.xbrl",
+                "sourceHash": "e1076735f1c81bc96d5c1ff6e1a9d23515d6eacf52b405cb1f7da3e379ac533b",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm"
+              }
+            },
+            {
+              "coefficient": -1,
+              "fact": {
+                "start": "2025-09-28",
+                "end": "2026-06-27",
+                "dimensions": [],
+                "tag": "OtherNoncashIncomeExpense",
+                "taxonomy": "http://fasb.org/us-gaap/2025",
+                "value": 2037000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-306",
+                "decimals": "-6",
+                "accession": "0000320193-26-000020",
+                "filedAt": "2026-07-31",
+                "sourceFile": "data/sources/filing-0000320193-26-000020-28f986bb243c8fdd.xbrl",
+                "sourceHash": "28f986bb243c8fdd445560d381df4b57912ca290b03b8451ecd518e63cdb5d2b",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+              }
+            },
+            {
+              "coefficient": 1,
+              "fact": {
+                "start": "2024-09-29",
+                "end": "2025-06-28",
+                "dimensions": [],
+                "tag": "OtherNoncashIncomeExpense",
+                "taxonomy": "http://fasb.org/us-gaap/2025",
+                "value": 1748000000.0,
+                "unit": "USD",
+                "context": "c-20",
+                "factId": "f-307",
+                "decimals": "-6",
+                "accession": "0000320193-26-000020",
+                "filedAt": "2026-07-31",
+                "sourceFile": "data/sources/filing-0000320193-26-000020-28f986bb243c8fdd.xbrl",
+                "sourceHash": "28f986bb243c8fdd445560d381df4b57912ca290b03b8451ecd518e63cdb5d2b",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "label": "매출채권 변동",
+        "value": -4051000000.0,
+        "fact": {
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm",
+          "components": [
+            {
+              "coefficient": -1,
+              "fact": {
+                "start": "2024-09-29",
+                "end": "2025-09-27",
+                "dimensions": [],
+                "tag": "IncreaseDecreaseInAccountsReceivable",
+                "taxonomy": "http://fasb.org/us-gaap/2025",
+                "value": 6682000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-289",
+                "decimals": "-6",
+                "accession": "0000320193-25-000079",
+                "filedAt": "2025-10-31",
+                "sourceFile": "data/sources/filing-0000320193-25-000079-e1076735f1c81bc9.xbrl",
+                "sourceHash": "e1076735f1c81bc96d5c1ff6e1a9d23515d6eacf52b405cb1f7da3e379ac533b",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm"
+              }
+            },
+            {
+              "coefficient": -1,
+              "fact": {
+                "start": "2025-09-28",
+                "end": "2026-06-27",
+                "dimensions": [],
+                "tag": "IncreaseDecreaseInAccountsReceivable",
+                "taxonomy": "http://fasb.org/us-gaap/2025",
+                "value": -8316000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-308",
+                "decimals": "-6",
+                "accession": "0000320193-26-000020",
+                "filedAt": "2026-07-31",
+                "sourceFile": "data/sources/filing-0000320193-26-000020-28f986bb243c8fdd.xbrl",
+                "sourceHash": "28f986bb243c8fdd445560d381df4b57912ca290b03b8451ecd518e63cdb5d2b",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+              }
+            },
+            {
+              "coefficient": 1,
+              "fact": {
+                "start": "2024-09-29",
+                "end": "2025-06-28",
+                "dimensions": [],
+                "tag": "IncreaseDecreaseInAccountsReceivable",
+                "taxonomy": "http://fasb.org/us-gaap/2025",
+                "value": -5685000000.0,
+                "unit": "USD",
+                "context": "c-20",
+                "factId": "f-309",
+                "decimals": "-6",
+                "accession": "0000320193-26-000020",
+                "filedAt": "2026-07-31",
+                "sourceFile": "data/sources/filing-0000320193-26-000020-28f986bb243c8fdd.xbrl",
+                "sourceHash": "28f986bb243c8fdd445560d381df4b57912ca290b03b8451ecd518e63cdb5d2b",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "label": "공급업체 비매출채권 변동",
+        "value": -8231000000.0,
+        "fact": {
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm",
+          "components": [
+            {
+              "coefficient": -1,
+              "fact": {
+                "start": "2024-09-29",
+                "end": "2025-09-27",
+                "dimensions": [],
+                "tag": "IncreaseDecreaseInOtherReceivables",
+                "taxonomy": "http://fasb.org/us-gaap/2025",
+                "value": 347000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-292",
+                "decimals": "-6",
+                "accession": "0000320193-25-000079",
+                "filedAt": "2025-10-31",
+                "sourceFile": "data/sources/filing-0000320193-25-000079-e1076735f1c81bc9.xbrl",
+                "sourceHash": "e1076735f1c81bc96d5c1ff6e1a9d23515d6eacf52b405cb1f7da3e379ac533b",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm"
+              }
+            },
+            {
+              "coefficient": -1,
+              "fact": {
+                "start": "2025-09-28",
+                "end": "2026-06-27",
+                "dimensions": [],
+                "tag": "IncreaseDecreaseInOtherReceivables",
+                "taxonomy": "http://fasb.org/us-gaap/2025",
+                "value": -5671000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-310",
+                "decimals": "-6",
+                "accession": "0000320193-26-000020",
+                "filedAt": "2026-07-31",
+                "sourceFile": "data/sources/filing-0000320193-26-000020-28f986bb243c8fdd.xbrl",
+                "sourceHash": "28f986bb243c8fdd445560d381df4b57912ca290b03b8451ecd518e63cdb5d2b",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+              }
+            },
+            {
+              "coefficient": 1,
+              "fact": {
+                "start": "2024-09-29",
+                "end": "2025-06-28",
+                "dimensions": [],
+                "tag": "IncreaseDecreaseInOtherReceivables",
+                "taxonomy": "http://fasb.org/us-gaap/2025",
+                "value": -13555000000.0,
+                "unit": "USD",
+                "context": "c-20",
+                "factId": "f-311",
+                "decimals": "-6",
+                "accession": "0000320193-26-000020",
+                "filedAt": "2026-07-31",
+                "sourceFile": "data/sources/filing-0000320193-26-000020-28f986bb243c8fdd.xbrl",
+                "sourceHash": "28f986bb243c8fdd445560d381df4b57912ca290b03b8451ecd518e63cdb5d2b",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "label": "재고 변동",
+        "value": -5284000000.0,
+        "fact": {
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm",
+          "components": [
+            {
+              "coefficient": -1,
+              "fact": {
+                "start": "2024-09-29",
+                "end": "2025-09-27",
+                "dimensions": [],
+                "tag": "IncreaseDecreaseInInventories",
+                "taxonomy": "http://fasb.org/us-gaap/2025",
+                "value": -1400000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-295",
+                "decimals": "-6",
+                "accession": "0000320193-25-000079",
+                "filedAt": "2025-10-31",
+                "sourceFile": "data/sources/filing-0000320193-25-000079-e1076735f1c81bc9.xbrl",
+                "sourceHash": "e1076735f1c81bc96d5c1ff6e1a9d23515d6eacf52b405cb1f7da3e379ac533b",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm"
+              }
+            },
+            {
+              "coefficient": -1,
+              "fact": {
+                "start": "2025-09-28",
+                "end": "2026-06-27",
+                "dimensions": [],
+                "tag": "IncreaseDecreaseInInventories",
+                "taxonomy": "http://fasb.org/us-gaap/2025",
+                "value": 5461000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-312",
+                "decimals": "-6",
+                "accession": "0000320193-26-000020",
+                "filedAt": "2026-07-31",
+                "sourceFile": "data/sources/filing-0000320193-26-000020-28f986bb243c8fdd.xbrl",
+                "sourceHash": "28f986bb243c8fdd445560d381df4b57912ca290b03b8451ecd518e63cdb5d2b",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+              }
+            },
+            {
+              "coefficient": 1,
+              "fact": {
+                "start": "2024-09-29",
+                "end": "2025-06-28",
+                "dimensions": [],
+                "tag": "IncreaseDecreaseInInventories",
+                "taxonomy": "http://fasb.org/us-gaap/2025",
+                "value": -1223000000.0,
+                "unit": "USD",
+                "context": "c-20",
+                "factId": "f-313",
+                "decimals": "-6",
+                "accession": "0000320193-26-000020",
+                "filedAt": "2026-07-31",
+                "sourceFile": "data/sources/filing-0000320193-26-000020-28f986bb243c8fdd.xbrl",
+                "sourceHash": "28f986bb243c8fdd445560d381df4b57912ca290b03b8451ecd518e63cdb5d2b",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "label": "기타 영업자산 변동",
+        "value": -19347000000.0,
+        "fact": {
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm",
+          "components": [
+            {
+              "coefficient": -1,
+              "fact": {
+                "start": "2024-09-29",
+                "end": "2025-09-27",
+                "dimensions": [],
+                "tag": "IncreaseDecreaseInOtherOperatingAssets",
+                "taxonomy": "http://fasb.org/us-gaap/2025",
+                "value": 9197000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-298",
+                "decimals": "-6",
+                "accession": "0000320193-25-000079",
+                "filedAt": "2025-10-31",
+                "sourceFile": "data/sources/filing-0000320193-25-000079-e1076735f1c81bc9.xbrl",
+                "sourceHash": "e1076735f1c81bc96d5c1ff6e1a9d23515d6eacf52b405cb1f7da3e379ac533b",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm"
+              }
+            },
+            {
+              "coefficient": -1,
+              "fact": {
+                "start": "2025-09-28",
+                "end": "2026-06-27",
+                "dimensions": [],
+                "tag": "IncreaseDecreaseInOtherOperatingAssets",
+                "taxonomy": "http://fasb.org/us-gaap/2025",
+                "value": 16266000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-314",
+                "decimals": "-6",
+                "accession": "0000320193-26-000020",
+                "filedAt": "2026-07-31",
+                "sourceFile": "data/sources/filing-0000320193-26-000020-28f986bb243c8fdd.xbrl",
+                "sourceHash": "28f986bb243c8fdd445560d381df4b57912ca290b03b8451ecd518e63cdb5d2b",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+              }
+            },
+            {
+              "coefficient": 1,
+              "fact": {
+                "start": "2024-09-29",
+                "end": "2025-06-28",
+                "dimensions": [],
+                "tag": "IncreaseDecreaseInOtherOperatingAssets",
+                "taxonomy": "http://fasb.org/us-gaap/2025",
+                "value": 6116000000.0,
+                "unit": "USD",
+                "context": "c-20",
+                "factId": "f-315",
+                "decimals": "-6",
+                "accession": "0000320193-26-000020",
+                "filedAt": "2026-07-31",
+                "sourceFile": "data/sources/filing-0000320193-26-000020-28f986bb243c8fdd.xbrl",
+                "sourceHash": "28f986bb243c8fdd445560d381df4b57912ca290b03b8451ecd518e63cdb5d2b",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "label": "매입채무 변동",
+        "value": 14178000000.0,
+        "fact": {
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm",
+          "components": [
+            {
+              "coefficient": 1,
+              "fact": {
+                "start": "2024-09-29",
+                "end": "2025-09-27",
+                "dimensions": [],
+                "tag": "IncreaseDecreaseInAccountsPayable",
+                "taxonomy": "http://fasb.org/us-gaap/2025",
+                "value": 902000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-301",
+                "decimals": "-6",
+                "accession": "0000320193-25-000079",
+                "filedAt": "2025-10-31",
+                "sourceFile": "data/sources/filing-0000320193-25-000079-e1076735f1c81bc9.xbrl",
+                "sourceHash": "e1076735f1c81bc96d5c1ff6e1a9d23515d6eacf52b405cb1f7da3e379ac533b",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm"
+              }
+            },
+            {
+              "coefficient": 1,
+              "fact": {
+                "start": "2025-09-28",
+                "end": "2026-06-27",
+                "dimensions": [],
+                "tag": "IncreaseDecreaseInAccountsPayable",
+                "taxonomy": "http://fasb.org/us-gaap/2025",
+                "value": -5203000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-316",
+                "decimals": "-6",
+                "accession": "0000320193-26-000020",
+                "filedAt": "2026-07-31",
+                "sourceFile": "data/sources/filing-0000320193-26-000020-28f986bb243c8fdd.xbrl",
+                "sourceHash": "28f986bb243c8fdd445560d381df4b57912ca290b03b8451ecd518e63cdb5d2b",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+              }
+            },
+            {
+              "coefficient": -1,
+              "fact": {
+                "start": "2024-09-29",
+                "end": "2025-06-28",
+                "dimensions": [],
+                "tag": "IncreaseDecreaseInAccountsPayable",
+                "taxonomy": "http://fasb.org/us-gaap/2025",
+                "value": -18479000000.0,
+                "unit": "USD",
+                "context": "c-20",
+                "factId": "f-317",
+                "decimals": "-6",
+                "accession": "0000320193-26-000020",
+                "filedAt": "2026-07-31",
+                "sourceFile": "data/sources/filing-0000320193-26-000020-28f986bb243c8fdd.xbrl",
+                "sourceHash": "28f986bb243c8fdd445560d381df4b57912ca290b03b8451ecd518e63cdb5d2b",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "label": "기타 영업부채 변동",
+        "value": 14101000000.0,
+        "fact": {
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm",
+          "components": [
+            {
+              "coefficient": 1,
+              "fact": {
+                "start": "2024-09-29",
+                "end": "2025-09-27",
+                "dimensions": [],
+                "tag": "IncreaseDecreaseInOtherOperatingLiabilities",
+                "taxonomy": "http://fasb.org/us-gaap/2025",
+                "value": -11076000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-304",
+                "decimals": "-6",
+                "accession": "0000320193-25-000079",
+                "filedAt": "2025-10-31",
+                "sourceFile": "data/sources/filing-0000320193-25-000079-e1076735f1c81bc9.xbrl",
+                "sourceHash": "e1076735f1c81bc96d5c1ff6e1a9d23515d6eacf52b405cb1f7da3e379ac533b",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm"
+              }
+            },
+            {
+              "coefficient": 1,
+              "fact": {
+                "start": "2025-09-28",
+                "end": "2026-06-27",
+                "dimensions": [],
+                "tag": "IncreaseDecreaseInOtherOperatingLiabilities",
+                "taxonomy": "http://fasb.org/us-gaap/2025",
+                "value": 10016000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-318",
+                "decimals": "-6",
+                "accession": "0000320193-26-000020",
+                "filedAt": "2026-07-31",
+                "sourceFile": "data/sources/filing-0000320193-26-000020-28f986bb243c8fdd.xbrl",
+                "sourceHash": "28f986bb243c8fdd445560d381df4b57912ca290b03b8451ecd518e63cdb5d2b",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+              }
+            },
+            {
+              "coefficient": -1,
+              "fact": {
+                "start": "2024-09-29",
+                "end": "2025-06-28",
+                "dimensions": [],
+                "tag": "IncreaseDecreaseInOtherOperatingLiabilities",
+                "taxonomy": "http://fasb.org/us-gaap/2025",
+                "value": -15161000000.0,
+                "unit": "USD",
+                "context": "c-20",
+                "factId": "f-319",
+                "decimals": "-6",
+                "accession": "0000320193-26-000020",
+                "filedAt": "2026-07-31",
+                "sourceFile": "data/sources/filing-0000320193-26-000020-28f986bb243c8fdd.xbrl",
+                "sourceHash": "28f986bb243c8fdd445560d381df4b57912ca290b03b8451ecd518e63cdb5d2b",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "reportedCfo": 146724000000.0,
+    "residual": 0,
+    "periods": [
+      {
+        "start": "2024-09-29",
+        "end": "2025-09-27",
+        "reportedCfo": 111482000000.0,
+        "residual": 0,
+        "grossProfitResidual": 0,
+        "operatingIncomeResidual": 0,
+        "incomeResidual": 0
+      },
+      {
+        "start": "2025-09-28",
+        "end": "2026-06-27",
+        "reportedCfo": 116996000000.0,
+        "residual": 0,
+        "grossProfitResidual": 0,
+        "operatingIncomeResidual": 0,
+        "incomeResidual": 0
+      },
+      {
+        "start": "2024-09-29",
+        "end": "2025-06-28",
+        "reportedCfo": 81754000000.0,
+        "residual": 0,
+        "grossProfitResidual": 0,
+        "operatingIncomeResidual": 0,
+        "incomeResidual": 0
+      }
+    ],
+    "cashAfterInvestmentLeaseSbc": 122977000000.0
+  },
+  "observedResidualLabel": "영업현금 − 설비 취득 − 주식보상 비용 대용 (금융리스 원금 차감 전)",
+  "anchorSummary": "보고 영업현금은 세 기간 각각 대사했습니다. 미래 감가상각 비율은 직전 연간의 설비 감가상각/연간 매출, 리스 비율은 같은 연말 유동 금융리스 부채/연간 매출입니다. 최근 1년 실제 감가상각·리스 지급으로 바꾸지 않습니다.",
+  "anchors": {
+    "workingCashEffect": -2927000000.0,
+    "revenueIncrease": 50662000000,
+    "annualRevenue": 416161000000.0,
+    "annualPpeDepreciation": {
+      "start": "2024-09-29",
+      "end": "2025-09-27",
+      "dimensions": [],
+      "tag": "Depreciation",
+      "taxonomy": "http://fasb.org/us-gaap/2025",
+      "value": 8000000000.0,
+      "unit": "USD",
+      "context": "c-1",
+      "factId": "f-665",
+      "decimals": "-8",
+      "accession": "0000320193-25-000079",
+      "filedAt": "2025-10-31",
+      "sourceFile": "data/sources/filing-0000320193-25-000079-e1076735f1c81bc9.xbrl",
+      "sourceHash": "e1076735f1c81bc96d5c1ff6e1a9d23515d6eacf52b405cb1f7da3e379ac533b",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm"
+    },
+    "annualCurrentFinanceLeaseLiability": {
+      "start": null,
+      "end": "2025-09-27",
+      "dimensions": [],
+      "tag": "FinanceLeaseLiabilityCurrent",
+      "taxonomy": "http://fasb.org/us-gaap/2025",
+      "value": 538000000.0,
+      "unit": "USD",
+      "context": "c-20",
+      "factId": "f-849",
+      "decimals": "-6",
+      "accession": "0000320193-25-000079",
+      "filedAt": "2025-10-31",
+      "sourceFile": "data/sources/filing-0000320193-25-000079-e1076735f1c81bc9.xbrl",
+      "sourceHash": "e1076735f1c81bc96d5c1ff6e1a9d23515d6eacf52b405cb1f7da3e379ac533b",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm"
+    },
+    "annualNextYearGrossFinanceLeasePayments": {
+      "start": null,
+      "end": "2025-09-27",
+      "dimensions": [],
+      "tag": "FinanceLeaseLiabilityPaymentsDueNextTwelveMonths",
+      "taxonomy": "http://fasb.org/us-gaap/2025",
+      "value": 563000000.0,
+      "unit": "USD",
+      "context": "c-20",
+      "factId": "f-860",
+      "decimals": "-6",
+      "accession": "0000320193-25-000079",
+      "filedAt": "2025-10-31",
+      "sourceFile": "data/sources/filing-0000320193-25-000079-e1076735f1c81bc9.xbrl",
+      "sourceHash": "e1076735f1c81bc96d5c1ff6e1a9d23515d6eacf52b405cb1f7da3e379ac533b",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm"
+    },
+    "trailingFinanceLeasePrincipalPaid": null,
+    "trailingPpeDepreciation": null,
+    "trailingBroadDepreciation": 13100000000.0
+  },
+  "cashAnchors": [
+    {
+      "label": "설비 감가상각",
+      "value": 8000000000.0,
+      "period": "2024-09-29–2025-09-27",
+      "scope": "직전 연간 비용; 최근 1년 재구성 아님",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm"
+    },
+    {
+      "label": "유동 금융리스 부채",
+      "value": 538000000.0,
+      "period": "2025-09-27",
+      "scope": "연말 부채 잔액; 미래 부담 비율의 대용 근거",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm"
+    },
+    {
+      "label": "다음 회계연도 금융리스 지급표",
+      "value": 563000000.0,
+      "period": "2025-09-27 기준 / 회계연도 2026",
+      "scope": "미할인 원금·이자 합계; 실제 지급 아님",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm"
+    },
+    {
+      "label": "최근 1년 금융리스 원금 지급",
+      "value": null,
+      "period": "2025-06-29–2026-06-27",
+      "scope": "별도 금액 미확인; 영으로 대체하지 않음",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+    }
+  ],
+  "rules": [
+    "직전 연간 + 당기 9개월 − 전년 9개월로 제품·서비스 매출과 원가, 연결 손익·영업현금을 각각 대사합니다. 분기 성장과 누적 성장을 섞지 않습니다.",
+    "제품 마진의 관세 환급 기여액은 미정량입니다. 현재 제품 마진 유지는 환급 효과까지 반복하는 가정이므로 마진 하락 대안과 비교해야 합니다. 서비스에는 광고·클라우드 구성이 함께 작용합니다.",
+    "공통 연구개발·판매관리비는 별도 차감합니다. 기타 영업비용의 시작값 영은 세 기간 손익 항등식 잔차가 영인 것에 근거하며 미확인 비용을 영으로 채운 것이 아닙니다. 완전자회사 연결 범위에서 비지배 배분의 시작값은 영입니다.",
+    "세율 21%는 연간 공시의 미국 연방 법정세율에 근거한 연구 가정입니다. 해외 수익·세액공제·주식보상 효과가 섞인 보고 유효세율이나 회사의 정상 현금세율 예측이 아닙니다.",
+    "미래 영업외 순손익은 최근 1년 보고 합계 비율을 유지하는 가정입니다. 순이자만 분리한 값이나 검증된 반복 수익이 아니므로 별도로 편집합니다. 투자자산 가치는 추가하지 않습니다.",
+    "설비 감가상각은 직전 연간 80억 달러/연간 매출 비율을 사용합니다. 당기 9개월의 설비 감가상각이 별도 확인되지 않아 최근 1년 값을 만들지 않습니다. 무형 상각·영업리스 비용은 대체 비용 대용으로 손익에 남깁니다.",
+    "미래 금융리스 부담은 2025-09-27 유동 금융리스 부채 5.38억 달러/연간 매출 비율의 반복 가정입니다. 5.63억 달러 만기도래 지급표는 이자를 포함하며, 두 금액 모두 최근 1년 실제 지급액이 아닙니다. 실제 리스 원금 차감 후 과거 현금 잔액은 미확인입니다.",
+    "영업자금 계수에는 공급업체 비매출채권·기타 자산과 부채가 포함됩니다. 세금·계절성·환급 효과가 섞일 수 있어 정상 필요 자금으로 승인하지 않습니다. 주식보상 비용은 미래에 현금으로 되돌리지 않습니다.",
+    "비리스 차입은 차환하고 초과 금융자산은 미배분하는 조건부 경로입니다. 요구수익률 11%·영구성장 2%는 연구자 가정이며 말기에도 증가 매출의 자금 소요와 재투자를 계산합니다."
+  ],
+  "remaining": [
+    "관세 환급액·제품 구성·메모리 비용의 분리와 지속 마진",
+    "서비스 구성·규제와 반복 수익성",
+    "최신 설비 감가상각·금융리스 실제 원금 지급 및 무형 대체 투자",
+    "세금·공급업체 채권과 정상 영업자금",
+    "초과 현금·증권·차입 차환과 미래 주식수"
+  ],
+  "independentFinancialApproval": false,
+  "evidenceHash": "9bbb71d145e9fc49f1e5f65c638e37cddd77d7d06fb28f9f6abb59bf69604ca8",
+  "initial": {
+    "years": [
+      {
+        "year": 1,
+        "segments": [
+          {
+            "label": "제품",
+            "revenue": 346345000000.0,
+            "grossProfit": 135516000000.0
+          },
+          {
+            "label": "서비스",
+            "revenue": 120478000000.0,
+            "grossProfit": 91607000000.0
+          }
+        ],
+        "revenue": 466823000000.0,
+        "operatingIncome": 154859000000.0,
+        "netInterest": 1047000000.0,
+        "tax": 32740260000.0,
+        "depreciation": 8973892315.71435,
+        "workingCapital": 0.0,
+        "capex": 10041000000.0,
+        "leasePrincipal": 603494258.2317902,
+        "cash": 121495138057.48256,
+        "grossProfit": 227123000000.0,
+        "research": 42901000000.0,
+        "selling": 29363000000.000004,
+        "otherOperating": 0.0,
+        "minority": 0.0
+      },
+      {
+        "year": 2,
+        "segments": [
+          {
+            "label": "제품",
+            "revenue": 346345000000.0,
+            "grossProfit": 135516000000.0
+          },
+          {
+            "label": "서비스",
+            "revenue": 120478000000.0,
+            "grossProfit": 91607000000.0
+          }
+        ],
+        "revenue": 466823000000.0,
+        "operatingIncome": 154859000000.0,
+        "netInterest": 1047000000.0,
+        "tax": 32740260000.0,
+        "depreciation": 8973892315.71435,
+        "workingCapital": 0.0,
+        "capex": 10041000000.0,
+        "leasePrincipal": 603494258.2317902,
+        "cash": 121495138057.48256,
+        "grossProfit": 227123000000.0,
+        "research": 42901000000.0,
+        "selling": 29363000000.000004,
+        "otherOperating": 0.0,
+        "minority": 0.0
+      },
+      {
+        "year": 3,
+        "segments": [
+          {
+            "label": "제품",
+            "revenue": 346345000000.0,
+            "grossProfit": 135516000000.0
+          },
+          {
+            "label": "서비스",
+            "revenue": 120478000000.0,
+            "grossProfit": 91607000000.0
+          }
+        ],
+        "revenue": 466823000000.0,
+        "operatingIncome": 154859000000.0,
+        "netInterest": 1047000000.0,
+        "tax": 32740260000.0,
+        "depreciation": 8973892315.71435,
+        "workingCapital": 0.0,
+        "capex": 10041000000.0,
+        "leasePrincipal": 603494258.2317902,
+        "cash": 121495138057.48256,
+        "grossProfit": 227123000000.0,
+        "research": 42901000000.0,
+        "selling": 29363000000.000004,
+        "otherOperating": 0.0,
+        "minority": 0.0
+      },
+      {
+        "year": 4,
+        "segments": [
+          {
+            "label": "제품",
+            "revenue": 346345000000.0,
+            "grossProfit": 135516000000.0
+          },
+          {
+            "label": "서비스",
+            "revenue": 120478000000.0,
+            "grossProfit": 91607000000.0
+          }
+        ],
+        "revenue": 466823000000.0,
+        "operatingIncome": 154859000000.0,
+        "netInterest": 1047000000.0,
+        "tax": 32740260000.0,
+        "depreciation": 8973892315.71435,
+        "workingCapital": 0.0,
+        "capex": 10041000000.0,
+        "leasePrincipal": 603494258.2317902,
+        "cash": 121495138057.48256,
+        "grossProfit": 227123000000.0,
+        "research": 42901000000.0,
+        "selling": 29363000000.000004,
+        "otherOperating": 0.0,
+        "minority": 0.0
+      },
+      {
+        "year": 5,
+        "segments": [
+          {
+            "label": "제품",
+            "revenue": 346345000000.0,
+            "grossProfit": 135516000000.0
+          },
+          {
+            "label": "서비스",
+            "revenue": 120478000000.0,
+            "grossProfit": 91607000000.0
+          }
+        ],
+        "revenue": 466823000000.0,
+        "operatingIncome": 154859000000.0,
+        "netInterest": 1047000000.0,
+        "tax": 32740260000.0,
+        "depreciation": 8973892315.71435,
+        "workingCapital": 0.0,
+        "capex": 10041000000.0,
+        "leasePrincipal": 603494258.2317902,
+        "cash": 121495138057.48256,
+        "grossProfit": 227123000000.0,
+        "research": 42901000000.0,
+        "selling": 29363000000.000004,
+        "otherOperating": 0.0,
+        "minority": 0.0
+      }
+    ],
+    "terminal": {
+      "year": 6,
+      "segments": [
+        {
+          "label": "제품",
+          "revenue": 353271900000.0,
+          "grossProfit": 138226320000.0
+        },
+        {
+          "label": "서비스",
+          "revenue": 122887560000.0,
+          "grossProfit": 93439140000.0
+        }
+      ],
+      "revenue": 476159460000.0,
+      "operatingIncome": 157956180000.0,
+      "netInterest": 1067940000.0,
+      "tax": 33395065200.0,
+      "depreciation": 9153370162.028637,
+      "workingCapital": 539414520.153172,
+      "capex": 10241820000.0,
+      "leasePrincipal": 615564143.396426,
+      "cash": 123385626298.47905,
+      "grossProfit": 231665460000.0,
+      "research": 43759020000.0,
+      "selling": 29950260000.000004,
+      "otherOperating": 0.0,
+      "minority": 0.0
+    },
+    "explicitPv": 449033518405.5597,
+    "terminalPv": 813592931001.8822,
+    "equityValue": 1262626449407.442,
+    "price": 86.51575144389352,
+    "terminalShare": 0.6443655060320542,
+    "requiredTerminalCash": 660957381104.6765,
+    "terminalCashGap": 537571754806.19745,
+    "reinvestmentCaution": false,
+    "status": "calculated"
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "runId": "20261001T195135073182Z",
+  "startedAt": "2026-10-01T19:51:35.073270+00:00",
+  "status": "failed",
+  "mode": "archived_sources_local_only",
+  "modelRequested": true,
+  "stages": [
+    {
+      "name": "unit",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-01T19:51:35.073391+00:00",
+      "finishedAt": "2026-10-01T19:54:40.675977+00:00",
+      "log": "artifacts/local/runs/20261001T195135073182Z/unit.log",
+      "logHash": "4d2e4ff737b1e9f35df23fb429287b6ea2b5d4212a3b1ddefb81a28aa5d73142"
+    },
+    {
+      "name": "analysis",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-01T19:54:40.676592+00:00",
+      "finishedAt": "2026-10-01T19:56:51.527999+00:00",
+      "log": "artifacts/local/runs/20261001T195135073182Z/analysis.log",
+      "logHash": "c4c3f6b40c82437087dd530f07c90d5bb6d56258a39af14e7b1101c513337266"
+    },
+    {
+      "name": "local-model",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-01T19:56:51.528446+00:00",
+      "finishedAt": "2026-10-01T19:57:00.611298+00:00",
+      "log": "artifacts/local/runs/20261001T195135073182Z/local-model.log",
+      "logHash": "e97477e66784eaf0b0bb38661e227bcfb2eaae1c4cf81803aace5864a04cd605"
+    },
+    {
+      "name": "coverage-model",
+      "status": "quality_gate_failed",
+      "exitCode": 2,
+      "startedAt": "2026-10-01T19:57:00.611748+00:00",
+      "finishedAt": "2026-10-01T19:57:10.464117+00:00",
+      "log": "artifacts/local/runs/20261001T195135073182Z/coverage-model.log",
+      "logHash": "0e3651ec2f221b1edbb69eea6f6f2f633c63f17935990a09daef92b976a977e1"
+    },
+    {
+      "name": "question-model",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-01T19:57:10.464593+00:00",
+      "finishedAt": "2026-10-01T19:57:35.622491+00:00",
+      "log": "artifacts/local/runs/20261001T195135073182Z/question-model.log",
+      "logHash": "012f3b855dccb99a6c89d8746fc53ef9aa4822346de8e31a6b53478f6c07a7f2"
+    },
+    {
+      "name": "filing-model",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-01T19:57:35.622974+00:00",
+      "finishedAt": "2026-10-01T19:57:50.121897+00:00",
+      "log": "artifacts/local/runs/20261001T195135073182Z/filing-model.log",
+      "logHash": "e45c46183387a407b6be664b02e3186528894967346e123a8696e4e1122bf3ff"
+    },
+    {
+      "name": "register-cash-conditions",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-01T19:57:50.122381+00:00",
+      "finishedAt": "2026-10-01T19:57:56.894498+00:00",
+      "log": "artifacts/local/runs/20261001T195135073182Z/register-cash-conditions.log",
+      "logHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "register-receivable-conditions",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-01T19:57:56.894982+00:00",
+      "finishedAt": "2026-10-01T19:58:03.524751+00:00",
+      "log": "artifacts/local/runs/20261001T195135073182Z/register-receivable-conditions.log",
+      "logHash": "5a91db2e38dac97e3b4d989866353e23b69d5e5996baf0ad874d5a08510f5dba"
+    },
+    {
+      "name": "observe",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-01T19:58:03.525223+00:00",
+      "finishedAt": "2026-10-01T19:58:10.211928+00:00",
+      "log": "artifacts/local/runs/20261001T195135073182Z/observe.log",
+      "logHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "research-journal",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-01T19:58:10.212413+00:00",
+      "finishedAt": "2026-10-01T19:58:17.031710+00:00",
+      "log": "artifacts/local/runs/20261001T195135073182Z/research-journal.log",
+      "logHash": "0b7434cf41f456da944461e4e57d0fd5719d86726355aed8c5b62cc32599b50e"
+    },
+    {
+      "name": "forward-study",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-01T19:58:17.032295+00:00",
+      "finishedAt": "2026-10-01T19:58:23.692626+00:00",
+      "log": "artifacts/local/runs/20261001T195135073182Z/forward-study.log",
+      "logHash": "df0906a227c1ce2e4da2d51553935aaef8ed2faed18dd8f141a347d78ae7e330"
+    },
+    {
+      "name": "price-crosscheck",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-01T19:58:23.693273+00:00",
+      "finishedAt": "2026-10-01T19:58:24.596579+00:00",
+      "log": "artifacts/local/runs/20261001T195135073182Z/price-crosscheck.log",
+      "logHash": "6ded735813aa0827eb269f7a539974d5f36dcc852988a0271bb360fb17b1b429"
+    },
+    {
+      "name": "local-records",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-01T19:58:24.597083+00:00",
+      "finishedAt": "2026-10-01T19:58:31.034916+00:00",
+      "log": "artifacts/local/runs/20261001T195135073182Z/local-records.log",
+      "logHash": "1daf0c99542c96b02b5e617e66d1a63022c539a791f527a992b20aa09e60767a"
+    },
+    {
+      "name": "offline-replay",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-01T19:58:31.035391+00:00",
+      "finishedAt": "2026-10-01T20:00:41.339031+00:00",
+      "log": "artifacts/local/runs/20261001T195135073182Z/offline-replay.log",
+      "logHash": "04e9a487ae190909023ce112ce92311ea6810c0e8909bbf1cd0802f9b8897022"
+    },
+    {
+      "name": "browser-pdf",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-01T20:00:41.339541+00:00",
+      "finishedAt": "2026-10-01T20:02:57.939508+00:00",
+      "log": "artifacts/local/runs/20261001T195135073182Z/browser-pdf.log",
+      "logHash": "5f42f6d4972952c10f05ff5bdd52bd0c475413c60d39f4ab0ed3252674db6975"
+    },
+    {
+      "name": "artifacts",
+      "status": "failed",
+      "exitCode": 1,
+      "startedAt": "2026-10-01T20:02:57.940279+00:00",
+      "finishedAt": "2026-10-01T20:03:23.904648+00:00",
+      "log": "artifacts/local/runs/20261001T195135073182Z/artifacts.log",
+      "logHash": "ef1c1c7105e60b4b16ec83b68c2f5eef17fe34b8b89e7b5c44c6056340bd887a"
+    }
+  ],
+  "error": "RuntimeError: artifacts failed; see artifacts/local/runs/20261001T195135073182Z/artifacts.log",
+  "finishedAt": "2026-10-01T20:03:23.905241+00:00"
+}

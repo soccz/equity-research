@@ -1,0 +1,38 @@
+{
+  "ticker": "011070",
+  "asOf": "2026-09-29",
+  "checkedAt": "2026-10-01T10:22:50.775732+00:00",
+  "filing": {
+    "corp_code": "00105961",
+    "corp_name": "LG이노텍",
+    "stock_code": "011070",
+    "corp_cls": "Y",
+    "report_nm": "반기보고서 (2026.06)",
+    "rcept_no": "20260814001879",
+    "flr_nm": "LG이노텍",
+    "rcept_dt": "20260814",
+    "rm": ""
+  },
+  "queries": [
+    {
+      "file": "data/sources/dart-list-011070-744d7dc99392f778.json",
+      "sha256": "744d7dc99392f778ffacac29afd72779b96dc89a8b43f659aaae10035a21fac7",
+      "parameters": {
+        "corp_code": "00105961",
+        "bgn_de": "20250101",
+        "end_de": "20260929",
+        "pblntf_ty": "A",
+        "last_reprt_at": "N",
+        "page_count": 100,
+        "page_no": 1,
+        "sort": "date",
+        "sort_mth": "desc"
+      }
+    }
+  ],
+  "package": {
+    "file": "data/sources/dart-package-20260814001879-df1c28de2de16b2a.zip",
+    "sha256": "df1c28de2de16b2a563185a2da153b4d20667d555116de061727cc8b791cf567"
+  },
+  "instanceHash": "14baaa75381f0d838b315c5ad2533e4dd72f54ff674ecab9e8bba93e32993c1d"
+}

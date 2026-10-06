@@ -1,0 +1,101 @@
+{
+  "runId": "20261001T060432745886Z",
+  "startedAt": "2026-10-01T06:04:32.745977+00:00",
+  "status": "failed",
+  "mode": "archived_sources_local_only",
+  "modelRequested": false,
+  "stages": [
+    {
+      "name": "unit",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-01T06:04:32.746114+00:00",
+      "finishedAt": "2026-10-01T06:05:16.266633+00:00",
+      "log": "artifacts/local/runs/20261001T060432745886Z/unit.log",
+      "logHash": "2ddcacdc3741f12ef20b8e186db0ddb613229c2d81d1f556706f35cb59b457ca"
+    },
+    {
+      "name": "analysis",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-01T06:05:16.267208+00:00",
+      "finishedAt": "2026-10-01T06:06:28.592014+00:00",
+      "log": "artifacts/local/runs/20261001T060432745886Z/analysis.log",
+      "logHash": "cbfc748c6c5c64218ed34999ebb629484799af04c2d1aecdf49bbd593d5414d6"
+    },
+    {
+      "name": "register-cash-conditions",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-01T06:06:28.592460+00:00",
+      "finishedAt": "2026-10-01T06:06:30.659826+00:00",
+      "log": "artifacts/local/runs/20261001T060432745886Z/register-cash-conditions.log",
+      "logHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "register-receivable-conditions",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-01T06:06:30.660277+00:00",
+      "finishedAt": "2026-10-01T06:06:32.642330+00:00",
+      "log": "artifacts/local/runs/20261001T060432745886Z/register-receivable-conditions.log",
+      "logHash": "5a91db2e38dac97e3b4d989866353e23b69d5e5996baf0ad874d5a08510f5dba"
+    },
+    {
+      "name": "observe",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-01T06:06:32.642773+00:00",
+      "finishedAt": "2026-10-01T06:06:34.586160+00:00",
+      "log": "artifacts/local/runs/20261001T060432745886Z/observe.log",
+      "logHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "research-journal",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-01T06:06:34.586621+00:00",
+      "finishedAt": "2026-10-01T06:06:36.571819+00:00",
+      "log": "artifacts/local/runs/20261001T060432745886Z/research-journal.log",
+      "logHash": "91635ff2386958b6ac1804a042d4cc9f576c19814b018f5d23267e651c00d0be"
+    },
+    {
+      "name": "forward-study",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-01T06:06:36.572281+00:00",
+      "finishedAt": "2026-10-01T06:06:38.554691+00:00",
+      "log": "artifacts/local/runs/20261001T060432745886Z/forward-study.log",
+      "logHash": "df0906a227c1ce2e4da2d51553935aaef8ed2faed18dd8f141a347d78ae7e330"
+    },
+    {
+      "name": "price-crosscheck",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-01T06:06:38.555164+00:00",
+      "finishedAt": "2026-10-01T06:06:38.673632+00:00",
+      "log": "artifacts/local/runs/20261001T060432745886Z/price-crosscheck.log",
+      "logHash": "06d1149a5850c40b1d521db73730a380d1865795607959f61c09c8dd992cf81a"
+    },
+    {
+      "name": "local-records",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-01T06:06:38.674102+00:00",
+      "finishedAt": "2026-10-01T06:06:40.476823+00:00",
+      "log": "artifacts/local/runs/20261001T060432745886Z/local-records.log",
+      "logHash": "fddcb5b07e4f46e3251f51197f3d80d9bc15881a32ea9e1c64556c94c0cdbb2f"
+    },
+    {
+      "name": "offline-replay",
+      "status": "failed",
+      "exitCode": 1,
+      "startedAt": "2026-10-01T06:06:40.477306+00:00",
+      "finishedAt": "2026-10-01T06:07:52.021590+00:00",
+      "log": "artifacts/local/runs/20261001T060432745886Z/offline-replay.log",
+      "logHash": "21862e1890ed2f5af345232904d80740fc422fae5dc5847085f3b3d9a8c50d5a"
+    }
+  ],
+  "error": "RuntimeError: offline-replay failed; see artifacts/local/runs/20261001T060432745886Z/offline-replay.log",
+  "finishedAt": "2026-10-01T06:07:52.022303+00:00"
+}

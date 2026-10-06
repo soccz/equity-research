@@ -1,0 +1,1178 @@
+{
+  "checkedAt": "2026-10-01T09:33:15.382517+00:00",
+  "status": "passed",
+  "modelHash": "12c5c941f085569b891653e38bec75a020025fa8d0b555756e8b8cb51672e995",
+  "cases": [
+    {
+      "name": "reported",
+      "assumptions": {
+        "segments": [
+          {
+            "growthStart": 0,
+            "growthEnd": 0,
+            "marginEnd": 0.0741750611678092
+          },
+          {
+            "growthStart": 0,
+            "growthEnd": 0,
+            "marginEnd": 0.030989712337131204
+          },
+          {
+            "growthStart": 0,
+            "growthEnd": 0,
+            "marginEnd": 0.3684604188566346
+          }
+        ],
+        "tax": 0.22577023468934151,
+        "netInterest": 0.001713335396039604,
+        "depreciation": 0.06412567037953795,
+        "workingCapital": 0.39883586357137996,
+        "capexStart": 0.2178823741749175,
+        "capexEnd": 0.2178823741749175,
+        "leaseStart": 0.0024584880363036302,
+        "leaseEnd": 0.0024584880363036302,
+        "discount": 0.11,
+        "terminal": 0.02,
+        "excludedProfitStart": 0.0,
+        "excludedProfitEnd": 0.0
+      },
+      "expected": {
+        "years": [
+          {
+            "year": 1,
+            "segments": [
+              {
+                "label": "북미",
+                "revenue": 453670000000.0,
+                "operatingIncome": 33651000000.0
+              },
+              {
+                "label": "국제",
+                "revenue": 173606000000.0,
+                "operatingIncome": 5380000000.0
+              },
+              {
+                "label": "AWS",
+                "revenue": 148404000000.0,
+                "operatingIncome": 54681000000.0
+              }
+            ],
+            "revenue": 775680000000.0,
+            "operatingIncome": 93712000000.0,
+            "netInterest": 1329000000.0,
+            "tax": 21457428875.109707,
+            "depreciation": 49741000000.0,
+            "workingCapital": 0.0,
+            "capex": 169007000000.0,
+            "leasePrincipal": 1907000000.0,
+            "cash": -47589428875.10971,
+            "unadjustedOperatingIncome": 93712000000.0,
+            "excludedProfit": 0.0
+          },
+          {
+            "year": 2,
+            "segments": [
+              {
+                "label": "북미",
+                "revenue": 453670000000.0,
+                "operatingIncome": 33651000000.0
+              },
+              {
+                "label": "국제",
+                "revenue": 173606000000.0,
+                "operatingIncome": 5380000000.0
+              },
+              {
+                "label": "AWS",
+                "revenue": 148404000000.0,
+                "operatingIncome": 54681000000.0
+              }
+            ],
+            "revenue": 775680000000.0,
+            "operatingIncome": 93712000000.0,
+            "netInterest": 1329000000.0,
+            "tax": 21457428875.109707,
+            "depreciation": 49741000000.0,
+            "workingCapital": 0.0,
+            "capex": 169007000000.0,
+            "leasePrincipal": 1907000000.0,
+            "cash": -47589428875.10971,
+            "unadjustedOperatingIncome": 93712000000.0,
+            "excludedProfit": 0.0
+          },
+          {
+            "year": 3,
+            "segments": [
+              {
+                "label": "북미",
+                "revenue": 453670000000.0,
+                "operatingIncome": 33651000000.0
+              },
+              {
+                "label": "국제",
+                "revenue": 173606000000.0,
+                "operatingIncome": 5380000000.0
+              },
+              {
+                "label": "AWS",
+                "revenue": 148404000000.0,
+                "operatingIncome": 54681000000.0
+              }
+            ],
+            "revenue": 775680000000.0,
+            "operatingIncome": 93712000000.0,
+            "netInterest": 1329000000.0,
+            "tax": 21457428875.109707,
+            "depreciation": 49741000000.0,
+            "workingCapital": 0.0,
+            "capex": 169007000000.0,
+            "leasePrincipal": 1907000000.0,
+            "cash": -47589428875.10971,
+            "unadjustedOperatingIncome": 93712000000.0,
+            "excludedProfit": 0.0
+          },
+          {
+            "year": 4,
+            "segments": [
+              {
+                "label": "북미",
+                "revenue": 453670000000.0,
+                "operatingIncome": 33651000000.0
+              },
+              {
+                "label": "국제",
+                "revenue": 173606000000.0,
+                "operatingIncome": 5380000000.0
+              },
+              {
+                "label": "AWS",
+                "revenue": 148404000000.0,
+                "operatingIncome": 54681000000.0
+              }
+            ],
+            "revenue": 775680000000.0,
+            "operatingIncome": 93712000000.0,
+            "netInterest": 1329000000.0,
+            "tax": 21457428875.109707,
+            "depreciation": 49741000000.0,
+            "workingCapital": 0.0,
+            "capex": 169007000000.0,
+            "leasePrincipal": 1907000000.0,
+            "cash": -47589428875.10971,
+            "unadjustedOperatingIncome": 93712000000.0,
+            "excludedProfit": 0.0
+          },
+          {
+            "year": 5,
+            "segments": [
+              {
+                "label": "북미",
+                "revenue": 453670000000.0,
+                "operatingIncome": 33651000000.0
+              },
+              {
+                "label": "국제",
+                "revenue": 173606000000.0,
+                "operatingIncome": 5380000000.0
+              },
+              {
+                "label": "AWS",
+                "revenue": 148404000000.0,
+                "operatingIncome": 54681000000.0
+              }
+            ],
+            "revenue": 775680000000.0,
+            "operatingIncome": 93712000000.0,
+            "netInterest": 1329000000.0,
+            "tax": 21457428875.109707,
+            "depreciation": 49741000000.0,
+            "workingCapital": 0.0,
+            "capex": 169007000000.0,
+            "leasePrincipal": 1907000000.0,
+            "cash": -47589428875.10971,
+            "unadjustedOperatingIncome": 93712000000.0,
+            "excludedProfit": 0.0
+          }
+        ],
+        "terminal": {
+          "year": 6,
+          "segments": [
+            {
+              "label": "북미",
+              "revenue": 462743400000.0,
+              "operatingIncome": 34324020000.0
+            },
+            {
+              "label": "국제",
+              "revenue": 177078120000.0,
+              "operatingIncome": 5487600000.0
+            },
+            {
+              "label": "AWS",
+              "revenue": 151372080000.0,
+              "operatingIncome": 55774620000.0
+            }
+          ],
+          "revenue": 791193600000.0,
+          "operatingIncome": 95586240000.0,
+          "netInterest": 1355580000.0,
+          "tax": 21886577452.6119,
+          "depreciation": 50735820000.0,
+          "workingCapital": 6187380053.10096,
+          "capex": 172387140000.0,
+          "leasePrincipal": 1945140000.0,
+          "cash": -54728597505.71286,
+          "unadjustedOperatingIncome": 95586240000.0,
+          "excludedProfit": 0.0
+        },
+        "explicitPv": -175885628251.15927,
+        "terminalPv": null,
+        "equityValue": null,
+        "price": null,
+        "terminalShare": null,
+        "requiredTerminalCash": 430176983161.7188,
+        "terminalCashGap": 484905580667.43164,
+        "reinvestmentCaution": false,
+        "status": "nonpositive_terminal_or_value"
+      }
+    },
+    {
+      "name": "known_only",
+      "assumptions": {
+        "segments": [
+          {
+            "growthStart": 0,
+            "growthEnd": 0,
+            "marginEnd": 0.0741750611678092
+          },
+          {
+            "growthStart": 0,
+            "growthEnd": 0,
+            "marginEnd": 0.030989712337131204
+          },
+          {
+            "growthStart": 0,
+            "growthEnd": 0,
+            "marginEnd": 0.3684604188566346
+          }
+        ],
+        "tax": 0.22577023468934151,
+        "netInterest": 0.001713335396039604,
+        "depreciation": 0.06412567037953795,
+        "workingCapital": 0.39883586357137996,
+        "capexStart": 0.2178823741749175,
+        "capexEnd": 0.2178823741749175,
+        "leaseStart": 0.0024584880363036302,
+        "leaseEnd": 0.0024584880363036302,
+        "discount": 0.11,
+        "terminal": 0.02,
+        "excludedProfitStart": 0.0007722256600660066,
+        "excludedProfitEnd": 0.0007722256600660066
+      },
+      "expected": {
+        "years": [
+          {
+            "year": 1,
+            "segments": [
+              {
+                "label": "북미",
+                "revenue": 453670000000.0,
+                "operatingIncome": 33651000000.0
+              },
+              {
+                "label": "국제",
+                "revenue": 173606000000.0,
+                "operatingIncome": 5380000000.0
+              },
+              {
+                "label": "AWS",
+                "revenue": 148404000000.0,
+                "operatingIncome": 54681000000.0
+              }
+            ],
+            "revenue": 775680000000.0,
+            "operatingIncome": 93113000000.0,
+            "netInterest": 1329000000.0,
+            "tax": 21322192504.530792,
+            "depreciation": 49741000000.0,
+            "workingCapital": 0.0,
+            "capex": 169007000000.0,
+            "leasePrincipal": 1907000000.0,
+            "cash": -48053192504.53079,
+            "unadjustedOperatingIncome": 93712000000.0,
+            "excludedProfit": 599000000.0
+          },
+          {
+            "year": 2,
+            "segments": [
+              {
+                "label": "북미",
+                "revenue": 453670000000.0,
+                "operatingIncome": 33651000000.0
+              },
+              {
+                "label": "국제",
+                "revenue": 173606000000.0,
+                "operatingIncome": 5380000000.0
+              },
+              {
+                "label": "AWS",
+                "revenue": 148404000000.0,
+                "operatingIncome": 54681000000.0
+              }
+            ],
+            "revenue": 775680000000.0,
+            "operatingIncome": 93113000000.0,
+            "netInterest": 1329000000.0,
+            "tax": 21322192504.530792,
+            "depreciation": 49741000000.0,
+            "workingCapital": 0.0,
+            "capex": 169007000000.0,
+            "leasePrincipal": 1907000000.0,
+            "cash": -48053192504.53079,
+            "unadjustedOperatingIncome": 93712000000.0,
+            "excludedProfit": 599000000.0
+          },
+          {
+            "year": 3,
+            "segments": [
+              {
+                "label": "북미",
+                "revenue": 453670000000.0,
+                "operatingIncome": 33651000000.0
+              },
+              {
+                "label": "국제",
+                "revenue": 173606000000.0,
+                "operatingIncome": 5380000000.0
+              },
+              {
+                "label": "AWS",
+                "revenue": 148404000000.0,
+                "operatingIncome": 54681000000.0
+              }
+            ],
+            "revenue": 775680000000.0,
+            "operatingIncome": 93113000000.0,
+            "netInterest": 1329000000.0,
+            "tax": 21322192504.530792,
+            "depreciation": 49741000000.0,
+            "workingCapital": 0.0,
+            "capex": 169007000000.0,
+            "leasePrincipal": 1907000000.0,
+            "cash": -48053192504.53079,
+            "unadjustedOperatingIncome": 93712000000.0,
+            "excludedProfit": 599000000.0
+          },
+          {
+            "year": 4,
+            "segments": [
+              {
+                "label": "북미",
+                "revenue": 453670000000.0,
+                "operatingIncome": 33651000000.0
+              },
+              {
+                "label": "국제",
+                "revenue": 173606000000.0,
+                "operatingIncome": 5380000000.0
+              },
+              {
+                "label": "AWS",
+                "revenue": 148404000000.0,
+                "operatingIncome": 54681000000.0
+              }
+            ],
+            "revenue": 775680000000.0,
+            "operatingIncome": 93113000000.0,
+            "netInterest": 1329000000.0,
+            "tax": 21322192504.530792,
+            "depreciation": 49741000000.0,
+            "workingCapital": 0.0,
+            "capex": 169007000000.0,
+            "leasePrincipal": 1907000000.0,
+            "cash": -48053192504.53079,
+            "unadjustedOperatingIncome": 93712000000.0,
+            "excludedProfit": 599000000.0
+          },
+          {
+            "year": 5,
+            "segments": [
+              {
+                "label": "북미",
+                "revenue": 453670000000.0,
+                "operatingIncome": 33651000000.0
+              },
+              {
+                "label": "국제",
+                "revenue": 173606000000.0,
+                "operatingIncome": 5380000000.0
+              },
+              {
+                "label": "AWS",
+                "revenue": 148404000000.0,
+                "operatingIncome": 54681000000.0
+              }
+            ],
+            "revenue": 775680000000.0,
+            "operatingIncome": 93113000000.0,
+            "netInterest": 1329000000.0,
+            "tax": 21322192504.530792,
+            "depreciation": 49741000000.0,
+            "workingCapital": 0.0,
+            "capex": 169007000000.0,
+            "leasePrincipal": 1907000000.0,
+            "cash": -48053192504.53079,
+            "unadjustedOperatingIncome": 93712000000.0,
+            "excludedProfit": 599000000.0
+          }
+        ],
+        "terminal": {
+          "year": 6,
+          "segments": [
+            {
+              "label": "북미",
+              "revenue": 462743400000.0,
+              "operatingIncome": 34324020000.0
+            },
+            {
+              "label": "국제",
+              "revenue": 177078120000.0,
+              "operatingIncome": 5487600000.0
+            },
+            {
+              "label": "AWS",
+              "revenue": 151372080000.0,
+              "operatingIncome": 55774620000.0
+            }
+          ],
+          "revenue": 791193600000.0,
+          "operatingIncome": 94975260000.0,
+          "netInterest": 1355580000.0,
+          "tax": 21748636354.621407,
+          "depreciation": 50735820000.0,
+          "workingCapital": 6187380053.10096,
+          "capex": 172387140000.0,
+          "leasePrincipal": 1945140000.0,
+          "cash": -55201636407.72235,
+          "unadjustedOperatingIncome": 95586240000.0,
+          "excludedProfit": 610980000.0
+        },
+        "explicitPv": -177599650866.03094,
+        "terminalPv": null,
+        "equityValue": null,
+        "price": null,
+        "terminalShare": null,
+        "requiredTerminalCash": 430436923662.38824,
+        "terminalCashGap": 485638560070.1106,
+        "reinvestmentCaution": false,
+        "status": "nonpositive_terminal_or_value"
+      }
+    },
+    {
+      "name": "fade",
+      "assumptions": {
+        "segments": [
+          {
+            "growthStart": 0,
+            "growthEnd": 0,
+            "marginEnd": 0.0741750611678092
+          },
+          {
+            "growthStart": 0,
+            "growthEnd": 0,
+            "marginEnd": 0.030989712337131204
+          },
+          {
+            "growthStart": 0,
+            "growthEnd": 0,
+            "marginEnd": 0.3684604188566346
+          }
+        ],
+        "tax": 0.22577023468934151,
+        "netInterest": 0.001713335396039604,
+        "depreciation": 0.06412567037953795,
+        "workingCapital": 0.39883586357137996,
+        "capexStart": 0.2178823741749175,
+        "capexEnd": 0.2178823741749175,
+        "leaseStart": 0.0024584880363036302,
+        "leaseEnd": 0.0024584880363036302,
+        "discount": 0.11,
+        "terminal": 0.02,
+        "excludedProfitStart": 0.0007722256600660066,
+        "excludedProfitEnd": 0
+      },
+      "expected": {
+        "years": [
+          {
+            "year": 1,
+            "segments": [
+              {
+                "label": "북미",
+                "revenue": 453670000000.0,
+                "operatingIncome": 33651000000.0
+              },
+              {
+                "label": "국제",
+                "revenue": 173606000000.0,
+                "operatingIncome": 5380000000.0
+              },
+              {
+                "label": "AWS",
+                "revenue": 148404000000.0,
+                "operatingIncome": 54681000000.0
+              }
+            ],
+            "revenue": 775680000000.0,
+            "operatingIncome": 93113000000.0,
+            "netInterest": 1329000000.0,
+            "tax": 21322192504.530792,
+            "depreciation": 49741000000.0,
+            "workingCapital": 0.0,
+            "capex": 169007000000.0,
+            "leasePrincipal": 1907000000.0,
+            "cash": -48053192504.53079,
+            "unadjustedOperatingIncome": 93712000000.0,
+            "excludedProfit": 599000000.0
+          },
+          {
+            "year": 2,
+            "segments": [
+              {
+                "label": "북미",
+                "revenue": 453670000000.0,
+                "operatingIncome": 33651000000.0
+              },
+              {
+                "label": "국제",
+                "revenue": 173606000000.0,
+                "operatingIncome": 5380000000.0
+              },
+              {
+                "label": "AWS",
+                "revenue": 148404000000.0,
+                "operatingIncome": 54681000000.0
+              }
+            ],
+            "revenue": 775680000000.0,
+            "operatingIncome": 93262750000.0,
+            "netInterest": 1329000000.0,
+            "tax": 21356001597.17552,
+            "depreciation": 49741000000.0,
+            "workingCapital": 0.0,
+            "capex": 169007000000.0,
+            "leasePrincipal": 1907000000.0,
+            "cash": -47937251597.17552,
+            "unadjustedOperatingIncome": 93712000000.0,
+            "excludedProfit": 449250000.0
+          },
+          {
+            "year": 3,
+            "segments": [
+              {
+                "label": "북미",
+                "revenue": 453670000000.0,
+                "operatingIncome": 33651000000.0
+              },
+              {
+                "label": "국제",
+                "revenue": 173606000000.0,
+                "operatingIncome": 5380000000.0
+              },
+              {
+                "label": "AWS",
+                "revenue": 148404000000.0,
+                "operatingIncome": 54681000000.0
+              }
+            ],
+            "revenue": 775680000000.0,
+            "operatingIncome": 93412500000.0,
+            "netInterest": 1329000000.0,
+            "tax": 21389810689.820248,
+            "depreciation": 49741000000.0,
+            "workingCapital": 0.0,
+            "capex": 169007000000.0,
+            "leasePrincipal": 1907000000.0,
+            "cash": -47821310689.82025,
+            "unadjustedOperatingIncome": 93712000000.0,
+            "excludedProfit": 299500000.0
+          },
+          {
+            "year": 4,
+            "segments": [
+              {
+                "label": "북미",
+                "revenue": 453670000000.0,
+                "operatingIncome": 33651000000.0
+              },
+              {
+                "label": "국제",
+                "revenue": 173606000000.0,
+                "operatingIncome": 5380000000.0
+              },
+              {
+                "label": "AWS",
+                "revenue": 148404000000.0,
+                "operatingIncome": 54681000000.0
+              }
+            ],
+            "revenue": 775680000000.0,
+            "operatingIncome": 93562250000.0,
+            "netInterest": 1329000000.0,
+            "tax": 21423619782.464977,
+            "depreciation": 49741000000.0,
+            "workingCapital": 0.0,
+            "capex": 169007000000.0,
+            "leasePrincipal": 1907000000.0,
+            "cash": -47705369782.46498,
+            "unadjustedOperatingIncome": 93712000000.0,
+            "excludedProfit": 149750000.00000003
+          },
+          {
+            "year": 5,
+            "segments": [
+              {
+                "label": "북미",
+                "revenue": 453670000000.0,
+                "operatingIncome": 33651000000.0
+              },
+              {
+                "label": "국제",
+                "revenue": 173606000000.0,
+                "operatingIncome": 5380000000.0
+              },
+              {
+                "label": "AWS",
+                "revenue": 148404000000.0,
+                "operatingIncome": 54681000000.0
+              }
+            ],
+            "revenue": 775680000000.0,
+            "operatingIncome": 93712000000.0,
+            "netInterest": 1329000000.0,
+            "tax": 21457428875.109707,
+            "depreciation": 49741000000.0,
+            "workingCapital": 0.0,
+            "capex": 169007000000.0,
+            "leasePrincipal": 1907000000.0,
+            "cash": -47589428875.10971,
+            "unadjustedOperatingIncome": 93712000000.0,
+            "excludedProfit": 0.0
+          }
+        ],
+        "terminal": {
+          "year": 6,
+          "segments": [
+            {
+              "label": "북미",
+              "revenue": 462743400000.0,
+              "operatingIncome": 34324020000.0
+            },
+            {
+              "label": "국제",
+              "revenue": 177078120000.0,
+              "operatingIncome": 5487600000.0
+            },
+            {
+              "label": "AWS",
+              "revenue": 151372080000.0,
+              "operatingIncome": 55774620000.0
+            }
+          ],
+          "revenue": 791193600000.0,
+          "operatingIncome": 95586240000.0,
+          "netInterest": 1355580000.0,
+          "tax": 21886577452.6119,
+          "depreciation": 50735820000.0,
+          "workingCapital": 6187380053.10096,
+          "capex": 172387140000.0,
+          "leasePrincipal": 1945140000.0,
+          "cash": -54728597505.71286,
+          "unadjustedOperatingIncome": 95586240000.0,
+          "excludedProfit": 0.0
+        },
+        "explicitPv": -176831657897.9726,
+        "terminalPv": null,
+        "equityValue": null,
+        "price": null,
+        "terminalShare": null,
+        "requiredTerminalCash": 430320453509.13855,
+        "terminalCashGap": 485049051014.85144,
+        "reinvestmentCaution": false,
+        "status": "nonpositive_terminal_or_value"
+      }
+    },
+    {
+      "name": "loss",
+      "assumptions": {
+        "segments": [
+          {
+            "growthStart": 0,
+            "growthEnd": 0,
+            "marginEnd": 0.0741750611678092
+          },
+          {
+            "growthStart": 0,
+            "growthEnd": 0,
+            "marginEnd": 0.030989712337131204
+          },
+          {
+            "growthStart": 0,
+            "growthEnd": 0,
+            "marginEnd": 0.3684604188566346
+          }
+        ],
+        "tax": 0.22577023468934151,
+        "netInterest": 0.001713335396039604,
+        "depreciation": 0.06412567037953795,
+        "workingCapital": 0.39883586357137996,
+        "capexStart": 0.2178823741749175,
+        "capexEnd": 0.2178823741749175,
+        "leaseStart": 0.0024584880363036302,
+        "leaseEnd": 0.0024584880363036302,
+        "discount": 0.11,
+        "terminal": 0.02,
+        "excludedProfitStart": 0.5,
+        "excludedProfitEnd": 0.5
+      },
+      "expected": {
+        "years": [
+          {
+            "year": 1,
+            "segments": [
+              {
+                "label": "북미",
+                "revenue": 453670000000.0,
+                "operatingIncome": 33651000000.0
+              },
+              {
+                "label": "국제",
+                "revenue": 173606000000.0,
+                "operatingIncome": 5380000000.0
+              },
+              {
+                "label": "AWS",
+                "revenue": 148404000000.0,
+                "operatingIncome": 54681000000.0
+              }
+            ],
+            "revenue": 775680000000.0,
+            "operatingIncome": -294128000000.0,
+            "netInterest": 1329000000.0,
+            "tax": 0.0,
+            "depreciation": 49741000000.0,
+            "workingCapital": 0.0,
+            "capex": 169007000000.0,
+            "leasePrincipal": 1907000000.0,
+            "cash": -413972000000.0,
+            "unadjustedOperatingIncome": 93712000000.0,
+            "excludedProfit": 387840000000.0
+          },
+          {
+            "year": 2,
+            "segments": [
+              {
+                "label": "북미",
+                "revenue": 453670000000.0,
+                "operatingIncome": 33651000000.0
+              },
+              {
+                "label": "국제",
+                "revenue": 173606000000.0,
+                "operatingIncome": 5380000000.0
+              },
+              {
+                "label": "AWS",
+                "revenue": 148404000000.0,
+                "operatingIncome": 54681000000.0
+              }
+            ],
+            "revenue": 775680000000.0,
+            "operatingIncome": -294128000000.0,
+            "netInterest": 1329000000.0,
+            "tax": 0.0,
+            "depreciation": 49741000000.0,
+            "workingCapital": 0.0,
+            "capex": 169007000000.0,
+            "leasePrincipal": 1907000000.0,
+            "cash": -413972000000.0,
+            "unadjustedOperatingIncome": 93712000000.0,
+            "excludedProfit": 387840000000.0
+          },
+          {
+            "year": 3,
+            "segments": [
+              {
+                "label": "북미",
+                "revenue": 453670000000.0,
+                "operatingIncome": 33651000000.0
+              },
+              {
+                "label": "국제",
+                "revenue": 173606000000.0,
+                "operatingIncome": 5380000000.0
+              },
+              {
+                "label": "AWS",
+                "revenue": 148404000000.0,
+                "operatingIncome": 54681000000.0
+              }
+            ],
+            "revenue": 775680000000.0,
+            "operatingIncome": -294128000000.0,
+            "netInterest": 1329000000.0,
+            "tax": 0.0,
+            "depreciation": 49741000000.0,
+            "workingCapital": 0.0,
+            "capex": 169007000000.0,
+            "leasePrincipal": 1907000000.0,
+            "cash": -413972000000.0,
+            "unadjustedOperatingIncome": 93712000000.0,
+            "excludedProfit": 387840000000.0
+          },
+          {
+            "year": 4,
+            "segments": [
+              {
+                "label": "북미",
+                "revenue": 453670000000.0,
+                "operatingIncome": 33651000000.0
+              },
+              {
+                "label": "국제",
+                "revenue": 173606000000.0,
+                "operatingIncome": 5380000000.0
+              },
+              {
+                "label": "AWS",
+                "revenue": 148404000000.0,
+                "operatingIncome": 54681000000.0
+              }
+            ],
+            "revenue": 775680000000.0,
+            "operatingIncome": -294128000000.0,
+            "netInterest": 1329000000.0,
+            "tax": 0.0,
+            "depreciation": 49741000000.0,
+            "workingCapital": 0.0,
+            "capex": 169007000000.0,
+            "leasePrincipal": 1907000000.0,
+            "cash": -413972000000.0,
+            "unadjustedOperatingIncome": 93712000000.0,
+            "excludedProfit": 387840000000.0
+          },
+          {
+            "year": 5,
+            "segments": [
+              {
+                "label": "북미",
+                "revenue": 453670000000.0,
+                "operatingIncome": 33651000000.0
+              },
+              {
+                "label": "국제",
+                "revenue": 173606000000.0,
+                "operatingIncome": 5380000000.0
+              },
+              {
+                "label": "AWS",
+                "revenue": 148404000000.0,
+                "operatingIncome": 54681000000.0
+              }
+            ],
+            "revenue": 775680000000.0,
+            "operatingIncome": -294128000000.0,
+            "netInterest": 1329000000.0,
+            "tax": 0.0,
+            "depreciation": 49741000000.0,
+            "workingCapital": 0.0,
+            "capex": 169007000000.0,
+            "leasePrincipal": 1907000000.0,
+            "cash": -413972000000.0,
+            "unadjustedOperatingIncome": 93712000000.0,
+            "excludedProfit": 387840000000.0
+          }
+        ],
+        "terminal": {
+          "year": 6,
+          "segments": [
+            {
+              "label": "북미",
+              "revenue": 462743400000.0,
+              "operatingIncome": 34324020000.0
+            },
+            {
+              "label": "국제",
+              "revenue": 177078120000.0,
+              "operatingIncome": 5487600000.0
+            },
+            {
+              "label": "AWS",
+              "revenue": 151372080000.0,
+              "operatingIncome": 55774620000.0
+            }
+          ],
+          "revenue": 791193600000.0,
+          "operatingIncome": -300010560000.0,
+          "netInterest": 1355580000.0,
+          "tax": 0.0,
+          "depreciation": 50735820000.0,
+          "workingCapital": 6187380053.10096,
+          "capex": 172387140000.0,
+          "leasePrincipal": 1945140000.0,
+          "cash": -428438820053.10095,
+          "unadjustedOperatingIncome": 95586240000.0,
+          "excludedProfit": 395596800000.0
+        },
+        "explicitPv": -1529997880190.384,
+        "terminalPv": null,
+        "equityValue": null,
+        "price": null,
+        "terminalShare": null,
+        "requiredTerminalCash": 635535193536.3104,
+        "terminalCashGap": 1063974013589.4114,
+        "reinvestmentCaution": false,
+        "status": "nonpositive_terminal_or_value"
+      }
+    },
+    {
+      "name": "growth",
+      "assumptions": {
+        "segments": [
+          {
+            "growthStart": 0,
+            "growthEnd": 0,
+            "marginEnd": 0.0741750611678092
+          },
+          {
+            "growthStart": 0,
+            "growthEnd": 0,
+            "marginEnd": 0.030989712337131204
+          },
+          {
+            "growthStart": 0.15,
+            "growthEnd": 0.08,
+            "marginEnd": 0.3684604188566346
+          }
+        ],
+        "tax": 0.22577023468934151,
+        "netInterest": 0.001713335396039604,
+        "depreciation": 0.06412567037953795,
+        "workingCapital": 0.39883586357137996,
+        "capexStart": 0.2178823741749175,
+        "capexEnd": 0.2178823741749175,
+        "leaseStart": 0.0024584880363036302,
+        "leaseEnd": 0.0024584880363036302,
+        "discount": 0.11,
+        "terminal": 0.02,
+        "excludedProfitStart": 0.0007722256600660066,
+        "excludedProfitEnd": 0.0007722256600660066
+      },
+      "expected": {
+        "years": [
+          {
+            "year": 1,
+            "segments": [
+              {
+                "label": "북미",
+                "revenue": 453670000000.0,
+                "operatingIncome": 33651000000.0
+              },
+              {
+                "label": "국제",
+                "revenue": 173606000000.0,
+                "operatingIncome": 5380000000.0
+              },
+              {
+                "label": "AWS",
+                "revenue": 170664600000.0,
+                "operatingIncome": 62883150000.0
+              }
+            ],
+            "revenue": 797940600000.0,
+            "operatingIncome": 101297959793.47153,
+            "netInterest": 1367139873.9170792,
+            "tax": 23178723646.310963,
+            "depreciation": 51168475898.05074,
+            "workingCapital": 8878325624.61706,
+            "capex": 173857192378.55817,
+            "leasePrincipal": 1961727418.7809405,
+            "cash": -54042393502.82778,
+            "unadjustedOperatingIncome": 101914150000.0,
+            "excludedProfit": 616190206.5284654
+          },
+          {
+            "year": 2,
+            "segments": [
+              {
+                "label": "북미",
+                "revenue": 453670000000.0,
+                "operatingIncome": 33651000000.0
+              },
+              {
+                "label": "국제",
+                "revenue": 173606000000.0,
+                "operatingIncome": 5380000000.0
+              },
+              {
+                "label": "AWS",
+                "revenue": 193277659500.0,
+                "operatingIncome": 71215167375.0
+              }
+            ],
+            "revenue": 820553659500.0,
+            "operatingIncome": 109612514783.67303,
+            "netInterest": 1405883629.1711788,
+            "tax": 25064649864.502655,
+            "depreciation": 52618553497.82062,
+            "workingCapital": 9018899113.673498,
+            "capex": 178784179469.77682,
+            "leasePrincipal": 2017321355.0259125,
+            "cash": -51248097892.31406,
+            "unadjustedOperatingIncome": 110246167375.0,
+            "excludedProfit": 633652591.3269647
+          },
+          {
+            "year": 3,
+            "segments": [
+              {
+                "label": "북미",
+                "revenue": 453670000000.0,
+                "operatingIncome": 33651000000.0
+              },
+              {
+                "label": "국제",
+                "revenue": 173606000000.0,
+                "operatingIncome": 5380000000.0
+              },
+              {
+                "label": "AWS",
+                "revenue": 215504590342.5,
+                "operatingIncome": 79404911623.125
+              }
+            ],
+            "revenue": 842780590342.5,
+            "operatingIncome": 117785094825.45694,
+            "netInterest": 1443965816.5289586,
+            "tax": 26918373002.93089,
+            "depreciation": 54043870338.57556,
+            "workingCapital": 8864897157.109827,
+            "capex": 183627035932.36243,
+            "leasePrincipal": 2071965998.585947,
+            "cash": -48209341110.42765,
+            "unadjustedOperatingIncome": 118435911623.125,
+            "excludedProfit": 650816797.6680558
+          },
+          {
+            "year": 4,
+            "segments": [
+              {
+                "label": "북미",
+                "revenue": 453670000000.0,
+                "operatingIncome": 33651000000.0
+              },
+              {
+                "label": "국제",
+                "revenue": 173606000000.0,
+                "operatingIncome": 5380000000.0
+              },
+              {
+                "label": "AWS",
+                "revenue": 236516287900.89374,
+                "operatingIncome": 87146890506.37968
+              }
+            ],
+            "revenue": 863792287900.8938,
+            "operatingIncome": 125510847936.6955,
+            "netInterest": 1479965901.6866336,
+            "tax": 28670745843.68201,
+            "depreciation": 55391259530.319664,
+            "workingCapital": 8380218540.802647,
+            "capex": 188205114481.8306,
+            "leasePrincipal": 2123623005.6556885,
+            "cash": -44997628503.26915,
+            "unadjustedOperatingIncome": 126177890506.37968,
+            "excludedProfit": 667042569.6841937
+          },
+          {
+            "year": 5,
+            "segments": [
+              {
+                "label": "북미",
+                "revenue": 453670000000.0,
+                "operatingIncome": 33651000000.0
+              },
+              {
+                "label": "국제",
+                "revenue": 173606000000.0,
+                "operatingIncome": 5380000000.0
+              },
+              {
+                "label": "AWS",
+                "revenue": 255437590932.96524,
+                "operatingIncome": 94118641746.89006
+              }
+            ],
+            "revenue": 882713590932.9652,
+            "operatingIncome": 132467987661.48262,
+            "netInterest": 1512384439.910673,
+            "tax": 30248780053.09687,
+            "depreciation": 56604600771.70563,
+            "workingCapital": 7546494234.691971,
+            "capex": 192327732908.94138,
+            "leasePrincipal": 2170140802.7913117,
+            "cash": -41708175126.42263,
+            "unadjustedOperatingIncome": 133149641746.89006,
+            "excludedProfit": 681654085.407444
+          }
+        ],
+        "terminal": {
+          "year": 6,
+          "segments": [
+            {
+              "label": "북미",
+              "revenue": 462743400000.0,
+              "operatingIncome": 34324020000.0
+            },
+            {
+              "label": "국제",
+              "revenue": 177078120000.0,
+              "operatingIncome": 5487600000.0
+            },
+            {
+              "label": "AWS",
+              "revenue": 260546342751.62454,
+              "operatingIncome": 96001014581.82787
+            }
+          ],
+          "revenue": 900367862751.6245,
+          "operatingIncome": 135117347414.71228,
+          "netInterest": 1542632128.7088864,
+          "tax": 30853755654.15881,
+          "depreciation": 57736692787.13974,
+          "workingCapital": 7041156746.518859,
+          "capex": 196174287567.1202,
+          "leasePrincipal": 2213543618.847138,
+          "cash": -41886071256.08411,
+          "unadjustedOperatingIncome": 135812634581.82787,
+          "excludedProfit": 695287167.1155928
+        },
+        "explicitPv": -179924305200.01804,
+        "terminalPv": null,
+        "equityValue": null,
+        "price": null,
+        "terminalShare": null,
+        "requiredTerminalCash": 430789469659.28284,
+        "terminalCashGap": 472675540915.36694,
+        "reinvestmentCaution": false,
+        "status": "nonpositive_terminal_or_value"
+      }
+    }
+  ],
+  "method": "Five actual-source scenarios; independently executed Python and browser JavaScript compared for all six cash/profit/tax years and inverse price requirement.",
+  "engineHashes": {
+    "equitylab/operating_model.py": "d531cff153b6f25357767e5e99d8481bb8666a42c2fafa39b36daca1352fa460",
+    "equitylab/amazon_operating.py": "3cef1b98f1f03511ce39e7f25f890c1c01fc7921cedf12f5ce47db89f0eee8d8",
+    "app/operating-model.js": "138c4d92703b49222f9e5c1f6d030a58dd5edb3d5053258dd18f0b1b511729f0"
+  }
+}

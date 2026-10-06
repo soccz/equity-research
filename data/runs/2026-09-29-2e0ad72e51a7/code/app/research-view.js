@@ -1,0 +1,11 @@
+/* Observed conditions, price requirements and frozen follow-up in one view. */
+(() => {
+  const esc=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  function render(c,payload){
+    const v=c.researchView;if(!v)return '';
+    const current=payload.ledger.filter(x=>x.registration.company===c.id&&x.registration.metric==='cashMarginChange').at(-1);
+    const status={pending:'새 공시 대기',unresolved:'자료 미확인',met:'조건 충족',not_met:'조건 미충족'};
+    return `<section class="panel research-view"><span class="eyebrow">RESEARCH VIEW / CONDITIONS</span><div class="panel-head"><div><h2>${esc(v.question)}</h2><p class="panel-subtitle">${esc(v.horizon)}</p></div><span class="pillar">${esc(v.state)}</span></div><p>${esc(v.derivation)}</p><div class="driver-grid">${v.observations.map(o=>`<div><small>${esc(o.label)}</small><strong>${o.value==null?'미확인':(o.value*100).toLocaleString('ko-KR',{maximumFractionDigits:1})+(o.unit==='pp'?'%p':'%')}</strong><a href="${esc(o.source)}" target="_blank" rel="noopener noreferrer">계산 원문 ↗</a></div>`).join('')}</div><div class="research-condition-grid"><article><h3>가설을 다시 판단할 조건</h3><p>${esc(v.confirmation.definition)}</p><p>기준선: ${esc(v.confirmation.baseline)}</p><p>${esc(v.countercondition)}</p></article><article><h3>가격이 요구하는 조건</h3><p>${esc(v.priceQuestion)}</p><p>${v.priceStatus==='assumption_workspace'?'아래 가격 역산에서 성장·요구수익률을 바꾸고 필요한 현금을 비교할 수 있습니다.':'증권별 가치와 배분 현금의 검토가 남아 있습니다.'}</p></article></div><div class="tracked-condition"><strong>${current?status[current.observation.status]:'조건 등록 전'}</strong><p>${current?'등록 '+new Date(current.registration.recordedAt).toLocaleDateString('ko-KR',{timeZone:'Asia/Seoul'})+' · 방향 예측 없음 · 조건의 성립만 추적':'현재 스냅샷을 조건 원장에 연결하면 다음 공시부터 관측합니다.'}</p>${current?`<details class="technical"><summary>고정된 조건과 입력 버전</summary><code>${esc(current.registration.hash)}</code><code>${esc(current.registration.snapshotHash)}</code></details>`:''}<button class="arrow-link" data-nav="tracking/${esc(c.id)}">이 기업의 판단 이력 보기 ↗</button></div><details><summary>의견을 확장하기 위해 필요한 근거</summary><ul>${v.remaining.map(q=>`<li>${esc(q)}</li>`).join('')}</ul><p>프로그램이 정리한 조건부 연구 의견입니다. 로컬 AI의 가설·비판은 아래에서 별도로 확인하며 자동 투자 선호로 합치지 않습니다.</p></details></section>`;
+  }
+  window.EquityResearchView={render};
+})();

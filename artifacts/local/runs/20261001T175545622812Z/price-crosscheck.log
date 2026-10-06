@@ -1,0 +1,6 @@
+PASS equity cash scenario: analytical identity, directional sensitivity, invalid assumptions, 27 Python/JS comparisons.
+PASS 180 historical cash/price Python/JS comparisons, including held securities and negative cash.
+PASS 16 implied-growth roots across explicit forecast horizons.
+PASS 92 complete business-cash Python/JS paths, including every year, taxes, corporate costs and held rights.
+PASS 20 preferred conversion contract Python/JS boundaries; full security allocation remains held.
+PASS 54 complete business-margin inverse Python/JS scenarios; bounds, residuals and held securities retained.

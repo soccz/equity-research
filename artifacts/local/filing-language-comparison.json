@@ -1,0 +1,24 @@
+{
+  "version": "output-language-development-comparison-v1",
+  "scope": "이미 검토한 같은 3개 개발 입력의 단일 출력 비교. 독립·미사용 표본 평가 아님. 생산 모델 기록 및 설정 변경 없음.",
+  "productionProtocol": "filing-reading-v3",
+  "productionSnapshot": "062dc009a5e556071b82c68c8076421061f4c0670fbe8de845a45bb12db9065e",
+  "probeRun": "artifacts/local/filing-reading-run-20261001T044554825153Z.json",
+  "results": [
+    {
+      "company": "MU",
+      "finding": "DRAM·NAND·MCBU 증가율의 숫자 역할은 한국어 출력보다 나아졌지만, 가격·물량 변화만으로 수요 탄력성을 식별하고 공급 제약의 지속을 필수조건으로 삼은 인과 과잉이 남음.",
+      "adopted": false
+    },
+    {
+      "company": "AMZN",
+      "finding": "사용량 증가/가격 상쇄 방향은 개선됐지만 반기 환율 효과와 이분기 효과를 충돌처럼 표현했고, 불리한 가격 변화가 지속돼야 성장한다는 필요조건 오류가 남음.",
+      "adopted": false
+    },
+    {
+      "company": "F",
+      "finding": "도매 판매와 매출의 구분, 판매 감소율의 대상은 개선됨. 같은 단일 개발 사례에서 큰 수치·범위 충돌을 발견하지 못했으며 전체 미국 기업에 일반화할 수 없음.",
+      "adopted": false
+    }
+  ]
+}

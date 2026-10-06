@@ -1,0 +1,13 @@
+test_cash_is_not_a_zero_price_when_negative (test_valuation.ValuationTests.test_cash_is_not_a_zero_price_when_negative) ... ok
+test_higher_burden_or_discount_reduces_conditional_price (test_valuation.ValuationTests.test_higher_burden_or_discount_reduces_conditional_price) ... ok
+test_historical_anchors_do_not_overlap_and_missing_is_explicit (test_valuation.ValuationTests.test_historical_anchors_do_not_overlap_and_missing_is_explicit) ... ok
+test_implied_growth_recovers_price_and_reports_unsolved_ranges (test_valuation.ValuationTests.test_implied_growth_recovers_price_and_reports_unsolved_ranges) ... ok
+test_issued_and_weighted_average_shares_are_not_substitutes (test_valuation.ValuationTests.test_issued_and_weighted_average_shares_are_not_substitutes) ... ok
+test_latest_header_shares_preserve_own_date (test_valuation.ValuationTests.test_latest_header_shares_preserve_own_date) ... ok
+test_multiclass_and_financial_subsidiaries_hold_price (test_valuation.ValuationTests.test_multiclass_and_financial_subsidiaries_hold_price) ... ok
+test_preferred_class_dimension_is_not_mistaken_for_no_preferred_stock (test_valuation.ValuationTests.test_preferred_class_dimension_is_not_mistaken_for_no_preferred_stock) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 9.015s
+
+OK

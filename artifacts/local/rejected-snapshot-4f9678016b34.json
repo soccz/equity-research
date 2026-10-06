@@ -1,0 +1,7 @@
+{
+  "snapshotHash": "4f9678016b3427a9a89472e3f0456b803c701e1389cd2025c1f7a8143afad2bc",
+  "status": "rejected_for_release",
+  "reason": "모델 계산 프로세스가 읽은 이전 Amazon 해석 문구와 종료 시점 원본 파일 해시의 시점 불일치. 별도 원문 검토 후 passages/rules/remaining을 바꾸는 동안 이미 모델 객체가 메모리에 생성됨. 새 공시나 수치 변경 아님.",
+  "evidence": "직접 재생성한 AMZN 모델의 canonical 비교에서 passages/rules/remaining/evidenceHash 차이 확인. 전체 offline replay가 이를 검사하므로 이 스냅샷을 현재 검증판으로 사용하지 않음.",
+  "next": "코드 고정 뒤 전체 통합 재실행"
+}

@@ -1,0 +1,15 @@
+{
+  "file": "data/sources/filing-0000723125-25-000028-d4eede66eac20393.xbrl",
+  "sha256": "d4eede66eac20393a3c93849bdd72477dd977d59e36d8e742381d1da6e393ed8",
+  "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312525000028/mu-20250828_htm.xml",
+  "primaryUrl": "https://www.sec.gov/Archives/edgar/data/723125/000072312525000028/mu-20250828.htm",
+  "provider": "SEC",
+  "accession": "0000723125-25-000028",
+  "cik": 723125,
+  "retrievedAt": "2026-10-01T05:02:17.736611+00:00",
+  "indexSource": {
+    "file": "data/sources/filing-0000723125-25-000028-index-7cba03eeed1410cb.html",
+    "sha256": "7cba03eeed1410cb4405c1a6d5a59d89955a1ac4ece658c6f13940de5f628d7f",
+    "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312525000028/0000723125-25-000028-index.html"
+  }
+}

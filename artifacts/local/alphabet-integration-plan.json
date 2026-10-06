@@ -1,0 +1,43 @@
+{
+  "status": "staged_not_integrated",
+  "sources": [
+    {
+      "original": "artifacts/local/alphabet-annual-preparation.html",
+      "manifest": {
+        "file": "data/sources/filing-0001652044-26-000018-8247275d30a8f9f0.html",
+        "retrievedAt": "2026-10-01T10:58:35.471932+00:00",
+        "sha256": "8247275d30a8f9f0cf6c36a6c9bd76fb50d656dd51d77ad777b160c6bf95476f",
+        "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000018/goog-20251231.htm",
+        "cik": 1652044,
+        "accession": "0001652044-26-000018",
+        "filedAt": "2026-02-05",
+        "provider": "SEC"
+      },
+      "targetManifest": "data/sources/filing-0001652044-26-000018.manifest.json"
+    },
+    {
+      "original": "artifacts/local/alphabet-prior-half-preparation.html",
+      "manifest": {
+        "file": "data/sources/filing-0001652044-25-000062-c91c5ed0a09f0322.html",
+        "retrievedAt": "2026-10-01T10:59:32.056477+00:00",
+        "sha256": "c91c5ed0a09f03223a8535acca6aac1bdee1d54fe1fe8825eaf20ba367becd32",
+        "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204425000062/goog-20250630.htm",
+        "cik": 1652044,
+        "accession": "0001652044-25-000062",
+        "filedAt": "2025-07-24",
+        "provider": "SEC"
+      },
+      "targetManifest": "data/sources/filing-0001652044-25-000062.manifest.json"
+    }
+  ],
+  "steps": [
+    "Wait for current coverage GPU batch to finish; do not change engine or inputs during it",
+    "Archive two exact source HTML files + filing manifests from this plan; no rewriting existing source",
+    "Move alphabet candidate to equitylab/alphabet_operating.py, use relative imports, source metadata from exact data manifests, SHA hard checks, official captions and table header/amount validation",
+    "Call shared calculate normally in build, remove staged main and optional calculator",
+    "Install staged operating_model.py and operating-model.js changes with focused diff; add GOOGL issuer dispatch",
+    "Convert candidate6 tests to normal tests; add JS parity and browser controls/rights hold coverage + Alphabet PDF",
+    "Fresh refresh, compare GPU input hashes; resume models only when exact inputs match",
+    "Finish question/filing GPU stages and actual sentence review; full integration + output + portable package"
+  ]
+}

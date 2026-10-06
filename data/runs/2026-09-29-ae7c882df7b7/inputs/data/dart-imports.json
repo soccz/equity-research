@@ -1,0 +1,860 @@
+[
+  {
+    "ticker": "000660",
+    "file": "data/sources/000660-2026-h1.xbrl",
+    "sha256": "9f76c636bc699d6c90b3fbd3e2f8d6c611a9b4427e305c426c80dba3c4a94563",
+    "filing": {
+      "rcept_no": "20260814003509",
+      "name": "반기보고서 (2026.06)",
+      "filed_at": "20260814",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003509",
+      "source_bundle_sha256": "d308b5e583b5ed9697dbd6a7f150fa7ec222b9d52956ae798beceb4218028288"
+    },
+    "originalPath": "/mnt/20t/report/local_reports/sources/20260814003509-d308b5e583b5ed9697dbd6a7f150fa7ec222b9d52956ae798beceb4218028288/SK하이닉스/2026-h1/raw_inputs/xbrl/entity00164779_2026-06-30.xbrl",
+    "importedAt": "2026-09-30T14:17:42.848554+09:00",
+    "independentlyParsed": true
+  },
+  {
+    "ticker": "005930",
+    "file": "data/sources/005930-2026-h1.xbrl",
+    "sha256": "03888e356c499e3643712810c7ba66e11a65ba490d209463e19000b4fb36074e",
+    "filing": {
+      "rcept_no": "20260814003699",
+      "name": "반기보고서 (2026.06)",
+      "filed_at": "20260814",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003699",
+      "source_bundle_sha256": "79201e0ff9f79192bf76d5784427d2cc5e1950805b5bb2bc434d177b70ee5063"
+    },
+    "originalPath": "/mnt/20t/report/local_reports/sources/20260814003699-79201e0ff9f79192bf76d5784427d2cc5e1950805b5bb2bc434d177b70ee5063/삼성전자/2026-h1/raw_inputs/xbrl/entity00126380_2026-06-30.xbrl",
+    "importedAt": "2026-09-30T14:17:42.897942+09:00",
+    "independentlyParsed": true
+  },
+  {
+    "ticker": "035420",
+    "file": "data/sources/035420-2026-h1.xbrl",
+    "sha256": "d2c1112408796ecddf462b96b0891c1e98d72b237b945b62051015b50d3e5a3c",
+    "filing": {
+      "rcept_no": "20260814002266",
+      "name": "반기보고서 (2026.06)",
+      "filed_at": "20260814",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002266",
+      "source_bundle_sha256": "5f7d933b46b6a9caddf30481031d59d7dda3e15dc4206120956305e3073afa11"
+    },
+    "originalPath": "/mnt/20t/report/local_reports/sources/20260814002266-5f7d933b46b6a9caddf30481031d59d7dda3e15dc4206120956305e3073afa11/NAVER/2026-h1/raw_inputs/xbrl/entity00266961_2026-06-30.xbrl",
+    "importedAt": "2026-09-30T14:17:42.930878+09:00",
+    "independentlyParsed": true
+  },
+  {
+    "ticker": "066570",
+    "file": "data/sources/066570-2026-h1.xbrl",
+    "sha256": "58520e3954a47d1633c71f6d0573035d0f93e870c6d2bac2d06d393b59495c3f",
+    "filing": {
+      "rcept_no": "20260814001997",
+      "name": "반기보고서 (2026.06)",
+      "filed_at": "20260814",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814001997",
+      "source_bundle_sha256": "f1b55bf071632a9551e1f6b8fdd4bfe04defffa2d98267521b112691ee69ae86"
+    },
+    "originalPath": "/mnt/20t/report/local_reports/sources/20260814001997-f1b55bf071632a9551e1f6b8fdd4bfe04defffa2d98267521b112691ee69ae86/LG전자/2026-h1/raw_inputs/xbrl/entity00401731_2026-06-30.xbrl",
+    "importedAt": "2026-09-30T14:17:42.999828+09:00",
+    "independentlyParsed": true
+  },
+  {
+    "ticker": "000660",
+    "file": "data/sources/000660-20250319000665-21c99ac995991a81.xbrl",
+    "sha256": "21c99ac995991a81a63ff3c22d9f5b1b4814ba6faa1daad4605f433681004bfd",
+    "filing": {
+      "rcept_no": "20250319000665",
+      "filed_at": "2025-03-19",
+      "name": "사용자 반입 정기공시",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250319000665"
+    },
+    "originalPath": "/mnt/20t/주식/data/sources/dart-instance-21c99ac995991a81.xbrl",
+    "importedAt": "2026-09-30T06:14:49.518142+00:00",
+    "independentlyParsed": true
+  },
+  {
+    "ticker": "000660",
+    "file": "data/sources/000660-20250515002103-b68a584ac3c96fed.xbrl",
+    "sha256": "b68a584ac3c96fedf5dc460e9a41fed22c670a4fa5b943422f517f0a52ad1736",
+    "filing": {
+      "rcept_no": "20250515002103",
+      "filed_at": "2025-05-15",
+      "name": "사용자 반입 정기공시",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250515002103"
+    },
+    "originalPath": "/mnt/20t/주식/data/sources/dart-instance-b68a584ac3c96fed.xbrl",
+    "importedAt": "2026-09-30T06:14:50.377611+00:00",
+    "independentlyParsed": true
+  },
+  {
+    "ticker": "000660",
+    "file": "data/sources/000660-20250814003049-2ca268a9d68bb910.xbrl",
+    "sha256": "2ca268a9d68bb910e23034dec699a5719b65ef941dd9ed123a5556e61a516110",
+    "filing": {
+      "rcept_no": "20250814003049",
+      "filed_at": "2025-08-14",
+      "name": "사용자 반입 정기공시",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814003049"
+    },
+    "originalPath": "/mnt/20t/주식/data/sources/dart-instance-2ca268a9d68bb910.xbrl",
+    "importedAt": "2026-09-30T06:14:50.840316+00:00",
+    "independentlyParsed": true
+  },
+  {
+    "ticker": "000660",
+    "file": "data/sources/000660-20251114001805-50d3f0123d9e2fc2.xbrl",
+    "sha256": "50d3f0123d9e2fc2d65eb35ccaac2a388ac5cb1d5224a3aa5407f9a020778a72",
+    "filing": {
+      "rcept_no": "20251114001805",
+      "filed_at": "2025-11-14",
+      "name": "사용자 반입 정기공시",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20251114001805"
+    },
+    "originalPath": "/mnt/20t/주식/data/sources/dart-instance-50d3f0123d9e2fc2.xbrl",
+    "importedAt": "2026-09-30T06:14:51.305663+00:00",
+    "independentlyParsed": true
+  },
+  {
+    "ticker": "000660",
+    "file": "data/sources/000660-20260317000635-d4d4c54b6d29401f.xbrl",
+    "sha256": "d4d4c54b6d29401fe81d4e1d07258a01d606a649a481f86108d6c0b404891a07",
+    "filing": {
+      "rcept_no": "20260317000635",
+      "filed_at": "2026-03-17",
+      "name": "사용자 반입 정기공시",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260317000635"
+    },
+    "originalPath": "/mnt/20t/주식/data/sources/dart-instance-d4d4c54b6d29401f.xbrl",
+    "importedAt": "2026-09-30T06:14:51.837097+00:00",
+    "independentlyParsed": true
+  },
+  {
+    "ticker": "000660",
+    "file": "data/sources/000660-20260515002287-2bb630f442f8911d.xbrl",
+    "sha256": "2bb630f442f8911dfcc9cf97b1e54129b173e6c6c217594f0b7706e8a212580c",
+    "filing": {
+      "rcept_no": "20260515002287",
+      "filed_at": "2026-05-15",
+      "name": "사용자 반입 정기공시",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515002287"
+    },
+    "originalPath": "/mnt/20t/주식/data/sources/dart-instance-2bb630f442f8911d.xbrl",
+    "importedAt": "2026-09-30T06:14:52.346638+00:00",
+    "independentlyParsed": true
+  },
+  {
+    "ticker": "005930",
+    "file": "data/sources/005930-20250311001085-7906639a78c6cd5e.xbrl",
+    "sha256": "7906639a78c6cd5eb38283f6ff479634cff9a2e476baa9569dfa11959b7f75a6",
+    "filing": {
+      "rcept_no": "20250311001085",
+      "filed_at": "2025-03-11",
+      "name": "사용자 반입 정기공시",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250311001085"
+    },
+    "originalPath": "/mnt/20t/주식/data/sources/dart-instance-7906639a78c6cd5e.xbrl",
+    "importedAt": "2026-09-30T06:14:52.812134+00:00",
+    "independentlyParsed": true
+  },
+  {
+    "ticker": "005930",
+    "file": "data/sources/005930-20250515001922-ad1a156c0ad81994.xbrl",
+    "sha256": "ad1a156c0ad81994386b788dc8e7adf564f08fb971c2f247953bfc95f3e7f3ca",
+    "filing": {
+      "rcept_no": "20250515001922",
+      "filed_at": "2025-05-15",
+      "name": "사용자 반입 정기공시",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250515001922"
+    },
+    "originalPath": "/mnt/20t/주식/data/sources/dart-instance-ad1a156c0ad81994.xbrl",
+    "importedAt": "2026-09-30T06:14:53.291217+00:00",
+    "independentlyParsed": true
+  },
+  {
+    "ticker": "005930",
+    "file": "data/sources/005930-20250814003156-57d46ebdaf8c93a4.xbrl",
+    "sha256": "57d46ebdaf8c93a4d0e9d54e3b54549a7888bab32b1e0fa839199290c385c68d",
+    "filing": {
+      "rcept_no": "20250814003156",
+      "filed_at": "2025-08-14",
+      "name": "사용자 반입 정기공시",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814003156"
+    },
+    "originalPath": "/mnt/20t/주식/data/sources/dart-instance-57d46ebdaf8c93a4.xbrl",
+    "importedAt": "2026-09-30T06:14:53.717137+00:00",
+    "independentlyParsed": true
+  },
+  {
+    "ticker": "005930",
+    "file": "data/sources/005930-20251114002447-95cc39db6f9dc041.xbrl",
+    "sha256": "95cc39db6f9dc0413ed19c33fc468963d0f37e0f23aa484adcf02973ec6a2218",
+    "filing": {
+      "rcept_no": "20251114002447",
+      "filed_at": "2025-11-14",
+      "name": "사용자 반입 정기공시",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20251114002447"
+    },
+    "originalPath": "/mnt/20t/주식/data/sources/dart-instance-95cc39db6f9dc041.xbrl",
+    "importedAt": "2026-09-30T06:14:54.273452+00:00",
+    "independentlyParsed": true
+  },
+  {
+    "ticker": "005930",
+    "file": "data/sources/005930-20260310002820-28c27272eacc7bc9.xbrl",
+    "sha256": "28c27272eacc7bc9364ece8951da38039e915adff27e81924c1444b354223c07",
+    "filing": {
+      "rcept_no": "20260310002820",
+      "filed_at": "2026-03-10",
+      "name": "사용자 반입 정기공시",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260310002820"
+    },
+    "originalPath": "/mnt/20t/주식/data/sources/dart-instance-28c27272eacc7bc9.xbrl",
+    "importedAt": "2026-09-30T06:14:54.732198+00:00",
+    "independentlyParsed": true
+  },
+  {
+    "ticker": "005930",
+    "file": "data/sources/005930-20260515002181-442102b38de74c9e.xbrl",
+    "sha256": "442102b38de74c9e3f2ce8583fea56f88623fc21cda0c5680f0d64011ad03e44",
+    "filing": {
+      "rcept_no": "20260515002181",
+      "filed_at": "2026-05-15",
+      "name": "사용자 반입 정기공시",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515002181"
+    },
+    "originalPath": "/mnt/20t/주식/data/sources/dart-instance-442102b38de74c9e.xbrl",
+    "importedAt": "2026-09-30T06:14:55.182166+00:00",
+    "independentlyParsed": true
+  },
+  {
+    "ticker": "035420",
+    "file": "data/sources/035420-20250318000645-ac35812652583e24.xbrl",
+    "sha256": "ac35812652583e24a10d7f20e8bb3d26740867800dd85a1cd6d2fe63e195a0c6",
+    "filing": {
+      "rcept_no": "20250318000645",
+      "filed_at": "2025-03-18",
+      "name": "사용자 반입 정기공시",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250318000645"
+    },
+    "originalPath": "/mnt/20t/주식/data/sources/dart-instance-ac35812652583e24.xbrl",
+    "importedAt": "2026-09-30T06:14:55.836169+00:00",
+    "independentlyParsed": true
+  },
+  {
+    "ticker": "035420",
+    "file": "data/sources/035420-20250515001302-a6678766c1aeab32.xbrl",
+    "sha256": "a6678766c1aeab323e6438fae70f23a04d14270b025dcd8d4084e369e7c21d91",
+    "filing": {
+      "rcept_no": "20250515001302",
+      "filed_at": "2025-05-15",
+      "name": "사용자 반입 정기공시",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250515001302"
+    },
+    "originalPath": "/mnt/20t/주식/data/sources/dart-instance-a6678766c1aeab32.xbrl",
+    "importedAt": "2026-09-30T06:14:56.469349+00:00",
+    "independentlyParsed": true
+  },
+  {
+    "ticker": "035420",
+    "file": "data/sources/035420-20250814002281-7aff718bc16e4667.xbrl",
+    "sha256": "7aff718bc16e4667c85dc8234765ca1e0b93bb26e0fc1391c1758d10bb3ccf63",
+    "filing": {
+      "rcept_no": "20250814002281",
+      "filed_at": "2025-08-14",
+      "name": "사용자 반입 정기공시",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814002281"
+    },
+    "originalPath": "/mnt/20t/주식/data/sources/dart-instance-7aff718bc16e4667.xbrl",
+    "importedAt": "2026-09-30T06:14:56.931751+00:00",
+    "independentlyParsed": true
+  },
+  {
+    "ticker": "035420",
+    "file": "data/sources/035420-20251114001436-963c1e7021df44a5.xbrl",
+    "sha256": "963c1e7021df44a5360739d750bfb8ce0a208bb12f7015cf761ffe43aa0eeef7",
+    "filing": {
+      "rcept_no": "20251114001436",
+      "filed_at": "2025-11-14",
+      "name": "사용자 반입 정기공시",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20251114001436"
+    },
+    "originalPath": "/mnt/20t/주식/data/sources/dart-instance-963c1e7021df44a5.xbrl",
+    "importedAt": "2026-09-30T06:14:57.534503+00:00",
+    "independentlyParsed": true
+  },
+  {
+    "ticker": "035420",
+    "file": "data/sources/035420-20260313001021-05cc24c7784ba0c7.xbrl",
+    "sha256": "05cc24c7784ba0c7d8ae1314d59481f098619e9d3f77d51a7101712b3abb4446",
+    "filing": {
+      "rcept_no": "20260313001021",
+      "filed_at": "2026-03-13",
+      "name": "사용자 반입 정기공시",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260313001021"
+    },
+    "originalPath": "/mnt/20t/주식/data/sources/dart-instance-05cc24c7784ba0c7.xbrl",
+    "importedAt": "2026-09-30T06:14:58.332701+00:00",
+    "independentlyParsed": true
+  },
+  {
+    "ticker": "035420",
+    "file": "data/sources/035420-20260515001511-5e309735b999b35b.xbrl",
+    "sha256": "5e309735b999b35b664215478c8390bb2b4cbb7775d0dba81751653ff83d936c",
+    "filing": {
+      "rcept_no": "20260515001511",
+      "filed_at": "2026-05-15",
+      "name": "사용자 반입 정기공시",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515001511"
+    },
+    "originalPath": "/mnt/20t/주식/data/sources/dart-instance-5e309735b999b35b.xbrl",
+    "importedAt": "2026-09-30T06:14:58.781909+00:00",
+    "independentlyParsed": true
+  },
+  {
+    "ticker": "066570",
+    "file": "data/sources/066570-20250317001029-5e52fc873e4393f4.xbrl",
+    "sha256": "5e52fc873e4393f4a9a93983b61fcdba9a673dae86a851316ad97ec761277879",
+    "filing": {
+      "rcept_no": "20250317001029",
+      "filed_at": "2025-03-17",
+      "name": "사용자 반입 정기공시",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250317001029"
+    },
+    "originalPath": "/mnt/20t/주식/data/sources/dart-instance-5e52fc873e4393f4.xbrl",
+    "importedAt": "2026-09-30T06:14:59.616998+00:00",
+    "independentlyParsed": true
+  },
+  {
+    "ticker": "066570",
+    "file": "data/sources/066570-20250515001401-587a64a1548ffcf5.xbrl",
+    "sha256": "587a64a1548ffcf522709b3c4cd19ba61cfc6e3b8ed656e1f25dc4b236dbf16d",
+    "filing": {
+      "rcept_no": "20250515001401",
+      "filed_at": "2025-05-15",
+      "name": "사용자 반입 정기공시",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250515001401"
+    },
+    "originalPath": "/mnt/20t/주식/data/sources/dart-instance-587a64a1548ffcf5.xbrl",
+    "importedAt": "2026-09-30T06:15:01.493454+00:00",
+    "independentlyParsed": true
+  },
+  {
+    "ticker": "066570",
+    "file": "data/sources/066570-20250814002000-5bc5a72f178607c7.xbrl",
+    "sha256": "5bc5a72f178607c7bcf76f540fe8c8d7dd491c4a5c5c7cf4bd37b908fed2a1b0",
+    "filing": {
+      "rcept_no": "20250814002000",
+      "filed_at": "2025-08-14",
+      "name": "사용자 반입 정기공시",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20250814002000"
+    },
+    "originalPath": "/mnt/20t/주식/data/sources/dart-instance-5bc5a72f178607c7.xbrl",
+    "importedAt": "2026-09-30T06:15:02.150390+00:00",
+    "independentlyParsed": true
+  },
+  {
+    "ticker": "066570",
+    "file": "data/sources/066570-20251114001332-50fc07f66c4b6f9c.xbrl",
+    "sha256": "50fc07f66c4b6f9c7867a43d8465e701e1702672d29dc72fd0735f9ffd56f7e2",
+    "filing": {
+      "rcept_no": "20251114001332",
+      "filed_at": "2025-11-14",
+      "name": "사용자 반입 정기공시",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20251114001332"
+    },
+    "originalPath": "/mnt/20t/주식/data/sources/dart-instance-50fc07f66c4b6f9c.xbrl",
+    "importedAt": "2026-09-30T06:15:02.770919+00:00",
+    "independentlyParsed": true
+  },
+  {
+    "ticker": "066570",
+    "file": "data/sources/066570-20260313000662-cc613348ed5c3480.xbrl",
+    "sha256": "cc613348ed5c34806c851d0464969c85e4bf0eedac3aec1a0016f73c164c48d0",
+    "filing": {
+      "rcept_no": "20260313000662",
+      "filed_at": "2026-03-13",
+      "name": "사용자 반입 정기공시",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260313000662"
+    },
+    "originalPath": "/mnt/20t/주식/data/sources/dart-instance-cc613348ed5c3480.xbrl",
+    "importedAt": "2026-09-30T06:15:03.555432+00:00",
+    "independentlyParsed": true
+  },
+  {
+    "ticker": "066570",
+    "file": "data/sources/066570-20260515000856-b8d62fb8f9495ec1.xbrl",
+    "sha256": "b8d62fb8f9495ec14243d46b588a1c99a1fc9d76b3c5a276804db9e0b9019b6c",
+    "filing": {
+      "rcept_no": "20260515000856",
+      "filed_at": "2026-05-15",
+      "name": "사용자 반입 정기공시",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515000856"
+    },
+    "originalPath": "/mnt/20t/주식/data/sources/dart-instance-b8d62fb8f9495ec1.xbrl",
+    "importedAt": "2026-09-30T06:15:04.301555+00:00",
+    "independentlyParsed": true
+  },
+  {
+    "ticker": "066570",
+    "file": "data/sources/066570-20260706000276-cc613348ed5c3480.xbrl",
+    "sha256": "cc613348ed5c34806c851d0464969c85e4bf0eedac3aec1a0016f73c164c48d0",
+    "filing": {
+      "rcept_no": "20260706000276",
+      "filed_at": "2026-07-06",
+      "name": "사용자 반입 정기공시",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260706000276"
+    },
+    "originalPath": "/mnt/20t/주식/data/sources/dart-instance-cc613348ed5c3480.xbrl",
+    "importedAt": "2026-09-30T06:15:05.229460+00:00",
+    "independentlyParsed": true
+  },
+  {
+    "ticker": "005380",
+    "file": "data/sources/005380-20260814003521-c0f4e442cda76cc0.xbrl",
+    "sha256": "c0f4e442cda76cc0581637e15cc5dbb610208d5388953fedea21e36690b62743",
+    "filing": {
+      "rcept_no": "20260814003521",
+      "filed_at": "2026-08-14",
+      "name": "사용자 반입 정기공시",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003521"
+    },
+    "originalPath": "/mnt/20t/주식/data/sources/dart-instance-c0f4e442cda76cc0.xbrl",
+    "importedAt": "2026-09-30T09:16:24.307265+00:00",
+    "independentlyParsed": true
+  },
+  {
+    "ticker": "005380",
+    "file": "data/sources/005380-20260318001394-2b006fe50b3e6f9c.xbrl",
+    "sha256": "2b006fe50b3e6f9c940fbb889f597816d98e18dc7961f64ba5a5e0f55349a804",
+    "filing": {
+      "rcept_no": "20260318001394",
+      "filed_at": "2026-03-18",
+      "name": "사용자 반입 정기공시",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001394"
+    },
+    "originalPath": "/mnt/20t/주식/data/sources/dart-instance-2b006fe50b3e6f9c.xbrl",
+    "importedAt": "2026-09-30T09:16:24.839135+00:00",
+    "independentlyParsed": true
+  },
+  {
+    "ticker": "000270",
+    "file": "data/sources/000270-20260916000427-39e3a3539751d38b.xbrl",
+    "sha256": "39e3a3539751d38b85123c98cc565ec00b9c488299101bf949ebc99ccf7b2fcd",
+    "filing": {
+      "rcept_no": "20260916000427",
+      "filed_at": "2026-09-16",
+      "name": "사용자 반입 정기공시",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260916000427"
+    },
+    "originalPath": "/mnt/20t/주식/data/sources/dart-instance-39e3a3539751d38b.xbrl",
+    "importedAt": "2026-09-30T09:16:26.731339+00:00",
+    "independentlyParsed": true
+  },
+  {
+    "ticker": "000270",
+    "file": "data/sources/000270-20260312001224-1b8872810068810f.xbrl",
+    "sha256": "1b8872810068810fdbaafef41c375df505755bbd479fe9893d4d8889f5ac30c3",
+    "filing": {
+      "rcept_no": "20260312001224",
+      "filed_at": "2026-03-12",
+      "name": "사용자 반입 정기공시",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260312001224"
+    },
+    "originalPath": "/mnt/20t/주식/data/sources/dart-instance-1b8872810068810f.xbrl",
+    "importedAt": "2026-09-30T09:16:27.171423+00:00",
+    "independentlyParsed": true
+  },
+  {
+    "ticker": "012330",
+    "file": "data/sources/012330-20260814004065-164c0544921c4448.xbrl",
+    "sha256": "164c0544921c44480b993f95663e7734379af9dcf888f3d49e176ea71b6e87e5",
+    "filing": {
+      "rcept_no": "20260814004065",
+      "filed_at": "2026-08-14",
+      "name": "사용자 반입 정기공시",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814004065"
+    },
+    "originalPath": "/mnt/20t/주식/data/sources/dart-instance-164c0544921c4448.xbrl",
+    "importedAt": "2026-09-30T09:16:28.710826+00:00",
+    "independentlyParsed": true
+  },
+  {
+    "ticker": "012330",
+    "file": "data/sources/012330-20260309001878-335a4ade6cbb46fa.xbrl",
+    "sha256": "335a4ade6cbb46fa5850f8fdff742aea93781c71baf5d1526ed1777776c718de",
+    "filing": {
+      "rcept_no": "20260309001878",
+      "filed_at": "2026-03-09",
+      "name": "사용자 반입 정기공시",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260309001878"
+    },
+    "originalPath": "/mnt/20t/주식/data/sources/dart-instance-335a4ade6cbb46fa.xbrl",
+    "importedAt": "2026-09-30T09:16:29.221834+00:00",
+    "independentlyParsed": true
+  },
+  {
+    "ticker": "035720",
+    "file": "data/sources/035720-20260819000055-d66a3329e4cbb53b.xbrl",
+    "sha256": "d66a3329e4cbb53ba283217ed5c37e7fc42a96f72c0b978a5eb51a98a7fe7134",
+    "filing": {
+      "rcept_no": "20260819000055",
+      "filed_at": "2026-08-19",
+      "name": "사용자 반입 정기공시",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260819000055"
+    },
+    "originalPath": "/mnt/20t/주식/data/sources/dart-instance-d66a3329e4cbb53b.xbrl",
+    "importedAt": "2026-09-30T09:16:30.897646+00:00",
+    "independentlyParsed": true
+  },
+  {
+    "ticker": "035720",
+    "file": "data/sources/035720-20260318001423-600251f4eee1dbe7.xbrl",
+    "sha256": "600251f4eee1dbe7e872b4b9f9c5776851a16910feca7e62ec8a041e23645221",
+    "filing": {
+      "rcept_no": "20260318001423",
+      "filed_at": "2026-03-18",
+      "name": "사용자 반입 정기공시",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001423"
+    },
+    "originalPath": "/mnt/20t/주식/data/sources/dart-instance-600251f4eee1dbe7.xbrl",
+    "importedAt": "2026-09-30T09:16:31.574711+00:00",
+    "independentlyParsed": true
+  },
+  {
+    "ticker": "006400",
+    "file": "data/sources/006400-20260814003578-b3b4169922d61200.xbrl",
+    "sha256": "b3b4169922d6120053cbced69cd22044d246d11f8fef4902306cc46201078b70",
+    "filing": {
+      "rcept_no": "20260814003578",
+      "filed_at": "2026-08-14",
+      "name": "사용자 반입 정기공시",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003578"
+    },
+    "originalPath": "/mnt/20t/주식/data/sources/dart-instance-b3b4169922d61200.xbrl",
+    "importedAt": "2026-09-30T09:16:33.373197+00:00",
+    "independentlyParsed": true
+  },
+  {
+    "ticker": "006400",
+    "file": "data/sources/006400-20260310002954-cee7e8611833bb08.xbrl",
+    "sha256": "cee7e8611833bb08c9ffcfb34432825902e7901b571afde0ecd04b55cd5619bc",
+    "filing": {
+      "rcept_no": "20260310002954",
+      "filed_at": "2026-03-10",
+      "name": "사용자 반입 정기공시",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260310002954"
+    },
+    "originalPath": "/mnt/20t/주식/data/sources/dart-instance-cee7e8611833bb08.xbrl",
+    "importedAt": "2026-09-30T09:16:33.854752+00:00",
+    "independentlyParsed": true
+  },
+  {
+    "ticker": "051910",
+    "file": "data/sources/051910-20260814002655-6cc2d0f837864375.xbrl",
+    "sha256": "6cc2d0f83786437579113c4060edd22d27f8b95e30e7bb6bae8632e4008c9c85",
+    "filing": {
+      "rcept_no": "20260814002655",
+      "filed_at": "2026-08-14",
+      "name": "사용자 반입 정기공시",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002655"
+    },
+    "originalPath": "/mnt/20t/주식/data/sources/dart-instance-6cc2d0f837864375.xbrl",
+    "importedAt": "2026-09-30T09:16:35.842099+00:00",
+    "independentlyParsed": true
+  },
+  {
+    "ticker": "051910",
+    "file": "data/sources/051910-20260313001195-817e95decc66e2e6.xbrl",
+    "sha256": "817e95decc66e2e6c13ebf336e95d236adbf61eb6a86f0d3718c6671c632fa43",
+    "filing": {
+      "rcept_no": "20260313001195",
+      "filed_at": "2026-03-13",
+      "name": "사용자 반입 정기공시",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260313001195"
+    },
+    "originalPath": "/mnt/20t/주식/data/sources/dart-instance-817e95decc66e2e6.xbrl",
+    "importedAt": "2026-09-30T09:16:36.457971+00:00",
+    "independentlyParsed": true
+  },
+  {
+    "ticker": "373220",
+    "file": "data/sources/373220-20260813000255-b5e297acc5cc65f4.xbrl",
+    "sha256": "b5e297acc5cc65f44c208aa78a1ec4aa1836eae3fb694efdb276466703e4f593",
+    "filing": {
+      "rcept_no": "20260813000255",
+      "filed_at": "2026-08-13",
+      "name": "사용자 반입 정기공시",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260813000255"
+    },
+    "originalPath": "/mnt/20t/주식/data/sources/dart-instance-b5e297acc5cc65f4.xbrl",
+    "importedAt": "2026-09-30T09:16:39.691436+00:00",
+    "independentlyParsed": true
+  },
+  {
+    "ticker": "373220",
+    "file": "data/sources/373220-20260312000217-826e8e61bc311631.xbrl",
+    "sha256": "826e8e61bc31163166766cf6e3a4e4e6cf3b6c72716944744777f1b9f0be47e9",
+    "filing": {
+      "rcept_no": "20260312000217",
+      "filed_at": "2026-03-12",
+      "name": "사용자 반입 정기공시",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260312000217"
+    },
+    "originalPath": "/mnt/20t/주식/data/sources/dart-instance-826e8e61bc311631.xbrl",
+    "importedAt": "2026-09-30T09:16:40.260759+00:00",
+    "independentlyParsed": true
+  },
+  {
+    "ticker": "005490",
+    "file": "data/sources/005490-20260814000957-afda917b23286f38.xbrl",
+    "sha256": "afda917b23286f38c24183bd87e98840fa1252ca9af34bcf7e1e8475acd898f1",
+    "filing": {
+      "rcept_no": "20260814000957",
+      "filed_at": "2026-08-14",
+      "name": "사용자 반입 정기공시",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814000957"
+    },
+    "originalPath": "/mnt/20t/주식/data/sources/dart-instance-afda917b23286f38.xbrl",
+    "importedAt": "2026-09-30T09:16:42.102794+00:00",
+    "independentlyParsed": true
+  },
+  {
+    "ticker": "005490",
+    "file": "data/sources/005490-20260311004517-57dbbdaa5293daf8.xbrl",
+    "sha256": "57dbbdaa5293daf83d41b043ef173d0599f9ee12dbfc8546ac08062c5e80283c",
+    "filing": {
+      "rcept_no": "20260311004517",
+      "filed_at": "2026-03-11",
+      "name": "사용자 반입 정기공시",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260311004517"
+    },
+    "originalPath": "/mnt/20t/주식/data/sources/dart-instance-57dbbdaa5293daf8.xbrl",
+    "importedAt": "2026-09-30T09:16:42.651308+00:00",
+    "independentlyParsed": true
+  },
+  {
+    "ticker": "207940",
+    "file": "data/sources/207940-20260814003375-9c3c1515e996eff9.xbrl",
+    "sha256": "9c3c1515e996eff97e229734d286bff424c734c7158903d0ba5957b333c7e25e",
+    "filing": {
+      "rcept_no": "20260814003375",
+      "filed_at": "2026-08-14",
+      "name": "사용자 반입 정기공시",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003375"
+    },
+    "originalPath": "/mnt/20t/주식/data/sources/dart-instance-9c3c1515e996eff9.xbrl",
+    "importedAt": "2026-09-30T09:16:44.413064+00:00",
+    "independentlyParsed": true
+  },
+  {
+    "ticker": "207940",
+    "file": "data/sources/207940-20260515001658-d576dc0904eb0a1c.xbrl",
+    "sha256": "d576dc0904eb0a1c46daa69d5daf9ed24fec81ed80cd2684fd8877024257ccb9",
+    "filing": {
+      "rcept_no": "20260515001658",
+      "filed_at": "2026-05-15",
+      "name": "사용자 반입 정기공시",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515001658"
+    },
+    "originalPath": "/mnt/20t/주식/data/sources/dart-instance-d576dc0904eb0a1c.xbrl",
+    "importedAt": "2026-09-30T09:16:44.983202+00:00",
+    "independentlyParsed": true
+  },
+  {
+    "ticker": "068270",
+    "file": "data/sources/068270-20260814003751-d75988763cb8b436.xbrl",
+    "sha256": "d75988763cb8b436050be3ebf6d8555b61a84df345a8e14442028530ca3876d9",
+    "filing": {
+      "rcept_no": "20260814003751",
+      "filed_at": "2026-08-14",
+      "name": "사용자 반입 정기공시",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003751"
+    },
+    "originalPath": "/mnt/20t/주식/data/sources/dart-instance-d75988763cb8b436.xbrl",
+    "importedAt": "2026-09-30T09:16:46.826884+00:00",
+    "independentlyParsed": true
+  },
+  {
+    "ticker": "068270",
+    "file": "data/sources/068270-20260316001415-918103648a799e62.xbrl",
+    "sha256": "918103648a799e622c30391295aefaec3e2c6ed6301f26de8e117535834fb3af",
+    "filing": {
+      "rcept_no": "20260316001415",
+      "filed_at": "2026-03-16",
+      "name": "사용자 반입 정기공시",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260316001415"
+    },
+    "originalPath": "/mnt/20t/주식/data/sources/dart-instance-918103648a799e62.xbrl",
+    "importedAt": "2026-09-30T09:16:47.443970+00:00",
+    "independentlyParsed": true
+  },
+  {
+    "ticker": "000100",
+    "file": "data/sources/000100-20260814002038-cecbdca8fafe386c.xbrl",
+    "sha256": "cecbdca8fafe386cca053bfcc0585a27fea1b83429d720498ef3fbd1f46071ca",
+    "filing": {
+      "rcept_no": "20260814002038",
+      "filed_at": "2026-08-14",
+      "name": "사용자 반입 정기공시",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002038"
+    },
+    "originalPath": "/mnt/20t/주식/data/sources/dart-instance-cecbdca8fafe386c.xbrl",
+    "importedAt": "2026-09-30T09:16:49.370457+00:00",
+    "independentlyParsed": true
+  },
+  {
+    "ticker": "000100",
+    "file": "data/sources/000100-20260312001236-271b8e298c2ce9a9.xbrl",
+    "sha256": "271b8e298c2ce9a932d5dbfb5fed9edfb82123a5d1672e13ea6bff6c59763594",
+    "filing": {
+      "rcept_no": "20260312001236",
+      "filed_at": "2026-03-12",
+      "name": "사용자 반입 정기공시",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260312001236"
+    },
+    "originalPath": "/mnt/20t/주식/data/sources/dart-instance-271b8e298c2ce9a9.xbrl",
+    "importedAt": "2026-09-30T09:16:49.905406+00:00",
+    "independentlyParsed": true
+  },
+  {
+    "ticker": "128940",
+    "file": "data/sources/128940-20260814004181-880f1fa9f40d2a5c.xbrl",
+    "sha256": "880f1fa9f40d2a5c3901ea05a1cc0224b3b528d054579cc43b5aa0e3b980835e",
+    "filing": {
+      "rcept_no": "20260814004181",
+      "filed_at": "2026-08-14",
+      "name": "사용자 반입 정기공시",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814004181"
+    },
+    "originalPath": "/mnt/20t/주식/data/sources/dart-instance-880f1fa9f40d2a5c.xbrl",
+    "importedAt": "2026-09-30T09:16:51.737825+00:00",
+    "independentlyParsed": true
+  },
+  {
+    "ticker": "128940",
+    "file": "data/sources/128940-20260320001130-53e158bebfe3a600.xbrl",
+    "sha256": "53e158bebfe3a600bb951b992b0eb7d27c2167e33e75dc9f023a356f8557a41b",
+    "filing": {
+      "rcept_no": "20260320001130",
+      "filed_at": "2026-03-20",
+      "name": "사용자 반입 정기공시",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260320001130"
+    },
+    "originalPath": "/mnt/20t/주식/data/sources/dart-instance-53e158bebfe3a600.xbrl",
+    "importedAt": "2026-09-30T09:16:52.366073+00:00",
+    "independentlyParsed": true
+  },
+  {
+    "ticker": "329180",
+    "file": "data/sources/329180-20260814002879-cde373bfe6c20352.xbrl",
+    "sha256": "cde373bfe6c20352976b61b8a665da154565dbed46bc9caa9d8b7676a5deddc4",
+    "filing": {
+      "rcept_no": "20260814002879",
+      "filed_at": "2026-08-14",
+      "name": "사용자 반입 정기공시",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002879"
+    },
+    "originalPath": "/mnt/20t/주식/data/sources/dart-instance-cde373bfe6c20352.xbrl",
+    "importedAt": "2026-09-30T09:16:54.098892+00:00",
+    "independentlyParsed": true
+  },
+  {
+    "ticker": "329180",
+    "file": "data/sources/329180-20260320000859-0519a579468dd3c3.xbrl",
+    "sha256": "0519a579468dd3c3edea666687ae5af096cc6e798a15adbc63408665bbf45a34",
+    "filing": {
+      "rcept_no": "20260320000859",
+      "filed_at": "2026-03-20",
+      "name": "사용자 반입 정기공시",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260320000859"
+    },
+    "originalPath": "/mnt/20t/주식/data/sources/dart-instance-0519a579468dd3c3.xbrl",
+    "importedAt": "2026-09-30T09:16:54.637176+00:00",
+    "independentlyParsed": true
+  },
+  {
+    "ticker": "012450",
+    "file": "data/sources/012450-20260814003198-96f3eda4bd9693c1.xbrl",
+    "sha256": "96f3eda4bd9693c1c06611ce5905c8aa6361f020ab765c40f70a13cfe5440423",
+    "filing": {
+      "rcept_no": "20260814003198",
+      "filed_at": "2026-08-14",
+      "name": "사용자 반입 정기공시",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003198"
+    },
+    "originalPath": "/mnt/20t/주식/data/sources/dart-instance-96f3eda4bd9693c1.xbrl",
+    "importedAt": "2026-09-30T09:16:56.373912+00:00",
+    "independentlyParsed": true
+  },
+  {
+    "ticker": "034020",
+    "file": "data/sources/034020-20260814003782-ae88021a3d09fc1e.xbrl",
+    "sha256": "ae88021a3d09fc1ec94aa6aa3b194b488180762fd6b3b3cb63c7444169e8112a",
+    "filing": {
+      "rcept_no": "20260814003782",
+      "filed_at": "2026-08-14",
+      "name": "사용자 반입 정기공시",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003782"
+    },
+    "originalPath": "/mnt/20t/주식/data/sources/dart-instance-ae88021a3d09fc1e.xbrl",
+    "importedAt": "2026-09-30T09:16:57.692646+00:00",
+    "independentlyParsed": true
+  },
+  {
+    "ticker": "034020",
+    "file": "data/sources/034020-20260320001246-29b4713cf0c2b1f4.xbrl",
+    "sha256": "29b4713cf0c2b1f43e1f656f301bf2b459238cd70d1915cdd4b48cc0f4a828cd",
+    "filing": {
+      "rcept_no": "20260320001246",
+      "filed_at": "2026-03-20",
+      "name": "사용자 반입 정기공시",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260320001246"
+    },
+    "originalPath": "/mnt/20t/주식/data/sources/dart-instance-29b4713cf0c2b1f4.xbrl",
+    "importedAt": "2026-09-30T09:16:58.435450+00:00",
+    "independentlyParsed": true
+  },
+  {
+    "ticker": "267260",
+    "file": "data/sources/267260-20260814003228-65175547f9c75182.xbrl",
+    "sha256": "65175547f9c751827f05295cb72ac882f3427d2c30e5ac225cf89a0efd079128",
+    "filing": {
+      "rcept_no": "20260814003228",
+      "filed_at": "2026-08-14",
+      "name": "사용자 반입 정기공시",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003228"
+    },
+    "originalPath": "/mnt/20t/주식/data/sources/dart-instance-65175547f9c75182.xbrl",
+    "importedAt": "2026-09-30T09:17:00.370721+00:00",
+    "independentlyParsed": true
+  },
+  {
+    "ticker": "267260",
+    "file": "data/sources/267260-20260316000940-1a49b67d39b836dc.xbrl",
+    "sha256": "1a49b67d39b836dc00233179ac5e0f19f57ba52b0413ab017562baa65446cbe1",
+    "filing": {
+      "rcept_no": "20260316000940",
+      "filed_at": "2026-03-16",
+      "name": "사용자 반입 정기공시",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260316000940"
+    },
+    "originalPath": "/mnt/20t/주식/data/sources/dart-instance-1a49b67d39b836dc.xbrl",
+    "importedAt": "2026-09-30T09:17:00.903895+00:00",
+    "independentlyParsed": true
+  },
+  {
+    "ticker": "012450",
+    "file": "data/sources/012450-20260316001112-87ea72ef87c070ca.xbrl",
+    "sha256": "87ea72ef87c070ca82d08a64edb31b17377d38e3d17693071f1f4d039dc0657a",
+    "filing": {
+      "rcept_no": "20260316001112",
+      "filed_at": "2026-03-16",
+      "name": "사용자 반입 정기공시",
+      "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260316001112"
+    },
+    "originalPath": "/mnt/20t/주식/data/sources/dart-instance-87ea72ef87c070ca.xbrl",
+    "importedAt": "2026-09-30T10:23:32.382603+00:00",
+    "independentlyParsed": true
+  }
+]

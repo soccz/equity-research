@@ -1,0 +1,38 @@
+{
+  "ticker": "000100",
+  "asOf": "2026-09-29",
+  "checkedAt": "2026-09-30T09:16:49.421280+00:00",
+  "filing": {
+    "corp_code": "00145109",
+    "corp_name": "유한양행",
+    "stock_code": "000100",
+    "corp_cls": "Y",
+    "report_nm": "반기보고서 (2026.06)",
+    "rcept_no": "20260814002038",
+    "flr_nm": "유한양행",
+    "rcept_dt": "20260814",
+    "rm": ""
+  },
+  "queries": [
+    {
+      "file": "data/sources/dart-list-000100-6abd9ee1d038d00b.json",
+      "sha256": "6abd9ee1d038d00bf4f85f3ad03777f4a3597e134933471fc625c9364e3d17f8",
+      "parameters": {
+        "corp_code": "00145109",
+        "bgn_de": "20250101",
+        "end_de": "20260929",
+        "pblntf_ty": "A",
+        "last_reprt_at": "N",
+        "page_count": 100,
+        "page_no": 1,
+        "sort": "date",
+        "sort_mth": "desc"
+      }
+    }
+  ],
+  "package": {
+    "file": "data/sources/dart-package-20260814002038-01cea470661d2986.zip",
+    "sha256": "01cea470661d2986f21171e7f319d9279df7b98ff6e59d8ec1418067998a1540"
+  },
+  "instanceHash": "cecbdca8fafe386cca053bfcc0585a27fea1b83429d720498ef3fbd1f46071ca"
+}

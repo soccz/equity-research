@@ -1,0 +1,119 @@
+{
+  "runId": "20261001T121823805634Z",
+  "startedAt": "2026-10-01T12:18:23.805734+00:00",
+  "status": "failed",
+  "mode": "archived_sources_local_only",
+  "modelRequested": false,
+  "stages": [
+    {
+      "name": "unit",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-01T12:18:23.805876+00:00",
+      "finishedAt": "2026-10-01T12:20:01.525692+00:00",
+      "log": "artifacts/local/runs/20261001T121823805634Z/unit.log",
+      "logHash": "390e2b42cea1aee8db1309ee6ccbc6b0bcc9afa1c178e9dfd7e0abe432ba3ec3"
+    },
+    {
+      "name": "analysis",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-01T12:20:01.526328+00:00",
+      "finishedAt": "2026-10-01T12:21:58.511991+00:00",
+      "log": "artifacts/local/runs/20261001T121823805634Z/analysis.log",
+      "logHash": "5985603abe0a543adf4b659c3584be68477d2a1db37dd03180bbe2b6d27c2668"
+    },
+    {
+      "name": "register-cash-conditions",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-01T12:21:58.512437+00:00",
+      "finishedAt": "2026-10-01T12:22:05.265078+00:00",
+      "log": "artifacts/local/runs/20261001T121823805634Z/register-cash-conditions.log",
+      "logHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "register-receivable-conditions",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-01T12:22:05.265579+00:00",
+      "finishedAt": "2026-10-01T12:22:11.893682+00:00",
+      "log": "artifacts/local/runs/20261001T121823805634Z/register-receivable-conditions.log",
+      "logHash": "5a91db2e38dac97e3b4d989866353e23b69d5e5996baf0ad874d5a08510f5dba"
+    },
+    {
+      "name": "observe",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-01T12:22:11.894131+00:00",
+      "finishedAt": "2026-10-01T12:22:18.551529+00:00",
+      "log": "artifacts/local/runs/20261001T121823805634Z/observe.log",
+      "logHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "research-journal",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-01T12:22:18.551974+00:00",
+      "finishedAt": "2026-10-01T12:22:29.003121+00:00",
+      "log": "artifacts/local/runs/20261001T121823805634Z/research-journal.log",
+      "logHash": "ffe18c85e907c994f3ad670ef0cd37b5769cebbfd120a44520e5621108b2f6c4"
+    },
+    {
+      "name": "forward-study",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-01T12:22:29.003566+00:00",
+      "finishedAt": "2026-10-01T12:22:35.747295+00:00",
+      "log": "artifacts/local/runs/20261001T121823805634Z/forward-study.log",
+      "logHash": "df0906a227c1ce2e4da2d51553935aaef8ed2faed18dd8f141a347d78ae7e330"
+    },
+    {
+      "name": "price-crosscheck",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-01T12:22:35.747767+00:00",
+      "finishedAt": "2026-10-01T12:22:36.044254+00:00",
+      "log": "artifacts/local/runs/20261001T121823805634Z/price-crosscheck.log",
+      "logHash": "6cf25a66db6b9e9ae2accb1c4498328652309473fcafc9626b1e8ec81321b336"
+    },
+    {
+      "name": "local-records",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-01T12:22:36.044716+00:00",
+      "finishedAt": "2026-10-01T12:22:42.769762+00:00",
+      "log": "artifacts/local/runs/20261001T121823805634Z/local-records.log",
+      "logHash": "27f09ba843817529294d3013e40ccf7609dbb936962c2e50bf733ae09d98dda5"
+    },
+    {
+      "name": "offline-replay",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-01T12:22:42.770506+00:00",
+      "finishedAt": "2026-10-01T12:24:58.006844+00:00",
+      "log": "artifacts/local/runs/20261001T121823805634Z/offline-replay.log",
+      "logHash": "b19c1e96debb20f78e78946d6a39f4f2e1c2a871e314e95cf8f187d7e35ba8f7"
+    },
+    {
+      "name": "browser-pdf",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-01T12:24:58.007300+00:00",
+      "finishedAt": "2026-10-01T12:26:14.263066+00:00",
+      "log": "artifacts/local/runs/20261001T121823805634Z/browser-pdf.log",
+      "logHash": "d3f97d29632dd8b62cbb4a146bba8ab1a7a2c9e99648354b94bc1180255703ad"
+    },
+    {
+      "name": "artifacts",
+      "status": "failed",
+      "exitCode": 1,
+      "startedAt": "2026-10-01T12:26:14.263877+00:00",
+      "finishedAt": "2026-10-01T12:26:20.677499+00:00",
+      "log": "artifacts/local/runs/20261001T121823805634Z/artifacts.log",
+      "logHash": "0db127c23958be367a910f6375602a4d308716bfd5815d50097cef47011c5f8e"
+    }
+  ],
+  "error": "RuntimeError: artifacts failed; see artifacts/local/runs/20261001T121823805634Z/artifacts.log",
+  "finishedAt": "2026-10-01T12:26:20.678114+00:00"
+}

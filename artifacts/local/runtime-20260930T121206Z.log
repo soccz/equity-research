@@ -1,0 +1,815 @@
+time=2026-09-30T21:12:06.458+09:00 level=INFO source=routes.go:1951 msg="server config" env="map[CUDA_VISIBLE_DEVICES: GGML_VK_VISIBLE_DEVICES: GPU_DEVICE_ORDINAL: HIP_VISIBLE_DEVICES: HSA_OVERRIDE_GFX_VERSION: HTTPS_PROXY: HTTP_PROXY: LLAMA_ARG_FIT: LLAMA_ARG_FIT_TARGET: NO_PROXY: OLLAMA_CONTEXT_LENGTH:8192 OLLAMA_DEBUG:INFO OLLAMA_DEBUG_LOG_REQUESTS:false OLLAMA_EDITOR: OLLAMA_FLASH_ATTENTION:false OLLAMA_GO_TEMPLATE:false OLLAMA_GPU_OVERHEAD:0 OLLAMA_HOST:http://127.0.0.1:11435 OLLAMA_IGPU_ENABLE: OLLAMA_KEEP_ALIVE:0s OLLAMA_KV_CACHE_TYPE: OLLAMA_LLM_LIBRARY: OLLAMA_LOAD_TIMEOUT:5m0s OLLAMA_MAX_LOADED_MODELS:1 OLLAMA_MAX_QUEUE:512 OLLAMA_MAX_TRANSFER_STREAMS:4 OLLAMA_MODELS:/mnt/20t/주식/.local/models OLLAMA_NOHISTORY:false OLLAMA_NOPRUNE:false OLLAMA_NO_CLOUD:true OLLAMA_NUM_PARALLEL:1 OLLAMA_ORIGINS:[http://localhost https://localhost http://localhost:* https://localhost:* http://127.0.0.1 https://127.0.0.1 http://127.0.0.1:* https://127.0.0.1:* http://0.0.0.0 https://0.0.0.0 http://0.0.0.0:* https://0.0.0.0:* app://* file://* tauri://* vscode-webview://* vscode-file://*] OLLAMA_REMOTES:[ollama.com] OLLAMA_SCHED_SPREAD:false OLLAMA_VULKAN:true ROCR_VISIBLE_DEVICES: http_proxy: https_proxy: no_proxy:]"
+time=2026-09-30T21:12:06.459+09:00 level=INFO source=routes.go:1953 msg="Ollama cloud disabled: true"
+time=2026-09-30T21:12:06.460+09:00 level=INFO source=images.go:919 msg="total blobs: 9"
+time=2026-09-30T21:12:06.460+09:00 level=INFO source=images.go:926 msg="total unused blobs removed: 0"
+time=2026-09-30T21:12:06.460+09:00 level=INFO source=routes.go:2008 msg="Listening on 127.0.0.1:11435 (version 0.33.2)"
+time=2026-09-30T21:12:06.460+09:00 level=INFO source=model_recommendations.go:177 msg="model recommendations cache sleep scheduled" wait=4h46m20.002304789s consecutive_failures=0
+time=2026-09-30T21:12:06.460+09:00 level=INFO source=runner.go:60 msg="discovering available GPUs..."
+time=2026-09-30T21:12:06.461+09:00 level=INFO source=model_list_cache.go:112 msg="model list cache hydration complete" models=3 failures=0 elapsed=1.072639ms
+time=2026-09-30T21:12:09.573+09:00 level=INFO source=types.go:32 msg="inference compute" id=0 filter_id=0 library=CUDA compute=8.6 name=CUDA0 description="NVIDIA GeForce RTX 3070" libdirs=ollama,cuda_v12 driver=12.6 pci_id=0000:01:00.0 type=discrete total="7.7 GiB" available="7.5 GiB"
+time=2026-09-30T21:12:09.573+09:00 level=INFO source=routes.go:2058 msg="vram-based default context" total_vram="7.7 GiB" default_num_ctx=4096
+[GIN] 2026/09/30 - 21:12:09 | 200 |      52.751µs |       127.0.0.1 | GET      "/api/version"
+[GIN] 2026/09/30 - 21:12:09 | 200 |     315.977µs |       127.0.0.1 | GET      "/api/tags"
+[GIN] 2026/09/30 - 21:12:09 | 200 |     189.056µs |       127.0.0.1 | GET      "/api/tags"
+time=2026-09-30T21:12:10.427+09:00 level=INFO source=server.go:109 msg="using llama-server for model" model=/mnt/20t/주식/.local/models/blobs/sha256-a8cc1361f3145dc01f6d77c6c82c9116b9ffe3c97b34716fe20418455876c40e
+time=2026-09-30T21:12:10.427+09:00 level=INFO source=llama_server.go:433 msg="starting llama-server" cmd="/mnt/20t/주식/.local/ollama/lib/ollama/llama-server --model /mnt/20t/주식/.local/models/blobs/sha256-a8cc1361f3145dc01f6d77c6c82c9116b9ffe3c97b34716fe20418455876c40e --port 43185 --host 127.0.0.1 --no-webui --offline -c 8192 -np 1 --log-verbosity 4 --no-log-prefix --no-log-timestamps --flash-attn auto -b 128 -ub 128 --context-shift --keep 4"
+time=2026-09-30T21:12:10.428+09:00 level=INFO source=sched.go:613 msg="system memory" total="62.7 GiB" free="56.3 GiB" free_swap="815.2 MiB"
+time=2026-09-30T21:12:10.428+09:00 level=INFO source=sched.go:620 msg="gpu memory" id=0 library=CUDA available="6.1 GiB" free="6.5 GiB" minimum="457.0 MiB" overhead="0 B"
+time=2026-09-30T21:12:10.428+09:00 level=INFO source=llama_server.go:1048 msg="loading model via llama-server" model=/mnt/20t/주식/.local/models/blobs/sha256-a8cc1361f3145dc01f6d77c6c82c9116b9ffe3c97b34716fe20418455876c40e
+time=2026-09-30T21:12:10.428+09:00 level=INFO source=llama_server.go:1295 msg="waiting for llama-server to start responding"
+time=2026-09-30T21:12:10.428+09:00 level=INFO source=llama_server.go:1350 msg="waiting for llama-server to become available" status="llm server not responding"
+cmn  common_param: common_params_print_info: build 1 (d222767c7) with GNU 13.3.1 for Linux x86_64
+cmn  common_param: common_params_print_info: verbosity = 4 (adjust with the `-lv N` CLI arg)
+cmn  common_param: device_info:
+cmn  common_param:   - CPU     : Intel(R) Core(TM) i7-8700K CPU @ 3.70GHz (64250 MiB, 64250 MiB free)
+cmn  common_param:   - CUDA0   : NVIDIA GeForce RTX 3070 (7869 MiB, 6707 MiB free)
+cmn  common_param: system_info: n_threads = 6 (n_threads_batch = 6) / 12 | CPU : SSE3 = 1 | SSSE3 = 1 | AVX = 1 | AVX2 = 1 | F16C = 1 | FMA = 1 | BMI2 = 1 | LLAMAFILE = 1 | REPACK = 1 | CUDA : ARCHS = 500,520,600,610,700,750,800,860,890,900,1000,1200 | USE_GRAPHS = 1 | 
+srv          init: using 11 threads for HTTP server
+srv          init: The UI is disabled
+srv          init: Use --ui/--no-ui (or deprecated --webui/--no-webui) to enable/disable
+srv  llama_server: -----------------
+srv  llama_server: CORS is set to allow all origins ('*') and no API key is set
+srv  llama_server: this can be a security risk (cross-origin attacks)
+srv  llama_server: more info: https://github.com/ggml-org/llama.cpp/pull/25655
+srv  llama_server: -----------------
+srv         start: binding port with default address family
+srv    load_model: loading model '/mnt/20t/주식/.local/models/blobs/sha256-a8cc1361f3145dc01f6d77c6c82c9116b9ffe3c97b34716fe20418455876c40e'
+srv    load_model: local path '/mnt/20t/주식/.local/models/blobs/sha256-a8cc1361f3145dc01f6d77c6c82c9116b9ffe3c97b34716fe20418455876c40e'
+cmn  common_init_: fitting params to device memory ...
+cmn  common_init_: (for bugs during this step try to reproduce them with -fit off, or provide --verbose logs if the bug only occurs with -fit on)
+common_params_fit_impl: getting device memory data for initial parameters:
+time=2026-09-30T21:12:10.930+09:00 level=INFO source=llama_server.go:1350 msg="waiting for llama-server to become available" status="llm server loading model"
+common_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+common_memory_breakdown_print: |   - CUDA0 (RTX 3070)   |  7869 = 6707 + (9738 =  8423 +    1280 +      35) +       -8576 |
+common_memory_breakdown_print: |   - Host               |                  424 =   417 +       0 +       7                |
+common_params_fit_impl: projected to use 9738 MiB of device memory vs. 6707 MiB of free device memory
+common_params_fit_impl: cannot meet free memory target of 1024 MiB, need to reduce device memory by 4055 MiB
+common_params_fit_impl: context size set by user to 8192 -> no change
+common_params_fit_impl: id=0, target=5683 MiB
+common_memory_breakdown_print: | memory breakdown [MiB] | total   free     self   model   context   compute    unaccounted |
+common_memory_breakdown_print: |   - CUDA0 (RTX 3070)   |  7869 = 6707 + (  102 =     0 +       0 +     102) +        1059 |
+common_memory_breakdown_print: |   - Host               |                 10127 =  8840 +    1280 +       7                |
+common_params_fit_impl: memory for test allocation by device:
+common_params_fit_impl: id=0, n_layer= 0, n_part= 0, overflow_type=4, mem=   102 MiB
+common_params_fit_impl: filling dense layers back-to-front:
+common_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+common_memory_breakdown_print: |   - CUDA0 (RTX 3070)   |  7869 = 6707 + (9738 =  8423 +    1280 +      35) +       -8576 |
+common_memory_breakdown_print: |   - Host               |                  424 =   417 +       0 +       7                |
+common_params_fit_impl: memory for test allocation by device:
+common_params_fit_impl: id=0, n_layer=41, n_part= 0, overflow_type=4, mem=  9738 MiB
+common_params_fit_impl: start filling device 0, delta=41
+common_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+common_memory_breakdown_print: |   - CUDA0 (RTX 3070)   |  7869 = 6707 + (5713 =  4906 +     704 +     102) +       -4550 |
+common_memory_breakdown_print: |   - Host               |                 4517 =  3934 +     576 +       7                |
+common_params_fit_impl: memory for test allocation by device:
+common_params_fit_impl: id=0, n_layer=23, n_part= 0, overflow_type=4, mem=  5713 MiB
+common_params_fit_impl: set ngl_per_device_high[0].n_layer=23
+common_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+common_memory_breakdown_print: |   - CUDA0 (RTX 3070)   |  7869 = 6707 + (5496 =  4722 +     672 +     102) +       -4334 |
+common_memory_breakdown_print: |   - Host               |                 4733 =  4118 +     608 +       7                |
+common_params_fit_impl: memory for test allocation by device:
+common_params_fit_impl: id=0, n_layer=22, n_part= 0, overflow_type=4, mem=  5496 MiB
+common_params_fit_impl: set ngl_per_device[0].n_layer=22
+common_params_fit_impl:   - CUDA0 (NVIDIA GeForce RTX 3070): 22 layers,   5496 MiB used,   1210 MiB free
+common_fit_params: successfully fit params to free device memory
+common_fit_params: fitting params to free memory took 1.45 seconds
+llama_model_loader: loaded meta data with 27 key-value pairs and 443 tensors from /mnt/20t/주식/.local/models/blobs/sha256-a8cc1361f3145dc01f6d77c6c82c9116b9ffe3c97b34716fe20418455876c40e (version GGUF V3 (latest))
+llama_model_loader: Dumping metadata keys/values. Note: KV overrides do not apply in this output.
+llama_model_loader: - kv   0:                       general.architecture str              = qwen3
+llama_model_loader: - kv   1:                               general.type str              = model
+llama_model_loader: - kv   2:                               general.name str              = Qwen3 14B
+llama_model_loader: - kv   3:                           general.basename str              = Qwen3
+llama_model_loader: - kv   4:                         general.size_label str              = 14B
+llama_model_loader: - kv   5:                          qwen3.block_count u32              = 40
+llama_model_loader: - kv   6:                       qwen3.context_length u32              = 40960
+llama_model_loader: - kv   7:                     qwen3.embedding_length u32              = 5120
+llama_model_loader: - kv   8:                  qwen3.feed_forward_length u32              = 17408
+llama_model_loader: - kv   9:                 qwen3.attention.head_count u32              = 40
+llama_model_loader: - kv  10:              qwen3.attention.head_count_kv u32              = 8
+llama_model_loader: - kv  11:                       qwen3.rope.freq_base f32              = 1000000.000000
+llama_model_loader: - kv  12:     qwen3.attention.layer_norm_rms_epsilon f32              = 0.000001
+llama_model_loader: - kv  13:                 qwen3.attention.key_length u32              = 128
+llama_model_loader: - kv  14:               qwen3.attention.value_length u32              = 128
+llama_model_loader: - kv  15:                       tokenizer.ggml.model str              = gpt2
+llama_model_loader: - kv  16:                         tokenizer.ggml.pre str              = qwen2
+llama_model_loader: - kv  17:                      tokenizer.ggml.tokens arr[str,151936]  = ["!", "\"", "#", "$", "%", "&", "'", ...
+llama_model_loader: - kv  18:                  tokenizer.ggml.token_type arr[i32,151936]  = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, ...
+llama_model_loader: - kv  19:                      tokenizer.ggml.merges arr[str,151387]  = ["Ġ Ġ", "ĠĠ ĠĠ", "i n", "Ġ t",...
+llama_model_loader: - kv  20:                tokenizer.ggml.eos_token_id u32              = 151645
+llama_model_loader: - kv  21:            tokenizer.ggml.padding_token_id u32              = 151643
+llama_model_loader: - kv  22:                tokenizer.ggml.bos_token_id u32              = 151643
+llama_model_loader: - kv  23:               tokenizer.ggml.add_bos_token bool             = false
+llama_model_loader: - kv  24:                    tokenizer.chat_template str              = {%- if tools %}\n    {{- '<|im_start|>...
+llama_model_loader: - kv  25:               general.quantization_version u32              = 2
+llama_model_loader: - kv  26:                          general.file_type u32              = 15
+llama_model_loader: - type  f32:  161 tensors
+llama_model_loader: - type  f16:   40 tensors
+llama_model_loader: - type q4_K:  221 tensors
+llama_model_loader: - type q6_K:   21 tensors
+print_info: file format = GGUF V3 (latest)
+print_info: file type   = Q4_K - Medium
+print_info: file size   = 8.63 GiB (5.02 BPW) 
+llama_prepare_model_devices: using device CUDA0 (NVIDIA GeForce RTX 3070) (0000:01:00.0) - 6707 MiB free
+load: 0 unused tokens
+load: control-looking token: 128247 '</s>' was not control-type; this is probably a bug in the model. its type will be overridden
+load: printing all EOG tokens:
+load:   - 128247 ('</s>')
+load:   - 151643 ('<|endoftext|>')
+load:   - 151645 ('<|im_end|>')
+load:   - 151662 ('<|fim_pad|>')
+load:   - 151663 ('<|repo_name|>')
+load:   - 151664 ('<|file_sep|>')
+load: special tokens cache size = 27
+load: token to piece cache size = 0.9311 MB
+print_info: arch                  = qwen3
+print_info: vocab_only            = 0
+print_info: no_alloc              = 0
+print_info: n_ctx_train           = 40960
+print_info: n_embd_inp            = 5120
+print_info: n_embd                = 5120
+print_info: n_embd_out            = 5120
+print_info: n_layer               = 40
+print_info: n_layer_all           = 40
+print_info: n_head                = 40
+print_info: n_head_kv             = 8
+print_info: n_rot                 = 128
+print_info: n_swa                 = 0
+print_info: is_swa_any            = 0
+print_info: n_embd_head_k         = 128
+print_info: n_embd_head_v         = 128
+print_info: n_gqa                 = 5
+print_info: n_embd_k_gqa          = 1024
+print_info: n_embd_v_gqa          = 1024
+print_info: f_norm_eps            = 0.0e+00
+print_info: f_norm_rms_eps        = 1.0e-06
+print_info: f_clamp_kqv           = 0.0e+00
+print_info: f_max_alibi_bias      = 0.0e+00
+print_info: f_logit_scale         = 0.0e+00
+print_info: f_attn_scale          = 0.0e+00
+print_info: f_attn_value_scale    = 0.0000
+print_info: n_ff                  = 17408
+print_info: n_expert              = 0
+print_info: n_expert_used         = 0
+print_info: n_expert_groups       = 0
+print_info: n_group_used          = 0
+print_info: causal attn           = 1
+print_info: pooling type          = -1
+print_info: rope type             = 2
+print_info: rope scaling          = linear
+print_info: freq_base_train       = 1000000.0
+print_info: freq_scale_train      = 1
+print_info: n_ctx_orig_yarn       = 40960
+print_info: rope_yarn_log_mul     = 0.0000
+print_info: rope_finetuned        = unknown
+print_info: model type            = 14B
+print_info: model params          = 14.77 B
+print_info: general.name          = Qwen3 14B
+print_info: vocab type            = BPE
+print_info: n_vocab               = 151936
+print_info: n_merges              = 151387
+print_info: BOS token             = 151643 '<|endoftext|>'
+print_info: EOS token             = 151645 '<|im_end|>'
+print_info: EOT token             = 151645 '<|im_end|>'
+print_info: PAD token             = 151643 '<|endoftext|>'
+print_info: LF token              = 198 'Ċ'
+print_info: FIM PRE token         = 151659 '<|fim_prefix|>'
+print_info: FIM SUF token         = 151661 '<|fim_suffix|>'
+print_info: FIM MID token         = 151660 '<|fim_middle|>'
+print_info: FIM PAD token         = 151662 '<|fim_pad|>'
+print_info: FIM REP token         = 151663 '<|repo_name|>'
+print_info: FIM SEP token         = 151664 '<|file_sep|>'
+print_info: EOG token             = 128247 '</s>'
+print_info: EOG token             = 151643 '<|endoftext|>'
+print_info: EOG token             = 151645 '<|im_end|>'
+print_info: EOG token             = 151662 '<|fim_pad|>'
+print_info: EOG token             = 151663 '<|repo_name|>'
+print_info: EOG token             = 151664 '<|file_sep|>'
+print_info: max token length      = 256
+load_tensors: loading model tensors, this can take a while... (load_mode = mmap)
+time=2026-09-30T21:12:12.635+09:00 level=INFO source=llama_server.go:1350 msg="waiting for llama-server to become available" status="llm server not responding"
+load_tensors: offloading output layer to GPU
+load_tensors: offloading 21 repeating layers to GPU
+load_tensors: offloaded 22/41 layers to GPU
+load_tensors:   CPU_Mapped model buffer size =  4118.42 MiB
+load_tensors:        CUDA0 model buffer size =  4722.36 MiB
+time=2026-09-30T21:12:13.337+09:00 level=INFO source=llama_server.go:1350 msg="waiting for llama-server to become available" status="llm server loading model"
+cmn  common_init_: added </s> logit bias = -inf
+cmn  common_init_: added <|endoftext|> logit bias = -inf
+cmn  common_init_: added <|im_end|> logit bias = -inf
+cmn  common_init_: added <|fim_pad|> logit bias = -inf
+cmn  common_init_: added <|repo_name|> logit bias = -inf
+cmn  common_init_: added <|file_sep|> logit bias = -inf
+llama_context: constructing llama_context
+llama_context: n_seq_max             = 1
+llama_context: n_ctx                 = 8192
+llama_context: n_ctx_seq             = 8192
+llama_context: n_batch               = 128
+llama_context: n_ubatch              = 128
+llama_context: causal_attn           = 1
+llama_context: flash_attn            = auto
+llama_context: kv_unified            = false
+llama_context: freq_base             = 1000000.0
+llama_context: freq_scale            = 1
+llama_context: n_rs_seq              = 0
+llama_context: n_outputs_max         = 1
+llama_context: n_outputs_max_per_seq = 1
+llama_context: n_ctx_seq (8192) < n_ctx_train (40960) -- the full capacity of the model will not be utilized
+llama_context:  CUDA_Host  output buffer size =     0.58 MiB
+llama_kv_cache:        CPU KV buffer size =   608.00 MiB
+llama_kv_cache:      CUDA0 KV buffer size =   672.00 MiB
+llama_kv_cache: size = 1280.00 MiB (  8192 cells,  40 layers,  1/1 seqs), K (f16):  640.00 MiB, V (f16):  640.00 MiB
+llama_kv_cache: attn_rot_k = 0, n_embd_head_k_all = 128
+llama_kv_cache: attn_rot_v = 0, n_embd_head_k_all = 128
+sched_reserve: reserving ...
+resolve_fused_ops: Flash Attention enabled
+resolve_fused_ops: resolving fused Gated Delta Net support:
+resolve_fused_ops: fused Gated Delta Net (autoregressive) enabled
+resolve_fused_ops: fused Gated Delta Net (chunked) enabled
+resolve_fused_ops: resolving fused Lightning Indexer support:
+resolve_fused_ops: Lightning Indexer enabled
+resolve_fused_ops: resolving fused DeepSeek V4 HC support:
+resolve_fused_ops: fused DeepSeek V4 HC pre enabled
+resolve_fused_ops: fused DeepSeek V4 HC comb enabled
+resolve_fused_ops: fused DeepSeek V4 HC post enabled
+sched_reserve:      CUDA0 compute buffer size =   102.29 MiB
+sched_reserve:  CUDA_Host compute buffer size =     7.00 MiB
+sched_reserve: graph nodes  = 1406
+sched_reserve: graph splits = 249 (with bs=128), 40 (with bs=1)
+sched_reserve: reserve took 9.48 ms, sched copies = 1
+cmn          init: llama threadpool init, n_threads = 6
+cmn  common_init_: warming up the model with an empty run - please wait ... (--no-warmup to disable)
+srv    load_model: initializing, n_slots = 1, n_ctx_slot = 8192, kv_unified = 'false'
+spec common_specu: no implementations specified for speculative decoding
+slot   load_model: id  0 | task -1 | new slot, n_ctx = 8192
+srv    load_model: prompt cache is enabled, size limit: 8192 MiB
+srv    load_model: use `--cache-ram 0` to disable the prompt cache
+srv    load_model: for more info see https://github.com/ggml-org/llama.cpp/pull/16391
+srv    load_model: context checkpoints enabled, max = 32, min spacing = 8192
+srv          init: idle slots will be saved to prompt cache upon starting a new task
+srv          init: init: chat template, example_format: '<|im_start|>system
+You are a helpful assistant<|im_end|>
+<|im_start|>user
+Hello<|im_end|>
+<|im_start|>assistant
+Hi there<|im_end|>
+<|im_start|>user
+How are you?<|im_end|>
+<|im_start|>assistant
+'
+srv          init: init: chat template, thinking = 1
+srv  llama_server: model loaded
+srv  llama_server: listening on http://127.0.0.1:43185
+srv  update_slots: all slots are idle
+time=2026-09-30T21:12:14.878+09:00 level=INFO source=llama_server.go:1362 msg="llama-server started in 4.45 seconds"
+time=2026-09-30T21:12:14.919+09:00 level=INFO source=images.go:381 msg="template selection" model=registry.ollama.ai/library/qwen3:14b selected=gguf_chat_template renderer="" parser="" go_template="[completion tools thinking]" chat_template="[tools thinking completion]" harmony=null renderer_parser=null
+time=2026-09-30T21:12:14.919+09:00 level=INFO source=sched.go:728 msg="loaded runners" count=1
+time=2026-09-30T21:12:14.919+09:00 level=INFO source=llama_server.go:1295 msg="waiting for llama-server to start responding"
+time=2026-09-30T21:12:14.919+09:00 level=INFO source=llama_server.go:1362 msg="llama-server started in 4.49 seconds"
+srv  server_strea: conv_id= (empty=1)
+srv    operator(): chat format: peg-native
+slot get_availabl: id  0 | task -1 |  - skipping, slot is empty
+slot get_availabl: id  0 | task -1 | selected slot by LRU, t_last = -1
+srv  get_availabl: updating prompt cache
+srv          load:  - looking for better prompt, base f_keep = -1.000, f_sim = 0.000
+srv        update:  - cache state: 0 prompts, 0.000 MiB (limits: 8192.000 MiB, 8192 tokens, 8589934592 est)
+srv  get_availabl: prompt cache update took 0.01 ms
+slot launch_slot_: id  0 | task -1 | sampler chain: logits -> ?penalties -> ?dry -> ?top-n-sigma -> top-k -> ?typical -> top-p -> ?min-p -> ?xtc -> temp-ext -> dist 
+slot launch_slot_: id  0 | task -1 | sampler params: 
+	repeat_last_n = 64, repeat_penalty = 1.000, frequency_penalty = 0.000, presence_penalty = 0.000
+	dry_multiplier = 0.000, dry_base = 1.750, dry_allowed_length = 2, dry_penalty_last_n = 64
+	top_k = 20, top_p = 0.950, min_p = 0.000, xtc_probability = 0.000, xtc_threshold = 0.100, typical_p = 1.000, top_n_sigma = -1.000, temp = 0.600
+	mirostat = 0, mirostat_lr = 0.100, mirostat_ent = 5.000, adaptive_target = -1.000, adaptive_decay = 0.900
+slot launch_slot_: id  0 | task 0 | processing task, is_child = 0
+slot   operator(): id  0 | task 0 | new prompt, n_ctx_slot = 8192, n_keep = 4, task.n_tokens = 1238
+slot   operator(): id  0 | task 0 | cached n_tokens = 0, memory_seq_rm [0, end)
+slot   operator(): id  0 | task 0 | cached n_tokens = 128, memory_seq_rm [128, end)
+slot   operator(): id  0 | task 0 | cached n_tokens = 256, memory_seq_rm [256, end)
+slot   operator(): id  0 | task 0 | cached n_tokens = 384, memory_seq_rm [384, end)
+slot print_timing: id  0 | task 0 | prompt processing, n_tokens =    512, progress = 0.41, t =   3.39 s / 150.91 tokens per second
+slot   operator(): id  0 | task 0 | cached n_tokens = 512, memory_seq_rm [512, end)
+slot print_timing: id  0 | task 0 | prompt processing, n_tokens =    640, progress = 0.52, t =   4.21 s / 151.98 tokens per second
+slot   operator(): id  0 | task 0 | cached n_tokens = 640, memory_seq_rm [640, end)
+slot print_timing: id  0 | task 0 | prompt processing, n_tokens =    768, progress = 0.62, t =   5.04 s / 152.30 tokens per second
+slot   operator(): id  0 | task 0 | cached n_tokens = 768, memory_seq_rm [768, end)
+slot print_timing: id  0 | task 0 | prompt processing, n_tokens =    896, progress = 0.72, t =   5.88 s / 152.51 tokens per second
+slot   operator(): id  0 | task 0 | cached n_tokens = 896, memory_seq_rm [896, end)
+slot print_timing: id  0 | task 0 | prompt processing, n_tokens =   1024, progress = 0.83, t =   6.70 s / 152.84 tokens per second
+slot   operator(): id  0 | task 0 | cached n_tokens = 1024, memory_seq_rm [1024, end)
+slot print_timing: id  0 | task 0 | prompt processing, n_tokens =   1152, progress = 0.93, t =   7.53 s / 152.89 tokens per second
+slot   operator(): id  0 | task 0 | cached n_tokens = 1152, memory_seq_rm [1152, end)
+slot init_sampler: id  0 | task 0 | init sampler, took 0.13 ms, tokens: text = 1238, total = 1238
+slot print_timing: id  0 | task 0 | n_gen =    100, tg =   4.22 t/s, tg_3s =   4.26 t/s
+slot print_timing: id  0 | task 0 | n_gen =    112, tg =   4.17 t/s, tg_3s =   3.81 t/s
+slot print_timing: id  0 | task 0 | n_gen =    126, tg =   4.19 t/s, tg_3s =   4.38 t/s
+slot print_timing: id  0 | task 0 | n_gen =    141, tg =   4.24 t/s, tg_3s =   4.69 t/s
+slot print_timing: id  0 | task 0 | n_gen =    154, tg =   4.24 t/s, tg_3s =   4.23 t/s
+slot print_timing: id  0 | task 0 | n_gen =    167, tg =   4.24 t/s, tg_3s =   4.23 t/s
+slot print_timing: id  0 | task 0 | n_gen =    180, tg =   4.22 t/s, tg_3s =   4.07 t/s
+slot print_timing: id  0 | task 0 | n_gen =    193, tg =   4.22 t/s, tg_3s =   4.16 t/s
+slot print_timing: id  0 | task 0 | n_gen =    206, tg =   4.22 t/s, tg_3s =   4.29 t/s
+slot print_timing: id  0 | task 0 | n_gen =    220, tg =   4.24 t/s, tg_3s =   4.51 t/s
+slot print_timing: id  0 | task 0 | n_gen =    233, tg =   4.24 t/s, tg_3s =   4.17 t/s
+slot print_timing: id  0 | task 0 | n_gen =    248, tg =   4.27 t/s, tg_3s =   4.90 t/s
+slot print_timing: id  0 | task 0 | n_gen =    262, tg =   4.28 t/s, tg_3s =   4.42 t/s
+slot print_timing: id  0 | task 0 | n_gen =    273, tg =   4.25 t/s, tg_3s =   3.58 t/s
+slot print_timing: id  0 | task 0 | n_gen =    284, tg =   4.22 t/s, tg_3s =   3.57 t/s
+slot print_timing: id  0 | task 0 | n_gen =    296, tg =   4.21 t/s, tg_3s =   3.98 t/s
+slot print_timing: id  0 | task 0 | n_gen =    309, tg =   4.21 t/s, tg_3s =   4.25 t/s
+slot print_timing: id  0 | task 0 | prompt eval time =    8439.08 ms /  1238 tokens (    6.82 ms per token,   146.70 tokens per second)
+slot print_timing: id  0 | task 0 |        eval time =   74586.08 ms /   315 tokens (  237.54 ms per token,     4.21 tokens per second)
+slot print_timing: id  0 | task 0 |       total time =   83025.16 ms /  1553 tokens
+slot print_timing: id  0 | task 0 |    graphs reused =        316
+slot      release: id  0 | task 0 | stop processing: n_tokens = 1552, truncated = 0
+srv  update_slots: all slots are idle
+[GIN] 2026/09/30 - 21:13:37 | 200 |         1m28s |       127.0.0.1 | POST     "/api/chat"
+srv  server_strea: conv_id= (empty=1)
+srv    operator(): chat format: peg-native
+slot get_availabl: id  0 | task -1 |  - checking sim = 0.962 (1200/1247) > 0.100
+slot get_availabl: id  0 | task -1 | selected slot by LCP similarity, f_sim_best = 0.962 (> 0.100 thold), f_keep = 0.773
+slot launch_slot_: id  0 | task -1 | sampler chain: logits -> ?penalties -> ?dry -> ?top-n-sigma -> top-k -> ?typical -> top-p -> ?min-p -> ?xtc -> temp-ext -> dist 
+slot launch_slot_: id  0 | task -1 | sampler params: 
+	repeat_last_n = 64, repeat_penalty = 1.000, frequency_penalty = 0.000, presence_penalty = 0.000
+	dry_multiplier = 0.000, dry_base = 1.750, dry_allowed_length = 2, dry_penalty_last_n = 64
+	top_k = 20, top_p = 0.950, min_p = 0.000, xtc_probability = 0.000, xtc_threshold = 0.100, typical_p = 1.000, top_n_sigma = -1.000, temp = 0.600
+	mirostat = 0, mirostat_lr = 0.100, mirostat_ent = 5.000, adaptive_target = -1.000, adaptive_decay = 0.900
+slot launch_slot_: id  0 | task 325 | processing task, is_child = 0
+slot   operator(): id  0 | task 325 | new prompt, n_ctx_slot = 8192, n_keep = 4, task.n_tokens = 1247
+slot   operator(): id  0 | task 325 | cached n_tokens = 1200, memory_seq_rm [1200, end)
+slot init_sampler: id  0 | task 325 | init sampler, took 0.18 ms, tokens: text = 1247, total = 1247
+slot print_timing: id  0 | task 325 | n_gen =    100, tg =   4.17 t/s, tg_3s =   4.22 t/s
+slot print_timing: id  0 | task 325 | n_gen =    114, tg =   4.20 t/s, tg_3s =   4.43 t/s
+slot print_timing: id  0 | task 325 | n_gen =    124, tg =   4.10 t/s, tg_3s =   3.20 t/s
+slot print_timing: id  0 | task 325 | n_gen =    134, tg =   4.02 t/s, tg_3s =   3.29 t/s
+slot print_timing: id  0 | task 325 | n_gen =    145, tg =   3.97 t/s, tg_3s =   3.39 t/s
+slot print_timing: id  0 | task 325 | n_gen =    161, tg =   4.06 t/s, tg_3s =   5.17 t/s
+slot print_timing: id  0 | task 325 | n_gen =    179, tg =   4.18 t/s, tg_3s =   5.68 t/s
+slot print_timing: id  0 | task 325 | n_gen =    197, tg =   4.29 t/s, tg_3s =   5.68 t/s
+slot print_timing: id  0 | task 325 | n_gen =    215, tg =   4.38 t/s, tg_3s =   5.68 t/s
+slot print_timing: id  0 | task 325 | n_gen =    232, tg =   4.45 t/s, tg_3s =   5.60 t/s
+slot print_timing: id  0 | task 325 | n_gen =    249, tg =   4.51 t/s, tg_3s =   5.60 t/s
+slot print_timing: id  0 | task 325 | n_gen =    267, tg =   4.58 t/s, tg_3s =   5.74 t/s
+slot print_timing: id  0 | task 325 | n_gen =    285, tg =   4.64 t/s, tg_3s =   5.73 t/s
+slot print_timing: id  0 | task 325 | n_gen =    302, tg =   4.68 t/s, tg_3s =   5.58 t/s
+slot print_timing: id  0 | task 325 | n_gen =    318, tg =   4.70 t/s, tg_3s =   5.14 t/s
+slot print_timing: id  0 | task 325 | n_gen =    335, tg =   4.74 t/s, tg_3s =   5.54 t/s
+slot print_timing: id  0 | task 325 | n_gen =    352, tg =   4.77 t/s, tg_3s =   5.56 t/s
+slot print_timing: id  0 | task 325 | n_gen =    369, tg =   4.81 t/s, tg_3s =   5.61 t/s
+slot print_timing: id  0 | task 325 | n_gen =    386, tg =   4.84 t/s, tg_3s =   5.65 t/s
+slot print_timing: id  0 | task 325 | n_gen =    404, tg =   4.88 t/s, tg_3s =   5.84 t/s
+slot print_timing: id  0 | task 325 | n_gen =    422, tg =   4.91 t/s, tg_3s =   5.94 t/s
+slot print_timing: id  0 | task 325 | n_gen =    440, tg =   4.95 t/s, tg_3s =   5.94 t/s
+slot print_timing: id  0 | task 325 | n_gen =    458, tg =   4.98 t/s, tg_3s =   5.78 t/s
+slot print_timing: id  0 | task 325 | n_gen =    475, tg =   5.00 t/s, tg_3s =   5.61 t/s
+slot print_timing: id  0 | task 325 | n_gen =    492, tg =   5.02 t/s, tg_3s =   5.62 t/s
+slot print_timing: id  0 | task 325 | n_gen =    509, tg =   5.03 t/s, tg_3s =   5.40 t/s
+slot print_timing: id  0 | task 325 | prompt eval time =     782.70 ms /    47 tokens (   16.65 ms per token,    60.05 tokens per second)
+slot print_timing: id  0 | task 325 |        eval time =  103726.31 ms /   524 tokens (  198.33 ms per token,     5.04 tokens per second)
+slot print_timing: id  0 | task 325 |       total time =  104509.01 ms /   571 tokens
+slot print_timing: id  0 | task 325 |    graphs reused =        836
+[GIN] 2026/09/30 - 21:15:22 | 200 |         1m44s |       127.0.0.1 | POST     "/api/chat"
+slot      release: id  0 | task 325 | stop processing: n_tokens = 1770, truncated = 0
+srv  update_slots: all slots are idle
+srv  server_strea: conv_id= (empty=1)
+srv    operator(): chat format: peg-native
+slot get_availabl: id  0 | task -1 |  - checking sim = 0.968 (1200/1240) > 0.100
+slot get_availabl: id  0 | task -1 | selected slot by LCP similarity, f_sim_best = 0.968 (> 0.100 thold), f_keep = 0.678
+slot launch_slot_: id  0 | task -1 | sampler chain: logits -> ?penalties -> ?dry -> ?top-n-sigma -> top-k -> ?typical -> top-p -> ?min-p -> ?xtc -> temp-ext -> dist 
+slot launch_slot_: id  0 | task -1 | sampler params: 
+	repeat_last_n = 64, repeat_penalty = 1.000, frequency_penalty = 0.000, presence_penalty = 0.000
+	dry_multiplier = 0.000, dry_base = 1.750, dry_allowed_length = 2, dry_penalty_last_n = 64
+	top_k = 20, top_p = 0.950, min_p = 0.000, xtc_probability = 0.000, xtc_threshold = 0.100, typical_p = 1.000, top_n_sigma = -1.000, temp = 0.600
+	mirostat = 0, mirostat_lr = 0.100, mirostat_ent = 5.000, adaptive_target = -1.000, adaptive_decay = 0.900
+slot launch_slot_: id  0 | task 850 | processing task, is_child = 0
+slot   operator(): id  0 | task 850 | new prompt, n_ctx_slot = 8192, n_keep = 4, task.n_tokens = 1240
+slot   operator(): id  0 | task 850 | cached n_tokens = 1200, memory_seq_rm [1200, end)
+slot init_sampler: id  0 | task 850 | init sampler, took 0.15 ms, tokens: text = 1240, total = 1240
+slot print_timing: id  0 | task 850 | n_gen =    100, tg =   5.64 t/s, tg_3s =   5.69 t/s
+slot print_timing: id  0 | task 850 | n_gen =    116, tg =   5.59 t/s, tg_3s =   5.28 t/s
+slot print_timing: id  0 | task 850 | n_gen =    133, tg =   5.56 t/s, tg_3s =   5.38 t/s
+slot print_timing: id  0 | task 850 | n_gen =    150, tg =   5.56 t/s, tg_3s =   5.59 t/s
+slot print_timing: id  0 | task 850 | n_gen =    168, tg =   5.58 t/s, tg_3s =   5.78 t/s
+slot print_timing: id  0 | task 850 | n_gen =    186, tg =   5.60 t/s, tg_3s =   5.78 t/s
+slot print_timing: id  0 | task 850 | n_gen =    204, tg =   5.62 t/s, tg_3s =   5.80 t/s
+slot print_timing: id  0 | task 850 | n_gen =    221, tg =   5.62 t/s, tg_3s =   5.62 t/s
+slot print_timing: id  0 | task 850 | n_gen =    239, tg =   5.64 t/s, tg_3s =   5.87 t/s
+slot print_timing: id  0 | task 850 | n_gen =    257, tg =   5.65 t/s, tg_3s =   5.86 t/s
+slot print_timing: id  0 | task 850 | n_gen =    275, tg =   5.67 t/s, tg_3s =   5.98 t/s
+slot print_timing: id  0 | task 850 | n_gen =    294, tg =   5.69 t/s, tg_3s =   6.01 t/s
+slot print_timing: id  0 | task 850 | n_gen =    312, tg =   5.70 t/s, tg_3s =   5.85 t/s
+slot print_timing: id  0 | task 850 | n_gen =    330, tg =   5.71 t/s, tg_3s =   5.80 t/s
+slot print_timing: id  0 | task 850 | n_gen =    348, tg =   5.71 t/s, tg_3s =   5.80 t/s
+slot print_timing: id  0 | task 850 | n_gen =    366, tg =   5.72 t/s, tg_3s =   5.81 t/s
+slot print_timing: id  0 | task 850 | n_gen =    384, tg =   5.72 t/s, tg_3s =   5.75 t/s
+slot print_timing: id  0 | task 850 | n_gen =    402, tg =   5.72 t/s, tg_3s =   5.84 t/s
+slot print_timing: id  0 | task 850 | n_gen =    420, tg =   5.73 t/s, tg_3s =   5.79 t/s
+slot print_timing: id  0 | task 850 | n_gen =    438, tg =   5.73 t/s, tg_3s =   5.82 t/s
+slot print_timing: id  0 | task 850 | n_gen =    455, tg =   5.73 t/s, tg_3s =   5.65 t/s
+slot print_timing: id  0 | task 850 | n_gen =    473, tg =   5.73 t/s, tg_3s =   5.74 t/s
+slot print_timing: id  0 | task 850 | n_gen =    491, tg =   5.73 t/s, tg_3s =   5.78 t/s
+slot print_timing: id  0 | task 850 | n_gen =    509, tg =   5.73 t/s, tg_3s =   5.72 t/s
+slot print_timing: id  0 | task 850 | n_gen =    527, tg =   5.73 t/s, tg_3s =   5.66 t/s
+slot print_timing: id  0 | task 850 | n_gen =    545, tg =   5.73 t/s, tg_3s =   5.80 t/s
+slot print_timing: id  0 | task 850 | n_gen =    560, tg =   5.71 t/s, tg_3s =   4.92 t/s
+slot print_timing: id  0 | task 850 | prompt eval time =     456.73 ms /    40 tokens (   11.42 ms per token,    87.58 tokens per second)
+slot print_timing: id  0 | task 850 |        eval time =  101164.62 ms /   573 tokens (  176.86 ms per token,     5.65 tokens per second)
+slot print_timing: id  0 | task 850 |       total time =  101621.35 ms /   613 tokens
+slot print_timing: id  0 | task 850 |    graphs reused =       1404
+slot      release: id  0 | task 850 | stop processing: n_tokens = 1812, truncated = 0
+srv  update_slots: all slots are idle
+[GIN] 2026/09/30 - 21:17:04 | 200 |         1m41s |       127.0.0.1 | POST     "/api/chat"
+srv  server_strea: conv_id= (empty=1)
+srv    operator(): chat format: peg-native
+slot get_availabl: id  0 | task -1 |  - checking sim = 0.958 (1200/1253) > 0.100
+slot get_availabl: id  0 | task -1 | selected slot by LCP similarity, f_sim_best = 0.958 (> 0.100 thold), f_keep = 0.662
+slot launch_slot_: id  0 | task -1 | sampler chain: logits -> ?penalties -> ?dry -> ?top-n-sigma -> top-k -> ?typical -> top-p -> ?min-p -> ?xtc -> temp-ext -> dist 
+slot launch_slot_: id  0 | task -1 | sampler params: 
+	repeat_last_n = 64, repeat_penalty = 1.000, frequency_penalty = 0.000, presence_penalty = 0.000
+	dry_multiplier = 0.000, dry_base = 1.750, dry_allowed_length = 2, dry_penalty_last_n = 64
+	top_k = 20, top_p = 0.950, min_p = 0.000, xtc_probability = 0.000, xtc_threshold = 0.100, typical_p = 1.000, top_n_sigma = -1.000, temp = 0.600
+	mirostat = 0, mirostat_lr = 0.100, mirostat_ent = 5.000, adaptive_target = -1.000, adaptive_decay = 0.900
+slot launch_slot_: id  0 | task 1424 | processing task, is_child = 0
+slot   operator(): id  0 | task 1424 | new prompt, n_ctx_slot = 8192, n_keep = 4, task.n_tokens = 1253
+slot   operator(): id  0 | task 1424 | cached n_tokens = 1200, memory_seq_rm [1200, end)
+slot init_sampler: id  0 | task 1424 | init sampler, took 0.45 ms, tokens: text = 1253, total = 1253
+slot print_timing: id  0 | task 1424 | n_gen =    100, tg =   5.90 t/s, tg_3s =   5.96 t/s
+slot print_timing: id  0 | task 1424 | n_gen =    119, tg =   5.93 t/s, tg_3s =   6.05 t/s
+slot print_timing: id  0 | task 1424 | n_gen =    138, tg =   5.94 t/s, tg_3s =   6.06 t/s
+slot print_timing: id  0 | task 1424 | n_gen =    156, tg =   5.95 t/s, tg_3s =   5.99 t/s
+slot print_timing: id  0 | task 1424 | n_gen =    174, tg =   5.95 t/s, tg_3s =   5.99 t/s
+slot print_timing: id  0 | task 1424 | n_gen =    192, tg =   5.95 t/s, tg_3s =   5.93 t/s
+slot print_timing: id  0 | task 1424 | n_gen =    210, tg =   5.96 t/s, tg_3s =   5.99 t/s
+slot print_timing: id  0 | task 1424 | n_gen =    229, tg =   5.96 t/s, tg_3s =   6.03 t/s
+slot print_timing: id  0 | task 1424 | n_gen =    248, tg =   5.97 t/s, tg_3s =   6.02 t/s
+slot print_timing: id  0 | task 1424 | n_gen =    267, tg =   5.97 t/s, tg_3s =   6.02 t/s
+slot print_timing: id  0 | task 1424 | n_gen =    286, tg =   5.97 t/s, tg_3s =   6.04 t/s
+slot print_timing: id  0 | task 1424 | n_gen =    304, tg =   5.97 t/s, tg_3s =   5.92 t/s
+slot print_timing: id  0 | task 1424 | n_gen =    322, tg =   5.97 t/s, tg_3s =   5.93 t/s
+slot print_timing: id  0 | task 1424 | n_gen =    340, tg =   5.96 t/s, tg_3s =   5.91 t/s
+slot print_timing: id  0 | task 1424 | n_gen =    358, tg =   5.95 t/s, tg_3s =   5.77 t/s
+slot print_timing: id  0 | task 1424 | n_gen =    376, tg =   5.95 t/s, tg_3s =   5.87 t/s
+slot print_timing: id  0 | task 1424 | n_gen =    394, tg =   5.95 t/s, tg_3s =   5.84 t/s
+slot print_timing: id  0 | task 1424 | n_gen =    412, tg =   5.94 t/s, tg_3s =   5.92 t/s
+slot print_timing: id  0 | task 1424 | n_gen =    430, tg =   5.94 t/s, tg_3s =   5.88 t/s
+slot print_timing: id  0 | task 1424 | n_gen =    448, tg =   5.94 t/s, tg_3s =   5.93 t/s
+slot print_timing: id  0 | task 1424 | n_gen =    466, tg =   5.94 t/s, tg_3s =   5.93 t/s
+slot print_timing: id  0 | task 1424 | n_gen =    484, tg =   5.94 t/s, tg_3s =   5.85 t/s
+slot print_timing: id  0 | task 1424 | n_gen =    502, tg =   5.94 t/s, tg_3s =   5.95 t/s
+slot print_timing: id  0 | task 1424 | n_gen =    520, tg =   5.94 t/s, tg_3s =   5.88 t/s
+slot print_timing: id  0 | task 1424 | n_gen =    538, tg =   5.94 t/s, tg_3s =   5.95 t/s
+slot print_timing: id  0 | task 1424 | prompt eval time =     465.81 ms /    53 tokens (    8.79 ms per token,   113.78 tokens per second)
+slot print_timing: id  0 | task 1424 |        eval time =   92521.97 ms /   550 tokens (  168.53 ms per token,     5.93 tokens per second)
+slot print_timing: id  0 | task 1424 |       total time =   92987.79 ms /   603 tokens
+slot print_timing: id  0 | task 1424 |    graphs reused =       1949
+slot      release: id  0 | task 1424 | stop processing: n_tokens = 1802, truncated = 0
+srv  update_slots: all slots are idle
+[GIN] 2026/09/30 - 21:18:37 | 200 |         1m33s |       127.0.0.1 | POST     "/api/chat"
+srv  server_strea: conv_id= (empty=1)
+srv    operator(): chat format: peg-native
+slot get_availabl: id  0 | task -1 |  - checking sim = 0.964 (1200/1245) > 0.100
+slot get_availabl: id  0 | task -1 | selected slot by LCP similarity, f_sim_best = 0.964 (> 0.100 thold), f_keep = 0.666
+slot launch_slot_: id  0 | task -1 | sampler chain: logits -> ?penalties -> ?dry -> ?top-n-sigma -> top-k -> ?typical -> top-p -> ?min-p -> ?xtc -> temp-ext -> dist 
+slot launch_slot_: id  0 | task -1 | sampler params: 
+	repeat_last_n = 64, repeat_penalty = 1.000, frequency_penalty = 0.000, presence_penalty = 0.000
+	dry_multiplier = 0.000, dry_base = 1.750, dry_allowed_length = 2, dry_penalty_last_n = 64
+	top_k = 20, top_p = 0.950, min_p = 0.000, xtc_probability = 0.000, xtc_threshold = 0.100, typical_p = 1.000, top_n_sigma = -1.000, temp = 0.600
+	mirostat = 0, mirostat_lr = 0.100, mirostat_ent = 5.000, adaptive_target = -1.000, adaptive_decay = 0.900
+slot launch_slot_: id  0 | task 1975 | processing task, is_child = 0
+slot   operator(): id  0 | task 1975 | new prompt, n_ctx_slot = 8192, n_keep = 4, task.n_tokens = 1245
+slot   operator(): id  0 | task 1975 | cached n_tokens = 1200, memory_seq_rm [1200, end)
+slot init_sampler: id  0 | task 1975 | init sampler, took 0.16 ms, tokens: text = 1245, total = 1245
+slot print_timing: id  0 | task 1975 | n_gen =    100, tg =   6.06 t/s, tg_3s =   6.12 t/s
+slot print_timing: id  0 | task 1975 | n_gen =    118, tg =   6.05 t/s, tg_3s =   5.98 t/s
+slot print_timing: id  0 | task 1975 | n_gen =    136, tg =   6.04 t/s, tg_3s =   5.96 t/s
+slot print_timing: id  0 | task 1975 | n_gen =    154, tg =   6.00 t/s, tg_3s =   5.76 t/s
+slot print_timing: id  0 | task 1975 | n_gen =    172, tg =   6.00 t/s, tg_3s =   5.98 t/s
+slot print_timing: id  0 | task 1975 | n_gen =    191, tg =   6.00 t/s, tg_3s =   6.02 t/s
+slot print_timing: id  0 | task 1975 | n_gen =    209, tg =   6.00 t/s, tg_3s =   6.00 t/s
+slot print_timing: id  0 | task 1975 | n_gen =    228, tg =   6.00 t/s, tg_3s =   6.04 t/s
+slot print_timing: id  0 | task 1975 | n_gen =    247, tg =   6.01 t/s, tg_3s =   6.07 t/s
+slot print_timing: id  0 | task 1975 | n_gen =    266, tg =   6.01 t/s, tg_3s =   6.06 t/s
+slot print_timing: id  0 | task 1975 | n_gen =    285, tg =   6.02 t/s, tg_3s =   6.05 t/s
+slot print_timing: id  0 | task 1975 | prompt eval time =     470.44 ms /    45 tokens (   10.45 ms per token,    95.66 tokens per second)
+slot print_timing: id  0 | task 1975 |        eval time =   48705.46 ms /   294 tokens (  166.23 ms per token,     6.02 tokens per second)
+slot print_timing: id  0 | task 1975 |       total time =   49175.90 ms /   339 tokens
+slot print_timing: id  0 | task 1975 |    graphs reused =       2239
+slot      release: id  0 | task 1975 | stop processing: n_tokens = 1538, truncated = 0
+srv  update_slots: all slots are idle
+[GIN] 2026/09/30 - 21:19:26 | 200 | 49.202981021s |       127.0.0.1 | POST     "/api/chat"
+srv  server_strea: conv_id= (empty=1)
+srv    operator(): chat format: peg-native
+slot get_availabl: id  0 | task -1 |  - checking sim = 0.956 (1200/1255) > 0.100
+slot get_availabl: id  0 | task -1 | selected slot by LCP similarity, f_sim_best = 0.956 (> 0.100 thold), f_keep = 0.780
+slot launch_slot_: id  0 | task -1 | sampler chain: logits -> ?penalties -> ?dry -> ?top-n-sigma -> top-k -> ?typical -> top-p -> ?min-p -> ?xtc -> temp-ext -> dist 
+slot launch_slot_: id  0 | task -1 | sampler params: 
+	repeat_last_n = 64, repeat_penalty = 1.000, frequency_penalty = 0.000, presence_penalty = 0.000
+	dry_multiplier = 0.000, dry_base = 1.750, dry_allowed_length = 2, dry_penalty_last_n = 64
+	top_k = 20, top_p = 0.950, min_p = 0.000, xtc_probability = 0.000, xtc_threshold = 0.100, typical_p = 1.000, top_n_sigma = -1.000, temp = 0.600
+	mirostat = 0, mirostat_lr = 0.100, mirostat_ent = 5.000, adaptive_target = -1.000, adaptive_decay = 0.900
+slot launch_slot_: id  0 | task 2270 | processing task, is_child = 0
+slot   operator(): id  0 | task 2270 | new prompt, n_ctx_slot = 8192, n_keep = 4, task.n_tokens = 1255
+slot   operator(): id  0 | task 2270 | cached n_tokens = 1200, memory_seq_rm [1200, end)
+slot init_sampler: id  0 | task 2270 | init sampler, took 0.16 ms, tokens: text = 1255, total = 1255
+slot print_timing: id  0 | task 2270 | n_gen =    100, tg =   6.04 t/s, tg_3s =   6.10 t/s
+slot print_timing: id  0 | task 2270 | n_gen =    119, tg =   6.04 t/s, tg_3s =   6.04 t/s
+slot print_timing: id  0 | task 2270 | n_gen =    138, tg =   6.04 t/s, tg_3s =   6.05 t/s
+slot print_timing: id  0 | task 2270 | n_gen =    157, tg =   6.04 t/s, tg_3s =   6.03 t/s
+slot print_timing: id  0 | task 2270 | n_gen =    176, tg =   6.04 t/s, tg_3s =   6.02 t/s
+slot print_timing: id  0 | task 2270 | n_gen =    194, tg =   6.03 t/s, tg_3s =   5.99 t/s
+slot print_timing: id  0 | task 2270 | n_gen =    212, tg =   6.01 t/s, tg_3s =   5.83 t/s
+slot print_timing: id  0 | task 2270 | n_gen =    229, tg =   5.98 t/s, tg_3s =   5.58 t/s
+slot print_timing: id  0 | task 2270 | n_gen =    246, tg =   5.94 t/s, tg_3s =   5.43 t/s
+slot print_timing: id  0 | task 2270 | n_gen =    257, tg =   5.76 t/s, tg_3s =   3.43 t/s
+slot print_timing: id  0 | task 2270 | n_gen =    268, tg =   5.61 t/s, tg_3s =   3.49 t/s
+slot print_timing: id  0 | task 2270 | n_gen =    282, tg =   5.54 t/s, tg_3s =   4.53 t/s
+slot print_timing: id  0 | task 2270 | n_gen =    293, tg =   5.42 t/s, tg_3s =   3.48 t/s
+slot print_timing: id  0 | task 2270 | n_gen =    303, tg =   5.31 t/s, tg_3s =   3.29 t/s
+slot print_timing: id  0 | task 2270 | n_gen =    317, tg =   5.26 t/s, tg_3s =   4.40 t/s
+slot print_timing: id  0 | task 2270 | n_gen =    329, tg =   5.19 t/s, tg_3s =   3.92 t/s
+slot print_timing: id  0 | task 2270 | n_gen =    339, tg =   5.10 t/s, tg_3s =   3.27 t/s
+slot print_timing: id  0 | task 2270 | n_gen =    351, tg =   5.05 t/s, tg_3s =   3.85 t/s
+slot print_timing: id  0 | task 2270 | n_gen =    365, tg =   5.02 t/s, tg_3s =   4.46 t/s
+slot print_timing: id  0 | task 2270 | n_gen =    376, tg =   4.95 t/s, tg_3s =   3.39 t/s
+slot print_timing: id  0 | task 2270 | n_gen =    387, tg =   4.90 t/s, tg_3s =   3.56 t/s
+slot print_timing: id  0 | task 2270 | n_gen =    401, tg =   4.89 t/s, tg_3s =   4.59 t/s
+slot print_timing: id  0 | task 2270 | n_gen =    412, tg =   4.83 t/s, tg_3s =   3.44 t/s
+[GIN] 2026/09/30 - 21:20:52 | 200 |     120.738µs |       127.0.0.1 | GET      "/api/ps"
+slot print_timing: id  0 | task 2270 | n_gen =    423, tg =   4.78 t/s, tg_3s =   3.42 t/s
+slot print_timing: id  0 | task 2270 | prompt eval time =     451.81 ms /    55 tokens (    8.21 ms per token,   121.73 tokens per second)
+slot print_timing: id  0 | task 2270 |        eval time =   88482.81 ms /   424 tokens (  209.18 ms per token,     4.78 tokens per second)
+slot print_timing: id  0 | task 2270 |       total time =   88934.62 ms /   479 tokens
+slot print_timing: id  0 | task 2270 |    graphs reused =       2659
+slot      release: id  0 | task 2270 | stop processing: n_tokens = 1678, truncated = 0
+srv  update_slots: all slots are idle
+[GIN] 2026/09/30 - 21:20:55 | 200 |         1m28s |       127.0.0.1 | POST     "/api/chat"
+srv  server_strea: conv_id= (empty=1)
+srv    operator(): chat format: peg-native
+slot get_availabl: id  0 | task -1 |  - checking sim = 0.958 (1200/1252) > 0.100
+slot get_availabl: id  0 | task -1 | selected slot by LCP similarity, f_sim_best = 0.958 (> 0.100 thold), f_keep = 0.715
+slot launch_slot_: id  0 | task -1 | sampler chain: logits -> ?penalties -> ?dry -> ?top-n-sigma -> top-k -> ?typical -> top-p -> ?min-p -> ?xtc -> temp-ext -> dist 
+slot launch_slot_: id  0 | task -1 | sampler params: 
+	repeat_last_n = 64, repeat_penalty = 1.000, frequency_penalty = 0.000, presence_penalty = 0.000
+	dry_multiplier = 0.000, dry_base = 1.750, dry_allowed_length = 2, dry_penalty_last_n = 64
+	top_k = 20, top_p = 0.950, min_p = 0.000, xtc_probability = 0.000, xtc_threshold = 0.100, typical_p = 1.000, top_n_sigma = -1.000, temp = 0.600
+	mirostat = 0, mirostat_lr = 0.100, mirostat_ent = 5.000, adaptive_target = -1.000, adaptive_decay = 0.900
+slot launch_slot_: id  0 | task 2695 | processing task, is_child = 0
+slot   operator(): id  0 | task 2695 | new prompt, n_ctx_slot = 8192, n_keep = 4, task.n_tokens = 1252
+slot   operator(): id  0 | task 2695 | cached n_tokens = 1200, memory_seq_rm [1200, end)
+slot init_sampler: id  0 | task 2695 | init sampler, took 0.18 ms, tokens: text = 1252, total = 1252
+slot print_timing: id  0 | task 2695 | n_gen =    100, tg =   4.35 t/s, tg_3s =   4.39 t/s
+slot print_timing: id  0 | task 2695 | n_gen =    117, tg =   4.48 t/s, tg_3s =   5.45 t/s
+slot print_timing: id  0 | task 2695 | n_gen =    128, tg =   4.39 t/s, tg_3s =   3.60 t/s
+slot print_timing: id  0 | task 2695 | n_gen =    139, tg =   4.30 t/s, tg_3s =   3.48 t/s
+slot print_timing: id  0 | task 2695 | n_gen =    155, tg =   4.38 t/s, tg_3s =   5.21 t/s
+slot print_timing: id  0 | task 2695 | n_gen =    167, tg =   4.32 t/s, tg_3s =   3.65 t/s
+slot print_timing: id  0 | task 2695 | n_gen =    178, tg =   4.26 t/s, tg_3s =   3.60 t/s
+slot print_timing: id  0 | task 2695 | n_gen =    193, tg =   4.31 t/s, tg_3s =   4.93 t/s
+slot print_timing: id  0 | task 2695 | n_gen =    211, tg =   4.40 t/s, tg_3s =   5.74 t/s
+slot print_timing: id  0 | task 2695 | n_gen =    227, tg =   4.46 t/s, tg_3s =   5.31 t/s
+slot print_timing: id  0 | task 2695 | n_gen =    240, tg =   4.44 t/s, tg_3s =   4.08 t/s
+slot print_timing: id  0 | task 2695 | n_gen =    251, tg =   4.38 t/s, tg_3s =   3.51 t/s
+slot print_timing: id  0 | task 2695 | n_gen =    262, tg =   4.34 t/s, tg_3s =   3.55 t/s
+slot print_timing: id  0 | task 2695 | n_gen =    274, tg =   4.32 t/s, tg_3s =   3.89 t/s
+slot print_timing: id  0 | task 2695 | n_gen =    286, tg =   4.29 t/s, tg_3s =   3.74 t/s
+slot print_timing: id  0 | task 2695 | n_gen =    297, tg =   4.25 t/s, tg_3s =   3.38 t/s
+slot print_timing: id  0 | task 2695 | n_gen =    308, tg =   4.22 t/s, tg_3s =   3.51 t/s
+slot print_timing: id  0 | task 2695 | n_gen =    320, tg =   4.20 t/s, tg_3s =   3.84 t/s
+slot print_timing: id  0 | task 2695 | n_gen =    331, tg =   4.17 t/s, tg_3s =   3.45 t/s
+slot print_timing: id  0 | task 2695 | n_gen =    342, tg =   4.14 t/s, tg_3s =   3.47 t/s
+slot print_timing: id  0 | task 2695 | n_gen =    355, tg =   4.14 t/s, tg_3s =   4.15 t/s
+slot print_timing: id  0 | task 2695 | n_gen =    372, tg =   4.20 t/s, tg_3s =   5.63 t/s
+slot print_timing: id  0 | task 2695 | n_gen =    389, tg =   4.24 t/s, tg_3s =   5.44 t/s
+slot print_timing: id  0 | task 2695 | n_gen =    403, tg =   4.25 t/s, tg_3s =   4.47 t/s
+slot print_timing: id  0 | task 2695 | n_gen =    414, tg =   4.22 t/s, tg_3s =   3.43 t/s
+slot print_timing: id  0 | task 2695 | n_gen =    424, tg =   4.19 t/s, tg_3s =   3.31 t/s
+slot print_timing: id  0 | task 2695 | prompt eval time =     478.76 ms /    52 tokens (    9.21 ms per token,   108.61 tokens per second)
+slot print_timing: id  0 | task 2695 |        eval time =  101720.17 ms /   427 tokens (  238.78 ms per token,     4.19 tokens per second)
+slot print_timing: id  0 | task 2695 |       total time =  102198.93 ms /   479 tokens
+slot print_timing: id  0 | task 2695 |    graphs reused =       3082
+slot      release: id  0 | task 2695 | stop processing: n_tokens = 1678, truncated = 0
+srv  update_slots: all slots are idle
+[GIN] 2026/09/30 - 21:22:37 | 200 |         1m42s |       127.0.0.1 | POST     "/api/chat"
+srv  server_strea: conv_id= (empty=1)
+srv    operator(): chat format: peg-native
+slot get_availabl: id  0 | task -1 |  - checking sim = 0.962 (1200/1248) > 0.100
+slot get_availabl: id  0 | task -1 | selected slot by LCP similarity, f_sim_best = 0.962 (> 0.100 thold), f_keep = 0.715
+slot launch_slot_: id  0 | task -1 | sampler chain: logits -> ?penalties -> ?dry -> ?top-n-sigma -> top-k -> ?typical -> top-p -> ?min-p -> ?xtc -> temp-ext -> dist 
+slot launch_slot_: id  0 | task -1 | sampler params: 
+	repeat_last_n = 64, repeat_penalty = 1.000, frequency_penalty = 0.000, presence_penalty = 0.000
+	dry_multiplier = 0.000, dry_base = 1.750, dry_allowed_length = 2, dry_penalty_last_n = 64
+	top_k = 20, top_p = 0.950, min_p = 0.000, xtc_probability = 0.000, xtc_threshold = 0.100, typical_p = 1.000, top_n_sigma = -1.000, temp = 0.600
+	mirostat = 0, mirostat_lr = 0.100, mirostat_ent = 5.000, adaptive_target = -1.000, adaptive_decay = 0.900
+slot launch_slot_: id  0 | task 3123 | processing task, is_child = 0
+slot   operator(): id  0 | task 3123 | new prompt, n_ctx_slot = 8192, n_keep = 4, task.n_tokens = 1248
+slot   operator(): id  0 | task 3123 | cached n_tokens = 1200, memory_seq_rm [1200, end)
+slot init_sampler: id  0 | task 3123 | init sampler, took 0.14 ms, tokens: text = 1248, total = 1248
+slot print_timing: id  0 | task 3123 | n_gen =    100, tg =   3.89 t/s, tg_3s =   3.93 t/s
+slot print_timing: id  0 | task 3123 | n_gen =    117, tg =   4.08 t/s, tg_3s =   5.66 t/s
+slot print_timing: id  0 | task 3123 | n_gen =    133, tg =   4.16 t/s, tg_3s =   4.87 t/s
+slot print_timing: id  0 | task 3123 | n_gen =    143, tg =   4.09 t/s, tg_3s =   3.33 t/s
+slot print_timing: id  0 | task 3123 | n_gen =    154, tg =   4.02 t/s, tg_3s =   3.33 t/s
+slot print_timing: id  0 | task 3123 | n_gen =    165, tg =   3.98 t/s, tg_3s =   3.50 t/s
+slot print_timing: id  0 | task 3123 | n_gen =    177, tg =   3.96 t/s, tg_3s =   3.62 t/s
+slot print_timing: id  0 | task 3123 | n_gen =    187, tg =   3.92 t/s, tg_3s =   3.32 t/s
+slot print_timing: id  0 | task 3123 | n_gen =    198, tg =   3.88 t/s, tg_3s =   3.33 t/s
+slot print_timing: id  0 | task 3123 | n_gen =    209, tg =   3.86 t/s, tg_3s =   3.56 t/s
+slot print_timing: id  0 | task 3123 | n_gen =    219, tg =   3.83 t/s, tg_3s =   3.30 t/s
+slot print_timing: id  0 | task 3123 | n_gen =    230, tg =   3.81 t/s, tg_3s =   3.36 t/s
+slot print_timing: id  0 | task 3123 | n_gen =    242, tg =   3.81 t/s, tg_3s =   3.89 t/s
+slot print_timing: id  0 | task 3123 | n_gen =    261, tg =   3.92 t/s, tg_3s =   6.05 t/s
+slot print_timing: id  0 | task 3123 | n_gen =    280, tg =   4.01 t/s, tg_3s =   6.07 t/s
+slot print_timing: id  0 | task 3123 | n_gen =    298, tg =   4.09 t/s, tg_3s =   5.97 t/s
+slot print_timing: id  0 | task 3123 | n_gen =    316, tg =   4.17 t/s, tg_3s =   5.92 t/s
+slot print_timing: id  0 | task 3123 | n_gen =    334, tg =   4.23 t/s, tg_3s =   5.73 t/s
+slot print_timing: id  0 | task 3123 | n_gen =    352, tg =   4.29 t/s, tg_3s =   5.82 t/s
+slot print_timing: id  0 | task 3123 | n_gen =    370, tg =   4.35 t/s, tg_3s =   5.92 t/s
+slot print_timing: id  0 | task 3123 | n_gen =    387, tg =   4.39 t/s, tg_3s =   5.50 t/s
+slot print_timing: id  0 | task 3123 | n_gen =    405, tg =   4.44 t/s, tg_3s =   5.91 t/s
+slot print_timing: id  0 | task 3123 | n_gen =    423, tg =   4.49 t/s, tg_3s =   5.87 t/s
+slot print_timing: id  0 | task 3123 | n_gen =    441, tg =   4.53 t/s, tg_3s =   5.94 t/s
+slot print_timing: id  0 | task 3123 | n_gen =    459, tg =   4.57 t/s, tg_3s =   5.70 t/s
+slot print_timing: id  0 | task 3123 | n_gen =    476, tg =   4.59 t/s, tg_3s =   5.40 t/s
+slot print_timing: id  0 | task 3123 | n_gen =    493, tg =   4.62 t/s, tg_3s =   5.47 t/s
+slot print_timing: id  0 | task 3123 | n_gen =    510, tg =   4.64 t/s, tg_3s =   5.46 t/s
+slot print_timing: id  0 | task 3123 | n_gen =    527, tg =   4.67 t/s, tg_3s =   5.50 t/s
+slot print_timing: id  0 | task 3123 | n_gen =    545, tg =   4.70 t/s, tg_3s =   5.75 t/s
+slot print_timing: id  0 | task 3123 | n_gen =    562, tg =   4.72 t/s, tg_3s =   5.53 t/s
+slot print_timing: id  0 | task 3123 | n_gen =    579, tg =   4.74 t/s, tg_3s =   5.45 t/s
+slot print_timing: id  0 | task 3123 | n_gen =    596, tg =   4.76 t/s, tg_3s =   5.60 t/s
+slot print_timing: id  0 | task 3123 | n_gen =    613, tg =   4.78 t/s, tg_3s =   5.61 t/s
+slot print_timing: id  0 | task 3123 | prompt eval time =     895.12 ms /    48 tokens (   18.65 ms per token,    53.62 tokens per second)
+slot print_timing: id  0 | task 3123 |        eval time =  131151.85 ms /   630 tokens (  208.51 ms per token,     4.80 tokens per second)
+slot print_timing: id  0 | task 3123 |       total time =  132046.97 ms /   678 tokens
+slot print_timing: id  0 | task 3123 |    graphs reused =       3707
+slot      release: id  0 | task 3123 | stop processing: n_tokens = 1877, truncated = 0
+srv  update_slots: all slots are idle
+[GIN] 2026/09/30 - 21:24:49 | 200 |         2m12s |       127.0.0.1 | POST     "/api/chat"
+srv  server_strea: conv_id= (empty=1)
+srv    operator(): chat format: peg-native
+slot get_availabl: id  0 | task -1 |  - checking sim = 0.960 (1200/1250) > 0.100
+slot get_availabl: id  0 | task -1 | selected slot by LCP similarity, f_sim_best = 0.960 (> 0.100 thold), f_keep = 0.639
+slot launch_slot_: id  0 | task -1 | sampler chain: logits -> ?penalties -> ?dry -> ?top-n-sigma -> top-k -> ?typical -> top-p -> ?min-p -> ?xtc -> temp-ext -> dist 
+slot launch_slot_: id  0 | task -1 | sampler params: 
+	repeat_last_n = 64, repeat_penalty = 1.000, frequency_penalty = 0.000, presence_penalty = 0.000
+	dry_multiplier = 0.000, dry_base = 1.750, dry_allowed_length = 2, dry_penalty_last_n = 64
+	top_k = 20, top_p = 0.950, min_p = 0.000, xtc_probability = 0.000, xtc_threshold = 0.100, typical_p = 1.000, top_n_sigma = -1.000, temp = 0.600
+	mirostat = 0, mirostat_lr = 0.100, mirostat_ent = 5.000, adaptive_target = -1.000, adaptive_decay = 0.900
+slot launch_slot_: id  0 | task 3754 | processing task, is_child = 0
+slot   operator(): id  0 | task 3754 | new prompt, n_ctx_slot = 8192, n_keep = 4, task.n_tokens = 1250
+slot   operator(): id  0 | task 3754 | cached n_tokens = 1200, memory_seq_rm [1200, end)
+slot init_sampler: id  0 | task 3754 | init sampler, took 0.34 ms, tokens: text = 1250, total = 1250
+slot print_timing: id  0 | task 3754 | n_gen =    100, tg =   5.82 t/s, tg_3s =   5.88 t/s
+slot print_timing: id  0 | task 3754 | n_gen =    116, tg =   5.74 t/s, tg_3s =   5.28 t/s
+slot print_timing: id  0 | task 3754 | n_gen =    134, tg =   5.75 t/s, tg_3s =   5.82 t/s
+slot print_timing: id  0 | task 3754 | n_gen =    153, tg =   5.79 t/s, tg_3s =   6.05 t/s
+slot print_timing: id  0 | task 3754 | n_gen =    172, tg =   5.81 t/s, tg_3s =   6.01 t/s
+slot print_timing: id  0 | task 3754 | n_gen =    191, tg =   5.83 t/s, tg_3s =   6.04 t/s
+slot print_timing: id  0 | task 3754 | n_gen =    210, tg =   5.85 t/s, tg_3s =   6.06 t/s
+slot print_timing: id  0 | task 3754 | n_gen =    229, tg =   5.87 t/s, tg_3s =   6.06 t/s
+slot print_timing: id  0 | task 3754 | n_gen =    248, tg =   5.88 t/s, tg_3s =   6.04 t/s
+slot print_timing: id  0 | task 3754 | n_gen =    266, tg =   5.89 t/s, tg_3s =   5.99 t/s
+slot print_timing: id  0 | task 3754 | n_gen =    284, tg =   5.88 t/s, tg_3s =   5.74 t/s
+slot print_timing: id  0 | task 3754 | n_gen =    301, tg =   5.85 t/s, tg_3s =   5.45 t/s
+slot print_timing: id  0 | task 3754 | n_gen =    317, tg =   5.82 t/s, tg_3s =   5.24 t/s
+slot print_timing: id  0 | task 3754 | n_gen =    334, tg =   5.81 t/s, tg_3s =   5.67 t/s
+slot print_timing: id  0 | task 3754 | n_gen =    351, tg =   5.80 t/s, tg_3s =   5.61 t/s
+slot print_timing: id  0 | task 3754 | n_gen =    368, tg =   5.79 t/s, tg_3s =   5.65 t/s
+slot print_timing: id  0 | task 3754 | n_gen =    385, tg =   5.78 t/s, tg_3s =   5.51 t/s
+slot print_timing: id  0 | task 3754 | n_gen =    399, tg =   5.72 t/s, tg_3s =   4.39 t/s
+slot print_timing: id  0 | task 3754 | n_gen =    410, tg =   5.62 t/s, tg_3s =   3.45 t/s
+slot print_timing: id  0 | task 3754 | n_gen =    422, tg =   5.54 t/s, tg_3s =   3.81 t/s
+slot print_timing: id  0 | task 3754 | n_gen =    435, tg =   5.49 t/s, tg_3s =   4.22 t/s
+slot print_timing: id  0 | task 3754 | n_gen =    451, tg =   5.47 t/s, tg_3s =   5.04 t/s
+slot print_timing: id  0 | task 3754 | n_gen =    467, tg =   5.46 t/s, tg_3s =   5.17 t/s
+slot print_timing: id  0 | task 3754 | n_gen =    481, tg =   5.42 t/s, tg_3s =   4.36 t/s
+slot print_timing: id  0 | task 3754 | n_gen =    496, tg =   5.40 t/s, tg_3s =   4.75 t/s
+slot print_timing: id  0 | task 3754 | prompt eval time =     471.06 ms /    50 tokens (    9.42 ms per token,   106.14 tokens per second)
+slot print_timing: id  0 | task 3754 |        eval time =   92472.45 ms /   500 tokens (  185.32 ms per token,     5.40 tokens per second)
+slot print_timing: id  0 | task 3754 |       total time =   92943.51 ms /   550 tokens
+slot print_timing: id  0 | task 3754 |    graphs reused =       4203
+slot      release: id  0 | task 3754 | stop processing: n_tokens = 1749, truncated = 0
+srv  update_slots: all slots are idle
+[GIN] 2026/09/30 - 21:26:22 | 200 |         1m32s |       127.0.0.1 | POST     "/api/chat"
+srv  server_strea: conv_id= (empty=1)
+srv    operator(): chat format: peg-native
+slot get_availabl: id  0 | task -1 |  - checking sim = 0.968 (1200/1240) > 0.100
+slot get_availabl: id  0 | task -1 | selected slot by LCP similarity, f_sim_best = 0.968 (> 0.100 thold), f_keep = 0.686
+slot launch_slot_: id  0 | task -1 | sampler chain: logits -> ?penalties -> ?dry -> ?top-n-sigma -> top-k -> ?typical -> top-p -> ?min-p -> ?xtc -> temp-ext -> dist 
+slot launch_slot_: id  0 | task -1 | sampler params: 
+	repeat_last_n = 64, repeat_penalty = 1.000, frequency_penalty = 0.000, presence_penalty = 0.000
+	dry_multiplier = 0.000, dry_base = 1.750, dry_allowed_length = 2, dry_penalty_last_n = 64
+	top_k = 20, top_p = 0.950, min_p = 0.000, xtc_probability = 0.000, xtc_threshold = 0.100, typical_p = 1.000, top_n_sigma = -1.000, temp = 0.600
+	mirostat = 0, mirostat_lr = 0.100, mirostat_ent = 5.000, adaptive_target = -1.000, adaptive_decay = 0.900
+slot launch_slot_: id  0 | task 4255 | processing task, is_child = 0
+slot   operator(): id  0 | task 4255 | new prompt, n_ctx_slot = 8192, n_keep = 4, task.n_tokens = 1240
+slot   operator(): id  0 | task 4255 | cached n_tokens = 1200, memory_seq_rm [1200, end)
+slot init_sampler: id  0 | task 4255 | init sampler, took 0.15 ms, tokens: text = 1240, total = 1240
+slot print_timing: id  0 | task 4255 | n_gen =    100, tg =   5.71 t/s, tg_3s =   5.77 t/s
+slot print_timing: id  0 | task 4255 | n_gen =    118, tg =   5.73 t/s, tg_3s =   5.85 t/s
+slot print_timing: id  0 | task 4255 | n_gen =    136, tg =   5.76 t/s, tg_3s =   5.93 t/s
+slot print_timing: id  0 | task 4255 | n_gen =    154, tg =   5.76 t/s, tg_3s =   5.75 t/s
+slot print_timing: id  0 | task 4255 | n_gen =    172, tg =   5.77 t/s, tg_3s =   5.83 t/s
+slot print_timing: id  0 | task 4255 | n_gen =    190, tg =   5.78 t/s, tg_3s =   5.90 t/s
+slot print_timing: id  0 | task 4255 | n_gen =    208, tg =   5.79 t/s, tg_3s =   5.90 t/s
+slot print_timing: id  0 | task 4255 | n_gen =    226, tg =   5.80 t/s, tg_3s =   5.91 t/s
+slot print_timing: id  0 | task 4255 | n_gen =    244, tg =   5.80 t/s, tg_3s =   5.86 t/s
+slot print_timing: id  0 | task 4255 | n_gen =    262, tg =   5.81 t/s, tg_3s =   5.88 t/s
+slot print_timing: id  0 | task 4255 | n_gen =    280, tg =   5.82 t/s, tg_3s =   5.93 t/s
+slot print_timing: id  0 | task 4255 | n_gen =    299, tg =   5.83 t/s, tg_3s =   6.06 t/s
+slot print_timing: id  0 | task 4255 | n_gen =    317, tg =   5.84 t/s, tg_3s =   5.93 t/s
+slot print_timing: id  0 | task 4255 | n_gen =    335, tg =   5.83 t/s, tg_3s =   5.80 t/s
+slot print_timing: id  0 | task 4255 | n_gen =    353, tg =   5.84 t/s, tg_3s =   5.86 t/s
+slot print_timing: id  0 | task 4255 | n_gen =    371, tg =   5.84 t/s, tg_3s =   5.91 t/s
+slot print_timing: id  0 | task 4255 | n_gen =    389, tg =   5.84 t/s, tg_3s =   5.92 t/s
+slot print_timing: id  0 | task 4255 | n_gen =    407, tg =   5.84 t/s, tg_3s =   5.78 t/s
+slot print_timing: id  0 | task 4255 | n_gen =    424, tg =   5.82 t/s, tg_3s =   5.47 t/s
+slot print_timing: id  0 | task 4255 | n_gen =    441, tg =   5.81 t/s, tg_3s =   5.54 t/s
+slot print_timing: id  0 | task 4255 | n_gen =    459, tg =   5.81 t/s, tg_3s =   5.74 t/s
+slot print_timing: id  0 | task 4255 | prompt eval time =     463.46 ms /    40 tokens (   11.59 ms per token,    86.31 tokens per second)
+slot print_timing: id  0 | task 4255 |        eval time =   79871.98 ms /   465 tokens (  172.14 ms per token,     5.81 tokens per second)
+slot print_timing: id  0 | task 4255 |       total time =   80335.44 ms /   505 tokens
+slot print_timing: id  0 | task 4255 |    graphs reused =       4664
+slot      release: id  0 | task 4255 | stop processing: n_tokens = 1704, truncated = 0
+srv  update_slots: all slots are idle
+[GIN] 2026/09/30 - 21:27:43 | 200 |         1m20s |       127.0.0.1 | POST     "/api/chat"
+srv  server_strea: conv_id= (empty=1)
+srv    operator(): chat format: peg-native
+slot get_availabl: id  0 | task -1 |  - checking sim = 0.965 (1200/1243) > 0.100
+slot get_availabl: id  0 | task -1 | selected slot by LCP similarity, f_sim_best = 0.965 (> 0.100 thold), f_keep = 0.704
+slot launch_slot_: id  0 | task -1 | sampler chain: logits -> ?penalties -> ?dry -> ?top-n-sigma -> top-k -> ?typical -> top-p -> ?min-p -> ?xtc -> temp-ext -> dist 
+slot launch_slot_: id  0 | task -1 | sampler params: 
+	repeat_last_n = 64, repeat_penalty = 1.000, frequency_penalty = 0.000, presence_penalty = 0.000
+	dry_multiplier = 0.000, dry_base = 1.750, dry_allowed_length = 2, dry_penalty_last_n = 64
+	top_k = 20, top_p = 0.950, min_p = 0.000, xtc_probability = 0.000, xtc_threshold = 0.100, typical_p = 1.000, top_n_sigma = -1.000, temp = 0.600
+	mirostat = 0, mirostat_lr = 0.100, mirostat_ent = 5.000, adaptive_target = -1.000, adaptive_decay = 0.900
+slot launch_slot_: id  0 | task 4721 | processing task, is_child = 0
+slot   operator(): id  0 | task 4721 | new prompt, n_ctx_slot = 8192, n_keep = 4, task.n_tokens = 1243
+slot   operator(): id  0 | task 4721 | cached n_tokens = 1200, memory_seq_rm [1200, end)
+slot init_sampler: id  0 | task 4721 | init sampler, took 0.37 ms, tokens: text = 1243, total = 1243
+slot print_timing: id  0 | task 4721 | n_gen =    100, tg =   5.47 t/s, tg_3s =   5.52 t/s
+slot print_timing: id  0 | task 4721 | n_gen =    117, tg =   5.47 t/s, tg_3s =   5.52 t/s
+slot print_timing: id  0 | task 4721 | n_gen =    134, tg =   5.49 t/s, tg_3s =   5.63 t/s
+slot print_timing: id  0 | task 4721 | n_gen =    151, tg =   5.50 t/s, tg_3s =   5.54 t/s
+slot print_timing: id  0 | task 4721 | n_gen =    167, tg =   5.47 t/s, tg_3s =   5.22 t/s
+slot print_timing: id  0 | task 4721 | n_gen =    183, tg =   5.45 t/s, tg_3s =   5.26 t/s
+slot print_timing: id  0 | task 4721 | n_gen =    200, tg =   5.44 t/s, tg_3s =   5.36 t/s
+slot print_timing: id  0 | task 4721 | n_gen =    217, tg =   5.46 t/s, tg_3s =   5.65 t/s
+slot print_timing: id  0 | task 4721 | n_gen =    233, tg =   5.44 t/s, tg_3s =   5.18 t/s
+slot print_timing: id  0 | task 4721 | n_gen =    249, tg =   5.43 t/s, tg_3s =   5.25 t/s
+slot print_timing: id  0 | task 4721 | n_gen =    267, tg =   5.45 t/s, tg_3s =   5.76 t/s
+slot print_timing: id  0 | task 4721 | n_gen =    285, tg =   5.47 t/s, tg_3s =   5.87 t/s
+slot print_timing: id  0 | task 4721 | n_gen =    303, tg =   5.49 t/s, tg_3s =   5.83 t/s
+slot print_timing: id  0 | task 4721 | n_gen =    321, tg =   5.51 t/s, tg_3s =   5.72 t/s
+slot print_timing: id  0 | task 4721 | n_gen =    339, tg =   5.51 t/s, tg_3s =   5.69 t/s
+slot print_timing: id  0 | task 4721 | n_gen =    357, tg =   5.53 t/s, tg_3s =   5.77 t/s
+slot print_timing: id  0 | task 4721 | n_gen =    375, tg =   5.54 t/s, tg_3s =   5.78 t/s
+slot print_timing: id  0 | task 4721 | prompt eval time =     472.17 ms /    43 tokens (   10.98 ms per token,    91.07 tokens per second)
+slot print_timing: id  0 | task 4721 |        eval time =   70334.96 ms /   391 tokens (  180.35 ms per token,     5.54 tokens per second)
+slot print_timing: id  0 | task 4721 |       total time =   70807.13 ms /   434 tokens
+slot print_timing: id  0 | task 4721 |    graphs reused =       5051
+slot      release: id  0 | task 4721 | stop processing: n_tokens = 1633, truncated = 0
+srv  update_slots: all slots are idle
+[GIN] 2026/09/30 - 21:28:53 | 200 |         1m10s |       127.0.0.1 | POST     "/api/chat"
+srv  server_strea: conv_id= (empty=1)
+srv    operator(): chat format: peg-native
+slot get_availabl: id  0 | task -1 |  - checking sim = 0.958 (1200/1252) > 0.100
+slot get_availabl: id  0 | task -1 | selected slot by LCP similarity, f_sim_best = 0.958 (> 0.100 thold), f_keep = 0.735
+slot launch_slot_: id  0 | task -1 | sampler chain: logits -> ?penalties -> ?dry -> ?top-n-sigma -> top-k -> ?typical -> top-p -> ?min-p -> ?xtc -> temp-ext -> dist 
+slot launch_slot_: id  0 | task -1 | sampler params: 
+	repeat_last_n = 64, repeat_penalty = 1.000, frequency_penalty = 0.000, presence_penalty = 0.000
+	dry_multiplier = 0.000, dry_base = 1.750, dry_allowed_length = 2, dry_penalty_last_n = 64
+	top_k = 20, top_p = 0.950, min_p = 0.000, xtc_probability = 0.000, xtc_threshold = 0.100, typical_p = 1.000, top_n_sigma = -1.000, temp = 0.600
+	mirostat = 0, mirostat_lr = 0.100, mirostat_ent = 5.000, adaptive_target = -1.000, adaptive_decay = 0.900
+slot launch_slot_: id  0 | task 5113 | processing task, is_child = 0
+slot   operator(): id  0 | task 5113 | new prompt, n_ctx_slot = 8192, n_keep = 4, task.n_tokens = 1252
+slot   operator(): id  0 | task 5113 | cached n_tokens = 1200, memory_seq_rm [1200, end)
+slot init_sampler: id  0 | task 5113 | init sampler, took 0.44 ms, tokens: text = 1252, total = 1252
+slot print_timing: id  0 | task 5113 | n_gen =    100, tg =   5.80 t/s, tg_3s =   5.86 t/s
+slot print_timing: id  0 | task 5113 | n_gen =    117, tg =   5.74 t/s, tg_3s =   5.42 t/s
+slot print_timing: id  0 | task 5113 | n_gen =    134, tg =   5.71 t/s, tg_3s =   5.49 t/s
+slot print_timing: id  0 | task 5113 | n_gen =    151, tg =   5.70 t/s, tg_3s =   5.60 t/s
+slot print_timing: id  0 | task 5113 | n_gen =    169, tg =   5.70 t/s, tg_3s =   5.74 t/s
+slot print_timing: id  0 | task 5113 | n_gen =    187, tg =   5.72 t/s, tg_3s =   5.86 t/s
+slot print_timing: id  0 | task 5113 | n_gen =    205, tg =   5.74 t/s, tg_3s =   5.95 t/s
+slot print_timing: id  0 | task 5113 | n_gen =    223, tg =   5.75 t/s, tg_3s =   5.96 t/s
+slot print_timing: id  0 | task 5113 | n_gen =    241, tg =   5.76 t/s, tg_3s =   5.87 t/s
+slot print_timing: id  0 | task 5113 | n_gen =    259, tg =   5.77 t/s, tg_3s =   5.83 t/s
+slot print_timing: id  0 | task 5113 | n_gen =    278, tg =   5.79 t/s, tg_3s =   6.06 t/s
+slot print_timing: id  0 | task 5113 | n_gen =    296, tg =   5.80 t/s, tg_3s =   5.98 t/s
+slot print_timing: id  0 | task 5113 | n_gen =    314, tg =   5.80 t/s, tg_3s =   5.89 t/s
+slot print_timing: id  0 | task 5113 | n_gen =    332, tg =   5.81 t/s, tg_3s =   5.89 t/s
+slot print_timing: id  0 | task 5113 | n_gen =    350, tg =   5.81 t/s, tg_3s =   5.88 t/s
+slot print_timing: id  0 | task 5113 | n_gen =    368, tg =   5.82 t/s, tg_3s =   5.93 t/s
+slot print_timing: id  0 | task 5113 | n_gen =    386, tg =   5.82 t/s, tg_3s =   5.92 t/s
+slot print_timing: id  0 | task 5113 | n_gen =    404, tg =   5.83 t/s, tg_3s =   5.92 t/s
+slot print_timing: id  0 | task 5113 | n_gen =    422, tg =   5.83 t/s, tg_3s =   5.85 t/s
+slot print_timing: id  0 | task 5113 | n_gen =    440, tg =   5.82 t/s, tg_3s =   5.73 t/s
+slot print_timing: id  0 | task 5113 | n_gen =    458, tg =   5.82 t/s, tg_3s =   5.82 t/s
+slot print_timing: id  0 | task 5113 | prompt eval time =     486.34 ms /    52 tokens (    9.35 ms per token,   106.92 tokens per second)
+slot print_timing: id  0 | task 5113 |        eval time =   78999.26 ms /   461 tokens (  171.74 ms per token,     5.82 tokens per second)
+slot print_timing: id  0 | task 5113 |       total time =   79485.60 ms /   513 tokens
+slot print_timing: id  0 | task 5113 |    graphs reused =       5508
+slot      release: id  0 | task 5113 | stop processing: n_tokens = 1712, truncated = 0
+srv  update_slots: all slots are idle
+[GIN] 2026/09/30 - 21:30:13 | 200 |         1m19s |       127.0.0.1 | POST     "/api/chat"
+[GIN] 2026/09/30 - 21:30:13 | 200 |      32.946µs |       127.0.0.1 | GET      "/api/ps"
+srv    operator(): operator(): cleaning up before exit...

@@ -1,0 +1,4034 @@
+{
+  "status": "research_workspace",
+  "version": "jnj-pretax-investment-path-v1",
+  "sourcePeriod": [
+    "2025-06-30",
+    "2026-06-28"
+  ],
+  "accession": "0000200406-26-000153",
+  "corpusHash": "57cd21cfb2c13891c8b2e7d49a6012eb89a7aba8a2d2d12f06bb0383ba701a6a",
+  "currency": "USD",
+  "displayScale": 1000000000.0,
+  "displayUnit": "십억 달러",
+  "basisLabel": "보고 부문 세전이익·미배분 비용 및 세 기간 현금 대사",
+  "groupLabel": "보고 부문 (세전이익 기준)",
+  "growthLabel": "같은 상반기 대비",
+  "marginLabel": "부문 세전이익률",
+  "pretaxPath": true,
+  "unallocatedPath": true,
+  "corporateLabel": "미배분 소송·이자·본사 순비용",
+  "netInterestLabel": "추가 순이자 (미배분 비용 포함·0 고정)",
+  "capexLabel": "설비·인수·취득 연구개발·기타 투자",
+  "segments": [
+    {
+      "id": "InnovativeMedicineMember",
+      "label": "Innovative Medicine",
+      "revenue": 63136000000.0,
+      "margin": 0.3654016725798277,
+      "priorMargin": 0.37014617368873604,
+      "observedGrowth": 0.09406706792777308,
+      "evidence": [
+        {
+          "value": 63136000000.0,
+          "components": [
+            {
+              "coefficient": 1,
+              "fact": {
+                "start": "2024-12-30",
+                "end": "2025-12-28",
+                "dimensions": [
+                  [
+                    "ConsolidationItemsAxis",
+                    "OperatingSegmentsMember"
+                  ],
+                  [
+                    "StatementBusinessSegmentsAxis",
+                    "InnovativeMedicineMember"
+                  ]
+                ],
+                "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+                "taxonomy": "http://fasb.org/us-gaap/2025",
+                "value": 60401000000.0,
+                "unit": "USD",
+                "context": "c-922",
+                "factId": "f-2830",
+                "decimals": "-6",
+                "accession": "0000200406-26-000016",
+                "filedAt": "2026-02-11",
+                "sourceFile": "data/sources/filing-0000200406-26-000016-37d6dddc840c2dc7.xbrl",
+                "sourceHash": "37d6dddc840c2dc70cbb41d1d9fbfca17bdf0a0f3ae9cac4593b3b7c655937c9",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000016/jnj-20251228.htm"
+              }
+            },
+            {
+              "coefficient": 1,
+              "fact": {
+                "start": "2025-12-29",
+                "end": "2026-06-28",
+                "dimensions": [
+                  [
+                    "ConsolidationItemsAxis",
+                    "OperatingSegmentsMember"
+                  ],
+                  [
+                    "StatementBusinessSegmentsAxis",
+                    "InnovativeMedicineMember"
+                  ]
+                ],
+                "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+                "taxonomy": "http://fasb.org/us-gaap/2026",
+                "value": 31810000000.0,
+                "unit": "USD",
+                "context": "c-995",
+                "factId": "f-2116",
+                "decimals": "-6",
+                "accession": "0000200406-26-000153",
+                "filedAt": "2026-07-23",
+                "sourceFile": "data/sources/filing-0000200406-26-000153-0dd82cf03dc273d1.xbrl",
+                "sourceHash": "0dd82cf03dc273d1818ed17eea3a378dcb7204c8aee16a2593b2697274260871",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+              }
+            },
+            {
+              "coefficient": -1,
+              "fact": {
+                "start": "2024-12-30",
+                "end": "2025-06-29",
+                "dimensions": [
+                  [
+                    "ConsolidationItemsAxis",
+                    "OperatingSegmentsMember"
+                  ],
+                  [
+                    "StatementBusinessSegmentsAxis",
+                    "InnovativeMedicineMember"
+                  ]
+                ],
+                "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+                "taxonomy": "http://fasb.org/us-gaap/2026",
+                "value": 29075000000.0,
+                "unit": "USD",
+                "context": "c-997",
+                "factId": "f-2118",
+                "decimals": "-6",
+                "accession": "0000200406-26-000153",
+                "filedAt": "2026-07-23",
+                "sourceFile": "data/sources/filing-0000200406-26-000153-0dd82cf03dc273d1.xbrl",
+                "sourceHash": "0dd82cf03dc273d1818ed17eea3a378dcb7204c8aee16a2593b2697274260871",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+              }
+            }
+          ],
+          "start": "2025-06-30",
+          "end": "2026-06-28",
+          "unit": "USD",
+          "derived": true,
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+        },
+        {
+          "value": 23070000000.0,
+          "components": [
+            {
+              "coefficient": 1,
+              "fact": {
+                "start": "2024-12-30",
+                "end": "2025-12-28",
+                "dimensions": [
+                  [
+                    "ConsolidationItemsAxis",
+                    "OperatingSegmentsMember"
+                  ],
+                  [
+                    "StatementBusinessSegmentsAxis",
+                    "InnovativeMedicineMember"
+                  ]
+                ],
+                "tag": "IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest",
+                "taxonomy": "http://fasb.org/us-gaap/2025",
+                "value": 22266000000.0,
+                "unit": "USD",
+                "context": "c-922",
+                "factId": "f-2860",
+                "decimals": "-6",
+                "accession": "0000200406-26-000016",
+                "filedAt": "2026-02-11",
+                "sourceFile": "data/sources/filing-0000200406-26-000016-37d6dddc840c2dc7.xbrl",
+                "sourceHash": "37d6dddc840c2dc70cbb41d1d9fbfca17bdf0a0f3ae9cac4593b3b7c655937c9",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000016/jnj-20251228.htm"
+              }
+            },
+            {
+              "coefficient": 1,
+              "fact": {
+                "start": "2025-12-29",
+                "end": "2026-06-28",
+                "dimensions": [
+                  [
+                    "ConsolidationItemsAxis",
+                    "OperatingSegmentsMember"
+                  ],
+                  [
+                    "StatementBusinessSegmentsAxis",
+                    "InnovativeMedicineMember"
+                  ]
+                ],
+                "tag": "IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest",
+                "taxonomy": "http://fasb.org/us-gaap/2026",
+                "value": 11566000000.0,
+                "unit": "USD",
+                "context": "c-995",
+                "factId": "f-2136",
+                "decimals": "-6",
+                "accession": "0000200406-26-000153",
+                "filedAt": "2026-07-23",
+                "sourceFile": "data/sources/filing-0000200406-26-000153-0dd82cf03dc273d1.xbrl",
+                "sourceHash": "0dd82cf03dc273d1818ed17eea3a378dcb7204c8aee16a2593b2697274260871",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+              }
+            },
+            {
+              "coefficient": -1,
+              "fact": {
+                "start": "2024-12-30",
+                "end": "2025-06-29",
+                "dimensions": [
+                  [
+                    "ConsolidationItemsAxis",
+                    "OperatingSegmentsMember"
+                  ],
+                  [
+                    "StatementBusinessSegmentsAxis",
+                    "InnovativeMedicineMember"
+                  ]
+                ],
+                "tag": "IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest",
+                "taxonomy": "http://fasb.org/us-gaap/2026",
+                "value": 10762000000.0,
+                "unit": "USD",
+                "context": "c-997",
+                "factId": "f-2139",
+                "decimals": "-6",
+                "accession": "0000200406-26-000153",
+                "filedAt": "2026-07-23",
+                "sourceFile": "data/sources/filing-0000200406-26-000153-0dd82cf03dc273d1.xbrl",
+                "sourceHash": "0dd82cf03dc273d1818ed17eea3a378dcb7204c8aee16a2593b2697274260871",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+              }
+            }
+          ],
+          "start": "2025-06-30",
+          "end": "2026-06-28",
+          "unit": "USD",
+          "derived": true,
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+        },
+        {
+          "start": "2025-12-29",
+          "end": "2026-06-28",
+          "dimensions": [
+            [
+              "ConsolidationItemsAxis",
+              "OperatingSegmentsMember"
+            ],
+            [
+              "StatementBusinessSegmentsAxis",
+              "InnovativeMedicineMember"
+            ]
+          ],
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "taxonomy": "http://fasb.org/us-gaap/2026",
+          "value": 31810000000.0,
+          "unit": "USD",
+          "context": "c-995",
+          "factId": "f-2116",
+          "decimals": "-6",
+          "accession": "0000200406-26-000153",
+          "filedAt": "2026-07-23",
+          "sourceFile": "data/sources/filing-0000200406-26-000153-0dd82cf03dc273d1.xbrl",
+          "sourceHash": "0dd82cf03dc273d1818ed17eea3a378dcb7204c8aee16a2593b2697274260871",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+        },
+        {
+          "start": "2024-12-30",
+          "end": "2025-06-29",
+          "dimensions": [
+            [
+              "ConsolidationItemsAxis",
+              "OperatingSegmentsMember"
+            ],
+            [
+              "StatementBusinessSegmentsAxis",
+              "InnovativeMedicineMember"
+            ]
+          ],
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "taxonomy": "http://fasb.org/us-gaap/2026",
+          "value": 29075000000.0,
+          "unit": "USD",
+          "context": "c-997",
+          "factId": "f-2118",
+          "decimals": "-6",
+          "accession": "0000200406-26-000153",
+          "filedAt": "2026-07-23",
+          "sourceFile": "data/sources/filing-0000200406-26-000153-0dd82cf03dc273d1.xbrl",
+          "sourceHash": "0dd82cf03dc273d1818ed17eea3a378dcb7204c8aee16a2593b2697274260871",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+        },
+        {
+          "start": "2025-12-29",
+          "end": "2026-06-28",
+          "dimensions": [
+            [
+              "ConsolidationItemsAxis",
+              "OperatingSegmentsMember"
+            ],
+            [
+              "StatementBusinessSegmentsAxis",
+              "InnovativeMedicineMember"
+            ]
+          ],
+          "tag": "IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest",
+          "taxonomy": "http://fasb.org/us-gaap/2026",
+          "value": 11566000000.0,
+          "unit": "USD",
+          "context": "c-995",
+          "factId": "f-2136",
+          "decimals": "-6",
+          "accession": "0000200406-26-000153",
+          "filedAt": "2026-07-23",
+          "sourceFile": "data/sources/filing-0000200406-26-000153-0dd82cf03dc273d1.xbrl",
+          "sourceHash": "0dd82cf03dc273d1818ed17eea3a378dcb7204c8aee16a2593b2697274260871",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+        },
+        {
+          "start": "2024-12-30",
+          "end": "2025-06-29",
+          "dimensions": [
+            [
+              "ConsolidationItemsAxis",
+              "OperatingSegmentsMember"
+            ],
+            [
+              "StatementBusinessSegmentsAxis",
+              "InnovativeMedicineMember"
+            ]
+          ],
+          "tag": "IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest",
+          "taxonomy": "http://fasb.org/us-gaap/2026",
+          "value": 10762000000.0,
+          "unit": "USD",
+          "context": "c-997",
+          "factId": "f-2139",
+          "decimals": "-6",
+          "accession": "0000200406-26-000153",
+          "filedAt": "2026-07-23",
+          "sourceFile": "data/sources/filing-0000200406-26-000153-0dd82cf03dc273d1.xbrl",
+          "sourceHash": "0dd82cf03dc273d1818ed17eea3a378dcb7204c8aee16a2593b2697274260871",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+        }
+      ]
+    },
+    {
+      "id": "MedTechMember",
+      "label": "MedTech",
+      "revenue": 34793000000.0,
+      "margin": 0.11220647831460351,
+      "priorMargin": 0.1585049212004106,
+      "observedGrowth": 0.06044320995108987,
+      "evidence": [
+        {
+          "value": 34793000000.0,
+          "components": [
+            {
+              "coefficient": 1,
+              "fact": {
+                "start": "2024-12-30",
+                "end": "2025-12-28",
+                "dimensions": [
+                  [
+                    "ConsolidationItemsAxis",
+                    "OperatingSegmentsMember"
+                  ],
+                  [
+                    "StatementBusinessSegmentsAxis",
+                    "MedTechMember"
+                  ]
+                ],
+                "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+                "taxonomy": "http://fasb.org/us-gaap/2025",
+                "value": 33792000000.0,
+                "unit": "USD",
+                "context": "c-923",
+                "factId": "f-2831",
+                "decimals": "-6",
+                "accession": "0000200406-26-000016",
+                "filedAt": "2026-02-11",
+                "sourceFile": "data/sources/filing-0000200406-26-000016-37d6dddc840c2dc7.xbrl",
+                "sourceHash": "37d6dddc840c2dc70cbb41d1d9fbfca17bdf0a0f3ae9cac4593b3b7c655937c9",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000016/jnj-20251228.htm"
+              }
+            },
+            {
+              "coefficient": 1,
+              "fact": {
+                "start": "2025-12-29",
+                "end": "2026-06-28",
+                "dimensions": [
+                  [
+                    "ConsolidationItemsAxis",
+                    "OperatingSegmentsMember"
+                  ],
+                  [
+                    "StatementBusinessSegmentsAxis",
+                    "MedTechMember"
+                  ]
+                ],
+                "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+                "taxonomy": "http://fasb.org/us-gaap/2026",
+                "value": 17562000000.0,
+                "unit": "USD",
+                "context": "c-996",
+                "factId": "f-2117",
+                "decimals": "-6",
+                "accession": "0000200406-26-000153",
+                "filedAt": "2026-07-23",
+                "sourceFile": "data/sources/filing-0000200406-26-000153-0dd82cf03dc273d1.xbrl",
+                "sourceHash": "0dd82cf03dc273d1818ed17eea3a378dcb7204c8aee16a2593b2697274260871",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+              }
+            },
+            {
+              "coefficient": -1,
+              "fact": {
+                "start": "2024-12-30",
+                "end": "2025-06-29",
+                "dimensions": [
+                  [
+                    "ConsolidationItemsAxis",
+                    "OperatingSegmentsMember"
+                  ],
+                  [
+                    "StatementBusinessSegmentsAxis",
+                    "MedTechMember"
+                  ]
+                ],
+                "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+                "taxonomy": "http://fasb.org/us-gaap/2026",
+                "value": 16561000000.0,
+                "unit": "USD",
+                "context": "c-998",
+                "factId": "f-2119",
+                "decimals": "-6",
+                "accession": "0000200406-26-000153",
+                "filedAt": "2026-07-23",
+                "sourceFile": "data/sources/filing-0000200406-26-000153-0dd82cf03dc273d1.xbrl",
+                "sourceHash": "0dd82cf03dc273d1818ed17eea3a378dcb7204c8aee16a2593b2697274260871",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+              }
+            }
+          ],
+          "start": "2025-06-30",
+          "end": "2026-06-28",
+          "unit": "USD",
+          "derived": true,
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+        },
+        {
+          "value": 3904000000.0,
+          "components": [
+            {
+              "coefficient": 1,
+              "fact": {
+                "start": "2024-12-30",
+                "end": "2025-12-28",
+                "dimensions": [
+                  [
+                    "ConsolidationItemsAxis",
+                    "OperatingSegmentsMember"
+                  ],
+                  [
+                    "StatementBusinessSegmentsAxis",
+                    "MedTechMember"
+                  ]
+                ],
+                "tag": "IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest",
+                "taxonomy": "http://fasb.org/us-gaap/2025",
+                "value": 4113000000.0,
+                "unit": "USD",
+                "context": "c-923",
+                "factId": "f-2861",
+                "decimals": "-6",
+                "accession": "0000200406-26-000016",
+                "filedAt": "2026-02-11",
+                "sourceFile": "data/sources/filing-0000200406-26-000016-37d6dddc840c2dc7.xbrl",
+                "sourceHash": "37d6dddc840c2dc70cbb41d1d9fbfca17bdf0a0f3ae9cac4593b3b7c655937c9",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000016/jnj-20251228.htm"
+              }
+            },
+            {
+              "coefficient": 1,
+              "fact": {
+                "start": "2025-12-29",
+                "end": "2026-06-28",
+                "dimensions": [
+                  [
+                    "ConsolidationItemsAxis",
+                    "OperatingSegmentsMember"
+                  ],
+                  [
+                    "StatementBusinessSegmentsAxis",
+                    "MedTechMember"
+                  ]
+                ],
+                "tag": "IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest",
+                "taxonomy": "http://fasb.org/us-gaap/2026",
+                "value": 2416000000.0,
+                "unit": "USD",
+                "context": "c-996",
+                "factId": "f-2137",
+                "decimals": "-6",
+                "accession": "0000200406-26-000153",
+                "filedAt": "2026-07-23",
+                "sourceFile": "data/sources/filing-0000200406-26-000153-0dd82cf03dc273d1.xbrl",
+                "sourceHash": "0dd82cf03dc273d1818ed17eea3a378dcb7204c8aee16a2593b2697274260871",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+              }
+            },
+            {
+              "coefficient": -1,
+              "fact": {
+                "start": "2024-12-30",
+                "end": "2025-06-29",
+                "dimensions": [
+                  [
+                    "ConsolidationItemsAxis",
+                    "OperatingSegmentsMember"
+                  ],
+                  [
+                    "StatementBusinessSegmentsAxis",
+                    "MedTechMember"
+                  ]
+                ],
+                "tag": "IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest",
+                "taxonomy": "http://fasb.org/us-gaap/2026",
+                "value": 2625000000.0,
+                "unit": "USD",
+                "context": "c-998",
+                "factId": "f-2140",
+                "decimals": "-6",
+                "accession": "0000200406-26-000153",
+                "filedAt": "2026-07-23",
+                "sourceFile": "data/sources/filing-0000200406-26-000153-0dd82cf03dc273d1.xbrl",
+                "sourceHash": "0dd82cf03dc273d1818ed17eea3a378dcb7204c8aee16a2593b2697274260871",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+              }
+            }
+          ],
+          "start": "2025-06-30",
+          "end": "2026-06-28",
+          "unit": "USD",
+          "derived": true,
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+        },
+        {
+          "start": "2025-12-29",
+          "end": "2026-06-28",
+          "dimensions": [
+            [
+              "ConsolidationItemsAxis",
+              "OperatingSegmentsMember"
+            ],
+            [
+              "StatementBusinessSegmentsAxis",
+              "MedTechMember"
+            ]
+          ],
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "taxonomy": "http://fasb.org/us-gaap/2026",
+          "value": 17562000000.0,
+          "unit": "USD",
+          "context": "c-996",
+          "factId": "f-2117",
+          "decimals": "-6",
+          "accession": "0000200406-26-000153",
+          "filedAt": "2026-07-23",
+          "sourceFile": "data/sources/filing-0000200406-26-000153-0dd82cf03dc273d1.xbrl",
+          "sourceHash": "0dd82cf03dc273d1818ed17eea3a378dcb7204c8aee16a2593b2697274260871",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+        },
+        {
+          "start": "2024-12-30",
+          "end": "2025-06-29",
+          "dimensions": [
+            [
+              "ConsolidationItemsAxis",
+              "OperatingSegmentsMember"
+            ],
+            [
+              "StatementBusinessSegmentsAxis",
+              "MedTechMember"
+            ]
+          ],
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "taxonomy": "http://fasb.org/us-gaap/2026",
+          "value": 16561000000.0,
+          "unit": "USD",
+          "context": "c-998",
+          "factId": "f-2119",
+          "decimals": "-6",
+          "accession": "0000200406-26-000153",
+          "filedAt": "2026-07-23",
+          "sourceFile": "data/sources/filing-0000200406-26-000153-0dd82cf03dc273d1.xbrl",
+          "sourceHash": "0dd82cf03dc273d1818ed17eea3a378dcb7204c8aee16a2593b2697274260871",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+        },
+        {
+          "start": "2025-12-29",
+          "end": "2026-06-28",
+          "dimensions": [
+            [
+              "ConsolidationItemsAxis",
+              "OperatingSegmentsMember"
+            ],
+            [
+              "StatementBusinessSegmentsAxis",
+              "MedTechMember"
+            ]
+          ],
+          "tag": "IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest",
+          "taxonomy": "http://fasb.org/us-gaap/2026",
+          "value": 2416000000.0,
+          "unit": "USD",
+          "context": "c-996",
+          "factId": "f-2137",
+          "decimals": "-6",
+          "accession": "0000200406-26-000153",
+          "filedAt": "2026-07-23",
+          "sourceFile": "data/sources/filing-0000200406-26-000153-0dd82cf03dc273d1.xbrl",
+          "sourceHash": "0dd82cf03dc273d1818ed17eea3a378dcb7204c8aee16a2593b2697274260871",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+        },
+        {
+          "start": "2024-12-30",
+          "end": "2025-06-29",
+          "dimensions": [
+            [
+              "ConsolidationItemsAxis",
+              "OperatingSegmentsMember"
+            ],
+            [
+              "StatementBusinessSegmentsAxis",
+              "MedTechMember"
+            ]
+          ],
+          "tag": "IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest",
+          "taxonomy": "http://fasb.org/us-gaap/2026",
+          "value": 2625000000.0,
+          "unit": "USD",
+          "context": "c-998",
+          "factId": "f-2140",
+          "decimals": "-6",
+          "accession": "0000200406-26-000153",
+          "filedAt": "2026-07-23",
+          "sourceFile": "data/sources/filing-0000200406-26-000153-0dd82cf03dc273d1.xbrl",
+          "sourceHash": "0dd82cf03dc273d1818ed17eea3a378dcb7204c8aee16a2593b2697274260871",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+        }
+      ]
+    }
+  ],
+  "facts": {
+    "revenue": {
+      "value": 97929000000.0,
+      "components": [
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2024-12-30",
+            "end": "2025-12-28",
+            "dimensions": [],
+            "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": 94193000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-160",
+            "decimals": "-6",
+            "accession": "0000200406-26-000016",
+            "filedAt": "2026-02-11",
+            "sourceFile": "data/sources/filing-0000200406-26-000016-37d6dddc840c2dc7.xbrl",
+            "sourceHash": "37d6dddc840c2dc70cbb41d1d9fbfca17bdf0a0f3ae9cac4593b3b7c655937c9",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000016/jnj-20251228.htm"
+          }
+        },
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2025-12-29",
+            "end": "2026-06-28",
+            "dimensions": [],
+            "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": 49372000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-194",
+            "decimals": "-6",
+            "accession": "0000200406-26-000153",
+            "filedAt": "2026-07-23",
+            "sourceFile": "data/sources/filing-0000200406-26-000153-0dd82cf03dc273d1.xbrl",
+            "sourceHash": "0dd82cf03dc273d1818ed17eea3a378dcb7204c8aee16a2593b2697274260871",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+          }
+        },
+        {
+          "coefficient": -1,
+          "fact": {
+            "start": "2024-12-30",
+            "end": "2025-06-29",
+            "dimensions": [],
+            "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": 45636000000.0,
+            "unit": "USD",
+            "context": "c-18",
+            "factId": "f-196",
+            "decimals": "-6",
+            "accession": "0000200406-26-000153",
+            "filedAt": "2026-07-23",
+            "sourceFile": "data/sources/filing-0000200406-26-000153-0dd82cf03dc273d1.xbrl",
+            "sourceHash": "0dd82cf03dc273d1818ed17eea3a378dcb7204c8aee16a2593b2697274260871",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+          }
+        }
+      ],
+      "start": "2025-06-30",
+      "end": "2026-06-28",
+      "unit": "USD",
+      "derived": true,
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+    },
+    "pretax": {
+      "value": 25196000000.0,
+      "components": [
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2024-12-30",
+            "end": "2025-12-28",
+            "dimensions": [],
+            "tag": "IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": 32581000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-190",
+            "decimals": "-6",
+            "accession": "0000200406-26-000016",
+            "filedAt": "2026-02-11",
+            "sourceFile": "data/sources/filing-0000200406-26-000016-37d6dddc840c2dc7.xbrl",
+            "sourceHash": "37d6dddc840c2dc70cbb41d1d9fbfca17bdf0a0f3ae9cac4593b3b7c655937c9",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000016/jnj-20251228.htm"
+          }
+        },
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2025-12-29",
+            "end": "2026-06-28",
+            "dimensions": [],
+            "tag": "IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": 12737000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-234",
+            "decimals": "-6",
+            "accession": "0000200406-26-000153",
+            "filedAt": "2026-07-23",
+            "sourceFile": "data/sources/filing-0000200406-26-000153-0dd82cf03dc273d1.xbrl",
+            "sourceHash": "0dd82cf03dc273d1818ed17eea3a378dcb7204c8aee16a2593b2697274260871",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+          }
+        },
+        {
+          "coefficient": -1,
+          "fact": {
+            "start": "2024-12-30",
+            "end": "2025-06-29",
+            "dimensions": [],
+            "tag": "IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": 20122000000.0,
+            "unit": "USD",
+            "context": "c-18",
+            "factId": "f-236",
+            "decimals": "-6",
+            "accession": "0000200406-26-000153",
+            "filedAt": "2026-07-23",
+            "sourceFile": "data/sources/filing-0000200406-26-000153-0dd82cf03dc273d1.xbrl",
+            "sourceHash": "0dd82cf03dc273d1818ed17eea3a378dcb7204c8aee16a2593b2697274260871",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+          }
+        }
+      ],
+      "start": "2025-06-30",
+      "end": "2026-06-28",
+      "unit": "USD",
+      "derived": true,
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+    },
+    "unallocated": {
+      "value": 1778000000.0,
+      "components": [
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2024-12-30",
+            "end": "2025-12-28",
+            "dimensions": [],
+            "tag": "SegmentReportingOtherItemAmount",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": -6202000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-2869",
+            "decimals": "-6",
+            "accession": "0000200406-26-000016",
+            "filedAt": "2026-02-11",
+            "sourceFile": "data/sources/filing-0000200406-26-000016-37d6dddc840c2dc7.xbrl",
+            "sourceHash": "37d6dddc840c2dc70cbb41d1d9fbfca17bdf0a0f3ae9cac4593b3b7c655937c9",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000016/jnj-20251228.htm"
+          }
+        },
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2025-12-29",
+            "end": "2026-06-28",
+            "dimensions": [],
+            "tag": "SegmentReportingOtherItemAmount",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": 1245000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-2142",
+            "decimals": "-6",
+            "accession": "0000200406-26-000153",
+            "filedAt": "2026-07-23",
+            "sourceFile": "data/sources/filing-0000200406-26-000153-0dd82cf03dc273d1.xbrl",
+            "sourceHash": "0dd82cf03dc273d1818ed17eea3a378dcb7204c8aee16a2593b2697274260871",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+          }
+        },
+        {
+          "coefficient": -1,
+          "fact": {
+            "start": "2024-12-30",
+            "end": "2025-06-29",
+            "dimensions": [],
+            "tag": "SegmentReportingOtherItemAmount",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": -6735000000.0,
+            "unit": "USD",
+            "context": "c-18",
+            "factId": "f-2143",
+            "decimals": "-6",
+            "accession": "0000200406-26-000153",
+            "filedAt": "2026-07-23",
+            "sourceFile": "data/sources/filing-0000200406-26-000153-0dd82cf03dc273d1.xbrl",
+            "sourceHash": "0dd82cf03dc273d1818ed17eea3a378dcb7204c8aee16a2593b2697274260871",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+          }
+        }
+      ],
+      "start": "2025-06-30",
+      "end": "2026-06-28",
+      "unit": "USD",
+      "derived": true,
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+    },
+    "netIncome": {
+      "value": 21037000000.0,
+      "components": [
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2024-12-30",
+            "end": "2025-12-28",
+            "dimensions": [],
+            "tag": "NetIncomeLoss",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": 26804000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-202",
+            "decimals": "-6",
+            "accession": "0000200406-26-000016",
+            "filedAt": "2026-02-11",
+            "sourceFile": "data/sources/filing-0000200406-26-000016-37d6dddc840c2dc7.xbrl",
+            "sourceHash": "37d6dddc840c2dc70cbb41d1d9fbfca17bdf0a0f3ae9cac4593b3b7c655937c9",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000016/jnj-20251228.htm"
+          }
+        },
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2025-12-29",
+            "end": "2026-06-28",
+            "dimensions": [],
+            "tag": "NetIncomeLoss",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": 10769000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-242",
+            "decimals": "-6",
+            "accession": "0000200406-26-000153",
+            "filedAt": "2026-07-23",
+            "sourceFile": "data/sources/filing-0000200406-26-000153-0dd82cf03dc273d1.xbrl",
+            "sourceHash": "0dd82cf03dc273d1818ed17eea3a378dcb7204c8aee16a2593b2697274260871",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+          }
+        },
+        {
+          "coefficient": -1,
+          "fact": {
+            "start": "2024-12-30",
+            "end": "2025-06-29",
+            "dimensions": [],
+            "tag": "NetIncomeLoss",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": 16536000000.0,
+            "unit": "USD",
+            "context": "c-18",
+            "factId": "f-244",
+            "decimals": "-6",
+            "accession": "0000200406-26-000153",
+            "filedAt": "2026-07-23",
+            "sourceFile": "data/sources/filing-0000200406-26-000153-0dd82cf03dc273d1.xbrl",
+            "sourceHash": "0dd82cf03dc273d1818ed17eea3a378dcb7204c8aee16a2593b2697274260871",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+          }
+        }
+      ],
+      "start": "2025-06-30",
+      "end": "2026-06-28",
+      "unit": "USD",
+      "derived": true,
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+    },
+    "tax": {
+      "value": 4159000000.0,
+      "components": [
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2024-12-30",
+            "end": "2025-12-28",
+            "dimensions": [],
+            "tag": "IncomeTaxExpenseBenefit",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": 5777000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-193",
+            "decimals": "-6",
+            "accession": "0000200406-26-000016",
+            "filedAt": "2026-02-11",
+            "sourceFile": "data/sources/filing-0000200406-26-000016-37d6dddc840c2dc7.xbrl",
+            "sourceHash": "37d6dddc840c2dc70cbb41d1d9fbfca17bdf0a0f3ae9cac4593b3b7c655937c9",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000016/jnj-20251228.htm"
+          }
+        },
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2025-12-29",
+            "end": "2026-06-28",
+            "dimensions": [],
+            "tag": "IncomeTaxExpenseBenefit",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": 1968000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-238",
+            "decimals": "-6",
+            "accession": "0000200406-26-000153",
+            "filedAt": "2026-07-23",
+            "sourceFile": "data/sources/filing-0000200406-26-000153-0dd82cf03dc273d1.xbrl",
+            "sourceHash": "0dd82cf03dc273d1818ed17eea3a378dcb7204c8aee16a2593b2697274260871",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+          }
+        },
+        {
+          "coefficient": -1,
+          "fact": {
+            "start": "2024-12-30",
+            "end": "2025-06-29",
+            "dimensions": [],
+            "tag": "IncomeTaxExpenseBenefit",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": 3586000000.0,
+            "unit": "USD",
+            "context": "c-18",
+            "factId": "f-240",
+            "decimals": "-6",
+            "accession": "0000200406-26-000153",
+            "filedAt": "2026-07-23",
+            "sourceFile": "data/sources/filing-0000200406-26-000153-0dd82cf03dc273d1.xbrl",
+            "sourceHash": "0dd82cf03dc273d1818ed17eea3a378dcb7204c8aee16a2593b2697274260871",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+          }
+        }
+      ],
+      "start": "2025-06-30",
+      "end": "2026-06-28",
+      "unit": "USD",
+      "derived": true,
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+    },
+    "cfo": {
+      "value": 27608000000.0,
+      "components": [
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2024-12-30",
+            "end": "2025-12-28",
+            "dimensions": [],
+            "tag": "NetCashProvidedByUsedInOperatingActivities",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": 24530000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-387",
+            "decimals": "-6",
+            "accession": "0000200406-26-000016",
+            "filedAt": "2026-02-11",
+            "sourceFile": "data/sources/filing-0000200406-26-000016-37d6dddc840c2dc7.xbrl",
+            "sourceHash": "37d6dddc840c2dc70cbb41d1d9fbfca17bdf0a0f3ae9cac4593b3b7c655937c9",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000016/jnj-20251228.htm"
+          }
+        },
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2025-12-29",
+            "end": "2026-06-28",
+            "dimensions": [],
+            "tag": "NetCashProvidedByUsedInOperatingActivities",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": 11130000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-428",
+            "decimals": "-6",
+            "accession": "0000200406-26-000153",
+            "filedAt": "2026-07-23",
+            "sourceFile": "data/sources/filing-0000200406-26-000153-0dd82cf03dc273d1.xbrl",
+            "sourceHash": "0dd82cf03dc273d1818ed17eea3a378dcb7204c8aee16a2593b2697274260871",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+          }
+        },
+        {
+          "coefficient": -1,
+          "fact": {
+            "start": "2024-12-30",
+            "end": "2025-06-29",
+            "dimensions": [],
+            "tag": "NetCashProvidedByUsedInOperatingActivities",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": 8052000000.0,
+            "unit": "USD",
+            "context": "c-18",
+            "factId": "f-429",
+            "decimals": "-6",
+            "accession": "0000200406-26-000153",
+            "filedAt": "2026-07-23",
+            "sourceFile": "data/sources/filing-0000200406-26-000153-0dd82cf03dc273d1.xbrl",
+            "sourceHash": "0dd82cf03dc273d1818ed17eea3a378dcb7204c8aee16a2593b2697274260871",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+          }
+        }
+      ],
+      "start": "2025-06-30",
+      "end": "2026-06-28",
+      "unit": "USD",
+      "derived": true,
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+    },
+    "depreciation": {
+      "value": 7751000000.0,
+      "components": [
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2024-12-30",
+            "end": "2025-12-28",
+            "dimensions": [],
+            "tag": "DepreciationDepletionAndAmortization",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": 7503000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-348",
+            "decimals": "-6",
+            "accession": "0000200406-26-000016",
+            "filedAt": "2026-02-11",
+            "sourceFile": "data/sources/filing-0000200406-26-000016-37d6dddc840c2dc7.xbrl",
+            "sourceHash": "37d6dddc840c2dc70cbb41d1d9fbfca17bdf0a0f3ae9cac4593b3b7c655937c9",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000016/jnj-20251228.htm"
+          }
+        },
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2025-12-29",
+            "end": "2026-06-28",
+            "dimensions": [],
+            "tag": "DepreciationDepletionAndAmortization",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": 3963000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-404",
+            "decimals": "-6",
+            "accession": "0000200406-26-000153",
+            "filedAt": "2026-07-23",
+            "sourceFile": "data/sources/filing-0000200406-26-000153-0dd82cf03dc273d1.xbrl",
+            "sourceHash": "0dd82cf03dc273d1818ed17eea3a378dcb7204c8aee16a2593b2697274260871",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+          }
+        },
+        {
+          "coefficient": -1,
+          "fact": {
+            "start": "2024-12-30",
+            "end": "2025-06-29",
+            "dimensions": [],
+            "tag": "DepreciationDepletionAndAmortization",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": 3715000000.0,
+            "unit": "USD",
+            "context": "c-18",
+            "factId": "f-405",
+            "decimals": "-6",
+            "accession": "0000200406-26-000153",
+            "filedAt": "2026-07-23",
+            "sourceFile": "data/sources/filing-0000200406-26-000153-0dd82cf03dc273d1.xbrl",
+            "sourceHash": "0dd82cf03dc273d1818ed17eea3a378dcb7204c8aee16a2593b2697274260871",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+          }
+        }
+      ],
+      "start": "2025-06-30",
+      "end": "2026-06-28",
+      "unit": "USD",
+      "derived": true,
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+    },
+    "sbc": {
+      "value": 1414000000.0,
+      "components": [
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2024-12-30",
+            "end": "2025-12-28",
+            "dimensions": [],
+            "tag": "ShareBasedCompensation",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": 1354000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-351",
+            "decimals": "-6",
+            "accession": "0000200406-26-000016",
+            "filedAt": "2026-02-11",
+            "sourceFile": "data/sources/filing-0000200406-26-000016-37d6dddc840c2dc7.xbrl",
+            "sourceHash": "37d6dddc840c2dc70cbb41d1d9fbfca17bdf0a0f3ae9cac4593b3b7c655937c9",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000016/jnj-20251228.htm"
+          }
+        },
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2025-12-29",
+            "end": "2026-06-28",
+            "dimensions": [],
+            "tag": "ShareBasedCompensation",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": 758000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-406",
+            "decimals": "-6",
+            "accession": "0000200406-26-000153",
+            "filedAt": "2026-07-23",
+            "sourceFile": "data/sources/filing-0000200406-26-000153-0dd82cf03dc273d1.xbrl",
+            "sourceHash": "0dd82cf03dc273d1818ed17eea3a378dcb7204c8aee16a2593b2697274260871",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+          }
+        },
+        {
+          "coefficient": -1,
+          "fact": {
+            "start": "2024-12-30",
+            "end": "2025-06-29",
+            "dimensions": [],
+            "tag": "ShareBasedCompensation",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": 698000000.0,
+            "unit": "USD",
+            "context": "c-18",
+            "factId": "f-407",
+            "decimals": "-6",
+            "accession": "0000200406-26-000153",
+            "filedAt": "2026-07-23",
+            "sourceFile": "data/sources/filing-0000200406-26-000153-0dd82cf03dc273d1.xbrl",
+            "sourceHash": "0dd82cf03dc273d1818ed17eea3a378dcb7204c8aee16a2593b2697274260871",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+          }
+        }
+      ],
+      "start": "2025-06-30",
+      "end": "2026-06-28",
+      "unit": "USD",
+      "derived": true,
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+    },
+    "ppe": {
+      "value": 5364000000.0,
+      "components": [
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2024-12-30",
+            "end": "2025-12-28",
+            "dimensions": [],
+            "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": 4832000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-390",
+            "decimals": "-6",
+            "accession": "0000200406-26-000016",
+            "filedAt": "2026-02-11",
+            "sourceFile": "data/sources/filing-0000200406-26-000016-37d6dddc840c2dc7.xbrl",
+            "sourceHash": "37d6dddc840c2dc70cbb41d1d9fbfca17bdf0a0f3ae9cac4593b3b7c655937c9",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000016/jnj-20251228.htm"
+          }
+        },
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2025-12-29",
+            "end": "2026-06-28",
+            "dimensions": [],
+            "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": 2370000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-430",
+            "decimals": "-6",
+            "accession": "0000200406-26-000153",
+            "filedAt": "2026-07-23",
+            "sourceFile": "data/sources/filing-0000200406-26-000153-0dd82cf03dc273d1.xbrl",
+            "sourceHash": "0dd82cf03dc273d1818ed17eea3a378dcb7204c8aee16a2593b2697274260871",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+          }
+        },
+        {
+          "coefficient": -1,
+          "fact": {
+            "start": "2024-12-30",
+            "end": "2025-06-29",
+            "dimensions": [],
+            "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": 1838000000.0,
+            "unit": "USD",
+            "context": "c-18",
+            "factId": "f-431",
+            "decimals": "-6",
+            "accession": "0000200406-26-000153",
+            "filedAt": "2026-07-23",
+            "sourceFile": "data/sources/filing-0000200406-26-000153-0dd82cf03dc273d1.xbrl",
+            "sourceHash": "0dd82cf03dc273d1818ed17eea3a378dcb7204c8aee16a2593b2697274260871",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+          }
+        }
+      ],
+      "start": "2025-06-30",
+      "end": "2026-06-28",
+      "unit": "USD",
+      "derived": true,
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+    },
+    "acquisitions": {
+      "value": 3346000000.0,
+      "components": [
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2024-12-30",
+            "end": "2025-12-28",
+            "dimensions": [],
+            "tag": "PaymentsToAcquireBusinessesNetOfCashAcquired",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": 17541000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-396",
+            "decimals": "-6",
+            "accession": "0000200406-26-000016",
+            "filedAt": "2026-02-11",
+            "sourceFile": "data/sources/filing-0000200406-26-000016-37d6dddc840c2dc7.xbrl",
+            "sourceHash": "37d6dddc840c2dc70cbb41d1d9fbfca17bdf0a0f3ae9cac4593b3b7c655937c9",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000016/jnj-20251228.htm"
+          }
+        },
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2025-12-29",
+            "end": "2026-06-28",
+            "dimensions": [],
+            "tag": "PaymentsToAcquireBusinessesNetOfCashAcquired",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": 263000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-434",
+            "decimals": "-6",
+            "accession": "0000200406-26-000153",
+            "filedAt": "2026-07-23",
+            "sourceFile": "data/sources/filing-0000200406-26-000153-0dd82cf03dc273d1.xbrl",
+            "sourceHash": "0dd82cf03dc273d1818ed17eea3a378dcb7204c8aee16a2593b2697274260871",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+          }
+        },
+        {
+          "coefficient": -1,
+          "fact": {
+            "start": "2024-12-30",
+            "end": "2025-06-29",
+            "dimensions": [],
+            "tag": "PaymentsToAcquireBusinessesNetOfCashAcquired",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": 14458000000.0,
+            "unit": "USD",
+            "context": "c-18",
+            "factId": "f-435",
+            "decimals": "-6",
+            "accession": "0000200406-26-000153",
+            "filedAt": "2026-07-23",
+            "sourceFile": "data/sources/filing-0000200406-26-000153-0dd82cf03dc273d1.xbrl",
+            "sourceHash": "0dd82cf03dc273d1818ed17eea3a378dcb7204c8aee16a2593b2697274260871",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+          }
+        }
+      ],
+      "start": "2025-06-30",
+      "end": "2026-06-28",
+      "unit": "USD",
+      "derived": true,
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+    },
+    "researchPurchases": {
+      "value": 16000000.0,
+      "components": [
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2024-12-30",
+            "end": "2025-12-28",
+            "dimensions": [],
+            "tag": "PaymentsToAcquiredInProcessResearchAndDevelopmentAssets",
+            "taxonomy": "http://www.jnj.com/20251228",
+            "value": 385000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-399",
+            "decimals": "-6",
+            "accession": "0000200406-26-000016",
+            "filedAt": "2026-02-11",
+            "sourceFile": "data/sources/filing-0000200406-26-000016-37d6dddc840c2dc7.xbrl",
+            "sourceHash": "37d6dddc840c2dc70cbb41d1d9fbfca17bdf0a0f3ae9cac4593b3b7c655937c9",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000016/jnj-20251228.htm"
+          }
+        },
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2025-12-29",
+            "end": "2026-06-28",
+            "dimensions": [],
+            "tag": "PaymentsToAcquireInProcessResearchAndDevelopmentAssets",
+            "taxonomy": "http://www.jnj.com/20260628",
+            "value": 0.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-436",
+            "decimals": "-6",
+            "accession": "0000200406-26-000153",
+            "filedAt": "2026-07-23",
+            "sourceFile": "data/sources/filing-0000200406-26-000153-0dd82cf03dc273d1.xbrl",
+            "sourceHash": "0dd82cf03dc273d1818ed17eea3a378dcb7204c8aee16a2593b2697274260871",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+          }
+        },
+        {
+          "coefficient": -1,
+          "fact": {
+            "start": "2024-12-30",
+            "end": "2025-06-29",
+            "dimensions": [],
+            "tag": "PaymentsToAcquireInProcessResearchAndDevelopmentAssets",
+            "taxonomy": "http://www.jnj.com/20260628",
+            "value": 369000000.0,
+            "unit": "USD",
+            "context": "c-18",
+            "factId": "f-437",
+            "decimals": "-6",
+            "accession": "0000200406-26-000153",
+            "filedAt": "2026-07-23",
+            "sourceFile": "data/sources/filing-0000200406-26-000153-0dd82cf03dc273d1.xbrl",
+            "sourceHash": "0dd82cf03dc273d1818ed17eea3a378dcb7204c8aee16a2593b2697274260871",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+          }
+        }
+      ],
+      "start": "2025-06-30",
+      "end": "2026-06-28",
+      "unit": "USD",
+      "derived": true,
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+    },
+    "otherInvestment": {
+      "value": 289000000.0,
+      "components": [
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2024-12-30",
+            "end": "2025-12-28",
+            "dimensions": [],
+            "tag": "PaymentsForProceedsFromOtherInvestingActivities",
+            "taxonomy": "http://fasb.org/us-gaap/2025",
+            "value": 162000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-411",
+            "decimals": "-6",
+            "accession": "0000200406-26-000016",
+            "filedAt": "2026-02-11",
+            "sourceFile": "data/sources/filing-0000200406-26-000016-37d6dddc840c2dc7.xbrl",
+            "sourceHash": "37d6dddc840c2dc70cbb41d1d9fbfca17bdf0a0f3ae9cac4593b3b7c655937c9",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000016/jnj-20251228.htm"
+          }
+        },
+        {
+          "coefficient": 1,
+          "fact": {
+            "start": "2025-12-29",
+            "end": "2026-06-28",
+            "dimensions": [],
+            "tag": "PaymentsForProceedsFromOtherInvestingActivities",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": 193000000.0,
+            "unit": "USD",
+            "context": "c-1",
+            "factId": "f-444",
+            "decimals": "-6",
+            "accession": "0000200406-26-000153",
+            "filedAt": "2026-07-23",
+            "sourceFile": "data/sources/filing-0000200406-26-000153-0dd82cf03dc273d1.xbrl",
+            "sourceHash": "0dd82cf03dc273d1818ed17eea3a378dcb7204c8aee16a2593b2697274260871",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+          }
+        },
+        {
+          "coefficient": -1,
+          "fact": {
+            "start": "2024-12-30",
+            "end": "2025-06-29",
+            "dimensions": [],
+            "tag": "PaymentsForProceedsFromOtherInvestingActivities",
+            "taxonomy": "http://fasb.org/us-gaap/2026",
+            "value": 66000000.0,
+            "unit": "USD",
+            "context": "c-18",
+            "factId": "f-445",
+            "decimals": "-6",
+            "accession": "0000200406-26-000153",
+            "filedAt": "2026-07-23",
+            "sourceFile": "data/sources/filing-0000200406-26-000153-0dd82cf03dc273d1.xbrl",
+            "sourceHash": "0dd82cf03dc273d1818ed17eea3a378dcb7204c8aee16a2593b2697274260871",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+          }
+        }
+      ],
+      "start": "2025-06-30",
+      "end": "2026-06-28",
+      "unit": "USD",
+      "derived": true,
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+    }
+  },
+  "defaults": {
+    "segments": [
+      {
+        "growthStart": 0,
+        "growthEnd": 0,
+        "marginEnd": 0.3654016725798277
+      },
+      {
+        "growthStart": 0,
+        "growthEnd": 0,
+        "marginEnd": 0.11220647831460351
+      }
+    ],
+    "corporateStart": 0.018156010987552207,
+    "corporateEnd": 0.018156010987552207,
+    "tax": 0.25,
+    "netInterest": 0,
+    "depreciation": 0.07914917950760245,
+    "workingCapital": 0.7893468950749465,
+    "capexStart": 0.09205648990595228,
+    "capexEnd": 0.09205648990595228,
+    "leaseStart": 0,
+    "leaseEnd": 0,
+    "discount": 0.12,
+    "terminal": 0.02
+  },
+  "security": {
+    "additionalShareEvidence": [],
+    "classes": [],
+    "issues": [],
+    "marketCapProxy": 644816585249.9146,
+    "preferredEvidence": [],
+    "priceDate": "2026-09-29",
+    "scope": "공시에 기재된 유통주식수의 자체 기준일과 관측 종가의 시점 차이를 보존한다. 이후 발행·소각을 반영한 실시간 시가총액은 아니다.",
+    "shareAgeDays": 74,
+    "shareTable": null,
+    "shares": {
+      "accession": "0000200406-26-000153",
+      "context": "c-13",
+      "decimals": "INF",
+      "dimensions": [],
+      "end": "2026-07-17",
+      "factId": "f-59",
+      "filedAt": "2026-07-23",
+      "sourceFile": "data/sources/filing-0000200406-26-000153-0dd82cf03dc273d1.xbrl",
+      "sourceHash": "0dd82cf03dc273d1818ed17eea3a378dcb7204c8aee16a2593b2697274260871",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm",
+      "start": null,
+      "tag": "EntityCommonStockSharesOutstanding",
+      "taxonomy": "http://xbrl.sec.gov/dei/2026",
+      "unit": "shares",
+      "value": 2409898597.0
+    },
+    "status": "available"
+  },
+  "intro": "Innovative Medicine·MedTech의 보고 세전이익에서 미배분 비용을 차감합니다. 이 비용에는 이자·소송·본사 항목이 들어가므로 순이자를 다시 빼지 않습니다. 다른 기업의 영업이익률과 같은 지표로 비교하지 않습니다.",
+  "businessCaption": "제품 구성·인수·환율·평가손익과 사업 분리 비용이 보고 부문 이익에 포함됩니다. 최근 반기 성장률은 유기 성장이나 미래 전망이 아닙니다.",
+  "bridgeLabel": "순이익 → 공시 영업현금 대사 (보고 세전이익−법인세 별도 확인)",
+  "bridge": {
+    "parts": [
+      {
+        "label": "당기순이익",
+        "value": 21037000000.0,
+        "fact": {
+          "value": 21037000000.0,
+          "components": [
+            {
+              "coefficient": 1,
+              "fact": {
+                "start": "2024-12-30",
+                "end": "2025-12-28",
+                "dimensions": [],
+                "tag": "NetIncomeLoss",
+                "taxonomy": "http://fasb.org/us-gaap/2025",
+                "value": 26804000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-202",
+                "decimals": "-6",
+                "accession": "0000200406-26-000016",
+                "filedAt": "2026-02-11",
+                "sourceFile": "data/sources/filing-0000200406-26-000016-37d6dddc840c2dc7.xbrl",
+                "sourceHash": "37d6dddc840c2dc70cbb41d1d9fbfca17bdf0a0f3ae9cac4593b3b7c655937c9",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000016/jnj-20251228.htm"
+              }
+            },
+            {
+              "coefficient": 1,
+              "fact": {
+                "start": "2025-12-29",
+                "end": "2026-06-28",
+                "dimensions": [],
+                "tag": "NetIncomeLoss",
+                "taxonomy": "http://fasb.org/us-gaap/2026",
+                "value": 10769000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-242",
+                "decimals": "-6",
+                "accession": "0000200406-26-000153",
+                "filedAt": "2026-07-23",
+                "sourceFile": "data/sources/filing-0000200406-26-000153-0dd82cf03dc273d1.xbrl",
+                "sourceHash": "0dd82cf03dc273d1818ed17eea3a378dcb7204c8aee16a2593b2697274260871",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+              }
+            },
+            {
+              "coefficient": -1,
+              "fact": {
+                "start": "2024-12-30",
+                "end": "2025-06-29",
+                "dimensions": [],
+                "tag": "NetIncomeLoss",
+                "taxonomy": "http://fasb.org/us-gaap/2026",
+                "value": 16536000000.0,
+                "unit": "USD",
+                "context": "c-18",
+                "factId": "f-244",
+                "decimals": "-6",
+                "accession": "0000200406-26-000153",
+                "filedAt": "2026-07-23",
+                "sourceFile": "data/sources/filing-0000200406-26-000153-0dd82cf03dc273d1.xbrl",
+                "sourceHash": "0dd82cf03dc273d1818ed17eea3a378dcb7204c8aee16a2593b2697274260871",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+              }
+            }
+          ],
+          "start": "2025-06-30",
+          "end": "2026-06-28",
+          "unit": "USD",
+          "derived": true,
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+        }
+      },
+      {
+        "label": "감가상각·상각",
+        "value": 7751000000.0,
+        "fact": {
+          "value": 7751000000.0,
+          "components": [
+            {
+              "coefficient": 1,
+              "fact": {
+                "start": "2024-12-30",
+                "end": "2025-12-28",
+                "dimensions": [],
+                "tag": "DepreciationDepletionAndAmortization",
+                "taxonomy": "http://fasb.org/us-gaap/2025",
+                "value": 7503000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-348",
+                "decimals": "-6",
+                "accession": "0000200406-26-000016",
+                "filedAt": "2026-02-11",
+                "sourceFile": "data/sources/filing-0000200406-26-000016-37d6dddc840c2dc7.xbrl",
+                "sourceHash": "37d6dddc840c2dc70cbb41d1d9fbfca17bdf0a0f3ae9cac4593b3b7c655937c9",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000016/jnj-20251228.htm"
+              }
+            },
+            {
+              "coefficient": 1,
+              "fact": {
+                "start": "2025-12-29",
+                "end": "2026-06-28",
+                "dimensions": [],
+                "tag": "DepreciationDepletionAndAmortization",
+                "taxonomy": "http://fasb.org/us-gaap/2026",
+                "value": 3963000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-404",
+                "decimals": "-6",
+                "accession": "0000200406-26-000153",
+                "filedAt": "2026-07-23",
+                "sourceFile": "data/sources/filing-0000200406-26-000153-0dd82cf03dc273d1.xbrl",
+                "sourceHash": "0dd82cf03dc273d1818ed17eea3a378dcb7204c8aee16a2593b2697274260871",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+              }
+            },
+            {
+              "coefficient": -1,
+              "fact": {
+                "start": "2024-12-30",
+                "end": "2025-06-29",
+                "dimensions": [],
+                "tag": "DepreciationDepletionAndAmortization",
+                "taxonomy": "http://fasb.org/us-gaap/2026",
+                "value": 3715000000.0,
+                "unit": "USD",
+                "context": "c-18",
+                "factId": "f-405",
+                "decimals": "-6",
+                "accession": "0000200406-26-000153",
+                "filedAt": "2026-07-23",
+                "sourceFile": "data/sources/filing-0000200406-26-000153-0dd82cf03dc273d1.xbrl",
+                "sourceHash": "0dd82cf03dc273d1818ed17eea3a378dcb7204c8aee16a2593b2697274260871",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+              }
+            }
+          ],
+          "start": "2025-06-30",
+          "end": "2026-06-28",
+          "unit": "USD",
+          "derived": true,
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+        }
+      },
+      {
+        "label": "주식보상 되돌림",
+        "value": 1414000000.0,
+        "fact": {
+          "value": 1414000000.0,
+          "components": [
+            {
+              "coefficient": 1,
+              "fact": {
+                "start": "2024-12-30",
+                "end": "2025-12-28",
+                "dimensions": [],
+                "tag": "ShareBasedCompensation",
+                "taxonomy": "http://fasb.org/us-gaap/2025",
+                "value": 1354000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-351",
+                "decimals": "-6",
+                "accession": "0000200406-26-000016",
+                "filedAt": "2026-02-11",
+                "sourceFile": "data/sources/filing-0000200406-26-000016-37d6dddc840c2dc7.xbrl",
+                "sourceHash": "37d6dddc840c2dc70cbb41d1d9fbfca17bdf0a0f3ae9cac4593b3b7c655937c9",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000016/jnj-20251228.htm"
+              }
+            },
+            {
+              "coefficient": 1,
+              "fact": {
+                "start": "2025-12-29",
+                "end": "2026-06-28",
+                "dimensions": [],
+                "tag": "ShareBasedCompensation",
+                "taxonomy": "http://fasb.org/us-gaap/2026",
+                "value": 758000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-406",
+                "decimals": "-6",
+                "accession": "0000200406-26-000153",
+                "filedAt": "2026-07-23",
+                "sourceFile": "data/sources/filing-0000200406-26-000153-0dd82cf03dc273d1.xbrl",
+                "sourceHash": "0dd82cf03dc273d1818ed17eea3a378dcb7204c8aee16a2593b2697274260871",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+              }
+            },
+            {
+              "coefficient": -1,
+              "fact": {
+                "start": "2024-12-30",
+                "end": "2025-06-29",
+                "dimensions": [],
+                "tag": "ShareBasedCompensation",
+                "taxonomy": "http://fasb.org/us-gaap/2026",
+                "value": 698000000.0,
+                "unit": "USD",
+                "context": "c-18",
+                "factId": "f-407",
+                "decimals": "-6",
+                "accession": "0000200406-26-000153",
+                "filedAt": "2026-07-23",
+                "sourceFile": "data/sources/filing-0000200406-26-000153-0dd82cf03dc273d1.xbrl",
+                "sourceHash": "0dd82cf03dc273d1818ed17eea3a378dcb7204c8aee16a2593b2697274260871",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+              }
+            }
+          ],
+          "start": "2025-06-30",
+          "end": "2026-06-28",
+          "unit": "USD",
+          "derived": true,
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+        }
+      },
+      {
+        "label": "자산 감액",
+        "value": 394000000.0,
+        "fact": {
+          "value": 394000000.0,
+          "components": [
+            {
+              "coefficient": 1,
+              "fact": {
+                "start": "2024-12-30",
+                "end": "2025-12-28",
+                "dimensions": [],
+                "tag": "AssetImpairmentCharges",
+                "taxonomy": "http://fasb.org/us-gaap/2025",
+                "value": 204000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-354",
+                "decimals": "-6",
+                "accession": "0000200406-26-000016",
+                "filedAt": "2026-02-11",
+                "sourceFile": "data/sources/filing-0000200406-26-000016-37d6dddc840c2dc7.xbrl",
+                "sourceHash": "37d6dddc840c2dc70cbb41d1d9fbfca17bdf0a0f3ae9cac4593b3b7c655937c9",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000016/jnj-20251228.htm"
+              }
+            },
+            {
+              "coefficient": 1,
+              "fact": {
+                "start": "2025-12-29",
+                "end": "2026-06-28",
+                "dimensions": [],
+                "tag": "AssetImpairmentCharges",
+                "taxonomy": "http://fasb.org/us-gaap/2026",
+                "value": 220000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-408",
+                "decimals": "-6",
+                "accession": "0000200406-26-000153",
+                "filedAt": "2026-07-23",
+                "sourceFile": "data/sources/filing-0000200406-26-000153-0dd82cf03dc273d1.xbrl",
+                "sourceHash": "0dd82cf03dc273d1818ed17eea3a378dcb7204c8aee16a2593b2697274260871",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+              }
+            },
+            {
+              "coefficient": -1,
+              "fact": {
+                "start": "2024-12-30",
+                "end": "2025-06-29",
+                "dimensions": [],
+                "tag": "AssetImpairmentCharges",
+                "taxonomy": "http://fasb.org/us-gaap/2026",
+                "value": 30000000.0,
+                "unit": "USD",
+                "context": "c-18",
+                "factId": "f-409",
+                "decimals": "-6",
+                "accession": "0000200406-26-000153",
+                "filedAt": "2026-07-23",
+                "sourceFile": "data/sources/filing-0000200406-26-000153-0dd82cf03dc273d1.xbrl",
+                "sourceHash": "0dd82cf03dc273d1818ed17eea3a378dcb7204c8aee16a2593b2697274260871",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+              }
+            }
+          ],
+          "start": "2025-06-30",
+          "end": "2026-06-28",
+          "unit": "USD",
+          "derived": true,
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+        }
+      },
+      {
+        "label": "취득 진행 중 연구개발 조정",
+        "value": 19000000.0,
+        "fact": {
+          "value": 19000000.0,
+          "components": [
+            {
+              "coefficient": 1,
+              "fact": {
+                "start": "2024-12-30",
+                "end": "2025-12-28",
+                "dimensions": [],
+                "tag": "ResearchAndDevelopmentExpense",
+                "taxonomy": "http://fasb.org/us-gaap/2025",
+                "value": 109000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-357",
+                "decimals": "-6",
+                "accession": "0000200406-26-000016",
+                "filedAt": "2026-02-11",
+                "sourceFile": "data/sources/filing-0000200406-26-000016-37d6dddc840c2dc7.xbrl",
+                "sourceHash": "37d6dddc840c2dc70cbb41d1d9fbfca17bdf0a0f3ae9cac4593b3b7c655937c9",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000016/jnj-20251228.htm"
+              }
+            },
+            {
+              "coefficient": 1,
+              "fact": {
+                "start": "2025-12-29",
+                "end": "2026-06-28",
+                "dimensions": [],
+                "tag": "InProcessResearchAndDevelopmentCharge",
+                "taxonomy": "http://www.jnj.com/20260628",
+                "value": 2000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-410",
+                "decimals": "-6",
+                "accession": "0000200406-26-000153",
+                "filedAt": "2026-07-23",
+                "sourceFile": "data/sources/filing-0000200406-26-000153-0dd82cf03dc273d1.xbrl",
+                "sourceHash": "0dd82cf03dc273d1818ed17eea3a378dcb7204c8aee16a2593b2697274260871",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+              }
+            },
+            {
+              "coefficient": -1,
+              "fact": {
+                "start": "2024-12-30",
+                "end": "2025-06-29",
+                "dimensions": [],
+                "tag": "InProcessResearchAndDevelopmentCharge",
+                "taxonomy": "http://www.jnj.com/20260628",
+                "value": 92000000.0,
+                "unit": "USD",
+                "context": "c-18",
+                "factId": "f-411",
+                "decimals": "-6",
+                "accession": "0000200406-26-000153",
+                "filedAt": "2026-07-23",
+                "sourceFile": "data/sources/filing-0000200406-26-000153-0dd82cf03dc273d1.xbrl",
+                "sourceHash": "0dd82cf03dc273d1818ed17eea3a378dcb7204c8aee16a2593b2697274260871",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+              }
+            }
+          ],
+          "start": "2025-06-30",
+          "end": "2026-06-28",
+          "unit": "USD",
+          "derived": true,
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+        }
+      },
+      {
+        "label": "자산·사업 매각손익 되돌림",
+        "value": -232000000.0,
+        "fact": {
+          "value": 232000000.0,
+          "components": [
+            {
+              "coefficient": 1,
+              "fact": {
+                "start": "2024-12-30",
+                "end": "2025-12-28",
+                "dimensions": [],
+                "tag": "GainLossOnSalesOfAssetsAndAssetImpairmentCharges",
+                "taxonomy": "http://fasb.org/us-gaap/2025",
+                "value": 263000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-363",
+                "decimals": "-6",
+                "accession": "0000200406-26-000016",
+                "filedAt": "2026-02-11",
+                "sourceFile": "data/sources/filing-0000200406-26-000016-37d6dddc840c2dc7.xbrl",
+                "sourceHash": "37d6dddc840c2dc70cbb41d1d9fbfca17bdf0a0f3ae9cac4593b3b7c655937c9",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000016/jnj-20251228.htm"
+              }
+            },
+            {
+              "coefficient": 1,
+              "fact": {
+                "start": "2025-12-29",
+                "end": "2026-06-28",
+                "dimensions": [],
+                "tag": "GainLossOnSalesOfAssetsAndAssetImpairmentCharges",
+                "taxonomy": "http://fasb.org/us-gaap/2026",
+                "value": 43000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-412",
+                "decimals": "-6",
+                "accession": "0000200406-26-000153",
+                "filedAt": "2026-07-23",
+                "sourceFile": "data/sources/filing-0000200406-26-000153-0dd82cf03dc273d1.xbrl",
+                "sourceHash": "0dd82cf03dc273d1818ed17eea3a378dcb7204c8aee16a2593b2697274260871",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+              }
+            },
+            {
+              "coefficient": -1,
+              "fact": {
+                "start": "2024-12-30",
+                "end": "2025-06-29",
+                "dimensions": [],
+                "tag": "GainLossOnSalesOfAssetsAndAssetImpairmentCharges",
+                "taxonomy": "http://fasb.org/us-gaap/2026",
+                "value": 74000000.0,
+                "unit": "USD",
+                "context": "c-18",
+                "factId": "f-413",
+                "decimals": "-6",
+                "accession": "0000200406-26-000153",
+                "filedAt": "2026-07-23",
+                "sourceFile": "data/sources/filing-0000200406-26-000153-0dd82cf03dc273d1.xbrl",
+                "sourceHash": "0dd82cf03dc273d1818ed17eea3a378dcb7204c8aee16a2593b2697274260871",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+              }
+            }
+          ],
+          "start": "2025-06-30",
+          "end": "2026-06-28",
+          "unit": "USD",
+          "derived": true,
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+        }
+      },
+      {
+        "label": "이연법인세 조정",
+        "value": -1779000000.0,
+        "fact": {
+          "value": -1779000000.0,
+          "components": [
+            {
+              "coefficient": 1,
+              "fact": {
+                "start": "2024-12-30",
+                "end": "2025-12-28",
+                "dimensions": [],
+                "tag": "DeferredIncomeTaxExpenseBenefit",
+                "taxonomy": "http://fasb.org/us-gaap/2025",
+                "value": 1538000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-366",
+                "decimals": "-6",
+                "accession": "0000200406-26-000016",
+                "filedAt": "2026-02-11",
+                "sourceFile": "data/sources/filing-0000200406-26-000016-37d6dddc840c2dc7.xbrl",
+                "sourceHash": "37d6dddc840c2dc70cbb41d1d9fbfca17bdf0a0f3ae9cac4593b3b7c655937c9",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000016/jnj-20251228.htm"
+              }
+            },
+            {
+              "coefficient": 1,
+              "fact": {
+                "start": "2025-12-29",
+                "end": "2026-06-28",
+                "dimensions": [],
+                "tag": "DeferredIncomeTaxExpenseBenefit",
+                "taxonomy": "http://fasb.org/us-gaap/2026",
+                "value": -320000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-414",
+                "decimals": "-6",
+                "accession": "0000200406-26-000153",
+                "filedAt": "2026-07-23",
+                "sourceFile": "data/sources/filing-0000200406-26-000153-0dd82cf03dc273d1.xbrl",
+                "sourceHash": "0dd82cf03dc273d1818ed17eea3a378dcb7204c8aee16a2593b2697274260871",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+              }
+            },
+            {
+              "coefficient": -1,
+              "fact": {
+                "start": "2024-12-30",
+                "end": "2025-06-29",
+                "dimensions": [],
+                "tag": "DeferredIncomeTaxExpenseBenefit",
+                "taxonomy": "http://fasb.org/us-gaap/2026",
+                "value": 2997000000.0,
+                "unit": "USD",
+                "context": "c-18",
+                "factId": "f-415",
+                "decimals": "-6",
+                "accession": "0000200406-26-000153",
+                "filedAt": "2026-07-23",
+                "sourceFile": "data/sources/filing-0000200406-26-000153-0dd82cf03dc273d1.xbrl",
+                "sourceHash": "0dd82cf03dc273d1818ed17eea3a378dcb7204c8aee16a2593b2697274260871",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+              }
+            }
+          ],
+          "start": "2025-06-30",
+          "end": "2026-06-28",
+          "unit": "USD",
+          "derived": true,
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+        }
+      },
+      {
+        "label": "신용손실·채권 충당금",
+        "value": -16000000.0,
+        "fact": {
+          "value": -16000000.0,
+          "components": [
+            {
+              "coefficient": 1,
+              "fact": {
+                "start": "2024-12-30",
+                "end": "2025-12-28",
+                "dimensions": [],
+                "tag": "ProvisionForDoubtfulAccounts",
+                "taxonomy": "http://fasb.org/us-gaap/2025",
+                "value": -1000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-369",
+                "decimals": "-6",
+                "accession": "0000200406-26-000016",
+                "filedAt": "2026-02-11",
+                "sourceFile": "data/sources/filing-0000200406-26-000016-37d6dddc840c2dc7.xbrl",
+                "sourceHash": "37d6dddc840c2dc70cbb41d1d9fbfca17bdf0a0f3ae9cac4593b3b7c655937c9",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000016/jnj-20251228.htm"
+              }
+            },
+            {
+              "coefficient": 1,
+              "fact": {
+                "start": "2025-12-29",
+                "end": "2026-06-28",
+                "dimensions": [],
+                "tag": "ProvisionForDoubtfulAccounts",
+                "taxonomy": "http://fasb.org/us-gaap/2026",
+                "value": -12000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-416",
+                "decimals": "-6",
+                "accession": "0000200406-26-000153",
+                "filedAt": "2026-07-23",
+                "sourceFile": "data/sources/filing-0000200406-26-000153-0dd82cf03dc273d1.xbrl",
+                "sourceHash": "0dd82cf03dc273d1818ed17eea3a378dcb7204c8aee16a2593b2697274260871",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+              }
+            },
+            {
+              "coefficient": -1,
+              "fact": {
+                "start": "2024-12-30",
+                "end": "2025-06-29",
+                "dimensions": [],
+                "tag": "ProvisionForDoubtfulAccounts",
+                "taxonomy": "http://fasb.org/us-gaap/2026",
+                "value": 3000000.0,
+                "unit": "USD",
+                "context": "c-18",
+                "factId": "f-417",
+                "decimals": "-6",
+                "accession": "0000200406-26-000153",
+                "filedAt": "2026-07-23",
+                "sourceFile": "data/sources/filing-0000200406-26-000153-0dd82cf03dc273d1.xbrl",
+                "sourceHash": "0dd82cf03dc273d1818ed17eea3a378dcb7204c8aee16a2593b2697274260871",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+              }
+            }
+          ],
+          "start": "2025-06-30",
+          "end": "2026-06-28",
+          "unit": "USD",
+          "derived": true,
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+        }
+      },
+      {
+        "label": "매출채권 현금 효과",
+        "value": -1445000000.0,
+        "fact": {
+          "value": 1445000000.0,
+          "components": [
+            {
+              "coefficient": 1,
+              "fact": {
+                "start": "2024-12-30",
+                "end": "2025-12-28",
+                "dimensions": [],
+                "tag": "IncreaseDecreaseInAccountsReceivable",
+                "taxonomy": "http://fasb.org/us-gaap/2025",
+                "value": 1781000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-372",
+                "decimals": "-6",
+                "accession": "0000200406-26-000016",
+                "filedAt": "2026-02-11",
+                "sourceFile": "data/sources/filing-0000200406-26-000016-37d6dddc840c2dc7.xbrl",
+                "sourceHash": "37d6dddc840c2dc70cbb41d1d9fbfca17bdf0a0f3ae9cac4593b3b7c655937c9",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000016/jnj-20251228.htm"
+              }
+            },
+            {
+              "coefficient": 1,
+              "fact": {
+                "start": "2025-12-29",
+                "end": "2026-06-28",
+                "dimensions": [],
+                "tag": "IncreaseDecreaseInAccountsReceivable",
+                "taxonomy": "http://fasb.org/us-gaap/2026",
+                "value": 1947000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-418",
+                "decimals": "-6",
+                "accession": "0000200406-26-000153",
+                "filedAt": "2026-07-23",
+                "sourceFile": "data/sources/filing-0000200406-26-000153-0dd82cf03dc273d1.xbrl",
+                "sourceHash": "0dd82cf03dc273d1818ed17eea3a378dcb7204c8aee16a2593b2697274260871",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+              }
+            },
+            {
+              "coefficient": -1,
+              "fact": {
+                "start": "2024-12-30",
+                "end": "2025-06-29",
+                "dimensions": [],
+                "tag": "IncreaseDecreaseInAccountsReceivable",
+                "taxonomy": "http://fasb.org/us-gaap/2026",
+                "value": 2283000000.0,
+                "unit": "USD",
+                "context": "c-18",
+                "factId": "f-419",
+                "decimals": "-6",
+                "accession": "0000200406-26-000153",
+                "filedAt": "2026-07-23",
+                "sourceFile": "data/sources/filing-0000200406-26-000153-0dd82cf03dc273d1.xbrl",
+                "sourceHash": "0dd82cf03dc273d1818ed17eea3a378dcb7204c8aee16a2593b2697274260871",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+              }
+            }
+          ],
+          "start": "2025-06-30",
+          "end": "2026-06-28",
+          "unit": "USD",
+          "derived": true,
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+        }
+      },
+      {
+        "label": "재고 현금 효과",
+        "value": -1796000000.0,
+        "fact": {
+          "value": 1796000000.0,
+          "components": [
+            {
+              "coefficient": 1,
+              "fact": {
+                "start": "2024-12-30",
+                "end": "2025-12-28",
+                "dimensions": [],
+                "tag": "IncreaseDecreaseInInventories",
+                "taxonomy": "http://fasb.org/us-gaap/2025",
+                "value": 1450000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-375",
+                "decimals": "-6",
+                "accession": "0000200406-26-000016",
+                "filedAt": "2026-02-11",
+                "sourceFile": "data/sources/filing-0000200406-26-000016-37d6dddc840c2dc7.xbrl",
+                "sourceHash": "37d6dddc840c2dc70cbb41d1d9fbfca17bdf0a0f3ae9cac4593b3b7c655937c9",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000016/jnj-20251228.htm"
+              }
+            },
+            {
+              "coefficient": 1,
+              "fact": {
+                "start": "2025-12-29",
+                "end": "2026-06-28",
+                "dimensions": [],
+                "tag": "IncreaseDecreaseInInventories",
+                "taxonomy": "http://fasb.org/us-gaap/2026",
+                "value": 1002000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-420",
+                "decimals": "-6",
+                "accession": "0000200406-26-000153",
+                "filedAt": "2026-07-23",
+                "sourceFile": "data/sources/filing-0000200406-26-000153-0dd82cf03dc273d1.xbrl",
+                "sourceHash": "0dd82cf03dc273d1818ed17eea3a378dcb7204c8aee16a2593b2697274260871",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+              }
+            },
+            {
+              "coefficient": -1,
+              "fact": {
+                "start": "2024-12-30",
+                "end": "2025-06-29",
+                "dimensions": [],
+                "tag": "IncreaseDecreaseInInventories",
+                "taxonomy": "http://fasb.org/us-gaap/2026",
+                "value": 656000000.0,
+                "unit": "USD",
+                "context": "c-18",
+                "factId": "f-421",
+                "decimals": "-6",
+                "accession": "0000200406-26-000153",
+                "filedAt": "2026-07-23",
+                "sourceFile": "data/sources/filing-0000200406-26-000153-0dd82cf03dc273d1.xbrl",
+                "sourceHash": "0dd82cf03dc273d1818ed17eea3a378dcb7204c8aee16a2593b2697274260871",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+              }
+            }
+          ],
+          "start": "2025-06-30",
+          "end": "2026-06-28",
+          "unit": "USD",
+          "derived": true,
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+        }
+      },
+      {
+        "label": "매입·미지급부채 현금 효과",
+        "value": 2307000000.0,
+        "fact": {
+          "value": 2307000000.0,
+          "components": [
+            {
+              "coefficient": 1,
+              "fact": {
+                "start": "2024-12-30",
+                "end": "2025-12-28",
+                "dimensions": [],
+                "tag": "IncreaseDecreaseInAccountsPayableAndAccruedLiabilities",
+                "taxonomy": "http://fasb.org/us-gaap/2025",
+                "value": 2377000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-378",
+                "decimals": "-6",
+                "accession": "0000200406-26-000016",
+                "filedAt": "2026-02-11",
+                "sourceFile": "data/sources/filing-0000200406-26-000016-37d6dddc840c2dc7.xbrl",
+                "sourceHash": "37d6dddc840c2dc70cbb41d1d9fbfca17bdf0a0f3ae9cac4593b3b7c655937c9",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000016/jnj-20251228.htm"
+              }
+            },
+            {
+              "coefficient": 1,
+              "fact": {
+                "start": "2025-12-29",
+                "end": "2026-06-28",
+                "dimensions": [],
+                "tag": "IncreaseDecreaseInAccountsPayableAndAccruedLiabilities",
+                "taxonomy": "http://fasb.org/us-gaap/2026",
+                "value": -956000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-422",
+                "decimals": "-6",
+                "accession": "0000200406-26-000153",
+                "filedAt": "2026-07-23",
+                "sourceFile": "data/sources/filing-0000200406-26-000153-0dd82cf03dc273d1.xbrl",
+                "sourceHash": "0dd82cf03dc273d1818ed17eea3a378dcb7204c8aee16a2593b2697274260871",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+              }
+            },
+            {
+              "coefficient": -1,
+              "fact": {
+                "start": "2024-12-30",
+                "end": "2025-06-29",
+                "dimensions": [],
+                "tag": "IncreaseDecreaseInAccountsPayableAndAccruedLiabilities",
+                "taxonomy": "http://fasb.org/us-gaap/2026",
+                "value": -886000000.0,
+                "unit": "USD",
+                "context": "c-18",
+                "factId": "f-423",
+                "decimals": "-6",
+                "accession": "0000200406-26-000153",
+                "filedAt": "2026-07-23",
+                "sourceFile": "data/sources/filing-0000200406-26-000153-0dd82cf03dc273d1.xbrl",
+                "sourceHash": "0dd82cf03dc273d1818ed17eea3a378dcb7204c8aee16a2593b2697274260871",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+              }
+            }
+          ],
+          "start": "2025-06-30",
+          "end": "2026-06-28",
+          "unit": "USD",
+          "derived": true,
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+        }
+      },
+      {
+        "label": "기타 영업자산 현금 효과",
+        "value": 1326000000.0,
+        "fact": {
+          "value": -1326000000.0,
+          "components": [
+            {
+              "coefficient": 1,
+              "fact": {
+                "start": "2024-12-30",
+                "end": "2025-12-28",
+                "dimensions": [],
+                "tag": "IncreaseDecreaseInOtherOperatingAssets",
+                "taxonomy": "http://fasb.org/us-gaap/2025",
+                "value": 6167000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-381",
+                "decimals": "-6",
+                "accession": "0000200406-26-000016",
+                "filedAt": "2026-02-11",
+                "sourceFile": "data/sources/filing-0000200406-26-000016-37d6dddc840c2dc7.xbrl",
+                "sourceHash": "37d6dddc840c2dc70cbb41d1d9fbfca17bdf0a0f3ae9cac4593b3b7c655937c9",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000016/jnj-20251228.htm"
+              }
+            },
+            {
+              "coefficient": 1,
+              "fact": {
+                "start": "2025-12-29",
+                "end": "2026-06-28",
+                "dimensions": [],
+                "tag": "IncreaseDecreaseInOtherOperatingAssets",
+                "taxonomy": "http://fasb.org/us-gaap/2026",
+                "value": -1299000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-424",
+                "decimals": "-6",
+                "accession": "0000200406-26-000153",
+                "filedAt": "2026-07-23",
+                "sourceFile": "data/sources/filing-0000200406-26-000153-0dd82cf03dc273d1.xbrl",
+                "sourceHash": "0dd82cf03dc273d1818ed17eea3a378dcb7204c8aee16a2593b2697274260871",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+              }
+            },
+            {
+              "coefficient": -1,
+              "fact": {
+                "start": "2024-12-30",
+                "end": "2025-06-29",
+                "dimensions": [],
+                "tag": "IncreaseDecreaseInOtherOperatingAssets",
+                "taxonomy": "http://fasb.org/us-gaap/2026",
+                "value": 6194000000.0,
+                "unit": "USD",
+                "context": "c-18",
+                "factId": "f-425",
+                "decimals": "-6",
+                "accession": "0000200406-26-000153",
+                "filedAt": "2026-07-23",
+                "sourceFile": "data/sources/filing-0000200406-26-000153-0dd82cf03dc273d1.xbrl",
+                "sourceHash": "0dd82cf03dc273d1818ed17eea3a378dcb7204c8aee16a2593b2697274260871",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+              }
+            }
+          ],
+          "start": "2025-06-30",
+          "end": "2026-06-28",
+          "unit": "USD",
+          "derived": true,
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+        }
+      },
+      {
+        "label": "기타 영업부채 현금 효과",
+        "value": -1372000000.0,
+        "fact": {
+          "value": -1372000000.0,
+          "components": [
+            {
+              "coefficient": 1,
+              "fact": {
+                "start": "2024-12-30",
+                "end": "2025-12-28",
+                "dimensions": [],
+                "tag": "IncreaseDecreaseInOtherOperatingLiabilities",
+                "taxonomy": "http://fasb.org/us-gaap/2025",
+                "value": -5697000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-384",
+                "decimals": "-6",
+                "accession": "0000200406-26-000016",
+                "filedAt": "2026-02-11",
+                "sourceFile": "data/sources/filing-0000200406-26-000016-37d6dddc840c2dc7.xbrl",
+                "sourceHash": "37d6dddc840c2dc70cbb41d1d9fbfca17bdf0a0f3ae9cac4593b3b7c655937c9",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000016/jnj-20251228.htm"
+              }
+            },
+            {
+              "coefficient": 1,
+              "fact": {
+                "start": "2025-12-29",
+                "end": "2026-06-28",
+                "dimensions": [],
+                "tag": "IncreaseDecreaseInOtherOperatingLiabilities",
+                "taxonomy": "http://fasb.org/us-gaap/2026",
+                "value": -1601000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-426",
+                "decimals": "-6",
+                "accession": "0000200406-26-000153",
+                "filedAt": "2026-07-23",
+                "sourceFile": "data/sources/filing-0000200406-26-000153-0dd82cf03dc273d1.xbrl",
+                "sourceHash": "0dd82cf03dc273d1818ed17eea3a378dcb7204c8aee16a2593b2697274260871",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+              }
+            },
+            {
+              "coefficient": -1,
+              "fact": {
+                "start": "2024-12-30",
+                "end": "2025-06-29",
+                "dimensions": [],
+                "tag": "IncreaseDecreaseInOtherOperatingLiabilities",
+                "taxonomy": "http://fasb.org/us-gaap/2026",
+                "value": -5926000000.0,
+                "unit": "USD",
+                "context": "c-18",
+                "factId": "f-427",
+                "decimals": "-6",
+                "accession": "0000200406-26-000153",
+                "filedAt": "2026-07-23",
+                "sourceFile": "data/sources/filing-0000200406-26-000153-0dd82cf03dc273d1.xbrl",
+                "sourceHash": "0dd82cf03dc273d1818ed17eea3a378dcb7204c8aee16a2593b2697274260871",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+              }
+            }
+          ],
+          "start": "2025-06-30",
+          "end": "2026-06-28",
+          "unit": "USD",
+          "derived": true,
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+        }
+      }
+    ],
+    "reportedCfo": 27608000000.0,
+    "residual": 0,
+    "periods": [
+      {
+        "coefficient": 1,
+        "start": "2024-12-30",
+        "end": "2025-12-28",
+        "parts": [
+          {
+            "label": "당기순이익",
+            "tag": "NetIncomeLoss",
+            "value": 26804000000.0,
+            "fact": {
+              "start": "2024-12-30",
+              "end": "2025-12-28",
+              "dimensions": [],
+              "tag": "NetIncomeLoss",
+              "taxonomy": "http://fasb.org/us-gaap/2025",
+              "value": 26804000000.0,
+              "unit": "USD",
+              "context": "c-1",
+              "factId": "f-202",
+              "decimals": "-6",
+              "accession": "0000200406-26-000016",
+              "filedAt": "2026-02-11",
+              "sourceFile": "data/sources/filing-0000200406-26-000016-37d6dddc840c2dc7.xbrl",
+              "sourceHash": "37d6dddc840c2dc70cbb41d1d9fbfca17bdf0a0f3ae9cac4593b3b7c655937c9",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000016/jnj-20251228.htm"
+            }
+          },
+          {
+            "label": "감가상각·상각",
+            "tag": "DepreciationDepletionAndAmortization",
+            "value": 7503000000.0,
+            "fact": {
+              "start": "2024-12-30",
+              "end": "2025-12-28",
+              "dimensions": [],
+              "tag": "DepreciationDepletionAndAmortization",
+              "taxonomy": "http://fasb.org/us-gaap/2025",
+              "value": 7503000000.0,
+              "unit": "USD",
+              "context": "c-1",
+              "factId": "f-348",
+              "decimals": "-6",
+              "accession": "0000200406-26-000016",
+              "filedAt": "2026-02-11",
+              "sourceFile": "data/sources/filing-0000200406-26-000016-37d6dddc840c2dc7.xbrl",
+              "sourceHash": "37d6dddc840c2dc70cbb41d1d9fbfca17bdf0a0f3ae9cac4593b3b7c655937c9",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000016/jnj-20251228.htm"
+            }
+          },
+          {
+            "label": "주식보상 되돌림",
+            "tag": "ShareBasedCompensation",
+            "value": 1354000000.0,
+            "fact": {
+              "start": "2024-12-30",
+              "end": "2025-12-28",
+              "dimensions": [],
+              "tag": "ShareBasedCompensation",
+              "taxonomy": "http://fasb.org/us-gaap/2025",
+              "value": 1354000000.0,
+              "unit": "USD",
+              "context": "c-1",
+              "factId": "f-351",
+              "decimals": "-6",
+              "accession": "0000200406-26-000016",
+              "filedAt": "2026-02-11",
+              "sourceFile": "data/sources/filing-0000200406-26-000016-37d6dddc840c2dc7.xbrl",
+              "sourceHash": "37d6dddc840c2dc70cbb41d1d9fbfca17bdf0a0f3ae9cac4593b3b7c655937c9",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000016/jnj-20251228.htm"
+            }
+          },
+          {
+            "label": "자산 감액",
+            "tag": "AssetImpairmentCharges",
+            "value": 204000000.0,
+            "fact": {
+              "start": "2024-12-30",
+              "end": "2025-12-28",
+              "dimensions": [],
+              "tag": "AssetImpairmentCharges",
+              "taxonomy": "http://fasb.org/us-gaap/2025",
+              "value": 204000000.0,
+              "unit": "USD",
+              "context": "c-1",
+              "factId": "f-354",
+              "decimals": "-6",
+              "accession": "0000200406-26-000016",
+              "filedAt": "2026-02-11",
+              "sourceFile": "data/sources/filing-0000200406-26-000016-37d6dddc840c2dc7.xbrl",
+              "sourceHash": "37d6dddc840c2dc70cbb41d1d9fbfca17bdf0a0f3ae9cac4593b3b7c655937c9",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000016/jnj-20251228.htm"
+            }
+          },
+          {
+            "label": "취득 진행 중 연구개발 조정",
+            "tag": "InProcessResearchAndDevelopmentCharge",
+            "value": 109000000.0,
+            "fact": {
+              "start": "2024-12-30",
+              "end": "2025-12-28",
+              "dimensions": [],
+              "tag": "ResearchAndDevelopmentExpense",
+              "taxonomy": "http://fasb.org/us-gaap/2025",
+              "value": 109000000.0,
+              "unit": "USD",
+              "context": "c-1",
+              "factId": "f-357",
+              "decimals": "-6",
+              "accession": "0000200406-26-000016",
+              "filedAt": "2026-02-11",
+              "sourceFile": "data/sources/filing-0000200406-26-000016-37d6dddc840c2dc7.xbrl",
+              "sourceHash": "37d6dddc840c2dc70cbb41d1d9fbfca17bdf0a0f3ae9cac4593b3b7c655937c9",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000016/jnj-20251228.htm"
+            }
+          },
+          {
+            "label": "자산·사업 매각손익 되돌림",
+            "tag": "GainLossOnSalesOfAssetsAndAssetImpairmentCharges",
+            "value": -263000000.0,
+            "fact": {
+              "start": "2024-12-30",
+              "end": "2025-12-28",
+              "dimensions": [],
+              "tag": "GainLossOnSalesOfAssetsAndAssetImpairmentCharges",
+              "taxonomy": "http://fasb.org/us-gaap/2025",
+              "value": 263000000.0,
+              "unit": "USD",
+              "context": "c-1",
+              "factId": "f-363",
+              "decimals": "-6",
+              "accession": "0000200406-26-000016",
+              "filedAt": "2026-02-11",
+              "sourceFile": "data/sources/filing-0000200406-26-000016-37d6dddc840c2dc7.xbrl",
+              "sourceHash": "37d6dddc840c2dc70cbb41d1d9fbfca17bdf0a0f3ae9cac4593b3b7c655937c9",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000016/jnj-20251228.htm"
+            }
+          },
+          {
+            "label": "이연법인세 조정",
+            "tag": "DeferredIncomeTaxExpenseBenefit",
+            "value": 1538000000.0,
+            "fact": {
+              "start": "2024-12-30",
+              "end": "2025-12-28",
+              "dimensions": [],
+              "tag": "DeferredIncomeTaxExpenseBenefit",
+              "taxonomy": "http://fasb.org/us-gaap/2025",
+              "value": 1538000000.0,
+              "unit": "USD",
+              "context": "c-1",
+              "factId": "f-366",
+              "decimals": "-6",
+              "accession": "0000200406-26-000016",
+              "filedAt": "2026-02-11",
+              "sourceFile": "data/sources/filing-0000200406-26-000016-37d6dddc840c2dc7.xbrl",
+              "sourceHash": "37d6dddc840c2dc70cbb41d1d9fbfca17bdf0a0f3ae9cac4593b3b7c655937c9",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000016/jnj-20251228.htm"
+            }
+          },
+          {
+            "label": "신용손실·채권 충당금",
+            "tag": "ProvisionForDoubtfulAccounts",
+            "value": -1000000.0,
+            "fact": {
+              "start": "2024-12-30",
+              "end": "2025-12-28",
+              "dimensions": [],
+              "tag": "ProvisionForDoubtfulAccounts",
+              "taxonomy": "http://fasb.org/us-gaap/2025",
+              "value": -1000000.0,
+              "unit": "USD",
+              "context": "c-1",
+              "factId": "f-369",
+              "decimals": "-6",
+              "accession": "0000200406-26-000016",
+              "filedAt": "2026-02-11",
+              "sourceFile": "data/sources/filing-0000200406-26-000016-37d6dddc840c2dc7.xbrl",
+              "sourceHash": "37d6dddc840c2dc70cbb41d1d9fbfca17bdf0a0f3ae9cac4593b3b7c655937c9",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000016/jnj-20251228.htm"
+            }
+          },
+          {
+            "label": "매출채권 현금 효과",
+            "tag": "IncreaseDecreaseInAccountsReceivable",
+            "value": -1781000000.0,
+            "fact": {
+              "start": "2024-12-30",
+              "end": "2025-12-28",
+              "dimensions": [],
+              "tag": "IncreaseDecreaseInAccountsReceivable",
+              "taxonomy": "http://fasb.org/us-gaap/2025",
+              "value": 1781000000.0,
+              "unit": "USD",
+              "context": "c-1",
+              "factId": "f-372",
+              "decimals": "-6",
+              "accession": "0000200406-26-000016",
+              "filedAt": "2026-02-11",
+              "sourceFile": "data/sources/filing-0000200406-26-000016-37d6dddc840c2dc7.xbrl",
+              "sourceHash": "37d6dddc840c2dc70cbb41d1d9fbfca17bdf0a0f3ae9cac4593b3b7c655937c9",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000016/jnj-20251228.htm"
+            }
+          },
+          {
+            "label": "재고 현금 효과",
+            "tag": "IncreaseDecreaseInInventories",
+            "value": -1450000000.0,
+            "fact": {
+              "start": "2024-12-30",
+              "end": "2025-12-28",
+              "dimensions": [],
+              "tag": "IncreaseDecreaseInInventories",
+              "taxonomy": "http://fasb.org/us-gaap/2025",
+              "value": 1450000000.0,
+              "unit": "USD",
+              "context": "c-1",
+              "factId": "f-375",
+              "decimals": "-6",
+              "accession": "0000200406-26-000016",
+              "filedAt": "2026-02-11",
+              "sourceFile": "data/sources/filing-0000200406-26-000016-37d6dddc840c2dc7.xbrl",
+              "sourceHash": "37d6dddc840c2dc70cbb41d1d9fbfca17bdf0a0f3ae9cac4593b3b7c655937c9",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000016/jnj-20251228.htm"
+            }
+          },
+          {
+            "label": "매입·미지급부채 현금 효과",
+            "tag": "IncreaseDecreaseInAccountsPayableAndAccruedLiabilities",
+            "value": 2377000000.0,
+            "fact": {
+              "start": "2024-12-30",
+              "end": "2025-12-28",
+              "dimensions": [],
+              "tag": "IncreaseDecreaseInAccountsPayableAndAccruedLiabilities",
+              "taxonomy": "http://fasb.org/us-gaap/2025",
+              "value": 2377000000.0,
+              "unit": "USD",
+              "context": "c-1",
+              "factId": "f-378",
+              "decimals": "-6",
+              "accession": "0000200406-26-000016",
+              "filedAt": "2026-02-11",
+              "sourceFile": "data/sources/filing-0000200406-26-000016-37d6dddc840c2dc7.xbrl",
+              "sourceHash": "37d6dddc840c2dc70cbb41d1d9fbfca17bdf0a0f3ae9cac4593b3b7c655937c9",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000016/jnj-20251228.htm"
+            }
+          },
+          {
+            "label": "기타 영업자산 현금 효과",
+            "tag": "IncreaseDecreaseInOtherOperatingAssets",
+            "value": -6167000000.0,
+            "fact": {
+              "start": "2024-12-30",
+              "end": "2025-12-28",
+              "dimensions": [],
+              "tag": "IncreaseDecreaseInOtherOperatingAssets",
+              "taxonomy": "http://fasb.org/us-gaap/2025",
+              "value": 6167000000.0,
+              "unit": "USD",
+              "context": "c-1",
+              "factId": "f-381",
+              "decimals": "-6",
+              "accession": "0000200406-26-000016",
+              "filedAt": "2026-02-11",
+              "sourceFile": "data/sources/filing-0000200406-26-000016-37d6dddc840c2dc7.xbrl",
+              "sourceHash": "37d6dddc840c2dc70cbb41d1d9fbfca17bdf0a0f3ae9cac4593b3b7c655937c9",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000016/jnj-20251228.htm"
+            }
+          },
+          {
+            "label": "기타 영업부채 현금 효과",
+            "tag": "IncreaseDecreaseInOtherOperatingLiabilities",
+            "value": -5697000000.0,
+            "fact": {
+              "start": "2024-12-30",
+              "end": "2025-12-28",
+              "dimensions": [],
+              "tag": "IncreaseDecreaseInOtherOperatingLiabilities",
+              "taxonomy": "http://fasb.org/us-gaap/2025",
+              "value": -5697000000.0,
+              "unit": "USD",
+              "context": "c-1",
+              "factId": "f-384",
+              "decimals": "-6",
+              "accession": "0000200406-26-000016",
+              "filedAt": "2026-02-11",
+              "sourceFile": "data/sources/filing-0000200406-26-000016-37d6dddc840c2dc7.xbrl",
+              "sourceHash": "37d6dddc840c2dc70cbb41d1d9fbfca17bdf0a0f3ae9cac4593b3b7c655937c9",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000016/jnj-20251228.htm"
+            }
+          }
+        ],
+        "reportedCfo": 24530000000.0,
+        "residual": 0.0
+      },
+      {
+        "coefficient": 1,
+        "start": "2025-12-29",
+        "end": "2026-06-28",
+        "parts": [
+          {
+            "label": "당기순이익",
+            "tag": "NetIncomeLoss",
+            "value": 10769000000.0,
+            "fact": {
+              "start": "2025-12-29",
+              "end": "2026-06-28",
+              "dimensions": [],
+              "tag": "NetIncomeLoss",
+              "taxonomy": "http://fasb.org/us-gaap/2026",
+              "value": 10769000000.0,
+              "unit": "USD",
+              "context": "c-1",
+              "factId": "f-242",
+              "decimals": "-6",
+              "accession": "0000200406-26-000153",
+              "filedAt": "2026-07-23",
+              "sourceFile": "data/sources/filing-0000200406-26-000153-0dd82cf03dc273d1.xbrl",
+              "sourceHash": "0dd82cf03dc273d1818ed17eea3a378dcb7204c8aee16a2593b2697274260871",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+            }
+          },
+          {
+            "label": "감가상각·상각",
+            "tag": "DepreciationDepletionAndAmortization",
+            "value": 3963000000.0,
+            "fact": {
+              "start": "2025-12-29",
+              "end": "2026-06-28",
+              "dimensions": [],
+              "tag": "DepreciationDepletionAndAmortization",
+              "taxonomy": "http://fasb.org/us-gaap/2026",
+              "value": 3963000000.0,
+              "unit": "USD",
+              "context": "c-1",
+              "factId": "f-404",
+              "decimals": "-6",
+              "accession": "0000200406-26-000153",
+              "filedAt": "2026-07-23",
+              "sourceFile": "data/sources/filing-0000200406-26-000153-0dd82cf03dc273d1.xbrl",
+              "sourceHash": "0dd82cf03dc273d1818ed17eea3a378dcb7204c8aee16a2593b2697274260871",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+            }
+          },
+          {
+            "label": "주식보상 되돌림",
+            "tag": "ShareBasedCompensation",
+            "value": 758000000.0,
+            "fact": {
+              "start": "2025-12-29",
+              "end": "2026-06-28",
+              "dimensions": [],
+              "tag": "ShareBasedCompensation",
+              "taxonomy": "http://fasb.org/us-gaap/2026",
+              "value": 758000000.0,
+              "unit": "USD",
+              "context": "c-1",
+              "factId": "f-406",
+              "decimals": "-6",
+              "accession": "0000200406-26-000153",
+              "filedAt": "2026-07-23",
+              "sourceFile": "data/sources/filing-0000200406-26-000153-0dd82cf03dc273d1.xbrl",
+              "sourceHash": "0dd82cf03dc273d1818ed17eea3a378dcb7204c8aee16a2593b2697274260871",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+            }
+          },
+          {
+            "label": "자산 감액",
+            "tag": "AssetImpairmentCharges",
+            "value": 220000000.0,
+            "fact": {
+              "start": "2025-12-29",
+              "end": "2026-06-28",
+              "dimensions": [],
+              "tag": "AssetImpairmentCharges",
+              "taxonomy": "http://fasb.org/us-gaap/2026",
+              "value": 220000000.0,
+              "unit": "USD",
+              "context": "c-1",
+              "factId": "f-408",
+              "decimals": "-6",
+              "accession": "0000200406-26-000153",
+              "filedAt": "2026-07-23",
+              "sourceFile": "data/sources/filing-0000200406-26-000153-0dd82cf03dc273d1.xbrl",
+              "sourceHash": "0dd82cf03dc273d1818ed17eea3a378dcb7204c8aee16a2593b2697274260871",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+            }
+          },
+          {
+            "label": "취득 진행 중 연구개발 조정",
+            "tag": "InProcessResearchAndDevelopmentCharge",
+            "value": 2000000.0,
+            "fact": {
+              "start": "2025-12-29",
+              "end": "2026-06-28",
+              "dimensions": [],
+              "tag": "InProcessResearchAndDevelopmentCharge",
+              "taxonomy": "http://www.jnj.com/20260628",
+              "value": 2000000.0,
+              "unit": "USD",
+              "context": "c-1",
+              "factId": "f-410",
+              "decimals": "-6",
+              "accession": "0000200406-26-000153",
+              "filedAt": "2026-07-23",
+              "sourceFile": "data/sources/filing-0000200406-26-000153-0dd82cf03dc273d1.xbrl",
+              "sourceHash": "0dd82cf03dc273d1818ed17eea3a378dcb7204c8aee16a2593b2697274260871",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+            }
+          },
+          {
+            "label": "자산·사업 매각손익 되돌림",
+            "tag": "GainLossOnSalesOfAssetsAndAssetImpairmentCharges",
+            "value": -43000000.0,
+            "fact": {
+              "start": "2025-12-29",
+              "end": "2026-06-28",
+              "dimensions": [],
+              "tag": "GainLossOnSalesOfAssetsAndAssetImpairmentCharges",
+              "taxonomy": "http://fasb.org/us-gaap/2026",
+              "value": 43000000.0,
+              "unit": "USD",
+              "context": "c-1",
+              "factId": "f-412",
+              "decimals": "-6",
+              "accession": "0000200406-26-000153",
+              "filedAt": "2026-07-23",
+              "sourceFile": "data/sources/filing-0000200406-26-000153-0dd82cf03dc273d1.xbrl",
+              "sourceHash": "0dd82cf03dc273d1818ed17eea3a378dcb7204c8aee16a2593b2697274260871",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+            }
+          },
+          {
+            "label": "이연법인세 조정",
+            "tag": "DeferredIncomeTaxExpenseBenefit",
+            "value": -320000000.0,
+            "fact": {
+              "start": "2025-12-29",
+              "end": "2026-06-28",
+              "dimensions": [],
+              "tag": "DeferredIncomeTaxExpenseBenefit",
+              "taxonomy": "http://fasb.org/us-gaap/2026",
+              "value": -320000000.0,
+              "unit": "USD",
+              "context": "c-1",
+              "factId": "f-414",
+              "decimals": "-6",
+              "accession": "0000200406-26-000153",
+              "filedAt": "2026-07-23",
+              "sourceFile": "data/sources/filing-0000200406-26-000153-0dd82cf03dc273d1.xbrl",
+              "sourceHash": "0dd82cf03dc273d1818ed17eea3a378dcb7204c8aee16a2593b2697274260871",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+            }
+          },
+          {
+            "label": "신용손실·채권 충당금",
+            "tag": "ProvisionForDoubtfulAccounts",
+            "value": -12000000.0,
+            "fact": {
+              "start": "2025-12-29",
+              "end": "2026-06-28",
+              "dimensions": [],
+              "tag": "ProvisionForDoubtfulAccounts",
+              "taxonomy": "http://fasb.org/us-gaap/2026",
+              "value": -12000000.0,
+              "unit": "USD",
+              "context": "c-1",
+              "factId": "f-416",
+              "decimals": "-6",
+              "accession": "0000200406-26-000153",
+              "filedAt": "2026-07-23",
+              "sourceFile": "data/sources/filing-0000200406-26-000153-0dd82cf03dc273d1.xbrl",
+              "sourceHash": "0dd82cf03dc273d1818ed17eea3a378dcb7204c8aee16a2593b2697274260871",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+            }
+          },
+          {
+            "label": "매출채권 현금 효과",
+            "tag": "IncreaseDecreaseInAccountsReceivable",
+            "value": -1947000000.0,
+            "fact": {
+              "start": "2025-12-29",
+              "end": "2026-06-28",
+              "dimensions": [],
+              "tag": "IncreaseDecreaseInAccountsReceivable",
+              "taxonomy": "http://fasb.org/us-gaap/2026",
+              "value": 1947000000.0,
+              "unit": "USD",
+              "context": "c-1",
+              "factId": "f-418",
+              "decimals": "-6",
+              "accession": "0000200406-26-000153",
+              "filedAt": "2026-07-23",
+              "sourceFile": "data/sources/filing-0000200406-26-000153-0dd82cf03dc273d1.xbrl",
+              "sourceHash": "0dd82cf03dc273d1818ed17eea3a378dcb7204c8aee16a2593b2697274260871",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+            }
+          },
+          {
+            "label": "재고 현금 효과",
+            "tag": "IncreaseDecreaseInInventories",
+            "value": -1002000000.0,
+            "fact": {
+              "start": "2025-12-29",
+              "end": "2026-06-28",
+              "dimensions": [],
+              "tag": "IncreaseDecreaseInInventories",
+              "taxonomy": "http://fasb.org/us-gaap/2026",
+              "value": 1002000000.0,
+              "unit": "USD",
+              "context": "c-1",
+              "factId": "f-420",
+              "decimals": "-6",
+              "accession": "0000200406-26-000153",
+              "filedAt": "2026-07-23",
+              "sourceFile": "data/sources/filing-0000200406-26-000153-0dd82cf03dc273d1.xbrl",
+              "sourceHash": "0dd82cf03dc273d1818ed17eea3a378dcb7204c8aee16a2593b2697274260871",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+            }
+          },
+          {
+            "label": "매입·미지급부채 현금 효과",
+            "tag": "IncreaseDecreaseInAccountsPayableAndAccruedLiabilities",
+            "value": -956000000.0,
+            "fact": {
+              "start": "2025-12-29",
+              "end": "2026-06-28",
+              "dimensions": [],
+              "tag": "IncreaseDecreaseInAccountsPayableAndAccruedLiabilities",
+              "taxonomy": "http://fasb.org/us-gaap/2026",
+              "value": -956000000.0,
+              "unit": "USD",
+              "context": "c-1",
+              "factId": "f-422",
+              "decimals": "-6",
+              "accession": "0000200406-26-000153",
+              "filedAt": "2026-07-23",
+              "sourceFile": "data/sources/filing-0000200406-26-000153-0dd82cf03dc273d1.xbrl",
+              "sourceHash": "0dd82cf03dc273d1818ed17eea3a378dcb7204c8aee16a2593b2697274260871",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+            }
+          },
+          {
+            "label": "기타 영업자산 현금 효과",
+            "tag": "IncreaseDecreaseInOtherOperatingAssets",
+            "value": 1299000000.0,
+            "fact": {
+              "start": "2025-12-29",
+              "end": "2026-06-28",
+              "dimensions": [],
+              "tag": "IncreaseDecreaseInOtherOperatingAssets",
+              "taxonomy": "http://fasb.org/us-gaap/2026",
+              "value": -1299000000.0,
+              "unit": "USD",
+              "context": "c-1",
+              "factId": "f-424",
+              "decimals": "-6",
+              "accession": "0000200406-26-000153",
+              "filedAt": "2026-07-23",
+              "sourceFile": "data/sources/filing-0000200406-26-000153-0dd82cf03dc273d1.xbrl",
+              "sourceHash": "0dd82cf03dc273d1818ed17eea3a378dcb7204c8aee16a2593b2697274260871",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+            }
+          },
+          {
+            "label": "기타 영업부채 현금 효과",
+            "tag": "IncreaseDecreaseInOtherOperatingLiabilities",
+            "value": -1601000000.0,
+            "fact": {
+              "start": "2025-12-29",
+              "end": "2026-06-28",
+              "dimensions": [],
+              "tag": "IncreaseDecreaseInOtherOperatingLiabilities",
+              "taxonomy": "http://fasb.org/us-gaap/2026",
+              "value": -1601000000.0,
+              "unit": "USD",
+              "context": "c-1",
+              "factId": "f-426",
+              "decimals": "-6",
+              "accession": "0000200406-26-000153",
+              "filedAt": "2026-07-23",
+              "sourceFile": "data/sources/filing-0000200406-26-000153-0dd82cf03dc273d1.xbrl",
+              "sourceHash": "0dd82cf03dc273d1818ed17eea3a378dcb7204c8aee16a2593b2697274260871",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+            }
+          }
+        ],
+        "reportedCfo": 11130000000.0,
+        "residual": 0.0
+      },
+      {
+        "coefficient": -1,
+        "start": "2024-12-30",
+        "end": "2025-06-29",
+        "parts": [
+          {
+            "label": "당기순이익",
+            "tag": "NetIncomeLoss",
+            "value": 16536000000.0,
+            "fact": {
+              "start": "2024-12-30",
+              "end": "2025-06-29",
+              "dimensions": [],
+              "tag": "NetIncomeLoss",
+              "taxonomy": "http://fasb.org/us-gaap/2026",
+              "value": 16536000000.0,
+              "unit": "USD",
+              "context": "c-18",
+              "factId": "f-244",
+              "decimals": "-6",
+              "accession": "0000200406-26-000153",
+              "filedAt": "2026-07-23",
+              "sourceFile": "data/sources/filing-0000200406-26-000153-0dd82cf03dc273d1.xbrl",
+              "sourceHash": "0dd82cf03dc273d1818ed17eea3a378dcb7204c8aee16a2593b2697274260871",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+            }
+          },
+          {
+            "label": "감가상각·상각",
+            "tag": "DepreciationDepletionAndAmortization",
+            "value": 3715000000.0,
+            "fact": {
+              "start": "2024-12-30",
+              "end": "2025-06-29",
+              "dimensions": [],
+              "tag": "DepreciationDepletionAndAmortization",
+              "taxonomy": "http://fasb.org/us-gaap/2026",
+              "value": 3715000000.0,
+              "unit": "USD",
+              "context": "c-18",
+              "factId": "f-405",
+              "decimals": "-6",
+              "accession": "0000200406-26-000153",
+              "filedAt": "2026-07-23",
+              "sourceFile": "data/sources/filing-0000200406-26-000153-0dd82cf03dc273d1.xbrl",
+              "sourceHash": "0dd82cf03dc273d1818ed17eea3a378dcb7204c8aee16a2593b2697274260871",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+            }
+          },
+          {
+            "label": "주식보상 되돌림",
+            "tag": "ShareBasedCompensation",
+            "value": 698000000.0,
+            "fact": {
+              "start": "2024-12-30",
+              "end": "2025-06-29",
+              "dimensions": [],
+              "tag": "ShareBasedCompensation",
+              "taxonomy": "http://fasb.org/us-gaap/2026",
+              "value": 698000000.0,
+              "unit": "USD",
+              "context": "c-18",
+              "factId": "f-407",
+              "decimals": "-6",
+              "accession": "0000200406-26-000153",
+              "filedAt": "2026-07-23",
+              "sourceFile": "data/sources/filing-0000200406-26-000153-0dd82cf03dc273d1.xbrl",
+              "sourceHash": "0dd82cf03dc273d1818ed17eea3a378dcb7204c8aee16a2593b2697274260871",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+            }
+          },
+          {
+            "label": "자산 감액",
+            "tag": "AssetImpairmentCharges",
+            "value": 30000000.0,
+            "fact": {
+              "start": "2024-12-30",
+              "end": "2025-06-29",
+              "dimensions": [],
+              "tag": "AssetImpairmentCharges",
+              "taxonomy": "http://fasb.org/us-gaap/2026",
+              "value": 30000000.0,
+              "unit": "USD",
+              "context": "c-18",
+              "factId": "f-409",
+              "decimals": "-6",
+              "accession": "0000200406-26-000153",
+              "filedAt": "2026-07-23",
+              "sourceFile": "data/sources/filing-0000200406-26-000153-0dd82cf03dc273d1.xbrl",
+              "sourceHash": "0dd82cf03dc273d1818ed17eea3a378dcb7204c8aee16a2593b2697274260871",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+            }
+          },
+          {
+            "label": "취득 진행 중 연구개발 조정",
+            "tag": "InProcessResearchAndDevelopmentCharge",
+            "value": 92000000.0,
+            "fact": {
+              "start": "2024-12-30",
+              "end": "2025-06-29",
+              "dimensions": [],
+              "tag": "InProcessResearchAndDevelopmentCharge",
+              "taxonomy": "http://www.jnj.com/20260628",
+              "value": 92000000.0,
+              "unit": "USD",
+              "context": "c-18",
+              "factId": "f-411",
+              "decimals": "-6",
+              "accession": "0000200406-26-000153",
+              "filedAt": "2026-07-23",
+              "sourceFile": "data/sources/filing-0000200406-26-000153-0dd82cf03dc273d1.xbrl",
+              "sourceHash": "0dd82cf03dc273d1818ed17eea3a378dcb7204c8aee16a2593b2697274260871",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+            }
+          },
+          {
+            "label": "자산·사업 매각손익 되돌림",
+            "tag": "GainLossOnSalesOfAssetsAndAssetImpairmentCharges",
+            "value": -74000000.0,
+            "fact": {
+              "start": "2024-12-30",
+              "end": "2025-06-29",
+              "dimensions": [],
+              "tag": "GainLossOnSalesOfAssetsAndAssetImpairmentCharges",
+              "taxonomy": "http://fasb.org/us-gaap/2026",
+              "value": 74000000.0,
+              "unit": "USD",
+              "context": "c-18",
+              "factId": "f-413",
+              "decimals": "-6",
+              "accession": "0000200406-26-000153",
+              "filedAt": "2026-07-23",
+              "sourceFile": "data/sources/filing-0000200406-26-000153-0dd82cf03dc273d1.xbrl",
+              "sourceHash": "0dd82cf03dc273d1818ed17eea3a378dcb7204c8aee16a2593b2697274260871",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+            }
+          },
+          {
+            "label": "이연법인세 조정",
+            "tag": "DeferredIncomeTaxExpenseBenefit",
+            "value": 2997000000.0,
+            "fact": {
+              "start": "2024-12-30",
+              "end": "2025-06-29",
+              "dimensions": [],
+              "tag": "DeferredIncomeTaxExpenseBenefit",
+              "taxonomy": "http://fasb.org/us-gaap/2026",
+              "value": 2997000000.0,
+              "unit": "USD",
+              "context": "c-18",
+              "factId": "f-415",
+              "decimals": "-6",
+              "accession": "0000200406-26-000153",
+              "filedAt": "2026-07-23",
+              "sourceFile": "data/sources/filing-0000200406-26-000153-0dd82cf03dc273d1.xbrl",
+              "sourceHash": "0dd82cf03dc273d1818ed17eea3a378dcb7204c8aee16a2593b2697274260871",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+            }
+          },
+          {
+            "label": "신용손실·채권 충당금",
+            "tag": "ProvisionForDoubtfulAccounts",
+            "value": 3000000.0,
+            "fact": {
+              "start": "2024-12-30",
+              "end": "2025-06-29",
+              "dimensions": [],
+              "tag": "ProvisionForDoubtfulAccounts",
+              "taxonomy": "http://fasb.org/us-gaap/2026",
+              "value": 3000000.0,
+              "unit": "USD",
+              "context": "c-18",
+              "factId": "f-417",
+              "decimals": "-6",
+              "accession": "0000200406-26-000153",
+              "filedAt": "2026-07-23",
+              "sourceFile": "data/sources/filing-0000200406-26-000153-0dd82cf03dc273d1.xbrl",
+              "sourceHash": "0dd82cf03dc273d1818ed17eea3a378dcb7204c8aee16a2593b2697274260871",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+            }
+          },
+          {
+            "label": "매출채권 현금 효과",
+            "tag": "IncreaseDecreaseInAccountsReceivable",
+            "value": -2283000000.0,
+            "fact": {
+              "start": "2024-12-30",
+              "end": "2025-06-29",
+              "dimensions": [],
+              "tag": "IncreaseDecreaseInAccountsReceivable",
+              "taxonomy": "http://fasb.org/us-gaap/2026",
+              "value": 2283000000.0,
+              "unit": "USD",
+              "context": "c-18",
+              "factId": "f-419",
+              "decimals": "-6",
+              "accession": "0000200406-26-000153",
+              "filedAt": "2026-07-23",
+              "sourceFile": "data/sources/filing-0000200406-26-000153-0dd82cf03dc273d1.xbrl",
+              "sourceHash": "0dd82cf03dc273d1818ed17eea3a378dcb7204c8aee16a2593b2697274260871",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+            }
+          },
+          {
+            "label": "재고 현금 효과",
+            "tag": "IncreaseDecreaseInInventories",
+            "value": -656000000.0,
+            "fact": {
+              "start": "2024-12-30",
+              "end": "2025-06-29",
+              "dimensions": [],
+              "tag": "IncreaseDecreaseInInventories",
+              "taxonomy": "http://fasb.org/us-gaap/2026",
+              "value": 656000000.0,
+              "unit": "USD",
+              "context": "c-18",
+              "factId": "f-421",
+              "decimals": "-6",
+              "accession": "0000200406-26-000153",
+              "filedAt": "2026-07-23",
+              "sourceFile": "data/sources/filing-0000200406-26-000153-0dd82cf03dc273d1.xbrl",
+              "sourceHash": "0dd82cf03dc273d1818ed17eea3a378dcb7204c8aee16a2593b2697274260871",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+            }
+          },
+          {
+            "label": "매입·미지급부채 현금 효과",
+            "tag": "IncreaseDecreaseInAccountsPayableAndAccruedLiabilities",
+            "value": -886000000.0,
+            "fact": {
+              "start": "2024-12-30",
+              "end": "2025-06-29",
+              "dimensions": [],
+              "tag": "IncreaseDecreaseInAccountsPayableAndAccruedLiabilities",
+              "taxonomy": "http://fasb.org/us-gaap/2026",
+              "value": -886000000.0,
+              "unit": "USD",
+              "context": "c-18",
+              "factId": "f-423",
+              "decimals": "-6",
+              "accession": "0000200406-26-000153",
+              "filedAt": "2026-07-23",
+              "sourceFile": "data/sources/filing-0000200406-26-000153-0dd82cf03dc273d1.xbrl",
+              "sourceHash": "0dd82cf03dc273d1818ed17eea3a378dcb7204c8aee16a2593b2697274260871",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+            }
+          },
+          {
+            "label": "기타 영업자산 현금 효과",
+            "tag": "IncreaseDecreaseInOtherOperatingAssets",
+            "value": -6194000000.0,
+            "fact": {
+              "start": "2024-12-30",
+              "end": "2025-06-29",
+              "dimensions": [],
+              "tag": "IncreaseDecreaseInOtherOperatingAssets",
+              "taxonomy": "http://fasb.org/us-gaap/2026",
+              "value": 6194000000.0,
+              "unit": "USD",
+              "context": "c-18",
+              "factId": "f-425",
+              "decimals": "-6",
+              "accession": "0000200406-26-000153",
+              "filedAt": "2026-07-23",
+              "sourceFile": "data/sources/filing-0000200406-26-000153-0dd82cf03dc273d1.xbrl",
+              "sourceHash": "0dd82cf03dc273d1818ed17eea3a378dcb7204c8aee16a2593b2697274260871",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+            }
+          },
+          {
+            "label": "기타 영업부채 현금 효과",
+            "tag": "IncreaseDecreaseInOtherOperatingLiabilities",
+            "value": -5926000000.0,
+            "fact": {
+              "start": "2024-12-30",
+              "end": "2025-06-29",
+              "dimensions": [],
+              "tag": "IncreaseDecreaseInOtherOperatingLiabilities",
+              "taxonomy": "http://fasb.org/us-gaap/2026",
+              "value": -5926000000.0,
+              "unit": "USD",
+              "context": "c-18",
+              "factId": "f-427",
+              "decimals": "-6",
+              "accession": "0000200406-26-000153",
+              "filedAt": "2026-07-23",
+              "sourceFile": "data/sources/filing-0000200406-26-000153-0dd82cf03dc273d1.xbrl",
+              "sourceHash": "0dd82cf03dc273d1818ed17eea3a378dcb7204c8aee16a2593b2697274260871",
+              "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+            }
+          }
+        ],
+        "reportedCfo": 8052000000.0,
+        "residual": 0.0
+      }
+    ],
+    "cashAfterInvestmentLeaseSbc": 17179000000.0
+  },
+  "observedResidualLabel": "영업현금 − 설비·인수·취득 연구개발·기타 투자 − 주식보상 비용 대용 (금융리스 전액 미확인)",
+  "anchors": {
+    "workingCashEffect": -2949000000.0,
+    "revenueIncrease": 3736000000,
+    "actualFinanceLeasePrincipal": null,
+    "investmentComponents": [
+      {
+        "label": "유형자산 현금 취득",
+        "fact": {
+          "value": 5364000000.0,
+          "components": [
+            {
+              "coefficient": 1,
+              "fact": {
+                "start": "2024-12-30",
+                "end": "2025-12-28",
+                "dimensions": [],
+                "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+                "taxonomy": "http://fasb.org/us-gaap/2025",
+                "value": 4832000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-390",
+                "decimals": "-6",
+                "accession": "0000200406-26-000016",
+                "filedAt": "2026-02-11",
+                "sourceFile": "data/sources/filing-0000200406-26-000016-37d6dddc840c2dc7.xbrl",
+                "sourceHash": "37d6dddc840c2dc70cbb41d1d9fbfca17bdf0a0f3ae9cac4593b3b7c655937c9",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000016/jnj-20251228.htm"
+              }
+            },
+            {
+              "coefficient": 1,
+              "fact": {
+                "start": "2025-12-29",
+                "end": "2026-06-28",
+                "dimensions": [],
+                "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+                "taxonomy": "http://fasb.org/us-gaap/2026",
+                "value": 2370000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-430",
+                "decimals": "-6",
+                "accession": "0000200406-26-000153",
+                "filedAt": "2026-07-23",
+                "sourceFile": "data/sources/filing-0000200406-26-000153-0dd82cf03dc273d1.xbrl",
+                "sourceHash": "0dd82cf03dc273d1818ed17eea3a378dcb7204c8aee16a2593b2697274260871",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+              }
+            },
+            {
+              "coefficient": -1,
+              "fact": {
+                "start": "2024-12-30",
+                "end": "2025-06-29",
+                "dimensions": [],
+                "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+                "taxonomy": "http://fasb.org/us-gaap/2026",
+                "value": 1838000000.0,
+                "unit": "USD",
+                "context": "c-18",
+                "factId": "f-431",
+                "decimals": "-6",
+                "accession": "0000200406-26-000153",
+                "filedAt": "2026-07-23",
+                "sourceFile": "data/sources/filing-0000200406-26-000153-0dd82cf03dc273d1.xbrl",
+                "sourceHash": "0dd82cf03dc273d1818ed17eea3a378dcb7204c8aee16a2593b2697274260871",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+              }
+            }
+          ],
+          "start": "2025-06-30",
+          "end": "2026-06-28",
+          "unit": "USD",
+          "derived": true,
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+        }
+      },
+      {
+        "label": "기업 인수 순현금",
+        "fact": {
+          "value": 3346000000.0,
+          "components": [
+            {
+              "coefficient": 1,
+              "fact": {
+                "start": "2024-12-30",
+                "end": "2025-12-28",
+                "dimensions": [],
+                "tag": "PaymentsToAcquireBusinessesNetOfCashAcquired",
+                "taxonomy": "http://fasb.org/us-gaap/2025",
+                "value": 17541000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-396",
+                "decimals": "-6",
+                "accession": "0000200406-26-000016",
+                "filedAt": "2026-02-11",
+                "sourceFile": "data/sources/filing-0000200406-26-000016-37d6dddc840c2dc7.xbrl",
+                "sourceHash": "37d6dddc840c2dc70cbb41d1d9fbfca17bdf0a0f3ae9cac4593b3b7c655937c9",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000016/jnj-20251228.htm"
+              }
+            },
+            {
+              "coefficient": 1,
+              "fact": {
+                "start": "2025-12-29",
+                "end": "2026-06-28",
+                "dimensions": [],
+                "tag": "PaymentsToAcquireBusinessesNetOfCashAcquired",
+                "taxonomy": "http://fasb.org/us-gaap/2026",
+                "value": 263000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-434",
+                "decimals": "-6",
+                "accession": "0000200406-26-000153",
+                "filedAt": "2026-07-23",
+                "sourceFile": "data/sources/filing-0000200406-26-000153-0dd82cf03dc273d1.xbrl",
+                "sourceHash": "0dd82cf03dc273d1818ed17eea3a378dcb7204c8aee16a2593b2697274260871",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+              }
+            },
+            {
+              "coefficient": -1,
+              "fact": {
+                "start": "2024-12-30",
+                "end": "2025-06-29",
+                "dimensions": [],
+                "tag": "PaymentsToAcquireBusinessesNetOfCashAcquired",
+                "taxonomy": "http://fasb.org/us-gaap/2026",
+                "value": 14458000000.0,
+                "unit": "USD",
+                "context": "c-18",
+                "factId": "f-435",
+                "decimals": "-6",
+                "accession": "0000200406-26-000153",
+                "filedAt": "2026-07-23",
+                "sourceFile": "data/sources/filing-0000200406-26-000153-0dd82cf03dc273d1.xbrl",
+                "sourceHash": "0dd82cf03dc273d1818ed17eea3a378dcb7204c8aee16a2593b2697274260871",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+              }
+            }
+          ],
+          "start": "2025-06-30",
+          "end": "2026-06-28",
+          "unit": "USD",
+          "derived": true,
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+        }
+      },
+      {
+        "label": "취득 진행 중 연구개발·마일스톤",
+        "fact": {
+          "value": 16000000.0,
+          "components": [
+            {
+              "coefficient": 1,
+              "fact": {
+                "start": "2024-12-30",
+                "end": "2025-12-28",
+                "dimensions": [],
+                "tag": "PaymentsToAcquiredInProcessResearchAndDevelopmentAssets",
+                "taxonomy": "http://www.jnj.com/20251228",
+                "value": 385000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-399",
+                "decimals": "-6",
+                "accession": "0000200406-26-000016",
+                "filedAt": "2026-02-11",
+                "sourceFile": "data/sources/filing-0000200406-26-000016-37d6dddc840c2dc7.xbrl",
+                "sourceHash": "37d6dddc840c2dc70cbb41d1d9fbfca17bdf0a0f3ae9cac4593b3b7c655937c9",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000016/jnj-20251228.htm"
+              }
+            },
+            {
+              "coefficient": 1,
+              "fact": {
+                "start": "2025-12-29",
+                "end": "2026-06-28",
+                "dimensions": [],
+                "tag": "PaymentsToAcquireInProcessResearchAndDevelopmentAssets",
+                "taxonomy": "http://www.jnj.com/20260628",
+                "value": 0.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-436",
+                "decimals": "-6",
+                "accession": "0000200406-26-000153",
+                "filedAt": "2026-07-23",
+                "sourceFile": "data/sources/filing-0000200406-26-000153-0dd82cf03dc273d1.xbrl",
+                "sourceHash": "0dd82cf03dc273d1818ed17eea3a378dcb7204c8aee16a2593b2697274260871",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+              }
+            },
+            {
+              "coefficient": -1,
+              "fact": {
+                "start": "2024-12-30",
+                "end": "2025-06-29",
+                "dimensions": [],
+                "tag": "PaymentsToAcquireInProcessResearchAndDevelopmentAssets",
+                "taxonomy": "http://www.jnj.com/20260628",
+                "value": 369000000.0,
+                "unit": "USD",
+                "context": "c-18",
+                "factId": "f-437",
+                "decimals": "-6",
+                "accession": "0000200406-26-000153",
+                "filedAt": "2026-07-23",
+                "sourceFile": "data/sources/filing-0000200406-26-000153-0dd82cf03dc273d1.xbrl",
+                "sourceHash": "0dd82cf03dc273d1818ed17eea3a378dcb7204c8aee16a2593b2697274260871",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+              }
+            }
+          ],
+          "start": "2025-06-30",
+          "end": "2026-06-28",
+          "unit": "USD",
+          "derived": true,
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+        }
+      },
+      {
+        "label": "기타 투자 (라이선스·마일스톤 포함)",
+        "fact": {
+          "value": 289000000.0,
+          "components": [
+            {
+              "coefficient": 1,
+              "fact": {
+                "start": "2024-12-30",
+                "end": "2025-12-28",
+                "dimensions": [],
+                "tag": "PaymentsForProceedsFromOtherInvestingActivities",
+                "taxonomy": "http://fasb.org/us-gaap/2025",
+                "value": 162000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-411",
+                "decimals": "-6",
+                "accession": "0000200406-26-000016",
+                "filedAt": "2026-02-11",
+                "sourceFile": "data/sources/filing-0000200406-26-000016-37d6dddc840c2dc7.xbrl",
+                "sourceHash": "37d6dddc840c2dc70cbb41d1d9fbfca17bdf0a0f3ae9cac4593b3b7c655937c9",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000016/jnj-20251228.htm"
+              }
+            },
+            {
+              "coefficient": 1,
+              "fact": {
+                "start": "2025-12-29",
+                "end": "2026-06-28",
+                "dimensions": [],
+                "tag": "PaymentsForProceedsFromOtherInvestingActivities",
+                "taxonomy": "http://fasb.org/us-gaap/2026",
+                "value": 193000000.0,
+                "unit": "USD",
+                "context": "c-1",
+                "factId": "f-444",
+                "decimals": "-6",
+                "accession": "0000200406-26-000153",
+                "filedAt": "2026-07-23",
+                "sourceFile": "data/sources/filing-0000200406-26-000153-0dd82cf03dc273d1.xbrl",
+                "sourceHash": "0dd82cf03dc273d1818ed17eea3a378dcb7204c8aee16a2593b2697274260871",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+              }
+            },
+            {
+              "coefficient": -1,
+              "fact": {
+                "start": "2024-12-30",
+                "end": "2025-06-29",
+                "dimensions": [],
+                "tag": "PaymentsForProceedsFromOtherInvestingActivities",
+                "taxonomy": "http://fasb.org/us-gaap/2026",
+                "value": 66000000.0,
+                "unit": "USD",
+                "context": "c-18",
+                "factId": "f-445",
+                "decimals": "-6",
+                "accession": "0000200406-26-000153",
+                "filedAt": "2026-07-23",
+                "sourceFile": "data/sources/filing-0000200406-26-000153-0dd82cf03dc273d1.xbrl",
+                "sourceHash": "0dd82cf03dc273d1818ed17eea3a378dcb7204c8aee16a2593b2697274260871",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+              }
+            }
+          ],
+          "start": "2025-06-30",
+          "end": "2026-06-28",
+          "unit": "USD",
+          "derived": true,
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+        }
+      }
+    ],
+    "corporateCost": 1778000000.0,
+    "cashDepreciation": 7751000000.0
+  },
+  "anchorSummary": "추가 매출당 자금 소요는 최근 반기의 매출채권·재고 현금 유출만 사용한 제한된 대용입니다. 기타 영업자산·부채의 큰 변동과 소송·조세·파생계약 담보를 고객 자금으로 합치지 않습니다.",
+  "cashAnchors": [
+    {
+      "label": "유형자산 현금 취득",
+      "period": "최근1년",
+      "value": 5364000000.0,
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm",
+      "scope": "원 현금표의 별도 행. 미래 반복 비율은 편집 가정이며 정상 투자 부담으로 승인되지 않음"
+    },
+    {
+      "label": "기업 인수 순현금",
+      "period": "최근1년",
+      "value": 3346000000.0,
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm",
+      "scope": "원 현금표의 별도 행. 미래 반복 비율은 편집 가정이며 정상 투자 부담으로 승인되지 않음"
+    },
+    {
+      "label": "취득 진행 중 연구개발·마일스톤",
+      "period": "최근1년",
+      "value": 16000000.0,
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm",
+      "scope": "원 현금표의 별도 행. 미래 반복 비율은 편집 가정이며 정상 투자 부담으로 승인되지 않음"
+    },
+    {
+      "label": "기타 투자 (라이선스·마일스톤 포함)",
+      "period": "최근1년",
+      "value": 289000000.0,
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm",
+      "scope": "원 현금표의 별도 행. 미래 반복 비율은 편집 가정이며 정상 투자 부담으로 승인되지 않음"
+    },
+    {
+      "label": "금융리스 실제 원금 지급 전액",
+      "period": "최근1년",
+      "value": null,
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000016/jnj-20251228.htm",
+      "scope": "연간 주석의 중요하지 않은 약정이 실제 지급0을 입증하지 않음. 미래 기본0은 연구자 가정"
+    }
+  ],
+  "passages": [
+    {
+      "heading": "",
+      "id": "f10212711e6978e3f926",
+      "kind": "paragraph",
+      "ordinal": 514,
+      "sourceFile": "data/sources/filing-0000200406-26-000153-13e4bb135b581fea.html",
+      "sourceHash": "13e4bb135b581fea4efd6472480f28d7a2da550523d0fcccb39e4f14d67d2186",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm",
+      "text": "The Company’s chief operating decision maker (CODM) is the Chief Executive Officer (Principal Executive Officer). For the Innovative Medicine and MedTech segments, the CODM uses segment income before tax to allocate resources (including employees, financial, and capital resources) for each segment predominantly in the annual forecasting process. The CODM considers planning-to-actual variances on a quarterly basis to assess performance and make decisions about allocating resources to the segments."
+    },
+    {
+      "heading": "",
+      "id": "3fc5990413bc8fe4e532",
+      "kind": "paragraph",
+      "ordinal": 706,
+      "sourceFile": "data/sources/filing-0000200406-26-000153-13e4bb135b581fea.html",
+      "sourceHash": "13e4bb135b581fea4efd6472480f28d7a2da550523d0fcccb39e4f14d67d2186",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm",
+      "text": "(4) Amounts not allocated to segments include interest (income)/expense and general corporate (income)/expense. The fiscal second quarter and fiscal six months of 2026 include charges for talc matters of $0.4 billion and $0.8 billion, respectively. The fiscal six months of 2025 includes approximately $7.0 billion related to the talc reserve reversal."
+    },
+    {
+      "heading": "",
+      "id": "dfa309bf29d032949ae0",
+      "kind": "paragraph",
+      "ordinal": 705,
+      "sourceFile": "data/sources/filing-0000200406-26-000153-13e4bb135b581fea.html",
+      "sourceHash": "13e4bb135b581fea4efd6472480f28d7a2da550523d0fcccb39e4f14d67d2186",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm",
+      "text": "(3) Other segment items for each reportable segment include other income and expense (gains and losses on divestitures and sales of assets), restructuring activities and impairment charges related to in-process research and development"
+    },
+    {
+      "heading": "",
+      "id": "5f3cc8eafe91860981cd",
+      "kind": "paragraph",
+      "ordinal": 744,
+      "sourceFile": "data/sources/filing-0000200406-26-000153-13e4bb135b581fea.html",
+      "sourceHash": "13e4bb135b581fea4efd6472480f28d7a2da550523d0fcccb39e4f14d67d2186",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm",
+      "text": "As of the second quarter of 2026, the total present value of the reserve for talc related matters is approximately $3.7 billion, comprising executed settlement agreements, litigation defense and other costs. Approximately 40% of the reserve is recorded as a current liability."
+    },
+    {
+      "heading": "",
+      "id": "4e22ed56461e098489a2",
+      "kind": "paragraph",
+      "ordinal": 734,
+      "sourceFile": "data/sources/filing-0000200406-26-000153-13e4bb135b581fea.html",
+      "sourceHash": "13e4bb135b581fea4efd6472480f28d7a2da550523d0fcccb39e4f14d67d2186",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm",
+      "text": "The fair value of the assets acquired is $17.5 billion, which primarily relates to acquired in-process research and development (IPR&D) of $8.3 billion, an amortizable intangible asset of $5.2 billion, goodwill of $2.9 billion and other current and non-current assets of $1.1 billion. The fair value of the liabilities assumed is $3.0 billion, primarily related to deferred taxes. As of the fiscal six months ended June 28, 2026, there have been no material measurement period adjustments. During the fiscal fourth quarter of 2025, the U.S. FDA approved CAPLYTA as an adjunctive therapy with anti-depressants for the treatment of major depressive disorder in adults. This IPR&D asset was reclassified to a definite lived asset and began amortizing in the fiscal fourth quarter of 2025."
+    },
+    {
+      "heading": "",
+      "id": "fcac921abb3356e03efb",
+      "kind": "paragraph",
+      "ordinal": 797,
+      "sourceFile": "data/sources/filing-0000200406-26-000153-13e4bb135b581fea.html",
+      "sourceHash": "13e4bb135b581fea4efd6472480f28d7a2da550523d0fcccb39e4f14d67d2186",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm",
+      "text": "For the fiscal six months of 2026, worldwide sales were $49.4 billion, a total increase of 8.2%, including an operational* increase of 6.0% as compared to 2025 fiscal six months sales of $45.6 billion. Currency fluctuations had a positive impact of 2.2% for the fiscal six months of 2026. In the fiscal six months of 2026, acquisitions and divestitures had net positive impact of 0.5%, on worldwide operational sales growth, primarily related to CAPLYTA. In the fiscal six months of 2026, the negative impact of the STELARA sales decline, due to biosimilar competition, on worldwide operational sales was approximately 5.0%."
+    },
+    {
+      "heading": "",
+      "id": "1710e48a81b4a53e9d49",
+      "kind": "paragraph",
+      "ordinal": 677,
+      "sourceFile": "data/sources/filing-0000200406-26-000153-13e4bb135b581fea.html",
+      "sourceHash": "13e4bb135b581fea4efd6472480f28d7a2da550523d0fcccb39e4f14d67d2186",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm",
+      "text": "Adjustments to revenue recognized as a result of changes in estimates for the Company's most significant U.S. rebates and discounts liability balances for products shipped in previous years were approximately 3.0% and 2.6% of U.S. Innovative Medicine revenue during the fiscal second quarter of 2026 and 2025, respectively and approximately 3.8% and 3.5% of U.S. Innovative Medicine revenue during the fiscal six months of 2026 and 2025, respectively ."
+    },
+    {
+      "heading": "",
+      "id": "223eca7b64af8202d03d",
+      "kind": "paragraph",
+      "ordinal": 678,
+      "sourceFile": "data/sources/filing-0000200406-26-000153-13e4bb135b581fea.html",
+      "sourceHash": "13e4bb135b581fea4efd6472480f28d7a2da550523d0fcccb39e4f14d67d2186",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm",
+      "text": "In October 2025, the Company announced its intention to separate its Orthopaedics business. The Company continues to explore multiple paths to effect the planned separation with a targeted completion within 18 to 24 months after the initial announcement."
+    },
+    {
+      "heading": "",
+      "id": "5440199e5853f880961e",
+      "kind": "table",
+      "ordinal": 247,
+      "sourceFile": "data/sources/filing-0000200406-26-000153-13e4bb135b581fea.html",
+      "sourceHash": "13e4bb135b581fea4efd6472480f28d7a2da550523d0fcccb39e4f14d67d2186",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm",
+      "text": "Other (including capitalized licenses and milestones) | | (193) | | (66)"
+    }
+  ],
+  "historicalPassages": [
+    {
+      "text": "The Company determines whether an arrangement is a lease at contract inception by establishing if the contract conveys the right to control the use of identified property, plant, or equipment for a period of time in exchange for consideration. Right of Use (ROU) Assets and Lease Liabilities for operating leases are included in Other assets, Accrued liabilities, and Other liabilities on the consolidated balance sheet. The ROU Assets represent the right to use an underlying asset for the lease term and lease liabilities represent an obligation to make lease payments arising from the lease. Commitments under finance leases are not significant.",
+      "heading": "",
+      "kind": "paragraph",
+      "ordinal": 803,
+      "id": "fd45fbf4e1dc355dde8e",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000016/jnj-20251228.htm",
+      "sourceHash": "12283864a644d9980728e193a3acc8960e110f6b445939be44f2b0bfb3001adf"
+    },
+    {
+      "text": "The Company primarily has operating lease for space, vehicles, manufacturing equipment and data processing equipment. The ROU asset pertaining to leases was $1.3 billion and $1.1 billion in fiscal years 2025 and 2024, respectively. The lease liability was $1.4 billion and $1.2 billion in fiscal years 2025 and 2024, respectively. The operating lease costs from continuing operations were $0.2 billion in fiscal years 2025, 2024 and 2023. Cash paid for amounts included in the measurement of lease liabilities from continuing operations were $0.3 billion in 2025 and $0.2 billion in fiscal years 2024 and 2023.",
+      "heading": "",
+      "kind": "paragraph",
+      "ordinal": 805,
+      "id": "9f9ed7e19b192455c23e",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000016/jnj-20251228.htm",
+      "sourceHash": "12283864a644d9980728e193a3acc8960e110f6b445939be44f2b0bfb3001adf"
+    }
+  ],
+  "rules": [
+    "세전이익은 영업이익과 다른 보고 지표입니다. 미배분 항목에 이자가 이미 들어 있어 추가 순이자 가정은0으로 고정합니다. 사업 부문과 미배분 비용을 별도로 편집합니다.",
+    "연간+당기 반기−전년 반기로 같은 회계 범위의 최근1년을 연결합니다. 전년 반기 talc 충당금 환입은 연간과 전년 반기에 함께 있으므로 최근1년에서 다시70억 달러를 차감하지 않습니다.",
+    "감가상각·무형상각을 되돌리는 대신 설비·기업 인수 순현금·취득 연구개발·기타 투자를 모두 재투자 경로에 넣습니다. 인수 무형자산의 공정가치를 현금 취득에 다시 합치지 않습니다.",
+    "기타 투자 행은 라이선스·마일스톤을 포함하나 전액을 그 항목으로 확정하지 않습니다. 인수액이 큰 해와 작은 해의 차이를 정상 재투자율 차이로 승인하지 않습니다. 인수 현금이 미래 매출 성장을 자동으로 만드는 모델도 아닙니다.",
+    "주식보상은 미래 이익에서 비용으로 남기며 현금표 되돌림을 미래 가용 현금에 더하지 않습니다. 운영리스 비용을 되돌리거나 금융리스0을 실제 지급액으로 단정하지 않습니다.",
+    "기본 세율25%는 명시적 연구 가정이며 법정세율·회사 전망이 아닙니다. 보고 실효세율에는 지역 구성·공제·이연 항목이 포함됩니다.",
+    "미배분 소송·본사 비용과 부문 평가손익·구조조정·인수통합·사업분리 비용의 정상화는 별도 검토 대상입니다. talc 충당금의 현재가치를 최대 손실로 사용하지 않습니다.",
+    "초과현금·투자자산·부채 상환 일정·미확인 계약 지급은 전체 주식가치 검토에서 추가 보완합니다. 신규 순차입0과 현재 사업 범위 지속은 미래 연구 가정입니다."
+  ],
+  "remaining": [
+    "반복 연구개발·인수·라이선스 대체 부담과 제품별 현금 회수",
+    "talc 및 소송·본사 비용 정상화와 실제 지급 시점",
+    "MedTech 분리 범위·일회 비용과 인수 무형상각 조정",
+    "금융리스 전액·초과현금·주주 배분과 세율 근거"
+  ],
+  "initial": {
+    "years": [
+      {
+        "year": 1,
+        "segments": [
+          {
+            "label": "Innovative Medicine",
+            "revenue": 63136000000.0,
+            "operatingIncome": 23070000000.0
+          },
+          {
+            "label": "MedTech",
+            "revenue": 34793000000.0,
+            "operatingIncome": 3904000000.0
+          }
+        ],
+        "revenue": 97929000000.0,
+        "operatingIncome": 25196000000.0,
+        "netInterest": 0.0,
+        "tax": 6299000000.0,
+        "depreciation": 7751000000.0,
+        "workingCapital": 0.0,
+        "capex": 9015000000.0,
+        "leasePrincipal": 0.0,
+        "cash": 17633000000.0,
+        "segmentOperatingIncome": 26974000000.0,
+        "corporateCost": 1778000000.0
+      },
+      {
+        "year": 2,
+        "segments": [
+          {
+            "label": "Innovative Medicine",
+            "revenue": 63136000000.0,
+            "operatingIncome": 23070000000.0
+          },
+          {
+            "label": "MedTech",
+            "revenue": 34793000000.0,
+            "operatingIncome": 3904000000.0
+          }
+        ],
+        "revenue": 97929000000.0,
+        "operatingIncome": 25196000000.0,
+        "netInterest": 0.0,
+        "tax": 6299000000.0,
+        "depreciation": 7751000000.0,
+        "workingCapital": 0.0,
+        "capex": 9015000000.0,
+        "leasePrincipal": 0.0,
+        "cash": 17633000000.0,
+        "segmentOperatingIncome": 26974000000.0,
+        "corporateCost": 1778000000.0
+      },
+      {
+        "year": 3,
+        "segments": [
+          {
+            "label": "Innovative Medicine",
+            "revenue": 63136000000.0,
+            "operatingIncome": 23070000000.0
+          },
+          {
+            "label": "MedTech",
+            "revenue": 34793000000.0,
+            "operatingIncome": 3904000000.0
+          }
+        ],
+        "revenue": 97929000000.0,
+        "operatingIncome": 25196000000.0,
+        "netInterest": 0.0,
+        "tax": 6299000000.0,
+        "depreciation": 7751000000.0,
+        "workingCapital": 0.0,
+        "capex": 9015000000.0,
+        "leasePrincipal": 0.0,
+        "cash": 17633000000.0,
+        "segmentOperatingIncome": 26974000000.0,
+        "corporateCost": 1778000000.0
+      },
+      {
+        "year": 4,
+        "segments": [
+          {
+            "label": "Innovative Medicine",
+            "revenue": 63136000000.0,
+            "operatingIncome": 23070000000.0
+          },
+          {
+            "label": "MedTech",
+            "revenue": 34793000000.0,
+            "operatingIncome": 3904000000.0
+          }
+        ],
+        "revenue": 97929000000.0,
+        "operatingIncome": 25196000000.0,
+        "netInterest": 0.0,
+        "tax": 6299000000.0,
+        "depreciation": 7751000000.0,
+        "workingCapital": 0.0,
+        "capex": 9015000000.0,
+        "leasePrincipal": 0.0,
+        "cash": 17633000000.0,
+        "segmentOperatingIncome": 26974000000.0,
+        "corporateCost": 1778000000.0
+      },
+      {
+        "year": 5,
+        "segments": [
+          {
+            "label": "Innovative Medicine",
+            "revenue": 63136000000.0,
+            "operatingIncome": 23070000000.0
+          },
+          {
+            "label": "MedTech",
+            "revenue": 34793000000.0,
+            "operatingIncome": 3904000000.0
+          }
+        ],
+        "revenue": 97929000000.0,
+        "operatingIncome": 25196000000.0,
+        "netInterest": 0.0,
+        "tax": 6299000000.0,
+        "depreciation": 7751000000.0,
+        "workingCapital": 0.0,
+        "capex": 9015000000.0,
+        "leasePrincipal": 0.0,
+        "cash": 17633000000.0,
+        "segmentOperatingIncome": 26974000000.0,
+        "corporateCost": 1778000000.0
+      }
+    ],
+    "terminal": {
+      "year": 6,
+      "segments": [
+        {
+          "label": "Innovative Medicine",
+          "revenue": 64398720000.0,
+          "operatingIncome": 23531400000.0
+        },
+        {
+          "label": "MedTech",
+          "revenue": 35488860000.0,
+          "operatingIncome": 3982080000.0
+        }
+      ],
+      "revenue": 99887580000.0,
+      "operatingIncome": 25699920000.0,
+      "netInterest": 0.0,
+      "tax": 6424980000.0,
+      "depreciation": 7906020000.0,
+      "workingCapital": 1545999041.7558887,
+      "capex": 9195300000.0,
+      "leasePrincipal": 0.0,
+      "cash": 16439660958.24411,
+      "segmentOperatingIncome": 27513480000.0,
+      "corporateCost": 1813560000.0
+    },
+    "explicitPv": 63563018775.94946,
+    "terminalPv": 93283051266.16269,
+    "equityValue": 156846070042.11215,
+    "price": 65.08409533802146,
+    "terminalShare": 0.5947426750387612,
+    "requiredTerminalCash": 102436738870.5731,
+    "terminalCashGap": 85997077912.329,
+    "reinvestmentCaution": false,
+    "status": "calculated"
+  },
+  "evidenceHash": "3af67b4ae2fbd95745158e8fae02b424407433ea1441c58e9f107c879f5a1268"
+}

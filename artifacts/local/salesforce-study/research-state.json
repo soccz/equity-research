@@ -1,0 +1,27 @@
+{
+  "status": "candidate_requires_financing_scope_review",
+  "company": "CRM",
+  "current": "0001108524-26-000190",
+  "currentSourceHash": "c9a819d93fa9ffe1d05c4d6dcff1372a8cf2995da8bd61ac161b1ba1d98147b2",
+  "annual": "0001108524-26-000060",
+  "annualSourceHash": "ad3ca1752bb082f9d6f8f4bad260a0c377b66bf1c13edafc08070933524e3d24",
+  "annualHtml": "b64ff7f91a9cdbe0adb9530b00a9f3235bd688e979a15d5be443cbf482c1c4c8",
+  "observations": [
+    "One operating segment; revenue subcategories recast in 2026. Subscription/support and professional services can be separately reconciled, customer offerings lack separate profit.",
+    "Current cash D&A includes ROU amortization and impairment, footnote d23dc3e2c9f3f15e7832. Adding all D&A while omitting operating lease cash adjustment would overstate future cash.",
+    "Current CapitalizedContractCostAmortization1173m; additions1057m separate. Current finance lease principal306m; annual PrincipalPaymentsFinanceLeasesAndFinanceObligations367m. Confirm prior half and scope.",
+    "Current strategic investment profit3171m included net income and subtracted in CFO; no repetition in operating cash forecast.",
+    "2026 March issuance25bn for accelerated buyback and term loan6bn refinancing noncash. Debt table ce04673bdf468962fc6d includes15 debt rows, term loan rate4.24% current. Do not repeat old interest cost ignoring new debt.",
+    "Informatica half revenue900m, costs not separable; no invented acquisition-adjusted margin."
+  ],
+  "next": "Candidate passes cash checks; integrate only with explicit financing-scope review and model-specific price hold. Renderer and comparison/editor tests remain. Do not claim financing scope resolved.",
+  "financialApproval": false,
+  "materialFinding": "Current FinanceLeasePrincipalPayments tag is labeled financing obligations in source, annual cash statement584m vs annual finance-lease note367m; residual217m. Use full cash-statement financing principal for period linkage:584+306-278=612m, not367+306-278=395m. Annual lease interest25m does not resolve other financing obligation interest. Do not integrate candidate as complete before scope review.",
+  "candidateTests": 8,
+  "wholePythonJsCashInverseCases": 6,
+  "financingPrincipalTtm": 612000000,
+  "operatingLeaseCashAdjustmentTtm": 574000000,
+  "initialCash": -4229706250,
+  "priceHeld": true,
+  "annualFinancingResidual": 217000000
+}

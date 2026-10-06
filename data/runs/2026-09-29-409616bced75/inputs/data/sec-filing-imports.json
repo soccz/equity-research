@@ -1,0 +1,23 @@
+[
+  {
+    "company": "F",
+    "source": {
+      "file": "data/sources/filing-0000037996-26-000156-5259c130983d5b74.xbrl",
+      "sha256": "5259c130983d5b74afa7401ae16a5f6e88c7744806e1a201ac4e526b33f6e686",
+      "url": "https://www.sec.gov/Archives/edgar/data/37996/000003799626000156/f-20260630_htm.xml",
+      "primaryUrl": "https://www.sec.gov/Archives/edgar/data/37996/000003799626000156/f-20260630.htm",
+      "provider": "SEC",
+      "accession": "0000037996-26-000156",
+      "cik": 37996,
+      "retrievedAt": "2026-09-30T09:54:24.764849+00:00"
+    },
+    "metadata": {
+      "file": "data/sources/submissions-F-8f2b028ada902231.json",
+      "sha256": "8f2b028ada902231fc5fa85a1439449258d2e7ed1b57b920d66ab7616b94bd7b",
+      "url": "https://data.sec.gov/submissions/CIK0000037996.json",
+      "provider": "SEC",
+      "retrievedAt": "2026-09-30T09:56:53.788495+00:00"
+    },
+    "reason": "companyfacts current cache omits 2026-Q2; supplement with exact primary filing"
+  }
+]

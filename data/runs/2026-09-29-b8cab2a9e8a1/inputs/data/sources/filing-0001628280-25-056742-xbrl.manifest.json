@@ -1,0 +1,15 @@
+{
+  "file": "data/sources/filing-0001628280-25-056742-577915485e85536f.xbrl",
+  "sha256": "577915485e85536faa5c0d86be33ddb2dda1445478c9f49a61c6f24ac274f02d",
+  "url": "https://www.sec.gov/Archives/edgar/data/6951/000162828025056742/amat-20251026_htm.xml",
+  "primaryUrl": "https://www.sec.gov/Archives/edgar/data/6951/000162828025056742/amat-20251026.htm",
+  "provider": "SEC",
+  "accession": "0001628280-25-056742",
+  "cik": 6951,
+  "retrievedAt": "2026-10-01T16:05:23.910065+00:00",
+  "indexSource": {
+    "file": "data/sources/filing-0001628280-25-056742-index-c80343628ae79699.html",
+    "sha256": "c80343628ae796991c89ecff3ebcab7368e85ee731da514cc66ad2daf1f4ff83",
+    "url": "https://www.sec.gov/Archives/edgar/data/6951/000162828025056742/0001628280-25-056742-index.html"
+  }
+}

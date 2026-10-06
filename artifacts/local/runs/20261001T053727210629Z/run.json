@@ -1,0 +1,858 @@
+{
+  "runId": "20261001T053727210629Z",
+  "startedAt": "2026-10-01T05:37:27.210716+00:00",
+  "status": "artifacts_verified",
+  "mode": "archived_sources_local_only",
+  "modelRequested": false,
+  "stages": [
+    {
+      "name": "unit",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-01T05:37:27.210842+00:00",
+      "finishedAt": "2026-10-01T05:38:06.801577+00:00",
+      "log": "artifacts/local/runs/20261001T053727210629Z/unit.log",
+      "logHash": "8b4c1ef48466f22d546321e286a0d96a41cca0db48d41ea5f68040970bcb68ed"
+    },
+    {
+      "name": "analysis",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-01T05:38:06.802152+00:00",
+      "finishedAt": "2026-10-01T05:39:14.822771+00:00",
+      "log": "artifacts/local/runs/20261001T053727210629Z/analysis.log",
+      "logHash": "d7cc838f7ac09e8eaa74bbb8d16f96fa205a5936034b4ee60c8ea02c98745b69"
+    },
+    {
+      "name": "register-cash-conditions",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-01T05:39:14.851754+00:00",
+      "finishedAt": "2026-10-01T05:39:16.803109+00:00",
+      "log": "artifacts/local/runs/20261001T053727210629Z/register-cash-conditions.log",
+      "logHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "register-receivable-conditions",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-01T05:39:16.803603+00:00",
+      "finishedAt": "2026-10-01T05:39:18.734069+00:00",
+      "log": "artifacts/local/runs/20261001T053727210629Z/register-receivable-conditions.log",
+      "logHash": "5a91db2e38dac97e3b4d989866353e23b69d5e5996baf0ad874d5a08510f5dba"
+    },
+    {
+      "name": "observe",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-01T05:39:18.743450+00:00",
+      "finishedAt": "2026-10-01T05:39:20.643729+00:00",
+      "log": "artifacts/local/runs/20261001T053727210629Z/observe.log",
+      "logHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "research-journal",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-01T05:39:20.644172+00:00",
+      "finishedAt": "2026-10-01T05:39:22.606169+00:00",
+      "log": "artifacts/local/runs/20261001T053727210629Z/research-journal.log",
+      "logHash": "91635ff2386958b6ac1804a042d4cc9f576c19814b018f5d23267e651c00d0be"
+    },
+    {
+      "name": "forward-study",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-01T05:39:22.606627+00:00",
+      "finishedAt": "2026-10-01T05:39:24.523778+00:00",
+      "log": "artifacts/local/runs/20261001T053727210629Z/forward-study.log",
+      "logHash": "df0906a227c1ce2e4da2d51553935aaef8ed2faed18dd8f141a347d78ae7e330"
+    },
+    {
+      "name": "price-crosscheck",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-01T05:39:24.524239+00:00",
+      "finishedAt": "2026-10-01T05:39:24.643201+00:00",
+      "log": "artifacts/local/runs/20261001T053727210629Z/price-crosscheck.log",
+      "logHash": "06d1149a5850c40b1d521db73730a380d1865795607959f61c09c8dd992cf81a"
+    },
+    {
+      "name": "local-records",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-01T05:39:24.644003+00:00",
+      "finishedAt": "2026-10-01T05:39:26.450807+00:00",
+      "log": "artifacts/local/runs/20261001T053727210629Z/local-records.log",
+      "logHash": "fddcb5b07e4f46e3251f51197f3d80d9bc15881a32ea9e1c64556c94c0cdbb2f"
+    },
+    {
+      "name": "offline-replay",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-01T05:39:26.451273+00:00",
+      "finishedAt": "2026-10-01T05:40:38.733869+00:00",
+      "log": "artifacts/local/runs/20261001T053727210629Z/offline-replay.log",
+      "logHash": "28c23d725bce89768077697ce8c9dfbfdc48203f084f7d137660a7189a34e650"
+    },
+    {
+      "name": "browser-pdf",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-01T05:40:38.734322+00:00",
+      "finishedAt": "2026-10-01T05:41:13.676234+00:00",
+      "log": "artifacts/local/runs/20261001T053727210629Z/browser-pdf.log",
+      "logHash": "5f84623d80e0c18a3f06317728138c386d11e41ab7ec2a909b3e4fa697db36c1"
+    },
+    {
+      "name": "artifacts",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-01T05:41:13.678148+00:00",
+      "finishedAt": "2026-10-01T05:41:19.709507+00:00",
+      "log": "artifacts/local/runs/20261001T053727210629Z/artifacts.log",
+      "logHash": "f414276cdb99695d6e0a14a89002f0ab38cea00111c6f9460ce0ca0cc0e0aa51"
+    }
+  ],
+  "snapshotHash": "df5ed564c91b2974d3d166f7e070acc43e3a7349a2122a3dee37bf423acae8e8",
+  "modelReviewStates": {
+    "MU": {
+      "status": "revision_required",
+      "displayEligible": false,
+      "recordHash": "a909e829b502abcac2ed349a047fa9921e27648e75f17be67e2bc5a7f668619c"
+    },
+    "000660": {
+      "status": "revision_required",
+      "displayEligible": false,
+      "recordHash": "52b45557ff176b4111dff378f37b38bce001e0c9e3f9d4cae037d95e424197f6"
+    }
+  },
+  "independentFinancialApproval": false,
+  "filingReadingStates": {
+    "MU": {
+      "status": "unreviewed_draft",
+      "recordHash": "3332c530ce436bfa080832bd8c11125fb54eeff177dacb429900ff33f4cf9792",
+      "semanticApproval": false
+    },
+    "NVDA": {
+      "status": "unreviewed_draft",
+      "recordHash": "1a57c8cb98c728f2ccb9f706327b4dfcb024d939d51752fc32e8cf1d563bd3de",
+      "semanticApproval": false
+    },
+    "GOOGL": {
+      "status": "unreviewed_draft",
+      "recordHash": "fc70477c362ea9582c2dfcca6849115cfb9f4c106781300f984cc3f38caa91c8",
+      "semanticApproval": false
+    },
+    "AAPL": {
+      "status": "unreviewed_draft",
+      "recordHash": "43e1d75f8a1aa3e84638bd04795c8649aa24dbab04b6703dfd90fb28c581122f",
+      "semanticApproval": false
+    },
+    "MSFT": {
+      "status": "unreviewed_draft",
+      "recordHash": "025ece877a9b503a436cbfc5eec959c1340542be71201c5bca3e113bf879ac22",
+      "semanticApproval": false
+    },
+    "AMZN": {
+      "status": "unreviewed_draft",
+      "recordHash": "47ce8a532b99d6955595697e976b394e4dc8a43d34a76c35076c38438ec974ac",
+      "semanticApproval": false
+    },
+    "META": {
+      "status": "unreviewed_draft",
+      "recordHash": "913e7b24ec1b34128e85e4b0745c4796641bd9b54cc1b5312480901733eb57a3",
+      "semanticApproval": false
+    },
+    "AMD": {
+      "status": "unreviewed_draft",
+      "recordHash": "1433abab9d9a5065ac34e3d8e1ff453132be2a04131468f9b59016994fecb19e",
+      "semanticApproval": false
+    },
+    "AVGO": {
+      "status": "unreviewed_draft",
+      "recordHash": "bb0b38a7ef9b77eb30a50f10faef5493fb823a37575becf08ca2d33d72c6a1dc",
+      "semanticApproval": false
+    },
+    "QCOM": {
+      "status": "unreviewed_draft",
+      "recordHash": "ba27f0adbf5faa53e6f8ae283eb99064b907bcf7e5c395fb7a913baaa38b5ff2",
+      "semanticApproval": false
+    },
+    "INTC": {
+      "status": "unreviewed_draft",
+      "recordHash": "c3a0ed80b1a63ee10015fad8d6996b860b2364231a854916a5559b3f0fad2349",
+      "semanticApproval": false
+    },
+    "AMAT": {
+      "status": "unreviewed_draft",
+      "recordHash": "090474452b86bd98cea3210972cff9aeffddc32e42f25e91ac6d5683b55a4b63",
+      "semanticApproval": false
+    },
+    "LRCX": {
+      "status": "unreviewed_draft",
+      "recordHash": "d2cad06c290aa591d60c34bd4d87f412e473b1726be8d3490c4b288843048d2a",
+      "semanticApproval": false
+    },
+    "TSLA": {
+      "status": "unreviewed_draft",
+      "recordHash": "4dbb79a72f2757de6f2fef28ee1b5bf7099ae0b4d221667a82f22d9bac3021fa",
+      "semanticApproval": false
+    },
+    "GM": {
+      "status": "unreviewed_draft",
+      "recordHash": "caeebcea47efbab7a325702b9267139c9f17facc90bbfe1c8e6a03970acb7719",
+      "semanticApproval": false
+    },
+    "F": {
+      "status": "unreviewed_draft",
+      "recordHash": "29df7d85110815c29fa4d7b84b1e7aef9b2aca3a7c1488b5696e65ac50dcac85",
+      "semanticApproval": false
+    },
+    "GE": {
+      "status": "unreviewed_draft",
+      "recordHash": "0d77b6dd11419379a78f11bf5df16ef7f07224b26cacf60710c805bcb080c156",
+      "semanticApproval": false
+    },
+    "CAT": {
+      "status": "unreviewed_draft",
+      "recordHash": "7acf524a7fa112972c926d6e737873a3e957312cd65ebdbf154dc6668a6ace07",
+      "semanticApproval": false
+    },
+    "LLY": {
+      "status": "unreviewed_draft",
+      "recordHash": "a4fb786a1d271be01b14b4afd49b376c93c5ae8b1ed864e14de36316981392af",
+      "semanticApproval": false
+    },
+    "JNJ": {
+      "status": "unreviewed_draft",
+      "recordHash": "125b4a8fd70ce6384a5ed855e8fe2c275b9574b5c6f13ae0a0aafe1a8a4254b7",
+      "semanticApproval": false
+    },
+    "000660": {
+      "status": "unreviewed_draft",
+      "recordHash": "6103be9450919878d5c3f949d5fc2f97a1586e56fba5c58b7fb63e8e43a56235",
+      "semanticApproval": false
+    },
+    "005930": {
+      "status": "unreviewed_draft",
+      "recordHash": "3d851a0591e20e1e698276e7f60ca37a0a1207d8d88ad2f3d8cb4380608b78a6",
+      "semanticApproval": false
+    },
+    "035420": {
+      "status": "unreviewed_draft",
+      "recordHash": "7e30b19e9ab568f02e01ab428a1ec09683f577fb0c26006f6eb58cadc9c011c7",
+      "semanticApproval": false
+    },
+    "066570": {
+      "status": "unreviewed_draft",
+      "recordHash": "30a79c83f7498257dcd4dcf746164d47083e1158b2dc4a6250952c4a7d98b42b",
+      "semanticApproval": false
+    },
+    "005380": {
+      "status": "unreviewed_draft",
+      "recordHash": "21bafe2924d74097add95f221beae8c4142870c3699b76cab7bf123a3807a898",
+      "semanticApproval": false
+    },
+    "000270": {
+      "status": "unreviewed_draft",
+      "recordHash": "c6c296d249e5822816caa81e4047080528aa0f7a725f131984c03153628c533a",
+      "semanticApproval": false
+    },
+    "012330": {
+      "status": "unreviewed_draft",
+      "recordHash": "c0c973b2a7387739aaffeec6a997a536ff81d7634daf2f120579c9e2836c762c",
+      "semanticApproval": false
+    },
+    "035720": {
+      "status": "unreviewed_draft",
+      "recordHash": "4cc5d2cde01cf88ff6937416739570c420d08cf3c1bc55d20cfb3a3e33e76e78",
+      "semanticApproval": false
+    },
+    "006400": {
+      "status": "unreviewed_draft",
+      "recordHash": "44817221281f0fca6bb25aa7c6faf32e0f2d283ff4b1184744c64380d3f539ac",
+      "semanticApproval": false
+    },
+    "051910": {
+      "status": "unreviewed_draft",
+      "recordHash": "db953ff9eafb4336743658e93544b9501666365e9a2afbdbbbd3b1d624bbfadf",
+      "semanticApproval": false
+    },
+    "373220": {
+      "status": "unreviewed_draft",
+      "recordHash": "44dd58189a0aae0adceca766f456ffa6d90727959b2326ff85cce82dc73fdc5b",
+      "semanticApproval": false
+    },
+    "005490": {
+      "status": "unreviewed_draft",
+      "recordHash": "ce5ab0ae23fc193c7dc40a75d8216be107f7f1b2524622d13af946c526670495",
+      "semanticApproval": false
+    },
+    "207940": {
+      "status": "unreviewed_draft",
+      "recordHash": "5d445ddb369ca3f701d886772642b14784f81ff08be4f8dfa40090b5e297d835",
+      "semanticApproval": false
+    },
+    "068270": {
+      "status": "unreviewed_draft",
+      "recordHash": "35321caaeb01732d9f0118646a75f1e6862994defe1d22f2944ada5495618bc6",
+      "semanticApproval": false
+    },
+    "000100": {
+      "status": "unreviewed_draft",
+      "recordHash": "f21b92f2226522bd40468bb25ddce23743d2432ac9d5892ae63330942b9c9b75",
+      "semanticApproval": false
+    },
+    "128940": {
+      "status": "unreviewed_draft",
+      "recordHash": "cffe8c893cc96c4e667c0d214aea8073c30f9b863b528393cbe521cfc9549caa",
+      "semanticApproval": false
+    },
+    "329180": {
+      "status": "unreviewed_draft",
+      "recordHash": "c83c4b22a7b8b5dcec59b4d49b45034857b670df393de2490000aaba494e93b0",
+      "semanticApproval": false
+    },
+    "012450": {
+      "status": "unreviewed_draft",
+      "recordHash": "66260a51872ea948e6e412b3ba34673441726a57607fb68f67fa4f5212f9260b",
+      "semanticApproval": false
+    },
+    "034020": {
+      "status": "unreviewed_draft",
+      "recordHash": "10489bdb3a2dc84c2dcfa0d9d964ade8c14a301a4f307a3f2f996682d01334bb",
+      "semanticApproval": false
+    },
+    "267260": {
+      "status": "unreviewed_draft",
+      "recordHash": "51ea84f27063824ebe4934f881815c4f46f98e5fa6c8420f328f8f6ae8255d59",
+      "semanticApproval": false
+    }
+  },
+  "questionSelectionStates": {
+    "MU": {
+      "status": "selected",
+      "recordHash": "57f4811dab6ba674fd7d2a385b458e1e9ff78f13f1b943655566098b8608bf7e",
+      "choice": {
+        "primary": "price_conditions",
+        "secondary": "cash_conversion"
+      }
+    },
+    "NVDA": {
+      "status": "selected",
+      "recordHash": "a7eaabd2a06d58ed8696034f28899b6424ce5ce4da75989cdd85d0cea5f6bdaa",
+      "choice": {
+        "primary": "price_conditions",
+        "secondary": "cash_conversion"
+      }
+    },
+    "GOOGL": {
+      "status": "selected",
+      "recordHash": "77a2c3dd863ca2c6100c310908f4eb42ce474f2a9cad60aa7e6df45b488ebf6d",
+      "choice": {
+        "primary": "security_rights",
+        "secondary": "cash_conversion"
+      }
+    },
+    "AAPL": {
+      "status": "selected",
+      "recordHash": "cae684e467936ba4e78ae3668bd294b8c70d6e168713c79844061dd5008519e7",
+      "choice": {
+        "primary": "price_conditions",
+        "secondary": "investment_cycle"
+      }
+    },
+    "MSFT": {
+      "status": "selected",
+      "recordHash": "27d0e8509beee73902486914014ed1b80329391814525feeb15dfcfe741a45f6",
+      "choice": {
+        "primary": "price_conditions",
+        "secondary": "investment_cycle"
+      }
+    },
+    "AMZN": {
+      "status": "selected",
+      "recordHash": "4bebe77e2ffafdb4b0608574eeb390ffc7dbe92fe2e35b2bc451e2f0605c6000",
+      "choice": {
+        "primary": "price_conditions",
+        "secondary": "cash_conversion"
+      }
+    },
+    "META": {
+      "status": "selected",
+      "recordHash": "daa9d34abe959fe23679fbbb7b65ba54dbb259ee62f93a3923accb3bef9a5638",
+      "choice": {
+        "primary": "security_rights",
+        "secondary": "peer_tradeoff"
+      }
+    },
+    "AMD": {
+      "status": "selected",
+      "recordHash": "caffcc79af9c0d8b079afa725077c1da35f438a69c136db736e9ecda89389f7c",
+      "choice": {
+        "primary": "price_conditions",
+        "secondary": "cash_conversion"
+      }
+    },
+    "AVGO": {
+      "status": "selected",
+      "recordHash": "6b4eb0464861b6413113d9ff2f90a3741599bb931ffe4252f7ce13da13aae9ba",
+      "choice": {
+        "primary": "price_conditions",
+        "secondary": "cash_conversion"
+      }
+    },
+    "QCOM": {
+      "status": "selected",
+      "recordHash": "285b1b869b51b710de03055f8ed6eb1695adde8213d5373f87159cb617ae2983",
+      "choice": {
+        "primary": "price_conditions",
+        "secondary": "investment_cycle"
+      }
+    },
+    "INTC": {
+      "status": "selected",
+      "recordHash": "df88d143d8ffc55df532b4a908e90a4943ea6d73d5e2a2dcbf15c4c6ca8ec6ee",
+      "choice": {
+        "primary": "price_conditions",
+        "secondary": "cash_conversion"
+      }
+    },
+    "AMAT": {
+      "status": "selected",
+      "recordHash": "103c2f142d551f7f2145c1e73250f9cbb10d1d4bcf8cf6a3c7a06ff051664d48",
+      "choice": {
+        "primary": "price_conditions",
+        "secondary": "cash_conversion"
+      }
+    },
+    "LRCX": {
+      "status": "selected",
+      "recordHash": "8b7105f13028eb17590dde0e3e75886977987d3431e051490229618a2540a896",
+      "choice": {
+        "primary": "cash_conversion",
+        "secondary": "price_conditions"
+      }
+    },
+    "TSLA": {
+      "status": "selected",
+      "recordHash": "4b2fd1dcd1c55e17ccf131e02d4977d53bcb9cbbe4c2ae5cc532826240c6d2b7",
+      "choice": {
+        "primary": "price_conditions",
+        "secondary": "cash_conversion"
+      }
+    },
+    "GM": {
+      "status": "selected",
+      "recordHash": "1fa7cad195ddd785db6d8d677a573e9886b195744f8866693908b8d3b13b6fd9",
+      "choice": {
+        "primary": "financial_scope",
+        "secondary": "peer_tradeoff"
+      }
+    },
+    "F": {
+      "status": "selected",
+      "recordHash": "c532ade9ddfa9170a6fc01e6f3959d622c9741773709b66ea36635bca625cd99",
+      "choice": {
+        "primary": "financial_scope",
+        "secondary": "security_rights"
+      }
+    },
+    "GE": {
+      "status": "selected",
+      "recordHash": "e88a37a31ca90929104a73067882d6ad326a9e9ffa1b16a9d8b94d1cf94add08",
+      "choice": {
+        "primary": "price_conditions",
+        "secondary": "cash_conversion"
+      }
+    },
+    "CAT": {
+      "status": "selected",
+      "recordHash": "7593bd35aad9cd274aae00ebacf453a4a4a8f8bfe2a2bd544dcf817fd824420c",
+      "choice": {
+        "primary": "financial_scope",
+        "secondary": "peer_tradeoff"
+      }
+    },
+    "LLY": {
+      "status": "selected",
+      "recordHash": "d69e70d1fbae95b676c23d6651b973ecb046591ff9a42cb8ddb5f69906a9977c",
+      "choice": {
+        "primary": "price_conditions",
+        "secondary": "cash_conversion"
+      }
+    },
+    "JNJ": {
+      "status": "selected",
+      "recordHash": "b152ea201ee4aeae0c22c43579c7c574c3aba88b29aeb6baabac49a92704a60b",
+      "choice": {
+        "primary": "price_conditions",
+        "secondary": "investment_cycle"
+      }
+    },
+    "000660": {
+      "status": "selected",
+      "recordHash": "8fbb163275a9fb7dad8aca795530f866ef6bc940f08c5f65887ff81cd5121802",
+      "choice": {
+        "primary": "price_conditions",
+        "secondary": "cash_conversion"
+      }
+    },
+    "005930": {
+      "status": "selected",
+      "recordHash": "e139b414dc296ddbec9b882a742b461a94fbcb448420a10938d3ba47b54dfd49",
+      "choice": {
+        "primary": "security_rights",
+        "secondary": "cash_conversion"
+      }
+    },
+    "035420": {
+      "status": "selected",
+      "recordHash": "5a18935f2c5c776aa51410d3d7b651edd871d71f745b67b8a18daa16d1cd51ca",
+      "choice": {
+        "primary": "price_conditions",
+        "secondary": "investment_cycle"
+      }
+    },
+    "066570": {
+      "status": "selected",
+      "recordHash": "fc29dcb047ac40583549ceacc359dbedafdc07b3de0a8b7f643029921fc84b72",
+      "choice": {
+        "primary": "business_scope",
+        "secondary": "segment_reconciliation"
+      }
+    },
+    "005380": {
+      "status": "selected",
+      "recordHash": "320885cee7fc9aa555cd1b0cbef5982a9f9831146eca123d7898db34353f9de3",
+      "choice": {
+        "primary": "financial_scope",
+        "secondary": "security_rights"
+      }
+    },
+    "000270": {
+      "status": "selected",
+      "recordHash": "77ceec9d68f0e40f41ddffaa2d15155b9f81e667c16882f2a2f9e5c773105c0a",
+      "choice": {
+        "primary": "price_conditions",
+        "secondary": "peer_tradeoff"
+      }
+    },
+    "012330": {
+      "status": "selected",
+      "recordHash": "215d522939023b5dd1bc7b9ed1e4b63334a7e459e7481a19e6118275a882177c",
+      "choice": {
+        "primary": "security_rights",
+        "secondary": "cash_conversion"
+      }
+    },
+    "035720": {
+      "status": "selected",
+      "recordHash": "e46eb59a81ef3980f5e02cf7c7c78beedbfc2fb658ae80ba68a859ba35df0d16",
+      "choice": {
+        "primary": "business_scope",
+        "secondary": "cash_conversion"
+      }
+    },
+    "006400": {
+      "status": "selected",
+      "recordHash": "87964d8a016f38d2d60a293a111bf0e4c4be961361186f2e089b1d1eaf2e72f9",
+      "choice": {
+        "primary": "business_scope",
+        "secondary": "cash_conversion"
+      }
+    },
+    "051910": {
+      "status": "selected",
+      "recordHash": "d6100b3578925f7c3917475cad9d6f86d894eb47415fcd7cb541d3a80e4cccc7",
+      "choice": {
+        "primary": "business_scope",
+        "secondary": "cash_conversion"
+      }
+    },
+    "373220": {
+      "status": "selected",
+      "recordHash": "884e6367ee317774e3b4411b0be5c5f565cca3347696198f2f9a29fce10d04e4",
+      "choice": {
+        "primary": "price_conditions",
+        "secondary": "cash_conversion"
+      }
+    },
+    "005490": {
+      "status": "selected",
+      "recordHash": "ac6e9d33f49c142f989615d04ca49a965a3fd05ae1a0925d2d67aa58a4bea9cd",
+      "choice": {
+        "primary": "price_conditions",
+        "secondary": "cash_conversion"
+      }
+    },
+    "207940": {
+      "status": "selected",
+      "recordHash": "a5848eb18a9cc0c854be6268c2e28ab51c02d418103b036dc86d7f889722b797",
+      "choice": {
+        "primary": "business_scope",
+        "secondary": "peer_tradeoff"
+      }
+    },
+    "068270": {
+      "status": "selected",
+      "recordHash": "6c027937eb494cb31a6bb57be0ca0334c59f16aba78a2873244b21c09229e018",
+      "choice": {
+        "primary": "price_conditions",
+        "secondary": "investment_cycle"
+      }
+    },
+    "000100": {
+      "status": "selected",
+      "recordHash": "73accebdaa16579f12b18f3302cc0d11929b931475ef3d43501d0d7695e16937",
+      "choice": {
+        "primary": "security_rights",
+        "secondary": "peer_tradeoff"
+      }
+    },
+    "128940": {
+      "status": "selected",
+      "recordHash": "064ed3551d1cb903d5639a2084fefe84f4ecaacb8786cbd03dbe6b6cdab8d237",
+      "choice": {
+        "primary": "price_conditions",
+        "secondary": "investment_cycle"
+      }
+    },
+    "329180": {
+      "status": "selected",
+      "recordHash": "6d3ed43eaae62fa63c1d3094fea919c18726be7296be85d169c3f6851a856acd",
+      "choice": {
+        "primary": "price_conditions",
+        "secondary": "cash_conversion"
+      }
+    },
+    "012450": {
+      "status": "selected",
+      "recordHash": "4d0bf9df1f7874f7bfb6e7eb6c8f11dbeac0d1a8f1c31d891de26f85b32a67bd",
+      "choice": {
+        "primary": "cash_conversion",
+        "secondary": "security_rights"
+      }
+    },
+    "034020": {
+      "status": "selected",
+      "recordHash": "3e4c238e4042b9a796cb109872435b54457003a4b95b8d7b5e04acae29a5100c",
+      "choice": {
+        "primary": "cash_conversion",
+        "secondary": "security_rights"
+      }
+    },
+    "267260": {
+      "status": "selected",
+      "recordHash": "009e68b83d4032a392dafc8ae6df81c393f2d1ab5d147289e33e063bc2582d6f",
+      "choice": {
+        "primary": "price_conditions",
+        "secondary": "peer_tradeoff"
+      }
+    }
+  },
+  "coverageReviewStates": {
+    "MU": {
+      "status": "revision_required",
+      "displayEligible": false,
+      "recordHash": "e20ec563dab3a5db311fe82229b4eeb4da582f8262a37dcd66f260ee53f1d74f"
+    },
+    "NVDA": {
+      "status": "revision_required",
+      "displayEligible": false,
+      "recordHash": "d10e0de2b1c0f7a31bc14392a8d7c62699dca9fa6d4a195f2cfa28aff5793942"
+    },
+    "GOOGL": {
+      "status": "reviewed_draft",
+      "displayEligible": false,
+      "recordHash": "1ba376d531c6b82c649358cce8f598a6b760fb0a57cc438820aab5443c5c13b7"
+    },
+    "AAPL": {
+      "status": "revision_required",
+      "displayEligible": false,
+      "recordHash": "e8907fe6425b70b2eb3ec1b964b9803dac3d4bf739baacf114ea56c38cb81949"
+    },
+    "MSFT": {
+      "status": "revision_required",
+      "displayEligible": false,
+      "recordHash": "5d2800beecdcc939ebbbf1d20a71069ee14f8f356dac6b1a5aa1f99573b00728"
+    },
+    "AMZN": {
+      "status": "revision_required",
+      "displayEligible": false,
+      "recordHash": "a4b4da450abf4b3d2c5bcd8997c4348118b00b0603861084cbc8072e83428188"
+    },
+    "META": {
+      "status": "reviewed_draft",
+      "displayEligible": false,
+      "recordHash": "4ae8d51402af46dfeeb22bc0d625938efc311d078ccb5d3e7c60e6c213708316"
+    },
+    "AMD": {
+      "status": "revision_required",
+      "displayEligible": false,
+      "recordHash": "76fd2cdfa515c85bb5e364a166edc3f5c64455f866f867d2272d740eb3477205"
+    },
+    "AVGO": {
+      "status": "revision_required",
+      "displayEligible": false,
+      "recordHash": "627d83d3412f5a4fe36c52ceea6d3c460c13851c41b00b04ba4d51673c94705f"
+    },
+    "QCOM": {
+      "status": "reviewed_draft",
+      "displayEligible": false,
+      "recordHash": "98f21b073f7571c6feb8a7ffb9e63a8f9fce236539146dfaec00ad5bde8526f5"
+    },
+    "INTC": {
+      "status": "revision_required",
+      "displayEligible": false,
+      "recordHash": "afa271c4c12432c052e53ff117af0de0380eb0387d9ce1665e812ad65b836b7a"
+    },
+    "AMAT": {
+      "status": "reviewed_draft",
+      "displayEligible": false,
+      "recordHash": "7e80d5893111a5fd53242b33207d1aafc90859046d9bdd942b2e0bde8bbdabc4"
+    },
+    "LRCX": {
+      "status": "revision_required",
+      "displayEligible": false,
+      "recordHash": "7c4603eedcbf09beeed724a2d83dd827ad2d356ceded1c71b8d9bac5597cdb1f"
+    },
+    "TSLA": {
+      "status": "revision_required",
+      "displayEligible": false,
+      "recordHash": "01d603590a5b5213732461da8be4825ac6dd931a0105480d54c2b8e0b0b60273"
+    },
+    "GM": {
+      "status": "reviewed_draft",
+      "displayEligible": false,
+      "recordHash": "51163f3d2d59360074b1fde486367609ddb847dabc1adffddf1cb0800b51ad6c"
+    },
+    "F": {
+      "status": "reviewed_draft",
+      "displayEligible": false,
+      "recordHash": "6ce21d0d2d7575a5e070616b11775cd912c073336026f0623a967484184999ac"
+    },
+    "GE": {
+      "status": "reviewed_draft",
+      "displayEligible": true,
+      "recordHash": "00239d13b8f1cfea96fb31f3d891c2a5dc82e0533e009c7c294144fb8dc3a1ed"
+    },
+    "CAT": {
+      "status": "revision_required",
+      "displayEligible": false,
+      "recordHash": "75472aa7d8f54f4aa1f9546e7a2b6db8576bf530cd81393a0ca3b2865e00794d"
+    },
+    "LLY": {
+      "status": "reviewed_draft",
+      "displayEligible": false,
+      "recordHash": "ec5023f8a6d010af0b8302b5cdfed43f041f722c22fdd9f2ba342afbcfe14930"
+    },
+    "JNJ": {
+      "status": "revision_required",
+      "displayEligible": false,
+      "recordHash": "9663392bf52c5b514c1e6ed9f22f63f8078c9b6ef2aafff9175dd2275c7fe290"
+    },
+    "000660": {
+      "status": "reviewed_draft",
+      "displayEligible": false,
+      "recordHash": "8512113961944d7817673167b528542f6a8a6ba8abac720345648786365b5f4a"
+    },
+    "005930": {
+      "status": "revision_required",
+      "displayEligible": false,
+      "recordHash": "f8cb8f698e4306323e224553c140586acb74f3d3a60a210cdc6f9975963ff7da"
+    },
+    "035420": {
+      "status": "revision_required",
+      "displayEligible": false,
+      "recordHash": "b83a90be3c25e8cbd4d711aceef9f203cd20f6b888da53188409ed257b658d1e"
+    },
+    "066570": {
+      "status": "reviewed_draft",
+      "displayEligible": false,
+      "recordHash": "3439debfdc176314aea444be313a3759ad6bc0690136edb2589fbf0521c96719"
+    },
+    "005380": {
+      "status": "revision_required",
+      "displayEligible": false,
+      "recordHash": "785597db2c0ef0e4e118a91d5fb9465efd3f7b5213bfeaadd49de36b97fad8a4"
+    },
+    "000270": {
+      "status": "revision_required",
+      "displayEligible": false,
+      "recordHash": "f58a95666d1a4f892301610e692a9155f9947ab143b87882fdf93fc38291bb11"
+    },
+    "012330": {
+      "status": "reviewed_draft",
+      "displayEligible": false,
+      "recordHash": "a7bf9c9a4068ef477e8e45d9859a8680cd329d77896f02a3df5599b5a3f243c0"
+    },
+    "035720": {
+      "status": "reviewed_draft",
+      "displayEligible": false,
+      "recordHash": "b5bd37c915c51fceaa3a71eb3b2bf16fa5154ec6ad3cd21a7c3da22f5ea56c3a"
+    },
+    "006400": {
+      "status": "reviewed_draft",
+      "displayEligible": false,
+      "recordHash": "5566c6f4dfbf8353199918ba6270aba050f7605f909099e9015ff392f68047d3"
+    },
+    "051910": {
+      "status": "revision_required",
+      "displayEligible": false,
+      "recordHash": "d49197f4669edd1d4eaa90d166bf655a2a8124bc446392f3a03da530dff0b3a2"
+    },
+    "373220": {
+      "status": "revision_required",
+      "displayEligible": false,
+      "recordHash": "f8fac3c1cfa8a9832e027b59d07852fb9786bff8cac13d51c4e9e79acb3d14de"
+    },
+    "005490": {
+      "status": "revision_required",
+      "displayEligible": false,
+      "recordHash": "618e83def07a57b6082fd58c80dfab73f048bc4eed24d953e980215319fd9c1f"
+    },
+    "207940": {
+      "status": "reviewed_draft",
+      "displayEligible": false,
+      "recordHash": "bf3e42427eb3b5269bfdf374c02711e5b483a4d36e5edb6bf2e285db6413a396"
+    },
+    "068270": {
+      "status": "reviewed_draft",
+      "displayEligible": false,
+      "recordHash": "36edeaae1961771529c695e0d844a9be6fb0d06fa64f90d436f21eee3a994725"
+    },
+    "000100": {
+      "status": "revision_required",
+      "displayEligible": false,
+      "recordHash": "d6ebc291bcf53e712834d70f31f46460575b2fb0286e7b4c06551c9e1c444fd5"
+    },
+    "128940": {
+      "status": "revision_required",
+      "displayEligible": false,
+      "recordHash": "163ac14e9cb8ecf2b90142b96f6958bebc0d1df038cde4185d9aa60547dca99f"
+    },
+    "329180": {
+      "status": "revision_required",
+      "displayEligible": false,
+      "recordHash": "8668bd5e69d94b35b5fbfee7e42580a48c9a82eb23feff8b224214720eff9ced"
+    },
+    "012450": {
+      "status": "reviewed_draft",
+      "displayEligible": false,
+      "recordHash": "699069f6745c65190f6a0a34f6e65e923f56c6df2d2b0951a73dade2b411f68b"
+    },
+    "034020": {
+      "status": "revision_required",
+      "displayEligible": false,
+      "recordHash": "3056d8cb4f7fad1195621d28703b93183fc9349a51fd4321b17662c0ed24b168"
+    },
+    "267260": {
+      "status": "reviewed_draft",
+      "displayEligible": true,
+      "recordHash": "e1a5fe899093825ac6c6f8b5e3f1ba6305660ef48d867948886e4e22f836cbf0"
+    }
+  },
+  "finishedAt": "2026-10-01T05:41:19.901948+00:00"
+}

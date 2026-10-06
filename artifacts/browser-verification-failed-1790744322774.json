@@ -1,0 +1,14 @@
+{
+  "checkedAt": "2026-09-30T04:58:09.566Z",
+  "status": "failed",
+  "checks": [
+    "Initial screen has six explicitly synthetic companies",
+    "US filter applies to all visible companies and chart dots",
+    "KR filter applies to the same comparison view",
+    "Company navigation opens the selected company and cash bridge",
+    "Evidence opens with the accounting limitation"
+  ],
+  "error": "AssertionError [ERR_ASSERTION]: Escape closes evidence and returns keyboard focus\n\nfalse !== true\n",
+  "runtimeErrors": [],
+  "stderr": ""
+}

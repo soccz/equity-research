@@ -1,0 +1,382 @@
+{
+  "startedAt": "2026-09-30T11:15:53.263652+00:00",
+  "snapshotHash": "65223aa9116855ce343061405b3aa876dc0bc54a8bb82222d9c1b6534ac1dac9",
+  "records": [
+    {
+      "company": "MU",
+      "accession": "0000723125-26-000015",
+      "status": "archived",
+      "source": {
+        "file": "data/sources/filing-0000723125-26-000015-de68a2e57df77b0b.xbrl",
+        "sha256": "de68a2e57df77b0b26d9af3a0f5494aa821ffc927685dd535ccae5b8193203e2",
+        "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/mu-20260528_htm.xml",
+        "primaryUrl": "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/mu-20260528.htm",
+        "provider": "SEC",
+        "accession": "0000723125-26-000015",
+        "cik": 723125,
+        "retrievedAt": "2026-09-30T11:15:53.949008+00:00",
+        "indexSource": {
+          "file": "data/sources/filing-0000723125-26-000015-index-e9636fa9230b6777.html",
+          "sha256": "e9636fa9230b677723e9ed5496b88e8e30eb6b6e19253211e6f3f388f34c1fb6",
+          "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/0000723125-26-000015-index.html"
+        }
+      }
+    },
+    {
+      "company": "NVDA",
+      "accession": "0001045810-26-000075",
+      "status": "archived",
+      "source": {
+        "file": "data/sources/filing-0001045810-26-000075-fd37c5c3b08be610.xbrl",
+        "sha256": "fd37c5c3b08be610fa48f8e3e394ab8d2108a23bbc2dfa26ee0bf0d91493bdfd",
+        "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726_htm.xml",
+        "primaryUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
+        "provider": "SEC",
+        "accession": "0001045810-26-000075",
+        "cik": 1045810,
+        "retrievedAt": "2026-09-30T11:11:01.905513+00:00"
+      }
+    },
+    {
+      "company": "GOOGL",
+      "accession": "0001652044-26-000071",
+      "status": "archived",
+      "source": {
+        "file": "data/sources/filing-0001652044-26-000071-1376c154c799dd52.xbrl",
+        "sha256": "1376c154c799dd52e1c2be723bfaf269fc204191d2205eaab7a54122a23b8f4b",
+        "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000071/goog-20260630_htm.xml",
+        "primaryUrl": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000071/goog-20260630.htm",
+        "provider": "SEC",
+        "accession": "0001652044-26-000071",
+        "cik": 1652044,
+        "retrievedAt": "2026-09-30T11:11:02.683624+00:00"
+      }
+    },
+    {
+      "company": "AAPL",
+      "accession": "0000320193-26-000020",
+      "status": "archived",
+      "source": {
+        "file": "data/sources/filing-0000320193-26-000020-28f986bb243c8fdd.xbrl",
+        "sha256": "28f986bb243c8fdd445560d381df4b57912ca290b03b8451ecd518e63cdb5d2b",
+        "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627_htm.xml",
+        "primaryUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm",
+        "provider": "SEC",
+        "accession": "0000320193-26-000020",
+        "cik": 320193,
+        "retrievedAt": "2026-09-30T11:11:02.954092+00:00"
+      }
+    },
+    {
+      "company": "MSFT",
+      "accession": "0001193125-26-323660",
+      "status": "archived",
+      "source": {
+        "file": "data/sources/filing-0001193125-26-323660-56e56d82ee2d82cb.xbrl",
+        "sha256": "56e56d82ee2d82cb75d37b85df51d4807ffc1e1a3cc4e02ec87513b7574aa886",
+        "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630_htm.xml",
+        "primaryUrl": "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm",
+        "provider": "SEC",
+        "accession": "0001193125-26-323660",
+        "cik": 789019,
+        "retrievedAt": "2026-09-30T09:43:59.607906+00:00"
+      }
+    },
+    {
+      "company": "AMZN",
+      "accession": "0001018724-26-000026",
+      "status": "archived",
+      "source": {
+        "file": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+        "sha256": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+        "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630_htm.xml",
+        "primaryUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+        "provider": "SEC",
+        "accession": "0001018724-26-000026",
+        "cik": 1018724,
+        "retrievedAt": "2026-09-30T11:15:55.831849+00:00",
+        "indexSource": {
+          "file": "data/sources/filing-0001018724-26-000026-index-9173321d9f526f2f.html",
+          "sha256": "9173321d9f526f2f216d59c18f7d0b464f9182532633daa33d10b04e3b6b798c",
+          "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/0001018724-26-000026-index.html"
+        }
+      }
+    },
+    {
+      "company": "META",
+      "accession": "0001628280-26-050705",
+      "status": "archived",
+      "source": {
+        "file": "data/sources/filing-0001628280-26-050705-6716e6b0f4978717.xbrl",
+        "sha256": "6716e6b0f4978717e019177bc8275ac8ea17fea03b9db7c08a0c4818e7866ba8",
+        "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026050705/meta-20260630_htm.xml",
+        "primaryUrl": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026050705/meta-20260630.htm",
+        "provider": "SEC",
+        "accession": "0001628280-26-050705",
+        "cik": 1326801,
+        "retrievedAt": "2026-09-30T11:15:56.603260+00:00",
+        "indexSource": {
+          "file": "data/sources/filing-0001628280-26-050705-index-ef68b96d72c262b5.html",
+          "sha256": "ef68b96d72c262b52b89738106fcbd9c55ba9212557eb10464377e6a4e285322",
+          "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026050705/0001628280-26-050705-index.html"
+        }
+      }
+    },
+    {
+      "company": "AMD",
+      "accession": "0000002488-26-000123",
+      "status": "archived",
+      "source": {
+        "file": "data/sources/filing-0000002488-26-000123-39e82b6aaec2de30.xbrl",
+        "sha256": "39e82b6aaec2de306ebbe9368ec7d71375d45cb7f36e0e0f2cbcc34ad50c8a09",
+        "url": "https://www.sec.gov/Archives/edgar/data/2488/000000248826000123/amd-20260627_htm.xml",
+        "primaryUrl": "https://www.sec.gov/Archives/edgar/data/2488/000000248826000123/amd-20260627.htm",
+        "provider": "SEC",
+        "accession": "0000002488-26-000123",
+        "cik": 2488,
+        "retrievedAt": "2026-09-30T11:15:57.313730+00:00",
+        "indexSource": {
+          "file": "data/sources/filing-0000002488-26-000123-index-c940289ffe2e2583.html",
+          "sha256": "c940289ffe2e2583575c9c6b75b7d31faa9e2b138a78924aa0202d07b6df6b0e",
+          "url": "https://www.sec.gov/Archives/edgar/data/2488/000000248826000123/0000002488-26-000123-index.html"
+        }
+      }
+    },
+    {
+      "company": "AVGO",
+      "accession": "0001730168-26-000080",
+      "status": "archived",
+      "source": {
+        "file": "data/sources/filing-0001730168-26-000080-cc0b495acb2d4f2b.xbrl",
+        "sha256": "cc0b495acb2d4f2b3b425baf26e4cb1073eda573b4892b4d4e769d2099ea55ef",
+        "url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016826000080/avgo-20260802_htm.xml",
+        "primaryUrl": "https://www.sec.gov/Archives/edgar/data/1730168/000173016826000080/avgo-20260802.htm",
+        "provider": "SEC",
+        "accession": "0001730168-26-000080",
+        "cik": 1730168,
+        "retrievedAt": "2026-09-30T11:15:57.991659+00:00",
+        "indexSource": {
+          "file": "data/sources/filing-0001730168-26-000080-index-9c3834a58dc40855.html",
+          "sha256": "9c3834a58dc408553952c89bae8b6a2e8c4184c36c4a578c6fccb169cfe1333f",
+          "url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016826000080/0001730168-26-000080-index.html"
+        }
+      }
+    },
+    {
+      "company": "QCOM",
+      "accession": "0000804328-26-000086",
+      "status": "archived",
+      "source": {
+        "file": "data/sources/filing-0000804328-26-000086-97a3896647e1301a.xbrl",
+        "sha256": "97a3896647e1301aaf876ae15c36648b1fad9a1bcba45a07df68486f72570385",
+        "url": "https://www.sec.gov/Archives/edgar/data/804328/000080432826000086/qcom-20260628_htm.xml",
+        "primaryUrl": "https://www.sec.gov/Archives/edgar/data/804328/000080432826000086/qcom-20260628.htm",
+        "provider": "SEC",
+        "accession": "0000804328-26-000086",
+        "cik": 804328,
+        "retrievedAt": "2026-09-30T11:15:58.730868+00:00",
+        "indexSource": {
+          "file": "data/sources/filing-0000804328-26-000086-index-3215c0646baba17c.html",
+          "sha256": "3215c0646baba17c430f30362dfb216cfd100aa350848e4b0970cfed31fedb16",
+          "url": "https://www.sec.gov/Archives/edgar/data/804328/000080432826000086/0000804328-26-000086-index.html"
+        }
+      }
+    },
+    {
+      "company": "INTC",
+      "accession": "0000050863-26-000157",
+      "status": "archived",
+      "source": {
+        "file": "data/sources/filing-0000050863-26-000157-23a78d26b9624365.xbrl",
+        "sha256": "23a78d26b96243653a3f46786d41bb1d9c182bf7c9dad5c22b67bc069b511730",
+        "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086326000157/intc-20260627_htm.xml",
+        "primaryUrl": "https://www.sec.gov/Archives/edgar/data/50863/000005086326000157/intc-20260627.htm",
+        "provider": "SEC",
+        "accession": "0000050863-26-000157",
+        "cik": 50863,
+        "retrievedAt": "2026-09-30T11:15:59.464302+00:00",
+        "indexSource": {
+          "file": "data/sources/filing-0000050863-26-000157-index-ea02dde22c15e6c5.html",
+          "sha256": "ea02dde22c15e6c585b6d454ab41a9c45dbb0216796002c819bed433f9bae484",
+          "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086326000157/0000050863-26-000157-index.html"
+        }
+      }
+    },
+    {
+      "company": "AMAT",
+      "accession": "0001628280-26-058235",
+      "status": "archived",
+      "source": {
+        "file": "data/sources/filing-0001628280-26-058235-b99f8724b74013f5.xbrl",
+        "sha256": "b99f8724b74013f5167d3842cd7f9acfbd92076a4c73290b3c24d1798ee5d0a9",
+        "url": "https://www.sec.gov/Archives/edgar/data/6951/000162828026058235/amat-20260726_htm.xml",
+        "primaryUrl": "https://www.sec.gov/Archives/edgar/data/6951/000162828026058235/amat-20260726.htm",
+        "provider": "SEC",
+        "accession": "0001628280-26-058235",
+        "cik": 6951,
+        "retrievedAt": "2026-09-30T11:16:00.220130+00:00",
+        "indexSource": {
+          "file": "data/sources/filing-0001628280-26-058235-index-8f6e5234d3a36af3.html",
+          "sha256": "8f6e5234d3a36af3c44a7ac20f4c1aac7d2b70f6fc9d240b7b53d0a65c585622",
+          "url": "https://www.sec.gov/Archives/edgar/data/6951/000162828026058235/0001628280-26-058235-index.html"
+        }
+      }
+    },
+    {
+      "company": "LRCX",
+      "accession": "0000707549-26-000037",
+      "status": "archived",
+      "source": {
+        "file": "data/sources/filing-0000707549-26-000037-245115118bda565a.xbrl",
+        "sha256": "245115118bda565a752cad0dd16ca255e524dc67da5624f9b8417f3f54519b6a",
+        "url": "https://www.sec.gov/Archives/edgar/data/707549/000070754926000037/lrcx-20260628_htm.xml",
+        "primaryUrl": "https://www.sec.gov/Archives/edgar/data/707549/000070754926000037/lrcx-20260628.htm",
+        "provider": "SEC",
+        "accession": "0000707549-26-000037",
+        "cik": 707549,
+        "retrievedAt": "2026-09-30T11:16:00.932632+00:00",
+        "indexSource": {
+          "file": "data/sources/filing-0000707549-26-000037-index-2a5322e22ff46db4.html",
+          "sha256": "2a5322e22ff46db420e339bcb45ba6551fe7b0dded277761ed421bc63e410665",
+          "url": "https://www.sec.gov/Archives/edgar/data/707549/000070754926000037/0000707549-26-000037-index.html"
+        }
+      }
+    },
+    {
+      "company": "TSLA",
+      "accession": "0001628280-26-049270",
+      "status": "archived",
+      "source": {
+        "file": "data/sources/filing-0001628280-26-049270-0c1972e6e14862f6.xbrl",
+        "sha256": "0c1972e6e14862f645f42baa356cd912af9500e7f5d4591f4b600568170192b4",
+        "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/tsla-20260630_htm.xml",
+        "primaryUrl": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/tsla-20260630.htm",
+        "provider": "SEC",
+        "accession": "0001628280-26-049270",
+        "cik": 1318605,
+        "retrievedAt": "2026-09-30T11:16:01.610319+00:00",
+        "indexSource": {
+          "file": "data/sources/filing-0001628280-26-049270-index-7cca36248d8cb589.html",
+          "sha256": "7cca36248d8cb5894a7178b1dfdd63b5582c674cda2e8cc55ae84dd36f6d06a3",
+          "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/0001628280-26-049270-index.html"
+        }
+      }
+    },
+    {
+      "company": "GM",
+      "accession": "0001467858-26-000051",
+      "status": "archived",
+      "source": {
+        "file": "data/sources/filing-0001467858-26-000051-b660d0765d200ea8.xbrl",
+        "sha256": "b660d0765d200ea8cd8548141b0a6092bef930db2d1e21681305651dddda0efc",
+        "url": "https://www.sec.gov/Archives/edgar/data/1467858/000146785826000051/gm-20260630_htm.xml",
+        "primaryUrl": "https://www.sec.gov/Archives/edgar/data/1467858/000146785826000051/gm-20260630.htm",
+        "provider": "SEC",
+        "accession": "0001467858-26-000051",
+        "cik": 1467858,
+        "retrievedAt": "2026-09-30T11:16:02.699071+00:00",
+        "indexSource": {
+          "file": "data/sources/filing-0001467858-26-000051-index-60fc2cc8a1fb1f9c.html",
+          "sha256": "60fc2cc8a1fb1f9cc6bd72dc5bdb7b4628e354a84cad0b4f103ed1a7e06a009a",
+          "url": "https://www.sec.gov/Archives/edgar/data/1467858/000146785826000051/0001467858-26-000051-index.html"
+        }
+      }
+    },
+    {
+      "company": "F",
+      "accession": "0000037996-26-000156",
+      "status": "archived",
+      "source": {
+        "file": "data/sources/filing-0000037996-26-000156-5259c130983d5b74.xbrl",
+        "sha256": "5259c130983d5b74afa7401ae16a5f6e88c7744806e1a201ac4e526b33f6e686",
+        "url": "https://www.sec.gov/Archives/edgar/data/37996/000003799626000156/f-20260630_htm.xml",
+        "primaryUrl": "https://www.sec.gov/Archives/edgar/data/37996/000003799626000156/f-20260630.htm",
+        "provider": "SEC",
+        "accession": "0000037996-26-000156",
+        "cik": 37996,
+        "retrievedAt": "2026-09-30T09:54:24.764849+00:00"
+      }
+    },
+    {
+      "company": "GE",
+      "accession": "0000040545-26-000049",
+      "status": "archived",
+      "source": {
+        "file": "data/sources/filing-0000040545-26-000049-820134672a5b9ec6.xbrl",
+        "sha256": "820134672a5b9ec66b9c6b91fbd978ec2366d272f1c13021efe79df337d11142",
+        "url": "https://www.sec.gov/Archives/edgar/data/40545/000004054526000049/ge-20260630_htm.xml",
+        "primaryUrl": "https://www.sec.gov/Archives/edgar/data/40545/000004054526000049/ge-20260630.htm",
+        "provider": "SEC",
+        "accession": "0000040545-26-000049",
+        "cik": 40545,
+        "retrievedAt": "2026-09-30T11:16:03.735111+00:00",
+        "indexSource": {
+          "file": "data/sources/filing-0000040545-26-000049-index-81b84d8a14648fed.html",
+          "sha256": "81b84d8a14648fed8c91b1742ceea7293556add688287f5b25106e1cddb2787f",
+          "url": "https://www.sec.gov/Archives/edgar/data/40545/000004054526000049/0000040545-26-000049-index.html"
+        }
+      }
+    },
+    {
+      "company": "CAT",
+      "accession": "0000018230-26-000046",
+      "status": "archived",
+      "source": {
+        "file": "data/sources/filing-0000018230-26-000046-15252d1a8b291e16.xbrl",
+        "sha256": "15252d1a8b291e1686a188b8872652288453b86bec3079cfc84cd52f1275b5b2",
+        "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823026000046/cat-20260630_htm.xml",
+        "primaryUrl": "https://www.sec.gov/Archives/edgar/data/18230/000001823026000046/cat-20260630.htm",
+        "provider": "SEC",
+        "accession": "0000018230-26-000046",
+        "cik": 18230,
+        "retrievedAt": "2026-09-30T11:16:04.958096+00:00",
+        "indexSource": {
+          "file": "data/sources/filing-0000018230-26-000046-index-74096f0f5715d3cc.html",
+          "sha256": "74096f0f5715d3ccef41ce5cda3192deb3afdcbacd92783688c5e3741ea3c85c",
+          "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823026000046/0000018230-26-000046-index.html"
+        }
+      }
+    },
+    {
+      "company": "LLY",
+      "accession": "0000059478-26-000081",
+      "status": "archived",
+      "source": {
+        "file": "data/sources/filing-0000059478-26-000081-75f0aed7408555a9.xbrl",
+        "sha256": "75f0aed7408555a9fd7746bbaad0f713dd0e6f9bcd438ab354157b4138b9e8f4",
+        "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947826000081/lly-20260630_htm.xml",
+        "primaryUrl": "https://www.sec.gov/Archives/edgar/data/59478/000005947826000081/lly-20260630.htm",
+        "provider": "SEC",
+        "accession": "0000059478-26-000081",
+        "cik": 59478,
+        "retrievedAt": "2026-09-30T11:16:05.834133+00:00",
+        "indexSource": {
+          "file": "data/sources/filing-0000059478-26-000081-index-461443c0075d6494.html",
+          "sha256": "461443c0075d64943078131c6079d790a7ee567318a2f62a75c824eba800039f",
+          "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947826000081/0000059478-26-000081-index.html"
+        }
+      }
+    },
+    {
+      "company": "JNJ",
+      "accession": "0000200406-26-000153",
+      "status": "archived",
+      "source": {
+        "file": "data/sources/filing-0000200406-26-000153-0dd82cf03dc273d1.xbrl",
+        "sha256": "0dd82cf03dc273d1818ed17eea3a378dcb7204c8aee16a2593b2697274260871",
+        "url": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628_htm.xml",
+        "primaryUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm",
+        "provider": "SEC",
+        "accession": "0000200406-26-000153",
+        "cik": 200406,
+        "retrievedAt": "2026-09-30T11:16:06.908039+00:00",
+        "indexSource": {
+          "file": "data/sources/filing-0000200406-26-000153-index-814223e275c4139e.html",
+          "sha256": "814223e275c4139ee6baa74acf0203f5945ad40da538b91a9be5a413a4812a98",
+          "url": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/0000200406-26-000153-index.html"
+        }
+      }
+    }
+  ],
+  "finishedAt": "2026-09-30T11:16:07.111611+00:00"
+}

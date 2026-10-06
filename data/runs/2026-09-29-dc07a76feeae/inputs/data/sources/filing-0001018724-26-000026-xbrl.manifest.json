@@ -1,0 +1,15 @@
+{
+  "file": "data/sources/filing-0001018724-26-000026-28cbec6d6a191a9c.xbrl",
+  "sha256": "28cbec6d6a191a9cd561ede66f9c7d373884dc580550f147ab6e1d31d2c4a50a",
+  "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630_htm.xml",
+  "primaryUrl": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+  "provider": "SEC",
+  "accession": "0001018724-26-000026",
+  "cik": 1018724,
+  "retrievedAt": "2026-09-30T11:15:55.831849+00:00",
+  "indexSource": {
+    "file": "data/sources/filing-0001018724-26-000026-index-9173321d9f526f2f.html",
+    "sha256": "9173321d9f526f2f216d59c18f7d0b464f9182532633daa33d10b04e3b6b798c",
+    "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/0001018724-26-000026-index.html"
+  }
+}

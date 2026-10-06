@@ -1,0 +1,47 @@
+{
+  "checkedAt": "2026-10-01T07:19:37.135623+00:00",
+  "snapshotHash": "ab406742330cf265849c3ab35794dea628290b8029a15bb5574010b36c956615",
+  "status": "layout_reviewed",
+  "method": "Viewed all ten contact sheets for all 159 PDF pages, expanded Tesla 8/9/10 and Kia 11/12; viewed the standalone Tesla profit/cash PNG. Automated A4/text bounds/version/link checks are recorded separately.",
+  "pdfHashes": {
+    "universe": "0048275a9a39183dfdcf56414ed15448b27740cc6a3d5c663e06488f998f5603",
+    "micron": "e520625c7ff6b5f19294f75b257425f4aa8c94c74b610d164130f466c33847a6",
+    "sk-hynix": "7d582eed22a14c3d2473d1bcd2057e5ec9628227744940b1119f9fdecb40b815",
+    "microsoft": "b69c7c9e0315c9f887816d81402d3c4ab0c1033fc75a796e66b9292bf9a39ec0",
+    "amazon": "d9d9aabc24ea5732a8147a05a7c900dbd3cd6287b937a510dba2c185f04041b2",
+    "kia": "d53078b46bb9fe49d9cc3f38ca61d247853f118973d5e7c5469b80e88c40bf91",
+    "tesla": "221a818919cb85c9d7967f8c0da125f673a971255c64f0b7bb9fc447babcf3d0",
+    "hyundai": "69d9931ecfcbfba12b59d73e8fcb8eecd6ef0ffc5927c9871b4250ca47426288",
+    "samsung-biologics": "28cc3d6084d37d272b391ff88aa4f0deca5a2cc0419a4e4a0b3a5ad4e2ade820",
+    "research-us": "57bceff6286120bc89d69629f4a905815df12dab24bbc416c8b3fa00a81b57d4",
+    "research-kr": "09e07161329c7fbe8559bfa972897663ee9af405ea0944fb6052edd682612646",
+    "conditions": "adc02afef0301526ac45386886b628b8677c33b3d73e0c10dcf28c8a51b7028e"
+  },
+  "pages": 159,
+  "contactSheets": [
+    "artifacts/live/ab406742330c-contact-1.png",
+    "artifacts/live/ab406742330c-contact-2.png",
+    "artifacts/live/ab406742330c-contact-3.png",
+    "artifacts/live/ab406742330c-contact-4.png",
+    "artifacts/live/ab406742330c-contact-5.png",
+    "artifacts/live/ab406742330c-contact-6.png",
+    "artifacts/live/ab406742330c-contact-7.png",
+    "artifacts/live/ab406742330c-contact-8.png",
+    "artifacts/live/ab406742330c-contact-9.png",
+    "artifacts/live/ab406742330c-contact-10.png"
+  ],
+  "expandedPages": [
+    "artifacts/live/ab406742330c-tesla-detail-8.png",
+    "artifacts/live/ab406742330c-tesla-detail-9.png",
+    "artifacts/live/ab406742330c-tesla-detail-10.png",
+    "artifacts/live/ab406742330c-kia-detail-11.png",
+    "artifacts/live/ab406742330c-kia-detail-12.png"
+  ],
+  "findings": [
+    "No clipped labels or overlapping table/figure content observed.",
+    "Kia focused main border absent in print.",
+    "Print version remains legible; all pages pass exact version extraction.",
+    "Tables crossing pages repeat their headers."
+  ],
+  "scope": "Visual and arithmetic checks do not constitute independent financial interpretation approval."
+}

@@ -1,0 +1,31 @@
+{
+  "reviewedAt": "2026-10-01T09:33:15.384511+00:00",
+  "runHash": "814b36b4c044599fc266743d1f7cf4e59292339781355fc28b51ec70f680103c",
+  "reviewer": "Author source comparison; not independent financial approval",
+  "semanticApproval": false,
+  "knownDevelopmentLabelMatches": 14,
+  "totalClaims": 16,
+  "exactQuoteMatches": 7,
+  "scope": "Author-selected development claims; no out-of-sample or production accuracy estimate.",
+  "findings": [
+    {
+      "company": "MSFT",
+      "claim": "c1",
+      "issue": "Incorrectly accepts equality between Azure growth and Intelligent Cloud segment growth; cited Azure sentence does not establish identical business scope."
+    },
+    {
+      "company": "AMZN",
+      "claim": "c4",
+      "issue": "Rejects a bounded scenario even though keeping unquantified periods unresolved follows the supplied evidence; author/model interpretation disagreement preserved."
+    },
+    {
+      "company": "ALL",
+      "issue": "9 of 16 quotes fail exact match to the selected passage. Failures include altered spacing, ellipses, and incorrect passage IDs. This is not by itself proof of invented underlying facts."
+    },
+    {
+      "company": "TSLA",
+      "claim": "c1",
+      "issue": "Equity-method/significant-influence wording DOES appear in supplied paragraph b46c2555c3c885c219ed. Earlier assistant commentary calling the accounting description absent was wrong. The actual quote failure is omitted text/ellipsis; paragraph also refers to fair-value policy election."
+    }
+  ]
+}

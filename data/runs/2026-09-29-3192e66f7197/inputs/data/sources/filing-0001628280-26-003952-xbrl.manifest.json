@@ -1,0 +1,15 @@
+{
+  "file": "data/sources/filing-0001628280-26-003952-71f1e6d30adccb13.xbrl",
+  "sha256": "71f1e6d30adccb13ee4e3e1b03855f4bfe956f5a0245863019049cd0509e1524",
+  "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026003952/tsla-20251231_htm.xml",
+  "primaryUrl": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026003952/tsla-20251231.htm",
+  "provider": "SEC",
+  "accession": "0001628280-26-003952",
+  "cik": 1318605,
+  "retrievedAt": "2026-10-01T06:49:32.863911+00:00",
+  "indexSource": {
+    "file": "data/sources/filing-0001628280-26-003952-index-9c1b020909959c67.html",
+    "sha256": "9c1b020909959c67da36be3ceef3dfc5b03c6ba53a347cdbe476f9ce3dbc491a",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026003952/0001628280-26-003952-index.html"
+  }
+}

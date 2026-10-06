@@ -1,0 +1,38 @@
+{
+  "ticker": "034020",
+  "asOf": "2026-09-29",
+  "checkedAt": "2026-09-30T09:16:57.788531+00:00",
+  "filing": {
+    "corp_code": "00159616",
+    "corp_name": "두산에너빌리티",
+    "stock_code": "034020",
+    "corp_cls": "Y",
+    "report_nm": "반기보고서 (2026.06)",
+    "rcept_no": "20260814003782",
+    "flr_nm": "두산에너빌리티",
+    "rcept_dt": "20260814",
+    "rm": ""
+  },
+  "queries": [
+    {
+      "file": "data/sources/dart-list-034020-c7cbd9b3e785b81e.json",
+      "sha256": "c7cbd9b3e785b81e97ada834f70d4b97345b52241c4b4d31c91025a70a46c481",
+      "parameters": {
+        "corp_code": "00159616",
+        "bgn_de": "20250101",
+        "end_de": "20260929",
+        "pblntf_ty": "A",
+        "last_reprt_at": "N",
+        "page_count": 100,
+        "page_no": 1,
+        "sort": "date",
+        "sort_mth": "desc"
+      }
+    }
+  ],
+  "package": {
+    "file": "data/sources/dart-package-20260814003782-44523429466e6dae.zip",
+    "sha256": "44523429466e6dae75e61465b49e481b551ff3b2cef644966674e73b50c192f5"
+  },
+  "instanceHash": "ae88021a3d09fc1ec94aa6aa3b194b488180762fd6b3b3cb63c7444169e8112a"
+}

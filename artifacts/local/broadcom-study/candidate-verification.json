@@ -1,0 +1,17 @@
+{
+  "at": "2026-10-01T15:52:03.159396+00:00",
+  "integrated": false,
+  "unit": 8,
+  "completePythonJsPaths": 7,
+  "supportStressCasesPerPath": 9,
+  "unchangedExistingModels": 12,
+  "files": {
+    "broadcom_operating.py": "ccf8c831d176118e064afac3774ae365e7de720228d4e3166cd7e3e7f6a6fb3d",
+    "operating_model_candidate.py": "3ac5e72aacb49198415b5849083c281dda294e80112a1b985ba9f3c742b0dd29",
+    "operating-model-candidate.js": "f554b5e78cc10efc23fa2605e6fb805411189bbade171864b7dea0d0ac1a8d60",
+    "test_broadcom_candidate.py": "fa079937059b9851475459123d49d990544716cc396b985be0867a7174de8c58",
+    "candidate-model.json": "8497b9a7c2f146e13be70d76f46664b99635d1a102dee397eca99001e071a848",
+    "parity-cases.json": "01967828f85a538daff435c01b4897955690db90261b5007b9452c2f01df7e8a"
+  },
+  "scope": "Development verification, not independent financial approval; browser and integrated replay pending"
+}

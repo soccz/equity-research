@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "checks": [
+    "static fallback",
+    "category",
+    "project link",
+    "desktop 1440",
+    "mobile 390",
+    "no JS exceptions"
+  ]
+}

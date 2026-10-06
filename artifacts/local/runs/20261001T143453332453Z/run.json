@@ -1,0 +1,38 @@
+{
+  "runId": "20261001T143453332453Z",
+  "startedAt": "2026-10-01T14:34:53.332544+00:00",
+  "status": "failed",
+  "mode": "archived_sources_local_only",
+  "modelRequested": true,
+  "stages": [
+    {
+      "name": "unit",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-01T14:34:53.332666+00:00",
+      "finishedAt": "2026-10-01T14:37:11.322922+00:00",
+      "log": "artifacts/local/runs/20261001T143453332453Z/unit.log",
+      "logHash": "c7d25f12373b0920aeb0058dffcf37631c9ba9a86be998e0be5c30e569ccb8c9"
+    },
+    {
+      "name": "analysis",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-01T14:37:11.323491+00:00",
+      "finishedAt": "2026-10-01T14:39:13.415192+00:00",
+      "log": "artifacts/local/runs/20261001T143453332453Z/analysis.log",
+      "logHash": "08062c7bb04a6c72bad550a9b1b15d71b07aceceb700ced5e34ec51e0d79bd6b"
+    },
+    {
+      "name": "local-model",
+      "status": "failed",
+      "exitCode": -15,
+      "startedAt": "2026-10-01T14:39:13.415727+00:00",
+      "finishedAt": "2026-10-01T14:44:34.313228+00:00",
+      "log": "artifacts/local/runs/20261001T143453332453Z/local-model.log",
+      "logHash": "a2e2646085852debe996fbc902d1cc967de934135314c8155eba679b9544de01"
+    }
+  ],
+  "error": "RuntimeError: local-model failed; see artifacts/local/runs/20261001T143453332453Z/local-model.log",
+  "finishedAt": "2026-10-01T14:44:34.314254+00:00"
+}

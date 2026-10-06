@@ -1,0 +1,15 @@
+{
+  "file": "data/sources/filing-0000804328-26-000086-97a3896647e1301a.xbrl",
+  "sha256": "97a3896647e1301aaf876ae15c36648b1fad9a1bcba45a07df68486f72570385",
+  "url": "https://www.sec.gov/Archives/edgar/data/804328/000080432826000086/qcom-20260628_htm.xml",
+  "primaryUrl": "https://www.sec.gov/Archives/edgar/data/804328/000080432826000086/qcom-20260628.htm",
+  "provider": "SEC",
+  "accession": "0000804328-26-000086",
+  "cik": 804328,
+  "retrievedAt": "2026-09-30T11:15:58.730868+00:00",
+  "indexSource": {
+    "file": "data/sources/filing-0000804328-26-000086-index-3215c0646baba17c.html",
+    "sha256": "3215c0646baba17c430f30362dfb216cfd100aa350848e4b0970cfed31fedb16",
+    "url": "https://www.sec.gov/Archives/edgar/data/804328/000080432826000086/0000804328-26-000086-index.html"
+  }
+}

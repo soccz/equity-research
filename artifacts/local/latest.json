@@ -1,0 +1,37 @@
+{
+  "status": "passed",
+  "mode": "local_only",
+  "interpretationStatus": "independent_review_pending",
+  "externalAIUsed": false,
+  "model": "qwen3:8b",
+  "inferenceConfig": {
+    "think": true,
+    "options": {
+      "num_ctx": 8192,
+      "num_predict": 4096,
+      "temperature": 0.6,
+      "top_p": 0.95,
+      "top_k": 20,
+      "min_p": 0.0,
+      "presence_penalty": 0.0,
+      "repeat_penalty": 1.0,
+      "seed": 42,
+      "num_batch": 128
+    }
+  },
+  "snapshotHash": "210f084d8cf206b49cce8d7b2dcf7c6100782efc9be234fa15db9db3f43f61da",
+  "evaluationHash": null,
+  "evaluationGatePassed": null,
+  "reviews": [
+    {
+      "company": "MU",
+      "recordHash": "72f94dd047b3d0dadd078baede25def77c9452cdb446f14ffd14d9b36d1625dc",
+      "status": "revision_required"
+    },
+    {
+      "company": "000660",
+      "recordHash": "f7761d6967e0686f0bae81a6bdf589b80e0b6a4f82115c65996bea84e3fee138",
+      "status": "revision_required"
+    }
+  ]
+}

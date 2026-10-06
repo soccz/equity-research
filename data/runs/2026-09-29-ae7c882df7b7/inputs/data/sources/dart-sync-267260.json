@@ -1,0 +1,38 @@
+{
+  "ticker": "267260",
+  "asOf": "2026-09-29",
+  "checkedAt": "2026-09-30T09:17:00.420839+00:00",
+  "filing": {
+    "corp_code": "01205851",
+    "corp_name": "HD현대일렉트릭",
+    "stock_code": "267260",
+    "corp_cls": "Y",
+    "report_nm": "반기보고서 (2026.06)",
+    "rcept_no": "20260814003228",
+    "flr_nm": "HD현대일렉트릭",
+    "rcept_dt": "20260814",
+    "rm": ""
+  },
+  "queries": [
+    {
+      "file": "data/sources/dart-list-267260-71b07f436a6ef9e1.json",
+      "sha256": "71b07f436a6ef9e1f3a39b6c926daca93f6ff87a4075edcd9c6f59e8fb2becff",
+      "parameters": {
+        "corp_code": "01205851",
+        "bgn_de": "20250101",
+        "end_de": "20260929",
+        "pblntf_ty": "A",
+        "last_reprt_at": "N",
+        "page_count": 100,
+        "page_no": 1,
+        "sort": "date",
+        "sort_mth": "desc"
+      }
+    }
+  ],
+  "package": {
+    "file": "data/sources/dart-package-20260814003228-75afbd9e9a503d51.zip",
+    "sha256": "75afbd9e9a503d51d86a376650240f504e76c6e1b8619aead4cefd0b59c531b9"
+  },
+  "instanceHash": "65175547f9c751827f05295cb72ac882f3427d2c30e5ac225cf89a0efd079128"
+}

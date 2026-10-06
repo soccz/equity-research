@@ -1,0 +1,85 @@
+{
+  "parts": [
+    {
+      "tag": "OperatingIncomeLoss",
+      "coefficient": 1,
+      "cashEffect": 93712000000.0
+    },
+    {
+      "tag": "NonoperatingIncomeExpense",
+      "coefficient": 1,
+      "cashEffect": 81754000000.0
+    },
+    {
+      "tag": "IncomeTaxExpenseBenefit",
+      "coefficient": -1,
+      "cashEffect": -39615000000.0
+    },
+    {
+      "tag": "IncomeLossFromEquityMethodInvestments",
+      "coefficient": 1,
+      "cashEffect": -570000000.0
+    },
+    {
+      "tag": "DepreciationDepletionAndAmortization",
+      "coefficient": 1,
+      "cashEffect": 75200000000.0
+    },
+    {
+      "tag": "OtherNoncashIncomeExpense",
+      "coefficient": -1,
+      "cashEffect": -79818000000.0
+    },
+    {
+      "tag": "DeferredIncomeTaxExpenseBenefit",
+      "coefficient": 1,
+      "cashEffect": 41441000000.0
+    },
+    {
+      "tag": "ShareBasedCompensation",
+      "coefficient": 1,
+      "cashEffect": 19314000000.0
+    },
+    {
+      "tag": "IncreaseDecreaseInInventories",
+      "coefficient": -1,
+      "cashEffect": 2078000000.0
+    },
+    {
+      "tag": "IncreaseDecreaseInAccountsReceivableAndOtherOperatingAssets",
+      "coefficient": -1,
+      "cashEffect": -21409000000.0
+    },
+    {
+      "tag": "IncreaseDecreaseInOtherNoncurrentAssets",
+      "coefficient": -1,
+      "cashEffect": -17787000000.0
+    },
+    {
+      "tag": "IncreaseDecreaseInAccountsPayable",
+      "coefficient": 1,
+      "cashEffect": 13921000000.0
+    },
+    {
+      "tag": "IncreaseDecreaseInAccruedLiabilitiesAndOtherOperatingLiabilities",
+      "coefficient": 1,
+      "cashEffect": -6069000000.0
+    },
+    {
+      "tag": "IncreaseDecreaseInContractWithCustomerLiability",
+      "coefficient": 1,
+      "cashEffect": -749000000.0
+    }
+  ],
+  "total": 161403000000.0,
+  "reportedCfo": 161403000000.0,
+  "rawDirectTrailingAgreement": true,
+  "futureModelDesign": {
+    "depreciation": "純PPE 상각49.741bn만 미래 되돌림. 콘텐츠·영업리스 등이 포함된 총 조정75.2bn를 사용하지 않는다.",
+    "workingCapital": "재고/채권 및 기타영업자산/매입채무/미지급 및 기타영업부채/선수수익. 기타 장기자산은 콘텐츠·리스 대용 비용과 중복될 수 있어 총변동17.787bn를 자동 반복하지 않는다.",
+    "capital": "PPE 현금취득과 매각·인센티브를 별도표시. 금융리스1.599bn+시설금융상환0.308bn 합계별도차감.",
+    "growth": "TTM 부문 베이스와 최근 6개월의 전년대비 관측 성장 구분. 반복 성장 비교를 연간 관측값으로 표시하지 않는다.",
+    "tax": "소득세 비용/세전소득은 투자평가손익의 영향을 받음. 연구자 가정일 뿐 정상현금세율 아님."
+  },
+  "status": "research source reconciliation only; not implemented operating model"
+}

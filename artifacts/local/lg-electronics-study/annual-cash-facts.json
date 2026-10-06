@@ -1,0 +1,1130 @@
+[
+  {
+    "tag": "CashFlowsFromUsedInFinancingActivities",
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "value": -319476000000.0,
+    "dimensions": [
+      [
+        "ConsolidatedAndSeparateFinancialStatementsAxis",
+        "ConsolidatedMember"
+      ]
+    ]
+  },
+  {
+    "tag": "DividendsReceivedClassifiedAsOperatingActivities",
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "value": 8847000000.0,
+    "dimensions": [
+      [
+        "ConsolidatedAndSeparateFinancialStatementsAxis",
+        "ConsolidatedMember"
+      ]
+    ]
+  },
+  {
+    "tag": "InterestPaidClassifiedAsOperatingActivities",
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "value": 624587000000.0,
+    "dimensions": [
+      [
+        "ConsolidatedAndSeparateFinancialStatementsAxis",
+        "ConsolidatedMember"
+      ]
+    ]
+  },
+  {
+    "tag": "InterestReceivedClassifiedAsOperatingActivities",
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "value": 393425000000.0,
+    "dimensions": [
+      [
+        "ConsolidatedAndSeparateFinancialStatementsAxis",
+        "ConsolidatedMember"
+      ]
+    ]
+  },
+  {
+    "tag": "DepreciationAndAmortisationExpense",
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "value": 3603863000000.0,
+    "dimensions": [
+      [
+        "ConsolidatedAndSeparateFinancialStatementsAxis",
+        "ConsolidatedMember"
+      ]
+    ]
+  },
+  {
+    "tag": "DecreaseOfRightofuseAssetsDueToTerminationOrCancellationOfLeaseContracts",
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "value": 32279000000.0,
+    "dimensions": [
+      [
+        "ConsolidatedAndSeparateFinancialStatementsAxis",
+        "ConsolidatedMember"
+      ]
+    ]
+  },
+  {
+    "tag": "DepreciationRightofuseAssets",
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "value": 468206000000.0,
+    "dimensions": [
+      [
+        "ConsolidatedAndSeparateFinancialStatementsAxis",
+        "ConsolidatedMember"
+      ]
+    ]
+  },
+  {
+    "tag": "DividendsPaidClassifiedAsFinancingActivities",
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "value": 266335000000.0,
+    "dimensions": [
+      [
+        "ConsolidatedAndSeparateFinancialStatementsAxis",
+        "ConsolidatedMember"
+      ]
+    ]
+  },
+  {
+    "tag": "PaymentsOfLeaseLiabilitiesClassifiedAsFinancingActivities",
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "value": 456694000000.0,
+    "dimensions": [
+      [
+        "ConsolidatedAndSeparateFinancialStatementsAxis",
+        "ConsolidatedMember"
+      ]
+    ]
+  },
+  {
+    "tag": "CashFlowsFromUsedInInvestingActivities",
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "value": -3013603000000.0,
+    "dimensions": [
+      [
+        "ConsolidatedAndSeparateFinancialStatementsAxis",
+        "ConsolidatedMember"
+      ]
+    ]
+  },
+  {
+    "tag": "IncomeTaxesPaidRefundClassifiedAsOperatingActivities",
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "value": 1125070000000.0,
+    "dimensions": [
+      [
+        "ConsolidatedAndSeparateFinancialStatementsAxis",
+        "ConsolidatedMember"
+      ]
+    ]
+  },
+  {
+    "tag": "DividendsPaid",
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "value": 266335000000.0,
+    "dimensions": [
+      [
+        "ConsolidatedAndSeparateFinancialStatementsAxis",
+        "ConsolidatedMember"
+      ]
+    ]
+  },
+  {
+    "tag": "DividendsPaidRelatedPartyTransactionsOfDisclosureOfFinancialTransactionsBetweenRelatedPartiesLineItemsOfDisclosureOfFinancialTransactionsBetweenRelatedPartiesTableOfItems",
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "value": 57433000000.0,
+    "dimensions": [
+      [
+        "ConsolidatedAndSeparateFinancialStatementsAxis",
+        "ConsolidatedMember"
+      ]
+    ]
+  },
+  {
+    "tag": "DividendsIncomeRelatedPartyTransactionsOfDisclosureOfFinancialTransactionsBetweenRelatedPartiesLineItemsOfDisclosureOfFinancialTransactionsBetweenRelatedPartiesTableOfItems",
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "value": 7234000000.0,
+    "dimensions": [
+      [
+        "ConsolidatedAndSeparateFinancialStatementsAxis",
+        "ConsolidatedMember"
+      ]
+    ]
+  },
+  {
+    "tag": "UnearnedFinanceIncomeRelatingToFinanceLeasePaymentsReceivable",
+    "start": null,
+    "end": "2025-12-31",
+    "value": 591180000000.0,
+    "dimensions": [
+      [
+        "ConsolidatedAndSeparateFinancialStatementsAxis",
+        "ConsolidatedMember"
+      ]
+    ]
+  },
+  {
+    "tag": "NetInvestmentInFinanceLease",
+    "start": null,
+    "end": "2025-12-31",
+    "value": 3239879000000.0,
+    "dimensions": [
+      [
+        "ConsolidatedAndSeparateFinancialStatementsAxis",
+        "ConsolidatedMember"
+      ]
+    ]
+  },
+  {
+    "tag": "UndiscountedFinanceLeasePaymentsToBeReceived",
+    "start": null,
+    "end": "2025-12-31",
+    "value": 3831059000000.0,
+    "dimensions": [
+      [
+        "ConsolidatedAndSeparateFinancialStatementsAxis",
+        "ConsolidatedMember"
+      ]
+    ]
+  },
+  {
+    "tag": "DepreciationInvestmentProperty",
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "value": 5159000000.0,
+    "dimensions": [
+      [
+        "ConsolidatedAndSeparateFinancialStatementsAxis",
+        "ConsolidatedMember"
+      ]
+    ]
+  },
+  {
+    "tag": "NoncurrentLeaseLiabilities",
+    "start": null,
+    "end": "2025-12-31",
+    "value": 893694000000.0,
+    "dimensions": [
+      [
+        "ConsolidatedAndSeparateFinancialStatementsAxis",
+        "ConsolidatedMember"
+      ]
+    ]
+  },
+  {
+    "tag": "CurrentLeaseLiabilities",
+    "start": null,
+    "end": "2025-12-31",
+    "value": 422402000000.0,
+    "dimensions": [
+      [
+        "ConsolidatedAndSeparateFinancialStatementsAxis",
+        "ConsolidatedMember"
+      ]
+    ]
+  },
+  {
+    "tag": "DepreciationAndAmortisationExpense",
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "value": 3603863000000.0,
+    "dimensions": [
+      [
+        "CarryingAmountAccumulatedDepreciationAmortisationAndImpairmentAndGrossCarryingAmountAxis",
+        "ReportedAmountMember"
+      ],
+      [
+        "ConsolidatedAndSeparateFinancialStatementsAxis",
+        "ConsolidatedMember"
+      ]
+    ]
+  },
+  {
+    "tag": "ChangesInTaxLossCarryForwardsOfCurrentTaxExpenseIncomeAndAdjustmentsForCurrentTaxOfPriorPeriodsLineItemsOfMajorComponentsOfTaxExpenseIncomeTableOfItems",
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "value": -13935000000.0,
+    "dimensions": [
+      [
+        "CarryingAmountAccumulatedDepreciationAmortisationAndImpairmentAndGrossCarryingAmountAxis",
+        "ReportedAmountMember"
+      ],
+      [
+        "ConsolidatedAndSeparateFinancialStatementsAxis",
+        "ConsolidatedMember"
+      ]
+    ]
+  },
+  {
+    "tag": "ChangesInTaxCreditCarryForwardsOfCurrentTaxExpenseIncomeAndAdjustmentsForCurrentTaxOfPriorPeriodsLineItemsOfMajorComponentsOfTaxExpenseIncomeTableOfItems",
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "value": -79813000000.0,
+    "dimensions": [
+      [
+        "CarryingAmountAccumulatedDepreciationAmortisationAndImpairmentAndGrossCarryingAmountAxis",
+        "ReportedAmountMember"
+      ],
+      [
+        "ConsolidatedAndSeparateFinancialStatementsAxis",
+        "ConsolidatedMember"
+      ]
+    ]
+  },
+  {
+    "tag": "ExpenseRelatingToLeasesOfLowvalueAssetsForWhichRecognitionExemptionHasBeenUsed",
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "value": 35895000000.0,
+    "dimensions": [
+      [
+        "CarryingAmountAccumulatedDepreciationAmortisationAndImpairmentAndGrossCarryingAmountAxis",
+        "ReportedAmountMember"
+      ],
+      [
+        "ConsolidatedAndSeparateFinancialStatementsAxis",
+        "ConsolidatedMember"
+      ]
+    ]
+  },
+  {
+    "tag": "ExpenseRelatingToShorttermLeasesForWhichRecognitionExemptionHasBeenUsed",
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "value": 66639000000.0,
+    "dimensions": [
+      [
+        "CarryingAmountAccumulatedDepreciationAmortisationAndImpairmentAndGrossCarryingAmountAxis",
+        "ReportedAmountMember"
+      ],
+      [
+        "ConsolidatedAndSeparateFinancialStatementsAxis",
+        "ConsolidatedMember"
+      ]
+    ]
+  },
+  {
+    "tag": "InterestExpenseOnLeaseLiabilities",
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "value": 61916000000.0,
+    "dimensions": [
+      [
+        "CarryingAmountAccumulatedDepreciationAmortisationAndImpairmentAndGrossCarryingAmountAxis",
+        "ReportedAmountMember"
+      ],
+      [
+        "ConsolidatedAndSeparateFinancialStatementsAxis",
+        "ConsolidatedMember"
+      ]
+    ]
+  },
+  {
+    "tag": "LeaseExpenseFromDiscontinuedOperationsOfDisclosureOfQuantitativeInformationAboutLeaseLiabilitiesLineItemsOfDisclosureOfQuantitativeInformationAboutLeaseLiabilitiesTableOfItems",
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "value": 637000000.0,
+    "dimensions": [
+      [
+        "CarryingAmountAccumulatedDepreciationAmortisationAndImpairmentAndGrossCarryingAmountAxis",
+        "ReportedAmountMember"
+      ],
+      [
+        "ConsolidatedAndSeparateFinancialStatementsAxis",
+        "ConsolidatedMember"
+      ]
+    ]
+  },
+  {
+    "tag": "LeaseLiabilities",
+    "start": null,
+    "end": "2025-12-31",
+    "value": 1316096000000.0,
+    "dimensions": [
+      [
+        "CarryingAmountAccumulatedDepreciationAmortisationAndImpairmentAndGrossCarryingAmountAxis",
+        "ReportedAmountMember"
+      ],
+      [
+        "ConsolidatedAndSeparateFinancialStatementsAxis",
+        "ConsolidatedMember"
+      ]
+    ]
+  },
+  {
+    "tag": "NoncurrentLeaseLiabilities",
+    "start": null,
+    "end": "2025-12-31",
+    "value": 893694000000.0,
+    "dimensions": [
+      [
+        "CarryingAmountAccumulatedDepreciationAmortisationAndImpairmentAndGrossCarryingAmountAxis",
+        "ReportedAmountMember"
+      ],
+      [
+        "ConsolidatedAndSeparateFinancialStatementsAxis",
+        "ConsolidatedMember"
+      ]
+    ]
+  },
+  {
+    "tag": "CurrentLeaseLiabilities",
+    "start": null,
+    "end": "2025-12-31",
+    "value": 422402000000.0,
+    "dimensions": [
+      [
+        "CarryingAmountAccumulatedDepreciationAmortisationAndImpairmentAndGrossCarryingAmountAxis",
+        "ReportedAmountMember"
+      ],
+      [
+        "ConsolidatedAndSeparateFinancialStatementsAxis",
+        "ConsolidatedMember"
+      ]
+    ]
+  },
+  {
+    "tag": "LeaseLiabilities",
+    "start": null,
+    "end": "2025-12-31",
+    "value": 1316096000000.0,
+    "dimensions": [
+      [
+        "ConsolidatedAndSeparateFinancialStatementsAxis",
+        "ConsolidatedMember"
+      ]
+    ]
+  },
+  {
+    "tag": "CashFlowsFromUsedInOperatingActivities",
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "value": 4280500000000.0,
+    "dimensions": [
+      [
+        "ConsolidatedAndSeparateFinancialStatementsAxis",
+        "ConsolidatedMember"
+      ]
+    ]
+  },
+  {
+    "tag": "CashFlowsFromUsedInOperations",
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "value": 5627885000000.0,
+    "dimensions": [
+      [
+        "ConsolidatedAndSeparateFinancialStatementsAxis",
+        "ConsolidatedMember"
+      ]
+    ]
+  },
+  {
+    "tag": "DepreciationPropertyPlantAndEquipment",
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "value": 3040140000000.0,
+    "dimensions": [
+      [
+        "ConsolidatedAndSeparateFinancialStatementsAxis",
+        "ConsolidatedMember"
+      ]
+    ]
+  },
+  {
+    "tag": "FinanceIncomeOnNetInvestmentInFinanceLease",
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "value": 178529000000.0,
+    "dimensions": [
+      [
+        "CarryingAmountAccumulatedDepreciationAmortisationAndImpairmentAndGrossCarryingAmountAxis",
+        "ReportedAmountMember"
+      ],
+      [
+        "ConsolidatedAndSeparateFinancialStatementsAxis",
+        "ConsolidatedMember"
+      ]
+    ]
+  },
+  {
+    "tag": "SellingProfitLossOnFinanceLeases",
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "value": 1955586000000.0,
+    "dimensions": [
+      [
+        "CarryingAmountAccumulatedDepreciationAmortisationAndImpairmentAndGrossCarryingAmountAxis",
+        "ReportedAmountMember"
+      ],
+      [
+        "ConsolidatedAndSeparateFinancialStatementsAxis",
+        "ConsolidatedMember"
+      ]
+    ]
+  },
+  {
+    "tag": "OperatingLeaseIncome",
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "value": 225552000000.0,
+    "dimensions": [
+      [
+        "CarryingAmountAccumulatedDepreciationAmortisationAndImpairmentAndGrossCarryingAmountAxis",
+        "ReportedAmountMember"
+      ],
+      [
+        "ConsolidatedAndSeparateFinancialStatementsAxis",
+        "ConsolidatedMember"
+      ]
+    ]
+  },
+  {
+    "tag": "AdjustmentsForProfitLossFromDiscontinuedOperations",
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "value": 518000000.0,
+    "dimensions": [
+      [
+        "CarryingAmountAccumulatedDepreciationAmortisationAndImpairmentAndGrossCarryingAmountAxis",
+        "ReportedAmountMember"
+      ],
+      [
+        "ConsolidatedAndSeparateFinancialStatementsAxis",
+        "ConsolidatedMember"
+      ]
+    ]
+  },
+  {
+    "tag": "DividendsProposedOrDeclaredBeforeFinancialStatementsAuthorisedForIssueButNotRecognisedAsDistributionToOwners",
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "value": 243948000000.0,
+    "dimensions": [
+      [
+        "ConsolidatedAndSeparateFinancialStatementsAxis",
+        "ConsolidatedMember"
+      ]
+    ]
+  },
+  {
+    "tag": "AmortisationExpenseSellingGeneralAdministrativeExpenses",
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "value": 195656000000.0,
+    "dimensions": [
+      [
+        "CarryingAmountAccumulatedDepreciationAmortisationAndImpairmentAndGrossCarryingAmountAxis",
+        "ReportedAmountMember"
+      ],
+      [
+        "ConsolidatedAndSeparateFinancialStatementsAxis",
+        "ConsolidatedMember"
+      ]
+    ]
+  },
+  {
+    "tag": "DepreciationExpenseSellingGeneralAdministrativeExpenses",
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "value": 753663000000.0,
+    "dimensions": [
+      [
+        "CarryingAmountAccumulatedDepreciationAmortisationAndImpairmentAndGrossCarryingAmountAxis",
+        "ReportedAmountMember"
+      ],
+      [
+        "ConsolidatedAndSeparateFinancialStatementsAxis",
+        "ConsolidatedMember"
+      ]
+    ]
+  },
+  {
+    "tag": "TotalTaxExpenseIncomeOfCurrentTaxExpenseIncomeAndAdjustmentsForCurrentTaxOfPriorPeriodsLineItemsOfMajorComponentsOfTaxExpenseIncomeOfCurrentTaxExpenseIncomeAndAdjustmentsForCurrentTaxOfPriorPeriodsLineItemsOfMajorComponentsOfTaxExpenseIncomeTableOfItems",
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "value": 605657000000.0,
+    "dimensions": [
+      [
+        "CarryingAmountAccumulatedDepreciationAmortisationAndImpairmentAndGrossCarryingAmountAxis",
+        "ReportedAmountMember"
+      ],
+      [
+        "ConsolidatedAndSeparateFinancialStatementsAxis",
+        "ConsolidatedMember"
+      ]
+    ]
+  },
+  {
+    "tag": "CashOutflowForLeases",
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "value": 685972000000.0,
+    "dimensions": [
+      [
+        "CarryingAmountAccumulatedDepreciationAmortisationAndImpairmentAndGrossCarryingAmountAxis",
+        "ReportedAmountMember"
+      ],
+      [
+        "ConsolidatedAndSeparateFinancialStatementsAxis",
+        "ConsolidatedMember"
+      ]
+    ]
+  },
+  {
+    "tag": "LeaseExpense",
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "value": 231475000000.0,
+    "dimensions": [
+      [
+        "CarryingAmountAccumulatedDepreciationAmortisationAndImpairmentAndGrossCarryingAmountAxis",
+        "ReportedAmountMember"
+      ],
+      [
+        "ConsolidatedAndSeparateFinancialStatementsAxis",
+        "ConsolidatedMember"
+      ]
+    ]
+  },
+  {
+    "tag": "ExpenseRelatingToVariableLeasePaymentsNotIncludedInMeasurementOfLeaseLiabilities",
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "value": 66388000000.0,
+    "dimensions": [
+      [
+        "CarryingAmountAccumulatedDepreciationAmortisationAndImpairmentAndGrossCarryingAmountAxis",
+        "ReportedAmountMember"
+      ],
+      [
+        "ConsolidatedAndSeparateFinancialStatementsAxis",
+        "ConsolidatedMember"
+      ]
+    ]
+  },
+  {
+    "tag": "GrossLeaseLiabilities",
+    "start": null,
+    "end": "2025-12-31",
+    "value": 1481438000000.0,
+    "dimensions": [
+      [
+        "ConsolidatedAndSeparateFinancialStatementsAxis",
+        "ConsolidatedMember"
+      ]
+    ]
+  },
+  {
+    "tag": "DepreciationAndOthersOfChangesInLiabilitiesArisingFromFinancingActivitiesAbstractOfDisclosureOfReconciliationOfLiabilitiesArisingFromFinancingActivitiesTableOfItems",
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "value": 11819000000.0,
+    "dimensions": [
+      [
+        "ConsolidatedAndSeparateFinancialStatementsAxis",
+        "ConsolidatedMember"
+      ]
+    ]
+  },
+  {
+    "tag": "AdjustmentsForIncreasedecreaseInProvisions",
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "value": -1259215000000.0,
+    "dimensions": [
+      [
+        "CarryingAmountAccumulatedDepreciationAmortisationAndImpairmentAndGrossCarryingAmountAxis",
+        "ReportedAmountMember"
+      ],
+      [
+        "ConsolidatedAndSeparateFinancialStatementsAxis",
+        "ConsolidatedMember"
+      ]
+    ]
+  },
+  {
+    "tag": "AdjustmentsForIncreasedecreaseInOtherPayables",
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "value": -300252000000.0,
+    "dimensions": [
+      [
+        "CarryingAmountAccumulatedDepreciationAmortisationAndImpairmentAndGrossCarryingAmountAxis",
+        "ReportedAmountMember"
+      ],
+      [
+        "ConsolidatedAndSeparateFinancialStatementsAxis",
+        "ConsolidatedMember"
+      ]
+    ]
+  },
+  {
+    "tag": "AdjustmentsForIncreaseDecreaseInTradeAccountPayable",
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "value": 572393000000.0,
+    "dimensions": [
+      [
+        "CarryingAmountAccumulatedDepreciationAmortisationAndImpairmentAndGrossCarryingAmountAxis",
+        "ReportedAmountMember"
+      ],
+      [
+        "ConsolidatedAndSeparateFinancialStatementsAxis",
+        "ConsolidatedMember"
+      ]
+    ]
+  },
+  {
+    "tag": "AdjustmentsForDecreaseIncreaseInOtherAssets",
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "value": 254026000000.0,
+    "dimensions": [
+      [
+        "CarryingAmountAccumulatedDepreciationAmortisationAndImpairmentAndGrossCarryingAmountAxis",
+        "ReportedAmountMember"
+      ],
+      [
+        "ConsolidatedAndSeparateFinancialStatementsAxis",
+        "ConsolidatedMember"
+      ]
+    ]
+  },
+  {
+    "tag": "AdjustmentsForDecreaseIncreaseInContractAssets",
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "value": 293097000000.0,
+    "dimensions": [
+      [
+        "CarryingAmountAccumulatedDepreciationAmortisationAndImpairmentAndGrossCarryingAmountAxis",
+        "ReportedAmountMember"
+      ],
+      [
+        "ConsolidatedAndSeparateFinancialStatementsAxis",
+        "ConsolidatedMember"
+      ]
+    ]
+  },
+  {
+    "tag": "AdjustmentsForDecreaseIncreaseInInventories",
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "value": -293202000000.0,
+    "dimensions": [
+      [
+        "CarryingAmountAccumulatedDepreciationAmortisationAndImpairmentAndGrossCarryingAmountAxis",
+        "ReportedAmountMember"
+      ],
+      [
+        "ConsolidatedAndSeparateFinancialStatementsAxis",
+        "ConsolidatedMember"
+      ]
+    ]
+  },
+  {
+    "tag": "AdjustmentsForDecreaseIncreaseInOtherOperatingReceivables",
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "value": 61607000000.0,
+    "dimensions": [
+      [
+        "CarryingAmountAccumulatedDepreciationAmortisationAndImpairmentAndGrossCarryingAmountAxis",
+        "ReportedAmountMember"
+      ],
+      [
+        "ConsolidatedAndSeparateFinancialStatementsAxis",
+        "ConsolidatedMember"
+      ]
+    ]
+  },
+  {
+    "tag": "AdjustmentsForDecreaseIncreaseInTradeAccountReceivable",
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "value": -1590648000000.0,
+    "dimensions": [
+      [
+        "CarryingAmountAccumulatedDepreciationAmortisationAndImpairmentAndGrossCarryingAmountAxis",
+        "ReportedAmountMember"
+      ],
+      [
+        "ConsolidatedAndSeparateFinancialStatementsAxis",
+        "ConsolidatedMember"
+      ]
+    ]
+  },
+  {
+    "tag": "AdjustmentsForAssetsLiabilitiesOfOperatingActivities",
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "value": -2043114000000.0,
+    "dimensions": [
+      [
+        "CarryingAmountAccumulatedDepreciationAmortisationAndImpairmentAndGrossCarryingAmountAxis",
+        "ReportedAmountMember"
+      ],
+      [
+        "ConsolidatedAndSeparateFinancialStatementsAxis",
+        "ConsolidatedMember"
+      ]
+    ]
+  },
+  {
+    "tag": "AdjustmentsForUndistributedProfitsOfInvestmentsAccountedForUsingEquityMethod",
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "value": -111237000000.0,
+    "dimensions": [
+      [
+        "CarryingAmountAccumulatedDepreciationAmortisationAndImpairmentAndGrossCarryingAmountAxis",
+        "ReportedAmountMember"
+      ],
+      [
+        "ConsolidatedAndSeparateFinancialStatementsAxis",
+        "ConsolidatedMember"
+      ]
+    ]
+  },
+  {
+    "tag": "AdjustmentsForIncomeTaxExpense",
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "value": 608466000000.0,
+    "dimensions": [
+      [
+        "CarryingAmountAccumulatedDepreciationAmortisationAndImpairmentAndGrossCarryingAmountAxis",
+        "ReportedAmountMember"
+      ],
+      [
+        "ConsolidatedAndSeparateFinancialStatementsAxis",
+        "ConsolidatedMember"
+      ]
+    ]
+  },
+  {
+    "tag": "AdjustmentsForProvisions",
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "value": 995652000000.0,
+    "dimensions": [
+      [
+        "CarryingAmountAccumulatedDepreciationAmortisationAndImpairmentAndGrossCarryingAmountAxis",
+        "ReportedAmountMember"
+      ],
+      [
+        "ConsolidatedAndSeparateFinancialStatementsAxis",
+        "ConsolidatedMember"
+      ]
+    ]
+  },
+  {
+    "tag": "AdjustmentsForProvisionForSeveranceIndemnities",
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "value": 478272000000.0,
+    "dimensions": [
+      [
+        "CarryingAmountAccumulatedDepreciationAmortisationAndImpairmentAndGrossCarryingAmountAxis",
+        "ReportedAmountMember"
+      ],
+      [
+        "ConsolidatedAndSeparateFinancialStatementsAxis",
+        "ConsolidatedMember"
+      ]
+    ]
+  },
+  {
+    "tag": "AdjustmentsForGainsLossesOnDisposalsOfPropertyPlantAndEquipmentAndIntangibleAssetsOfAdjustmentsToReconcileProfitLossOfCashFlowsFromUsedInOperatingActivitiesTableOfItems",
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "value": -45134000000.0,
+    "dimensions": [
+      [
+        "CarryingAmountAccumulatedDepreciationAmortisationAndImpairmentAndGrossCarryingAmountAxis",
+        "ReportedAmountMember"
+      ],
+      [
+        "ConsolidatedAndSeparateFinancialStatementsAxis",
+        "ConsolidatedMember"
+      ]
+    ]
+  },
+  {
+    "tag": "AdjustmentsForAmortisationExpense",
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "value": 561896000000.0,
+    "dimensions": [
+      [
+        "CarryingAmountAccumulatedDepreciationAmortisationAndImpairmentAndGrossCarryingAmountAxis",
+        "ReportedAmountMember"
+      ],
+      [
+        "ConsolidatedAndSeparateFinancialStatementsAxis",
+        "ConsolidatedMember"
+      ]
+    ]
+  },
+  {
+    "tag": "RevenueFromDividends",
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "value": 1616000000.0,
+    "dimensions": [
+      [
+        "CarryingAmountAccumulatedDepreciationAmortisationAndImpairmentAndGrossCarryingAmountAxis",
+        "ReportedAmountMember"
+      ],
+      [
+        "ConsolidatedAndSeparateFinancialStatementsAxis",
+        "ConsolidatedMember"
+      ]
+    ]
+  },
+  {
+    "tag": "TotalTaxExpenseIncomeOfCurrentTaxExpenseIncomeAndAdjustmentsForCurrentTaxOfPriorPeriodsLineItemsOfMajorComponentsOfTaxExpenseIncomeOfReconciliationOfAccountingProfitMultipliedByApplicableTaxRatesLineItemsOfReconciliationOfAccountingProfitMultipliedByApplicableTaxRatesTableOfItems",
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "value": 605657000000.0,
+    "dimensions": [
+      [
+        "CarryingAmountAccumulatedDepreciationAmortisationAndImpairmentAndGrossCarryingAmountAxis",
+        "ReportedAmountMember"
+      ],
+      [
+        "ConsolidatedAndSeparateFinancialStatementsAxis",
+        "ConsolidatedMember"
+      ]
+    ]
+  },
+  {
+    "tag": "AdjustmentsForCurrentTaxOfPriorPeriod",
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "value": -13296000000.0,
+    "dimensions": [
+      [
+        "CarryingAmountAccumulatedDepreciationAmortisationAndImpairmentAndGrossCarryingAmountAxis",
+        "ReportedAmountMember"
+      ],
+      [
+        "ConsolidatedAndSeparateFinancialStatementsAxis",
+        "ConsolidatedMember"
+      ]
+    ]
+  },
+  {
+    "tag": "AdjustmentsForDecreaseincreaseInFairValueOfPlanAssets",
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "value": -335178000000.0,
+    "dimensions": [
+      [
+        "CarryingAmountAccumulatedDepreciationAmortisationAndImpairmentAndGrossCarryingAmountAxis",
+        "ReportedAmountMember"
+      ],
+      [
+        "ConsolidatedAndSeparateFinancialStatementsAxis",
+        "ConsolidatedMember"
+      ]
+    ]
+  },
+  {
+    "tag": "AdjustmentsForIncreaseDecreaseInOtherLiabilities",
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "value": 74969000000.0,
+    "dimensions": [
+      [
+        "CarryingAmountAccumulatedDepreciationAmortisationAndImpairmentAndGrossCarryingAmountAxis",
+        "ReportedAmountMember"
+      ],
+      [
+        "ConsolidatedAndSeparateFinancialStatementsAxis",
+        "ConsolidatedMember"
+      ]
+    ]
+  },
+  {
+    "tag": "AdjustmentsForIncreaseDecreaseInContractLiabilities",
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "value": 502377000000.0,
+    "dimensions": [
+      [
+        "CarryingAmountAccumulatedDepreciationAmortisationAndImpairmentAndGrossCarryingAmountAxis",
+        "ReportedAmountMember"
+      ],
+      [
+        "ConsolidatedAndSeparateFinancialStatementsAxis",
+        "ConsolidatedMember"
+      ]
+    ]
+  },
+  {
+    "tag": "AdjustmentsForDepreciationExpense",
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "value": 3040140000000.0,
+    "dimensions": [
+      [
+        "CarryingAmountAccumulatedDepreciationAmortisationAndImpairmentAndGrossCarryingAmountAxis",
+        "ReportedAmountMember"
+      ],
+      [
+        "ConsolidatedAndSeparateFinancialStatementsAxis",
+        "ConsolidatedMember"
+      ]
+    ]
+  },
+  {
+    "tag": "AdjustmentsForGainLossOnDerivativeFinancialInstrumentsOfAdjustmentsToReconcileProfitLossOfCashFlowsFromUsedInOperatingActivitiesTableOfItems",
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "value": -45041000000.0,
+    "dimensions": [
+      [
+        "CarryingAmountAccumulatedDepreciationAmortisationAndImpairmentAndGrossCarryingAmountAxis",
+        "ReportedAmountMember"
+      ],
+      [
+        "ConsolidatedAndSeparateFinancialStatementsAxis",
+        "ConsolidatedMember"
+      ]
+    ]
+  },
+  {
+    "tag": "AdjustmentsForGainLossOnForeignExchangeOfAdjustmentsToReconcileProfitLossOfCashFlowsFromUsedInOperatingActivitiesTableOfItems",
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "value": -15504000000.0,
+    "dimensions": [
+      [
+        "CarryingAmountAccumulatedDepreciationAmortisationAndImpairmentAndGrossCarryingAmountAxis",
+        "ReportedAmountMember"
+      ],
+      [
+        "ConsolidatedAndSeparateFinancialStatementsAxis",
+        "ConsolidatedMember"
+      ]
+    ]
+  },
+  {
+    "tag": "AdjustmentsForInterestIncomeExpensesOfAdjustmentsToReconcileProfitLossOfCashFlowsFromUsedInOperatingActivitiesTableOfItems",
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "value": -190686000000.0,
+    "dimensions": [
+      [
+        "CarryingAmountAccumulatedDepreciationAmortisationAndImpairmentAndGrossCarryingAmountAxis",
+        "ReportedAmountMember"
+      ],
+      [
+        "ConsolidatedAndSeparateFinancialStatementsAxis",
+        "ConsolidatedMember"
+      ]
+    ]
+  },
+  {
+    "tag": "AdjustmentsForReconcileProfitLoss",
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "value": 6450587000000.0,
+    "dimensions": [
+      [
+        "CarryingAmountAccumulatedDepreciationAmortisationAndImpairmentAndGrossCarryingAmountAxis",
+        "ReportedAmountMember"
+      ],
+      [
+        "ConsolidatedAndSeparateFinancialStatementsAxis",
+        "ConsolidatedMember"
+      ]
+    ]
+  },
+  {
+    "tag": "CashFlowsFromUsedInOperations",
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "value": 5627885000000.0,
+    "dimensions": [
+      [
+        "CarryingAmountAccumulatedDepreciationAmortisationAndImpairmentAndGrossCarryingAmountAxis",
+        "ReportedAmountMember"
+      ],
+      [
+        "ConsolidatedAndSeparateFinancialStatementsAxis",
+        "ConsolidatedMember"
+      ]
+    ]
+  },
+  {
+    "tag": "AmortisationIntangibleAssetsOtherThanGoodwill",
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "value": 561896000000.0,
+    "dimensions": [
+      [
+        "ConsolidatedAndSeparateFinancialStatementsAxis",
+        "ConsolidatedMember"
+      ]
+    ]
+  },
+  {
+    "tag": "DiscountedUnguaranteedResidualValueOfAssetsSubjectToFinanceLease",
+    "start": null,
+    "end": "2025-12-31",
+    "value": 0.0,
+    "dimensions": [
+      [
+        "ConsolidatedAndSeparateFinancialStatementsAxis",
+        "ConsolidatedMember"
+      ]
+    ]
+  },
+  {
+    "tag": "UndiscountedOperatingLeasePaymentsToBeReceived",
+    "start": null,
+    "end": "2025-12-31",
+    "value": 107811000000.0,
+    "dimensions": [
+      [
+        "ConsolidatedAndSeparateFinancialStatementsAxis",
+        "ConsolidatedMember"
+      ]
+    ]
+  },
+  {
+    "tag": "AmortisationAssetsRecognisedFromCostsIncurredToObtainOrFulfilContractsWithCustomers",
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "value": 181236000000.0,
+    "dimensions": [
+      [
+        "CarryingAmountAccumulatedDepreciationAmortisationAndImpairmentAndGrossCarryingAmountAxis",
+        "ReportedAmountMember"
+      ],
+      [
+        "ConsolidatedAndSeparateFinancialStatementsAxis",
+        "ConsolidatedMember"
+      ]
+    ]
+  }
+]

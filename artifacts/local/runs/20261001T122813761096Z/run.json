@@ -1,0 +1,18 @@
+{
+  "runId": "20261001T122813761096Z",
+  "startedAt": "2026-10-01T12:28:13.761183+00:00",
+  "status": "running",
+  "mode": "archived_sources_local_only",
+  "modelRequested": false,
+  "stages": [
+    {
+      "name": "unit",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-01T12:28:13.761327+00:00",
+      "finishedAt": "2026-10-01T12:29:50.936724+00:00",
+      "log": "artifacts/local/runs/20261001T122813761096Z/unit.log",
+      "logHash": "419fbe473a4c62760692010d410c974ee9e1ef1e81449958ed8fca01d8ccdd68"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "status": "staged_not_integrated",
+  "company": "ADBE",
+  "unitTests": 7,
+  "wholePythonJsCashInverseCases": 6,
+  "sourcePeriod": [
+    "2025-08-30",
+    "2026-08-28"
+  ],
+  "cashBridge": 10806000000,
+  "revenue": 25970000000,
+  "operatingIncome": 9271000000,
+  "initialCash": 5463103506.668349,
+  "method": "Revenue types within one current segment; older segment margins are not reused. Annual PPE depreciation ratio plus trailing intangible amortization; contract amortization stays in selling expense. Cash-flow accretion is not automatically a recurring addback.",
+  "annualDaUnallocated": -10000000,
+  "next": "After Innotek run ends, integrate module/sources/rendering, add browser/PDF tests; do not count as model26 before integration.",
+  "financialApproval": false
+}

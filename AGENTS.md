@@ -1,9 +1,58 @@
-# Equity Research
+# 주식 리서치 시스템 작업 기준
 
-- This project runs on GitHub-hosted Actions and publishes the static `site/` folder to Pages. Do not add a required local server or self-hosted runner.
-- `README.md` describes the current eight-company exploratory scope. Preserve filing dates, accounting periods, units, source hashes, missing intervals, baselines and failed hypotheses.
-- Do not equate research candidates with validated investment recommendations. Keep variance loss, excess return and condition fulfillment separate.
-- Do not place credentials, raw workspace dumps or private paths in `site/`. Run `python scripts/check-site.py` before publishing.
-- For analysis changes run the engine tests, isolated replay, Chrome file-based checks and PDF audit before `python -m equitylab build-site`.
-- Preserve `data/ledger/conditions.jsonl` as an append-only record. A local hash chain is not external timestamp certification.
-- Do not use subagents unless the user explicitly requests them.
+- 최신 사용자 결정(2026-09-30): 외부 AI API 없이 로컬/내부망 추론을 구성한다. 공개 공시·가격만 인터넷에서 수집하고 모델 추론·분석 기록·연구 화면은 로컬에 둔다. 저장 자료로 오프라인 재분석을 지원한다. 이전 GitHub 전용 운영 결정은 이 결정으로 대체한다. 공개 사이트는 기존판을 유지하고 새 내부 분석을 자동 공개하지 않는다.
+- 기존 서비스·모델 저장소는 변경하지 않는다. 프로젝트 전용 모델 런타임과 저장 위치를 사용하며 GPU가 사용 중이면 기다리거나 보류한다. 모델 파일·임시 파일은 이 프로젝트의 20TB 경로에 둔다. 로컬 모델 응답을 검증된 금융 해석으로 표시하지 않는다.
+- `site/`는 허용 목록에 따른 공개 산출물이다. `python3 -m equitylab build-site`, `python3 scripts/check-site.py`, `node scripts/check-live.mjs --site`로 공개본까지 검사한다. 배포 준비는 `scripts/prepare-github.py`로 하며 원본 저장소·개인 메모·환경 파일을 통째로 올리지 않는다.
+
+- 목적은 미국·한국 종목의 근거 있는 투자 의견과 연구 보고서다. 현재 단계와 사용자 결정은 `MEMORY.md`, 제품 기준은 `docs/product-design.md`를 먼저 읽는다.
+- 기준 경로는 `/home/soccz/22tb/주식`이다. 임시 산출물은 `/home/soccz/22tb/tmp`를 사용한다.
+- `report`, `prelude`, `main/gan_t/xsec_alpha`, `졸업논문`은 별도 운영·연구 프로젝트다. 이 프로젝트의 작업으로 원본 수정, 모델 실행, 서비스 변경을 수행하지 않는다. 채택한 자료의 경로·시점·범위를 기록한다.
+- 아이디어, 탐색 결과, 독립 재현, 미사용 표본 검증, 운영 채택을 구분한다. 최신 RESULTS·감사·현행 목적변수부터 확인한다.
+- 기업 분석·가격 가정·수익 순위·변동성 예측·경제 성과는 각각 근거를 요구한다. 인용 일치나 프로그램 테스트 통과를 재무 해석의 타당성으로 대체하지 않는다.
+- 기업명·실제 추천·확률·검증 성과를 만들어 넣지 않는다. 설계용 가상 데이터는 화면·차트·인쇄물에 명시하고 실제 연구 결과와 구분한다.
+- 자료 부재를 악재로 바꾸지 않는다. 공시시점·회계기간·연결 범위·단위·수정 여부·종목 식별자를 보존한다.
+- 사용자가 명시적으로 요청하기 전에는 서브에이전트를 사용하지 않는다.
+- 사용자가 확인한 형태는 이 폴더의 독립 프로젝트다. 기존 프로젝트의 아이디어·연구 방법·검증 결과를 참고하되 그 제품 정책·persona·유니버스·일정을 자동 상속하지 않는다. 기존 report의 수정·확장 프로젝트로 취급하지 않는다.
+- 외부 감사의 사실 정정은 반영하되 권고안 전체를 사용자 승인으로 간주하지 않는다. 한국 top30 전용, 논문 이후 착수, 원장만 개발하는 범위는 채택되지 않았다. 분석 기간·의견 형식은 이 제품에서 따로 설계한다.
+- `prototype/`은 네 화면이 연결된 독립 설계 미리보기다. 기업·공시·가격은 가상이고 연구 화면의 출처 명시 WML 결과만 실제다. 화면 완성을 실제 데이터 연결·추천 성과·금융 해석 승인으로 표현하지 않는다. 운영 장애 정리는 별도 과제다.
+- 실제 제품은 `equitylab/` 엔진과 `app/`이다. `python3 -m unittest discover -s tests -v`, `black --check equitylab tests scripts/check-replay.py`, `python3 scripts/check-replay.py`, `node scripts/check-live.mjs`로 검증한다. 실제 산출물은 `artifacts/live/`에 둔다. 마지막 브라우저·PDF 검사는 마지막 스냅샷 해시와 일치해야 한다.
+- `prototype/`은 별도 가상 예시다. 가상 계산은 `node scripts/check-calculations.mjs`, 가상 화면은 `node scripts/check-preview.mjs`로 검증한다. WML 근거는 `node scripts/prepare-evidence.mjs`, `python3 scripts/render-research.py`로 재생성한다.
+- 공시 수집은 독립 SEC·OpenDART 어댑터로 수행한다. 기존 환경 파일은 승인 범위에서 DART_API_KEY만 메모리로 읽고 파일·로그·오류·HTTP 응답에 키를 남기지 않는다. 가격과 원문의 갱신 실패를 조용한 과거 자료 대체로 숨기지 않는다.
+- 과거 재무 신호에는 신호일 전날까지 공개된 항목만 사용한다. 조건 등록 이후 여부는 공시 시장의 현지 날짜로 비교한다. 현재 생존 8종목의 탐색 결과를 전체 시장 알파·확인적 평가로 승격하지 않는다.
+- PDF 납품 시 `python3 scripts/check-artifacts.py`로 현재 분석 버전·원문 링크·잘림과 산출물 해시를 확인한다. 스냅샷 이후 화면 코드를 바꾸면 다시 계산·출력해야 한다. Chrome 인쇄의 반복 표식은 문서 시작과 인쇄 영역 안에 놓고 모든 페이지를 실제 PDF로 확인한다. 음수 bottom은 표식을 다음 페이지로 밀 수 있다.
+- WML 포트폴리오 분산의 QLIKE와 종목 단위 정확도를 구분한다. QLIKE 차이의 검정과 Sharpe 차이의 검정도 각각 읽는다. 조건 불성립과 사전 예측 실패를 동일하게 채점하지 않는다.
+- 코드·수치·표현을 바꾸면 해당 동작과 계산을 검증하고 `MEMORY.md`에 현재 상태·수정 파일·다음 작업을 기록한다.
+- 전체 제품 완료는 테스트·모델 생성·PDF 출력의 통과로 판정하지 않는다. `docs/product-design.md`의 남은 실질 산출물과 대조한다. 공통 계산을 기업별 심층 분석으로, 가격 민감도 도구를 정상화 가치평가로, 관찰 상태를 투자 의견 완성으로 바꾸어 말하지 않는다. 2026-09-30 사용자가 성급한 완료 판정을 정정했다.
+- 사용자가 전체 완료 판정을 두 차례 거부했다. 낮은 로컬 모델 품질 허용은 사업 분석·비교 판단·가격 근거의 범위 축소 승인이 아니다. 완료 기준을 현재 구현에 맞춰 낮추거나 미완성 기업 조사를 '지속 연구'로 넘긴 뒤 목표를 complete로 바꾸지 않는다. 검증·압축 파일은 구현 중간 증거이며 제품 목표와 별도다.
+
+- 로컬 모델 JSON·근거 ID 검사를 통과해도 금융 해석을 승인하지 않는다. 소형 모델은 인과 단정과 부호 오류, 비판의 과잉 거부가 관측됐다. 모델 초안·비판·수정·실패를 보존하고 미해결 출력은 검토 대상으로 표시한다. `python3 scripts/local-research.py`의 실제 GPU 실행과 `node scripts/check-dossier.mjs`를 새 로컬 판독 변경에 맞게 검증한다.
+
+- 가설 판독은 관측 수치와 분리하고 문장별로 평가한다. 유보 표현 검사는 필요조건일 뿐 의미 검증이 아니다. 합성 예문에 맞춰 개선한 규칙은 개발 회귀 검사로 표시하며 모델 단독 오류를 숨기지 않는다. 로컬 모델·숙고·샘플링 설정이 바뀌면 기존 평가를 재사용하지 않는다. Qwen 숙고에 greedy/temperature=0을 기본 적용하지 않는다.
+
+- 채권 분석은 기초(기간 시작 전날)·기말·전년 동기를 구분한다. 순매출채권과 총채권, 총액과 손상 차감액의 컨텍스트를 섞지 않는다. 잔액/총매출 대용일수를 실제 회수일수로, 충당금·관리 정책을 실제 회수 성과로 표시하지 않는다. 통합 실행은 `python3 scripts/run-local.py --evaluate`; 계산·출력만 할 때 `--skip-model`. 의미 평가 실패와 산출물 검사 결과를 분리하고 조건 등록의 시점·기준선을 보존한다.
+
+- 조사 대상은 현재 미국 30·한국 30개다. `data/coverage-plan.json`과 공식 기업 목록을 이용해 `scripts/expand-coverage.py`로 확장하고 식별자·수집 실패를 보존한다. 공통 계산·기업 전체 판독 대상 60개, 현금·채권 상세 주석 2개, 사업부·리스·금융 구조 14개, `data/research-cohort.json`의 기존 실험 8개를 구분한다. 종목 확대를 기존 실험의 표본외 검증으로 표현하거나 기존 연구 표본을 묵시적으로 바꾸지 않는다. 기업별 누적·12개월 기간과 투자지출 분류가 다르면 비교를 보류하고 결측은 ‘자료 미확인’으로 표시한다.
+
+- 기업 전체 판독은 `coverage_reasoning.py`/`local-coverage.py`의 별도 프로토콜과 `coverage-reviews`, `coverage-evaluations`를 쓴다. 채권 v6 기록과 평가를 재사용하지 않는다. 현행 기본은 Qwen3:8B 숙고 켬/8192/temperature.6/top_p.95 및 프로젝트 런타임 `OLLAMA_GO_TEMPLATE=0`이다. 프로토콜 변경 후 개발·분리 평가와 실제 기업 판독을 재실행하며 과거 설정의 평가를 재사용하지 않는다. Go 템플릿 경로의 형식 제약 실패를 반복 관측했으므로 구조화 출력 변경 시 `--probe-format`과 전체 개발 평가를 실제 실행한다. 예문·금융 의미 승인과 형식 제약 통과를 구분한다.
+- `data/forward-study.json`의 최초 40종목·선택·기준선·비용·기간 계약을 재작성하지 않는다. 새 정보로 재선택하려면 별도 연구 버전이 필요하다. 등록 이후 같은 날짜의 모든 기업 가격을 요구하며 결측 기업 제외로 성과를 높이지 않는다. 기존 8개 과거 실험과 전향 관측을 분리한다.
+
+- 로컬 출력 스키마에 JSON 문자열의 따옴표·역슬래시·제어문자까지 허용하는 넓은 정규식을 넣지 않는다. coverage v2–v4의 `^[^0-9]*$`에서 반복출력/peg-native 형식 실패가 관측됐다. 문자열 길이 제약과 생성 후 숫자 검사로 분리하고 실제 기업 packet을 포함한 `--probe-format`을 통과시킨다. 단순 상수 응답 검사만으로 기업 판독 런타임을 승인하지 않는다.
+
+- 기업 가설의 구별 질문은 추가로 확보할 자료와 경쟁 설명별로 달라지는 관측을 요구한다. 투자·현금 총액 증가율의 비율만으로 원인을 식별하지 않는다. v11에서 금지 예시가 생성문에 반복되고 자체 비판이 허용한 실제 오류가 있었으므로, 형식·합성 통과 뒤 실제 기업 문장도 읽고 발견한 오류를 원문 해시별 검토 보류 기록으로 남긴다.
+
+- 조사 질문 선택은 `questions.py`/`local-questions.py`의 별도 프로토콜이다. 모델은 적용 가능한 사전 연구 설계 ID 두 개만 고르고, 경쟁 설명·구별 자료는 명시된 설계 문구로 표시한다. 자유 생성 판독의 평가를 질문 우선순위 효과의 검증으로 재사용하지 않는다. 실패를 기본 선택으로 숨기지 않으며 공시 식별자·가격·동종 입력 변화 시 과거 선택을 무효화한다.
+
+- 중단영업이 있는 기업은 계속영업으로 재작성한 매출과 보고 영업현금·투자 취득의 사업 범위를 먼저 대사한다. `cash_scope.py`가 선택한 연결 총액만 사용하고 별도·사업별 상세를 중복 합산하지 않는다. 미확인 금액을 영으로 놓지 않으며 미대사 상태의 주당 역산·현금 우열을 보류한다. 개인 연구 노트는 사전 등록 원장과 구분한다.
+- 모델 배치 전에 계산·비교 패킷을 확정한다. 실행 중 패킷을 바꾸는 수정이 필요하면 해당 프로젝트 실행만 중단하고 부분 기록을 보존한 뒤 재계산·재개한다. 이전 스냅샷을 읽는 배치가 끝난 것을 새 계산의 판독 완료로 취급하지 않는다.
+
+- 공시 계산·재현·출력 실행 중에도 엔진·계약·화면 코드를 수정하지 않는다. 프로세스가 읽은 코드와 종료 때 파일 해시의 시점이 달라질 수 있다. 변경 필요 시 해당 실행을 중간 기록으로 남기고 코드 고정 후 재계산하며, 직접 재생성한 기업 결과와 저장 결과를 대조한다.
+
+- 복수 주식 종류의 동일 배당·청산권 검토는 기업·접수·원문 해시·같은 날짜 수량에 묶는다. A주 가격×합산 수량은 비교 대용치이며 비상장 종류의 시장가격이나 의결권 가치의 동일성을 뜻하지 않는다. 새 공시에 자동 상속하지 않는다.
+
+- PDF 글자가 종이 안에 있다는 검사만으로 하단 표식과의 겹침을 통과시키지 않는다. Chrome 131+의 `@page @bottom-center`로 본문과 여백을 분리하고 본문 하단이 표식 위인지 검사한다. 고정 요소의 음수 bottom뿐 아니라 translateY도 인쇄 영역 밖에서 사라지는 문제가 확인됐다.
+
+- 사용자가 목표까지 계속 진행하라고 지시한 동안에는 검증판 ZIP 전달을 종료 지점으로 삼지 않는다. 현재 자료 조사·구현으로 해결 가능한 남은 사업 분석·가격 근거·비교 판단을 다음 작업으로 이어 간다. 2026-10-01 사용자가 60종목 묶음 전달 후의 중단을 다시 정정했다.
+
+- 재무 태그 이름만으로 현금 항목의 범위를 명명하지 않는다. 원문 표제와 포함 자산을 먼저 확인한다. 연간 지출이 같은 해의 비교 누적 지출보다 작은 경우 연간+현재−전년을 정상 최근1년 지출로 사용하지 않고 분류·재작성 범위를 대사한다. Adobe의 장기투자 태그에는 무형·기타 자산이, Salesforce의 리스 태그에는 더 넓은 금융의무 원금이 포함돼 있었다.
+
+- 현금 경로의 `netInterest`는 수입이 양수·비용이 음수인 현금 효과다. 공시 이자비용의 양수 크기를 그대로 넣지 않는다. 신규 기업 모델은 이자비용을 없앤 민감도가 세후 비용만큼 현금을 늘리는지 원문 금액으로 검사한다.

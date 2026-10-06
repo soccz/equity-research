@@ -1,0 +1,731 @@
+{
+  "snapshotHash": "b819ae976fd3fc3580a93882ed89a58e770204b1635febef98878bf88ab1415d",
+  "scope": "현재 공시에서 사업별 정상 현금 모델로 진행하기 위한 자료 공백 점검. 미확인을 영이나 악재로 바꾸지 않음.",
+  "companies": [
+    {
+      "company": "MU",
+      "businessSegments": 5,
+      "currentPeriod": [
+        "2025-08-29",
+        "2026-05-28"
+      ],
+      "days": 273,
+      "annualSegmentBridgeNeeded": true,
+      "priorAnnualAccession": "0000723125-25-000028",
+      "annualXbrlManifestAvailable": false,
+      "priceSecurityStatus": "available",
+      "priceIssues": [],
+      "sourceFiling": "0000723125-26-000015",
+      "priorAnnualSourceFile": "data/sources/sec-MU-a8b088c2111daef3.json",
+      "priorAnnualRawXbrlAvailable": false
+    },
+    {
+      "company": "NVDA",
+      "businessSegments": 2,
+      "currentPeriod": [
+        "2026-01-26",
+        "2026-07-26"
+      ],
+      "days": 182,
+      "annualSegmentBridgeNeeded": true,
+      "priorAnnualAccession": "0001045810-26-000021",
+      "annualXbrlManifestAvailable": false,
+      "priceSecurityStatus": "available",
+      "priceIssues": [],
+      "sourceFiling": "0001045810-26-000075",
+      "priorAnnualSourceFile": "data/sources/sec-NVDA-19ef503a5770f566.json",
+      "priorAnnualRawXbrlAvailable": false
+    },
+    {
+      "company": "GOOGL",
+      "businessSegments": 3,
+      "currentPeriod": [
+        "2026-01-01",
+        "2026-06-30"
+      ],
+      "days": 181,
+      "annualSegmentBridgeNeeded": true,
+      "priorAnnualAccession": "0001652044-26-000018",
+      "annualXbrlManifestAvailable": false,
+      "priceSecurityStatus": "unresolved",
+      "priceIssues": [
+        "여러 보통주 종류의 가격·경제적 권리와 유통주식수 연결 필요",
+        "발행된 우선주의 현금·청산 권리 배분 필요"
+      ],
+      "sourceFiling": "0001652044-26-000071",
+      "priorAnnualSourceFile": "data/sources/sec-GOOGL-a017f26ee88cb4a6.json",
+      "priorAnnualRawXbrlAvailable": false
+    },
+    {
+      "company": "AAPL",
+      "businessSegments": 5,
+      "currentPeriod": [
+        "2025-09-28",
+        "2026-06-27"
+      ],
+      "days": 273,
+      "annualSegmentBridgeNeeded": true,
+      "priorAnnualAccession": "0000320193-25-000079",
+      "annualXbrlManifestAvailable": false,
+      "priceSecurityStatus": "available",
+      "priceIssues": [],
+      "sourceFiling": "0000320193-26-000020",
+      "priorAnnualSourceFile": "data/sources/sec-AAPL-73a86c6aedc31f77.json",
+      "priorAnnualRawXbrlAvailable": false
+    },
+    {
+      "company": "MSFT",
+      "businessSegments": 3,
+      "currentPeriod": [
+        "2025-07-01",
+        "2026-06-30"
+      ],
+      "days": 365,
+      "annualSegmentBridgeNeeded": false,
+      "priorAnnualAccession": null,
+      "annualXbrlManifestAvailable": false,
+      "priceSecurityStatus": "available",
+      "priceIssues": [],
+      "sourceFiling": "0001193125-26-323660"
+    },
+    {
+      "company": "AMZN",
+      "businessSegments": 3,
+      "currentPeriod": [
+        "2026-01-01",
+        "2026-06-30"
+      ],
+      "days": 181,
+      "annualSegmentBridgeNeeded": true,
+      "priorAnnualAccession": "0001018724-26-000004",
+      "annualXbrlManifestAvailable": false,
+      "priceSecurityStatus": "available",
+      "priceIssues": [],
+      "sourceFiling": "0001018724-26-000026",
+      "priorAnnualSourceFile": "data/sources/sec-AMZN-7549fb68446eee40.json",
+      "priorAnnualRawXbrlAvailable": false
+    },
+    {
+      "company": "META",
+      "businessSegments": 0,
+      "currentPeriod": [
+        "2026-01-01",
+        "2026-06-30"
+      ],
+      "days": 181,
+      "annualSegmentBridgeNeeded": false,
+      "priorAnnualAccession": "0001628280-26-003942",
+      "annualXbrlManifestAvailable": false,
+      "priceSecurityStatus": "unresolved",
+      "priceIssues": [
+        "여러 보통주 종류의 가격·경제적 권리와 유통주식수 연결 필요",
+        "정확한 범위의 유통주식수 미확인. 발행주식수·가중평균주식수로 대체하지 않음"
+      ],
+      "sourceFiling": "0001628280-26-050705",
+      "priorAnnualSourceFile": "data/sources/sec-META-7518e76d6dac2d01.json",
+      "priorAnnualRawXbrlAvailable": false
+    },
+    {
+      "company": "AMD",
+      "businessSegments": 3,
+      "currentPeriod": [
+        "2025-12-28",
+        "2026-06-27"
+      ],
+      "days": 182,
+      "annualSegmentBridgeNeeded": true,
+      "priorAnnualAccession": "0000002488-26-000018",
+      "annualXbrlManifestAvailable": false,
+      "priceSecurityStatus": "available",
+      "priceIssues": [],
+      "sourceFiling": "0000002488-26-000123",
+      "priorAnnualSourceFile": "data/sources/sec-AMD-21a29c75076d90fc.json",
+      "priorAnnualRawXbrlAvailable": false
+    },
+    {
+      "company": "AVGO",
+      "businessSegments": 2,
+      "currentPeriod": [
+        "2025-11-03",
+        "2026-08-02"
+      ],
+      "days": 273,
+      "annualSegmentBridgeNeeded": true,
+      "priorAnnualAccession": "0001730168-25-000121",
+      "annualXbrlManifestAvailable": false,
+      "priceSecurityStatus": "available",
+      "priceIssues": [],
+      "sourceFiling": "0001730168-26-000080",
+      "priorAnnualSourceFile": "data/sources/sec-AVGO-3bdb6644c12addf1.json",
+      "priorAnnualRawXbrlAvailable": false
+    },
+    {
+      "company": "QCOM",
+      "businessSegments": 0,
+      "currentPeriod": [
+        "2025-09-29",
+        "2026-06-28"
+      ],
+      "days": 273,
+      "annualSegmentBridgeNeeded": false,
+      "priorAnnualAccession": "0000804328-25-000085",
+      "annualXbrlManifestAvailable": false,
+      "priceSecurityStatus": "available",
+      "priceIssues": [],
+      "sourceFiling": "0000804328-26-000086",
+      "priorAnnualSourceFile": "data/sources/sec-QCOM-a466da4777ec1202.json",
+      "priorAnnualRawXbrlAvailable": false
+    },
+    {
+      "company": "INTC",
+      "businessSegments": 0,
+      "currentPeriod": [
+        "2025-12-28",
+        "2026-06-27"
+      ],
+      "days": 182,
+      "annualSegmentBridgeNeeded": false,
+      "priorAnnualAccession": "0000050863-26-000011",
+      "annualXbrlManifestAvailable": false,
+      "priceSecurityStatus": "available",
+      "priceIssues": [],
+      "sourceFiling": "0000050863-26-000157",
+      "priorAnnualSourceFile": "data/sources/sec-INTC-70056711b8b04d3a.json",
+      "priorAnnualRawXbrlAvailable": false
+    },
+    {
+      "company": "AMAT",
+      "businessSegments": 0,
+      "currentPeriod": [
+        "2025-10-27",
+        "2026-07-26"
+      ],
+      "days": 273,
+      "annualSegmentBridgeNeeded": false,
+      "priorAnnualAccession": "0001628280-25-056742",
+      "annualXbrlManifestAvailable": false,
+      "priceSecurityStatus": "available",
+      "priceIssues": [],
+      "sourceFiling": "0001628280-26-058235",
+      "priorAnnualSourceFile": "data/sources/sec-AMAT-65ecfedd5bfd3768.json",
+      "priorAnnualRawXbrlAvailable": false
+    },
+    {
+      "company": "LRCX",
+      "businessSegments": 0,
+      "currentPeriod": [
+        "2025-06-30",
+        "2026-06-28"
+      ],
+      "days": 364,
+      "annualSegmentBridgeNeeded": false,
+      "priorAnnualAccession": null,
+      "annualXbrlManifestAvailable": false,
+      "priceSecurityStatus": "available",
+      "priceIssues": [],
+      "sourceFiling": "0000707549-26-000037"
+    },
+    {
+      "company": "TSLA",
+      "businessSegments": 0,
+      "currentPeriod": [
+        "2026-01-01",
+        "2026-06-30"
+      ],
+      "days": 181,
+      "annualSegmentBridgeNeeded": false,
+      "priorAnnualAccession": "0001628280-26-003952",
+      "annualXbrlManifestAvailable": false,
+      "priceSecurityStatus": "available",
+      "priceIssues": [],
+      "sourceFiling": "0001628280-26-049270",
+      "priorAnnualSourceFile": "data/sources/sec-TSLA-d0c2b9288d027a6d.json",
+      "priorAnnualRawXbrlAvailable": false
+    },
+    {
+      "company": "GM",
+      "businessSegments": 0,
+      "currentPeriod": [
+        "2026-01-01",
+        "2026-06-30"
+      ],
+      "days": 181,
+      "annualSegmentBridgeNeeded": false,
+      "priorAnnualAccession": "0001467858-26-000013",
+      "annualXbrlManifestAvailable": false,
+      "priceSecurityStatus": "unresolved",
+      "priceIssues": [
+        "제조·금융 자회사 현금과 자본요구를 먼저 분리해야 함"
+      ],
+      "sourceFiling": "0001467858-26-000051",
+      "priorAnnualSourceFile": "data/sources/sec-GM-0aadbfd12c0d97ba.json",
+      "priorAnnualRawXbrlAvailable": false
+    },
+    {
+      "company": "F",
+      "businessSegments": 0,
+      "currentPeriod": [
+        "2026-01-01",
+        "2026-06-30"
+      ],
+      "days": 181,
+      "annualSegmentBridgeNeeded": false,
+      "priorAnnualAccession": "0000037996-26-000015",
+      "annualXbrlManifestAvailable": false,
+      "priceSecurityStatus": "unresolved",
+      "priceIssues": [
+        "여러 보통주 종류의 가격·경제적 권리와 유통주식수 연결 필요",
+        "정확한 범위의 유통주식수 미확인. 발행주식수·가중평균주식수로 대체하지 않음",
+        "제조·금융 자회사 현금과 자본요구를 먼저 분리해야 함"
+      ],
+      "sourceFiling": "0000037996-26-000156",
+      "priorAnnualSourceFile": "data/sources/sec-F-db9621054cffb365.json",
+      "priorAnnualRawXbrlAvailable": false
+    },
+    {
+      "company": "GE",
+      "businessSegments": 0,
+      "currentPeriod": [
+        "2026-01-01",
+        "2026-06-30"
+      ],
+      "days": 181,
+      "annualSegmentBridgeNeeded": false,
+      "priorAnnualAccession": "0000040545-26-000008",
+      "annualXbrlManifestAvailable": false,
+      "priceSecurityStatus": "available",
+      "priceIssues": [],
+      "sourceFiling": "0000040545-26-000049",
+      "priorAnnualSourceFile": "data/sources/sec-GE-8c18acb17bbe0760.json",
+      "priorAnnualRawXbrlAvailable": false
+    },
+    {
+      "company": "CAT",
+      "businessSegments": 0,
+      "currentPeriod": [
+        "2026-01-01",
+        "2026-06-30"
+      ],
+      "days": 181,
+      "annualSegmentBridgeNeeded": false,
+      "priorAnnualAccession": "0000018230-26-000008",
+      "annualXbrlManifestAvailable": false,
+      "priceSecurityStatus": "unresolved",
+      "priceIssues": [
+        "제조·금융 자회사 현금과 자본요구를 먼저 분리해야 함"
+      ],
+      "sourceFiling": "0000018230-26-000046",
+      "priorAnnualSourceFile": "data/sources/sec-CAT-01ddc6ffa741f0a7.json",
+      "priorAnnualRawXbrlAvailable": false
+    },
+    {
+      "company": "LLY",
+      "businessSegments": 0,
+      "currentPeriod": [
+        "2026-01-01",
+        "2026-06-30"
+      ],
+      "days": 181,
+      "annualSegmentBridgeNeeded": false,
+      "priorAnnualAccession": "0000059478-26-000013",
+      "annualXbrlManifestAvailable": false,
+      "priceSecurityStatus": "available",
+      "priceIssues": [],
+      "sourceFiling": "0000059478-26-000081",
+      "priorAnnualSourceFile": "data/sources/sec-LLY-3fe29099e6efaef9.json",
+      "priorAnnualRawXbrlAvailable": false
+    },
+    {
+      "company": "JNJ",
+      "businessSegments": 0,
+      "currentPeriod": [
+        "2025-12-29",
+        "2026-06-28"
+      ],
+      "days": 182,
+      "annualSegmentBridgeNeeded": false,
+      "priorAnnualAccession": "0000200406-26-000016",
+      "annualXbrlManifestAvailable": false,
+      "priceSecurityStatus": "available",
+      "priceIssues": [],
+      "sourceFiling": "0000200406-26-000153",
+      "priorAnnualSourceFile": "data/sources/sec-JNJ-7141c0c988fa1d30.json",
+      "priorAnnualRawXbrlAvailable": false
+    },
+    {
+      "company": "000660",
+      "businessSegments": 0,
+      "currentPeriod": [
+        "2026-01-01",
+        "2026-06-30"
+      ],
+      "days": 181,
+      "annualSegmentBridgeNeeded": false,
+      "priorAnnualAccession": "20260317000635",
+      "annualXbrlManifestAvailable": false,
+      "priceSecurityStatus": "available",
+      "priceIssues": [],
+      "sourceFiling": "20260814003509",
+      "priorAnnualSourceFile": "data/sources/000660-20260317000635-d4d4c54b6d29401f.xbrl",
+      "priorAnnualRawXbrlAvailable": true
+    },
+    {
+      "company": "005930",
+      "businessSegments": 4,
+      "currentPeriod": [
+        "2026-01-01",
+        "2026-06-30"
+      ],
+      "days": 181,
+      "annualSegmentBridgeNeeded": true,
+      "priorAnnualAccession": "20260310002820",
+      "annualXbrlManifestAvailable": false,
+      "priceSecurityStatus": "unresolved",
+      "priceIssues": [
+        "보통주와 우선주의 현금·청산 권리 배분 필요",
+        "우선주의 현금·청산 권리와 보통주 배분 확인 필요"
+      ],
+      "sourceFiling": "20260814003699",
+      "priorAnnualSourceFile": "data/sources/005930-20260310002820-28c27272eacc7bc9.xbrl",
+      "priorAnnualRawXbrlAvailable": true
+    },
+    {
+      "company": "035420",
+      "businessSegments": 0,
+      "currentPeriod": [
+        "2026-01-01",
+        "2026-06-30"
+      ],
+      "days": 181,
+      "annualSegmentBridgeNeeded": false,
+      "priorAnnualAccession": "20260313001021",
+      "annualXbrlManifestAvailable": false,
+      "priceSecurityStatus": "available",
+      "priceIssues": [],
+      "sourceFiling": "20260814002266",
+      "priorAnnualSourceFile": "data/sources/035420-20260313001021-05cc24c7784ba0c7.xbrl",
+      "priorAnnualRawXbrlAvailable": true
+    },
+    {
+      "company": "066570",
+      "businessSegments": 6,
+      "currentPeriod": [
+        "2026-01-01",
+        "2026-06-30"
+      ],
+      "days": 181,
+      "annualSegmentBridgeNeeded": true,
+      "priorAnnualAccession": "20260706000276",
+      "annualXbrlManifestAvailable": false,
+      "priceSecurityStatus": "unresolved",
+      "priceIssues": [
+        "보통주와 우선주의 현금·청산 권리 배분 필요",
+        "의결권없는주식(우선주)의 현금·청산 권리와 보통주 배분 확인 필요",
+        "기간 연결에 중단영업의 영업현금이 공시되어 있다. 매출·영업현금·투자자산 취득의 계속영업 범위를 대사하기 전 가격 역산과 현금 우열 비교를 보류한다."
+      ],
+      "sourceFiling": "20260814001997",
+      "priorAnnualSourceFile": "data/sources/066570-20260706000276-cc613348ed5c3480.xbrl",
+      "priorAnnualRawXbrlAvailable": true
+    },
+    {
+      "company": "005380",
+      "businessSegments": 3,
+      "currentPeriod": [
+        "2026-01-01",
+        "2026-06-30"
+      ],
+      "days": 181,
+      "annualSegmentBridgeNeeded": true,
+      "priorAnnualAccession": "20260318001394",
+      "annualXbrlManifestAvailable": false,
+      "priceSecurityStatus": "unresolved",
+      "priceIssues": [
+        "보통주와 우선주의 현금·청산 권리 배분 필요",
+        "우선주의 현금·청산 권리와 보통주 배분 확인 필요",
+        "제조·금융 자회사 현금과 자본요구를 먼저 분리해야 함"
+      ],
+      "sourceFiling": "20260814003521",
+      "priorAnnualSourceFile": "data/sources/005380-20260318001394-2b006fe50b3e6f9c.xbrl",
+      "priorAnnualRawXbrlAvailable": true
+    },
+    {
+      "company": "000270",
+      "businessSegments": 0,
+      "currentPeriod": [
+        "2026-01-01",
+        "2026-06-30"
+      ],
+      "days": 181,
+      "annualSegmentBridgeNeeded": false,
+      "priorAnnualAccession": "20260312001224",
+      "annualXbrlManifestAvailable": false,
+      "priceSecurityStatus": "available",
+      "priceIssues": [],
+      "sourceFiling": "20260916000427",
+      "priorAnnualSourceFile": "data/sources/000270-20260312001224-1b8872810068810f.xbrl",
+      "priorAnnualRawXbrlAvailable": true
+    },
+    {
+      "company": "012330",
+      "businessSegments": 0,
+      "currentPeriod": [
+        "2026-01-01",
+        "2026-06-30"
+      ],
+      "days": 181,
+      "annualSegmentBridgeNeeded": false,
+      "priorAnnualAccession": "20260309001878",
+      "annualXbrlManifestAvailable": false,
+      "priceSecurityStatus": "unresolved",
+      "priceIssues": [
+        "보통주와 우선주의 현금·청산 권리 배분 필요",
+        "우선주의 현금·청산 권리와 보통주 배분 확인 필요"
+      ],
+      "sourceFiling": "20260814004065",
+      "priorAnnualSourceFile": "data/sources/012330-20260309001878-335a4ade6cbb46fa.xbrl",
+      "priorAnnualRawXbrlAvailable": true
+    },
+    {
+      "company": "035720",
+      "businessSegments": 0,
+      "currentPeriod": [
+        "2026-01-01",
+        "2026-06-30"
+      ],
+      "days": 181,
+      "annualSegmentBridgeNeeded": false,
+      "priorAnnualAccession": "20260318001423",
+      "annualXbrlManifestAvailable": false,
+      "priceSecurityStatus": "unresolved",
+      "priceIssues": [
+        "기간 연결에 중단영업의 영업현금이 공시되어 있다. 매출·영업현금·투자자산 취득의 계속영업 범위를 대사하기 전 가격 역산과 현금 우열 비교를 보류한다."
+      ],
+      "sourceFiling": "20260819000055",
+      "priorAnnualSourceFile": "data/sources/035720-20260318001423-600251f4eee1dbe7.xbrl",
+      "priorAnnualRawXbrlAvailable": true
+    },
+    {
+      "company": "006400",
+      "businessSegments": 0,
+      "currentPeriod": [
+        "2026-01-01",
+        "2026-06-30"
+      ],
+      "days": 181,
+      "annualSegmentBridgeNeeded": false,
+      "priorAnnualAccession": "20260310002954",
+      "annualXbrlManifestAvailable": false,
+      "priceSecurityStatus": "unresolved",
+      "priceIssues": [
+        "보통주와 우선주의 현금·청산 권리 배분 필요",
+        "우선주의 현금·청산 권리와 보통주 배분 확인 필요",
+        "기간 연결에 중단영업의 영업현금이 공시되어 있다. 매출·영업현금·투자자산 취득의 계속영업 범위를 대사하기 전 가격 역산과 현금 우열 비교를 보류한다."
+      ],
+      "sourceFiling": "20260814003578",
+      "priorAnnualSourceFile": "data/sources/006400-20260310002954-cee7e8611833bb08.xbrl",
+      "priorAnnualRawXbrlAvailable": true
+    },
+    {
+      "company": "051910",
+      "businessSegments": 0,
+      "currentPeriod": [
+        "2026-01-01",
+        "2026-06-30"
+      ],
+      "days": 181,
+      "annualSegmentBridgeNeeded": false,
+      "priorAnnualAccession": "20260313001195",
+      "annualXbrlManifestAvailable": false,
+      "priceSecurityStatus": "unresolved",
+      "priceIssues": [
+        "보통주와 우선주의 현금·청산 권리 배분 필요",
+        "우선주의 현금·청산 권리와 보통주 배분 확인 필요",
+        "기간 연결에 중단영업의 영업현금이 공시되어 있다. 매출·영업현금·투자자산 취득의 계속영업 범위를 대사하기 전 가격 역산과 현금 우열 비교를 보류한다."
+      ],
+      "sourceFiling": "20260814002655",
+      "priorAnnualSourceFile": "data/sources/051910-20260313001195-817e95decc66e2e6.xbrl",
+      "priorAnnualRawXbrlAvailable": true
+    },
+    {
+      "company": "373220",
+      "businessSegments": 0,
+      "currentPeriod": [
+        "2026-01-01",
+        "2026-06-30"
+      ],
+      "days": 181,
+      "annualSegmentBridgeNeeded": false,
+      "priorAnnualAccession": "20260312000217",
+      "annualXbrlManifestAvailable": false,
+      "priceSecurityStatus": "available",
+      "priceIssues": [],
+      "sourceFiling": "20260813000255",
+      "priorAnnualSourceFile": "data/sources/373220-20260312000217-826e8e61bc311631.xbrl",
+      "priorAnnualRawXbrlAvailable": true
+    },
+    {
+      "company": "005490",
+      "businessSegments": 0,
+      "currentPeriod": [
+        "2026-01-01",
+        "2026-06-30"
+      ],
+      "days": 181,
+      "annualSegmentBridgeNeeded": false,
+      "priorAnnualAccession": "20260311004517",
+      "annualXbrlManifestAvailable": false,
+      "priceSecurityStatus": "available",
+      "priceIssues": [],
+      "sourceFiling": "20260814000957",
+      "priorAnnualSourceFile": "data/sources/005490-20260311004517-57dbbdaa5293daf8.xbrl",
+      "priorAnnualRawXbrlAvailable": true
+    },
+    {
+      "company": "207940",
+      "businessSegments": 1,
+      "currentPeriod": [
+        "2026-01-01",
+        "2026-06-30"
+      ],
+      "days": 181,
+      "annualSegmentBridgeNeeded": true,
+      "priorAnnualAccession": "20260515001658",
+      "annualXbrlManifestAvailable": false,
+      "priceSecurityStatus": "unresolved",
+      "priceIssues": [
+        "기간 연결에 중단영업의 영업현금이 공시되어 있다. 매출·영업현금·투자자산 취득의 계속영업 범위를 대사하기 전 가격 역산과 현금 우열 비교를 보류한다."
+      ],
+      "sourceFiling": "20260814003375",
+      "priorAnnualSourceFile": "data/sources/207940-20260515001658-d576dc0904eb0a1c.xbrl",
+      "priorAnnualRawXbrlAvailable": true
+    },
+    {
+      "company": "068270",
+      "businessSegments": 3,
+      "currentPeriod": [
+        "2026-01-01",
+        "2026-06-30"
+      ],
+      "days": 181,
+      "annualSegmentBridgeNeeded": true,
+      "priorAnnualAccession": "20260316001415",
+      "annualXbrlManifestAvailable": false,
+      "priceSecurityStatus": "available",
+      "priceIssues": [],
+      "sourceFiling": "20260814003751",
+      "priorAnnualSourceFile": "data/sources/068270-20260316001415-918103648a799e62.xbrl",
+      "priorAnnualRawXbrlAvailable": true
+    },
+    {
+      "company": "000100",
+      "businessSegments": 0,
+      "currentPeriod": [
+        "2026-01-01",
+        "2026-06-30"
+      ],
+      "days": 181,
+      "annualSegmentBridgeNeeded": false,
+      "priorAnnualAccession": "20260312001236",
+      "annualXbrlManifestAvailable": false,
+      "priceSecurityStatus": "unresolved",
+      "priceIssues": [
+        "보통주와 우선주의 현금·청산 권리 배분 필요",
+        "우선주의 현금·청산 권리와 보통주 배분 확인 필요"
+      ],
+      "sourceFiling": "20260814002038",
+      "priorAnnualSourceFile": "data/sources/000100-20260312001236-271b8e298c2ce9a9.xbrl",
+      "priorAnnualRawXbrlAvailable": true
+    },
+    {
+      "company": "128940",
+      "businessSegments": 0,
+      "currentPeriod": [
+        "2026-01-01",
+        "2026-06-30"
+      ],
+      "days": 181,
+      "annualSegmentBridgeNeeded": false,
+      "priorAnnualAccession": "20260320001130",
+      "annualXbrlManifestAvailable": false,
+      "priceSecurityStatus": "available",
+      "priceIssues": [],
+      "sourceFiling": "20260814004181",
+      "priorAnnualSourceFile": "data/sources/128940-20260320001130-53e158bebfe3a600.xbrl",
+      "priorAnnualRawXbrlAvailable": true
+    },
+    {
+      "company": "329180",
+      "businessSegments": 4,
+      "currentPeriod": [
+        "2026-01-01",
+        "2026-06-30"
+      ],
+      "days": 181,
+      "annualSegmentBridgeNeeded": true,
+      "priorAnnualAccession": "20260320000859",
+      "annualXbrlManifestAvailable": false,
+      "priceSecurityStatus": "available",
+      "priceIssues": [],
+      "sourceFiling": "20260814002879",
+      "priorAnnualSourceFile": "data/sources/329180-20260320000859-0519a579468dd3c3.xbrl",
+      "priorAnnualRawXbrlAvailable": true
+    },
+    {
+      "company": "012450",
+      "businessSegments": 0,
+      "currentPeriod": [
+        "2026-01-01",
+        "2026-06-30"
+      ],
+      "days": 181,
+      "annualSegmentBridgeNeeded": false,
+      "priorAnnualAccession": "20260316001112",
+      "annualXbrlManifestAvailable": false,
+      "priceSecurityStatus": "unresolved",
+      "priceIssues": [
+        "다른 주식수 주석의 같은 기준일 유통주식수와 총수 표가 다름. 범위 차이 확인 필요",
+        "같은 접수·기준일의 XBRL과 주식 총수 표 유통주식수 충돌",
+        "정확한 범위의 유통주식수 미확인. 발행주식수·가중평균주식수로 대체하지 않음"
+      ],
+      "sourceFiling": "20260814003198",
+      "priorAnnualSourceFile": "data/sources/012450-20260316001112-87ea72ef87c070ca.xbrl",
+      "priorAnnualRawXbrlAvailable": true
+    },
+    {
+      "company": "034020",
+      "businessSegments": 0,
+      "currentPeriod": [
+        "2026-01-01",
+        "2026-06-30"
+      ],
+      "days": 181,
+      "annualSegmentBridgeNeeded": false,
+      "priorAnnualAccession": "20260320001246",
+      "annualXbrlManifestAvailable": false,
+      "priceSecurityStatus": "unresolved",
+      "priceIssues": [
+        "다른 주식수 주석의 같은 기준일 유통주식수와 총수 표가 다름. 범위 차이 확인 필요"
+      ],
+      "sourceFiling": "20260814003782",
+      "priorAnnualSourceFile": "data/sources/034020-20260320001246-29b4713cf0c2b1f4.xbrl",
+      "priorAnnualRawXbrlAvailable": true
+    },
+    {
+      "company": "267260",
+      "businessSegments": 0,
+      "currentPeriod": [
+        "2026-01-01",
+        "2026-06-30"
+      ],
+      "days": 181,
+      "annualSegmentBridgeNeeded": false,
+      "priorAnnualAccession": "20260316000940",
+      "annualXbrlManifestAvailable": false,
+      "priceSecurityStatus": "available",
+      "priceIssues": [],
+      "sourceFiling": "20260814003228",
+      "priorAnnualSourceFile": "data/sources/267260-20260316000940-1a49b67d39b836dc.xbrl",
+      "priorAnnualRawXbrlAvailable": true
+    }
+  ]
+}

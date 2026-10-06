@@ -1,0 +1,73 @@
+Collecting numpy==1.26.4 (from -r requirements.txt (line 1))
+  Downloading numpy-1.26.4-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (61 kB)
+Collecting matplotlib==3.10.8 (from -r requirements.txt (line 2))
+  Downloading matplotlib-3.10.8-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (52 kB)
+Collecting beautifulsoup4==4.14.3 (from -r requirements.txt (line 3))
+  Downloading beautifulsoup4-4.14.3-py3-none-any.whl.metadata (3.8 kB)
+Collecting PyMuPDF==1.27.2.3 (from -r requirements.txt (line 4))
+  Downloading pymupdf-1.27.2.3-cp310-abi3-manylinux_2_28_x86_64.whl.metadata (24 kB)
+Collecting contourpy>=1.0.1 (from matplotlib==3.10.8->-r requirements.txt (line 2))
+  Downloading contourpy-1.4.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (3.8 kB)
+Collecting cycler>=0.10 (from matplotlib==3.10.8->-r requirements.txt (line 2))
+  Downloading cycler-0.12.1-py3-none-any.whl.metadata (3.8 kB)
+Collecting fonttools>=4.22.0 (from matplotlib==3.10.8->-r requirements.txt (line 2))
+  Downloading fonttools-4.66.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (130 kB)
+Collecting kiwisolver>=1.3.1 (from matplotlib==3.10.8->-r requirements.txt (line 2))
+  Downloading kiwisolver-1.5.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (5.2 kB)
+Collecting packaging>=20.0 (from matplotlib==3.10.8->-r requirements.txt (line 2))
+  Downloading packaging-26.3-py3-none-any.whl.metadata (3.5 kB)
+Collecting pillow>=8 (from matplotlib==3.10.8->-r requirements.txt (line 2))
+  Downloading pillow-12.3.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (9.1 kB)
+Collecting pyparsing>=3 (from matplotlib==3.10.8->-r requirements.txt (line 2))
+  Downloading pyparsing-3.3.3-py3-none-any.whl.metadata (5.9 kB)
+Collecting python-dateutil>=2.7 (from matplotlib==3.10.8->-r requirements.txt (line 2))
+  Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+Collecting soupsieve>=1.6.1 (from beautifulsoup4==4.14.3->-r requirements.txt (line 3))
+  Downloading soupsieve-2.10-py3-none-any.whl.metadata (4.4 kB)
+Collecting typing-extensions>=4.0.0 (from beautifulsoup4==4.14.3->-r requirements.txt (line 3))
+  Downloading typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+INFO: pip is looking at multiple versions of contourpy to determine which version is compatible with other requirements. This could take a while.
+Collecting contourpy>=1.0.1 (from matplotlib==3.10.8->-r requirements.txt (line 2))
+  Downloading contourpy-1.3.3-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (5.5 kB)
+Collecting six>=1.5 (from python-dateutil>=2.7->matplotlib==3.10.8->-r requirements.txt (line 2))
+  Downloading six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Downloading numpy-1.26.4-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (18.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 18.0/18.0 MB 29.1 MB/s eta 0:00:00
+Downloading matplotlib-3.10.8-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (8.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 8.7/8.7 MB 25.3 MB/s eta 0:00:00
+Downloading beautifulsoup4-4.14.3-py3-none-any.whl (107 kB)
+Downloading pymupdf-1.27.2.3-cp310-abi3-manylinux_2_28_x86_64.whl (25.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 25.0/25.0 MB 35.8 MB/s eta 0:00:00
+Downloading contourpy-1.3.3-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (362 kB)
+Downloading cycler-0.12.1-py3-none-any.whl (8.3 kB)
+Downloading fonttools-4.66.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (5.4 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.4/5.4 MB 35.9 MB/s eta 0:00:00
+Downloading kiwisolver-1.5.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (1.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.5/1.5 MB 36.4 MB/s eta 0:00:00
+Downloading packaging-26.3-py3-none-any.whl (129 kB)
+Downloading pillow-12.3.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (6.9 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.9/6.9 MB 35.9 MB/s eta 0:00:00
+Downloading pyparsing-3.3.3-py3-none-any.whl (126 kB)
+Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+Downloading soupsieve-2.10-py3-none-any.whl (38 kB)
+Downloading typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)
+Saved ./artifacts/local/offline-wheels/numpy-1.26.4-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+Saved ./artifacts/local/offline-wheels/matplotlib-3.10.8-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl
+Saved ./artifacts/local/offline-wheels/beautifulsoup4-4.14.3-py3-none-any.whl
+Saved ./artifacts/local/offline-wheels/pymupdf-1.27.2.3-cp310-abi3-manylinux_2_28_x86_64.whl
+Saved ./artifacts/local/offline-wheels/contourpy-1.3.3-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl
+Saved ./artifacts/local/offline-wheels/cycler-0.12.1-py3-none-any.whl
+Saved ./artifacts/local/offline-wheels/fonttools-4.66.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl
+Saved ./artifacts/local/offline-wheels/kiwisolver-1.5.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl
+Saved ./artifacts/local/offline-wheels/packaging-26.3-py3-none-any.whl
+Saved ./artifacts/local/offline-wheels/pillow-12.3.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl
+Saved ./artifacts/local/offline-wheels/pyparsing-3.3.3-py3-none-any.whl
+Saved ./artifacts/local/offline-wheels/python_dateutil-2.9.0.post0-py2.py3-none-any.whl
+Saved ./artifacts/local/offline-wheels/soupsieve-2.10-py3-none-any.whl
+Saved ./artifacts/local/offline-wheels/typing_extensions-4.16.0-py3-none-any.whl
+Saved ./artifacts/local/offline-wheels/six-1.17.0-py2.py3-none-any.whl
+Successfully downloaded numpy matplotlib beautifulsoup4 PyMuPDF contourpy cycler fonttools kiwisolver packaging pillow pyparsing python-dateutil soupsieve typing-extensions six
+
+[notice] A new release of pip is available: 24.3.1 -> 26.2.1
+[notice] To update, run: pip install --upgrade pip

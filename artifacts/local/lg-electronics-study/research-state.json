@@ -1,0 +1,48 @@
+{
+  "status": "source_research_only",
+  "company": "066570",
+  "currentReceipt": "20260814001997",
+  "currentXbrl": "58520e3954a47d1633c71f6d0573035d0f93e870c6d2bac2d06d393b59495c3f",
+  "annualReceipt": "20260706000276",
+  "annualXbrl": "cc613348ed5c34806c851d0464969c85e4bf0eedac3aec1a0016f73c164c48d0",
+  "annualDocument": "1bb6d5d8b217946480fa641614ced589e914b70c830b8cceb9d31a52a3dc12b5",
+  "cashBridges": 3,
+  "financialApproval": false,
+  "periods": [
+    {
+      "start": "2025-01-01",
+      "end": "2025-12-31",
+      "reportedCfo": 4280500000000.0,
+      "discontinuedCfo": -180034000000.0,
+      "discontinuedCfi": 84000000.0,
+      "discontinuedCff": 179950000000.0,
+      "narrativeTableIndex": 1249
+    },
+    {
+      "start": "2026-01-01",
+      "end": "2026-06-30",
+      "reportedCfo": 3552902000000.0,
+      "discontinuedCfo": 0.0,
+      "discontinuedCfi": 0.0,
+      "discontinuedCff": 0.0,
+      "narrativeTableIndex": 770
+    },
+    {
+      "start": "2025-01-01",
+      "end": "2025-06-30",
+      "reportedCfo": 2033849000000.0,
+      "discontinuedCfo": -96262000000.0,
+      "discontinuedCfi": 11000000.0,
+      "discontinuedCff": 96251000000.0,
+      "narrativeTableIndex": 773
+    }
+  ],
+  "findings": [
+    "Six continued reporting segments reconcile annual/current/prior; Innotek is consolidated and needs noncontrolling attribution.",
+    "Battery-pack business ceased in 2024. Discontinued note uses net cash figures; net investing inflow is not gross acquisition spending.",
+    "Lessor finance-lease net investment and sales/finance income are material. Do not treat subscription recognition as cash or add a financing receivable twice to reported receivables.",
+    "Current CFO bridge NI+adjustments+working then interest/dividends/tax reconciles without changing XBRL presentation signs.",
+    "Source XML is malformed; standard ElementTree fails. Tolerant HTML parser must preserve TE cells as well as TD/TH and exact unit/period headers."
+  ],
+  "next": "Review lessor recognition, receivable overlap, discontinued gross spending and continuing D&A before building a cash path. No model or approval added."
+}

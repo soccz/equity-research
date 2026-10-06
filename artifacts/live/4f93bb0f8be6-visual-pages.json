@@ -1,0 +1,3724 @@
+{
+  "status": "reviewed_layout",
+  "snapshotHash": "4f93bb0f8be6920ada4517f0e05705fb7337857c8cd9704d8125b39cd52a622f",
+  "pdfHashes": {
+    "artifacts/live/universe.pdf": "ec3266ddfee3f4aba6663fdaca6254c2b535ff9182e45bb6fd03557582e132c3",
+    "artifacts/live/micron.pdf": "258f63c9ecfd7bfade18f667f0505fbda4a0fb96e99261f769e324c3445b79bb",
+    "artifacts/live/sk-hynix.pdf": "b72a0b4e982558b3df9d4779151062d1d863990ab90d96b57750212017f1923f",
+    "artifacts/live/microsoft.pdf": "603cd555d7c9e9ef16033a134fc40f377c11427d04f58ba6b6116cd88722a3fa",
+    "artifacts/live/amazon.pdf": "8fc60f535643af264b7940386a72a9c39a359f143783374530d0853be2137191",
+    "artifacts/live/kia.pdf": "54fff1227708107aaa44c4e0ee96d18e227b93d58df3dceea120957e30a99a76",
+    "artifacts/live/tesla.pdf": "0e180d9aadcebcea6a9162ba21cb202d002f6158b1a449117ed259c160e201c5",
+    "artifacts/live/apple.pdf": "0b5decae60f8844ece5eb03e5edfb8b64f044ed11b3f76d752659ea964943667",
+    "artifacts/live/nvidia.pdf": "febc9273901841ec4113655ffdf0249506298406ea4aec4b331f8bb10c8a2bb2",
+    "artifacts/live/amd.pdf": "8f12a23d223d40538af3be772a13365167f0ee0d907d100c19e2952f93c9eaed",
+    "artifacts/live/samsung-electronics.pdf": "a38aa504c451b7946b0dc3ad6a1e407c9330cf7da8c5287c0e9ea5b6285eb887",
+    "artifacts/live/broadcom.pdf": "3ca7e79fe5ef19c53ce0cd08c8cecca0d1d851f59fb382041e1e1e5e636b7a2d",
+    "artifacts/live/mobis.pdf": "752c0287045c50dbaff205a14b9b8e3c194ca48c02835e01a9fc2d4cd6ae983d",
+    "artifacts/live/naver.pdf": "ab10507e9139f2e41ddddd049240a77356a3d06bb7d691fd629e1fa46a24966a",
+    "artifacts/live/celltrion.pdf": "3d869bd2adc0baeaf145b0a01cd537a8b94911085b446dc22fda31938f831677",
+    "artifacts/live/jnj.pdf": "f893b8526e8f11f799ec6f8b9dc7451b11e253c0c4dcdfd149eda01d11b449f6",
+    "artifacts/live/samsung-sds.pdf": "4a513c38506e24a2fcf30f8ae271d5b76907d1c6478218e2268030cb1fe7e120",
+    "artifacts/live/servicenow.pdf": "a4f520ab5cc7896483e8de9d18123aee985f7ca1223c7acfe5a36d88078ea02b",
+    "artifacts/live/comparison-biosimilar.pdf": "08ae4bc3ed0f66aa7f299cebac3bb1fae4c1e965a5fbb3bf5b3dffeac1f4b4fd",
+    "artifacts/live/comparison-platforms.pdf": "5b554bfbdb70e891fb745f1ac6e9bd4c25928e510cccb50951d1b7ffdab61f3a",
+    "artifacts/live/comparison-auto-supply.pdf": "1033f817aea35098d47de01f922df753dd16b4de374ea8f2056b59cfa35f1ae1",
+    "artifacts/live/lam.pdf": "41cbe8d12e05d43d650b502c778fbd0ae0912bac27e86c9ec0b921e1df271493",
+    "artifacts/live/applied.pdf": "c803edc5ec68bd1f037ee53718042cf12cdab4be042c9b457815016e7b1c822a",
+    "artifacts/live/comparison-ai-financing.pdf": "f9622f56eb6972c27a5712fa64e08d9b795d04d2aa31e06f602cb5ed18c96e24",
+    "artifacts/live/alphabet.pdf": "415b718a008db5a687ebfa8ecfb73af4c3e283ae9d1e1ec884c592dc64bb3c29",
+    "artifacts/live/meta.pdf": "9dd2ff3a36eedd7ccd24a40d41f352afbc86ab2abd2053de3b726fdf5532d4ca",
+    "artifacts/live/comparison-advertising.pdf": "ab6dd216d13ff737c9532f1b9b214e9b5d3884d8e55bfe30ea871ee47c060142",
+    "artifacts/live/comparison-memory.pdf": "e5a6776b1eca3af3cc2e6dbecfbb149f6b8f09a39feeaf986d4e065f745c8a6e",
+    "artifacts/live/comparison-accelerators.pdf": "cb5d81dafb95a9b061e4340d181621155b0e6f445b93daed949bbb67e4eca7f5",
+    "artifacts/live/comparison-electronics.pdf": "90392a1ef65c087ce820bc177f943e2a06d011fe755b7155bfb0c6b77529f8e3",
+    "artifacts/live/comparison-auto.pdf": "c9de2674f1786ee8b38aa5697827478b35266cd5fb0503e36de230f2d7b9dabf",
+    "artifacts/live/comparison-cloud.pdf": "6fec4116092d42f0ee38112db92508711d68d78f192736c4aaf51295f5ed1597",
+    "artifacts/live/comparison-equipment.pdf": "b7fe3996bb3a2ffe287ad5a553db0da3a1d8411ebe18dce1b87937c87d0c9999",
+    "artifacts/live/intel.pdf": "72d997a9e7e4806ce05a0a824501cbb93868d19f77da86c9679540b0255c14eb",
+    "artifacts/live/qualcomm.pdf": "24afefb4265508d74eecbff5270577d724f28faece5ff07825e9cac3e22e1e24",
+    "artifacts/live/oracle.pdf": "0f0917bad89b9cd22dd24883ce4d20731ae7c6be34f28a53ffecffa8db8114fe",
+    "artifacts/live/kt.pdf": "b801f266cf525b73c5c19af7d87f3fc2780333292c3abb7fff011213be255233",
+    "artifacts/live/netflix.pdf": "ae3e4bc17f2293fdfaba88c912dad3a927c24dd9d3c185d0bd04675a75103d4c",
+    "artifacts/live/comparison-enterprise.pdf": "2ec1ade12396ec5e81ecce1820a0334a65366dfe3070a069e3860a3f762b0e26",
+    "artifacts/live/hyundai.pdf": "a5e8d6128fc635918004a56bb77d5eacf5f6e2b1bd5aa8e298fe837a2d3bf97e",
+    "artifacts/live/samsung-biologics.pdf": "f31e95a848bfa51e6f7ab6e3a906a75d5bbea56d51a8103c5db8f05f25f75d31",
+    "artifacts/live/research-us.pdf": "7849baa1f97e2e2393aa99537a7018d3ff7b98aca24de4cb4a700c9e58f44644",
+    "artifacts/live/research-kr.pdf": "a3754b75f9f322a3cb4959285a0bd428e0c00b99ccc6c32ea1c764bcfbb7aeee",
+    "artifacts/live/conditions.pdf": "1e82c4b4b55627e59bad387d909a2e98d4865125b656dac079f9d29594794603"
+  },
+  "pdfPages": 597,
+  "contactSheets": [
+    "artifacts/live/4f93bb0f8be6-contact-1.png",
+    "artifacts/live/4f93bb0f8be6-contact-2.png",
+    "artifacts/live/4f93bb0f8be6-contact-3.png",
+    "artifacts/live/4f93bb0f8be6-contact-4.png",
+    "artifacts/live/4f93bb0f8be6-contact-5.png",
+    "artifacts/live/4f93bb0f8be6-contact-6.png",
+    "artifacts/live/4f93bb0f8be6-contact-7.png",
+    "artifacts/live/4f93bb0f8be6-contact-8.png",
+    "artifacts/live/4f93bb0f8be6-contact-9.png",
+    "artifacts/live/4f93bb0f8be6-contact-10.png",
+    "artifacts/live/4f93bb0f8be6-contact-11.png",
+    "artifacts/live/4f93bb0f8be6-contact-12.png",
+    "artifacts/live/4f93bb0f8be6-contact-13.png",
+    "artifacts/live/4f93bb0f8be6-contact-14.png",
+    "artifacts/live/4f93bb0f8be6-contact-15.png",
+    "artifacts/live/4f93bb0f8be6-contact-16.png",
+    "artifacts/live/4f93bb0f8be6-contact-17.png",
+    "artifacts/live/4f93bb0f8be6-contact-18.png",
+    "artifacts/live/4f93bb0f8be6-contact-19.png",
+    "artifacts/live/4f93bb0f8be6-contact-20.png",
+    "artifacts/live/4f93bb0f8be6-contact-21.png",
+    "artifacts/live/4f93bb0f8be6-contact-22.png",
+    "artifacts/live/4f93bb0f8be6-contact-23.png",
+    "artifacts/live/4f93bb0f8be6-contact-24.png",
+    "artifacts/live/4f93bb0f8be6-contact-25.png",
+    "artifacts/live/4f93bb0f8be6-contact-26.png",
+    "artifacts/live/4f93bb0f8be6-contact-27.png",
+    "artifacts/live/4f93bb0f8be6-contact-28.png",
+    "artifacts/live/4f93bb0f8be6-contact-29.png",
+    "artifacts/live/4f93bb0f8be6-contact-30.png",
+    "artifacts/live/4f93bb0f8be6-contact-31.png",
+    "artifacts/live/4f93bb0f8be6-contact-32.png",
+    "artifacts/live/4f93bb0f8be6-contact-33.png",
+    "artifacts/live/4f93bb0f8be6-contact-34.png",
+    "artifacts/live/4f93bb0f8be6-contact-35.png",
+    "artifacts/live/4f93bb0f8be6-contact-36.png",
+    "artifacts/live/4f93bb0f8be6-contact-37.png",
+    "artifacts/live/4f93bb0f8be6-contact-38.png"
+  ],
+  "pageMap": [
+    {
+      "sheet": 1,
+      "slot": 1,
+      "report": "universe",
+      "page": 1
+    },
+    {
+      "sheet": 1,
+      "slot": 2,
+      "report": "universe",
+      "page": 2
+    },
+    {
+      "sheet": 1,
+      "slot": 3,
+      "report": "universe",
+      "page": 3
+    },
+    {
+      "sheet": 1,
+      "slot": 4,
+      "report": "universe",
+      "page": 4
+    },
+    {
+      "sheet": 1,
+      "slot": 5,
+      "report": "universe",
+      "page": 5
+    },
+    {
+      "sheet": 1,
+      "slot": 6,
+      "report": "micron",
+      "page": 1
+    },
+    {
+      "sheet": 1,
+      "slot": 7,
+      "report": "micron",
+      "page": 2
+    },
+    {
+      "sheet": 1,
+      "slot": 8,
+      "report": "micron",
+      "page": 3
+    },
+    {
+      "sheet": 1,
+      "slot": 9,
+      "report": "micron",
+      "page": 4
+    },
+    {
+      "sheet": 1,
+      "slot": 10,
+      "report": "micron",
+      "page": 5
+    },
+    {
+      "sheet": 1,
+      "slot": 11,
+      "report": "micron",
+      "page": 6
+    },
+    {
+      "sheet": 1,
+      "slot": 12,
+      "report": "micron",
+      "page": 7
+    },
+    {
+      "sheet": 1,
+      "slot": 13,
+      "report": "micron",
+      "page": 8
+    },
+    {
+      "sheet": 1,
+      "slot": 14,
+      "report": "micron",
+      "page": 9
+    },
+    {
+      "sheet": 1,
+      "slot": 15,
+      "report": "micron",
+      "page": 10
+    },
+    {
+      "sheet": 1,
+      "slot": 16,
+      "report": "micron",
+      "page": 11
+    },
+    {
+      "sheet": 2,
+      "slot": 1,
+      "report": "micron",
+      "page": 12
+    },
+    {
+      "sheet": 2,
+      "slot": 2,
+      "report": "micron",
+      "page": 13
+    },
+    {
+      "sheet": 2,
+      "slot": 3,
+      "report": "micron",
+      "page": 14
+    },
+    {
+      "sheet": 2,
+      "slot": 4,
+      "report": "micron",
+      "page": 15
+    },
+    {
+      "sheet": 2,
+      "slot": 5,
+      "report": "micron",
+      "page": 16
+    },
+    {
+      "sheet": 2,
+      "slot": 6,
+      "report": "micron",
+      "page": 17
+    },
+    {
+      "sheet": 2,
+      "slot": 7,
+      "report": "micron",
+      "page": 18
+    },
+    {
+      "sheet": 2,
+      "slot": 8,
+      "report": "micron",
+      "page": 19
+    },
+    {
+      "sheet": 2,
+      "slot": 9,
+      "report": "micron",
+      "page": 20
+    },
+    {
+      "sheet": 2,
+      "slot": 10,
+      "report": "micron",
+      "page": 21
+    },
+    {
+      "sheet": 2,
+      "slot": 11,
+      "report": "micron",
+      "page": 22
+    },
+    {
+      "sheet": 2,
+      "slot": 12,
+      "report": "micron",
+      "page": 23
+    },
+    {
+      "sheet": 2,
+      "slot": 13,
+      "report": "micron",
+      "page": 24
+    },
+    {
+      "sheet": 2,
+      "slot": 14,
+      "report": "micron",
+      "page": 25
+    },
+    {
+      "sheet": 2,
+      "slot": 15,
+      "report": "micron",
+      "page": 26
+    },
+    {
+      "sheet": 2,
+      "slot": 16,
+      "report": "sk-hynix",
+      "page": 1
+    },
+    {
+      "sheet": 3,
+      "slot": 1,
+      "report": "sk-hynix",
+      "page": 2
+    },
+    {
+      "sheet": 3,
+      "slot": 2,
+      "report": "sk-hynix",
+      "page": 3
+    },
+    {
+      "sheet": 3,
+      "slot": 3,
+      "report": "sk-hynix",
+      "page": 4
+    },
+    {
+      "sheet": 3,
+      "slot": 4,
+      "report": "sk-hynix",
+      "page": 5
+    },
+    {
+      "sheet": 3,
+      "slot": 5,
+      "report": "sk-hynix",
+      "page": 6
+    },
+    {
+      "sheet": 3,
+      "slot": 6,
+      "report": "sk-hynix",
+      "page": 7
+    },
+    {
+      "sheet": 3,
+      "slot": 7,
+      "report": "sk-hynix",
+      "page": 8
+    },
+    {
+      "sheet": 3,
+      "slot": 8,
+      "report": "sk-hynix",
+      "page": 9
+    },
+    {
+      "sheet": 3,
+      "slot": 9,
+      "report": "sk-hynix",
+      "page": 10
+    },
+    {
+      "sheet": 3,
+      "slot": 10,
+      "report": "sk-hynix",
+      "page": 11
+    },
+    {
+      "sheet": 3,
+      "slot": 11,
+      "report": "sk-hynix",
+      "page": 12
+    },
+    {
+      "sheet": 3,
+      "slot": 12,
+      "report": "sk-hynix",
+      "page": 13
+    },
+    {
+      "sheet": 3,
+      "slot": 13,
+      "report": "sk-hynix",
+      "page": 14
+    },
+    {
+      "sheet": 3,
+      "slot": 14,
+      "report": "sk-hynix",
+      "page": 15
+    },
+    {
+      "sheet": 3,
+      "slot": 15,
+      "report": "sk-hynix",
+      "page": 16
+    },
+    {
+      "sheet": 3,
+      "slot": 16,
+      "report": "sk-hynix",
+      "page": 17
+    },
+    {
+      "sheet": 4,
+      "slot": 1,
+      "report": "sk-hynix",
+      "page": 18
+    },
+    {
+      "sheet": 4,
+      "slot": 2,
+      "report": "sk-hynix",
+      "page": 19
+    },
+    {
+      "sheet": 4,
+      "slot": 3,
+      "report": "sk-hynix",
+      "page": 20
+    },
+    {
+      "sheet": 4,
+      "slot": 4,
+      "report": "sk-hynix",
+      "page": 21
+    },
+    {
+      "sheet": 4,
+      "slot": 5,
+      "report": "sk-hynix",
+      "page": 22
+    },
+    {
+      "sheet": 4,
+      "slot": 6,
+      "report": "microsoft",
+      "page": 1
+    },
+    {
+      "sheet": 4,
+      "slot": 7,
+      "report": "microsoft",
+      "page": 2
+    },
+    {
+      "sheet": 4,
+      "slot": 8,
+      "report": "microsoft",
+      "page": 3
+    },
+    {
+      "sheet": 4,
+      "slot": 9,
+      "report": "microsoft",
+      "page": 4
+    },
+    {
+      "sheet": 4,
+      "slot": 10,
+      "report": "microsoft",
+      "page": 5
+    },
+    {
+      "sheet": 4,
+      "slot": 11,
+      "report": "microsoft",
+      "page": 6
+    },
+    {
+      "sheet": 4,
+      "slot": 12,
+      "report": "microsoft",
+      "page": 7
+    },
+    {
+      "sheet": 4,
+      "slot": 13,
+      "report": "microsoft",
+      "page": 8
+    },
+    {
+      "sheet": 4,
+      "slot": 14,
+      "report": "microsoft",
+      "page": 9
+    },
+    {
+      "sheet": 4,
+      "slot": 15,
+      "report": "microsoft",
+      "page": 10
+    },
+    {
+      "sheet": 4,
+      "slot": 16,
+      "report": "microsoft",
+      "page": 11
+    },
+    {
+      "sheet": 5,
+      "slot": 1,
+      "report": "microsoft",
+      "page": 12
+    },
+    {
+      "sheet": 5,
+      "slot": 2,
+      "report": "microsoft",
+      "page": 13
+    },
+    {
+      "sheet": 5,
+      "slot": 3,
+      "report": "microsoft",
+      "page": 14
+    },
+    {
+      "sheet": 5,
+      "slot": 4,
+      "report": "microsoft",
+      "page": 15
+    },
+    {
+      "sheet": 5,
+      "slot": 5,
+      "report": "microsoft",
+      "page": 16
+    },
+    {
+      "sheet": 5,
+      "slot": 6,
+      "report": "microsoft",
+      "page": 17
+    },
+    {
+      "sheet": 5,
+      "slot": 7,
+      "report": "microsoft",
+      "page": 18
+    },
+    {
+      "sheet": 5,
+      "slot": 8,
+      "report": "microsoft",
+      "page": 19
+    },
+    {
+      "sheet": 5,
+      "slot": 9,
+      "report": "amazon",
+      "page": 1
+    },
+    {
+      "sheet": 5,
+      "slot": 10,
+      "report": "amazon",
+      "page": 2
+    },
+    {
+      "sheet": 5,
+      "slot": 11,
+      "report": "amazon",
+      "page": 3
+    },
+    {
+      "sheet": 5,
+      "slot": 12,
+      "report": "amazon",
+      "page": 4
+    },
+    {
+      "sheet": 5,
+      "slot": 13,
+      "report": "amazon",
+      "page": 5
+    },
+    {
+      "sheet": 5,
+      "slot": 14,
+      "report": "amazon",
+      "page": 6
+    },
+    {
+      "sheet": 5,
+      "slot": 15,
+      "report": "amazon",
+      "page": 7
+    },
+    {
+      "sheet": 5,
+      "slot": 16,
+      "report": "amazon",
+      "page": 8
+    },
+    {
+      "sheet": 6,
+      "slot": 1,
+      "report": "amazon",
+      "page": 9
+    },
+    {
+      "sheet": 6,
+      "slot": 2,
+      "report": "amazon",
+      "page": 10
+    },
+    {
+      "sheet": 6,
+      "slot": 3,
+      "report": "amazon",
+      "page": 11
+    },
+    {
+      "sheet": 6,
+      "slot": 4,
+      "report": "amazon",
+      "page": 12
+    },
+    {
+      "sheet": 6,
+      "slot": 5,
+      "report": "amazon",
+      "page": 13
+    },
+    {
+      "sheet": 6,
+      "slot": 6,
+      "report": "amazon",
+      "page": 14
+    },
+    {
+      "sheet": 6,
+      "slot": 7,
+      "report": "amazon",
+      "page": 15
+    },
+    {
+      "sheet": 6,
+      "slot": 8,
+      "report": "amazon",
+      "page": 16
+    },
+    {
+      "sheet": 6,
+      "slot": 9,
+      "report": "amazon",
+      "page": 17
+    },
+    {
+      "sheet": 6,
+      "slot": 10,
+      "report": "amazon",
+      "page": 18
+    },
+    {
+      "sheet": 6,
+      "slot": 11,
+      "report": "amazon",
+      "page": 19
+    },
+    {
+      "sheet": 6,
+      "slot": 12,
+      "report": "amazon",
+      "page": 20
+    },
+    {
+      "sheet": 6,
+      "slot": 13,
+      "report": "kia",
+      "page": 1
+    },
+    {
+      "sheet": 6,
+      "slot": 14,
+      "report": "kia",
+      "page": 2
+    },
+    {
+      "sheet": 6,
+      "slot": 15,
+      "report": "kia",
+      "page": 3
+    },
+    {
+      "sheet": 6,
+      "slot": 16,
+      "report": "kia",
+      "page": 4
+    },
+    {
+      "sheet": 7,
+      "slot": 1,
+      "report": "kia",
+      "page": 5
+    },
+    {
+      "sheet": 7,
+      "slot": 2,
+      "report": "kia",
+      "page": 6
+    },
+    {
+      "sheet": 7,
+      "slot": 3,
+      "report": "kia",
+      "page": 7
+    },
+    {
+      "sheet": 7,
+      "slot": 4,
+      "report": "kia",
+      "page": 8
+    },
+    {
+      "sheet": 7,
+      "slot": 5,
+      "report": "kia",
+      "page": 9
+    },
+    {
+      "sheet": 7,
+      "slot": 6,
+      "report": "kia",
+      "page": 10
+    },
+    {
+      "sheet": 7,
+      "slot": 7,
+      "report": "kia",
+      "page": 11
+    },
+    {
+      "sheet": 7,
+      "slot": 8,
+      "report": "kia",
+      "page": 12
+    },
+    {
+      "sheet": 7,
+      "slot": 9,
+      "report": "kia",
+      "page": 13
+    },
+    {
+      "sheet": 7,
+      "slot": 10,
+      "report": "kia",
+      "page": 14
+    },
+    {
+      "sheet": 7,
+      "slot": 11,
+      "report": "kia",
+      "page": 15
+    },
+    {
+      "sheet": 7,
+      "slot": 12,
+      "report": "kia",
+      "page": 16
+    },
+    {
+      "sheet": 7,
+      "slot": 13,
+      "report": "kia",
+      "page": 17
+    },
+    {
+      "sheet": 7,
+      "slot": 14,
+      "report": "kia",
+      "page": 18
+    },
+    {
+      "sheet": 7,
+      "slot": 15,
+      "report": "tesla",
+      "page": 1
+    },
+    {
+      "sheet": 7,
+      "slot": 16,
+      "report": "tesla",
+      "page": 2
+    },
+    {
+      "sheet": 8,
+      "slot": 1,
+      "report": "tesla",
+      "page": 3
+    },
+    {
+      "sheet": 8,
+      "slot": 2,
+      "report": "tesla",
+      "page": 4
+    },
+    {
+      "sheet": 8,
+      "slot": 3,
+      "report": "tesla",
+      "page": 5
+    },
+    {
+      "sheet": 8,
+      "slot": 4,
+      "report": "tesla",
+      "page": 6
+    },
+    {
+      "sheet": 8,
+      "slot": 5,
+      "report": "tesla",
+      "page": 7
+    },
+    {
+      "sheet": 8,
+      "slot": 6,
+      "report": "tesla",
+      "page": 8
+    },
+    {
+      "sheet": 8,
+      "slot": 7,
+      "report": "tesla",
+      "page": 9
+    },
+    {
+      "sheet": 8,
+      "slot": 8,
+      "report": "tesla",
+      "page": 10
+    },
+    {
+      "sheet": 8,
+      "slot": 9,
+      "report": "tesla",
+      "page": 11
+    },
+    {
+      "sheet": 8,
+      "slot": 10,
+      "report": "tesla",
+      "page": 12
+    },
+    {
+      "sheet": 8,
+      "slot": 11,
+      "report": "tesla",
+      "page": 13
+    },
+    {
+      "sheet": 8,
+      "slot": 12,
+      "report": "tesla",
+      "page": 14
+    },
+    {
+      "sheet": 8,
+      "slot": 13,
+      "report": "tesla",
+      "page": 15
+    },
+    {
+      "sheet": 8,
+      "slot": 14,
+      "report": "tesla",
+      "page": 16
+    },
+    {
+      "sheet": 8,
+      "slot": 15,
+      "report": "tesla",
+      "page": 17
+    },
+    {
+      "sheet": 8,
+      "slot": 16,
+      "report": "tesla",
+      "page": 18
+    },
+    {
+      "sheet": 9,
+      "slot": 1,
+      "report": "apple",
+      "page": 1
+    },
+    {
+      "sheet": 9,
+      "slot": 2,
+      "report": "apple",
+      "page": 2
+    },
+    {
+      "sheet": 9,
+      "slot": 3,
+      "report": "apple",
+      "page": 3
+    },
+    {
+      "sheet": 9,
+      "slot": 4,
+      "report": "apple",
+      "page": 4
+    },
+    {
+      "sheet": 9,
+      "slot": 5,
+      "report": "apple",
+      "page": 5
+    },
+    {
+      "sheet": 9,
+      "slot": 6,
+      "report": "apple",
+      "page": 6
+    },
+    {
+      "sheet": 9,
+      "slot": 7,
+      "report": "apple",
+      "page": 7
+    },
+    {
+      "sheet": 9,
+      "slot": 8,
+      "report": "apple",
+      "page": 8
+    },
+    {
+      "sheet": 9,
+      "slot": 9,
+      "report": "apple",
+      "page": 9
+    },
+    {
+      "sheet": 9,
+      "slot": 10,
+      "report": "apple",
+      "page": 10
+    },
+    {
+      "sheet": 9,
+      "slot": 11,
+      "report": "apple",
+      "page": 11
+    },
+    {
+      "sheet": 9,
+      "slot": 12,
+      "report": "apple",
+      "page": 12
+    },
+    {
+      "sheet": 9,
+      "slot": 13,
+      "report": "apple",
+      "page": 13
+    },
+    {
+      "sheet": 9,
+      "slot": 14,
+      "report": "apple",
+      "page": 14
+    },
+    {
+      "sheet": 9,
+      "slot": 15,
+      "report": "apple",
+      "page": 15
+    },
+    {
+      "sheet": 9,
+      "slot": 16,
+      "report": "apple",
+      "page": 16
+    },
+    {
+      "sheet": 10,
+      "slot": 1,
+      "report": "apple",
+      "page": 17
+    },
+    {
+      "sheet": 10,
+      "slot": 2,
+      "report": "apple",
+      "page": 18
+    },
+    {
+      "sheet": 10,
+      "slot": 3,
+      "report": "apple",
+      "page": 19
+    },
+    {
+      "sheet": 10,
+      "slot": 4,
+      "report": "apple",
+      "page": 20
+    },
+    {
+      "sheet": 10,
+      "slot": 5,
+      "report": "apple",
+      "page": 21
+    },
+    {
+      "sheet": 10,
+      "slot": 6,
+      "report": "nvidia",
+      "page": 1
+    },
+    {
+      "sheet": 10,
+      "slot": 7,
+      "report": "nvidia",
+      "page": 2
+    },
+    {
+      "sheet": 10,
+      "slot": 8,
+      "report": "nvidia",
+      "page": 3
+    },
+    {
+      "sheet": 10,
+      "slot": 9,
+      "report": "nvidia",
+      "page": 4
+    },
+    {
+      "sheet": 10,
+      "slot": 10,
+      "report": "nvidia",
+      "page": 5
+    },
+    {
+      "sheet": 10,
+      "slot": 11,
+      "report": "nvidia",
+      "page": 6
+    },
+    {
+      "sheet": 10,
+      "slot": 12,
+      "report": "nvidia",
+      "page": 7
+    },
+    {
+      "sheet": 10,
+      "slot": 13,
+      "report": "nvidia",
+      "page": 8
+    },
+    {
+      "sheet": 10,
+      "slot": 14,
+      "report": "nvidia",
+      "page": 9
+    },
+    {
+      "sheet": 10,
+      "slot": 15,
+      "report": "nvidia",
+      "page": 10
+    },
+    {
+      "sheet": 10,
+      "slot": 16,
+      "report": "nvidia",
+      "page": 11
+    },
+    {
+      "sheet": 11,
+      "slot": 1,
+      "report": "nvidia",
+      "page": 12
+    },
+    {
+      "sheet": 11,
+      "slot": 2,
+      "report": "nvidia",
+      "page": 13
+    },
+    {
+      "sheet": 11,
+      "slot": 3,
+      "report": "nvidia",
+      "page": 14
+    },
+    {
+      "sheet": 11,
+      "slot": 4,
+      "report": "nvidia",
+      "page": 15
+    },
+    {
+      "sheet": 11,
+      "slot": 5,
+      "report": "nvidia",
+      "page": 16
+    },
+    {
+      "sheet": 11,
+      "slot": 6,
+      "report": "nvidia",
+      "page": 17
+    },
+    {
+      "sheet": 11,
+      "slot": 7,
+      "report": "nvidia",
+      "page": 18
+    },
+    {
+      "sheet": 11,
+      "slot": 8,
+      "report": "nvidia",
+      "page": 19
+    },
+    {
+      "sheet": 11,
+      "slot": 9,
+      "report": "nvidia",
+      "page": 20
+    },
+    {
+      "sheet": 11,
+      "slot": 10,
+      "report": "nvidia",
+      "page": 21
+    },
+    {
+      "sheet": 11,
+      "slot": 11,
+      "report": "amd",
+      "page": 1
+    },
+    {
+      "sheet": 11,
+      "slot": 12,
+      "report": "amd",
+      "page": 2
+    },
+    {
+      "sheet": 11,
+      "slot": 13,
+      "report": "amd",
+      "page": 3
+    },
+    {
+      "sheet": 11,
+      "slot": 14,
+      "report": "amd",
+      "page": 4
+    },
+    {
+      "sheet": 11,
+      "slot": 15,
+      "report": "amd",
+      "page": 5
+    },
+    {
+      "sheet": 11,
+      "slot": 16,
+      "report": "amd",
+      "page": 6
+    },
+    {
+      "sheet": 12,
+      "slot": 1,
+      "report": "amd",
+      "page": 7
+    },
+    {
+      "sheet": 12,
+      "slot": 2,
+      "report": "amd",
+      "page": 8
+    },
+    {
+      "sheet": 12,
+      "slot": 3,
+      "report": "amd",
+      "page": 9
+    },
+    {
+      "sheet": 12,
+      "slot": 4,
+      "report": "amd",
+      "page": 10
+    },
+    {
+      "sheet": 12,
+      "slot": 5,
+      "report": "amd",
+      "page": 11
+    },
+    {
+      "sheet": 12,
+      "slot": 6,
+      "report": "amd",
+      "page": 12
+    },
+    {
+      "sheet": 12,
+      "slot": 7,
+      "report": "amd",
+      "page": 13
+    },
+    {
+      "sheet": 12,
+      "slot": 8,
+      "report": "amd",
+      "page": 14
+    },
+    {
+      "sheet": 12,
+      "slot": 9,
+      "report": "amd",
+      "page": 15
+    },
+    {
+      "sheet": 12,
+      "slot": 10,
+      "report": "amd",
+      "page": 16
+    },
+    {
+      "sheet": 12,
+      "slot": 11,
+      "report": "amd",
+      "page": 17
+    },
+    {
+      "sheet": 12,
+      "slot": 12,
+      "report": "amd",
+      "page": 18
+    },
+    {
+      "sheet": 12,
+      "slot": 13,
+      "report": "amd",
+      "page": 19
+    },
+    {
+      "sheet": 12,
+      "slot": 14,
+      "report": "amd",
+      "page": 20
+    },
+    {
+      "sheet": 12,
+      "slot": 15,
+      "report": "samsung-electronics",
+      "page": 1
+    },
+    {
+      "sheet": 12,
+      "slot": 16,
+      "report": "samsung-electronics",
+      "page": 2
+    },
+    {
+      "sheet": 13,
+      "slot": 1,
+      "report": "samsung-electronics",
+      "page": 3
+    },
+    {
+      "sheet": 13,
+      "slot": 2,
+      "report": "samsung-electronics",
+      "page": 4
+    },
+    {
+      "sheet": 13,
+      "slot": 3,
+      "report": "samsung-electronics",
+      "page": 5
+    },
+    {
+      "sheet": 13,
+      "slot": 4,
+      "report": "samsung-electronics",
+      "page": 6
+    },
+    {
+      "sheet": 13,
+      "slot": 5,
+      "report": "samsung-electronics",
+      "page": 7
+    },
+    {
+      "sheet": 13,
+      "slot": 6,
+      "report": "samsung-electronics",
+      "page": 8
+    },
+    {
+      "sheet": 13,
+      "slot": 7,
+      "report": "samsung-electronics",
+      "page": 9
+    },
+    {
+      "sheet": 13,
+      "slot": 8,
+      "report": "samsung-electronics",
+      "page": 10
+    },
+    {
+      "sheet": 13,
+      "slot": 9,
+      "report": "samsung-electronics",
+      "page": 11
+    },
+    {
+      "sheet": 13,
+      "slot": 10,
+      "report": "samsung-electronics",
+      "page": 12
+    },
+    {
+      "sheet": 13,
+      "slot": 11,
+      "report": "samsung-electronics",
+      "page": 13
+    },
+    {
+      "sheet": 13,
+      "slot": 12,
+      "report": "samsung-electronics",
+      "page": 14
+    },
+    {
+      "sheet": 13,
+      "slot": 13,
+      "report": "samsung-electronics",
+      "page": 15
+    },
+    {
+      "sheet": 13,
+      "slot": 14,
+      "report": "samsung-electronics",
+      "page": 16
+    },
+    {
+      "sheet": 13,
+      "slot": 15,
+      "report": "samsung-electronics",
+      "page": 17
+    },
+    {
+      "sheet": 13,
+      "slot": 16,
+      "report": "samsung-electronics",
+      "page": 18
+    },
+    {
+      "sheet": 14,
+      "slot": 1,
+      "report": "samsung-electronics",
+      "page": 19
+    },
+    {
+      "sheet": 14,
+      "slot": 2,
+      "report": "samsung-electronics",
+      "page": 20
+    },
+    {
+      "sheet": 14,
+      "slot": 3,
+      "report": "broadcom",
+      "page": 1
+    },
+    {
+      "sheet": 14,
+      "slot": 4,
+      "report": "broadcom",
+      "page": 2
+    },
+    {
+      "sheet": 14,
+      "slot": 5,
+      "report": "broadcom",
+      "page": 3
+    },
+    {
+      "sheet": 14,
+      "slot": 6,
+      "report": "broadcom",
+      "page": 4
+    },
+    {
+      "sheet": 14,
+      "slot": 7,
+      "report": "broadcom",
+      "page": 5
+    },
+    {
+      "sheet": 14,
+      "slot": 8,
+      "report": "broadcom",
+      "page": 6
+    },
+    {
+      "sheet": 14,
+      "slot": 9,
+      "report": "broadcom",
+      "page": 7
+    },
+    {
+      "sheet": 14,
+      "slot": 10,
+      "report": "broadcom",
+      "page": 8
+    },
+    {
+      "sheet": 14,
+      "slot": 11,
+      "report": "broadcom",
+      "page": 9
+    },
+    {
+      "sheet": 14,
+      "slot": 12,
+      "report": "broadcom",
+      "page": 10
+    },
+    {
+      "sheet": 14,
+      "slot": 13,
+      "report": "broadcom",
+      "page": 11
+    },
+    {
+      "sheet": 14,
+      "slot": 14,
+      "report": "broadcom",
+      "page": 12
+    },
+    {
+      "sheet": 14,
+      "slot": 15,
+      "report": "broadcom",
+      "page": 13
+    },
+    {
+      "sheet": 14,
+      "slot": 16,
+      "report": "broadcom",
+      "page": 14
+    },
+    {
+      "sheet": 15,
+      "slot": 1,
+      "report": "broadcom",
+      "page": 15
+    },
+    {
+      "sheet": 15,
+      "slot": 2,
+      "report": "broadcom",
+      "page": 16
+    },
+    {
+      "sheet": 15,
+      "slot": 3,
+      "report": "broadcom",
+      "page": 17
+    },
+    {
+      "sheet": 15,
+      "slot": 4,
+      "report": "broadcom",
+      "page": 18
+    },
+    {
+      "sheet": 15,
+      "slot": 5,
+      "report": "broadcom",
+      "page": 19
+    },
+    {
+      "sheet": 15,
+      "slot": 6,
+      "report": "broadcom",
+      "page": 20
+    },
+    {
+      "sheet": 15,
+      "slot": 7,
+      "report": "broadcom",
+      "page": 21
+    },
+    {
+      "sheet": 15,
+      "slot": 8,
+      "report": "mobis",
+      "page": 1
+    },
+    {
+      "sheet": 15,
+      "slot": 9,
+      "report": "mobis",
+      "page": 2
+    },
+    {
+      "sheet": 15,
+      "slot": 10,
+      "report": "mobis",
+      "page": 3
+    },
+    {
+      "sheet": 15,
+      "slot": 11,
+      "report": "mobis",
+      "page": 4
+    },
+    {
+      "sheet": 15,
+      "slot": 12,
+      "report": "mobis",
+      "page": 5
+    },
+    {
+      "sheet": 15,
+      "slot": 13,
+      "report": "mobis",
+      "page": 6
+    },
+    {
+      "sheet": 15,
+      "slot": 14,
+      "report": "mobis",
+      "page": 7
+    },
+    {
+      "sheet": 15,
+      "slot": 15,
+      "report": "mobis",
+      "page": 8
+    },
+    {
+      "sheet": 15,
+      "slot": 16,
+      "report": "mobis",
+      "page": 9
+    },
+    {
+      "sheet": 16,
+      "slot": 1,
+      "report": "mobis",
+      "page": 10
+    },
+    {
+      "sheet": 16,
+      "slot": 2,
+      "report": "mobis",
+      "page": 11
+    },
+    {
+      "sheet": 16,
+      "slot": 3,
+      "report": "mobis",
+      "page": 12
+    },
+    {
+      "sheet": 16,
+      "slot": 4,
+      "report": "mobis",
+      "page": 13
+    },
+    {
+      "sheet": 16,
+      "slot": 5,
+      "report": "mobis",
+      "page": 14
+    },
+    {
+      "sheet": 16,
+      "slot": 6,
+      "report": "mobis",
+      "page": 15
+    },
+    {
+      "sheet": 16,
+      "slot": 7,
+      "report": "mobis",
+      "page": 16
+    },
+    {
+      "sheet": 16,
+      "slot": 8,
+      "report": "mobis",
+      "page": 17
+    },
+    {
+      "sheet": 16,
+      "slot": 9,
+      "report": "mobis",
+      "page": 18
+    },
+    {
+      "sheet": 16,
+      "slot": 10,
+      "report": "naver",
+      "page": 1
+    },
+    {
+      "sheet": 16,
+      "slot": 11,
+      "report": "naver",
+      "page": 2
+    },
+    {
+      "sheet": 16,
+      "slot": 12,
+      "report": "naver",
+      "page": 3
+    },
+    {
+      "sheet": 16,
+      "slot": 13,
+      "report": "naver",
+      "page": 4
+    },
+    {
+      "sheet": 16,
+      "slot": 14,
+      "report": "naver",
+      "page": 5
+    },
+    {
+      "sheet": 16,
+      "slot": 15,
+      "report": "naver",
+      "page": 6
+    },
+    {
+      "sheet": 16,
+      "slot": 16,
+      "report": "naver",
+      "page": 7
+    },
+    {
+      "sheet": 17,
+      "slot": 1,
+      "report": "naver",
+      "page": 8
+    },
+    {
+      "sheet": 17,
+      "slot": 2,
+      "report": "naver",
+      "page": 9
+    },
+    {
+      "sheet": 17,
+      "slot": 3,
+      "report": "naver",
+      "page": 10
+    },
+    {
+      "sheet": 17,
+      "slot": 4,
+      "report": "naver",
+      "page": 11
+    },
+    {
+      "sheet": 17,
+      "slot": 5,
+      "report": "naver",
+      "page": 12
+    },
+    {
+      "sheet": 17,
+      "slot": 6,
+      "report": "naver",
+      "page": 13
+    },
+    {
+      "sheet": 17,
+      "slot": 7,
+      "report": "naver",
+      "page": 14
+    },
+    {
+      "sheet": 17,
+      "slot": 8,
+      "report": "naver",
+      "page": 15
+    },
+    {
+      "sheet": 17,
+      "slot": 9,
+      "report": "naver",
+      "page": 16
+    },
+    {
+      "sheet": 17,
+      "slot": 10,
+      "report": "naver",
+      "page": 17
+    },
+    {
+      "sheet": 17,
+      "slot": 11,
+      "report": "naver",
+      "page": 18
+    },
+    {
+      "sheet": 17,
+      "slot": 12,
+      "report": "naver",
+      "page": 19
+    },
+    {
+      "sheet": 17,
+      "slot": 13,
+      "report": "celltrion",
+      "page": 1
+    },
+    {
+      "sheet": 17,
+      "slot": 14,
+      "report": "celltrion",
+      "page": 2
+    },
+    {
+      "sheet": 17,
+      "slot": 15,
+      "report": "celltrion",
+      "page": 3
+    },
+    {
+      "sheet": 17,
+      "slot": 16,
+      "report": "celltrion",
+      "page": 4
+    },
+    {
+      "sheet": 18,
+      "slot": 1,
+      "report": "celltrion",
+      "page": 5
+    },
+    {
+      "sheet": 18,
+      "slot": 2,
+      "report": "celltrion",
+      "page": 6
+    },
+    {
+      "sheet": 18,
+      "slot": 3,
+      "report": "celltrion",
+      "page": 7
+    },
+    {
+      "sheet": 18,
+      "slot": 4,
+      "report": "celltrion",
+      "page": 8
+    },
+    {
+      "sheet": 18,
+      "slot": 5,
+      "report": "celltrion",
+      "page": 9
+    },
+    {
+      "sheet": 18,
+      "slot": 6,
+      "report": "celltrion",
+      "page": 10
+    },
+    {
+      "sheet": 18,
+      "slot": 7,
+      "report": "celltrion",
+      "page": 11
+    },
+    {
+      "sheet": 18,
+      "slot": 8,
+      "report": "celltrion",
+      "page": 12
+    },
+    {
+      "sheet": 18,
+      "slot": 9,
+      "report": "celltrion",
+      "page": 13
+    },
+    {
+      "sheet": 18,
+      "slot": 10,
+      "report": "celltrion",
+      "page": 14
+    },
+    {
+      "sheet": 18,
+      "slot": 11,
+      "report": "celltrion",
+      "page": 15
+    },
+    {
+      "sheet": 18,
+      "slot": 12,
+      "report": "celltrion",
+      "page": 16
+    },
+    {
+      "sheet": 18,
+      "slot": 13,
+      "report": "celltrion",
+      "page": 17
+    },
+    {
+      "sheet": 18,
+      "slot": 14,
+      "report": "celltrion",
+      "page": 18
+    },
+    {
+      "sheet": 18,
+      "slot": 15,
+      "report": "celltrion",
+      "page": 19
+    },
+    {
+      "sheet": 18,
+      "slot": 16,
+      "report": "celltrion",
+      "page": 20
+    },
+    {
+      "sheet": 19,
+      "slot": 1,
+      "report": "celltrion",
+      "page": 21
+    },
+    {
+      "sheet": 19,
+      "slot": 2,
+      "report": "jnj",
+      "page": 1
+    },
+    {
+      "sheet": 19,
+      "slot": 3,
+      "report": "jnj",
+      "page": 2
+    },
+    {
+      "sheet": 19,
+      "slot": 4,
+      "report": "jnj",
+      "page": 3
+    },
+    {
+      "sheet": 19,
+      "slot": 5,
+      "report": "jnj",
+      "page": 4
+    },
+    {
+      "sheet": 19,
+      "slot": 6,
+      "report": "jnj",
+      "page": 5
+    },
+    {
+      "sheet": 19,
+      "slot": 7,
+      "report": "jnj",
+      "page": 6
+    },
+    {
+      "sheet": 19,
+      "slot": 8,
+      "report": "jnj",
+      "page": 7
+    },
+    {
+      "sheet": 19,
+      "slot": 9,
+      "report": "jnj",
+      "page": 8
+    },
+    {
+      "sheet": 19,
+      "slot": 10,
+      "report": "jnj",
+      "page": 9
+    },
+    {
+      "sheet": 19,
+      "slot": 11,
+      "report": "jnj",
+      "page": 10
+    },
+    {
+      "sheet": 19,
+      "slot": 12,
+      "report": "jnj",
+      "page": 11
+    },
+    {
+      "sheet": 19,
+      "slot": 13,
+      "report": "jnj",
+      "page": 12
+    },
+    {
+      "sheet": 19,
+      "slot": 14,
+      "report": "jnj",
+      "page": 13
+    },
+    {
+      "sheet": 19,
+      "slot": 15,
+      "report": "jnj",
+      "page": 14
+    },
+    {
+      "sheet": 19,
+      "slot": 16,
+      "report": "jnj",
+      "page": 15
+    },
+    {
+      "sheet": 20,
+      "slot": 1,
+      "report": "jnj",
+      "page": 16
+    },
+    {
+      "sheet": 20,
+      "slot": 2,
+      "report": "jnj",
+      "page": 17
+    },
+    {
+      "sheet": 20,
+      "slot": 3,
+      "report": "samsung-sds",
+      "page": 1
+    },
+    {
+      "sheet": 20,
+      "slot": 4,
+      "report": "samsung-sds",
+      "page": 2
+    },
+    {
+      "sheet": 20,
+      "slot": 5,
+      "report": "samsung-sds",
+      "page": 3
+    },
+    {
+      "sheet": 20,
+      "slot": 6,
+      "report": "samsung-sds",
+      "page": 4
+    },
+    {
+      "sheet": 20,
+      "slot": 7,
+      "report": "samsung-sds",
+      "page": 5
+    },
+    {
+      "sheet": 20,
+      "slot": 8,
+      "report": "samsung-sds",
+      "page": 6
+    },
+    {
+      "sheet": 20,
+      "slot": 9,
+      "report": "samsung-sds",
+      "page": 7
+    },
+    {
+      "sheet": 20,
+      "slot": 10,
+      "report": "samsung-sds",
+      "page": 8
+    },
+    {
+      "sheet": 20,
+      "slot": 11,
+      "report": "samsung-sds",
+      "page": 9
+    },
+    {
+      "sheet": 20,
+      "slot": 12,
+      "report": "samsung-sds",
+      "page": 10
+    },
+    {
+      "sheet": 20,
+      "slot": 13,
+      "report": "samsung-sds",
+      "page": 11
+    },
+    {
+      "sheet": 20,
+      "slot": 14,
+      "report": "samsung-sds",
+      "page": 12
+    },
+    {
+      "sheet": 20,
+      "slot": 15,
+      "report": "samsung-sds",
+      "page": 13
+    },
+    {
+      "sheet": 20,
+      "slot": 16,
+      "report": "samsung-sds",
+      "page": 14
+    },
+    {
+      "sheet": 21,
+      "slot": 1,
+      "report": "samsung-sds",
+      "page": 15
+    },
+    {
+      "sheet": 21,
+      "slot": 2,
+      "report": "samsung-sds",
+      "page": 16
+    },
+    {
+      "sheet": 21,
+      "slot": 3,
+      "report": "samsung-sds",
+      "page": 17
+    },
+    {
+      "sheet": 21,
+      "slot": 4,
+      "report": "samsung-sds",
+      "page": 18
+    },
+    {
+      "sheet": 21,
+      "slot": 5,
+      "report": "servicenow",
+      "page": 1
+    },
+    {
+      "sheet": 21,
+      "slot": 6,
+      "report": "servicenow",
+      "page": 2
+    },
+    {
+      "sheet": 21,
+      "slot": 7,
+      "report": "servicenow",
+      "page": 3
+    },
+    {
+      "sheet": 21,
+      "slot": 8,
+      "report": "servicenow",
+      "page": 4
+    },
+    {
+      "sheet": 21,
+      "slot": 9,
+      "report": "servicenow",
+      "page": 5
+    },
+    {
+      "sheet": 21,
+      "slot": 10,
+      "report": "servicenow",
+      "page": 6
+    },
+    {
+      "sheet": 21,
+      "slot": 11,
+      "report": "servicenow",
+      "page": 7
+    },
+    {
+      "sheet": 21,
+      "slot": 12,
+      "report": "servicenow",
+      "page": 8
+    },
+    {
+      "sheet": 21,
+      "slot": 13,
+      "report": "servicenow",
+      "page": 9
+    },
+    {
+      "sheet": 21,
+      "slot": 14,
+      "report": "servicenow",
+      "page": 10
+    },
+    {
+      "sheet": 21,
+      "slot": 15,
+      "report": "servicenow",
+      "page": 11
+    },
+    {
+      "sheet": 21,
+      "slot": 16,
+      "report": "servicenow",
+      "page": 12
+    },
+    {
+      "sheet": 22,
+      "slot": 1,
+      "report": "servicenow",
+      "page": 13
+    },
+    {
+      "sheet": 22,
+      "slot": 2,
+      "report": "servicenow",
+      "page": 14
+    },
+    {
+      "sheet": 22,
+      "slot": 3,
+      "report": "servicenow",
+      "page": 15
+    },
+    {
+      "sheet": 22,
+      "slot": 4,
+      "report": "servicenow",
+      "page": 16
+    },
+    {
+      "sheet": 22,
+      "slot": 5,
+      "report": "servicenow",
+      "page": 17
+    },
+    {
+      "sheet": 22,
+      "slot": 6,
+      "report": "servicenow",
+      "page": 18
+    },
+    {
+      "sheet": 22,
+      "slot": 7,
+      "report": "comparison-biosimilar",
+      "page": 1
+    },
+    {
+      "sheet": 22,
+      "slot": 8,
+      "report": "comparison-biosimilar",
+      "page": 2
+    },
+    {
+      "sheet": 22,
+      "slot": 9,
+      "report": "comparison-biosimilar",
+      "page": 3
+    },
+    {
+      "sheet": 22,
+      "slot": 10,
+      "report": "comparison-biosimilar",
+      "page": 4
+    },
+    {
+      "sheet": 22,
+      "slot": 11,
+      "report": "comparison-biosimilar",
+      "page": 5
+    },
+    {
+      "sheet": 22,
+      "slot": 12,
+      "report": "comparison-biosimilar",
+      "page": 6
+    },
+    {
+      "sheet": 22,
+      "slot": 13,
+      "report": "comparison-biosimilar",
+      "page": 7
+    },
+    {
+      "sheet": 22,
+      "slot": 14,
+      "report": "comparison-biosimilar",
+      "page": 8
+    },
+    {
+      "sheet": 22,
+      "slot": 15,
+      "report": "comparison-platforms",
+      "page": 1
+    },
+    {
+      "sheet": 22,
+      "slot": 16,
+      "report": "comparison-platforms",
+      "page": 2
+    },
+    {
+      "sheet": 23,
+      "slot": 1,
+      "report": "comparison-platforms",
+      "page": 3
+    },
+    {
+      "sheet": 23,
+      "slot": 2,
+      "report": "comparison-platforms",
+      "page": 4
+    },
+    {
+      "sheet": 23,
+      "slot": 3,
+      "report": "comparison-auto-supply",
+      "page": 1
+    },
+    {
+      "sheet": 23,
+      "slot": 4,
+      "report": "comparison-auto-supply",
+      "page": 2
+    },
+    {
+      "sheet": 23,
+      "slot": 5,
+      "report": "comparison-auto-supply",
+      "page": 3
+    },
+    {
+      "sheet": 23,
+      "slot": 6,
+      "report": "comparison-auto-supply",
+      "page": 4
+    },
+    {
+      "sheet": 23,
+      "slot": 7,
+      "report": "comparison-auto-supply",
+      "page": 5
+    },
+    {
+      "sheet": 23,
+      "slot": 8,
+      "report": "lam",
+      "page": 1
+    },
+    {
+      "sheet": 23,
+      "slot": 9,
+      "report": "lam",
+      "page": 2
+    },
+    {
+      "sheet": 23,
+      "slot": 10,
+      "report": "lam",
+      "page": 3
+    },
+    {
+      "sheet": 23,
+      "slot": 11,
+      "report": "lam",
+      "page": 4
+    },
+    {
+      "sheet": 23,
+      "slot": 12,
+      "report": "lam",
+      "page": 5
+    },
+    {
+      "sheet": 23,
+      "slot": 13,
+      "report": "lam",
+      "page": 6
+    },
+    {
+      "sheet": 23,
+      "slot": 14,
+      "report": "lam",
+      "page": 7
+    },
+    {
+      "sheet": 23,
+      "slot": 15,
+      "report": "lam",
+      "page": 8
+    },
+    {
+      "sheet": 23,
+      "slot": 16,
+      "report": "lam",
+      "page": 9
+    },
+    {
+      "sheet": 24,
+      "slot": 1,
+      "report": "lam",
+      "page": 10
+    },
+    {
+      "sheet": 24,
+      "slot": 2,
+      "report": "lam",
+      "page": 11
+    },
+    {
+      "sheet": 24,
+      "slot": 3,
+      "report": "lam",
+      "page": 12
+    },
+    {
+      "sheet": 24,
+      "slot": 4,
+      "report": "lam",
+      "page": 13
+    },
+    {
+      "sheet": 24,
+      "slot": 5,
+      "report": "lam",
+      "page": 14
+    },
+    {
+      "sheet": 24,
+      "slot": 6,
+      "report": "lam",
+      "page": 15
+    },
+    {
+      "sheet": 24,
+      "slot": 7,
+      "report": "lam",
+      "page": 16
+    },
+    {
+      "sheet": 24,
+      "slot": 8,
+      "report": "lam",
+      "page": 17
+    },
+    {
+      "sheet": 24,
+      "slot": 9,
+      "report": "applied",
+      "page": 1
+    },
+    {
+      "sheet": 24,
+      "slot": 10,
+      "report": "applied",
+      "page": 2
+    },
+    {
+      "sheet": 24,
+      "slot": 11,
+      "report": "applied",
+      "page": 3
+    },
+    {
+      "sheet": 24,
+      "slot": 12,
+      "report": "applied",
+      "page": 4
+    },
+    {
+      "sheet": 24,
+      "slot": 13,
+      "report": "applied",
+      "page": 5
+    },
+    {
+      "sheet": 24,
+      "slot": 14,
+      "report": "applied",
+      "page": 6
+    },
+    {
+      "sheet": 24,
+      "slot": 15,
+      "report": "applied",
+      "page": 7
+    },
+    {
+      "sheet": 24,
+      "slot": 16,
+      "report": "applied",
+      "page": 8
+    },
+    {
+      "sheet": 25,
+      "slot": 1,
+      "report": "applied",
+      "page": 9
+    },
+    {
+      "sheet": 25,
+      "slot": 2,
+      "report": "applied",
+      "page": 10
+    },
+    {
+      "sheet": 25,
+      "slot": 3,
+      "report": "applied",
+      "page": 11
+    },
+    {
+      "sheet": 25,
+      "slot": 4,
+      "report": "applied",
+      "page": 12
+    },
+    {
+      "sheet": 25,
+      "slot": 5,
+      "report": "applied",
+      "page": 13
+    },
+    {
+      "sheet": 25,
+      "slot": 6,
+      "report": "applied",
+      "page": 14
+    },
+    {
+      "sheet": 25,
+      "slot": 7,
+      "report": "applied",
+      "page": 15
+    },
+    {
+      "sheet": 25,
+      "slot": 8,
+      "report": "applied",
+      "page": 16
+    },
+    {
+      "sheet": 25,
+      "slot": 9,
+      "report": "applied",
+      "page": 17
+    },
+    {
+      "sheet": 25,
+      "slot": 10,
+      "report": "comparison-ai-financing",
+      "page": 1
+    },
+    {
+      "sheet": 25,
+      "slot": 11,
+      "report": "comparison-ai-financing",
+      "page": 2
+    },
+    {
+      "sheet": 25,
+      "slot": 12,
+      "report": "comparison-ai-financing",
+      "page": 3
+    },
+    {
+      "sheet": 25,
+      "slot": 13,
+      "report": "comparison-ai-financing",
+      "page": 4
+    },
+    {
+      "sheet": 25,
+      "slot": 14,
+      "report": "alphabet",
+      "page": 1
+    },
+    {
+      "sheet": 25,
+      "slot": 15,
+      "report": "alphabet",
+      "page": 2
+    },
+    {
+      "sheet": 25,
+      "slot": 16,
+      "report": "alphabet",
+      "page": 3
+    },
+    {
+      "sheet": 26,
+      "slot": 1,
+      "report": "alphabet",
+      "page": 4
+    },
+    {
+      "sheet": 26,
+      "slot": 2,
+      "report": "alphabet",
+      "page": 5
+    },
+    {
+      "sheet": 26,
+      "slot": 3,
+      "report": "alphabet",
+      "page": 6
+    },
+    {
+      "sheet": 26,
+      "slot": 4,
+      "report": "alphabet",
+      "page": 7
+    },
+    {
+      "sheet": 26,
+      "slot": 5,
+      "report": "alphabet",
+      "page": 8
+    },
+    {
+      "sheet": 26,
+      "slot": 6,
+      "report": "alphabet",
+      "page": 9
+    },
+    {
+      "sheet": 26,
+      "slot": 7,
+      "report": "alphabet",
+      "page": 10
+    },
+    {
+      "sheet": 26,
+      "slot": 8,
+      "report": "alphabet",
+      "page": 11
+    },
+    {
+      "sheet": 26,
+      "slot": 9,
+      "report": "alphabet",
+      "page": 12
+    },
+    {
+      "sheet": 26,
+      "slot": 10,
+      "report": "alphabet",
+      "page": 13
+    },
+    {
+      "sheet": 26,
+      "slot": 11,
+      "report": "alphabet",
+      "page": 14
+    },
+    {
+      "sheet": 26,
+      "slot": 12,
+      "report": "alphabet",
+      "page": 15
+    },
+    {
+      "sheet": 26,
+      "slot": 13,
+      "report": "alphabet",
+      "page": 16
+    },
+    {
+      "sheet": 26,
+      "slot": 14,
+      "report": "alphabet",
+      "page": 17
+    },
+    {
+      "sheet": 26,
+      "slot": 15,
+      "report": "alphabet",
+      "page": 18
+    },
+    {
+      "sheet": 26,
+      "slot": 16,
+      "report": "alphabet",
+      "page": 19
+    },
+    {
+      "sheet": 27,
+      "slot": 1,
+      "report": "alphabet",
+      "page": 20
+    },
+    {
+      "sheet": 27,
+      "slot": 2,
+      "report": "meta",
+      "page": 1
+    },
+    {
+      "sheet": 27,
+      "slot": 3,
+      "report": "meta",
+      "page": 2
+    },
+    {
+      "sheet": 27,
+      "slot": 4,
+      "report": "meta",
+      "page": 3
+    },
+    {
+      "sheet": 27,
+      "slot": 5,
+      "report": "meta",
+      "page": 4
+    },
+    {
+      "sheet": 27,
+      "slot": 6,
+      "report": "meta",
+      "page": 5
+    },
+    {
+      "sheet": 27,
+      "slot": 7,
+      "report": "meta",
+      "page": 6
+    },
+    {
+      "sheet": 27,
+      "slot": 8,
+      "report": "meta",
+      "page": 7
+    },
+    {
+      "sheet": 27,
+      "slot": 9,
+      "report": "meta",
+      "page": 8
+    },
+    {
+      "sheet": 27,
+      "slot": 10,
+      "report": "meta",
+      "page": 9
+    },
+    {
+      "sheet": 27,
+      "slot": 11,
+      "report": "meta",
+      "page": 10
+    },
+    {
+      "sheet": 27,
+      "slot": 12,
+      "report": "meta",
+      "page": 11
+    },
+    {
+      "sheet": 27,
+      "slot": 13,
+      "report": "meta",
+      "page": 12
+    },
+    {
+      "sheet": 27,
+      "slot": 14,
+      "report": "meta",
+      "page": 13
+    },
+    {
+      "sheet": 27,
+      "slot": 15,
+      "report": "meta",
+      "page": 14
+    },
+    {
+      "sheet": 27,
+      "slot": 16,
+      "report": "meta",
+      "page": 15
+    },
+    {
+      "sheet": 28,
+      "slot": 1,
+      "report": "meta",
+      "page": 16
+    },
+    {
+      "sheet": 28,
+      "slot": 2,
+      "report": "meta",
+      "page": 17
+    },
+    {
+      "sheet": 28,
+      "slot": 3,
+      "report": "comparison-advertising",
+      "page": 1
+    },
+    {
+      "sheet": 28,
+      "slot": 4,
+      "report": "comparison-advertising",
+      "page": 2
+    },
+    {
+      "sheet": 28,
+      "slot": 5,
+      "report": "comparison-advertising",
+      "page": 3
+    },
+    {
+      "sheet": 28,
+      "slot": 6,
+      "report": "comparison-advertising",
+      "page": 4
+    },
+    {
+      "sheet": 28,
+      "slot": 7,
+      "report": "comparison-memory",
+      "page": 1
+    },
+    {
+      "sheet": 28,
+      "slot": 8,
+      "report": "comparison-memory",
+      "page": 2
+    },
+    {
+      "sheet": 28,
+      "slot": 9,
+      "report": "comparison-memory",
+      "page": 3
+    },
+    {
+      "sheet": 28,
+      "slot": 10,
+      "report": "comparison-memory",
+      "page": 4
+    },
+    {
+      "sheet": 28,
+      "slot": 11,
+      "report": "comparison-memory",
+      "page": 5
+    },
+    {
+      "sheet": 28,
+      "slot": 12,
+      "report": "comparison-accelerators",
+      "page": 1
+    },
+    {
+      "sheet": 28,
+      "slot": 13,
+      "report": "comparison-accelerators",
+      "page": 2
+    },
+    {
+      "sheet": 28,
+      "slot": 14,
+      "report": "comparison-accelerators",
+      "page": 3
+    },
+    {
+      "sheet": 28,
+      "slot": 15,
+      "report": "comparison-accelerators",
+      "page": 4
+    },
+    {
+      "sheet": 28,
+      "slot": 16,
+      "report": "comparison-electronics",
+      "page": 1
+    },
+    {
+      "sheet": 29,
+      "slot": 1,
+      "report": "comparison-electronics",
+      "page": 2
+    },
+    {
+      "sheet": 29,
+      "slot": 2,
+      "report": "comparison-electronics",
+      "page": 3
+    },
+    {
+      "sheet": 29,
+      "slot": 3,
+      "report": "comparison-electronics",
+      "page": 4
+    },
+    {
+      "sheet": 29,
+      "slot": 4,
+      "report": "comparison-electronics",
+      "page": 5
+    },
+    {
+      "sheet": 29,
+      "slot": 5,
+      "report": "comparison-auto",
+      "page": 1
+    },
+    {
+      "sheet": 29,
+      "slot": 6,
+      "report": "comparison-auto",
+      "page": 2
+    },
+    {
+      "sheet": 29,
+      "slot": 7,
+      "report": "comparison-auto",
+      "page": 3
+    },
+    {
+      "sheet": 29,
+      "slot": 8,
+      "report": "comparison-auto",
+      "page": 4
+    },
+    {
+      "sheet": 29,
+      "slot": 9,
+      "report": "comparison-auto",
+      "page": 5
+    },
+    {
+      "sheet": 29,
+      "slot": 10,
+      "report": "comparison-cloud",
+      "page": 1
+    },
+    {
+      "sheet": 29,
+      "slot": 11,
+      "report": "comparison-cloud",
+      "page": 2
+    },
+    {
+      "sheet": 29,
+      "slot": 12,
+      "report": "comparison-cloud",
+      "page": 3
+    },
+    {
+      "sheet": 29,
+      "slot": 13,
+      "report": "comparison-cloud",
+      "page": 4
+    },
+    {
+      "sheet": 29,
+      "slot": 14,
+      "report": "comparison-equipment",
+      "page": 1
+    },
+    {
+      "sheet": 29,
+      "slot": 15,
+      "report": "comparison-equipment",
+      "page": 2
+    },
+    {
+      "sheet": 29,
+      "slot": 16,
+      "report": "comparison-equipment",
+      "page": 3
+    },
+    {
+      "sheet": 30,
+      "slot": 1,
+      "report": "comparison-equipment",
+      "page": 4
+    },
+    {
+      "sheet": 30,
+      "slot": 2,
+      "report": "comparison-equipment",
+      "page": 5
+    },
+    {
+      "sheet": 30,
+      "slot": 3,
+      "report": "intel",
+      "page": 1
+    },
+    {
+      "sheet": 30,
+      "slot": 4,
+      "report": "intel",
+      "page": 2
+    },
+    {
+      "sheet": 30,
+      "slot": 5,
+      "report": "intel",
+      "page": 3
+    },
+    {
+      "sheet": 30,
+      "slot": 6,
+      "report": "intel",
+      "page": 4
+    },
+    {
+      "sheet": 30,
+      "slot": 7,
+      "report": "intel",
+      "page": 5
+    },
+    {
+      "sheet": 30,
+      "slot": 8,
+      "report": "intel",
+      "page": 6
+    },
+    {
+      "sheet": 30,
+      "slot": 9,
+      "report": "intel",
+      "page": 7
+    },
+    {
+      "sheet": 30,
+      "slot": 10,
+      "report": "intel",
+      "page": 8
+    },
+    {
+      "sheet": 30,
+      "slot": 11,
+      "report": "intel",
+      "page": 9
+    },
+    {
+      "sheet": 30,
+      "slot": 12,
+      "report": "intel",
+      "page": 10
+    },
+    {
+      "sheet": 30,
+      "slot": 13,
+      "report": "intel",
+      "page": 11
+    },
+    {
+      "sheet": 30,
+      "slot": 14,
+      "report": "intel",
+      "page": 12
+    },
+    {
+      "sheet": 30,
+      "slot": 15,
+      "report": "intel",
+      "page": 13
+    },
+    {
+      "sheet": 30,
+      "slot": 16,
+      "report": "intel",
+      "page": 14
+    },
+    {
+      "sheet": 31,
+      "slot": 1,
+      "report": "qualcomm",
+      "page": 1
+    },
+    {
+      "sheet": 31,
+      "slot": 2,
+      "report": "qualcomm",
+      "page": 2
+    },
+    {
+      "sheet": 31,
+      "slot": 3,
+      "report": "qualcomm",
+      "page": 3
+    },
+    {
+      "sheet": 31,
+      "slot": 4,
+      "report": "qualcomm",
+      "page": 4
+    },
+    {
+      "sheet": 31,
+      "slot": 5,
+      "report": "qualcomm",
+      "page": 5
+    },
+    {
+      "sheet": 31,
+      "slot": 6,
+      "report": "qualcomm",
+      "page": 6
+    },
+    {
+      "sheet": 31,
+      "slot": 7,
+      "report": "qualcomm",
+      "page": 7
+    },
+    {
+      "sheet": 31,
+      "slot": 8,
+      "report": "qualcomm",
+      "page": 8
+    },
+    {
+      "sheet": 31,
+      "slot": 9,
+      "report": "qualcomm",
+      "page": 9
+    },
+    {
+      "sheet": 31,
+      "slot": 10,
+      "report": "qualcomm",
+      "page": 10
+    },
+    {
+      "sheet": 31,
+      "slot": 11,
+      "report": "qualcomm",
+      "page": 11
+    },
+    {
+      "sheet": 31,
+      "slot": 12,
+      "report": "qualcomm",
+      "page": 12
+    },
+    {
+      "sheet": 31,
+      "slot": 13,
+      "report": "qualcomm",
+      "page": 13
+    },
+    {
+      "sheet": 31,
+      "slot": 14,
+      "report": "qualcomm",
+      "page": 14
+    },
+    {
+      "sheet": 31,
+      "slot": 15,
+      "report": "qualcomm",
+      "page": 15
+    },
+    {
+      "sheet": 31,
+      "slot": 16,
+      "report": "qualcomm",
+      "page": 16
+    },
+    {
+      "sheet": 32,
+      "slot": 1,
+      "report": "qualcomm",
+      "page": 17
+    },
+    {
+      "sheet": 32,
+      "slot": 2,
+      "report": "qualcomm",
+      "page": 18
+    },
+    {
+      "sheet": 32,
+      "slot": 3,
+      "report": "qualcomm",
+      "page": 19
+    },
+    {
+      "sheet": 32,
+      "slot": 4,
+      "report": "oracle",
+      "page": 1
+    },
+    {
+      "sheet": 32,
+      "slot": 5,
+      "report": "oracle",
+      "page": 2
+    },
+    {
+      "sheet": 32,
+      "slot": 6,
+      "report": "oracle",
+      "page": 3
+    },
+    {
+      "sheet": 32,
+      "slot": 7,
+      "report": "oracle",
+      "page": 4
+    },
+    {
+      "sheet": 32,
+      "slot": 8,
+      "report": "oracle",
+      "page": 5
+    },
+    {
+      "sheet": 32,
+      "slot": 9,
+      "report": "oracle",
+      "page": 6
+    },
+    {
+      "sheet": 32,
+      "slot": 10,
+      "report": "oracle",
+      "page": 7
+    },
+    {
+      "sheet": 32,
+      "slot": 11,
+      "report": "oracle",
+      "page": 8
+    },
+    {
+      "sheet": 32,
+      "slot": 12,
+      "report": "oracle",
+      "page": 9
+    },
+    {
+      "sheet": 32,
+      "slot": 13,
+      "report": "oracle",
+      "page": 10
+    },
+    {
+      "sheet": 32,
+      "slot": 14,
+      "report": "oracle",
+      "page": 11
+    },
+    {
+      "sheet": 32,
+      "slot": 15,
+      "report": "oracle",
+      "page": 12
+    },
+    {
+      "sheet": 32,
+      "slot": 16,
+      "report": "oracle",
+      "page": 13
+    },
+    {
+      "sheet": 33,
+      "slot": 1,
+      "report": "kt",
+      "page": 1
+    },
+    {
+      "sheet": 33,
+      "slot": 2,
+      "report": "kt",
+      "page": 2
+    },
+    {
+      "sheet": 33,
+      "slot": 3,
+      "report": "kt",
+      "page": 3
+    },
+    {
+      "sheet": 33,
+      "slot": 4,
+      "report": "kt",
+      "page": 4
+    },
+    {
+      "sheet": 33,
+      "slot": 5,
+      "report": "kt",
+      "page": 5
+    },
+    {
+      "sheet": 33,
+      "slot": 6,
+      "report": "kt",
+      "page": 6
+    },
+    {
+      "sheet": 33,
+      "slot": 7,
+      "report": "kt",
+      "page": 7
+    },
+    {
+      "sheet": 33,
+      "slot": 8,
+      "report": "kt",
+      "page": 8
+    },
+    {
+      "sheet": 33,
+      "slot": 9,
+      "report": "kt",
+      "page": 9
+    },
+    {
+      "sheet": 33,
+      "slot": 10,
+      "report": "kt",
+      "page": 10
+    },
+    {
+      "sheet": 33,
+      "slot": 11,
+      "report": "kt",
+      "page": 11
+    },
+    {
+      "sheet": 33,
+      "slot": 12,
+      "report": "kt",
+      "page": 12
+    },
+    {
+      "sheet": 33,
+      "slot": 13,
+      "report": "kt",
+      "page": 13
+    },
+    {
+      "sheet": 33,
+      "slot": 14,
+      "report": "kt",
+      "page": 14
+    },
+    {
+      "sheet": 33,
+      "slot": 15,
+      "report": "netflix",
+      "page": 1
+    },
+    {
+      "sheet": 33,
+      "slot": 16,
+      "report": "netflix",
+      "page": 2
+    },
+    {
+      "sheet": 34,
+      "slot": 1,
+      "report": "netflix",
+      "page": 3
+    },
+    {
+      "sheet": 34,
+      "slot": 2,
+      "report": "netflix",
+      "page": 4
+    },
+    {
+      "sheet": 34,
+      "slot": 3,
+      "report": "netflix",
+      "page": 5
+    },
+    {
+      "sheet": 34,
+      "slot": 4,
+      "report": "netflix",
+      "page": 6
+    },
+    {
+      "sheet": 34,
+      "slot": 5,
+      "report": "netflix",
+      "page": 7
+    },
+    {
+      "sheet": 34,
+      "slot": 6,
+      "report": "netflix",
+      "page": 8
+    },
+    {
+      "sheet": 34,
+      "slot": 7,
+      "report": "netflix",
+      "page": 9
+    },
+    {
+      "sheet": 34,
+      "slot": 8,
+      "report": "netflix",
+      "page": 10
+    },
+    {
+      "sheet": 34,
+      "slot": 9,
+      "report": "netflix",
+      "page": 11
+    },
+    {
+      "sheet": 34,
+      "slot": 10,
+      "report": "netflix",
+      "page": 12
+    },
+    {
+      "sheet": 34,
+      "slot": 11,
+      "report": "netflix",
+      "page": 13
+    },
+    {
+      "sheet": 34,
+      "slot": 12,
+      "report": "comparison-enterprise",
+      "page": 1
+    },
+    {
+      "sheet": 34,
+      "slot": 13,
+      "report": "comparison-enterprise",
+      "page": 2
+    },
+    {
+      "sheet": 34,
+      "slot": 14,
+      "report": "comparison-enterprise",
+      "page": 3
+    },
+    {
+      "sheet": 34,
+      "slot": 15,
+      "report": "comparison-enterprise",
+      "page": 4
+    },
+    {
+      "sheet": 34,
+      "slot": 16,
+      "report": "comparison-enterprise",
+      "page": 5
+    },
+    {
+      "sheet": 35,
+      "slot": 1,
+      "report": "comparison-enterprise",
+      "page": 6
+    },
+    {
+      "sheet": 35,
+      "slot": 2,
+      "report": "hyundai",
+      "page": 1
+    },
+    {
+      "sheet": 35,
+      "slot": 3,
+      "report": "hyundai",
+      "page": 2
+    },
+    {
+      "sheet": 35,
+      "slot": 4,
+      "report": "hyundai",
+      "page": 3
+    },
+    {
+      "sheet": 35,
+      "slot": 5,
+      "report": "hyundai",
+      "page": 4
+    },
+    {
+      "sheet": 35,
+      "slot": 6,
+      "report": "hyundai",
+      "page": 5
+    },
+    {
+      "sheet": 35,
+      "slot": 7,
+      "report": "hyundai",
+      "page": 6
+    },
+    {
+      "sheet": 35,
+      "slot": 8,
+      "report": "hyundai",
+      "page": 7
+    },
+    {
+      "sheet": 35,
+      "slot": 9,
+      "report": "hyundai",
+      "page": 8
+    },
+    {
+      "sheet": 35,
+      "slot": 10,
+      "report": "hyundai",
+      "page": 9
+    },
+    {
+      "sheet": 35,
+      "slot": 11,
+      "report": "hyundai",
+      "page": 10
+    },
+    {
+      "sheet": 35,
+      "slot": 12,
+      "report": "hyundai",
+      "page": 11
+    },
+    {
+      "sheet": 35,
+      "slot": 13,
+      "report": "hyundai",
+      "page": 12
+    },
+    {
+      "sheet": 35,
+      "slot": 14,
+      "report": "hyundai",
+      "page": 13
+    },
+    {
+      "sheet": 35,
+      "slot": 15,
+      "report": "hyundai",
+      "page": 14
+    },
+    {
+      "sheet": 35,
+      "slot": 16,
+      "report": "hyundai",
+      "page": 15
+    },
+    {
+      "sheet": 36,
+      "slot": 1,
+      "report": "hyundai",
+      "page": 16
+    },
+    {
+      "sheet": 36,
+      "slot": 2,
+      "report": "hyundai",
+      "page": 17
+    },
+    {
+      "sheet": 36,
+      "slot": 3,
+      "report": "samsung-biologics",
+      "page": 1
+    },
+    {
+      "sheet": 36,
+      "slot": 4,
+      "report": "samsung-biologics",
+      "page": 2
+    },
+    {
+      "sheet": 36,
+      "slot": 5,
+      "report": "samsung-biologics",
+      "page": 3
+    },
+    {
+      "sheet": 36,
+      "slot": 6,
+      "report": "samsung-biologics",
+      "page": 4
+    },
+    {
+      "sheet": 36,
+      "slot": 7,
+      "report": "samsung-biologics",
+      "page": 5
+    },
+    {
+      "sheet": 36,
+      "slot": 8,
+      "report": "samsung-biologics",
+      "page": 6
+    },
+    {
+      "sheet": 36,
+      "slot": 9,
+      "report": "samsung-biologics",
+      "page": 7
+    },
+    {
+      "sheet": 36,
+      "slot": 10,
+      "report": "samsung-biologics",
+      "page": 8
+    },
+    {
+      "sheet": 36,
+      "slot": 11,
+      "report": "samsung-biologics",
+      "page": 9
+    },
+    {
+      "sheet": 36,
+      "slot": 12,
+      "report": "samsung-biologics",
+      "page": 10
+    },
+    {
+      "sheet": 36,
+      "slot": 13,
+      "report": "samsung-biologics",
+      "page": 11
+    },
+    {
+      "sheet": 36,
+      "slot": 14,
+      "report": "samsung-biologics",
+      "page": 12
+    },
+    {
+      "sheet": 36,
+      "slot": 15,
+      "report": "samsung-biologics",
+      "page": 13
+    },
+    {
+      "sheet": 36,
+      "slot": 16,
+      "report": "samsung-biologics",
+      "page": 14
+    },
+    {
+      "sheet": 37,
+      "slot": 1,
+      "report": "samsung-biologics",
+      "page": 15
+    },
+    {
+      "sheet": 37,
+      "slot": 2,
+      "report": "samsung-biologics",
+      "page": 16
+    },
+    {
+      "sheet": 37,
+      "slot": 3,
+      "report": "research-us",
+      "page": 1
+    },
+    {
+      "sheet": 37,
+      "slot": 4,
+      "report": "research-us",
+      "page": 2
+    },
+    {
+      "sheet": 37,
+      "slot": 5,
+      "report": "research-us",
+      "page": 3
+    },
+    {
+      "sheet": 37,
+      "slot": 6,
+      "report": "research-us",
+      "page": 4
+    },
+    {
+      "sheet": 37,
+      "slot": 7,
+      "report": "research-kr",
+      "page": 1
+    },
+    {
+      "sheet": 37,
+      "slot": 8,
+      "report": "research-kr",
+      "page": 2
+    },
+    {
+      "sheet": 37,
+      "slot": 9,
+      "report": "research-kr",
+      "page": 3
+    },
+    {
+      "sheet": 37,
+      "slot": 10,
+      "report": "research-kr",
+      "page": 4
+    },
+    {
+      "sheet": 37,
+      "slot": 11,
+      "report": "conditions",
+      "page": 1
+    },
+    {
+      "sheet": 37,
+      "slot": 12,
+      "report": "conditions",
+      "page": 2
+    },
+    {
+      "sheet": 37,
+      "slot": 13,
+      "report": "conditions",
+      "page": 3
+    },
+    {
+      "sheet": 37,
+      "slot": 14,
+      "report": "conditions",
+      "page": 4
+    },
+    {
+      "sheet": 37,
+      "slot": 15,
+      "report": "conditions",
+      "page": 5
+    },
+    {
+      "sheet": 37,
+      "slot": 16,
+      "report": "conditions",
+      "page": 6
+    },
+    {
+      "sheet": 38,
+      "slot": 1,
+      "report": "conditions",
+      "page": 7
+    },
+    {
+      "sheet": 38,
+      "slot": 2,
+      "report": "conditions",
+      "page": 8
+    },
+    {
+      "sheet": 38,
+      "slot": 3,
+      "report": "conditions",
+      "page": 9
+    },
+    {
+      "sheet": 38,
+      "slot": 4,
+      "report": "conditions",
+      "page": 10
+    },
+    {
+      "sheet": 38,
+      "slot": 5,
+      "report": "conditions",
+      "page": 11
+    }
+  ],
+  "reviewedAt": "2026-10-01T20:26:11.409410+00:00",
+  "reviewedSheets": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38
+  ],
+  "reviewedPages": 597,
+  "reviewScope": "All contact sheets inspected for gross clipping, overlap and page layout. Native-scale Qualcomm 12/13, ServiceNow 11 and biosimilar 8 additionally inspected. This is not sentence-by-sentence financial approval.",
+  "findings": [
+    "No gross clipping or footer overlap observed at contact-sheet scale.",
+    "Partial pages and continued tables/text remain; page density is not uniform.",
+    "ServiceNow contractual interest precision and pharmaceutical closing block checked at native scale."
+  ],
+  "independentFinancialApproval": false
+}

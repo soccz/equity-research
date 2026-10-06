@@ -1,0 +1,3 @@
+PASS equity cash scenario: analytical identity, directional sensitivity, invalid assumptions, 27 Python/JS comparisons.
+PASS 120 historical cash/price Python/JS comparisons, including held securities and negative cash.
+PASS 16 implied-growth roots across explicit forecast horizons.

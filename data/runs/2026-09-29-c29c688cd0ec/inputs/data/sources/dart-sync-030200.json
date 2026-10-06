@@ -1,0 +1,38 @@
+{
+  "ticker": "030200",
+  "asOf": "2026-09-29",
+  "checkedAt": "2026-10-01T10:26:16.010438+00:00",
+  "filing": {
+    "corp_code": "00190321",
+    "corp_name": "케이티",
+    "stock_code": "030200",
+    "corp_cls": "Y",
+    "report_nm": "반기보고서 (2026.06)",
+    "rcept_no": "20260814003463",
+    "flr_nm": "케이티",
+    "rcept_dt": "20260814",
+    "rm": ""
+  },
+  "queries": [
+    {
+      "file": "data/sources/dart-list-030200-2bdcb0e82062763c.json",
+      "sha256": "2bdcb0e82062763c207139094e3ea5bb08705b9eff66d8a3b69c3947b34f8fc1",
+      "parameters": {
+        "corp_code": "00190321",
+        "bgn_de": "20250101",
+        "end_de": "20260929",
+        "pblntf_ty": "A",
+        "last_reprt_at": "N",
+        "page_count": 100,
+        "page_no": 1,
+        "sort": "date",
+        "sort_mth": "desc"
+      }
+    }
+  ],
+  "package": {
+    "file": "data/sources/dart-package-20260814003463-c9c20c10cf98869b.zip",
+    "sha256": "c9c20c10cf98869bbe48d44d271de0bf541a1b5e8b68a585d0d43fbb9e1e99fa"
+  },
+  "instanceHash": "1c2fd7198950dcd4ea0a4cc9df6c6379448bca9296f7499ebb6fb30643c4b6a5"
+}

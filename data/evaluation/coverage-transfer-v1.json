@@ -1,0 +1,543 @@
+{
+  "version": "coverage-transfer-v1",
+  "scope": "프로토콜 개발 후 작성·실행 전에 고정한 합성 전이 평가. 개발 예문과 문장·수치를 분리했지만 작성자 독립 검토나 실제 기업 정확도 검증이 아니다. 결과를 보고 조정하면 해당 세트는 개발자료로 재분류한다.",
+  "selection": "열두 허용·열두 오류 문장을 역할·사업 범위·통화·누적기간·주식수·자본배분 주제에서 고정. 기존 개발 예문은 포함하지 않는다.",
+  "gate": {
+    "maxFalseAccepts": 0,
+    "maxFalseRejects": 2,
+    "maxInvalidResponses": 0
+  },
+  "input": {
+    "company": "분리 전이 평가용 합성 기업 · 실제 투자 대상 아님",
+    "currency": "가상 화폐",
+    "computedObservations": [
+      {
+        "id": "revenue",
+        "previous": 1000,
+        "current": 1100,
+        "change": 100,
+        "direction": "증가"
+      },
+      {
+        "id": "cfo",
+        "previous": 90,
+        "current": 70,
+        "change": -20,
+        "direction": "감소"
+      },
+      {
+        "id": "capex",
+        "previous": 50,
+        "current": 40,
+        "change": -10,
+        "direction": "감소"
+      }
+    ],
+    "capitalEvidence": {
+      "flows": [
+        {
+          "label": "주식보상 비현금 조정",
+          "current": 8,
+          "previous": 6,
+          "unit": "가상 화폐"
+        },
+        {
+          "label": "자기주식 매입 현금",
+          "current": 12,
+          "previous": 10,
+          "unit": "가상 화폐"
+        },
+        {
+          "label": "기간 가중평균 기본주식수",
+          "current": 100,
+          "previous": 105,
+          "unit": "shares"
+        },
+        {
+          "label": "기간 가중평균 희석주식수",
+          "current": 110,
+          "previous": 112,
+          "unit": "shares"
+        }
+      ],
+      "balances": [
+        {
+          "label": "현금",
+          "value": 80,
+          "unit": "가상 화폐"
+        },
+        {
+          "label": "장기차입금 비유동분",
+          "value": 50,
+          "unit": "가상 화폐"
+        }
+      ],
+      "limitation": "자기주식 매입은 실제 현금 유출이며 주식보상 비용은 비현금이다. 가중평균 주식수는 기간 수치다. 단기차입금·리스부채와 기말 유통주식수는 미확인."
+    },
+    "businessEvidence": {
+      "segments": [
+        {
+          "label": "기기",
+          "current": {
+            "revenue": 900,
+            "operatingIncome": 90
+          }
+        },
+        {
+          "label": "서비스",
+          "current": {
+            "revenue": 350,
+            "operatingIncome": 70
+          }
+        }
+      ],
+      "reconciliation": {
+        "revenue": {
+          "subtotal": 1250,
+          "reportedAdjustment": -150,
+          "reportedTotal": 1100,
+          "unexplained": 0
+        }
+      },
+      "segmentRevenueBasis": "내부 거래 포함. 제품 부문별 영업현금은 공개되지 않았다."
+    },
+    "missingEvidence": [
+      "고객별 후속 수금과 연체",
+      "투자 축소의 원인",
+      "제품 가격·판매량·환율 기여",
+      "부문별 영업현금",
+      "기말 주식수와 주식 종류",
+      "단기차입금·리스부채"
+    ]
+  },
+  "cases": [
+    {
+      "id": "lower_cfo_observed",
+      "role": "observation",
+      "text": "영업현금과 자산 취득 지출은 모두 전년보다 감소했다.",
+      "accept": true,
+      "expected": "supported",
+      "rationale": "두 관측의 방향을 그대로 읽는다."
+    },
+    {
+      "id": "investment_forces_cfo",
+      "role": "hypothesis",
+      "text": "자산 취득 지출이 줄었으므로 영업현금은 증가했을 가능성이 있다.",
+      "accept": false,
+      "expected": "contradicted",
+      "rationale": "제공된 영업현금은 감소했고 투자활동 지출 감소가 그 증가를 뜻하지 않는다."
+    },
+    {
+      "id": "replacement_cycle",
+      "role": "hypothesis",
+      "text": "이번 투자 축소는 큰 교체 주기가 지나간 영향일 수 있다.",
+      "accept": true,
+      "expected": "conditional",
+      "rationale": "투자 축소 원인에 관한 미확인 가설이다."
+    },
+    {
+      "id": "demand_decline_proven",
+      "role": "observation",
+      "text": "이번 투자 축소로 고객 수요의 감소가 입증됐다.",
+      "accept": false,
+      "expected": "unsupported",
+      "rationale": "고객 수요의 직접 자료가 없다."
+    },
+    {
+      "id": "cash_sbc_separation",
+      "role": "observation",
+      "text": "주식보상 비용과 자기주식 매입액은 각각 비현금 비용과 실제 현금 지급으로 구분한다.",
+      "accept": true,
+      "expected": "supported",
+      "rationale": "회계 역할의 구분이다."
+    },
+    {
+      "id": "sbc_actual_outflow",
+      "role": "observation",
+      "text": "주식보상 비현금 조정액은 당기 현금 지급액이다.",
+      "accept": false,
+      "expected": "contradicted",
+      "rationale": "비현금 비용을 현금 유출로 바꾼다."
+    },
+    {
+      "id": "weighted_share_scope",
+      "role": "observation",
+      "text": "가중평균 희석주식수는 보고기간의 지표이므로 기말 유통주식수와 구별해야 한다.",
+      "accept": true,
+      "expected": "supported",
+      "rationale": "기간과 기말의 분석 단위가 다르다."
+    },
+    {
+      "id": "weighted_marketcap",
+      "role": "observation",
+      "text": "가중평균 기본주식수에 기말 종가를 곱하면 정확한 기말 보통주 시가총액이 확정된다.",
+      "accept": false,
+      "expected": "unsupported",
+      "rationale": "기말 유통주식수와 주식 종류가 없다."
+    },
+    {
+      "id": "missing_segment_cash",
+      "role": "missing",
+      "text": "부문별 영업현금 자료가 없어 기기와 서비스의 현금 전환을 직접 비교할 수 없다.",
+      "accept": true,
+      "expected": "supported",
+      "rationale": "부문 이익은 있으나 부문 현금은 없다."
+    },
+    {
+      "id": "missing_segment_profit",
+      "role": "missing",
+      "text": "기기와 서비스의 영업이익 자료가 제공되지 않았다.",
+      "accept": false,
+      "expected": "contradicted",
+      "rationale": "영업이익은 제공돼 있다."
+    },
+    {
+      "id": "internal_revenue_basis",
+      "role": "observation",
+      "text": "부문 매출에는 내부 거래가 포함되어 연결 매출보다 합계가 크다.",
+      "accept": true,
+      "expected": "supported",
+      "rationale": "같은 표의 합계와 조정 및 연결 금액을 구분한다."
+    },
+    {
+      "id": "gross_is_external",
+      "role": "observation",
+      "text": "기기와 서비스의 부문 매출은 모두 외부 고객 매출이다.",
+      "accept": false,
+      "expected": "contradicted",
+      "rationale": "입력은 내부 거래 포함이라고 명시한다."
+    },
+    {
+      "id": "netdebt_gap",
+      "role": "missing",
+      "text": "단기차입금과 리스부채를 확인하기 전에는 전체 순차입금을 계산할 근거가 부족하다.",
+      "accept": true,
+      "expected": "supported",
+      "rationale": "부분 부채만 확인됐다."
+    },
+    {
+      "id": "netcash_proven",
+      "role": "observation",
+      "text": "현금이 장기차입금보다 많으므로 모든 금융부채를 차감해도 순현금 기업임이 확정된다.",
+      "accept": false,
+      "expected": "unsupported",
+      "rationale": "다른 금융부채가 미확인이다."
+    },
+    {
+      "id": "receipts_followup",
+      "role": "distinguish",
+      "text": "후속 실제 수금과 연체 구간을 확인해 매출 확대에 따른 수금 시차와 회수 지연 가능성을 구별한다.",
+      "accept": true,
+      "expected": "conditional",
+      "rationale": "차후 관측이 설명을 나누는 데 쓰인다."
+    },
+    {
+      "id": "repurchases_confirm_cheap",
+      "role": "observation",
+      "text": "자기주식 매입으로 현재 주가의 저평가가 확인됐다.",
+      "accept": false,
+      "expected": "unsupported",
+      "rationale": "지급 사실은 가격 가치의 증거가 아니다."
+    },
+    {
+      "id": "mix_not_established",
+      "role": "hypothesis",
+      "text": "매출 증가는 가격보다 판매량 확대가 기여했을 가능성이 있다.",
+      "accept": true,
+      "expected": "conditional",
+      "rationale": "미확인 기여를 가능한 설명으로 남긴다."
+    },
+    {
+      "id": "mix_established",
+      "role": "observation",
+      "text": "이번 매출 증가의 원인은 판매량 확대다.",
+      "accept": false,
+      "expected": "unsupported",
+      "rationale": "가격 물량의 분해 자료가 없다."
+    },
+    {
+      "id": "period_comparison_hold",
+      "role": "observation",
+      "text": "통화와 누적기간이 달라 영업현금의 금액만으로 두 기업의 우열을 정하기 어렵다.",
+      "accept": true,
+      "expected": "supported",
+      "rationale": "기간 통화가 모두 다르다.",
+      "input": {
+        "company": "분리 전이 평가용 합성 기업 · 실제 투자 대상 아님",
+        "currency": "가상 화폐",
+        "computedObservations": [
+          {
+            "id": "revenue",
+            "previous": 1000,
+            "current": 1100,
+            "change": 100,
+            "direction": "증가"
+          },
+          {
+            "id": "cfo",
+            "previous": 90,
+            "current": 70,
+            "change": -20,
+            "direction": "감소"
+          },
+          {
+            "id": "capex",
+            "previous": 50,
+            "current": 40,
+            "change": -10,
+            "direction": "감소"
+          }
+        ],
+        "capitalEvidence": {
+          "flows": [
+            {
+              "label": "주식보상 비현금 조정",
+              "current": 8,
+              "previous": 6,
+              "unit": "가상 화폐"
+            },
+            {
+              "label": "자기주식 매입 현금",
+              "current": 12,
+              "previous": 10,
+              "unit": "가상 화폐"
+            },
+            {
+              "label": "기간 가중평균 기본주식수",
+              "current": 100,
+              "previous": 105,
+              "unit": "shares"
+            },
+            {
+              "label": "기간 가중평균 희석주식수",
+              "current": 110,
+              "previous": 112,
+              "unit": "shares"
+            }
+          ],
+          "balances": [
+            {
+              "label": "현금",
+              "value": 80,
+              "unit": "가상 화폐"
+            },
+            {
+              "label": "장기차입금 비유동분",
+              "value": 50,
+              "unit": "가상 화폐"
+            }
+          ],
+          "limitation": "자기주식 매입은 실제 현금 유출이며 주식보상 비용은 비현금이다. 가중평균 주식수는 기간 수치다. 단기차입금·리스부채와 기말 유통주식수는 미확인."
+        },
+        "businessEvidence": {
+          "segments": [
+            {
+              "label": "기기",
+              "current": {
+                "revenue": 900,
+                "operatingIncome": 90
+              }
+            },
+            {
+              "label": "서비스",
+              "current": {
+                "revenue": 350,
+                "operatingIncome": 70
+              }
+            }
+          ],
+          "reconciliation": {
+            "revenue": {
+              "subtotal": 1250,
+              "reportedAdjustment": -150,
+              "reportedTotal": 1100,
+              "unexplained": 0
+            }
+          },
+          "segmentRevenueBasis": "내부 거래 포함. 제품 부문별 영업현금은 공개되지 않았다."
+        },
+        "missingEvidence": [
+          "고객별 후속 수금과 연체",
+          "투자 축소의 원인",
+          "제품 가격·판매량·환율 기여",
+          "부문별 영업현금",
+          "기말 주식수와 주식 종류",
+          "단기차입금·리스부채"
+        ],
+        "comparison": {
+          "companyA": {
+            "currency": "USD",
+            "start": "2026-01-01",
+            "end": "2026-06-30",
+            "cfo": 60
+          },
+          "companyB": {
+            "currency": "KRW",
+            "start": "2026-01-01",
+            "end": "2026-09-30",
+            "cfo": 90
+          },
+          "fx": null
+        }
+      }
+    },
+    {
+      "id": "higher_amount_better",
+      "role": "observation",
+      "text": "표의 영업현금 숫자가 더 큰 기업이 같은 기간 더 많은 현금을 창출했다.",
+      "accept": false,
+      "expected": "contradicted",
+      "rationale": "같은 기간과 같은 통화가 아니다.",
+      "input": {
+        "company": "분리 전이 평가용 합성 기업 · 실제 투자 대상 아님",
+        "currency": "가상 화폐",
+        "computedObservations": [
+          {
+            "id": "revenue",
+            "previous": 1000,
+            "current": 1100,
+            "change": 100,
+            "direction": "증가"
+          },
+          {
+            "id": "cfo",
+            "previous": 90,
+            "current": 70,
+            "change": -20,
+            "direction": "감소"
+          },
+          {
+            "id": "capex",
+            "previous": 50,
+            "current": 40,
+            "change": -10,
+            "direction": "감소"
+          }
+        ],
+        "capitalEvidence": {
+          "flows": [
+            {
+              "label": "주식보상 비현금 조정",
+              "current": 8,
+              "previous": 6,
+              "unit": "가상 화폐"
+            },
+            {
+              "label": "자기주식 매입 현금",
+              "current": 12,
+              "previous": 10,
+              "unit": "가상 화폐"
+            },
+            {
+              "label": "기간 가중평균 기본주식수",
+              "current": 100,
+              "previous": 105,
+              "unit": "shares"
+            },
+            {
+              "label": "기간 가중평균 희석주식수",
+              "current": 110,
+              "previous": 112,
+              "unit": "shares"
+            }
+          ],
+          "balances": [
+            {
+              "label": "현금",
+              "value": 80,
+              "unit": "가상 화폐"
+            },
+            {
+              "label": "장기차입금 비유동분",
+              "value": 50,
+              "unit": "가상 화폐"
+            }
+          ],
+          "limitation": "자기주식 매입은 실제 현금 유출이며 주식보상 비용은 비현금이다. 가중평균 주식수는 기간 수치다. 단기차입금·리스부채와 기말 유통주식수는 미확인."
+        },
+        "businessEvidence": {
+          "segments": [
+            {
+              "label": "기기",
+              "current": {
+                "revenue": 900,
+                "operatingIncome": 90
+              }
+            },
+            {
+              "label": "서비스",
+              "current": {
+                "revenue": 350,
+                "operatingIncome": 70
+              }
+            }
+          ],
+          "reconciliation": {
+            "revenue": {
+              "subtotal": 1250,
+              "reportedAdjustment": -150,
+              "reportedTotal": 1100,
+              "unexplained": 0
+            }
+          },
+          "segmentRevenueBasis": "내부 거래 포함. 제품 부문별 영업현금은 공개되지 않았다."
+        },
+        "missingEvidence": [
+          "고객별 후속 수금과 연체",
+          "투자 축소의 원인",
+          "제품 가격·판매량·환율 기여",
+          "부문별 영업현금",
+          "기말 주식수와 주식 종류",
+          "단기차입금·리스부채"
+        ],
+        "comparison": {
+          "companyA": {
+            "currency": "USD",
+            "start": "2026-01-01",
+            "end": "2026-06-30",
+            "cfo": 60
+          },
+          "companyB": {
+            "currency": "KRW",
+            "start": "2026-01-01",
+            "end": "2026-09-30",
+            "cfo": 90
+          },
+          "fx": null
+        }
+      }
+    },
+    {
+      "id": "fewer_shares_possible",
+      "role": "hypothesis",
+      "text": "자기주식 매입이 기간 평균 주식수 감소에 기여했을 가능성이 있다.",
+      "accept": true,
+      "expected": "conditional",
+      "rationale": "주식수 감소와 매입은 함께 관측되지만 원인을 확정하지 않는다."
+    },
+    {
+      "id": "buyback_net_dilution",
+      "role": "observation",
+      "text": "자기주식 매입액만으로 신규 주식 발행에 따른 희석이 전부 상쇄됐음을 확인할 수 있다.",
+      "accept": false,
+      "expected": "unsupported",
+      "rationale": "발행 주식과 상쇄 규모의 자료가 없다."
+    },
+    {
+      "id": "cash_residual_not_profit",
+      "role": "observation",
+      "text": "영업현금에서 자산 취득 지출을 뺀 잔액은 회계 영업이익과 다른 항목이다.",
+      "accept": true,
+      "expected": "supported",
+      "rationale": "다른 두 회계 개념을 구분한다."
+    },
+    {
+      "id": "profit_equals_cash",
+      "role": "observation",
+      "text": "부문 영업이익 합계는 같은 기간 부문 영업현금 합계와 같다.",
+      "accept": false,
+      "expected": "unsupported",
+      "rationale": "부문 영업현금이 없고 회계 이익은 현금과 다르다."
+    }
+  ]
+}

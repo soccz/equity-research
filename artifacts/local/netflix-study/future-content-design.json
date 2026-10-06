@@ -1,0 +1,22 @@
+{
+  "status": "design_for_next_iteration",
+  "reason": "Content production/licensing is the dominant investment flow and should be edited separately from PPE and acquisitions.",
+  "currentCandidate": "Reconciles all source cash periods; combines content payments, PPE and acquisitions in one initial reinvestment ratio.",
+  "nextChange": {
+    "modelFlag": "contentPath",
+    "newAssumptions": [
+      "contentStart",
+      "contentEnd"
+    ],
+    "capexScope": "PPE plus acquisitions only",
+    "futureCashLine": "Subtract content payment once after adding amortization; exclude content liabilities from working-capital proxy.",
+    "noHistoricalRewrite": true,
+    "checks": [
+      "zero content cash is explicit scenario, not missing-data default",
+      "cash effect of +1 percentage point equals forecast revenue times 0.01",
+      "terminal content cost grows with terminal revenue",
+      "Python/JS complete paths and inverses agree",
+      "stored assumptions and paired notes preserve content fields"
+    ]
+  }
+}

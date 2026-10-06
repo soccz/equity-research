@@ -1,0 +1,230 @@
+{
+  "status": "subsequent_capital_changes_unresolved",
+  "version": "hynix-capital-events-v1",
+  "asOf": "2026-09-29",
+  "reviewedThrough": "2026-09-29",
+  "opening": {
+    "accession": "20260814003509",
+    "definition": "공시 유통주식수 (발행주식수−자기주식수)",
+    "dimensions": [
+      [
+        "공시 주식 종류",
+        "보통주"
+      ]
+    ],
+    "end": "2026-06-30",
+    "filedAt": "2026-08-14",
+    "issued": 712702365,
+    "sourceFile": "data/sources/shares-000660-20260814003509-8f6ac78aef2c22b4.json",
+    "sourceHash": "8f6ac78aef2c22b43617b84b2ab9190d25c4c021f3f18d6c431293f54c8213d9",
+    "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003509",
+    "start": null,
+    "tag": "OpenDART:distb_stock_co",
+    "treasury": 1626865,
+    "unit": "shares",
+    "value": 711075500
+  },
+  "issuedAfterKnownIssue": 730492365,
+  "latestIssued": {
+    "value": 730492365,
+    "filedAt": "2026-09-22",
+    "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260922000361",
+    "definition": "임원 보고서의 발행주식 총수; 자기주식 차감 전"
+  },
+  "latestTreasury": {
+    "value": 1625769,
+    "end": "2026-08-21",
+    "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260821000495"
+  },
+  "repurchase": {
+    "start": "2026-08-20",
+    "end": "2026-11-19",
+    "plannedShares": 24070000,
+    "plannedAmount": 40004340000000,
+    "actualShares": null,
+    "status": "actual_execution_unconfirmed",
+    "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260819000254"
+  },
+  "currentOutstanding": null,
+  "observations": [
+    {
+      "label": "반기 말 발행 / 자기주식 / 유통",
+      "date": "2026-06-30",
+      "value": "712,702,365 / 1,626,865 / 711,075,500주",
+      "scope": "같은 기준일의 공시 주식 총수 표",
+      "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003509"
+    },
+    {
+      "label": "완료된 원주 신주 발행",
+      "date": "2026-07-14",
+      "value": "17,790,000주",
+      "scope": "1 원주당 10 ADR. ADR 수량은 주식수에 추가하지 않음",
+      "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260715000004"
+    },
+    {
+      "label": "취득·소각 목적의 계획",
+      "date": "2026-08-20–2026-11-19",
+      "value": "예정 24,070,000주",
+      "scope": "주가에 따라 취득 수량 변동. 기준일 실제 취득·소각 완료 수량 미확인",
+      "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260819000254"
+    },
+    {
+      "label": "자기주식 처분 결과",
+      "date": "2026-08-19",
+      "value": "82주",
+      "scope": "개별 처분 완료 수량. 반기 이후 전체 변동 합계가 아님",
+      "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260821000495"
+    },
+    {
+      "label": "처분 결과 보고서 보유 잔액",
+      "date": "2026-08-21",
+      "value": "자기주식 1,625,769주",
+      "scope": "이 날짜의 신고 잔액. 이후 진행 중 취득을 영으로 놓지 않음",
+      "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260821000495"
+    },
+    {
+      "label": "후속 공시 발행 총수",
+      "date": "2026-09-22 공시",
+      "value": "730,492,365주",
+      "scope": "발행 총수는 신주 합계와 일치. 다른 날짜 자기주식 잔액을 빼서 현재 유통 수량으로 확정하지 않음",
+      "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260922000361"
+    }
+  ],
+  "passages": [
+    {
+      "text": "(주) | 당사는 금번 발행되는 보통주 17,790,000주를 원주로 하여 해외 기관투자자들을 대상으로 총 미화 26,507,100,000달러(USD) 규모의 ADR을 발행하기로 결정하였습니다. 보통주(원주) 1주를 기초로 하여 10 ADR이 발행됩니다. 따라서, 본건 10 ADR의 공모금액인 미화 1,490달러(USD)를 납입일(2026년 7월 14일)에 서울외국환중개(주)가 고시한 매매기준율(1 USD=1,504.90원)을 적용하여 환산한 금 2,242,301원과 상기 수량을 곱하여 계산한 금 39,890,534,790,000원을 발행총액으로 기재하였습니다.",
+      "heading": "2. 발행 개요",
+      "kind": "table",
+      "ordinal": 4,
+      "id": "1d57a01e6b07c63db438",
+      "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260715000004",
+      "sourceHash": "9ac60312680fb50caf202694f9e2634bb7d71cccbfb81fe7477b88acad0d4135",
+      "sourceFile": "data/sources/dart-document-20260715000004-0-9ac60312680fb50c.xml",
+      "accession": "20260715000004",
+      "filedAt": "2026-07-15"
+    },
+    {
+      "text": "제3자배정 유상증자 17,790,000 100 1 17,790,000 39,890,534,790,000 100 1 17,790,000 39,890,534,790,000 100",
+      "heading": "3. 청약 및 배정현황",
+      "kind": "table",
+      "ordinal": 10,
+      "id": "4511e349a9c0f4b8b094",
+      "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260715000004",
+      "sourceHash": "9ac60312680fb50caf202694f9e2634bb7d71cccbfb81fe7477b88acad0d4135",
+      "sourceFile": "data/sources/dart-document-20260715000004-0-9ac60312680fb50c.xml",
+      "accession": "20260715000004",
+      "filedAt": "2026-07-15"
+    },
+    {
+      "text": "(주) | 당사는 금번 발행되는 신주 17,790,000주를 원주로 하여 해외 기관투자자들을 대상으로 총 미화 26,507,100,000달러(USD) 규모의 ADR을 발행하기로 결정하였습니다. 보통주(원주) 1주를 기초로 하여 10 ADR이 발행됩니다. 따라서, 본건 10 ADR의 공모금액인 미화 1,490달러(USD)를 납입일(2026년 7월 14일)에 서울외국환중개(주)가 고시한 매매기준율(1 USD=1,504.90원)을 적용하여 환산한 금 2,242,301원과 상기 수량을 곱하여 계산한 금 39,890,534,790,000원을 금액으로 기재하였습니다.",
+      "heading": "3. 청약 및 배정현황",
+      "kind": "table",
+      "ordinal": 12,
+      "id": "8140434f1e45e25884cd",
+      "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260715000004",
+      "sourceHash": "9ac60312680fb50caf202694f9e2634bb7d71cccbfb81fe7477b88acad0d4135",
+      "sourceFile": "data/sources/dart-document-20260715000004-0-9ac60312680fb50c.xml",
+      "accession": "20260715000004",
+      "filedAt": "2026-07-15"
+    },
+    {
+      "text": "1. 취득예정주식(주) | 보통주식 24,070,000",
+      "heading": "자기주식 취득 결정",
+      "kind": "table",
+      "ordinal": 4,
+      "id": "d824c1a1b0757d2fc39d",
+      "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260819000254",
+      "sourceHash": "d2affcfa8a71c4205e9ab7aa3792e8d1fbb7490e80925154a5b7bc0849f40cc7",
+      "sourceFile": "data/sources/dart-document-20260819000254-0-d2affcfa8a71c420.xml",
+      "accession": "20260819000254",
+      "filedAt": "2026-08-19"
+    },
+    {
+      "text": "2. 취득예정금액(원) | 보통주식 40,004,340,000,000",
+      "heading": "자기주식 취득 결정",
+      "kind": "table",
+      "ordinal": 5,
+      "id": "dc5c08ffe3616e8b9997",
+      "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260819000254",
+      "sourceHash": "d2affcfa8a71c4205e9ab7aa3792e8d1fbb7490e80925154a5b7bc0849f40cc7",
+      "sourceFile": "data/sources/dart-document-20260819000254-0-d2affcfa8a71c420.xml",
+      "accession": "20260819000254",
+      "filedAt": "2026-08-19"
+    },
+    {
+      "text": "- 금번 자기주식 취득결정은 신규 자기주식 취득 건입니다.- 상기 '1.취득예정주식(주)'은 '2.취득예정금액(원)'을 바탕으로 이사회 결의일 전일 종가(2026년 8월 18일 기준: 1,662,000원)를 기준으로 하여 산정하였으며, 향후 주가 변동 등에 따라 취득 주식수가 달라질 수 있습니다.- 상기 '4. 보유예상기간'은 회사의 재무상태, 시장환경 변화 등 다양한 경영환경에 따라 달라질 수 있습니다. 다만, 금번 자기주식 취득 건은 소각을 목적으로 취득함에 따라, 상기'3. 취득예상기간' 내에 자기주식 취득을 완료한 후 해당 기간에 취득한 자기주식 전량을 소각할 예정입니다. 주식 소각에 대한 자세한 사항은 당사가 2026년 8월 19일 공시한 '주식 소각 결정' 공시를 통해 확인 가능합니다.- 상기 '8. 취득전 자기주식보유현황 - 기타취득(보통주식)' 자기주식수는 당사가 2023년 4월 11일 발행한 교환사채의 조기상환 청구권(Clean Up Call Option)을 2026년 5월 중 행사함에 따라 발생한 기타 취득분입니다.- 상기 '9. 취득 결정일'은 이사회 결의일입니다.- 상기 '10. 1일 매수 주문 수량 한도' 산출근거는 '증권의 발행 및 공시 등에 관한 규정 제5-5조'에 따라 [①과 ②중 많은 수량]과 ③ 중 적은 수량입니다. ① 취득 신고 주식수의 10% : 2,407,000주 ② 이사회 결의일 전일로부터 1개월간 일평균 거래량의 25% : 1,431,989주 ③ 발행주식총수의 1%: 7,304,923주",
+      "heading": "자기주식 취득 결정",
+      "kind": "paragraph",
+      "ordinal": 10,
+      "id": "3bcd24c7f72aac906cb3",
+      "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260819000254",
+      "sourceHash": "d2affcfa8a71c4205e9ab7aa3792e8d1fbb7490e80925154a5b7bc0849f40cc7",
+      "sourceFile": "data/sources/dart-document-20260819000254-0-d2affcfa8a71c420.xml",
+      "accession": "20260819000254",
+      "filedAt": "2026-08-19"
+    },
+    {
+      "text": "총 계(a+b+c) | 보통주식 17,377,728 73 452,032 15,300,000 1,625,769 -",
+      "heading": "자기주식 취득 결정",
+      "kind": "table",
+      "ordinal": 24,
+      "id": "d825dc12832d7bb17099",
+      "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260819000254",
+      "sourceHash": "d2affcfa8a71c4205e9ab7aa3792e8d1fbb7490e80925154a5b7bc0849f40cc7",
+      "sourceFile": "data/sources/dart-document-20260819000254-0-d2affcfa8a71c420.xml",
+      "accession": "20260819000254",
+      "filedAt": "2026-08-19"
+    },
+    {
+      "text": "- 상기 '기초수량' 은 당해 사업연도 개시일(2026년 01월 01일), '기말수량'은 공시서류제출일(2026년 08월 19일) 현재 자기주식 보유 수량입니다.",
+      "heading": "자기주식 취득 결정",
+      "kind": "table",
+      "ordinal": 26,
+      "id": "3b77bf2df12c4e120f90",
+      "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260819000254",
+      "sourceHash": "d2affcfa8a71c4205e9ab7aa3792e8d1fbb7490e80925154a5b7bc0849f40cc7",
+      "sourceFile": "data/sources/dart-document-20260819000254-0-d2affcfa8a71c420.xml",
+      "accession": "20260819000254",
+      "filedAt": "2026-08-19"
+    },
+    {
+      "text": "2026년 08월 19일 보통주식 82 82 1,500,000 123,000,000 독립이사 SK증권 00131850",
+      "heading": "3. 처분내용",
+      "kind": "table",
+      "ordinal": 5,
+      "id": "06832d3100c1149ed595",
+      "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260821000495",
+      "sourceHash": "e021de930ab2b6d2d7ae98b10470e76ce0c2117649c080f1385a6f73df1fedd3",
+      "sourceFile": "data/sources/dart-document-20260821000495-0-e021de930ab2b6d2.xml",
+      "accession": "20260821000495",
+      "filedAt": "2026-08-21"
+    },
+    {
+      "text": "[ 2026년 08월 21일 | 현재 ] (단위 : 백만원, 주, %)",
+      "heading": "5. 처분후 자기주식등의 보유상황",
+      "kind": "table",
+      "ordinal": 8,
+      "id": "0c92b1742bc8f6e86cb9",
+      "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260821000495",
+      "sourceHash": "e021de930ab2b6d2d7ae98b10470e76ce0c2117649c080f1385a6f73df1fedd3",
+      "sourceFile": "data/sources/dart-document-20260821000495-0-e021de930ab2b6d2.xml",
+      "accession": "20260821000495",
+      "filedAt": "2026-08-21"
+    },
+    {
+      "text": "보통주식 1,625,769 0.2 92,683 - - - 1,625,769 0.2 92,683",
+      "heading": "5. 처분후 자기주식등의 보유상황",
+      "kind": "table",
+      "ordinal": 11,
+      "id": "84dd6f6ced1c46280e7a",
+      "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260821000495",
+      "sourceHash": "e021de930ab2b6d2d7ae98b10470e76ce0c2117649c080f1385a6f73df1fedd3",
+      "sourceFile": "data/sources/dart-document-20260821000495-0-e021de930ab2b6d2.xml",
+      "accession": "20260821000495",
+      "filedAt": "2026-08-21"
+    }
+  ],
+  "issue": "반기 이후 신주 발행과 자기주식 취득·처분이 있어 가격 기준일 유통주식수 재대사가 필요함",
+  "scope": "공식 발행 결과·후속 보유 잔액·매입 계획을 구별합니다. 원주와 ADR을 중복 합산하거나 예정 취득 수량을 완료 수량으로 차감하지 않습니다. 알려진 신주 발행을 무시한 반기 말 주식수로 주당 계산을 유지하지 않습니다.",
+  "evidenceHash": "7fa062479e262ab3210594034754d810f89b1169835d368cddc71ed4a8105f72"
+}

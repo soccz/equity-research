@@ -1,0 +1,65 @@
+{
+  "snapshotHash": "e1d762660a708cd42f36203124e0923c4b972bad3f2e0563bf9953e9f0268b44",
+  "runId": "20261002T051936327218Z",
+  "financialApproval": false,
+  "reviewer": "Codex author review",
+  "pdfs": [
+    {
+      "file": "artifacts/live/lg-innotek.pdf",
+      "sha256": "11951309cea0ff7129f177c3edefa336dce521f83c3a24a9ca8a588d9cede109",
+      "contactPages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "detailedPages": [
+        10,
+        11
+      ],
+      "findings": "Chart title and visual are grouped; source conflicts and period definitions remain visible; no footer overlap. Historical condition observation blocks leave sparse continuation pages; improve subsequent print layout."
+    },
+    {
+      "file": "artifacts/live/oracle.pdf",
+      "sha256": "392db7ab7230c171eee4a664d8b340b4558aa4cf81025a24c570d81a077de696",
+      "contactPages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "detailedPages": [
+        11
+      ],
+      "findings": "Chart title and visual are grouped; source conflicts and period definitions remain visible; no footer overlap. Historical condition observation blocks leave sparse continuation pages; improve subsequent print layout."
+    }
+  ]
+}

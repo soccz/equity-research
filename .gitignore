@@ -17,3 +17,7 @@ deploy/repository/
 deploy/*.zip
 MEMORY.md
 .codex/
+
+.local/
+data/local-reviews/
+data/local-evaluations/

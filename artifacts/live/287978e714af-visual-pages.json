@@ -1,0 +1,1757 @@
+{
+  "status": "pending_visual_inspection",
+  "snapshotHash": "287978e714af88af9042eab21392c7675b534267447ec15802f335a498d0de75",
+  "pdfHashes": {
+    "artifacts/live/universe.pdf": "30c9659bddac5c6aeae7b41486f3f6b516be7fb6dfb741c035d447e9bab38db3",
+    "artifacts/live/micron.pdf": "6ce9498d6311d5acb6edbac393530a87a98b0054dfe616059c5be13193f2503e",
+    "artifacts/live/sk-hynix.pdf": "04c166912868ecab748171b8750dd2274445c31dad65096cb3e987da7c5d7534",
+    "artifacts/live/microsoft.pdf": "ee944a474f5850f3d359dcd0a29b367ee0c06600f4fef671623e55d193a6c83b",
+    "artifacts/live/amazon.pdf": "52a72ccc6e9fcfa855259017adcddd2c0e9383738bb4ab2f45b0f526af7d2528",
+    "artifacts/live/kia.pdf": "e471cd20afd9fccc1e4d3a0df9f5fdab883a0cc5f5042b8385ac8e82bdb70b30",
+    "artifacts/live/tesla.pdf": "f8c2813b95330f0ba9d45df4c0205fb404443f100df2df41b3f77f47642722a7",
+    "artifacts/live/alphabet.pdf": "b89dab6d8395c739447fd618ad90adb5ab5eb730f7398c34fa06e4e0f698d812",
+    "artifacts/live/meta.pdf": "fa0279b1fdf5174a11adb640db360b7ab61a0916dc890c224d87c983a73f2097",
+    "artifacts/live/comparison-advertising.pdf": "e972e8426d1ad5cc82819583b5d44317afde6d9c3515912cd80728255ba776a6",
+    "artifacts/live/comparison-auto.pdf": "a69d81c17597a2b44f16ad03a5a767c3ceeed6a30bd9a93f06c37e407637a15c",
+    "artifacts/live/comparison-cloud.pdf": "7078077c907fa30007d2cab7a9a415ef2ca6222664fbddc60c05ab9a73e3fcb8",
+    "artifacts/live/comparison-equipment.pdf": "365281998c32f085e875e1a2cb89851e8bad1a25971358395ed314c5e7730eab",
+    "artifacts/live/intel.pdf": "2531b6bf7385965b6b37bf083284b7fa430b184d3487da666a03f63348055ada",
+    "artifacts/live/qualcomm.pdf": "16f831053142a587add2761da207dddd9fbfafac700d5a5b4a3b11058ad5b2d7",
+    "artifacts/live/oracle.pdf": "751783869ca7050f23bc7023b541f52bd5894156ebc7757c7c91057451890a8e",
+    "artifacts/live/kt.pdf": "5c4de174045b079103de5513962fd786f9b7be614bb11758116ff406eba30cb7",
+    "artifacts/live/netflix.pdf": "bc82cc5399ad1769b7dda08b6460304d5ce666280e3eff28fb19471361a3a9e2",
+    "artifacts/live/comparison-enterprise.pdf": "2ced0de1f6b55c2bad6d336c525d1cfdb60026cddabe374664916827feed7e21",
+    "artifacts/live/hyundai.pdf": "4958c2cc8ba57b6c2eaa663e857072cf914d1e45420aaf22e5143cad26438d56",
+    "artifacts/live/samsung-biologics.pdf": "73d2f1e5bfe7565f7ba62acc20b9855fbf6a8b391d370b9d13a6090fc9e18c01",
+    "artifacts/live/research-us.pdf": "6acf5a7452ca01db729ed7e6bb0fa0b98b560eae0889a677ff91a289b883d545",
+    "artifacts/live/research-kr.pdf": "522ec28af49273e9ead4f9bf9633f4e18430ac96fd92e4ddfe250c6bc930fa85",
+    "artifacts/live/conditions.pdf": "5cad48127d10bff4e9b5be9b3bbbc3b0aa3d139d105b76b91e693e743d079abc"
+  },
+  "pdfPages": 284,
+  "contactSheets": [
+    "artifacts/live/287978e714af-contact-1.png",
+    "artifacts/live/287978e714af-contact-2.png",
+    "artifacts/live/287978e714af-contact-3.png",
+    "artifacts/live/287978e714af-contact-4.png",
+    "artifacts/live/287978e714af-contact-5.png",
+    "artifacts/live/287978e714af-contact-6.png",
+    "artifacts/live/287978e714af-contact-7.png",
+    "artifacts/live/287978e714af-contact-8.png",
+    "artifacts/live/287978e714af-contact-9.png",
+    "artifacts/live/287978e714af-contact-10.png",
+    "artifacts/live/287978e714af-contact-11.png",
+    "artifacts/live/287978e714af-contact-12.png",
+    "artifacts/live/287978e714af-contact-13.png",
+    "artifacts/live/287978e714af-contact-14.png",
+    "artifacts/live/287978e714af-contact-15.png",
+    "artifacts/live/287978e714af-contact-16.png",
+    "artifacts/live/287978e714af-contact-17.png",
+    "artifacts/live/287978e714af-contact-18.png"
+  ],
+  "pageMap": [
+    {
+      "sheet": 1,
+      "slot": 1,
+      "report": "universe",
+      "page": 1
+    },
+    {
+      "sheet": 1,
+      "slot": 2,
+      "report": "universe",
+      "page": 2
+    },
+    {
+      "sheet": 1,
+      "slot": 3,
+      "report": "universe",
+      "page": 3
+    },
+    {
+      "sheet": 1,
+      "slot": 4,
+      "report": "universe",
+      "page": 4
+    },
+    {
+      "sheet": 1,
+      "slot": 5,
+      "report": "universe",
+      "page": 5
+    },
+    {
+      "sheet": 1,
+      "slot": 6,
+      "report": "micron",
+      "page": 1
+    },
+    {
+      "sheet": 1,
+      "slot": 7,
+      "report": "micron",
+      "page": 2
+    },
+    {
+      "sheet": 1,
+      "slot": 8,
+      "report": "micron",
+      "page": 3
+    },
+    {
+      "sheet": 1,
+      "slot": 9,
+      "report": "micron",
+      "page": 4
+    },
+    {
+      "sheet": 1,
+      "slot": 10,
+      "report": "micron",
+      "page": 5
+    },
+    {
+      "sheet": 1,
+      "slot": 11,
+      "report": "micron",
+      "page": 6
+    },
+    {
+      "sheet": 1,
+      "slot": 12,
+      "report": "micron",
+      "page": 7
+    },
+    {
+      "sheet": 1,
+      "slot": 13,
+      "report": "micron",
+      "page": 8
+    },
+    {
+      "sheet": 1,
+      "slot": 14,
+      "report": "micron",
+      "page": 9
+    },
+    {
+      "sheet": 1,
+      "slot": 15,
+      "report": "micron",
+      "page": 10
+    },
+    {
+      "sheet": 1,
+      "slot": 16,
+      "report": "micron",
+      "page": 11
+    },
+    {
+      "sheet": 2,
+      "slot": 1,
+      "report": "micron",
+      "page": 12
+    },
+    {
+      "sheet": 2,
+      "slot": 2,
+      "report": "micron",
+      "page": 13
+    },
+    {
+      "sheet": 2,
+      "slot": 3,
+      "report": "micron",
+      "page": 14
+    },
+    {
+      "sheet": 2,
+      "slot": 4,
+      "report": "micron",
+      "page": 15
+    },
+    {
+      "sheet": 2,
+      "slot": 5,
+      "report": "micron",
+      "page": 16
+    },
+    {
+      "sheet": 2,
+      "slot": 6,
+      "report": "micron",
+      "page": 17
+    },
+    {
+      "sheet": 2,
+      "slot": 7,
+      "report": "micron",
+      "page": 18
+    },
+    {
+      "sheet": 2,
+      "slot": 8,
+      "report": "micron",
+      "page": 19
+    },
+    {
+      "sheet": 2,
+      "slot": 9,
+      "report": "micron",
+      "page": 20
+    },
+    {
+      "sheet": 2,
+      "slot": 10,
+      "report": "micron",
+      "page": 21
+    },
+    {
+      "sheet": 2,
+      "slot": 11,
+      "report": "micron",
+      "page": 22
+    },
+    {
+      "sheet": 2,
+      "slot": 12,
+      "report": "sk-hynix",
+      "page": 1
+    },
+    {
+      "sheet": 2,
+      "slot": 13,
+      "report": "sk-hynix",
+      "page": 2
+    },
+    {
+      "sheet": 2,
+      "slot": 14,
+      "report": "sk-hynix",
+      "page": 3
+    },
+    {
+      "sheet": 2,
+      "slot": 15,
+      "report": "sk-hynix",
+      "page": 4
+    },
+    {
+      "sheet": 2,
+      "slot": 16,
+      "report": "sk-hynix",
+      "page": 5
+    },
+    {
+      "sheet": 3,
+      "slot": 1,
+      "report": "sk-hynix",
+      "page": 6
+    },
+    {
+      "sheet": 3,
+      "slot": 2,
+      "report": "sk-hynix",
+      "page": 7
+    },
+    {
+      "sheet": 3,
+      "slot": 3,
+      "report": "sk-hynix",
+      "page": 8
+    },
+    {
+      "sheet": 3,
+      "slot": 4,
+      "report": "sk-hynix",
+      "page": 9
+    },
+    {
+      "sheet": 3,
+      "slot": 5,
+      "report": "sk-hynix",
+      "page": 10
+    },
+    {
+      "sheet": 3,
+      "slot": 6,
+      "report": "sk-hynix",
+      "page": 11
+    },
+    {
+      "sheet": 3,
+      "slot": 7,
+      "report": "sk-hynix",
+      "page": 12
+    },
+    {
+      "sheet": 3,
+      "slot": 8,
+      "report": "sk-hynix",
+      "page": 13
+    },
+    {
+      "sheet": 3,
+      "slot": 9,
+      "report": "sk-hynix",
+      "page": 14
+    },
+    {
+      "sheet": 3,
+      "slot": 10,
+      "report": "sk-hynix",
+      "page": 15
+    },
+    {
+      "sheet": 3,
+      "slot": 11,
+      "report": "sk-hynix",
+      "page": 16
+    },
+    {
+      "sheet": 3,
+      "slot": 12,
+      "report": "sk-hynix",
+      "page": 17
+    },
+    {
+      "sheet": 3,
+      "slot": 13,
+      "report": "sk-hynix",
+      "page": 18
+    },
+    {
+      "sheet": 3,
+      "slot": 14,
+      "report": "sk-hynix",
+      "page": 19
+    },
+    {
+      "sheet": 3,
+      "slot": 15,
+      "report": "microsoft",
+      "page": 1
+    },
+    {
+      "sheet": 3,
+      "slot": 16,
+      "report": "microsoft",
+      "page": 2
+    },
+    {
+      "sheet": 4,
+      "slot": 1,
+      "report": "microsoft",
+      "page": 3
+    },
+    {
+      "sheet": 4,
+      "slot": 2,
+      "report": "microsoft",
+      "page": 4
+    },
+    {
+      "sheet": 4,
+      "slot": 3,
+      "report": "microsoft",
+      "page": 5
+    },
+    {
+      "sheet": 4,
+      "slot": 4,
+      "report": "microsoft",
+      "page": 6
+    },
+    {
+      "sheet": 4,
+      "slot": 5,
+      "report": "microsoft",
+      "page": 7
+    },
+    {
+      "sheet": 4,
+      "slot": 6,
+      "report": "microsoft",
+      "page": 8
+    },
+    {
+      "sheet": 4,
+      "slot": 7,
+      "report": "microsoft",
+      "page": 9
+    },
+    {
+      "sheet": 4,
+      "slot": 8,
+      "report": "microsoft",
+      "page": 10
+    },
+    {
+      "sheet": 4,
+      "slot": 9,
+      "report": "microsoft",
+      "page": 11
+    },
+    {
+      "sheet": 4,
+      "slot": 10,
+      "report": "microsoft",
+      "page": 12
+    },
+    {
+      "sheet": 4,
+      "slot": 11,
+      "report": "microsoft",
+      "page": 13
+    },
+    {
+      "sheet": 4,
+      "slot": 12,
+      "report": "microsoft",
+      "page": 14
+    },
+    {
+      "sheet": 4,
+      "slot": 13,
+      "report": "microsoft",
+      "page": 15
+    },
+    {
+      "sheet": 4,
+      "slot": 14,
+      "report": "microsoft",
+      "page": 16
+    },
+    {
+      "sheet": 4,
+      "slot": 15,
+      "report": "microsoft",
+      "page": 17
+    },
+    {
+      "sheet": 4,
+      "slot": 16,
+      "report": "microsoft",
+      "page": 18
+    },
+    {
+      "sheet": 5,
+      "slot": 1,
+      "report": "amazon",
+      "page": 1
+    },
+    {
+      "sheet": 5,
+      "slot": 2,
+      "report": "amazon",
+      "page": 2
+    },
+    {
+      "sheet": 5,
+      "slot": 3,
+      "report": "amazon",
+      "page": 3
+    },
+    {
+      "sheet": 5,
+      "slot": 4,
+      "report": "amazon",
+      "page": 4
+    },
+    {
+      "sheet": 5,
+      "slot": 5,
+      "report": "amazon",
+      "page": 5
+    },
+    {
+      "sheet": 5,
+      "slot": 6,
+      "report": "amazon",
+      "page": 6
+    },
+    {
+      "sheet": 5,
+      "slot": 7,
+      "report": "amazon",
+      "page": 7
+    },
+    {
+      "sheet": 5,
+      "slot": 8,
+      "report": "amazon",
+      "page": 8
+    },
+    {
+      "sheet": 5,
+      "slot": 9,
+      "report": "amazon",
+      "page": 9
+    },
+    {
+      "sheet": 5,
+      "slot": 10,
+      "report": "amazon",
+      "page": 10
+    },
+    {
+      "sheet": 5,
+      "slot": 11,
+      "report": "amazon",
+      "page": 11
+    },
+    {
+      "sheet": 5,
+      "slot": 12,
+      "report": "amazon",
+      "page": 12
+    },
+    {
+      "sheet": 5,
+      "slot": 13,
+      "report": "amazon",
+      "page": 13
+    },
+    {
+      "sheet": 5,
+      "slot": 14,
+      "report": "amazon",
+      "page": 14
+    },
+    {
+      "sheet": 5,
+      "slot": 15,
+      "report": "amazon",
+      "page": 15
+    },
+    {
+      "sheet": 5,
+      "slot": 16,
+      "report": "amazon",
+      "page": 16
+    },
+    {
+      "sheet": 6,
+      "slot": 1,
+      "report": "amazon",
+      "page": 17
+    },
+    {
+      "sheet": 6,
+      "slot": 2,
+      "report": "amazon",
+      "page": 18
+    },
+    {
+      "sheet": 6,
+      "slot": 3,
+      "report": "amazon",
+      "page": 19
+    },
+    {
+      "sheet": 6,
+      "slot": 4,
+      "report": "kia",
+      "page": 1
+    },
+    {
+      "sheet": 6,
+      "slot": 5,
+      "report": "kia",
+      "page": 2
+    },
+    {
+      "sheet": 6,
+      "slot": 6,
+      "report": "kia",
+      "page": 3
+    },
+    {
+      "sheet": 6,
+      "slot": 7,
+      "report": "kia",
+      "page": 4
+    },
+    {
+      "sheet": 6,
+      "slot": 8,
+      "report": "kia",
+      "page": 5
+    },
+    {
+      "sheet": 6,
+      "slot": 9,
+      "report": "kia",
+      "page": 6
+    },
+    {
+      "sheet": 6,
+      "slot": 10,
+      "report": "kia",
+      "page": 7
+    },
+    {
+      "sheet": 6,
+      "slot": 11,
+      "report": "kia",
+      "page": 8
+    },
+    {
+      "sheet": 6,
+      "slot": 12,
+      "report": "kia",
+      "page": 9
+    },
+    {
+      "sheet": 6,
+      "slot": 13,
+      "report": "kia",
+      "page": 10
+    },
+    {
+      "sheet": 6,
+      "slot": 14,
+      "report": "kia",
+      "page": 11
+    },
+    {
+      "sheet": 6,
+      "slot": 15,
+      "report": "kia",
+      "page": 12
+    },
+    {
+      "sheet": 6,
+      "slot": 16,
+      "report": "kia",
+      "page": 13
+    },
+    {
+      "sheet": 7,
+      "slot": 1,
+      "report": "kia",
+      "page": 14
+    },
+    {
+      "sheet": 7,
+      "slot": 2,
+      "report": "kia",
+      "page": 15
+    },
+    {
+      "sheet": 7,
+      "slot": 3,
+      "report": "kia",
+      "page": 16
+    },
+    {
+      "sheet": 7,
+      "slot": 4,
+      "report": "tesla",
+      "page": 1
+    },
+    {
+      "sheet": 7,
+      "slot": 5,
+      "report": "tesla",
+      "page": 2
+    },
+    {
+      "sheet": 7,
+      "slot": 6,
+      "report": "tesla",
+      "page": 3
+    },
+    {
+      "sheet": 7,
+      "slot": 7,
+      "report": "tesla",
+      "page": 4
+    },
+    {
+      "sheet": 7,
+      "slot": 8,
+      "report": "tesla",
+      "page": 5
+    },
+    {
+      "sheet": 7,
+      "slot": 9,
+      "report": "tesla",
+      "page": 6
+    },
+    {
+      "sheet": 7,
+      "slot": 10,
+      "report": "tesla",
+      "page": 7
+    },
+    {
+      "sheet": 7,
+      "slot": 11,
+      "report": "tesla",
+      "page": 8
+    },
+    {
+      "sheet": 7,
+      "slot": 12,
+      "report": "tesla",
+      "page": 9
+    },
+    {
+      "sheet": 7,
+      "slot": 13,
+      "report": "tesla",
+      "page": 10
+    },
+    {
+      "sheet": 7,
+      "slot": 14,
+      "report": "tesla",
+      "page": 11
+    },
+    {
+      "sheet": 7,
+      "slot": 15,
+      "report": "tesla",
+      "page": 12
+    },
+    {
+      "sheet": 7,
+      "slot": 16,
+      "report": "tesla",
+      "page": 13
+    },
+    {
+      "sheet": 8,
+      "slot": 1,
+      "report": "tesla",
+      "page": 14
+    },
+    {
+      "sheet": 8,
+      "slot": 2,
+      "report": "tesla",
+      "page": 15
+    },
+    {
+      "sheet": 8,
+      "slot": 3,
+      "report": "tesla",
+      "page": 16
+    },
+    {
+      "sheet": 8,
+      "slot": 4,
+      "report": "alphabet",
+      "page": 1
+    },
+    {
+      "sheet": 8,
+      "slot": 5,
+      "report": "alphabet",
+      "page": 2
+    },
+    {
+      "sheet": 8,
+      "slot": 6,
+      "report": "alphabet",
+      "page": 3
+    },
+    {
+      "sheet": 8,
+      "slot": 7,
+      "report": "alphabet",
+      "page": 4
+    },
+    {
+      "sheet": 8,
+      "slot": 8,
+      "report": "alphabet",
+      "page": 5
+    },
+    {
+      "sheet": 8,
+      "slot": 9,
+      "report": "alphabet",
+      "page": 6
+    },
+    {
+      "sheet": 8,
+      "slot": 10,
+      "report": "alphabet",
+      "page": 7
+    },
+    {
+      "sheet": 8,
+      "slot": 11,
+      "report": "alphabet",
+      "page": 8
+    },
+    {
+      "sheet": 8,
+      "slot": 12,
+      "report": "alphabet",
+      "page": 9
+    },
+    {
+      "sheet": 8,
+      "slot": 13,
+      "report": "alphabet",
+      "page": 10
+    },
+    {
+      "sheet": 8,
+      "slot": 14,
+      "report": "alphabet",
+      "page": 11
+    },
+    {
+      "sheet": 8,
+      "slot": 15,
+      "report": "alphabet",
+      "page": 12
+    },
+    {
+      "sheet": 8,
+      "slot": 16,
+      "report": "alphabet",
+      "page": 13
+    },
+    {
+      "sheet": 9,
+      "slot": 1,
+      "report": "alphabet",
+      "page": 14
+    },
+    {
+      "sheet": 9,
+      "slot": 2,
+      "report": "alphabet",
+      "page": 15
+    },
+    {
+      "sheet": 9,
+      "slot": 3,
+      "report": "alphabet",
+      "page": 16
+    },
+    {
+      "sheet": 9,
+      "slot": 4,
+      "report": "alphabet",
+      "page": 17
+    },
+    {
+      "sheet": 9,
+      "slot": 5,
+      "report": "alphabet",
+      "page": 18
+    },
+    {
+      "sheet": 9,
+      "slot": 6,
+      "report": "alphabet",
+      "page": 19
+    },
+    {
+      "sheet": 9,
+      "slot": 7,
+      "report": "meta",
+      "page": 1
+    },
+    {
+      "sheet": 9,
+      "slot": 8,
+      "report": "meta",
+      "page": 2
+    },
+    {
+      "sheet": 9,
+      "slot": 9,
+      "report": "meta",
+      "page": 3
+    },
+    {
+      "sheet": 9,
+      "slot": 10,
+      "report": "meta",
+      "page": 4
+    },
+    {
+      "sheet": 9,
+      "slot": 11,
+      "report": "meta",
+      "page": 5
+    },
+    {
+      "sheet": 9,
+      "slot": 12,
+      "report": "meta",
+      "page": 6
+    },
+    {
+      "sheet": 9,
+      "slot": 13,
+      "report": "meta",
+      "page": 7
+    },
+    {
+      "sheet": 9,
+      "slot": 14,
+      "report": "meta",
+      "page": 8
+    },
+    {
+      "sheet": 9,
+      "slot": 15,
+      "report": "meta",
+      "page": 9
+    },
+    {
+      "sheet": 9,
+      "slot": 16,
+      "report": "meta",
+      "page": 10
+    },
+    {
+      "sheet": 10,
+      "slot": 1,
+      "report": "meta",
+      "page": 11
+    },
+    {
+      "sheet": 10,
+      "slot": 2,
+      "report": "meta",
+      "page": 12
+    },
+    {
+      "sheet": 10,
+      "slot": 3,
+      "report": "meta",
+      "page": 13
+    },
+    {
+      "sheet": 10,
+      "slot": 4,
+      "report": "meta",
+      "page": 14
+    },
+    {
+      "sheet": 10,
+      "slot": 5,
+      "report": "meta",
+      "page": 15
+    },
+    {
+      "sheet": 10,
+      "slot": 6,
+      "report": "meta",
+      "page": 16
+    },
+    {
+      "sheet": 10,
+      "slot": 7,
+      "report": "comparison-advertising",
+      "page": 1
+    },
+    {
+      "sheet": 10,
+      "slot": 8,
+      "report": "comparison-advertising",
+      "page": 2
+    },
+    {
+      "sheet": 10,
+      "slot": 9,
+      "report": "comparison-advertising",
+      "page": 3
+    },
+    {
+      "sheet": 10,
+      "slot": 10,
+      "report": "comparison-advertising",
+      "page": 4
+    },
+    {
+      "sheet": 10,
+      "slot": 11,
+      "report": "comparison-auto",
+      "page": 1
+    },
+    {
+      "sheet": 10,
+      "slot": 12,
+      "report": "comparison-auto",
+      "page": 2
+    },
+    {
+      "sheet": 10,
+      "slot": 13,
+      "report": "comparison-auto",
+      "page": 3
+    },
+    {
+      "sheet": 10,
+      "slot": 14,
+      "report": "comparison-auto",
+      "page": 4
+    },
+    {
+      "sheet": 10,
+      "slot": 15,
+      "report": "comparison-cloud",
+      "page": 1
+    },
+    {
+      "sheet": 10,
+      "slot": 16,
+      "report": "comparison-cloud",
+      "page": 2
+    },
+    {
+      "sheet": 11,
+      "slot": 1,
+      "report": "comparison-cloud",
+      "page": 3
+    },
+    {
+      "sheet": 11,
+      "slot": 2,
+      "report": "comparison-cloud",
+      "page": 4
+    },
+    {
+      "sheet": 11,
+      "slot": 3,
+      "report": "comparison-equipment",
+      "page": 1
+    },
+    {
+      "sheet": 11,
+      "slot": 4,
+      "report": "comparison-equipment",
+      "page": 2
+    },
+    {
+      "sheet": 11,
+      "slot": 5,
+      "report": "intel",
+      "page": 1
+    },
+    {
+      "sheet": 11,
+      "slot": 6,
+      "report": "intel",
+      "page": 2
+    },
+    {
+      "sheet": 11,
+      "slot": 7,
+      "report": "intel",
+      "page": 3
+    },
+    {
+      "sheet": 11,
+      "slot": 8,
+      "report": "intel",
+      "page": 4
+    },
+    {
+      "sheet": 11,
+      "slot": 9,
+      "report": "intel",
+      "page": 5
+    },
+    {
+      "sheet": 11,
+      "slot": 10,
+      "report": "intel",
+      "page": 6
+    },
+    {
+      "sheet": 11,
+      "slot": 11,
+      "report": "intel",
+      "page": 7
+    },
+    {
+      "sheet": 11,
+      "slot": 12,
+      "report": "intel",
+      "page": 8
+    },
+    {
+      "sheet": 11,
+      "slot": 13,
+      "report": "intel",
+      "page": 9
+    },
+    {
+      "sheet": 11,
+      "slot": 14,
+      "report": "intel",
+      "page": 10
+    },
+    {
+      "sheet": 11,
+      "slot": 15,
+      "report": "intel",
+      "page": 11
+    },
+    {
+      "sheet": 11,
+      "slot": 16,
+      "report": "intel",
+      "page": 12
+    },
+    {
+      "sheet": 12,
+      "slot": 1,
+      "report": "intel",
+      "page": 13
+    },
+    {
+      "sheet": 12,
+      "slot": 2,
+      "report": "intel",
+      "page": 14
+    },
+    {
+      "sheet": 12,
+      "slot": 3,
+      "report": "qualcomm",
+      "page": 1
+    },
+    {
+      "sheet": 12,
+      "slot": 4,
+      "report": "qualcomm",
+      "page": 2
+    },
+    {
+      "sheet": 12,
+      "slot": 5,
+      "report": "qualcomm",
+      "page": 3
+    },
+    {
+      "sheet": 12,
+      "slot": 6,
+      "report": "qualcomm",
+      "page": 4
+    },
+    {
+      "sheet": 12,
+      "slot": 7,
+      "report": "qualcomm",
+      "page": 5
+    },
+    {
+      "sheet": 12,
+      "slot": 8,
+      "report": "qualcomm",
+      "page": 6
+    },
+    {
+      "sheet": 12,
+      "slot": 9,
+      "report": "qualcomm",
+      "page": 7
+    },
+    {
+      "sheet": 12,
+      "slot": 10,
+      "report": "qualcomm",
+      "page": 8
+    },
+    {
+      "sheet": 12,
+      "slot": 11,
+      "report": "qualcomm",
+      "page": 9
+    },
+    {
+      "sheet": 12,
+      "slot": 12,
+      "report": "qualcomm",
+      "page": 10
+    },
+    {
+      "sheet": 12,
+      "slot": 13,
+      "report": "qualcomm",
+      "page": 11
+    },
+    {
+      "sheet": 12,
+      "slot": 14,
+      "report": "qualcomm",
+      "page": 12
+    },
+    {
+      "sheet": 12,
+      "slot": 15,
+      "report": "qualcomm",
+      "page": 13
+    },
+    {
+      "sheet": 12,
+      "slot": 16,
+      "report": "qualcomm",
+      "page": 14
+    },
+    {
+      "sheet": 13,
+      "slot": 1,
+      "report": "qualcomm",
+      "page": 15
+    },
+    {
+      "sheet": 13,
+      "slot": 2,
+      "report": "oracle",
+      "page": 1
+    },
+    {
+      "sheet": 13,
+      "slot": 3,
+      "report": "oracle",
+      "page": 2
+    },
+    {
+      "sheet": 13,
+      "slot": 4,
+      "report": "oracle",
+      "page": 3
+    },
+    {
+      "sheet": 13,
+      "slot": 5,
+      "report": "oracle",
+      "page": 4
+    },
+    {
+      "sheet": 13,
+      "slot": 6,
+      "report": "oracle",
+      "page": 5
+    },
+    {
+      "sheet": 13,
+      "slot": 7,
+      "report": "oracle",
+      "page": 6
+    },
+    {
+      "sheet": 13,
+      "slot": 8,
+      "report": "oracle",
+      "page": 7
+    },
+    {
+      "sheet": 13,
+      "slot": 9,
+      "report": "oracle",
+      "page": 8
+    },
+    {
+      "sheet": 13,
+      "slot": 10,
+      "report": "oracle",
+      "page": 9
+    },
+    {
+      "sheet": 13,
+      "slot": 11,
+      "report": "oracle",
+      "page": 10
+    },
+    {
+      "sheet": 13,
+      "slot": 12,
+      "report": "oracle",
+      "page": 11
+    },
+    {
+      "sheet": 13,
+      "slot": 13,
+      "report": "oracle",
+      "page": 12
+    },
+    {
+      "sheet": 13,
+      "slot": 14,
+      "report": "kt",
+      "page": 1
+    },
+    {
+      "sheet": 13,
+      "slot": 15,
+      "report": "kt",
+      "page": 2
+    },
+    {
+      "sheet": 13,
+      "slot": 16,
+      "report": "kt",
+      "page": 3
+    },
+    {
+      "sheet": 14,
+      "slot": 1,
+      "report": "kt",
+      "page": 4
+    },
+    {
+      "sheet": 14,
+      "slot": 2,
+      "report": "kt",
+      "page": 5
+    },
+    {
+      "sheet": 14,
+      "slot": 3,
+      "report": "kt",
+      "page": 6
+    },
+    {
+      "sheet": 14,
+      "slot": 4,
+      "report": "kt",
+      "page": 7
+    },
+    {
+      "sheet": 14,
+      "slot": 5,
+      "report": "kt",
+      "page": 8
+    },
+    {
+      "sheet": 14,
+      "slot": 6,
+      "report": "kt",
+      "page": 9
+    },
+    {
+      "sheet": 14,
+      "slot": 7,
+      "report": "kt",
+      "page": 10
+    },
+    {
+      "sheet": 14,
+      "slot": 8,
+      "report": "kt",
+      "page": 11
+    },
+    {
+      "sheet": 14,
+      "slot": 9,
+      "report": "kt",
+      "page": 12
+    },
+    {
+      "sheet": 14,
+      "slot": 10,
+      "report": "kt",
+      "page": 13
+    },
+    {
+      "sheet": 14,
+      "slot": 11,
+      "report": "netflix",
+      "page": 1
+    },
+    {
+      "sheet": 14,
+      "slot": 12,
+      "report": "netflix",
+      "page": 2
+    },
+    {
+      "sheet": 14,
+      "slot": 13,
+      "report": "netflix",
+      "page": 3
+    },
+    {
+      "sheet": 14,
+      "slot": 14,
+      "report": "netflix",
+      "page": 4
+    },
+    {
+      "sheet": 14,
+      "slot": 15,
+      "report": "netflix",
+      "page": 5
+    },
+    {
+      "sheet": 14,
+      "slot": 16,
+      "report": "netflix",
+      "page": 6
+    },
+    {
+      "sheet": 15,
+      "slot": 1,
+      "report": "netflix",
+      "page": 7
+    },
+    {
+      "sheet": 15,
+      "slot": 2,
+      "report": "netflix",
+      "page": 8
+    },
+    {
+      "sheet": 15,
+      "slot": 3,
+      "report": "netflix",
+      "page": 9
+    },
+    {
+      "sheet": 15,
+      "slot": 4,
+      "report": "netflix",
+      "page": 10
+    },
+    {
+      "sheet": 15,
+      "slot": 5,
+      "report": "netflix",
+      "page": 11
+    },
+    {
+      "sheet": 15,
+      "slot": 6,
+      "report": "netflix",
+      "page": 12
+    },
+    {
+      "sheet": 15,
+      "slot": 7,
+      "report": "netflix",
+      "page": 13
+    },
+    {
+      "sheet": 15,
+      "slot": 8,
+      "report": "comparison-enterprise",
+      "page": 1
+    },
+    {
+      "sheet": 15,
+      "slot": 9,
+      "report": "comparison-enterprise",
+      "page": 2
+    },
+    {
+      "sheet": 15,
+      "slot": 10,
+      "report": "hyundai",
+      "page": 1
+    },
+    {
+      "sheet": 15,
+      "slot": 11,
+      "report": "hyundai",
+      "page": 2
+    },
+    {
+      "sheet": 15,
+      "slot": 12,
+      "report": "hyundai",
+      "page": 3
+    },
+    {
+      "sheet": 15,
+      "slot": 13,
+      "report": "hyundai",
+      "page": 4
+    },
+    {
+      "sheet": 15,
+      "slot": 14,
+      "report": "hyundai",
+      "page": 5
+    },
+    {
+      "sheet": 15,
+      "slot": 15,
+      "report": "hyundai",
+      "page": 6
+    },
+    {
+      "sheet": 15,
+      "slot": 16,
+      "report": "hyundai",
+      "page": 7
+    },
+    {
+      "sheet": 16,
+      "slot": 1,
+      "report": "hyundai",
+      "page": 8
+    },
+    {
+      "sheet": 16,
+      "slot": 2,
+      "report": "hyundai",
+      "page": 9
+    },
+    {
+      "sheet": 16,
+      "slot": 3,
+      "report": "hyundai",
+      "page": 10
+    },
+    {
+      "sheet": 16,
+      "slot": 4,
+      "report": "hyundai",
+      "page": 11
+    },
+    {
+      "sheet": 16,
+      "slot": 5,
+      "report": "hyundai",
+      "page": 12
+    },
+    {
+      "sheet": 16,
+      "slot": 6,
+      "report": "hyundai",
+      "page": 13
+    },
+    {
+      "sheet": 16,
+      "slot": 7,
+      "report": "hyundai",
+      "page": 14
+    },
+    {
+      "sheet": 16,
+      "slot": 8,
+      "report": "hyundai",
+      "page": 15
+    },
+    {
+      "sheet": 16,
+      "slot": 9,
+      "report": "hyundai",
+      "page": 16
+    },
+    {
+      "sheet": 16,
+      "slot": 10,
+      "report": "samsung-biologics",
+      "page": 1
+    },
+    {
+      "sheet": 16,
+      "slot": 11,
+      "report": "samsung-biologics",
+      "page": 2
+    },
+    {
+      "sheet": 16,
+      "slot": 12,
+      "report": "samsung-biologics",
+      "page": 3
+    },
+    {
+      "sheet": 16,
+      "slot": 13,
+      "report": "samsung-biologics",
+      "page": 4
+    },
+    {
+      "sheet": 16,
+      "slot": 14,
+      "report": "samsung-biologics",
+      "page": 5
+    },
+    {
+      "sheet": 16,
+      "slot": 15,
+      "report": "samsung-biologics",
+      "page": 6
+    },
+    {
+      "sheet": 16,
+      "slot": 16,
+      "report": "samsung-biologics",
+      "page": 7
+    },
+    {
+      "sheet": 17,
+      "slot": 1,
+      "report": "samsung-biologics",
+      "page": 8
+    },
+    {
+      "sheet": 17,
+      "slot": 2,
+      "report": "samsung-biologics",
+      "page": 9
+    },
+    {
+      "sheet": 17,
+      "slot": 3,
+      "report": "samsung-biologics",
+      "page": 10
+    },
+    {
+      "sheet": 17,
+      "slot": 4,
+      "report": "samsung-biologics",
+      "page": 11
+    },
+    {
+      "sheet": 17,
+      "slot": 5,
+      "report": "samsung-biologics",
+      "page": 12
+    },
+    {
+      "sheet": 17,
+      "slot": 6,
+      "report": "samsung-biologics",
+      "page": 13
+    },
+    {
+      "sheet": 17,
+      "slot": 7,
+      "report": "samsung-biologics",
+      "page": 14
+    },
+    {
+      "sheet": 17,
+      "slot": 8,
+      "report": "samsung-biologics",
+      "page": 15
+    },
+    {
+      "sheet": 17,
+      "slot": 9,
+      "report": "samsung-biologics",
+      "page": 16
+    },
+    {
+      "sheet": 17,
+      "slot": 10,
+      "report": "research-us",
+      "page": 1
+    },
+    {
+      "sheet": 17,
+      "slot": 11,
+      "report": "research-us",
+      "page": 2
+    },
+    {
+      "sheet": 17,
+      "slot": 12,
+      "report": "research-us",
+      "page": 3
+    },
+    {
+      "sheet": 17,
+      "slot": 13,
+      "report": "research-us",
+      "page": 4
+    },
+    {
+      "sheet": 17,
+      "slot": 14,
+      "report": "research-kr",
+      "page": 1
+    },
+    {
+      "sheet": 17,
+      "slot": 15,
+      "report": "research-kr",
+      "page": 2
+    },
+    {
+      "sheet": 17,
+      "slot": 16,
+      "report": "research-kr",
+      "page": 3
+    },
+    {
+      "sheet": 18,
+      "slot": 1,
+      "report": "research-kr",
+      "page": 4
+    },
+    {
+      "sheet": 18,
+      "slot": 2,
+      "report": "conditions",
+      "page": 1
+    },
+    {
+      "sheet": 18,
+      "slot": 3,
+      "report": "conditions",
+      "page": 2
+    },
+    {
+      "sheet": 18,
+      "slot": 4,
+      "report": "conditions",
+      "page": 3
+    },
+    {
+      "sheet": 18,
+      "slot": 5,
+      "report": "conditions",
+      "page": 4
+    },
+    {
+      "sheet": 18,
+      "slot": 6,
+      "report": "conditions",
+      "page": 5
+    },
+    {
+      "sheet": 18,
+      "slot": 7,
+      "report": "conditions",
+      "page": 6
+    },
+    {
+      "sheet": 18,
+      "slot": 8,
+      "report": "conditions",
+      "page": 7
+    },
+    {
+      "sheet": 18,
+      "slot": 9,
+      "report": "conditions",
+      "page": 8
+    },
+    {
+      "sheet": 18,
+      "slot": 10,
+      "report": "conditions",
+      "page": 9
+    },
+    {
+      "sheet": 18,
+      "slot": 11,
+      "report": "conditions",
+      "page": 10
+    },
+    {
+      "sheet": 18,
+      "slot": 12,
+      "report": "conditions",
+      "page": 11
+    }
+  ]
+}

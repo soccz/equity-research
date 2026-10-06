@@ -1,0 +1,6 @@
+Error: read ECONNRESET
+    at Pipe.onStreamRead (node:internal/stream_base_commons:216:20) {
+  errno: -104,
+  code: 'ECONNRESET',
+  syscall: 'read'
+}

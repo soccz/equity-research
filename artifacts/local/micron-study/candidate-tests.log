@@ -1,0 +1,12 @@
+test_all_periods_and_recast_segments_reconcile (__main__.MicronOperatingTests.test_all_periods_and_recast_segments_reconcile) ... ok
+test_changed_sources_cannot_inherit_the_review (__main__.MicronOperatingTests.test_changed_sources_cannot_inherit_the_review) ... ok
+test_historical_incentives_are_not_silently_netted_from_future_capex (__main__.MicronOperatingTests.test_historical_incentives_are_not_silently_netted_from_future_capex) ... ok
+test_missing_current_lease_and_ppe_remain_missing (__main__.MicronOperatingTests.test_missing_current_lease_and_ppe_remain_missing) ... ok
+test_noncurrent_tax_timing_does_not_become_customer_funding (__main__.MicronOperatingTests.test_noncurrent_tax_timing_does_not_become_customer_funding) ... ok
+test_opposite_cash_errors_cannot_cancel_across_periods (__main__.MicronOperatingTests.test_opposite_cash_errors_cannot_cancel_across_periods) ... ok
+test_segment_margin_stress_has_a_separate_tax_effect (__main__.MicronOperatingTests.test_segment_margin_stress_has_a_separate_tax_effect) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.539s
+
+OK

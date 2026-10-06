@@ -1,0 +1,15 @@
+{
+  "file": "data/sources/filing-0001730168-26-000080-cc0b495acb2d4f2b.xbrl",
+  "sha256": "cc0b495acb2d4f2b3b425baf26e4cb1073eda573b4892b4d4e769d2099ea55ef",
+  "url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016826000080/avgo-20260802_htm.xml",
+  "primaryUrl": "https://www.sec.gov/Archives/edgar/data/1730168/000173016826000080/avgo-20260802.htm",
+  "provider": "SEC",
+  "accession": "0001730168-26-000080",
+  "cik": 1730168,
+  "retrievedAt": "2026-09-30T11:15:57.991659+00:00",
+  "indexSource": {
+    "file": "data/sources/filing-0001730168-26-000080-index-9c3834a58dc40855.html",
+    "sha256": "9c3834a58dc408553952c89bae8b6a2e8c4184c36c4a578c6fccb169cfe1333f",
+    "url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016826000080/0001730168-26-000080-index.html"
+  }
+}

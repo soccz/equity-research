@@ -1,0 +1,44 @@
+{
+  "id": "ai-customer-financing",
+  "title": "AI 고객의 수요와 이를 뒷받침하는 계약 부담을 함께 비교한다",
+  "shared": "NVIDIA와 Broadcom은 AI 인프라에 공급하지만 제품 구성·소프트웨어 인식·고객 금융의 형태가 다르다.",
+  "sides": [
+    {
+      "company": "NVDA",
+      "name": "NVIDIA",
+      "market": "US",
+      "accession": "0001045810-26-000075",
+      "corpusHash": "c6079c3c96a23d82426b958715d0455824faa0be9d3a58ea18004d093c7b25fe",
+      "passageIds": [
+        "884ebdb57d42e10e85df",
+        "96a3b1d2e55fa6c5ecfd",
+        "0db0ccce0cb9594f8a88",
+        "e5f922166ccd902a1991",
+        "db16a6d8d5ec712f3a56"
+      ],
+      "reading": "파트너가 자사 인프라를 구매하고 NVIDIA는 클라우드 사용을 약정한다. 제3자 사용·자체 연구 사용에 따라 의무가 줄며 일부 조건에는 수익 배분이 있다. 이 총액과 연구용 클라우드 계약, 선수금·재고 약정은 시점·조건이 다르다."
+    },
+    {
+      "company": "AVGO",
+      "name": "Broadcom Inc.",
+      "market": "US",
+      "accession": "0001730168-26-000080",
+      "corpusHash": "965d893de9b66ba32400a567a25fe931201430ddcbca16b78ff975148719254e",
+      "passageIds": [
+        "4ddfc0e9e61913df446a",
+        "8fd33d3f8d1935a1a9b5",
+        "1bc81cf8e833fdd5331b",
+        "de1eb61bb5255b2c6a6b",
+        "3cfe5fa623cddb482a2b",
+        "b8adaceafe2970d66e0d",
+        "9b9df3bed29f0c8ffdcb"
+      ],
+      "reading": "고객의 랙 리스에 대한 Backstop과 고객이 발행할 수 있는 전환어음을 구분한다. 결산일 지급·발행은 영이지만 모든 랙 배치 후의 최대노출은 남는다. RPO에는 범위 제외가 있고, 소프트웨어의 해지권 제거와 채권 매각은 매출·현금 해석을 바꾼다."
+    }
+  ],
+  "tradeoff": "NVIDIA 클라우드 서비스 약정과 Broadcom 고객 리스 Backstop은 발생 조건과 현금 분류가 다르다. 두 계약 총액을 합치거나 같은 연간 비용으로 바꾸지 않는다. 각각 컴퓨트·네트워킹/그래픽스, 반도체/소프트웨어의 부문 손익을 미배분 비용과 대사하며 GPU와 XPU 단독 이익을 만들어 비교하지 않는다.",
+  "discriminator": "NVIDIA 파트너의 제3자 판매로 줄어드는 미사용 클라우드 의무, Broadcom의 랙 배치별 보증잔액·고객 지급·회수자산 조건을 확인한다. 주문과 RPO의 취소 가능성·수익 인식, 채권 만기와 비소구 매각, 고객 집중을 함께 추적한다.",
+  "priceImplication": "반복 사업 현금은 세금·미배분 비용·재투자와 연결한다. NVIDIA 투자증권 이익을 반복 현금에 넣지 않으며 Broadcom 해지권 제거의 선인식도 곧바로 현금 성장으로 읽지 않는다. Broadcom Backstop은 최대액 일부를 1·3·5년차에 한 번 지급하는 별도 스트레스이며 지급확률이나 확정 손실이 아니다. 서로 다른 회계기간과 계약 범위로 자동 상대 선호를 부여하지 않는다.",
+  "authorship": "개발 중 원문 대조로 작성한 비교 연구 초안",
+  "preference": "상대 선호 미확정"
+}

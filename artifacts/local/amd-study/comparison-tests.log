@@ -1,0 +1,9 @@
+test_currency_scale_does_not_create_a_relative_margin_advantage (test_operating_comparison.OperatingComparisonTests.test_currency_scale_does_not_create_a_relative_margin_advantage) ... ok
+test_negative_cash_paths_are_not_zero_valuations_or_automatic_opinions (test_operating_comparison.OperatingComparisonTests.test_negative_cash_paths_are_not_zero_valuations_or_automatic_opinions) ... ok
+test_only_reconciled_company_models_support_a_paired_cash_comparison (test_operating_comparison.OperatingComparisonTests.test_only_reconciled_company_models_support_a_paired_cash_comparison) ... ok
+test_price_change_changes_the_contract_and_missing_model_stays_missing (test_operating_comparison.OperatingComparisonTests.test_price_change_changes_the_contract_and_missing_model_stays_missing) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 18.788s
+
+OK

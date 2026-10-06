@@ -1,0 +1,17 @@
+    await go('company/012330');
+    await expect('Mobis preserves two gross-sales segments and the disclosed internal profit removal', 'document.querySelectorAll(".operating-segments tbody tr").length===2 && document.querySelector(".operating-consolidation-evidence").textContent.includes("공시 내부이익 제거") && !document.querySelector(".operating-consolidation-evidence").textContent.includes("미표시 기타") && window.EQUITY_SNAPSHOT.snapshot.companies.find(c=>c.id==="012330").operatingModel.bridge.reportedCfo===4132208000000');
+    await expect('Mobis warranty total usage, cash adjustment gap and reimbursement balances remain separate', 'document.querySelectorAll(".operating-warranty-cash-evidence tbody tr").length===6 && document.querySelector(".operating-warranty-cash-evidence").textContent.includes("0.322") && document.querySelector(".operating-warranty-cash-evidence").textContent.includes("0.582") && document.querySelector(".operating-warranty-cash-evidence").textContent.includes("자료 미확인") && !!document.querySelector(".operating-security-hold")');
+    const mobisBefore=await js('document.querySelector("#operating-result").textContent');
+    await js('{const e=document.querySelector("[data-operating=eliminationEnd]");e.value=25;e.dispatchEvent(new Event("input",{bubbles:true}))}');
+    await click('#operating-warranty-stress');
+    assert.notEqual(await js('document.querySelector("#operating-result").textContent'),mobisBefore);checks.push('Mobis warranty burden changes cash while preserving the edited internal-sales assumption');
+    await click('#operating-save');await js('location.reload()');await ready();
+    await expect('Mobis exact consolidation assumption survives reload while the preferred-share hold remains', 'Number(document.querySelector("[data-operating=eliminationEnd]").dataset.exact)===.25 && document.querySelector("#operating-message").textContent.includes("복원") && !!document.querySelector(".operating-security-hold")');
+    await js('localStorage.removeItem("equity-operating-path-v1-012330")');await click('#operating-reset');
+    await viewport(390);await expect('Mobis warranty cash reconciliation fits mobile', 'document.documentElement.scrollWidth<=innerWidth+1');await screenshotRegion('mobile-mobis-operating.png','.operating-model');await viewport(1440);await pdf('mobis.pdf');
+    await go('compare/auto-supply-service');
+    await expect('Automotive value-chain comparison preserves direct-customer exposure and separate warranty scopes', 'document.querySelectorAll(".pair-input-side fieldset").length===3 && document.querySelector(".pair-summary").textContent.includes("사업 실적 기간 일치") && document.querySelector(".source-pair").textContent.includes("가치사슬") && document.querySelector(".pair-inputs").textContent.includes("현금표 보증 변동 대용") && !!document.querySelector(".pair-security-hold")');
+    await click('#pair-use-reading');await click('#pair-save');await js('location.reload()');await ready();
+    await expect('Value-chain research reopens without treating the two companies as independent demand samples', 'document.querySelector("#pair-message").textContent.includes("복원") && document.querySelector("#pair-print-note").textContent.includes("현금표") && document.querySelector(".source-pair").textContent.includes("독립적인 두 수요")');
+    await viewport(390);await expect('Value-chain comparison fits mobile', 'document.documentElement.scrollWidth<=innerWidth+1');await viewport(1440);await pdf('comparison-auto-supply.pdf');
+    await js('localStorage.removeItem("equity-paired-research-v1")');

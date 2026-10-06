@@ -1,0 +1,67 @@
+{
+  "snapshotHash": "c907911a8c2948e321be8cafc879f74bc4926807547e50f88c8160056706c123",
+  "startedAt": "2026-09-30T12:27:18.111056+00:00",
+  "records": [
+    {
+      "company": "035420",
+      "status": "archived",
+      "source": {
+        "provider": "OpenDART",
+        "file": "data/sources/shares-035420-20260814002266-865b84d226b6fc35.json",
+        "sha256": "865b84d226b6fc35454d23d14a38f8f02f76f6fa2e08470d3c37e15d4736870f",
+        "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002266",
+        "api": "https://opendart.fss.or.kr/api/stockTotqySttus.json",
+        "guide": "https://opendart.fss.or.kr/guide/detail.do?apiGrpCd=DS002&apiId=2020002",
+        "accession": "20260814002266",
+        "company": "035420",
+        "params": {
+          "corp_code": "00266961",
+          "bsns_year": "2026",
+          "reprt_code": "11012"
+        },
+        "retrievedAt": "2026-09-30T12:27:18.442367+00:00"
+      }
+    },
+    {
+      "company": "034020",
+      "status": "archived",
+      "source": {
+        "provider": "OpenDART",
+        "file": "data/sources/shares-034020-20260814003782-d5e6a58244f2b45d.json",
+        "sha256": "d5e6a58244f2b45d6e09775b03fedd1382d992f8187f533d8fd0d1c232b4a201",
+        "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003782",
+        "api": "https://opendart.fss.or.kr/api/stockTotqySttus.json",
+        "guide": "https://opendart.fss.or.kr/guide/detail.do?apiGrpCd=DS002&apiId=2020002",
+        "accession": "20260814003782",
+        "company": "034020",
+        "params": {
+          "corp_code": "00159616",
+          "bsns_year": "2026",
+          "reprt_code": "11012"
+        },
+        "retrievedAt": "2026-09-30T12:27:18.750600+00:00"
+      }
+    },
+    {
+      "company": "267260",
+      "status": "archived",
+      "source": {
+        "provider": "OpenDART",
+        "file": "data/sources/shares-267260-20260814003228-0b2ddc24724b15f9.json",
+        "sha256": "0b2ddc24724b15f9f4484dc27abe966b9386dfb3426aff51731e36d8f625b78a",
+        "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003228",
+        "api": "https://opendart.fss.or.kr/api/stockTotqySttus.json",
+        "guide": "https://opendart.fss.or.kr/guide/detail.do?apiGrpCd=DS002&apiId=2020002",
+        "accession": "20260814003228",
+        "company": "267260",
+        "params": {
+          "corp_code": "01205851",
+          "bsns_year": "2026",
+          "reprt_code": "11012"
+        },
+        "retrievedAt": "2026-09-30T12:27:19.050161+00:00"
+      }
+    }
+  ],
+  "finishedAt": "2026-09-30T12:27:19.050781+00:00"
+}

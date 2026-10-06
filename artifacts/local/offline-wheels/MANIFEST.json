@@ -1,0 +1,118 @@
+{
+  "platform": "Linux-5.15.0-186-generic-x86_64-with-glibc2.35",
+  "python": "3.12.9",
+  "files": [
+    {
+      "name": "beautifulsoup4",
+      "version": "4.14.3",
+      "file": "beautifulsoup4-4.14.3-py3-none-any.whl",
+      "sha256": "0918bfe44902e6ad8d57732ba310582e98da931428d231a5ecb9e7c703a735bb",
+      "size": 107721
+    },
+    {
+      "name": "contourpy",
+      "version": "1.3.3",
+      "file": "contourpy-1.3.3-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+      "sha256": "4d00e655fcef08aba35ec9610536bfe90267d7ab5ba944f7032549c55a146da1",
+      "size": 362601
+    },
+    {
+      "name": "cycler",
+      "version": "0.12.1",
+      "file": "cycler-0.12.1-py3-none-any.whl",
+      "sha256": "85cef7cff222d8644161529808465972e51340599459b8ac3ccbac5a854e0d30",
+      "size": 8321
+    },
+    {
+      "name": "fonttools",
+      "version": "4.66.1",
+      "file": "fonttools-4.66.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+      "sha256": "7b8ff9e0edbcee2fbf7dff0c41b9041c1901c26acf64e23adb67495012df11de",
+      "size": 5397326
+    },
+    {
+      "name": "kiwisolver",
+      "version": "1.5.1",
+      "file": "kiwisolver-1.5.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+      "sha256": "34633ecf50d16187ab8e5528b7a2530f2feb4e23f300db4672538b51cfc5cd38",
+      "size": 1477929
+    },
+    {
+      "name": "lxml",
+      "version": "6.0.2",
+      "file": "lxml-6.0.2-cp312-cp312-manylinux_2_26_x86_64.manylinux_2_28_x86_64.whl",
+      "sha256": "90a345bbeaf9d0587a3aaffb7006aa39ccb6ff0e96a57286c0cb2fd1520ea192",
+      "size": 5253958
+    },
+    {
+      "name": "matplotlib",
+      "version": "3.10.8",
+      "file": "matplotlib-3.10.8-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+      "sha256": "3ab4aabc72de4ff77b3ec33a6d78a68227bf1123465887f9905ba79184a1cc04",
+      "size": 8716944
+    },
+    {
+      "name": "numpy",
+      "version": "1.26.4",
+      "file": "numpy-1.26.4-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "sha256": "675d61ffbfa78604709862923189bad94014bef562cc35cf61d3a07bba02a7ed",
+      "size": 17950613
+    },
+    {
+      "name": "packaging",
+      "version": "26.3",
+      "file": "packaging-26.3-py3-none-any.whl",
+      "sha256": "d7193f7c8e4e93f444fde0262bf90af30e16fa0ad0ad44cb553c87339b23cd1c",
+      "size": 129956
+    },
+    {
+      "name": "pillow",
+      "version": "12.3.0",
+      "file": "pillow-12.3.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+      "sha256": "78cb2c6865a35ab8ff8b75fd122f6033b92a62c82801110e48ddd6c936a45d91",
+      "size": 6940830
+    },
+    {
+      "name": "PyMuPDF",
+      "version": "1.27.2.3",
+      "file": "pymupdf-1.27.2.3-cp310-abi3-manylinux_2_28_x86_64.whl",
+      "sha256": "857842b4888827bd6155a1131341b2822a7ebe9a8c15a975fd7d490d7a64a30c",
+      "size": 24963198
+    },
+    {
+      "name": "pyparsing",
+      "version": "3.3.3",
+      "file": "pyparsing-3.3.3-py3-none-any.whl",
+      "sha256": "ece8c00a69cf01b45d0b1dedabb469c90d8caf996d4fda40f147627a122849a4",
+      "size": 126420
+    },
+    {
+      "name": "python-dateutil",
+      "version": "2.9.0.post0",
+      "file": "python_dateutil-2.9.0.post0-py2.py3-none-any.whl",
+      "sha256": "a8b2bc7bffae282281c8140a97d3aa9c14da0b136dfe83f850eea9a5f7470427",
+      "size": 229892
+    },
+    {
+      "name": "six",
+      "version": "1.17.0",
+      "file": "six-1.17.0-py2.py3-none-any.whl",
+      "sha256": "4721f391ed90541fddacab5acf947aa0d3dc7d27b2e1e8eda2be8970586c3274",
+      "size": 11050
+    },
+    {
+      "name": "soupsieve",
+      "version": "2.10",
+      "file": "soupsieve-2.10-py3-none-any.whl",
+      "sha256": "8596eb8967d744174820280fa62b4542a2e955bfaccca73ed8a13c6eb8e9b502",
+      "size": 38019
+    },
+    {
+      "name": "typing_extensions",
+      "version": "4.16.0",
+      "file": "typing_extensions-4.16.0-py3-none-any.whl",
+      "sha256": "481caa481374e813c1b176ada14e97f1f67a4539ce9cfeb3f350d78d6370c2e8",
+      "size": 45571
+    }
+  ]
+}

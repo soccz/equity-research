@@ -1,0 +1,10 @@
+[unit] /home/soccz/.pyenv/versions/3.12.9/bin/python3 -m unittest discover -s tests -v
+[unit] failed — artifacts/local/runs/20261001T194711542117Z/unit.log
+Traceback (most recent call last):
+  File "/mnt/20t/주식/scripts/run-local.py", line 224, in <module>
+    main()
+  File "/mnt/20t/주식/scripts/run-local.py", line 95, in main
+    stage(
+  File "/mnt/20t/주식/scripts/run-local.py", line 91, in stage
+    raise RuntimeError(f"{name} failed; see {log.relative_to(ROOT)}")
+RuntimeError: unit failed; see artifacts/local/runs/20261001T194711542117Z/unit.log

@@ -1,0 +1,15 @@
+{
+  "file": "data/sources/filing-0000006281-25-000153-9b78ae042375b44e.xbrl",
+  "sha256": "9b78ae042375b44e4cfeb10a7639aca0f683c02d2454f3af0eb6c630b752f0b4",
+  "url": "https://www.sec.gov/Archives/edgar/data/6281/000000628125000153/adi-20251101_htm.xml",
+  "primaryUrl": "https://www.sec.gov/Archives/edgar/data/6281/000000628125000153/adi-20251101.htm",
+  "provider": "SEC",
+  "accession": "0000006281-25-000153",
+  "cik": 6281,
+  "retrievedAt": "2026-10-02T07:20:30.543867+00:00",
+  "indexSource": {
+    "file": "data/sources/filing-0000006281-25-000153-index-999c60ba4988503a.html",
+    "sha256": "999c60ba4988503a89621970f2dc6e8233828bcafd134119080bcf90f51fa7d8",
+    "url": "https://www.sec.gov/Archives/edgar/data/6281/000000628125000153/0000006281-25-000153-index.html"
+  }
+}

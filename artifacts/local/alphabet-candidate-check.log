@@ -1,0 +1,11 @@
+test_corporate_change_flows_through_tax_once (__main__.CandidateTests.test_corporate_change_flows_through_tax_once) ... ok
+test_each_period_checked_before_netting (__main__.CandidateTests.test_each_period_checked_before_netting) ... ok
+test_exact_cash_and_corporate_scope (__main__.CandidateTests.test_exact_cash_and_corporate_scope) ... ok
+test_existing_four_models_keep_exact_cash_results (__main__.CandidateTests.test_existing_four_models_keep_exact_cash_results) ... ok
+test_lease_prepayment_is_added_only_when_separately_reported (__main__.CandidateTests.test_lease_prepayment_is_added_only_when_separately_reported) ... ok
+test_loss_segment_not_clipped_and_rights_never_bypassed (__main__.CandidateTests.test_loss_segment_not_clipped_and_rights_never_bypassed) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 2.038s
+
+OK

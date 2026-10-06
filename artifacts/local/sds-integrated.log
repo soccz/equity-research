@@ -1,0 +1,33 @@
+[unit] /home/soccz/.pyenv/versions/3.12.9/bin/python3 -m unittest discover -s tests -v
+[unit] passed — artifacts/local/runs/20261001T192504915714Z/unit.log
+[analysis] /home/soccz/.pyenv/versions/3.12.9/bin/python3 -m equitylab refresh --as-of 2026-09-29
+[analysis] passed — artifacts/local/runs/20261001T192504915714Z/analysis.log
+[local-model] /home/soccz/.pyenv/versions/3.12.9/bin/python3 scripts/local-research.py --resume --wait-gpu-seconds 600
+[local-model] passed — artifacts/local/runs/20261001T192504915714Z/local-model.log
+[coverage-model] /home/soccz/.pyenv/versions/3.12.9/bin/python3 scripts/local-coverage.py --resume --wait-gpu-seconds 600
+[coverage-model] quality_gate_failed — artifacts/local/runs/20261001T192504915714Z/coverage-model.log
+[question-model] /home/soccz/.pyenv/versions/3.12.9/bin/python3 scripts/local-questions.py --resume --wait-gpu-seconds 600
+[question-model] passed — artifacts/local/runs/20261001T192504915714Z/question-model.log
+[filing-model] /home/soccz/.pyenv/versions/3.12.9/bin/python3 scripts/local-filings.py --resume --wait-gpu-seconds 600
+[filing-model] passed — artifacts/local/runs/20261001T192504915714Z/filing-model.log
+[register-cash-conditions] /home/soccz/.pyenv/versions/3.12.9/bin/python3 -m equitylab register
+[register-cash-conditions] passed — artifacts/local/runs/20261001T192504915714Z/register-cash-conditions.log
+[register-receivable-conditions] /home/soccz/.pyenv/versions/3.12.9/bin/python3 -m equitylab register-receivables
+[register-receivable-conditions] passed — artifacts/local/runs/20261001T192504915714Z/register-receivable-conditions.log
+[observe] /home/soccz/.pyenv/versions/3.12.9/bin/python3 -m equitylab observe
+[observe] passed — artifacts/local/runs/20261001T192504915714Z/observe.log
+[research-journal] /home/soccz/.pyenv/versions/3.12.9/bin/python3 -m equitylab register-cases
+[research-journal] passed — artifacts/local/runs/20261001T192504915714Z/research-journal.log
+[forward-study] /home/soccz/.pyenv/versions/3.12.9/bin/python3 -m equitylab register-study
+[forward-study] passed — artifacts/local/runs/20261001T192504915714Z/forward-study.log
+[price-crosscheck] node scripts/check-dossier.mjs
+[price-crosscheck] passed — artifacts/local/runs/20261001T192504915714Z/price-crosscheck.log
+[local-records] /home/soccz/.pyenv/versions/3.12.9/bin/python3 scripts/check-local-records.py
+[local-records] passed — artifacts/local/runs/20261001T192504915714Z/local-records.log
+[offline-replay] /home/soccz/.pyenv/versions/3.12.9/bin/python3 scripts/check-replay.py
+[offline-replay] passed — artifacts/local/runs/20261001T192504915714Z/offline-replay.log
+[browser-pdf] node scripts/check-live.mjs
+[browser-pdf] passed — artifacts/local/runs/20261001T192504915714Z/browser-pdf.log
+[artifacts] /home/soccz/.pyenv/versions/3.12.9/bin/python3 scripts/check-artifacts.py
+[artifacts] passed — artifacts/local/runs/20261001T192504915714Z/artifacts.log
+Verified private outputs: app/index.html and artifacts/live/*.pdf

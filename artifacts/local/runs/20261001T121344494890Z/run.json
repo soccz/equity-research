@@ -1,0 +1,45 @@
+{
+  "runId": "20261001T121344494890Z",
+  "startedAt": "2026-10-01T12:13:44.494983+00:00",
+  "status": "running",
+  "mode": "archived_sources_local_only",
+  "modelRequested": false,
+  "stages": [
+    {
+      "name": "unit",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-01T12:13:44.495118+00:00",
+      "finishedAt": "2026-10-01T12:15:19.725214+00:00",
+      "log": "artifacts/local/runs/20261001T121344494890Z/unit.log",
+      "logHash": "63e06bd587d58129208a77bccaa04b78b84887954157d540183c7d09bc67c818"
+    },
+    {
+      "name": "analysis",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-01T12:15:19.725820+00:00",
+      "finishedAt": "2026-10-01T12:17:21.866746+00:00",
+      "log": "artifacts/local/runs/20261001T121344494890Z/analysis.log",
+      "logHash": "9298e794ae143b2caf1df96ba149364ed48fd0b194c145dd2fc3888dda7407b3"
+    },
+    {
+      "name": "register-cash-conditions",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-01T12:17:21.867351+00:00",
+      "finishedAt": "2026-10-01T12:17:29.028960+00:00",
+      "log": "artifacts/local/runs/20261001T121344494890Z/register-cash-conditions.log",
+      "logHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "register-receivable-conditions",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-01T12:17:29.029436+00:00",
+      "finishedAt": "2026-10-01T12:17:35.961646+00:00",
+      "log": "artifacts/local/runs/20261001T121344494890Z/register-receivable-conditions.log",
+      "logHash": "5a91db2e38dac97e3b4d989866353e23b69d5e5996baf0ad874d5a08510f5dba"
+    }
+  ]
+}

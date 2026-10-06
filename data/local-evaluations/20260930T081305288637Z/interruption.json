@@ -1,0 +1,11 @@
+{
+  "status": "interrupted",
+  "at": "2026-09-30T08:17:21.466730+00:00",
+  "reason": "숙고+temperature=0 설정에서 반복 숙고가 길어지고 cfo_observed 호출이 실패하여 운영 설정 재검토. 완료 평가로 취급하지 않는다.",
+  "completedResponseFiles": [
+    "cfo_observed-raw.json",
+    "cash_use_observed-raw.json",
+    "revenue_observed-raw.json"
+  ],
+  "comparison": "다음 실행은 모델 제작사 권장 샘플링 설정 사용. 숙고만의 효과를 분리한 인과 비교가 아니다."
+}

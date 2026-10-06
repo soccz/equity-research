@@ -1,0 +1,54 @@
+Collect MU
+Collect NVDA
+Collect GOOGL
+Collect AAPL
+Collect MSFT
+Collect AMZN
+Collect META
+Collect AMD
+Collect AVGO
+Collect QCOM
+Collect INTC
+Collect AMAT
+Collect LRCX
+Collect TSLA
+Collect GM
+Collect F
+Collect GE
+Collect CAT
+Collect LLY
+Collect JNJ
+Collect 000660
+Collect 005930
+Collect 035420
+Collect 066570
+Collect 005380
+Collect 000270
+Collect 012330
+Collect 035720
+Collect 006400
+Collect 051910
+Collect 373220
+Collect 005490
+Collect 207940
+Collect 068270
+Collect 000100
+Collect 128940
+Collect 329180
+Collect 012450
+Collect 034020
+Collect 267260
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/mnt/20t/주식/equitylab/__main__.py", line 58, in <module>
+    result = run(args.as_of, args.online)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/20t/주식/equitylab/pipeline.py", line 348, in run
+    export(snapshot)
+  File "/mnt/20t/주식/equitylab/pipeline.py", line 427, in export
+    questionSelections=read_questions(snapshot),
+                       ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/20t/주식/equitylab/questions.py", line 324, in read
+    raise ValueError(
+ValueError: Question request differs from its recorded input or inference settings

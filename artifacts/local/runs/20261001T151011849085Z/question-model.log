@@ -1,0 +1,37 @@
+{"company": "MU", "status": "selected", "choice": {"primary": "price_conditions", "secondary": "cash_conversion"}, "recordHash": "4538c72817b0b2e9a2bcbfc1332d4132ba99c3dbd4b187261df3bbf6fda86fb7", "reused": true, "error": null}
+Waiting for GPU; other workloads unchanged
+Waiting for GPU; other workloads unchanged
+Waiting for GPU; other workloads unchanged
+Waiting for GPU; other workloads unchanged
+Waiting for GPU; other workloads unchanged
+Waiting for GPU; other workloads unchanged
+Waiting for GPU; other workloads unchanged
+Waiting for GPU; other workloads unchanged
+Waiting for GPU; other workloads unchanged
+Waiting for GPU; other workloads unchanged
+Waiting for GPU; other workloads unchanged
+Waiting for GPU; other workloads unchanged
+Waiting for GPU; other workloads unchanged
+Waiting for GPU; other workloads unchanged
+Waiting for GPU; other workloads unchanged
+Waiting for GPU; other workloads unchanged
+Waiting for GPU; other workloads unchanged
+Waiting for GPU; other workloads unchanged
+Waiting for GPU; other workloads unchanged
+Traceback (most recent call last):
+  File "/mnt/20t/주식/scripts/local-questions.py", line 104, in <module>
+    main()
+  File "/mnt/20t/주식/scripts/local-questions.py", line 70, in main
+    else questions.select(
+         ^^^^^^^^^^^^^^^^^
+  File "/mnt/20t/주식/equitylab/questions.py", line 252, in select
+    choice, timing, _ = client.generate(
+                        ^^^^^^^^^^^^^^^^
+  File "/mnt/20t/주식/equitylab/local_ai.py", line 107, in generate
+    response = self.call("chat", request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/20t/주식/scripts/local-research.py", line 76, in call
+    wait_for_gpu(self.wait_gpu_seconds)
+  File "/mnt/20t/주식/scripts/local-research.py", line 55, in wait_for_gpu
+    time.sleep(min(30, remaining))
+KeyboardInterrupt

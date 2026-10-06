@@ -1,0 +1,18 @@
+{
+  "snapshotHash": "5a3969c88e4cbdc0677f90644a576b2c07ad4db0c53fd8114360cbf8982b1268",
+  "checkedAt": "2026-10-02T07:44:54.673531+00:00",
+  "method": "All-page contact sheets and enlarged TXN 10/11, ADI 11; visible source links, period and assumption distinctions, footer separation",
+  "financialApproval": false,
+  "files": {
+    "artifacts/live/texas-instruments.pdf": "11c7cc59b1507469172f001eb211a961b4e564f114cb8177642fda15c8407dec",
+    "artifacts/live/analog-devices.pdf": "8c14cb3fedc3ae66cd00402aee5c74a63b7e0b1a9c82aca2b59c4b40942dce42",
+    "artifacts/live/comparison-analog.pdf": "2fcdc22331e0f5b0847110f7e36c08dfd2a3e0f914af144aad8db0c20df140e2"
+  },
+  "observations": [
+    "TXN 17 pages, ADI 17 pages and comparison 4 pages inspected as contact sheets",
+    "TXN company FCF 6.534 and CHIPS-excluding arithmetic 4.922 show separate CFO/CFI treatment; no duplicate ITC addback",
+    "ADI note/MD&A disposal-gain disagreement and unallocated working-cash totals are visible",
+    "Future interest expense reduces cash and entered assumptions are identified",
+    "No observed clipping or footer overlap in reviewed output"
+  ]
+}

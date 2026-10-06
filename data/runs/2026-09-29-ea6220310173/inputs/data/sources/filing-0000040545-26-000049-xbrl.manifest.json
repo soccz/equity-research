@@ -1,0 +1,15 @@
+{
+  "file": "data/sources/filing-0000040545-26-000049-820134672a5b9ec6.xbrl",
+  "sha256": "820134672a5b9ec66b9c6b91fbd978ec2366d272f1c13021efe79df337d11142",
+  "url": "https://www.sec.gov/Archives/edgar/data/40545/000004054526000049/ge-20260630_htm.xml",
+  "primaryUrl": "https://www.sec.gov/Archives/edgar/data/40545/000004054526000049/ge-20260630.htm",
+  "provider": "SEC",
+  "accession": "0000040545-26-000049",
+  "cik": 40545,
+  "retrievedAt": "2026-09-30T11:16:03.735111+00:00",
+  "indexSource": {
+    "file": "data/sources/filing-0000040545-26-000049-index-81b84d8a14648fed.html",
+    "sha256": "81b84d8a14648fed8c91b1742ceea7293556add688287f5b25106e1cddb2787f",
+    "url": "https://www.sec.gov/Archives/edgar/data/40545/000004054526000049/0000040545-26-000049-index.html"
+  }
+}

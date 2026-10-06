@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/mnt/20t/주식/scripts/check-artifacts.py", line 333, in <module>
+    raise ValueError("Enterprise cash comparison missing: " + term)
+ValueError: Enterprise cash comparison missing: 선택한정확한사업가정

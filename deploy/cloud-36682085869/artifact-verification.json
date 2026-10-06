@@ -1,0 +1,148 @@
+{
+  "checkedAt": "2026-09-30T07:12:47.210976+00:00",
+  "status": "passed",
+  "snapshotHash": "4e27279d09b8059410ee3c789de0385f0de6e31f6d3daadb1ffa7598d0bc4827",
+  "method": "PyMuPDF: A4, text bounds, version on every page, primary filing links; browser/replay/code version agreement",
+  "reports": [
+    {
+      "file": "artifacts/live/universe.pdf",
+      "pages": [
+        {
+          "page": 1,
+          "words": 244,
+          "clipping": false
+        },
+        {
+          "page": 2,
+          "words": 306,
+          "clipping": false
+        }
+      ],
+      "primaryLinks": []
+    },
+    {
+      "file": "artifacts/live/micron.pdf",
+      "pages": [
+        {
+          "page": 1,
+          "words": 251,
+          "clipping": false
+        },
+        {
+          "page": 2,
+          "words": 176,
+          "clipping": false
+        }
+      ],
+      "primaryLinks": [
+        "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/0000723125-26-000015-index.html",
+        "https://query2.finance.yahoo.com/v8/finance/chart/MU?range=5y&interval=1d&events=div%2Csplits"
+      ]
+    },
+    {
+      "file": "artifacts/live/sk-hynix.pdf",
+      "pages": [
+        {
+          "page": 1,
+          "words": 252,
+          "clipping": false
+        },
+        {
+          "page": 2,
+          "words": 176,
+          "clipping": false
+        }
+      ],
+      "primaryLinks": [
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003509",
+        "https://query2.finance.yahoo.com/v8/finance/chart/000660.KS?range=5y&interval=1d&events=div%2Csplits"
+      ]
+    },
+    {
+      "file": "artifacts/live/research-us.pdf",
+      "pages": [
+        {
+          "page": 1,
+          "words": 222,
+          "clipping": false
+        },
+        {
+          "page": 2,
+          "words": 332,
+          "clipping": false
+        },
+        {
+          "page": 3,
+          "words": 299,
+          "clipping": false
+        }
+      ],
+      "primaryLinks": []
+    },
+    {
+      "file": "artifacts/live/research-kr.pdf",
+      "pages": [
+        {
+          "page": 1,
+          "words": 222,
+          "clipping": false
+        },
+        {
+          "page": 2,
+          "words": 331,
+          "clipping": false
+        },
+        {
+          "page": 3,
+          "words": 301,
+          "clipping": false
+        }
+      ],
+      "primaryLinks": []
+    },
+    {
+      "file": "artifacts/live/conditions.pdf",
+      "pages": [
+        {
+          "page": 1,
+          "words": 320,
+          "clipping": false
+        },
+        {
+          "page": 2,
+          "words": 216,
+          "clipping": false
+        }
+      ],
+      "primaryLinks": []
+    }
+  ],
+  "artifacts": {
+    "artifacts/live/universe.pdf": "5701c119e8d9b5f079405ecc944fa7ee2f87430d14c16e2863cc4f4b97688872",
+    "artifacts/live/micron.pdf": "0467c262f21f8416176a3fc705d82782280c3c16ef388f2e036af86c53fc3e4e",
+    "artifacts/live/sk-hynix.pdf": "feb14ead34207c321e25dbe32051b0c25f0c11d0259c9d2e04fc9ac11008fde8",
+    "artifacts/live/research-us.pdf": "0d5224cb2f081ecd03db36fdd1ed4abe64b5a27affc9f6c44f5706cbd229a9d2",
+    "artifacts/live/research-kr.pdf": "2dcdca31e241c19675b3eda2ac6b92b574465d507a832affa37978073cbde27e",
+    "artifacts/live/conditions.pdf": "b43844c4469ceece864ef5b3229a2e82eadb581f8e4fce1145247e60f59824c9",
+    "artifacts/live/desktop-hynix.png": "067bb65a5aae617b3ad39a4414ec2c6a1d05bfeb583b61444db254563c447af4",
+    "artifacts/live/desktop-lab-kr.png": "9b2b4e93947e9fa6e83056629a5cc9b416f62a95c2860bf555cb3760e6115a46",
+    "artifacts/live/desktop-lab-us.png": "58557a0123df9981a15eb9c9bec84fb5d6d0d92c3868ac0b6b46ce9ae2ccec7a",
+    "artifacts/live/desktop-micron.png": "643cb3f0cfbd5c8c7041e9ef1787f0f2e56a41cc9fca67ca21ba8cf5858c60ef",
+    "artifacts/live/desktop-sources.png": "6f18b01099c5169c20e1bb61b16f1361772c7cfb8db241f701b46decf0dacc1c",
+    "artifacts/live/desktop-tracking.png": "ff62ee7048246022f7e96ebb3684a7d82cc3712cf1a6e41f9b2ef83633fd1e6e",
+    "artifacts/live/desktop-universe.png": "5dd8a8af95a2814bf5a5a58bfebc23a52a9f6c2e05b931ced4d5501a8fca3cbf",
+    "artifacts/live/mobile-company.png": "2bac4101c3a250d42cf478758edd8e4d176e05e71218c17b2b5bb4ef8863ec84",
+    "artifacts/live/mobile-lab.png": "839d1c1e73cd46fac1a6a0a83a24545d1af752ba7425ee93ad9d137a045572db",
+    "artifacts/live/mobile-sources.png": "fec2e542a822e3473c7c1a9ce1c72b988bc8281050b8a9b929c082aa5895ed78",
+    "artifacts/live/mobile-tracking.png": "803e25d77fca484c1478d94e75111cbe3a9263ee93046b96505fdf4db2810733",
+    "artifacts/live/mobile-universe.png": "8fbc5c3ae6513bce4899c11e2f27b4a7a0099e1a866740fa4663c43e09ffd804",
+    "artifacts/live/4e27279d09b8-KR-fundamental.png": "38791572869e67decf0822f821b483ac782d5943478b01533ef53ebf80fd5c8a",
+    "artifacts/live/4e27279d09b8-KR-fundamental.svg": "8129bddc531c8e4f0afdc98df90cc0ab662fcf6a4ce641ca00fe7214b67addbe",
+    "artifacts/live/4e27279d09b8-KR-research.png": "33bdcfb94bcc1cd6905ce4fc984321013d1a1829519fb315298ae2373afaca32",
+    "artifacts/live/4e27279d09b8-KR-research.svg": "d648d38c78adfc5ef1c861dd48f82058f337a42400146891f0441b0015cabbf3",
+    "artifacts/live/4e27279d09b8-US-fundamental.png": "6e8938ca29484294dcb3de942aa4090e89a7172a652c7419d95af2081a206b21",
+    "artifacts/live/4e27279d09b8-US-fundamental.svg": "9bed18038a17ab6ba419b8cca7eab314f418ba9da5209322c3c3b81d6ae3ce5d",
+    "artifacts/live/4e27279d09b8-US-research.png": "3bd6ef279284b4c12f6605b625bba344fdb34abcbc35e9ced05427ae318e3c87",
+    "artifacts/live/4e27279d09b8-US-research.svg": "085b4b3603dd74085f46bb24ac8b4768933bf365f2e18793494001f03b4a6aee"
+  }
+}

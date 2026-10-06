@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/mnt/20t/주식/scripts/check-artifacts.py", line 173, in <module>
+    raise ValueError(f"Missing version or sparse PDF page: {name} {index+1}")
+ValueError: Missing version or sparse PDF page: comparison-biosimilar 9

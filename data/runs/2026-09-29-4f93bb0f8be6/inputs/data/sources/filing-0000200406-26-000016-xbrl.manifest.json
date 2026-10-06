@@ -1,0 +1,15 @@
+{
+  "file": "data/sources/filing-0000200406-26-000016-37d6dddc840c2dc7.xbrl",
+  "sha256": "37d6dddc840c2dc70cbb41d1d9fbfca17bdf0a0f3ae9cac4593b3b7c655937c9",
+  "url": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000016/jnj-20251228_htm.xml",
+  "primaryUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000016/jnj-20251228.htm",
+  "provider": "SEC",
+  "accession": "0000200406-26-000016",
+  "cik": 200406,
+  "retrievedAt": "2026-10-01T18:21:13.507786+00:00",
+  "indexSource": {
+    "file": "data/sources/filing-0000200406-26-000016-index-ddff51d2a6585824.html",
+    "sha256": "ddff51d2a6585824c6df28389c4638a2dcd403be879a71d6b826305ec9a6c313",
+    "url": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000016/0000200406-26-000016-index.html"
+  }
+}

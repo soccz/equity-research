@@ -1,0 +1,174 @@
+{
+  "status": "future_path_design_requires_pretax_basis",
+  "reportedTTM": {
+    "cfo": 27608000000.0,
+    "pretax": 25196000000.0,
+    "unallocated": 1778000000.0,
+    "segments": [
+      {
+        "label": "Innovative Medicine",
+        "revenue": 63136000000.0,
+        "pretax": 23070000000.0
+      },
+      {
+        "label": "MedTech",
+        "revenue": 34793000000.0,
+        "pretax": 3904000000.0
+      }
+    ],
+    "investmentCash": {
+      "PaymentsToAcquirePropertyPlantAndEquipment": 5364000000.0,
+      "PaymentsToAcquireBusinessesNetOfCashAcquired": 3346000000.0,
+      "PaymentsToAcquireInProcessResearchAndDevelopmentAssets": 16000000.0,
+      "PaymentsForProceedsFromOtherInvestingActivities": 289000000.0,
+      "ProceedsPaymentsFromToCreditSupportAgreementsInvestingActivities": 1070000000.0,
+      "ProceedsPaymentsFromToCreditSupportAgreementsFinancingActivities": -4000000.0
+    }
+  },
+  "annualProxies": [
+    {
+      "start": "2024-12-30",
+      "end": "2025-12-28",
+      "dimensions": [],
+      "tag": "InterestPaid",
+      "taxonomy": "http://fasb.org/us-gaap/2025",
+      "value": 1977000000.0,
+      "unit": "USD",
+      "context": "c-1",
+      "factId": "f-483",
+      "decimals": "-6",
+      "accession": "0000200406-26-000016",
+      "filedAt": "2026-02-11",
+      "sourceFile": "data/sources/filing-0000200406-26-000016-37d6dddc840c2dc7.xbrl",
+      "sourceHash": "37d6dddc840c2dc70cbb41d1d9fbfca17bdf0a0f3ae9cac4593b3b7c655937c9",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000016/jnj-20251228.htm"
+    },
+    {
+      "start": "2024-12-30",
+      "end": "2025-12-28",
+      "dimensions": [],
+      "tag": "InterestPaidNet",
+      "taxonomy": "http://fasb.org/us-gaap/2025",
+      "value": 1863000000.0,
+      "unit": "USD",
+      "context": "c-1",
+      "factId": "f-486",
+      "decimals": "-6",
+      "accession": "0000200406-26-000016",
+      "filedAt": "2026-02-11",
+      "sourceFile": "data/sources/filing-0000200406-26-000016-37d6dddc840c2dc7.xbrl",
+      "sourceHash": "37d6dddc840c2dc70cbb41d1d9fbfca17bdf0a0f3ae9cac4593b3b7c655937c9",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000016/jnj-20251228.htm"
+    },
+    {
+      "start": "2024-12-30",
+      "end": "2025-12-28",
+      "dimensions": [],
+      "tag": "OperatingLeaseCost",
+      "taxonomy": "http://fasb.org/us-gaap/2025",
+      "value": 200000000.0,
+      "unit": "USD",
+      "context": "c-1",
+      "factId": "f-546",
+      "decimals": "-8",
+      "accession": "0000200406-26-000016",
+      "filedAt": "2026-02-11",
+      "sourceFile": "data/sources/filing-0000200406-26-000016-37d6dddc840c2dc7.xbrl",
+      "sourceHash": "37d6dddc840c2dc70cbb41d1d9fbfca17bdf0a0f3ae9cac4593b3b7c655937c9",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000016/jnj-20251228.htm"
+    },
+    {
+      "start": "2024-12-30",
+      "end": "2025-12-28",
+      "dimensions": [],
+      "tag": "OperatingLeasePayments",
+      "taxonomy": "http://fasb.org/us-gaap/2025",
+      "value": 300000000.0,
+      "unit": "USD",
+      "context": "c-1",
+      "factId": "f-548",
+      "decimals": "-8",
+      "accession": "0000200406-26-000016",
+      "filedAt": "2026-02-11",
+      "sourceFile": "data/sources/filing-0000200406-26-000016-37d6dddc840c2dc7.xbrl",
+      "sourceHash": "37d6dddc840c2dc70cbb41d1d9fbfca17bdf0a0f3ae9cac4593b3b7c655937c9",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000016/jnj-20251228.htm"
+    },
+    {
+      "start": "2024-12-30",
+      "end": "2025-12-28",
+      "dimensions": [],
+      "tag": "InterestCostsCapitalized",
+      "taxonomy": "http://fasb.org/us-gaap/2025",
+      "value": 114000000.0,
+      "unit": "USD",
+      "context": "c-1",
+      "factId": "f-716",
+      "decimals": "-6",
+      "accession": "0000200406-26-000016",
+      "filedAt": "2026-02-11",
+      "sourceFile": "data/sources/filing-0000200406-26-000016-37d6dddc840c2dc7.xbrl",
+      "sourceHash": "37d6dddc840c2dc70cbb41d1d9fbfca17bdf0a0f3ae9cac4593b3b7c655937c9",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000016/jnj-20251228.htm"
+    },
+    {
+      "start": "2024-12-30",
+      "end": "2025-12-28",
+      "dimensions": [],
+      "tag": "DepreciationExpenseIncludingAmortizationOfCapitalizedInterest",
+      "taxonomy": "http://www.jnj.com/20251228",
+      "value": 2900000000.0,
+      "unit": "USD",
+      "context": "c-1",
+      "factId": "f-719",
+      "decimals": "-8",
+      "accession": "0000200406-26-000016",
+      "filedAt": "2026-02-11",
+      "sourceFile": "data/sources/filing-0000200406-26-000016-37d6dddc840c2dc7.xbrl",
+      "sourceHash": "37d6dddc840c2dc70cbb41d1d9fbfca17bdf0a0f3ae9cac4593b3b7c655937c9",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000016/jnj-20251228.htm"
+    },
+    {
+      "start": "2024-12-30",
+      "end": "2025-12-28",
+      "dimensions": [],
+      "tag": "AmortizationOfIntangibleAssets",
+      "taxonomy": "http://fasb.org/us-gaap/2025",
+      "value": 4600000000.0,
+      "unit": "USD",
+      "context": "c-1",
+      "factId": "f-775",
+      "decimals": "-8",
+      "accession": "0000200406-26-000016",
+      "filedAt": "2026-02-11",
+      "sourceFile": "data/sources/filing-0000200406-26-000016-37d6dddc840c2dc7.xbrl",
+      "sourceHash": "37d6dddc840c2dc70cbb41d1d9fbfca17bdf0a0f3ae9cac4593b3b7c655937c9",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000016/jnj-20251228.htm"
+    }
+  ],
+  "leasePassages": [
+    {
+      "text": "The Company determines whether an arrangement is a lease at contract inception by establishing if the contract conveys the right to control the use of identified property, plant, or equipment for a period of time in exchange for consideration. Right of Use (ROU) Assets and Lease Liabilities for operating leases are included in Other assets, Accrued liabilities, and Other liabilities on the consolidated balance sheet. The ROU Assets represent the right to use an underlying asset for the lease term and lease liabilities represent an obligation to make lease payments arising from the lease. Commitments under finance leases are not significant.",
+      "heading": "",
+      "kind": "paragraph",
+      "ordinal": 803,
+      "id": "fd45fbf4e1dc355dde8e"
+    },
+    {
+      "text": "The Company primarily has operating lease for space, vehicles, manufacturing equipment and data processing equipment. The ROU asset pertaining to leases was $1.3 billion and $1.1 billion in fiscal years 2025 and 2024, respectively. The lease liability was $1.4 billion and $1.2 billion in fiscal years 2025 and 2024, respectively. The operating lease costs from continuing operations were $0.2 billion in fiscal years 2025, 2024 and 2023. Cash paid for amounts included in the measurement of lease liabilities from continuing operations were $0.3 billion in 2025 and $0.2 billion in fiscal years 2024 and 2023.",
+      "heading": "",
+      "kind": "paragraph",
+      "ordinal": 805,
+      "id": "9f9ed7e19b192455c23e"
+    }
+  ],
+  "requiredBeforeIntegration": [
+    "Create explicit pretax output keys and labels in Python, browser, print, paired assumptions; never label JNJ segment pretax as GAAP operating income.",
+    "Unallocated cost already includes interest; separate interest must be fixed at zero or remove the same amount from corporate costs. No duplicate deduction.",
+    "Retain acquisition intangible amortization as a labeled replenishment proxy if not modeling replacement acquisition cash; pure PPE depreciation is only available here as rounded annual anchor.",
+    "Annual finance-lease commitments not significant is not zero TTM repayment. Future zero must be explicit editable assumption; current actual remains unknown.",
+    "Current and prior 7bn talc reserve reversal cannot be subtracted from trailing profit twice: annual plus current minus prior already removes the same first-half reversal.",
+    "Other asset/liability changes and derivative credit-support collateral cannot be labeled trade working capital. Use a limited disclosed AR/inventory proxy with missing other business funding scope.",
+    "Clinical pipeline replacement acquisitions, licensing/milestones, restructuring/legal normalization and excess cash remain separately unapproved; do not count source reconciliation as normalized value."
+  ]
+}

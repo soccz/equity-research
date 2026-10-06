@@ -1,0 +1,112 @@
+{
+  "stoppedAt": "2026-10-02T08:45:01.802779+00:00",
+  "reason": "User requested to finish here; no further expansion, integration or GPU retry.",
+  "currentSnapshot": "862c4ed8540f788d3aad1e219c84cab6ef72a771c3e05a28c8c0206572617c42",
+  "coverage": 60,
+  "operatingModels": 31,
+  "unitTestsPassed": 479,
+  "currentIntegratedRun": "artifacts/local/runs/20261002T082141241308Z/run.json",
+  "currentRunStatus": "failed",
+  "failure": "COST local question selection timed out; local-records requires all 60 current selections. 59/60 available.",
+  "currentBrowserPdfVerified": false,
+  "lastVerifiedRun": {
+    "file": "artifacts/local/runs/20261002T073020194947Z/run.json",
+    "sha256": "28a90f3b8f5a0199f29ab1cc93be41d24dffd0c8220e0861379ba517f61ec660"
+  },
+  "lastVerifiedPackage": {
+    "createdAt": "2026-10-02T07:58:27.987670+00:00",
+    "status": "verified_working_research_bundle",
+    "asOf": "2026-09-29",
+    "snapshotHash": "5a3969c88e4cbdc0677f90644a576b2c07ad4db0c53fd8114360cbf8982b1268",
+    "entrypoint": "local.html",
+    "researchArchive": {
+      "file": "artifacts/packages/equity-local-20261002T075137631560Z.zip",
+      "sha256": "98fe1f198879967e23c2c79b426112b2019c3e1f1937c96aee46580a3860a6be",
+      "snapshotHash": "5a3969c88e4cbdc0677f90644a576b2c07ad4db0c53fd8114360cbf8982b1268",
+      "size": 865168024,
+      "files": 33175,
+      "status": "verified_private_archive",
+      "verification": "ZIP CRC, all extracted SHA256 hashes, relocated start.py status, isolated offline source replay"
+    },
+    "gpuArchive": {
+      "status": "verified_private_runtime_archive",
+      "file": "artifacts/packages/equity-gpu-linux-x86_64-20261001T122401811244Z.tar",
+      "size": 7473520640,
+      "sha256": "c8618c93c9580f0755217be15794cd4c9d59e1873f88e7c28529ca7383f9d8e2",
+      "files": 57,
+      "model": "qwen3:8b",
+      "platform": "Linux x86_64",
+      "verification": "Model layer digests and every archived file/link verified by reading the archive; platform prerequisites remain required."
+    },
+    "platform": "Linux x86_64; CPython 3.12 offline wheels; compatible NVIDIA driver for new inference",
+    "scope": {
+      "companies": 60,
+      "us": 30,
+      "kr": 30,
+      "sourceBoundBusinessInsights": 60,
+      "pairedStudies": 21,
+      "issuerOperatingCashModels": 29,
+      "pairedOperatingWorkspaces": 15,
+      "securityScenarioAvailable": 35,
+      "securityScenarioHeld": 25,
+      "registeredConditions": 63,
+      "originalForwardStudyCompanies": 40,
+      "historicalResearchCohort": 8
+    },
+    "verification": {
+      "unitTests": 464,
+      "browserChecks": 521,
+      "pdfs": 53,
+      "pdfPages": 721,
+      "offlineOriginals": 396,
+      "offlineAnalysisFields": 12,
+      "offlineWheels": 15,
+      "run": "artifacts/local/runs/20261002T073020194947Z/run.json",
+      "visualReview": "artifacts/local/analog-visual/visual-review.json",
+      "visualReviewSha256": "2bbad5efa8804077d81fd37c8271752031cd89ff8e99b4fa9c2ae75e4f0eef41",
+      "cleanInstall": "artifacts/local/clean-install-verification.json"
+    },
+    "financialReview": {
+      "independentApproval": false,
+      "coverageNotesHeld": 58,
+      "coverageNotesDisplayEligible": 2,
+      "filingNotesRevisionRequired": 55,
+      "filingNotesNoMaterialIssueFound": 5,
+      "meaning": "Display eligibility, format checks and software tests are not financial approval or demonstrated investment performance.",
+      "assumptionPilotV1": {
+        "automaticAdoption": false,
+        "falseAccepts": 2,
+        "falseRejects": 3,
+        "invalid": 0,
+        "examples": 16,
+        "actualDraftsPassedFormat": 2,
+        "actualDraftsAttempted": 4,
+        "archive": "artifacts/local/operating-ai-study/20261002T074430101402Z",
+        "financialApproval": false
+      }
+    },
+    "published": false,
+    "entireResearchObjectiveComplete": false,
+    "workspaceMayContainNewerUnverifiedChanges": true
+  },
+  "stagedWork": [
+    "artifacts/local/retail-study/walmart_operating.py",
+    "artifacts/local/retail-study/integrate-WMT.py (not executed)",
+    "artifacts/local/lg-electronics-study/research-state.json",
+    "artifacts/local/operating-ai-focused (not frozen or run)"
+  ],
+  "changedFileHashes": {
+    "equitylab/costco_operating.py": "5a0b1188885bf27bb9014471597e29c13f07ff2f25ac0b14f30fa9407df8058c",
+    "equitylab/operating_model.py": "f3a44f0da450812a0de14cf5dd3ef1d8db681f3fa0d565f8053ea2ea66a26df9",
+    "tests/test_costco_operating.py": "d92462b196d880aae65908a8bd3840f81f0c6b6ddc5fa92f8aa532521be4a1c5",
+    "app/operating-model.js": "53bb97ad7d1b85b2288dc6ec922fc0f672c43ce9d3e882f85f389a7724116cd5",
+    "app/styles.css": "42b819161cc6d492d261afe3fb54958a8b40c886cc06d70f7db41369a46a72ed",
+    "scripts/check-live.mjs": "76e93298f095bcb2042a71116d2851d0726b930d4a88d57d4dcb3efe1d1a22a1",
+    "scripts/check-artifacts.py": "78b00159a1d17e5de02cc143bb2e53275838681a526b12f75e22bebd643a8c87",
+    "README.md": "9ab8980fdd6dd868b744020db4fb20955d221e6cc52736a9a5b129c600aaa335",
+    "docs/product-design.md": "52b92499aecc81cf724d7ba81b9d7c22f8e40f30da0134a490d944b827c13d6c",
+    "docs/local-runtime.md": "a2729a716794f7519622f8054355a560a04210dabcaa255a754353ffbd914e61"
+  },
+  "nextUponUserResume": "Retry the failed COST selection with preserved failure evidence, finish record/offline/browser/PDF checks for the current snapshot and inspect Costco/Orion PDFs. Then evaluate the focused GPU pilot before integrating Walmart; continue LG Electronics scope research.",
+  "entireGoalComplete": false
+}

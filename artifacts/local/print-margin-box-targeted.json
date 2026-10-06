@@ -1,0 +1,42 @@
+{
+  "status": "passed",
+  "scope": "Candidate layout; final snapshot verification still required",
+  "reports": [
+    {
+      "file": "artifacts/local/print-layout-check/alphabet.pdf",
+      "pages": 20,
+      "footerFailures": [],
+      "sparsePages": []
+    },
+    {
+      "file": "artifacts/local/print-layout-check/hyundai.pdf",
+      "pages": 16,
+      "footerFailures": [],
+      "sparsePages": []
+    },
+    {
+      "file": "artifacts/local/print-layout-check/kt.pdf",
+      "pages": 13,
+      "footerFailures": [],
+      "sparsePages": []
+    },
+    {
+      "file": "artifacts/local/print-layout-check/meta.pdf",
+      "pages": 16,
+      "footerFailures": [],
+      "sparsePages": []
+    },
+    {
+      "file": "artifacts/local/print-layout-check/oracle.pdf",
+      "pages": 12,
+      "footerFailures": [],
+      "sparsePages": []
+    },
+    {
+      "file": "artifacts/local/print-layout-check/samsung-biologics.pdf",
+      "pages": 16,
+      "footerFailures": [],
+      "sparsePages": []
+    }
+  ]
+}

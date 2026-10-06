@@ -1,0 +1,27 @@
+test_all_attempts_evaluation_keeps_invalid_responses_and_fails_gate (test_coverage_reasoning.CoverageReasoningTests.test_all_attempts_evaluation_keeps_invalid_responses_and_fails_gate) ... Evaluation cfo_growth: failed None
+Evaluation capacity_hypothesis: failed None
+Evaluation replacement_alternative: failed None
+Evaluation future_discriminator: failed None
+Evaluation reconciliation_missing: failed None
+Evaluation principal_cash: failed None
+Evaluation noncash_spending: failed None
+Evaluation double_interest: failed None
+Evaluation segment_scope: failed None
+Evaluation invented_elimination: failed None
+Evaluation provided_segment_missing: failed None
+Evaluation normalized_cash: failed None
+ok
+test_all_companies_have_same_currency_fact_bound_inputs (test_coverage_reasoning.CoverageReasoningTests.test_all_companies_have_same_currency_fact_bound_inputs) ... ok
+test_company_evaluation_cannot_reuse_receivable_protocol (test_coverage_reasoning.CoverageReasoningTests.test_company_evaluation_cannot_reuse_receivable_protocol) ... ok
+test_critique_can_quote_input_numbers_without_allowing_numbers_in_notes (test_coverage_reasoning.CoverageReasoningTests.test_critique_can_quote_input_numbers_without_allowing_numbers_in_notes) ... ok
+test_currency_corruption_and_nan_fail_before_inference (test_coverage_reasoning.CoverageReasoningTests.test_currency_corruption_and_nan_fail_before_inference) ... ok
+test_dictionary_insertion_order_does_not_change_the_model_packet (test_coverage_reasoning.CoverageReasoningTests.test_dictionary_insertion_order_does_not_change_the_model_packet) ... ok
+test_fact_and_business_changes_invalidate_notes (test_coverage_reasoning.CoverageReasoningTests.test_fact_and_business_changes_invalidate_notes) ... ok
+test_model_cannot_forge_references_or_repeat_alternative (test_coverage_reasoning.CoverageReasoningTests.test_model_cannot_forge_references_or_repeat_alternative) ... ok
+test_private_notes_removed_from_public_projection (test_coverage_reasoning.CoverageReasoningTests.test_private_notes_removed_from_public_projection) ... ok
+test_synthetic_suite_is_balanced_and_ids_unique (test_coverage_reasoning.CoverageReasoningTests.test_synthetic_suite_is_balanced_and_ids_unique) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.400s
+
+OK

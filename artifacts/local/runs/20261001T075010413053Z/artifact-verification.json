@@ -1,0 +1,1537 @@
+{
+  "checkedAt": "2026-10-01T07:49:10.352466+00:00",
+  "status": "passed",
+  "snapshotHash": "1db05afe61173e359399c0dce9e98409b60539c1ff4507e0492ed2521f84b61c",
+  "renderedPayloadHash": "aeb104e6762b7e7fb5f74e486023389d257a44e0cb857edc3b1a2d54ef734125",
+  "localReviewHashes": {
+    "MU": "a909e829b502abcac2ed349a047fa9921e27648e75f17be67e2bc5a7f668619c",
+    "000660": "52b45557ff176b4111dff378f37b38bce001e0c9e3f9d4cae037d95e424197f6"
+  },
+  "coverageReviewHashes": {
+    "MU": "e20ec563dab3a5db311fe82229b4eeb4da582f8262a37dcd66f260ee53f1d74f",
+    "NVDA": "d10e0de2b1c0f7a31bc14392a8d7c62699dca9fa6d4a195f2cfa28aff5793942",
+    "GOOGL": "1ba376d531c6b82c649358cce8f598a6b760fb0a57cc438820aab5443c5c13b7",
+    "AAPL": "e8907fe6425b70b2eb3ec1b964b9803dac3d4bf739baacf114ea56c38cb81949",
+    "MSFT": "5d2800beecdcc939ebbbf1d20a71069ee14f8f356dac6b1a5aa1f99573b00728",
+    "AMZN": "a4b4da450abf4b3d2c5bcd8997c4348118b00b0603861084cbc8072e83428188",
+    "META": "4ae8d51402af46dfeeb22bc0d625938efc311d078ccb5d3e7c60e6c213708316",
+    "AMD": "76fd2cdfa515c85bb5e364a166edc3f5c64455f866f867d2272d740eb3477205",
+    "AVGO": "627d83d3412f5a4fe36c52ceea6d3c460c13851c41b00b04ba4d51673c94705f",
+    "QCOM": "98f21b073f7571c6feb8a7ffb9e63a8f9fce236539146dfaec00ad5bde8526f5",
+    "INTC": "afa271c4c12432c052e53ff117af0de0380eb0387d9ce1665e812ad65b836b7a",
+    "AMAT": "7e80d5893111a5fd53242b33207d1aafc90859046d9bdd942b2e0bde8bbdabc4",
+    "LRCX": "7c4603eedcbf09beeed724a2d83dd827ad2d356ceded1c71b8d9bac5597cdb1f",
+    "TSLA": "01d603590a5b5213732461da8be4825ac6dd931a0105480d54c2b8e0b0b60273",
+    "GM": "51163f3d2d59360074b1fde486367609ddb847dabc1adffddf1cb0800b51ad6c",
+    "F": "6ce21d0d2d7575a5e070616b11775cd912c073336026f0623a967484184999ac",
+    "GE": "00239d13b8f1cfea96fb31f3d891c2a5dc82e0533e009c7c294144fb8dc3a1ed",
+    "CAT": "75472aa7d8f54f4aa1f9546e7a2b6db8576bf530cd81393a0ca3b2865e00794d",
+    "LLY": "ec5023f8a6d010af0b8302b5cdfed43f041f722c22fdd9f2ba342afbcfe14930",
+    "JNJ": "9663392bf52c5b514c1e6ed9f22f63f8078c9b6ef2aafff9175dd2275c7fe290",
+    "000660": "8512113961944d7817673167b528542f6a8a6ba8abac720345648786365b5f4a",
+    "005930": "f8cb8f698e4306323e224553c140586acb74f3d3a60a210cdc6f9975963ff7da",
+    "035420": "b83a90be3c25e8cbd4d711aceef9f203cd20f6b888da53188409ed257b658d1e",
+    "066570": "3439debfdc176314aea444be313a3759ad6bc0690136edb2589fbf0521c96719",
+    "005380": "785597db2c0ef0e4e118a91d5fb9465efd3f7b5213bfeaadd49de36b97fad8a4",
+    "000270": "f58a95666d1a4f892301610e692a9155f9947ab143b87882fdf93fc38291bb11",
+    "012330": "a7bf9c9a4068ef477e8e45d9859a8680cd329d77896f02a3df5599b5a3f243c0",
+    "035720": "b5bd37c915c51fceaa3a71eb3b2bf16fa5154ec6ad3cd21a7c3da22f5ea56c3a",
+    "006400": "5566c6f4dfbf8353199918ba6270aba050f7605f909099e9015ff392f68047d3",
+    "051910": "d49197f4669edd1d4eaa90d166bf655a2a8124bc446392f3a03da530dff0b3a2",
+    "373220": "f8fac3c1cfa8a9832e027b59d07852fb9786bff8cac13d51c4e9e79acb3d14de",
+    "005490": "618e83def07a57b6082fd58c80dfab73f048bc4eed24d953e980215319fd9c1f",
+    "207940": "bf3e42427eb3b5269bfdf374c02711e5b483a4d36e5edb6bf2e285db6413a396",
+    "068270": "36edeaae1961771529c695e0d844a9be6fb0d06fa64f90d436f21eee3a994725",
+    "000100": "d6ebc291bcf53e712834d70f31f46460575b2fb0286e7b4c06551c9e1c444fd5",
+    "128940": "163ac14e9cb8ecf2b90142b96f6958bebc0d1df038cde4185d9aa60547dca99f",
+    "329180": "8668bd5e69d94b35b5fbfee7e42580a48c9a82eb23feff8b224214720eff9ced",
+    "012450": "699069f6745c65190f6a0a34f6e65e923f56c6df2d2b0951a73dade2b411f68b",
+    "034020": "3056d8cb4f7fad1195621d28703b93183fc9349a51fd4321b17662c0ed24b168",
+    "267260": "e1a5fe899093825ac6c6f8b5e3f1ba6305660ef48d867948886e4e22f836cbf0"
+  },
+  "questionSelectionHashes": {
+    "MU": "57f4811dab6ba674fd7d2a385b458e1e9ff78f13f1b943655566098b8608bf7e",
+    "NVDA": "a7eaabd2a06d58ed8696034f28899b6424ce5ce4da75989cdd85d0cea5f6bdaa",
+    "GOOGL": "77a2c3dd863ca2c6100c310908f4eb42ce474f2a9cad60aa7e6df45b488ebf6d",
+    "AAPL": "cae684e467936ba4e78ae3668bd294b8c70d6e168713c79844061dd5008519e7",
+    "MSFT": "27d0e8509beee73902486914014ed1b80329391814525feeb15dfcfe741a45f6",
+    "AMZN": "4bebe77e2ffafdb4b0608574eeb390ffc7dbe92fe2e35b2bc451e2f0605c6000",
+    "META": "daa9d34abe959fe23679fbbb7b65ba54dbb259ee62f93a3923accb3bef9a5638",
+    "AMD": "caffcc79af9c0d8b079afa725077c1da35f438a69c136db736e9ecda89389f7c",
+    "AVGO": "6b4eb0464861b6413113d9ff2f90a3741599bb931ffe4252f7ce13da13aae9ba",
+    "QCOM": "285b1b869b51b710de03055f8ed6eb1695adde8213d5373f87159cb617ae2983",
+    "INTC": "df88d143d8ffc55df532b4a908e90a4943ea6d73d5e2a2dcbf15c4c6ca8ec6ee",
+    "AMAT": "103c2f142d551f7f2145c1e73250f9cbb10d1d4bcf8cf6a3c7a06ff051664d48",
+    "LRCX": "8b7105f13028eb17590dde0e3e75886977987d3431e051490229618a2540a896",
+    "TSLA": "4b2fd1dcd1c55e17ccf131e02d4977d53bcb9cbbe4c2ae5cc532826240c6d2b7",
+    "GM": "1fa7cad195ddd785db6d8d677a573e9886b195744f8866693908b8d3b13b6fd9",
+    "F": "c532ade9ddfa9170a6fc01e6f3959d622c9741773709b66ea36635bca625cd99",
+    "GE": "e88a37a31ca90929104a73067882d6ad326a9e9ffa1b16a9d8b94d1cf94add08",
+    "CAT": "7593bd35aad9cd274aae00ebacf453a4a4a8f8bfe2a2bd544dcf817fd824420c",
+    "LLY": "d69e70d1fbae95b676c23d6651b973ecb046591ff9a42cb8ddb5f69906a9977c",
+    "JNJ": "b152ea201ee4aeae0c22c43579c7c574c3aba88b29aeb6baabac49a92704a60b",
+    "000660": "8fbb163275a9fb7dad8aca795530f866ef6bc940f08c5f65887ff81cd5121802",
+    "005930": "e139b414dc296ddbec9b882a742b461a94fbcb448420a10938d3ba47b54dfd49",
+    "035420": "5a18935f2c5c776aa51410d3d7b651edd871d71f745b67b8a18daa16d1cd51ca",
+    "066570": "fc29dcb047ac40583549ceacc359dbedafdc07b3de0a8b7f643029921fc84b72",
+    "005380": "320885cee7fc9aa555cd1b0cbef5982a9f9831146eca123d7898db34353f9de3",
+    "000270": "77ceec9d68f0e40f41ddffaa2d15155b9f81e667c16882f2a2f9e5c773105c0a",
+    "012330": "215d522939023b5dd1bc7b9ed1e4b63334a7e459e7481a19e6118275a882177c",
+    "035720": "e46eb59a81ef3980f5e02cf7c7c78beedbfc2fb658ae80ba68a859ba35df0d16",
+    "006400": "87964d8a016f38d2d60a293a111bf0e4c4be961361186f2e089b1d1eaf2e72f9",
+    "051910": "d6100b3578925f7c3917475cad9d6f86d894eb47415fcd7cb541d3a80e4cccc7",
+    "373220": "884e6367ee317774e3b4411b0be5c5f565cca3347696198f2f9a29fce10d04e4",
+    "005490": "ac6e9d33f49c142f989615d04ca49a965a3fd05ae1a0925d2d67aa58a4bea9cd",
+    "207940": "a5848eb18a9cc0c854be6268c2e28ab51c02d418103b036dc86d7f889722b797",
+    "068270": "6c027937eb494cb31a6bb57be0ca0334c59f16aba78a2873244b21c09229e018",
+    "000100": "73accebdaa16579f12b18f3302cc0d11929b931475ef3d43501d0d7695e16937",
+    "128940": "064ed3551d1cb903d5639a2084fefe84f4ecaacb8786cbd03dbe6b6cdab8d237",
+    "329180": "6d3ed43eaae62fa63c1d3094fea919c18726be7296be85d169c3f6851a856acd",
+    "012450": "4d0bf9df1f7874f7bfb6e7eb6c8f11dbeac0d1a8f1c31d891de26f85b32a67bd",
+    "034020": "3e4c238e4042b9a796cb109872435b54457003a4b95b8d7b5e04acae29a5100c",
+    "267260": "009e68b83d4032a392dafc8ae6df81c393f2d1ab5d147289e33e063bc2582d6f"
+  },
+  "method": "PyMuPDF: A4, text bounds, version on every page, primary filing links; browser/replay/code version agreement",
+  "reports": [
+    {
+      "file": "artifacts/live/universe.pdf",
+      "pages": [
+        {
+          "page": 1,
+          "words": 237,
+          "clipping": false
+        },
+        {
+          "page": 2,
+          "words": 513,
+          "clipping": false
+        },
+        {
+          "page": 3,
+          "words": 526,
+          "clipping": false
+        },
+        {
+          "page": 4,
+          "words": 168,
+          "clipping": false
+        }
+      ],
+      "primaryLinks": []
+    },
+    {
+      "file": "artifacts/live/micron.pdf",
+      "pages": [
+        {
+          "page": 1,
+          "words": 281,
+          "clipping": false
+        },
+        {
+          "page": 2,
+          "words": 128,
+          "clipping": false
+        },
+        {
+          "page": 3,
+          "words": 339,
+          "clipping": false
+        },
+        {
+          "page": 4,
+          "words": 277,
+          "clipping": false
+        },
+        {
+          "page": 5,
+          "words": 177,
+          "clipping": false
+        },
+        {
+          "page": 6,
+          "words": 129,
+          "clipping": false
+        },
+        {
+          "page": 7,
+          "words": 207,
+          "clipping": false
+        },
+        {
+          "page": 8,
+          "words": 223,
+          "clipping": false
+        },
+        {
+          "page": 9,
+          "words": 131,
+          "clipping": false
+        },
+        {
+          "page": 10,
+          "words": 270,
+          "clipping": false
+        },
+        {
+          "page": 11,
+          "words": 308,
+          "clipping": false
+        },
+        {
+          "page": 12,
+          "words": 280,
+          "clipping": false
+        },
+        {
+          "page": 13,
+          "words": 360,
+          "clipping": false
+        },
+        {
+          "page": 14,
+          "words": 350,
+          "clipping": false
+        },
+        {
+          "page": 15,
+          "words": 334,
+          "clipping": false
+        },
+        {
+          "page": 16,
+          "words": 339,
+          "clipping": false
+        },
+        {
+          "page": 17,
+          "words": 103,
+          "clipping": false
+        },
+        {
+          "page": 18,
+          "words": 143,
+          "clipping": false
+        },
+        {
+          "page": 19,
+          "words": 336,
+          "clipping": false
+        },
+        {
+          "page": 20,
+          "words": 221,
+          "clipping": false
+        },
+        {
+          "page": 21,
+          "words": 87,
+          "clipping": false
+        }
+      ],
+      "primaryLinks": [
+        "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/0000723125-26-000015-index.html",
+        "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/0000723125-26-000015-index.html",
+        "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/0000723125-26-000015-index.html",
+        "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/mu-20260528.htm",
+        "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/mu-20260528.htm",
+        "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/mu-20260528.htm",
+        "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/0000723125-26-000015-index.html",
+        "https://query2.finance.yahoo.com/v8/finance/chart/MU?range=5y&interval=1d&events=div%2Csplits",
+        "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/0000723125-26-000015-index.html",
+        "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/0000723125-26-000015-index.html",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003509",
+        "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/mu-20260528.htm",
+        "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/mu-20260528.htm",
+        "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/mu-20260528.htm",
+        "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/mu-20260528.htm",
+        "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/mu-20260528.htm",
+        "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/mu-20260528.htm",
+        "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/mu-20260528.htm",
+        "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/mu-20260528.htm",
+        "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/mu-20260528.htm",
+        "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/mu-20260528.htm",
+        "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/mu-20260528.htm",
+        "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/mu-20260528.htm",
+        "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/mu-20260528.htm",
+        "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/mu-20260528.htm",
+        "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/mu-20260528.htm",
+        "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/mu-20260528.htm",
+        "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/mu-20260528.htm",
+        "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/mu-20260528.htm",
+        "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/mu-20260528.htm",
+        "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/mu-20260528.htm",
+        "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/mu-20260528.htm",
+        "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/mu-20260528.htm",
+        "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/mu-20260528.htm",
+        "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/mu-20260528.htm",
+        "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/mu-20260528.htm",
+        "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/mu-20260528.htm",
+        "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/mu-20260528.htm",
+        "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/mu-20260528.htm",
+        "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/mu-20260528.htm",
+        "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/mu-20260528.htm",
+        "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/mu-20260528.htm",
+        "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/mu-20260528.htm",
+        "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/mu-20260528.htm",
+        "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/mu-20260528.htm",
+        "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/mu-20260528.htm",
+        "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/mu-20260528.htm",
+        "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/mu-20260528.htm",
+        "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/mu-20260528.htm",
+        "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/mu-20260528.htm",
+        "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/mu-20260528.htm",
+        "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/mu-20260528.htm",
+        "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/mu-20260528.htm",
+        "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/mu-20260528.htm",
+        "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/mu-20260528.htm",
+        "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/mu-20260528.htm",
+        "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/mu-20260528.htm",
+        "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/mu-20260528.htm",
+        "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/mu-20260528.htm",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003509",
+        "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/0000723125-26-000015-index.html",
+        "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/mu-20260528.htm",
+        "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/0000723125-26-000015-index.html",
+        "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/0000723125-26-000015-index.html",
+        "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/0000723125-26-000015-index.html"
+      ]
+    },
+    {
+      "file": "artifacts/live/sk-hynix.pdf",
+      "pages": [
+        {
+          "page": 1,
+          "words": 304,
+          "clipping": false
+        },
+        {
+          "page": 2,
+          "words": 128,
+          "clipping": false
+        },
+        {
+          "page": 3,
+          "words": 316,
+          "clipping": false
+        },
+        {
+          "page": 4,
+          "words": 318,
+          "clipping": false
+        },
+        {
+          "page": 5,
+          "words": 176,
+          "clipping": false
+        },
+        {
+          "page": 6,
+          "words": 205,
+          "clipping": false
+        },
+        {
+          "page": 7,
+          "words": 223,
+          "clipping": false
+        },
+        {
+          "page": 8,
+          "words": 241,
+          "clipping": false
+        },
+        {
+          "page": 9,
+          "words": 332,
+          "clipping": false
+        },
+        {
+          "page": 10,
+          "words": 274,
+          "clipping": false
+        },
+        {
+          "page": 11,
+          "words": 363,
+          "clipping": false
+        },
+        {
+          "page": 12,
+          "words": 159,
+          "clipping": false
+        },
+        {
+          "page": 13,
+          "words": 280,
+          "clipping": false
+        },
+        {
+          "page": 14,
+          "words": 119,
+          "clipping": false
+        },
+        {
+          "page": 15,
+          "words": 155,
+          "clipping": false
+        },
+        {
+          "page": 16,
+          "words": 361,
+          "clipping": false
+        },
+        {
+          "page": 17,
+          "words": 221,
+          "clipping": false
+        },
+        {
+          "page": 18,
+          "words": 87,
+          "clipping": false
+        }
+      ],
+      "primaryLinks": [
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003509",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003509",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003509",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003509",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003509",
+        "https://query2.finance.yahoo.com/v8/finance/chart/000660.KS?range=5y&interval=1d&events=div%2Csplits",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003509",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003509",
+        "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/0000723125-26-000015-index.html",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003509",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003509",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003509",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003509",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003509",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003509",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003509",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003509",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003509",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003509",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003509",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003509",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003509",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003509",
+        "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/0000723125-26-000015-index.html",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003509",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003509",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003509",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003509",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003509",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003509"
+      ]
+    },
+    {
+      "file": "artifacts/live/microsoft.pdf",
+      "pages": [
+        {
+          "page": 1,
+          "words": 301,
+          "clipping": false
+        },
+        {
+          "page": 2,
+          "words": 128,
+          "clipping": false
+        },
+        {
+          "page": 3,
+          "words": 350,
+          "clipping": false
+        },
+        {
+          "page": 4,
+          "words": 172,
+          "clipping": false
+        },
+        {
+          "page": 5,
+          "words": 129,
+          "clipping": false
+        },
+        {
+          "page": 6,
+          "words": 207,
+          "clipping": false
+        },
+        {
+          "page": 7,
+          "words": 198,
+          "clipping": false
+        },
+        {
+          "page": 8,
+          "words": 137,
+          "clipping": false
+        },
+        {
+          "page": 9,
+          "words": 260,
+          "clipping": false
+        },
+        {
+          "page": 10,
+          "words": 212,
+          "clipping": false
+        },
+        {
+          "page": 11,
+          "words": 289,
+          "clipping": false
+        },
+        {
+          "page": 12,
+          "words": 343,
+          "clipping": false
+        },
+        {
+          "page": 13,
+          "words": 334,
+          "clipping": false
+        },
+        {
+          "page": 14,
+          "words": 326,
+          "clipping": false
+        },
+        {
+          "page": 15,
+          "words": 333,
+          "clipping": false
+        },
+        {
+          "page": 16,
+          "words": 324,
+          "clipping": false
+        },
+        {
+          "page": 17,
+          "words": 279,
+          "clipping": false
+        },
+        {
+          "page": 18,
+          "words": 289,
+          "clipping": false
+        },
+        {
+          "page": 19,
+          "words": 103,
+          "clipping": false
+        }
+      ],
+      "primaryLinks": [
+        "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/0001193125-26-323660-index.html",
+        "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/0001193125-26-323660-index.html",
+        "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/0001193125-26-323660-index.html",
+        "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/0001193125-26-323660-index.html",
+        "https://query2.finance.yahoo.com/v8/finance/chart/MSFT?range=5y&interval=1d&events=div%2Csplits",
+        "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/0001193125-26-323660-index.html",
+        "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/0001193125-26-323660-index.html",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003509",
+        "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000071/0001652044-26-000071-index.html",
+        "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+      ]
+    },
+    {
+      "file": "artifacts/live/amazon.pdf",
+      "pages": [
+        {
+          "page": 1,
+          "words": 276,
+          "clipping": false
+        },
+        {
+          "page": 2,
+          "words": 128,
+          "clipping": false
+        },
+        {
+          "page": 3,
+          "words": 424,
+          "clipping": false
+        },
+        {
+          "page": 4,
+          "words": 181,
+          "clipping": false
+        },
+        {
+          "page": 5,
+          "words": 129,
+          "clipping": false
+        },
+        {
+          "page": 6,
+          "words": 207,
+          "clipping": false
+        },
+        {
+          "page": 7,
+          "words": 221,
+          "clipping": false
+        },
+        {
+          "page": 8,
+          "words": 144,
+          "clipping": false
+        },
+        {
+          "page": 9,
+          "words": 265,
+          "clipping": false
+        },
+        {
+          "page": 10,
+          "words": 313,
+          "clipping": false
+        },
+        {
+          "page": 11,
+          "words": 320,
+          "clipping": false
+        },
+        {
+          "page": 12,
+          "words": 260,
+          "clipping": false
+        },
+        {
+          "page": 13,
+          "words": 334,
+          "clipping": false
+        },
+        {
+          "page": 14,
+          "words": 362,
+          "clipping": false
+        },
+        {
+          "page": 15,
+          "words": 331,
+          "clipping": false
+        },
+        {
+          "page": 16,
+          "words": 362,
+          "clipping": false
+        },
+        {
+          "page": 17,
+          "words": 117,
+          "clipping": false
+        },
+        {
+          "page": 18,
+          "words": 280,
+          "clipping": false
+        },
+        {
+          "page": 19,
+          "words": 289,
+          "clipping": false
+        },
+        {
+          "page": 20,
+          "words": 103,
+          "clipping": false
+        }
+      ],
+      "primaryLinks": [
+        "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/0001018724-26-000026-index.html",
+        "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/0001018724-26-000026-index.html",
+        "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/0001018724-26-000026-index.html",
+        "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/0001018724-26-000026-index.html",
+        "https://query2.finance.yahoo.com/v8/finance/chart/AMZN?range=5y&interval=1d&events=div%2Csplits",
+        "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/0001018724-26-000026-index.html",
+        "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/0001018724-26-000026-index.html",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002266",
+        "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm",
+        "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm",
+        "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm",
+        "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002266",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260819000055",
+        "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000071/0001652044-26-000071-index.html",
+        "https://www.sec.gov/Archives/edgar/data/1326801/000162828026050705/0001628280-26-050705-index.html",
+        "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+      ]
+    },
+    {
+      "file": "artifacts/live/kia.pdf",
+      "pages": [
+        {
+          "page": 1,
+          "words": 311,
+          "clipping": false
+        },
+        {
+          "page": 2,
+          "words": 128,
+          "clipping": false
+        },
+        {
+          "page": 3,
+          "words": 327,
+          "clipping": false
+        },
+        {
+          "page": 4,
+          "words": 163,
+          "clipping": false
+        },
+        {
+          "page": 5,
+          "words": 129,
+          "clipping": false
+        },
+        {
+          "page": 6,
+          "words": 204,
+          "clipping": false
+        },
+        {
+          "page": 7,
+          "words": 221,
+          "clipping": false
+        },
+        {
+          "page": 8,
+          "words": 245,
+          "clipping": false
+        },
+        {
+          "page": 9,
+          "words": 318,
+          "clipping": false
+        },
+        {
+          "page": 10,
+          "words": 279,
+          "clipping": false
+        },
+        {
+          "page": 11,
+          "words": 325,
+          "clipping": false
+        },
+        {
+          "page": 12,
+          "words": 370,
+          "clipping": false
+        },
+        {
+          "page": 13,
+          "words": 339,
+          "clipping": false
+        },
+        {
+          "page": 14,
+          "words": 302,
+          "clipping": false
+        },
+        {
+          "page": 15,
+          "words": 318,
+          "clipping": false
+        },
+        {
+          "page": 16,
+          "words": 318,
+          "clipping": false
+        },
+        {
+          "page": 17,
+          "words": 103,
+          "clipping": false
+        }
+      ],
+      "primaryLinks": [
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260916000427",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260916000427",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260916000427",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260916000427",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260916000427",
+        "https://query2.finance.yahoo.com/v8/finance/chart/000270.KS?range=5y&interval=1d&events=div%2Csplits",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260916000427",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260916000427",
+        "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/0001628280-26-049270-index.html",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260916000427",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260916000427",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260916000427",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260916000427",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260916000427",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260916000427",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260916000427",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260916000427",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260916000427",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260916000427",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260916000427",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260916000427",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260312001224",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260312001224",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260916000427",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260916000427",
+        "https://www.sec.gov/Archives/edgar/data/37996/000003799626000156/f-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/1467858/000146785826000051/0001467858-26-000051-index.html",
+        "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/0001628280-26-049270-index.html",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003521",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814004065",
+        "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/tsla-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/tsla-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/tsla-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/tsla-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/tsla-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/tsla-20260630.htm",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260916000427",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260916000427",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260916000427"
+      ]
+    },
+    {
+      "file": "artifacts/live/tesla.pdf",
+      "pages": [
+        {
+          "page": 1,
+          "words": 275,
+          "clipping": false
+        },
+        {
+          "page": 2,
+          "words": 128,
+          "clipping": false
+        },
+        {
+          "page": 3,
+          "words": 411,
+          "clipping": false
+        },
+        {
+          "page": 4,
+          "words": 165,
+          "clipping": false
+        },
+        {
+          "page": 5,
+          "words": 129,
+          "clipping": false
+        },
+        {
+          "page": 6,
+          "words": 207,
+          "clipping": false
+        },
+        {
+          "page": 7,
+          "words": 221,
+          "clipping": false
+        },
+        {
+          "page": 8,
+          "words": 262,
+          "clipping": false
+        },
+        {
+          "page": 9,
+          "words": 345,
+          "clipping": false
+        },
+        {
+          "page": 10,
+          "words": 338,
+          "clipping": false
+        },
+        {
+          "page": 11,
+          "words": 287,
+          "clipping": false
+        },
+        {
+          "page": 12,
+          "words": 375,
+          "clipping": false
+        },
+        {
+          "page": 13,
+          "words": 329,
+          "clipping": false
+        },
+        {
+          "page": 14,
+          "words": 343,
+          "clipping": false
+        },
+        {
+          "page": 15,
+          "words": 298,
+          "clipping": false
+        },
+        {
+          "page": 16,
+          "words": 318,
+          "clipping": false
+        },
+        {
+          "page": 17,
+          "words": 103,
+          "clipping": false
+        }
+      ],
+      "primaryLinks": [
+        "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/0001628280-26-049270-index.html",
+        "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/0001628280-26-049270-index.html",
+        "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/0001628280-26-049270-index.html",
+        "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/tsla-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/tsla-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/tsla-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/tsla-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/0001628280-26-049270-index.html",
+        "https://query2.finance.yahoo.com/v8/finance/chart/TSLA?range=5y&interval=1d&events=div%2Csplits",
+        "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/0001628280-26-049270-index.html",
+        "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/0001628280-26-049270-index.html",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003521",
+        "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/tsla-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/tsla-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/tsla-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/tsla-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/tsla-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/tsla-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/tsla-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/tsla-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/tsla-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/tsla-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/tsla-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/tsla-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/tsla-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/tsla-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/tsla-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/tsla-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/1318605/000162828026003952/tsla-20251231.htm",
+        "https://www.sec.gov/Archives/edgar/data/1318605/000162828026003952/tsla-20251231.htm",
+        "https://www.sec.gov/Archives/edgar/data/1318605/000162828026003952/tsla-20251231.htm",
+        "https://www.sec.gov/Archives/edgar/data/1318605/000162828026003952/tsla-20251231.htm",
+        "https://www.sec.gov/Archives/edgar/data/1318605/000162828026003952/tsla-20251231.htm",
+        "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/tsla-20260630.htm",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260916000427",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003521",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814004065",
+        "https://www.sec.gov/Archives/edgar/data/37996/000003799626000156/f-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/1467858/000146785826000051/0001467858-26-000051-index.html",
+        "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/tsla-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/tsla-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/tsla-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/tsla-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/tsla-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/tsla-20260630.htm",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260916000427",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260916000427",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260916000427"
+      ]
+    },
+    {
+      "file": "artifacts/live/comparison-auto.pdf",
+      "pages": [
+        {
+          "page": 1,
+          "words": 226,
+          "clipping": false
+        },
+        {
+          "page": 2,
+          "words": 235,
+          "clipping": false
+        },
+        {
+          "page": 3,
+          "words": 146,
+          "clipping": false
+        },
+        {
+          "page": 4,
+          "words": 323,
+          "clipping": false
+        }
+      ],
+      "primaryLinks": [
+        "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/tsla-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/tsla-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/tsla-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/tsla-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/tsla-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/tsla-20260630.htm",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260916000427",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260916000427",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260916000427"
+      ]
+    },
+    {
+      "file": "artifacts/live/comparison-cloud.pdf",
+      "pages": [
+        {
+          "page": 1,
+          "words": 225,
+          "clipping": false
+        },
+        {
+          "page": 2,
+          "words": 242,
+          "clipping": false
+        },
+        {
+          "page": 3,
+          "words": 97,
+          "clipping": false
+        },
+        {
+          "page": 4,
+          "words": 292,
+          "clipping": false
+        }
+      ],
+      "primaryLinks": [
+        "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+      ]
+    },
+    {
+      "file": "artifacts/live/hyundai.pdf",
+      "pages": [
+        {
+          "page": 1,
+          "words": 304,
+          "clipping": false
+        },
+        {
+          "page": 2,
+          "words": 285,
+          "clipping": false
+        },
+        {
+          "page": 3,
+          "words": 129,
+          "clipping": false
+        },
+        {
+          "page": 4,
+          "words": 204,
+          "clipping": false
+        },
+        {
+          "page": 5,
+          "words": 221,
+          "clipping": false
+        },
+        {
+          "page": 6,
+          "words": 132,
+          "clipping": false
+        },
+        {
+          "page": 7,
+          "words": 167,
+          "clipping": false
+        },
+        {
+          "page": 8,
+          "words": 204,
+          "clipping": false
+        },
+        {
+          "page": 9,
+          "words": 325,
+          "clipping": false
+        },
+        {
+          "page": 10,
+          "words": 369,
+          "clipping": false
+        },
+        {
+          "page": 11,
+          "words": 319,
+          "clipping": false
+        },
+        {
+          "page": 12,
+          "words": 290,
+          "clipping": false
+        },
+        {
+          "page": 13,
+          "words": 316,
+          "clipping": false
+        },
+        {
+          "page": 14,
+          "words": 312,
+          "clipping": false
+        },
+        {
+          "page": 15,
+          "words": 103,
+          "clipping": false
+        }
+      ],
+      "primaryLinks": [
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003521",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003521",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003521",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003521",
+        "https://query2.finance.yahoo.com/v8/finance/chart/005380.KS?range=5y&interval=1d&events=div%2Csplits",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003521",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003521",
+        "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/0001628280-26-049270-index.html",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003521",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003521",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003521",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003521",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003521",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003521",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003521",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003521",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003521",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003521",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003521",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003521",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003521",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003521",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003521",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003521",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003521",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003521",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003521",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003521",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003521",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003521",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003521",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003521",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003521",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003521",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003521",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003521",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003521",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003521",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003521",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003521",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003521",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003521",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003521",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003521",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003521",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003521",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003521",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003521",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003521",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003521",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003521",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003521",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003521",
+        "https://www.sec.gov/Archives/edgar/data/37996/000003799626000156/f-20260630.htm",
+        "https://www.sec.gov/Archives/edgar/data/1467858/000146785826000051/0001467858-26-000051-index.html",
+        "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/0001628280-26-049270-index.html",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260916000427",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814004065"
+      ]
+    },
+    {
+      "file": "artifacts/live/samsung-biologics.pdf",
+      "pages": [
+        {
+          "page": 1,
+          "words": 312,
+          "clipping": false
+        },
+        {
+          "page": 2,
+          "words": 273,
+          "clipping": false
+        },
+        {
+          "page": 3,
+          "words": 161,
+          "clipping": false
+        },
+        {
+          "page": 4,
+          "words": 129,
+          "clipping": false
+        },
+        {
+          "page": 5,
+          "words": 204,
+          "clipping": false
+        },
+        {
+          "page": 6,
+          "words": 223,
+          "clipping": false
+        },
+        {
+          "page": 7,
+          "words": 161,
+          "clipping": false
+        },
+        {
+          "page": 8,
+          "words": 236,
+          "clipping": false
+        },
+        {
+          "page": 9,
+          "words": 295,
+          "clipping": false
+        },
+        {
+          "page": 10,
+          "words": 324,
+          "clipping": false
+        },
+        {
+          "page": 11,
+          "words": 263,
+          "clipping": false
+        },
+        {
+          "page": 12,
+          "words": 347,
+          "clipping": false
+        },
+        {
+          "page": 13,
+          "words": 326,
+          "clipping": false
+        },
+        {
+          "page": 14,
+          "words": 159,
+          "clipping": false
+        },
+        {
+          "page": 15,
+          "words": 276,
+          "clipping": false
+        },
+        {
+          "page": 16,
+          "words": 119,
+          "clipping": false
+        }
+      ],
+      "primaryLinks": [
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003375",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003375",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003375",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515001658",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515001658",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003375",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003375",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003375",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003375",
+        "https://query2.finance.yahoo.com/v8/finance/chart/207940.KS?range=5y&interval=1d&events=div%2Csplits",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003375",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003375",
+        "https://www.sec.gov/Archives/edgar/data/59478/000005947826000081/0000059478-26-000081-index.html",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003375",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003375",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003375",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003375",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003375",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003375",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003375",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003375",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003375",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003375",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003375",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003375",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003375",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003375",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003375",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003375",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003375",
+        "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/0000200406-26-000153-index.html",
+        "https://www.sec.gov/Archives/edgar/data/59478/000005947826000081/0000059478-26-000081-index.html",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002038",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003751",
+        "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814004181"
+      ]
+    },
+    {
+      "file": "artifacts/live/research-us.pdf",
+      "pages": [
+        {
+          "page": 1,
+          "words": 242,
+          "clipping": false
+        },
+        {
+          "page": 2,
+          "words": 332,
+          "clipping": false
+        },
+        {
+          "page": 3,
+          "words": 321,
+          "clipping": false
+        },
+        {
+          "page": 4,
+          "words": 202,
+          "clipping": false
+        }
+      ],
+      "primaryLinks": []
+    },
+    {
+      "file": "artifacts/live/research-kr.pdf",
+      "pages": [
+        {
+          "page": 1,
+          "words": 242,
+          "clipping": false
+        },
+        {
+          "page": 2,
+          "words": 331,
+          "clipping": false
+        },
+        {
+          "page": 3,
+          "words": 323,
+          "clipping": false
+        },
+        {
+          "page": 4,
+          "words": 198,
+          "clipping": false
+        }
+      ],
+      "primaryLinks": []
+    },
+    {
+      "file": "artifacts/live/conditions.pdf",
+      "pages": [
+        {
+          "page": 1,
+          "words": 317,
+          "clipping": false
+        },
+        {
+          "page": 2,
+          "words": 348,
+          "clipping": false
+        },
+        {
+          "page": 3,
+          "words": 326,
+          "clipping": false
+        },
+        {
+          "page": 4,
+          "words": 327,
+          "clipping": false
+        },
+        {
+          "page": 5,
+          "words": 326,
+          "clipping": false
+        },
+        {
+          "page": 6,
+          "words": 316,
+          "clipping": false
+        },
+        {
+          "page": 7,
+          "words": 316,
+          "clipping": false
+        },
+        {
+          "page": 8,
+          "words": 168,
+          "clipping": false
+        }
+      ],
+      "primaryLinks": []
+    }
+  ],
+  "artifacts": {
+    "artifacts/live/universe.pdf": "e52640187cf2ee0bd13353906701b6f732a3f6b9c96b19801e6c3451eccbdc24",
+    "artifacts/live/micron.pdf": "eccbda26d59a18f00f5ffea5cf8cb2ec55a874515b797f380e4e2ae715d0875f",
+    "artifacts/live/sk-hynix.pdf": "267617a2f3876f68ba7b59196885401214f63859e5940ca21be546dd5db76ed7",
+    "artifacts/live/microsoft.pdf": "6ccc08198c606890fc0fc22c4f843843590be61189d9a307a6fc285863654ff8",
+    "artifacts/live/amazon.pdf": "97fa730074aa416557e4d3c95f6fed29ffe85b39e2c883707102c6617b89c2bb",
+    "artifacts/live/kia.pdf": "a76465d8dbc16f285e0c298a0d10d593f751836bd33f43f85db96ae41ae8cf18",
+    "artifacts/live/tesla.pdf": "c74728b6f9d3f82909b6517243ea996caba53565af8d63bceddd77ca8c1a67d2",
+    "artifacts/live/comparison-auto.pdf": "ad4126486bf5d7ab4064b87262158fb75856b83b3b353aec545a95d5c0e3fec7",
+    "artifacts/live/comparison-cloud.pdf": "3f190f517d179b391f35df12c4684475aef1062338b15d3e08d9f471015337c1",
+    "artifacts/live/hyundai.pdf": "546d48387d7a98371560701db6e190707102c649fc7801071be7e319fa9ecda4",
+    "artifacts/live/samsung-biologics.pdf": "ce75dceb53be40d8c95623cbbc0ff0956a02ad1534ab0c7d0cf629adf68261bd",
+    "artifacts/live/research-us.pdf": "31b659ab0abb5eef8a44230f49dd0d52a05a1da38f6f12b2fa18bef26c0feaf8",
+    "artifacts/live/research-kr.pdf": "0ccd13e6b1a25ad3cdd4f2e96c6009b8a4a9ae7a92b5a78d57bdee24dd231571",
+    "artifacts/live/conditions.pdf": "fa5007b4b579444d977f6456be3ea4af1b5c76fea6132a10bd603234d521f6be",
+    "artifacts/live/desktop-amazon-operating-path.png": "00c716a5eae54f2d692b3941c2dde4c88b2028f11b77ffd665a8a7316f5ac219",
+    "artifacts/live/desktop-biologics.png": "996fd95f2bec2e0025746cf99fa4ba2d12df8015b76afd45de2af5cf2c314e4a",
+    "artifacts/live/desktop-filing-reading.png": "f9f3f2ae9c5ab122d56985e1e37adc60a04c6dc964c153b4599868f207ee76ff",
+    "artifacts/live/desktop-hynix.png": "134c541ed9f1f0458b1eb84191cd447735778eeb5f3db5467d3fd2ca8d732ed5",
+    "artifacts/live/desktop-hyundai.png": "5a13443924e561398b88918c0914a410c4ef065f52a3105c188203e3f03b5bba",
+    "artifacts/live/desktop-kia-operating-path.png": "bac1c109cf673b848f5ffe8f5e68145195f652f3765e661bc090db9e26171b08",
+    "artifacts/live/desktop-korean-period-bridge.png": "4b9921f5410027ea7408f21caafb97bbf77b5d2fc507c5753d5dc66e14f832cc",
+    "artifacts/live/desktop-lab-kr.png": "e05506f16bc6bbb4128ef9d5c2c4ecd2428c7e81b3b2720e110b3fcc238adc01",
+    "artifacts/live/desktop-lab-us.png": "7e271f04ca4447a5b93686277ee03af678d8078648afd989f98e0fcf2d0cb187",
+    "artifacts/live/desktop-micron.png": "7f78dbbfd0c293fe12679593bffbc8a19d38b8e78a2cb3b8a2c5edb075e2d6ff",
+    "artifacts/live/desktop-microsoft.png": "5f8113f31a800d255d3bca5ef5f72f2d1d5133f52cc0e877d4c52bc516d17773",
+    "artifacts/live/desktop-notebook.png": "b0560c38a4b0fd5dc035d8c6a8425825676b8320e45ecf02dc174707c75921f5",
+    "artifacts/live/desktop-operating-path.png": "ed9fa0f7faf98e6bdab87f21f93e406b49e3f5161f95a1cb1e092800eafd09bf",
+    "artifacts/live/desktop-paired-auto.png": "465b5666a3a7388e6bc8011ecf3f6728d18af3c0ad539524fd6e447278df533b",
+    "artifacts/live/desktop-paired-cloud.png": "6694514af163df69e4adbed9d84db0498a1aedfcb1cc69058af013906ea12492",
+    "artifacts/live/desktop-sources.png": "791960e8e8034c741e92aa946e7fc22b9c8f3ba86e9b6372dae065bdd3c09e14",
+    "artifacts/live/desktop-tesla-operating-path.png": "733c788d5e338c38baab3eefea63a6bc6c1a9b2acfb7deac7ce623c11858a249",
+    "artifacts/live/desktop-tracking.png": "b42d5332a266a982bda90fb71af30d52815a2f08c1fb62fbd8be95125a7db331",
+    "artifacts/live/desktop-universe.png": "b093b0cd3e60363a906744c81ef3adcb62f17fc7a0eaaead6dfbc7c164af56c2",
+    "artifacts/live/mobile-company-005380.png": "639f021ddce3877cfdbb5a639687bb90a5cda7400dea5ff9ffddae48e4c61fdf",
+    "artifacts/live/mobile-company-MSFT.png": "c6047eec4fcfc189ed79f9a149be23e4d65a4be1f15b77c618ca8453cb5d25b9",
+    "artifacts/live/mobile-company.png": "1207aeeaa49c2ba9ae737876bdd18dca9eb34460733f48cab3e950f11acd97ab",
+    "artifacts/live/mobile-lab.png": "c444feceddf054020c177c5367ae06ffd0995268263c79b1cb6e4a1a3a53ec0d",
+    "artifacts/live/mobile-paired-auto.png": "6db8b60e28361bb44d19ba3ec8b81505e2bccb313672c4f680e46fc71b606394",
+    "artifacts/live/mobile-sources.png": "7954f4d8bc9b76b64437c87d656485603e3302bd469dd32359ab338b2e3659c5",
+    "artifacts/live/mobile-tracking.png": "29978087efcf249bd109bdc2ed574dabd3789f53653f3ea6b00ffe7dc87e0fb9",
+    "artifacts/live/mobile-universe.png": "79c30d72069de92804a3cc401718a042b41c9b5aa2af5bb3434564ebf19d7119",
+    "artifacts/live/1db05afe6117-KR-fundamental.png": "38791572869e67decf0822f821b483ac782d5943478b01533ef53ebf80fd5c8a",
+    "artifacts/live/1db05afe6117-KR-fundamental.svg": "171ed7035d825cce2fde8b406f3171b3f4155045ede3d011d50c55e2c6800022",
+    "artifacts/live/1db05afe6117-KR-research.png": "a91d56706cfa3d2d40a045cb3b13e424c62d3c99ba89424e7ab6b72cb5976d55",
+    "artifacts/live/1db05afe6117-KR-research.svg": "dec1f0820c9927d7c189343f205d2b335e4ce91cf72c94495e4be7e488373b19",
+    "artifacts/live/1db05afe6117-US-fundamental.png": "0c532050a985821d372a7de8b3e7ca11f147247a6020b8007084b2d118b5a68a",
+    "artifacts/live/1db05afe6117-US-fundamental.svg": "b57c060fec7a57be02f9a0a5d53160095ce52e972a60b6059ffe93fa396159e2",
+    "artifacts/live/1db05afe6117-US-research.png": "050368f599edf384ff34e7ea0090da8bba15bc8f3d6c758d061b1902a22cf873",
+    "artifacts/live/1db05afe6117-US-research.svg": "3332d3919866bc723c8963f6dc54a74bc16c3fb1a53ca36ea82c7ea4caa177e2",
+    "artifacts/live/1db05afe6117-amazon-detail-10.png": "533447ddd552160949ea1350a15a2f9980c7dc6d727fc6578dcbd720bccd74d0",
+    "artifacts/live/1db05afe6117-amazon-detail-13.png": "f4cd95dfabba1edb1de9d67f6f65632988006d4ceed5337459dc148a378033ae",
+    "artifacts/live/1db05afe6117-amazon-detail-14.png": "df19a45294ff1c4531d32fcb45fdc44d322fed1a80ecd309429509d2b546680c",
+    "artifacts/live/1db05afe6117-comparison-auto-detail-1.png": "8ba5d23ea5796f74525b39525f99ad87d479d1e6cc2dff2c5ebcc0f69ac215e7",
+    "artifacts/live/1db05afe6117-comparison-auto-detail-2.png": "3a2f52b367635f3ed6e5aefa0649e27a5cd9d5b953c253e68ba0b703847e0393",
+    "artifacts/live/1db05afe6117-comparison-auto-detail-3.png": "d8da83c0730f6671f1ebc81640564c1fdda0171b2b00533eb626c29a8937ef2d",
+    "artifacts/live/1db05afe6117-comparison-auto-detail-4.png": "02b175ef99a7d30aea62ae185034fca05dd6093aa0ce8b038ca79f5a0ae7bcee",
+    "artifacts/live/1db05afe6117-comparison-cloud-detail-1.png": "270a381891e05422546c7fdeebae82f331d3c2295a6e0c0b64319fe33e90f953",
+    "artifacts/live/1db05afe6117-comparison-cloud-detail-2.png": "5ebb48c4559f57e9320f82e78a5fb360311a5100736cc6aa4d84105b5dc65bc9",
+    "artifacts/live/1db05afe6117-comparison-cloud-detail-3.png": "3cdf4d73d4e69afbf875d9b7c1222e21cd1a7e86034470d44d33b6d45d3bd023",
+    "artifacts/live/1db05afe6117-comparison-cloud-detail-4.png": "2d44d00fd7f8c7ad18ea7c4c964f9c807319a95587feac891cea39db7632c59f",
+    "artifacts/live/1db05afe6117-contact-1.png": "5084b5d7cf65b3af5d5d03ccfe94c73f19b811a3fe2702a78f830ce1f118d35e",
+    "artifacts/live/1db05afe6117-contact-10.png": "1c7548bdf9dbea79018c17ddac1c2f6f2991e26962d234e3d00677d6f82a2dff",
+    "artifacts/live/1db05afe6117-contact-11.png": "47570d8c4aebf70ae70e5ab02ac81d17255acb1088aecfa569db1cb1a1f82211",
+    "artifacts/live/1db05afe6117-contact-2.png": "913e185ad8e97bae50608bb5d780974e020430d9a64723632beeebe60e303ff1",
+    "artifacts/live/1db05afe6117-contact-3.png": "a81a84a949d29bcfb30c0bfeba0f14834dc16595319610a86c8db1ed44692255",
+    "artifacts/live/1db05afe6117-contact-4.png": "040c679edd1d4bd5d1e3f6f1edab9361e86fae6ac26a21f1150cb5e493b00e41",
+    "artifacts/live/1db05afe6117-contact-5.png": "066a4973f410c41f2507b8cb12927be87a88085ed6b2878a8db0faafde424886",
+    "artifacts/live/1db05afe6117-contact-6.png": "55b458c08723f243ec662a5213d1827164b7cdb4ade46dc406076907bd8c08b9",
+    "artifacts/live/1db05afe6117-contact-7.png": "0e46e467e393e81687a44ff9c8d6cb72c317eab0f61e833750ddfe2a68b8e02b",
+    "artifacts/live/1db05afe6117-contact-8.png": "940e6e2f881fcfdf2c50d71f3859c09d9ccb990d94be0835bcf2b97a9ce52077",
+    "artifacts/live/1db05afe6117-contact-9.png": "1d58ab734aea8d4d91a38f68f78016a8e4ace24c8938034e67c136c0a360e15f",
+    "artifacts/live/1db05afe6117-detail-pages.json": "751c682df1bf453777f2f935ca17ba272da24136cbf28a85f235116013376700",
+    "artifacts/live/1db05afe6117-hyundai-detail-9.png": "76bc83cf2d905c13ae923542248925619cce1bd0bdfe0a804091b3f0b4d02196",
+    "artifacts/live/1db05afe6117-kia-detail-11.png": "1909d682f7916385fc81ab6ebb7ae7d75e9141ca98e4455b005cf0cba703cd2d",
+    "artifacts/live/1db05afe6117-kia-detail-12.png": "db24f575b0c4f3622b0b416080f12df315b445ed8e8c04d4e9b6b9e18951977c",
+    "artifacts/live/1db05afe6117-samsung-biologics-detail-9.png": "3ad193013acd3f3eb5312b0145c4ea49f331863dc1501edd30a8f3ab3449ca6d",
+    "artifacts/live/1db05afe6117-tesla-detail-10.png": "67d832487038f5a24ef48afee871c3e0d02e3bf1ab148a64ab58b412b840320f",
+    "artifacts/live/1db05afe6117-tesla-detail-12.png": "c1a700131fd749f897b86325d52db1510aed652d6c2290ae7a3243e20eac6f10",
+    "artifacts/live/1db05afe6117-visual-pages.json": "aa75f0766a4a9f2ebe73062c5b00f08d0e69cbcb656e46e4e754046516ff962c"
+  }
+}

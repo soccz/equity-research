@@ -1,0 +1,4174 @@
+{
+  "version": "coverage-transfer-v2",
+  "scope": "v10 규칙을 정한 뒤 실행 전에 고정한 실제 공시 입력12문장과 별도 합성12문장. 작성자 라벨이며 독립 금융 검토·기업 정확도나 미사용 표본 성능으로 일반화하지 않는다. 결과를 보고 수정하면 개발자료로 재분류한다.",
+  "selection": "실제 회사의 부문·금융·흐름/잔액·공백 오류와 새로운 합성 수치/문장을 사전 고정. 이전 transfer-v1 및 개발자료를 덮어쓰지 않음.",
+  "gate": {
+    "maxFalseAccepts": 0,
+    "maxFalseRejects": 2,
+    "maxInvalidResponses": 0
+  },
+  "cases": [
+    {
+      "id": "msft_missing_return",
+      "role": "missing",
+      "text": "입력만으로 사업부별 설비투자의 회수 수익률은 확인할 수 없다.",
+      "accept": true,
+      "expected": "supported",
+      "rationale": "설비 회수 수익률은 미제공",
+      "input": {
+        "company": "MICROSOFT CORP",
+        "ticker": "MSFT",
+        "sector": "플랫폼·소프트웨어",
+        "currency": "USD",
+        "start": "2025-07-01",
+        "end": "2026-06-30",
+        "investmentScope": "유형자산 취득",
+        "computedObservations": [
+          {
+            "id": "revenue",
+            "label": "매출",
+            "previous": 281724000000,
+            "current": 331839000000,
+            "change": 50115000000,
+            "comparisonAvailable": true,
+            "direction": "증가",
+            "evidence": [
+              "previous.revenue",
+              "current.revenue"
+            ]
+          },
+          {
+            "id": "cfo",
+            "label": "영업현금",
+            "previous": 136162000000,
+            "current": 182935000000,
+            "change": 46773000000,
+            "comparisonAvailable": true,
+            "direction": "증가",
+            "evidence": [
+              "previous.cfo",
+              "current.cfo"
+            ]
+          },
+          {
+            "id": "capex",
+            "label": "공시 투자자산 취득",
+            "previous": 64551000000,
+            "current": 115948000000,
+            "change": 51397000000,
+            "comparisonAvailable": true,
+            "direction": "증가",
+            "evidence": [
+              "previous.capex",
+              "current.capex"
+            ]
+          }
+        ],
+        "evidence": [
+          {
+            "end": "2025-06-30",
+            "start": "2024-07-01",
+            "unit": "USD",
+            "value": 281724000000,
+            "id": "previous.revenue",
+            "label": "매출"
+          },
+          {
+            "end": "2025-06-30",
+            "start": "2024-07-01",
+            "unit": "USD",
+            "value": 136162000000,
+            "id": "previous.cfo",
+            "label": "영업현금"
+          },
+          {
+            "end": "2025-06-30",
+            "start": "2024-07-01",
+            "unit": "USD",
+            "value": 64551000000,
+            "id": "previous.capex",
+            "label": "유형자산 취득"
+          },
+          {
+            "end": "2026-06-30",
+            "start": "2025-07-01",
+            "unit": "USD",
+            "value": 331839000000,
+            "id": "current.revenue",
+            "label": "매출"
+          },
+          {
+            "end": "2026-06-30",
+            "start": "2025-07-01",
+            "unit": "USD",
+            "value": 182935000000,
+            "id": "current.cfo",
+            "label": "영업현금"
+          },
+          {
+            "end": "2026-06-30",
+            "start": "2025-07-01",
+            "unit": "USD",
+            "value": 115948000000,
+            "id": "current.capex",
+            "label": "유형자산 취득"
+          }
+        ],
+        "businessEvidence": {
+          "profile": "cloud_capital_and_leases",
+          "evidenceHash": "6fdbced0d6461e008f5e5b5570b3633d7031a765636c50c37783ca9bdcc28965",
+          "segments": [
+            {
+              "label": "생산성·비즈니스 프로세스",
+              "current": {
+                "operatingIncome": 83879000000.0,
+                "revenue": 139996000000.0
+              }
+            },
+            {
+              "label": "인텔리전트 클라우드",
+              "current": {
+                "operatingIncome": 56972000000.0,
+                "revenue": 137791000000.0
+              }
+            },
+            {
+              "label": "개인용 컴퓨팅",
+              "current": {
+                "operatingIncome": 14386000000.0,
+                "revenue": 54052000000.0
+              }
+            }
+          ],
+          "findings": [
+            "사업부 매출과 영업이익 합계를 연결 공시와 대사했다. 인텔리전트 클라우드에는 Azure 외 사업도 포함되므로 해당 부문 전체를 AI 매출로 표시하지 않는다.",
+            "현금 설비 취득과 금융리스로 새로 받은 자산을 분리한다. 비현금 취득액을 현금지출에 더해 이중 차감하지 않는다."
+          ],
+          "reconciliation": {
+            "operatingIncome": {
+              "reportedAdjustment": null,
+              "reportedTotal": 155237000000,
+              "residual": 0.0,
+              "status": "reconciled",
+              "subtotal": 155237000000.0,
+              "unexplained": 0.0
+            },
+            "revenue": {
+              "reportedAdjustment": null,
+              "reportedTotal": 331839000000,
+              "residual": 0.0,
+              "status": "reconciled",
+              "subtotal": 331839000000.0,
+              "unexplained": 0.0
+            }
+          },
+          "leases": {
+            "interest": 2547000000.0,
+            "noncashFinanceAdditions": 24608000000.0,
+            "noncashOperatingAdditions": 4555000000.0,
+            "operatingPayments": 6443000000.0,
+            "principal": 3101000000.0
+          },
+          "cashDefinition": "영업리스 지급·금융리스 이자는 영업현금에 이미 포함되어 다시 빼지 않는다. 신규 비현금 리스 취득은 당기 현금지출과 구분한다. 이 잔액은 정상화 FCFE가 아니다."
+        },
+        "capitalEvidence": {
+          "evidenceHash": "a42bb4bd3b1a81a005cc87811704b572c2fe73e14c5629a3d13bdcc5593d2f9d",
+          "balances": [
+            {
+              "label": "현금·현금성자산",
+              "value": 20935000000.0,
+              "unit": "USD"
+            },
+            {
+              "label": "공시 보통주 유통주식수",
+              "value": 7427000000.0,
+              "unit": "shares"
+            },
+            {
+              "label": "유동자산",
+              "value": 207710000000.0,
+              "unit": "USD"
+            },
+            {
+              "label": "유동부채",
+              "value": 168825000000.0,
+              "unit": "USD"
+            },
+            {
+              "label": "금융리스 부채",
+              "value": 66594000000.0,
+              "unit": "USD"
+            },
+            {
+              "label": "장기차입금 유동분",
+              "value": 9227000000.0,
+              "unit": "USD"
+            },
+            {
+              "label": "장기차입금 비유동분",
+              "value": 31067000000.0,
+              "unit": "USD"
+            },
+            {
+              "label": "영업리스 부채",
+              "value": 21925000000.0,
+              "unit": "USD"
+            }
+          ],
+          "flows": [
+            {
+              "label": "기간 가중평균 기본주식수",
+              "current": 7429000000.0,
+              "previous": 7433000000.0,
+              "unit": "shares"
+            },
+            {
+              "label": "기간 가중평균 희석주식수",
+              "current": 7453000000.0,
+              "previous": 7465000000.0,
+              "unit": "shares"
+            },
+            {
+              "label": "배당 현금",
+              "current": 26445000000.0,
+              "previous": 24082000000.0,
+              "unit": "USD"
+            },
+            {
+              "label": "금융리스 원금 상환",
+              "current": 3101000000.0,
+              "previous": 2283000000.0,
+              "unit": "USD"
+            },
+            {
+              "label": "보통주 매입 현금",
+              "current": 22271000000.0,
+              "previous": 18420000000.0,
+              "unit": "USD"
+            },
+            {
+              "label": "주식보상 비현금 조정",
+              "current": 12405000000.0,
+              "previous": 11974000000.0,
+              "unit": "USD"
+            }
+          ],
+          "limitation": "주식보상 차감은 주주 부담의 비용 대용 가정이며 현금 유출이 아니다. 자기주식 매입과 함께 이중 차감하지 않는다. 리스·주식보상 결측은 영으로 넣지 않으며 정상화 FCFE를 뜻하지 않는다.",
+          "gaps": [
+            {
+              "metric": "debtCurrent",
+              "period": [
+                null,
+                "2026-06-30"
+              ],
+              "reason": "해당 기간·연결 범위의 확인된 태그 없음"
+            },
+            {
+              "metric": "depreciation",
+              "period": [
+                "2025-07-01",
+                "2026-06-30"
+              ],
+              "reason": "해당 기간·연결 범위의 확인된 태그 없음"
+            }
+          ]
+        },
+        "missingEvidence": [
+          "사업부별 설비투자·리스 배분과 정상 재투자 수준",
+          "수주·계약 잔액의 매출·수금 전환과 AI 투자의 회수기간",
+          "주식보상·희석·순차입을 반영한 정상 배분 가능 현금"
+        ],
+        "sourceGaps": [],
+        "scope": "공시의 보고된 현금과 가능한 연구 질문. 정상 이익·원인·투자 가치의 독립 승인이 아니다."
+      },
+      "provenance": {
+        "company": "MSFT",
+        "snapshotHash": "6d8261ca62d175a07e68e09ae8e5faa883d792b129824558d29b965e58bffcd7",
+        "inputHash": "db42ec3237b4854b2003518b1079fde08f0ec99268f829c27675cf9b8465f704",
+        "source": "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/0001193125-26-323660-index.html"
+      }
+    },
+    {
+      "id": "msft_denies_segments",
+      "role": "missing",
+      "text": "입력에는 사업부별 매출 수치가 없다.",
+      "accept": false,
+      "expected": "contradicted",
+      "rationale": "세 부문 매출이 제공됨",
+      "input": {
+        "company": "MICROSOFT CORP",
+        "ticker": "MSFT",
+        "sector": "플랫폼·소프트웨어",
+        "currency": "USD",
+        "start": "2025-07-01",
+        "end": "2026-06-30",
+        "investmentScope": "유형자산 취득",
+        "computedObservations": [
+          {
+            "id": "revenue",
+            "label": "매출",
+            "previous": 281724000000,
+            "current": 331839000000,
+            "change": 50115000000,
+            "comparisonAvailable": true,
+            "direction": "증가",
+            "evidence": [
+              "previous.revenue",
+              "current.revenue"
+            ]
+          },
+          {
+            "id": "cfo",
+            "label": "영업현금",
+            "previous": 136162000000,
+            "current": 182935000000,
+            "change": 46773000000,
+            "comparisonAvailable": true,
+            "direction": "증가",
+            "evidence": [
+              "previous.cfo",
+              "current.cfo"
+            ]
+          },
+          {
+            "id": "capex",
+            "label": "공시 투자자산 취득",
+            "previous": 64551000000,
+            "current": 115948000000,
+            "change": 51397000000,
+            "comparisonAvailable": true,
+            "direction": "증가",
+            "evidence": [
+              "previous.capex",
+              "current.capex"
+            ]
+          }
+        ],
+        "evidence": [
+          {
+            "end": "2025-06-30",
+            "start": "2024-07-01",
+            "unit": "USD",
+            "value": 281724000000,
+            "id": "previous.revenue",
+            "label": "매출"
+          },
+          {
+            "end": "2025-06-30",
+            "start": "2024-07-01",
+            "unit": "USD",
+            "value": 136162000000,
+            "id": "previous.cfo",
+            "label": "영업현금"
+          },
+          {
+            "end": "2025-06-30",
+            "start": "2024-07-01",
+            "unit": "USD",
+            "value": 64551000000,
+            "id": "previous.capex",
+            "label": "유형자산 취득"
+          },
+          {
+            "end": "2026-06-30",
+            "start": "2025-07-01",
+            "unit": "USD",
+            "value": 331839000000,
+            "id": "current.revenue",
+            "label": "매출"
+          },
+          {
+            "end": "2026-06-30",
+            "start": "2025-07-01",
+            "unit": "USD",
+            "value": 182935000000,
+            "id": "current.cfo",
+            "label": "영업현금"
+          },
+          {
+            "end": "2026-06-30",
+            "start": "2025-07-01",
+            "unit": "USD",
+            "value": 115948000000,
+            "id": "current.capex",
+            "label": "유형자산 취득"
+          }
+        ],
+        "businessEvidence": {
+          "profile": "cloud_capital_and_leases",
+          "evidenceHash": "6fdbced0d6461e008f5e5b5570b3633d7031a765636c50c37783ca9bdcc28965",
+          "segments": [
+            {
+              "label": "생산성·비즈니스 프로세스",
+              "current": {
+                "operatingIncome": 83879000000.0,
+                "revenue": 139996000000.0
+              }
+            },
+            {
+              "label": "인텔리전트 클라우드",
+              "current": {
+                "operatingIncome": 56972000000.0,
+                "revenue": 137791000000.0
+              }
+            },
+            {
+              "label": "개인용 컴퓨팅",
+              "current": {
+                "operatingIncome": 14386000000.0,
+                "revenue": 54052000000.0
+              }
+            }
+          ],
+          "findings": [
+            "사업부 매출과 영업이익 합계를 연결 공시와 대사했다. 인텔리전트 클라우드에는 Azure 외 사업도 포함되므로 해당 부문 전체를 AI 매출로 표시하지 않는다.",
+            "현금 설비 취득과 금융리스로 새로 받은 자산을 분리한다. 비현금 취득액을 현금지출에 더해 이중 차감하지 않는다."
+          ],
+          "reconciliation": {
+            "operatingIncome": {
+              "reportedAdjustment": null,
+              "reportedTotal": 155237000000,
+              "residual": 0.0,
+              "status": "reconciled",
+              "subtotal": 155237000000.0,
+              "unexplained": 0.0
+            },
+            "revenue": {
+              "reportedAdjustment": null,
+              "reportedTotal": 331839000000,
+              "residual": 0.0,
+              "status": "reconciled",
+              "subtotal": 331839000000.0,
+              "unexplained": 0.0
+            }
+          },
+          "leases": {
+            "interest": 2547000000.0,
+            "noncashFinanceAdditions": 24608000000.0,
+            "noncashOperatingAdditions": 4555000000.0,
+            "operatingPayments": 6443000000.0,
+            "principal": 3101000000.0
+          },
+          "cashDefinition": "영업리스 지급·금융리스 이자는 영업현금에 이미 포함되어 다시 빼지 않는다. 신규 비현금 리스 취득은 당기 현금지출과 구분한다. 이 잔액은 정상화 FCFE가 아니다."
+        },
+        "capitalEvidence": {
+          "evidenceHash": "a42bb4bd3b1a81a005cc87811704b572c2fe73e14c5629a3d13bdcc5593d2f9d",
+          "balances": [
+            {
+              "label": "현금·현금성자산",
+              "value": 20935000000.0,
+              "unit": "USD"
+            },
+            {
+              "label": "공시 보통주 유통주식수",
+              "value": 7427000000.0,
+              "unit": "shares"
+            },
+            {
+              "label": "유동자산",
+              "value": 207710000000.0,
+              "unit": "USD"
+            },
+            {
+              "label": "유동부채",
+              "value": 168825000000.0,
+              "unit": "USD"
+            },
+            {
+              "label": "금융리스 부채",
+              "value": 66594000000.0,
+              "unit": "USD"
+            },
+            {
+              "label": "장기차입금 유동분",
+              "value": 9227000000.0,
+              "unit": "USD"
+            },
+            {
+              "label": "장기차입금 비유동분",
+              "value": 31067000000.0,
+              "unit": "USD"
+            },
+            {
+              "label": "영업리스 부채",
+              "value": 21925000000.0,
+              "unit": "USD"
+            }
+          ],
+          "flows": [
+            {
+              "label": "기간 가중평균 기본주식수",
+              "current": 7429000000.0,
+              "previous": 7433000000.0,
+              "unit": "shares"
+            },
+            {
+              "label": "기간 가중평균 희석주식수",
+              "current": 7453000000.0,
+              "previous": 7465000000.0,
+              "unit": "shares"
+            },
+            {
+              "label": "배당 현금",
+              "current": 26445000000.0,
+              "previous": 24082000000.0,
+              "unit": "USD"
+            },
+            {
+              "label": "금융리스 원금 상환",
+              "current": 3101000000.0,
+              "previous": 2283000000.0,
+              "unit": "USD"
+            },
+            {
+              "label": "보통주 매입 현금",
+              "current": 22271000000.0,
+              "previous": 18420000000.0,
+              "unit": "USD"
+            },
+            {
+              "label": "주식보상 비현금 조정",
+              "current": 12405000000.0,
+              "previous": 11974000000.0,
+              "unit": "USD"
+            }
+          ],
+          "limitation": "주식보상 차감은 주주 부담의 비용 대용 가정이며 현금 유출이 아니다. 자기주식 매입과 함께 이중 차감하지 않는다. 리스·주식보상 결측은 영으로 넣지 않으며 정상화 FCFE를 뜻하지 않는다.",
+          "gaps": [
+            {
+              "metric": "debtCurrent",
+              "period": [
+                null,
+                "2026-06-30"
+              ],
+              "reason": "해당 기간·연결 범위의 확인된 태그 없음"
+            },
+            {
+              "metric": "depreciation",
+              "period": [
+                "2025-07-01",
+                "2026-06-30"
+              ],
+              "reason": "해당 기간·연결 범위의 확인된 태그 없음"
+            }
+          ]
+        },
+        "missingEvidence": [
+          "사업부별 설비투자·리스 배분과 정상 재투자 수준",
+          "수주·계약 잔액의 매출·수금 전환과 AI 투자의 회수기간",
+          "주식보상·희석·순차입을 반영한 정상 배분 가능 현금"
+        ],
+        "sourceGaps": [],
+        "scope": "공시의 보고된 현금과 가능한 연구 질문. 정상 이익·원인·투자 가치의 독립 승인이 아니다."
+      },
+      "provenance": {
+        "company": "MSFT",
+        "snapshotHash": "6d8261ca62d175a07e68e09ae8e5faa883d792b129824558d29b965e58bffcd7",
+        "inputHash": "db42ec3237b4854b2003518b1079fde08f0ec99268f829c27675cf9b8465f704",
+        "source": "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/0001193125-26-323660-index.html"
+      }
+    },
+    {
+      "id": "apple_timing",
+      "role": "hypothesis",
+      "text": "취득지출 감소는 설비 지급 시점의 차이일 수 있다.",
+      "accept": true,
+      "expected": "conditional",
+      "rationale": "지급액 감소는 관측이고 시점 차이는 미확인 가설",
+      "input": {
+        "company": "Apple",
+        "ticker": "AAPL",
+        "sector": "전자",
+        "currency": "USD",
+        "start": "2025-09-28",
+        "end": "2026-06-27",
+        "investmentScope": "유형자산 취득",
+        "computedObservations": [
+          {
+            "id": "revenue",
+            "label": "매출",
+            "previous": 313695000000,
+            "current": 364357000000,
+            "change": 50662000000,
+            "comparisonAvailable": true,
+            "direction": "증가",
+            "evidence": [
+              "previous.revenue",
+              "current.revenue"
+            ]
+          },
+          {
+            "id": "cfo",
+            "label": "영업현금",
+            "previous": 81754000000,
+            "current": 116996000000,
+            "change": 35242000000,
+            "comparisonAvailable": true,
+            "direction": "증가",
+            "evidence": [
+              "previous.cfo",
+              "current.cfo"
+            ]
+          },
+          {
+            "id": "capex",
+            "label": "공시 투자자산 취득",
+            "previous": 9473000000,
+            "current": 6799000000,
+            "change": -2674000000,
+            "comparisonAvailable": true,
+            "direction": "감소",
+            "evidence": [
+              "previous.capex",
+              "current.capex"
+            ]
+          }
+        ],
+        "evidence": [
+          {
+            "end": "2025-06-28",
+            "start": "2024-09-29",
+            "unit": "USD",
+            "value": 313695000000,
+            "id": "previous.revenue",
+            "label": "매출"
+          },
+          {
+            "end": "2025-06-28",
+            "start": "2024-09-29",
+            "unit": "USD",
+            "value": 81754000000,
+            "id": "previous.cfo",
+            "label": "영업현금"
+          },
+          {
+            "end": "2025-06-28",
+            "start": "2024-09-29",
+            "unit": "USD",
+            "value": 9473000000,
+            "id": "previous.capex",
+            "label": "유형자산 취득"
+          },
+          {
+            "end": "2026-06-27",
+            "start": "2025-09-28",
+            "unit": "USD",
+            "value": 364357000000,
+            "id": "current.revenue",
+            "label": "매출"
+          },
+          {
+            "end": "2026-06-27",
+            "start": "2025-09-28",
+            "unit": "USD",
+            "value": 116996000000,
+            "id": "current.cfo",
+            "label": "영업현금"
+          },
+          {
+            "end": "2026-06-27",
+            "start": "2025-09-28",
+            "unit": "USD",
+            "value": 6799000000,
+            "id": "current.capex",
+            "label": "유형자산 취득"
+          }
+        ],
+        "businessEvidence": {
+          "profile": "operating_segments",
+          "evidenceHash": "15be3f581b16cbe31b8814fd86a0efc501846482e5023a0050e3e4191b22a973",
+          "segments": [
+            {
+              "label": "미주",
+              "current": {
+                "operatingIncome": 65027000000.0,
+                "revenue": 149403000000.0
+              }
+            },
+            {
+              "label": "유럽",
+              "current": {
+                "operatingIncome": 44285000000.0,
+                "revenue": 95596000000.0
+              }
+            },
+            {
+              "label": "중화권",
+              "current": {
+                "operatingIncome": 28387000000.0,
+                "revenue": 64839000000.0
+              }
+            },
+            {
+              "label": "일본",
+              "current": {
+                "operatingIncome": 11456000000.0,
+                "revenue": 24368000000.0
+              }
+            },
+            {
+              "label": "아시아태평양 기타",
+              "current": {
+                "operatingIncome": 13995000000.0,
+                "revenue": 30151000000.0
+              }
+            }
+          ],
+          "findings": [
+            "지역별 영업이익에는 본사 비용이 모두 배분되지 않았다. 공시 본사 조정 후 연결 이익과 대사한다.",
+            "제품·서비스 매출과 지역 영업이익을 별도 표로 읽는다. 지역 이익률을 iPhone이나 서비스의 이익률로 바꾸지 않는다."
+          ],
+          "reconciliation": {
+            "operatingIncome": {
+              "reportedAdjustment": -40718000000.0,
+              "reportedTotal": 122432000000,
+              "residual": -40718000000.0,
+              "status": "reconciled",
+              "subtotal": 163150000000.0,
+              "unexplained": 0.0
+            },
+            "revenue": {
+              "reportedAdjustment": null,
+              "reportedTotal": 364357000000,
+              "residual": 0.0,
+              "status": "reconciled",
+              "subtotal": 364357000000.0,
+              "unexplained": 0.0
+            }
+          }
+        },
+        "capitalEvidence": {
+          "evidenceHash": "c0d554ad034851c36e08104f5af9477f62e437342802ece51acb77f75f583bdf",
+          "balances": [
+            {
+              "label": "현금·현금성자산",
+              "value": 39544000000.0,
+              "unit": "USD"
+            },
+            {
+              "label": "공시 보통주 유통주식수",
+              "value": 14608963000.0,
+              "unit": "shares"
+            },
+            {
+              "label": "유동자산",
+              "value": 149818000000.0,
+              "unit": "USD"
+            },
+            {
+              "label": "유동부채",
+              "value": 149326000000.0,
+              "unit": "USD"
+            },
+            {
+              "label": "장기차입금 유동분",
+              "value": 11007000000.0,
+              "unit": "USD"
+            },
+            {
+              "label": "장기차입금 비유동분",
+              "value": 71340000000.0,
+              "unit": "USD"
+            }
+          ],
+          "flows": [
+            {
+              "label": "기간 가중평균 기본주식수",
+              "current": 14692515000.0,
+              "previous": 14992898000.0,
+              "unit": "shares"
+            },
+            {
+              "label": "감가상각·상각 조정",
+              "current": 9973000000.0,
+              "previous": 8571000000.0,
+              "unit": "USD"
+            },
+            {
+              "label": "기간 가중평균 희석주식수",
+              "current": 14750302000.0,
+              "previous": 15051726000.0,
+              "unit": "shares"
+            },
+            {
+              "label": "배당 현금",
+              "current": 11778000000.0,
+              "previous": 11559000000.0,
+              "unit": "USD"
+            },
+            {
+              "label": "보통주 매입 현금",
+              "current": 62094000000.0,
+              "previous": 70579000000.0,
+              "unit": "USD"
+            },
+            {
+              "label": "주식보상 비현금 조정",
+              "current": 10523000000.0,
+              "previous": 9680000000.0,
+              "unit": "USD"
+            }
+          ],
+          "limitation": "주식보상 차감은 주주 부담의 비용 대용 가정이며 현금 유출이 아니다. 자기주식 매입과 함께 이중 차감하지 않는다. 리스·주식보상 결측은 영으로 넣지 않으며 정상화 FCFE를 뜻하지 않는다.",
+          "gaps": [
+            {
+              "metric": "debtCurrent",
+              "period": [
+                null,
+                "2026-06-27"
+              ],
+              "reason": "해당 기간·연결 범위의 확인된 태그 없음"
+            },
+            {
+              "metric": "operatingLease",
+              "period": [
+                null,
+                "2026-06-27"
+              ],
+              "reason": "해당 기간·연결 범위의 확인된 태그 없음"
+            },
+            {
+              "metric": "financeLease",
+              "period": [
+                null,
+                "2026-06-27"
+              ],
+              "reason": "해당 기간·연결 범위의 확인된 태그 없음"
+            },
+            {
+              "metric": "leasePrincipal",
+              "period": [
+                "2025-09-28",
+                "2026-06-27"
+              ],
+              "reason": "해당 기간·연결 범위의 확인된 태그 없음"
+            }
+          ]
+        },
+        "missingEvidence": [
+          "서비스 매출 구성과 기기 설치기반·가격 효과",
+          "중화권 매출 변화의 물량·가격·환율과 경쟁 요인 분리",
+          "매입 주식·주식보상·부채 상환을 반영한 지속 가능 주주 배분"
+        ],
+        "sourceGaps": [],
+        "scope": "공시의 보고된 현금과 가능한 연구 질문. 정상 이익·원인·투자 가치의 독립 승인이 아니다."
+      },
+      "provenance": {
+        "company": "AAPL",
+        "snapshotHash": "6d8261ca62d175a07e68e09ae8e5faa883d792b129824558d29b965e58bffcd7",
+        "inputHash": "5f9e7aecb8d3c6cdb0965f767ca8d386d7e4c5aa635fe2a0a435053e56e4ced5",
+        "source": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/0000320193-26-000020-index.html"
+      }
+    },
+    {
+      "id": "apple_flow_stock",
+      "role": "hypothesis",
+      "text": "유형자산 취득지출이 줄었으므로 유형자산 잔액도 줄었다.",
+      "accept": false,
+      "expected": "contradicted",
+      "rationale": "취득 지급 흐름으로 자산 잔액 감소를 확정함",
+      "input": {
+        "company": "Apple",
+        "ticker": "AAPL",
+        "sector": "전자",
+        "currency": "USD",
+        "start": "2025-09-28",
+        "end": "2026-06-27",
+        "investmentScope": "유형자산 취득",
+        "computedObservations": [
+          {
+            "id": "revenue",
+            "label": "매출",
+            "previous": 313695000000,
+            "current": 364357000000,
+            "change": 50662000000,
+            "comparisonAvailable": true,
+            "direction": "증가",
+            "evidence": [
+              "previous.revenue",
+              "current.revenue"
+            ]
+          },
+          {
+            "id": "cfo",
+            "label": "영업현금",
+            "previous": 81754000000,
+            "current": 116996000000,
+            "change": 35242000000,
+            "comparisonAvailable": true,
+            "direction": "증가",
+            "evidence": [
+              "previous.cfo",
+              "current.cfo"
+            ]
+          },
+          {
+            "id": "capex",
+            "label": "공시 투자자산 취득",
+            "previous": 9473000000,
+            "current": 6799000000,
+            "change": -2674000000,
+            "comparisonAvailable": true,
+            "direction": "감소",
+            "evidence": [
+              "previous.capex",
+              "current.capex"
+            ]
+          }
+        ],
+        "evidence": [
+          {
+            "end": "2025-06-28",
+            "start": "2024-09-29",
+            "unit": "USD",
+            "value": 313695000000,
+            "id": "previous.revenue",
+            "label": "매출"
+          },
+          {
+            "end": "2025-06-28",
+            "start": "2024-09-29",
+            "unit": "USD",
+            "value": 81754000000,
+            "id": "previous.cfo",
+            "label": "영업현금"
+          },
+          {
+            "end": "2025-06-28",
+            "start": "2024-09-29",
+            "unit": "USD",
+            "value": 9473000000,
+            "id": "previous.capex",
+            "label": "유형자산 취득"
+          },
+          {
+            "end": "2026-06-27",
+            "start": "2025-09-28",
+            "unit": "USD",
+            "value": 364357000000,
+            "id": "current.revenue",
+            "label": "매출"
+          },
+          {
+            "end": "2026-06-27",
+            "start": "2025-09-28",
+            "unit": "USD",
+            "value": 116996000000,
+            "id": "current.cfo",
+            "label": "영업현금"
+          },
+          {
+            "end": "2026-06-27",
+            "start": "2025-09-28",
+            "unit": "USD",
+            "value": 6799000000,
+            "id": "current.capex",
+            "label": "유형자산 취득"
+          }
+        ],
+        "businessEvidence": {
+          "profile": "operating_segments",
+          "evidenceHash": "15be3f581b16cbe31b8814fd86a0efc501846482e5023a0050e3e4191b22a973",
+          "segments": [
+            {
+              "label": "미주",
+              "current": {
+                "operatingIncome": 65027000000.0,
+                "revenue": 149403000000.0
+              }
+            },
+            {
+              "label": "유럽",
+              "current": {
+                "operatingIncome": 44285000000.0,
+                "revenue": 95596000000.0
+              }
+            },
+            {
+              "label": "중화권",
+              "current": {
+                "operatingIncome": 28387000000.0,
+                "revenue": 64839000000.0
+              }
+            },
+            {
+              "label": "일본",
+              "current": {
+                "operatingIncome": 11456000000.0,
+                "revenue": 24368000000.0
+              }
+            },
+            {
+              "label": "아시아태평양 기타",
+              "current": {
+                "operatingIncome": 13995000000.0,
+                "revenue": 30151000000.0
+              }
+            }
+          ],
+          "findings": [
+            "지역별 영업이익에는 본사 비용이 모두 배분되지 않았다. 공시 본사 조정 후 연결 이익과 대사한다.",
+            "제품·서비스 매출과 지역 영업이익을 별도 표로 읽는다. 지역 이익률을 iPhone이나 서비스의 이익률로 바꾸지 않는다."
+          ],
+          "reconciliation": {
+            "operatingIncome": {
+              "reportedAdjustment": -40718000000.0,
+              "reportedTotal": 122432000000,
+              "residual": -40718000000.0,
+              "status": "reconciled",
+              "subtotal": 163150000000.0,
+              "unexplained": 0.0
+            },
+            "revenue": {
+              "reportedAdjustment": null,
+              "reportedTotal": 364357000000,
+              "residual": 0.0,
+              "status": "reconciled",
+              "subtotal": 364357000000.0,
+              "unexplained": 0.0
+            }
+          }
+        },
+        "capitalEvidence": {
+          "evidenceHash": "c0d554ad034851c36e08104f5af9477f62e437342802ece51acb77f75f583bdf",
+          "balances": [
+            {
+              "label": "현금·현금성자산",
+              "value": 39544000000.0,
+              "unit": "USD"
+            },
+            {
+              "label": "공시 보통주 유통주식수",
+              "value": 14608963000.0,
+              "unit": "shares"
+            },
+            {
+              "label": "유동자산",
+              "value": 149818000000.0,
+              "unit": "USD"
+            },
+            {
+              "label": "유동부채",
+              "value": 149326000000.0,
+              "unit": "USD"
+            },
+            {
+              "label": "장기차입금 유동분",
+              "value": 11007000000.0,
+              "unit": "USD"
+            },
+            {
+              "label": "장기차입금 비유동분",
+              "value": 71340000000.0,
+              "unit": "USD"
+            }
+          ],
+          "flows": [
+            {
+              "label": "기간 가중평균 기본주식수",
+              "current": 14692515000.0,
+              "previous": 14992898000.0,
+              "unit": "shares"
+            },
+            {
+              "label": "감가상각·상각 조정",
+              "current": 9973000000.0,
+              "previous": 8571000000.0,
+              "unit": "USD"
+            },
+            {
+              "label": "기간 가중평균 희석주식수",
+              "current": 14750302000.0,
+              "previous": 15051726000.0,
+              "unit": "shares"
+            },
+            {
+              "label": "배당 현금",
+              "current": 11778000000.0,
+              "previous": 11559000000.0,
+              "unit": "USD"
+            },
+            {
+              "label": "보통주 매입 현금",
+              "current": 62094000000.0,
+              "previous": 70579000000.0,
+              "unit": "USD"
+            },
+            {
+              "label": "주식보상 비현금 조정",
+              "current": 10523000000.0,
+              "previous": 9680000000.0,
+              "unit": "USD"
+            }
+          ],
+          "limitation": "주식보상 차감은 주주 부담의 비용 대용 가정이며 현금 유출이 아니다. 자기주식 매입과 함께 이중 차감하지 않는다. 리스·주식보상 결측은 영으로 넣지 않으며 정상화 FCFE를 뜻하지 않는다.",
+          "gaps": [
+            {
+              "metric": "debtCurrent",
+              "period": [
+                null,
+                "2026-06-27"
+              ],
+              "reason": "해당 기간·연결 범위의 확인된 태그 없음"
+            },
+            {
+              "metric": "operatingLease",
+              "period": [
+                null,
+                "2026-06-27"
+              ],
+              "reason": "해당 기간·연결 범위의 확인된 태그 없음"
+            },
+            {
+              "metric": "financeLease",
+              "period": [
+                null,
+                "2026-06-27"
+              ],
+              "reason": "해당 기간·연결 범위의 확인된 태그 없음"
+            },
+            {
+              "metric": "leasePrincipal",
+              "period": [
+                "2025-09-28",
+                "2026-06-27"
+              ],
+              "reason": "해당 기간·연결 범위의 확인된 태그 없음"
+            }
+          ]
+        },
+        "missingEvidence": [
+          "서비스 매출 구성과 기기 설치기반·가격 효과",
+          "중화권 매출 변화의 물량·가격·환율과 경쟁 요인 분리",
+          "매입 주식·주식보상·부채 상환을 반영한 지속 가능 주주 배분"
+        ],
+        "sourceGaps": [],
+        "scope": "공시의 보고된 현금과 가능한 연구 질문. 정상 이익·원인·투자 가치의 독립 승인이 아니다."
+      },
+      "provenance": {
+        "company": "AAPL",
+        "snapshotHash": "6d8261ca62d175a07e68e09ae8e5faa883d792b129824558d29b965e58bffcd7",
+        "inputHash": "5f9e7aecb8d3c6cdb0965f767ca8d386d7e4c5aa635fe2a0a435053e56e4ced5",
+        "source": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/0000320193-26-000020-index.html"
+      }
+    },
+    {
+      "id": "amd_missing_adjustment",
+      "role": "missing",
+      "text": "부문 이익에서 연결 영업이익으로 가는 공시 조정은 입력에서 확인할 수 없다.",
+      "accept": false,
+      "expected": "contradicted",
+      "rationale": "본사 기타 조정이 입력에 있음",
+      "input": {
+        "company": "ADVANCED MICRO DEVICES INC",
+        "ticker": "AMD",
+        "sector": "반도체",
+        "currency": "USD",
+        "start": "2025-12-28",
+        "end": "2026-06-27",
+        "investmentScope": "유형자산 취득",
+        "computedObservations": [
+          {
+            "id": "revenue",
+            "label": "매출",
+            "previous": 15123000000,
+            "current": 21789000000,
+            "change": 6666000000,
+            "comparisonAvailable": true,
+            "direction": "증가",
+            "evidence": [
+              "previous.revenue",
+              "current.revenue"
+            ]
+          },
+          {
+            "id": "cfo",
+            "label": "영업현금",
+            "previous": 2950000000,
+            "current": 5321000000,
+            "change": 2371000000,
+            "comparisonAvailable": true,
+            "direction": "증가",
+            "evidence": [
+              "previous.cfo",
+              "current.cfo"
+            ]
+          },
+          {
+            "id": "capex",
+            "label": "공시 투자자산 취득",
+            "previous": 494000000,
+            "current": 1197000000,
+            "change": 703000000,
+            "comparisonAvailable": true,
+            "direction": "증가",
+            "evidence": [
+              "previous.capex",
+              "current.capex"
+            ]
+          }
+        ],
+        "evidence": [
+          {
+            "end": "2025-06-28",
+            "start": "2024-12-29",
+            "unit": "USD",
+            "value": 15123000000,
+            "id": "previous.revenue",
+            "label": "매출"
+          },
+          {
+            "end": "2025-06-28",
+            "start": "2024-12-29",
+            "unit": "USD",
+            "value": 2950000000,
+            "id": "previous.cfo",
+            "label": "영업현금"
+          },
+          {
+            "end": "2025-06-28",
+            "start": "2024-12-29",
+            "unit": "USD",
+            "value": 494000000,
+            "id": "previous.capex",
+            "label": "유형자산 취득"
+          },
+          {
+            "end": "2026-06-27",
+            "start": "2025-12-28",
+            "unit": "USD",
+            "value": 21789000000,
+            "id": "current.revenue",
+            "label": "매출"
+          },
+          {
+            "end": "2026-06-27",
+            "start": "2025-12-28",
+            "unit": "USD",
+            "value": 5321000000,
+            "id": "current.cfo",
+            "label": "영업현금"
+          },
+          {
+            "end": "2026-06-27",
+            "start": "2025-12-28",
+            "unit": "USD",
+            "value": 1197000000,
+            "id": "current.capex",
+            "label": "유형자산 취득"
+          }
+        ],
+        "businessEvidence": {
+          "profile": "operating_segments",
+          "evidenceHash": "90d81d1221524afd7ee48d21b4f9392e8fd702e80d6b83c7522da8edbb2aa449",
+          "segments": [
+            {
+              "label": "데이터센터",
+              "current": {
+                "operatingIncome": 3702000000.0,
+                "revenue": 12493000000.0
+              }
+            },
+            {
+              "label": "클라이언트·게이밍",
+              "current": {
+                "operatingIncome": 1157000000.0,
+                "revenue": 7446000000.0
+              }
+            },
+            {
+              "label": "임베디드",
+              "current": {
+                "operatingIncome": 724000000.0,
+                "revenue": 1850000000.0
+              }
+            }
+          ],
+          "findings": [
+            "클라이언트와 게이밍은 합쳐진 보고 부문이다. 별도 제품 매출과 중복 합산하지 않는다.",
+            "부문 영업이익 합계에 공시 기타·본사 항목을 더해 연결 영업이익과 대사한다."
+          ],
+          "reconciliation": {
+            "operatingIncome": {
+              "reportedAdjustment": -2117000000.0,
+              "reportedTotal": 3466000000,
+              "residual": -2117000000.0,
+              "status": "reconciled",
+              "subtotal": 5583000000.0,
+              "unexplained": 0.0
+            },
+            "revenue": {
+              "reportedAdjustment": null,
+              "reportedTotal": 21789000000,
+              "residual": 0.0,
+              "status": "reconciled",
+              "subtotal": 21789000000.0,
+              "unexplained": 0.0
+            }
+          }
+        },
+        "capitalEvidence": {
+          "evidenceHash": "63f727f76b6ac70d7e6d4f631aa10473cbc626bd201e4ca23ba68fba8d040b0f",
+          "balances": [
+            {
+              "label": "현금·현금성자산",
+              "value": 5086000000.0,
+              "unit": "USD"
+            },
+            {
+              "label": "공시 보통주 유통주식수",
+              "value": 1632000000.0,
+              "unit": "shares"
+            },
+            {
+              "label": "유동자산",
+              "value": 31522000000.0,
+              "unit": "USD"
+            },
+            {
+              "label": "유동부채",
+              "value": 12081000000.0,
+              "unit": "USD"
+            },
+            {
+              "label": "장기차입금 유동분",
+              "value": 875000000.0,
+              "unit": "USD"
+            },
+            {
+              "label": "장기차입금 비유동분",
+              "value": 2351000000.0,
+              "unit": "USD"
+            }
+          ],
+          "flows": [
+            {
+              "label": "기간 가중평균 기본주식수",
+              "current": 1631000000.0,
+              "previous": 1621000000.0,
+              "unit": "shares"
+            },
+            {
+              "label": "기간 가중평균 희석주식수",
+              "current": 1655000000.0,
+              "previous": 1628000000.0,
+              "unit": "shares"
+            },
+            {
+              "label": "보통주 매입 현금",
+              "current": 221000000.0,
+              "previous": 1227000000.0,
+              "unit": "USD"
+            },
+            {
+              "label": "주식보상 비현금 조정",
+              "current": 990000000.0,
+              "previous": 733000000.0,
+              "unit": "USD"
+            }
+          ],
+          "limitation": "주식보상 차감은 주주 부담의 비용 대용 가정이며 현금 유출이 아니다. 자기주식 매입과 함께 이중 차감하지 않는다. 리스·주식보상 결측은 영으로 넣지 않으며 정상화 FCFE를 뜻하지 않는다.",
+          "gaps": [
+            {
+              "metric": "debtCurrent",
+              "period": [
+                null,
+                "2026-06-27"
+              ],
+              "reason": "해당 기간·연결 범위의 확인된 태그 없음"
+            },
+            {
+              "metric": "operatingLease",
+              "period": [
+                null,
+                "2026-06-27"
+              ],
+              "reason": "해당 기간·연결 범위의 확인된 태그 없음"
+            },
+            {
+              "metric": "financeLease",
+              "period": [
+                null,
+                "2026-06-27"
+              ],
+              "reason": "해당 기간·연결 범위의 확인된 태그 없음"
+            },
+            {
+              "metric": "dividends",
+              "period": [
+                "2025-12-28",
+                "2026-06-27"
+              ],
+              "reason": "해당 기간·연결 범위의 확인된 태그 없음"
+            },
+            {
+              "metric": "leasePrincipal",
+              "period": [
+                "2025-12-28",
+                "2026-06-27"
+              ],
+              "reason": "해당 기간·연결 범위의 확인된 태그 없음"
+            },
+            {
+              "metric": "depreciation",
+              "period": [
+                "2025-12-28",
+                "2026-06-27"
+              ],
+              "reason": "해당 기간·연결 범위의 확인된 태그 없음"
+            }
+          ]
+        },
+        "missingEvidence": [
+          "데이터센터 매출의 제품·고객 구성과 공급 약정",
+          "공통 비용·주식보상·인수 무형자산 상각의 반복성",
+          "재고·선급금과 반도체 구매 계약이 주주 현금에 주는 부담"
+        ],
+        "sourceGaps": [],
+        "scope": "공시의 보고된 현금과 가능한 연구 질문. 정상 이익·원인·투자 가치의 독립 승인이 아니다."
+      },
+      "provenance": {
+        "company": "AMD",
+        "snapshotHash": "6d8261ca62d175a07e68e09ae8e5faa883d792b129824558d29b965e58bffcd7",
+        "inputHash": "9caa2746f4d5d623d0f785feffda1f70cdc913dbe07a103446c869559586aadb",
+        "source": "https://www.sec.gov/Archives/edgar/data/2488/000000248826000123/0000002488-26-000123-index.html"
+      }
+    },
+    {
+      "id": "amd_missing_customers",
+      "role": "missing",
+      "text": "데이터센터의 고객별 매출과 장기 구매 약정의 연결은 입력에서 확인할 수 없다.",
+      "accept": true,
+      "expected": "supported",
+      "rationale": "부문 매출과 고객별 계약은 다른 정보",
+      "input": {
+        "company": "ADVANCED MICRO DEVICES INC",
+        "ticker": "AMD",
+        "sector": "반도체",
+        "currency": "USD",
+        "start": "2025-12-28",
+        "end": "2026-06-27",
+        "investmentScope": "유형자산 취득",
+        "computedObservations": [
+          {
+            "id": "revenue",
+            "label": "매출",
+            "previous": 15123000000,
+            "current": 21789000000,
+            "change": 6666000000,
+            "comparisonAvailable": true,
+            "direction": "증가",
+            "evidence": [
+              "previous.revenue",
+              "current.revenue"
+            ]
+          },
+          {
+            "id": "cfo",
+            "label": "영업현금",
+            "previous": 2950000000,
+            "current": 5321000000,
+            "change": 2371000000,
+            "comparisonAvailable": true,
+            "direction": "증가",
+            "evidence": [
+              "previous.cfo",
+              "current.cfo"
+            ]
+          },
+          {
+            "id": "capex",
+            "label": "공시 투자자산 취득",
+            "previous": 494000000,
+            "current": 1197000000,
+            "change": 703000000,
+            "comparisonAvailable": true,
+            "direction": "증가",
+            "evidence": [
+              "previous.capex",
+              "current.capex"
+            ]
+          }
+        ],
+        "evidence": [
+          {
+            "end": "2025-06-28",
+            "start": "2024-12-29",
+            "unit": "USD",
+            "value": 15123000000,
+            "id": "previous.revenue",
+            "label": "매출"
+          },
+          {
+            "end": "2025-06-28",
+            "start": "2024-12-29",
+            "unit": "USD",
+            "value": 2950000000,
+            "id": "previous.cfo",
+            "label": "영업현금"
+          },
+          {
+            "end": "2025-06-28",
+            "start": "2024-12-29",
+            "unit": "USD",
+            "value": 494000000,
+            "id": "previous.capex",
+            "label": "유형자산 취득"
+          },
+          {
+            "end": "2026-06-27",
+            "start": "2025-12-28",
+            "unit": "USD",
+            "value": 21789000000,
+            "id": "current.revenue",
+            "label": "매출"
+          },
+          {
+            "end": "2026-06-27",
+            "start": "2025-12-28",
+            "unit": "USD",
+            "value": 5321000000,
+            "id": "current.cfo",
+            "label": "영업현금"
+          },
+          {
+            "end": "2026-06-27",
+            "start": "2025-12-28",
+            "unit": "USD",
+            "value": 1197000000,
+            "id": "current.capex",
+            "label": "유형자산 취득"
+          }
+        ],
+        "businessEvidence": {
+          "profile": "operating_segments",
+          "evidenceHash": "90d81d1221524afd7ee48d21b4f9392e8fd702e80d6b83c7522da8edbb2aa449",
+          "segments": [
+            {
+              "label": "데이터센터",
+              "current": {
+                "operatingIncome": 3702000000.0,
+                "revenue": 12493000000.0
+              }
+            },
+            {
+              "label": "클라이언트·게이밍",
+              "current": {
+                "operatingIncome": 1157000000.0,
+                "revenue": 7446000000.0
+              }
+            },
+            {
+              "label": "임베디드",
+              "current": {
+                "operatingIncome": 724000000.0,
+                "revenue": 1850000000.0
+              }
+            }
+          ],
+          "findings": [
+            "클라이언트와 게이밍은 합쳐진 보고 부문이다. 별도 제품 매출과 중복 합산하지 않는다.",
+            "부문 영업이익 합계에 공시 기타·본사 항목을 더해 연결 영업이익과 대사한다."
+          ],
+          "reconciliation": {
+            "operatingIncome": {
+              "reportedAdjustment": -2117000000.0,
+              "reportedTotal": 3466000000,
+              "residual": -2117000000.0,
+              "status": "reconciled",
+              "subtotal": 5583000000.0,
+              "unexplained": 0.0
+            },
+            "revenue": {
+              "reportedAdjustment": null,
+              "reportedTotal": 21789000000,
+              "residual": 0.0,
+              "status": "reconciled",
+              "subtotal": 21789000000.0,
+              "unexplained": 0.0
+            }
+          }
+        },
+        "capitalEvidence": {
+          "evidenceHash": "63f727f76b6ac70d7e6d4f631aa10473cbc626bd201e4ca23ba68fba8d040b0f",
+          "balances": [
+            {
+              "label": "현금·현금성자산",
+              "value": 5086000000.0,
+              "unit": "USD"
+            },
+            {
+              "label": "공시 보통주 유통주식수",
+              "value": 1632000000.0,
+              "unit": "shares"
+            },
+            {
+              "label": "유동자산",
+              "value": 31522000000.0,
+              "unit": "USD"
+            },
+            {
+              "label": "유동부채",
+              "value": 12081000000.0,
+              "unit": "USD"
+            },
+            {
+              "label": "장기차입금 유동분",
+              "value": 875000000.0,
+              "unit": "USD"
+            },
+            {
+              "label": "장기차입금 비유동분",
+              "value": 2351000000.0,
+              "unit": "USD"
+            }
+          ],
+          "flows": [
+            {
+              "label": "기간 가중평균 기본주식수",
+              "current": 1631000000.0,
+              "previous": 1621000000.0,
+              "unit": "shares"
+            },
+            {
+              "label": "기간 가중평균 희석주식수",
+              "current": 1655000000.0,
+              "previous": 1628000000.0,
+              "unit": "shares"
+            },
+            {
+              "label": "보통주 매입 현금",
+              "current": 221000000.0,
+              "previous": 1227000000.0,
+              "unit": "USD"
+            },
+            {
+              "label": "주식보상 비현금 조정",
+              "current": 990000000.0,
+              "previous": 733000000.0,
+              "unit": "USD"
+            }
+          ],
+          "limitation": "주식보상 차감은 주주 부담의 비용 대용 가정이며 현금 유출이 아니다. 자기주식 매입과 함께 이중 차감하지 않는다. 리스·주식보상 결측은 영으로 넣지 않으며 정상화 FCFE를 뜻하지 않는다.",
+          "gaps": [
+            {
+              "metric": "debtCurrent",
+              "period": [
+                null,
+                "2026-06-27"
+              ],
+              "reason": "해당 기간·연결 범위의 확인된 태그 없음"
+            },
+            {
+              "metric": "operatingLease",
+              "period": [
+                null,
+                "2026-06-27"
+              ],
+              "reason": "해당 기간·연결 범위의 확인된 태그 없음"
+            },
+            {
+              "metric": "financeLease",
+              "period": [
+                null,
+                "2026-06-27"
+              ],
+              "reason": "해당 기간·연결 범위의 확인된 태그 없음"
+            },
+            {
+              "metric": "dividends",
+              "period": [
+                "2025-12-28",
+                "2026-06-27"
+              ],
+              "reason": "해당 기간·연결 범위의 확인된 태그 없음"
+            },
+            {
+              "metric": "leasePrincipal",
+              "period": [
+                "2025-12-28",
+                "2026-06-27"
+              ],
+              "reason": "해당 기간·연결 범위의 확인된 태그 없음"
+            },
+            {
+              "metric": "depreciation",
+              "period": [
+                "2025-12-28",
+                "2026-06-27"
+              ],
+              "reason": "해당 기간·연결 범위의 확인된 태그 없음"
+            }
+          ]
+        },
+        "missingEvidence": [
+          "데이터센터 매출의 제품·고객 구성과 공급 약정",
+          "공통 비용·주식보상·인수 무형자산 상각의 반복성",
+          "재고·선급금과 반도체 구매 계약이 주주 현금에 주는 부담"
+        ],
+        "sourceGaps": [],
+        "scope": "공시의 보고된 현금과 가능한 연구 질문. 정상 이익·원인·투자 가치의 독립 승인이 아니다."
+      },
+      "provenance": {
+        "company": "AMD",
+        "snapshotHash": "6d8261ca62d175a07e68e09ae8e5faa883d792b129824558d29b965e58bffcd7",
+        "inputHash": "9caa2746f4d5d623d0f785feffda1f70cdc913dbe07a103446c869559586aadb",
+        "source": "https://www.sec.gov/Archives/edgar/data/2488/000000248826000123/0000002488-26-000123-index.html"
+      }
+    },
+    {
+      "id": "hyundai_sign",
+      "role": "hypothesis",
+      "text": "금융부문의 현금 유출은 차량부문 영업현금이 음수이기 때문일 수 있다.",
+      "accept": false,
+      "expected": "contradicted",
+      "rationale": "차량부문 CFO 양수",
+      "input": {
+        "company": "현대자동차",
+        "ticker": "005380",
+        "sector": "자동차",
+        "currency": "KRW",
+        "start": "2026-01-01",
+        "end": "2026-06-30",
+        "investmentScope": "유형자산 취득",
+        "computedObservations": [
+          {
+            "id": "revenue",
+            "label": "매출",
+            "previous": 92694438000000.0,
+            "current": 95154214000000.0,
+            "change": 2459776000000.0,
+            "comparisonAvailable": true,
+            "direction": "증가",
+            "evidence": [
+              "previous.revenue",
+              "current.revenue"
+            ]
+          },
+          {
+            "id": "cfo",
+            "label": "영업현금",
+            "previous": 959651000000.0,
+            "current": 4849653000000.0,
+            "change": 3890002000000.0,
+            "comparisonAvailable": true,
+            "direction": "증가",
+            "evidence": [
+              "previous.cfo",
+              "current.cfo"
+            ]
+          },
+          {
+            "id": "capex",
+            "label": "공시 투자자산 취득",
+            "previous": 3856673000000.0,
+            "current": 4003527000000.0,
+            "change": 146854000000.0,
+            "comparisonAvailable": true,
+            "direction": "증가",
+            "evidence": [
+              "previous.capex",
+              "current.capex"
+            ]
+          }
+        ],
+        "evidence": [
+          {
+            "end": "2025-06-30",
+            "start": "2025-01-01",
+            "unit": "KRW",
+            "value": 92694438000000.0,
+            "id": "previous.revenue",
+            "label": "매출"
+          },
+          {
+            "end": "2025-06-30",
+            "start": "2025-01-01",
+            "unit": "KRW",
+            "value": 959651000000.0,
+            "id": "previous.cfo",
+            "label": "영업현금"
+          },
+          {
+            "end": "2025-06-30",
+            "start": "2025-01-01",
+            "unit": "KRW",
+            "value": 3856673000000.0,
+            "id": "previous.capex",
+            "label": "유형자산 취득"
+          },
+          {
+            "end": "2026-06-30",
+            "start": "2026-01-01",
+            "unit": "KRW",
+            "value": 95154214000000.0,
+            "id": "current.revenue",
+            "label": "매출"
+          },
+          {
+            "end": "2026-06-30",
+            "start": "2026-01-01",
+            "unit": "KRW",
+            "value": 4849653000000.0,
+            "id": "current.cfo",
+            "label": "영업현금"
+          },
+          {
+            "end": "2026-06-30",
+            "start": "2026-01-01",
+            "unit": "KRW",
+            "value": 4003527000000.0,
+            "id": "current.capex",
+            "label": "유형자산 취득"
+          }
+        ],
+        "businessEvidence": {
+          "profile": "automotive_and_finance",
+          "evidenceHash": "1b7adb355b69a1f7af433ca23c2c03b682fda2166244a0c5233f4f06ebadde69",
+          "segments": [
+            {
+              "label": "자동차",
+              "current": {
+                "cash": 12393381000000.0,
+                "cfo": 9917945000000.0,
+                "debtCurrent": 5603734000000.0,
+                "debtNoncurrent": 4332693000000.0,
+                "financialReceivablesCurrent": null,
+                "financialReceivablesNoncurrent": null,
+                "grossRevenue": 117211986000000.0,
+                "netAssetCash": -4128214000000.0,
+                "operatingIncome": 3845323000000.0,
+                "revenue": 71371243000000.0
+              }
+            },
+            {
+              "label": "금융",
+              "current": {
+                "cash": 4715868000000.0,
+                "cfo": -3556146000000.0,
+                "debtCurrent": 56812456000000.0,
+                "debtNoncurrent": 134809280000000.0,
+                "financialReceivablesCurrent": 60342449000000.0,
+                "financialReceivablesNoncurrent": 81448642000000.0,
+                "grossRevenue": 18671500000000.0,
+                "netAssetCash": -136715000000.0,
+                "operatingIncome": 1338210000000.0,
+                "revenue": 18494685000000.0
+              }
+            },
+            {
+              "label": "기타",
+              "current": {
+                "cash": 3120631000000.0,
+                "cfo": 1247803000000.0,
+                "debtCurrent": 720517000000.0,
+                "debtNoncurrent": 551715000000.0,
+                "financialReceivablesCurrent": null,
+                "financialReceivablesNoncurrent": null,
+                "grossRevenue": 6184725000000.0,
+                "netAssetCash": -243436000000.0,
+                "operatingIncome": 268977000000.0,
+                "revenue": 5288286000000.0
+              }
+            }
+          ],
+          "findings": [
+            "자동차·금융·기타 부문의 외부 매출은 연결 매출과 대사했다. 부문 총매출에는 내부거래가 포함되므로 외부 매출과 혼용하지 않는다.",
+            "부문 영업현금 합계와 연결 영업현금의 차이는 원인 미연결 잔액으로 남긴다. 금융부문의 현금 유출을 제조업의 현금 악화로 자동 해석하지 않는다.",
+            "차입금은 부문별 유동·비유동 공시 잔액이며 현금과 같은 기말을 보여준다. 금융채권의 회수·만기·자금조달 위험을 별도로 검토한다."
+          ],
+          "reconciliation": {
+            "cfo": {
+              "reportedAdjustment": null,
+              "reportedTotal": 4849653000000.0,
+              "residual": -2759949000000.0,
+              "status": "unresolved_difference",
+              "subtotal": 7609602000000.0,
+              "unexplained": -2759949000000.0
+            },
+            "operatingIncome": {
+              "reportedAdjustment": -86936000000.0,
+              "reportedTotal": 5365574000000.0,
+              "residual": -86936000000.0,
+              "status": "reconciled",
+              "subtotal": 5452510000000.0,
+              "unexplained": 0.0
+            },
+            "revenue": {
+              "reportedAdjustment": null,
+              "reportedTotal": 95154214000000.0,
+              "residual": 0.0,
+              "status": "reconciled",
+              "subtotal": 95154214000000.0,
+              "unexplained": 0.0
+            }
+          }
+        },
+        "capitalEvidence": {
+          "evidenceHash": "b41af55d951f0dea7b39c91b56d0f641b86a2f92173d7f796e2541580fa320f4",
+          "balances": [
+            {
+              "label": "현금·현금성자산",
+              "value": 20256150000000.0,
+              "unit": "KRW"
+            },
+            {
+              "label": "유동자산",
+              "value": 129045681000000.0,
+              "unit": "KRW"
+            },
+            {
+              "label": "유동부채",
+              "value": 97136454000000.0,
+              "unit": "KRW"
+            },
+            {
+              "label": "리스부채 유동분",
+              "value": 393808000000.0,
+              "unit": "KRW"
+            },
+            {
+              "label": "리스부채 비유동분",
+              "value": 1219774000000.0,
+              "unit": "KRW"
+            },
+            {
+              "label": "단기차입금",
+              "value": 10838843000000.0,
+              "unit": "KRW"
+            }
+          ],
+          "flows": [
+            {
+              "label": "재무활동 분류 배당 현금",
+              "current": 1432005000000.0,
+              "previous": 2332309000000.0,
+              "unit": "KRW"
+            },
+            {
+              "label": "재무활동 분류 리스 지급",
+              "current": 129367000000.0,
+              "previous": 116182000000.0,
+              "unit": "KRW"
+            },
+            {
+              "label": "자기주식 취득",
+              "current": 399017000000.0,
+              "previous": 705120000000.0,
+              "unit": "KRW"
+            }
+          ],
+          "limitation": "주식보상 차감은 주주 부담의 비용 대용 가정이며 현금 유출이 아니다. 자기주식 매입과 함께 이중 차감하지 않는다. 리스·주식보상 결측은 영으로 넣지 않으며 정상화 FCFE를 뜻하지 않는다.",
+          "gaps": [
+            {
+              "metric": "debtCurrent",
+              "period": [
+                null,
+                "2026-06-30"
+              ],
+              "reason": "해당 기간·연결 범위의 확인된 태그 없음"
+            },
+            {
+              "metric": "longDebtNoncurrent",
+              "period": [
+                null,
+                "2026-06-30"
+              ],
+              "reason": "해당 기간·연결 범위의 확인된 태그 없음"
+            },
+            {
+              "metric": "depreciation",
+              "period": [
+                "2026-01-01",
+                "2026-06-30"
+              ],
+              "reason": "해당 기간·연결 범위의 확인된 태그 없음"
+            },
+            {
+              "metric": "sbc",
+              "period": [
+                "2026-01-01",
+                "2026-06-30"
+              ],
+              "reason": "해당 기간·연결 범위의 확인된 태그 없음"
+            }
+          ]
+        },
+        "missingEvidence": [
+          "부문 현금 합계와 연결 현금 사이의 차이에 대한 공시 주석 연결",
+          "금융채권의 신용손실·만기와 자금조달 대응",
+          "보통주·우선주·비지배지분 및 금융부문 가치를 분리한 주식가치",
+          "부문 순유형·무형 취득/처분은 연결 총유형자산 취득과 정의가 다름"
+        ],
+        "sourceGaps": [],
+        "scope": "공시의 보고된 현금과 가능한 연구 질문. 정상 이익·원인·투자 가치의 독립 승인이 아니다."
+      },
+      "provenance": {
+        "company": "005380",
+        "snapshotHash": "6d8261ca62d175a07e68e09ae8e5faa883d792b129824558d29b965e58bffcd7",
+        "inputHash": "5e577a8bb94fe91bf54901d81c5be7ef83efa59d04010d1dfe0c000ca658e0a1",
+        "source": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003521"
+      }
+    },
+    {
+      "id": "hyundai_discriminator",
+      "role": "distinguish",
+      "text": "다음 공시에서 금융채권 증감과 차량부문 현금이 따로 확인된다면 금융자산 확대와 제조 현금 악화를 구별하는 단서일 수 있다.",
+      "accept": true,
+      "expected": "conditional",
+      "rationale": "관련된 미래 관측 질문으로 현재 자료 부재는 거부 이유가 아님",
+      "input": {
+        "company": "현대자동차",
+        "ticker": "005380",
+        "sector": "자동차",
+        "currency": "KRW",
+        "start": "2026-01-01",
+        "end": "2026-06-30",
+        "investmentScope": "유형자산 취득",
+        "computedObservations": [
+          {
+            "id": "revenue",
+            "label": "매출",
+            "previous": 92694438000000.0,
+            "current": 95154214000000.0,
+            "change": 2459776000000.0,
+            "comparisonAvailable": true,
+            "direction": "증가",
+            "evidence": [
+              "previous.revenue",
+              "current.revenue"
+            ]
+          },
+          {
+            "id": "cfo",
+            "label": "영업현금",
+            "previous": 959651000000.0,
+            "current": 4849653000000.0,
+            "change": 3890002000000.0,
+            "comparisonAvailable": true,
+            "direction": "증가",
+            "evidence": [
+              "previous.cfo",
+              "current.cfo"
+            ]
+          },
+          {
+            "id": "capex",
+            "label": "공시 투자자산 취득",
+            "previous": 3856673000000.0,
+            "current": 4003527000000.0,
+            "change": 146854000000.0,
+            "comparisonAvailable": true,
+            "direction": "증가",
+            "evidence": [
+              "previous.capex",
+              "current.capex"
+            ]
+          }
+        ],
+        "evidence": [
+          {
+            "end": "2025-06-30",
+            "start": "2025-01-01",
+            "unit": "KRW",
+            "value": 92694438000000.0,
+            "id": "previous.revenue",
+            "label": "매출"
+          },
+          {
+            "end": "2025-06-30",
+            "start": "2025-01-01",
+            "unit": "KRW",
+            "value": 959651000000.0,
+            "id": "previous.cfo",
+            "label": "영업현금"
+          },
+          {
+            "end": "2025-06-30",
+            "start": "2025-01-01",
+            "unit": "KRW",
+            "value": 3856673000000.0,
+            "id": "previous.capex",
+            "label": "유형자산 취득"
+          },
+          {
+            "end": "2026-06-30",
+            "start": "2026-01-01",
+            "unit": "KRW",
+            "value": 95154214000000.0,
+            "id": "current.revenue",
+            "label": "매출"
+          },
+          {
+            "end": "2026-06-30",
+            "start": "2026-01-01",
+            "unit": "KRW",
+            "value": 4849653000000.0,
+            "id": "current.cfo",
+            "label": "영업현금"
+          },
+          {
+            "end": "2026-06-30",
+            "start": "2026-01-01",
+            "unit": "KRW",
+            "value": 4003527000000.0,
+            "id": "current.capex",
+            "label": "유형자산 취득"
+          }
+        ],
+        "businessEvidence": {
+          "profile": "automotive_and_finance",
+          "evidenceHash": "1b7adb355b69a1f7af433ca23c2c03b682fda2166244a0c5233f4f06ebadde69",
+          "segments": [
+            {
+              "label": "자동차",
+              "current": {
+                "cash": 12393381000000.0,
+                "cfo": 9917945000000.0,
+                "debtCurrent": 5603734000000.0,
+                "debtNoncurrent": 4332693000000.0,
+                "financialReceivablesCurrent": null,
+                "financialReceivablesNoncurrent": null,
+                "grossRevenue": 117211986000000.0,
+                "netAssetCash": -4128214000000.0,
+                "operatingIncome": 3845323000000.0,
+                "revenue": 71371243000000.0
+              }
+            },
+            {
+              "label": "금융",
+              "current": {
+                "cash": 4715868000000.0,
+                "cfo": -3556146000000.0,
+                "debtCurrent": 56812456000000.0,
+                "debtNoncurrent": 134809280000000.0,
+                "financialReceivablesCurrent": 60342449000000.0,
+                "financialReceivablesNoncurrent": 81448642000000.0,
+                "grossRevenue": 18671500000000.0,
+                "netAssetCash": -136715000000.0,
+                "operatingIncome": 1338210000000.0,
+                "revenue": 18494685000000.0
+              }
+            },
+            {
+              "label": "기타",
+              "current": {
+                "cash": 3120631000000.0,
+                "cfo": 1247803000000.0,
+                "debtCurrent": 720517000000.0,
+                "debtNoncurrent": 551715000000.0,
+                "financialReceivablesCurrent": null,
+                "financialReceivablesNoncurrent": null,
+                "grossRevenue": 6184725000000.0,
+                "netAssetCash": -243436000000.0,
+                "operatingIncome": 268977000000.0,
+                "revenue": 5288286000000.0
+              }
+            }
+          ],
+          "findings": [
+            "자동차·금융·기타 부문의 외부 매출은 연결 매출과 대사했다. 부문 총매출에는 내부거래가 포함되므로 외부 매출과 혼용하지 않는다.",
+            "부문 영업현금 합계와 연결 영업현금의 차이는 원인 미연결 잔액으로 남긴다. 금융부문의 현금 유출을 제조업의 현금 악화로 자동 해석하지 않는다.",
+            "차입금은 부문별 유동·비유동 공시 잔액이며 현금과 같은 기말을 보여준다. 금융채권의 회수·만기·자금조달 위험을 별도로 검토한다."
+          ],
+          "reconciliation": {
+            "cfo": {
+              "reportedAdjustment": null,
+              "reportedTotal": 4849653000000.0,
+              "residual": -2759949000000.0,
+              "status": "unresolved_difference",
+              "subtotal": 7609602000000.0,
+              "unexplained": -2759949000000.0
+            },
+            "operatingIncome": {
+              "reportedAdjustment": -86936000000.0,
+              "reportedTotal": 5365574000000.0,
+              "residual": -86936000000.0,
+              "status": "reconciled",
+              "subtotal": 5452510000000.0,
+              "unexplained": 0.0
+            },
+            "revenue": {
+              "reportedAdjustment": null,
+              "reportedTotal": 95154214000000.0,
+              "residual": 0.0,
+              "status": "reconciled",
+              "subtotal": 95154214000000.0,
+              "unexplained": 0.0
+            }
+          }
+        },
+        "capitalEvidence": {
+          "evidenceHash": "b41af55d951f0dea7b39c91b56d0f641b86a2f92173d7f796e2541580fa320f4",
+          "balances": [
+            {
+              "label": "현금·현금성자산",
+              "value": 20256150000000.0,
+              "unit": "KRW"
+            },
+            {
+              "label": "유동자산",
+              "value": 129045681000000.0,
+              "unit": "KRW"
+            },
+            {
+              "label": "유동부채",
+              "value": 97136454000000.0,
+              "unit": "KRW"
+            },
+            {
+              "label": "리스부채 유동분",
+              "value": 393808000000.0,
+              "unit": "KRW"
+            },
+            {
+              "label": "리스부채 비유동분",
+              "value": 1219774000000.0,
+              "unit": "KRW"
+            },
+            {
+              "label": "단기차입금",
+              "value": 10838843000000.0,
+              "unit": "KRW"
+            }
+          ],
+          "flows": [
+            {
+              "label": "재무활동 분류 배당 현금",
+              "current": 1432005000000.0,
+              "previous": 2332309000000.0,
+              "unit": "KRW"
+            },
+            {
+              "label": "재무활동 분류 리스 지급",
+              "current": 129367000000.0,
+              "previous": 116182000000.0,
+              "unit": "KRW"
+            },
+            {
+              "label": "자기주식 취득",
+              "current": 399017000000.0,
+              "previous": 705120000000.0,
+              "unit": "KRW"
+            }
+          ],
+          "limitation": "주식보상 차감은 주주 부담의 비용 대용 가정이며 현금 유출이 아니다. 자기주식 매입과 함께 이중 차감하지 않는다. 리스·주식보상 결측은 영으로 넣지 않으며 정상화 FCFE를 뜻하지 않는다.",
+          "gaps": [
+            {
+              "metric": "debtCurrent",
+              "period": [
+                null,
+                "2026-06-30"
+              ],
+              "reason": "해당 기간·연결 범위의 확인된 태그 없음"
+            },
+            {
+              "metric": "longDebtNoncurrent",
+              "period": [
+                null,
+                "2026-06-30"
+              ],
+              "reason": "해당 기간·연결 범위의 확인된 태그 없음"
+            },
+            {
+              "metric": "depreciation",
+              "period": [
+                "2026-01-01",
+                "2026-06-30"
+              ],
+              "reason": "해당 기간·연결 범위의 확인된 태그 없음"
+            },
+            {
+              "metric": "sbc",
+              "period": [
+                "2026-01-01",
+                "2026-06-30"
+              ],
+              "reason": "해당 기간·연결 범위의 확인된 태그 없음"
+            }
+          ]
+        },
+        "missingEvidence": [
+          "부문 현금 합계와 연결 현금 사이의 차이에 대한 공시 주석 연결",
+          "금융채권의 신용손실·만기와 자금조달 대응",
+          "보통주·우선주·비지배지분 및 금융부문 가치를 분리한 주식가치",
+          "부문 순유형·무형 취득/처분은 연결 총유형자산 취득과 정의가 다름"
+        ],
+        "sourceGaps": [],
+        "scope": "공시의 보고된 현금과 가능한 연구 질문. 정상 이익·원인·투자 가치의 독립 승인이 아니다."
+      },
+      "provenance": {
+        "company": "005380",
+        "snapshotHash": "6d8261ca62d175a07e68e09ae8e5faa883d792b129824558d29b965e58bffcd7",
+        "inputHash": "5e577a8bb94fe91bf54901d81c5be7ef83efa59d04010d1dfe0c000ca658e0a1",
+        "source": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003521"
+      }
+    },
+    {
+      "id": "broadcom_unexplained",
+      "role": "missing",
+      "text": "부문 이익과 연결 이익의 차이를 항목별로 모두 설명하는 근거는 입력에서 미확인이다.",
+      "accept": true,
+      "expected": "supported",
+      "rationale": "12543000000 차이의 조정 근거 미연결",
+      "input": {
+        "company": "Broadcom Inc.",
+        "ticker": "AVGO",
+        "sector": "반도체",
+        "currency": "USD",
+        "start": "2025-11-03",
+        "end": "2026-08-02",
+        "investmentScope": "유형자산 취득",
+        "computedObservations": [
+          {
+            "id": "revenue",
+            "label": "매출",
+            "previous": 45872000000,
+            "current": 71089000000,
+            "change": 25217000000,
+            "comparisonAvailable": true,
+            "direction": "증가",
+            "evidence": [
+              "previous.revenue",
+              "current.revenue"
+            ]
+          },
+          {
+            "id": "cfo",
+            "label": "영업현금",
+            "previous": 19834000000,
+            "current": 32950000000,
+            "change": 13116000000,
+            "comparisonAvailable": true,
+            "direction": "증가",
+            "evidence": [
+              "previous.cfo",
+              "current.cfo"
+            ]
+          },
+          {
+            "id": "capex",
+            "label": "공시 투자자산 취득",
+            "previous": 386000000,
+            "current": 1013000000,
+            "change": 627000000,
+            "comparisonAvailable": true,
+            "direction": "증가",
+            "evidence": [
+              "previous.capex",
+              "current.capex"
+            ]
+          }
+        ],
+        "evidence": [
+          {
+            "end": "2025-08-03",
+            "start": "2024-11-04",
+            "unit": "USD",
+            "value": 45872000000,
+            "id": "previous.revenue",
+            "label": "매출"
+          },
+          {
+            "end": "2025-08-03",
+            "start": "2024-11-04",
+            "unit": "USD",
+            "value": 19834000000,
+            "id": "previous.cfo",
+            "label": "영업현금"
+          },
+          {
+            "end": "2025-08-03",
+            "start": "2024-11-04",
+            "unit": "USD",
+            "value": 386000000,
+            "id": "previous.capex",
+            "label": "유형자산 취득"
+          },
+          {
+            "end": "2026-08-02",
+            "start": "2025-11-03",
+            "unit": "USD",
+            "value": 71089000000,
+            "id": "current.revenue",
+            "label": "매출"
+          },
+          {
+            "end": "2026-08-02",
+            "start": "2025-11-03",
+            "unit": "USD",
+            "value": 32950000000,
+            "id": "current.cfo",
+            "label": "영업현금"
+          },
+          {
+            "end": "2026-08-02",
+            "start": "2025-11-03",
+            "unit": "USD",
+            "value": 1013000000,
+            "id": "current.capex",
+            "label": "유형자산 취득"
+          }
+        ],
+        "businessEvidence": {
+          "profile": "operating_segments",
+          "evidenceHash": "836d2ce17a9c8e5067719e572c2ede35dd711fb705796dbdab719666570978be",
+          "segments": [
+            {
+              "label": "반도체 솔루션",
+              "current": {
+                "operatingIncome": 29554000000.0,
+                "revenue": 48363000000.0
+              }
+            },
+            {
+              "label": "인프라 소프트웨어",
+              "current": {
+                "operatingIncome": 18295000000.0,
+                "revenue": 22726000000.0
+              }
+            }
+          ],
+          "findings": [
+            "반도체와 소프트웨어의 보고 부문 매출을 구분한다.",
+            "부문 이익 합계와 연결 영업이익의 차이는 현재 미대사다. 이를 주식보상·상각 등 특정 원인으로 단정하지 않는다."
+          ],
+          "reconciliation": {
+            "operatingIncome": {
+              "reportedAdjustment": null,
+              "reportedTotal": 35306000000,
+              "residual": -12543000000.0,
+              "status": "unresolved_difference",
+              "subtotal": 47849000000.0,
+              "unexplained": -12543000000.0
+            },
+            "revenue": {
+              "reportedAdjustment": null,
+              "reportedTotal": 71089000000,
+              "residual": 0.0,
+              "status": "reconciled",
+              "subtotal": 71089000000.0,
+              "unexplained": 0.0
+            }
+          }
+        },
+        "capitalEvidence": {
+          "evidenceHash": "e9e1323593f5b776dae8d2381f55ab5482299c38cf65ec2542595482742c1b3f",
+          "balances": [
+            {
+              "label": "현금·현금성자산",
+              "value": 23975000000.0,
+              "unit": "USD"
+            },
+            {
+              "label": "공시 보통주 유통주식수",
+              "value": 4774000000.0,
+              "unit": "shares"
+            },
+            {
+              "label": "유동자산",
+              "value": 52173000000.0,
+              "unit": "USD"
+            },
+            {
+              "label": "유동부채",
+              "value": 20838000000.0,
+              "unit": "USD"
+            },
+            {
+              "label": "유동 차입금·채무",
+              "value": 2252000000.0,
+              "unit": "USD"
+            },
+            {
+              "label": "장기차입금 유동분",
+              "value": 2252000000.0,
+              "unit": "USD"
+            },
+            {
+              "label": "장기차입금 비유동분",
+              "value": 57167000000.0,
+              "unit": "USD"
+            }
+          ],
+          "flows": [
+            {
+              "label": "기간 가중평균 기본주식수",
+              "current": 4752000000.0,
+              "previous": 4705000000.0,
+              "unit": "shares"
+            },
+            {
+              "label": "기간 가중평균 희석주식수",
+              "current": 4884000000.0,
+              "previous": 4841000000.0,
+              "unit": "shares"
+            },
+            {
+              "label": "배당 현금",
+              "current": 9281000000.0,
+              "previous": 8345000000.0,
+              "unit": "USD"
+            },
+            {
+              "label": "보통주 매입 현금",
+              "current": 8450000000.0,
+              "previous": 2450000000.0,
+              "unit": "USD"
+            },
+            {
+              "label": "주식보상 비현금 조정",
+              "current": 6287000000.0,
+              "previous": 5373000000.0,
+              "unit": "USD"
+            }
+          ],
+          "limitation": "주식보상 차감은 주주 부담의 비용 대용 가정이며 현금 유출이 아니다. 자기주식 매입과 함께 이중 차감하지 않는다. 리스·주식보상 결측은 영으로 넣지 않으며 정상화 FCFE를 뜻하지 않는다.",
+          "gaps": [
+            {
+              "metric": "operatingLease",
+              "period": [
+                null,
+                "2026-08-02"
+              ],
+              "reason": "해당 기간·연결 범위의 확인된 태그 없음"
+            },
+            {
+              "metric": "financeLease",
+              "period": [
+                null,
+                "2026-08-02"
+              ],
+              "reason": "해당 기간·연결 범위의 확인된 태그 없음"
+            },
+            {
+              "metric": "leasePrincipal",
+              "period": [
+                "2025-11-03",
+                "2026-08-02"
+              ],
+              "reason": "해당 기간·연결 범위의 확인된 태그 없음"
+            },
+            {
+              "metric": "depreciation",
+              "period": [
+                "2025-11-03",
+                "2026-08-02"
+              ],
+              "reason": "해당 기간·연결 범위의 확인된 태그 없음"
+            }
+          ]
+        },
+        "missingEvidence": [
+          "부문 이익에서 연결 이익으로 이어지는 공통 비용·상각의 완전 대사",
+          "소프트웨어 계약·갱신과 반도체 고객 집중의 서로 다른 현금 구조",
+          "인수 지출·차입 상환·주식보상을 포함한 반복 현금"
+        ],
+        "sourceGaps": [],
+        "scope": "공시의 보고된 현금과 가능한 연구 질문. 정상 이익·원인·투자 가치의 독립 승인이 아니다."
+      },
+      "provenance": {
+        "company": "AVGO",
+        "snapshotHash": "6d8261ca62d175a07e68e09ae8e5faa883d792b129824558d29b965e58bffcd7",
+        "inputHash": "30a693ee5d9cda144110c2246e72e0cd432c6b21970114ac368d5363773cd152",
+        "source": "https://www.sec.gov/Archives/edgar/data/1730168/000173016826000080/0001730168-26-000080-index.html"
+      }
+    },
+    {
+      "id": "broadcom_invents_sbc",
+      "role": "hypothesis",
+      "text": "부문 이익과 연결 이익의 차이는 전부 주식보상에서 생겼다.",
+      "accept": false,
+      "expected": "unsupported",
+      "rationale": "차이 전체를 SBC로 단정할 근거 없음",
+      "input": {
+        "company": "Broadcom Inc.",
+        "ticker": "AVGO",
+        "sector": "반도체",
+        "currency": "USD",
+        "start": "2025-11-03",
+        "end": "2026-08-02",
+        "investmentScope": "유형자산 취득",
+        "computedObservations": [
+          {
+            "id": "revenue",
+            "label": "매출",
+            "previous": 45872000000,
+            "current": 71089000000,
+            "change": 25217000000,
+            "comparisonAvailable": true,
+            "direction": "증가",
+            "evidence": [
+              "previous.revenue",
+              "current.revenue"
+            ]
+          },
+          {
+            "id": "cfo",
+            "label": "영업현금",
+            "previous": 19834000000,
+            "current": 32950000000,
+            "change": 13116000000,
+            "comparisonAvailable": true,
+            "direction": "증가",
+            "evidence": [
+              "previous.cfo",
+              "current.cfo"
+            ]
+          },
+          {
+            "id": "capex",
+            "label": "공시 투자자산 취득",
+            "previous": 386000000,
+            "current": 1013000000,
+            "change": 627000000,
+            "comparisonAvailable": true,
+            "direction": "증가",
+            "evidence": [
+              "previous.capex",
+              "current.capex"
+            ]
+          }
+        ],
+        "evidence": [
+          {
+            "end": "2025-08-03",
+            "start": "2024-11-04",
+            "unit": "USD",
+            "value": 45872000000,
+            "id": "previous.revenue",
+            "label": "매출"
+          },
+          {
+            "end": "2025-08-03",
+            "start": "2024-11-04",
+            "unit": "USD",
+            "value": 19834000000,
+            "id": "previous.cfo",
+            "label": "영업현금"
+          },
+          {
+            "end": "2025-08-03",
+            "start": "2024-11-04",
+            "unit": "USD",
+            "value": 386000000,
+            "id": "previous.capex",
+            "label": "유형자산 취득"
+          },
+          {
+            "end": "2026-08-02",
+            "start": "2025-11-03",
+            "unit": "USD",
+            "value": 71089000000,
+            "id": "current.revenue",
+            "label": "매출"
+          },
+          {
+            "end": "2026-08-02",
+            "start": "2025-11-03",
+            "unit": "USD",
+            "value": 32950000000,
+            "id": "current.cfo",
+            "label": "영업현금"
+          },
+          {
+            "end": "2026-08-02",
+            "start": "2025-11-03",
+            "unit": "USD",
+            "value": 1013000000,
+            "id": "current.capex",
+            "label": "유형자산 취득"
+          }
+        ],
+        "businessEvidence": {
+          "profile": "operating_segments",
+          "evidenceHash": "836d2ce17a9c8e5067719e572c2ede35dd711fb705796dbdab719666570978be",
+          "segments": [
+            {
+              "label": "반도체 솔루션",
+              "current": {
+                "operatingIncome": 29554000000.0,
+                "revenue": 48363000000.0
+              }
+            },
+            {
+              "label": "인프라 소프트웨어",
+              "current": {
+                "operatingIncome": 18295000000.0,
+                "revenue": 22726000000.0
+              }
+            }
+          ],
+          "findings": [
+            "반도체와 소프트웨어의 보고 부문 매출을 구분한다.",
+            "부문 이익 합계와 연결 영업이익의 차이는 현재 미대사다. 이를 주식보상·상각 등 특정 원인으로 단정하지 않는다."
+          ],
+          "reconciliation": {
+            "operatingIncome": {
+              "reportedAdjustment": null,
+              "reportedTotal": 35306000000,
+              "residual": -12543000000.0,
+              "status": "unresolved_difference",
+              "subtotal": 47849000000.0,
+              "unexplained": -12543000000.0
+            },
+            "revenue": {
+              "reportedAdjustment": null,
+              "reportedTotal": 71089000000,
+              "residual": 0.0,
+              "status": "reconciled",
+              "subtotal": 71089000000.0,
+              "unexplained": 0.0
+            }
+          }
+        },
+        "capitalEvidence": {
+          "evidenceHash": "e9e1323593f5b776dae8d2381f55ab5482299c38cf65ec2542595482742c1b3f",
+          "balances": [
+            {
+              "label": "현금·현금성자산",
+              "value": 23975000000.0,
+              "unit": "USD"
+            },
+            {
+              "label": "공시 보통주 유통주식수",
+              "value": 4774000000.0,
+              "unit": "shares"
+            },
+            {
+              "label": "유동자산",
+              "value": 52173000000.0,
+              "unit": "USD"
+            },
+            {
+              "label": "유동부채",
+              "value": 20838000000.0,
+              "unit": "USD"
+            },
+            {
+              "label": "유동 차입금·채무",
+              "value": 2252000000.0,
+              "unit": "USD"
+            },
+            {
+              "label": "장기차입금 유동분",
+              "value": 2252000000.0,
+              "unit": "USD"
+            },
+            {
+              "label": "장기차입금 비유동분",
+              "value": 57167000000.0,
+              "unit": "USD"
+            }
+          ],
+          "flows": [
+            {
+              "label": "기간 가중평균 기본주식수",
+              "current": 4752000000.0,
+              "previous": 4705000000.0,
+              "unit": "shares"
+            },
+            {
+              "label": "기간 가중평균 희석주식수",
+              "current": 4884000000.0,
+              "previous": 4841000000.0,
+              "unit": "shares"
+            },
+            {
+              "label": "배당 현금",
+              "current": 9281000000.0,
+              "previous": 8345000000.0,
+              "unit": "USD"
+            },
+            {
+              "label": "보통주 매입 현금",
+              "current": 8450000000.0,
+              "previous": 2450000000.0,
+              "unit": "USD"
+            },
+            {
+              "label": "주식보상 비현금 조정",
+              "current": 6287000000.0,
+              "previous": 5373000000.0,
+              "unit": "USD"
+            }
+          ],
+          "limitation": "주식보상 차감은 주주 부담의 비용 대용 가정이며 현금 유출이 아니다. 자기주식 매입과 함께 이중 차감하지 않는다. 리스·주식보상 결측은 영으로 넣지 않으며 정상화 FCFE를 뜻하지 않는다.",
+          "gaps": [
+            {
+              "metric": "operatingLease",
+              "period": [
+                null,
+                "2026-08-02"
+              ],
+              "reason": "해당 기간·연결 범위의 확인된 태그 없음"
+            },
+            {
+              "metric": "financeLease",
+              "period": [
+                null,
+                "2026-08-02"
+              ],
+              "reason": "해당 기간·연결 범위의 확인된 태그 없음"
+            },
+            {
+              "metric": "leasePrincipal",
+              "period": [
+                "2025-11-03",
+                "2026-08-02"
+              ],
+              "reason": "해당 기간·연결 범위의 확인된 태그 없음"
+            },
+            {
+              "metric": "depreciation",
+              "period": [
+                "2025-11-03",
+                "2026-08-02"
+              ],
+              "reason": "해당 기간·연결 범위의 확인된 태그 없음"
+            }
+          ]
+        },
+        "missingEvidence": [
+          "부문 이익에서 연결 이익으로 이어지는 공통 비용·상각의 완전 대사",
+          "소프트웨어 계약·갱신과 반도체 고객 집중의 서로 다른 현금 구조",
+          "인수 지출·차입 상환·주식보상을 포함한 반복 현금"
+        ],
+        "sourceGaps": [],
+        "scope": "공시의 보고된 현금과 가능한 연구 질문. 정상 이익·원인·투자 가치의 독립 승인이 아니다."
+      },
+      "provenance": {
+        "company": "AVGO",
+        "snapshotHash": "6d8261ca62d175a07e68e09ae8e5faa883d792b129824558d29b965e58bffcd7",
+        "inputHash": "30a693ee5d9cda144110c2246e72e0cd432c6b21970114ac368d5363773cd152",
+        "source": "https://www.sec.gov/Archives/edgar/data/1730168/000173016826000080/0001730168-26-000080-index.html"
+      }
+    },
+    {
+      "id": "celltrion_external",
+      "role": "hypothesis",
+      "text": "공시 부문 매출을 합하면 회사의 외부 매출이 되므로 별도 연결 제거가 필요 없다.",
+      "accept": false,
+      "expected": "contradicted",
+      "rationale": "내부거래 제거가 실제 별도 존재",
+      "input": {
+        "company": "셀트리온",
+        "ticker": "068270",
+        "sector": "헬스케어",
+        "currency": "KRW",
+        "start": "2026-01-01",
+        "end": "2026-06-30",
+        "investmentScope": "유형자산 취득",
+        "computedObservations": [
+          {
+            "id": "revenue",
+            "label": "매출",
+            "previous": 1803369024709.0,
+            "current": 2538678712902.0,
+            "change": 735309688193.0,
+            "comparisonAvailable": true,
+            "direction": "증가",
+            "evidence": [
+              "previous.revenue",
+              "current.revenue"
+            ]
+          },
+          {
+            "id": "cfo",
+            "label": "영업현금",
+            "previous": 301588686974.0,
+            "current": 651436274413.0,
+            "change": 349847587439.0,
+            "comparisonAvailable": true,
+            "direction": "증가",
+            "evidence": [
+              "previous.cfo",
+              "current.cfo"
+            ]
+          },
+          {
+            "id": "capex",
+            "label": "공시 투자자산 취득",
+            "previous": 47891192151.0,
+            "current": 112493832690.0,
+            "change": 64602640539.0,
+            "comparisonAvailable": true,
+            "direction": "증가",
+            "evidence": [
+              "previous.capex",
+              "current.capex"
+            ]
+          }
+        ],
+        "evidence": [
+          {
+            "end": "2025-06-30",
+            "start": "2025-01-01",
+            "unit": "KRW",
+            "value": 1803369024709.0,
+            "id": "previous.revenue",
+            "label": "매출"
+          },
+          {
+            "end": "2025-06-30",
+            "start": "2025-01-01",
+            "unit": "KRW",
+            "value": 301588686974.0,
+            "id": "previous.cfo",
+            "label": "영업현금"
+          },
+          {
+            "end": "2025-06-30",
+            "start": "2025-01-01",
+            "unit": "KRW",
+            "value": 47891192151.0,
+            "id": "previous.capex",
+            "label": "유형자산 취득"
+          },
+          {
+            "end": "2026-06-30",
+            "start": "2026-01-01",
+            "unit": "KRW",
+            "value": 2538678712902.0,
+            "id": "current.revenue",
+            "label": "매출"
+          },
+          {
+            "end": "2026-06-30",
+            "start": "2026-01-01",
+            "unit": "KRW",
+            "value": 651436274413.0,
+            "id": "current.cfo",
+            "label": "영업현금"
+          },
+          {
+            "end": "2026-06-30",
+            "start": "2026-01-01",
+            "unit": "KRW",
+            "value": 112493832690.0,
+            "id": "current.capex",
+            "label": "유형자산 취득"
+          }
+        ],
+        "businessEvidence": {
+          "profile": "operating_segments",
+          "evidenceHash": "5fdf5c493adb071fdbfe4e691ddb288b88a4d8994fbda5d9a5ca7495f73bb8a9",
+          "segments": [
+            {
+              "label": "바이오 의약품",
+              "current": {
+                "operatingIncome": 624037712000.0,
+                "revenue": 4081611592000.0
+              }
+            },
+            {
+              "label": "케미컬 의약품",
+              "current": {
+                "operatingIncome": 32128896000.0,
+                "revenue": 296416360000.0
+              }
+            },
+            {
+              "label": "기타",
+              "current": {
+                "operatingIncome": -60068000.0,
+                "revenue": 4714835000.0
+              }
+            }
+          ],
+          "findings": [
+            "보고 부문에는 내부거래가 포함되므로 부문 매출 합계를 외부 매출로 사용하지 않는다.",
+            "연결 제거는 매출과 이익 각각의 공시 금액을 사용한다. 반올림 이후 잔차를 그대로 남긴다."
+          ],
+          "reconciliation": {
+            "operatingIncome": {
+              "reportedAdjustment": 117554686000.0,
+              "reportedTotal": 773661225753.0,
+              "residual": 117554685753.0,
+              "status": "unresolved_difference",
+              "subtotal": 656106540000.0,
+              "unexplained": -247.0
+            },
+            "revenue": {
+              "reportedAdjustment": -1844064074000.0,
+              "reportedTotal": 2538678712902.0,
+              "residual": -1844064074098.0,
+              "status": "reconciled",
+              "subtotal": 4382742787000.0,
+              "unexplained": -98.0
+            }
+          }
+        },
+        "capitalEvidence": {
+          "evidenceHash": "47a88e58a5ff9ff49af06bd5ea71a461643a9b7ff18f360b1e663cfadfd3bd3e",
+          "balances": [
+            {
+              "label": "현금·현금성자산",
+              "value": 1076263918274.0,
+              "unit": "KRW"
+            },
+            {
+              "label": "유동자산",
+              "value": 6975939286591.0,
+              "unit": "KRW"
+            },
+            {
+              "label": "유동부채",
+              "value": 5113666037860.0,
+              "unit": "KRW"
+            }
+          ],
+          "flows": [
+            {
+              "label": "유형자산 감가상각",
+              "current": 67230425000.0,
+              "previous": 47036811000.0,
+              "unit": "KRW"
+            },
+            {
+              "label": "재무활동 분류 배당 현금",
+              "current": 167847007086.0,
+              "previous": 153763509750.0,
+              "unit": "KRW"
+            },
+            {
+              "label": "재무활동 분류 리스 지급",
+              "current": 7935769564.0,
+              "previous": 7662576889.0,
+              "unit": "KRW"
+            },
+            {
+              "label": "자기주식 취득",
+              "current": 200016025499.0,
+              "previous": 575523718307.0,
+              "unit": "KRW"
+            }
+          ],
+          "limitation": "주식보상 차감은 주주 부담의 비용 대용 가정이며 현금 유출이 아니다. 자기주식 매입과 함께 이중 차감하지 않는다. 리스·주식보상 결측은 영으로 넣지 않으며 정상화 FCFE를 뜻하지 않는다.",
+          "gaps": [
+            {
+              "metric": "debtCurrent",
+              "period": [
+                null,
+                "2026-06-30"
+              ],
+              "reason": "해당 기간·연결 범위의 확인된 태그 없음"
+            },
+            {
+              "metric": "shortBorrowings",
+              "period": [
+                null,
+                "2026-06-30"
+              ],
+              "reason": "해당 기간·연결 범위의 확인된 태그 없음"
+            },
+            {
+              "metric": "longDebtNoncurrent",
+              "period": [
+                null,
+                "2026-06-30"
+              ],
+              "reason": "해당 기간·연결 범위의 확인된 태그 없음"
+            },
+            {
+              "metric": "leaseCurrent",
+              "period": [
+                null,
+                "2026-06-30"
+              ],
+              "reason": "해당 기간·연결 범위의 확인된 태그 없음"
+            },
+            {
+              "metric": "leaseNoncurrent",
+              "period": [
+                null,
+                "2026-06-30"
+              ],
+              "reason": "해당 기간·연결 범위의 확인된 태그 없음"
+            },
+            {
+              "metric": "sbc",
+              "period": [
+                "2026-01-01",
+                "2026-06-30"
+              ],
+              "reason": "해당 기간·연결 범위의 확인된 태그 없음"
+            }
+          ]
+        },
+        "missingEvidence": [
+          "제품별 외부 판매와 유통 재고·회수 조건의 연결",
+          "개발·생산·판매 범위의 내부거래와 연결 제거 효과",
+          "신제품 허가·가격·물량과 연구개발·증설 부담"
+        ],
+        "sourceGaps": [],
+        "scope": "공시의 보고된 현금과 가능한 연구 질문. 정상 이익·원인·투자 가치의 독립 승인이 아니다."
+      },
+      "provenance": {
+        "company": "068270",
+        "snapshotHash": "6d8261ca62d175a07e68e09ae8e5faa883d792b129824558d29b965e58bffcd7",
+        "inputHash": "a7a9406a24ca9ab49ff3283852811bfa32231256227aaf407613d9db673228c7",
+        "source": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003751"
+      }
+    },
+    {
+      "id": "celltrion_missing_products",
+      "role": "missing",
+      "text": "제품별 외부 판매와 유통 재고의 회수 조건을 연결하는 자료는 입력에 없다.",
+      "accept": true,
+      "expected": "supported",
+      "rationale": "현재 부문 표가 제공하지 않는 실제 공백",
+      "input": {
+        "company": "셀트리온",
+        "ticker": "068270",
+        "sector": "헬스케어",
+        "currency": "KRW",
+        "start": "2026-01-01",
+        "end": "2026-06-30",
+        "investmentScope": "유형자산 취득",
+        "computedObservations": [
+          {
+            "id": "revenue",
+            "label": "매출",
+            "previous": 1803369024709.0,
+            "current": 2538678712902.0,
+            "change": 735309688193.0,
+            "comparisonAvailable": true,
+            "direction": "증가",
+            "evidence": [
+              "previous.revenue",
+              "current.revenue"
+            ]
+          },
+          {
+            "id": "cfo",
+            "label": "영업현금",
+            "previous": 301588686974.0,
+            "current": 651436274413.0,
+            "change": 349847587439.0,
+            "comparisonAvailable": true,
+            "direction": "증가",
+            "evidence": [
+              "previous.cfo",
+              "current.cfo"
+            ]
+          },
+          {
+            "id": "capex",
+            "label": "공시 투자자산 취득",
+            "previous": 47891192151.0,
+            "current": 112493832690.0,
+            "change": 64602640539.0,
+            "comparisonAvailable": true,
+            "direction": "증가",
+            "evidence": [
+              "previous.capex",
+              "current.capex"
+            ]
+          }
+        ],
+        "evidence": [
+          {
+            "end": "2025-06-30",
+            "start": "2025-01-01",
+            "unit": "KRW",
+            "value": 1803369024709.0,
+            "id": "previous.revenue",
+            "label": "매출"
+          },
+          {
+            "end": "2025-06-30",
+            "start": "2025-01-01",
+            "unit": "KRW",
+            "value": 301588686974.0,
+            "id": "previous.cfo",
+            "label": "영업현금"
+          },
+          {
+            "end": "2025-06-30",
+            "start": "2025-01-01",
+            "unit": "KRW",
+            "value": 47891192151.0,
+            "id": "previous.capex",
+            "label": "유형자산 취득"
+          },
+          {
+            "end": "2026-06-30",
+            "start": "2026-01-01",
+            "unit": "KRW",
+            "value": 2538678712902.0,
+            "id": "current.revenue",
+            "label": "매출"
+          },
+          {
+            "end": "2026-06-30",
+            "start": "2026-01-01",
+            "unit": "KRW",
+            "value": 651436274413.0,
+            "id": "current.cfo",
+            "label": "영업현금"
+          },
+          {
+            "end": "2026-06-30",
+            "start": "2026-01-01",
+            "unit": "KRW",
+            "value": 112493832690.0,
+            "id": "current.capex",
+            "label": "유형자산 취득"
+          }
+        ],
+        "businessEvidence": {
+          "profile": "operating_segments",
+          "evidenceHash": "5fdf5c493adb071fdbfe4e691ddb288b88a4d8994fbda5d9a5ca7495f73bb8a9",
+          "segments": [
+            {
+              "label": "바이오 의약품",
+              "current": {
+                "operatingIncome": 624037712000.0,
+                "revenue": 4081611592000.0
+              }
+            },
+            {
+              "label": "케미컬 의약품",
+              "current": {
+                "operatingIncome": 32128896000.0,
+                "revenue": 296416360000.0
+              }
+            },
+            {
+              "label": "기타",
+              "current": {
+                "operatingIncome": -60068000.0,
+                "revenue": 4714835000.0
+              }
+            }
+          ],
+          "findings": [
+            "보고 부문에는 내부거래가 포함되므로 부문 매출 합계를 외부 매출로 사용하지 않는다.",
+            "연결 제거는 매출과 이익 각각의 공시 금액을 사용한다. 반올림 이후 잔차를 그대로 남긴다."
+          ],
+          "reconciliation": {
+            "operatingIncome": {
+              "reportedAdjustment": 117554686000.0,
+              "reportedTotal": 773661225753.0,
+              "residual": 117554685753.0,
+              "status": "unresolved_difference",
+              "subtotal": 656106540000.0,
+              "unexplained": -247.0
+            },
+            "revenue": {
+              "reportedAdjustment": -1844064074000.0,
+              "reportedTotal": 2538678712902.0,
+              "residual": -1844064074098.0,
+              "status": "reconciled",
+              "subtotal": 4382742787000.0,
+              "unexplained": -98.0
+            }
+          }
+        },
+        "capitalEvidence": {
+          "evidenceHash": "47a88e58a5ff9ff49af06bd5ea71a461643a9b7ff18f360b1e663cfadfd3bd3e",
+          "balances": [
+            {
+              "label": "현금·현금성자산",
+              "value": 1076263918274.0,
+              "unit": "KRW"
+            },
+            {
+              "label": "유동자산",
+              "value": 6975939286591.0,
+              "unit": "KRW"
+            },
+            {
+              "label": "유동부채",
+              "value": 5113666037860.0,
+              "unit": "KRW"
+            }
+          ],
+          "flows": [
+            {
+              "label": "유형자산 감가상각",
+              "current": 67230425000.0,
+              "previous": 47036811000.0,
+              "unit": "KRW"
+            },
+            {
+              "label": "재무활동 분류 배당 현금",
+              "current": 167847007086.0,
+              "previous": 153763509750.0,
+              "unit": "KRW"
+            },
+            {
+              "label": "재무활동 분류 리스 지급",
+              "current": 7935769564.0,
+              "previous": 7662576889.0,
+              "unit": "KRW"
+            },
+            {
+              "label": "자기주식 취득",
+              "current": 200016025499.0,
+              "previous": 575523718307.0,
+              "unit": "KRW"
+            }
+          ],
+          "limitation": "주식보상 차감은 주주 부담의 비용 대용 가정이며 현금 유출이 아니다. 자기주식 매입과 함께 이중 차감하지 않는다. 리스·주식보상 결측은 영으로 넣지 않으며 정상화 FCFE를 뜻하지 않는다.",
+          "gaps": [
+            {
+              "metric": "debtCurrent",
+              "period": [
+                null,
+                "2026-06-30"
+              ],
+              "reason": "해당 기간·연결 범위의 확인된 태그 없음"
+            },
+            {
+              "metric": "shortBorrowings",
+              "period": [
+                null,
+                "2026-06-30"
+              ],
+              "reason": "해당 기간·연결 범위의 확인된 태그 없음"
+            },
+            {
+              "metric": "longDebtNoncurrent",
+              "period": [
+                null,
+                "2026-06-30"
+              ],
+              "reason": "해당 기간·연결 범위의 확인된 태그 없음"
+            },
+            {
+              "metric": "leaseCurrent",
+              "period": [
+                null,
+                "2026-06-30"
+              ],
+              "reason": "해당 기간·연결 범위의 확인된 태그 없음"
+            },
+            {
+              "metric": "leaseNoncurrent",
+              "period": [
+                null,
+                "2026-06-30"
+              ],
+              "reason": "해당 기간·연결 범위의 확인된 태그 없음"
+            },
+            {
+              "metric": "sbc",
+              "period": [
+                "2026-01-01",
+                "2026-06-30"
+              ],
+              "reason": "해당 기간·연결 범위의 확인된 태그 없음"
+            }
+          ]
+        },
+        "missingEvidence": [
+          "제품별 외부 판매와 유통 재고·회수 조건의 연결",
+          "개발·생산·판매 범위의 내부거래와 연결 제거 효과",
+          "신제품 허가·가격·물량과 연구개발·증설 부담"
+        ],
+        "sourceGaps": [],
+        "scope": "공시의 보고된 현금과 가능한 연구 질문. 정상 이익·원인·투자 가치의 독립 승인이 아니다."
+      },
+      "provenance": {
+        "company": "068270",
+        "snapshotHash": "6d8261ca62d175a07e68e09ae8e5faa883d792b129824558d29b965e58bffcd7",
+        "inputHash": "a7a9406a24ca9ab49ff3283852811bfa32231256227aaf407613d9db673228c7",
+        "source": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003751"
+      }
+    },
+    {
+      "id": "new_cash_fact",
+      "role": "observation",
+      "text": "영업현금은 전년보다 감소했다.",
+      "accept": true,
+      "expected": "supported",
+      "rationale": "고정된 입력의 부호·회계 범위 또는 미확인 구분",
+      "input": {
+        "company": "새 분리 평가용 합성 기업",
+        "currency": "가상 화폐",
+        "computedObservations": [
+          {
+            "id": "revenue",
+            "previous": 800,
+            "current": 960,
+            "direction": "증가"
+          },
+          {
+            "id": "cfo",
+            "previous": 120,
+            "current": 96,
+            "direction": "감소"
+          },
+          {
+            "id": "capex",
+            "previous": 60,
+            "current": 84,
+            "direction": "증가"
+          }
+        ],
+        "businessEvidence": {
+          "segments": [
+            {
+              "label": "제품",
+              "current": {
+                "revenue": 720,
+                "operatingIncome": 144
+              }
+            },
+            {
+              "label": "서비스",
+              "current": {
+                "revenue": 240,
+                "operatingIncome": 48
+              }
+            }
+          ],
+          "leases": {
+            "financePrincipal": 12,
+            "noncashAdditions": 21
+          },
+          "reconciliation": {
+            "cfo": {
+              "subtotal": 110,
+              "reportedTotal": 96,
+              "unexplained": -14
+            }
+          }
+        },
+        "missingEvidence": [
+          "설비 투자 목적과 가격·물량 분해",
+          "현금과 부문 이익의 완전 연결",
+          "정상 주주 배분 현금의 구성"
+        ]
+      }
+    },
+    {
+      "id": "new_cash_reverse",
+      "role": "hypothesis",
+      "text": "영업현금이 늘어난 것은 매출 성장 때문일 수 있다.",
+      "accept": false,
+      "expected": "contradicted",
+      "rationale": "고정된 입력의 부호·회계 범위 또는 미확인 구분",
+      "input": {
+        "company": "새 분리 평가용 합성 기업",
+        "currency": "가상 화폐",
+        "computedObservations": [
+          {
+            "id": "revenue",
+            "previous": 800,
+            "current": 960,
+            "direction": "증가"
+          },
+          {
+            "id": "cfo",
+            "previous": 120,
+            "current": 96,
+            "direction": "감소"
+          },
+          {
+            "id": "capex",
+            "previous": 60,
+            "current": 84,
+            "direction": "증가"
+          }
+        ],
+        "businessEvidence": {
+          "segments": [
+            {
+              "label": "제품",
+              "current": {
+                "revenue": 720,
+                "operatingIncome": 144
+              }
+            },
+            {
+              "label": "서비스",
+              "current": {
+                "revenue": 240,
+                "operatingIncome": 48
+              }
+            }
+          ],
+          "leases": {
+            "financePrincipal": 12,
+            "noncashAdditions": 21
+          },
+          "reconciliation": {
+            "cfo": {
+              "subtotal": 110,
+              "reportedTotal": 96,
+              "unexplained": -14
+            }
+          }
+        },
+        "missingEvidence": [
+          "설비 투자 목적과 가격·물량 분해",
+          "현금과 부문 이익의 완전 연결",
+          "정상 주주 배분 현금의 구성"
+        ]
+      }
+    },
+    {
+      "id": "new_expansion",
+      "role": "hypothesis",
+      "text": "증가한 설비 취득지출은 생산 능력 확대를 준비한 것일 수 있다.",
+      "accept": true,
+      "expected": "conditional",
+      "rationale": "고정된 입력의 부호·회계 범위 또는 미확인 구분",
+      "input": {
+        "company": "새 분리 평가용 합성 기업",
+        "currency": "가상 화폐",
+        "computedObservations": [
+          {
+            "id": "revenue",
+            "previous": 800,
+            "current": 960,
+            "direction": "증가"
+          },
+          {
+            "id": "cfo",
+            "previous": 120,
+            "current": 96,
+            "direction": "감소"
+          },
+          {
+            "id": "capex",
+            "previous": 60,
+            "current": 84,
+            "direction": "증가"
+          }
+        ],
+        "businessEvidence": {
+          "segments": [
+            {
+              "label": "제품",
+              "current": {
+                "revenue": 720,
+                "operatingIncome": 144
+              }
+            },
+            {
+              "label": "서비스",
+              "current": {
+                "revenue": 240,
+                "operatingIncome": 48
+              }
+            }
+          ],
+          "leases": {
+            "financePrincipal": 12,
+            "noncashAdditions": 21
+          },
+          "reconciliation": {
+            "cfo": {
+              "subtotal": 110,
+              "reportedTotal": 96,
+              "unexplained": -14
+            }
+          }
+        },
+        "missingEvidence": [
+          "설비 투자 목적과 가격·물량 분해",
+          "현금과 부문 이익의 완전 연결",
+          "정상 주주 배분 현금의 구성"
+        ]
+      }
+    },
+    {
+      "id": "new_demand",
+      "role": "alternative",
+      "text": "설비 취득지출이 늘었으니 고객 수요 증가가 이미 확인됐다.",
+      "accept": false,
+      "expected": "unsupported",
+      "rationale": "고정된 입력의 부호·회계 범위 또는 미확인 구분",
+      "input": {
+        "company": "새 분리 평가용 합성 기업",
+        "currency": "가상 화폐",
+        "computedObservations": [
+          {
+            "id": "revenue",
+            "previous": 800,
+            "current": 960,
+            "direction": "증가"
+          },
+          {
+            "id": "cfo",
+            "previous": 120,
+            "current": 96,
+            "direction": "감소"
+          },
+          {
+            "id": "capex",
+            "previous": 60,
+            "current": 84,
+            "direction": "증가"
+          }
+        ],
+        "businessEvidence": {
+          "segments": [
+            {
+              "label": "제품",
+              "current": {
+                "revenue": 720,
+                "operatingIncome": 144
+              }
+            },
+            {
+              "label": "서비스",
+              "current": {
+                "revenue": 240,
+                "operatingIncome": 48
+              }
+            }
+          ],
+          "leases": {
+            "financePrincipal": 12,
+            "noncashAdditions": 21
+          },
+          "reconciliation": {
+            "cfo": {
+              "subtotal": 110,
+              "reportedTotal": 96,
+              "unexplained": -14
+            }
+          }
+        },
+        "missingEvidence": [
+          "설비 투자 목적과 가격·물량 분해",
+          "현금과 부문 이익의 완전 연결",
+          "정상 주주 배분 현금의 구성"
+        ]
+      }
+    },
+    {
+      "id": "new_missing_products",
+      "role": "missing",
+      "text": "투자 목적과 가격·물량별 매출 기여는 입력에서 확인되지 않는다.",
+      "accept": true,
+      "expected": "supported",
+      "rationale": "고정된 입력의 부호·회계 범위 또는 미확인 구분",
+      "input": {
+        "company": "새 분리 평가용 합성 기업",
+        "currency": "가상 화폐",
+        "computedObservations": [
+          {
+            "id": "revenue",
+            "previous": 800,
+            "current": 960,
+            "direction": "증가"
+          },
+          {
+            "id": "cfo",
+            "previous": 120,
+            "current": 96,
+            "direction": "감소"
+          },
+          {
+            "id": "capex",
+            "previous": 60,
+            "current": 84,
+            "direction": "증가"
+          }
+        ],
+        "businessEvidence": {
+          "segments": [
+            {
+              "label": "제품",
+              "current": {
+                "revenue": 720,
+                "operatingIncome": 144
+              }
+            },
+            {
+              "label": "서비스",
+              "current": {
+                "revenue": 240,
+                "operatingIncome": 48
+              }
+            }
+          ],
+          "leases": {
+            "financePrincipal": 12,
+            "noncashAdditions": 21
+          },
+          "reconciliation": {
+            "cfo": {
+              "subtotal": 110,
+              "reportedTotal": 96,
+              "unexplained": -14
+            }
+          }
+        },
+        "missingEvidence": [
+          "설비 투자 목적과 가격·물량 분해",
+          "현금과 부문 이익의 완전 연결",
+          "정상 주주 배분 현금의 구성"
+        ]
+      }
+    },
+    {
+      "id": "new_missing_service",
+      "role": "missing",
+      "text": "서비스 부문 매출은 입력에서 확인되지 않는다.",
+      "accept": false,
+      "expected": "contradicted",
+      "rationale": "고정된 입력의 부호·회계 범위 또는 미확인 구분",
+      "input": {
+        "company": "새 분리 평가용 합성 기업",
+        "currency": "가상 화폐",
+        "computedObservations": [
+          {
+            "id": "revenue",
+            "previous": 800,
+            "current": 960,
+            "direction": "증가"
+          },
+          {
+            "id": "cfo",
+            "previous": 120,
+            "current": 96,
+            "direction": "감소"
+          },
+          {
+            "id": "capex",
+            "previous": 60,
+            "current": 84,
+            "direction": "증가"
+          }
+        ],
+        "businessEvidence": {
+          "segments": [
+            {
+              "label": "제품",
+              "current": {
+                "revenue": 720,
+                "operatingIncome": 144
+              }
+            },
+            {
+              "label": "서비스",
+              "current": {
+                "revenue": 240,
+                "operatingIncome": 48
+              }
+            }
+          ],
+          "leases": {
+            "financePrincipal": 12,
+            "noncashAdditions": 21
+          },
+          "reconciliation": {
+            "cfo": {
+              "subtotal": 110,
+              "reportedTotal": 96,
+              "unexplained": -14
+            }
+          }
+        },
+        "missingEvidence": [
+          "설비 투자 목적과 가격·물량 분해",
+          "현금과 부문 이익의 완전 연결",
+          "정상 주주 배분 현금의 구성"
+        ]
+      }
+    },
+    {
+      "id": "new_noncash",
+      "role": "hypothesis",
+      "text": "비현금 리스 취득액은 영업현금 유출이다.",
+      "accept": false,
+      "expected": "contradicted",
+      "rationale": "고정된 입력의 부호·회계 범위 또는 미확인 구분",
+      "input": {
+        "company": "새 분리 평가용 합성 기업",
+        "currency": "가상 화폐",
+        "computedObservations": [
+          {
+            "id": "revenue",
+            "previous": 800,
+            "current": 960,
+            "direction": "증가"
+          },
+          {
+            "id": "cfo",
+            "previous": 120,
+            "current": 96,
+            "direction": "감소"
+          },
+          {
+            "id": "capex",
+            "previous": 60,
+            "current": 84,
+            "direction": "증가"
+          }
+        ],
+        "businessEvidence": {
+          "segments": [
+            {
+              "label": "제품",
+              "current": {
+                "revenue": 720,
+                "operatingIncome": 144
+              }
+            },
+            {
+              "label": "서비스",
+              "current": {
+                "revenue": 240,
+                "operatingIncome": 48
+              }
+            }
+          ],
+          "leases": {
+            "financePrincipal": 12,
+            "noncashAdditions": 21
+          },
+          "reconciliation": {
+            "cfo": {
+              "subtotal": 110,
+              "reportedTotal": 96,
+              "unexplained": -14
+            }
+          }
+        },
+        "missingEvidence": [
+          "설비 투자 목적과 가격·물량 분해",
+          "현금과 부문 이익의 완전 연결",
+          "정상 주주 배분 현금의 구성"
+        ]
+      }
+    },
+    {
+      "id": "new_principal",
+      "role": "observation",
+      "text": "금융리스 원금과 비현금 신규 리스 취득은 별도 항목이다.",
+      "accept": true,
+      "expected": "supported",
+      "rationale": "고정된 입력의 부호·회계 범위 또는 미확인 구분",
+      "input": {
+        "company": "새 분리 평가용 합성 기업",
+        "currency": "가상 화폐",
+        "computedObservations": [
+          {
+            "id": "revenue",
+            "previous": 800,
+            "current": 960,
+            "direction": "증가"
+          },
+          {
+            "id": "cfo",
+            "previous": 120,
+            "current": 96,
+            "direction": "감소"
+          },
+          {
+            "id": "capex",
+            "previous": 60,
+            "current": 84,
+            "direction": "증가"
+          }
+        ],
+        "businessEvidence": {
+          "segments": [
+            {
+              "label": "제품",
+              "current": {
+                "revenue": 720,
+                "operatingIncome": 144
+              }
+            },
+            {
+              "label": "서비스",
+              "current": {
+                "revenue": 240,
+                "operatingIncome": 48
+              }
+            }
+          ],
+          "leases": {
+            "financePrincipal": 12,
+            "noncashAdditions": 21
+          },
+          "reconciliation": {
+            "cfo": {
+              "subtotal": 110,
+              "reportedTotal": 96,
+              "unexplained": -14
+            }
+          }
+        },
+        "missingEvidence": [
+          "설비 투자 목적과 가격·물량 분해",
+          "현금과 부문 이익의 완전 연결",
+          "정상 주주 배분 현금의 구성"
+        ]
+      }
+    },
+    {
+      "id": "new_elimination",
+      "role": "hypothesis",
+      "text": "부문과 연결 현금 사이 미연결 차이는 전부 내부거래 제거다.",
+      "accept": false,
+      "expected": "unsupported",
+      "rationale": "고정된 입력의 부호·회계 범위 또는 미확인 구분",
+      "input": {
+        "company": "새 분리 평가용 합성 기업",
+        "currency": "가상 화폐",
+        "computedObservations": [
+          {
+            "id": "revenue",
+            "previous": 800,
+            "current": 960,
+            "direction": "증가"
+          },
+          {
+            "id": "cfo",
+            "previous": 120,
+            "current": 96,
+            "direction": "감소"
+          },
+          {
+            "id": "capex",
+            "previous": 60,
+            "current": 84,
+            "direction": "증가"
+          }
+        ],
+        "businessEvidence": {
+          "segments": [
+            {
+              "label": "제품",
+              "current": {
+                "revenue": 720,
+                "operatingIncome": 144
+              }
+            },
+            {
+              "label": "서비스",
+              "current": {
+                "revenue": 240,
+                "operatingIncome": 48
+              }
+            }
+          ],
+          "leases": {
+            "financePrincipal": 12,
+            "noncashAdditions": 21
+          },
+          "reconciliation": {
+            "cfo": {
+              "subtotal": 110,
+              "reportedTotal": 96,
+              "unexplained": -14
+            }
+          }
+        },
+        "missingEvidence": [
+          "설비 투자 목적과 가격·물량 분해",
+          "현금과 부문 이익의 완전 연결",
+          "정상 주주 배분 현금의 구성"
+        ]
+      }
+    },
+    {
+      "id": "new_cash_normalized",
+      "role": "hypothesis",
+      "text": "영업현금에서 투자지출만 빼면 정상 주주 배분 현금이 확정된다.",
+      "accept": false,
+      "expected": "contradicted",
+      "rationale": "고정된 입력의 부호·회계 범위 또는 미확인 구분",
+      "input": {
+        "company": "새 분리 평가용 합성 기업",
+        "currency": "가상 화폐",
+        "computedObservations": [
+          {
+            "id": "revenue",
+            "previous": 800,
+            "current": 960,
+            "direction": "증가"
+          },
+          {
+            "id": "cfo",
+            "previous": 120,
+            "current": 96,
+            "direction": "감소"
+          },
+          {
+            "id": "capex",
+            "previous": 60,
+            "current": 84,
+            "direction": "증가"
+          }
+        ],
+        "businessEvidence": {
+          "segments": [
+            {
+              "label": "제품",
+              "current": {
+                "revenue": 720,
+                "operatingIncome": 144
+              }
+            },
+            {
+              "label": "서비스",
+              "current": {
+                "revenue": 240,
+                "operatingIncome": 48
+              }
+            }
+          ],
+          "leases": {
+            "financePrincipal": 12,
+            "noncashAdditions": 21
+          },
+          "reconciliation": {
+            "cfo": {
+              "subtotal": 110,
+              "reportedTotal": 96,
+              "unexplained": -14
+            }
+          }
+        },
+        "missingEvidence": [
+          "설비 투자 목적과 가격·물량 분해",
+          "현금과 부문 이익의 완전 연결",
+          "정상 주주 배분 현금의 구성"
+        ]
+      }
+    },
+    {
+      "id": "new_future",
+      "role": "distinguish",
+      "text": "다음 공시에서 증설과 교체 목적의 투자 내역이 공개된다면 성장투자와 유지투자 설명을 구별하는 단서일 수 있다.",
+      "accept": true,
+      "expected": "conditional",
+      "rationale": "고정된 입력의 부호·회계 범위 또는 미확인 구분",
+      "input": {
+        "company": "새 분리 평가용 합성 기업",
+        "currency": "가상 화폐",
+        "computedObservations": [
+          {
+            "id": "revenue",
+            "previous": 800,
+            "current": 960,
+            "direction": "증가"
+          },
+          {
+            "id": "cfo",
+            "previous": 120,
+            "current": 96,
+            "direction": "감소"
+          },
+          {
+            "id": "capex",
+            "previous": 60,
+            "current": 84,
+            "direction": "증가"
+          }
+        ],
+        "businessEvidence": {
+          "segments": [
+            {
+              "label": "제품",
+              "current": {
+                "revenue": 720,
+                "operatingIncome": 144
+              }
+            },
+            {
+              "label": "서비스",
+              "current": {
+                "revenue": 240,
+                "operatingIncome": 48
+              }
+            }
+          ],
+          "leases": {
+            "financePrincipal": 12,
+            "noncashAdditions": 21
+          },
+          "reconciliation": {
+            "cfo": {
+              "subtotal": 110,
+              "reportedTotal": 96,
+              "unexplained": -14
+            }
+          }
+        },
+        "missingEvidence": [
+          "설비 투자 목적과 가격·물량 분해",
+          "현금과 부문 이익의 완전 연결",
+          "정상 주주 배분 현금의 구성"
+        ]
+      }
+    },
+    {
+      "id": "new_missing_residual",
+      "role": "missing",
+      "text": "부문 현금과 연결 현금 사이 차이의 원인별 연결 근거가 없다.",
+      "accept": true,
+      "expected": "supported",
+      "rationale": "고정된 입력의 부호·회계 범위 또는 미확인 구분",
+      "input": {
+        "company": "새 분리 평가용 합성 기업",
+        "currency": "가상 화폐",
+        "computedObservations": [
+          {
+            "id": "revenue",
+            "previous": 800,
+            "current": 960,
+            "direction": "증가"
+          },
+          {
+            "id": "cfo",
+            "previous": 120,
+            "current": 96,
+            "direction": "감소"
+          },
+          {
+            "id": "capex",
+            "previous": 60,
+            "current": 84,
+            "direction": "증가"
+          }
+        ],
+        "businessEvidence": {
+          "segments": [
+            {
+              "label": "제품",
+              "current": {
+                "revenue": 720,
+                "operatingIncome": 144
+              }
+            },
+            {
+              "label": "서비스",
+              "current": {
+                "revenue": 240,
+                "operatingIncome": 48
+              }
+            }
+          ],
+          "leases": {
+            "financePrincipal": 12,
+            "noncashAdditions": 21
+          },
+          "reconciliation": {
+            "cfo": {
+              "subtotal": 110,
+              "reportedTotal": 96,
+              "unexplained": -14
+            }
+          }
+        },
+        "missingEvidence": [
+          "설비 투자 목적과 가격·물량 분해",
+          "현금과 부문 이익의 완전 연결",
+          "정상 주주 배분 현금의 구성"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+[unit] /mnt/20t/주식/.local/portable-verify/bin/python -m unittest discover -s tests -v
+[unit] passed — artifacts/local/runs/20261001T124714788199Z/unit.log
+[analysis] /mnt/20t/주식/.local/portable-verify/bin/python -m equitylab refresh --as-of 2026-09-29
+[analysis] passed — artifacts/local/runs/20261001T124714788199Z/analysis.log
+[register-cash-conditions] /mnt/20t/주식/.local/portable-verify/bin/python -m equitylab register
+[register-cash-conditions] passed — artifacts/local/runs/20261001T124714788199Z/register-cash-conditions.log
+[register-receivable-conditions] /mnt/20t/주식/.local/portable-verify/bin/python -m equitylab register-receivables
+[register-receivable-conditions] passed — artifacts/local/runs/20261001T124714788199Z/register-receivable-conditions.log
+[observe] /mnt/20t/주식/.local/portable-verify/bin/python -m equitylab observe
+[observe] passed — artifacts/local/runs/20261001T124714788199Z/observe.log
+[research-journal] /mnt/20t/주식/.local/portable-verify/bin/python -m equitylab register-cases
+[research-journal] passed — artifacts/local/runs/20261001T124714788199Z/research-journal.log
+[forward-study] /mnt/20t/주식/.local/portable-verify/bin/python -m equitylab register-study
+[forward-study] passed — artifacts/local/runs/20261001T124714788199Z/forward-study.log
+[price-crosscheck] node scripts/check-dossier.mjs
+[price-crosscheck] passed — artifacts/local/runs/20261001T124714788199Z/price-crosscheck.log
+[local-records] /mnt/20t/주식/.local/portable-verify/bin/python scripts/check-local-records.py
+[local-records] passed — artifacts/local/runs/20261001T124714788199Z/local-records.log
+[offline-replay] /mnt/20t/주식/.local/portable-verify/bin/python scripts/check-replay.py
+[offline-replay] passed — artifacts/local/runs/20261001T124714788199Z/offline-replay.log
+[browser-pdf] node scripts/check-live.mjs
+[browser-pdf] passed — artifacts/local/runs/20261001T124714788199Z/browser-pdf.log
+[artifacts] /mnt/20t/주식/.local/portable-verify/bin/python scripts/check-artifacts.py
+[artifacts] passed — artifacts/local/runs/20261001T124714788199Z/artifacts.log
+Verified private outputs: app/index.html and artifacts/live/*.pdf

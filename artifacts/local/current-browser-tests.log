@@ -1,0 +1,87 @@
+PASS Registered real companies with a source cutoff
+PASS US filter affects table and scatter
+PASS Korean filter contains real Korean securities
+PASS Ticker search selects Microsoft in the table and chart
+PASS Empty search is explained without invented companies
+PASS Sector filter uses the coverage classifications
+PASS Candidate filter uses declared current financial conditions
+PASS Micron report contains actual dates and currency
+PASS Local filing corpus opens and verifies without network access
+PASS Source search finds the exact price and shipment explanation
+PASS A research revision preserves its selected filing passage
+PASS Reimporting an identical notebook does not duplicate records
+PASS Damaged imported notebook is rejected without overwriting history
+PASS Ephemeral browser test notes do not enter delivered reports
+PASS Memory analysis separates reporting periods and dividend sensitivity
+PASS Evidence is readable with source period and raw definitions
+PASS Escape restores evidence trigger focus
+PASS Cash bridge reconciles to the reported operating cash flow
+PASS Receivable proxies expose both averaging choices and limits
+PASS Management attribution is distinct from independent evidence
+PASS Opening balance and comparative period retain their filing identities
+PASS Historical cash scenarios show source anchors and non-probabilistic cases
+PASS Additional compensation and lease burden is an explicit assumption
+PASS Initial assumptions restore without silently rounding filing ratios
+PASS Three filing observations remain separate from generated causes
+PASS Cross-border comparison exposes unequal reporting periods
+PASS Private model commentary has traceable facts and explicit review limits
+PASS Every model sentence has its own exact-text review
+PASS Synthetic evaluation is labelled separately from real company accuracy
+PASS Uncleared notes are collapsed while computed facts stay visible
+PASS Individual real report NVDA
+PASS Individual real report GOOGL
+PASS Individual real report AAPL
+PASS Individual real report MSFT
+PASS Individual real report AMZN
+PASS Individual real report META
+PASS Individual real report AMD
+PASS Individual real report AVGO
+PASS Individual real report QCOM
+PASS Individual real report INTC
+PASS Individual real report AMAT
+PASS Individual real report LRCX
+PASS Individual real report TSLA
+PASS Individual real report GM
+PASS Individual real report F
+PASS Individual real report GE
+PASS Individual real report CAT
+PASS Individual real report LLY
+PASS Individual real report JNJ
+PASS Individual real report 000660
+PASS Individual real report 005930
+PASS Individual real report 035420
+PASS Individual real report 066570
+PASS Individual real report 005380
+PASS Individual real report 000270
+PASS Individual real report 012330
+PASS Individual real report 035720
+PASS Individual real report 006400
+PASS Individual real report 051910
+PASS Individual real report 373220
+PASS Individual real report 005490
+PASS Individual real report 207940
+PASS Individual real report 068270
+PASS Individual real report 000100
+PASS Individual real report 128940
+PASS Individual real report 329180
+PASS Individual real report 012450
+PASS Individual real report 034020
+PASS Individual real report 267260
+PASS Apple distinguishes product revenue from geographic operating profits
+PASS Trailing-year numbers preserve the annual plus current less prior calculation
+PASS Samsung segment residual and intercompany basis remain visible
+PASS Conflicting dividends are shown as a data gap
+AssertionError [ERR_ASSERTION]: All companies have current source-bound local research selections
+
+false !== true
+
+    at expect (file:///mnt/20t/%EC%A3%BC%EC%8B%9D/scripts/check-live.mjs:93:10)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async file:///mnt/20t/%EC%A3%BC%EC%8B%9D/scripts/check-live.mjs:229:5 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: 'strictEqual',
+  diff: 'simple'
+}

@@ -1,0 +1,18 @@
+{
+  "status": "candidate_only",
+  "financialApproval": false,
+  "company": "ORCL",
+  "annualFiledAt": "2026-06-22",
+  "period": "2025-09-01/2026-08-31",
+  "sourceHash": "2ece8288f124c7ddfc46ea2b90e242b7214e49dd423beaf8eefad8acea23852f",
+  "revenue": 71776000000,
+  "cfo": 46940000000,
+  "capex": 75660000000,
+  "cfoFinancingAdjustment": 15955000000,
+  "financeLeaseTotal": 552000000,
+  "financeLeaseAccruedInterest": 357000000,
+  "financeLeasePrincipalProxy": 195000000,
+  "actualFinanceLeasePrincipal": null,
+  "firstCash": -51737250000,
+  "next": "After current integrated run finishes: implement explicit capex bound in Python/JS, source tables/charts; unit and whole-path comparison; GPU/replay/browser/PDF."
+}

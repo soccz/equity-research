@@ -1,0 +1,15 @@
+{
+  "status": "staged_not_integrated",
+  "unitTests": 7,
+  "completeCashAndInversePaths": 8,
+  "firstYearCash": 5136500000,
+  "reportedTtmCfo": 12401000000,
+  "reportedTtmPretax": 11212000000,
+  "excludedInvestmentIncome": 1674000000,
+  "researchPretax": 9538000000,
+  "remaining": [
+    "official UI and sources integration",
+    "future investment/capital structure normalization",
+    "full current-snapshot GPU/browser/PDF verification"
+  ]
+}

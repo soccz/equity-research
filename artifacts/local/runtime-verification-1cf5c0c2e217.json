@@ -1,0 +1,114 @@
+{
+  "checkedAt": "2026-09-30T09:08:28.416050+00:00",
+  "status": "execution_verified_interpretation_pending",
+  "snapshotHash": "1cf5c0c2e217e09162e5cf2092f0c7ad647f57da875e6802a2b36ac2835f158d",
+  "externalAIUsed": false,
+  "model": "qwen3:8b",
+  "modelDigest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "inferenceConfig": {
+    "options": {
+      "min_p": 0.0,
+      "num_batch": 128,
+      "num_ctx": 8192,
+      "num_predict": 4096,
+      "presence_penalty": 0.0,
+      "repeat_penalty": 1.0,
+      "seed": 42,
+      "temperature": 0.6,
+      "top_k": 20,
+      "top_p": 0.95
+    },
+    "think": true
+  },
+  "gpu": {
+    "device": "RTX 3070 8GB",
+    "duringObservedMiB": 6038,
+    "duringObservedUtilization": 96,
+    "afterObservedMiB": 2,
+    "afterObservedUtilization": 0,
+    "loadedModels": [
+      {
+        "context_length": 8192,
+        "details": {
+          "families": [
+            "qwen3"
+          ],
+          "family": "qwen3",
+          "format": "gguf",
+          "parameter_size": "8.2B",
+          "parent_model": "",
+          "quantization_level": "Q4_K_M"
+        },
+        "digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+        "expires_at": "2026-09-30T18:01:08.987237124+09:00",
+        "model": "qwen3:8b",
+        "name": "qwen3:8b",
+        "size": 6104578785,
+        "size_vram": 6104578785
+      }
+    ],
+    "offloadedLayers": "37/37",
+    "runtimeExited": true,
+    "runtimePort": "127.0.0.1:11435",
+    "log": "artifacts/local/runtime-20260930T085620Z.log"
+  },
+  "reviews": {
+    "MU": {
+      "recordHash": "a909e829b502abcac2ed349a047fa9921e27648e75f17be67e2bc5a7f668619c",
+      "status": "revision_required",
+      "sourceSnapshot": "ac1993897469329f984b6dc2a0eb36c893e95714cb1c1f67cedb5b03853e1a22",
+      "evidenceMatchesCurrentAnalysis": true
+    },
+    "000660": {
+      "recordHash": "52b45557ff176b4111dff378f37b38bce001e0c9e3f9d4cae037d95e424197f6",
+      "status": "revision_required",
+      "sourceSnapshot": "ac1993897469329f984b6dc2a0eb36c893e95714cb1c1f67cedb5b03853e1a22",
+      "evidenceMatchesCurrentAnalysis": true
+    }
+  },
+  "evaluation": {
+    "recordHash": "c3b21c93b06fa5badad0c665ee5f39cb75964c8f4a533b4b3f80acb337aa5bb2",
+    "gatePassed": false,
+    "counts": {
+      "exactClassifications": 12,
+      "falseAccepts": 1,
+      "falseRejects": 1,
+      "invalidResponses": 0,
+      "modelFalseAccepts": 2,
+      "modelFalseRejects": 1,
+      "plannedTotal": 16,
+      "shouldAccept": 8,
+      "shouldReject": 8,
+      "styleBlocks": 2,
+      "total": 16
+    },
+    "scope": "작성자가 정답을 정의한 합성 회계 문장 개발 평가. 실제 기업 정확도·투자 성과·미사용 표본 평가가 아니다."
+  },
+  "checks": {
+    "unitTests": 55,
+    "browserChecks": 61,
+    "pdfReports": 6,
+    "pdfPages": 24,
+    "sourceReplay": 42,
+    "priceFormulaCrosschecks": 18
+  },
+  "verifiedWorkflow": {
+    "file": "artifacts/local/runs/20260930T090538677778Z/run.json",
+    "sha256": "ff41bf101d5c60e7eef92c3417e77cf552ecaebd6938132c8578e409a2639b0a"
+  },
+  "limitations": "Both real-company interpretations remain withheld. Synthetic development evaluation failed: one false accept and one false reject after wording rules; model alone two false accepts. No holdout accuracy or independent financial approval.",
+  "verificationFiles": {
+    "browser": {
+      "file": "artifacts/live/browser-verification.json",
+      "sha256": "0b70b451213dfdc58c1d5b16302296c6504d769e334e6d89f6368ae16dcd9fc1"
+    },
+    "replay": {
+      "file": "artifacts/live/replay-verification.json",
+      "sha256": "c3ed03ad88c3585da3e564d0d6bddf0fb20cedaadb0b63291108dd3e626d5883"
+    },
+    "artifact": {
+      "file": "artifacts/live/artifact-verification.json",
+      "sha256": "3a071408ef35d979c1eb43bff2062f62595af57d452a2b7ecfc8566f486caac6"
+    }
+  }
+}

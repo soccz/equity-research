@@ -1,0 +1,13 @@
+{
+  "snapshot": "bb62a9ea248d",
+  "pages": [
+    10,
+    11
+  ],
+  "findings": [
+    "Rate formatting rounds 4.25 to 4.3 and CP3.98 to4; show contract rates with two decimals so displayed arithmetic is reproducible.",
+    "New-debt heading and date paragraph are separated from its rate table by a page break; keep introductory block with table."
+  ],
+  "financialArithmeticChanged": false,
+  "status": "fix_after_active_run"
+}

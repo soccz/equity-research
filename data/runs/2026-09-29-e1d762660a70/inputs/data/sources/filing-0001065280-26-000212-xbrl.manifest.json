@@ -1,0 +1,15 @@
+{
+  "file": "data/sources/filing-0001065280-26-000212-6a36c7c65635c73c.xbrl",
+  "sha256": "6a36c7c65635c73c06f364ccd7116320d2d0f59b6f33900dbce1be8f7ea56cc7",
+  "url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000212/nflx-20260630_htm.xml",
+  "primaryUrl": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000212/nflx-20260630.htm",
+  "provider": "SEC",
+  "accession": "0001065280-26-000212",
+  "cik": 1065280,
+  "retrievedAt": "2026-10-01T10:26:32.567468+00:00",
+  "indexSource": {
+    "file": "data/sources/filing-0001065280-26-000212-index-550e55a601a3ad36.html",
+    "sha256": "550e55a601a3ad3617cfa5d109d049429fb98f9a654309a62acb7b18354a87ab",
+    "url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000212/0001065280-26-000212-index.html"
+  }
+}

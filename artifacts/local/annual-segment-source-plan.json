@@ -1,0 +1,125 @@
+{
+  "snapshotHash": "b819ae976fd3fc3580a93882ed89a58e770204b1635febef98878bf88ab1415d",
+  "scope": "미국7개는SEC회사facts연간항목에서연간XBRL상세로연결.한국6개연간XBRL은이미보존.과거와현재사업부정의대사전에는합성TTM사업부구성을만들지않음.",
+  "requests": [
+    {
+      "company": "MU",
+      "cik": 723125,
+      "accession": "0000723125-25-000028",
+      "period": [
+        "2024-08-30",
+        "2025-08-28"
+      ],
+      "command": [
+        "python3",
+        "scripts/archive-xbrl.py",
+        "--cik",
+        "723125",
+        "--accession",
+        "0000723125-25-000028"
+      ]
+    },
+    {
+      "company": "NVDA",
+      "cik": 1045810,
+      "accession": "0001045810-26-000021",
+      "period": [
+        "2025-01-27",
+        "2026-01-25"
+      ],
+      "command": [
+        "python3",
+        "scripts/archive-xbrl.py",
+        "--cik",
+        "1045810",
+        "--accession",
+        "0001045810-26-000021"
+      ]
+    },
+    {
+      "company": "GOOGL",
+      "cik": 1652044,
+      "accession": "0001652044-26-000018",
+      "period": [
+        "2025-01-01",
+        "2025-12-31"
+      ],
+      "command": [
+        "python3",
+        "scripts/archive-xbrl.py",
+        "--cik",
+        "1652044",
+        "--accession",
+        "0001652044-26-000018"
+      ]
+    },
+    {
+      "company": "AAPL",
+      "cik": 320193,
+      "accession": "0000320193-25-000079",
+      "period": [
+        "2024-09-29",
+        "2025-09-27"
+      ],
+      "command": [
+        "python3",
+        "scripts/archive-xbrl.py",
+        "--cik",
+        "320193",
+        "--accession",
+        "0000320193-25-000079"
+      ]
+    },
+    {
+      "company": "AMZN",
+      "cik": 1018724,
+      "accession": "0001018724-26-000004",
+      "period": [
+        "2025-01-01",
+        "2025-12-31"
+      ],
+      "command": [
+        "python3",
+        "scripts/archive-xbrl.py",
+        "--cik",
+        "1018724",
+        "--accession",
+        "0001018724-26-000004"
+      ]
+    },
+    {
+      "company": "AMD",
+      "cik": 2488,
+      "accession": "0000002488-26-000018",
+      "period": [
+        "2024-12-29",
+        "2025-12-27"
+      ],
+      "command": [
+        "python3",
+        "scripts/archive-xbrl.py",
+        "--cik",
+        "2488",
+        "--accession",
+        "0000002488-26-000018"
+      ]
+    },
+    {
+      "company": "AVGO",
+      "cik": 1730168,
+      "accession": "0001730168-25-000121",
+      "period": [
+        "2024-11-04",
+        "2025-11-02"
+      ],
+      "command": [
+        "python3",
+        "scripts/archive-xbrl.py",
+        "--cik",
+        "1730168",
+        "--accession",
+        "0001730168-25-000121"
+      ]
+    }
+  ]
+}

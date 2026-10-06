@@ -1,0 +1,109 @@
+{
+  "checkedAt": "2026-09-30T11:05:08.069737+00:00",
+  "conditions": 43,
+  "coverage": {
+    "KR": 20,
+    "US": 20
+  },
+  "detailedProfiles": [
+    "MU",
+    "000660",
+    "MSFT",
+    "005380"
+  ],
+  "externalAIUsed": false,
+  "futureStudy": "14e3d1c9bb52979ddb7e4cd048a9742c040df5a7727042a402e2e582ca981f30",
+  "independentFinancialApproval": false,
+  "model": {
+    "archiveVerificationHash": "97560ce6c273ef2d2d779972e80948983e67899f031d9ce20109b10064b938a9",
+    "batchRuns": [
+      "artifacts/local/coverage-run-20260930T104504922290Z.json",
+      "artifacts/local/coverage-run-20260930T105540838225Z.json"
+    ],
+    "companies": 40,
+    "displayEligible": 0,
+    "evaluation": {
+      "counts": {
+        "exactClassifications": 5,
+        "falseAccepts": 5,
+        "falseRejects": 1,
+        "invalidResponses": 0,
+        "modelFalseAccepts": 5,
+        "modelFalseRejects": 1,
+        "plannedTotal": 12,
+        "shouldAccept": 6,
+        "shouldReject": 6,
+        "styleBlocks": 0,
+        "total": 12
+      },
+      "gatePassed": false,
+      "recordHash": "c2bd0f4111e686a4296e8391bf1a76dbb0dcd871b5b5551a33b65f9326af9de9"
+    },
+    "gpu": {
+      "afterUsedMiB": 2,
+      "afterUtilizationPercent": 0,
+      "loadedBytes": 6104578785,
+      "loadedGpuBytes": 6104578785,
+      "name": "NVIDIA GeForce RTX 3070"
+    },
+    "inferenceConfig": {
+      "options": {
+        "min_p": 0.0,
+        "num_batch": 128,
+        "num_ctx": 8192,
+        "num_predict": 1400,
+        "presence_penalty": 0.0,
+        "repeat_penalty": 1.0,
+        "seed": 42,
+        "temperature": 0.7,
+        "top_k": 20,
+        "top_p": 0.8
+      },
+      "runtimeProfile": {
+        "goTemplate": false,
+        "version": "ollama-template-choice-v1"
+      },
+      "think": false
+    },
+    "modelDigest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "name": "qwen3:8b",
+    "protocol": "coverage-roles-v5",
+    "states": {
+      "evaluation_required": 8,
+      "revision_required": 32
+    }
+  },
+  "predictionsScored": 0,
+  "priceAssumptions": [
+    "MU",
+    "000660",
+    "MSFT"
+  ],
+  "publicDeploymentChanged": false,
+  "scope": "독립 로컬 리서치 절차의 구현·실제 실행. 금융 해석 승인 또는 미래 성과 인증 아님.",
+  "snapshotHash": "65223aa9116855ce343061405b3aa876dc0bc54a8bb82222d9c1b6534ac1dac9",
+  "sources": 130,
+  "verification": {
+    "unitTests": 91,
+    "browserChecks": 117,
+    "offlineOriginals": 130,
+    "localCompanyRecords": 40,
+    "pdfReports": 8,
+    "pdfPages": 56,
+    "visualInspection": "passed",
+    "proofs": {
+      "artifacts/local/runs/20260930T105633786944Z/run.json": "f3f9f75f5550970d749dd0ea2d76df448503975a7238ec0e4b6e3fb4055bce21",
+      "artifacts/local/model-evidence-verification.json": "120e621a9e51cb02c5441cd7898b32ac51a7641e2e88cf31fde17bc931b4b417",
+      "artifacts/live/browser-verification.json": "830e2be8724faf132d5aa3d816e429972a840713a4a008e8b4fe86e15a0d2051",
+      "artifacts/live/replay-verification.json": "3ee02fe3def84869094f9545b701df6674a86454e6c1783a430ce57357e329a5",
+      "artifacts/live/artifact-verification.json": "743a9021db8cd46c574c38575b19e3af90822a96a73c521070244b68f6ed0db1",
+      "artifacts/local/visual-verification-65223aa91168.json": "2fdd2a5b7ddf0cc590ba7f14f6b5e750b65a43a0afead790b6816a738acb73f9"
+    },
+    "commands": [
+      "python3 scripts/run-local.py --skip-model --as-of 2026-09-29",
+      "node scripts/check-live.mjs",
+      "python3 scripts/check-artifacts.py",
+      "black --check equitylab tests scripts/check-replay.py scripts/check-artifacts.py"
+    ]
+  }
+}
