@@ -1400,6 +1400,11 @@ class KrUniverseTests(unittest.TestCase):
         not_found = FetchError(f"Yahoo Finance: HTTP 404 for {lg}")
         unavailable = FetchError(f"Yahoo Finance: HTTP 503 for {lg}")
         refused = dict(chart=dict(result=None, error=dict(code="Too Many Requests")))
+        # D17: T's session traded but its close is not published yet (never a halt).
+        unpublished = chart("003550.KS", {"2026-10-01": 80_000, "2026-10-02": 80_500})
+        quote = unpublished["chart"]["result"][0]["indicators"]
+        quote["quote"][0].update(close=[80_000.0, None], volume=[1_000, 2_000])
+        quote["adjclose"][0]["adjclose"] = [80_000.0, None]
         cases = {
             "HTTP 503 on both hosts": Sources(failing={lg}),
             "HTTP 404 on one host only": Sources(
@@ -1409,6 +1414,7 @@ class KrUniverseTests(unittest.TestCase):
                 **{lg: FetchError(f"Yahoo Finance: TimeoutError for {lg}")}
             ),
             "rejected original": Sources(**{lg: refused}),
+            "unpublished close on T": Sources(**{lg: unpublished}),
             "a 404 worded otherwise": Sources(**{lg: FetchError("HTTP 404 (LG)")}),
         }
         for label, sources in cases.items():
@@ -1425,6 +1431,8 @@ class KrUniverseTests(unittest.TestCase):
             self.assertIn("never removes a candidate", info["error"], label)
             self.assertTrue(info["error"].endswith("rebuild"), label)
             self.assertEqual(result["members"], [], label)
+            if label == "unpublished close on T":
+                self.assertIn("UnpublishedClose: close of 2026-10-02", info["error"])
         # An offline replay without the stored original is no confirmed 404 either.
         missing = Sources(**{lg: FetchError(f"No stored original for {lg}")})
         result, _, _ = run(missing, markets=("KR",), top=8, online=False, env="")

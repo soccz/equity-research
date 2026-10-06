@@ -508,6 +508,15 @@ PROTOCOL = {
                     "date than its window (sessions after the window then show as "
                     "'next session' and are dropped); its window, rows, splits and "
                     "stored key stay those of the window",
+                    # D17: Yahoo nulled KRX closes of the latest session around
+                    # midnight KST (2026-10-07) while keeping their volume.
+                    "unpublishedClose": "a null-close session with traded volume "
+                    "(volume > 0) after the window's last valid row is a close the "
+                    "provider has not published yet: the original is rejected "
+                    "(UnpublishedClose), so the series fails and is fetched again "
+                    "(a collection error, a KR universe market error); it is never "
+                    "a halt (no session on T, or a null close without volume). Such "
+                    "a session before a valid row is dropped as a null-close session",
                 },
             }
         )

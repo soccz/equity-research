@@ -33,12 +33,17 @@ def mutated(symbol: str, change) -> bytes:
     return json.dumps(obj).encode()
 
 
-def chart(symbol, zone, stamps, closes, adjusted=None, currency="USD") -> bytes:
+def chart(
+    symbol, zone, stamps, closes, adjusted=None, currency="USD", volumes=None
+) -> bytes:
+    quote = (
+        dict(close=closes) if volumes is None else dict(close=closes, volume=volumes)
+    )
     result = dict(
         meta=dict(symbol=symbol, currency=currency, exchangeTimezoneName=zone),
         timestamp=stamps,
         indicators=dict(
-            quote=[dict(close=closes)],
+            quote=[quote],
             adjclose=[dict(adjclose=closes if adjusted is None else adjusted)],
         ),
     )
@@ -456,6 +461,56 @@ class NoSessionsTests(unittest.TestCase):
             "session(s): 2026-10-05)",
         )
         self.assertEqual(len(result["error"].split("; ")), 2)
+
+    def test_an_unpublished_last_close_fails_the_series_never_a_halt(self):
+        # D17, seen live 2026-10-07 00:30 KST: 005930.KS 2026-10-06 close null, volume
+        # 14,340,821. A halted session has no volume (094800.KS 2026-10-06: null, null).
+        days = ["2026-10-01", "2026-10-02", "2026-10-05"]
+        stamps = [self.stamp(d) for d in days]
+        late = "2026-10-05T15:30:00+00:00"  # 00:30 KST the next day: settled
+
+        def blob(closes, volumes):
+            return chart(
+                self.SYMBOL, self.ZONE, stamps, closes, currency="KRW", volumes=volumes
+            )
+
+        pending = blob([5000.0, 5100.0, None], [10, 12, 14_340_821])
+        with self.assertRaises(prices.UnpublishedClose) as caught:
+            prices._parse(pending, self.SYMBOL, "2025-08-31", THROUGH, late)
+        self.assertIn("close of 2026-10-05 not published", str(caught.exception))
+        self.assertTrue(issubclass(prices.UnpublishedClose, prices.PARSE_ERRORS))
+        result, calls = run(self.SYMBOL, pending, pending, retrieved=late)
+        self.assertEqual((result["status"], result["rows"]), ("error", []))
+        self.assertIsNone(result["empty"])  # never "no sessions": not a halt
+        self.assertEqual(len(calls), 2)
+        self.assertEqual(len(result["error"].split("; ")), 2)
+        self.assertIn("UnpublishedClose", result["error"])
+        # The other host's published close wins.
+        good = blob([5000.0, 5100.0, 5200.0], [10, 12, 14])
+        result, _ = run(self.SYMBOL, pending, good, retrieved=late)
+        self.assertEqual(result["status"], "ok")
+        self.assertEqual(result["rows"][-1], ["2026-10-05", 5200.0, 5200.0])
+        self.assertIn("fallback to query1", result["notes"][0])
+        # A null close without volume (none, zero or no volume list) stays a halt:
+        # the session is dropped and the series ends at the last valid row.
+        for volumes in ([10, 12, None], [10, 12, 0], None):
+            with self.subTest(volumes=volumes):
+                held = blob([5000.0, 5100.0, None], volumes)
+                result, _ = run(self.SYMBOL, held, retrieved=late)
+                self.assertEqual(result["status"], "ok")
+                self.assertEqual(result["rows"][-1][0], "2026-10-02")
+                self.assertEqual(result["nullSessions"], ["2026-10-05"])
+        # An earlier traded null-close session (a historical hole) is dropped.
+        hole = blob([5000.0, None, 5200.0], [10, 12, 14])
+        result, _ = run(self.SYMBOL, hole, retrieved=late)
+        self.assertEqual(result["status"], "ok")
+        self.assertEqual([r[0] for r in result["rows"]], ["2026-10-01", "2026-10-05"])
+        self.assertEqual(result["nullSessions"], ["2026-10-02"])
+        # Before the closes settle the session is unsettled, not unpublished.
+        early = "2026-10-05T07:00:00+00:00"  # 16:00 KST
+        result, _ = run(self.SYMBOL, pending, retrieved=early)
+        self.assertEqual(result["status"], "ok")
+        self.assertEqual(result["rows"][-1][0], "2026-10-02")
 
     def test_other_rejections_and_a_working_host_are_not_empty(self):
         cases = {

@@ -194,7 +194,9 @@ RULES = dict(
         "prices.NO_DATA); or with HTTP 404, provided at least one host answers "
         "without sessions as above); any other failure to price the common (a "
         "transient download failure, a rejected original: a symbol or currency "
-        f"mismatch, an undecodable response, any other HTTP {prices.NO_DATA_STATUS}), "
+        f"mismatch, an undecodable response, any other HTTP {prices.NO_DATA_STATUS}, "
+        "a close not published yet (prices.UnpublishedClose: traded volume, no "
+        "close)), "
         "a class without listed shares or a class priced from a series "
         "retrieved before T's closes settled makes the market an error (rebuild): a "
         "failed download never removes a candidate",

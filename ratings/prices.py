@@ -76,6 +76,14 @@ class NoSessions(ValueError):
     no day of it."""
 
 
+class UnpublishedClose(ValueError):
+    """An original whose last session in the window has traded volume but no close:
+    the provider has not published that close yet (seen live for KRX symbols around
+    midnight KST, 2026-10-07, flapping by symbol). A rejected original, so the series
+    fails and is fetched again; never read as a halt (a halted session has no volume).
+    """
+
+
 def _iso(value) -> str:
     if isinstance(value, datetime):
         value = value.date()
@@ -163,7 +171,9 @@ def _parse(blob: bytes, symbol: str, first, end, retrieved_at: str) -> dict:
     Returns ``{rows, currency, timezone, splits, nullSessions, notes}``. A rejected
     original raises one of PARSE_ERRORS; one that names ``symbol`` in the expected
     currency, with only valid rows but no settled session in the window, raises
-    NoSessions (a ValueError).
+    NoSessions (a ValueError). A null-close session with traded volume after the last
+    valid row raises UnpublishedClose (a ValueError): its close is not out yet. Such a
+    session before a valid row is dropped like any null-close session.
     """
     first, end = _iso(first), _iso(end)
     chart = json.loads(blob)["chart"]
@@ -185,18 +195,23 @@ def _parse(blob: bytes, symbol: str, first, end, retrieved_at: str) -> dict:
     if expected and currency != expected:
         raise ValueError(f"currency {currency!r}, expected {expected}")
     stamps = result.get("timestamp") or []
-    closes = adjusted = []
+    closes = adjusted = volumes = []
     if stamps:
         closes = result["indicators"]["quote"][0]["close"]
         adjusted = result["indicators"]["adjclose"][0]["adjclose"]
         if not len(stamps) == len(closes) == len(adjusted):
             raise ValueError("timestamp, close and adjclose lengths differ")
+        # Volume only tells an unpublished close from a halt; without a usable
+        # volume list every null close is read as before (dropped).
+        volumes = result["indicators"]["quote"][0].get("volume")
+        if not isinstance(volumes, list) or len(volumes) != len(stamps):
+            volumes = [None] * len(stamps)
     retrieved = datetime.fromisoformat(retrieved_at)
     if retrieved.utcoffset() is None:
         raise ValueError(f"retrieval time {retrieved_at!r} has no UTC offset")
     retrieved = retrieved.astimezone(tz)
-    rows, nulls, duplicates, unsettled, later = [], [], 0, [], []
-    for stamp, adj, close in zip(stamps, adjusted, closes):
+    rows, nulls, duplicates, unsettled, later, traded = [], [], 0, [], [], []
+    for stamp, adj, close, volume in zip(stamps, adjusted, closes, volumes):
         day = datetime.fromtimestamp(stamp, tz).date()
         iso = day.isoformat()
         if iso < first or iso > end:
@@ -207,6 +222,8 @@ def _parse(blob: bytes, symbol: str, first, end, retrieved_at: str) -> dict:
             continue
         if close is None or adj is None:
             nulls.append(iso)
+            if isinstance(volume, (int, float)) and volume > 0:
+                traded.append(iso)
             continue
         if not (_price(close) and _price(adj)):
             raise ValueError(f"invalid close on {iso}")
@@ -216,6 +233,12 @@ def _parse(blob: bytes, symbol: str, first, end, retrieved_at: str) -> dict:
                 continue
             raise ValueError(f"duplicate or unordered session {iso}")
         rows.append([iso, float(adj), float(close)])
+    pending = [iso for iso in traded if not rows or iso > rows[-1][0]]
+    if pending:  # never '; ' in the text (series() joins the hosts' failures with it)
+        raise UnpublishedClose(
+            f"close of {max(pending)} not published (traded volume, no close, after "
+            f"the last valid row {rows[-1][0] if rows else None})"
+        )
     if not rows:  # never '; ' in the text: series() joins the hosts' failures with it
         seen = [
             f"dropped {len(found)} {kind} session(s): {_brief(found)}"

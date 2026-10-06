@@ -21,3 +21,10 @@ MEMORY.md
 .local/
 data/local-reviews/
 data/local-evaluations/
+
+# ratings-v1: originals, collections and kept series stay out of Git (Actions cache);
+# the pinned Siccodes12 original is tracked so a fresh runner has it (§2).
+data/ratings/sources/*
+!data/ratings/sources/ken-french-siccodes12-*
+data/ratings/work/
+data/ratings/series/

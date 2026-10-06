@@ -1,0 +1,83 @@
+name: Ratings operation
+
+# ratings-v1 unattended operation (docs/ratings-v1.md §9). scripts/ratings_ops.py reads
+# the repository (ledger, universe parts) and the clock, does what is due and commits
+# and pushes each public result when it is made; scripts/ratings.py and the registry
+# still refuse whatever the protocol forbids.
+on:
+  schedule:
+    # Registration days (UTC 1st-10th), every two hours, off the top of the hour.
+    - cron: "23 */2 1-10 * *"
+    # The computability-check gate: asOf 2026-10-19, recorded from 2026-10-20.
+    - cron: "23 */2 19-23 10 *"
+    # Weekly official evaluation: Saturday 02:53 UTC (Friday evening in New York).
+    - cron: "53 2 * * 6"
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "rehearse: past gate universes and a smoke universe, nothing recorded; operate: what is due, recorded and pushed"
+        type: choice
+        options: [rehearse, operate]
+        default: rehearse
+      evaluate:
+        description: "operate only: official evaluation (auto = Saturdays UTC)"
+        type: choice
+        options: [auto, "yes", "no"]
+        default: auto
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ratings-operation
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 150
+    env:
+      PYTHONDONTWRITEBYTECODE: "1"
+      OPERATE: ${{ inputs.mode != 'rehearse' }}
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+      - name: Restore kept evaluation series and unfinished collections
+        if: env.OPERATE == 'true'
+        uses: actions/cache/restore@v6
+        with:
+          path: |
+            data/ratings/sources
+            data/ratings/series
+            data/ratings/work
+          key: ratings-ops-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: ratings-ops-
+      - name: Check the ratings code offline
+        run: python -m unittest discover -s tests -p 'test_ratings_*.py'
+      - name: Operate
+        if: env.OPERATE == 'true'
+        env:
+          DART_API_KEY: ${{ secrets.DART_API_KEY }}
+          SEC_USER_AGENT: ${{ vars.SEC_USER_AGENT }}
+          EVALUATE: ${{ inputs.evaluate || 'auto' }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          python scripts/ratings_ops.py operate --push --prune --evaluate "$EVALUATE"
+      - name: Rehearse (nothing recorded or pushed)
+        if: env.OPERATE != 'true'
+        env:
+          DART_API_KEY: ${{ secrets.DART_API_KEY }}
+          SEC_USER_AGENT: ${{ vars.SEC_USER_AGENT }}
+        run: python scripts/ratings_ops.py rehearse
+      - name: Save kept evaluation series and unfinished collections
+        if: always() && env.OPERATE == 'true'
+        uses: actions/cache/save@v6
+        with:
+          path: |
+            data/ratings/sources
+            data/ratings/series
+            data/ratings/work
+          key: ratings-ops-${{ github.run_id }}-${{ github.run_attempt }}
