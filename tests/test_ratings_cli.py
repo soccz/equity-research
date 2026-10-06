@@ -381,6 +381,7 @@ class Store(unittest.TestCase):
             (cli, "PERIODS", data / "periods"),
             (cli, "FORWARD_CHECKS", data / "forward-check"),
             (os, "fsync", lambda fd: None),  # durability is not under test; slow disk
+            (universe, "_pause", lambda seconds: None),  # D17 re-fetch pauses
         ):
             patcher = mock.patch.object(target, name, value)
             patcher.start()
@@ -694,6 +695,20 @@ class CollectTests(Store):
         self.collect(later, "--refresh", "--markets", "KR", online=True)
         record = {r["id"]: r for r in self.lines("KR")}["KR:000010"]
         self.assertEqual((record["status"], record["classFailures"]), ("ok", {}))
+
+    def test_a_kr_member_without_its_ranking_close_is_an_error(self):
+        """A KR member was ranked at its common's close on T: a collection without that
+        close is the source's failure (collected again), never a halt; a US member
+        without it is a halt (no price-based signal)."""
+        self.save_universe(fake_universe())
+        self.collect(Fakes(gap={"000010.KS", "U1"}), online=True)
+        kr = {r["id"]: r for r in self.lines("KR")}["KR:000010"]
+        self.assertEqual(kr["status"], "error")
+        self.assertIn(
+            f"no close on {AS_OF}, at which the member was ranked", kr["errors"][0]
+        )
+        us = {r["id"]: r for r in self.lines("US")}["US:0000000001"]
+        self.assertEqual((us["status"], us["errors"]), ("ok", []))
 
     def test_each_market_is_collected_at_its_own_t(self):
         """N8: December's universe holds KR at Dec 30 and the US at Dec 31. collect

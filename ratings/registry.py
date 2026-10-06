@@ -91,7 +91,14 @@ DEFAULTS = dict(
     universeFetchErrorMaxShare=0.05,
     sessionCalendar={"US": "^SP500TR", "KR": "069500.KS"},
     marketClose={"US": "16:00", "KR": "15:30"},  # regular closes, local time
-    codeFiles=["ratings/*.py", "scripts/ratings.py"],
+    codeFiles=[
+        "ratings/*.py",
+        "scripts/ratings.py",
+        "equitylab/data.py",
+        "equitylab/ledger.py",
+        "equitylab/dart.py",
+        "equitylab/forward_study.py",
+    ],
 )
 TIMEZONES = {"US": "America/New_York", "KR": "Asia/Seoul"}
 # docs/ratings-v1.md §7 (PROTOCOL decisions.computabilityCheck when it carries them).
@@ -200,7 +207,8 @@ def fetch_error(member: dict) -> bool:
 
 def code_files() -> dict:
     """SHA-256 of the code a registration was made with (PROTOCOL codeFiles patterns,
-    relative to the repository: ratings/*.py and scripts/ratings.py)."""
+    relative to the repository: ratings/*.py, scripts/ratings.py and the equitylab
+    modules ratings imports)."""
     files = {
         path
         for pattern in setting("codeFiles")

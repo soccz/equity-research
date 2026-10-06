@@ -516,6 +516,17 @@ class NoSessionsTests(unittest.TestCase):
         self.assertIsNone(result["empty"])  # not "nothing traded": not listed-after-T
         self.assertTrue(prices.transient_failure(result))
 
+    def test_a_provider_error_stays_one_failure(self):
+        # L5: series() joins the hosts' failures with '; ', so a provider description
+        # with '; ' never splits into a failure transient_failure would misread.
+        refused = json.dumps(
+            dict(chart=dict(result=None, error=dict(code="X", description="a; b")))
+        ).encode()
+        result, _ = run(self.SYMBOL, refused, refused)
+        self.assertEqual(len(result["error"].split("; ")), 2)
+        self.assertIn("provider error X: a, b", result["error"])
+        self.assertFalse(prices.transient_failure(result))
+
     def test_transient_failures_are_told_from_answers(self):
         key = prices.source_key(self.SYMBOL, THROUGH)
         transient = {

@@ -127,6 +127,8 @@ def setUpModule():
         mock.patch("ratings.common.urlopen", refuse),
         mock.patch("equitylab.dart.urlopen", refuse),
         mock.patch.object(common, "SOURCES", universe.Path(folder.name)),
+        # D17 re-fetches pause between attempts: never wait in a test.
+        mock.patch.object(universe, "_pause", lambda seconds: None),
     ):
         patcher.start()
         GUARDS.append(patcher)
@@ -297,6 +299,8 @@ class Sources:
     def blob(self, key: str) -> bytes:
         if key in self.overrides:
             value = self.overrides[key]
+            if isinstance(value, list):  # answers in turn, the last one repeated
+                value = value.pop(0) if len(value) > 1 else value[0]
             if isinstance(value, Exception):
                 raise value
             return value if isinstance(value, bytes) else json.dumps(value).encode()
@@ -1766,6 +1770,36 @@ class KrUniverseTests(unittest.TestCase):
             "KR candidate 005380 현대차 (pool rank 3): no listed shares for 005385",
             info["error"],
         )
+
+    def test_a_class_close_a_retry_may_fix_rebuilds_never_a_proxy(self):
+        """D17: a preferred class whose close on T is unpublished, or whose download
+        failed transiently, makes the KR part an error (rebuild), never a class priced
+        at the common close; a re-fetch within the build that finds the close
+        published ranks the class at its own close."""
+        key = yahoo_key("005385.KS", "2026-10-02")
+        unpublished = chart("005385.KS", {"2026-10-01": 150_000, "2026-10-02": 151_000})
+        bars = unpublished["chart"]["result"][0]["indicators"]
+        bars["quote"][0].update(close=[150_000.0, None], volume=[10, 20])
+        bars["adjclose"][0]["adjclose"] = [150_000.0, None]
+        cases = {
+            "unpublished": (unpublished, "005385.KS close_unpublished"),
+            "transient": (
+                FetchError(f"Yahoo Finance: HTTP 503 for {key}"),
+                "005385.KS price_unavailable",
+            ),
+        }
+        for label, (value, reason) in cases.items():
+            with self.subTest(label):
+                result, _, _ = run(Sources(**{key: value}), markets=("KR",))
+                info = result["markets"]["KR"]
+                self.assertEqual((result["status"], info["status"]), ("error", "error"))
+                self.assertIn(reason, info["error"])
+                self.assertEqual(result["members"], [])
+        published = chart("005385.KS", {"2026-10-01": 150_000, "2026-10-02": 151_000})
+        result, _, _ = run(Sources(**{key: [unpublished, published]}), markets=("KR",))
+        hyundai = by_id(result)["KR:005380"]
+        own = {c["ticker"]: c for c in hyundai["shareClasses"]}["005385"]
+        self.assertEqual((own["rankingClose"], own["rankingProxy"]), (151_000.0, False))
 
     def test_class_without_its_own_close_is_ranked_at_the_common_close(self):
         sources = Sources(

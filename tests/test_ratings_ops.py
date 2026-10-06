@@ -154,6 +154,13 @@ class OpsCase(unittest.TestCase):
             patcher = mock.patch.object(target, name, value)
             patcher.start()
             self.addCleanup(patcher.stop)
+
+        def refuse(*args, **kwargs):
+            raise AssertionError("live network request in an offline test")
+
+        patcher = mock.patch("ratings.common.urlopen", refuse)
+        patcher.start()
+        self.addCleanup(patcher.stop)
         self.gates = {"US": None, "KR": None}
         self.registered = []
         for name, value in (
@@ -278,7 +285,7 @@ class GateRuns(OpsCase):
                 collect=OK_COLLECT,
                 **{"coverage-report": coverage(False), "coverage": coverage()},
             )
-            run = self.run_ops(f"{now}T05:00:00+00:00", cli)
+            run = self.run_ops(f"{now}T05:00:00+00:00", cli, holdings="2026-10-30")
             text = "never captured inside its window"
             self.assertEqual(any(text in p for p in run.problems), lasting)
             self.assertEqual(any(text in d for d in run.done), not lasting)
@@ -313,6 +320,47 @@ class GateRuns(OpsCase):
         )
         run = self.run_ops("2026-10-20T14:23:00+00:00", cli)
         self.assertTrue(any("US gate" in p and "failed" in p for p in run.problems))
+
+    def test_a_recorded_market_keeps_its_part_in_the_merge(self):
+        # M6: once the US gate is recorded, the KR-only retries still merge both parts,
+        # so the merged file the US event names never shrinks.
+        self.save_part("KR", G, gate=True)
+        self.save_part("US", G, gate=True)
+        self.gates["US"] = dict(PASS)
+        cli = FakeCli(collect=OK_COLLECT, **{"coverage-report": coverage(False)})
+        self.run_ops("2026-10-21T05:00:00+00:00", cli)
+        merge = [c for c in cli.calls if c[0] == "universe-merge"][0]
+        self.assertEqual(
+            (option(merge, "--as-of-us"), option(merge, "--as-of-kr")), (G, G)
+        )
+        collect = [c for c in cli.calls if c[0] == "collect"][0]
+        self.assertEqual(collect[-1], "KR")  # only the pending market is collected
+
+    def test_us_members_without_t_close_are_collected_again_first(self):
+        # M3: up to 5% of the US without a close on T is retried for two sessions
+        # (collect --refresh) before the gate is recorded with them.
+        self.save_part("KR", G, gate=True)
+        self.save_part("US", G, gate=True)
+        report = coverage(False, US=dict(noCloseOnAsOf=3))
+        cli = FakeCli(collect=OK_COLLECT, **{"coverage-report": report})
+        run = self.run_ops("2026-10-20T14:23:00+00:00", cli)
+        refresh = [c for c in cli.calls if c[0] == "collect" and "--refresh" in c]
+        self.assertEqual([c[-1] for c in refresh], ["US"])
+        recording = [
+            c for c in cli.calls if c[0] == "coverage" and "--offline" not in c
+        ]
+        self.assertEqual([c[-1] for c in recording], ["KR"])
+        self.assertTrue(
+            any("collected again until 2 sessions" in w for w in run.waiting)
+        )
+        cli = FakeCli(
+            collect=OK_COLLECT, **{"coverage-report": report, "coverage": coverage()}
+        )
+        self.run_ops("2026-10-22T05:00:00+00:00", cli)  # 2 sessions after 10-19
+        recording = [
+            c for c in cli.calls if c[0] == "coverage" and "--offline" not in c
+        ]
+        self.assertEqual(recording[0][-2:], ["US", "KR"])
 
     def test_a_us_part_built_from_other_holdings_is_discarded(self):
         self.save_part("KR", G, gate=True)
@@ -509,7 +557,7 @@ class MonthRuns(OpsCase):
         dry = dict(collected(), checks=["US: universe captured ..."])
         cli = FakeCli(collect=OK_COLLECT, **{"score-dry": dry})
         run = self.run_ops(self.NOW, cli)
-        self.assertTrue(any("would refuse" in p for p in run.problems))
+        self.assertTrue(any("US 2026-10: not registered" in p for p in run.problems))
         cli = FakeCli()
         run = self.run_ops("2026-11-09T05:00:00+00:00", cli)  # 5 sessions after T
         self.assertEqual(cli.calls, [])
@@ -531,9 +579,7 @@ class MonthRuns(OpsCase):
                 "collect US KR",
             ],
         )
-        self.assertTrue(
-            any("held while the KR coverage gate" in w for w in run.waiting)
-        )
+        self.assertTrue(any("wait for ['KR']" in w for w in run.waiting))
         # The window's last session (4 after T): registered without KR, a problem.
         cli = FakeCli(
             collect=OK_COLLECT,
@@ -545,7 +591,7 @@ class MonthRuns(OpsCase):
         run = self.run_ops("2026-11-06T13:00:00+00:00", cli)
         self.assertEqual(cli.calls[-1][:3], ["score", "--as-of-us", "2026-10-30"])
         self.assertNotIn("--as-of-kr", cli.calls[-1])
-        self.assertTrue(any("KR left out" in p for p in run.problems))
+        self.assertTrue(any("registered without ['KR']" in p for p in run.problems))
 
     def test_failed_gates(self):
         self.gates["KR"] = dict(verdict="fail", market="KR")
@@ -573,6 +619,101 @@ class MonthRuns(OpsCase):
         run = self.run_ops(self.NOW, cli, holdings="2026-10-30")
         self.assertEqual((cli.calls, run.problems), ([], []))
         self.assertTrue(any("not published" in d for d in run.done))
+
+    def test_one_market_never_costs_the_other_its_month(self):
+        # H2: the KR part cannot be built (Naver down); the US waits for it while its
+        # window allows, then registers alone on its last session, with a problem.
+        def naver_down(args):
+            return 2, None, "KR not built: Naver HTTP 503"
+
+        plain = FakeCli(
+            collect=OK_COLLECT,
+            **{
+                "score-dry": collected(markets=("US",)),
+                "score": dict(labels={}, asOf={}),
+            },
+        )
+
+        def cli(*args):
+            if args[0] == "universe" and "KR" in map(str, args):
+                plain.calls.append([str(a) for a in args])
+                return naver_down(args)
+            return plain(*args)
+
+        run = self.run_ops(self.NOW, cli, holdings="2026-10-30")
+        self.assertNotIn("score", [c[0] for c in plain.calls])
+        self.assertTrue(any("wait for ['KR']" in w for w in run.waiting))
+        plain.calls.clear()
+        run = self.run_ops("2026-11-06T13:00:00+00:00", cli)  # US: 4 sessions after T
+        self.assertEqual(plain.calls[-1][:3], ["score", "--as-of-us", "2026-10-30"])
+        self.assertNotIn("--as-of-kr", plain.calls[-1])
+        self.assertTrue(any("registered without ['KR']" in p for p in run.problems))
+
+    def test_a_market_whose_window_closes_first_never_closes_the_other(self):
+        # December: KRX is closed on 12-31, so KR's T (12-30) and window come first;
+        # the US registers alone after KR's window closed.
+        days = [d for d in weekdays("2026-09-01", "2027-01-31") if d != "2027-01-01"]
+        sessions = dict(US=days, KR=[d for d in days if d != "2026-12-31"])
+        self.save_part("US", "2026-12-31")
+        self.save_part("KR", "2026-12-30")
+        cli = FakeCli(
+            collect=OK_COLLECT,
+            **{
+                "score-dry": collected(markets=("US", "KR")),
+                "score": dict(labels={}, asOf={}),
+            },
+        )
+        runner = ops.Ops(
+            runner=cli, now=at("2027-01-04T13:00:00+00:00"), sessions=sessions
+        )
+        with mock.patch("builtins.print"):
+            runner.operate()
+        merge = [c for c in cli.calls if c[0] == "universe-merge"][0]
+        self.assertEqual(
+            (option(merge, "--as-of-us"), option(merge, "--as-of-kr")),
+            ("2026-12-31", "2026-12-30"),
+        )
+        self.assertEqual(
+            cli.calls[-1][:5],
+            ["score", "--as-of-us", "2026-12-31", "--as-of-kr", "2026-12-30"],
+        )
+        # 2027-01-08 22:00 UTC: KR's window has closed (5 KR sessions after 12-30 by
+        # 01-08 KST: 01-04..01-08), the US's has not (US date 01-08, 4 sessions).
+        cli = FakeCli(
+            collect=OK_COLLECT,
+            **{
+                "score-dry": collected(markets=("US",)),
+                "score": dict(labels={}, asOf={}),
+            },
+        )
+        runner = ops.Ops(
+            runner=cli, now=at("2027-01-08T22:00:00+00:00"), sessions=sessions
+        )
+        with mock.patch("builtins.print"):
+            runner.operate()
+        self.assertEqual(cli.calls[-1][:3], ["score", "--as-of-us", "2026-12-31"])
+        self.assertNotIn("--as-of-kr", cli.calls[-1])
+        self.assertTrue(
+            any(
+                "KR 2026-12: the registration window closed" in p
+                for p in runner.problems
+            )
+        )
+
+    def test_t_waits_while_the_second_calendar_disagrees(self):
+        # L1/L2: ^KS11 ends October on 10-30 while 069500.KS lacks that bar: the KR
+        # part waits (a problem after two sessions) instead of a part for 10-29.
+        cli = FakeCli(collect=OK_COLLECT)
+        sessions = dict(SESSIONS)
+        sessions["KR"] = [s for s in SESSIONS["KR"] if s != "2026-10-30"]
+        runner = ops.Ops(
+            runner=cli, now=at(self.NOW), sessions=sessions, holdings="2026-10-29"
+        )
+        runner.cross["KR"] = SESSIONS["KR"]
+        with mock.patch("builtins.print"):
+            runner.operate()
+        self.assertNotIn("universe --as-of KR", cli.commands())
+        self.assertTrue(any("T is unsure" in w for w in runner.waiting))
 
     def test_one_market_failing_never_stops_the_other(self):
         def ssga_down():
@@ -648,9 +789,8 @@ class EvaluationAndCache(OpsCase):
         )
 
 
-class Publication(unittest.TestCase):
-    """publish() against a real bare remote: verified pushes, a rebase that stops
-    is aborted and reported, never reported as pushed."""
+class GitRemote(unittest.TestCase):
+    """A work clone and another clone of one real bare remote."""
 
     def setUp(self):
         folder = tempfile.TemporaryDirectory()
@@ -698,6 +838,11 @@ class Publication(unittest.TestCase):
             "\n"
         )
 
+
+class Publication(GitRemote):
+    """publish() against a real bare remote: verified pushes, a rebase that stops
+    is aborted and reported, never reported as pushed."""
+
     def test_push_after_another_push_and_a_stopped_rebase(self):
         run = self.ops()
         (self.work / "data/ratings/ledger.jsonl").write_text("a\nb\n")
@@ -730,6 +875,43 @@ class Publication(unittest.TestCase):
         self.assertFalse(any("pushed: third" in d for d in run.done))
         status = self.git(self.work, "status").stdout
         self.assertNotIn("rebase in progress", status)
+
+
+class PublicationAfterNewCode(GitRemote):
+    def test_new_code_after_a_pull_pushes_what_was_made_then_stops(self):
+        # H1: a gate event committed here, new code pushed meanwhile: the rebased
+        # commit is pushed first (it records the code that made it), then the run stops.
+        self.git(self.other, "pull", "-q", "origin", "main")
+        (self.other / "ratings").mkdir()
+        (self.other / "ratings/x.py").write_text("x = 1\n")
+        self.git(self.other, "add", "-A")
+        self.git(self.other, "commit", "-q", "-m", "code fix")
+        self.git(self.other, "push", "-q", "origin", "HEAD:main")
+        run = self.ops()
+        run.code = "before"
+        (self.work / "data/ratings/ledger.jsonl").write_text("a\ngate\n")
+        with mock.patch.object(ops, "code_digest", lambda: "after"), mock.patch(
+            "builtins.print"
+        ):
+            with self.assertRaises(ops.OpsError):
+                run.publish("coverage gate US pass")
+        self.git(self.work, "fetch", "-q")
+        self.assertEqual(self.remote_log()[:2], ["coverage gate US pass", "code fix"])
+        self.assertTrue(any("pushed: coverage gate" in d for d in run.done))
+        self.assertFalse(run.push)
+
+    def test_discarding_restores_the_committed_universe_folder(self):
+        folder = self.work / "data/ratings/universe"
+        folder.mkdir(parents=True)
+        (folder / "2026-10-01.json").write_text("{}")
+        self.git(self.work, "add", "-A")
+        self.git(self.work, "commit", "-q", "-m", "merge")
+        (folder / "2026-10-01.json").write_text('{"changed": 1}')
+        (folder / "2026-10-30").mkdir()
+        (folder / "2026-10-30/US.json").write_text("{}")
+        self.ops().discard_universe()
+        self.assertEqual((folder / "2026-10-01.json").read_text(), "{}")
+        self.assertFalse((folder / "2026-10-30").exists())
 
 
 class Main(unittest.TestCase):

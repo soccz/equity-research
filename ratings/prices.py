@@ -180,9 +180,8 @@ def _parse(blob: bytes, symbol: str, first, end, retrieved_at: str) -> dict:
     chart = json.loads(blob)["chart"]
     if chart.get("error"):
         error = chart["error"]
-        raise ValueError(
-            f"provider error {error.get('code')}: {error.get('description')}"
-        )
+        described = str(error.get("description")).replace("; ", ", ")  # one failure
+        raise ValueError(f"provider error {error.get('code')}: {described}")
     results = chart.get("result") or []
     if len(results) != 1:
         raise ValueError(f"expected one chart result, got {len(results)}")

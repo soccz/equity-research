@@ -778,8 +778,12 @@ class UniverseRuleTests(Gated):
         files = content["codeFiles"]
         root = registry.CODE_ROOT
         self.assertIn("scripts/ratings.py", files)
+        imported = {
+            f"equitylab/{m}.py" for m in ("data", "ledger", "dart", "forward_study")
+        }
+        self.assertEqual(imported - set(files), set())
         self.assertEqual(
-            set(files) - {"scripts/ratings.py"},
+            set(files) - {"scripts/ratings.py"} - imported,
             {p.relative_to(root).as_posix() for p in (root / "ratings").glob("*.py")},
         )
         self.assertEqual(

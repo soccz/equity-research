@@ -95,12 +95,18 @@ PROTOCOL = {
             "after T's closes settle (moduleRules.prices.settleHour, market-local) "
             "whose window ends at T and which is requested through the build's "
             "Asia/Seoul date (so that sessions after T show; they are never used); a "
-            "preferred class without its own close on T (no session on T, or a series "
-            "that failed for any reason but close_unsettled) is priced at the common "
-            "close (class_price_proxy); the size largest ranked candidates are the "
-            "members (ties by code); a candidate is left unranked only for "
-            "no_close_on_as_of (its common's settled series has no session on T: a "
-            "halt), symbol_not_found (every Yahoo host answers HTTP 404 for its "
+            "preferred class without its own close on T (no session on T, every Yahoo "
+            "host HTTP 404, or a rejected original) is priced at the common close "
+            "(class_price_proxy), but one whose close on T is unsettled, traded "
+            "without a published close (D17: close_unpublished) or whose download "
+            "failed transiently (moduleRules.prices.transientFailure) makes the KR "
+            "part an error (rebuilt); a symbol whose close on T is unpublished or whose "
+            "download failed transiently is fetched again up to twice within the build "
+            "(at most six re-fetches per build) before that; the size largest ranked "
+            "candidates are the members (ties by code); a candidate is left unranked "
+            "only for no_close_on_as_of (its common's settled series has no session on "
+            "T: a halt; a session traded on T without a published close is not one, "
+            "D17), symbol_not_found (every Yahoo host answers HTTP 404 for its "
             "common) or not_listed_on_as_of (every Yahoo host answers the request for "
             "its common, retrieved after T's closes settle, with a chart for that "
             "symbol in KRW without a settled session in the lookback window through T "
@@ -109,7 +115,8 @@ PROTOCOL = {
             f"starts with {prices.NO_DATA!r} (moduleRules.prices.noData), or with "
             "HTTP 404, provided at least one host answers without sessions); for "
             "the common stock of a candidate a series read before T's "
-            "closes settle (close_unsettled), a transient download failure, a symbol "
+            "closes settle (close_unsettled), a close on T not published "
+            "(close_unpublished), a transient download failure, a symbol "
             "or currency mismatch, an undecodable response or any other HTTP "
             f"{prices.NO_DATA_STATUS}, and for any of its classes a series read before "
             "T's closes settle or no listed shares, never leaves a candidate out: the "
@@ -130,7 +137,9 @@ PROTOCOL = {
         "data/ratings/universe/<asOf>.json (asOf: the later T) with each market's own "
         "metadata (asOf, builtAt, completedAt, capturedAt, holdingsAsOf, "
         "rankingBasis, rulesHash, part file and sha256) and mergedAt; a market "
-        "without a part of T = asOf uses its only part of the month; the merged file "
+        "without a part of T = asOf uses its only part of the month, except in a merge "
+        "of exactly the named markets (universe-merge --only), which the unattended "
+        "operation always uses; the merged file "
         "is rewritten only when a part changes, and an earlier merge of the month is "
         "removed only when every market it holds has the same T in the new merge; a "
         "part saved whose month cannot be merged is reported as saved, not merged; "
@@ -252,7 +261,9 @@ PROTOCOL = {
         "price at the universe capture; a class without its own close on T uses the "
         "common close on T (class_price_proxy), except a class whose download failed "
         "transiently or that traded on T without a published close: the member is "
-        "collected again (D17)",
+        "collected again (D17); a registration that records such a member as a "
+        "failure (--allow-errors, after the retries) prices that class at the common "
+        "close too (class_price_proxy)",
         "splits": {
             "standard": "numerator and denominator are positive integers; a split in "
             "the product that is not (a spin-off or rights issue shown as a split, e.g. "
@@ -298,7 +309,10 @@ PROTOCOL = {
         "priceOnAsOf": "a member whose own price series (priceSymbol) has no session "
         "on T gets no price-based signal: no market cap, no FCF yield and no momentum "
         "(no_price_on_as_of); an earlier close is never used, in dry runs and "
-        "registrations alike",
+        "registrations alike. A KR member was ranked at its common's close on T, so a "
+        "KR collection without that close (or with it unpublished, D17) is a "
+        "collection error, collected again; a registration that records it as a "
+        "failure gives it no price-based signal (no_price_on_as_of)",
     },
     "winsor": {
         "lower": 0.01,
@@ -366,7 +380,14 @@ PROTOCOL = {
     },
     # D11: repository-relative glob patterns of the code whose sha256 each registration
     # records (the hashes cannot live here: this file is one of them).
-    "codeFiles": ["ratings/*.py", "scripts/ratings.py"],
+    "codeFiles": [
+        "ratings/*.py",
+        "scripts/ratings.py",
+        "equitylab/data.py",
+        "equitylab/ledger.py",
+        "equitylab/dart.py",
+        "equitylab/forward_study.py",
+    ],
     "evaluation": {
         "calendar": "dates traded by at least half of the market's price series that "
         "had started by then",
@@ -523,7 +544,10 @@ PROTOCOL = {
                     "and no row is rejected: UnpublishedClose). A caller needing that "
                     "day's close retries and never reads a halt: a collection with T "
                     "unpublished in any of the member's series is an error (collected "
-                    "again), a KR ranking with T unpublished is a market error "
+                    "again; a registration that records it as a failure after the "
+                    "retries gives it no price-based signal, or prices such a class at "
+                    "the common close), a KR ranking with T unpublished is a market "
+                    "error "
                     "(close_unpublished, rebuild), and an evaluation series whose "
                     "latest session is unpublished is left out of that run (an "
                     "error), never replaced by a kept series. A halt is no session on "
@@ -531,9 +555,10 @@ PROTOCOL = {
                     "transientFailure": "a failed series some host failed to "
                     "download (timeout, connection error, an HTTP status other than "
                     "404) or rejected as UnpublishedClose; a later download may fix "
-                    "it, so collection retries it for every class (never "
-                    "class_price_proxy), the KR ranking rebuilds and evaluation never "
-                    "replaces it by a kept series",
+                    "it, so collection retries it for every class (no "
+                    "class_price_proxy until a registration records the member as a "
+                    "failure), the KR ranking rebuilds and evaluation never replaces "
+                    "it by a kept series",
                 },
             }
         )

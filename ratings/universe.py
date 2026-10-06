@@ -119,6 +119,12 @@ GATE_SUFFIX = "-gate"
 # market an error.
 HALTED, NOT_FOUND = "no_close_on_as_of", "symbol_not_found"
 UNPUBLISHED = "close_unpublished"  # D17: T traded without a published close
+# D17: a symbol whose close on T is not out yet or whose download failed transiently is
+# fetched again after these pauses (seconds) before the KR part is an error, within a
+# budget of RETRY_BUDGET re-fetches per build (a broad outage fails fast: rebuilt later).
+RETRY_PAUSES = (20, 60)
+RETRY_BUDGET = 6
+_pause = time.sleep  # tests replace it
 NOT_LISTED = "not_listed_on_as_of"
 UNRANKED_REASONS = (HALTED, NOT_FOUND, NOT_LISTED)
 NS = "{http://schemas.openxmlformats.org/spreadsheetml/2006/main}"
@@ -1267,8 +1273,22 @@ def _rank_at_close(
     cannot be priced (a transient download failure, a rejected original other than a
     confirmed empty answer) and any class priced from a series retrieved before the
     closes settled. A preferred class that cannot be priced otherwise is ranked at the
-    common close (class_price_proxy)."""
+    common close (class_price_proxy). D17: a close not out yet or a transient failure is
+    fetched again (RETRY_PAUSES, at most RETRY_BUDGET re-fetches per build) first."""
     ranked, unranked, times = [], [], []
+    budget = [RETRY_BUDGET if online else 0]
+
+    def close_on(symbol: str) -> dict:
+        result = _close_on(symbol, day, online, sources, through)
+        for pause in RETRY_PAUSES:
+            again = result["reason"] == UNPUBLISHED or result.get("transient")
+            if not again or budget[0] <= 0:
+                break
+            budget[0] -= 1
+            _pause(pause)
+            result = _close_on(symbol, day, online, sources, through)
+        return result
+
     for pool_rank, row in enumerate(pool, 1):
         candidate = _candidate(pool_rank, row, others)
         classes = candidate["classes"]
@@ -1279,7 +1299,7 @@ def _rank_at_close(
                 f"{name}: no listed shares for {', '.join(missing)} (Naver price "
                 "<= 0); rebuild"
             )
-        common = _close_on(classes[0]["priceSymbol"], day, online, sources, through)
+        common = close_on(classes[0]["priceSymbol"])
         times += [common["at"]] if common["at"] else []
         if common["close"] is None:
             if common["reason"] not in UNRANKED_REASONS:
@@ -1299,9 +1319,7 @@ def _rank_at_close(
         for share_class in classes:
             own = common
             if share_class is not classes[0]:
-                own = _close_on(
-                    share_class["priceSymbol"], day, online, sources, through
-                )
+                own = close_on(share_class["priceSymbol"])
                 times += [own["at"]] if own["at"] else []
                 # D17: a close not out yet or a download a retry may fix is no
                 # reason to price the class at the common close: rebuild.

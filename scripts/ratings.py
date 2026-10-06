@@ -516,7 +516,8 @@ def collect_member(member: dict, as_of: str, online: bool, code: str) -> dict:
     keeps the class's failure. D17: any symbol whose download failed transiently
     (prices.transient_failure) or whose series traded on T without a published close
     (prices.unpublished) makes the record an error, collected again: a later download
-    may fix it, so it is never a halt or a proxy.
+    may fix it, so it is never a halt or a proxy. A KR member was ranked at its close on
+    T, so a KR series without that close is an error too, never a halt.
     """
     started = time.monotonic()
     record = dict(
@@ -561,6 +562,17 @@ def collect_member(member: dict, as_of: str, online: bool, code: str) -> dict:
                 errors.append(f"prices {symbol}: {series.get('error')}")  # again
             else:  # L5: a preferred class is priced at the common close
                 record["classFailures"][symbol] = series.get("error")
+        own = record["prices"].get(member.get("priceSymbol")) or {}
+        if (
+            member.get("market") == "KR"
+            and own.get("status") == "ok"
+            and not prices.unpublished(own, as_of)
+            and as_of not in {row[0] for row in own.get("rows") or []}
+        ):  # ranked at that very close: its absence is the source's (D17), not a halt
+            errors.append(
+                f"prices {member.get('priceSymbol')}: no close on {as_of}, at which "
+                "the member was ranked"
+            )
     except Exception as exc:  # company boundary: the modules should not raise
         errors.append(f"unexpected {type(exc).__name__}: {exc}")
     record["status"] = "error" if errors else "ok"

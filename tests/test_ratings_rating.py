@@ -213,7 +213,17 @@ class ProtocolTests(unittest.TestCase):
             PROTOCOL["decisions"]["computabilityCheck"]["thresholds"],
             {"US": 0.90, "KR": 0.80},
         )
-        self.assertEqual(PROTOCOL["codeFiles"], ["ratings/*.py", "scripts/ratings.py"])
+        self.assertEqual(
+            PROTOCOL["codeFiles"],
+            [
+                "ratings/*.py",
+                "scripts/ratings.py",
+                "equitylab/data.py",
+                "equitylab/ledger.py",
+                "equitylab/dart.py",
+                "equitylab/forward_study.py",
+            ],
+        )
         root = Path(rating.__file__).resolve().parents[1]
         hashed = {
             path.relative_to(root).as_posix()
@@ -420,9 +430,12 @@ class ProtocolTests(unittest.TestCase):
                 "or any other HTTP 400",
                 "for any of its classes a series read before T's closes settle or no "
                 "listed shares",
-                "a preferred class without its own close on T (no session on T, or a "
-                "series that failed for any reason but close_unsettled) is priced at "
-                "the common close (class_price_proxy)",
+                "a preferred class without its own close on T (no session on T, every "
+                "Yahoo host HTTP 404, or a rejected original) is priced at the common "
+                "close (class_price_proxy), but one whose close on T is unsettled, "
+                "traded without a published close (D17: close_unpublished) or whose "
+                "download failed transiently (moduleRules.prices.transientFailure) "
+                "makes the KR part an error (rebuilt)",
             ),
             ("universe", "timing", "builtAt"): (
                 "built online (markets[m].online true)",

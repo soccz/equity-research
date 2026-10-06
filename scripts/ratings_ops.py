@@ -58,8 +58,9 @@ CLI = [sys.executable, str(ROOT / "scripts/ratings.py")]
 MARKETS = common.MARKETS
 WINDOW = int(registry.setting("registrationWindowSessions"))
 CALENDAR = registry.setting("sessionCalendar")
-# A second series per market so that one late or unpublished bar never moves T (the
-# registry checks T against CALENDAR itself when it registers).
+# T comes from the protocol's calendar series (CALENDAR, which the registry checks); a
+# second series cross-checks it (a month's parts wait while they disagree) and stands in
+# only when the first cannot be fetched.
 SECOND_CALENDAR = {"US": "SPY", "KR": "^KS11"}
 CHECK = registry.gate_rule()
 # §1: the first registration is the month of the check date (T 2026-10-30); earlier
@@ -176,6 +177,8 @@ class Ops:
         self._holdings = holdings  # tests: the date of SSGA's posted holdings
         self.done, self.waiting, self.problems = [], [], []
         self.worked = False  # collected, built or evaluated: the cache is saved
+        self.unpushed = False  # a result left unpushed: prune keeps everything
+        self.cross = {}  # market: the second calendar series' sessions
         self.code = None if runner is not run_cli else code_digest()
 
     # --- reporting -----------------------------------------------------------------
@@ -231,25 +234,43 @@ class Ops:
         return self.now.astimezone(zone(market)).date().isoformat()
 
     def sessions(self, market: str) -> list:
-        """The market's sessions through today: the protocol's calendar series and a
-        second series, each with its sessions traded without a published close (D17);
-        one of them is enough."""
+        """The market's sessions through today from the protocol's calendar series,
+        its sessions traded without a published close included (D17). The second
+        series is kept in ``self.cross`` to cross-check T and stands in only when the
+        first cannot be fetched."""
         if self._sessions is not None:
             return self._sessions[market]
-        found, failures = set(), []
+        found, failures = {}, []
         for symbol in (CALENDAR[market], SECOND_CALENDAR[market]):
             series = prices.series(symbol, self.today(market), online=True)
             if series["status"] != "ok" and prices.transient_failure(series):
                 sleep(60)
                 series = prices.series(symbol, self.today(market), online=True)
             if series["status"] == "ok":
-                found |= {row[0] for row in series["rows"]}
-                found |= set(series.get("unpublishedSessions") or [])
+                days = {row[0] for row in series["rows"]}
+                found[symbol] = sorted(
+                    days | set(series.get("unpublishedSessions") or [])
+                )
             else:
                 failures.append(f"{symbol}: {series.get('error')}")
-        if not found:
+        first, second = found.get(CALENDAR[market]), found.get(SECOND_CALENDAR[market])
+        if first is None and second is None:
             raise OpsError(f"{market}: no session calendar ({'; '.join(failures)})")
-        return sorted(found)
+        if first is None:
+            self.note(f"{market}: sessions from {SECOND_CALENDAR[market]} ({failures})")
+            return second
+        self.cross[market] = second
+        return first
+
+    def disagrees(self, market: str, month: str, as_of: str) -> str | None:
+        """Why T is unsure: the second series ends the month on another session."""
+        days = [s for s in self.cross.get(market) or [] if s.startswith(f"{month}-")]
+        if days and days[-1] != as_of:
+            return (
+                f"{SECOND_CALENDAR[market]} ends {month} on {days[-1]}, "
+                f"{CALENDAR[market]} on {as_of}"
+            )
+        return None
 
     def holdings_as_of(self) -> str:
         if self._holdings is not None:
@@ -295,14 +316,27 @@ class Ops:
             )
             if pulled.returncode != 0:
                 git("rebase", "--abort", check=False)
+                self.unpushed = True
                 self.problem(
                     f"push failed, the rebase onto origin/main stopped "
                     f"({pulled.stderr.strip()[-300:]}): {message}"
                 )
                 return False
             if self.code is not None and code_digest() != self.code:
+                # What this run made (a gate event, a registration) records the code and
+                # protocol that made it: push it first, then stop (H1).
                 self.push = False
-                raise OpsError("new code arrived with a pull: the run stops here")
+                pushed = git("push", "-q", "origin", "HEAD:main", check=False)
+                if pushed.returncode == 0:
+                    self.note(f"pushed: {message}")
+                else:
+                    self.unpushed = True
+                    self.problem(f"push failed (committed here only): {message}")
+                raise OpsError(
+                    "new code arrived with a pull: the run stops after pushing what "
+                    "it made"
+                )
+        self.unpushed = True
         self.problem(f"push failed after 3 attempts (committed here only): {message}")
         return False
 
@@ -427,15 +461,15 @@ class Ops:
         pending = [m for m in MARKETS if registry.gate(m) is None]
         if not pending:
             return
-        as_of, have, lost = CHECK["asOf"], [], []
+        as_of, lost = CHECK["asOf"], []
         for market in pending:
             if market not in sessions:
                 continue  # its calendar failed: reported
             path = universe.part_path(market, as_of, gate=True)
             span = window(sessions[market], as_of, self.today(market))
             if path.exists():
-                have.append(market)
-            elif not span["open"]:
+                continue
+            if not span["open"]:
                 lost.append(market)
                 self.lasting(
                     f"{market} gate part for {as_of} was never captured inside its "
@@ -443,16 +477,23 @@ class Ops:
                     span["closes"],
                     market,
                 )
-            elif self.part(market, as_of, gate=True, sessions=sessions[market]):
-                have.append(market)
+                continue
+            try:  # one market's failure never stops the other's part (L3)
+                self.part(market, as_of, gate=True, sessions=sessions[market])
+            except (OpsError, common.FetchError, ValueError, OSError) as exc:
+                self.problem(f"{market} gate part: {type(exc).__name__}: {exc}")
+        parts = [m for m in MARKETS if universe.part_path(m, as_of, gate=True).exists()]
+        have = [m for m in pending if m in parts]
         if not have:
             return
-        merged = self.merge({m: as_of for m in have}, gate=True)
+        # Every gate part, recorded markets' too: the merged file a recorded event
+        # names never shrinks (M6).
+        merged = self.merge({m: as_of for m in parts}, gate=True)
         if merged is None:
             return
         # Each market is collected as soon as its part is in (KR on T's evening, before
         # the KST day rollover; D17); the gate is recorded once every part that can
-        # still be built is in, from one merge.
+        # still be built is in.
         self.collect("--universe", merged, "--gate", "--markets", *have)
         if [m for m in pending if m not in have + lost]:
             return
@@ -461,19 +502,31 @@ class Ops:
         if summary is None:
             self.problem(f"coverage --gate (report only): {error}")
             return
-        safe = []
+        safe, again = [], []
         for market in have:
             entry = (summary.get("markets") or {}).get(market) or {}
             why = self.source_failure(market, entry)
             shown = self.shown(entry)
+            missing = entry.get("noCloseOnAsOf") or 0
+            early = window(sessions.get(market) or [], as_of, self.today(market))
             if entry.get("verdict") == "incomplete":
                 self.problem(f"{market} gate {shown}: incomplete, collected again")
             elif why:
                 self.problem(f"{market} gate {shown} not recorded: {why}")
+            elif missing and early["elapsed"] < RETRY_SESSIONS:  # M3
+                again.append(market)
+                self.wait(
+                    f"{market} gate {shown}: {missing} members without a close on T "
+                    f"are collected again until {RETRY_SESSIONS} sessions after {as_of}"
+                )
             elif self.today(market) < CHECK["date"]:
                 self.wait(f"{market} gate {shown}: recorded from {CHECK['date']}")
             else:
                 safe.append(market)
+        if again:
+            self.collect(
+                "--universe", merged, "--gate", "--refresh", "--markets", *again
+            )
         if not safe:
             return
         code, summary, error = self.cli(*report, "--markets", *safe)
@@ -498,15 +551,15 @@ class Ops:
     # --- the month's registration (§5) -----------------------------------------------
 
     def month(self, sessions: dict) -> None:
-        gates = {m: registry.gate(m) for m in MARKETS}
-        if gates["US"] is None:
-            return  # D10: nothing is registered before the US gate
-        if gates["US"].get("verdict") != "pass":
+        """Parts, merges and collection go on whatever the gates (M4); each market is
+        registered once ready, and one market never costs the other its month (H2)."""
+        verdicts = {
+            m: (registry.gate(m) or {}).get("verdict", "pending") for m in MARKETS
+        }
+        if verdicts["US"] == "fail":
             self.note("the US coverage gate failed: ratings are not published (§7)")
             return
-        kr = (gates["KR"] or {}).get("verdict", "pending")
-        markets = [m for m in MARKETS if m == "US" or kr != "fail"]
-        markets = [m for m in markets if m in sessions]  # a failed calendar: reported
+        markets = [m for m in MARKETS if verdicts[m] != "fail" and m in sessions]
         done = [r["month"] for r in registry.registrations()]
         last = max(done) if done else ""
         targets = {m: month_target(sessions[m], self.today(m)) for m in markets}
@@ -515,111 +568,150 @@ class Ops:
             if not target or target["month"] <= last or target["month"] < FIRST_MONTH:
                 continue
             path = universe.part_path(market, target["asOf"])
+            if path.exists():
+                continue
             if not target["open"]:
-                if not path.exists():
-                    self.lasting(
-                        f"{market} {target['month']}: the window closed without a "
-                        "universe part (D3: a missed month is never registered)",
-                        target["closes"],
-                        market,
-                    )
+                self.lasting(
+                    f"{market} {target['month']}: the window closed without a "
+                    "universe part (D3: a missed month is never registered)",
+                    target["closes"],
+                    market,
+                )
+                continue
+            why = self.disagrees(market, target["month"], target["asOf"])
+            if why:
+                late = target["elapsed"] >= RETRY_SESSIONS
+                (self.problem if late else self.wait)(
+                    f"{market} {target['month']}: T is unsure ({why})"
+                )
                 continue
             try:  # one market's failure never stops the other's part
                 self.part(market, target["asOf"], gate=False, sessions=sessions[market])
             except (OpsError, common.FetchError, ValueError, OSError) as exc:
                 self.problem(f"{market} part: {type(exc).__name__}: {exc}")
-        if "US" not in markets or not targets.get("US"):
+        if not targets.get("US"):
             return
         month = targets["US"]["month"]
         if month <= last or month < FIRST_MONTH:
             return
         listed = [m for m in markets if (targets[m] or {}).get("month") == month]
-        if not all(targets[m]["open"] for m in listed):
-            closes = max(t["closes"] or "" for t in targets.values() if t) or None
-            self.lasting(
-                f"{month}: the registration window closed unregistered (D3: a missed "
-                "month is never registered; evaluation exits at T+6, D4)",
-                closes,
-                "US",
-            )
-            return
+        for market in listed:
+            if not targets[market]["open"]:
+                self.lasting(
+                    f"{market} {month}: the registration window closed unregistered "
+                    "(D3: a missed month is never registered; evaluation exits at T+6, "
+                    "D4)",
+                    targets[market]["closes"],
+                    market,
+                )
+        open_ = [m for m in listed if targets[m]["open"]]
         built = {
             m: targets[m]["asOf"]
-            for m in listed
+            for m in open_
             if universe.part_path(m, targets[m]["asOf"]).exists()
         }
-        if "KR" in listed and kr == "pending":
-            if targets["US"]["elapsed"] < WINDOW - 1:
-                self.wait(f"{month}: held while the KR coverage gate is not recorded")
-                listed = []  # collect early, register later
-            else:
-                self.problem(
-                    f"{month}: KR left out (its coverage gate is not recorded)"
-                )
-                listed.remove("KR")
-                built.pop("KR", None)
-        if not listed or set(built) != set(listed):
-            if built:  # collect each part as soon as it is in (D17: KR before 00 KST)
-                merged = self.merge(built, gate=False)
-                if merged:
-                    self.collect("--universe", merged, "--markets", *built)
+        if not built:
             return
-        self.register(month, {m: targets[m] for m in listed})
+        merged = self.merge(built, gate=False)
+        if merged is None:
+            return
+        # Each part is collected as soon as it is in (D17: KR before 00 KST).
+        self.collect("--universe", merged, "--markets", *built)
+        if verdicts["US"] != "pass":
+            self.wait(f"{month}: registration waits for the US coverage gate")
+            return
+        gated = {m: targets[m] for m in built if verdicts[m] == "pass"}
+        waiting = [m for m in open_ if m not in gated]
+        due = any(t["elapsed"] >= WINDOW - 1 for t in gated.values())
+        if waiting and not due:
+            self.wait(f"{month}: {list(gated)} wait for {waiting} while windows allow")
+            return
+        self.register(
+            month, gated, waiting, merged if set(gated) == set(built) else None
+        )
 
-    def register(self, month: str, targets: dict) -> None:
+    def register(
+        self, month: str, targets: dict, waiting: list, merged: str | None = None
+    ) -> None:
+        """Register the ready markets; one not ready is held for while a ready market's
+        window allows, then left out with a problem (H2). Members still failing in a
+        market past RETRY_SESSIONS are registered as recorded failures."""
         days = {m: t["asOf"] for m, t in targets.items()}
-        merged = self.merge(days, gate=False)
+        if days and merged is None:
+            merged = self.merge(days, gate=False)
         if merged is None:
             return
         flags = [x for m, d in days.items() for x in (f"--as-of-{m.lower()}", d)]
-        self.collect("--universe", merged, "--markets", *targets)
         code, dry, error = self.cli("score", *flags, "--universe", merged, "--dry-run")
         if code != 0 or dry is None:
             self.problem(f"{month}: dry run failed: {error}")
             return
-        if dry.get("checks"):
-            self.problem(f"{month}: the registry would refuse: {dry['checks'][:6]}")
-            return
-        stats = dry.get("collection") or {}
-        unready = {
-            m: s for m, s in stats.items() if s.get("notCollected") or s.get("stale")
-        }
-        if unready:
-            self.problem(f"{month}: members not collected or stale: {unready}")
-            return
-        retry = {}
-        for market, found in stats.items():
+        hard, soft = {}, {}
+        for check in dry.get("checks") or []:
+            market = check.split(":", 1)[0]
+            if market not in days:
+                self.problem(f"{month}: the registry would refuse: {check}")
+                return
+            hard.setdefault(market, []).append(check)
+        heavy = set()
+        for market, found in (dry.get("collection") or {}).items():
+            if market in hard or market not in days:
+                continue
             count = found.get("errors") or 0
             if market == "KR":  # ranked at T's close: a missing close is the source's
                 count += found.get("noCloseOnAsOf") or 0
-            if count and targets[market]["elapsed"] < RETRY_SESSIONS:
-                retry[market] = count
-        if retry:
+            failed = found.get("failures") or 0
+            early = targets[market]["elapsed"] < RETRY_SESSIONS
+            if found.get("notCollected") or found.get("stale"):
+                hard[market] = ["members not collected or stale"]
+            elif failed > ERROR_SHARE_MAX * max(found.get("eligible") or 0, 1):
+                heavy.add(market)  # a source failure: never registered as failures
+                if early:
+                    soft[market] = failed
+                else:
+                    hard[market] = [f"{failed} members failed: a source failure"]
+            elif count and early:
+                soft[market] = count
+        for market, why in hard.items():
+            self.problem(f"{market} {month}: not registered: {why[:4]}")
+        good = [m for m in days if m not in hard and m not in soft]
+        due = [m for m in good + list(soft) if targets[m]["elapsed"] >= WINDOW - 1]
+        if soft and not due:
             self.wait(
-                f"{month}: members with errors {retry} are collected again by later "
+                f"{month}: members with errors {soft} are collected again by later "
                 f"runs until {RETRY_SESSIONS} sessions after T in their market"
             )
             return
-        heavy = {}
-        for market, found in stats.items():
-            failed = found.get("failures") or 0
-            if failed > ERROR_SHARE_MAX * max(found.get("eligible") or 0, 1):
-                heavy[market] = failed
-        if heavy:
-            self.problem(
-                f"{month}: {heavy} members failed, over {ERROR_SHARE_MAX:.0%} of the "
-                "market: a source failure, not registered (collect again)"
-            )
+        for market in soft:  # a last chance: failures are recorded, a source failure
+            if market in heavy:  # never is
+                hard[market] = [f"{soft[market]} members failed: a source failure"]
+                self.problem(f"{market} {month}: not registered: {hard[market]}")
+            else:
+                good.append(market)
+        held = waiting + list(hard)
+        if not good:
             return
+        if held and not due:
+            self.wait(f"{month}: {good} held for {held} while their windows allow")
+            return
+        if held:
+            self.problem(f"{month}: registered without {held} (not ready in time)")
+        if set(good) != set(days):
+            merged = self.merge({m: days[m] for m in good}, gate=False)
+            if merged is None:
+                return
+            flags = [x for m in good for x in (f"--as-of-{m.lower()}", days[m])]
+        stats = dry.get("collection") or {}
         allow = (
-            ["--allow-errors"] if any(s.get("failures") for s in stats.values()) else []
+            ["--allow-errors"]
+            if any((stats.get(m) or {}).get("failures") for m in good)
+            else []
         )
         code, summary, error = self.cli("score", *flags, "--universe", merged, *allow)
         if code != 0 or summary is None:
             self.problem(f"{month}: registration refused: {error}")
             return
-        labels = summary.get("labels")
-        self.note(f"registered {month} {summary.get('asOf')}: {labels}")
+        self.note(f"registered {month} {summary.get('asOf')}: {summary.get('labels')}")
         self.publish(f"ratings-v1: registration {month}")
 
     # --- evaluation (§6) ---------------------------------------------------------------
@@ -650,7 +742,11 @@ class Ops:
     def prune(self) -> None:
         """Keep the cache to what a later run reads: kept evaluation series and their
         originals, unfinished collections, the collections a gate event cites and the
-        pinned Siccodes12 original."""
+        pinned Siccodes12 original. Nothing is pruned after a result was left unpushed:
+        the next run, which does not have it, still needs its collections (L7)."""
+        if self.unpushed:
+            print("ops: nothing pruned: a result was left unpushed", flush=True)
+            return
         keep = set()
         for path in (common.RATINGS / "series").glob("*.json"):
             for original in json.loads(path.read_text()).get("originals") or []:
