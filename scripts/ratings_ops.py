@@ -66,8 +66,12 @@ CHECK = registry.gate_rule()
 # §1: the first registration is the month of the check date (T 2026-10-30); earlier
 # months were never to be registered, so they are neither due nor missed.
 FIRST_MONTH = CHECK["date"][:7]
-# §2: the price source carries KR closes of T from about 18:00 KST.
-KR_READY = time(18, 30)
+# §2: the price source carries KR closes of T from about 18:00 KST; Naver's market
+# values (the candidate pool and its paging) keep moving through KRX hours and the
+# Nextrade after-market until 20:00 KST, which fails a build mid-paging (2026-10-07,
+# "ranking moved during paging"). KR parts are built from 20:15 KST on weekdays.
+KR_READY = time(20, 15)
+KR_MARKET_OPENS = time(8, 30)
 # Sessions after T (in the member's market) during which members with collection
 # errors are collected again by later runs before they are registered as failures.
 RETRY_SESSIONS = 2
@@ -397,8 +401,15 @@ class Ops:
         label = f"{market} {'gate ' if gate else ''}universe part for {as_of}"
         if market == "KR":
             ready = datetime.combine(date.fromisoformat(as_of), KR_READY, zone("KR"))
+            local = self.now.astimezone(zone("KR"))
             if self.now < ready:
-                self.wait(f"{label}: T's closes are out from {ready.isoformat()}")
+                self.wait(f"{label}: built from {ready.isoformat()}")
+                return False
+            if local.weekday() < 5 and KR_MARKET_OPENS <= local.time() < KR_READY:
+                self.wait(
+                    f"{label}: Naver's market values move until Nextrade closes; "
+                    f"built from {KR_READY.isoformat('minutes')} KST"
+                )
                 return False
         else:
             if self.today("US") <= as_of:

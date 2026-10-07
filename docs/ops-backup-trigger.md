@@ -34,7 +34,7 @@ function tick() {  // 매시간 실행; 시각은 모두 UTC
   const t = new Date(), d = t.getUTCDate(), h = t.getUTCHours(), wd = t.getUTCDay();
   const gate = t.getUTCFullYear() === 2026 && t.getUTCMonth() === 9 && d >= 19 && d <= 23;
   if (wd === 6 && h === 3) return dispatch_({mode: 'operate', evaluate: 'yes'});        // 토요일 공식 평가
-  if ((d <= 10 || gate) && h % 2 === 1 && h <= 13) return dispatch_({mode: 'operate'});  // KST 10~22시
+  if ((d <= 10 || gate) && h >= 1 && h <= 14) return dispatch_({mode: 'operate'});  // 매시 KST 10~23시
   if (wd === 3 && h === 3) return dispatch_({mode: 'operate'});                          // 수요일: 캐시 유지
 }
 
@@ -62,7 +62,7 @@ function install() {
 
 ## 3. 확인
 
-- 설치 다음의 홀수 UTC 시각(KST 10·12·…·22시대)에, GitHub 저장소 Actions 탭에 `workflow_dispatch` 실행이 생기는지 본다.
+- 설치 다음 정시대(UTC 01~14시, KST 10~23시)에 GitHub 저장소 Actions 탭에 `workflow_dispatch` 실행이 생기는지 본다. 한국 종목군은 평일 20:15 KST 이후에만 만들어지므로 저녁 시간대가 중요하다.
 - 점검일 전에는 실행 결과가 "waiting"(할 일 없음)으로 끝나는 것이 정상이다.
 - Apps Script 매시간 트리거는 그 시간 안의 임의의 분에 돈다. 같은 시간 안에서는 한 번만 보낸다.
 

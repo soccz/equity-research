@@ -215,9 +215,9 @@ class GateRuns(OpsCase):
         self.assertEqual(len(run.waiting), 2)  # KR closes not out, US not posted
 
     def test_kr_is_collected_on_t_evening_and_both_recorded_later(self):
-        # 2026-10-19 10:23 UTC = 19:23 KST: the KR part, merged and collected alone.
+        # 2026-10-19 12:23 UTC = 21:23 KST: the KR part, merged and collected alone.
         cli = FakeCli(collect=OK_COLLECT)
-        run = self.run_ops("2026-10-19T10:23:00+00:00", cli, holdings="2026-10-16")
+        run = self.run_ops("2026-10-19T12:23:00+00:00", cli, holdings="2026-10-16")
         self.assertEqual(
             cli.commands(),
             [
@@ -256,9 +256,14 @@ class GateRuns(OpsCase):
 
     def test_waits_for_closes_and_ssga_and_alerts_when_stale(self):
         cli = FakeCli()
-        # 2026-10-19 09:00 UTC = 18:00 KST: KR closes not out until 18:30.
-        run = self.run_ops("2026-10-19T09:00:00+00:00", cli, holdings="2026-10-16")
+        # 2026-10-19 11:00 UTC = 20:00 KST: Nextrade still moves Naver's values.
+        run = self.run_ops("2026-10-19T11:00:00+00:00", cli, holdings="2026-10-16")
         self.assertEqual((cli.calls, run.problems), ([], []))
+        # A weekday session afterwards (10-20 14:00 KST) waits for 20:15 KST too.
+        cli = FakeCli()
+        run = self.run_ops("2026-10-20T05:00:00+00:00", cli, holdings="2026-10-16")
+        self.assertNotIn("universe --as-of KR --gate", cli.commands())
+        self.assertTrue(any("Nextrade" in w for w in run.waiting))
         self.save_part("KR", G, gate=True)
         cli = FakeCli(collect=OK_COLLECT)
         run = self.run_ops("2026-10-20T12:00:00+00:00", cli, holdings="2026-10-16")
@@ -395,7 +400,7 @@ class RealMerges(OpsCase):
     with a rehearsal part of the same month already saved (review 2026-10-07)."""
 
     def test_a_rehearsal_part_of_the_month_never_blocks_the_gate(self):
-        captured = dict(US="2026-10-20T14:30:00+00:00", KR="2026-10-19T10:30:00+00:00")
+        captured = dict(US="2026-10-20T14:30:00+00:00", KR="2026-10-19T12:30:00+00:00")
         members = cli_tests.fake_universe()["members"]
         # The rehearsal parts committed on 2026-10-06 (US of 10-05, KR of 10-06), built
         # under an older RULES text.
@@ -439,7 +444,7 @@ class RealMerges(OpsCase):
         )
         # T's evening: the KR part (its build's own merge meets the rehearsal US part
         # and fails) is merged alone and collected before the KST day rolls over.
-        first = self.run_ops("2026-10-19T10:30:00+00:00", real, holdings="2026-10-16")
+        first = self.run_ops("2026-10-19T12:30:00+00:00", real, holdings="2026-10-16")
         self.assertEqual(first.problems, [])
         self.assertTrue(any("its build did not merge it" in d for d in first.done))
         alone = json.loads((self.data / f"universe/{G}-gate.json").read_text())
