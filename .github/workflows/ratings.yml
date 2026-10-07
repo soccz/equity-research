@@ -4,6 +4,9 @@ name: Ratings operation
 # the repository (ledger, universe parts) and the clock, does what is due and commits
 # and pushes each public result when it is made; scripts/ratings.py and the registry
 # still refuse whatever the protocol forbids.
+# A change to this file must be pushed without [skip ci] in its commit message: GitHub
+# registers the schedule below from that push (2026-10-07: no scheduled run came while
+# every push of this file carried [skip ci]).
 on:
   schedule:
     # Registration days (UTC 1st-10th), every two hours 00:23-14:23 UTC = 09:23-23:23

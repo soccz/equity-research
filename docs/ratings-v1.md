@@ -110,6 +110,7 @@
   - push: 결과물(종목군 파트, 병합 파일, 원장, 등록, 평가, 동결 기간)은 만든 직후 커밋한다. push는 origin과 대조해 확인하고, 재정렬이 멈추면 되돌리고 알린다. 실행 중 새 코드가 들어오면 그때까지 만든 결과를 push하고 실행을 멈춘다. 들어온 코드가 프로토콜 해시를 바꿨다면 옛 프로토콜로 만든 결과는 push하지 않고 알린다(사람이 판단). 그 결과를 올리면 이후 등록이 모두 거부되기 때문이다(D11′). 점검·등록 기간에는 프로토콜을 바꾸는 push를 하지 않는다.
   - 이 스크립트는 '언제'만 정하며 codeFiles에 들지 않는다. 원장에 쓰는 것은 Actions뿐이고, 로컬 실행은 시험용이다.
   - 원본 보관: 재무 원본은 실행 중에만 있고, 등록 파일에 해시와 URL이 남는다. 평가 가격 원본과 진행 중 수집, 점검이 인용한 수집 파일은 Actions 캐시에 둔다. 캐시는 7일 동안 접근이 없으면 지워질 수 있으므로, 동결된 기간 결과가 영구 기록이다.
+  - 워크플로 파일(`ratings.yml`)을 바꾸는 커밋에는 `[skip ci]`를 넣지 않는다. 일정 등록이 그 push로 이뤄지기 때문이다(2026-10-07, `[skip ci]` push만 있을 때 정기 실행이 한 번도 오지 않았다).
   - 알림: 할 일이 실패하거나 기한을 놓치면 실행이 실패로 끝나 GitHub 알림이 간다. 다시 바뀔 수 없는 상태는 3일 동안만 실패로 알리고 그 뒤에는 기록만 한다.
 - 평가(`evaluate --through D`)의 기준일 D는 두 시장 현지 날짜 중 이른 쪽으로 준다. 한국 오전에 한국 날짜를 쓰면 미국 기간은 아직 그 날짜가 오지 않아 동결되지 않는다. 종목군은 온라인으로 만든 것만 정식 등록·점검에 쓴다.
 - 주요 이슈 코드: universe_fetch_error, candidate_unranked, class_price_proxy, shares_proxy, companyfacts_lag, filing_xbrl_supplement, dart_api_lag, lag_check_unavailable, nonstandard_split, splits_unknown, split_after_as_of, no_price_on_as_of, ff12_stored_original, ff12_definition_changed_pinned_used, series_ends_before_entry, missed_next_registration, revised_after_freeze, unresolved.
