@@ -4,9 +4,11 @@ name: Ratings operation
 # the repository (ledger, universe parts) and the clock, does what is due and commits
 # and pushes each public result when it is made; scripts/ratings.py and the registry
 # still refuse whatever the protocol forbids.
-# A change to this file must be pushed without [skip ci] in its commit message: GitHub
-# registers the schedule below from that push (2026-10-07: no scheduled run came while
-# every push of this file carried [skip ci]).
+# Push changes to this file without a skip marker in the commit message (whether a
+# skipped push registers the schedule is unverified). GitHub has run this account's
+# schedules 5-7 h late since 2026-08-31 (soccz/EcoGuard; the first run here came at
+# 06:12 UTC on 2026-10-07), so the hours below are best effort: an on-time
+# workflow_dispatch (mode=operate) from outside is the primary trigger (docs §9).
 on:
   schedule:
     # Registration days (UTC 1st-10th), every two hours 00:23-14:23 UTC = 09:23-23:23
