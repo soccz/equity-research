@@ -44,6 +44,8 @@ Apple·Micron·SK하이닉스·NVIDIA·AMD·삼성전자까지 기업별 사업 
 
 **추천 등급(ratings-v1, 개발 중):** S&P 500 비금융 종목과 KOSPI 시가총액 상위 200 보통주(비금융)에 매월 선호·관찰·회피 등급을 미리 공개한 규칙으로 낸다. 신호는 FCF 수익률·현금 기반 수익성·12-1 모멘텀이며, 업종 안에서 비교한다. 등록 시점을 고정하고 업종 동일가중 대비 비용 차감 수익으로 채점한다. 계산 가능률 점검 기준일은 2026-10-19, 첫 정식 등록 기준일은 2026-10-30이다. 규칙과 판정은 [ratings-v1](docs/ratings-v1.md), 코드는 `ratings/`와 `scripts/ratings.py`에 있다. 점검·월간 등록·주간 평가는 GitHub Actions(`.github/workflows/ratings.yml`, `scripts/ratings_ops.py`)가 정해진 시각에 실행하고, 결과는 만든 직후 이 저장소에 커밋한다. PC를 켜 둘 필요가 없다. 판정 전에는 성과를 주장하지 않는다.
 
+월간 등급 화면: **https://soccz.github.io/equity-research/ratings/** — 원장과 등록 파일(`data/ratings/`)만으로 만든 화면이다. 시장별 계산 가능률 점검, 매달 종목별 등급과 세 신호·근거, 지난 등록 대비 바뀐 등급, 공식 평가의 성과 기록을 보여 준다. 원장 검증에 실패하면 등급을 보이지 않는다. 화면 코드는 `pages/ratings/`, 조립과 검사는 `scripts/build_ratings_page.py`다.
+
 현재 실제 자료를 사용하는 독립 배치 연구 엔진과 로컬 정적 화면이 동작한다. 조사 대상은 **미국 30개·한국 30개, 총 60개**이며 반도체·플랫폼·전자·소프트웨어·콘텐츠·유통·통신·게임·소비재·자동차·산업재·헬스케어·배터리/소재를 포함한다. SEC·DART 기업 목록에서 식별자를 확인한 수동 선정 표본이다. 기준일은 **2026-09-29**이며 전체 시장의 추천 순위가 아니다. 기업별 가격 적정성과 선별 규칙 자체의 표본외 초과수익 검증은 아직 남아 있다.
 
 검증은 `python3 scripts/run-local.py --skip-model --as-of 2026-09-29`로 수행합니다. 현재 실행 증거와 실패 단계는 [마지막 검증 실행](artifacts/local/last-verified-run.json), [산출물 검사](artifacts/live/artifact-verification.json)에 있습니다. 실행 기록의 snapshotHash와 현재 분석 버전이 다르면 이전 검증이며 새 변경의 통과 근거로 재사용하지 않습니다.

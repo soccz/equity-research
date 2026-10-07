@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>월간 규칙 등급 · Equity Research</title>
+<meta name="description" content="미국 S&amp;P 500과 코스피 대형주를 미리 고정한 규칙으로 매달 업종 안에서 비교한 선호·관찰·회피 등급과 그 근거, 전향 성과 기록">
+<link rel="stylesheet" href="ratings.css">
+<script defer src="ratings.js"></script>
+</head>
+<body>
+<a class="skip" href="#ratings-table">등급 표로 건너뛰기</a>
+<header class="topbar">
+  <div class="brand"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span>Equity Research<small>RULE-BASED RATINGS</small></span></div>
+  <nav class="top-links" aria-label="사이트">
+    <a href="index.html" aria-current="page">월간 등급</a>
+    <a href="../app/index.html">기업 심층 분석</a>
+  </nav>
+</header>
+<div class="notice" role="note"><strong>읽는 법</strong><span>업종 안 상대 등급 · 정량 규칙 v1 · 전향 검증 중 · 투자 권유 아님</span></div>
+<div id="preview-banner" class="preview-banner" hidden role="alert">시험 실행 미리보기 — 공식 등급이 아니며 평가·보고하지 않습니다.</div>
+<main>
+  <section class="intro">
+    <span class="eyebrow">RATINGS-V1 / 월간 규칙 등급</span>
+    <h1>같은 업종 안에서, 이번 달 어느 쪽에 서 있나</h1>
+    <p class="lede">미국 S&amp;P 500 비금융 약 400개와 코스피 시가총액 상위 200개 중 비금융 약 170개를 매달 세 가지 숫자로 같은 업종 안에서 비교해 <b>선호·관찰·회피</b>로 나눕니다. 규칙은 결과를 보기 전에 고정했고, 매달 결과를 공개 저장소에 시점 증명과 함께 기록합니다. 틀린 기록도 지우지 않습니다.</p>
+    <div class="metadata" id="metadata"></div>
+  </section>
+
+  <section id="status" class="status-grid" aria-live="polite" aria-label="시장별 상태"></section>
+
+  <section id="month-section" class="month-section" hidden>
+    <div class="section-heading">
+      <div><h2>등급 표</h2><p id="month-note"></p></div>
+      <div class="segmented" id="month-buttons" role="group" aria-label="등록 월"></div>
+    </div>
+    <div class="fact-strip" id="label-strip"></div>
+    <div class="filters" role="group" aria-label="걸러 보기">
+      <div class="segmented" id="market-filter" role="group" aria-label="시장"></div>
+      <div class="segmented" id="label-filter" role="group" aria-label="등급"></div>
+      <label class="field"><span>업종</span><select id="sector-filter"></select></label>
+      <label class="field"><span>정렬</span><select id="sort-order">
+        <option value="percentile">백분위 높은 순</option>
+        <option value="percentile-asc">백분위 낮은 순</option>
+        <option value="cap">시가총액 큰 순</option>
+        <option value="name">이름순</option>
+      </select></label>
+      <label class="field search"><span>검색</span><input id="search" type="search" placeholder="이름 또는 티커"></label>
+    </div>
+    <p class="row-count" id="row-count" aria-live="polite"></p>
+    <div class="table-wrap" tabindex="0" id="ratings-table">
+      <table>
+        <caption class="sr-only">종목별 등급과 세 신호</caption>
+        <thead><tr>
+          <th scope="col">종목</th><th scope="col">업종</th><th scope="col">등급</th>
+          <th scope="col" class="num">백분위</th><th scope="col" class="num">FCF 수익률</th>
+          <th scope="col" class="num">현금 수익성</th><th scope="col" class="num">12-1 모멘텀</th>
+          <th scope="col">비고</th>
+        </tr></thead>
+        <tbody id="rows"></tbody>
+      </table>
+    </div>
+    <div class="cards" id="cards"></div>
+    <div class="table-actions">
+      <button type="button" class="more" id="more" hidden>더 보기</button>
+      <button type="button" class="arrow-link" id="csv">지금 보이는 표를 CSV로 받기</button>
+    </div>
+  </section>
+
+  <section id="changes-section" class="panel" hidden>
+    <div class="panel-head"><div><h2>지난달 대비 바뀐 등급</h2><p class="panel-subtitle" id="changes-note"></p></div></div>
+    <div id="changes"></div>
+  </section>
+
+  <section id="performance" class="panel">
+    <div class="panel-head"><div><h2>성과 기록</h2><p class="panel-subtitle">선호 동일가중 − 같은 업종 동일가중, 비용 차감. 판정 전에는 성과를 주장하지 않습니다.</p></div></div>
+    <div id="performance-body"></div>
+  </section>
+
+  <section class="method">
+    <h2>규칙 요약</h2>
+    <div class="method-grid">
+      <div><h3>세 신호</h3><p><b>FCF 수익률</b> = (최근 1년 영업현금흐름 − 유형자산 취득) ÷ 시가총액, <b>현금 수익성</b> = 영업현금흐름 ÷ 총자산, <b>12-1 모멘텀</b> = 21거래일 전 ÷ 252거래일 전 종가 − 1. 공시는 기준일 전에 제출된 것만, 가격은 기준일 이하만 씁니다.</p></div>
+      <div><h3>업종 안 비교</h3><p>신호마다 1%·99%에서 자른 뒤 같은 업종 평균과 시장 표준편차로 표준화하고, 쓸 수 있는 신호의 평균으로 종합합니다. 시장 안 백분위 상위 1/3 선호, 하위 1/3 회피, 나머지 관찰입니다. 신호가 2개 미만이면 자료 부족이며 회피가 아닙니다.</p></div>
+      <div><h3>기록과 채점</h3><p>매달 마지막 거래일(T) 기준, T 뒤 5거래일 안에 등록하고 등록 다음 거래일 종가에 진입합니다. 다음 달 등록 때 청산합니다. 2028-11-30에 24개월 평균이 0 이하이면 등급 표기를 '관찰 신호'로 낮춥니다.</p></div>
+    </div>
+    <p class="method-links">전체 규칙: <a href="https://github.com/soccz/equity-research/blob/main/docs/ratings-v1.md">docs/ratings-v1.md</a> · 원장과 등록 파일: <a href="https://github.com/soccz/equity-research/tree/main/data/ratings">data/ratings</a></p>
+  </section>
+</main>
+<footer class="footer"><span id="provenance">불러오는 중…</span><span>자료: SEC EDGAR, OpenDART, Yahoo Finance(비공식), SSGA, 네이버 증권, Ken French</span></footer>
+</body>
+</html>

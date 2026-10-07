@@ -3,6 +3,7 @@
 - 최신 사용자 결정(2026-09-30): 외부 AI API 없이 로컬/내부망 추론을 구성한다. 공개 공시·가격만 인터넷에서 수집하고 모델 추론·분석 기록·연구 화면은 로컬에 둔다. 저장 자료로 오프라인 재분석을 지원한다. 이전 GitHub 전용 운영 결정은 이 결정으로 대체한다. 공개 사이트는 기존판을 유지하고 새 내부 분석을 자동 공개하지 않는다.
 - 기존 서비스·모델 저장소는 변경하지 않는다. 프로젝트 전용 모델 런타임과 저장 위치를 사용하며 GPU가 사용 중이면 기다리거나 보류한다. 모델 파일·임시 파일은 이 프로젝트의 20TB 경로에 둔다. 로컬 모델 응답을 검증된 금융 해석으로 표시하지 않는다.
 - `site/`는 허용 목록에 따른 공개 산출물이다. `python3 -m equitylab build-site`, `python3 scripts/check-site.py`, `node scripts/check-live.mjs --site`로 공개본까지 검사한다. 배포 준비는 `scripts/prepare-github.py`로 하며 원본 저장소·개인 메모·환경 파일을 통째로 올리지 않는다.
+- 예외(2026-10-07 소유자 요청): ratings-v1 월간 등급 화면은 Pages 배포 때 자동 공개한다. `scripts/build_ratings_page.py`가 `site/`를 바꾸지 않고 `ratings/` 폴더를 더하며, 이미 공개 저장소에 커밋된 원장·등록·공식 평가만 쓴다. 화면 원본은 `pages/ratings/`이고 `tests/test_ratings_page.py`로 검사한다. 다른 새 분석의 자동 공개 금지는 그대로다.
 
 - 목적은 미국·한국 종목의 근거 있는 투자 의견과 연구 보고서다. 현재 단계와 사용자 결정은 `MEMORY.md`, 제품 기준은 `docs/product-design.md`를 먼저 읽는다.
 - 기준 경로는 `/home/soccz/22tb/주식`이다. 임시 산출물은 `/home/soccz/22tb/tmp`를 사용한다.

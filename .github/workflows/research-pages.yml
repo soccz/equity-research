@@ -3,7 +3,18 @@ name: Research and Pages
 on:
   push:
     branches: [main]
-    paths: ["site/**", ".github/workflows/research-pages.yml"]
+    paths:
+      - "site/**"
+      - "pages/ratings/**"
+      - "ratings/**"
+      - "scripts/build_ratings_page.py"
+      - ".github/workflows/research-pages.yml"
+  # The ratings operation pushes with GITHUB_TOKEN, which starts no push run: its
+  # completion rebuilds the ratings page, deployed only when the live one differs.
+  workflow_run:
+    workflows: ["Ratings operation"]
+    types: [completed]
+    branches: [main]
   workflow_dispatch:
     inputs:
       refresh:
@@ -31,8 +42,13 @@ jobs:
       EQUITY_TMPDIR: /tmp/equity-research
     permissions:
       contents: write
+    outputs:
+      deploy: ${{ steps.live.outputs.deploy }}
     steps:
       - uses: actions/checkout@v7
+        with:
+          # A workflow_run run publishes main as the ratings operation left it.
+          ref: ${{ github.event_name == 'workflow_run' && 'main' || github.sha }}
       - uses: actions/setup-python@v7
         with:
           python-version: "3.12"
@@ -77,6 +93,24 @@ jobs:
           python -m equitylab build-site
       - name: Verify the exact publication artifact
         run: python scripts/check-site.py
+      - name: Add the monthly ratings page (site/ unchanged, checked again)
+        run: python scripts/build_ratings_page.py --site site --out "$RUNNER_TEMP/pages"
+      - name: Skip the deploy when the live site already has this content
+        id: live
+        if: github.event_name == 'workflow_run'
+        env:
+          LIVE: https://soccz.github.io/equity-research
+        run: |
+          built=$(python -c 'import json,sys; print(json.load(open(sys.argv[1]))["contentDigest"])' "$RUNNER_TEMP/pages/ratings/manifest.json")
+          live=$(curl -fsSL --max-time 30 "$LIVE/ratings/manifest.json?run=$GITHUB_RUN_ID" | python -c 'import json,sys; print(json.load(sys.stdin).get("contentDigest", ""))' || true)
+          site_built=$(sha256sum site/site-manifest.json | cut -d" " -f1)
+          site_live=$(curl -fsSL --max-time 30 "$LIVE/site-manifest.json?run=$GITHUB_RUN_ID" | sha256sum | cut -d" " -f1 || true)
+          if [ "$built" = "$live" ] && [ "$site_built" = "$site_live" ]; then
+            echo "deploy=false" >> "$GITHUB_OUTPUT"
+            echo "The live site already has this content; nothing to deploy."
+          else
+            echo "deploy=true" >> "$GITHUB_OUTPUT"
+          fi
       - name: Keep execution evidence separate from the public website
         if: inputs.refresh == true
         uses: actions/upload-artifact@v7
@@ -103,10 +137,12 @@ jobs:
             git push origin HEAD:main
           fi
       - uses: actions/upload-pages-artifact@v4
+        if: steps.live.outputs.deploy != 'false'
         with:
-          path: site
+          path: ${{ runner.temp }}/pages
   deploy:
     needs: build
+    if: needs.build.outputs.deploy != 'false'
     runs-on: ubuntu-24.04
     permissions:
       pages: write
