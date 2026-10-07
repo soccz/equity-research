@@ -273,6 +273,8 @@ class ProtocolTests(unittest.TestCase):
             (("evaluation", "freeze"), "never blocks the freezing of later"),  # L3
             (("marketCap", "splits", "KRAfterAsOf"), "(sharesCapturedOn, retrievedOn]"),
             (("marketCap", "splits", "KRCaptureAfterRetrieval"), "sharesCapturedOn"),
+            (("signals", "fcfYield", "capex"), "capex_tag_understated"),  # D18
+            (("signals", "fcfYield", "capex"), "only cfo_missing"),  # D18
         ]
         for path, needle in texts:
             with self.subTest(path=path, needle=needle):
@@ -684,6 +686,22 @@ class SignalTests(unittest.TestCase):
             us_member(), us_fundamentals(currency="EUR"), {"AAA": price_rows()}, AS_OF
         )
         self.assertAlmostEqual(row["signals"]["cashProfitability"], 0.12)
+
+    def test_without_cfo_only_cfo_missing_is_reported(self):
+        # D18: a US capex trailing year forms only over the CFO one; a KR record's
+        # error still names its own capex failure.
+        for member, records, prices in (
+            (us_member(), us_fundamentals, {"AAA": price_rows()}),
+            (kr_member(), kr_fundamentals, {"005930.KS": price_rows()}),
+        ):
+            with self.subTest(market=member["market"]):
+                row = signals(
+                    member, records(cfoTTM=None, capexTTM=None), prices, AS_OF
+                )
+                self.assertIn("cfo_missing", row["issues"])
+                self.assertNotIn("capex_missing", row["issues"])
+                self.assertIsNone(row["signals"]["fcfYield"])
+                self.assertIsNone(row["signals"]["cashProfitability"])
 
     def test_price_edge_cases(self):
         short = signals(

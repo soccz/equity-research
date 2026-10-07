@@ -2319,6 +2319,83 @@ class TagChainTests(unittest.TestCase):
         r = synth("2026-09-30", synthetic(**{f"us-gaap__{OIL_GAS_PPE}": tenfold}))
         self.assertEqual((r["status"], r["capexTTM"]), ("ok", 330))
 
+    def test_conflicting_values_in_one_filing_withhold_a_chain(self):
+        # The 10-K states PP&E's annual twice (300 and 310): PP&E drops that period,
+        # and the chain that takes it from productive assets is withheld.
+        twice = [
+            fact("2025-01-01", "2025-12-31", 300, "2026-02-10", SYN_A, "10-K"),
+            fact("2025-01-01", "2025-12-31", 310, "2026-02-10", SYN_A, "10-K"),
+        ]
+        body = regrouped(PPE, **{PPE: [1, 2, 3, 4, *twice], PRODUCTIVE: [0]})
+        r = synth("2026-09-30", body)
+        self.assertEqual((r["status"], r["missing"]), ("insufficient", ["capexTTM"]))
+        self.assertEqual(r["cfoTTM"], 1150)
+        self.assertIn(
+            f"capexTTM: us-gaap:{PPE} reports 2025-01-01..2025-12-31 otherwise than "
+            f"us-gaap:{PRODUCTIVE} (tag chain withheld)",
+            r["error"],
+        )
+        # The same in the CFO chain withholds CFO, and capex with it.
+        twice = [dict(f, val=v) for f, v in zip(twice, (1000, 1010))]
+        body = regrouped(
+            TOTAL_CFO, **{TOTAL_CFO: [1, 2, 3, 4, *twice], CONTINUING_CFO: [0]}
+        )
+        r = synth("2026-09-30", body)
+        self.assertEqual((r["cfoTTM"], r["capexTTM"]), (None, None))
+        self.assertIn(
+            f"us-gaap:{TOTAL_CFO} reports 2025-01-01..2025-12-31 otherwise than "
+            f"us-gaap:{CONTINUING_CFO} (tag chain withheld)",
+            r["error"],
+        )
+
+    def test_a_chain_holding_pp_and_e_is_compared_too(self):
+        # Not taken wholly from PP&E: a larger capex-category total withholds it.
+        rows = synthetic()["facts"]["us-gaap"][PPE]["units"]["USD"]
+        tenfold = [dict(f, val=10 * f["val"]) for f in rows]
+        body = regrouped(
+            PPE, **{PPE: [1, 2, 3, 4], PRODUCTIVE: [0], OIL_GAS_PPE: tenfold}
+        )
+        r = synth("2026-09-30", body)
+        self.assertEqual((r["capexTTM"], r["issues"]), (None, [fx.CAPEX_UNDERSTATED]))
+        self.assertIn(
+            f"capexTTM: us-gaap:{OIL_GAS_PPE} reports every trailing period with a "
+            "larger total (3300 > 330; capex_tag_understated)",
+            r["error"],
+        )
+
+    def test_the_understatement_guard_needs_a_strictly_larger_total(self):
+        rows = synthetic()["facts"]["us-gaap"][PPE]["units"]["USD"]
+        small = [dict(f, val=f["val"] // 10) for f in rows]  # 17 + 30 - 14 = 33
+        equal = copy.deepcopy(small)
+        r = synth(
+            "2026-09-30", regrouped(PPE, **{OTHER_PPE: small, OIL_GAS_PPE: equal})
+        )
+        self.assertEqual((r["status"], r["capexTTM"], r["issues"]), ("ok", 33, []))
+        above = [dict(f, val=18) if k == 3 else f for k, f in enumerate(equal)]
+        r = synth(
+            "2026-09-30", regrouped(PPE, **{OTHER_PPE: small, OIL_GAS_PPE: above})
+        )
+        self.assertEqual((r["capexTTM"], r["issues"]), (None, [fx.CAPEX_UNDERSTATED]))
+        self.assertIn("(34 > 33; capex_tag_understated)", r["error"])
+
+    def test_capex_check_comes_before_the_understatement_guard(self):
+        # Last year's half-year (35) above last year's annual (30) withholds capex by
+        # capexCheck; the larger oil and gas total then adds no understatement issue.
+        rows = synthetic()["facts"]["us-gaap"][PPE]["units"]["USD"]
+        small = [
+            dict(f, val=35 if k == 4 else f["val"] // 10) for k, f in enumerate(rows)
+        ]
+        body = regrouped(PPE, **{OTHER_PPE: small, OIL_GAS_PPE: [0, 1, 2, 3, 4]})
+        r = synth("2026-09-30", body)
+        self.assertEqual((r["status"], r["missing"]), ("insufficient", ["capexTTM"]))
+        self.assertEqual(r["issues"], [])
+        self.assertIn(
+            "capexTTM: previous same-length YTD exceeds previous annual "
+            "(reclassification or restatement)",
+            r["error"],
+        )
+        self.assertNotIn("capex_tag_understated", r["error"])
+
     def test_rules_describe_the_tag_chain(self):
         rules = fx.RULES["us"]
         self.assertEqual(

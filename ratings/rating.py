@@ -1030,7 +1030,10 @@ def _compute(
         if cfo is None:
             issues.append("cfo_missing")
         if capex is None:
-            if cfo is not None:  # no capex trailing year forms without cfoTTM
+            # D18: without cfoTTM only cfo_missing is reported. A US capex trailing
+            # year forms only over the CFO one; a KR record's error still names a
+            # capex failure of its own.
+            if cfo is not None:
                 issues.append("capex_missing")
         elif capex < 0:
             issues.append("capex_negative")
