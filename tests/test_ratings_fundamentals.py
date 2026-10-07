@@ -2107,7 +2107,7 @@ class FilingXbrlSupplementTests(unittest.TestCase):
         self.assertEqual(rules["amendmentForms"], ["10-K/A", "10-Q/A"])
         self.assertIn("403", rules["onlineFailure"])
         self.assertEqual(rules["decimalsLimit"], fx.DECIMALS_LIMIT)
-        self.assertEqual(fx.RULES["version"], "ratings-v1-fundamentals-3")
+        self.assertEqual(fx.RULES["version"], "ratings-v1-fundamentals-4")
         hashed = rating.PROTOCOL["moduleRules"]["fundamentals"]["us"]["filingXbrl"]
         self.assertEqual(hashed, json.loads(json.dumps(rules)))
         text = rating.PROTOCOL["pointInTime"]["fundamentalsSource"]
@@ -2120,6 +2120,228 @@ class FilingXbrlSupplementTests(unittest.TestCase):
         ):
             self.assertIn(phrase, text)
         self.assertIn("report or amendment", rating.PROTOCOL["pointInTime"]["filings"])
+        self.assertEqual(protocol_hash(rating.PROTOCOL), rating.PROTOCOL_HASH)
+
+
+PPE, PRODUCTIVE, OTHER_PPE = fx.US_CAPEX
+TOTAL_CFO, CONTINUING_CFO = fx.US_CFO
+MACHINERY = "PaymentsToAcquireMachineryAndEquipment"
+EXPLORE = "PaymentsToExploreAndDevelopOilAndGasProperties"
+OIL_GAS_PPE = "PaymentsToAcquireOilAndGasPropertyAndEquipment"
+OLDER_10Q = "0000000001-25-000003"  # the synthetic issuer's H1 10-Q a year earlier
+
+
+def regrouped(tag, **rows):
+    """synthetic() with its us-gaap ``tag`` rows handed to the named tags: each pick an
+    index into synthetic()'s rows (0 annual, 1-2 first quarters, 3-4 half-years) or a
+    fact row; ``tag`` keeps only what it is handed itself."""
+    body = synthetic()
+    usgaap = body["facts"]["us-gaap"]
+    old = usgaap.pop(tag)["units"]["USD"]
+    for name, picks in rows.items():
+        found = [copy.deepcopy(old[p]) if isinstance(p, int) else p for p in picks]
+        usgaap[name] = {"units": {"USD": found}}
+    return body
+
+
+def capex_of(r):
+    return [(c["tag"], c["value"], c["accession"]) for c in r["components"][3:]]
+
+
+class TagChainTests(unittest.TestCase):
+    """RULES us.cfoTag, capexTag, tagChain and capexUnderstated."""
+
+    def test_capex_tag_switch_between_the_annual_and_quarterly_reports(self):
+        # The 10-K tags capex as productive assets, every 10-Q as PP&E (ANET, MAR).
+        body = regrouped(PPE, **{PPE: [1, 2, 3, 4], PRODUCTIVE: [0]})
+        r = synth("2026-09-30", body)
+        self.assertEqual((r["status"], r["capexTTM"]), ("ok", 170 + 300 - 140))
+        self.assertEqual(
+            capex_of(r),
+            [
+                (f"us-gaap:{PPE}", 170, SYN_B),
+                (f"us-gaap:{PRODUCTIVE}", 300, SYN_A),
+                (f"us-gaap:{PPE}", 140, SYN_B),
+            ],
+        )
+        self.assertEqual(r["tags"]["capex"], f"us-gaap:{PPE}, us-gaap:{PRODUCTIVE}")
+        self.assertIn(
+            f"capex from the tag chain us-gaap:{PPE}, us-gaap:{PRODUCTIVE} (scope not "
+            "reconciled)",
+            r["notes"],
+        )
+        # One tag reporting every period stays the rule: nothing changes then.
+        self.assertEqual(synth("2026-09-30", synthetic())["tags"]["capex"], CAPEX)
+
+    def test_previous_ytd_comes_from_the_current_ytd_tag(self):
+        # PP&E holds the annual and last year's half-year (from that year's 10-Q);
+        # the current 10-Q states both half-years as productive assets.
+        older = fact("2025-01-01", "2025-06-30", 140, "2025-08-01", OLDER_10Q)
+        body = regrouped(PPE, **{PPE: [0, older], PRODUCTIVE: [3, 4]})
+        r = synth("2026-09-30", body)
+        self.assertEqual((r["status"], r["capexTTM"]), ("ok", 330))
+        self.assertEqual(
+            capex_of(r),
+            [
+                (f"us-gaap:{PRODUCTIVE}", 170, SYN_B),
+                (f"us-gaap:{PPE}", 300, SYN_A),
+                (f"us-gaap:{PRODUCTIVE}", 140, SYN_B),
+            ],
+        )
+
+    def test_a_tag_reporting_a_period_otherwise_withholds_the_chain(self):
+        older = fact("2025-01-01", "2025-06-30", 150, "2025-08-01", OLDER_10Q)
+        body = regrouped(PPE, **{PPE: [0, older], PRODUCTIVE: [3, 4]})
+        r = synth("2026-09-30", body)
+        self.assertEqual((r["status"], r["missing"]), ("insufficient", ["capexTTM"]))
+        self.assertEqual(r["cfoTTM"], 1150)
+        self.assertIn(
+            f"capexTTM: us-gaap:{PPE} reports 2025-01-01..2025-06-30 otherwise than "
+            f"us-gaap:{PRODUCTIVE} (tag chain withheld)",
+            r["error"],
+        )
+        self.assertNotIn(fx.CAPEX_UNDERSTATED, r["issues"])
+
+    def test_capex_more_tags_are_read_in_order_after_the_capex_tags(self):
+        # DOW: the latest 10-Q moved capex to machinery and equipment; gas field
+        # development is a smaller side line of its own.
+        side = [
+            fact("2025-01-01", "2025-12-31", 25, "2026-02-10", SYN_A, "10-K"),
+            fact("2026-01-01", "2026-06-30", 10, "2026-08-01", SYN_B),
+            fact("2025-01-01", "2025-06-30", 8, "2026-08-01", SYN_B),
+        ]
+        body = regrouped(
+            PPE, **{PRODUCTIVE: [0, 4], MACHINERY: [0, 3, 4], EXPLORE: side}
+        )
+        r = synth("2026-09-30", body)
+        self.assertEqual((r["status"], r["capexTTM"]), ("ok", 330))
+        self.assertEqual(r["tags"]["capex"], f"us-gaap:{MACHINERY}")
+        self.assertIn(
+            f"capex from fallback tag us-gaap:{MACHINERY} (scope not reconciled)",
+            r["notes"],
+        )
+        # Were the side line listed first, the capex tag stating the annual and last
+        # year's half-year otherwise would withhold it rather than take it.
+        later = tuple(reversed(fx.US_CAPEX_MORE))
+        with mock.patch.object(fx, "US_CAPEX_MORE", later):
+            r = synth("2026-09-30", body)
+        self.assertEqual((r["capexTTM"], r["missing"]), (None, ["capexTTM"]))
+        self.assertIn(
+            f"us-gaap:{PRODUCTIVE} reports 2025-01-01..2025-12-31 otherwise than "
+            f"us-gaap:{EXPLORE} (tag chain withheld)",
+            r["error"],
+        )
+        # A capex tag reporting every period leaves the capexMore tags unread.
+        rows = synthetic()["facts"]["us-gaap"][PPE]["units"]["USD"]
+        double = [dict(f, val=2 * f["val"]) for f in rows]
+        r = synth("2026-09-30", synthetic(**{f"us-gaap__{MACHINERY}": double}))
+        self.assertEqual((r["capexTTM"], r["tags"]["capex"]), (330, CAPEX))
+
+    def test_a_capex_tag_chain_comes_before_a_capex_more_tag(self):
+        # A capexMore tag reporting every period (here a side line) never replaces a
+        # chain of the capex tags that covers the trailing year.
+        side = [
+            fact("2025-01-01", "2025-12-31", 25, "2026-02-10", SYN_A, "10-K"),
+            fact("2026-01-01", "2026-06-30", 10, "2026-08-01", SYN_B),
+            fact("2025-01-01", "2025-06-30", 8, "2026-08-01", SYN_B),
+        ]
+        improvements = "PaymentsForCapitalImprovements"
+        body = regrouped(
+            PPE, **{PPE: [1, 2, 3, 4], PRODUCTIVE: [0], improvements: side}
+        )
+        r = synth("2026-09-30", body)
+        self.assertEqual((r["status"], r["capexTTM"]), ("ok", 330))
+        self.assertEqual(r["tags"]["capex"], f"us-gaap:{PPE}, us-gaap:{PRODUCTIVE}")
+
+    def test_the_filing_supplement_reads_capex_more_tags(self):
+        machinery = f"us-gaap:{MACHINERY}"
+        for tag in fx.US_CAPEX_COMPARE:
+            self.assertIn(("us-gaap", tag, "USD"), fx.FILING_CONCEPTS)
+        rows = [(machinery if c == CAPEX else c, *rest) for c, *rest in SYN_FACTS]
+        r = syn_collect(syn_instance(*rows))
+        self.assertEqual((r["status"], r["issues"]), ("ok", [fx.SUPPLEMENT_ISSUE]))
+        self.assertEqual(r["capexTTM"], 170 + 300 - 140)
+        self.assertEqual(
+            capex_of(r),
+            [(machinery, 170, SYN_B), (CAPEX, 300, SYN_A), (machinery, 140, SYN_B)],
+        )
+        self.assertEqual(r["lagCheck"]["supplement"]["facts"], len(SYN_FACTS))
+
+    def test_cfo_tag_chain_across_total_and_continuing_operations(self):
+        # APD, GEHC: the 10-K tags CFO from continuing operations, every 10-Q the total.
+        body = regrouped(TOTAL_CFO, **{TOTAL_CFO: [1, 2, 3, 4], CONTINUING_CFO: [0]})
+        r = synth("2026-09-30", body)
+        self.assertEqual((r["status"], r["method"]), ("ok", "ytd"))
+        self.assertEqual((r["cfoTTM"], r["capexTTM"]), (600 + 1000 - 450, 330))
+        names = f"us-gaap:{TOTAL_CFO}, us-gaap:{CONTINUING_CFO}"
+        self.assertEqual(r["tags"]["cfo"], names)
+        self.assertIn(f"CFO from the tag chain {names}", r["notes"])
+        # Both tags stating last year's half-year alike keep the chain...
+        same = fact("2025-01-01", "2025-06-30", 450, "2026-08-01", SYN_B)
+        body = regrouped(
+            TOTAL_CFO, **{TOTAL_CFO: [1, 2, 3, 4], CONTINUING_CFO: [0, same]}
+        )
+        self.assertEqual(synth("2026-09-30", body)["cfoTTM"], 1150)
+        # ...while different values withhold CFO, and capex with it: never mixed.
+        body = regrouped(
+            TOTAL_CFO,
+            **{TOTAL_CFO: [1, 2, 3, 4], CONTINUING_CFO: [0, dict(same, val=440)]},
+        )
+        r = synth("2026-09-30", body)
+        self.assertEqual((r["cfoTTM"], r["capexTTM"]), (None, None))
+        self.assertIn(
+            f"us-gaap:{CONTINUING_CFO} reports 2025-01-01..2025-06-30 otherwise than "
+            f"us-gaap:{TOTAL_CFO} (tag chain withheld)",
+            r["error"],
+        )
+        self.assertIn("capexTTM: no CFO trailing year to align with", r["error"])
+
+    def test_a_larger_capex_category_total_withholds_a_fallback_tag(self):
+        # EOG: capex only as other PP&E while oil and gas additions are far larger.
+        rows = synthetic()["facts"]["us-gaap"][PPE]["units"]["USD"]
+        small = [dict(f, val=f["val"] // 10) for f in rows]
+        body = regrouped(PPE, **{OTHER_PPE: small, OIL_GAS_PPE: [0, 1, 2, 3, 4]})
+        r = synth("2026-09-30", body)
+        self.assertEqual((r["status"], r["missing"]), ("insufficient", ["capexTTM"]))
+        self.assertEqual((r["cfoTTM"], r["issues"]), (1150, [fx.CAPEX_UNDERSTATED]))
+        self.assertIn(
+            f"capexTTM: us-gaap:{OIL_GAS_PPE} reports every trailing period with a "
+            "larger total (330 > 33; capex_tag_understated)",
+            r["error"],
+        )
+        # A smaller one leaves the fallback tag's trailing year in place...
+        ones = [dict(f, val=1) for f in rows]
+        body = regrouped(PPE, **{OTHER_PPE: small, OIL_GAS_PPE: ones})
+        r = synth("2026-09-30", body)
+        self.assertEqual((r["status"], r["capexTTM"], r["issues"]), ("ok", 33, []))
+        # ...and a trailing year wholly from the first capex tag is never compared.
+        tenfold = [dict(f, val=10 * f["val"]) for f in rows]
+        r = synth("2026-09-30", synthetic(**{f"us-gaap__{OIL_GAS_PPE}": tenfold}))
+        self.assertEqual((r["status"], r["capexTTM"]), ("ok", 330))
+
+    def test_rules_describe_the_tag_chain(self):
+        rules = fx.RULES["us"]
+        self.assertEqual(
+            fx.US_CAPEX_MORE,
+            (
+                "PaymentsForCapitalImprovements",
+                "PaymentsToAcquireMachineryAndEquipment",
+                "PaymentsForConstructionInProcess",
+                "PaymentsToExploreAndDevelopOilAndGasProperties",
+            ),
+        )
+        self.assertEqual(rules["capexMore"], [f"us-gaap:{t}" for t in fx.US_CAPEX_MORE])
+        self.assertEqual(
+            rules["capexCompare"], [f"us-gaap:{t}" for t in fx.US_CAPEX_COMPARE]
+        )
+        self.assertIn("tagChain over cfo", rules["cfoTag"])
+        self.assertIn("first capexMore tag reporting every period", rules["capexTag"])
+        self.assertIn("from the current YTD's tag", rules["tagChain"])
+        self.assertIn("conflicting values in one filing", rules["tagChain"])
+        self.assertIn(f"issue {fx.CAPEX_UNDERSTATED}", rules["capexUnderstated"])
+        hashed = rating.PROTOCOL["moduleRules"]["fundamentals"]["us"]
+        for key in ("cfoTag", "capexMore", "capexTag", "tagChain", "capexUnderstated"):
+            self.assertEqual(hashed[key], json.loads(json.dumps(rules[key])))
         self.assertEqual(protocol_hash(rating.PROTOCOL), rating.PROTOCOL_HASH)
 
 

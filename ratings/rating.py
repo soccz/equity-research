@@ -231,7 +231,10 @@ PROTOCOL = {
         "fcfYield": {
             "definition": "(cfoTTM - capexTTM) / marketCap",
             "capex": "acquisition of property, plant and equipment as a non-negative "
-            "payment; negative or missing gives no value",
+            "payment; negative or missing gives no value; US tags, tag chains, the "
+            "capexMore list and the understatement guard: moduleRules.fundamentals "
+            "(us.capexTag, us.tagChain, us.capexUnderstated; issue "
+            "capex_tag_understated); without cfoTTM only cfo_missing is reported",
             "marketCap": "missing or non-positive gives no value",
             "currency": "filing currency must equal the market currency",
         },
@@ -1027,7 +1030,8 @@ def _compute(
         if cfo is None:
             issues.append("cfo_missing")
         if capex is None:
-            issues.append("capex_missing")
+            if cfo is not None:  # no capex trailing year forms without cfoTTM
+                issues.append("capex_missing")
         elif capex < 0:
             issues.append("capex_negative")
         elif cfo is not None:

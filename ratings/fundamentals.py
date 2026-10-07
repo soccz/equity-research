@@ -60,6 +60,19 @@ US_CAPEX = (
     "PaymentsToAcquireProductiveAssets",
     "PaymentsToAcquireOtherPropertyPlantAndEquipment",
 )
+# Read only when a trailing-year period has no US_CAPEX tag (RULES us.capexTag).
+US_CAPEX_MORE = (
+    "PaymentsForCapitalImprovements",
+    "PaymentsToAcquireMachineryAndEquipment",
+    "PaymentsForConstructionInProcess",
+    "PaymentsToExploreAndDevelopOilAndGasProperties",
+)
+# Capex-category tags a capex trailing year not taken wholly from US_CAPEX[0] is checked
+# against (RULES us.capexUnderstated).
+US_CAPEX_COMPARE = (
+    US_CAPEX + US_CAPEX_MORE + ("PaymentsToAcquireOilAndGasPropertyAndEquipment",)
+)
+CAPEX_UNDERSTATED = "capex_tag_understated"
 COVER = ("dei", "EntityCommonStockSharesOutstanding")
 DILUTED = ("us-gaap", "WeightedAverageNumberOfDilutedSharesOutstanding")
 BALANCE_SHARES = ("us-gaap", "CommonStockSharesOutstanding")
@@ -79,7 +92,7 @@ FILING_UNITS = {
     "shares": (XBRLI, "shares"),
 }
 FILING_CONCEPTS = tuple(
-    [("us-gaap", tag, "USD") for tag in US_CFO + US_CAPEX + ("Assets",)]
+    [("us-gaap", tag, "USD") for tag in US_CFO + US_CAPEX_COMPARE + ("Assets",)]
     + [(*COVER, "shares"), (*DILUTED, "shares"), (*BALANCE_SHARES, "shares")]
 )
 FILING_INSTANCE = r"[A-Za-z0-9][A-Za-z0-9._-]*\.xml"
@@ -138,7 +151,7 @@ REQUIRED = {
 }
 
 RULES = dict(
-    version="ratings-v1-fundamentals-3",
+    version="ratings-v1-fundamentals-4",
     status="ok only when every REQUIRED field is present; otherwise insufficient "
     "with the available fields kept and the reasons in error",
     required={k: list(v) for k, v in REQUIRED.items()},
@@ -157,8 +170,28 @@ RULES = dict(
         periodEnd="latest end among CFO durations and Assets instants; CFO and "
         "assets must both be reported at it",
         cfo=[f"us-gaap:{t}" for t in US_CFO],
+        cfoTag="the first cfo tag whose own periods form the trailing year (ttm); "
+        "else, when more than one cfo tag reports durations, the trailing year formed "
+        "(ttm) from the periods any cfo tag reports, taken by tagChain over cfo (base "
+        "list cfo)",
         capex=[f"us-gaap:{t}" for t in US_CAPEX],
-        capexTag="first tag reporting every period of the CFO trailing year",
+        capexMore=[f"us-gaap:{t}" for t in US_CAPEX_MORE],
+        capexTag="the first capex tag reporting every period of the CFO trailing "
+        "year; else tagChain over capex; else, when a period has no capex tag, the "
+        "first capexMore tag reporting every period, or else tagChain over capex then "
+        "capexMore; the base list is capex",
+        tagChain="each period of the trailing year from the first tag in list order "
+        "reporting it, the previous same-length YTD from the current YTD's tag when "
+        "that tag reports it; a trailing year taken this way, or from a capexMore "
+        "tag, is withheld when a tag of its base list or a tag it takes a period from "
+        "reports one of its periods with another value or with conflicting values in "
+        "one filing",
+        capexUnderstated="a capex trailing year not taken wholly from "
+        f"us-gaap:{US_CAPEX[0]} that passes tagChain and capexCheck is withheld "
+        f"(issue {CAPEX_UNDERSTATED}) when a capexCompare tag it takes no period from "
+        "reports every one of its periods with a larger trailing-year total (same "
+        "signs)",
+        capexCompare=[f"us-gaap:{t}" for t in US_CAPEX_COMPARE],
         assets="us-gaap:Assets",
         ttm="annual at periodEnd; else YTD + previous annual - previous same-length "
         "YTD; else four contiguous reported quarters",
@@ -532,7 +565,8 @@ def _plan(view: dict, end: str):
     return None, f"no annual, year-to-date or four-quarter trailing year ends {end}"
 
 
-def _parts(metric: str, tag: str, view: dict, plan: list) -> list:
+def _parts(metric: str, views: dict, plan: list) -> list:
+    """Components of a trailing year given as [(sign, period, tag)]."""
     return [
         dict(
             metric=metric,
@@ -541,13 +575,91 @@ def _parts(metric: str, tag: str, view: dict, plan: list) -> list:
             start=period[0],
             end=period[1],
             days=_span(period),
-            value=view[period]["val"],
-            accession=view[period]["accn"],
-            form=view[period]["form"],
-            filedAt=view[period]["filed"],
+            value=views[tag][0][period]["val"],
+            accession=views[tag][0][period]["accn"],
+            form=views[tag][0][period]["form"],
+            filedAt=views[tag][0][period]["filed"],
         )
-        for sign, period in plan
+        for sign, period, tag in plan
     ]
+
+
+def _tag_names(plan: list) -> str:
+    return ", ".join(dict.fromkeys(f"us-gaap:{tag}" for _, _, tag in plan))
+
+
+def _chain(views: dict, tags, plan: list, method: str) -> list | None:
+    """``plan`` [(sign, period)] as [(sign, period, tag)] by the tag chain ``tags``
+    (RULES us.tagChain): each period from the first tag reporting it, the previous
+    same-length YTD from the current YTD's tag when that tag reports it; None when a
+    period has no tag."""
+    out = []
+    for sign, period in plan:
+        tag = next((t for t in tags if period in views[t][0]), None)
+        if tag is None:
+            return None
+        out.append((sign, period, tag))
+    if method == "ytd" and out[2][1] in views[out[0][2]][0]:
+        out[2] = (out[2][0], out[2][1], out[0][2])
+    return out
+
+
+def _disagreement(views: dict, base, plan: list) -> str | None:
+    """Why a chained trailing year is withheld (RULES us.tagChain): a tag of the base
+    list, or one it takes a period from, reports a period with another value or with
+    conflicting values in one filing; None when none does."""
+    used = [tag for _, _, tag in plan]
+    for _, period, tag in plan:
+        value = views[tag][0][period]["val"]
+        for other in dict.fromkeys(list(base) + used):
+            view, conflicts = views[other]
+            if period in conflicts or (period in view and view[period]["val"] != value):
+                return (
+                    f"us-gaap:{other} reports {period[0]}..{period[1]} otherwise "
+                    f"than us-gaap:{tag} (tag chain withheld)"
+                )
+    return None
+
+
+def _capex_plan(views: dict, plan: list, method: str) -> tuple:
+    """([(sign, period, tag)] or None, reason or None) of the capex trailing year over
+    the CFO ``plan`` [(sign, period)] (RULES us.capexTag); a plan with a reason is
+    withheld (tagChain)."""
+    tag = next((t for t in US_CAPEX if all(p in views[t][0] for _, p in plan)), None)
+    if tag:
+        return [(sign, period, tag) for sign, period in plan], None
+    found = _chain(views, US_CAPEX, plan, method)
+    if found is None:
+        more = next(
+            (t for t in US_CAPEX_MORE if all(p in views[t][0] for _, p in plan)), None
+        )
+        if more:
+            found = [(sign, period, more) for sign, period in plan]
+        else:
+            found = _chain(views, US_CAPEX + US_CAPEX_MORE, plan, method)
+    if found is None:
+        return None, "no capex tag reports every trailing period"
+    return found, _disagreement(views, US_CAPEX, found)
+
+
+def _understated(views: dict, plan: list, total) -> str | None:
+    """Why a capex trailing year not taken wholly from US_CAPEX[0] is withheld (RULES
+    us.capexUnderstated): a capexCompare tag it takes no period from reports every one
+    of its periods with a larger total; None otherwise."""
+    used = {tag for _, _, tag in plan}
+    if used == {US_CAPEX[0]}:
+        return None
+    for other in US_CAPEX_COMPARE:
+        view = views[other][0]
+        if other in used or not all(period in view for _, period, _ in plan):
+            continue
+        larger = sum(sign * view[period]["val"] for sign, period, _ in plan)
+        if larger > total:
+            return (
+                f"us-gaap:{other} reports every trailing period with a larger total "
+                f"({larger} > {total}; {CAPEX_UNDERSTATED})"
+            )
+    return None
 
 
 def _agree(a: float, b: float) -> bool:
@@ -648,7 +760,8 @@ def _us(member: dict, body: dict, as_of: str, sources: list) -> dict:
     through = _through(as_of)
     reasons, used = [], []
     views = {
-        tag: _view(facts, "us-gaap", tag, "USD", through) for tag in US_CFO + US_CAPEX
+        tag: _view(facts, "us-gaap", tag, "USD", through)
+        for tag in US_CFO + US_CAPEX_COMPARE
     }
     assets, assets_conflicts = _view(facts, "us-gaap", "Assets", "USD", through)
     ends = [p[1] for tag in US_CFO for p in views[tag][0] if p[0]]
@@ -657,50 +770,79 @@ def _us(member: dict, body: dict, as_of: str, sources: list) -> dict:
         reasons.append("no CFO or total assets filed before as_of")
     else:
         end = out["periodEnd"] = max(ends)
-        plan, failures = None, []
+        plan, failures, chained = None, [], False
         for tag in US_CFO:
             view = views[tag][0]
             if not any(p[0] and p[1] == end for p in view):
                 continue
-            plan, how = _plan(view, end)
-            if plan:
-                cfo = _parts("cfo", tag, view, plan)
-                out["cfoTTM"] = sum(c["sign"] * c["value"] for c in cfo)
-                out["method"] = how
-                out["tags"]["cfo"] = f"us-gaap:{tag}"
-                out["components"] += cfo
-                used += [view[p] for _, p in plan]
-                if tag != US_CFO[0]:
-                    out["notes"].append(f"CFO from fallback tag us-gaap:{tag}")
+            found, how = _plan(view, end)
+            if found:
+                plan = [(sign, period, tag) for sign, period in found]
                 break
             failures.append(f"{how} (us-gaap:{tag})")
+        if plan is None and failures and sum(bool(views[t][0]) for t in US_CFO) > 1:
+            joined = {}  # RULES us.cfoTag: the periods any cfo tag reports
+            for tag in US_CFO:
+                for period, row in views[tag][0].items():
+                    joined.setdefault(period, row)
+            found, how = _plan(joined, end)
+            if found is None:
+                failures.append(f"{how} (tag chain)")
+            else:
+                found = _chain(views, US_CFO, found, how)
+                why = _disagreement(views, US_CFO, found)
+                if why:
+                    failures.append(why)
+                else:
+                    plan, chained = found, True
         if plan is None:
             failures = failures or [f"no standard CFO tag reported at {end}"]
             reasons.append("cfoTTM: " + "; ".join(failures))
             reasons.append("capexTTM: no CFO trailing year to align with")
         else:
-            tag = next(
-                (t for t in US_CAPEX if all(p in views[t][0] for _, p in plan)), None
-            )
-            if tag is None:
-                reasons.append("capexTTM: no capex tag reports every trailing period")
+            cfo = _parts("cfo", views, plan)
+            out["cfoTTM"] = sum(c["sign"] * c["value"] for c in cfo)
+            out["method"] = how
+            out["tags"]["cfo"] = _tag_names(plan)
+            out["components"] += cfo
+            used += [views[tag][0][period] for _, period, tag in plan]
+            if chained:
+                out["notes"].append(f"CFO from the tag chain {_tag_names(plan)}")
+            elif plan[0][2] != US_CFO[0]:
+                out["notes"].append(f"CFO from fallback tag us-gaap:{plan[0][2]}")
+            spans = [(sign, period) for sign, period, _ in plan]
+            taken, why = _capex_plan(views, spans, how)
+            if taken is None:
+                reasons.append(f"capexTTM: {why}")
             else:
-                view = views[tag][0]
-                capex = _parts("capex", tag, view, plan)
-                out["tags"]["capex"] = f"us-gaap:{tag}"
+                capex = _parts("capex", views, taken)
+                out["tags"]["capex"] = _tag_names(taken)
                 out["components"] += capex
-                used += [view[p] for _, p in plan]
-                if tag != US_CAPEX[0]:
+                used += [views[tag][0][period] for _, period, tag in taken]
+                if len({tag for _, _, tag in taken}) > 1:
                     out["notes"].append(
-                        f"capex from fallback tag us-gaap:{tag} (scope not reconciled)"
+                        f"capex from the tag chain {_tag_names(taken)} (scope not "
+                        "reconciled)"
                     )
-                if out["method"] == "ytd" and capex[2]["value"] > capex[1]["value"]:
+                elif taken[0][2] != US_CAPEX[0]:
+                    out["notes"].append(
+                        f"capex from fallback tag us-gaap:{taken[0][2]} (scope not "
+                        "reconciled)"
+                    )
+                total = sum(c["sign"] * c["value"] for c in capex)
+                larger = None if why else _understated(views, taken, total)
+                if why:
+                    reasons.append(f"capexTTM: {why}")
+                elif out["method"] == "ytd" and capex[2]["value"] > capex[1]["value"]:
                     reasons.append(
                         "capexTTM: previous same-length YTD exceeds previous annual "
                         "(reclassification or restatement)"
                     )
+                elif larger:
+                    out["issues"].append(CAPEX_UNDERSTATED)
+                    reasons.append(f"capexTTM: {larger}")
                 else:
-                    out["capexTTM"] = sum(c["sign"] * c["value"] for c in capex)
+                    out["capexTTM"] = total
                     if out["capexTTM"] < 0:
                         out["notes"].append("trailing-year capex is negative")
         fact = assets.get((None, end))
