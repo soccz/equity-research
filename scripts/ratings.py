@@ -860,6 +860,9 @@ def assemble(built: dict, days: dict, gate=False) -> tuple[list, dict, dict]:
                 retrieved_on=retrieved_on(own, market),
                 windows_by_symbol={s: v.get("window") for s, v in ok.items()},
                 capture_dates_by_market=captured,
+                null_sessions_by_symbol={
+                    s: v.get("nullSessions") or [] for s, v in ok.items()
+                },
             )
             stale = staleness(record, member, as_of, code, captured)
             close = close_on_as_of(record, member, as_of)

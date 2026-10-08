@@ -1,8 +1,8 @@
 {
   "labels": {
-    "선호": "같은 시장 안 종합 점수 백분위 상위 1/3(업종 중립). 다음 달 등록 때까지 유지되며, 직전 달 선호였으면 백분위 50% 이상에서 선호를 유지합니다.",
-    "관찰": "중간 1/3. 중립 등급이며 매수·매도 의견이 아닙니다.",
-    "회피": "하위 1/3. 직전 달 회피였으면 백분위 50% 이하에서 회피를 유지합니다.",
+    "선호": "같은 시장 안 종합 점수 백분위 상위 1/3(업종 평균 대비). 직전 등록에서 선호였으면 백분위 50% 이상에서 선호를 유지합니다(회전 완화). 다음 등록 때까지 유지됩니다.",
+    "관찰": "선호·회피가 아닌 나머지. 첫 등록에서는 중간 1/3이고, 회전 완화 때문에 몇 달 뒤에는 약 20%가 됩니다(미국 과거 재현). 중립 등급이며 매수·매도 의견이 아닙니다.",
+    "회피": "하위 1/3. 직전 등록에서 회피였으면 백분위 50% 이하에서 회피를 유지합니다(회전 완화).",
     "자료 부족": "신호가 2개 미만이라 등급이 없습니다. 회피가 아닙니다. 계산 가능률의 분모에는 남습니다.",
     "금융 제외": "금융업(미국 SIC 6000–6799, 한국 KSIC 64·65·66·68, 금융지주)이라 규칙 대상에서 뺐습니다."
   },
@@ -70,7 +70,20 @@
     "stale_checkpoint": "현재 규칙·코드 이전에 수집된 기록입니다.",
     "universe_fetch_error": "종목군 정보(업종 코드 등) 수집에 실패해 자료 부족으로 집계했습니다.",
     "signal_error": "신호 계산 중 오류가 나서 그 신호를 비웠습니다.",
-    "unknown_status": "종목 상태를 알 수 없어 등급을 매기지 않았습니다."
+    "unknown_status": "종목 상태를 알 수 없어 등급을 매기지 않았습니다.",
+    "momentum_session_gap": "가격 자료에 종가가 비어 있는 거래일이 모멘텀 구간 안에 있습니다. 그날도 거래일로 세어 구간을 맞췄고 값은 그대로입니다(D19).",
+    "momentum_endpoint_stale": "모멘텀 시작일이나 끝일의 종가가 비어 있어 그 전 마지막 자기 종가를 썼습니다(D19).",
+    "capex_parts_summed": "유형자산 취득 합계 줄이 없어, 같은 현금흐름표의 자산별 취득 줄(토지·건물·기계장치·건설중인자산 등)을 더해 capex를 만들었습니다. 자산별 줄은 DART 표준 id 13개를 단 줄과, 표준 id가 없는 줄 중 이름이 '토지·건물… 의 취득' 꼴인 줄입니다(D20).",
+    "capex_includes_investment_property": "현금흐름표가 유형자산과 투자부동산 취득을 한 줄로 보고해 그 줄을 capex로 썼습니다. 투자부동산 취득이 포함돼 순수 설비투자보다 클 수 있습니다(D20).",
+    "predecessor_facts": "새 CIK의 승계 발행인이라, 최근 1년치를 만들 때 전신 회사가 승계 통지 전에 낸 공시 값을 더했습니다(D21). 주식수는 쓰지 않았습니다.",
+    "price_series_missing": "가격 시계열이 없어 모멘텀을 계산하지 않았습니다.",
+    "momentum_price_missing": "모멘텀 구간 시작일이나 끝일의 종가가 없거나 0 이하라 모멘텀을 계산하지 않았습니다.",
+    "fcfYield_z_undefined": "시장 안 FCF 수익률이 모두 같아 표준점수를 만들 수 없어, 이 신호를 종합 점수에서 뺐습니다.",
+    "cashProfitability_z_undefined": "시장 안 현금 수익성이 모두 같아 표준점수를 만들 수 없어, 이 신호를 종합 점수에서 뺐습니다.",
+    "momentum12_1_z_undefined": "시장 안 12-1 모멘텀이 모두 같아 표준점수를 만들 수 없어, 이 신호를 종합 점수에서 뺐습니다.",
+    "fcfYield_invalid": "FCF 수익률 값이 유한한 숫자가 아니어서 없는 값으로 처리했습니다.",
+    "cashProfitability_invalid": "현금 수익성 값이 유한한 숫자가 아니어서 없는 값으로 처리했습니다.",
+    "momentum12_1_invalid": "12-1 모멘텀 값이 유한한 숫자가 아니어서 없는 값으로 처리했습니다."
   },
   "periods": {
     "pending": "진입 전: 진입은 등록 다음 거래일 종가입니다.",
@@ -96,7 +109,13 @@
     "gate_fail_US": "v1 등급을 공개하지 않습니다(§7).",
     "gate_fail_KR": "v1 등급에서 한국을 빼고 심층 보고서만 둡니다(§7).",
     "before_first": "첫 정식 등록: 기준일(T) 2026-10-30 종가, T 뒤 5거래일 안에 등록합니다.",
-    "ledger_invalid": "원장 검증에 실패해 등급을 보여 주지 않습니다. 운영자가 확인 중입니다."
+    "ledger_invalid": "원장 검증에 실패해 등급을 보여 주지 않습니다. 원장과 등록 파일은 공개 저장소에서 직접 확인할 수 있습니다:",
+    "gate_wait": "점검 기준일 종가 자료를 모으는 중입니다. 수집이 완전할 때 원장에 한 번만 기록하며, 기준일 뒤 며칠 안에 기록됩니다.",
+    "first_missing": "첫 등록 기한이 지났지만 이 시장의 등록이 원장에 없습니다.",
+    "gate_lost": "점검 기준일 자료를 창 안에서 받지 못해 이 시장의 점검은 기록될 수 없습니다. 이 시장은 v1 등급에서 빠집니다(2026-10-08 결정).",
+    "us_failed": "미국 계산 가능률 미달로 v1 등급을 공개하지 않습니다(§7).",
+    "gate_lost_other": "다른 시장은 따로 등록합니다.",
+    "nothing_published": "v1 등급은 공개되지 않습니다: 미국 계산 가능률이 미달이거나 두 시장 모두 점검을 기록할 수 없습니다(§7)."
   },
   "sectors": {
     "NoDur": [
@@ -212,9 +231,23 @@
     "no_entry_price": "진입가 없음",
     "no_price_series": "가격 없음",
     "series_ends_before_entry": "진입 전 종료",
-    "series_not_covering": "기간 미포함"
+    "series_not_covering": "기간 미포함",
+    "momentum_session_gap": "빈 거래일 포함",
+    "momentum_endpoint_stale": "모멘텀 직전 종가",
+    "capex_parts_summed": "capex 자산별 합산",
+    "capex_includes_investment_property": "capex 투자부동산 포함",
+    "predecessor_facts": "전신 회사 공시 사용",
+    "price_series_missing": "가격 시계열 없음",
+    "momentum_price_missing": "모멘텀 종가 없음",
+    "fcfYield_z_undefined": "FCF 점수 불가",
+    "cashProfitability_z_undefined": "수익성 점수 불가",
+    "momentum12_1_z_undefined": "모멘텀 점수 불가",
+    "fcfYield_invalid": "FCF 값 오류",
+    "cashProfitability_invalid": "수익성 값 오류",
+    "momentum12_1_invalid": "모멘텀 값 오류"
   },
   "issueInfo": [
+    "capex_parts_summed",
     "class_price_proxy",
     "diluted_wavg_proxy",
     "ff12_definition_changed_pinned_used",
@@ -222,7 +255,9 @@
     "filing_xbrl_supplement",
     "holdings_date",
     "listed_shares_inexact",
+    "momentum_session_gap",
     "multi_class_single_price",
+    "predecessor_facts",
     "sector_fallback",
     "shares_proxy",
     "shares_split_adjusted",

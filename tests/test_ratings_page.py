@@ -1,14 +1,17 @@
 """The ratings page builder (scripts/build_ratings_page.py): what it derives from the
 ledger and registration files, and the checks of the assembled Pages artifact."""
 
+import ast
 import importlib.util
 import json
+from pathlib import Path
+import re
 import shutil
 import unittest
 from unittest import mock
 
 from equitylab.data import ROOT, digest
-from ratings import registry, sectors
+from ratings import rating, registry, sectors, universe
 from ratings.rating import PREFER, PROTOCOL_HASH
 
 import test_ratings_registry as fixtures
@@ -36,6 +39,9 @@ class Built(fixtures.Ledgered):
             patcher.start()
             self.addCleanup(patcher.stop)
         self.evaluations = evaluations
+        patcher = mock.patch.object(universe, "UNIVERSE_DIR", self.root / "universe")
+        patcher.start()
+        self.addCleanup(patcher.stop)
 
     def assemble(self, name="out", preview=()):
         out = self.root / name
@@ -65,6 +71,14 @@ class DeriveTests(Built):
         self.assertEqual(index["schedule"]["thresholds"], dict(US=0.9, KR=0.8))
         self.assertIsNone(index["evaluation"])
         self.assertFalse(index["preview"])
+        self.assertEqual(index["gateParts"], dict(US=False, KR=False))
+
+    def test_the_index_says_which_gate_parts_were_captured(self):
+        path = universe.part_path("KR", fixtures.GATE_AS_OF, gate=True)
+        path.parent.mkdir(parents=True)
+        path.write_text("{}")
+        index, _ = build.derive([])
+        self.assertEqual(index["gateParts"], dict(US=False, KR=True))
 
     def test_recorded_gates_are_shown_with_their_verdicts(self):
         self.gates(US="pass", KR="fail")
@@ -270,6 +284,98 @@ class AssembleTests(Built):
         self.assertEqual(code, 1)
 
 
+SNAKE = r"[a-z][a-z0-9]*(?:_[a-z0-9]+)+"
+# Snake-case literals of the modules behind the page's codes that never reach it as a
+# code: source field names, reasons kept in notes, details or counts, method names.
+NOT_SHOWN = {
+    "fundamentals.py": {
+        # OpenDART fields
+        "account_id",
+        "account_nm",
+        "bsns_year",
+        "corp_code",
+        "frmtrm_add_amount",
+        "frmtrm_amount",
+        "frmtrm_q_amount",
+        "rcept_dt",
+        "rcept_no",
+        "report_nm",
+        "reprt_code",
+        "sj_div",
+        "thstrm_add_amount",
+        "thstrm_amount",
+        "total_page",
+        # D21 and supplement reasons, in notes and the lag detail
+        "filing_xbrl_unavailable",
+        "no_coregistrant",
+        "no_report",
+    },
+    "universe.py": {
+        # OpenDART, SEC and Naver fields
+        "acc_mt",
+        "cik_str",
+        "corp_code",
+        "corp_name",
+        "induty_code",
+        "naver_value",
+        "stock_code",
+        # KR ranking close reasons and fetch steps, in the part's unranked list
+        "ambiguous_corp_code",
+        "close_unpublished",
+        "close_unsettled",
+        "invalid_code",
+        "missing_corp_code",
+        "no_close_on_as_of",
+        "not_listed_on_as_of",
+        "other_class",
+        "price_unavailable",
+        "symbol_not_found",
+    },
+    "evaluate.py": {
+        # methods, result issues and member error reasons (the page shows a count)
+        "benchmark_series_missing",
+        "equal_weight",
+        "frozen_period_mismatch",
+        "ledger_unverified",
+        "mixed_protocol_hashes",
+        "no_price_symbol",
+        "oracle_upper_bound",
+        "protocol_differs_from_code",
+        "protocol_hash_mismatch",
+        "version_mismatch",
+    },
+    "ratings.py": {
+        # collection staleness, evaluation states and summaries, argparse
+        "after_local_date",
+        "code_changed",
+        "collected_before_close",
+        "mixed_protocol_hashes",
+        "no_close_on_as_of",
+        "no_registrations",
+        "protocol_changed",
+        "store_true",
+    },
+}
+
+
+def snake_literals(path: Path) -> set:
+    """Every snake-case string literal in ``path``; an f-string "{signal}_tail" stands
+    for the tail after each signal."""
+    found = set()
+    for node in ast.walk(ast.parse(path.read_text())):
+        if isinstance(node, ast.Constant) and isinstance(node.value, str):
+            found.update([node.value] if re.fullmatch(SNAKE, node.value) else [])
+        elif isinstance(node, ast.JoinedStr):
+            head, *tail = node.values
+            if isinstance(head, ast.FormattedValue) and all(
+                isinstance(part, ast.Constant) for part in tail
+            ):
+                end = "".join(part.value for part in tail)
+                if re.fullmatch(r"_[a-z0-9_]+", end):
+                    found.update(signal + end for signal in rating.SIGNALS)
+    return found
+
+
 class GlossaryTests(unittest.TestCase):
     def test_every_issue_has_a_short_label_and_every_sector_a_name(self):
         codes = set(GLOSSARY["issues"]) | set(GLOSSARY["periods"])
@@ -277,6 +383,27 @@ class GlossaryTests(unittest.TestCase):
         self.assertEqual(codes - set(GLOSSARY["issueShort"]), set())
         self.assertEqual(set(GLOSSARY["issueInfo"]) - codes, set())
         self.assertEqual(set(GLOSSARY["sectors"]), set(sectors.FF12))
+
+    def test_every_code_the_modules_can_emit_is_explained(self):
+        # Whatever route a code takes to a row, a period or an exclusion, it is written
+        # as a literal in one of these modules: each is explained or listed as never
+        # shown. A new literal fails here until it is one or the other.
+        explained = (
+            set(GLOSSARY["issues"])
+            | set(GLOSSARY["periods"])
+            | set(GLOSSARY["reasonCodes"])
+        )
+        paths = sorted((ROOT / "ratings").glob("*.py")) + [ROOT / "scripts/ratings.py"]
+        for path in paths:
+            found = snake_literals(path)
+            hidden = NOT_SHOWN.get(path.name, set())
+            unexplained = found - explained - hidden - set(rating.SIGNALS)
+            self.assertEqual(unexplained, set(), path.name)
+            self.assertEqual(hidden - found, set(), path.name)  # no stale entries
+        self.assertLessEqual(
+            {"momentum12_1_z_undefined", "fcfYield_invalid", "shares_missing"},
+            snake_literals(ROOT / "ratings/rating.py"),
+        )
 
     def test_issue_codes_in_the_dry_runs_are_explained(self):
         seen = set()

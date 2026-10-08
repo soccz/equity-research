@@ -275,6 +275,9 @@ class ProtocolTests(unittest.TestCase):
             (("marketCap", "splits", "KRCaptureAfterRetrieval"), "sharesCapturedOn"),
             (("signals", "fcfYield", "capex"), "capex_tag_understated"),  # D18
             (("signals", "fcfYield", "capex"), "only cfo_missing"),  # D18
+            (("signals", "fcfYield", "capex"), "capex_parts_summed"),  # D20
+            (("signals", "fcfYield", "capex"), "capex_includes_investment_property"),
+            (("signals", "momentum12_1", "definition"), "nullSessions"),  # D19
         ]
         for path, needle in texts:
             with self.subTest(path=path, needle=needle):
@@ -571,6 +574,78 @@ class ProtocolTests(unittest.TestCase):
                 self.assertEqual(found[:1], [value])
 
 
+class MomentumSessionTests(unittest.TestCase):
+    """D19: sessions a series lists without a close count as sessions, never priced."""
+
+    def setUp(self):
+        self.rows = price_rows()[:300]  # adjclose 100+i; index 299 is T
+        self.clean = rating.momentum_12_1(self.rows, AS_OF)
+
+    def without(self, *indices):
+        rows = [r for i, r in enumerate(self.rows) if i not in indices]
+        return rows, [self.rows[i][0] for i in indices]
+
+    def test_a_clean_series_is_unchanged(self):
+        self.assertEqual(
+            self.clean, (378 / 147 - 1, [], [self.rows[47][0], self.rows[278][0]], [])
+        )
+
+    def test_a_blank_session_inside_the_window_keeps_the_window(self):
+        rows, blank = self.without(100)
+        value, issues, window, gaps = rating.momentum_12_1(rows, AS_OF, blank)
+        self.assertEqual((value, window), self.clean[:1] + self.clean[2:3])
+        self.assertEqual((issues, gaps), (["momentum_session_gap"], blank))
+        # Counting own rows only moves the start one session earlier.
+        self.assertEqual(rating.momentum_12_1(rows, AS_OF)[0], 378 / 146 - 1)
+
+    def test_a_blank_endpoint_uses_the_last_own_close_before_it(self):
+        flags = ["momentum_endpoint_stale", "momentum_session_gap"]
+        rows, blank = self.without(47)
+        value, issues, window, _ = rating.momentum_12_1(rows, AS_OF, blank)
+        self.assertEqual((value, issues), (378 / 146 - 1, flags))
+        self.assertEqual(window, [self.rows[46][0], self.rows[278][0]])
+        rows, blank = self.without(278)
+        value, issues, window, _ = rating.momentum_12_1(rows, AS_OF, blank)
+        self.assertEqual((value, issues), (377 / 147 - 1, flags))
+        self.assertEqual(window, [self.rows[47][0], self.rows[277][0]])
+
+    def test_blanks_outside_the_window_change_nothing(self):
+        for index in (10, 290):  # before T-252; inside the skipped month
+            rows, blank = self.without(index)
+            self.assertEqual(rating.momentum_12_1(rows, AS_OF, blank), self.clean)
+        after = ["2026-11-02"]
+        self.assertEqual(rating.momentum_12_1(self.rows, AS_OF, after), self.clean)
+
+    def test_t_itself_still_needs_an_own_close(self):
+        rows, blank = self.without(299)
+        self.assertEqual(
+            rating.momentum_12_1(rows, AS_OF, blank),
+            (None, ["no_price_on_as_of"], None, []),
+        )
+
+    def test_history_counts_blank_sessions_but_needs_an_own_start(self):
+        rows = self.rows[47:]  # exactly 253 own sessions through T
+        self.assertEqual(rating.momentum_12_1(rows, AS_OF)[0], 378 / 147 - 1)
+        short, blank = rows[1:], [rows[0][0]]  # the start is a blank session
+        self.assertEqual(
+            rating.momentum_12_1(short, AS_OF, blank),
+            (None, ["momentum_history_short"], None, []),
+        )
+
+    def test_signals_pass_the_series_blank_sessions(self):
+        rows, blank = self.without(100)
+        row = signals(
+            us_member(),
+            us_fundamentals(),
+            {"AAA": rows},
+            AS_OF,
+            null_sessions_by_symbol={"AAA": blank},
+        )
+        self.assertAlmostEqual(row["signals"]["momentum12_1"], 378 / 147 - 1)
+        self.assertIn("momentum_session_gap", row["issues"])
+        self.assertEqual(row["inputs"]["momentumGaps"], blank)
+
+
 class SignalTests(unittest.TestCase):
     def test_us_signals_use_only_data_known_at_as_of(self):
         rows = price_rows()
@@ -747,7 +822,7 @@ class SignalTests(unittest.TestCase):
                 )
                 self.assertIsNone(row["inputs"]["momentumWindow"])
         self.assertEqual(
-            rating.momentum_12_1(rows, AS_OF), (None, "no_price_on_as_of", None)
+            rating.momentum_12_1(rows, AS_OF), (None, ["no_price_on_as_of"], None, [])
         )
         self.assertIsNone(rating.close_on(rows, AS_OF))
         # KR: the common halted on T has no cap even though the preferred traded.

@@ -2107,7 +2107,7 @@ class FilingXbrlSupplementTests(unittest.TestCase):
         self.assertEqual(rules["amendmentForms"], ["10-K/A", "10-Q/A"])
         self.assertIn("403", rules["onlineFailure"])
         self.assertEqual(rules["decimalsLimit"], fx.DECIMALS_LIMIT)
-        self.assertEqual(fx.RULES["version"], "ratings-v1-fundamentals-4")
+        self.assertEqual(fx.RULES["version"], "ratings-v1-fundamentals-5")
         hashed = rating.PROTOCOL["moduleRules"]["fundamentals"]["us"]["filingXbrl"]
         self.assertEqual(hashed, json.loads(json.dumps(rules)))
         text = rating.PROTOCOL["pointInTime"]["fundamentalsSource"]
@@ -2420,6 +2420,701 @@ class TagChainTests(unittest.TestCase):
         for key in ("cfoTag", "capexMore", "capexTag", "tagChain", "capexUnderstated"):
             self.assertEqual(hashed[key], json.loads(json.dumps(rules[key])))
         self.assertEqual(protocol_hash(rating.PROTOCOL), rating.PROTOCOL_HASH)
+
+
+KR_STD = "ifrs-full_PurchaseOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities"
+KR_NS = fx.KR_NONSTANDARD_ID
+KR_CFO_TTM = 145355192000000 + 85315148000000 - 33941002000000
+KR_CAPEX_TTM = 31234818000000 + 47522179000000 - 26831217000000
+
+
+def kr_line(template, account, name, current, comparative, annual=False):
+    row = dict(template, account_id=account, account_nm=name, sj_div="CF")
+    for key in [k for k in row if k.endswith("_amount")]:
+        del row[key]
+    row["thstrm_amount"] = "" if current is None else str(current)
+    key = "frmtrm_amount" if annual else "frmtrm_q_amount"
+    row[key] = "" if comparative is None else str(comparative)
+    return row
+
+
+def kr_capex_reports(h1=(), fy=(), keep=(False, False)):
+    """Samsung's H1 2026 and FY2025 statements with the standard capex row kept or
+    removed per report and (account, name, current, comparative) lines appended."""
+    out = {}
+    for year, code, lines, kept, annual in (
+        (2026, "11012", h1, keep[0], False),
+        (2025, "11011", fy, keep[1], True),
+    ):
+        rows = dart_rows(year, code)
+        template = next(r for r in rows if r["account_id"] == KR_STD)
+        if not kept:
+            rows = [r for r in rows if r["account_id"] != KR_STD]
+        rows += [kr_line(template, *spec, annual=annual) for spec in lines]
+        out[(year, code, "CFS")] = rows
+    return out
+
+
+class KoreaCapexLineTests(unittest.TestCase):
+    """RULES kr.capex, kr.capexParts and kr.capexCombined (D20)."""
+
+    def capex(self, h1=(), fy=(), keep=(False, False)):
+        return kr("2026-09-30", kr_capex_reports(h1, fy, keep))
+
+    def test_parts_are_summed_when_no_capex_line_exists(self):  # 한미사이언스
+        noise = [
+            ("dart_PurchaseOfFinanceLeaseAssets", "사용권자산의 취득", 5, 5),
+            ("ifrs-full_PurchaseOfInvestmentProperty", "투자부동산의 취득", 900, 900),
+            (KR_NS, "회원권및가입권의 취득", 20, 0),
+            (
+                "dart_PurchaseOfIntangibleAssetsUnderDevelopment",
+                "건설중인무형자산의 취득",
+                30,
+                30,
+            ),
+            (KR_NS, "유형자산 취득세 환급", 17, 0),
+            (KR_NS, "렌탈자산 및 선급렌탈자산의 순증가", 10000, 9000),
+        ]
+        h1 = [
+            ("dart_PurchaseOfBuildings", "건물의 취득", 400, 0),
+            ("dart_PurchaseOfConstructionInProgress", "건설중인자산의 취득", 150, 600),
+            (KR_NS, "공구와 비품의 취득", 70, 45),
+        ] + noise
+        fy = [
+            ("dart_PurchaseOfBuildings", "건물의 취득", 1600, 0),
+            ("dart_PurchaseOfConstructionInProgress", "건설중인자산의 취득", 80, 900),
+            ("dart_PurchaseOfLand", "토지의 취득", 0, 0),
+            (KR_NS, "공구와비품의 취득", 120, 66),
+        ] + noise
+        r = self.capex(h1, fy)
+        self.assertEqual((r["status"], r["cfoTTM"]), ("ok", KR_CFO_TTM))
+        self.assertEqual(r["capexTTM"], 620 + 1800 - 645)
+        self.assertIn(fx.CAPEX_PARTS, r["issues"])
+        self.assertTrue(r["tags"]["capex"].startswith("parts:"))
+        self.assertEqual({c.get("capexKind") for c in r["components"][3:]}, {"parts"})
+
+    def test_part_rows_once_matched_by_name_are_summed(self):  # 롯데렌탈
+        h1 = [
+            (
+                "dart_PurchaseOfConstructionInProgress",
+                "건설중인유형자산의 취득",
+                84,
+                90,
+            ),
+            (
+                "dart_PurchaseOfOtherPropertyPlantAndEquipment",
+                "기타의 유형자산의 취득",
+                142,
+                171,
+            ),
+            (KR_NS, "건물 밎 구축물의 취득", 8, 27),
+            ("dart_PurchaseOfLand", "토지의 취득", 90, 348),
+            (KR_NS, "사용권자산의 증가", 106, 140),
+        ]
+        fy = [
+            (
+                "dart_PurchaseOfConstructionInProgress",
+                "건설중인유형자산의 취득",
+                124,
+                340,
+            ),
+            (
+                "dart_PurchaseOfOtherPropertyPlantAndEquipment",
+                "기타유형자산의 취득",
+                318,
+                556,
+            ),
+            (KR_NS, "건물 밎 구축물의 취득", 80, 228),
+            ("dart_PurchaseOfLand", "토지의 취득", 348, 230),
+        ]
+        r = self.capex(h1, fy)
+        self.assertEqual(
+            r["capexTTM"],
+            (84 + 142 + 8 + 90) + (124 + 318 + 80 + 348) - (90 + 171 + 27 + 348),
+        )
+        self.assertIn(fx.CAPEX_PARTS, r["issues"])
+
+    def test_an_other_ppe_line_is_not_taken_alone(self):  # DL이앤씨
+        h1 = [
+            ("dart_PurchaseOfConstructionInProgress", "건설중인자산의 취득", 79, 19),
+            ("dart_PurchaseOfMachinery", "기계장치의 취득", 143, 26),
+            (
+                "dart_PurchaseOfOtherPropertyPlantAndEquipment",
+                "기타유형자산의 취득",
+                268,
+                161,
+            ),
+            ("dart_PurchaseOfVehicles", "차량운반구의 취득", 0, 7),
+        ]
+        fy = [
+            ("dart_PurchaseOfConstructionInProgress", "건설중인자산의 취득", 31, 206),
+            ("dart_PurchaseOfMachinery", "기계장치의 취득", 752, 414),
+            (
+                "dart_PurchaseOfOtherPropertyPlantAndEquipment",
+                "기타유형자산의 취득",
+                885,
+                330,
+            ),
+            ("dart_PurchaseOfVehicles", "차량운반구의 취득", 31, 0),
+            ("ifrs-full_PurchaseOfInvestmentProperty", "투자부동산의 취득", 0, 689),
+        ]
+        r = self.capex(h1, fy)
+        self.assertEqual(
+            r["capexTTM"],
+            (79 + 143 + 268 + 0) + (31 + 752 + 885 + 31) - (19 + 26 + 161 + 7),
+        )
+
+    def test_a_combined_ppe_and_investment_property_line_is_flagged(self):  # KT
+        h1 = [
+            (KR_NS, "유형자산및투자부동산의 취득", 1184, 2029),
+            ("dart_PurchaseOfFinanceLeaseAssets", "사용권자산의 취득", 1, 2),
+            (
+                "ifrs-full_PurchaseOfIntangibleAssetsClassifiedAsInvestingActivities",
+                "무형자산의 취득",
+                491,
+                346,
+            ),
+        ]
+        fy = [(KR_NS, "유형자산및투자부동산의 취득", 3597, 2909)]
+        r = self.capex(h1, fy)
+        self.assertEqual(r["capexTTM"], 1184 + 3597 - 2029)
+        self.assertIn(fx.CAPEX_COMBINED, r["issues"])
+        self.assertNotIn(fx.CAPEX_PARTS, r["issues"])
+
+    def test_a_capex_line_wins_over_parts_and_other_assets(self):  # the other 164
+        extra = [
+            (
+                "dart_PurchaseOfOtherPropertyPlantAndEquipment",
+                "기타유형자산의 취득",
+                999,
+                999,
+            ),
+            ("dart_PurchaseOfLand", "토지의 취득", 5, 5),
+            ("ifrs-full_PurchaseOfInvestmentProperty", "투자부동산의 취득", 7, 7),
+            ("dart_PurchaseOfFinanceLeaseAssets", "사용권자산의 취득", 3, 3),
+            (KR_NS, "유형자산 취득세 환급", 17, 0),
+            (KR_NS, "유형자산및투자부동산의 취득", 11, 11),
+        ]
+        r = self.capex(extra, extra, keep=(True, True))
+        self.assertEqual(r["capexTTM"], KR_CAPEX_TTM)
+        self.assertEqual(r["tags"]["capex"], f"id:{KR_STD}")
+        self.assertFalse({fx.CAPEX_PARTS, fx.CAPEX_COMBINED} & set(r["issues"]))
+        self.assertFalse(any("capexKind" in c for c in r["components"]))
+
+    def test_a_capex_line_by_name_wins_over_parts(self):
+        h1 = [
+            (KR_NS, "유형자산의 취득", 500, 400),
+            ("dart_PurchaseOfLand", "토지의 취득", 50, 0),
+        ]
+        fy = [
+            (KR_NS, "유형자산의 취득", 900, 800),
+            ("dart_PurchaseOfLand", "토지의 취득", 60, 0),
+        ]
+        r = self.capex(h1, fy)
+        self.assertEqual(r["capexTTM"], 500 + 900 - 400)
+        self.assertTrue(r["tags"]["capex"].startswith("name:"))
+        self.assertNotIn(fx.CAPEX_PARTS, r["issues"])
+
+    def test_without_any_ppe_line_capex_stays_withheld(self):
+        others = [
+            ("ifrs-full_PurchaseOfInvestmentProperty", "투자부동산의 취득", 7, 7),
+            (
+                "ifrs-full_PurchaseOfIntangibleAssetsClassifiedAsInvestingActivities",
+                "무형자산의 취득",
+                9,
+                9,
+            ),
+            ("dart_PurchaseOfFinanceLeaseAssets", "사용권자산의 취득", 3, 3),
+            (KR_NS, "미지급금의 지급(유형자산 및 무형자산 취득)", 4, 4),
+            (KR_NS, "유형자산및무형자산의 취득", 8, 8),
+            (KR_NS, "유형자산 취득세 환급", 17, 0),
+            (KR_NS, "렌탈자산 및 선급렌탈자산의 순증가", 10000, 9000),
+        ]
+        r = self.capex(others, others)
+        self.assertEqual((r["status"], r["capexTTM"]), ("insufficient", None))
+        self.assertIn("capexTTM: not reported in 2026 H1", r["error"])
+        self.assertEqual(r["cfoTTM"], KR_CFO_TTM)
+
+    def test_parts_beside_a_combined_line_are_withheld(self):
+        h1 = [
+            (KR_NS, "유형자산및투자부동산의 취득", 10, 9),
+            ("dart_PurchaseOfLand", "토지의 취득", 1, 1),
+        ]
+        r = self.capex(h1, [(KR_NS, "유형자산및투자부동산의 취득", 20, 18)])
+        self.assertIsNone(r["capexTTM"])
+        self.assertIn("both reported", r["error"])
+
+    def test_a_part_without_an_amount_counts_zero_unless_every_part_lacks_it(self):
+        fy = [
+            ("dart_PurchaseOfLand", "토지의 취득", 30, 0),
+            ("dart_PurchaseOfMachinery", "기계장치의 취득", 70, 0),
+        ]
+        h1 = [
+            ("dart_PurchaseOfLand", "토지의 취득", 12, None),
+            ("dart_PurchaseOfMachinery", "기계장치의 취득", 8, 5),
+        ]
+        self.assertEqual(self.capex(h1, fy)["capexTTM"], 20 + 100 - 5)
+        h1 = [
+            ("dart_PurchaseOfLand", "토지의 취득", 12, None),
+            ("dart_PurchaseOfMachinery", "기계장치의 취득", 8, None),
+        ]
+        r = self.capex(h1, fy)
+        self.assertIsNone(r["capexTTM"])
+        self.assertIn("no amount for previousSamePeriod", r["error"])
+
+    def test_duplicate_part_rows(self):
+        fy = [("dart_PurchaseOfLand", "토지의 취득", 30, 0)]
+        same = [("dart_PurchaseOfLand", "토지의 취득", 12, 3)] * 2
+        self.assertEqual(self.capex(same, fy)["capexTTM"], 12 + 30 - 3)
+        differ = [
+            ("dart_PurchaseOfLand", "토지의 취득", 12, 3),
+            ("dart_PurchaseOfLand", "토지의 취득", 13, 3),
+        ]
+        r = self.capex(differ, fy)
+        self.assertIsNone(r["capexTTM"])
+        self.assertIn("conflicting rows", r["error"])
+
+    def test_capex_check_applies_to_summed_parts(self):
+        h1 = [
+            ("dart_PurchaseOfLand", "토지의 취득", 10, 80),
+            ("dart_PurchaseOfMachinery", "기계장치의 취득", 10, 30),
+        ]
+        fy = [
+            ("dart_PurchaseOfLand", "토지의 취득", 50, 0),
+            ("dart_PurchaseOfMachinery", "기계장치의 취득", 50, 0),
+        ]
+        r = self.capex(h1, fy)  # previous same period 110 above previous annual 100
+        self.assertIsNone(r["capexTTM"])
+        self.assertIn("reclassification", r["error"])
+        self.assertNotIn(fx.CAPEX_PARTS, r["issues"])
+
+    def test_reports_matched_differently(self):
+        h1 = [
+            ("dart_PurchaseOfLand", "토지의 취득", 10, 4),
+            ("dart_PurchaseOfMachinery", "기계장치의 취득", 6, 2),
+        ]
+        r = self.capex(h1, [], keep=(False, True))
+        self.assertEqual(r["capexTTM"], 16 + 47522179000000 - 6)
+        self.assertIn(fx.CAPEX_PARTS, r["issues"])
+        self.assertIn("capex matched differently across reports", r["notes"])
+
+    def test_a_combined_name_on_a_standard_id_is_flagged(self):
+        h1 = [(KR_STD, "유형자산및투자부동산의 취득", 10, 4)]
+        fy = [(KR_STD, "유형자산및투자부동산의 취득", 30, 20)]
+        r = self.capex(h1, fy)
+        self.assertEqual(r["capexTTM"], 10 + 30 - 4)
+        self.assertIn(fx.CAPEX_COMBINED, r["issues"])
+
+    def test_rules_describe_the_capex_tiers(self):
+        rules = fx.RULES["kr"]
+        self.assertNotIn("nameContains", rules["capex"])
+        self.assertEqual(rules["capex"]["names"], list(fx.KR_CAPEX["names"]))
+        self.assertEqual(len(rules["capexParts"]["ids"]), 13)
+        for excluded in (
+            "dart_PurchaseOfFinanceLeaseAssets",
+            "dart_PurchaseOfInvestmentProperty",
+        ):
+            self.assertNotIn(excluded, rules["capexParts"]["ids"])
+        self.assertEqual(rules["capexParts"]["issue"], fx.CAPEX_PARTS)
+        self.assertEqual(rules["capexCombined"]["issue"], fx.CAPEX_COMBINED)
+        hashed = rating.PROTOCOL["moduleRules"]["fundamentals"]["kr"]
+        for key in ("capex", "capexParts", "capexCombined", "capexCheck"):
+            self.assertEqual(hashed[key], json.loads(json.dumps(rules[key])))
+
+
+SUCCESSOR = dict(id="US:0000000002", market="US", ticker="SUCC", cik=2)
+JOINT_10Q = "0000000003-26-000010"  # filed by the predecessor (3) and the successor (2)
+NOTICE = "0000000002-26-000001"
+
+
+def companyfacts(cik, tags, cover=None):
+    facts = {"us-gaap": {t: {"units": {"USD": rows}} for t, rows in tags.items()}}
+    if cover:
+        unit = {"shares": cover}
+        facts["dei"] = {"EntityCommonStockSharesOutstanding": {"units": unit}}
+    return json.dumps(dict(cik=cik, entityName=f"Issuer {cik}", facts=facts)).encode()
+
+
+def successor_facts(**replace):
+    """The successor's companyfacts: only the joint 10-Q (H1 2026 and its comparative)."""
+    tags = {
+        TOTAL_CFO: [
+            fact("2026-01-01", "2026-06-30", 600, "2026-08-03", JOINT_10Q),
+            fact("2025-01-01", "2025-06-30", 450, "2026-08-03", JOINT_10Q),
+        ],
+        PPE: [
+            fact("2026-01-01", "2026-06-30", 170, "2026-08-03", JOINT_10Q),
+            fact("2025-01-01", "2025-06-30", 140, "2026-08-03", JOINT_10Q),
+        ],
+        "Assets": [
+            fact(None, "2025-12-31", 5000, "2026-08-03", JOINT_10Q),
+            fact(None, "2026-06-30", 5200, "2026-08-03", JOINT_10Q),
+        ],
+    }
+    tags.update(replace)
+    cover = [fact(None, "2026-07-25", 990_000, "2026-08-03", JOINT_10Q)]
+    return companyfacts(2, tags, cover)
+
+
+def predecessor_facts(cik=3, cfo_h1=450, extra=None):
+    """The predecessor's own FY2025 10-K and H1 2025 10-Q (before the notice)."""
+    k, q = "0000000003-26-000001", "0000000003-25-000003"
+    tags = {
+        TOTAL_CFO: [
+            fact("2025-01-01", "2025-12-31", 1000, "2026-02-10", k, "10-K"),
+            fact("2025-01-01", "2025-06-30", cfo_h1, "2025-08-01", q),
+        ],
+        PPE: [
+            fact("2025-01-01", "2025-12-31", 300, "2026-02-10", k, "10-K"),
+            fact("2025-01-01", "2025-06-30", 140, "2025-08-01", q),
+        ],
+        "Assets": [fact(None, "2025-12-31", 5000, "2026-02-10", k, "10-K")],
+    }
+    for tag, rows in (extra or {}).items():
+        tags[tag] = tags.get(tag, []) + rows
+    cover = [fact(None, "2026-01-31", 1_000_000, "2026-02-10", k, "10-K")]
+    return companyfacts(cik, tags, cover)
+
+
+def successor_submissions(*rows):
+    """(form, accession, filingDate, reportDate) rows; default: notice then joint 10-Q."""
+    rows = rows or (
+        ("8-K12B", NOTICE, "2026-07-01", ""),
+        ("10-Q", JOINT_10Q, "2026-08-03", "2026-06-30"),
+    )
+    names = ("form", "accessionNumber", "filingDate", "reportDate")
+    recent = {name: [r[i] for r in rows] for i, name in enumerate(names)}
+    recent["isXBRL"] = [1] * len(rows)
+    return json.dumps(dict(cik="0000000002", filings=dict(recent=recent))).encode()
+
+
+def edgar_header(accession=JOINT_10Q, ciks=(3, 2)):
+    filers = "".join(
+        f"<FILER>\n<COMPANY-DATA>\n<CONFORMED-NAME>CO {c}\n<CIK>{c:010d}\n"
+        "</COMPANY-DATA>\n</FILER>\n"
+        for c in ciks
+    )
+    return (
+        f"<SEC-HEADER>{accession}.hdr.sgml : 20260803\n<ACCESSION-NUMBER>"
+        f"{accession}\n<TYPE>10-Q\n{filers}"
+    ).encode()
+
+
+class PredecessorTests(unittest.TestCase):
+    """RULES us.predecessor (D21): ExxonMobil Holdings (CIK 2115436), the successor
+    registrant of Exxon Mobil Corp (CIK 34088) since 2026-07-01, files with it jointly.
+    """
+
+    def collect(
+        self,
+        facts=None,
+        submissions=None,
+        originals=None,
+        as_of="2026-10-05",
+        retrieved=SUBMISSIONS_RETRIEVED,
+    ):
+        found = {
+            "sec-facts-CIK0000000002": facts or successor_facts(),
+            f"sec-filing-header-{JOINT_10Q}": edgar_header(),
+            "sec-facts-CIK0000000003": predecessor_facts(),
+        }
+        found.update(originals or {})
+        self.calls = []
+
+        def fetch(url, key, **kwargs):
+            self.calls.append(key)
+            value = found.get(key)
+            if value is None:
+                raise FetchError(f"No stored original for {key}")
+            if isinstance(value, Exception):
+                raise value
+            if isinstance(value, tuple):  # (bytes, httpStatus)
+                return value[0], dict(manifest(key), httpStatus=value[1])
+            return value, manifest(key)
+
+        def latest(key):
+            if key == "sec-submissions-0000000002":
+                blob = submissions or successor_submissions()
+                return blob, manifest(key, retrieved)
+            raise FetchError(f"No stored original for {key}")
+
+        with mock.patch.object(fx, "fetch", side_effect=fetch), mock.patch.object(
+            fx, "latest", side_effect=latest
+        ):
+            return fx.collect(SUCCESSOR, as_of, online=False)
+
+    def test_the_predecessor_fills_the_trailing_year(self):
+        r = self.collect()
+        self.assertEqual((r["status"], r["method"]), ("ok", "ytd"))
+        self.assertEqual(
+            (r["cfoTTM"], r["capexTTM"]), (600 + 1000 - 450, 170 + 300 - 140)
+        )
+        self.assertEqual(
+            (r["assets"], r["shares"]), (5200, 990_000)
+        )  # never the predecessor's
+        self.assertEqual(r["issues"], [fx.PREDECESSOR_ISSUE])
+        check = r["predecessorCheck"]
+        self.assertEqual((check["status"], check["predecessor"]), ("used", 3))
+        self.assertEqual(check["candidates"][0]["equal"], 3)
+        self.assertIn("/edgar/data/3/000000000326000001/", r["filings"][0]["url"])
+        self.assertEqual(
+            self.calls,
+            [
+                "sec-facts-CIK0000000002",
+                f"sec-filing-header-{JOINT_10Q}",
+                "sec-facts-CIK0000000003",
+            ],
+        )
+
+    def test_without_a_notice_nothing_is_fetched(self):  # spin-offs (HONA)
+        submissions = successor_submissions(
+            ("10-Q", JOINT_10Q, "2026-08-03", "2026-06-30")
+        )
+        r = self.collect(submissions=submissions)
+        self.assertEqual((r["status"], r["cfoTTM"]), ("insufficient", None))
+        self.assertNotIn("predecessorCheck", r)
+        self.assertEqual(self.calls, ["sec-facts-CIK0000000002"])
+
+    def test_the_notice_must_fall_inside_the_window_before_asof(self):
+        for filed, used in (("2025-05-25", False), ("2025-05-26", True)):
+            submissions = successor_submissions(
+                ("8-K12B", NOTICE, filed, ""),
+                ("10-Q", JOINT_10Q, "2026-08-03", "2026-06-30"),
+            )
+            r = self.collect(submissions=submissions)
+            self.assertEqual("predecessorCheck" in r, used, filed)
+        late = successor_submissions(
+            ("10-Q", JOINT_10Q, "2026-08-03", "2026-06-30"),
+            ("8-K12B", NOTICE, "2026-10-05", ""),
+        )
+        self.assertNotIn("predecessorCheck", self.collect(submissions=late))
+        amended = successor_submissions(
+            ("8-K12B/A", NOTICE, "2026-07-01", ""),
+            ("10-Q", JOINT_10Q, "2026-08-03", "2026-06-30"),
+        )
+        self.assertNotIn("predecessorCheck", self.collect(submissions=amended))
+
+    def test_an_own_trailing_year_never_consults_a_predecessor(self):
+        annual = fact("2025-01-01", "2025-12-31", 1000, "2026-08-03", JOINT_10Q, "10-K")
+        facts = successor_facts(
+            **{
+                TOTAL_CFO: [
+                    fact("2026-01-01", "2026-06-30", 600, "2026-08-03", JOINT_10Q),
+                    fact("2025-01-01", "2025-06-30", 450, "2026-08-03", JOINT_10Q),
+                    annual,
+                ]
+            }
+        )
+        r = self.collect(facts=facts)
+        self.assertEqual(r["cfoTTM"], 1150)
+        self.assertNotIn("predecessorCheck", r)
+        self.assertEqual(self.calls, ["sec-facts-CIK0000000002"])
+
+    def test_records_that_stand(self):
+        cases = [
+            (
+                dict(
+                    submissions=successor_submissions(
+                        ("8-K12B", NOTICE, "2026-07-01", "")
+                    )
+                ),
+                "no_report",
+            ),
+            (
+                dict(
+                    originals={
+                        f"sec-filing-header-{JOINT_10Q}": edgar_header(ciks=(2,))
+                    }
+                ),
+                "no_coregistrant",
+            ),
+            (
+                dict(
+                    originals={
+                        f"sec-filing-header-{JOINT_10Q}": edgar_header(ciks=(3, 9))
+                    }
+                ),
+                "unavailable",
+            ),
+            (
+                dict(
+                    originals={
+                        f"sec-filing-header-{JOINT_10Q}": edgar_header(
+                            "0000000003-26-000099"
+                        )
+                    }
+                ),
+                "unavailable",
+            ),
+            (dict(originals={f"sec-filing-header-{JOINT_10Q}": None}), "unavailable"),
+            (
+                dict(
+                    originals={"sec-facts-CIK0000000003": predecessor_facts(cfo_h1=451)}
+                ),
+                "unmatched",
+            ),
+            (
+                dict(
+                    originals={
+                        "sec-facts-CIK0000000003": (b'{"message":"Not Found"}', 404)
+                    }
+                ),
+                "unmatched",
+            ),
+        ]
+        for kwargs, status in cases:
+            with self.subTest(status=status, kwargs=list(kwargs)):
+                r = self.collect(**kwargs)
+                self.assertEqual((r["status"], r["cfoTTM"]), ("insufficient", None))
+                self.assertEqual(r["predecessorCheck"]["status"], status)
+                self.assertNotIn(fx.PREDECESSOR_ISSUE, r["issues"])
+                self.assertTrue(
+                    any(n.startswith("predecessor not used") for n in r["notes"])
+                )
+
+    def test_joint_filing_rows_on_a_candidate_are_not_its_own(self):
+        # SEC also gives a parent's joint filings to its co-registrant subsidiaries (Duke
+        # Energy Progress shows DUK's CFO): rows under the member's own accessions, even
+        # ones filed before the notice, never make a candidate look like the member.
+        older = "0000000002-25-000004"  # the member's own earlier joint 10-Q
+        own = [fact("2025-01-01", "2025-06-30", 450, "2025-08-01", older)]
+        facts = successor_facts(
+            **{
+                TOTAL_CFO: own
+                + [fact("2026-01-01", "2026-06-30", 600, "2026-08-03", JOINT_10Q)],
+                "Assets": [
+                    fact(None, "2025-06-30", 4900, "2025-08-01", older),
+                    fact(None, "2026-06-30", 5200, "2026-08-03", JOINT_10Q),
+                ],
+            }
+        )
+        joint = companyfacts(
+            3,
+            {
+                TOTAL_CFO: own,
+                "Assets": [fact(None, "2025-06-30", 4900, "2025-08-01", older)],
+            },
+        )
+        submissions = successor_submissions(
+            ("10-Q", older, "2025-08-01", "2025-06-30"),
+            ("8-K12B", NOTICE, "2026-07-01", ""),
+            ("10-Q", JOINT_10Q, "2026-08-03", "2026-06-30"),
+        )
+        r = self.collect(
+            facts=facts,
+            submissions=submissions,
+            originals={"sec-facts-CIK0000000003": joint},
+        )
+        self.assertEqual(r["predecessorCheck"]["status"], "unmatched")
+        self.assertEqual(r["predecessorCheck"]["candidates"][0]["equal"], 0)
+
+    def test_two_qualifying_candidates_are_ambiguous(self):
+        r = self.collect(
+            originals={
+                f"sec-filing-header-{JOINT_10Q}": edgar_header(ciks=(3, 4, 2)),
+                "sec-facts-CIK0000000004": predecessor_facts(cik=4),
+            }
+        )
+        self.assertEqual(r["predecessorCheck"]["status"], "ambiguous")
+        self.assertIsNone(r["cfoTTM"])
+
+    def test_predecessor_filings_after_the_notice_are_not_read(self):
+        restated = fact(
+            "2025-01-01",
+            "2025-12-31",
+            999,
+            "2026-08-15",
+            "0000000003-26-000020",
+            "10-K/A",
+        )
+        facts = predecessor_facts(extra={TOTAL_CFO: [restated]})
+        r = self.collect(originals={"sec-facts-CIK0000000003": facts})
+        self.assertEqual(r["cfoTTM"], 1150)
+
+    def test_the_predecessor_also_follows_a_filing_xbrl_supplement(self):
+        # companyfacts lags the successor's own Q3 10-Q: the supplement reads it, then
+        # the predecessor's pre-notice periods fill the trailing year.
+        q3 = "0000000002-26-000020"
+        submissions = successor_submissions(
+            ("8-K12B", NOTICE, "2026-07-01", ""),
+            ("10-Q", JOINT_10Q, "2026-08-03", "2026-06-30"),
+            ("10-Q", q3, "2026-11-03", "2026-09-30"),
+        )
+        nine = ("2026-01-01", "2026-09-30")
+        before = ("2025-01-01", "2025-09-30")
+        added = {
+            "us-gaap": {
+                TOTAL_CFO: {
+                    "units": {
+                        "USD": [
+                            fact(*nine, 900, "2026-11-03", q3),
+                            fact(*before, 700, "2026-11-03", q3),
+                        ]
+                    }
+                },
+                PPE: {
+                    "units": {
+                        "USD": [
+                            fact(*nine, 250, "2026-11-03", q3),
+                            fact(*before, 210, "2026-11-03", q3),
+                        ]
+                    }
+                },
+                "Assets": {
+                    "units": {"USD": [fact(None, "2026-09-30", 5300, "2026-11-03", q3)]}
+                },
+            }
+        }
+        info = dict(
+            status="read",
+            form="10-Q",
+            accession=q3,
+            periodEnd="2026-09-30",
+            filedAt="2026-11-03",
+            instance="succ-20260930_htm.xml",
+            facts=5,
+            amendments=[],
+        )
+        with mock.patch.object(fx, "_us_filing", return_value=([added], info)):
+            r = self.collect(
+                submissions=submissions,
+                as_of="2026-11-30",
+                retrieved="2026-12-01T00:00:00+00:00",
+            )
+        self.assertEqual(r["status"], "ok")
+        self.assertEqual(
+            (r["cfoTTM"], r["capexTTM"]), (900 + 1000 - 700, 250 + 300 - 210)
+        )
+        self.assertEqual(r["issues"], [fx.SUPPLEMENT_ISSUE, fx.PREDECESSOR_ISSUE])
+        self.assertEqual(r["predecessorCheck"]["status"], "used")
+        self.assertTrue(any(n.startswith(fx.SUPPLEMENT_ISSUE) for n in r["notes"]))
+
+    def test_an_online_retrieval_failure_is_an_error(self):
+        result = dict(cfoTTM=None, periodEnd="2026-06-30", notes=[], issues=[])
+        failing = mock.patch.object(fx, "fetch", side_effect=FetchError("HTTP 503"))
+        submissions = mock.patch.object(
+            fx,
+            "latest",
+            return_value=(
+                successor_submissions(),
+                manifest("s", SUBMISSIONS_RETRIEVED),
+            ),
+        )
+        with failing, submissions, self.assertRaises(FetchError):
+            fx._us_predecessor(
+                SUCCESSOR, {"cik": 2}, "2026-10-05", result, True, {}, []
+            )
+
+    def test_rules_and_protocol_describe_the_predecessor(self):
+        rules = fx.RULES["us"]["predecessor"]
+        self.assertEqual(rules["successorForms"], ["8-K12B", "8-K12G3", "8-K15D5"])
+        self.assertEqual(rules["predecessorDays"], 400)
+        self.assertEqual(rules["issue"], fx.PREDECESSOR_ISSUE)
+        hashed = rating.PROTOCOL["moduleRules"]["fundamentals"]["us"]["predecessor"]
+        self.assertEqual(hashed, json.loads(json.dumps(rules)))
+        self.assertIn(
+            "us.predecessor", rating.PROTOCOL["pointInTime"]["fundamentalsSource"]
+        )
 
 
 class SeparateStatementTests(unittest.TestCase):

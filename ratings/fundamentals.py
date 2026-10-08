@@ -80,6 +80,12 @@ BALANCE_SHARES = ("us-gaap", "CommonStockSharesOutstanding")
 # from its own XBRL instance in the EDGAR archives.
 SUPPLEMENT_ISSUE = "filing_xbrl_supplement"
 SUPPLEMENT_FAILED = "filing_xbrl_unavailable"
+# A successor issuer under a new CIK (RULES us.predecessor, D21): its predecessor's own
+# filings made before the succession notice fill the trailing year.
+SUCCESSOR_FORMS = ("8-K12B", "8-K12G3", "8-K15D5")
+PREDECESSOR_DAYS = 400
+PREDECESSOR_ISSUE = "predecessor_facts"
+PREDECESSOR_TAGS = US_CFO + US_CAPEX_COMPARE + ("Assets",)
 XBRLI = "http://www.xbrl.org/2003/instance"
 XSI_NIL = "{http://www.w3.org/2001/XMLSchema-instance}nil"
 CIK_SCHEME = "http://www.sec.gov/CIK"
@@ -134,8 +140,64 @@ KR_CAPEX = dict(
         "ifrs-full_PurchaseOfPropertyPlantAndEquipment",
     ),
     prefix="ifrs-full_PurchaseOfPropertyPlantAndEquipment",
-    contains="유형자산의취득",
+    names=("유형자산의취득", "유형자산취득", "투자활동으로분류된유형자산의취득"),
 )
+# A report without a capex line (RULES kr.capexParts, D20): the per-asset PP&E acquisition
+# lines, by DART taxonomy id or, for a row without a standard id, by name.
+KR_NONSTANDARD_ID = "-표준계정코드 미사용-"
+KR_CAPEX_PART_IDS = (
+    "dart_PurchaseOfLand",
+    "dart_PurchaseOfBuildings",
+    "dart_PurchaseOfStructure",
+    "dart_PurchaseOfMachinery",
+    "dart_PurchaseOfVehicles",
+    "dart_PurchaseOfShips",
+    "dart_PurchaseOfAircraft",
+    "dart_PurchaseOfMotorVehicles",
+    "dart_PurchaseOfFixturesAndFittings",
+    "dart_PurchaseOfOfficeEquipment",
+    "dart_PurchaseOfTangibleExplorationAndEvaluationAssets",
+    "dart_PurchaseOfConstructionInProgress",
+    "dart_PurchaseOfOtherPropertyPlantAndEquipment",
+)
+KR_CAPEX_PART_NOUNS = (
+    "토지",
+    "건물",
+    "구축물",
+    "기계장치",
+    "차량운반구",
+    "선박",
+    "비행기",
+    "항공기",
+    "자동차",
+    "집기",
+    "비품",
+    "사무용비품",
+    "집기비품",
+    "공구",
+    "기구",
+    "공기구",
+    "공구기구",
+    "공기구비품",
+    "시설장치",
+    "금형",
+    "임차개량자산",
+    "건설중인자산",
+    "건설중인유형자산",
+    "유형탐사평가자산",
+    "기타유형자산",
+    "기타의유형자산",
+)
+KR_CAPEX_PART_JOINERS = ("및", "밎", "와", "과", ",", "ㆍ", "·")
+_NOUN = "(?:" + "|".join(sorted(KR_CAPEX_PART_NOUNS, key=len, reverse=True)) + ")"
+_JOIN = "(?:" + "|".join(map(re.escape, KR_CAPEX_PART_JOINERS)) + ")"
+KR_CAPEX_PART_NAME = rf"{_NOUN}(?:{_JOIN}{_NOUN})*의?취득"
+# Neither a capex line nor parts (RULES kr.capexCombined): PP&E with investment property.
+KR_CAPEX_COMBINED_NAME = (
+    r"(?:유형자산(?:및|과|,|ㆍ|·)투자부동산|투자부동산(?:및|과|,|ㆍ|·)유형자산)의?취득"
+)
+CAPEX_PARTS = "capex_parts_summed"
+CAPEX_COMBINED = "capex_includes_investment_property"
 KR_ASSETS = dict(ids=("ifrs-full_Assets",), names=("자산총계",))
 KR_OPENING_CASH = dict(
     ids=(
@@ -151,7 +213,7 @@ REQUIRED = {
 }
 
 RULES = dict(
-    version="ratings-v1-fundamentals-4",
+    version="ratings-v1-fundamentals-5",
     status="ok only when every REQUIRED field is present; otherwise insufficient "
     "with the available fields kept and the reasons in error",
     required={k: list(v) for k, v in REQUIRED.items()},
@@ -209,6 +271,48 @@ RULES = dict(
         "if cover is absent or both checks agree against it; otherwise withheld",
         multiValueCover="sum (distinct classes) or largest (reported total) only "
         "when it agrees with a check count; otherwise not used",
+        predecessor=dict(
+            when="a US record with a periodEnd but no cfoTTM whose lag check (lag.us) "
+            "is ok, with or without the filing XBRL supplement (the member's facts are "
+            "then companyfacts with the supplement's), and whose SEC submissions "
+            "original lists a successor-issuer notice: "
+            "an original successorForms filing filed on or before asOf - 1 day and on "
+            "or after periodEnd - predecessorDays; the latest such notice is used",
+            successorForms=list(SUCCESSOR_FORMS),
+            predecessorDays=PREDECESSOR_DAYS,
+            report="the member's first original 10-K/10-Q in that submissions original "
+            "filed on or after the notice and on or before asOf - 1 day",
+            header="that report's EDGAR SGML header "
+            "https://www.sec.gov/Archives/edgar/data/<member cik>/<accession without "
+            "dashes>/<accession>.hdr.sgml (sec-filing-header-<accession>); it must "
+            "name that accession and list the member's CIK as a FILER; every other "
+            "FILER CIK is a candidate",
+            facts="a candidate's SEC companyfacts (sec-facts-CIK<cik>): only us-gaap "
+            "USD facts of the cfo, capexCompare and Assets tags whose form is in forms, "
+            "filed before the notice and on or before asOf - 1 day, whose accession is "
+            "none of the member's (its submissions original or its companyfacts)",
+            same="a candidate is the predecessor when every (tag, period) that its "
+            "facts and the member's facts both report (latest usable filing per period "
+            "on each side; a conflicting period counts as a difference) has the same "
+            "value, and they share at least one cfo duration and one us-gaap:Assets "
+            "instant; exactly one candidate must qualify, otherwise none is used",
+            use="the predecessor's facts join the member's (pointInTime: per period "
+            "the latest filing wins, so the member's own filings decide every period "
+            "both report) and the record is formed again by the same rules; that "
+            "record replaces it only when it has cfoTTM at the same periodEnd; issue "
+            "predecessor_facts; predecessorCheck records the notice, the report, the "
+            "header, each candidate's comparison and the predecessor; the "
+            "predecessor's filings are listed with its CIK; share counts never come "
+            "from the predecessor",
+            otherwise="the record stands, with predecessorCheck status no_report, "
+            "no_coregistrant, unmatched, ambiguous, unused or unavailable (offline "
+            "without a stored header or companyfacts, or a header that does not name "
+            "the report or list the member) and a note; a candidate whose companyfacts "
+            "answers HTTP 404 has no facts; any other online retrieval failure of the "
+            "header or of a candidate's companyfacts makes the record an error "
+            "(collected again)",
+            issue=PREDECESSOR_ISSUE,
+        ),
         filingXbrl=dict(
             when="the lag check (lag.us) finds its latestReport later than the "
             "companyfacts periodEnd",
@@ -290,12 +394,51 @@ RULES = dict(
         capex=dict(
             ids=list(KR_CAPEX["ids"]),
             prefix=KR_CAPEX["prefix"],
-            nameContains=KR_CAPEX["contains"],
+            names=list(KR_CAPEX["names"]),
             absolute=True,
+            rule="per report the capex line is the first CF row found by ids (in "
+            "order), then prefix, then a normalized account_nm (whitespace and "
+            "leading numbering removed) equal to one of names, a capexParts id never "
+            "being taken by name; rows of one tier with different amounts withhold "
+            "capex",
+        ),
+        capexParts=dict(
+            ids=list(KR_CAPEX_PART_IDS),
+            nonStandardId=KR_NONSTANDARD_ID,
+            nouns=list(KR_CAPEX_PART_NOUNS),
+            joiners=list(KR_CAPEX_PART_JOINERS),
+            name="NOUN(?:JOIN NOUN)*의?취득, fully matched, with NOUN the nouns "
+            "longest first and JOIN the joiners",
+            rule="only when a report has no capex line: that report's capex is the "
+            "sum of the absolute amounts of every CF row that is a part, i.e. "
+            "account_id in ids, or account_id equal to nonStandardId with a "
+            "normalized account_nm fully matching name; each (account_id, normalized "
+            "name) counts once (an identical duplicate once; the same pair with "
+            "different amounts withholds capex); a part without an amount for a "
+            "period counts 0 unless no part has one (then 'no amount for <role>'); "
+            "the previous same period is read from the same rows as the current "
+            "period; a row with one of ids is a part whatever its name, and a row "
+            "with nonStandardId only when its name matches, which a name for "
+            "right-of-use or finance lease, investment property, intangible or "
+            "rental assets never does",
+            issue=CAPEX_PARTS,
+        ),
+        capexCombined=dict(
+            name=KR_CAPEX_COMBINED_NAME,
+            rule="only when a report has neither a capex line nor parts: the CF row "
+            "whose normalized account_nm fully matches name (property, plant and "
+            "equipment together with investment property) is that report's capex "
+            "line, rows with different amounts withholding capex; a report with both "
+            "parts and such a row withholds capex; its scope includes investment "
+            "property, so the record carries the issue, as it does when a capex "
+            "line's own name fully matches name",
+            issue=CAPEX_COMBINED,
         ),
         assets=dict(ids=list(KR_ASSETS["ids"]), names=list(KR_ASSETS["names"])),
         capexCheck="previous same cumulative period above previous annual "
-        "withholds capex",
+        "withholds capex, whether a report's capex came from its capex line, its "
+        "parts or a combined line; capex_parts_summed and "
+        "capex_includes_investment_property are added only when capexTTM is formed",
         currency="KRW only",
     ),
     lag=dict(
@@ -369,6 +512,10 @@ def collect(member: dict, as_of, online: bool = True) -> dict:
             if check["status"] == "lag":
                 result, check = _us_supplement(
                     member, body, as_of, result, check, online, headers, amendments
+                )
+            elif check["status"] == "ok":
+                result = _us_predecessor(
+                    member, body, as_of, result, online, headers, sources
                 )
             return _apply_lag(result, check, "companyfacts_lag")
         if market == "KR":
@@ -876,7 +1023,7 @@ def _us(member: dict, body: dict, as_of: str, sources: list) -> dict:
             accession=f["accn"],
             form=f["form"],
             filedAt=f["filed"],
-            url=f"https://www.sec.gov/Archives/edgar/data/{cik}/"
+            url=f"https://www.sec.gov/Archives/edgar/data/{f.get('cik') or cik}/"
             f"{f['accn'].replace('-', '')}/{f['accn']}-index.html",
         )
         for f in used
@@ -982,6 +1129,211 @@ def _us_lag(cik: int, as_of: str, period_end, online: bool, headers, sources):
     return _us_verdict(check, period_end), amendments
 
 
+def _brief_filing(row: dict) -> dict:
+    return {k: row.get(k) for k in ("form", "accession", "filedAt", "periodEnd")}
+
+
+def _header_filers(blob: bytes, accession: str) -> list:
+    """FILER CIKs of an EDGAR SGML header (.hdr.sgml) that names ``accession``."""
+    text = blob.decode("latin-1")
+    found = re.search(r"<ACCESSION-NUMBER>\s*([0-9-]+)", text)
+    if not found or found.group(1) != accession:
+        raise ValueError(f"the header does not name {accession}")
+    filers = [
+        int(cik)
+        for block in re.findall(r"<FILER>(.*?)</FILER>", text, re.S)
+        for cik in re.findall(r"<CIK>\s*(\d+)", block)[:1]
+    ]
+    if not filers:
+        raise ValueError(f"the header of {accession} lists no filer")
+    return filers
+
+
+def _accessions(facts: dict) -> set:
+    return {
+        row.get("accn")
+        for tags in facts.values()
+        for tag in tags.values()
+        for rows in (tag.get("units") or {}).values()
+        for row in rows
+    }
+
+
+def _predecessor_facts(body: dict, cik: int, before: str, through: str, own) -> dict:
+    """A candidate's cfo, capexCompare and Assets USD facts filed before the notice
+    (and on or before ``through``) under accessions that are not the member's."""
+    out = {}
+    for tag in PREDECESSOR_TAGS:
+        units = (body.get("facts") or {}).get("us-gaap", {}).get(tag, {}).get("units")
+        rows = [
+            dict(r, cik=cik)
+            for r in (units or {}).get("USD", [])
+            if r.get("form") in FORMS
+            and r.get("filed")
+            and r["filed"] < before
+            and r["filed"] <= through
+            and r.get("accn") not in own
+        ]
+        if rows:
+            out.setdefault("us-gaap", {})[tag] = {"units": {"USD": rows}}
+    return out
+
+
+def _same_entity(facts: dict, added: dict, through: str) -> tuple:
+    """(qualifies, detail): every period both report has one equal value, among them
+    at least one CFO duration and one Assets instant (RULES us.predecessor.same)."""
+    equal, differ, cfo, assets = 0, [], 0, 0
+    for tag in PREDECESSOR_TAGS:
+        mine, mine_conflicts = _view(facts, "us-gaap", tag, "USD", through)
+        theirs, their_conflicts = _view(added, "us-gaap", tag, "USD", through)
+        common = (set(mine) | set(mine_conflicts)) & (
+            set(theirs) | set(their_conflicts)
+        )
+        for period in sorted(common, key=lambda q: (q[1], q[0] or "")):
+            a, b = mine.get(period), theirs.get(period)
+            if a is None or b is None or a["val"] != b["val"]:
+                differ.append(
+                    f"us-gaap:{tag} {period[0] or ''}..{period[1]}: "
+                    f"{a and a['val']} vs {b and b['val']}"
+                )
+                continue
+            equal += 1
+            cfo += tag in US_CFO and period[0] is not None
+            assets += tag == "Assets" and period[0] is None
+    detail = dict(equal=equal, differ=differ[:5], cfoPeriods=cfo, assetsInstants=assets)
+    return not differ and cfo >= 1 and assets >= 1, detail
+
+
+def _stands(result: dict, info: dict, status: str, reason: str) -> dict:
+    info.update(status=status, reason=reason)
+    result["notes"].append(f"predecessor not used ({status}): {reason}")
+    return result
+
+
+def _us_predecessor(
+    member: dict, body: dict, as_of: str, result: dict, online, headers, sources
+) -> dict:
+    """RULES us.predecessor (D21): a successor issuer under a new CIK whose own facts
+    cannot form the trailing year takes the missing periods from its predecessor's
+    filings made before the succession notice. The predecessor is the one other filer
+    of the member's first periodic report after the notice whose own reports give the
+    same value for every period both report. Members without a recent notice cost no
+    request."""
+    if result["cfoTTM"] is not None or result["periodEnd"] is None:
+        return result
+    cik, through = int(body["cik"]), _through(as_of)
+    try:
+        blob, _ = latest(f"sec-submissions-{cik:010d}")
+        rows = _us_filings(json.loads(blob), cik)
+    except (FetchError, ValueError):
+        return result
+    floor = _shift(result["periodEnd"], -PREDECESSOR_DAYS)
+    notices = [
+        r
+        for r in rows
+        if r["form"] in SUCCESSOR_FORMS
+        and r["filedAt"]
+        and floor <= r["filedAt"] <= through
+    ]
+    if not notices:
+        return result
+    notice = max(notices, key=lambda r: (r["filedAt"], r["accession"]))
+    info = dict(
+        status=None,
+        notice=_brief_filing(notice),
+        report=None,
+        header=None,
+        candidates=[],
+        predecessor=None,
+        reason=None,
+    )
+    result["predecessorCheck"] = info
+    after = [
+        r
+        for r in rows
+        if r["form"] in LAG_FORMS
+        and r["periodEnd"]
+        and r["filedAt"]
+        and notice["filedAt"] <= r["filedAt"] <= through
+    ]
+    if not after:
+        return _stands(result, info, "no_report", "no 10-K/10-Q filed after the notice")
+    report = min(after, key=lambda r: (r["filedAt"], r["accession"]))
+    info["report"] = _brief_filing(report)
+    accession = report["accession"]
+    url = SEC_ARCHIVE_URL.format(cik=cik, folder=accession.replace("-", ""))
+    try:
+        blob, manifest = fetch(
+            f"{url}{accession}.hdr.sgml",
+            f"sec-filing-header-{accession}",
+            provider="SEC",
+            online=online,
+            headers=dict(headers, Accept="text/plain") if headers else None,
+            suffix=".sgml",
+        )
+    except FetchError as exc:
+        if online:
+            raise
+        return _stands(result, info, "unavailable", str(exc))
+    sources.append(manifest)
+    info["header"] = manifest.get("key")
+    try:
+        filers = _header_filers(blob, accession)
+    except ValueError as exc:
+        return _stands(result, info, "unavailable", str(exc))
+    if cik not in filers:
+        return _stands(
+            result, info, "unavailable", "the header does not list the member"
+        )
+    others = sorted(set(filers) - {cik})
+    if not others:
+        why = f"{report['form']} {accession} has no other filer"
+        return _stands(result, info, "no_coregistrant", why)
+    facts = body.get("facts") or {}
+    own = {r["accession"] for r in rows} | _accessions(facts)
+    passing = []
+    for other in others:
+        try:
+            pblob, pmanifest = fetch(
+                SEC_URL.format(cik=other),
+                f"sec-facts-CIK{other:010d}",
+                provider="SEC",
+                online=online,
+                headers=headers,
+                keep_status=(404,),
+            )
+        except FetchError as exc:
+            if online:
+                raise
+            return _stands(result, info, "unavailable", str(exc))
+        sources.append(pmanifest)
+        pbody = {} if pmanifest.get("httpStatus") == 404 else json.loads(pblob)
+        if pbody and int(pbody.get("cik", -1)) != other:
+            pbody = {}
+        added = _predecessor_facts(pbody, other, notice["filedAt"], through, own)
+        ok, detail = _same_entity(facts, added, through)
+        info["candidates"].append(dict(cik=other, same=ok, **detail))
+        if ok:
+            passing.append((other, added))
+    if len(passing) != 1:
+        status = "ambiguous" if passing else "unmatched"
+        return _stands(result, info, status, f"{len(passing)} candidates qualify")
+    other, added = passing[0]
+    fresh = _us(member, dict(body, facts=_merged(facts, added)), as_of, sources)
+    if fresh["cfoTTM"] is None or fresh["periodEnd"] != result["periodEnd"]:
+        return _stands(result, info, "unused", fresh["error"] or "periodEnd moved")
+    fresh["issues"] = list(dict.fromkeys(result["issues"] + fresh["issues"]))
+    fresh["issues"].append(PREDECESSOR_ISSUE)
+    fresh["notes"] = list(dict.fromkeys(result["notes"] + fresh["notes"]))
+    fresh["notes"].append(
+        f"{PREDECESSOR_ISSUE}: CIK {other:010d}, a filer of {report['form']} "
+        f"{accession}, fills the trailing year with its filings before "
+        f"{notice['form']} {notice['accession']} ({notice['filedAt']})"
+    )
+    fresh["predecessorCheck"] = dict(info, status="used", predecessor=other)
+    return fresh
+
+
 def _us_verdict(check: dict, period_end) -> dict:
     """The lag verdict of a check whose latestReport is known, for ``period_end``."""
     report = check["latestReport"]
@@ -1048,6 +1400,9 @@ def _us_supplement(
                 f"{info['periodEnd']} filed {info['filedAt']} read from its XBRL "
                 f"instance {info['instance']} ({info['facts']} facts){amended}; "
                 f"companyfacts latest period {result['periodEnd']}"
+            )
+            fresh = _us_predecessor(  # D21 on the facts the record was formed from
+                member, dict(body, facts=merged), as_of, fresh, online, headers, sources
             )
             return fresh, dict(verdict, supplement=info)
         info = dict(
@@ -1642,6 +1997,86 @@ def _kr_find(
     return None, "not reported"
 
 
+def _kr_amounts(row: dict) -> tuple:
+    return tuple(_amount(v) for k, v in sorted(row.items()) if k.endswith("_amount"))
+
+
+def _kr_part(row: dict) -> bool:
+    """A per-asset PP&E acquisition line (RULES kr.capexParts)."""
+    account = row.get("account_id")
+    if account in KR_CAPEX_PART_IDS:
+        return True
+    name = _norm(row.get("account_nm"))
+    return account == KR_NONSTANDARD_ID and re.fullmatch(KR_CAPEX_PART_NAME, name)
+
+
+def _kr_combined(row: dict) -> bool:
+    """A PP&E-with-investment-property acquisition line (RULES kr.capexCombined)."""
+    return (
+        re.fullmatch(KR_CAPEX_COMBINED_NAME, _norm(row.get("account_nm"))) is not None
+    )
+
+
+def _kr_capex(rows: list) -> tuple:
+    """(kind, rows, how) of one report's capex: kind 'line' (RULES kr.capex),
+    'parts' (kr.capexParts) or 'combined' (kr.capexCombined); (None, [], reason)."""
+    pool = [r for r in rows if r.get("sj_div") == "CF"]
+    tiers = [
+        (f"id:{i}", [r for r in pool if r.get("account_id") == i])
+        for i in KR_CAPEX["ids"]
+    ]
+    prefix = KR_CAPEX["prefix"]
+    tiers.append(
+        (
+            "id-prefix",
+            [r for r in pool if str(r.get("account_id", "")).startswith(prefix)],
+        )
+    )
+    tiers.append(
+        (
+            "name",
+            [
+                r
+                for r in pool
+                if r.get("account_id") not in KR_CAPEX_PART_IDS
+                and _norm(r.get("account_nm")) in KR_CAPEX["names"]
+            ],
+        )
+    )
+    for how, hits in tiers:  # as _kr_find
+        if not hits:
+            continue
+        if len({_kr_amounts(r) for r in hits}) > 1:
+            return None, [], f"{len(hits)} conflicting rows ({how})"
+        row = hits[0]
+        if not how.startswith("id:"):
+            how = f"{how}:{row.get('account_id')}|{row.get('account_nm')}"
+        return ("combined" if _kr_combined(row) else "line"), [row], how
+    parts, seen = [], {}
+    for r in pool:
+        if not _kr_part(r):
+            continue
+        key = (r.get("account_id"), _norm(r.get("account_nm")))
+        if key in seen:
+            if seen[key] != _kr_amounts(r):
+                return None, [], f"conflicting rows for {key[1]} (parts)"
+            continue  # an identical duplicate counts once
+        seen[key] = _kr_amounts(r)
+        parts.append(r)
+    combined = [r for r in pool if _kr_combined(r)]
+    if parts and combined:
+        return None, [], "per-asset and combined PP&E acquisition lines both reported"
+    if parts:
+        names = "+".join(f"{r.get('account_id')}|{r.get('account_nm')}" for r in parts)
+        return "parts", parts, f"parts:{names}"
+    if combined:
+        if len({_kr_amounts(r) for r in combined}) > 1:
+            return None, [], f"{len(combined)} conflicting rows (combined)"
+        r = combined[0]
+        return "combined", [r], f"combined:{r.get('account_id')}|{r.get('account_nm')}"
+    return None, [], "not reported"
+
+
 def _receipt(rows: list, corp: str, year: int, code: str) -> str:
     receipts = {str(r.get("rcept_no", "")) for r in rows}
     receipt = receipts.pop() if len(receipts) == 1 else ""
@@ -1737,38 +2172,53 @@ def _kr_previous(report, corp: str, hit: dict, as_of: str, out: dict):
 
 
 def _kr_metric(metric: str, spec: dict, hit: dict, prior: dict | None) -> tuple:
-    """(components, reason) for CFO or capex over the trailing year."""
-    row, how = _kr_find(hit["rows"], "CF", **spec)
-    if row is None:
+    """(components, reason) for CFO or capex over the trailing year. Capex per report
+    comes from its capex line, else its per-asset parts, else a combined line
+    (_kr_capex); a component from parts or a combined line records capexKind."""
+
+    def find(rows):
+        if metric == "capex":
+            return _kr_capex(rows)
+        row, how = _kr_find(rows, "CF", **spec)
+        return ("line", [row], how) if row is not None else (None, [], how)
+
+    kind, rows, how = find(hit["rows"])
+    if kind is None:
         return [], f"{how} in {hit['year']} {KR_REPORTS[hit['code']][0]}"
-    parts = [("current", 1, hit, row, how, KR_CURRENT)]
+    parts = [("current", 1, hit, rows, how, kind, KR_CURRENT)]
     if hit["code"] != "11011":
-        prow, phow = _kr_find(prior["rows"], "CF", **spec)
-        if prow is None:
+        pkind, prows, phow = find(prior["rows"])
+        if pkind is None:
             return [], f"{phow} in previous annual {prior['year']}"
         parts += [
-            ("previousAnnual", 1, prior, prow, phow, ("thstrm_amount",)),
-            ("previousSamePeriod", -1, hit, row, how, KR_PREVIOUS_SAME),
+            ("previousAnnual", 1, prior, prows, phow, pkind, ("thstrm_amount",)),
+            ("previousSamePeriod", -1, hit, rows, how, kind, KR_PREVIOUS_SAME),
         ]
     components = []
-    for role, sign, rep, r, account, fields in parts:
-        field, value = _first(r, fields)
-        if value is None:
+    for role, sign, rep, found, account, k, fields in parts:
+        amounts = [_first(r, fields) for r in found]
+        have = [(field, value) for field, value in amounts if value is not None]
+        if not have or (k != "parts" and len(have) < len(found)):
             return [], f"no amount for {role}"
-        components.append(
-            dict(
-                metric=metric,
-                role=role,
-                sign=sign,
-                account=account,
-                field=field,
-                value=abs(value) if metric == "capex" else value,
-                rceptNo=rep["receipt"],
-                bsnsYear=rep["year"],
-                reprtCode=rep["code"],
-                fsDiv=rep["fs"],
-            )
+        component = dict(
+            metric=metric,
+            role=role,
+            sign=sign,
+            account=account,
+            field="+".join(dict.fromkeys(field for field, _ in have)),
+            value=(
+                sum(abs(value) for _, value in have)
+                if metric == "capex"
+                else have[0][1]
+            ),
+            rceptNo=rep["receipt"],
+            bsnsYear=rep["year"],
+            reprtCode=rep["code"],
+            fsDiv=rep["fs"],
         )
+        if k != "line":
+            component["capexKind"] = k
+        components.append(component)
     return components, None
 
 
@@ -1836,6 +2286,18 @@ def _kr(member: dict, as_of: str, report, sources: list) -> dict:
         if any(c["account"] != components[0]["account"] for c in components):
             out["notes"].append(f"{metric} matched differently across reports")
         out[f"{metric}TTM"] = sum(c["sign"] * c["value"] for c in components)
+        kinds = {c.get("capexKind") for c in components}
+        if "parts" in kinds:
+            out["issues"].append(CAPEX_PARTS)
+            out["notes"].append(
+                "capex from the sum of per-asset PP&E acquisition lines "
+                "(kr.capexParts)"
+            )
+        if "combined" in kinds:
+            out["issues"].append(CAPEX_COMBINED)
+            out["notes"].append(
+                "capex line includes investment property (kr.capexCombined)"
+            )
     row, how = _kr_find(hit["rows"], "BS", **KR_ASSETS)
     value = _amount(row.get("thstrm_amount")) if row else None
     if value is None:

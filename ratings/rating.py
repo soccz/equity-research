@@ -220,6 +220,12 @@ PROTOCOL = {
         "(moduleRules.fundamentals.us.filingXbrl, issue filing_xbrl_supplement); if "
         "that read fails the member is insufficient (companyfacts_lag), while an "
         "online retrieval failure makes the record an error that is collected again. "
+        "A US member that is a successor issuer under a new CIK and cannot form the "
+        "trailing year from its own filings takes the missing periods from its "
+        "predecessor's filings made before the succession notice: the one co-registrant "
+        "of its first periodic report after the notice whose own reports give the same "
+        "value for every period both report (moduleRules.fundamentals.us.predecessor, "
+        "issue predecessor_facts, D21); share counts stay the member's. "
         "KR: OpenDART fnlttSinglAcntAll",
         "freshness": "a record whose statement API lags the latest periodic report "
         "filed before asOf (US: after the filing XBRL supplement) is insufficient "
@@ -234,7 +240,12 @@ PROTOCOL = {
             "payment; negative or missing gives no value; US tags, tag chains, the "
             "capexMore list and the understatement guard: moduleRules.fundamentals "
             "(us.capexTag, us.tagChain, us.capexUnderstated; issue "
-            "capex_tag_understated); without cfoTTM only cfo_missing is reported",
+            "capex_tag_understated); KR per report: the capex line, else the sum of "
+            "per-asset PP&E acquisition lines, else a combined PP&E-and-investment-"
+            "property line: moduleRules.fundamentals (kr.capex, kr.capexParts, "
+            "kr.capexCombined; issues capex_parts_summed, "
+            "capex_includes_investment_property, D20); without cfoTTM only "
+            "cfo_missing is reported",
             "marketCap": "missing or non-positive gives no value",
             "currency": "filing currency must equal the market currency",
         },
@@ -243,9 +254,13 @@ PROTOCOL = {
             "assets": "latest total assets, positive",
         },
         "momentum12_1": {
-            "definition": "adjclose[T-21] / adjclose[T-252] - 1 over the member's own "
-            "sessions on or before T, the last of which is T itself (no_price_on_as_of "
-            "otherwise)",
+            "definition": "adjclose[T-21] / adjclose[T-252] - 1 over the member's "
+            "sessions on or before T: its own rows and the sessions its price series "
+            "lists without a close (nullSessions, D19), which are counted but never "
+            "priced; an endpoint on such a session uses the member's last own close "
+            "before it (momentum_endpoint_stale), and such a session inside the window "
+            "is flagged momentum_session_gap; the last own row is T itself "
+            "(no_price_on_as_of otherwise)",
             "skipSessions": 21,
             "lookbackSessions": 252,
         },
@@ -614,26 +629,42 @@ def close_on(rows, day: str, column: int = 2) -> tuple | None:
     return None if value is None else (day, value)
 
 
-def momentum_12_1(rows, as_of: str) -> tuple:
-    """(value, issue, [start date, end date]) on the member's own sessions.
+def momentum_12_1(rows, as_of: str, null_sessions=()) -> tuple:
+    """(value, issues, [start date, end date], gaps) on the member's sessions.
 
-    The last of those sessions must be T itself: a member halted on T has no momentum
-    (no_price_on_as_of), never one measured from earlier sessions (D9').
+    Sessions are the member's own rows and ``null_sessions``, the sessions its series
+    lists without a close (prices.series()["nullSessions"]; D19): Yahoo returned every
+    KRX stock without a close on 2025-09-19, a real session, and counting only own rows
+    moved every window by one session. Such a session is counted but never priced:
+    an endpoint on it uses the last own close before it (momentum_endpoint_stale), and
+    one inside the window is listed in ``gaps`` (momentum_session_gap). The last own
+    row must be T itself: a member halted on T has no momentum (no_price_on_as_of),
+    never one measured from earlier sessions (D9').
     """
     spec = PROTOCOL["signals"]["momentum12_1"]
     if not rows:
-        return None, "price_series_missing", None
+        return None, ["price_series_missing"], None, []
     past = rows_through(rows, as_of)
     if not past or past[-1][0] != as_of:
-        return None, NO_PRICE, None
-    last = len(past) - 1
+        return None, [NO_PRICE], None, []
+    own = {r[0] for r in past}
+    blank = {d for d in null_sessions or () if d < as_of} - own
+    sessions = sorted(own | blank)
+    last = len(sessions) - 1
     if last < spec["lookbackSessions"]:
-        return None, "momentum_history_short", None
-    start = past[last - spec["lookbackSessions"]]
-    end = past[last - spec["skipSessions"]]
+        return None, ["momentum_history_short"], None, []
+    first = sessions[last - spec["lookbackSessions"]]
+    final = sessions[last - spec["skipSessions"]]
+    head = rows_through(past, first)
+    if not head:
+        return None, ["momentum_history_short"], None, []
+    start, end = head[-1], rows_through(past, final)[-1]
+    gaps = sorted(d for d in blank if first <= d <= final)
+    issues = ["momentum_endpoint_stale"] if (start[0], end[0]) != (first, final) else []
+    issues += ["momentum_session_gap"] if gaps else []
     if positive(start[1]) is None or positive(end[1]) is None:
-        return None, "momentum_price_missing", [start[0], end[0]]
-    return end[1] / start[1] - 1, None, [start[0], end[0]]
+        return None, issues + ["momentum_price_missing"], [start[0], end[0]], gaps
+    return end[1] / start[1] - 1, issues, [start[0], end[0]], gaps
 
 
 def ranks(values: list) -> list:
@@ -1007,7 +1038,13 @@ def _record_issues(record: dict) -> list:
 
 
 def _compute(
-    row: dict, member: dict, record, prices: dict, as_of: str, splits: dict
+    row: dict,
+    member: dict,
+    record,
+    prices: dict,
+    as_of: str,
+    splits: dict,
+    null_sessions=None,
 ) -> None:
     issues = row["issues"]
     market = row["market"]
@@ -1057,11 +1094,11 @@ def _compute(
     profitability = (
         cfo / assets if cfo is not None and assets is not None and assets > 0 else None
     )
-    momentum, issue, window = momentum_12_1(
-        prices.get(member.get("priceSymbol")), as_of
+    symbol = member.get("priceSymbol")
+    momentum, found, window, gaps = momentum_12_1(
+        prices.get(symbol), as_of, (null_sessions or {}).get(symbol)
     )
-    if issue:
-        issues.append(issue)
+    issues.extend(found)
     row["signals"] = dict(
         fcfYield=number(fcf_yield),
         cashProfitability=number(profitability),
@@ -1080,6 +1117,7 @@ def _compute(
         capexTTM=capex,
         assets=assets,
         momentumWindow=window,
+        momentumGaps=gaps,
         **detail,
     )
 
@@ -1094,6 +1132,7 @@ def signals(
     retrieved_on=None,
     windows_by_symbol=None,
     capture_dates_by_market=None,
+    null_sessions_by_symbol=None,
 ) -> dict:
     """Raw signals of one member at T; per-company failures become issues, not raises.
 
@@ -1108,6 +1147,10 @@ def signals(
     ``retrieved_on`` left later splits unread, so the US cap is withheld as
     splits_unknown and a KR class flagged splits_unchecked (D7'). A registration
     passes it; without it the windows are not checked.
+
+    ``null_sessions_by_symbol`` maps the symbols to ``prices.series(...)
+    ["nullSessions"]``: momentum counts them as sessions without pricing them (D19);
+    without it only the member's own rows are sessions.
 
     ``capture_dates_by_market`` is ``capture_dates(universe)``, ``{"KR":
     'YYYY-MM-DD'}``: KR listed shares are captured with the universe after T, so only
@@ -1157,7 +1200,13 @@ def signals(
                 capture_dates_by_market=capture_dates_by_market,
             )
             _compute(
-                row, member, fundamentals, prices_by_symbol or {}, row["asOf"], splits
+                row,
+                member,
+                fundamentals,
+                prices_by_symbol or {},
+                row["asOf"],
+                splits,
+                null_sessions_by_symbol,
             )
     except Exception as exc:  # company boundary: record the failure, never raise
         row.update(signals=dict.fromkeys(SIGNALS), marketCap=None)

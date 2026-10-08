@@ -1115,6 +1115,7 @@ class ScoreTests(Store):
                 retrieved_on="2026-10-02",
                 windows_by_symbol={"U1": window},
                 capture_dates_by_market=captured,
+                null_sessions_by_symbol={"U1": []},
             ),
         )
         self.assertEqual(
@@ -1124,6 +1125,7 @@ class ScoreTests(Store):
                 retrieved_on="2026-10-02",
                 windows_by_symbol={"000010.KS": window, "000015.KS": window},
                 capture_dates_by_market=captured,
+                null_sessions_by_symbol={"000010.KS": [], "000015.KS": []},
             ),
         )
 
@@ -2583,9 +2585,13 @@ class IntegrationTests(Store):
         self.assertIn("momentum12_1_z_undefined", apple_row["issues"])
         self.assertIsNotNone(apple_row["z"]["cashProfitability"])
         self.assertIn("class_price_proxy", rows["KR:005930"]["issues"])
+        # D19: Yahoo lists 2025-09-19 without a close; it is counted as a session, so
+        # the window starts on 2025-09-15, not 2025-09-12 (own rows only: 2.4512616).
         self.assertAlmostEqual(
-            rows["KR:005930"]["signals"]["momentum12_1"], 2.4512616, places=6
+            rows["KR:005930"]["signals"]["momentum12_1"], 2.4016352, places=6
         )
+        self.assertIn("momentum_session_gap", rows["KR:005930"]["issues"])
+        self.assertEqual(rows["KR:005930"]["inputs"]["momentumGaps"], ["2025-09-19"])
         facts = {m["key"]: m for m in content["inputs"]["fundamentals"]}
         blob = (FIXTURES / "fundamentals/sec-facts-CIK0000320193.json").read_bytes()
         self.assertEqual(facts["sec-facts-CIK0000320193"]["sha256"], digest(blob))

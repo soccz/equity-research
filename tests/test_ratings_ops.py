@@ -179,6 +179,22 @@ class OpsCase(unittest.TestCase):
             runner.operate(evaluate)
         return runner
 
+    def blind(self, now, cli, market, holdings="2026-10-30"):
+        """A run whose ``market`` calendar fails (both series down)."""
+
+        class Blind(dict):
+            def __getitem__(self, key):
+                if key == market:
+                    raise ops.OpsError(f"{market}: no session calendar")
+                return dict.__getitem__(self, key)
+
+        runner = ops.Ops(
+            runner=cli, now=at(now), sessions=Blind(SESSIONS), holdings=holdings
+        )
+        with mock.patch("builtins.print"):
+            runner.operate(False)
+        return runner
+
     def save_part(self, market, as_of, gate=False, holdings=None):
         path = universe.part_path(market, as_of, gate=gate)
         path.parent.mkdir(parents=True, exist_ok=True)
@@ -276,6 +292,19 @@ class GateRuns(OpsCase):
             holdings="2026-10-16",
         )
         self.assertTrue(any("SSGA still shows" in p for p in run.problems))
+
+    def test_a_gate_blind_for_good_is_lost_by_calendar_days(self):
+        # Final review of 2026-10-08: if the KR calendar fails in every run and KR has
+        # no gate part, the US gate is recorded once KR's part can no longer exist.
+        self.save_part("US", G, gate=True)
+        answers = dict(collect=OK_COLLECT)
+        answers.update({"coverage-report": coverage(False), "coverage": coverage()})
+        cli = FakeCli(**answers)
+        self.blind("2026-11-01T13:00:00+00:00", cli, "KR")  # G + 13 days
+        self.assertNotIn("coverage --as-of --gate US", cli.commands())
+        cli = FakeCli(**answers)
+        self.blind("2026-11-02T13:00:00+00:00", cli, "KR")  # G + 14 days
+        self.assertIn("coverage --as-of --gate US", cli.commands())
 
     def test_missed_holdings_and_closed_window(self):
         self.save_part("KR", G, gate=True)
@@ -615,6 +644,82 @@ class MonthRuns(OpsCase):
         self.assertEqual(cli.calls[-1][:3], ["score", "--as-of-us", "2026-10-30"])
         self.assertNotIn("universe --as-of KR", cli.commands())
         self.assertFalse(run.waiting)
+
+    def test_a_us_gate_that_can_never_be_recorded_leaves_kr_alone(self):
+        # No US gate part and its window long closed (owner, 2026-10-08): the US is out
+        # of v1 and KR registers without waiting for it. A failed US gate still stops
+        # everything (test_failed_gates).
+        self.gates["US"] = None
+        cli = FakeCli(
+            collect=OK_COLLECT,
+            **{
+                "score-dry": collected(markets=("KR",)),
+                "score": dict(labels={}, asOf={}),
+            },
+        )
+        run = self.run_ops(self.NOW, cli, holdings="2026-10-30")
+        self.assertEqual(
+            cli.commands(),
+            [
+                "universe --as-of KR",
+                "universe-merge --as-of-kr --only",
+                "collect KR",
+                "score --as-of-kr --dry-run",
+                "score --as-of-kr",
+            ],
+        )
+        self.assertFalse(run.waiting)
+        self.assertTrue(any("register without the US" in d for d in run.done))
+
+    def test_an_unrecorded_us_gate_with_its_part_still_holds_the_month(self):
+        # The US gate part is in but its gate is not recorded (e.g. a lasting member
+        # error): it may still be recorded, so nothing registers.
+        self.gates["US"] = None
+        self.save_part("US", G, gate=True)
+        cli = FakeCli(collect=OK_COLLECT)
+        run = self.run_ops(self.NOW, cli, holdings="2026-10-30")
+        self.assertNotIn("score", [c[0] for c in cli.calls])
+        self.assertTrue(any("waits for the US coverage gate" in w for w in run.waiting))
+
+    def test_a_market_whose_calendar_fails_is_waited_for(self):
+        # Review of 2026-10-08: a KR calendar outage in the run where the US is ready
+        # registered the US alone, and KR lost its month (registered once).
+        answers = {
+            "score-dry": collected(markets=("US",)),
+            "score": dict(labels={}, asOf={}),
+        }
+        cli = FakeCli(collect=OK_COLLECT, **answers)
+        run = self.blind(self.NOW, cli, "KR")
+        self.assertNotIn("score", [c[0] for c in cli.calls])
+        self.assertTrue(any("wait for ['KR']" in w for w in run.waiting))
+        cli = FakeCli(collect=OK_COLLECT, **answers)
+        run = self.blind("2026-11-06T13:00:00+00:00", cli, "KR")  # the US last call
+        self.assertEqual(cli.calls[-1][:3], ["score", "--as-of-us", "2026-10-30"])
+        self.assertTrue(any("registered without ['KR']" in p for p in run.problems))
+
+    def test_a_blind_us_holds_kr_only_until_its_last_call(self):
+        answers = {
+            "score-dry": collected(markets=("KR",)),
+            "score": dict(labels={}, asOf={}),
+        }
+        cli = FakeCli(collect=OK_COLLECT, **answers)
+        run = self.blind(self.NOW, cli, "US")
+        self.assertNotIn("score", [c[0] for c in cli.calls])
+        self.assertTrue(any("wait for ['US']" in w for w in run.waiting))
+        cli = FakeCli(collect=OK_COLLECT, **answers)
+        run = self.blind("2026-11-06T06:30:00+00:00", cli, "US")  # 15:30 KST
+        self.assertEqual(cli.calls[-1][:3], ["score", "--as-of-kr", "2026-10-30"])
+        self.assertTrue(any("registered without ['US']" in p for p in run.problems))
+
+    def test_a_lost_us_gate_is_known_without_its_calendar(self):
+        self.gates["US"] = None  # no US gate part either, and the window long gone
+        answers = {
+            "score-dry": collected(markets=("KR",)),
+            "score": dict(labels={}, asOf={}),
+        }
+        cli = FakeCli(collect=OK_COLLECT, **answers)
+        self.blind(self.NOW, cli, "US")
+        self.assertEqual(cli.calls[-1][:3], ["score", "--as-of-kr", "2026-10-30"])
 
     def test_failed_gates(self):
         self.gates["KR"] = dict(verdict="fail", market="KR")

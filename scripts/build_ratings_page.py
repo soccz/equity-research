@@ -5,7 +5,8 @@
 
 OUT receives a byte-for-byte copy of site/ and a ratings/ folder: the page sources from
 pages/ratings/ and data derived only from the committed public ratings files
-(data/ratings/ledger.jsonl, v1/<YYYY-MM>.json, the latest evaluation/<D>.json). The
+(data/ratings/ledger.jsonl, v1/<YYYY-MM>.json, the latest evaluation/<D>.json, and
+whether each gate part universe/<gate asOf>-gate/<market>.json exists). The
 ledger's hash chain, every registration file's SHA-256 and protocol hash are verified
 through ratings.registry first; if that fails, the page shows only that the ledger did
 not verify (never partial data). Dry runs, rehearsals and work files are never read.
@@ -37,7 +38,7 @@ sys.path.insert(0, str(ROOT))
 
 from equitylab import ledger  # noqa: E402
 from equitylab.publication import verify_site  # noqa: E402
-from ratings import rating, registry  # noqa: E402
+from ratings import rating, registry, universe  # noqa: E402
 
 PAGE = ROOT / "pages/ratings"
 PAGE_FILES = ("index.html", "ratings.css", "ratings.js", "glossary.ko.json")
@@ -131,15 +132,15 @@ def view_row(row: dict) -> list:
         label=row.get("label"),
         labelReason=row.get("labelReason"),
         previousLabel=row.get("previousLabel"),
-        percentile=rounded(row.get("percentile"), 4),
-        composite=rounded(row.get("composite"), 4),
+        percentile=rounded(row.get("percentile"), 6),
+        composite=rounded(row.get("composite"), 6),
         marketCap=money(row.get("marketCap")),
         fcfYield=rounded(signals.get("fcfYield"), 6),
         cashProfitability=rounded(signals.get("cashProfitability"), 6),
         momentum12_1=rounded(signals.get("momentum12_1"), 6),
-        zFcfYield=rounded(z.get("fcfYield"), 3),
-        zCashProfitability=rounded(z.get("cashProfitability"), 3),
-        zMomentum=rounded(z.get("momentum12_1"), 3),
+        zFcfYield=rounded(z.get("fcfYield"), 6),
+        zCashProfitability=rounded(z.get("cashProfitability"), 6),
+        zMomentum=rounded(z.get("momentum12_1"), 6),
         cfoTTM=money(inputs.get("cfoTTM")),
         capexTTM=money(inputs.get("capexTTM")),
         assets=money(inputs.get("assets")),
@@ -294,6 +295,14 @@ def derive(preview: list) -> tuple[dict, dict]:
     index["ledger"] = head
     for market in ("US", "KR"):
         index["gates"][market] = gate_view(registry.gate(market))
+    # Whether each gate part was captured (a committed file, no wall clock): without
+    # it and after its window, that gate can never be recorded (scripts/ratings_ops.py).
+    index["gateParts"] = {
+        market: universe.part_path(
+            market, registry.gate_rule()["asOf"], gate=True
+        ).exists()
+        for market in ("US", "KR")
+    }
     by_month = {
         e.get("month"): e for e in events if e.get("type") == registry.EVENT_TYPE
     }

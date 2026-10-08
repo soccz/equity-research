@@ -75,6 +75,10 @@ KR_MARKET_OPENS = time(8, 30)
 # Sessions after T (in the member's market) during which members with collection
 # errors are collected again by later runs before they are registered as failures.
 RETRY_SESSIONS = 2
+# From this many calendar days after the gate's asOf a gate part not captured can no
+# longer be (its five-session window has closed even across a long holiday): used when
+# the market's calendar fails in a run.
+NEVER_DAYS = 14
 # More failed members than this share of a market is a source failure, never members'
 # failures: nothing is registered or recorded then (the run fails instead).
 ERROR_SHARE_MAX = 0.05
@@ -529,8 +533,12 @@ class Ops:
             return
         as_of, lost = CHECK["asOf"], []
         for market in pending:
-            if market not in sessions:
-                continue  # its calendar failed: reported
+            if market not in sessions:  # its calendar failed: reported; by calendar
+                part = universe.part_path(market, as_of, gate=True)  # days, as month()
+                limit = date.fromisoformat(as_of) + timedelta(days=NEVER_DAYS)
+                if not part.exists() and self.today(market) >= limit.isoformat():
+                    lost.append(market)
+                continue
             path = universe.part_path(market, as_of, gate=True)
             span = window(sessions[market], as_of, self.today(market))
             if path.exists():
@@ -630,16 +638,34 @@ class Ops:
         if verdicts["US"] == "fail":
             self.note("the US coverage gate failed: ratings are not published (§7)")
             return
-        kr_gate = universe.part_path("KR", CHECK["asOf"], gate=True)
-        if (
-            verdicts["KR"] == "pending"
-            and "KR" in sessions
-            and not kr_gate.exists()
-            and not window(sessions["KR"], CHECK["asOf"], self.today("KR"))["open"]
-        ):  # its part was never captured: that gate can never be recorded
-            verdicts["KR"] = "never"
+        for market in MARKETS:  # a gate part never captured inside its window: that
+            gate = universe.part_path(market, CHECK["asOf"], gate=True)  # gate can
+            if verdicts[market] != "pending" or gate.exists():  # never be recorded,
+                continue  # and the market is out of v1 (owner, 2026-10-08)
+            if market in sessions:
+                span = window(sessions[market], CHECK["asOf"], self.today(market))
+                lost = not span["open"]
+            else:  # its calendar failed in this run: by calendar days instead
+                limit = date.fromisoformat(CHECK["asOf"]) + timedelta(days=NEVER_DAYS)
+                lost = self.today(market) >= limit.isoformat()
+            if lost:
+                verdicts[market] = "never"
+        if verdicts["US"] == "never":
+            self.note(
+                "the US gate part was never captured, so the US gate can never be "
+                "recorded: months register without the US (a failed gate would stop "
+                "every registration, §7)"
+            )
         markets = [
             m for m in MARKETS if verdicts[m] in ("pass", "pending") and m in sessions
+        ]
+        # A market still in v1 whose calendar failed in this run is waited for like a
+        # market that is not ready: the other never registers without it before its
+        # last call (a market's month is registered once).
+        blind = [
+            m
+            for m in MARKETS
+            if verdicts[m] in ("pass", "pending") and m not in sessions
         ]
         done = [r["month"] for r in registry.registrations()]
         last = max(done) if done else ""
@@ -670,9 +696,12 @@ class Ops:
                 self.part(market, target["asOf"], gate=False, sessions=sessions[market])
             except (OpsError, common.FetchError, ValueError, OSError) as exc:
                 self.problem(f"{market} part: {type(exc).__name__}: {exc}")
-        if not targets.get("US"):
+        # The US month leads; KR leads when the US is out of v1 or blind in this run
+        # (the blind US is then waited for until KR's last call).
+        lead = "KR" if verdicts["US"] == "never" or "US" in blind else "US"
+        if not targets.get(lead):
             return
-        month = targets["US"]["month"]
+        month = targets[lead]["month"]
         if month <= last or month < FIRST_MONTH:
             return
         listed = [m for m in markets if (targets[m] or {}).get("month") == month]
@@ -702,11 +731,11 @@ class Ops:
                 self.collect("--universe", merged, "--markets", market)
             except (OpsError, common.FetchError, ValueError, OSError) as exc:
                 self.problem(f"{market} collect: {type(exc).__name__}: {exc}")
-        if verdicts["US"] != "pass":
+        if verdicts["US"] == "pending":
             self.wait(f"{month}: registration waits for the US coverage gate")
             return
         gated = {m: targets[m] for m in built if verdicts[m] == "pass"}
-        waiting = [m for m in open_ if m not in gated]
+        waiting = [m for m in open_ if m not in gated] + blind
         if waiting and not any(self.last_call(m, t) for m, t in gated.items()):
             self.wait(f"{month}: {list(gated)} wait for {waiting} while windows allow")
             return

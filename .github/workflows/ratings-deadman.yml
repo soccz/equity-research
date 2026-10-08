@@ -1,0 +1,37 @@
+name: Ratings deadman
+
+# Fails when an expected ratings-v1 result (gate parts, gate events, a month's parts and
+# registration) is missing after its deadline, so GitHub notifies the owner even when no
+# operation run happened at all (scripts/ratings_deadman.py). Read-only. GitHub's cron is
+# best effort here (runs 5-7 h late since 2026-08-31); a late alert still comes inside
+# each result's three alert days.
+on:
+  schedule:
+    - cron: "47 */2 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ratings-deadman
+  cancel-in-progress: true
+
+jobs:
+  check:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: main
+          sparse-checkout: |
+            ratings
+            equitylab
+            scripts
+            data/ratings
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+      - name: Check expected results against their deadlines
+        run: python scripts/ratings_deadman.py
